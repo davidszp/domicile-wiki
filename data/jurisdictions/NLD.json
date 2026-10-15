@@ -1,0 +1,506 @@
+{
+  "id": "NLD",
+  "name": "Netherlands",
+  "continent": "Europe",
+  "region": "Western Europe",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "The Netherlands does not tax dividends and capital gains on a private portfolio as such. Instead, Box 3 taxes a deemed return on net assets held on 1 January at 36%: for 2026 the deemed return on investments is 6.00%, so a securities portfolio costs 2.16% of its value each year above a tax-free EUR 59,357 per person, which works as a wealth tax. Taxpayers may report a lower actual return (including unrealised gains) instead. A new actual-return system is expected from 1 January 2028. Shareholdings of 5% or more are taxed in Box 2 at up to 31%. Children pay inheritance and gift tax of 10% on the first EUR 158,669 and 20% above, after a EUR 26,230 inheritance exemption (2026).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Residents are taxed on worldwide income in three boxes: Box 1 (work and home, up to 49.5%), Box 2 (substantial interests of 5% or more, 24.5%/31%), Box 3 (savings and investments, deemed return taxed at 36%).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Residence determined by all facts and circumstances (art. 4 AWR): durable personal ties such as a permanent home and family. Non-EU citizens need a residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No separate capital gains tax on portfolio shares, bonds or investment real estate: they sit in Box 3, which taxes a deemed annual return on their value (see wealth tax). Gains on a substantial interest (5% or more of a company, alone or with partner/close relatives) are taxed in Box 2 at 24.5% on the first EUR 68,843 and 31% above (2026). The main home is in Box 1 and its sale is not taxed.",
+        "exemptions_thresholds": "Box 3 allowance EUR 59,357 per person (2026), applied to the wealth base, not to gains.",
+        "eligibility_conditions": "Resident individual; holdings below 5%.",
+        "regional_differences": "None.",
+        "important_exceptions": "Under the planned actual-return system (expected 1 January 2028) Box 3 would tax actual returns at 36%, including unrealised value changes on most listed assets (capital-gains-style for real estate and start-up shares); not in force. Box 2 exit tax: emigrating holders of a substantial interest get a protective assessment on the unrealised gain (from general knowledge).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Netherlands - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/netherlands/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Netherlands - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/netherlands/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Wat is mijn werkelijk rendement? (box 3)",
+            "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/wat-is-mijn-werkelijk-rendement",
+            "publisher": "Belastingdienst",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Box 2 protective assessment on emigration was not re-verified.",
+          "Parliamentary status of the actual-return bill (Wet werkelijk rendement box 3) as of October 2026: the Belastingdienst says 'likely' 1 January 2028."
+        ],
+        "headline_rate": 0.31,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.31,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Portfolio securities and investment real estate: 0 because realised gains are not taxed separately; their value is taxed annually through Box 3 (recorded under wealth_tax). Private business sale (>= 5%): Box 2 top rate 31%. Headline = the Box 2 top rate. Foreign real estate is in Box 3 but most treaties exempt it with progression.",
+        "professional_trader": "Trading activity that goes beyond normal asset management ('meer dan normaal vermogensbeheer') moves results into Box 1 (result from other activities) at up to 49.5%; leveraged or highly active trading carries this risk.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Worldwide assets in Box 3; foreign real estate usually exempt under treaties or unilateral relief (with progression)."
+      },
+      "dividends": {
+        "summary": "Portfolio dividends are not taxed as income: they are part of the Box 3 deemed return. Dutch dividends bear 15% dividend withholding tax, which a resident credits against income tax. Foreign withholding tax can be credited against the Box 3 tax under treaties and the unilateral decree (limited). Dividends from a substantial interest (5%+) are taxed in Box 2 at 24.5%/31%.",
+        "exemptions_thresholds": "None.",
+        "eligibility_conditions": "Resident individual; holdings below 5% for Box 3 treatment.",
+        "regional_differences": "None.",
+        "important_exceptions": "If the taxpayer opts for the actual return, dividends received count toward it.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Netherlands - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/netherlands/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Netherlands - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/netherlands/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "How far foreign dividend withholding tax can be credited against Box 3 tax (treaty credit limited to the Box 3 tax attributable to that income) was not verified."
+        ],
+        "headline_rate": 0.31,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Portfolio dividends: 0 as separate income tax (the asset value is taxed via Box 3 under wealth_tax). Headline: Box 2 top rate 31% for substantial interests.",
+        "withholding_outbound": "15% dividend withholding tax on dividends paid by Dutch companies, reduced by treaties and to 0% for qualifying EU/treaty corporate parents; a conditional withholding tax applies to payments to low-tax jurisdictions.",
+        "treaty_network": "About 95 income tax treaties, including the US and all EU states (count from general knowledge).",
+        "holding_company_notes": "Modelled as the structure regime 'beleggings_bv': moving the portfolio into a BV takes it out of Box 3 (2.16% a year on its value); the BV pays 19%/25.8% on actual realised dividends and gains (no participation exemption below 5%), and distributions are taxed in Box 2 at 24.5%/31%."
+      },
+      "wealth_tax": {
+        "summary": "Box 3 works as a wealth tax. On net assets held on 1 January (main home excluded) the law deems a return of 6.00% on investments and other assets, 1.28% on bank deposits (provisional) and -2.70% on debts (provisional) for 2026; the deemed return on the part above the allowance of EUR 59,357 per person (EUR 118,714 for partners) is taxed at 36%. For a securities portfolio that is 2.16% of its value a year. If the actual return (income plus realised and unrealised value changes, no allowance) is lower, the taxpayer can report it in the return and pay 36% of that instead.",
+        "exemptions_thresholds": "EUR 59,357 per person (2026); debts only count above EUR 3,800 per person. Children have their own allowance if they hold assets.",
+        "eligibility_conditions": "Resident individuals on worldwide assets; non-residents only on certain Dutch assets.",
+        "regional_differences": "None.",
+        "important_exceptions": "Rebuttal: since Supreme Court rulings (2021, 2024) the tax may not exceed 36% of the actual return; the Wet tegenbewijsregeling box 3 lets taxpayers prove a lower actual return. A new Box 3 with taxation of actual returns is expected from 1 January 2028 (not in force). From 2026 own use of a second home is added to the actual return.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Box 3-inkomen op de voorlopige aanslag 2026",
+            "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026",
+            "publisher": "Belastingdienst",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Wat is mijn werkelijk rendement? (box 3)",
+            "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/wat-is-mijn-werkelijk-rendement",
+            "publisher": "Belastingdienst",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Netherlands - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/netherlands/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "The deposit and debt percentages for 2026 are provisional until early 2027; the 6.00% for investments is final.",
+          "The schema cannot express the 'lower of deemed or actual return' rule; in a year with a portfolio return below 6% the real tax is lower than modelled."
+        ],
+        "type": "broad",
+        "components": [
+          {
+            "name": "Box 3 deemed return tax on investments (6.00% x 36%)",
+            "base": "net_wealth_worldwide",
+            "exempt_amount": 118714,
+            "entry_threshold": 0,
+            "bracket_mode": "marginal",
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.0216
+              }
+            ],
+            "notes": "Effective annual rate 6.00% deemed return x 36% = 2.16% on investments above the allowance of EUR 118,714 for a couple (EUR 59,357 each). Bank deposits: 1.28% x 36% = 0.46%; debts reduce the base at 2.70%. Main home excluded (Box 1). Foreign real estate usually exempt under treaties."
+          }
+        ],
+        "property_tax_note": "Municipal property tax (OZB) on the WOZ value, usually around 0.1% a year for owners of homes; the main home is also taxed in Box 1 through a notional rental value (eigenwoningforfait)."
+      },
+      "inheritance": {
+        "summary": "Inheritance tax is charged on each heir. In 2026 a child has an exemption of EUR 26,230; the rest is taxed at 10% up to EUR 158,669 and 20% above. A spouse or partner has an exemption of EUR 828,035. The tax applies if the deceased lived in the Netherlands; Dutch nationals remain treated as resident for 10 years after emigrating, and for gift tax anyone remains resident for one year after leaving.",
+        "exemptions_thresholds": "Child EUR 26,230 (2026); disabled child EUR 78,671; partner EUR 828,035. Gift tax: annual exemption for gifts from parents to children and a one-off increased exemption (for a home, study or freely between ages 18 and 39), amounts not verified for 2026.",
+        "eligibility_conditions": "Deceased or donor resident (or deemed resident) in the Netherlands at the time of the transfer; non-resident donors/deceased are not taxed even on Dutch assets.",
+        "regional_differences": "None.",
+        "important_exceptions": "Business succession facility (BOR): large exemption for qualifying business assets, not for investment assets; the BOR has been tightened in recent budgets (2025/2026 details not verified).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tarieven erfbelasting 2026",
+            "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/erfbelasting/content/tarieven-erfbelasting",
+            "publisher": "Belastingdienst",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Vrijstelling erfbelasting 2026",
+            "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/erfbelasting/content/vrijstelling-erfbelasting",
+            "publisher": "Belastingdienst",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Netherlands - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/netherlands/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The 10-year (Dutch nationals) and 1-year (gifts) residence fictions (art. 3 SW 1956) and the gift exemptions for 2026 were not checked on an official page (Belastingdienst gift pages returned 404).",
+          "BOR changes in the 2026 budget were not verified."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed",
+        "exemption": 26230,
+        "bracket_mode": "marginal",
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.1
+          },
+          {
+            "from_amount": 158669,
+            "rate": 0.2
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Gift tax uses the same rates (10% / 20% for children) with smaller exemptions: an annual exemption for gifts from parents to a child and a one-off higher exemption; gifts from the same donor in one calendar year are aggregated. Gifts made within 180 days before death are added to the estate.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "BOR (bedrijfsopvolgingsregeling): 100% exemption up to a cap and 83% above for qualifying business assets with continuation conditions; investment assets and listed portfolios do not qualify.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Worldwide estate if the deceased was resident or deemed resident; credit or exemption for foreign tax under the unilateral decree and the few estate tax treaties.",
+        "domicile_rules": "Dutch nationals who die within 10 years of leaving the Netherlands are treated as resident; anyone who makes a gift within one year of leaving is treated as resident for gift tax. The heir's residence does not matter."
+      }
+    },
+    {
+      "id": "beleggings_bv",
+      "name": "Investment BV (beleggings-BV)",
+      "type": "structure",
+      "description": "The family holds the portfolio through a Dutch BV owned by the parents. Their shares in the BV are a substantial interest (at least 5%), taxed in Box 2 only when money comes out, so the portfolio leaves Box 3 and its 2.16% annual deemed-return tax. The BV pays corporate income tax on its actual realised income: 19% on the first EUR 200,000 and 25.8% above, on portfolio dividends and gains alike (the participation exemption needs a 5% stake). Distributions are taxed in Box 2 at 24.5%/31%. Inheritance tax is the same as for direct holding (business succession relief does not cover investment assets), so that metric is inherited from the standard regime.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Any Dutch resident can set up a BV (no minimum capital; notarial deed). Moving a Box 3 portfolio into the BV triggers no income tax (Box 3 has no capital gains tax), so existing holdings can be contributed at market value.",
+      "duration_years": null,
+      "duration_note": "A corporate structure under ordinary law with no time limit. Its comparative advantage depends on Box 3: the planned actual-return Box 3 (expected from 2028, not in force) would tax unrealised gains annually at 36%, which would widen the BV's advantage.",
+      "structure": {
+        "entity": "Beleggings-BV (private limited company holding investments)",
+        "kind": "company",
+        "payout_tax_rate": 0.31,
+        "payout_notes": "Dividends to the parents are Box 2 income: 24.5% on the first EUR 68,843 per person and 31% above (2026, art. 2.12 Wet IB 2001); partners can split Box 2 income, so two parents use the lower band twice (on EUR 400,000 about 28.8% overall; the top rate 31% is used here). The BV withholds 15% Dutch dividend tax, credited against Box 2. Loans from the BV above EUR 500,000 per shareholder (with partner), other than qualifying home loans, are taxed as a deemed Box 2 dividend (excessive borrowing rule).",
+        "substance_and_anti_avoidance": "Portfolio shares (stakes below 5%) do not qualify for the participation exemption, so dividends and gains are fully taxed at 19%/25.8%; foreign withholding tax is credited under treaties (or deducted as a cost). No exit or lock-in at company level, but the excessive-borrowing rule blocks tax-free access to the money through loans. The fiscal investment institution (FBI, 0% corporate tax with a distribution obligation) has shareholder restrictions that were not verified for a single family. Shares in the BV are Box 2 assets, not Box 3 assets, so they are outside the deemed-return tax.",
+        "exit_and_liquidation": "Emigration: the Netherlands issues a protective assessment on the Box 2 gain built up in the BV shares; payment can be deferred under conditions. Death: the shares are deemed disposed of (Box 2 tax at 31% on the gain), unless the heirs elect to roll the latent claim over under strict conditions (a 2026 district-court case allowed roll-over for a BV with no business, but the conditions were not verified here). Liquidation: distributions above paid-in capital are Box 2 income at 24.5%/31%.",
+        "sources": [
+          {
+            "title": "Wet inkomstenbelasting 2001 (art. 2.12 Box 2 rates 2026)",
+            "url": "https://wetten.overheid.nl/BWBR0011353/2026-01-01/",
+            "publisher": "Overheid.nl",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Netherlands - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/netherlands/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Netherlands - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/netherlands/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Aanmerkelijk belang en box 2 in 2026",
+            "url": "https://www.portsighttax.com/insights/aanmerkelijk-belang-box-2-2026",
+            "publisher": "Portsight Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ]
+      },
+      "capital_gains": {
+        "summary": "The BV pays corporate income tax on realised gains on portfolio shares and bonds: 19% on the first EUR 200,000 of taxable profit and 25.8% above (2026). Unrealised gains are not taxed. Gains on a stake of at least 5% in a private company are exempt under the participation exemption (if it is not a low-taxed portfolio investment).",
+        "exemptions_thresholds": "Participation exemption for stakes of at least 5%; none for portfolio holdings.",
+        "eligibility_conditions": "Dutch-resident BV.",
+        "important_exceptions": "Unlike Box 3, the BV is taxed on actual realised income, so a year with low or negative returns costs little. Rates in the model are the 25.8% top rate; the 19% band on the first EUR 200,000 lowers the average slightly.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Netherlands - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/netherlands/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Netherlands - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/netherlands/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether gains on foreign real estate held by a BV are exempt under the object exemption or a treaty was not checked; left null."
+        ],
+        "headline_rate": 0.258,
+        "rates": {
+          "listed_securities_domestic": 0.258,
+          "listed_securities_foreign": 0.258,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.258,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Top corporate income tax rate 25.8% on realised gains (first EUR 200,000 of profit at 19%). Private business sale: 0, assuming the BV holds at least 5% and the participation exemption applies. Local real estate: 25.8% on the gain. Foreign real estate: null (not checked).",
+        "professional_trader": "Not relevant: all BV income is taxable profit regardless of trading frequency.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Worldwide profits taxed; foreign shares treated like Dutch shares."
+      },
+      "dividends": {
+        "summary": "Portfolio dividends received by the BV are fully taxable at 19%/25.8%. Dutch dividend tax withheld (15%) and treaty-rate foreign withholding are credited against the corporate tax.",
+        "exemptions_thresholds": "Participation exemption only for stakes of at least 5%.",
+        "eligibility_conditions": "Dutch-resident BV.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Netherlands - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/netherlands/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Netherlands - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/netherlands/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Mechanics of the treaty credit for foreign portfolio withholding (per-country limitation) were summarised from PwC, not read in the statute."
+        ],
+        "headline_rate": 0.258,
+        "domestic_rate": 0.258,
+        "foreign_gross_rate": 0.258,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Top corporate income tax rate 25.8%; foreign withholding up to the treaty rate credited.",
+        "withholding_outbound": "The BV withholds 15% Dutch dividend tax on distributions to the family, credited against Box 2.",
+        "treaty_network": "A Dutch BV is a treaty resident with access to the Netherlands' ~100 treaties.",
+        "holding_company_notes": "This regime is the BV itself."
+      },
+      "wealth_tax": {
+        "summary": "No Box 3 deemed-return tax on the portfolio: the parents' shares in the BV are a substantial interest taxed in Box 2, and the BV itself has no net wealth tax. Savings and investments kept outside the BV stay in Box 3; the family home is in Box 1.",
+        "eligibility_conditions": "Shareholding of at least 5% in the BV (substantial interest).",
+        "important_exceptions": "The 2.16% Box 3 charge is replaced by corporate tax on realised income plus Box 2 tax on distributions.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Wet inkomstenbelasting 2001 (art. 2.12 Box 2 rates 2026)",
+            "url": "https://wetten.overheid.nl/BWBR0011353/2026-01-01/",
+            "publisher": "Overheid.nl",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Aanmerkelijk belang en box 2 in 2026",
+            "url": "https://www.portsighttax.com/insights/aanmerkelijk-belang-box-2-2026",
+            "publisher": "Portsight Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Municipal OZB on the home as in the standard regime."
+      },
+      "sources": [
+        {
+          "title": "Wet inkomstenbelasting 2001 (art. 2.12 Box 2 rates 2026)",
+          "url": "https://wetten.overheid.nl/BWBR0011353/2026-01-01/",
+          "publisher": "Overheid.nl",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Netherlands - Corporate - Taxes on corporate income",
+          "url": "https://taxsummaries.pwc.com/netherlands/corporate/taxes-on-corporate-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Aanmerkelijk belang en box 2 in 2026",
+          "url": "https://www.portsighttax.com/insights/aanmerkelijk-belang-box-2-2026",
+          "publisher": "Portsight Tax",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Facts and circumstances (art. 4 General Taxation Act): durable personal ties such as a permanent home, family, registration and intended stay. As a rule of thumb an expatriate whose family moves with them is resident from arrival.",
+    "routes": [
+      {
+        "name": "EU/EEA/Swiss free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Registration with the municipality (BRP); no permit."
+      },
+      {
+        "name": "Residence permit for third-country nationals",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "No residence-by-investment for passive investors was verified in this session (the former foreign investor scheme of EUR 1.25 million was closed in 2024, from general knowledge). US citizens can use the Dutch-American Friendship Treaty self-employed permit with a EUR 4,500 business investment (from general knowledge). Not verified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Netherlands - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/netherlands/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.258,
+    "summary": "Corporate income tax 19% on the first EUR 200,000 and 25.8% above. Participation exemption for holdings of at least 5%. Dividend withholding tax 15%; conditional withholding tax on payments to low-tax jurisdictions.",
+    "special_zones": "None.",
+    "sources": [
+      {
+        "title": "Netherlands - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/netherlands/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Amsterdam",
+    "notes": "Rent is a small listing-portal sample of asking rents (15 October 2026), not an agency index. Price per m², health insurance and staff costs were not sourced.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 4500,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent of the 11 Amsterdam homes with 5+ rooms (about 4 bedrooms) and at least 150 m² found among the rental listings on Huurstunt.nl on 15 October 2026 (range EUR 3,750-8,950; houses and large apartments, e.g. Marnixkade, Egelantiersstraat, Gerrit van der Veenstraat). Small sample; asking rents.",
+      "source": {
+        "title": "Huurstunt: huurwoningen in Amsterdam (listing sample)",
+        "url": "https://www.huurstunt.nl/huren/amsterdam",
+        "publisher": "Huurstunt.nl",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 32755,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "International School of Amsterdam (Amstelveen), Grade 11 and Grade 12 tuition fee for 2026-2027 (Grades 9-10 EUR 31,895); see the school's schedule of fees for other charges.",
+      "source": {
+        "title": "International School of Amsterdam: Tuition Fees for School Year 2026-2027",
+        "url": "https://www.isa.nl/fees/",
+        "publisher": "International School of Amsterdam",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "Amsterdam",
+      "lon": 4.88969,
+      "lat": 52.37403,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2759794"
+    },
+    {
+      "name": "The Hague",
+      "lon": 4.29861,
+      "lat": 52.07667,
+      "kind": "city",
+      "coordinate_source": "GeoNames 2747373"
+    }
+  ],
+  "us_citizen_notes": "US-Netherlands income tax treaty and the 1969 US-Netherlands estate tax treaty apply. Box 3 tax on a deemed return is generally not creditable as a foreign income tax against US tax on actual dividends and gains (no matching income), so US citizens can face both.",
+  "open_questions": [
+    "30% ruling: an employment-income regime (30% tax-free allowance, falling to 27% from 2027). The partial non-resident status that kept Box 3 off worldwide assets was abolished from 2025, with grandfathering to the end of 2026 only for people who used it before 2024, so it gives a new arrival no Box 3 relief and is not modelled.",
+    "Actual-return Box 3 expected from 2028; when enacted, CGT and dividend fields will need real rates (36% on actual returns).",
+    "Residence routes for non-EU nationals not verified."
+  ]
+}

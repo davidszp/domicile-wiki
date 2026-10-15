@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>domicile.wiki</title>
+  <meta name="description" content="Interactive, source-linked map ranking countries and regions for relocation: a family office (capital gains, dividend, inheritance and wealth taxes), an expat employee or a digital nomad (income tax, social security, rent and visas), plus safety, stability, rule of law and quality of life.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="color-scheme" content="light dark">
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/app.css">
+  <script src="vendor/d3-7.9.0.min.js" defer></script>
+  <script src="vendor/topojson-client-3.1.0.min.js" defer></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#panel">Skip to details panel</a>
+  <header class="topbar">
+    <div class="brand">
+      <h1 class="wordmark" aria-label="domicile.wiki">d<svg class="globe-o" viewBox="0 0 44 44" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="22" cy="22" r="18" stroke-width="3.6"/><ellipse cx="22" cy="22" rx="7.5" ry="18" stroke-width="3.6"/><line x1="4" y1="22" x2="40" y2="22" stroke-width="3.6"/><path d="M8 11.5Q22 8 36 11.5M8 32.5Q22 36 36 32.5" stroke-width="2.4"/></g></svg>micile<span class="tld">.wiki</span></h1>
+      <span id="built" class="muted small"></span>
+    </div>
+    <div class="persona-wrap">
+      <div class="persona-switch" id="persona" role="group" aria-label="Who is moving"></div>
+      <span id="persona-summary" class="sr-only"></span>
+    </div>
+    <nav class="views" id="views" aria-label="Map views"></nav>
+    <div class="controls">
+      <label class="ctl-inline"><span>Layer</span><select id="layer"></select></label>
+      <label class="ctl-inline"><span>Citizenship</span>
+        <select id="citizenship">
+          <option value="EU">EU citizen</option>
+          <option value="US">US citizen</option>
+          <option value="OTHER">Other nationality</option>
+        </select>
+      </label>
+      <label class="ctl-inline" id="activity-wrap" title="Some special regimes (e.g. Spain's Beckham law, Portugal's IFICI) need employment or a qualifying business activity. A passive investor family cannot use them.">
+        <input type="checkbox" id="activity"> <span>Family will work locally</span>
+      </label>
+      <label class="ctl-inline" id="structures-wrap" title="Holding structures such as a German asset-management GmbH or an Austrian private foundation can cut tax on gains while money stays invested. Payouts to the family are taxed.">
+        <input type="checkbox" id="structures" checked> <span>Consider holding structures</span>
+      </label>
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button type="button" data-theme-choice="system" title="Follow the system setting" aria-label="Follow system theme">Auto</button>
+        <button type="button" data-theme-choice="light" title="Light theme" aria-label="Light theme">Light</button>
+        <button type="button" data-theme-choice="dark" title="Dark theme" aria-label="Dark theme">Dark</button>
+      </div>
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Find a jurisdiction…" autocomplete="off" role="combobox"
+               aria-expanded="false" aria-controls="search-results" aria-autocomplete="list" aria-label="Find a jurisdiction">
+        <ul id="search-results" role="listbox" hidden></ul>
+      </div>
+    </div>
+  </header>
+  <main class="layout">
+    <section class="map-wrap" aria-label="Map">
+      <div id="map" class="map"></div>
+      <div class="map-tools">
+        <button id="zoom-in" aria-label="Zoom in">+</button>
+        <button id="zoom-out" aria-label="Zoom out">−</button>
+        <button id="zoom-reset" aria-label="Reset zoom">⟲</button>
+      </div>
+      <label id="regions-toggle-wrap" class="regions-toggle" hidden>
+        <input type="checkbox" id="regions-toggle"> Show Swiss cantons, Spanish and Italian regions
+      </label>
+      <div id="legend" class="legend" aria-label="Legend"></div>
+      <p id="views-note" class="small muted views-note"></p>
+      <div id="loading" class="loading">Loading map data…</div>
+      <div id="fatal" class="fatal" role="alert" hidden></div>
+      <noscript><p class="fatal">This interactive map needs JavaScript.</p></noscript>
+    </section>
+    <aside class="side">
+      <div id="tabs" class="tabs" role="tablist"></div>
+      <div id="panel" class="panel" role="tabpanel" tabindex="-1"></div>
+    </aside>
+  </main>
+  <footer class="footer small">
+    Boundaries: Natural Earth. Indicators: World Bank WGI/WDI, UNDP, Transparency International, EF EPI. Not tax or legal advice.
+  </footer>
+</body>
+</html>

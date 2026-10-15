@@ -1,0 +1,272 @@
+{
+  "id": "UKR",
+  "name": "Ukraine",
+  "continent": "Europe",
+  "region": "Eastern Europe",
+  "currency": "UAH",
+  "researched_on": "2026-10-15",
+  "summary": "Ukraine is under martial law. Residents are taxed on worldwide income: investment profit (gains on securities) at 18% PIT plus a 5% military levy (23%); Ukrainian dividends at 5% + 5%; foreign dividends at 9% + 5%. One real-estate sale per year held over three years is exempt. There is no wealth tax. Inheritances and gifts from close family (spouse, children, parents, siblings, grandparents, grandchildren) are taxed at 0% with no military levy when the family member is a Ukrainian tax resident. The war, martial-law restrictions and security risk dominate any relocation decision.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Ordinary residence; worldwide income taxed at 18% PIT plus the 5% martial-law military levy.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident under the permanent home / centre of vital interests / 183-day / citizenship cascade. Foreigners need a residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "status": "researched",
+        "summary": "Investment profit (gains on securities and corporate rights) is passive income taxed at 18% PIT plus the 5% military levy, 23% in total. Real estate: the first sale in a calendar year of property held more than three years is exempt; further sales in the year are taxed at 5% PIT plus 5% military levy (10%) for residents.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ukraine – Individual – Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/ukraine/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ukraine – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/ukraine/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ukraine – Individual – Significant developments",
+            "url": "https://taxsummaries.pwc.com/ukraine/individual/significant-developments",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The PwC pages do not set out a separate capital gains section for securities; the 18% rate relies on 'investment profit' being passive income at 18%.",
+          "Treatment of a sale of foreign real estate not confirmed."
+        ],
+        "important_exceptions": "Military levy (військовий збір) raised from 1.5% to 5% from 1 December 2024 (Law 4015-IX) while martial law lasts; it returns to 1.5% from 1 January of the year after martial law ends.",
+        "headline_rate": 0.23,
+        "rates": {
+          "listed_securities_domestic": 0.23,
+          "listed_securities_foreign": 0.23,
+          "private_business_sale": 0.23,
+          "real_estate_local": 0.1,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Securities and private business: 18% + 5% military levy = 23%. Local real estate: 0% for the first qualifying sale each year, 10% (5% + 5%) for further sales; 10% used as the top-end rate. Foreign real estate left null (treatment as foreign-source income at 18% + 5% not confirmed).",
+        "holding_period_rules": "Real estate: exempt if first sale in the year and held >3 years (not required for inherited property). No holding-period relief for securities found.",
+        "foreign_assets": "Residents taxed on worldwide income with treaty relief.",
+        "professional_trader": "No specific guidance found."
+      },
+      "dividends": {
+        "status": "researched",
+        "summary": "Dividends from Ukrainian CIT-paying companies: 5% PIT + 5% military levy (10%). Dividends from non-residents, mutual funds and non-CIT payers: 9% + 5% (14%). 'Not ordinary' dividends: 18% + 5%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ukraine – Individual – Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/ukraine/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ukraine – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/ukraine/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ukraine – Individual – Significant developments",
+            "url": "https://taxsummaries.pwc.com/ukraine/individual/significant-developments",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether foreign WHT can be credited against the military levy as well as PIT was not verified."
+        ],
+        "important_exceptions": "Military levy (військовий збір) raised from 1.5% to 5% from 1 December 2024 (Law 4015-IX) while martial law lasts; it returns to 1.5% from 1 January of the year after martial law ends.",
+        "headline_rate": 0.23,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.14,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic 5% + 5% = 10%; foreign 9% + 5% = 14% (PwC, reviewed 30 Jun 2026). Headline = 23% for non-ordinary dividends.",
+        "withholding_outbound": "15% WHT on dividends to non-resident companies (treaty 0/5/10%); 5% (or 18%) to non-resident individuals plus military levy.",
+        "treaty_network": "About 71 treaties listed by PwC, including the United States and most EU states."
+      },
+      "wealth_tax": {
+        "status": "researched",
+        "summary": "Ukraine has no net wealth tax. Real estate tax is charged per square metre above exempt areas, plus UAH 25,000 a year for large residences.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ukraine – Individual – Other taxes",
+            "url": "https://taxsummaries.pwc.com/ukraine/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Real estate tax set locally, capped at 1.5% of the minimum wage per m2 (max UAH 129.71/m2 in 2026) above 60 m2 (flat) or 120 m2 (house); plus UAH 25,000 a year per apartment over 300 m2 or house over 500 m2."
+      },
+      "inheritance": {
+        "status": "researched",
+        "summary": "No separate inheritance or gift tax; inheritances and gifts are PIT income. From resident family members of the first and second degree (spouse, children, parents, siblings, grandparents, grandchildren) the rate is 0% and no military levy is due (dtkt.ua, May 2026). From other resident persons: 5% PIT + 5% military levy. From or to a non-resident: 18% PIT (plus military levy).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ukraine – Individual – Other taxes",
+            "url": "https://taxsummaries.pwc.com/ukraine/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Оподаткування подарунка та спадщини у 2026 році: правила для не родичів (22.05.2026)",
+            "url": "https://news.dtkt.ua/taxation/pdfo/111281-opodatkuvannia-podarunka-ta-spadshhini-2026-pravila-dlia-ne-rodiciv",
+            "publisher": "Дебет-Кредит (dtkt.ua)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ukraine – Individual – Significant developments",
+            "url": "https://taxsummaries.pwc.com/ukraine/individual/significant-developments",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Exact state duty / notarial costs on inheritance of real estate were not quantified.",
+          "Whether a non-resident parent leaving assets to a resident child triggers 18% (PwC wording: 'from or by a non-resident') was not confirmed against the Tax Code."
+        ],
+        "eligibility_conditions": "0% only if both the family member and the recipient are Ukrainian tax residents; a non-resident testator/donor or heir triggers 18%.",
+        "important_exceptions": "Military levy (військовий збір) raised from 1.5% to 5% from 1 December 2024 (Law 4015-IX) while martial law lasts; it returns to 1.5% from 1 January of the year after martial law ends. Law 4113 (4 Dec 2024) applies the 5% levy to taxable inherited/gifted property.",
+        "basis": "beneficiary",
+        "children_treatment": "exempt_with_conditions",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Gifts follow the same rules as inheritances (0% from close family who are Ukrainian tax residents).",
+        "gifts_same_as_inheritance": true,
+        "domicile_rules": "Residence of testator and heir decides between 0% and 18%."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Cascade: permanent home in Ukraine; if homes in two countries, centre of vital interests; otherwise 183+ days in the calendar year; finally Ukrainian citizenship.",
+    "routes": [
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Ukraine is not in the EU; foreigners need a temporary or permanent residence permit. Martial law affects entry and exit. Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ukraine – Individual – Residence",
+        "url": "https://taxsummaries.pwc.com/ukraine/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.18,
+    "summary": "CIT 18%; financial institutions (except insurers) 25% from 2025; banks a temporary 50%. 15% WHT on dividends to non-resident companies.",
+    "sources": [
+      {
+        "title": "Ukraine – Corporate – Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/ukraine/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Ukraine – Corporate – Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/ukraine/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Kyiv",
+      "lon": 30.523611,
+      "lat": 50.45,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q1899"
+    }
+  ],
+  "us_citizen_notes": "US–Ukraine income tax treaty exists (listed by PwC); saving clause means US tax still applies.",
+  "open_questions": [
+    "Martial law and the ongoing war make long-term relocation impractical for most families; the tool should flag this beyond tax.",
+    "The 5% military levy reverts to 1.5% only after martial law ends.",
+    "Cost of living: Pechersk School International's fees (psi.kiev.ua was unreachable) not checked; health insurance, housekeeper and price per m2 not sourced."
+  ],
+  "cost_of_living": {
+    "city": "Kyiv",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 3200,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 224 distinct long-term listings (interquartile range USD 2,200-4,500) of flats with 4+ rooms and at least 120 m2 in Kyiv's Pechersk district (Lipky, Pechersk, Chorna Hora, Zvirynets, Saperne Pole) on DOM.RIA, snapshot 2026-10-15: DOM.RIA reported 688 matching 4+ room rentals in Pechersk; duplicates (DOM.RIA's duplicate links, then same rooms, area and price) left 241, of which 224 are 120 m2+. Prices are as DOM.RIA converts them to USD (most listings are quoted in USD; NBU rate on 15 Oct 2026: USD 1 = UAH 44.98); the median is about UAH 144,000. Asking rents; Ukrainian room counts include the living room. Martial law: listings and rents reflect the wartime market.",
+      "source": {
+        "title": "DOM.RIA - Оренда квартир у Києві, Печерський район, 4+ кімнати (search API)",
+        "url": "https://dom.ria.com/node/searchEngine/v2/?category=1&realty_type=2&operation=3&state_id=10&city_id=10&characteristic%5B209%5D%5Bfrom%5D=4&district_id=15189",
+        "publisher": "DOM.RIA",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 19600,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Kyiv International School (QSI), 2026-27 annual tuition for the '5 Year-Old Class & Above' band, which covers all grades to Grade 12 (no separate secondary rate): USD 19,600 in three instalments (7,800 + 5,900 + 5,900). Plus a Capital Fund fee of USD 1,600 a year and a one-off USD 600 application fee. Used because Pechersk School International's website (psi.kiev.ua) returned 504 errors on 2026-10-15, so its fees could not be read from the school's own page.",
+      "source": {
+        "title": "Kyiv International School - Fees 2026-2027",
+        "url": "https://kyiv.qsi.org/join-kis/fees-2026-2027",
+        "publisher": "Kyiv International School (Quality Schools International)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent from DOM.RIA listings in Pechersk (2026-10-15); school fee from Kyiv International School's 2026-27 fee page (Pechersk School International's site was down). Health insurance, housekeeper and price per m2 not sourced. Wartime market under martial law."
+  }
+}

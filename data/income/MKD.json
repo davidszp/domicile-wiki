@@ -1,0 +1,88 @@
+{
+  "id": "MKD",
+  "name": "North Macedonia",
+  "currency": "MKD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Flat 10% personal income tax on most income, including employment and self-employment, and residents are taxed on worldwide income. Employee contributions total 28.0% (pension 18.8%, health 7.5%, employment 1.2%, additional health 0.5%).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.1
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.28,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.28,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Best-available value, still unconfirmed for the self-employed: the Public Revenue Office (UJP) publishes one set of social contribution rates (pension 18.8%, health 7.5%, unemployment 1.2%, injury 0.5%; its table covers 2020-2021 and does not say who pays) and PwC gives the employee total as 28.0%. Neither page states a separate self-employed rate or base, so 28% is used as the likely statutory total and flagged low confidence. The base is between 50% and 16 times the average salary (PwC; MKD amounts not found).",
+    "social_security_deductible": 1,
+    "local_tax_note": "PwC does not state personal allowances; the personal allowance is left at zero.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: North Macedonia individual - taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/north-macedonia/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: North Macedonia individual - other taxes",
+        "url": "https://taxsummaries.pwc.com/north-macedonia/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Public Revenue Office: Rates per types of social contributions and average salary",
+        "url": "https://www.ujp.gov.mk/en/vodic/category/700",
+        "publisher": "Public Revenue Office of North Macedonia (UJP)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: North Macedonia individual - deductions",
+        "url": "https://taxsummaries.pwc.com/north-macedonia/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "low",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Self-employed contribution rate and base not found on any page opened; 28% (the same statutory set of rates) is a best estimate.",
+      "Personal allowance and average salary (MKD) not found.",
+      "PwC dates the 10% flat rate from 2023; no 2026 change confirmed."
+    ]
+  },
+  "regimes": [],
+  "costs": {
+    "city": "Skopje",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 374,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average 2026 rent for a 1-bedroom in Skopje per LifeIndexed (method not described).",
+      "source": {
+        "title": "Cost of living in Skopje 2026",
+        "url": "https://lifeindexed.com/cost/europe/north-macedonia/skopje/2026/",
+        "publisher": "LifeIndexed",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": null,
+    "notes": "LifeIndexed lists only 1-bedroom (EUR 374) and 3-bedroom (EUR 695) rents and does not describe its method. Investropa and Expatistan 2-bed pages could not be opened (404, 403). 2-bedroom left null."
+  },
+  "residence_routes": "No dedicated digital nomad category was found. Search results (law firms, guides) say remote workers typically use a long-stay visa and temporary residence on a business or employment ground; amendments to the Law on Foreigners took effect on 26 September 2025 and simplified documents for employment-based permits. Not verified on an official page.",
+  "open_questions": [
+    "Nomad visa absence rests on secondary sources (search results), not an official page.",
+    "2-bedroom rent missing."
+  ]
+}

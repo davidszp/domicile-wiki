@@ -1,0 +1,3518 @@
+{
+ "parent": "ESP",
+ "unit_type": "autonomous community / autonomous city",
+ "researched_on": "2026-10-15",
+ "notes": "All 17 autonomous communities plus Ceuta and Melilla. Savings income (capital gains, dividends) is taxed on the national 19-30% scale in all common-regime regions; only Navarra and the Basque Country have their own IRPF. Wealth-tax brackets per region encode max(regional IP after rebates, state ITSGF) computed from the official 2026 scales (Ministerio de Hacienda, 'Tributación Autonómica. Medidas 2026', updated 23/09/2026). Inheritance brackets assume a child aged 21+ with pre-existing wealth below about EUR 400,000 (multiplier 1.0); richer heirs pay up to 20% more where state multipliers apply. Regions without an override for a metric use the national (state) rules.",
+ "units": [
+  {
+   "code": "ES-MD",
+   "name": "Comunidad de Madrid",
+   "summary": "Madrid: no wealth tax below about EUR 3.7m, ITSGF above; children pay about 0.3% on inheritances and gifts (99% rebate). Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "Madrid: the 100% IP rebate (since 2009) is replaced, while the ITSGF is in force, by a rebate equal to the excess of IP over ITSGF, so the IP paid equals the ITSGF amount and stays in Madrid. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
+      "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+      "regional_differences": "",
+      "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP rebated; ITSGF payable (Madrid)",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 3700000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.017
+         },
+         {
+          "from_amount": 2347998.03,
+          "rate": 0.021
+         },
+         {
+          "from_amount": 7695996.06,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Madrid: 99% rebate for children on inheritances and gifts; about 0.33% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Group II reduction EUR 16,000; Madrid scale (top 34% above EUR 798,817.20); multiplier 1.0-1.2; 99% rebate (art. 25 D.Leg. 1/2010).",
+      "important_exceptions": "Rebate only on assets declared on time.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 16000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.000765
+       },
+       {
+        "from_amount": 8313.2,
+        "rate": 0.00085
+       },
+       {
+        "from_amount": 16001.35,
+        "rate": 0.000935
+       },
+       {
+        "from_amount": 24002.01,
+        "rate": 0.00102
+       },
+       {
+        "from_amount": 32002.7,
+        "rate": 0.001105
+       },
+       {
+        "from_amount": 40003.36,
+        "rate": 0.00119
+       },
+       {
+        "from_amount": 48004.04,
+        "rate": 0.001275
+       },
+       {
+        "from_amount": 56004.71,
+        "rate": 0.00136
+       },
+       {
+        "from_amount": 64005.39,
+        "rate": 0.001445
+       },
+       {
+        "from_amount": 72006.05,
+        "rate": 0.00153
+       },
+       {
+        "from_amount": 80006.73,
+        "rate": 0.001615
+       },
+       {
+        "from_amount": 119947.58,
+        "rate": 0.00187
+       },
+       {
+        "from_amount": 159888.45,
+        "rate": 0.002125
+       },
+       {
+        "from_amount": 239770.16,
+        "rate": 0.00255
+       },
+       {
+        "from_amount": 399408.59,
+        "rate": 0.002975
+       },
+       {
+        "from_amount": 798817.2,
+        "rate": 0.0034
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 99% rebate if in a public document when the base exceeds EUR 10,000 and, for cash, with the origin of funds stated; Madrid scale 7.65%-34% before rebate.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": [],
+   "markers": [
+    {
+     "name": "Madrid",
+     "lon": -3.70256,
+     "lat": 40.4165,
+     "kind": "city",
+     "coordinate_source": "GeoNames 3117735"
+    }
+   ],
+   "cost_of_living": {
+    "city": "Madrid",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 8000,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 30 distinct homes (interquartile range EUR 5,875-14,175; mostly 4-5 bedroom flats; villas in La Moraleja, Arturo Soria and Puerta de Hierro list at EUR 8,000-16,000) on LuxuryEstate.com (Madrid), snapshot taken 2026-10-15: listings with 4-6 bedrooms, priced per month or with no period stated, duplicates removed. Asking rents, not agreed rents; a luxury listing portal skews to the top of the market, and some listings may be furnished or seasonal lets.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for rent in Madrid",
+      "url": "https://www.luxuryestate.com/rent/spain/community-of-madrid/province-of-madrid/madrid",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 7816,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 71 homes (interquartile range EUR 5,833-11,714) for sale on LuxuryEstate.com (Madrid), snapshot 2026-10-15: first five result pages, listings of EUR 500,000+ and 80 m2+ (offices and land excluded). Asking prices of luxury listings, not transaction prices.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in Madrid",
+      "url": "https://www.luxuryestate.com/spain/community-of-madrid/province-of-madrid/madrid",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 23700,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Runnymede College (British curriculum), Sixth Form tuition EUR 7,900 per term x 3 terms for 2026-27; plus a one-off EUR 3,500 enrolment fee.",
+     "source": {
+      "title": "Runnymede College Madrid - Fees 2026-2027",
+      "url": "https://www.runnymede-college.com/admissions/fees",
+      "publisher": "Runnymede College",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "Same Madrid figures as the national file (ESP.json), including the Runnymede College fee."
+   }
+  },
+  {
+   "code": "ES-AN",
+   "name": "Andalucía",
+   "summary": "Andalucía: no wealth tax below about EUR 3.7m, ITSGF above; children pay about 0.2% on inheritances (EUR 1m reduction + 99% rebate) and 99% rebate on gifts. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "Andalucía: the 100% IP rebate (since 2022) is replaced, while the ITSGF is in force, by a rebate equal to the excess of IP over ITSGF (choice removed by Ley 7/2024 from 31/12/2024); the regional scale is suspended. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
+      "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+      "regional_differences": "",
+      "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP rebated; ITSGF payable (Andalucía)",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 3700000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.017
+         },
+         {
+          "from_amount": 2347998.03,
+          "rate": 0.021
+         },
+         {
+          "from_amount": 7695996.06,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Andalucía: EUR 1m reduction per child and 99% rebate; about 0.23% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Group II reduction EUR 1,000,000 (art. 28 Ley 5/2021); scale 7%-26% (art. 37); multiplier 1.0 for Groups I-II regardless of pre-existing wealth.",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 1000000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.0007
+       },
+       {
+        "from_amount": 8000.0,
+        "rate": 0.0008
+       },
+       {
+        "from_amount": 15000.0,
+        "rate": 0.001
+       },
+       {
+        "from_amount": 30000.0,
+        "rate": 0.0012
+       },
+       {
+        "from_amount": 50000.0,
+        "rate": 0.0014
+       },
+       {
+        "from_amount": 70000.0,
+        "rate": 0.0016
+       },
+       {
+        "from_amount": 100000.0,
+        "rate": 0.0018
+       },
+       {
+        "from_amount": 150000.0,
+        "rate": 0.002
+       },
+       {
+        "from_amount": 200000.0,
+        "rate": 0.0022
+       },
+       {
+        "from_amount": 400000.0,
+        "rate": 0.0024
+       },
+       {
+        "from_amount": 800000.0,
+        "rate": 0.0026
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 99% rebate (art. 40 Ley 5/2021) if formalised in a public document with simultaneous delivery when above EUR 5,000; cash gifts need the origin of funds stated; no EUR 1m reduction for gifts.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": [],
+   "markers": [
+    {
+     "name": "Málaga",
+     "lon": -4.42034,
+     "lat": 36.72016,
+     "kind": "city",
+     "coordinate_source": "GeoNames 2514256"
+    }
+   ],
+   "cost_of_living": {
+    "city": "Marbella",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 25000,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 9 distinct villas and penthouses (EUR 12,500-60,000; including the Golden Mile and La Quinta) on LuxuryEstate.com (Marbella), snapshot taken 2026-10-15: listings with 4-6 bedrooms, priced per month or with no period stated, duplicates removed. Asking rents, not agreed rents; a luxury listing portal skews to the top of the market, and some listings may be furnished or seasonal lets.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for rent in Marbella",
+      "url": "https://www.luxuryestate.com/rent/spain/andalusia/malaga/marbella",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 8636,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 73 homes (interquartile range EUR 6,642-10,966) for sale on LuxuryEstate.com (Marbella), snapshot 2026-10-15: first five result pages, listings of EUR 500,000+ and 80 m2+ (offices and land excluded). Asking prices of luxury listings, not transaction prices.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in Marbella",
+      "url": "https://www.luxuryestate.com/spain/andalusia/malaga/marbella",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 28255,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Sotogrande International School (IB World School; about 45 km west of Marbella in San Roque, Cádiz), IB Diploma D1-D2 day tuition 2026-27, lunches included; plus EUR 550 registration, EUR 4,000 family membership fee and EUR 2,500 refundable deposit. Chosen because Aloha College Marbella's site did not respond and Swans publishes no fee table.",
+     "source": {
+      "title": "Sotogrande International School - Fee Schedule 2026-27",
+      "url": "https://www.sis.ac/sites/school80/files/2026-03/fees_2026-27_sis_new_1.pdf",
+      "publisher": "Sotogrande International School",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "Marbella long-let villa rents on the portal are thin (9 distinct monthly listings) and many villas are offered by the week, so the rent is indicative only. Health insurance and housekeeper costs were not sourced."
+   }
+  },
+  {
+   "code": "ES-RI",
+   "name": "La Rioja",
+   "summary": "La Rioja: no wealth tax below about EUR 3.7m, ITSGF above; 99% inheritance and gift rebate for children. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "La Rioja: the 100% IP rebate (from 2025, Ley 6/2024) is replaced, while the ITSGF is in force, by a rebate equal to the excess of IP over ITSGF. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
+      "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+      "regional_differences": "",
+      "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP rebated; ITSGF payable (La Rioja)",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 3700000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.017
+         },
+         {
+          "from_amount": 2347998.03,
+          "rate": 0.021
+         },
+         {
+          "from_amount": 7695996.06,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "La Rioja: 99% deduction for children on inheritances and gifts; about 0.33% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "State reduction EUR 15,956.87, state scale and multipliers; 99% deduction (art. 37 Ley 10/2017, single rate since Ley 2/2024).",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 15956.87,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.000765
+       },
+       {
+        "from_amount": 7993.46,
+        "rate": 0.00085
+       },
+       {
+        "from_amount": 15980.91,
+        "rate": 0.000935
+       },
+       {
+        "from_amount": 23968.36,
+        "rate": 0.00102
+       },
+       {
+        "from_amount": 31955.81,
+        "rate": 0.001105
+       },
+       {
+        "from_amount": 39943.26,
+        "rate": 0.00119
+       },
+       {
+        "from_amount": 47930.72,
+        "rate": 0.001275
+       },
+       {
+        "from_amount": 55918.17,
+        "rate": 0.00136
+       },
+       {
+        "from_amount": 63905.62,
+        "rate": 0.001445
+       },
+       {
+        "from_amount": 71893.07,
+        "rate": 0.00153
+       },
+       {
+        "from_amount": 79880.52,
+        "rate": 0.001615
+       },
+       {
+        "from_amount": 119757.67,
+        "rate": 0.00187
+       },
+       {
+        "from_amount": 159634.83,
+        "rate": 0.002125
+       },
+       {
+        "from_amount": 239389.13,
+        "rate": 0.00255
+       },
+       {
+        "from_amount": 398777.54,
+        "rate": 0.002975
+       },
+       {
+        "from_amount": 797555.08,
+        "rate": 0.0034
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 99% deduction if in a notarial document (cash by bank transfer with a private document stating the origin of funds also accepted).",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": []
+  },
+  {
+   "code": "ES-MC",
+   "name": "Región de Murcia",
+   "summary": "Murcia: while the ITSGF exists, a rebate equal to IP minus ITSGF leaves no wealth tax below about EUR 3.7m and the ITSGF level above; 99% inheritance and gift rebate for children. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "Murcia: there is no general rebate, but since 25/7/2025 (Ley 3/2025) a rebate equal to the excess of IP over ITSGF applies; with no ITSGF due, the whole IP is rebated. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
+      "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+      "regional_differences": "",
+      "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP rebated; ITSGF payable (Murcia)",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 3700000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.017
+         },
+         {
+          "from_amount": 2347998.03,
+          "rate": 0.021
+         },
+         {
+          "from_amount": 7695996.06,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Murcia: 99% deduction for children; about 0.36% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "State reduction EUR 15,956.87; Murcia scale (31.75% and 36.5% in the top two bands); state multipliers; 99% deduction for Group II.",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 15956.87,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.000765
+       },
+       {
+        "from_amount": 7993.46,
+        "rate": 0.00085
+       },
+       {
+        "from_amount": 15980.91,
+        "rate": 0.000935
+       },
+       {
+        "from_amount": 23968.36,
+        "rate": 0.00102
+       },
+       {
+        "from_amount": 31955.81,
+        "rate": 0.001105
+       },
+       {
+        "from_amount": 39943.26,
+        "rate": 0.00119
+       },
+       {
+        "from_amount": 47930.72,
+        "rate": 0.001275
+       },
+       {
+        "from_amount": 55918.17,
+        "rate": 0.00136
+       },
+       {
+        "from_amount": 63905.62,
+        "rate": 0.001445
+       },
+       {
+        "from_amount": 71893.07,
+        "rate": 0.00153
+       },
+       {
+        "from_amount": 79880.52,
+        "rate": 0.001615
+       },
+       {
+        "from_amount": 119757.67,
+        "rate": 0.00187
+       },
+       {
+        "from_amount": 159634.83,
+        "rate": 0.002125
+       },
+       {
+        "from_amount": 239389.13,
+        "rate": 0.00255
+       },
+       {
+        "from_amount": 398777.54,
+        "rate": 0.003175
+       },
+       {
+        "from_amount": 797555.08,
+        "rate": 0.00365
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to Groups I-III: 99% deduction if in a public document and the origin of funds is justified.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": [
+    "Murcia's rebate formula reads as rebating the full IP when no ITSGF is due (Hacienda summary of DT 2ª D.Leg. 1/2010); confirm with the regional tax agency."
+   ]
+  },
+  {
+   "code": "ES-CB",
+   "name": "Cantabria",
+   "summary": "Cantabria: 100% IP rebate (ITSGF-difference rule above EUR 3m after allowance), so ITSGF level above about EUR 3.7m; children fully exempt in practice (100% rebate on inheritances and gifts). Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "Cantabria: the 100% IP rebate (since 2024) does not apply when net wealth after the EUR 700,000 allowance exceeds EUR 3m while the ITSGF exists; a rebate equal to IP minus ITSGF applies instead. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
+      "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+      "regional_differences": "",
+      "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP rebated; ITSGF payable (Cantabria)",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 3700000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.017
+         },
+         {
+          "from_amount": 2347998.03,
+          "rate": 0.021
+         },
+         {
+          "from_amount": 7695996.06,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Cantabria: 100% rebate of the tax for children and spouses on inheritances and on gifts (since 2019/2024).",
+      "exemptions_thresholds": "Group II reduction EUR 50,000; state scale; 100% rebate (art. 8 D.Leg. 62/2008).",
+      "important_exceptions": "Condition: regional rules apply (deceased resident in Cantabria for most of the last 5 years). A return must still be filed.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "exempt_with_conditions",
+      "exemption": 0,
+      "brackets": [],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 100% rebate (art. 8.3 D.Leg. 62/2008).",
+      "gifts_same_as_inheritance": true,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": []
+  },
+  {
+   "code": "ES-EX",
+   "name": "Extremadura",
+   "summary": "Extremadura: 100% IP rebate with no ITSGF clause, so the state ITSGF applies in full above about EUR 3.7m; 99% inheritance rebate for children, but large gifts are taxed. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "Extremadura: a general 100% IP rebate applies (since 2023); with no IP paid, the ITSGF is payable in full to the state. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
+      "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+      "regional_differences": "",
+      "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP rebated; ITSGF payable (Extremadura)",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 3700000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.017
+         },
+         {
+          "from_amount": 2347998.03,
+          "rate": 0.021
+         },
+         {
+          "from_amount": 7695996.06,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Extremadura: EUR 500,000 reduction and 99% rebate for children's inheritances; about 0.32% of a EUR 10m inheritance. Gifts above EUR 600,000 get no rebate on the excess.",
+      "exemptions_thresholds": "Group II reduction EUR 500,000 (since 2024); state scale and multipliers; 99% rebate (art. 20 D.Leg. 1/2018).",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 500000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.000765
+       },
+       {
+        "from_amount": 7993.46,
+        "rate": 0.00085
+       },
+       {
+        "from_amount": 15980.91,
+        "rate": 0.000935
+       },
+       {
+        "from_amount": 23968.36,
+        "rate": 0.00102
+       },
+       {
+        "from_amount": 31955.81,
+        "rate": 0.001105
+       },
+       {
+        "from_amount": 39943.26,
+        "rate": 0.00119
+       },
+       {
+        "from_amount": 47930.72,
+        "rate": 0.001275
+       },
+       {
+        "from_amount": 55918.17,
+        "rate": 0.00136
+       },
+       {
+        "from_amount": 63905.62,
+        "rate": 0.001445
+       },
+       {
+        "from_amount": 71893.07,
+        "rate": 0.00153
+       },
+       {
+        "from_amount": 79880.52,
+        "rate": 0.001615
+       },
+       {
+        "from_amount": 119757.67,
+        "rate": 0.00187
+       },
+       {
+        "from_amount": 159634.83,
+        "rate": 0.002125
+       },
+       {
+        "from_amount": 239389.13,
+        "rate": 0.00255
+       },
+       {
+        "from_amount": 398777.54,
+        "rate": 0.002975
+       },
+       {
+        "from_amount": 797555.08,
+        "rate": 0.0034
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 99% rebate up to EUR 300,000 of base, 50% on the part from EUR 300,000 to 600,000, nothing above: a large gift is taxed at up to 34% (state scale).",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": []
+  },
+  {
+   "code": "ES-CT",
+   "name": "Cataluña",
+   "summary": "Catalonia: wealth tax from EUR 500,000 (0.21%-2.75%, 3.48% above EUR 20m while ITSGF exists); inheritance by children taxed heavily (rebate falls from 60% to 0% as the inheritance grows; about 28% on EUR 10m); gifts 5-9%. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "Catalonia: IP payable with a EUR 500,000 allowance and a regional scale 0.21%-2.75%, plus a 3.48% band above EUR 20m base while the ITSGF exists (Decreto-ley 10/2024). The ITSGF tops up only where it exceeds IP (roughly above EUR 17.5m). Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 59,794; EUR 10m: EUR 166,482; EUR 20m: EUR 453,364.",
+      "exemptions_thresholds": "Allowance EUR 500,000; main home EUR 300,000 (state). Scale art. 621-2 and DT 1ª Libro sexto Código tributario (D.Leg. 1/2024).",
+      "regional_differences": "",
+      "important_exceptions": "Bonuses only for protected disability assets (99%) and managed forests (95%).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP Cataluña + ITSGF top-up",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 500000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.0021
+         },
+         {
+          "from_amount": 167129.45,
+          "rate": 0.00315
+         },
+         {
+          "from_amount": 334252.88,
+          "rate": 0.00525
+         },
+         {
+          "from_amount": 668499.75,
+          "rate": 0.00945
+         },
+         {
+          "from_amount": 1336999.75,
+          "rate": 0.01365
+         },
+         {
+          "from_amount": 2673999.01,
+          "rate": 0.01785
+         },
+         {
+          "from_amount": 5347998.03,
+          "rate": 0.02205
+         },
+         {
+          "from_amount": 10695996.06,
+          "rate": 0.0275
+         },
+         {
+          "from_amount": 17046647.47,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Catalonia: children 21+ get EUR 100,000 reduction, scale 7%-32%, and a rebate that falls from 60% (first EUR 100,000 of base) to 0% (above EUR 3m) as a weighted average; about 27.99% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Group II reduction EUR 100,000 per child (art. 631-2); scale 7/11/17/24/32% (art. 633-1); multipliers 1.0-1.2 (1.1 from EUR 500,000 of pre-existing wealth); rebate table art. 633-4.2.",
+      "important_exceptions": "Brackets are a piecewise-linear fit of tax = scale x (1 - weighted-average rebate), exact at the rebate band edges, multiplier 1.0. Using family-business or other optional reductions forfeits the rebate.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed",
+      "exemption": 100000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.02917
+       },
+       {
+        "from_amount": 50000.0,
+        "rate": 0.04733
+       },
+       {
+        "from_amount": 100000.0,
+        "rate": 0.0511
+       },
+       {
+        "from_amount": 150000.0,
+        "rate": 0.0794
+       },
+       {
+        "from_amount": 200000.0,
+        "rate": 0.0879
+       },
+       {
+        "from_amount": 400000.0,
+        "rate": 0.13476
+       },
+       {
+        "from_amount": 650000.0,
+        "rate": 0.14737
+       },
+       {
+        "from_amount": 800000.0,
+        "rate": 0.19412
+       },
+       {
+        "from_amount": 900000.0,
+        "rate": 0.21118
+       },
+       {
+        "from_amount": 1400000.0,
+        "rate": 0.23021
+       },
+       {
+        "from_amount": 1900000.0,
+        "rate": 0.24743
+       },
+       {
+        "from_amount": 2400000.0,
+        "rate": 0.27779
+       },
+       {
+        "from_amount": 2900000.0,
+        "rate": 0.31024
+       },
+       {
+        "from_amount": 3900000.0,
+        "rate": 0.31414
+       },
+       {
+        "from_amount": 4900000.0,
+        "rate": 0.31688
+       },
+       {
+        "from_amount": 7400000.0,
+        "rate": 0.31844
+       },
+       {
+        "from_amount": 9900000.0,
+        "rate": 0.31922
+       },
+       {
+        "from_amount": 14900000.0,
+        "rate": 0.31961
+       },
+       {
+        "from_amount": 19900000.0,
+        "rate": 0.3198
+       },
+       {
+        "from_amount": 29900000.0,
+        "rate": 0.31993
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: special scale 5% to EUR 200,000, 7% to EUR 600,000, 9% above, if in a public deed (Libro sexto art. 633-2); about 8.8% on a EUR 10m gift. No gift rebate.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": [],
+   "markers": [
+    {
+     "name": "Barcelona",
+     "lon": 2.15899,
+     "lat": 41.38879,
+     "kind": "city",
+     "coordinate_source": "GeoNames 3128760"
+    }
+   ],
+   "cost_of_living": {
+    "city": "Barcelona",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 7700,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 30 distinct homes (interquartile range EUR 5,575-12,750; mostly 4-5 bedroom flats; the villas in the sample list at EUR 8,500-16,000) on LuxuryEstate.com (Barcelona), snapshot taken 2026-10-15: listings with 4-6 bedrooms, priced per month or with no period stated, duplicates removed. Asking rents, not agreed rents; a luxury listing portal skews to the top of the market, and some listings may be furnished or seasonal lets.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for rent in Barcelona",
+      "url": "https://www.luxuryestate.com/rent/spain/catalonia/province-of-barcelona/barcelona",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 9810,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 64 homes (interquartile range EUR 7,863-12,893) for sale on LuxuryEstate.com (Barcelona), snapshot 2026-10-15: first five result pages, listings of EUR 500,000+ and 80 m2+ (offices and land excluded). Asking prices of luxury listings, not transaction prices.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in Barcelona",
+      "url": "https://www.luxuryestate.com/spain/catalonia/province-of-barcelona/barcelona",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 21720,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Benjamin Franklin International School (BFIS), High School (Grades 9-12) tuition 2026-27, individual (parent-paid) rate; plus EUR 1,100 annual matriculation fee, EUR 6,000 one-off entrance fee, EUR 250 application fee; lunch and bus extra.",
+     "source": {
+      "title": "Benjamin Franklin International School - School Fees 2026-2027",
+      "url": "https://www.bfischool.org/admissions/school-fees",
+      "publisher": "Benjamin Franklin International School",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "Rent and price per m2 are listing-portal samples (LuxuryEstate.com, 2026-10-15), not agency reports. Health insurance and housekeeper costs were not sourced."
+   }
+  },
+  {
+   "code": "ES-GA",
+   "name": "Galicia",
+   "summary": "Galicia: wealth tax with a 50% rebate (state scale, EUR 700,000 allowance), ITSGF above about EUR 5.5m; children's inheritances above EUR 1m taxed at 5%-18% (about 15% on EUR 10m); gifts 5-9%. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "Galicia: IP at the state scale (top band raised to 3.5% while the ITSGF exists) with a 50% rebate that is reduced by any ITSGF due, so the burden is the higher of half the IP and the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 26,773; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
+      "exemptions_thresholds": "Allowance EUR 700,000; main home EUR 300,000.",
+      "regional_differences": "",
+      "important_exceptions": "Several 75-100% deductions for local business and farmland holdings.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP Galicia (50% rebate) / ITSGF",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 700000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.001
+         },
+         {
+          "from_amount": 167129.45,
+          "rate": 0.0015
+         },
+         {
+          "from_amount": 334252.88,
+          "rate": 0.0025
+         },
+         {
+          "from_amount": 668499.75,
+          "rate": 0.0045
+         },
+         {
+          "from_amount": 1336999.51,
+          "rate": 0.0065
+         },
+         {
+          "from_amount": 2673999.01,
+          "rate": 0.0085
+         },
+         {
+          "from_amount": 4849786.57,
+          "rate": 0.017
+         },
+         {
+          "from_amount": 5347998.03,
+          "rate": 0.021
+         },
+         {
+          "from_amount": 10695996.06,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Galicia: EUR 1,000,000 reduction per child, then 5%-18%; no rebate for Group II; about 15.30% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Group II reduction EUR 1,000,000 (art. 6.Dos D.Leg. 1/2011); scale 5/7/9/11/15/18% (art. 9.a); multiplier 1.0 at any pre-existing wealth.",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed",
+      "exemption": 1000000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.05
+       },
+       {
+        "from_amount": 50000.0,
+        "rate": 0.07
+       },
+       {
+        "from_amount": 125000.0,
+        "rate": 0.09
+       },
+       {
+        "from_amount": 300000.0,
+        "rate": 0.11
+       },
+       {
+        "from_amount": 800000.0,
+        "rate": 0.15
+       },
+       {
+        "from_amount": 1600000.0,
+        "rate": 0.18
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: scale 5% to EUR 200,000, 7% to EUR 600,000, 9% above if in a public deed (otherwise state scale); no EUR 1m reduction for gifts.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": []
+  },
+  {
+   "code": "ES-AS",
+   "name": "Principado de Asturias",
+   "summary": "Asturias: wealth tax 0.22%-3% from EUR 700,000; children's inheritances above EUR 300,000 taxed at 21.25%-36.5% (about 35% on EUR 10m); gifts taxed up to 36.5%. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "Asturias: IP payable, regional scale 0.22%-3.0%, state EUR 700,000 allowance; ITSGF tops up above about EUR 23.9m. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 61,429; EUR 10m: EUR 180,085; EUR 20m: EUR 472,826.",
+      "exemptions_thresholds": "Allowance EUR 700,000 (state); main home EUR 300,000.",
+      "regional_differences": "",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP Asturias + ITSGF top-up",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 700000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.0022
+         },
+         {
+          "from_amount": 167129.45,
+          "rate": 0.0033
+         },
+         {
+          "from_amount": 334252.88,
+          "rate": 0.0056
+         },
+         {
+          "from_amount": 668499.75,
+          "rate": 0.0102
+         },
+         {
+          "from_amount": 1336999.51,
+          "rate": 0.0148
+         },
+         {
+          "from_amount": 2673999.01,
+          "rate": 0.0197
+         },
+         {
+          "from_amount": 5347998.03,
+          "rate": 0.0248
+         },
+         {
+          "from_amount": 10695996.06,
+          "rate": 0.03
+         },
+         {
+          "from_amount": 23192290.35,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Asturias: EUR 300,000 reduction per child, then a special Group I-II scale from 21.25% to 36.5% (above EUR 616,000); about 34.93% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Group I-II reduction EUR 300,000 (art. 17 D.Leg. 2/2014); scale art. 21.2; state multipliers 1.0-1.2 for Group II.",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed",
+      "exemption": 300000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.2125
+       },
+       {
+        "from_amount": 56000.0,
+        "rate": 0.255
+       },
+       {
+        "from_amount": 216000.0,
+        "rate": 0.3125
+       },
+       {
+        "from_amount": 616000.0,
+        "rate": 0.365
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 2%-36.5% scale (2% to EUR 150,000) only if in a public document and the donee's wealth is at most EUR 402,678; otherwise the general scale 7.65%-36.5%.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": []
+  },
+  {
+   "code": "ES-VC",
+   "name": "Comunitat Valenciana",
+   "summary": "Valencia: wealth tax allowance raised to EUR 2m from 11 Aug 2026 (scale 0.25%-3.5%), ITSGF tops up between; 99% inheritance and gift rebate for children. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "Comunitat Valenciana: IP allowance EUR 2,000,000 (Ley 5/2026, in force from 11/08/2026; EUR 1,000,000 from 31/12/2025), regional scale 0.25%-3.5%. The ITSGF (EUR 700,000 allowance) can exceed IP at some wealth levels; the brackets take the higher. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 39,166; EUR 10m: EUR 158,426; EUR 20m: EUR 484,702.",
+      "exemptions_thresholds": "Allowance EUR 2,000,000 for 2026; main home EUR 300,000.",
+      "regional_differences": "",
+      "important_exceptions": "2025-2026 changes: allowance EUR 500,000 -> 1,000,000 (31/12/2025) -> 2,000,000 (11/08/2026).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP Valencia / ITSGF",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 2000000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.0025
+         },
+         {
+          "from_amount": 167129.45,
+          "rate": 0.0037
+         },
+         {
+          "from_amount": 334252.88,
+          "rate": 0.0062
+         },
+         {
+          "from_amount": 668499.75,
+          "rate": 0.0112
+         },
+         {
+          "from_amount": 1336999.51,
+          "rate": 0.0162
+         },
+         {
+          "from_amount": 2673999.01,
+          "rate": 0.0212
+         },
+         {
+          "from_amount": 5347998.03,
+          "rate": 0.0262
+         },
+         {
+          "from_amount": 10695996.06,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Valencia: EUR 100,000 reduction and 99% rebate for children on inheritances and gifts (since 28/5/2023); about 0.33% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Group II reduction EUR 100,000 (art. 10 Ley 13/1997, as amended by Ley 5/2026); regional scale top 34% above EUR 781,916.75; multipliers 1.0-1.2.",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 100000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.000765
+       },
+       {
+        "from_amount": 7993.46,
+        "rate": 0.00085
+       },
+       {
+        "from_amount": 15662.38,
+        "rate": 0.000935
+       },
+       {
+        "from_amount": 23493.56,
+        "rate": 0.00102
+       },
+       {
+        "from_amount": 31324.75,
+        "rate": 0.001105
+       },
+       {
+        "from_amount": 39155.94,
+        "rate": 0.00119
+       },
+       {
+        "from_amount": 46987.13,
+        "rate": 0.001275
+       },
+       {
+        "from_amount": 54818.31,
+        "rate": 0.00136
+       },
+       {
+        "from_amount": 62649.5,
+        "rate": 0.001445
+       },
+       {
+        "from_amount": 70480.69,
+        "rate": 0.00153
+       },
+       {
+        "from_amount": 78311.88,
+        "rate": 0.001615
+       },
+       {
+        "from_amount": 117407.71,
+        "rate": 0.00187
+       },
+       {
+        "from_amount": 156503.55,
+        "rate": 0.002125
+       },
+       {
+        "from_amount": 234695.23,
+        "rate": 0.00255
+       },
+       {
+        "from_amount": 390958.37,
+        "rate": 0.002975
+       },
+       {
+        "from_amount": 781916.75,
+        "rate": 0.0034
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: EUR 100,000 reduction and 99% rebate if in a public document; cash gifts must state the origin of funds.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": [],
+   "markers": [
+    {
+     "name": "Valencia",
+     "lon": -0.37739,
+     "lat": 39.46975,
+     "kind": "city",
+     "coordinate_source": "GeoNames 2509954"
+    }
+   ],
+   "cost_of_living": {
+    "city": "Valencia",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 3250,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 37 distinct homes in Valencia city and its villa suburbs (Bétera, L'Eliana, Chiva, Paterna) (interquartile range EUR 2,750-4,125) on LuxuryEstate.com (Valencia province), snapshot taken 2026-10-15: listings with 4-6 bedrooms, priced per month or with no period stated, duplicates removed. Asking rents, not agreed rents; a luxury listing portal skews to the top of the market, and some listings may be furnished or seasonal lets.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for rent in Valencia province",
+      "url": "https://www.luxuryestate.com/rent/spain/valencia/valencia",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 5912,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 62 homes (interquartile range EUR 4,813-6,813) for sale on LuxuryEstate.com (Valencia), snapshot 2026-10-15: first five result pages, listings of EUR 500,000+ and 80 m2+ (offices and land excluded). Asking prices of luxury listings, not transaction prices.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in Valencia",
+      "url": "https://www.luxuryestate.com/spain/valencia/valencia/valencia",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 9862,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "American School of Valencia (Puçol; IB Diploma), High School Grades 11-12 tuition 2026-27, lunch included; plus EUR 1,250 annual enrolment fee for non-shareholders, EUR 1,500 one-off capital fee and EUR 2,500 one-off ASV share.",
+     "source": {
+      "title": "American School of Valencia - Tuition and Fees 2026-2027",
+      "url": "https://asvalencia.org/admissions/tuition-fees/",
+      "publisher": "American School of Valencia",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "Health insurance and housekeeper costs were not sourced."
+   }
+  },
+  {
+   "code": "ES-IB",
+   "name": "Illes Balears",
+   "summary": "Balearic Islands: wealth tax allowance EUR 3m (scale 0.28%-3.45%) but the ITSGF bites from EUR 3.7m; children exempt in practice (100% rebate on inheritances and gifts since 2023/2025). Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "wealth_tax": {
+      "summary": "Illes Balears: IP allowance EUR 3,000,000 (since 2024), regional scale 0.28%-3.45%. The ITSGF (EUR 700,000 allowance) exceeds the IP at many levels; the brackets take the higher of the two. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 23,521; EUR 10m: EUR 145,445; EUR 20m: EUR 468,941.",
+      "exemptions_thresholds": "IP allowance EUR 3,000,000; main home EUR 300,000.",
+      "regional_differences": "",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "IP Illes Balears / ITSGF",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 3000000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.0028
+         },
+         {
+          "from_amount": 170472.04,
+          "rate": 0.0041
+         },
+         {
+          "from_amount": 340937.04,
+          "rate": 0.0069
+         },
+         {
+          "from_amount": 681869.75,
+          "rate": 0.0124
+         },
+         {
+          "from_amount": 1336739.51,
+          "rate": 0.0179
+         },
+         {
+          "from_amount": 2727479.0,
+          "rate": 0.0235
+         },
+         {
+          "from_amount": 5454958.0,
+          "rate": 0.029
+         },
+         {
+          "from_amount": 10909915.99,
+          "rate": 0.0345
+         },
+         {
+          "from_amount": 48153318.64,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Illes Balears: 100% rebate for children and spouses on inheritances (since 18/7/2023) and 100% deduction on gifts (since 25/7/2025).",
+      "exemptions_thresholds": "Group II reduction EUR 25,000; special Group I-II scale 1%-20%; 100% rebate (art. 36 D.Leg. 1/2014).",
+      "important_exceptions": "Real estate in the deed must not exceed the cadastral reference value + 20% to keep the rebate.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "exempt_with_conditions",
+      "exemption": 0,
+      "brackets": [],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 100% deduction of the tax if in a public deed; cash gifts must state the origin of funds; real estate must be declared at no more than the reference value + 20%.",
+      "gifts_same_as_inheritance": true,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": [],
+   "markers": [
+    {
+     "name": "Palma",
+     "lon": 2.65024,
+     "lat": 39.56939,
+     "kind": "city",
+     "coordinate_source": "GeoNames 2512989"
+    }
+   ],
+   "cost_of_living": {
+    "city": "Palma",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 4200,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 25 distinct homes (interquartile range EUR 3,050-8,500; flats, houses and villas; detached houses and villas with a monthly price list at EUR 4,900-25,000) on LuxuryEstate.com (Palma), snapshot taken 2026-10-15: listings with 4-6 bedrooms, priced per month or with no period stated, duplicates removed. Asking rents, not agreed rents; a luxury listing portal skews to the top of the market, and some listings may be furnished or seasonal lets.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for rent in Palma",
+      "url": "https://www.luxuryestate.com/rent/spain/balearic-islands/province-of-balearic-islands/palma",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 8333,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 71 homes (interquartile range EUR 6,422-11,800) for sale on LuxuryEstate.com (Palma), snapshot 2026-10-15: first five result pages, listings of EUR 500,000+ and 80 m2+ (offices and land excluded). Asking prices of luxury listings, not transaction prices.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in Palma",
+      "url": "https://www.luxuryestate.com/spain/balearic-islands/province-of-balearic-islands/palma",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 13860,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Bellver International College (British curriculum, Palma), Year 12-13 tuition paid termly (EUR 4,620 x 3); EUR 13,444 if paid annually in advance. The published fee table (uploaded July 2026) does not print the school year; read as 2026-27.",
+     "source": {
+      "title": "Bellver International College - Admissions and school fees",
+      "url": "https://www.bellvercollege.com/admissions/",
+      "publisher": "Bellver International College",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "The median rent mixes flats and villas; detached houses and villas with an explicit monthly price list at EUR 4,900-25,000 a month. Health insurance and housekeeper costs were not sourced."
+   }
+  },
+  {
+   "code": "ES-AR",
+   "name": "Aragón",
+   "summary": "Aragón: wealth tax on state terms (EUR 700,000 allowance, 0.2%-3.5%); children's inheritances taxed on the state scale above a EUR 500,000 total reduction (about 32% on EUR 10m). Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "inheritance": {
+      "summary": "Aragón: children get a 100% reduction capped so that total reductions do not exceed EUR 500,000, then the state scale 7.65%-34%; no rebate for adult children; about 31.58% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Reduction art. 131-5 D.Leg. 1/2005 (limit EUR 500,000 including other reductions); state scale and multipliers.",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed",
+      "exemption": 500000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.0765
+       },
+       {
+        "from_amount": 7993.46,
+        "rate": 0.085
+       },
+       {
+        "from_amount": 15980.91,
+        "rate": 0.0935
+       },
+       {
+        "from_amount": 23968.36,
+        "rate": 0.102
+       },
+       {
+        "from_amount": 31955.81,
+        "rate": 0.1105
+       },
+       {
+        "from_amount": 39943.26,
+        "rate": 0.119
+       },
+       {
+        "from_amount": 47930.72,
+        "rate": 0.1275
+       },
+       {
+        "from_amount": 55918.17,
+        "rate": 0.136
+       },
+       {
+        "from_amount": 63905.62,
+        "rate": 0.1445
+       },
+       {
+        "from_amount": 71893.07,
+        "rate": 0.153
+       },
+       {
+        "from_amount": 79880.52,
+        "rate": 0.1615
+       },
+       {
+        "from_amount": 119757.67,
+        "rate": 0.187
+       },
+       {
+        "from_amount": 159634.83,
+        "rate": 0.2125
+       },
+       {
+        "from_amount": 239389.13,
+        "rate": 0.255
+       },
+       {
+        "from_amount": 398777.54,
+        "rate": 0.2975
+       },
+       {
+        "from_amount": 797555.08,
+        "rate": 0.34
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 100% reduction up to EUR 100,000 per 5 years and a 99% rebate only while gifts in 5 years stay within EUR 500,000; large gifts pay the state scale.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": []
+  },
+  {
+   "code": "ES-CN",
+   "name": "Canarias",
+   "summary": "Canary Islands: wealth tax on state terms (EUR 700,000 allowance); 99.9% rebate on inheritances and gifts to children. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "inheritance": {
+      "summary": "Canarias: children get a EUR 23,125 reduction and a 99.9% rebate on inheritances and gifts; about 0.03% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Group II reduction for children EUR 23,125; state scale; 99.9% rebate (Decreto ley 5/2023 removed the former EUR 55,000 cap).",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 23125,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 7.7e-05
+       },
+       {
+        "from_amount": 7993.46,
+        "rate": 8.5e-05
+       },
+       {
+        "from_amount": 15980.91,
+        "rate": 9.3e-05
+       },
+       {
+        "from_amount": 23968.36,
+        "rate": 0.000102
+       },
+       {
+        "from_amount": 31955.81,
+        "rate": 0.000111
+       },
+       {
+        "from_amount": 39943.26,
+        "rate": 0.000119
+       },
+       {
+        "from_amount": 47930.72,
+        "rate": 0.000128
+       },
+       {
+        "from_amount": 55918.17,
+        "rate": 0.000136
+       },
+       {
+        "from_amount": 63905.62,
+        "rate": 0.000144
+       },
+       {
+        "from_amount": 71893.07,
+        "rate": 0.000153
+       },
+       {
+        "from_amount": 79880.52,
+        "rate": 0.000161
+       },
+       {
+        "from_amount": 119757.67,
+        "rate": 0.000187
+       },
+       {
+        "from_amount": 159634.83,
+        "rate": 0.000212
+       },
+       {
+        "from_amount": 239389.13,
+        "rate": 0.000255
+       },
+       {
+        "from_amount": 398777.54,
+        "rate": 0.000297
+       },
+       {
+        "from_amount": 797555.08,
+        "rate": 0.00034
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 99.9% rebate if in a public document.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": [],
+   "cost_of_living": {
+    "city": "Costa Adeje (Tenerife)",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 6350,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 12 distinct homes, mostly villas in Adeje and Arona on the south-west coast (interquartile range EUR 3,700-9,625) on LuxuryEstate.com (Province of Santa Cruz de Tenerife), snapshot taken 2026-10-15: listings with 4-6 bedrooms, priced per month or with no period stated, duplicates removed. Asking rents, not agreed rents; a luxury listing portal skews to the top of the market, and some listings may be furnished or seasonal lets.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for rent in Province of Santa Cruz de Tenerife",
+      "url": "https://www.luxuryestate.com/rent/spain/canary-islands/province-of-santa-cruz-de-tenerife",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 7811,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 73 homes (interquartile range EUR 6,165-10,670) for sale on LuxuryEstate.com (Adeje), snapshot 2026-10-15: first five result pages, listings of EUR 500,000+ and 80 m2+ (offices and land excluded). Asking prices of luxury listings, not transaction prices.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in Adeje",
+      "url": "https://www.luxuryestate.com/spain/canary-islands/province-of-santa-cruz-de-tenerife/adeje",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 6495,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Wingate School (British curriculum, Cabo Blanco, Arona), Seniors (age 11-16) EUR 2,165 per term x 3 for 2026-27; Sixth Form is charged per qualification (A level EUR 985 per term each, so three A levels about EUR 8,865 a year); plus EUR 176 registration and a EUR 1,000 refundable deposit.",
+     "source": {
+      "title": "Wingate School - School fees 2026/2027",
+      "url": "https://www.wingateschool.com/wp-content/uploads/2026/06/school-fees-2026-2027.pdf",
+      "publisher": "Wingate School",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "Tenerife's south-west coast (Costa Adeje) was chosen over Las Palmas because that is where the prime villa market and the main British school are. The province-wide rent sample is small (12). Health insurance and housekeeper costs were not sourced."
+   }
+  },
+  {
+   "code": "ES-CL",
+   "name": "Castilla y León",
+   "summary": "Castilla y León: wealth tax on state terms; 99% inheritance and gift rebate for children. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "inheritance": {
+      "summary": "Castilla y León: reductions totalling EUR 400,000 per child and a 99% rebate; about 0.32% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Group II improvement EUR 60,000 plus a variable reduction up to EUR 400,000 total (art. 13 D.Leg. 1/2013); state scale; 99% rebate (art. 17 bis).",
+      "important_exceptions": "",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 400000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.000765
+       },
+       {
+        "from_amount": 7993.46,
+        "rate": 0.00085
+       },
+       {
+        "from_amount": 15980.91,
+        "rate": 0.000935
+       },
+       {
+        "from_amount": 23968.36,
+        "rate": 0.00102
+       },
+       {
+        "from_amount": 31955.81,
+        "rate": 0.001105
+       },
+       {
+        "from_amount": 39943.26,
+        "rate": 0.00119
+       },
+       {
+        "from_amount": 47930.72,
+        "rate": 0.001275
+       },
+       {
+        "from_amount": 55918.17,
+        "rate": 0.00136
+       },
+       {
+        "from_amount": 63905.62,
+        "rate": 0.001445
+       },
+       {
+        "from_amount": 71893.07,
+        "rate": 0.00153
+       },
+       {
+        "from_amount": 79880.52,
+        "rate": 0.001615
+       },
+       {
+        "from_amount": 119757.67,
+        "rate": 0.00187
+       },
+       {
+        "from_amount": 159634.83,
+        "rate": 0.002125
+       },
+       {
+        "from_amount": 239389.13,
+        "rate": 0.00255
+       },
+       {
+        "from_amount": 398777.54,
+        "rate": 0.002975
+       },
+       {
+        "from_amount": 797555.08,
+        "rate": 0.0034
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 99% rebate if in a public document stating the origin of funds for cash.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": []
+  },
+  {
+   "code": "ES-CM",
+   "name": "Castilla-La Mancha",
+   "summary": "Castilla-La Mancha: wealth tax on state terms; children's inheritances get an 80% rebate when large (about 6.6% on EUR 10m), gifts 85%. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "inheritance": {
+      "summary": "Castilla-La Mancha: rebate of 100% for a taxable base under EUR 175,000, falling to 80% at EUR 300,000 or more; state scale; about 6.64% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "State reduction EUR 15,956.87, state scale and multipliers; rebate art. 17 Ley 8/2013.",
+      "important_exceptions": "The rebate is a cliff by band of the whole taxable base; brackets show the 80% band, valid for bases of EUR 300,000 or more.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Tributación Autonómica. Medidas 2026, Capítulo I (updated 23 September 2026)",
+        "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-i-tributacion-autonomica-2026.pdf",
+        "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+        "kind": "government",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed",
+      "exemption": 15956.87,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.0153
+       },
+       {
+        "from_amount": 7993.46,
+        "rate": 0.017
+       },
+       {
+        "from_amount": 15980.91,
+        "rate": 0.0187
+       },
+       {
+        "from_amount": 23968.36,
+        "rate": 0.0204
+       },
+       {
+        "from_amount": 31955.81,
+        "rate": 0.0221
+       },
+       {
+        "from_amount": 39943.26,
+        "rate": 0.0238
+       },
+       {
+        "from_amount": 47930.72,
+        "rate": 0.0255
+       },
+       {
+        "from_amount": 55918.17,
+        "rate": 0.0272
+       },
+       {
+        "from_amount": 63905.62,
+        "rate": 0.0289
+       },
+       {
+        "from_amount": 71893.07,
+        "rate": 0.0306
+       },
+       {
+        "from_amount": 79880.52,
+        "rate": 0.0323
+       },
+       {
+        "from_amount": 119757.67,
+        "rate": 0.0374
+       },
+       {
+        "from_amount": 159634.83,
+        "rate": 0.0425
+       },
+       {
+        "from_amount": 239389.13,
+        "rate": 0.051
+       },
+       {
+        "from_amount": 398777.54,
+        "rate": 0.0595
+       },
+       {
+        "from_amount": 797555.08,
+        "rate": 0.068
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: rebate 95% (base under EUR 120,000), 90% (under 240,000), 85% (240,000 or more) on the state scale: about 5% on a large gift.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": []
+  },
+  {
+   "code": "ES-CE",
+   "name": "Ceuta",
+   "summary": "Ceuta (autonomous city): state wealth tax rules (75% rebate only for assets located in Ceuta); inheritance 99% rebate when the deceased lived in Ceuta for 5 years; gifts 50%. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "inheritance": {
+      "summary": "Ceuta: state rules with a 99% rebate for Groups I-II when the deceased was habitually resident in Ceuta or Melilla on death and for the previous 5 years (art. 23 bis Ley 29/1987); about 0.33% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "State reduction EUR 15,956.87 and state scale; 99% rebate if the 5-year residence condition is met.",
+      "important_exceptions": "The 99% rebate requires the deceased's habitual residence in Ceuta or Melilla on death and for the previous 5 years; otherwise the state scale applies in full (the basic 50% rebate of art. 23 bis.1 also depends on that residence).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Ley 29/1987 del Impuesto sobre Sucesiones y Donaciones (consolidated text: arts. 20-23 bis, DA 2ª)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-28141",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Ley 19/1991 del Impuesto sobre el Patrimonio (consolidated text: arts. 4, 28, 30, 31, 33)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 15956.87,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.000765
+       },
+       {
+        "from_amount": 7993.46,
+        "rate": 0.00085
+       },
+       {
+        "from_amount": 15980.91,
+        "rate": 0.000935
+       },
+       {
+        "from_amount": 23968.36,
+        "rate": 0.00102
+       },
+       {
+        "from_amount": 31955.81,
+        "rate": 0.001105
+       },
+       {
+        "from_amount": 39943.26,
+        "rate": 0.00119
+       },
+       {
+        "from_amount": 47930.72,
+        "rate": 0.001275
+       },
+       {
+        "from_amount": 55918.17,
+        "rate": 0.00136
+       },
+       {
+        "from_amount": 63905.62,
+        "rate": 0.001445
+       },
+       {
+        "from_amount": 71893.07,
+        "rate": 0.00153
+       },
+       {
+        "from_amount": 79880.52,
+        "rate": 0.001615
+       },
+       {
+        "from_amount": 119757.67,
+        "rate": 0.00187
+       },
+       {
+        "from_amount": 159634.83,
+        "rate": 0.002125
+       },
+       {
+        "from_amount": 239389.13,
+        "rate": 0.00255
+       },
+       {
+        "from_amount": 398777.54,
+        "rate": 0.002975
+       },
+       {
+        "from_amount": 797555.08,
+        "rate": 0.0034
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts of movable assets: 50% rebate when the donee is resident in Ceuta or Melilla (art. 23 bis.3); gifts otherwise on the state scale.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": [
+    "IRPF: a 60% deduction applies only to income obtained in Ceuta/Melilla (art. 68.4 LIRPF), not to a foreign portfolio."
+   ]
+  },
+  {
+   "code": "ES-ML",
+   "name": "Melilla",
+   "summary": "Melilla (autonomous city): state wealth tax rules (75% rebate only for assets located in Melilla); inheritance 99% rebate when the deceased lived in Melilla for 5 years; gifts 50%. Savings income (gains, dividends) is taxed on the national 19-30% scale; the regions cannot change it.",
+   "regime_overrides": {
+    "standard": {
+     "inheritance": {
+      "summary": "Melilla: state rules with a 99% rebate for Groups I-II when the deceased was habitually resident in Ceuta or Melilla on death and for the previous 5 years (art. 23 bis Ley 29/1987); about 0.33% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "State reduction EUR 15,956.87 and state scale; 99% rebate if the 5-year residence condition is met.",
+      "important_exceptions": "The 99% rebate requires the deceased's habitual residence in Ceuta or Melilla on death and for the previous 5 years; otherwise the state scale applies in full (the basic 50% rebate of art. 23 bis.1 also depends on that residence).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Ley 29/1987 del Impuesto sobre Sucesiones y Donaciones (consolidated text: arts. 20-23 bis, DA 2ª)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-28141",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Ley 19/1991 del Impuesto sobre el Patrimonio (consolidated text: arts. 4, 28, 30, 31, 33)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Spain - Individual - Other taxes (last reviewed 30 June 2026)",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 15956.87,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.000765
+       },
+       {
+        "from_amount": 7993.46,
+        "rate": 0.00085
+       },
+       {
+        "from_amount": 15980.91,
+        "rate": 0.000935
+       },
+       {
+        "from_amount": 23968.36,
+        "rate": 0.00102
+       },
+       {
+        "from_amount": 31955.81,
+        "rate": 0.001105
+       },
+       {
+        "from_amount": 39943.26,
+        "rate": 0.00119
+       },
+       {
+        "from_amount": 47930.72,
+        "rate": 0.001275
+       },
+       {
+        "from_amount": 55918.17,
+        "rate": 0.00136
+       },
+       {
+        "from_amount": 63905.62,
+        "rate": 0.001445
+       },
+       {
+        "from_amount": 71893.07,
+        "rate": 0.00153
+       },
+       {
+        "from_amount": 79880.52,
+        "rate": 0.001615
+       },
+       {
+        "from_amount": 119757.67,
+        "rate": 0.00187
+       },
+       {
+        "from_amount": 159634.83,
+        "rate": 0.002125
+       },
+       {
+        "from_amount": 239389.13,
+        "rate": 0.00255
+       },
+       {
+        "from_amount": 398777.54,
+        "rate": 0.002975
+       },
+       {
+        "from_amount": 797555.08,
+        "rate": 0.0034
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts of movable assets: 50% rebate when the donee is resident in Ceuta or Melilla (art. 23 bis.3); gifts otherwise on the state scale.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "State 95% reduction for qualifying family businesses, raised to 99% in many regions, with residence/holding conditions; not for listed portfolios.",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    }
+   },
+   "open_questions": [
+    "IRPF: a 60% deduction applies only to income obtained in Ceuta/Melilla (art. 68.4 LIRPF), not to a foreign portfolio."
+   ]
+  },
+  {
+   "code": "ES-NC",
+   "name": "Comunidad Foral de Navarra",
+   "summary": "Navarra (foral regime, own taxes): savings income taxed at 20-28%; own wealth tax from EUR 550,000 at 0.16%-2%, with a 3.5% band above EUR 11m base that replaces the state ITSGF; children's inheritances: first EUR 250,000 free, then 2%-16% (about 13.5% on EUR 10m); gifts 0.8%-8%. The state Beckham regime does not apply.",
+   "regime_overrides": {
+    "standard": {
+     "capital_gains": {
+      "summary": "Navarra has its own IRPF: gains and dividends are taxed on a savings scale of 20% to 28% (28% above EUR 300,000).",
+      "exemptions_thresholds": "Navarra savings scale (art. 60 DFL 4/2008, wording of Ley Foral 36/2022 in force since 1 January 2023 and unchanged in the consolidated text for 2026): 20% to EUR 6,000; 22% to 10,000; 24% to 15,000; 26% to 200,000; 27% to 300,000; 28% above.",
+      "regional_differences": "Applies to residents of Navarra under the Convenio Económico (residence by days in the tax year).",
+      "important_exceptions": "Navarra has its own exit-tax rules and its own impatriate regime for displaced workers (Modelos 149/150 of Hacienda Foral; not modelled); the state Beckham regime does not apply.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Texto Refundido de la Ley Foral del IRPF (DFL 4/2008), consolidated text, art. 60 (savings scale as worded by Ley Foral 36/2022, from 1 January 2023)",
+        "url": "https://www.navarra.es/es/web/normativa-hacienda/-/texto-refundido-de-la-ley-foral-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-dfl-4/2008-de-2-de-junio-",
+        "publisher": "Gobierno de Navarra - Hacienda Foral (normativa)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Manual teórico de la campaña de 2025 (IRPF y Patrimonio), Hacienda Foral de Navarra, actualización 02-02-2026",
+        "url": "https://www.navarra.es/documents/48192/35409067/Manual+te%C3%B3rico+de+la+campa%C3%B1a+de+2025.pdf/c9e11ce5-ae6f-eb9a-040b-265f1f040525?t=1775726152475&download=true",
+        "publisher": "Hacienda Foral de Navarra",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Ley 28/1990, Convenio Económico con Navarra (arts. 17, 31, DA 8ª)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "headline_rate": 0.28,
+      "rates": {
+       "listed_securities_domestic": 0.28,
+       "listed_securities_foreign": 0.28,
+       "private_business_sale": 0.28,
+       "real_estate_local": 0.28,
+       "real_estate_foreign": 0.28
+      },
+      "rate_basis": "Top marginal rate of the Navarra savings scale (28% above EUR 300,000).",
+      "professional_trader": "As in the state system: securities gains remain savings income for a private investor.",
+      "foreign_assets": "Worldwide taxation with credit for foreign tax."
+     },
+     "dividends": {
+      "summary": "Dividends are taxed on the Navarra savings scale, 20% to 28%.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Texto Refundido de la Ley Foral del IRPF (DFL 4/2008), consolidated text, art. 60 (savings scale as worded by Ley Foral 36/2022, from 1 January 2023)",
+        "url": "https://www.navarra.es/es/web/normativa-hacienda/-/texto-refundido-de-la-ley-foral-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-dfl-4/2008-de-2-de-junio-",
+        "publisher": "Gobierno de Navarra - Hacienda Foral (normativa)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Manual teórico de la campaña de 2025 (IRPF y Patrimonio), Hacienda Foral de Navarra, actualización 02-02-2026",
+        "url": "https://www.navarra.es/documents/48192/35409067/Manual+te%C3%B3rico+de+la+campa%C3%B1a+de+2025.pdf/c9e11ce5-ae6f-eb9a-040b-265f1f040525?t=1775726152475&download=true",
+        "publisher": "Hacienda Foral de Navarra",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "headline_rate": 0.28,
+      "domestic_rate": 0.28,
+      "foreign_gross_rate": 0.28,
+      "foreign_tax_credit": "credit",
+      "rate_basis": "Top of the Navarra savings scale (art. 60 DFL 4/2008; 28% above EUR 300,000 in 2026).",
+      "withholding_outbound": "Spanish WHT rules (19%) apply to companies; Navarra companies follow Navarra corporate tax.",
+      "treaty_network": "Spanish treaties apply."
+     },
+     "wealth_tax": {
+      "summary": "Navarra: own wealth tax, EUR 550,000 allowance, 0.16%-2.0% and 3.5% above EUR 11.0m of base (in place of the ITSGF). Tax on EUR 5m: EUR 45,964; EUR 10m: EUR 128,280; EUR 20m: EUR 453,364.",
+      "exemptions_thresholds": "Allowance EUR 550,000 (art. 28.1 LF 13/1992); main home exempt up to EUR 250,000. Joint limit with IRPF: 65% of the IRPF base, but the IP reduction is capped at 55%.",
+      "regional_differences": "",
+      "important_exceptions": "The 3.5% top band (above EUR 11,003,784.50 of base) is set year by year in DA 1ª LF 13/1992; Ley Foral 17/2025 (BON 31/12/2025) re-enacted the same scale for the 2026 tax period. It replaces the state ITSGF for Navarra residents and would need re-enacting for 2027.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Ley Foral 13/1992 del Impuesto sobre el Patrimonio, consolidated text (art. 28; DA 1ª 'Escala del Impuesto sobre el Patrimonio en 2026' as worded by Ley Foral 17/2025)",
+        "url": "https://www.navarra.es/es/web/normativa-hacienda/-/ley-foral-13/1992-de-19-de-noviembre-del-impuesto-sobre-el-patrimonio",
+        "publisher": "Gobierno de Navarra - Hacienda Foral (normativa)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Manual teórico de la campaña de 2025 (IRPF y Patrimonio), Hacienda Foral de Navarra, actualización 02-02-2026",
+        "url": "https://www.navarra.es/documents/48192/35409067/Manual+te%C3%B3rico+de+la+campa%C3%B1a+de+2025.pdf/c9e11ce5-ae6f-eb9a-040b-265f1f040525?t=1775726152475&download=true",
+        "publisher": "Hacienda Foral de Navarra",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Decreto Foral Legislativo 250/2002, texto refundido del Impuesto sobre Sucesiones y Donaciones de Navarra (art. 34)",
+        "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=10781",
+        "publisher": "Gobierno de Navarra - LexNavarra",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Ley 28/1990, Convenio Económico con Navarra (arts. 17, 31, DA 8ª)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "type": "broad",
+      "components": [
+       {
+        "name": "Impuesto sobre el Patrimonio de Navarra",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 550000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.0016
+         },
+         {
+          "from_amount": 155511.88,
+          "rate": 0.0024
+         },
+         {
+          "from_amount": 311023.76,
+          "rate": 0.004
+         },
+         {
+          "from_amount": 622047.53,
+          "rate": 0.0072
+         },
+         {
+          "from_amount": 1244095.06,
+          "rate": 0.0104
+         },
+         {
+          "from_amount": 2488190.11,
+          "rate": 0.0136
+         },
+         {
+          "from_amount": 4976380.22,
+          "rate": 0.0168
+         },
+         {
+          "from_amount": 9952760.45,
+          "rate": 0.02
+         },
+         {
+          "from_amount": 11003784.5,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Navarra: children (any age) pay 0% on the first EUR 250,000 of taxable base and then 2%, 4%, 8%, 12% and 16% above EUR 3m; about 13.53% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Art. 34.1.a.3º DFL 250/2002: progressive scale for descendants; no separate parent-child allowance (the 0% first band acts as one).",
+      "important_exceptions": "Navarra law applies to inheritances when the deceased was habitually resident in Navarra (art. 31 Convenio Económico).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Decreto Foral Legislativo 250/2002, texto refundido del Impuesto sobre Sucesiones y Donaciones de Navarra (art. 34)",
+        "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=10781",
+        "publisher": "Gobierno de Navarra - LexNavarra",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Ley 28/1990, Convenio Económico con Navarra (arts. 17, 31, DA 8ª)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "basis": "beneficiary",
+      "children_treatment": "taxed",
+      "exemption": 250000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.02
+       },
+       {
+        "from_amount": 250000,
+        "rate": 0.04
+       },
+       {
+        "from_amount": 750000,
+        "rate": 0.08
+       },
+       {
+        "from_amount": 1550000,
+        "rate": 0.12
+       },
+       {
+        "from_amount": 2750000,
+        "rate": 0.16
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: 0.8% to EUR 250,000, 2% to 500,000, 3% to 1m, 4% to 1.8m, 6% to 3m, 8% above (art. 34.1.a.4º): about 7.4% on a EUR 10m gift.",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "Navarra has its own family-business reliefs (not researched in detail).",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    },
+    "beckham_art93": {
+     "available": false,
+     "description": "The state art. 93 regime does not apply to Navarra residents, who pay Navarra IRPF; Navarra has its own impatriate rules (not modelled).",
+     "sources": [
+      {
+       "title": "Ley 28/1990, Convenio Económico con Navarra (arts. 17, 31, DA 8ª)",
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+       "publisher": "Boletín Oficial del Estado",
+       "kind": "legislation",
+       "accessed": "2026-10-15"
+      }
+     ]
+    }
+   },
+   "open_questions": [
+    "Navarra's own impatriate regime for displaced workers (Modelos 149/150) was not researched."
+   ],
+   "markers": [
+    {
+     "name": "Pamplona",
+     "lon": -1.64323,
+     "lat": 42.81687,
+     "kind": "city",
+     "coordinate_source": "GeoNames 3114472"
+    }
+   ]
+  },
+  {
+   "code": "ES-PV",
+   "name": "País Vasco / Euskadi",
+   "summary": "Basque Country (foral regime, three territories with own taxes; numbers modelled on Bizkaia): savings income 19-28%; wealth tax from EUR 800,000 at 0.2%-2%, foral ITSGF only at the top; children's inheritances: EUR 400,000 allowance then a flat 1.5% (Bizkaia and Gipuzkoa), gifts 1.5% from the first euro. Foral rules apply to arrivals from abroad at once, but not if the deceased/donee spent more of the last 5 years in common-regime Spain. The state Beckham regime does not apply.",
+   "regime_overrides": {
+    "standard": {
+     "capital_gains": {
+      "summary": "The Basque Country has its own IRPF per territory; from 1 January 2026 Álava, Bizkaia and Gipuzkoa apply the same savings scale, 19% to 28% (28% above EUR 300,000).",
+      "exemptions_thresholds": "Bizkaia savings scale (art. 76 NF 13/2013, text at 01/01/2026): 19% to EUR 7,500; 20% to 15,000; 22% to 30,000; 24% to 50,000; 25.5% to 90,000; 26% to 120,000; 26.5% to 240,000; 27% to 300,000; 28% above.",
+      "regional_differences": "The three territories legislate separately, but NF 2/2025 (Bizkaia), NF 3/2025 (Álava) and NF 1/2025 (Gipuzkoa) adopted the same savings scale with effect from 1 January 2026 (Cuatrecasas, May 2025); Bizkaia's consolidated text was checked directly.",
+      "important_exceptions": "Basque impatriate regime instead of the state Beckham regime.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Norma Foral 13/2013 del IRPF de Bizkaia (consolidated to 01/01/2026, art. 76)",
+        "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068",
+        "publisher": "Diputación Foral de Bizkaia",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "País Vasco - Novedades tributarias para personas físicas 2025 y 2026 (Legal Flash, May 2025)",
+        "url": "https://www.cuatrecasas.com/resources/pais-vasco-personas-fisicas-text-682f4962b2782669451928.pdf",
+        "publisher": "Cuatrecasas",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Ley 12/2002, Concierto Económico con el País Vasco (arts. 24, 25, DA 5ª)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "headline_rate": 0.28,
+      "rates": {
+       "listed_securities_domestic": 0.28,
+       "listed_securities_foreign": 0.28,
+       "private_business_sale": 0.28,
+       "real_estate_local": 0.28,
+       "real_estate_foreign": 0.28
+      },
+      "rate_basis": "Top marginal rate of the 2026 Basque savings scale (28%), identical in the three territories.",
+      "professional_trader": "As in the state system: securities gains remain savings income for a private investor.",
+      "foreign_assets": "Worldwide taxation with credit for foreign tax."
+     },
+     "dividends": {
+      "summary": "Dividends: Basque savings scale 19% to 28% (same in Álava, Bizkaia and Gipuzkoa from 2026).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Norma Foral 13/2013 del IRPF de Bizkaia (consolidated to 01/01/2026, art. 76)",
+        "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068",
+        "publisher": "Diputación Foral de Bizkaia",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "País Vasco - Novedades tributarias para personas físicas 2025 y 2026 (Legal Flash, May 2025)",
+        "url": "https://www.cuatrecasas.com/resources/pais-vasco-personas-fisicas-text-682f4962b2782669451928.pdf",
+        "publisher": "Cuatrecasas",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "headline_rate": 0.28,
+      "domestic_rate": 0.28,
+      "foreign_gross_rate": 0.28,
+      "foreign_tax_credit": "credit",
+      "rate_basis": "Top of the 2026 Basque savings scale (Bizkaia art. 76 NF 13/2013; same scale in Álava and Gipuzkoa per Cuatrecasas).",
+      "withholding_outbound": "Spanish WHT rules (19%) apply to companies; Basque companies follow their territory's corporate tax.",
+      "treaty_network": "Spanish treaties apply."
+     },
+     "wealth_tax": {
+      "summary": "Basque Country (modelled on Bizkaia): own wealth tax, EUR 800,000 allowance, 0.2%-2.0%; the foral solidarity tax (NF 9/2023, 800,000 allowance, 1.5%-3.5%) tops it up only at the very top (about EUR 16.8m of net wealth and above). Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 37,400; EUR 10m: EUR 119,400; EUR 20m: EUR 358,500.",
+      "exemptions_thresholds": "Bizkaia: allowance EUR 800,000; main home exempt up to EUR 400,000; joint limit with IRPF 65% of the IRPF base, IP reduction capped at 75%.",
+      "regional_differences": "Bizkaia is modelled. Per Guía Fiscal (secondary source, updated 29/07/2026): Álava (NF 9/2013, revised by NF 3/2025) has the same EUR 800,000 allowance and EUR 400,000 main-home exemption but its own 8-band scale topping out at 2.5%; Gipuzkoa (NF 2/2018, revised by NF 1/2025) has a EUR 700,000 allowance, EUR 300,000 main-home exemption and a 2.5% top rate. Each territory has its own foral solidarity tax (Bizkaia NF 9/2023, Gipuzkoa NF 3/2023, Álava NF 23/2023) for net wealth above EUR 3m, credited against the foral IP. So Álava and Gipuzkoa are somewhat more expensive than the modelled Bizkaia figures at high wealth.",
+      "important_exceptions": "The ITSGF is a concerted tax with foral rules (Concierto DA 5ª); each territory adopted its own norm (Bizkaia NF 9/2023).",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Norma Foral 2/2013 del Impuesto sobre el Patrimonio de Bizkaia (consolidated)",
+        "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2013.pdf/7562e4a0-44c4-7875-7eae-0e59a8f88fd2?t=1746526194585",
+        "publisher": "Diputación Foral de Bizkaia",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Norma Foral 9/2023 del Impuesto Temporal de Solidaridad de las Grandes Fortunas de Bizkaia",
+        "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_9_2023.pdf/5800d79a-5281-b59d-bac4-cd8b264e8dd8?t=1736858160050",
+        "publisher": "Diputación Foral de Bizkaia",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Ley 12/2002, Concierto Económico con el País Vasco (arts. 24, 25, DA 5ª)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Patrimonio País Vasco 2026 (régimen foral; updated 29 July 2026)",
+        "url": "https://guiafiscal.es/patrimonio/ip/pais-vasco/",
+        "publisher": "Guía Fiscal",
+        "kind": "other",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+       "Álava and Gipuzkoa wealth-tax band limits were not verified from official texts: the Gipuzkoa Hacienda site returned HTTP 503 and araba.eus did not respond on 2026-10-15. Only their allowances and 2.5% top rates are known, from a secondary source.",
+       "Bizkaia IP consolidated text shows last change 01/01/2024; Guía Fiscal cites a revision by NF 2/2025 that was not checked for wealth-tax changes."
+      ],
+      "type": "broad",
+      "components": [
+       {
+        "name": "Impuesto sobre el Patrimonio de Bizkaia / foral ITSGF",
+        "base": "net_wealth_worldwide",
+        "exempt_amount": 800000,
+        "entry_threshold": 0,
+        "brackets": [
+         {
+          "from_amount": 0,
+          "rate": 0.002
+         },
+         {
+          "from_amount": 800000,
+          "rate": 0.006
+         },
+         {
+          "from_amount": 1600000,
+          "rate": 0.01
+         },
+         {
+          "from_amount": 3200000,
+          "rate": 0.015
+         },
+         {
+          "from_amount": 6400000,
+          "rate": 0.0175
+         },
+         {
+          "from_amount": 12800000,
+          "rate": 0.02
+         },
+         {
+          "from_amount": 15993333.33,
+          "rate": 0.035
+         }
+        ],
+        "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+       }
+      ],
+      "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+     },
+     "inheritance": {
+      "summary": "Basque Country: Group I (children of any age, spouse, parents) gets a EUR 400,000 reduction on inheritances and pays a flat 1.5% above it (Bizkaia NF 4/2015 arts. 43, 47; same in Gipuzkoa); about 1.44% of a EUR 10m inheritance.",
+      "exemptions_thresholds": "Reduction EUR 400,000 per Group I heir; flat 1.5% (Bizkaia art. 47; Gipuzkoa from 16/05/2025 reductions sheet).",
+      "important_exceptions": "Concierto art. 25.Dos: Basque rules are replaced by common-regime rules when the deceased (inheritance) or donee (gift) spent more days of the last 5 years in common-regime Spain; years abroad do not trigger this.",
+      "tax_year": "2026",
+      "sources": [
+       {
+        "title": "Norma Foral 4/2015 del Impuesto sobre Sucesiones y Donaciones de Bizkaia (consolidated, last change 23/04/2025)",
+        "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_4_2015.pdf/b6d32212-4007-7fff-588f-207247783372?t=1746431810761",
+        "publisher": "Diputación Foral de Bizkaia",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Reducciones ISD aplicables a hechos imponibles desde 16/05/2025 (Gipuzkoa)",
+        "url": "https://www.gipuzkoa.eus/documents/2456431/2811273/Reducciones+2025_es.pdf",
+        "publisher": "Diputación Foral de Gipuzkoa",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Sucesiones y donaciones: escalas y grupos, hechos imponibles a partir de 1 de enero de 2018 (Gipuzkoa)",
+        "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/sucesiones-donaciones/escalas-grupos/hechos-imponibles-a-partir-1-de-enero-2018",
+        "publisher": "Diputación Foral de Gipuzkoa",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+       },
+       {
+        "title": "Ley 12/2002, Concierto Económico con el País Vasco (arts. 24, 25, DA 5ª)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+       }
+      ],
+      "verified_on": "2026-10-15",
+      "confidence": "high",
+      "verification": "partially_verified",
+      "open_questions": [
+       "Álava (Araba) inheritance rules for descendants were not verified."
+      ],
+      "basis": "beneficiary",
+      "children_treatment": "taxed_low",
+      "exemption": 400000,
+      "brackets": [
+       {
+        "from_amount": 0.0,
+        "rate": 0.015
+       }
+      ],
+      "bracket_mode": "marginal",
+      "other_transfer_cost_rate": 0,
+      "gift_tax": "Gifts to children: flat 1.5% on the whole gift (the EUR 400,000 reduction is only for inheritances).",
+      "gifts_same_as_inheritance": false,
+      "lifetime_gift_tax_free_after_years": null,
+      "business_relief": "95% reduction for qualifying family businesses (Gipuzkoa/Bizkaia).",
+      "business_relief_covers_public_shares": false,
+      "foreign_assets": "Resident heirs are taxed on worldwide acquisitions, with credit for foreign inheritance tax.",
+      "domicile_rules": "Regional rules apply to inheritances when the deceased spent most days of the last 5 years in this region (art. 28 Ley 22/2009) and to gifts of movable assets when the donee did; otherwise state or another region's rules apply. Non-resident heirs may also use them (DA 2ª Ley 29/1987)."
+     }
+    },
+    "beckham_art93": {
+     "available": false,
+     "description": "The state art. 93 regime does not apply to residents of the Basque Country; the territories have their own impatriate regimes (not modelled).",
+     "sources": [
+      {
+       "title": "Ley 12/2002, Concierto Económico con el País Vasco (arts. 24, 25, DA 5ª)",
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+       "publisher": "Boletín Oficial del Estado",
+       "kind": "legislation",
+       "accessed": "2026-10-15"
+      }
+     ]
+    }
+   },
+   "open_questions": [
+    "Only Bizkaia's wealth tax is modelled; Álava and Gipuzkoa have higher top rates (2.5%) and Gipuzkoa a lower allowance (EUR 700,000).",
+    "Basque impatriate regimes were not researched."
+   ],
+   "markers": [
+    {
+     "name": "Bilbao",
+     "lon": -2.92528,
+     "lat": 43.26271,
+     "kind": "city",
+     "coordinate_source": "GeoNames 3128026"
+    }
+   ],
+   "cost_of_living": {
+    "city": "Bilbao (rent, school); San Sebastián (price per m²)",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 2450,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 16 long-term listings (interquartile range EUR 1,750-2,850) of flats with 4+ rooms and at least 120 m2 in the municipality of Bilbao (mostly Abando/Indautxu, Campuzano, Zabalburu, Casco Viejo) on Fotocasa, snapshot 2026-10-15. Fotocasa listed 50 homes with 4+ rooms; 'alquiler de temporada' (fixed-term furnished) lets were excluded, leaving 25 long-term lets with a median of EUR 1,950; the 16 of 120 m2+ are used as the family-sized subset. Asking rents. San Sebastián had only 3 long-term 4+ room lets (EUR 1,800, 2,400 and an 850 m2 villa at EUR 8,500), too few to use.",
+     "source": {
+      "title": "Fotocasa - Alquiler de viviendas en Bilbao, 4 habitaciones o más",
+      "url": "https://www.fotocasa.es/es/alquiler/viviendas/bilbao/todas-las-zonas/l?minRooms=4",
+      "publisher": "Fotocasa",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 7617,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 52 homes (interquartile range EUR 5,322-10,543) for sale on LuxuryEstate.com (San Sebastián), snapshot 2026-10-15: first five result pages, listings of EUR 500,000+ and 80 m2+ (offices and land excluded). Asking prices of luxury listings, not transaction prices.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in San Sebastián",
+      "url": "https://www.luxuryestate.com/spain/basque-country/guipuzcoa/donostia-san-sebastian/san-sebastian",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 7550,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Colegio Alemán de Bilbao (Deutsche Schule Bilbao, German Abitur), 2026-27 fees for the upper secondary years: class 11 EUR 535 tuition + EUR 220 maintenance a month x 10 = EUR 7,550; class 12 EUR 943.75 a month x 8 = EUR 7,550. Plus a one-off EUR 1,700 enrolment fee, school insurance EUR 57 and association membership EUR 42.50 a year, and the compulsory class-11 trip (EUR 90 a month). Used because the American School of Bilbao website did not resolve on 2026-10-15; Lauaxeta Ikastola is a state-funded cooperative school without a published fee table.",
+     "source": {
+      "title": "Colegio Alemán de Bilbao - Cuotas escolares 2026/2027",
+      "url": "https://www.dsbilbao.org/secretaria-virtual/cuotas-escolares/",
+      "publisher": "Colegio Alemán de Bilbao (Deutsche Schule Bilbao)",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "Rent: Fotocasa long-term listings in Bilbao (2026-10-15); price per m²: LuxuryEstate.com San Sebastián sample (2026-10-15); school: German School Bilbao 2026-27 fee page. Health insurance and housekeeper costs were not sourced."
+   }
+  }
+ ]
+}

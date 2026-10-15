@@ -1,0 +1,380 @@
+{
+ "parent": "ITA",
+ "unit_type": "region (regione)",
+ "researched_on": "2026-10-15",
+ "notes": "Italy's taxes relevant to the family (26% substitute tax on gains and dividends, flat-tax regime for new residents, IVAFE/IVIE, inheritance and gift tax) are national, so no region overrides them. Regional/municipal IRPEF surcharges (addizionali) are computed on the progressive IRPEF base only (art. 50 D.Lgs. 446/1997); IRAP is a business tax. Per-region surcharge rates were not tabulated here. Note for the national file: Normattiva shows the TUIR (DPR 917/1986) repealed by D.Lgs. 19 June 2026 n. 117 with effect from 1 January 2027 (recodification); tax year 2026 is unaffected.",
+ "units": [
+  {
+   "code": "IT-21",
+   "name": "Piemonte",
+   "summary": "Piemonte: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-23",
+   "name": "Valle d'Aosta / Vallée d'Aoste",
+   "summary": "Valle d'Aosta / Vallée d'Aoste: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income. Autonomous region with special statute; no regional tax on investment income or wealth.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-25",
+   "name": "Lombardia",
+   "summary": "Lombardia: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": [],
+   "cost_of_living": {
+    "city": "Milan",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 8250,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 12 distinct 4-6 bedroom homes in Milan on LuxuryEstate.com (snapshot 2026-10-15; interquartile range EUR 5,533-15,000; mostly 185-300 m2 flats). Asking rents; some listings are likely furnished short lets.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for rent in Milan",
+      "url": "https://www.luxuryestate.com/rent/italy/lombardy/milan/milan",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 9175,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 53 luxury homes for sale in Milan on LuxuryEstate.com (snapshot 2026-10-15; listings of EUR 500,000+ and 80 m2+; interquartile range EUR 7,759-12,566). Asking prices, not transaction prices.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in Milan",
+      "url": "https://www.luxuryestate.com/italy/lombardy/milan/milan",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 26950,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "International School of Milan, Grade 12/13 tuition 2026-27 (excludes EUR 900 annual registration and EUR 3,600 one-off admission fee for G10-G13; lunch extra).",
+     "source": {
+      "title": "International School of Milan - Annual school fees 2026-2027",
+      "url": "https://www.internationalschoolofmilan.it/sites/school103/files/2026-01/ISMilan_School_Fees_2026_2027.pdf",
+      "publisher": "International School of Milan",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "Rent and price per m2 are listing-portal samples. Lake Como (note only, not scored): on 2026-10-15 the Como-province villa listings ranged from EUR 4,000 a month (inland and smaller lakeside villas) to EUR 24,000-90,000 a month for Cernobbio/Tremezzina lakefront villas, which are mostly seasonal lets. Health insurance and housekeeper costs were not sourced."
+   },
+   "markers": [
+    {
+     "name": "Milan",
+     "lon": 9.18951,
+     "lat": 45.46427,
+     "kind": "financial_centre",
+     "coordinate_source": "GeoNames 3173435"
+    }
+   ]
+  },
+  {
+   "code": "IT-32",
+   "name": "Trentino-Alto Adige / Südtirol",
+   "summary": "Trentino-Alto Adige / Südtirol: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income. Autonomous region; the provinces of Trento and Bolzano set their own (lower) IRPEF surcharges, still only on ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-34",
+   "name": "Veneto",
+   "summary": "Veneto: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-36",
+   "name": "Friuli-Venezia Giulia",
+   "summary": "Friuli-Venezia Giulia: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income. Autonomous region with special statute; no regional tax on investment income or wealth.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-42",
+   "name": "Liguria",
+   "summary": "Liguria: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": [],
+   "cost_of_living": {
+    "city": "Genoa / Tigullio coast (Santa Margherita Ligure, Rapallo, Portofino)",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 15000,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 7 distinct 4-6 bedroom homes on LuxuryEstate.com's Liguria rental page (snapshot 2026-10-15), almost all villas in Santa Margherita Ligure and Rapallo (EUR 2,500-20,000). The sample is small and probably dominated by summer lets; Genoa city had no 4+ bedroom listings.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for rent in Liguria",
+      "url": "https://www.luxuryestate.com/rent/italy/liguria",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 9092,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 48 luxury homes for sale in Santa Margherita Ligure on LuxuryEstate.com (snapshot 2026-10-15; EUR 500,000+ and 80 m2+; interquartile range EUR 6,652-12,150).",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in Santa Margherita Ligure",
+      "url": "https://www.luxuryestate.com/italy/liguria/province-of-genoa/santa-margherita-ligure",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 19069,
+      "currency": "EUR"
+     },
+     "year": 2023,
+     "description": "International School in Genoa, Grade 11-12 tuition; the fee table is headed 'School Year 2023-2024' although the page's general section refers to 2026-27, so this is likely out of date. IB fees extra.",
+     "source": {
+      "title": "International School in Genoa - Fees",
+      "url": "https://www.isgenoa.it/admissions/fees",
+      "publisher": "International School in Genoa",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "The wealthy family would most likely live on the Tigullio coast (Portofino, Santa Margherita, Rapallo, 30-40 km from Genoa); the school fee is Genoa's. The International School in Genoa still publishes its 2023-24 secondary fee table (checked 2026-10-15 in English and Italian; no 2025/26 or 2026/27 table exists), so that fee is kept with year 2023. Health insurance and housekeeper costs were not sourced."
+   },
+   "markers": [
+    {
+     "name": "Genoa",
+     "lon": 8.94439,
+     "lat": 44.40478,
+     "kind": "city",
+     "coordinate_source": "GeoNames 3176219"
+    }
+   ]
+  },
+  {
+   "code": "IT-45",
+   "name": "Emilia-Romagna",
+   "summary": "Emilia-Romagna: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-52",
+   "name": "Toscana",
+   "summary": "Toscana: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": [],
+   "cost_of_living": {
+    "city": "Florence",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 12000,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 13 distinct 4-6 bedroom homes in Florence on LuxuryEstate.com (snapshot 2026-10-15; interquartile range EUR 8,000-20,000). Several centre flats at EUR 20,000 are evidently furnished short lets, so a year-round family let is probably nearer the lower quartile (EUR 8,000).",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for rent in Florence",
+      "url": "https://www.luxuryestate.com/rent/italy/tuscany/florence/florence",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 7344,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 60 luxury homes for sale in Florence on LuxuryEstate.com (snapshot 2026-10-15; EUR 500,000+ and 80 m2+; interquartile range EUR 5,043-11,625).",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in Florence",
+      "url": "https://www.luxuryestate.com/italy/tuscany/florence/florence",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 26420,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "International School of Florence, IB Diploma Programme (Grades 11-12) standard (parent-paid) tuition 2026-27; corporate rate EUR 30,370; plus EUR 7,800 one-off entrance fee and EUR 500 application fee.",
+     "source": {
+      "title": "International School of Florence - Tuition & Fees 2026-2027",
+      "url": "https://www.isfitaly.org/tuition-fees/",
+      "publisher": "International School of Florence",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "Rent and price per m2 are listing-portal samples. Health insurance and housekeeper costs were not sourced."
+   },
+   "markers": [
+    {
+     "name": "Florence",
+     "lon": 11.24626,
+     "lat": 43.77925,
+     "kind": "city",
+     "coordinate_source": "GeoNames 3176959"
+    }
+   ]
+  },
+  {
+   "code": "IT-55",
+   "name": "Umbria",
+   "summary": "Umbria: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-57",
+   "name": "Marche",
+   "summary": "Marche: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-62",
+   "name": "Lazio",
+   "summary": "Lazio: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": [],
+   "cost_of_living": {
+    "city": "Rome",
+    "prime_rent_monthly": {
+     "value": {
+      "amount": 10000,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking rent of 18 distinct 4-6 bedroom homes in Rome on LuxuryEstate.com (snapshot 2026-10-15; interquartile range EUR 5,500-13,875; flats, penthouses and villas). Asking rents; some listings are likely furnished short lets.",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for rent in Rome",
+      "url": "https://www.luxuryestate.com/rent/italy/latium/rome/rome",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "prime_price_per_m2": {
+     "value": {
+      "amount": 6208,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "Median asking price per m2 of 66 luxury homes for sale in Rome on LuxuryEstate.com (snapshot 2026-10-15; EUR 500,000+ and 80 m2+; interquartile range EUR 4,178-8,292).",
+     "source": {
+      "title": "LuxuryEstate.com - Luxury properties for sale in Rome",
+      "url": "https://www.luxuryestate.com/italy/latium/rome/rome",
+      "publisher": "LuxuryEstate.com",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "intl_school_annual_fee": {
+     "value": {
+      "amount": 27000,
+      "currency": "EUR"
+     },
+     "year": 2026,
+     "description": "St. George's British International School, Years 12-13 (IB Diploma) 2026-27, parent-paid, lunch included; plus EUR 4,000 one-off registration and EUR 350 annual re-enrolment.",
+     "source": {
+      "title": "St. George's British International School Rome - Fees",
+      "url": "https://www.stgeorge.school.it/admissions/fees",
+      "publisher": "St. George's British International School",
+      "kind": "other",
+      "accessed": "2026-10-15"
+     }
+    },
+    "notes": "Rent and price per m2 are listing-portal samples. Health insurance and housekeeper costs were not sourced."
+   },
+   "markers": [
+    {
+     "name": "Rome",
+     "lon": 12.51133,
+     "lat": 41.89193,
+     "kind": "city",
+     "coordinate_source": "GeoNames 3169070"
+    }
+   ]
+  },
+  {
+   "code": "IT-65",
+   "name": "Abruzzo",
+   "summary": "Abruzzo: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-67",
+   "name": "Molise",
+   "summary": "Molise: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-72",
+   "name": "Campania",
+   "summary": "Campania: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-75",
+   "name": "Puglia",
+   "summary": "Puglia: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-77",
+   "name": "Basilicata",
+   "summary": "Basilicata: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-78",
+   "name": "Calabria",
+   "summary": "Calabria: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-82",
+   "name": "Sicilia",
+   "summary": "Sicilia: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income. Autonomous region with special statute; no regional tax on investment income or wealth.",
+   "regime_overrides": {},
+   "open_questions": []
+  },
+  {
+   "code": "IT-88",
+   "name": "Sardegna",
+   "summary": "Sardegna: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income. Autonomous region with special statute; no regional tax on investment income or wealth.",
+   "regime_overrides": {},
+   "open_questions": []
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+{
+  "id": "CZE",
+  "name": "Czech Republic",
+  "continent": "Europe",
+  "region": "Central Europe",
+  "currency": "CZK",
+  "researched_on": "2026-10-15",
+  "summary": "Czechia exempts gains on securities held more than 3 years, and from 2026 without any annual cap, has no inheritance tax and exempts gifts from relatives, and has no wealth tax. Dividends cost a flat 15%. For a long-term buy-and-hold investor it is one of the most favourable regimes in the EU.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Progressive PIT 15%/23% with time-test exemptions for capital gains.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident with a permanent home in Czechia or 183+ days of presence in a calendar year.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "There is no separate capital gains tax: gains are ordinary income taxed at 15%, or 23% above CZK 1,762,812 (2026). But gains on listed shares and bonds held more than 3 years are fully exempt (time test), as are gains on a stake in a limited company (s.r.o.) held more than 5 years and on real estate held more than 10 years (5 years if bought before 2021). From 2026 there is no cap on the securities exemption: the CZK 40m annual cap that applied in 2025 now applies only to crypto-assets (§4(3)), confirmed in the consolidated law text.",
+        "exemptions_thresholds": "Time test: 3 years for securities (shares, bonds, fund units); 5 years for company stakes not represented by a security; real estate 10 years (acquired from 2021) or 5 years (earlier), 2 years for a main residence lived in. Small sales: total gross proceeds from securities up to CZK 100,000 a year are exempt regardless of holding period.",
+        "eligibility_conditions": "The exemption does not apply to securities held as business assets, or sold within 3 years of being withdrawn from business assets.",
+        "important_exceptions": "2025 only: exempt income from securities and stakes was capped at CZK 40 million per year; the excess was taxable. From 1 January 2026 the cap in §4(3) applies only to crypto-assets (§4(1)(zk)); securities and company stakes are uncapped (law text version 157, effective 1 Aug 2026, checked 15 Oct 2026). Exempt income above CZK 5 million must be reported to the tax office by the return deadline (§38v ZDP, confirmed in the law text); failure to report carries a penalty.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zákon č. 586/1992 Sb., o daních z příjmů (consolidated, version effective 1.8.2026)",
+            "url": "https://www.zakonyprolidi.cz/cs/1992-586",
+            "publisher": "Zákony pro lidi (consolidated Czech legislation)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Czech Republic - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/czech-republic/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Czech Republic - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/czech-republic/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "The brief mentioned a CZK 100m annual cap introduced in 2025: not found. The law in force (version effective 1 Aug - 31 Dec 2026) shows the CZK 40m cap now only in §4(3) for crypto-assets; securities and company stakes are uncapped from 2026."
+        ],
+        "headline_rate": 0.23,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Assumes holdings longer than the time tests (3 years securities, 5 years s.r.o. stake, 10 years real estate): exempt, 0. Short-term gains: 23% marginal for a large gain (15% up to CZK 1,762,812). No social or health insurance on these 'other income' gains.",
+        "professional_trader": "Securities held in business assets or trading as a business fall outside the time test and are taxed as business income (with social and health insurance).",
+        "holding_period_rules": "3 years for securities, 5 years for unlisted company stakes, 10 years for real estate (from 2021 acquisitions), 2 years main residence.",
+        "foreign_assets": "Time test applies to foreign securities and foreign real estate alike; worldwide taxation for residents."
+      },
+      "dividends": {
+        "summary": "Dividends from Czech companies are taxed by a final 15% withholding tax. Foreign dividends can be put into a separate tax base taxed at a flat 15% (or into the general base at 15%/23%), with credit for foreign withholding tax.",
+        "exemptions_thresholds": "No allowance against the separate 15% base.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Czech Republic - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/czech-republic/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Czech Republic - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/czech-republic/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Zákon č. 586/1992 Sb., o daních z příjmů (consolidated, version effective 1.8.2026)",
+            "url": "https://www.zakonyprolidi.cz/cs/1992-586",
+            "publisher": "Zákony pro lidi (consolidated Czech legislation)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Czech Republic - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/czech-republic/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.15,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.15,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Czech dividends: 15% final WHT. Foreign dividends: flat 15% separate base (§16a), foreign WHT credited up to the treaty rate.",
+        "withholding_outbound": "15% on dividends to residents of EU/EEA and treaty/information-exchange countries, 35% to others; reduced by treaty or EU Parent-Subsidiary Directive.",
+        "treaty_network": "Wide network covering the EU, the US and most OECD states.",
+        "holding_company_notes": "A Czech company pays 21% CIT; dividends from qualifying subsidiaries are exempt under the participation exemption; distribution to an individual then bears 15%. No holding structure is scored for Czechia: listed securities held personally for more than 3 years are tax-exempt (uncapped from 2026), whereas a Czech company pays 21% on portfolio gains and a 15% special rate on portfolio dividends (the participation exemption needs at least 10% held 12 months) and distributions bear another 15%, so a holding company is worse on every line."
+      },
+      "wealth_tax": {
+        "summary": "No wealth tax or net worth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Czech Republic - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/czech-republic/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Annual real estate tax on property owned at 1 January, based on area, type, use and municipal coefficients; small for residential property. No real estate transfer tax."
+      },
+      "inheritance": {
+        "summary": "There is no inheritance tax: inherited assets are exempt from income tax for every heir. There is no separate gift tax either: gifts are income of the recipient, but gifts from relatives in the direct line (children, grandchildren) and the collateral line (siblings and others) and from spouses are exempt.",
+        "exemptions_thresholds": "Inheritance (§4a(a)): fully exempt for any heir. Gifts from relatives (§10(3)(c)(1)): exempt without limit. Exempt gifts/inheritances above CZK 5 million must be reported to the tax office (§38v ZDP, confirmed in the law text).",
+        "eligibility_conditions": "None for children.",
+        "important_exceptions": "Gifts received from non-relatives are taxable income (15%/23%) subject to small exemptions. Exempt income above CZK 5m may need to be reported (unverified).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zákon č. 586/1992 Sb., o daních z příjmů (consolidated, version effective 1.8.2026)",
+            "url": "https://www.zakonyprolidi.cz/cs/1992-586",
+            "publisher": "Zákony pro lidi (consolidated Czech legislation)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Czech Republic - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/czech-republic/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Notary probate fees not quantified; treated as negligible."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "No gift tax; gifts are income but gifts from relatives (direct and collateral line) are exempt.",
+        "gifts_same_as_inheritance": true,
+        "business_relief": "Not needed.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Exemption applies regardless of where the assets are.",
+        "domicile_rules": "Income tax residence (permanent home or 183 days)."
+      },
+      "sources": [
+        {
+          "title": "Czech Republic - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/czech-republic/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if the individual has a permanent home (owned or rented, intended for permanent living) in Czechia or is present 183+ days in a calendar year (arrival and departure days count). Treaty tie-breakers resolve dual residence.",
+    "routes": [
+      {
+        "name": "EU/EEA free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Register residence for stays over 3 months; no investment requirement."
+      },
+      {
+        "name": "Long-term visa / residence permit",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Permit for a purpose such as business, employment or family; Czechia has no investor visa programme as far as found (unverified)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Czech Republic - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/czech-republic/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.21,
+    "summary": "21% CIT for tax periods from 2024 (19% before). Participation exemption for dividends and share gains from qualifying subsidiaries.",
+    "sources": [
+      {
+        "title": "Czech Republic - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/czech-republic/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Prague",
+      "lon": 14.42076,
+      "lat": 50.08804,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3067696"
+    }
+  ],
+  "us_citizen_notes": "A US-Czech income tax treaty is in force. The Czech time-test exemption does not shelter gains from US tax.",
+  "open_questions": [
+    "Any income tax changes announced by the government formed after the October 2025 election were not found in PwC (reviewed July 2026) or in the law version effective 1 Aug 2026."
+  ],
+  "cost_of_living": {
+    "city": "Prague",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 98000,
+        "currency": "CZK"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 48 distinct houses/villas of 200-400 m² for rent in Prague's prime western and southern districts (Praha 6: Dejvice, Bubeneč, Střešovice, Nebušice, Vokovice, Veleslavín, Suchdol; Praha 5; Praha 4/Podolí/Braník), sampled from Sreality.cz on 15 Oct 2026 (range CZK 49,999-190,000; median of all 67 Prague listings in that size band CZK 85,000). Asking rents, utilities extra.",
+      "source": {
+        "title": "Pronájem domu od 200 m² do 400 m² Praha (listing search)",
+        "url": "https://www.sreality.cz/hledani/pronajem/domy/praha?plocha-od=200&plocha-do=400",
+        "publisher": "Sreality.cz (Seznam.cz)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 831000,
+        "currency": "CZK"
+      },
+      "year": 2026,
+      "description": "International School of Prague, Grades 11-12, academic year 2026/27: tuition CZK 753,000 plus annual Capital Assessment Fee CZK 78,000. New students also pay a one-off Newcomers' Fee of CZK 52,000 and a CZK 9,000 application fee.",
+      "source": {
+        "title": "School Fees - Fees for the Academic Year 2026/27",
+        "url": "https://www.isp.cz/admissions/school-fees",
+        "publisher": "International School of Prague",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Prime purchase price per m², family health insurance and housekeeper cost were not sourced in this round and are omitted rather than guessed."
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "id": "DOM",
+  "name": "Dominican Republic",
+  "continent": "Caribbean",
+  "region": "Greater Antilles (Hispaniola)",
+  "currency": "DOP",
+  "researched_on": "2026-10-15",
+  "summary": "The Dominican Republic is territorial except that residents are taxed on foreign investment income and financial gains (dividends, interest, gains on shares and securities) at up to 25% (27% top band from 2027 under Law 30-26). Foreigners who become resident pay this only from their third tax year. Dominican dividends bear a final 10% withholding. Inheritance tax is 3% for heirs; gifts are taxed at 25%-27%. No wealth tax for passive individuals (real estate holdings above a threshold pay the 1% IPI).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence (from the third year)",
+      "type": "standard",
+      "description": "Dominican-source income plus foreign investment income and financial gains taxed at progressive rates up to 25% (2026); 10% final WHT on Dominican dividends; 3% inheritance tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident after more than 182 days in a calendar year (PwC Residence).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains are taxed as ordinary income (top 25% in 2026). Residents are taxed on foreign financial gains (gains on shares and securities). Law 30-26 (June 2026) cut the tax on individuals' gains from Dominican real estate to a single 10% (exempt if reinvested in a main residence within 6 months), effective immediately.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/dominican-republic/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/dominican-republic/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Significant developments",
+            "url": "https://taxsummaries.pwc.com/dominican-republic/individual/significant-developments",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Dominican Republic Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicanrepublichighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.25,
+        "rates": {
+          "listed_securities_domestic": 0.25,
+          "listed_securities_foreign": 0.25,
+          "private_business_sale": 0.25,
+          "real_estate_local": 0.1,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "PwC 2026 scale top 25% (above DOP 867,123); Deloitte: gains on capital assets in the DR generally 25%; foreign financial gains of residents taxable. Local real estate 10% under Law 30-26.",
+        "important_exceptions": "From 2027 the top band becomes 27% above DOP 4,800,000 (Law 30-26). Inflation adjustment of cost allowed.",
+        "open_questions": [
+          "Whether gains on foreign real estate are 'financial gains' within the foreign-income rule is unclear; null.",
+          "Law 30-26 text not opened."
+        ]
+      },
+      "dividends": {
+        "summary": "Cash dividends from Dominican companies are exempt in the hands of individuals once the 10% withholding has been applied (final). Foreign dividends are foreign investment income taxed at up to 25% (2026) with a credit for foreign tax up to the Dominican tax on that income.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/dominican-republic/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/dominican-republic/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/dominican-republic/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Dominican Republic Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicanrepublichighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.25,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.25,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: 10% final WHT (PwC Income determination). Foreign: top PIT rate 25% in 2026 (27% from 2027).",
+        "withholding_outbound": "10% on dividends to residents and non-residents (Canada and Spain treaties 0%/10%).",
+        "treaty_network": "Only Canada and Spain.",
+        "holding_company_notes": "Dividends received by a holding company that already suffered 10% WHT are not taxed again on onward distribution."
+      },
+      "wealth_tax": {
+        "summary": "No general wealth tax for individuals. A 1% net worth tax applies only as a minimum tax for individuals carrying on a trade or business in the DR (Deloitte).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/dominican-republic/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Dominican Republic Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicanrepublichighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "IPI (Impuesto al Patrimonio Inmobiliario): 1% a year on the value of an individual's Dominican real estate above an indexed threshold (not re-verified); 3% transfer tax on real estate purchases."
+      },
+      "inheritance": {
+        "summary": "Inheritance tax of 3% of the inherited estate is charged to the heirs. It covers personal and real property in the estate, Dominican-situs gifts, and foreign-situs personal property of a deceased who had Dominican nationality or whose last domicile was in the DR (Deloitte 2026). Gifts to individuals are taxed at 25% (Deloitte) or 27% (PwC).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/dominican-republic/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Dominican Republic Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicanrepublichighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "beneficiary",
+        "children_treatment": "taxed_low",
+        "exemption": 0,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.03
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Gifts taxed at 25%-27% of the value (PwC: 27% withholding; Deloitte: 25%).",
+        "gifts_same_as_inheritance": false,
+        "foreign_assets": "Foreign personal (movable) property included if the deceased had Dominican nationality or last domicile in the DR.",
+        "domicile_rules": "Last domicile in the DR or Dominican nationality.",
+        "open_questions": [
+          "Gift tax rate 25% (Deloitte) vs 27% (PwC) conflict; probably 27% following the general rate.",
+          "Whether foreign real estate of a domiciled deceased is included (Deloitte mentions foreign personal property only)."
+        ]
+      }
+    },
+    {
+      "id": "new_resident_two_years",
+      "name": "New resident: foreign investment income untaxed until the third tax year",
+      "type": "special",
+      "description": "Foreign individuals who become resident are taxed on foreign-source investment income only from the third taxable year in which they are resident (Deloitte 2026).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Foreign individuals who become Dominican tax residents.",
+      "duration_years": 2,
+      "capital_gains": {
+        "summary": "Foreign financial gains untaxed in the first two resident years.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Dominican Republic Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicanrepublichighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/dominican-republic/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.25,
+        "rates": {
+          "listed_securities_domestic": 0.25,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.25,
+          "real_estate_local": 0.1,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Foreign-source investment income deferred to the third taxable year of residence.",
+        "open_questions": [
+          "PwC words it as 'taxed only after the third year' (possibly three exempt years); Deloitte's 'from the third taxable year' (two exempt years) is used."
+        ]
+      },
+      "dividends": {
+        "summary": "Foreign dividends untaxed in the first two resident years.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Dominican Republic Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicanrepublichighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/dominican-republic/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.25,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Foreign-source investment income deferred to the third taxable year of residence."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "More than 182 days in a calendar year (PwC Residence).",
+    "routes": [
+      {
+        "name": "Residence for pensioners and rentistas (Law 171-07) and investors",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Law 171-07 grants residence and some tax incentives to persons with foreign pension or passive income; details and any income-tax exemption not verified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Dominican Republic - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/dominican-republic/individual/residence",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Dominican Republic Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicanrepublichighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.27,
+    "summary": "27% CIT (30% for 2026-2028 for taxpayers with income of DOP 1 billion or more, Law 30-26); 1% asset tax as minimum; 10% dividend WHT. Free-zone regimes.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Dominican Republic - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/dominican-republic/corporate/taxes-on-corporate-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Dominican Republic - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/dominican-republic/corporate/withholding-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Santo Domingo (Los Cacicazgos / Arroyo Hondo / Bella Vista / Piantini)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 4500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 69 distinct houses with 4-6 bedrooms listed for long-term rent (monthly 'Alquiler' or 'Alquiler Amueblado' price; unfurnished price used where both are given) on SuperCasas.com on 15 Oct 2026, in the prime Distrito Nacional sectors Los Cacicazgos (14), Arroyo Hondo incl. Altos de Arroyo Hondo, Cuesta Hermosa and the gated Isabel Villas development (42), Bella Vista (7), La Castellana (2), Naco, Piantini, Evaristo Morales and Julieta (1 each). Search: houses, rent, 4+ bedrooms (167 results nationwide). Identical duplicate ads were counted once; one USD 300 typo and houses with more than 6 bedrooms were excluded. Interquartile range USD 3,500-6,500; range USD 1,500-16,000. Asking prices, listings undated; Isabel Villas (a new gated development) makes up 16 of the 69.",
+      "source": {
+        "title": "SuperCasas.com: houses for rent, 4+ bedrooms (Dominican Republic)",
+        "url": "https://www.supercasas.com/buscar/?ObjectType=124&PriceType=401&RoomsFrom=4&RoomsTo=10",
+        "publisher": "SuperCasas.com",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 25750,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Carol Morgan School (Santo Domingo; US-accredited PreK-12, AP/American diploma), high school annual tuition USD 25,750 as reported by the school to the US State Department Office of Overseas Schools, 'current as of April 2026' (2026 Fact Sheet; school year not stated, presumably 2026/27). Excludes one-time entrance fee and capital levy for new families (2023/24 sheet: USD 10,995 entrance fee for grades 9-12 and USD 6,300 capital levy; not restated on the 2026 sheet). The school's own site does not publish fees. Third-party (US government) source.",
+      "source": {
+        "title": "Santo Domingo, Dominican Republic: Carol Morgan School: 2026 Fact Sheet",
+        "url": "https://www.state.gov/wp-content/uploads/2026/07/Santo-Domingo-2026-Fact-Sheet-Dominican-Republic.pdf",
+        "publisher": "U.S. Department of State, Office of Overseas Schools",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent from a SuperCasas portal sample (asking prices, USD). School fee from the State Department's 2026 fact sheet for Carol Morgan School. Casa de Campo (La Romana) not researched. Purchase price per m2, health insurance and housekeeper not sourced."
+  },
+  "markers": [
+    {
+      "name": "Santo Domingo",
+      "lon": -69.89232,
+      "lat": 18.47186,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3492908"
+    }
+  ],
+  "us_citizen_notes": "No US-DR income tax treaty. US citizens remain subject to US federal tax.",
+  "open_questions": [
+    "Law 171-07 rentista tax incentives for foreign income not verified.",
+    "Law 30-26 (June 2026) changes taken from PwC only."
+  ]
+}

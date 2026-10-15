@@ -1,0 +1,228 @@
+{
+  "id": "GEO",
+  "name": "Georgia",
+  "currency": "GEL",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Flat 20% personal income tax on Georgian-source income; residents are exempt on income without a Georgian source. Employees' pension contribution 2% (plus 2% from the employer; self-employed are exempt from mandatory joining); no other social security. Individual entrepreneurs with turnover up to GEL 500,000 can register for small-business status and pay 1% of turnover.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.2
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.02,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "PwC: from 1 January 2019 pension-scheme membership is mandatory for employees, with self-employed individuals listed as exempt from mandatory joining; if a self-employed person contributes, it is 4% of annual income with a state top-up of 2% (income below GEL 24,000) or 1% (GEL 24,000-60,000), capped at GEL 60,000 of income. The mandatory rate is therefore modelled as 0%; the voluntary 4% is an option. Small-business status: 1% of turnover up to GEL 500,000 (3% above); micro business under GEL 30,000 turnover is exempt.",
+    "social_security_deductible": null,
+    "local_tax_note": "The pension scheme is the only social contribution; health insurance is not mentioned by PwC. Georgian-source income includes employment in Georgia and services actually rendered in Georgia (Tax Code Art. 104(1)(a), (c), (c.a)); residents are exempt only on income that is not Georgian-source (Art. 82(1)(u)). Residency: 183 days or more in any continuous 12 months (PwC).",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Georgia individual - taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/georgia/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Georgia individual - other taxes",
+        "url": "https://taxsummaries.pwc.com/georgia/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Georgia tax guide",
+        "url": "https://www.countrytaxcalc.com/tax-guides/georgia-tax-guide/",
+        "publisher": "CountryTaxCalc",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Tax Code of Georgia (consolidated English text, Arts. 82 and 104)",
+        "url": "https://matsne.gov.ge/en/document/view/1043717?publication=214",
+        "publisher": "Legislative Herald of Georgia (matsne.gov.ge)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Georgia individual - residence",
+        "url": "https://taxsummaries.pwc.com/georgia/individual/residence",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Georgia individual - deductions",
+        "url": "https://taxsummaries.pwc.com/georgia/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "The Tax Code text opened (matsne.gov.ge) is a consolidated version dated December 2023; later amendments to Art. 82/104 not checked.",
+      "Self-employed pension: PwC lists self-employed as exempt from mandatory joining yet states a 4% rate; modelled as 0% mandatory.",
+      "Whether the 2% employee pension contribution is deducted before the 20% income tax is not established: PwC says employees may not claim deductions and is silent on the contribution; secondary guides disagree. Check the Tax Code / Law on Funded Pensions or rs.ge. social_security_deductible left null."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "remotely_from_georgia",
+      "name": "Remotely from Georgia",
+      "kind": "digital_nomad_visa",
+      "description": "Programme launched in 2020 for remote workers: proof of remote income of USD 2,000 or more a month, health insurance and a clean record, status valid for one year and renewable (CountryTaxCalc). Its status in 2026 is uncertain: another listing says it was deactivated, and no official page could be opened. Citizens of about 95 countries can stay visa-free for 365 days anyway. The programme itself grants no tax relief. Georgia's territorial rule exempts a resident only on income that is not Georgian-source (Tax Code Art. 82(1)(u)), and Art. 104(1) makes income from employment in Georgia and from services actually rendered in Georgia Georgian-source, whoever pays. Remote work done while living in Georgia is therefore taxable (20%, or 1% as a small business), so covers_local_work is false; only income from activity performed abroad is exempt. CountryTaxCalc claims work in Georgia for foreign clients is foreign-sourced, but it is a commercial site that cites no statute.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 24000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "One year, reported renewable; open-ended in practice with visa-free 365-day stays.",
+      "treatment": "exempt",
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Georgia tax guide",
+          "url": "https://www.countrytaxcalc.com/tax-guides/georgia-tax-guide/",
+          "publisher": "CountryTaxCalc",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries: Georgia individual - taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/georgia/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Tax Code of Georgia (consolidated English text, Arts. 82 and 104)",
+          "url": "https://matsne.gov.ge/en/document/view/1043717?publication=214",
+          "publisher": "Legislative Herald of Georgia (matsne.gov.ge)",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Whether the programme is still operating in 2026 is unconfirmed; no official page opened (georgia.travel and mfa.gov.ge URLs returned 404).",
+        "Statute text is a Dec 2023 consolidation; a later amendment or Revenue Service ruling treating remote work for foreign clients as foreign-source was not found. CountryTaxCalc asserts it without citation."
+      ],
+      "covers_local_work": false
+    },
+    {
+      "id": "small_business_1pct",
+      "name": "Individual entrepreneur small business status (1%)",
+      "kind": "other",
+      "description": "Individual entrepreneurs with annual turnover up to GEL 500,000 pay 1% of turnover instead of 20% on profit (3% on turnover above the limit). Per consultancies it applies to Georgian-source activity, which includes services actually rendered in Georgia for foreign clients (Tax Code Art. 104(1)(c.a)); income from services performed abroad is outside Georgian tax anyway. Certain activities (such as consulting, legal, medical, architectural) are reported as excluded and status is lost after two consecutive years above the limit.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": {
+        "amount": 500000,
+        "currency": "GEL"
+      },
+      "duration_years": null,
+      "duration_note": "Open-ended while turnover stays within the limit.",
+      "treatment": "flat_rate",
+      "flat_rate": 0.01,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries: Georgia individual - taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/georgia/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Georgia tax guide",
+          "url": "https://www.countrytaxcalc.com/tax-guides/georgia-tax-guide/",
+          "publisher": "CountryTaxCalc",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Tax Code of Georgia (consolidated English text, Arts. 82 and 104)",
+          "url": "https://matsne.gov.ge/en/document/view/1043717?publication=214",
+          "publisher": "Legislative Herald of Georgia (matsne.gov.ge)",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Exclusion list and revocation rule are from consultancies (Andersen, PB Services via search results), not from the Revenue Service.",
+        "1% applies to turnover, not profit."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Tbilisi",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 750,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Midpoint of the USD 600-900 long-term rent range for a 1-bedroom in Vake (popular expat area), 2026 price table of Sakhva Travel; method not described. Furnished/short-let costs 20-40% more.",
+      "source": {
+        "title": "Apartment rental in Tbilisi 2026: prices by district",
+        "url": "https://sakhva-travel.com/en/blog/apartment-rental-tbilisi/",
+        "publisher": "Sakhva Travel",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1150,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Midpoint of the USD 900-1,400 long-term rent range for a 2-bedroom in Vake, same source.",
+      "source": {
+        "title": "Apartment rental in Tbilisi 2026: prices by district",
+        "url": "https://sakhva-travel.com/en/blog/apartment-rental-tbilisi/",
+        "publisher": "Sakhva Travel",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Vera is cheaper (1-bed 550-800, 2-bed 800-1,200 USD), Saburtalo cheaper still."
+  },
+  "residence_routes": "Citizens of 95+ countries, including the EU and US, can stay visa-free for 365 days (CountryTaxCalc); after that, long-term residence is arranged via a residence permit based on work, business or property (not verified here). The Remotely from Georgia status is an additional route if still active.",
+  "open_questions": [
+    "Official government and Revenue Service pages not opened.",
+    "Programme status unclear."
+  ]
+}

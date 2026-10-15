@@ -1,0 +1,266 @@
+{
+  "id": "MUS",
+  "name": "Mauritius",
+  "continent": "Africa",
+  "region": "Eastern Africa (Indian Ocean)",
+  "currency": "MUR",
+  "researched_on": "2026-10-15",
+  "summary": "Mauritius has no capital gains tax, no inheritance, estate or gift tax and no wealth tax. Residents are taxed at 0/10/20% on income, but foreign-source income is taxed only when remitted to Mauritius, and dividends from Mauritian companies are exempt from income tax. For the three income years from 1 July 2025 to 30 June 2028, a Fair Share Contribution of 15% applies to an individual's leviable income (including Mauritian dividends) above MUR 12 million, raising the top rate on large remitted income to 35%. A family that keeps its foreign portfolio income offshore and remits capital pays little or no Mauritian tax.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Mauritian tax resident",
+      "type": "standard",
+      "description": "Progressive income tax 0/10/20%; foreign income taxed on remittance; temporary 15% Fair Share Contribution above MUR 12 million (2025/26 to 2027/28).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if domiciled in Mauritius (unless permanent abode abroad), present 183 days or more in the income year, or 270 days or more over the income year and the two preceding years. Non-citizens need an occupation or residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No tax on capital gains. Income from dealings in units and securities is exempt, and foreign capital gains are not taxable. A series of property purchases and resales can be treated as trading.",
+        "exemptions_thresholds": "All capital gains exempt.",
+        "important_exceptions": "Land transfer tax and registration duty on property transactions (rates not verified in this session). Property dealing can be taxed as trade income.",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Mauritius - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/mauritius/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mauritius Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-mauritiushighlights-2026.pdf",
+            "publisher": "Deloitte International Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No capital gains tax; securities dealings exempt. Real estate 0% for an investor (land transfer tax, a seller-side transaction tax, is not modelled).",
+        "professional_trader": "Repeated property buying and selling may be taxed as a trade; income from dealings in securities is expressly exempt.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Foreign capital gains are not taxable whether or not remitted.",
+        "eligibility_conditions": "No remittance assumption: Mauritius has no capital gains tax (PwC; Deloitte 2026), so gains are 0% whether or not proceeds are brought into Mauritius. Trading in property or securities as a business would be income, and foreign income is taxed when remitted."
+      },
+      "dividends": {
+        "summary": "Dividends paid by Mauritian resident companies are exempt from income tax, but they count in leviable income for the Fair Share Contribution (15% on leviable income above MUR 12 million, income years 2025/26-2027/28). Foreign dividends are taxable only if received in Mauritius, at up to 20% plus the 15% Fair Share Contribution above MUR 12 million, with a foreign tax credit that usually eliminates much of the Mauritian tax.",
+        "exemptions_thresholds": "Income tax bands from 1 July 2025: first MUR 500,000 at 0%, next MUR 500,000 at 10%, remainder 20%. Fair Share Contribution threshold MUR 12 million of net/leviable income.Fair Share Contribution: 15% on net income above MUR 12 million, for the three income years starting 1 July 2025 (2025/26-2027/28) (PwC; Deloitte Highlights 2026).",
+        "important_exceptions": "Remittance basis: foreign dividends kept outside Mauritius are not taxed. The Fair Share Contribution applies for income years starting 1 July 2025 and the two following years; it lapses after 30 June 2028 unless extended. Mauritius has over 50 tax treaties (Deloitte 2026) but no comprehensive income tax treaty with the United States (not verified from the MRA treaty list), so US dividends held directly would bear 30% US WHT. Mauritius levies no WHT on dividends paid out (Deloitte 2026).",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Exempt income (individuals)",
+            "url": "https://www.mra.mu/index.php/individuals/exempt-income",
+            "publisher": "Mauritius Revenue Authority",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Foreign income (individuals)",
+            "url": "https://www.mra.mu/index.php/individuals/foreign-income",
+            "publisher": "Mauritius Revenue Authority",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mauritius - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/mauritius/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mauritius - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/mauritius/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mauritius Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-mauritiushighlights-2026.pdf",
+            "publisher": "Deloitte International Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.35,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.35,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: income-tax exempt (Income Tax Act Second Schedule), but 15% Fair Share Contribution on the part of leviable income above MUR 12 million = 0.15 for a large dividend flow. Foreign: 20% top income tax + 15% FSC = 35% on amounts remitted, before foreign tax credit; 0% if not remitted. After June 2028 the FSC is scheduled to lapse (20% / 0%).",
+        "withholding_outbound": "Mauritius does not levy WHT on dividends paid by resident companies (general rule; PwC withholding page not checked).",
+        "treaty_network": "Network of mostly African and Asian treaties used for holding structures; size not verified. No comprehensive US treaty (not verified).",
+        "holding_company_notes": "Companies pay 15% (80% partial exemption on specified foreign income such as foreign dividends, giving about 3%); GBL companies are used for international holdings. A 5% corporate Fair Share Contribution applies 2025/26-2027/28 to non-GBL companies with chargeable income and supplies above MUR 24 million.",
+        "eligibility_conditions": "Remittance basis: residents are taxed on Mauritian-source income and on foreign income remitted to Mauritius (MRA; Deloitte 2026). foreign_gross_rate 0.35 is the rate on foreign dividends that ARE remitted (20% top income tax + 15% Fair Share Contribution above MUR 12m). Foreign dividends kept outside Mauritius are taxed at 0%; the scored rate does not assume non-remittance. domestic_rate 0.15 is the Fair Share Contribution on Mauritian dividends above MUR 12m (exempt from income tax).",
+        "open_questions": [
+          "Whether remitted foreign dividends count in full in the income on which the 15% Fair Share Contribution is computed is inferred from 'net income' (PwC, Deloitte), not confirmed from MRA guidance or the Finance Act 2025 text."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Mauritius - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/mauritius/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mauritius Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-mauritiushighlights-2026.pdf",
+            "publisher": "Deloitte International Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Local rates on property in municipal areas; registration duty on property purchases (rate not verified)."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. Whether registration duty applies to transfers of Mauritian property by succession or donation to children was not verified; foreign assets are outside any Mauritian charge.",
+        "exemptions_thresholds": "No tax of any amount.",
+        "important_exceptions": "Registration duty and land transfer tax on Mauritian immovable property may apply on donation (not verified). Mauritian civil law (forced heirship under the Civil Code) restricts free disposition of estates of persons whose succession is governed by Mauritian law (general knowledge; not verified).",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Mauritius - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/mauritius/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mauritius Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-mauritiushighlights-2026.pdf",
+            "publisher": "Deloitte International Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None; registration duty on gifts of Mauritian real estate not verified.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "No tax.",
+        "domicile_rules": "Not applicable."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident for an income year (1 July-30 June) if domiciled in Mauritius unless the permanent place of abode is outside, present 183 days or more in the year, or present 270 days or more in aggregate over the year and the two preceding years.",
+    "routes": [
+      {
+        "name": "Residence permit through property acquisition / investor occupation permit / Premium Visa",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Mauritius grants residence permits to non-citizens who buy qualifying property (commonly cited minimum USD 375,000) or invest in a business, and Premium Visas for remote workers and retirees; dependants can be included. Amounts and conditions were not verified in this session (the EDB page returned 404)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mauritius - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/mauritius/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.15,
+    "summary": "15% CIT (3% for exporters and Freeport operators); 80% partial exemption on specified foreign income (foreign dividends, interest, ship/aircraft leasing) with no foreign tax credit when claimed. Global Business Licence companies taxed at 15%. Corporate Fair Share Contribution 5% (2% for 3% taxpayers) from 1 July 2025 to 30 June 2028 for companies above MUR 24 million chargeable income and supplies (GBL companies excluded). QDMTT for large MNE groups from 1 July 2025.",
+    "special_zones": "Freeport zone (3%), GBL regime for international business.",
+    "sources": [
+      {
+        "title": "Mauritius - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/mauritius/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Grand Baie / Tamarin (north and west coasts); Moka for schools",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 130000,
+        "currency": "MUR"
+      },
+      "year": 2026,
+      "description": "Median monthly rent of the 17 long-term rental houses and villas with 4-5 bedrooms listed by Pam Golding Mauritius on 15 Oct 2026 (Tamarin, Pereybere, Grand Baie area, Rivière Noire, La Louisa, Piton, etc.); range MUR 55,000-265,000. Agency asking rents; furnishing mostly not stated.",
+      "source": {
+        "title": "Long-term rental properties in Mauritius",
+        "url": "https://www.pamgolding.mu/en/rent-properties-mauritius/long-term-rental-mauritius.html",
+        "publisher": "Pam Golding Properties Mauritius",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 286880,
+        "currency": "MUR"
+      },
+      "year": 2026,
+      "description": "Lycée des Mascareignes (Moka; French AEFE-network lycée), seconde to terminale annual fee 2026-27 for families of other nationalities, standard track (international BFI track: MUR 390,610; French or Mauritian parents: MUR 234,410); one-time first-registration fee MUR 100,000.",
+      "source": {
+        "title": "Lycée des Mascareignes - Frais de scolarité et règlement financier 2026-2027",
+        "url": "https://www.lyceedesmascareignes.org/frais-de-scolarite-et-reglement-financier",
+        "publisher": "Lycée des Mascareignes",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "English-curriculum schools (Northfields, Le Bocage) do not publish fees online or could not be reached. Purchase prices, health insurance and housekeeper costs not sourced."
+  },
+  "markers": [
+    {
+      "name": "Port Louis",
+      "lon": 57.49889,
+      "lat": -20.16194,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 934154"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed; Mauritius's remittance basis and lack of CGT mean the US layer is the main cost. No US-Mauritius income tax treaty (not verified).",
+  "open_questions": [
+    "Registration duty / land transfer tax on succession and donation to children not verified.",
+    "Residence-by-investment thresholds (property USD 375,000, investor permits) not verified.",
+    "Fair Share Contribution confirmed by two professional sources (PwC June 2026; Deloitte January 2026); the Finance Act 2025 text and MRA guidance were not located (MRA website has no FSC page)."
+  ]
+}

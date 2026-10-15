@@ -1,0 +1,172 @@
+{
+  "id": "NLD",
+  "name": "Netherlands",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Box 1 income tax for 2026 is 8.10% to EUR 38,883, 37.56% to EUR 78,426 and 49.5% above; the first bracket also carries 27.65% national insurance premiums (AOW, Anw, Wlz), shown as social security here. Employee insurance premiums (WW, WIA) and the 6.10% income-related health levy are paid by the employer; the employee pays a nominal health premium of about EUR 1,900 a year to the insurer. General and labour tax credits reduce the bill but could not be verified.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.081
+      },
+      {
+        "from_amount": 38883,
+        "rate": 0.3756
+      },
+      {
+        "from_amount": 78426,
+        "rate": 0.495
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.2765,
+    "employee_social_security_cap": 38883,
+    "self_employed_social_security_rate": 0.2765,
+    "self_employed_social_security_cap": 38883,
+    "self_employed_notes": "Self-employed also pay the same 27.65% national insurance on profit up to EUR 38,883 and an income-related Zvw contribution of 4.85% (the 2026 'low' rate, maximum base EUR 79,409) plus the nominal health premium; the self-employed deduction (zelfstandigenaftrek) and SME profit exemption reduce taxable profit but 2026 amounts were not verified. The 4.85% rate is reported by Rendement.nl for employees/others without an employer levy, and is assumed to apply to the self-employed.",
+    "local_tax_note": "No local income tax. Rates shown for 8.10% exclude the 27.65% premiums, which sit in the social-security fields (combined first-bracket rate 35.75%). General tax credit and labour tax credit (arbeidskorting) are not modelled.",
+    "sources": [
+      {
+        "title": "Netherlands - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/netherlands/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Netherlands - Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/netherlands/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Definitieve percentages ZVW-premie 2026 bekend",
+        "url": "https://www.rendement.nl/sociale-verzekeringen/nieuws/definitieve-percentages-zvw-premie-2026-bekend.html",
+        "publisher": "Rendement.nl",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Netherlands - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/netherlands/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "2026 general tax credit, labour tax credit and self-employed deduction amounts not verified.",
+      "Self-employed Zvw rate assumed from the employee low rate.",
+      "No official Belastingdienst page was reachable."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": {
+        "amount": 48013,
+        "currency": "EUR"
+      },
+      "max_income": {
+        "amount": 262000,
+        "currency": "EUR"
+      },
+      "duration_note": "Maximum 5 years from the first working day. Employer must file within 4 months of starting. 150 km rule: lived more than 150 km from the Dutch border for over 16 of the prior 24 months. Reduced norm EUR 36,497 for under-30s with a master's degree.",
+      "flat_rate": null,
+      "exempt_share": 0.3,
+      "open_questions": [
+        "Whether social security applies to the tax-free allowance was not stated on an opened page (the ruling is a tax matter; assumed unchanged).",
+        "27% from 2027: Loyens & Loeff described a bill; Business.gov.nl states it as law. The WNT cap above EUR 262,000 is the 2026 figure only.",
+        "Self-employed people cannot use the ruling (employed status required)."
+      ],
+      "id": "expat_scheme_30",
+      "name": "30% ruling (expat scheme)",
+      "kind": "expat_regime",
+      "description": "An employer can pay a recruited-from-abroad or transferred employee with scarce expertise up to 30% of wages tax-free in 2026 (2025 and 2026), based on wages up to the WNT cap of EUR 262,000. From 1 January 2027 the maximum falls to 27%: employees who first used the ruling in 2024 move to 27% from 2027 but keep the old salary norms; those starting in 2025 or later also get the higher norms from 2027 (EUR 50,436 general, subject to indexation). Employees who started before 2024 keep 30%. The Loyens & Loeff piece was written when the plan was a bill; Business.gov.nl now states the 27% as fact.",
+      "duration_years": 5,
+      "treatment": "partial_exemption",
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "The expat scheme (30% ruling) for foreign employees in the Netherlands",
+          "url": "https://business.gov.nl/staff/employing-staff/the-expat-scheme-30-percent-ruling-in-the-netherlands/",
+          "publisher": "Business.gov.nl (Dutch government)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "30%-regeling: updates vooruitlopend op 2026",
+          "url": "https://www.grantthornton.nl/insights/human-capital-services/30-regeling-updates-vooruitlopend-op-2026/",
+          "publisher": "Grant Thornton Netherlands",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "From a 30%-ruling to a 27%-ruling: relaxation or restriction?",
+          "url": "https://www.loyensloeff.com/insights/news--events/news/from-a-30-ruling-to-a-27-ruling-relaxation-or-restriction/",
+          "publisher": "Loyens & Loeff",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    }
+  ],
+  "costs": {
+    "city": "Amsterdam",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 2336.0,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Numbeo average monthly rent for a 1-bedroom city-centre apartment, Amsterdam; crowd-sourced, 1499 entries from 235 contributors in the past 12 months, last updated 11 October 2026. Unfurnished/furnished not distinguished. Numbeo gives only 1-bedroom and 3-bedroom figures, so no 2-bedroom value is recorded.",
+      "source": {
+        "title": "Cost of living in Amsterdam (rent prices)",
+        "url": "https://www.numbeo.com/cost-of-living/in/Amsterdam",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 2650,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Investropa 2026 average monthly rent for a 2-bedroom apartment in Amsterdam, excluding utilities and service charges, assuming 70-80 m2; typical range EUR 2,250-3,200. Furnished status not stated. Benchmark estimate, not an official statistic.",
+      "source": {
+        "title": "Amsterdam rents",
+        "url": "https://investropa.com/blogs/news/amsterdam-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Numbeo reports 3-bedroom city-centre EUR 3,519.44 as a cross-check; no 2-bedroom value. Check pass 2026-10-15: no reachable source for a 2-bedroom rent (see dossier change log)."
+  },
+  "residence_routes": "EU/EEA and Swiss citizens have free movement. There is no digital nomad visa. Skilled non-EU employees use the highly skilled migrant or EU Blue Card route with an employer that is a recognised sponsor: 2026 thresholds are EUR 5,942 gross a month for HSM aged 30+ (EUR 4,357 under 30) and EUR 5,942 for the Blue Card. Self-employed non-EU nationals have separate routes (e.g. the DAFT treaty for US citizens) that were not verified here.",
+  "open_questions": [
+    "Self-employed/DAFT route and absence of a nomad visa not verified from an IND page.",
+    "No 2-bedroom rent source."
+  ]
+}

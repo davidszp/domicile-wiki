@@ -1,0 +1,467 @@
+{
+  "id": "JEY",
+  "name": "Jersey",
+  "continent": "Europe",
+  "region": "Channel Islands (Crown Dependency)",
+  "currency": "GBP",
+  "researched_on": "2026-10-15",
+  "summary": "Crown Dependency outside the UK and EU. No capital gains tax, no inheritance or gift tax, no wealth tax. Income including dividends is taxed at a flat 20%. Probate stamp duty up to 0.75%, capped at £100,000. Wealthy newcomers normally come as High Value Residents: minimum £250,000 tax a year, 1% on income above £1.25m.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary Jersey residence",
+      "type": "standard",
+      "description": "Residents pay a flat 20% income tax on worldwide income. No capital gains, inheritance, gift or wealth tax; probate stamp duty of up to 0.75% (capped at £100,000).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax residence in Jersey. Buying or renting property needs housing status (Control of Housing and Work); newcomers without it have very limited housing options, which is why wealthy arrivals use the HVR route.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Jersey has no capital gains tax. Gains by a resident private investor on securities, a private business or real estate are not taxed, unless the activity is a trade (taxed as income at 20%). Stamp duty or land transaction tax applies on buying Jersey property.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Jersey - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/jersey/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Jersey - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/jersey/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No capital gains tax in Jersey; income tax (20%) applies to income, and to trading profits, not to capital gains.",
+        "professional_trader": "Share or property dealing that amounts to a trade is taxed as income at 20%; Jersey property development profits are taxed at 20%.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Foreign gains are equally untaxed.",
+        "open_questions": [
+          "PwC 'other taxes' page does not expressly state 'no CGT'; widely documented but not quoted from an official Revenue Jersey page in this research."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends are taxed as income at a flat 20% (the alternative marginal calculation at 26% only helps low incomes). For 2026 the income tax exemption threshold is £21,250; all married couples are taxed independently from 2026. High Value Residents pay 1% on non-Jersey-property income above £1.25m (see special regime).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Jersey - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/jersey/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Jersey Budget Measures for 2026",
+            "url": "https://orbitax.com/news/country/article/Jersey-Budget-Measures-for-202-60897",
+            "publisher": "Orbitax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tax information for High Value Residents",
+            "url": "https://www.gov.je/TaxesMoney/IncomeTax/Technical/Guidelines/Pages/TaxInformationHighValueResidents.aspx",
+            "publisher": "Government of Jersey, Revenue Jersey",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.2,
+        "domestic_rate": 0.2,
+        "foreign_gross_rate": 0.2,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Flat 20% standard rate on net income after allowances (PwC). Most Jersey companies pay 0% corporate tax, so no imputation credit arises on typical domestic dividends.",
+        "exemptions_thresholds": "Exemption threshold £21,250 (2026); relevant only at low income.",
+        "withholding_outbound": "No withholding tax on dividends, interest or royalties paid by Jersey companies to non-residents (PwC).",
+        "treaty_network": "Small set of double tax agreements (UK, Guernsey, Isle of Man and a few others); no US income tax treaty, so US dividends suffer 30% US withholding. Foreign tax is relieved by credit.",
+        "open_questions": [
+          "Exact treaty count and unilateral credit mechanics not verified from an official list."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No wealth tax or net worth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Jersey - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/jersey/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Parish rates are levied on property by each parish (modest). Stamp duty applies to purchases of Jersey real estate; non-main-residence purchases carry an extra 4 percentage points since 2023."
+      },
+      "inheritance": {
+        "summary": "No inheritance tax and no gift tax. A probate stamp duty applies to the personal (movable) estate: 0.5% up to £100,000, then £500 plus £75 per £10,000 (0.75%), capped at £100,000 for estates above £13.36m. For a Jersey-domiciled person it applies to worldwide movable estate.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Jersey - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/jersey/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Stamp Duties and Fees (Jersey) Law 1998, Schedule 3 (Probate fees)",
+            "url": "https://www.jerseylaw.je/laws/current/l_8_1998",
+            "publisher": "Jersey Legal Information Board",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0075,
+        "gift_tax": "No gift tax. Stamp duty applies to gifts of Jersey immovable property (land) as for transfers.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": null,
+        "exemptions_thresholds": "Probate duty (Stamp Duties and Fees (Jersey) Law 1998, Schedule 3 item 9): no fee up to £10,000 net; £50 per £10,000 to £100,000; £500 + £75 per £10,000 up to £13,360,000; flat £100,000 above. other_transfer_cost_rate 0.0075 is the marginal rate up to the cap; for a £30m movable estate the effective cost is about 0.33%.",
+        "important_exceptions": "Lifetime gifts of shares and portfolios attract no duty, so the probate duty can be avoided by lifetime transfers or holding structures. Jersey succession law gives spouse and children rights over part of movable estate (not a tax; not verified here).",
+        "foreign_assets": "Probate duty covers worldwide personal estate of a Jersey-domiciled deceased; only Jersey-situs estate for others (Art. 5).",
+        "domicile_rules": "Duty base depends on Jersey domicile at death. No tax tail. Families arriving from the UK remain within UK IHT under the residence-based test from 6 April 2025 for up to 10 years after leaving, depending on years of UK residence.",
+        "open_questions": [
+          "Whether Jersey still has légitime (forced heirship) rights over movables was not verified."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Jersey - Individual - Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/jersey/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Jersey - Individual - Other taxes",
+          "url": "https://taxsummaries.pwc.com/jersey/individual/other-taxes",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "high_value_residency",
+      "name": "High Value Residency (2(1)(e) housing consent)",
+      "type": "special",
+      "description": "Discretionary residency for wealthy newcomers. Jersey property income is taxed at 20%; other income at 20% on the first £1.25m and 1% above. New HVRs (applications from 14 July 2023) must pay at least £250,000 a year: with income under £1.25m they are deemed to have enough income to pay that minimum.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Application to the Government of Jersey (via Locate Jersey); granted at discretion considering economic and social benefit and financial history. Government stated in 2023 an expectation of net worth of at least £10m excluding the main home and a minimum property purchase of £3.5m (houses) / £1.75m (apartments), confirmation of final figures pending. Consent gives the right to buy or rent property.",
+      "duration_years": null,
+      "lump_sum": {
+        "annual": {
+          "amount": 250000,
+          "currency": "GBP"
+        },
+        "covers": [
+          "foreign_dividends",
+          "foreign_capital_gains",
+          "foreign_income_all",
+          "domestic_income"
+        ],
+        "notes": "Minimum annual tax of £250,000 per applicant (gov.je). Covers income up to £1.25m; income above £1.25m (except Jersey property income at 20%) is taxed at 1%. Spouses are taxed independently. HVRs approved before 14 July 2023 stay on older terms (£170,000 minimum under the 2018 rules)."
+      },
+      "dividends": {
+        "summary": "For an HVR, dividends above the first £1.25m of income are taxed at 1%; the first £1.25m is taxed at 20%, subject to a minimum total tax of £250,000.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax information for High Value Residents",
+            "url": "https://www.gov.je/TaxesMoney/IncomeTax/Technical/Guidelines/Pages/TaxInformationHighValueResidents.aspx",
+            "publisher": "Government of Jersey, Revenue Jersey",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Jersey - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/jersey/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.01,
+        "domestic_rate": 0.01,
+        "foreign_gross_rate": 0.01,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Marginal rate 1% on non-Jersey-property income above £1.25m; the £250,000 minimum is modelled as the lump sum.",
+        "withholding_outbound": "No withholding tax on dividends paid by Jersey companies to non-residents.",
+        "treaty_network": "As standard regime."
+      },
+      "sources": [
+        {
+          "title": "Tax information for High Value Residents",
+          "url": "https://www.gov.je/TaxesMoney/IncomeTax/Technical/Guidelines/Pages/TaxInformationHighValueResidents.aspx",
+          "publisher": "Government of Jersey, Revenue Jersey",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Government raising minimum tax payments for new high value residents (2023)",
+          "url": "https://www.gov.je/News/2023/Pages/GovernmentRaisingMinimumTaxPayments.aspx",
+          "publisher": "Government of Jersey",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Jersey - Individual - Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/jersey/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "duration_note": "No time limit: the HVR tax treatment applies for as long as the individual holds 2(1)(e) housing consent, stays Jersey resident and meets the conditions of approval (including the minimum tax); if a condition is breached, the treatment reverts to ordinary rules from that year onwards (Revenue Jersey HVR guidance)."
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if present six months or more in a tax year, or if a place of abode is available and at least one night is spent there, or by habitual visits averaging three months a year (PwC). Residence rules are under review.",
+    "routes": [
+      {
+        "name": "High Value Residency (2(1)(e))",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Discretionary consent; minimum £250,000 annual tax; expected net worth £10m+; purchase of a high-value property (stated in 2023 as £3.5m houses / £1.75m apartments). Non-British/Irish nationals also need immigration permission (Jersey follows UK-style rules)."
+      },
+      {
+        "name": "British/Irish citizens and settled persons",
+        "citizenships": [
+          "OTHER"
+        ],
+        "requirements": "May live in Jersey without immigration permission but face Control of Housing and Work restrictions on buying or renting property until they qualify for housing status (qualifying periods not verified here)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Jersey - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/jersey/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Tax information for High Value Residents",
+        "url": "https://www.gov.je/TaxesMoney/IncomeTax/Technical/Guidelines/Pages/TaxInformationHighValueResidents.aspx",
+        "publisher": "Government of Jersey, Revenue Jersey",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Government raising minimum tax payments for new high value residents (2023)",
+        "url": "https://www.gov.je/News/2023/Pages/GovernmentRaisingMinimumTaxPayments.aspx",
+        "publisher": "Government of Jersey",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.0,
+    "summary": "General corporate rate 0%; 10% for regulated financial services companies; 20% for utilities, Jersey real estate income and large retailers. Multinational Corporate Income Tax (15%) for groups with revenue of €750m+ from 2025. No withholding tax on dividends to non-residents.",
+    "special_zones": "",
+    "sources": [
+      {
+        "title": "Jersey - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/jersey/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Jersey - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/jersey/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "St Helier",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 8760,
+        "currency": "GBP"
+      },
+      "year": 2026,
+      "description": "Jersey College for Girls (government-provided fee-paying secondary school) 2026-27 fee £2,920 per term x 3 terms. Jersey's leading fee-paying schools are state-subsidised; private boarding in the UK would cost far more.",
+      "source": {
+        "title": "Jersey College for Girls - Fees",
+        "url": "https://jerseycollegeforgirls.com/jcg/fees",
+        "publisher": "Jersey College for Girls",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Health insurance, housekeeper and price per m² not sourced. No World Bank price level for Jersey, so the app cannot compute the household-cost estimate even with rent and school fee.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 4800,
+        "currency": "GBP"
+      },
+      "year": 2026,
+      "description": "Median asking rent of the 27 Jersey 4-5 bedroom houses listed to let by Livingroom on 2026-10-15, including 20 marked recently let (£2,750-£9,250 pcm; the 7 still available had a median of about £5,700). These are qualified-tenant (local market) homes; HVRs with 2(1)(e) consent can rent any property.",
+      "source": {
+        "title": "Livingroom - Property to rent (Guernsey and Jersey)",
+        "url": "https://www.livingroomproperty.com/rent",
+        "publisher": "Livingroom Property",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "St Helier",
+      "lon": -2.11,
+      "lat": 49.185833,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3042091 / Wikidata Q147738"
+    }
+  ],
+  "us_citizen_notes": "No US-Jersey income tax treaty; US tax applies on worldwide income with foreign tax credit for Jersey tax. The HVR deemed-income minimum may not be fully creditable.",
+  "open_questions": [
+    "Whether the 2023 proposals (£3.5m property minimum, £10m net worth expectation) were applied exactly as proposed.",
+    "Non-employed residents' social security / long-term care charge on unearned income not modelled.",
+    "P.51/2026: the States Assembly site (statesassembly.je) blocks automated access, so its text could not be read. The only mention found is a commercial guide (Global Law Experts) saying it 'sharpened the minimum tax and housing expectations', with no figures. A separate proposition, P.19/2026 (Deputy Renouf), to cap the number of 2(1)(e) grants was scheduled for debate on 25 February 2026 and opposed by the Council of Ministers; its outcome was not verified. Revenue Jersey's HVR guidance (checked 2026-10-15) shows no 2026 change except independent taxation of spouses. HVR terms are recorded as on gov.je."
+  ],
+  "indicator_overrides": {
+    "wgi_va": {
+      "value": 1.4203543,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Voice and Accountability estimate, Jersey",
+        "url": "https://api.worldbank.org/v2/country/JEY/indicator/GOV_WGI_VA.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses; the World Bank API returns Jersey with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "wgi_pv": {
+      "value": 1.4940407,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Political Stability and Absence of Violence/Terrorism estimate, Jersey",
+        "url": "https://api.worldbank.org/v2/country/JEY/indicator/GOV_WGI_PV.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses; the World Bank API returns Jersey with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "wgi_ge": {
+      "value": 1.2490934,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Government Effectiveness estimate, Jersey",
+        "url": "https://api.worldbank.org/v2/country/JEY/indicator/GOV_WGI_GE.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses; the World Bank API returns Jersey with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "wgi_rq": {
+      "value": 1.0704544,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Regulatory Quality estimate, Jersey",
+        "url": "https://api.worldbank.org/v2/country/JEY/indicator/GOV_WGI_RQ.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses; the World Bank API returns Jersey with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "wgi_rl": {
+      "value": 1.6362591,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Rule of Law estimate, Jersey",
+        "url": "https://api.worldbank.org/v2/country/JEY/indicator/GOV_WGI_RL.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses; the World Bank API returns Jersey with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "wgi_cc": {
+      "value": 1.0243769,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Control of Corruption estimate, Jersey",
+        "url": "https://api.worldbank.org/v2/country/JEY/indicator/GOV_WGI_CC.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses; the World Bank API returns Jersey with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "life_expectancy": {
+      "value": 83.2,
+      "year": 2024,
+      "source": {
+        "title": "Jersey Better Life Index 2025",
+        "url": "https://stats.je/wp-content/uploads/2026/03/R-Better-Life-Index-2025-K7SD-SJ20260325.pdf",
+        "publisher": "Statistics Jersey",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Life expectancy at birth, three-year average 2022-2024 (both sexes)."
+    },
+    "homicide_rate": {
+      "value": 0.0,
+      "year": 2024,
+      "source": {
+        "title": "Jersey Better Life Index 2025",
+        "url": "https://stats.je/wp-content/uploads/2026/03/R-Better-Life-Index-2025-K7SD-SJ20260325.pdf",
+        "publisher": "Statistics Jersey",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Homicides per 100,000 people, three-year average 2022-2024, derived by Statistics Jersey from police statistics (OECD Better Life definition)."
+    }
+  }
+}

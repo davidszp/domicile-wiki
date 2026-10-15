@@ -1,0 +1,207 @@
+{
+  "id": "MNG",
+  "name": "Mongolia",
+  "continent": "Asia",
+  "region": "East Asia",
+  "currency": "MNT",
+  "researched_on": "2026-10-15",
+  "summary": "Mongolia taxes residents' income from property at flat rates: 10% on net capital gains from securities and 10% on dividends and interest (5% for shares of local listed companies), 2% of gross proceeds on real estate sales. Foreign tax is credited. No wealth, inheritance or gift tax; annual immovable property tax of 0.6% to 2%. Corporate tax 10%/25%.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Mongolia tax residence",
+      "type": "standard",
+      "description": "Flat 10% on gains and dividends; no wealth or inheritance tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident: 183+ days in 12 consecutive months, or 50%+ of total taxable income from Mongolia.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Income from the sale of movable property, including securities, is taxed on a net basis at 10% for residents (Personal Income Tax Law; PwC). Sale of immovable property is taxed at 2% of gross proceeds.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Mongolia - Individual - Income determination (last reviewed 8 Jun 2026)",
+            "url": "https://taxsummaries.pwc.com/mongolia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mongolia - Individual - Taxes on personal income (last reviewed 8 Jun 2026)",
+            "url": "https://taxsummaries.pwc.com/mongolia/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether a gain on foreign real estate falls under the 2% gross rule or the 10% net rule was not verified.",
+          "PwC states residents are taxed on income from property but the individual pages do not spell out worldwide scope; inferred from the foreign tax credit provision."
+        ],
+        "headline_rate": 0.1,
+        "rates": {
+          "listed_securities_domestic": 0.1,
+          "listed_securities_foreign": 0.1,
+          "private_business_sale": 0.1,
+          "real_estate_local": 0.02,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Flat 10% on net gains from securities (domestic or foreign) and on shares of private companies. Local real estate 0.02 = 2% of gross proceeds (a higher share of the gain itself; recorded as the statutory rate). Foreign real estate not verified (null).",
+        "professional_trader": "Business income of individuals is taxed under separate rules; not analysed.",
+        "holding_period_rules": "None found.",
+        "foreign_assets": "Residents are taxed on foreign income with a credit for foreign tax up to the Mongolian tax on that income."
+      },
+      "dividends": {
+        "summary": "Dividends received by individuals are taxed at 10% (withheld at source when Mongolian-paid). A 5% rate applies to dividends on shares of local entities traded on local or international stock markets (excluding mining and petroleum licence holders). Foreign tax is credited.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Mongolia - Individual - Income determination (last reviewed 8 Jun 2026)",
+            "url": "https://taxsummaries.pwc.com/mongolia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mongolia - Individual - Taxes on personal income (last reviewed 8 Jun 2026)",
+            "url": "https://taxsummaries.pwc.com/mongolia/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mongolia - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/mongolia/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mongolia - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/mongolia/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "headline_rate": 0.1,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.1,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Flat 10% on dividends; domestic scored at 10% (5% only for listed local companies).",
+        "withholding_outbound": "20% WHT on dividends paid to non-residents (treaty rates lower; 5% for listed local shares).",
+        "treaty_network": "About 26 treaties (PwC), including Germany, France, UK, Switzerland, Singapore; no treaty with the United States."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax (PwC).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Mongolia - Individual - Other taxes (last reviewed 8 Jun 2026)",
+            "url": "https://taxsummaries.pwc.com/mongolia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Annual immovable property tax of 0.6% to 2% of the value of owned property, set by local councils (PwC). Not a wealth tax."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax (PwC).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Mongolia - Individual - Other taxes (last reviewed 8 Jun 2026)",
+            "url": "https://taxsummaries.pwc.com/mongolia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether gifts or inheritances received by individuals count as taxable income under the PIT Law was not verified."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax (PwC). Income-tax treatment of gifts received not verified.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "No tax on any asset.",
+        "domicile_rules": "Not relevant.",
+        "business_relief": "Not needed (no tax)."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if present 183+ days in 12 consecutive months, or if 50% or more of total taxable income is earned in Mongolia (PwC).",
+    "routes": [
+      {
+        "name": "Residence permit (investor/permanent)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Foreigners need a residence permit from the Immigration Agency; an investor category exists. Terms and amounts not verified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mongolia - Individual - Residence (last reviewed 8 Jun 2026)",
+        "url": "https://taxsummaries.pwc.com/mongolia/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "CIT 10% on the first MNT 6 billion of taxable income and 25% above; 1% on revenue for small entities; dividends, interest and royalties taxed at 10% gross.",
+    "special_zones": "Free Trade Zones exempt buildings from immovable property tax.",
+    "sources": [
+      {
+        "title": "Mongolia - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/mongolia/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Ulaanbaatar",
+      "lon": 106.88324,
+      "lat": 47.90771,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2028462"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain US-taxed; no US-Mongolia income tax treaty in force. Mongolian tax is creditable in principle.",
+  "open_questions": []
+}

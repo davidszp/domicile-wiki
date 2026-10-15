@@ -1,0 +1,238 @@
+{
+  "id": "CRI",
+  "name": "Costa Rica",
+  "continent": "Central America",
+  "region": "Central America",
+  "currency": "CRC",
+  "researched_on": "2026-10-15",
+  "summary": "Costa Rica taxes individuals only on Costa Rican-source income, so a foreign portfolio's dividends and gains are not taxed locally. Local capital gains and dividends are taxed at 15%. There is no inheritance, gift or net wealth tax; property tax is 0.25% plus a luxury home tax on expensive homes. Foreign passive income held through a Costa Rican company in a multinational group can be taxed.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence (territorial)",
+      "type": "standard",
+      "description": "Individuals are taxed only on Costa Rican-source income. Foreign dividends, interest and gains are not taxed for individuals. Costa Rican-source capital gains and dividends 15%.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Permanent residents and individuals present six months or more in a tax year are resident.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Costa Rican-source capital gains are taxed at 15% (Law 7092 as amended by Law 9635), with an option of 2.25% of the sale price on the first sale of an asset under certain conditions. Foreign-source gains of individuals are outside the territorial scope.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Costa Rica Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-costaricahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Costa Rica, Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/costa-rica/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Costa Rica, Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/costa-rica/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.15,
+        "rates": {
+          "listed_securities_domestic": 0.15,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.15,
+          "real_estate_local": 0.15,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "15% capital gains rate (Deloitte 2026; PwC reviewed 30 Jun 2026). Foreign gains 0 under the territorial principle (PwC: Costa Rica-source income = assets used, goods located, services rendered in Costa Rica).",
+        "important_exceptions": "Real estate transfer tax 1.5% (PwC). Gains realised habitually in a business are taxed at ordinary rates up to 25%/30%.",
+        "foreign_assets": "Not taxed for individuals. For companies in multinational groups, foreign passive income can be taxed (non-qualified entity rule) - relevant if the portfolio is held through a Costa Rican company.",
+        "open_questions": [
+          "Conditions of the 2.25% option (assets acquired before 1 Jul 2019?) not verified.",
+          "Status of any 2025/2026 bill to move to worldwide ('renta global') taxation not checked (web search budget exhausted)."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends from Costa Rican companies: 15% final withholding. Foreign dividends of individuals are not taxed.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Costa Rica Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-costaricahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Costa Rica, Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/costa-rica/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.15,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Deloitte 2026: 15% WHT on dividends paid to resident individuals; territorial principle for foreign income.",
+        "withholding_outbound": "15% (5% for listed stock corporations paying non-residents); treaty reductions.",
+        "treaty_network": "Four treaties in force (Germany, Mexico, Spain, UAE). No US treaty.",
+        "important_exceptions": "Interest on Costa Rican deposits/securities 15%.",
+        "open_questions": [
+          "No source explicitly addressed foreign portfolio dividends for individuals; inferred from the territorial rule."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Costa Rica Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-costaricahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Municipal property tax 0.25% of value; a separate annual luxury home tax (impuesto solidario) applies to high-value homes (rates not verified)."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Costa Rica Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-costaricahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax reported.",
+        "gifts_same_as_inheritance": true,
+        "important_exceptions": "Registration/transfer costs on Costa Rican real estate (1.5% transfer tax on sales)."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Permanent residents, or presence for six months or more in the tax year (Deloitte 2026).",
+    "routes": [
+      {
+        "name": "Rentista / Inversionista / Pensionado residence",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Costa Rica has income- and investment-based residence categories; current thresholds not verified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Costa Rica Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-costaricahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.3,
+    "summary": "CIT 30% (reduced rates for small companies); territorial, except foreign passive income of 'non-qualified' entities in multinational groups, taxed (dividends and gains generally 15%).",
+    "special_zones": "Free Trade Zone regime.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Costa Rica Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-costaricahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Costa Rica, Corporate - Income determination",
+        "url": "https://taxsummaries.pwc.com/costa-rica/corporate/income-determination",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "San José (Escazú / Santa Ana)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 2700,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Escazú, 4+ bedroom apartment, monthly asking rent in Global Property Guide's Q2 2026 survey (purchase price of the same unit type USD 600,000; gross yield 5.40%). An apartment, not a detached villa: large gated houses in Escazú or Santa Ana are likely to rent for more.",
+      "source": {
+        "title": "Global Property Guide: Costa Rica rental yields (Q2 2026)",
+        "url": "https://www.globalpropertyguide.com/latin-america/costa-rica/rental-yields",
+        "publisher": "Global Property Guide",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 23315,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Country Day School (Escazú), grade 12, 2026-27: yearly tuition USD 22,015 plus the annual matriculation fee of USD 1,300. One-off fees for new students (entrance USD 2,500 per student, family fee USD 1,000) are excluded. Grades 9-11 tuition is USD 21,931.",
+      "source": {
+        "title": "Country Day School Costa Rica: Tuition and fees 2026-2027",
+        "url": "https://www.nordangliaeducation.com/cds-costa-rica/admissions/tuition-fees",
+        "publisher": "Country Day School (Nord Anglia Education)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Price per m2, health insurance and housekeeper not sourced in this pass. Rents and school fees are quoted in USD."
+  },
+  "markers": [
+    {
+      "name": "San José",
+      "lon": -84.08,
+      "lat": 9.9325,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q3070 (via en.wikipedia)"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets; the app adds the federal layer. Local tax can generally be credited against US tax on the same foreign-source income only where the US foreign tax credit rules allow.",
+  "open_questions": [
+    "Global income reform status (2025/2026) not verified.",
+    "Luxury home tax rates not verified."
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "id": "DNK",
+  "name": "Denmark",
+  "currency": "DKK",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Progressive: bottom tax 12.01% plus average municipal 25.049% (37.059%) on income after the 8% labour-market contribution (AM-bidrag) and a DKK 54,100 allowance; middle tax +7.5%, top tax +7.5% and top-top tax +5%. The 60.5% ceiling includes AM-bidrag.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.37059
+      },
+      {
+        "from_amount": 641200,
+        "rate": 0.44559
+      },
+      {
+        "from_amount": 777900,
+        "rate": 0.52059
+      },
+      {
+        "from_amount": 2592500,
+        "rate": 0.57059
+      }
+    ],
+    "personal_allowance": 54100,
+    "employee_social_security_rate": 0.08,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.08,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "The 8% is the labour-market contribution (AM-bidrag), levied before income tax (brackets are on income after it). The tax guidance (Juridisk vejledning C.C.8.2) states that AM-bidrag is 8% of the contribution base (AMBL section 1) and refers to business income of the self-employed under AMBL sections 4-5, so the 8% applies to a sole proprietor's profit (it is deductible in the taxable income). Employees also pay ATP of DKK 1,188 a year; whether a sole proprietor pays ATP was not confirmed (not a mandatory part of the model). Denmark has almost no earmarked social-security contributions: welfare is tax-financed.",
+    "social_security_deductible": 1,
+    "local_tax_note": "Municipal tax 25.049% is the national average (varies by municipality); church tax (about 0.639% average, optional) is excluded. Middle and top-tax thresholds are those after AM-bidrag (PwC's DKK 696,956 / 845,543 / 2,818,152 before it, times 0.92).",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Denmark individual - taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/denmark/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Denmark individual - other taxes",
+        "url": "https://taxsummaries.pwc.com/denmark/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Oversigt over beløbsgrænser 2026",
+        "url": "https://themis.dk/synopsis/docs/Oversigt_over_beloebsgraenser_2026_.html",
+        "publisher": "Themis (Danish tax reference)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Juridisk vejledning C.C.8.2 Arbejdsmarkedsbidrag",
+        "url": "https://tax.dk/jv/cc/C_C_8_2.htm",
+        "publisher": "TAX.DK (Danish Tax Agency legal guidance)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "ATP for self-employed persons not confirmed on a page opened; the 8% AM-bidrag on business income is confirmed on tax.dk.",
+      "Copenhagen municipality rate (about 23.4%) not verified; national average used.",
+      "Employment deduction (beskaeftigelsesfradrag) of 12.75% of employment income, capped at DKK 63,300 in 2026 (PwC), is not captured in the brackets or the DKK 54,100 allowance; at the cap it lowers the tax base by about DKK 63,300."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "researcher_scheme",
+      "name": "Danish tax scheme for researchers (27%)",
+      "kind": "expat_regime",
+      "description": "Approved researchers with at least a PhD-level degree working for a Danish business or research institution may elect to be taxed at a flat 27% plus the 8% AM-bidrag (32.84% in total) on employment income, with no deductions or allowances. Up to 84 months, which may be split. No Danish tax liability in the previous 10 years. No minimum salary for researchers (reported by Azets).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 7,
+      "duration_note": "84 months in total, may be split into several periods.",
+      "treatment": "flat_rate",
+      "flat_rate": 0.27,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Tax scheme for researchers and highly paid employees (What's the tax scheme?)",
+          "url": "https://skat.dk/en-us/businesses/employees-and-pay/non-danish-labour/tax-scheme-for-researchers",
+          "publisher": "Danish Tax Agency (Skattestyrelsen)",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Tax scheme for researchers Denmark 2026",
+          "url": "https://www.azets.com/en-dk/resources/blog/tax-scheme-for-researchers-denmark-2026",
+          "publisher": "Azets",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries: Denmark individual - taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/denmark/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [
+        "Azets says researchers are exempt from the minimum salary; skat.dk page text opened mentions the DKK 65,400 test only for highly paid employees."
+      ]
+    },
+    {
+      "id": "highly_paid_employee",
+      "name": "Danish 27% scheme for highly paid employees (key employees)",
+      "kind": "expat_regime",
+      "description": "Same 27% flat tax (plus 8% AM-bidrag, 32.84% total) for non-researcher employees whose guaranteed cash salary is at least DKK 65,400 a month in 2026 (down from DKK 78,000 in 2025), employed by a Danish employer, with no Danish tax liability in the previous 10 years. Up to 84 months. This is the route for the Expat persona.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": {
+        "amount": 784800,
+        "currency": "DKK"
+      },
+      "max_income": null,
+      "duration_years": 7,
+      "duration_note": "84 months in total.",
+      "treatment": "flat_rate",
+      "flat_rate": 0.27,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Tax scheme for researchers and highly paid employees (What's the tax scheme?)",
+          "url": "https://skat.dk/en-us/businesses/employees-and-pay/non-danish-labour/tax-scheme-for-researchers",
+          "publisher": "Danish Tax Agency (Skattestyrelsen)",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries: Denmark individual - taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/denmark/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Tax scheme for researchers Denmark 2026",
+          "url": "https://www.azets.com/en-dk/resources/blog/tax-scheme-for-researchers-denmark-2026",
+          "publisher": "Azets",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [
+        "Minimum is a monthly average test on the guaranteed salary after ATP; annual figure is simply 12 x 65,400."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Copenhagen",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 15150,
+        "currency": "DKK"
+      },
+      "year": 2026,
+      "description": "Mean of two sample asking rents for 1-bedroom flats in Copenhagen SV (14,100 for 55 m2; 16,200 for 75 m2); the page's range for all listings is DKK 12,000-17,000. Unfurnished, asking rents from Lejebolig/BoligPortal (about 2,400-2,500 listings in total).",
+      "source": {
+        "title": "Copenhagen rents (Lejebolig and BoligPortal listings)",
+        "url": "https://investropa.com/blogs/news/copenhagen-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 17300,
+        "currency": "DKK"
+      },
+      "year": 2026,
+      "description": "Mean of two sample asking rents for Danish 'three-room' (2-bedroom) flats: 15,100 for 86 m2 in Valby and 19,500 for 86 m2 in Copenhagen S; page range DKK 15,000-22,000. Asking rents.",
+      "source": {
+        "title": "Copenhagen rents (Lejebolig and BoligPortal listings)",
+        "url": "https://investropa.com/blogs/news/copenhagen-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Blog-style aggregator; no sample statistics. Danish statistics would be a better source."
+  },
+  "residence_routes": "EU/EEA citizens move and work freely and register for residence. US and other non-EU citizens need a residence and work permit tied to a job or scheme (for example the researcher scheme or a highly-paid employment route); the specific permit schemes were not verified in this research. Denmark has no digital nomad visa.",
+  "open_questions": [
+    "Non-EU work-permit schemes and any nomad route not verified.",
+    "Cost data from one aggregator."
+  ]
+}

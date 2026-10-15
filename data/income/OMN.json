@@ -1,0 +1,89 @@
+{
+  "id": "OMN",
+  "name": "Oman",
+  "currency": "OMR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Scored on the law in force for 2026: Oman levies no personal income tax in 2026. A personal income tax takes effect on 1 January 2028 (5% on annual income above OMR 42,000 after eligible deductions, worldwide income for residents), so it does not enter the 2026 scoring. Only Omani employees pay social insurance (8%); no expat employee contribution is listed.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "No self-employment contributions apply to expatriates in the sources found. From 2028, residents including expatriates are taxed at 5% above OMR 42,000 a year.",
+    "local_tax_note": "No local income-based taxes. For Omani employees, retirement contributions use a subscription wage ceiling (initially OMR 3,000).",
+    "sources": [
+      {
+        "title": "Oman - Individual - Taxes on personal income (last reviewed 7 Jul 2026)",
+        "url": "https://taxsummaries.pwc.com/oman/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Oman - Individual - Other taxes (last reviewed 7 Jul 2026)",
+        "url": "https://taxsummaries.pwc.com/oman/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "PIT effective 1 Jan 2028 is not in the 2026 brackets by design; PwC does not name the law (the existing jurisdiction file cites Royal Decree 56/2025).",
+      "Self-employed social security not covered by PwC.",
+      "PwC other-taxes page re-opened 2026-10-15: Omani employees 8% (7.5% retirement + 0.5% job security), expatriates no employee contribution (employer 3%); no self-employed rate listed (0% is a reading of silence)."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [],
+  "costs": {
+    "city": "Muscat",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 290,
+        "currency": "OMR"
+      },
+      "year": 2026,
+      "description": "Muscat 1-bedroom monthly rent, June 2026 reference (range OMR 180-450; Al Khuwair used as mid-market anchor, asking rents plus author judgment, sample size not disclosed). Numbeo city-centre 1-bedroom is OMR 262.",
+      "source": {
+        "title": "Average rent in Muscat 2026 (Sands of Wealth)",
+        "url": "https://sandsofwealth.com/blogs/news/muscat-rents",
+        "publisher": "Sands of Wealth",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 430,
+        "currency": "OMR"
+      },
+      "year": 2026,
+      "description": "Muscat 2-bedroom monthly rent, 2026 (range OMR 300-710; Savills reports and dubizzle Al Mouj listings, sample size not disclosed).",
+      "source": {
+        "title": "Average rent in Muscat 2026 (Sands of Wealth)",
+        "url": "https://sandsofwealth.com/blogs/news/muscat-rents",
+        "publisher": "Sands of Wealth",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Rents are advertised/estimated, not signed-lease medians, unless stated."
+  },
+  "residence_routes": "EU, US and other citizens: no visa-free right to work. Skilled employees obtain a work visa and residence through an Omani employer. A travel-cost site (not opened) states Oman has no dedicated digital-nomad visa; this was not confirmed from an official source.",
+  "open_questions": [
+    "Digital-nomad visa status not verified from an official source.",
+    "Employer-sponsored residence rules not re-verified."
+  ]
+}

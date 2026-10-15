@@ -1,0 +1,12 @@
+{
+  "source": "un_icsc_pai",
+  "title": "ICSC Consolidated Post Adjustment Circular ICSC/CIRC/PAC/621 (Sept 2026), post adjustment index",
+  "url": "https://icsc.un.org/Home/GetDataFile/9266",
+  "base": "New York, December 2002 = 100 (New York itself is now 175.6, so the index is not 100 at New York). Multiplier is roughly index minus about 100 after rebasing.",
+  "effective_date": "2026-09-01",
+  "two_sided": true,
+  "notes": "Index as of PAC/621; rows use their own effective date. Stations whose multiplier changed in the October 2026 memo are omitted because the memo does not publish a new index (PAC for October not yet out). Same posts as un_icsc.csv. Not used: it duplicates the multiplier for fewer stations (the October 2026 memo gives no new PAI).",
+  "publisher": "International Civil Service Commission (ICSC), United Nations",
+  "includes_housing": false,
+  "use": false
+}

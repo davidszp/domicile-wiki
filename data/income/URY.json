@@ -1,0 +1,229 @@
+{
+  "id": "URY",
+  "name": "Uruguay",
+  "currency": "UYU",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Uruguay taxes employment income of residents with IRPF at 0% to 36% (annual scale in UYU, as at 31 December 2025), and social security of about 18-23% of salary for employees. New tax residents can claim a tax holiday: no IRPF on foreign-source income for the year of application plus ten years. Montevideo adds no local income tax.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 576576,
+        "rate": 0.1
+      },
+      {
+        "from_amount": 823680,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 1235520,
+        "rate": 0.24
+      },
+      {
+        "from_amount": 2471040,
+        "rate": 0.25
+      },
+      {
+        "from_amount": 4118400,
+        "rate": 0.27
+      },
+      {
+        "from_amount": 6177600,
+        "rate": 0.31
+      },
+      {
+        "from_amount": 9472320,
+        "rate": 0.36
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.196,
+    "employee_social_security_cap": 3465912,
+    "self_employed_social_security_rate": 0.226,
+    "self_employed_social_security_cap": 3465912,
+    "self_employed_notes": "Self-employed (empresa unipersonal / monotributo) contribute through BPS. The 22.6% rate is the sum of the PwC 2026 components for the owner acting as both employee and employer: 15% employee retirement + 7.5% employer retirement + 0.1% labour restructuring fund (it also equals the BPS 2026 table excerpt of UYU 2,088 on a UYU 9,240 base noted in an earlier pass). Retirement rates apply only up to UYU 288,826 a month until 31 Dec 2026 (PwC), so the cap is 12 x that; health cover (FONASA, 8% of one BPC if not opting into the national health system per the earlier excerpt) is not added. The BPS page itself could not be reached, so the owner's exact base and health contribution are unverified.",
+    "local_tax_note": "No local income tax. The scale is for resident employees (PwC lists it as at 31 Dec 2025; thresholds are indexed yearly). Pension contributions are capped at UYU 288,826 a month until 31 Dec 2026; employee rate 0.196 = 15% pension + 4.5% health (single, no dependants, above 2.5 BPC) + 0.1% FRL, health continues above the cap.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Uruguay: Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/uruguay/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Uruguay: Other taxes",
+        "url": "https://taxsummaries.pwc.com/uruguay/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Uruguay: Residence",
+        "url": "https://taxsummaries.pwc.com/uruguay/individual/residence",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "DGI - Impuesto a las Rentas de las Personas Fisicas (IRPF) e IASS guide",
+        "url": "https://www.gub.uy/direccion-general-impositiva/sites/direccion-general-impositiva/files/2025-03/DOCUMENTO%20IRPF%20-%20IASS%20-%202024.pdf",
+        "publisher": "Direccion General Impositiva (DGI)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Territoriality: PwC (opened 2026-10-15) says Uruguayan source covers income from activities developed in Uruguay, so services physically performed in Uruguay for foreign clients are Uruguayan-source and taxed under IRPF; foreign-source capital income of residents is taxed at a flat 12% (it is that income the tax holiday exempts).",
+      "Employee health rate varies 3%-8% by family situation (PwC); 4.5% assumed for a single person without dependants above 2.5 BPC.",
+      "Self-employed rate 22.6% is consistent with the PwC components but the BPS page for sole proprietors was not reached; base and health contribution unverified.",
+      "Family-unit filing scale not modelled. The IRPF scale is as at 31 Dec 2025 (PwC); a mid-2026 indexation of thresholds was not seen for individuals.",
+      "Uruguay: social_security_deductible left null. DGI's IRPF guide (category II) lists BPS retirement, FONASA and FRL contributions among the 'deducciones', but they do not reduce the taxed base: IRPF on the deductions (14% if nominal income is up to 180 BPC, otherwise 8%) is subtracted from the tax computed on income. The field cannot express a credit; as a deduction-equivalent it is about 0.25 at the marginal rate of a USD 60k earner, which has not been verified."
+    ],
+    "social_security_deductible": null
+  },
+  "regimes": [
+    {
+      "id": "ury_nomad_provisional_id",
+      "name": "Hoja/Cedula de Identidad Provisoria - digital nomad",
+      "kind": "digital_nomad_visa",
+      "description": "Special residence permit for people who work remotely, self-employed or for foreign companies. Apply online after entering as a tourist; first permit of 180 days, extendable once by 180 days (maximum about one year). Applicants make a sworn statement of means; no minimum amount is published. Renewal needs criminal-record certificates and a Uruguayan vaccination certificate.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment",
+        "employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 1,
+      "duration_note": "Six months plus one six-month extension.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "gub.uy - Permiso especial de residencia legal (nomada digital)",
+          "url": "https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/noticias/permiso-especial-residencia-legal",
+          "publisher": "Gobierno de Uruguay",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Forvis Mazars Uruguay - Regimen migratorio para nomadas digitales",
+          "url": "https://www.forvismazars.com/uy/en/insights/our-publications/accounting-outsourcing-services-aos/regimen-migratorio-para-nomades-digitales",
+          "publisher": "Forvis Mazars",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "verified",
+      "open_questions": [
+        "Permit itself gives no tax change; staying more than 183 days makes the person tax resident and may allow the new-resident tax holiday.",
+        "Treatment is standard, so covers_local_work does not apply."
+      ]
+    },
+    {
+      "id": "ury_new_resident_tax_holiday",
+      "name": "New-resident tax holiday (foreign income exempt from IRPF)",
+      "kind": "expat_regime",
+      "description": "New tax residents are exempt from IRPF on income earned abroad for the year of application and the ten following years (11 years). From 2026, new applicants qualify through more than 183 days of physical presence in the calendar year, or by investment (real estate above about USD 2.1 million or about USD 105,000 a year into 'Uruguay Innova'). It does not cover Uruguayan-source income, which stays taxed at the IRPF scale. Uruguay's source principle makes income from activities developed in Uruguay (PwC) Uruguayan-source, so a remote worker's pay for work done while living in Uruguay is not covered; the holiday covers income earned abroad, in practice foreign-source capital income.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment",
+        "employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 11,
+      "duration_note": "Year of application plus ten years; those who opted before end-2025 keep their original terms.",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Forvis Mazars Uruguay - Uruguay 2026: residencia fiscal e inversores",
+          "url": "https://www.forvismazars.com/uy/en/insights/our-publications/tax/uruguay-2026-residencia-fiscal-e-inversores",
+          "publisher": "Forvis Mazars",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries - Uruguay: Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/uruguay/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "covers_local_work=false: PwC says the source principle covers income from activities developed in Uruguay, and Forvis Mazars describes the holiday only as 'no IRPF on income earned abroad'; Law 20.446 / Decreto 95/026 text not read, and no tax-authority page states the point directly.",
+        "A 7% option and the post-holiday options (50% reduction, USD 200,000-315,000 fixed payment) are reported by Forvis Mazars, not modelled."
+      ],
+      "covers_local_work": false
+    }
+  ],
+  "costs": {
+    "city": "Montevideo (Pocitos / Punta Carretas)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 28350.62,
+        "currency": "UYU"
+      },
+      "year": 2026,
+      "description": "Numbeo average 1-bedroom apartment in city centre, Montevideo; range UYU 25,000-39,500; updated 2 Oct 2026; 872 city entries from 74 contributors in 12 months (all categories); user-contributed.",
+      "source": {
+        "title": "Numbeo - Cost of Living in Montevideo",
+        "url": "https://www.numbeo.com/cost-of-living/in/Montevideo",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 33000,
+        "currency": "UYU"
+      },
+      "year": 2026,
+      "description": "Pocitos 2-bedroom reference price UYU 33,000 (range UYU 28,000-40,000) from Cuanto Me Cuesta, based on Infocasas and MercadoLibre listings, April 2026; no sample size, +/-15%.",
+      "source": {
+        "title": "Cuanto Me Cuesta - Alquiler en Montevideo (abril 2026)",
+        "url": "https://cuantomecuesta.com/uy/alquiler-montevideo/",
+        "publisher": "Cuanto Me Cuesta",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Montevideo rents are quoted in pesos; common expenses (gastos comunes) are extra."
+  },
+  "residence_routes": "EU, US and other nationals can enter as tourists and apply online for the digital nomad provisional identity (180 + 180 days). Longer-term legal residence is available to Mercosur-associated nationals with a simplified route, and to others via employment, investment or family routes; a skilled employee needs a Uruguayan employer. Tax residency begins at 183 days or on substantial ties.",
+  "open_questions": [
+    "Official income requirement for the nomad permit not found (sworn statement only).",
+    "Territorial treatment: work done in Uruguay is Uruguayan-source (PwC); the tax holiday does not help a remote worker living in Uruguay."
+  ]
+}

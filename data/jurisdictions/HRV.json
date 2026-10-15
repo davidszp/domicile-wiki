@@ -1,0 +1,279 @@
+{
+  "id": "HRV",
+  "name": "Croatia",
+  "continent": "Europe",
+  "region": "Southeast Europe",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "Croatia taxes dividends at a flat 12%. Gains on securities are taxed at 12% only if they are sold within 2 years, and are untaxed after that. Real estate gains are 24% within 2 years. Children are exempt from inheritance and gift tax, and there is no wealth tax. No special regime for wealthy arrivals.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Worldwide taxation of residents; capital income taxed at a flat 12% final rate.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident through a home in Croatia available for 183+ days or 183+ days' presence (PwC).",
+      "capital_gains": {
+        "tax_year": "2026",
+        "verified_on": "2026-10-15",
+        "summary": "Gains on financial assets (shares, bonds, fund units, business shares) are taxed at 12% only if sold within 2 years of acquisition; after 2 years they are not taxed (Art. 67 Income Tax Act). Real estate gains are taxed at 24% if sold within 2 years, otherwise exempt (Art. 58).",
+        "exemptions_thresholds": "Financial assets held 2+ years: not taxed. Transfers between spouses and close relatives, on divorce or inheritance: not taxed. Real estate: exempt after 2 years or if used as the seller's or close family's home.",
+        "eligibility_conditions": "FIFO record keeping; losses offset only gains of the same year. Real estate: selling more than three properties of the same type within five years is taxable regardless of holding period.",
+        "important_exceptions": "Gifted assets sold within 2 years of the donor's acquisition are taxed using the donor's acquisition date. Gains on shares not tradable on a capital market are assessed by the Tax Administration (12%). Share grants/options: 24%.",
+        "sources": [
+          {
+            "title": "Zakon o porezu na dohodak (Income Tax Act), consolidated (NN 115/16 … 152/24)",
+            "url": "https://www.zakon.hr/z/85/zakon-o-porezu-na-dohodak",
+            "publisher": "zakon.hr",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Dohodak od kapitala po osnovi kapitalnih dobitaka",
+            "url": "https://porezna-uprava.gov.hr/hr/dohodak-od-kapitala-po-osnovi-kapitalnih-dobitaka/4653",
+            "publisher": "Porezna uprava (Croatian Tax Administration)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Oporezivanje kapitala",
+            "url": "https://porezna-uprava.gov.hr/hr/oporezivanje-kapitala/4745",
+            "publisher": "Porezna uprava",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Croatia – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/croatia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.24,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Rates assume holding beyond 2 years (0%). Within 2 years: 12% on financial assets, 24% on real estate (24% is the headline). No municipal surtax applies.",
+        "professional_trader": "Trading as a registered business activity is taxed as self-employment income at progressive local rates (up to 33% in Zagreb, 2025) rather than capital income; frequent real estate dealing (more than three same-type properties in five years) is taxed at 24%.",
+        "holding_period_rules": "Financial assets and real estate: taxable only if disposed of within 2 years of acquisition.",
+        "foreign_assets": "Residents taxed on worldwide gains under the same rules; foreign tax credited per item on proof from the foreign authority (Art. 80)."
+      },
+      "dividends": {
+        "tax_year": "2026",
+        "verified_on": "2026-10-15",
+        "summary": "Dividends and profit shares are taxed at a flat 12% final tax (Art. 70 Income Tax Act), domestic or foreign. Foreign withholding tax is credited.",
+        "exemptions_thresholds": "No allowance. Certain exemptions (dividends reinvested into share capital) exist.",
+        "sources": [
+          {
+            "title": "Zakon o porezu na dohodak (Income Tax Act), consolidated (NN 115/16 … 152/24)",
+            "url": "https://www.zakon.hr/z/85/zakon-o-porezu-na-dohodak",
+            "publisher": "zakon.hr",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Oporezivanje kapitala",
+            "url": "https://porezna-uprava.gov.hr/hr/oporezivanje-kapitala/4745",
+            "publisher": "Porezna uprava",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Croatia – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/croatia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Croatia – Corporate – Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/croatia/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.12,
+        "domestic_rate": 0.12,
+        "foreign_gross_rate": 0.12,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Flat 12% on gross dividends; withheld at source for Croatian dividends; foreign dividends self-assessed with a per-item foreign tax credit (Art. 80). A 15% US/EU WHT may exceed the 12% Croatian tax, leaving no Croatian tax and an excess credit that is not refunded.",
+        "withholding_outbound": "10% WHT on dividends to non-resident companies (0% to qualifying EU/EEA/Swiss parents with 10%/2-year holding); treaty rates 0–15% (PwC).",
+        "treaty_network": "About 70 treaties listed by PwC. No US treaty in force found (one was signed in 2022; status not verified)."
+      },
+      "wealth_tax": {
+        "tax_year": "2026",
+        "verified_on": "2026-10-15",
+        "summary": "Croatia has no net wealth tax and no levy on financial assets.",
+        "property_tax_note": "Since 1 Jan 2025 municipalities must levy a property tax of EUR 0.60–8.00 per m² on residential property not used for permanent living or let long-term (replaced the holiday-home tax). A family's main home is outside its scope.",
+        "sources": [
+          {
+            "title": "Croatia – Individual – Other taxes",
+            "url": "https://taxsummaries.pwc.com/croatia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tax law changes in 2025",
+            "url": "https://cms.law/en/hrv/legal-updates/tax-law-changes-in-2025",
+            "publisher": "CMS",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none"
+      },
+      "inheritance": {
+        "tax_year": "2026",
+        "verified_on": "2026-10-15",
+        "summary": "Inheritance and gift tax is 4% on cash, receivables, securities and movables (Local Taxes Act), but spouses and direct-line descendants and ancestors are exempt for both gifts and inheritances. Real estate passing to children is exempt from the 3% real estate transfer tax.",
+        "exemptions_thresholds": "Direct line (children, grandchildren, parents), spouse and adopted children exempt from the 4% tax. Real estate transfer tax exemption covers direct-line descendants and ancestors only (not spouses, per the Tax Administration page).",
+        "important_exceptions": "Siblings and in-laws are exempt only if they lived in the same household. Others pay 4% (movables only above EUR 6,700 each) and 3% RETT on real estate.",
+        "sources": [
+          {
+            "title": "Darovanja",
+            "url": "https://porezna-uprava.gov.hr/hr/darovanja-8008/8008",
+            "publisher": "Porezna uprava",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance and gifts tax: general rules, rates and taxpayer",
+            "url": "https://porezna-uprava.gov.hr/en/inheritanc-e-and-gifts-tax-information-on-the-general-rules-rates-and-taxpayer/7315",
+            "publisher": "Porezna uprava",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Croatia – Individual – Other taxes",
+            "url": "https://taxsummaries.pwc.com/croatia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "verification": "verified",
+        "basis": "beneficiary",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Same 4% tax applies to gifts; gifts to children are exempt. Gifts of shares to children are also not a capital-gains disposal (Art. 67).",
+        "gifts_same_as_inheritance": true,
+        "foreign_assets": "The tax applies to property received in Croatia; children are exempt in any case.",
+        "domicile_rules": "Recipient-based; no tail rules found.",
+        "open_questions": [
+          "The exempt-relative list rests on Tax Administration guidance; the article of the Local Taxes Act was not read directly."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if the individual owns or has at their disposal a home in Croatia for an uninterrupted 183+ days in one or two calendar years (actual use irrelevant), or is present 183+ days in one or two calendar years. Dual homes: residence follows family, then habitual presence (PwC).",
+    "routes": [
+      {
+        "name": "EU/EEA free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Register residence for stays over 3 months."
+      },
+      {
+        "name": "Temporary residence permit",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Permit for a purpose such as employment, business or family; Croatia has no golden visa (not verified against an official source)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Croatia – Individual – Residence",
+        "url": "https://taxsummaries.pwc.com/croatia/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.18,
+    "summary": "CIT 18%; 10% for companies with revenue below EUR 1m. Dividends paid to individuals then bear 12%.",
+    "sources": [
+      {
+        "title": "Croatia – Corporate – Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/croatia/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Zagreb",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 21425,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "American International School of Zagreb, Grades 11–12 tuition 2026–27 (plus EUR 2,700 annual capital fee in early years).",
+      "source": {
+        "title": "AISZ Tuition & Fees 2026–2027",
+        "url": "https://aisz.hr/admissions/tuition-fees",
+        "publisher": "American International School of Zagreb",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 3500,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 47 detached family houses (obiteljska/višeobiteljska kuća) for rent at EUR 1,000 or more on Nekretnine.hr on 2026-10-15 in Zagreb's prime residential districts (Šestine-Mlinovi, Gračani, Podsljeme, Pantovčak, Tuškanac, Gornji Grad-Medveščak, Srebrnjak). Interquartile range about EUR 2,700-6,000; top listings EUR 10,000-14,000 (Tuškanac, Gračani). Bedroom counts are not shown in the list view; typical sizes 240-500 m2. Sample from 396 detached houses for rent in Zagreb (14 pages). Asking rents.",
+      "source": {
+        "title": "Najam samostojećih kuća Zagreb",
+        "url": "https://www.nekretnine.hr/najam-samostojeca-kuce/zagreb/",
+        "publisher": "Nekretnine.hr",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent from a listing-portal sample (asking rents). Purchase price, health insurance and housekeeper costs not sourced."
+  },
+  "markers": [
+    {
+      "name": "Zagreb",
+      "lon": 15.97798,
+      "lat": 45.81444,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3186886"
+    }
+  ],
+  "us_citizen_notes": "No US–Croatia income tax treaty in force was found (a treaty was signed in 2022; status not verified). US citizens can still claim the US foreign tax credit for Croatian tax.",
+  "open_questions": [
+    "2024 reform raised capital income tax from 10% to 12% and real estate gains from 20% to 24% (secondary sources; the current Act text confirms 12%/24%).",
+    "US–Croatia treaty status not verified."
+  ]
+}

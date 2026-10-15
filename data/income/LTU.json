@@ -1,0 +1,164 @@
+{
+  "id": "LTU",
+  "name": "Lithuania",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "From 1 Jan 2026 most income is aggregated: 20% up to 36 average wages (EUR 83,237.40), 25% to 60 average wages (EUR 138,729), 32% above; some income is taxed at a flat 15%. NPD (non-taxable allowance): maximum EUR 747 a month at pay up to the EUR 1,153 minimum wage, reduced by 0.49 x (income - minimum wage), ending at EUR 2,677.49 a month; not modelled (personal_allowance 0). Employee social security 19.5% including 6.98% health, withheld; above 60 average wages (EUR 138,729) only the 6.98% health applies (recorded cap EUR 138,729 for the capped part).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 83237.4,
+        "rate": 0.25
+      },
+      {
+        "from_amount": 138729,
+        "rate": 0.32
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.195,
+    "employee_social_security_cap": 138729,
+    "self_employed_social_security_rate": 0.1755,
+    "self_employed_social_security_cap": 110469,
+    "self_employed_notes": "Recorded 17.55% is the effective rate on income: 19.5% (including 6.98% health) levied on 90% of individual-activity income; the cap is the EUR 99,422 base ceiling (43 average wages) expressed as income (99,422 / 0.9 = EUR 110,469), derived. Statutory: 19.5% including 6.98% health, on 90% of taxable individual-activity income, capped at 43 average wages (EUR 99,422). Business certificate holders pay 15.7% on the official minimum monthly salary. For individual activity with annual income up to EUR 42,500, a tax credit gives effective rates from 5% to 20% (KPMG); above that the main progressive rates apply.",
+    "social_security_deductible": 0,
+    "local_tax_note": "There are no local, state or provincial personal income tax rates (PwC).",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Lithuania, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/lithuania/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Lithuania, other taxes",
+        "url": "https://taxsummaries.pwc.com/lithuania/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Mokesciu ir teises naujienlaiskis, 2026 sausis (KPMG Lithuania)",
+        "url": "https://kpmg.com/lt/lt/izvalgos/mokesciu-ir-teises-naujienlaiskiai/2026-sausis.html",
+        "publisher": "KPMG Lithuania",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Lithuania individual - sample personal income tax calculation",
+        "url": "https://taxsummaries.pwc.com/lithuania/individual/sample-personal-income-tax-calculation",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Lithuania individual - deductions",
+        "url": "https://taxsummaries.pwc.com/lithuania/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "The individual-activity credit mechanics are from one snippet-level source.",
+      "Foreign-employer cross-border employees pay 31.83% total per PwC (not applicable to residents employed locally).",
+      "The 17.55% rate and EUR 110,469 income cap are derived from the 90% base rule and the EUR 99,422 base ceiling."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "ltu_individual_activity",
+      "name": "Individual activity credit (effective 5-20% income tax up to EUR 42,500)",
+      "kind": "other",
+      "description": "Self-employed individual activity with annual income up to EUR 42,500 gets a tax credit that gives effective income tax rates from 5% to 20%; above that the main progressive rates apply. Social contributions at 19.5% on 90% of income, capped at EUR 99,422.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": {
+        "amount": 42500,
+        "currency": "EUR"
+      },
+      "duration_years": null,
+      "duration_note": "Open-ended while income stays below EUR 42,500.",
+      "treatment": "standard",
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Mokesciu ir teises naujienlaiskis, 2026 sausis (KPMG Lithuania)",
+          "url": "https://kpmg.com/lt/lt/izvalgos/mokesciu-ir-teises-naujienlaiskiai/2026-sausis.html",
+          "publisher": "KPMG Lithuania",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries - Lithuania, other taxes",
+          "url": "https://taxsummaries.pwc.com/lithuania/individual/other-taxes",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Exact credit formula and eligibility not read."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Vilnius",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 700,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average monthly rent for a 42-50 m2 1-bedroom (typical EUR 620-1,050), built from EUR 14-17 per m2 bands and adjusted by Investropa for central, mid-market and outer listings; sources Ober-Haus 2026 report, Aruodas; 2026.",
+      "source": {
+        "title": "Vilnius rents 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/vilnius-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 950,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average monthly rent for a 60-70 m2 2-bedroom (typical EUR 700-1,500); Investropa estimate, 2026.",
+      "source": {
+        "title": "Vilnius rents 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/vilnius-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Publisher's estimates; no sample size."
+  },
+  "residence_routes": "EU citizens may live and work freely. Non-EU nationals need a temporary residence permit for work or business; no remote-worker route was found and no official Lithuanian page was opened, so the details are unverified.",
+  "open_questions": [
+    "Official residence routes for non-EU contractors and employees not opened.",
+    "NPD effect not modelled for low earners."
+  ]
+}

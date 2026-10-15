@@ -1,0 +1,181 @@
+{
+  "id": "ZAF",
+  "name": "South Africa",
+  "currency": "ZAR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "2026/27 resident tax runs from 18% to a 45% top rate above ZAR 1,878,600, with the primary rebate of ZAR 17,820 folded into the brackets as a 0% band to the ZAR 99,000 tax threshold (under age 65). The only employee levy is UIF at 1% up to ZAR 212,544 a year; the self-employed pay no equivalent social security. The Remote Work Visa requires gross annual income of about ZAR 650,796.",
+    "tax_year": "2026/27",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 99000,
+        "rate": 0.18
+      },
+      {
+        "from_amount": 245100,
+        "rate": 0.26
+      },
+      {
+        "from_amount": 383100,
+        "rate": 0.31
+      },
+      {
+        "from_amount": 530200,
+        "rate": 0.36
+      },
+      {
+        "from_amount": 695800,
+        "rate": 0.39
+      },
+      {
+        "from_amount": 887000,
+        "rate": 0.41
+      },
+      {
+        "from_amount": 1878600,
+        "rate": 0.45
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.01,
+    "employee_social_security_cap": 212544,
+    "self_employed_social_security_rate": 0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "No social security levy for self-employed persons (PwC: no comprehensive social security system). Employer-only Skills Development Levy of 1% is not counted.",
+    "local_tax_note": "The primary rebate (ZAR 17,820, SARS 2026/27) is folded into the brackets exactly as a 0% band up to the ZAR 99,000 threshold (18% x 99,000 = 17,820); the brackets above are SARS's. Secondary/tertiary rebates and medical scheme credits are not applied. Tax year 1 March 2026 to 28 February 2027.",
+    "sources": [
+      {
+        "title": "South Africa - Individual - Taxes on personal income (last reviewed 29 May 2026)",
+        "url": "https://taxsummaries.pwc.com/south-africa/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "South Africa - Individual - Other taxes (last reviewed 29 May 2026)",
+        "url": "https://taxsummaries.pwc.com/south-africa/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Rates of tax for individuals (SARS)",
+        "url": "https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/",
+        "publisher": "South African Revenue Service",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "Medical scheme credits are not applied; rebate for age 65+ not applicable to personas.",
+      "Deductibility of the employee UIF contribution (the recorded 1%) not established from the opened PwC pages."
+    ],
+    "social_security_deductible": null
+  },
+  "regimes": [
+    {
+      "id": "za_remote_work_visa",
+      "name": "Remote Work Visitor's Visa (s11(1)(b)(iv))",
+      "kind": "digital_nomad_visa",
+      "description": "Visa for people employed by or contracting with a foreign employer or clients, effective 9 October 2024; local employment is not allowed and status cannot be changed inside the country. Holders are taxed at normal South African rates once tax resident; SARS registration is needed after 183 days in a 12-month period (treaty residents) or on arrival otherwise, and may apply regardless of a tax treaty.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 650796,
+        "currency": "ZAR"
+      },
+      "max_income": null,
+      "duration_years": 3,
+      "duration_note": "Valid up to 36 months, reported not renewable (WhereNext).",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Question NW296 to the Minister of Home Affairs (PMG)",
+          "url": "https://pmg.org.za/committee-question/36738/",
+          "publisher": "Parliamentary Monitoring Group",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "South Africa Remote Work Visa - WhereNext",
+          "url": "https://getwherenext.com/digital-nomad-visas/za",
+          "publisher": "WhereNext",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "South Africa - Individual - Taxes on personal income (last reviewed 29 May 2026)",
+          "url": "https://taxsummaries.pwc.com/south-africa/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Minimum income: ZAR 650,796 (parliamentary reply) versus ZAR 650,976 (Bowmans, not opened) versus a ZAR 1 million report; official DHA notice not reached.",
+        "Whether UIF applies to holders with a foreign employer is not determined; social_security_applies false is an assumption."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Cape Town",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 13500,
+        "currency": "ZAR"
+      },
+      "year": 2026,
+      "description": "Cape Town 1-bedroom average monthly rent, 2026 (range ZAR 8,000-24,000; PayProp, Private Property, Property24 based estimate, sample size not disclosed). Numbeo city-centre 1-bedroom is ZAR 16,933.",
+      "source": {
+        "title": "Average rent in Cape Town 2026 (The African Vestor)",
+        "url": "https://theafricanvestor.com/blogs/news/cape-town-rents",
+        "publisher": "The African Vestor",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 18500,
+        "currency": "ZAR"
+      },
+      "year": 2026,
+      "description": "Cape Town 2-bedroom average monthly rent, 2026 (range ZAR 11,500-45,000; PayProp, Rode Q4 2025, Private Property based estimate, sample size not disclosed).",
+      "source": {
+        "title": "Average rent in Cape Town 2026 (The African Vestor)",
+        "url": "https://theafricanvestor.com/blogs/news/cape-town-rents",
+        "publisher": "The African Vestor",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Rents are advertised/estimated, not signed-lease medians, unless stated."
+  },
+  "residence_routes": "EU, US and other citizens: visa-free entry varies by passport, but the Remote Work Visitor's Visa lets a remote worker for a foreign employer stay more than three months and up to three years (reported minimum gross income ZAR 650,796). It does not lead to permanent residence. Skilled employees need a general work visa or critical skills visa tied to a South African employer; those rules were not researched here.",
+  "open_questions": [
+    "Critical skills / general work visa rules not researched.",
+    "Official DHA remote-work notice not opened (DHA path returned 404)."
+  ]
+}

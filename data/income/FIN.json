@@ -1,0 +1,166 @@
+{
+  "id": "FIN",
+  "name": "Finland",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "State progressive scale (12.64% to 37.5% as PwC lists it) plus municipal tax of 4.70-10.90% (7.5% used). Employee contributions about 10.17%; YEL for self-employed 24.4%.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.2014
+      },
+      {
+        "from_amount": 22000,
+        "rate": 0.265
+      },
+      {
+        "from_amount": 32600,
+        "rate": 0.3775
+      },
+      {
+        "from_amount": 40100,
+        "rate": 0.4075
+      },
+      {
+        "from_amount": 52100,
+        "rate": 0.45
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.1017,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.244,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "YEL pension 24.4% of confirmed income in 2026 (Ilmarinen), with a 22% discount on the contribution for new entrepreneurs (YEL insurance in force under four years); minimum confirmed income EUR 9,423.09. Self-employed also pay Kela health contributions, which were not found on a page opened. Employee (PwC 2026): pension 7.30% + unemployment 0.89% + health 1.98% (1.10% medicare + 0.88% daily allowance, the latter not collected below EUR 17,255 of salary).",
+    "social_security_deductible": 0.8053,
+    "local_tax_note": "Municipal tax ranges 4.70-10.90% on PwC (Wikipedia gives a 2025 average of 9.28% and a 4.7-19.7% range, which conflicts); PwC's 7.5% is described as the average for non-residents and is used as a stand-in because Helsinki's own rate was not confirmed on any page opened. Church tax (1-2.25%) excluded. The brackets add PwC's state-scale rates to 7.5% and apply from the first euro; Finnish earned-income deductions are not modelled.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Finland individual - taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/finland/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Finland individual - other taxes",
+        "url": "https://taxsummaries.pwc.com/finland/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Price of YEL insurance",
+        "url": "https://www.ilmarinen.fi/en/self-employed/yel-insurance/price-of-yel-insurance/",
+        "publisher": "Ilmarinen",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Taxation in Finland (Wikipedia, disputed accuracy banner)",
+        "url": "https://en.wikipedia.org/wiki/Taxation_in_Finland",
+        "publisher": "Wikipedia",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Finland individual - deductions",
+        "url": "https://taxsummaries.pwc.com/finland/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "low",
+    "verification": "partially_verified",
+    "open_questions": [
+      "The 2026 state scale could not be confirmed on vero.fi (all vero.fi tax-rate pages tried returned 404 or no table). PwC's table (12.64% / 19% / 30.25% / 33.25% / 37.5%, first limit shown as both 21,200 and 22,000) and Wikipedia's 2025 table (12.64 / 19 / 30.25 / 34 / 41.75 / 44.25 with limits at 88,200 and 150,000) disagree above EUR 52,100, which matters at EUR 130,000. Unresolved.",
+      "Helsinki municipal rate not confirmed; 7.5% is a stand-in.",
+      "Kela contributions for self-employed not checked."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "key_employee",
+      "name": "Key employee regime (avainhenkilö)",
+      "kind": "expat_regime",
+      "description": "Foreign key employees with special knowledge can be taxed at a flat 25% on Finnish-source salary from the primary employment (PwC 2026; the rate was 32% before 2026). Minimum cash salary of EUR 5,800 in every month, not Finnish resident in the previous five calendar years, up to 84 months; apply within 90 days of starting work. Local employment required. Final tax: no deductions against that income.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": {
+        "amount": 69600,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_years": 7,
+      "duration_note": "Up to 84 months for foreign nationals (60 for returning Finns).",
+      "treatment": "flat_rate",
+      "flat_rate": 0.25,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries: Finland individual - taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/finland/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Only PwC opened; vero.fi's key-employee pages returned 404/no content. Whether municipal tax is included in the 25% and whether social contributions are due on top was not verified (they normally are)."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Helsinki",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1150,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average 2026 rent for a Helsinki 1-bedroom (about 38-48 m2), derived from Statistics Finland rent data (StatFin 15fa, Q1 2026) with assumed unit size; range EUR 900-1,600.",
+      "source": {
+        "title": "Helsinki rents (Statistics Finland based estimates)",
+        "url": "https://investropa.com/blogs/news/helsinki-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1550,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average 2026 rent for a Helsinki 2-bedroom (about 58-70 m2), same derivation; range EUR 1,250-2,400.",
+      "source": {
+        "title": "Helsinki rents (Statistics Finland based estimates)",
+        "url": "https://investropa.com/blogs/news/helsinki-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Modelled estimate from Investropa (Statistics Finland as base, assumed unit sizes of 38-48 and 58-70 m2); no listing sample and no per-room-type table values. Page states a citywide private-market average of about EUR 24 per m2."
+  },
+  "residence_routes": "EU/EEA citizens register their right of residence. Third-country nationals (US included) need a residence permit for an employed person, or a specialist permit; Finland has no digital nomad visa identified in this research (not verified on Migri).",
+  "open_questions": [
+    "State tax scale and Helsinki municipal rate unconfirmed.",
+    "Nomad visa absence and non-EU permits not verified on Migri."
+  ]
+}

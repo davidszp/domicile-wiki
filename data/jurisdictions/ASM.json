@@ -1,0 +1,234 @@
+{
+  "id": "ASM",
+  "name": "American Samoa",
+  "continent": "Oceania",
+  "region": "Polynesia (US territory)",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "summary": "American Samoa has its own income tax modelled on the US Internal Revenue Code as it stood in 2000. Its 2025 Form 390 still uses the IRS 2000 tax tables. That means long-term gains at up to 20%, but dividends taxed as ordinary income at up to 39.6%. No estate, gift or wealth tax was found. US citizens resident there exclude only American Samoa-source income from US tax.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Bona fide American Samoa residence",
+      "type": "standard",
+      "description": "Residents are taxed by American Samoa on worldwide income under its own income tax, modelled on the US Internal Revenue Code (2000 version, per the forms and tables the Tax Office publishes).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Bona fide residence under IRC §937. American Samoa controls its own immigration; long stays for non-Samoans need a permit (not researched).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Long-term capital gains are taxed at a maximum 20% under the 2000-era US rules applied by American Samoa; short-term gains are ordinary income up to 39.6%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "IRS Publication 570 (2025): Tax Guide for Individuals With Income From U.S. Territories",
+            "url": "https://www.irs.gov/pub/irs-pdf/p570.pdf",
+            "publisher": "Internal Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "American Samoa Government Tax Office: 2025 tax forms (Form 390) and IRS 2000 Tax Table",
+            "url": "https://www.americansamoa.gov/tax-office",
+            "publisher": "American Samoa Government, Department of Treasury",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "2000 Tax Tables & Tax Rate Schedules (published by the American Samoa Tax Office for current returns)",
+            "url": "https://www.americansamoa.gov/_files/ugd/4bfff9_1996ff9edcd146a3935f528e3a12435a.pdf",
+            "publisher": "American Samoa Government Tax Office",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "American Samoa Form 390 individual return workbook, 2025 (updated 11 Apr 2026)",
+            "url": "https://www.americansamoa.gov/_files/ugd/4bfff9_a3bcba04ed65461ba9c6e20f503a8725.xlsx",
+            "publisher": "American Samoa Government Tax Office",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The American Samoa Code (ASCA Title 11) adopting the IRC was not opened; the 20% figure is inferred from the 2000 forms and tables in use."
+        ],
+        "headline_rate": 0.2,
+        "rates": {
+          "listed_securities_domestic": 0.2,
+          "listed_securities_foreign": 0.2,
+          "private_business_sale": 0.2,
+          "real_estate_local": 0.2,
+          "real_estate_foreign": 0.2
+        },
+        "rate_basis": "IRS Pub. 570: American Samoa 'has its own separate and independent tax system… modeled on the U.S. Internal Revenue Code'. The Tax Office publishes the IRS 2000 Tax Table for current returns and Form 390 follows the 2000 Form 1040 (Schedule D). Under the 2000 Code the maximum long-term rate was 20% (28% for collectibles). Medium-low confidence.",
+        "holding_period_rules": "More than one year (2000 Code; the 18-month rule had already been repealed).",
+        "foreign_assets": "Worldwide income; credit for income tax paid to the US, foreign countries or other territories (IRS Pub. 570)."
+      },
+      "dividends": {
+        "summary": "Dividends are ordinary income: the 2000-based code has no reduced qualified-dividend rate, so the top rate is 39.6%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "IRS Publication 570 (2025): Tax Guide for Individuals With Income From U.S. Territories",
+            "url": "https://www.irs.gov/pub/irs-pdf/p570.pdf",
+            "publisher": "Internal Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "2000 Tax Tables & Tax Rate Schedules (published by the American Samoa Tax Office for current returns)",
+            "url": "https://www.americansamoa.gov/_files/ugd/4bfff9_1996ff9edcd146a3935f528e3a12435a.pdf",
+            "publisher": "American Samoa Government Tax Office",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "American Samoa Form 390 individual return workbook, 2025 (updated 11 Apr 2026)",
+            "url": "https://www.americansamoa.gov/_files/ugd/4bfff9_a3bcba04ed65461ba9c6e20f503a8725.xlsx",
+            "publisher": "American Samoa Government Tax Office",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "No American Samoa statute was opened to confirm the absence of a reduced dividend rate."
+        ],
+        "headline_rate": 0.396,
+        "domestic_rate": 0.396,
+        "foreign_gross_rate": 0.396,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Top ordinary rate 39.6% from the IRS 2000 tax rate schedules the Tax Office publishes; Form 390 Schedule B reports 'ordinary dividends' with no qualified-dividend line. Credit for US/foreign tax per IRS Pub. 570.",
+        "withholding_outbound": "Not researched.",
+        "treaty_network": "No tax treaties; US treaties do not extend to American Samoa."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax was found.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "IRS Publication 570 (2025): Tax Guide for Individuals With Income From U.S. Territories",
+            "url": "https://www.irs.gov/pub/irs-pdf/p570.pdf",
+            "publisher": "Internal Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "American Samoa Government Tax Office: 2025 tax forms (Form 390) and IRS 2000 Tax Table",
+            "url": "https://www.americansamoa.gov/tax-office",
+            "publisher": "American Samoa Government, Department of Treasury",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "open_questions": [
+          "No primary source states the absence of a wealth tax."
+        ],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Property taxes not researched (much land is communal)."
+      },
+      "inheritance": {
+        "summary": "No American Samoa estate, inheritance or gift tax was found. US citizens remain within the US federal estate and gift tax (added by the app).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "IRS Publication 570 (2025): Tax Guide for Individuals With Income From U.S. Territories",
+            "url": "https://www.irs.gov/pub/irs-pdf/p570.pdf",
+            "publisher": "Internal Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "26 U.S. Code § 2209 - Certain residents of possessions considered nonresidents not citizens",
+            "url": "https://www.law.cornell.edu/uscode/text/26/2209",
+            "publisher": "Legal Information Institute (Cornell)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "open_questions": [
+          "Absence of a territorial estate or gift tax not confirmed in an American Samoa source."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "gift_tax": "No American Samoa gift tax found.",
+        "gifts_same_as_inheritance": true,
+        "domicile_rules": "US citizens: federal estate and gift tax unless IRC §2209 applies (citizenship acquired through the possession). US nationals born in American Samoa are not US citizens."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Bona fide residence under IRC §937 (presence test, tax home, closer connection), as described in IRS Pub. 570.",
+    "routes": [
+      {
+        "name": "Entry permit from the American Samoa Government",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "American Samoa runs its own immigration control; US citizens can visit visa-free, but residence for non-Samoans needs a sponsored permit (details not researched)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "IRS Publication 570 (2025): Tax Guide for Individuals With Income From U.S. Territories",
+        "url": "https://www.irs.gov/pub/irs-pdf/p570.pdf",
+        "publisher": "Internal Revenue Service",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "26 U.S. Code § 937 - Residence and source rules involving possessions",
+        "url": "https://www.law.cornell.edu/uscode/text/26/937",
+        "publisher": "Legal Information Institute (Cornell)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": null,
+    "summary": "Corporate income tax follows the 2000-era US corporate rate schedule (graduated, top bracket around 35%); not verified, so left null.",
+    "sources": [
+      {
+        "title": "IRS Publication 570 (2025): Tax Guide for Individuals With Income From U.S. Territories",
+        "url": "https://www.irs.gov/pub/irs-pdf/p570.pdf",
+        "publisher": "Internal Revenue Service",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Pago Pago",
+      "lon": -170.7025,
+      "lat": -14.2781,
+      "kind": "capital",
+      "coordinate_source": "Wikipedia (Pago Pago), approx."
+    }
+  ],
+  "us_citizen_notes": "A US citizen who is a bona fide resident of American Samoa excludes only American Samoa-source income from US income tax (IRC §931, Form 4563). Foreign and US dividends and gains on non-Samoan securities stay fully US-taxed, with an American Samoa credit for US tax paid on them (IRS Pub. 570). US estate and gift tax continues to apply.",
+  "open_questions": [
+    "American Samoa Code Annotated Title 11 not opened; rates inferred from the 2000 forms and tables in current use.",
+    "Immigration and residence permits for EU/OTHER citizens not researched."
+  ]
+}

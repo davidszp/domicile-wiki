@@ -1,0 +1,224 @@
+{
+  "id": "MAR",
+  "name": "Morocco",
+  "continent": "Africa",
+  "region": "Northern Africa",
+  "currency": "MAD",
+  "researched_on": "2026-10-15",
+  "summary": "Morocco taxes residents on worldwide income. Investment income is taxed at flat, final rates: 11.25% on Moroccan dividends paid in 2026 (10% from 2027), 15% on foreign dividends (with credit for foreign tax), 15% on gains on Moroccan-listed shares and 20% on unlisted or foreign shares and on real estate. There is no wealth tax and no inheritance tax; gifts to children bear 1.5% registration duty. Casablanca Finance City is a company regime and offers no personal tax relief to a passive investor.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Moroccan tax resident",
+      "type": "standard",
+      "description": "Worldwide income tax 0-37% on ordinary income; flat final rates on dividends and gains.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if the permanent home or centre of economic interests is in Morocco, or on presence of more than 183 days in any 365-day period. Non-Moroccans need a residence card (carte de séjour).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains on financial instruments are taxed at flat rates: 15% on listed shares and 20% on unlisted shares and bonds (PwC). Gains on foreign securities are 'profits de source étrangère' taxed at 20% (Upsilon, citing the CGI 2026). Real estate gains are taxed at 20%, with a minimum tax of 3% of the sale price; a principal residence occupied for at least six years is exempt.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Morocco - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/morocco/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Revenus de capitaux mobiliers au Maroc : dividendes, intérêts, RAS et déclaration",
+            "url": "https://upsilon-consulting.com/revenus-capitaux-mobiliers-maroc/",
+            "publisher": "Upsilon Consulting",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Treatment of gains on foreign real estate for a resident (20% foreign-source rate assumed) not confirmed in the CGI text.",
+          "Whether foreign-listed shares can use the 15% listed-share rate was not confirmed; Upsilon gives 20% for foreign-source profits."
+        ],
+        "headline_rate": 0.2,
+        "rates": {
+          "listed_securities_domestic": 0.15,
+          "listed_securities_foreign": 0.2,
+          "private_business_sale": 0.2,
+          "real_estate_local": 0.2,
+          "real_estate_foreign": 0.2
+        },
+        "rate_basis": "Flat final rates: listed (Casablanca Stock Exchange) shares 15%; foreign shares 20% (foreign-source profits); unlisted shares 20%; real estate 20% (minimum 3% of price). Foreign real estate assumed to fall under the 20% foreign-source rate.",
+        "holding_period_rules": "None for securities; principal residence exemption after six years of occupation.",
+        "professional_trader": "Regular property dealing or securities trading as a business is taxed as professional income at up to 37%.",
+        "foreign_assets": "Residents are taxed on worldwide gains; foreign tax credit under Art. 77 CGI where tax was paid in a treaty country.",
+        "important_exceptions": "Since the 2026 Finance Law, foreign-source investment income and gains not withheld by a Moroccan intermediary must be declared under Art. 84 bis CGI by 1 April of the following year."
+      },
+      "dividends": {
+        "summary": "Moroccan dividends paid to individuals in 2026 bear an 11.25% final withholding tax (12.5% in 2025, 10% from 2027; Art. 247-XXXVII-C CGI). Foreign dividends received by residents are taxed at a flat 15% final rate (Art. 73-II-C CGI), withheld by a Moroccan bank or declared, with credit for foreign tax paid in a treaty country up to the Moroccan tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Morocco - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/morocco/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Revenus de capitaux mobiliers au Maroc : dividendes, intérêts, RAS et déclaration",
+            "url": "https://upsilon-consulting.com/revenus-capitaux-mobiliers-maroc/",
+            "publisher": "Upsilon Consulting",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Fiscalité internationale des dividendes au Maroc — CGI 2026, conventions et IGOC",
+            "url": "https://upsilon-consulting.com/fiscalite-dividendes-international/",
+            "publisher": "Upsilon Consulting",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PwC (reviewed 30 April 2026) still shows the 2025 dividend rate of 12.5%; the 11.25% 2026 rate is from Upsilon citing the CGI and was not checked against the DGI text."
+        ],
+        "headline_rate": 0.15,
+        "domestic_rate": 0.1125,
+        "foreign_gross_rate": 0.15,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic 11.25% (2026 payment year). Foreign 15% gross before credit; a 15% US treaty WHT would leave no Moroccan tax.",
+        "withholding_outbound": "11.25% in 2026 (10% from 2027), reduced under treaties (e.g. 10%/15% US, 15% France).",
+        "treaty_network": "About 50 DTTs including the US, UK, France, Germany, Spain, Italy, Netherlands, Switzerland, UAE and Qatar.",
+        "holding_company_notes": "CIT 20% (35% above MAD 100 million taxable income); participation exemption for dividends from Moroccan companies."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Morocco - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/morocco/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Morocco - Corporate - Other taxes",
+            "url": "https://taxsummaries.pwc.com/morocco/corporate/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "type": "none",
+        "property_tax_note": "Local taxes on property: taxe d'habitation and taxe de services communaux (rates not verified here). Registration duties of 1-6% on property transfers."
+      },
+      "inheritance": {
+        "summary": "No inheritance tax: transfers on death are not subject to registration duty. Gifts (hiba) between ascendants and descendants bear a reduced 1.5% registration duty on the market value (CGI art. 133-I-C-4°). Succession follows the Moudawana's fixed shares for Muslim Moroccans; foreigners' successions follow their national law (not verified).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Testament, donation, héritage au Maroc 2026 : règles et fiscalité",
+            "url": "https://wafir.ma/fr/guide/testament-donation-heritage-maroc-2026-regles-fiscalite",
+            "publisher": "Wafir",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Morocco - Corporate - Other taxes",
+            "url": "https://taxsummaries.pwc.com/morocco/corporate/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether a gift of foreign listed securities by deed triggers the 1.5% registration duty was not verified."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "gift_tax": "1.5% registration duty on gifts to children (on the property's market value), plus land registry and notary costs; scored as a cost, not a gift tax.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "important_exceptions": "Partition deeds between heirs bear 1.5%; land registry (ANCFCC) and adoul/notary fees apply on Moroccan real estate.",
+        "foreign_assets": "No inheritance tax on any asset; registration duty applies to deeds registered in Morocco.",
+        "domicile_rules": "Not applicable.",
+        "other_transfer_cost_rate": 0.0
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if (in order) the permanent home is in Morocco, the centre of economic interests is in Morocco, or the person stays more than 183 days in any 365-day period (PwC).",
+    "routes": [
+      {
+        "name": "Carte de séjour (residence card)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Foreigners staying beyond 90 days apply for a residence card (e.g. on the basis of means of subsistence, property or business); Morocco has no golden-visa programme verified in this session."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Morocco - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/morocco/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.2,
+    "summary": "CIT 20% on taxable income below MAD 100 million and 35% above (FY 2026); 40% for banks and insurers; minimum contribution 0.25% of turnover. Dividend WHT 11.25% in 2026.",
+    "special_zones": "Casablanca Finance City (CFC) companies and Industrial Acceleration Zones: 20% rate. CFC is a corporate status; its employee salary regime does not help a passive investor.",
+    "sources": [
+      {
+        "title": "Morocco - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/morocco/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Rabat",
+      "lon": -6.83255,
+      "lat": 34.01325,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2538475"
+    },
+    {
+      "name": "Casablanca (Casablanca Finance City)",
+      "lon": -7.61138,
+      "lat": 33.58831,
+      "kind": "financial_centre",
+      "coordinate_source": "GeoNames 2553604"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed on worldwide income and estates; the app adds the US federal layer. US-Morocco income tax treaty (1977) in force.",
+  "open_questions": [
+    "CGI 2026 text on the DGI site (tax.gov.ma) returned HTTP 403; statutory articles are cited from professional summaries."
+  ]
+}

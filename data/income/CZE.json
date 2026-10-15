@@ -1,0 +1,181 @@
+{
+  "id": "CZE",
+  "name": "Czechia",
+  "currency": "CZK",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Resident income tax is 15% up to CZK 1,762,812 (36x average monthly wage) and 23% above; no local income taxes. Employee share of insurance: 7.1% social (cap CZK 2,350,416 in 2026) and 4.5% health (no cap); the recorded rate is the combined 11.6% and the cap applies to the social part only.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 1762812,
+        "rate": 0.23
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.116,
+    "employee_social_security_cap": 2350416,
+    "self_employed_social_security_rate": 0.2281,
+    "self_employed_social_security_cap": 2350416,
+    "self_employed_notes": "Ordinary regime (derived effective rate on profit, recorded 22.81%): social insurance 29.2% (pension 28% plus 1.2% state employment policy, ČSSZ premium-rates page; sickness insurance 2.7% is voluntary and not included) on an assessment base of 55% of profit (the 55% share is from the statute as recalled and was NOT confirmed on an opened page; ČSSZ states only that the minimum base is 50% of the previous year's average tax base), giving about 16.06% of profit; health insurance 13.5% on a base of 50% of profit after expenses (VZP), giving 6.75%, minimum advance CZK 3,306 a month in 2026. The social cap (48x average wage, CZK 2,350,416) applies to the assessment base, not to profit, so it is not reached on EUR 54,000 or 130,000 of profit. In the flat-rate regime (income up to CZK 2m, not a VAT payer) the monthly payments for 2026 are CZK 9,162 (band I, income to 1m), 16,745 (band II, to 1.5m) and 27,139 (band III, to 2m), of which tax is 100 / 4,963 / 9,320, pension 5,756 / 8,191 / 12,527 and health 3,306 / 3,591 / 5,292. Lump-sum expense deductions in the ordinary regime: 80% (crafts, agriculture), 60% (some trades), 40%, 30% (rental), on a base of at most CZK 2m. Entrepreneurs may opt out of the sickness fund.",
+    "social_security_deductible": 0,
+    "local_tax_note": "No local income tax. Taxpayer tax credit not stated by the PwC pages and not included, so personal_allowance is 0.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Czech Republic, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/czech-republic/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Czech Republic, other taxes",
+        "url": "https://taxsummaries.pwc.com/czech-republic/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Czech Republic, deductions",
+        "url": "https://taxsummaries.pwc.com/czech-republic/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Informace k institutu pausalni dane pro rok 2025 a 2026",
+        "url": "https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025",
+        "publisher": "Financni sprava (Czech tax authority)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Pausalni dan OSVC (podnikatel.cz)",
+        "url": "https://www.podnikatel.cz/clanky/pausalni-dan-osvc/",
+        "publisher": "podnikatel.cz",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Sazby pojistneho (CSSZ, premium rates)",
+        "url": "https://www.cssz.gov.cz/web/lang/sazby-pojistneho",
+        "publisher": "Ceska sprava socialniho zabezpeceni (Czech social security administration)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Platba pojistneho OSVC (VZP, health insurance for the self-employed)",
+        "url": "https://www.vzp.cz/platci/informace/osvc",
+        "publisher": "VZP (Czech health insurer)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Act No. 586/1992 Coll., Income Tax Act (s.6)",
+        "url": "https://www.zakonyprolidi.cz/cs/1992-586",
+        "publisher": "Zakony pro lidi",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "The 55% pension assessment base share is not confirmed on an opened page (the 29.2% and 13.5% rates and the 50% health base are).",
+      "Annual taxpayer credit amount for 2026 is not stated by the PwC pages and was not read; personal_allowance stays 0.",
+      "The Financni sprava page and a podnikatel.cz article disagree on the band I amount (9,162 vs 9,984); the tax authority page says 9,162 applies retroactively from 1 January 2026."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "cze_flat_rate",
+      "name": "Flat-rate regime (pausalni rezim) for self-employed",
+      "kind": "other",
+      "description": "Fixed monthly payment covering income tax, pension and health insurance: CZK 9,162 (band I), 16,745 (band II), 27,139 (band III) in 2026. Requires income up to CZK 2 million (band limits 1m / 1.5m / 2m, higher for 60%-80% expense activities), not a VAT payer, and limits on dependent-work income.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": {
+        "amount": 2000000,
+        "currency": "CZK"
+      },
+      "duration_years": null,
+      "duration_note": "Open-ended while income and VAT conditions hold.",
+      "treatment": "standard",
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Informace k institutu pausalni dane pro rok 2025 a 2026",
+          "url": "https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025",
+          "publisher": "Financni sprava (Czech tax authority)",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Pausalni dan OSVC (podnikatel.cz)",
+          "url": "https://www.podnikatel.cz/clanky/pausalni-dan-osvc/",
+          "publisher": "podnikatel.cz",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [
+        "Eligibility of non-resident foreign nationals to register as OSVC depends on a residence/business permit (not researched)."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Prague",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 19000,
+        "currency": "CZK"
+      },
+      "year": 2026,
+      "description": "Median asking rent for a 1+kk, June sample of 585 live Prague listings (year assumed 2026), via Investropa; unnamed listing source, Prague-wide.",
+      "source": {
+        "title": "Prague rents 2026 (June listing sample via Investropa)",
+        "url": "https://investropa.com/blogs/news/prague-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 25000,
+        "currency": "CZK"
+      },
+      "year": 2026,
+      "description": "Median asking rent for a 2+kk in the same June sample of 585 live Prague listings (2+kk used as the 2-bedroom proxy; a 2+1 would be dearer), via Investropa.",
+      "source": {
+        "title": "Prague rents 2026 (June listing sample via Investropa)",
+        "url": "https://investropa.com/blogs/news/prague-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Medians of asking rents; three-room (3+kk) median CZK 39,000. Deloitte Rent Index citywide CZK 462 per m2."
+  },
+  "residence_routes": "EU citizens can live and work freely and register a trade or employment. Non-EU nationals, including US citizens, need a long-term visa or permit: an employee card or blue card for skilled employees, or a long-term residence for business (trade licence) for freelancers; conditions were not verified from an official page.",
+  "open_questions": [
+    "Official conditions for the Zivno long-term business permit and employee card not opened.",
+    "Annual taxpayer credit amount for 2026 not read; the 55% pension base share not confirmed."
+  ]
+}

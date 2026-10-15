@@ -1,0 +1,322 @@
+{
+  "id": "CYM",
+  "name": "Cayman Islands",
+  "continent": "Caribbean",
+  "region": "Western Caribbean (British Overseas Territory)",
+  "currency": "KYD",
+  "researched_on": "2026-10-15",
+  "summary": "The Cayman Islands has no income, capital gains, dividend, inheritance, estate, gift, wealth or property tax. The real costs are stamp duty on buying Cayman land (7.5%, and 10% from 1 January 2026 for property worth CI$2 million or more) and nominal probate fees for Cayman-situs assets. No tax treaties. Wealthy foreigners usually reside under the 25-year Residency Certificate for persons of independent means (CI$1 million investment, at least CI$500,000 in developed real estate, CI$120,000 annual income).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary residence",
+      "type": "standard",
+      "description": "No direct taxes on individuals.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any lawful resident; non-Caymanians need a residency certificate or other permission from WORC.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax.",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No direct taxes on individuals (PwC 2026; Mourant 2026; Deloitte 2026). All rates 0.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Cayman Islands, Individual - Other taxes (last reviewed 29 May 2026)",
+            "url": "https://taxsummaries.pwc.com/cayman-islands/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mourant: Cayman Islands - Probate and Letters of Administration (24 February 2026)",
+            "url": "https://www.mourant.com/guides/cayman-islands-probate-and-letters-of-administration/",
+            "publisher": "Mourant",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Cayman Islands Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-caymanislandshighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "important_exceptions": "Stamp duty on transfers of Cayman land: 7.5% for non-Caymanian buyers, on the higher of price and market value; from 1 January 2026 10% where the value is CI$2 million or more (Stamp Duty (Rates of Duty) (No. 2) Regulations 2025). Share transfers in land-holding companies follow the same 7.5%/10%. Mortgages: 1% up to CI$300,000, 1.5% above. First-time Caymanian buyer concessions (exempt up to CI$550,000 from February 2025) do not apply to non-Caymanians."
+      },
+      "dividends": {
+        "summary": "No tax on dividends.",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No income tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Cayman Islands Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-caymanislandshighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Cayman Islands, Corporate - Taxes on corporate income (last reviewed 29 May 2026)",
+            "url": "https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "withholding_outbound": "No withholding taxes.",
+        "treaty_network": "No tax treaties (Deloitte 2026); US/EU withholding on portfolio dividends is not reduced."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "No property tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Cayman Islands, Individual - Other taxes (last reviewed 29 May 2026)",
+            "url": "https://taxsummaries.pwc.com/cayman-islands/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Cayman Islands Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-caymanislandshighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified"
+      },
+      "inheritance": {
+        "summary": "No inheritance tax, estate tax or death duties, and no gift tax.",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax. Transfers of Cayman land between certain family members for natural love and affection are exempt from stamp duty under the Stamp Duty Act (relationships not listed in the source).",
+        "gifts_same_as_inheritance": true,
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Cayman Islands, Individual - Other taxes (last reviewed 29 May 2026)",
+            "url": "https://taxsummaries.pwc.com/cayman-islands/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mourant: Cayman Islands - Probate and Letters of Administration (24 February 2026)",
+            "url": "https://www.mourant.com/guides/cayman-islands-probate-and-letters-of-administration/",
+            "publisher": "Mourant",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cayman Islands Lands & Survey: Stamp Duty",
+            "url": "https://www.caymanlandinfo.ky/services/valuation/stamp-duty",
+            "publisher": "Cayman Islands Government, Lands & Survey Department",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cayman Resident: Stamp duty (updated 17 February 2026)",
+            "url": "https://caymanresident.com/housing/real-estate/buying-real-estate/stamp-duty",
+            "publisher": "Cayman Resident",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Cayman Islands, Corporate - Other taxes (last reviewed 29 May 2026)",
+            "url": "https://taxsummaries.pwc.com/cayman-islands/corporate/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Whether stamp duty applies when Cayman land vests in heirs on death (transmission). PwC (reviewed 29 May 2026) gives stamp duty of generally 7.5% on transfers of Cayman immovable property and on shares in land-holding companies, but does not address transfers on death or to family; the Stamp Duty Act schedule was not read. other_transfer_cost_rate is kept at 0 pending a primary source."
+        ],
+        "important_exceptions": "Probate or resealing of a foreign grant for Cayman-situs assets: CI$200 application fee, CI$25 per affidavit/inventory, nominal stamp duties of CI$10 per grant (Mourant 2026; Lands & Survey). Treated as negligible (0).",
+        "foreign_assets": "Not taxed.",
+        "domicile_rules": "No transfer taxes; domicile irrelevant locally."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No direct taxes; tax residence has no local consequence.",
+    "routes": [
+      {
+        "name": "25-year Residency Certificate (persons of independent means)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Grand Cayman: CI$1,000,000 investment of which at least CI$500,000 in developed real estate, plus annual income of at least CI$120,000 without local employment (or a local deposit of CI$400,000). Fees: CI$500 application, CI$50,000 grant, CI$3,000 per dependant; annual declaration CI$500 + CI$3,000 per dependant. Cayman Brac/Little Cayman: CI$500,000 (CI$250,000 real estate), CI$75,000 income. No right to work. Minimum 30 days' presence per calendar year (Bedell Cristin). Thresholds are 'expected to increase significantly' (Cayman Resident, Oct 2026).",
+        "minimum_investment": {
+          "amount": 1000000,
+          "currency": "KYD"
+        }
+      },
+      {
+        "name": "Certificate of Permanent Residence (persons of independent means)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Investment in developed real estate of CI$2 million or more (Bedell Cristin 2023; amount not confirmed on an official page). Loss of status if ordinarily resident abroad for a year or more.",
+        "minimum_investment": {
+          "amount": 2000000,
+          "currency": "KYD"
+        }
+      },
+      {
+        "name": "Certificate of Direct Investment / Residency Certificate (Substantial Business Presence)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "For investors in employment-generating businesses or owners of at least 10% of an approved business; 90 days' annual presence. Amounts not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cayman Resident: Residency Certificate for Persons of Independent Means (updated 6 October 2026)",
+        "url": "https://caymanresident.com/move/immigration/permanent-residence/persons-of-independent-means-investors/residency-certificate",
+        "publisher": "Cayman Resident",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Cayman Resident: Persons of independent means / investors (updated 6 October 2026)",
+        "url": "https://caymanresident.com/move/immigration/permanent-residence/persons-of-independent-means-investors",
+        "publisher": "Cayman Resident",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Bedell Cristin: Annual residence/presence requirements in the Cayman Islands for persons of independent means (30 March 2023)",
+        "url": "https://www.bedellcristin.com/knowledge/briefings/a-guide-to-annual-residencepresence-requirements-in-the-cayman-islands-for-persons-of-independent-means/",
+        "publisher": "Bedell Cristin",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.0,
+    "summary": "No corporate income, capital gains, payroll or other direct taxes on companies. No Pillar Two domestic minimum tax enacted (PwC reports no significant developments in the year to May 2026). Economic substance and CRS/FATCA reporting apply.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Cayman Islands, Corporate - Taxes on corporate income (last reviewed 29 May 2026)",
+        "url": "https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Cayman Islands, Corporate - Significant developments (last reviewed 29 May 2026)",
+        "url": "https://taxsummaries.pwc.com/cayman-islands/corporate/significant-developments",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Cayman Islands Highlights 2026 (updated January 2026)",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-caymanislandshighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "George Town / Seven Mile Beach (Grand Cayman)",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 30700,
+        "currency": "KYD"
+      },
+      "year": 2026,
+      "description": "Cayman International School, grades 11-12, 2026-27 (school states tuition is in KYD).",
+      "source": {
+        "title": "Cayman International School: Tuition fees 2026-2027",
+        "url": "https://www.cis.ky/admissions/tuition-fees",
+        "publisher": "Cayman International School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Purchase price per m2, health insurance and housekeeper not sourced. Budget up to 1% of price for legal/registration fees on purchases; stamp duty on purchases is generally 7.5% (PwC).",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 12500,
+        "currency": "KYD"
+      },
+      "year": 2026,
+      "description": "Median of the nine long-term 4-5 bedroom houses listed on the CIREBA rental MLS on 15 Oct 2026 in the Seven Mile Corridor, South Sound, West Bay canal-front and Spotts areas (KYD 7,700, 7,800, 10,000, 10,833, 12,500, 13,100, 14,500, 20,833, 23,500; USD asks converted at the fixed KYD 1 = USD 1.20). Excluded: a weekly-rental beach villa and non-prime 4-5 bed homes in George Town and Savannah (KYD 3,800-5,000). Asking rents.",
+      "source": {
+        "title": "Rentals by CIREBA: Cayman Islands residential rental properties (MLS, viewed 15 Oct 2026)",
+        "url": "https://www.cirebarentals.com/cayman-islands-residential-rental-properties",
+        "publisher": "Cayman Islands Real Estate Brokers Association (CIREBA)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "George Town",
+      "lon": -81.3808,
+      "lat": 19.2954,
+      "kind": "capital",
+      "coordinate_source": "OpenStreetMap relation 13777970 (centroid)"
+    },
+    {
+      "name": "George Town financial centre",
+      "lon": -81.3808,
+      "lat": 19.2954,
+      "kind": "financial_centre",
+      "coordinate_source": "OpenStreetMap relation 13777970 (centroid)"
+    }
+  ],
+  "us_citizen_notes": "US citizens stay subject to US federal tax on worldwide income, gains and estate; with no local income tax there is no local tax to credit, so the US layer applies in full. No income tax treaty with the US.",
+  "open_questions": [
+    "An October 2025 Immigration reform bill (Cayman Compass) may change investor-residency thresholds; article could not be opened and current WORC figures were not verified on an official page.",
+    "No indicator overrides: the Cayman Islands is in the World Bank/WGI data (homicide rate 2020, internet users 2017, life expectancy 2024), so under the research guide no override is added; RCIPS annual crime statistics were not retrieved to check for a newer homicide figure. UNDP publishes no HDI and TI no CPI for the Cayman Islands; there is no same-definition substitute, so the hdi and corruption composites stay unscored."
+  ]
+}

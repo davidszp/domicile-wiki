@@ -1,0 +1,173 @@
+{
+  "id": "FSM",
+  "name": "Micronesia (Federated States of)",
+  "continent": "Oceania",
+  "region": "Micronesia (Western Pacific)",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "summary": "The Federated States of Micronesia taxes wages and salaries (6% on the first USD 11,000, 10% above) and the gross revenue of businesses (3% above USD 10,000). There is no tax on an individual's investment income or capital gains outside a business, and no inheritance, gift or wealth tax was found. Based on the 2014 FSM Code; later amendments and state-level taxes were not checked.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary residence",
+      "type": "standard",
+      "description": "Wage and salary tax plus a gross revenue tax on businesses; no tax on private investment income.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "No tax residence test is relevant for investment income.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax: national taxes are the wage and salary tax (54 FSMC 121) and the gross revenue tax on businesses (54 FSMC 141).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "FSM Code (2014 Annotated) Title 54 Taxation and Customs",
+            "url": "http://www.fsmlaw.org/fsm/code/PDF/FSMCA2014Tit54.pdf",
+            "publisher": "FSM Legal Information System (fsmlaw.org)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "54 FSMC 112(5): 'gross revenue' is receipts of a trade or business (including returns on the capital of the business); a non-business investor's gains are outside both taxes.",
+        "professional_trader": "A business dealing in securities or property would pay 3% gross revenue tax on its receipts (above USD 10,000).",
+        "open_questions": [
+          "Amendments after the 2014 Code and any state taxes were not checked."
+        ]
+      },
+      "dividends": {
+        "summary": "No tax on dividends received by an individual outside a business.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "FSM Code (2014 Annotated) Title 54 Taxation and Customs",
+            "url": "http://www.fsmlaw.org/fsm/code/PDF/FSMCA2014Tit54.pdf",
+            "publisher": "FSM Legal Information System (fsmlaw.org)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "54 FSMC 121 (wages) and 141 (business gross revenue) are the national income taxes; dividends of a private investor are in neither base.",
+        "treaty_network": "No comprehensive treaties found (not verified). US dividends bear 30% US WHT."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no recurring levy on financial assets.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "FSM Code (2014 Annotated) Title 54 Taxation and Customs",
+            "url": "http://www.fsmlaw.org/fsm/code/PDF/FSMCA2014Tit54.pdf",
+            "publisher": "FSM Legal Information System (fsmlaw.org)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Not researched (state-level)."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax in Title 54 (Taxation and Customs).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "FSM Code (2014 Annotated) Title 54 Taxation and Customs",
+            "url": "http://www.fsmlaw.org/fsm/code/PDF/FSMCA2014Tit54.pdf",
+            "publisher": "FSM Legal Information System (fsmlaw.org)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax found.",
+        "gifts_same_as_inheritance": true,
+        "open_questions": [
+          "State codes (Pohnpei, Chuuk, Yap, Kosrae) not checked. Non-citizens cannot own land (constitution; not verified)."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No tax on investment income, so no relevant residence test.",
+    "routes": [
+      {
+        "name": "Entry/residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "FSM Code (2014 Annotated) Title 54 Taxation and Customs",
+        "url": "http://www.fsmlaw.org/fsm/code/PDF/FSMCA2014Tit54.pdf",
+        "publisher": "FSM Legal Information System (fsmlaw.org)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": null,
+    "summary": "No corporate income tax at national level in Title 54: businesses pay gross revenue tax of USD 80 on the first USD 10,000 and 3% above (54 FSMC 141, as summarised in the Code text read).",
+    "sources": [
+      {
+        "title": "FSM Code (2014 Annotated) Title 54 Taxation and Customs",
+        "url": "http://www.fsmlaw.org/fsm/code/PDF/FSMCA2014Tit54.pdf",
+        "publisher": "FSM Legal Information System (fsmlaw.org)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Kolonia/Palikir (Pohnpei)",
+    "notes": "Not sourced."
+  },
+  "markers": [
+    {
+      "name": "Palikir",
+      "lon": 158.16109,
+      "lat": 6.92477,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2081986"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. Where local tax on portfolio income is nil there is nothing to credit against US tax.",
+  "open_questions": [
+    "Tax reform proposals (e.g. a unified revenue authority and net profits tax) have been discussed for years; nothing in force found."
+  ]
+}

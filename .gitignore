@@ -1,0 +1,13 @@
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+# Downloads and intermediate geometry, recreated by `make geo` / `make indicators`
+data/raw/
+data/build/
+.vercel/
+
+# Claude Code project instructions and local settings (kept out of the public repo)
+CLAUDE.md
+CLAUDE.local.md
+.claude/

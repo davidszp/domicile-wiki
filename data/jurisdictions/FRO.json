@@ -1,0 +1,290 @@
+{
+  "id": "FRO",
+  "name": "Faroe Islands",
+  "continent": "Europe",
+  "region": "North Atlantic (Kingdom of Denmark)",
+  "currency": "DKK",
+  "researched_on": "2026-10-15",
+  "summary": "The Faroe Islands tax residents' capital income (interest, dividends and gains on shares and other securities) under a separate capital gains tax law at a flat 35% for individuals; ordinary income pays progressive national tax plus 16%-23% municipal tax. Emigrants are deemed to sell securities worth over DKK 100,000. Inheritance is free of income tax, but an inheritance duty (arvaavgjald) of 1%-12% is paid to the probate court; children pay at most 3%. Gifts from parents to children are tax-free. No wealth tax was found.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Full tax liability",
+      "type": "standard",
+      "description": "Flat 35% tax on capital income and gains; progressive tax on other income; inheritance duty up to 3% for children.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Full tax liability after more than 180 days within a 12-month period or with a registered permanent address (TAKS).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Løgtingslóg nr. 164/2001 on capital gains covers sales of shares, investment certificates and similar securities, debt claims, and also dividends and interest (§ 1). Individuals and estates pay 35% on the net gain (§ 14(2)). On emigration, securities worth over DKK 100,000 (or below acquisition value) are deemed sold; payment can be deferred against a bank guarantee.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Logtingslog nr. 164 fra 21.12.2001 um skatting av kapitalvinningi (as amended)",
+            "url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+            "publisher": "Logir.fo",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "TAKS: Kapitalvinningsskattur",
+            "url": "https://www.taks.fo/fo/borgari/skattur/kapitalvinningsskattur",
+            "publisher": "TAKS (Faroese tax authority)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "headline_rate": 0.35,
+        "rates": {
+          "listed_securities_domestic": 0.35,
+          "listed_securities_foreign": 0.35,
+          "private_business_sale": 0.35,
+          "real_estate_local": null,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "§ 14(2) Løgtingslóg um skatting av kapitalvinningi: individuals 35% on the computed gain.",
+        "important_exceptions": "Exit tax: deemed disposal of securities over DKK 100,000 on moving away (TAKS).",
+        "open_questions": [
+          "Gains on real estate are outside this law; treatment of private real estate gains not researched (left null)."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends are capital income taxed at 35% (Løgtingslóg nr. 164/2001 § 1(5) and § 14); Faroese companies withhold 35%. Foreign tax paid on foreign income can be deducted from the Faroese tax up to the tax on that income (TAKS Uttanlandsinntøka).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Logtingslog nr. 164 fra 21.12.2001 um skatting av kapitalvinningi (as amended)",
+            "url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+            "publisher": "Logir.fo",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "TAKS: Dividend tax refund",
+            "url": "https://www.taks.fo/en/individuals/tax/dividend-tax-refund",
+            "publisher": "TAKS (Faroese tax authority)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "TAKS: Uttanlandsinntoka",
+            "url": "https://www.taks.fo/fo/borgari/skattur/uttanlandsinntoeka",
+            "publisher": "TAKS (Faroese tax authority)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.35,
+        "domestic_rate": 0.35,
+        "foreign_gross_rate": 0.35,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Flat 35% capital-income rate for individuals; 35% withholding on Faroese dividends.",
+        "withholding_outbound": "35% on dividends (refund to treaty rate: UK 5%/15%, Nordic 0%/15%, Switzerland 0%/15%, India 15%/25%).",
+        "treaty_network": "Nordic convention, UK, Switzerland, India and a few others."
+      },
+      "wealth_tax": {
+        "summary": "No wealth tax found: TAKS lists taxes on income, interest, gifts and inheritance, pension tax and capital gains tax, with no tax on wealth.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "TAKS: Taxation in the Faroe Islands",
+            "url": "https://www.taks.fo/en/individuals/tax/taxation-in-the-faroe-islands",
+            "publisher": "TAKS (Faroese tax authority)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Municipal property tax not researched."
+      },
+      "inheritance": {
+        "summary": "Inheritances are free of income tax, but arvaavgjald (inheritance duty) of 1%-12% is paid to the probate court depending on the heir and the size of the share (TAKS). The 1908 Danish inheritance duty act, in force in the Faroes by Anordning 468/1921, sets for spouse and children: 1% on shares up to DKK 1,000, rising in steps to 3% on shares over DKK 100,000 (§ 2 A), the band rate applying to the whole share. Advance inheritance (forskotsarvur) is subject to the duty; ordinary gifts from parents to children are tax-free.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "TAKS: Skattur og arvur",
+            "url": "https://www.taks.fo/fo/borgari/skattur/skattur-og-arvur",
+            "publisher": "TAKS (Faroese tax authority)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Anordning nr. 468 af 08.11.1921 hvorved lov om arveafgift af 27.05.1908 saettes i kraft paa Faeroerne",
+            "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+            "publisher": "Logir.fo",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "TAKS: Skattur og gavur",
+            "url": "https://www.taks.fo/fo/borgari/skattur/skattur-og-gavur",
+            "publisher": "TAKS (Faroese tax authority)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "beneficiary",
+        "children_treatment": "taxed_low",
+        "exemption": 0,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.01
+          },
+          {
+            "from_amount": 1000,
+            "rate": 0.0125
+          },
+          {
+            "from_amount": 2000,
+            "rate": 0.015
+          },
+          {
+            "from_amount": 3000,
+            "rate": 0.0175
+          },
+          {
+            "from_amount": 5000,
+            "rate": 0.02
+          },
+          {
+            "from_amount": 10000,
+            "rate": 0.0225
+          },
+          {
+            "from_amount": 20000,
+            "rate": 0.025
+          },
+          {
+            "from_amount": 50000,
+            "rate": 0.0275
+          },
+          {
+            "from_amount": 100000,
+            "rate": 0.03
+          }
+        ],
+        "bracket_mode": "whole_amount",
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Gifts from parents to children are tax-free (TAKS, Skattalógin § 29); advance inheritance pays arvaavgjald.",
+        "gifts_same_as_inheritance": false,
+        "important_exceptions": "No duty while the surviving spouse keeps the estate undivided (óskift búgv). Spouse and children under 18 have an exemption under conditions (§ 3).",
+        "domicile_rules": "Estates administered by the Faroese probate court (skiftirættur).",
+        "open_questions": [
+          "Later amendments to Anordning 468/1921 not checked; the TAKS summary (1%-12%) matches the original table.",
+          "Scope for foreign assets of a Faroese-domiciled deceased and whether a spouse in undivided estate (óskift búgv) defers the duty for children not analysed."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "More than 180 days in a 12-month period, or a registered permanent address (TAKS).",
+    "routes": [
+      {
+        "name": "Danish and Nordic citizens",
+        "citizenships": [
+          "EU",
+          "OTHER"
+        ],
+        "requirements": "Danish and Nordic citizens can settle freely; the Faroes are outside the EU, so other EU citizens need permits."
+      },
+      {
+        "name": "Others",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Work/residence permits under Faroese immigration rules; no investor route found."
+      }
+    ],
+    "sources": [
+      {
+        "title": "TAKS: Taxation in the Faroe Islands",
+        "url": "https://www.taks.fo/en/individuals/tax/taxation-in-the-faroe-islands",
+        "publisher": "TAKS (Faroese tax authority)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.18,
+    "summary": "Companies and funds pay 18% on capital gains under Løgtingslóg 164/2001 § 14(2); the general corporate rate is believed to be 18% as well (not verified at source).",
+    "sources": [
+      {
+        "title": "Logtingslog nr. 164 fra 21.12.2001 um skatting av kapitalvinningi (as amended)",
+        "url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+        "publisher": "Logir.fo",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Torshavn",
+      "lon": -6.77164,
+      "lat": 62.00973,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2611396"
+    }
+  ],
+  "us_citizen_notes": "No US-Faroes treaty; US citizens remain subject to US federal tax.",
+  "open_questions": [
+    "Not in World Bank/WGI data; no authoritative overrides added.",
+    "Real estate gains and municipal property tax not researched.",
+    "Cost of living: prime rent rests on only 4 Kitt.fo listings (2026-10-15); a Faroese agency or Hagstova rent figure for large houses would firm it up. Fee set to 0 (free public upper secondary in Faroese); there is no international school."
+  ],
+  "cost_of_living": {
+    "city": "Tórshavn (incl. Hoyvík and Argir)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 14750,
+        "currency": "DKK"
+      },
+      "year": 2026,
+      "description": "Median asking rent of the 4 listings of at least 140 m² in Tórshavn municipality (Tórshavn, Hoyvík, Argir) on Kitt.fo, the Faroese rental portal, on 2026-10-15: a 204 m² 5-room house in Hoyvík (DKK 14,500, 6-month let), a 192 m² 3-bedroom-plus-office flat in Argir (DKK 16,900, let over 3 years), a 150 m² house in central Tórshavn (DKK 15,000) and a 145 m² house in central Tórshavn (DKK 13,000), both lets under 1 year. Kitt.fo showed 48 listings in all on that date; no other listing had 4 or more bedrooms. Some rents include electricity, heating and internet. Very thin sample: the Faroese rental market is small and many lets are arranged privately or through Facebook groups, so treat this as indicative only.",
+      "source": {
+        "title": "Kitt — Leiguportalurin: search (all rental listings)",
+        "url": "https://www.kitt.fo/search/",
+        "publisher": "Kitt.fo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 0,
+        "currency": "DKK"
+      },
+      "year": 2026,
+      "description": "The Faroe Islands have no international school and no private upper-secondary school was found. The leading upper-secondary option is the public Glasir – Tórshavn College (gymnasium and other youth programmes, about 1,500 students), which charges no tuition: Faroese education is free at all levels. Instruction is in Faroese, so a non-Faroese-speaking child would need language support (Glasir runs Faroese-as-a-second-language courses). Fee 0 per child.",
+      "source": {
+        "title": "Education — Free education for all",
+        "url": "https://www.faroeislands.fo/people-society/education-research/education",
+        "publisher": "Government of the Faroe Islands (faroeislands.fo)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent from a very thin Kitt.fo sample (4 listings of 140 m²+ in Tórshavn municipality). There is no international school; public upper-secondary education at Glasir (in Faroese) is free. Trap Faroe Islands confirms Glasir is Tórshavn's merged upper-secondary college and that instruction is in Faroese (https://trap.fo/en/society-and-business/uddannelse-og-forskning-pa-faeroerne/)."
+  }
+}

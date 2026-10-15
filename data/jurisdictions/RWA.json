@@ -1,0 +1,287 @@
+{
+  "id": "RWA",
+  "name": "Rwanda",
+  "continent": "Africa",
+  "region": "Eastern Africa",
+  "currency": "RWF",
+  "researched_on": "2026-10-15",
+  "summary": "Rwanda taxes residents on worldwide income at up to 30%. Rwandan dividends bear a 15% final withholding tax (5% on listed securities for Rwandan/EAC residents). Gains on shares are taxed at 10%, but gains on listed securities traded on the capital market are exempt; gains on commercial real estate are taxed at 30%. There is no wealth tax and no inheritance, estate or gift tax. The Kigali International Financial Centre offers a five-year foreign-income exemption only to new residents who work as experts for KIFC-licensed entities.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Rwandan tax resident",
+      "type": "standard",
+      "description": "Worldwide PIT 0-30%; 15% final WHT on dividends and interest; 10% CGT on shares.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident with a permanent residence or habitual abode in Rwanda, more than 183 days in any 12-month period, or an average of more than 122 days in each of the two preceding tax periods while present in the year. Foreigners need a residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "CGT of 10% applies to the gain on the direct or indirect sale or transfer of shares, debt instruments, options and similar assets. Gains on listed shares and securities sold on the capital market, and on units of collective investment schemes, are exempt. Gains on commercial immovable property are taxed at 30%. Residents are taxed on worldwide income, so foreign share gains are scored at 10%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Rwanda - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/rwanda/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Rwanda - Corporate - Other taxes",
+            "url": "https://taxsummaries.pwc.com/rwanda/corporate/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Rwanda - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/rwanda/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether the listed-securities exemption covers foreign stock exchanges.",
+          "Whether gains on non-commercial (residential) property of individuals are taxed.",
+          "Treatment of foreign real estate gains."
+        ],
+        "headline_rate": 0.3,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.1,
+          "private_business_sale": 0.1,
+          "real_estate_local": 0.3,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Domestic listed: exempt (capital market transactions). Foreign listed: 10% assumed (worldwide basis; the listed exemption is read as the Rwandan capital market). Private business: 10%. Local real estate: 30% (commercial property; residential gains may be untaxed). Foreign real estate: null.",
+        "professional_trader": "Trading would be business income at up to 30%.",
+        "foreign_assets": "Worldwide taxation with credit for foreign tax up to the Rwandan tax."
+      },
+      "dividends": {
+        "summary": "Dividends from Rwandan companies bear a 15% WHT that is the final tax; dividends on securities listed on the capital market paid to Rwandan or EAC residents bear 5%. Residents are taxed on worldwide income; foreign dividends are scored at the 30% top PIT rate with credit for foreign tax up to the Rwandan tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Rwanda - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/rwanda/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Rwanda - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/rwanda/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Rwanda - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/rwanda/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Rwanda - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/rwanda/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Rwanda - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/rwanda/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether foreign dividends of individuals are taxed at the 15% investment-income rate rather than the 30% PIT scale."
+        ],
+        "headline_rate": 0.3,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.3,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic 15% final (5% for listed). Foreign 30% top PIT rate before credit (no separate flat rate for foreign dividends found).",
+        "withholding_outbound": "15% (5% on listed securities for Rwandan/EAC residents); treaty reductions.",
+        "treaty_network": "14 DTTs (Barbados, Belgium, China, DR Congo, Jersey, Korea, Luxembourg, Mauritius, Morocco, Qatar, Singapore, South Africa, Turkey, UAE); none with the US.",
+        "holding_company_notes": "CIT 28%; dividends between resident companies exempt."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Rwanda - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/rwanda/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "type": "none",
+        "property_tax_note": "Immovable property tax on market value: 0.5% for residential buildings (0.25%/0.1% for multi-storey), 0.3% commercial, plus a per-m² land tax (RWF 0-80)."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Rwanda - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/rwanda/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "gift_tax": "None.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "No tax.",
+        "domicile_rules": "Not applicable.",
+        "other_transfer_cost_rate": 0.0
+      }
+    },
+    {
+      "id": "kifc_expert",
+      "name": "KIFC expert foreign-income exemption",
+      "type": "special",
+      "description": "Five-year exemption from PIT on foreign-source income for a new resident working as an expert or professional directly for a KIFC-licensed entity.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Not resident in Rwanda in the five years before becoming resident; works as an expert or professional directly for an entity carrying out KIFC-licensed activities.",
+      "duration_years": 5,
+      "requires_qualifying_activity": true,
+      "capital_gains": {
+        "summary": "Under the KIFC expert exemption, foreign-source income (including foreign gains) is exempt for five years; Rwandan-source gains follow the standard rules.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Rwanda - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/rwanda/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "headline_rate": 0.1,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.1,
+          "real_estate_local": 0.3,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Foreign listed and foreign real estate 0 (foreign-source income exempt); Rwandan items as standard.",
+        "eligibility_conditions": "Only for a new resident (not resident in the previous five years) working as an expert or professional directly for a KIFC-licensed entity."
+      },
+      "dividends": {
+        "summary": "Foreign dividends are exempt for five years under the KIFC expert exemption; Rwandan dividends are taxed as standard.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Rwanda - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/rwanda/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "headline_rate": 0.15,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Domestic 15% (standard). Foreign 0 under the exemption."
+      },
+      "sources": [
+        {
+          "title": "Rwanda - Individual - Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/rwanda/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Permanent residence or habitual abode in Rwanda; or more than 183 days in any 12-month period; or present in the year and averaging more than 122 days in each of the two preceding tax periods (PwC).",
+    "routes": [
+      {
+        "name": "Residence permit / investor visa",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Foreigners need a residence permit; investor categories exist but thresholds were not verified in this session."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rwanda - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/rwanda/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.28,
+    "summary": "CIT 28% on worldwide income with foreign tax credit; reduced rates for newly listed companies (20-25% for five years) and registered priority-sector investors; micro and small business regimes.",
+    "special_zones": "Kigali International Financial Centre (KIFC) incentives for licensed entities (not reviewed).",
+    "sources": [
+      {
+        "title": "Rwanda - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/rwanda/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Kigali",
+      "lon": 30.05885,
+      "lat": -1.94995,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 202061"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed on worldwide income and estates; the app adds the US federal layer. No US-Rwanda income tax treaty.",
+  "open_questions": []
+}

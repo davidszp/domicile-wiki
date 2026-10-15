@@ -1,0 +1,152 @@
+{
+  "id": "ALB",
+  "name": "Albania",
+  "currency": "ALL",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Employment income: 13% up to ALL 2,040,000 a year and 23% above (PwC, schedule effective 1 January 2025). Employee social and health contributions 11.2%. Self-employed: PwC reports a 0% rate on gross income up to ALL 14 million until 31 December 2029 (wording ambiguous), 15% otherwise and 23% above ALL 14 million.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.13
+      },
+      {
+        "from_amount": 2040000,
+        "rate": 0.23
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.112,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.034,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Self-employed pay social insurance of no less than 23% of a monthly base of ALL 50,000 (the minimum salary; ALL 11,500) and health insurance of 3.4% of no less than double the minimum salary, i.e. ALL 100,000 (ALL 3,400), per PwC: ALL 14,900 a month or ALL 178,800 a year at the minimum bases. Converted to a rate on EUR 54k (about ALL 5.3 million, assuming roughly ALL 98 per EUR, an unsourced conversion), that is about 3.4%; the effective rate is lower at EUR 130k. These are minimum bases: whether a higher base is compulsory for higher profits was not confirmed. PwC also describes a simplified regime for turnover up to ALL 10 million and a 0% rate for gross income up to ALL 14 million until 31 December 2029 (ambiguous wording, not applied).",
+    "social_security_deductible": 1,
+    "local_tax_note": "Employee social insurance contribution is limited to a maximum salary not stated on the page. Monthly 0%-band structure not confirmed.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Albania individual - taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/albania/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Albania individual - other taxes",
+        "url": "https://taxsummaries.pwc.com/albania/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Albania individual - deductions",
+        "url": "https://taxsummaries.pwc.com/albania/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Whether a 0% band exists at low monthly pay was not confirmed (PwC shows 13% from the first lek of the 2025 annual schedule); at EUR 54k a zero band of ~ALL 480,000 would change tax by about 1% of income.",
+      "Maximum insurable salary not found.",
+      "The self-employed 0%/15% wording on PwC is ambiguous; self-employed contributions are minimum-base figures only."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "unique_permit_digital_nomad",
+      "name": "Unique Permit for digital nomads (digital mobile employees)",
+      "kind": "digital_nomad_visa",
+      "description": "One-year renewable residence/work permit for foreigners employed abroad or self-employed who work remotely for clients outside Albania, requiring health insurance, an Albanian bank account, a clean record and proof of income (no statutory figure; BorderPilot cites roughly USD 9,800-10,000 a year). Tax treatment is disputed: BorderPilot claims a 12-month exemption, then worldwide taxation of residents after 183 days; PwC says residents are taxed on worldwide income and describes no nomad exemption. Re-check 2026-10-15: PwC's Albania residence/income pages opened do not mention any nomad exemption (they say residents are taxed on all sources in and outside Albania), Fragomen gives no tax statement, and BorderPilot's 12-month exemption is unsourced and cites no law, so the regime stays 'standard'.",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 3,
+      "duration_note": "Fragomen (2022): initial one year, then renewable for two years, then five; the 3-year figure counts the first two periods.",
+      "treatment": "standard",
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Albania digital nomad visa: the complete 2026 guide",
+          "url": "https://www.borderpilot.com/blog/albania-digital-nomad-visa-the-complete-2026-guide",
+          "publisher": "BorderPilot",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Albania: new single permit available for digital nomads and others",
+          "url": "https://www.fragomen.com/insights/albania-new-single-permit-available-for-digital-nomads-and-others.html",
+          "publisher": "Fragomen",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries: Albania individual - taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/albania/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "unverified",
+      "open_questions": [
+        "No official Albanian page opened; Fragomen is from January 2022 and said decrees were still expected.",
+        "Claimed first-year tax exemption unverified; treated as standard.",
+        "EU citizens' need for the permit not addressed.",
+        "Because the treatment is 'standard', covers_local_work is left null (not applicable)."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Tirana",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 650,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average 2026 rent for a 1-bedroom in Tirana (range EUR 380-1,000), Investropa's own model using Monitor and Bank of Albania data; sample not stated; page updated 5 October 2026.",
+      "source": {
+        "title": "Tirana rents",
+        "url": "https://investropa.com/blogs/news/tirana-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 850,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average 2026 rent for a 2-bedroom in Tirana (range EUR 450-1,200), same source and method.",
+      "source": {
+        "title": "Tirana rents",
+        "url": "https://investropa.com/blogs/news/tirana-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Modelled estimates, no sample size."
+  },
+  "residence_routes": "EU, US and many other citizens can enter visa-free for short stays; longer stays need a residence permit. The Unique Permit covers work and residence for remote workers and employees. Fragomen says permits can be renewed for two and then five years and lead to permanent residence (2022 information).",
+  "open_questions": [
+    "Official requirements, fees and tax treatment of the nomad permit unverified."
+  ]
+}

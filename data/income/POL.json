@@ -1,0 +1,198 @@
+{
+  "id": "POL",
+  "name": "Poland",
+  "currency": "PLN",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Resident income tax is 12% on income up to PLN 120,000 (tax-free amount PLN 30,000, delivered as a PLN 3,600 tax-reducing amount) and PLN 10,800 plus 32% above that; a 4% solidarity levy applies above PLN 1,000,000. Employee contributions: 13.71% (pension and disability 11.26% up to the PLN 282,600 annual cap, sickness 2.45% uncapped) plus 9% health on income net of those contributions, uncapped. The recorded rate is the combined 22.71%; the cap applies to the 11.26% pension and disability part only.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.0
+      },
+      {
+        "from_amount": 30000,
+        "rate": 0.12
+      },
+      {
+        "from_amount": 120000,
+        "rate": 0.32
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.2271,
+    "employee_social_security_cap": 282600,
+    "self_employed_social_security_rate": 0.179,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Derived approximate rate on an income of about EUR 54,000 (about PLN 230,000 at an assumed ~4.25 PLN/EUR): fixed ZUS social contributions of PLN 1,870.24 a month (lower end, PLN 22,443 a year) plus 9% health on the tax scale (about PLN 18,700) is roughly PLN 41,100, i.e. about 17.9%. The fixed ZUS part does not scale with income; at EUR 130,000 (about PLN 550,000) the same components give roughly 12-13%. Statutory ZUS social contributions on the minimum base of PLN 5,652 a month are PLN 1,870.24-2,020.58 a month depending on the accident rate (33.09% of the base at the lower end). The pension and disability cap does not change the fixed base. Health, included in the recorded rate at the scale option: 9% of income (min PLN 432.54 a month from Feb 2026) on the tax scale, 4.9% of income on the 19% flat tax, and a fixed amount on ryczalt by annual revenue (PLN 498.35 to 60,000; 830.58 for 60,000-300,000; 1,495.04 above 300,000 on the PwC 2023 labels, which equal the 2026 figures quoted by a secondary source). A preferential ZUS on a PLN 1,441.80 base (PLN 441.76-480.11 a month) is available to new businesses. Business income: flat 19%, 14% for certain professions and 12% for designated IT services on lump-sum basis.",
+    "social_security_deductible": 0.6037,
+    "local_tax_note": "No local income tax in the sources opened; the page does not cover local taxes. The 0% bracket from 0 to 30,000 stands in for the tax-free amount, so personal_allowance is 0.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Poland, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/poland/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Poland, other taxes",
+        "url": "https://taxsummaries.pwc.com/poland/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Stawki ZUS dla przedsiebiorcow (Zielona Linia)",
+        "url": "https://zielonalinia.gov.pl/stawki-zus-dla-przedsiebiorcow-46392/",
+        "publisher": "Zielona Linia (Polish government)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Poland individual - deductions",
+        "url": "https://taxsummaries.pwc.com/poland/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "PwC does not give the ryczalt rate table by activity; only 12% for designated IT services was read.",
+      "2026 forecast average wage and PLN health amounts for ryczalt should be re-checked on zus.pl.",
+      "The 17.9% self-employed rate is derived (fixed ZUS plus 9% health on the scale, at an assumed PLN/EUR rate); the effective rate depends on the tax option chosen (scale, 19% linear with 4.9% health, or ryczalt with fixed health)."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "pol_lump_sum_it",
+      "name": "Ryczalt (lump-sum) for designated IT services",
+      "kind": "other",
+      "description": "Self-employed contractors (B2B) can pay a revenue-based lump-sum tax instead of the scale. PwC states certain designated IT services pay 12%; the full rate schedule by activity was not opened. Costs cannot be deducted; health contribution is a fixed amount by annual revenue.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "Open-ended while conditions are met.",
+      "treatment": "flat_rate",
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries - Poland, taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/poland/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries - Poland, other taxes",
+          "url": "https://taxsummaries.pwc.com/poland/individual/other-taxes",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Check eligibility conditions and exact rate for the contractor's activity code (PKD)."
+      ],
+      "flat_rate": 0.12
+    },
+    {
+      "id": "pol_linear_19",
+      "name": "Linear 19% flat tax on business income",
+      "kind": "other",
+      "description": "Sole traders may elect a flat 19% on business profit (after costs) instead of the 12%/32% scale; health is 4.9% of income. Certain professions pay 14%.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "Open-ended while elected.",
+      "treatment": "flat_rate",
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries - Poland, taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/poland/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries - Poland, other taxes",
+          "url": "https://taxsummaries.pwc.com/poland/individual/other-taxes",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [],
+      "flat_rate": 0.19
+    }
+  ],
+  "costs": {
+    "city": "Warsaw",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 3888,
+        "currency": "PLN"
+      },
+      "year": 2026,
+      "description": "Average asking rent for 40-59 m2 flats (Polish 'two-room', typically one bedroom plus living room), Otodom Analytics via Investropa, updated 4 Oct 2026; asking rents, unfurnished status not stated. Studios under 40 m2: PLN 2,976.",
+      "source": {
+        "title": "Warsaw rents 2026 (Otodom Analytics asking rents via Investropa)",
+        "url": "https://investropa.com/blogs/news/warsaw-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 6056,
+        "currency": "PLN"
+      },
+      "year": 2026,
+      "description": "Average asking rent for 60-89 m2 flats in Warsaw (Polish 'three-room', typically two bedrooms plus living room), Otodom Analytics via Investropa, page updated 4 Oct 2026; +1.5% year on year; asking rents, city-wide (no city-centre split), furnished status not stated, sample size not stated. The 60-89 m2 band is wider than a strict 2-bedroom.",
+      "source": {
+        "title": "Warsaw rents 2026 (Otodom Analytics asking rents via Investropa)",
+        "url": "https://investropa.com/blogs/news/warsaw-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "The 2-bedroom figure is the Otodom 60-89 m2 size band, the closest published to a three-room flat; the page has no city-centre split (district averages: Wilanow ~PLN 5,500, Wola 4,300-4,500, Mokotow 4,300-4,400, sizes not stated). A blog (freenance.io, no method) listing city-centre 2-bedroom flats at PLN 5,000-7,500 was not used."
+  },
+  "residence_routes": "EU citizens may live and work freely and register their stay. US and other non-EU citizens need a visa and a work permit or a business route (sole trader or company); no remote-worker visa was found, and no official Polish page was opened for these routes, so the details are unverified. Skilled employees are normally sponsored by a Polish employer.",
+  "open_questions": [
+    "Official Polish immigration route for non-EU contractors and employees not opened.",
+    "Ryczalt rate table by activity not opened.",
+    "2-bedroom rent is a 60-89 m2 band average, not a city-centre 2-bedroom median."
+  ]
+}

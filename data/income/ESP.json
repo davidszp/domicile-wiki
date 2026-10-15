@@ -1,0 +1,331 @@
+{
+  "id": "ESP",
+  "name": "Spain",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Resident income tax is the sum of a state and a regional scale. For Madrid the combined marginal rates on the general base run 18% to 45% (43% from EUR 60,000, 45% above EUR 300,000). Employee social security is 6.5% (capped at the maximum monthly base EUR 5,101.20, EUR 61,214.40 a year); autonomos pay 31.5% on a chosen base within the same maximum. The recorded personal allowance is the EUR 5,550 personal minimum; strictly it is taxed at the lowest rates rather than deducted, and employees also get a EUR 2,000 expenses deduction (not modelled).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.18
+      },
+      {
+        "from_amount": 12450,
+        "rate": 0.205
+      },
+      {
+        "from_amount": 13362,
+        "rate": 0.227
+      },
+      {
+        "from_amount": 19004,
+        "rate": 0.248
+      },
+      {
+        "from_amount": 20200,
+        "rate": 0.278
+      },
+      {
+        "from_amount": 35200,
+        "rate": 0.313
+      },
+      {
+        "from_amount": 35425,
+        "rate": 0.359
+      },
+      {
+        "from_amount": 57320,
+        "rate": 0.39
+      },
+      {
+        "from_amount": 60000,
+        "rate": 0.43
+      },
+      {
+        "from_amount": 300000,
+        "rate": 0.45
+      }
+    ],
+    "personal_allowance": 5550,
+    "employee_social_security_rate": 0.065,
+    "employee_social_security_cap": 61214.4,
+    "self_employed_social_security_rate": 0.315,
+    "self_employed_social_security_cap": 61214.4,
+    "self_employed_notes": "Autonomos (RETA) pay 31.5% in 2026 (common contingencies 28.30%, professional 1.30%, cessation 0.90%, training 0.10%, MEI 0.90%; Seguridad Social page) on a monthly base they choose within the band set by their net monthly income (12 general brackets; maximum base EUR 5,101.20, so at most EUR 19,283 a year in contributions). For net income of about EUR 4,500 a month (EUR 54k) bracket 11 applies: base EUR 1,732.03 to 5,101.20, i.e. EUR 545.59 to 1,606.88 a month, EUR 6,547 to 19,283 a year (12% to 36% of EUR 54k). The 31.5% flat rate used in the model is therefore a ceiling for incomes below the cap. Business income is reduced by a flat EUR 2,000 deduction; health premiums are deductible up to EUR 500 per person. Employees above the maximum base also pay a solidarity contribution (1.15% to 1.46% on the excess, 16.61% of it borne by the employee).",
+    "local_tax_note": "Madrid autonomous-community scale (8.5% to 20.5%; thresholds EUR 13,362 / 19,005 / 35,426 / 57,320, Decreto Legislativo 1/2010 as deflated by Ley 13/2023, per Guia Fiscal and Taxdown) is combined with the state scale (9.5% to 24.5%) in the brackets. Other regions differ (Catalonia is higher). Both Madrid tables are tax-advice sites that agree with each other; the BOCM was not opened.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Spain, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/spain/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Spain, other taxes",
+        "url": "https://taxsummaries.pwc.com/spain/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Spain, deductions",
+        "url": "https://taxsummaries.pwc.com/spain/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Tramos del IRPF en Madrid para la Renta 2025/2026",
+        "url": "https://taxdown.es/irpf/tramos-tablas-irpf-madrid",
+        "publisher": "Taxdown",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Escala autonomica IRPF Comunidad de Madrid 2026 (Guia Fiscal)",
+        "url": "https://guiafiscal.es/irpf/madrid/",
+        "publisher": "Guia Fiscal",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Seguridad Social - cotizacion autonomos 2026 (tipos y tramos)",
+        "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537",
+        "publisher": "Seguridad Social",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Madrid autonomic scale confirmed on two tax-advice sites (Taxdown, Guia Fiscal) that agree; the BOCM/AEAT text itself was not opened.",
+      "The model uses the 31.5% headline on income up to the cap; real autonomo contributions depend on the chosen base within the bracket (12% to 36% of EUR 54k). Seguridad Social page notes the table is 'in process of update' (Orden PJC/297/2026)."
+    ],
+    "social_security_deductible": 1,
+    "employment_deduction": {
+      "schedule": [
+        {
+          "from_amount": 0,
+          "rate": 0
+        }
+      ],
+      "base": 0,
+      "minimum": 2000,
+      "maximum": null,
+      "note": "'Other expenses' deduction for employment income of EUR 2,000 a year (the extra reduction below EUR 19,747.50 is not modelled).",
+      "source": {
+        "title": "PwC Worldwide Tax Summaries - Spain, deductions",
+        "url": "https://taxsummaries.pwc.com/spain/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "regimes": [
+    {
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 34188,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_note": "Visa valid 1 year from a consulate; from inside Spain a permit of up to 3 years, renewable in 2-year steps to a maximum of 5 years.",
+      "social_security_applies": true,
+      "open_questions": [
+        "The 200%-of-SMI test is stated by the consulate; the EUR 34,188 a year (EUR 2,849 a month over 12) is our arithmetic from the BOE SMI of EUR 1,221 x 14. Remote Work Europe quotes the same figure.",
+        "Employees need a social security registration or an A1 certificate; autonomos register in RETA.",
+        "Duration: consulate page says visa 1 year, permit up to 3 years from inside Spain; the 5-year maximum with renewals rests on Remote Work Europe."
+      ],
+      "id": "esp_teleworker_visa",
+      "name": "International teleworker visa (digital nomad visa)",
+      "kind": "digital_nomad_visa",
+      "description": "Residence visa for non-EU remote workers (Ley 14/2013 art. 74 as amended by the Startups Law 28/2022). Requires funds of at least 200% of the monthly minimum wage (2026 SMI EUR 1,221 x 14 = EUR 17,094 a year, so EUR 34,188 a year; BOE RD 126/2026 and the New York consulate page), a degree or 3 years of experience, 3 months of relationship with the foreign employer or clients, and for the self-employed at most 20% of activity for Spanish clients. Tax treatment is not changed by the visa: holders who become resident pay normal IRPF, but employees (not self-employed) holding the visa may opt for the Beckham regime (esp_beckham_teleworker).",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "duration_years": 5,
+      "treatment": "standard",
+      "sources": [
+        {
+          "title": "Visado de teletrabajo (Spanish consulate in New York)",
+          "url": "https://www.exteriores.gob.es/Consulados/nuevayork/en/ServiciosConsulares/Paginas/Consular/Visado-de-teletrabajo.aspx",
+          "publisher": "Ministerio de Asuntos Exteriores",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Spain digital nomad visa 2026 (Remote Work Europe)",
+          "url": "https://remoteworkeurope.eu/insights/spain-digital-nomad-visa-2026/",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Real Decreto 126/2026 fixing the SMI for 2026 (BOE-A-2026-3815)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815",
+          "publisher": "BOE",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    },
+    {
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": null,
+      "max_income": {
+        "amount": 600000,
+        "currency": "EUR"
+      },
+      "duration_note": "Arrival year plus the five following tax years.",
+      "social_security_applies": true,
+      "open_questions": [
+        "Self-employed professionals qualify only through the entrepreneur-activity (art. 70 Ley 14/2013) or highly-qualified start-up/R&D routes (art. 93.1.b.3-4), which need certification; not modelled as a general self-employment route."
+      ],
+      "id": "esp_beckham",
+      "name": "Special regime for displaced workers (Beckham law) - employee with a Spanish contract",
+      "kind": "expat_regime",
+      "description": "Art. 93 LIRPF (Ley 35/2006, consolidated BOE text): optional taxation under the non-resident (IRNR) rules while staying IRPF-resident: 24% flat on Spanish-source work income up to EUR 600,000 and 47% above; foreign-source income is outside Spanish tax (savings income at 19-30%). Applies for the arrival year plus five years. Conditions: not Spanish resident in the previous five tax years and a move because of an employment contract in Spain (or a posting letter), appointment as company director, entrepreneurial activity certified under art. 70 Ley 14/2013, or work as a highly qualified professional for start-ups/R&D with over 40% of income from it. Application within six months of starting work (Modelo 149). Remote employees of foreign firms with the teleworker visa are modelled separately (esp_beckham_teleworker).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "duration_years": 6,
+      "treatment": "flat_rate",
+      "flat_rate": 0.24,
+      "sources": [
+        {
+          "title": "Ley 35/2006 del IRPF, art. 93 (consolidated text)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+          "publisher": "BOE",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries - Spain, other issues (special expatriate regime)",
+          "url": "https://taxsummaries.pwc.com/spain/individual/other-issues",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified"
+    },
+    {
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 34188,
+        "currency": "EUR"
+      },
+      "max_income": {
+        "amount": 600000,
+        "currency": "EUR"
+      },
+      "duration_note": "Regime lasts the arrival year plus five years (6 tax years); the teleworker permit itself runs to 5 years with renewals, so 5 is used.",
+      "social_security_applies": true,
+      "open_questions": [
+        "Self-employed visa holders: art. 93.1.b.1 names 'trabajadores por cuenta ajena' only and the work-from-abroad wording refers to 'actividad laboral'; the self-employed are not covered unless they meet the entrepreneur or start-up routes. No tax-authority (DGT) ruling was opened."
+      ],
+      "id": "esp_beckham_teleworker",
+      "name": "Beckham law for teleworker-visa employees of foreign companies",
+      "kind": "expat_regime",
+      "description": "Since the Startups Law (Ley 28/2022) art. 93.1.b.1 LIRPF says the displacement condition is met when the work is done remotely using exclusively IT/telecoms systems, and 'in particular' for employees (trabajadores por cuenta ajena) holding the international teleworker visa of Ley 14/2013. They can opt for the IRNR-style regime: 24% flat on their work income up to EUR 600,000 (47% above); art. 93.2.b deems all work income earned during the regime to be Spanish-source, so pay for work done in Spain is covered. The statute names employees only: a self-employed teleworker visa holder is not named (applies_to is therefore employment only). Needs no prior Spanish residence in five years and the visa's own conditions (funds of EUR 34,188 a year).",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "duration_years": 5,
+      "treatment": "flat_rate",
+      "flat_rate": 0.24,
+      "sources": [
+        {
+          "title": "Ley 35/2006 del IRPF, art. 93 (consolidated text)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+          "publisher": "BOE",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Visado de teletrabajo (Spanish consulate in New York)",
+          "url": "https://www.exteriores.gob.es/Consulados/nuevayork/en/ServiciosConsulares/Paginas/Consular/Visado-de-teletrabajo.aspx",
+          "publisher": "Ministerio de Asuntos Exteriores",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Real Decreto 126/2026 fixing the SMI for 2026 (BOE-A-2026-3815)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815",
+          "publisher": "BOE",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "covers_local_work": true
+    }
+  ],
+  "costs": {
+    "city": "Madrid",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1500,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent, 1-bedroom apartments, Madrid (all locations), Global Property Guide Q3 2026 from local portal listings. Furnished status not stated. Centro district EUR 1,600, Chamberi EUR 1,690.",
+      "source": {
+        "title": "Global Property Guide - Spain rental yields (median asking rents)",
+        "url": "https://globalpropertyguide.com/Europe/Spain/Rental-Yields",
+        "publisher": "Global Property Guide",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 2000,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent, 2-bedroom apartments, Madrid (all locations), Global Property Guide Q3 2026 from local portal listings. Furnished status not stated. Centro EUR 2,300, Chamberi EUR 2,300.",
+      "source": {
+        "title": "Global Property Guide - Spain rental yields (median asking rents)",
+        "url": "https://globalpropertyguide.com/Europe/Spain/Rental-Yields",
+        "publisher": "Global Property Guide",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Asking rents from one aggregator (Global Property Guide); a second source could not be opened (Idealista 403, Numbeo 429). Enalquiler lists an all-types Madrid average of EUR 2,443 in September 2026 without bedroom detail."
+  },
+  "residence_routes": "EU citizens live and work freely and register as residents. US and other non-EU remote workers can use the international teleworker visa (200% of the minimum wage, at most 20% Spanish clients for the self-employed, degree or 3 years of experience), valid up to five years with renewals. Skilled employees from outside the EU need a work-residence authorisation sponsored by a Spanish employer, which is not researched here; the Beckham regime applies to either group once resident.",
+  "open_questions": [
+    "The skilled-employee work permit routes (Highly Qualified Professional, EU Blue Card) were not researched.",
+    "Rents are from one aggregator (Global Property Guide); second-source checks (Idealista, Numbeo) were blocked (403/429) and not obtained."
+  ]
+}

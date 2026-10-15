@@ -1,0 +1,385 @@
+{
+  "parent": "ARE",
+  "unit_type": "emirate",
+  "researched_on": "2026-10-15",
+  "notes": "No emirate levies personal income, capital gains, inheritance or wealth tax, so no tax metric is overridden. Emirates differ in property registration fees (Dubai 4%, verified via PwC; Abu Dhabi commonly 2%, not officially confirmed), municipality fees on rent, courts (DIFC in Dubai, ADGM in Abu Dhabi), will registries and cost of living.",
+  "units": [
+    {
+      "code": "AE-DU",
+      "name": "Dubai",
+      "summary": "No emirate income or inheritance tax. Dubai Land Department registration fee 4% of value on third-party sales (generally paid by the buyer; can also apply to transfers of shares in property-owning entities). Municipality fee 5% of annual rent on residential property. DIFC: common-law financial free zone with its own courts and the DIFC Courts Wills Service (Full Will AED 10,000). Schools regulated by KHDA.",
+      "regime_overrides": {},
+      "markers": [
+        {
+          "name": "Dubai",
+          "lon": 55.30927,
+          "lat": 25.07725,
+          "kind": "city",
+          "coordinate_source": "GeoNames 292223"
+        }
+      ],
+      "open_questions": [
+        "KHDA fee data not opened (school fee taken from the school's own page; Dubai College is KHDA-regulated)."
+      ],
+      "cost_of_living": {
+        "city": "Dubai",
+        "prime_rent_monthly": {
+          "value": {
+            "amount": 50322,
+            "currency": "AED"
+          },
+          "year": 2026,
+          "description": "Dubai Hills Estate, average annual rent of a 4-bedroom villa AED 603,860 (Property Monitor data, May 2026 YTD) / 12. 5-bedroom: AED 892,073 a year; Palm Jumeirah 4-bed AED 1,280,418; Dubai-wide 4-bed average AED 343,461.",
+          "source": {
+            "title": "Villa rental prices in Dubai (Property Monitor data, May 2026 YTD)",
+            "url": "https://www.engelvoelkers.com/ae/en/resources/villa-rental-prices",
+            "publisher": "Engel & Völkers Dubai",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        },
+        "intl_school_annual_fee": {
+          "value": {
+            "amount": 110305,
+            "currency": "AED"
+          },
+          "year": 2026,
+          "description": "Dubai College (British curriculum, KHDA-regulated), Years 12-13 annual tuition 2026-27 (Years 9-11: AED 97,415); plus 5% annual re-registration fee.",
+          "source": {
+            "title": "Dubai College - School fees 2026-2027",
+            "url": "https://www.dubaicollege.org/admissions/school-fees",
+            "publisher": "Dubai College",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Rent: Dubai Hills Estate 4-bed villa average (Property Monitor via Engel & Völkers, May 2026 YTD). Purchase prices not sourced."
+      }
+    },
+    {
+      "code": "AE-AZ",
+      "name": "Abu Dhabi",
+      "summary": "Federal capital. No emirate income or inheritance tax. Property registration fee on sales commonly reported as 2% of value (law-firm commentary; not confirmed from an official ADREC schedule). ADGM (Al Maryah and Al Reem islands) is a financial free zone that applies English common law directly, with its own courts and a non-Muslim wills registry; Abu Dhabi has its own non-Muslim personal status law (2021). Hotel municipality fee 4%. Schools regulated by ADEK.",
+      "regime_overrides": {},
+      "markers": [
+        {
+          "name": "Abu Dhabi",
+          "lon": 54.39696,
+          "lat": 24.45118,
+          "kind": "capital",
+          "coordinate_source": "GeoNames 292968"
+        }
+      ],
+      "open_questions": [
+        "Abu Dhabi property transfer/registration fee: commonly cited as 2% (RAALC via Mondaq says 'typically 2%' above AED 500,000, paid by the buyer); legal basis reported as Executive Council Resolution 49/2018 but not opened. Not verified from ADREC/TAMM.",
+        "ADEK fee data not opened (school fee from the school's own page)."
+      ],
+      "cost_of_living": {
+        "city": "Abu Dhabi",
+        "prime_rent_monthly": {
+          "value": {
+            "amount": 46500,
+            "currency": "AED"
+          },
+          "year": 2026,
+          "description": "Saadiyat Island (ultra-luxury villa area), average asking rent of a 4-bedroom villa AED 558,000 a year in H1 2026 / 12 (5-bed: AED 762,000; Yas Island 4-bed AED 351,000). Bayut asking prices for ready properties advertised by agencies, not transactions.",
+          "source": {
+            "title": "Bayut's Abu Dhabi Rental Market Report H1 2026",
+            "url": "https://www.bayut.com/mybayut/abu-dhabi-rental-market-report-h1-2026/",
+            "publisher": "Bayut",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "intl_school_annual_fee": {
+          "value": {
+            "amount": 80780,
+            "currency": "AED"
+          },
+          "year": 2026,
+          "description": "Brighton College Abu Dhabi (ADEK-regulated), Years 10-13 annual tuition 2026/27 (Year 9: AED 68,560).",
+          "source": {
+            "title": "Brighton College Abu Dhabi - School fees 2026/27",
+            "url": "https://www.brightoncollege.ae/admissions/school-fees",
+            "publisher": "Brighton College Abu Dhabi",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "In June 2026 Abu Dhabi froze rent increases on renewals (reported; not verified from ADREC). Purchase prices not sourced."
+      }
+    },
+    {
+      "code": "AE-SH",
+      "name": "Sharjah",
+      "summary": "No emirate income or inheritance tax. Property ownership by non-GCC foreigners is more restricted than in Dubai or Abu Dhabi (not verified in this pass). Lower housing costs than Dubai; commuting distance to Dubai.",
+      "regime_overrides": {},
+      "markers": [
+        {
+          "name": "Sharjah",
+          "lon": 55.41221,
+          "lat": 25.3342,
+          "kind": "city",
+          "coordinate_source": "GeoNames 292672"
+        }
+      ],
+      "open_questions": [
+        "Sharjah property registration fee and foreign-ownership rules not verified."
+      ],
+      "cost_of_living": {
+        "city": "Sharjah",
+        "prime_rent_monthly": {
+          "value": {
+            "amount": 15500,
+            "currency": "AED"
+          },
+          "year": 2025,
+          "description": "Tilal City (Sharjah's most popular villa-rental area in 2025), average asking rent of a 4-bedroom villa AED 186,000 a year / 12 (5-bed: AED 352,000; Hoshi 4-bed AED 152,000; Al Rahmaniya 4-bed AED 148,000). Bayut advertised prices for ready properties, not transactions; the report gives no figures for Al Zahia or Aljada. Villa rents rose by up to 31% in 2025.",
+          "source": {
+            "title": "Sharjah's Annual Market Report for 2025 by Bayut",
+            "url": "https://www.bayut.com/mybayut/sharjah-market-report-2025/",
+            "publisher": "Bayut",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "intl_school_annual_fee": {
+          "value": {
+            "amount": 72765,
+            "currency": "AED"
+          },
+          "year": 2026,
+          "description": "Sharjah English School (British curriculum, GCSE/A Level), Year 12 and Year 13 annual tuition 2026-27 (Year 10: AED 61,035; Year 11: AED 67,170), exclusive of 5% VAT; AED 400 application fee and AED 5,000 refundable deposit. Victoria English School's online fee page still shows 2018-19 fees and was not used.",
+          "source": {
+            "title": "Sharjah English School - School fees 2026-2027",
+            "url": "https://www.sharjahenglishschool.org/fees",
+            "publisher": "Sharjah English School",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Rent and school are within Sharjah; Dubai schools are a realistic commute from western Sharjah but traffic on the Dubai-Sharjah roads is heavy."
+      }
+    },
+    {
+      "code": "AE-AJ",
+      "name": "Ajman",
+      "summary": "No emirate income or inheritance tax. Small emirate north of Sharjah; property fees and municipality charges set by the emirate (not verified).",
+      "regime_overrides": {},
+      "markers": [
+        {
+          "name": "Ajman",
+          "lon": 55.47878,
+          "lat": 25.40177,
+          "kind": "city",
+          "coordinate_source": "GeoNames 292932"
+        }
+      ],
+      "open_questions": [],
+      "cost_of_living": {
+        "city": "Ajman",
+        "prime_rent_monthly": {
+          "value": {
+            "amount": 8500,
+            "currency": "AED"
+          },
+          "year": 2025,
+          "description": "Al Yasmeen (the most-searched villa area in Ajman), average asking rent of a 4-bedroom villa AED 102,000 a year in 2025 / 12 (5-bed: AED 113,000; Al Zahya 4-bed AED 90,000). Bayut advertised prices, not transactions. Ajman has no high-end villa market comparable to Dubai.",
+          "source": {
+            "title": "Bayut's Ajman Annual Market Report for 2025",
+            "url": "https://www.bayut.com/mybayut/ajman-market-report-2025/",
+            "publisher": "Bayut",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "intl_school_annual_fee": {
+          "value": {
+            "amount": 66350,
+            "currency": "AED"
+          },
+          "year": 2026,
+          "description": "Ajman Academy (British curriculum with IB PYP/MYP elements, IGCSE/A Level), Grade 12 annual tuition 2026/27 plus AED 1,500 book levy (Grades 10-11: AED 57,000). AED 5,000 advance on acceptance, deducted from tuition. The page does not state the currency (AED implied) or whether tuition includes VAT.",
+          "source": {
+            "title": "Ajman Academy - Fees structure 2026/2027",
+            "url": "https://www.ajmanacademy.com/admissions/fees-structure",
+            "publisher": "Ajman Academy",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Sharjah schools (e.g. Sharjah English School, AED 72,765 in Year 12-13) are within a short drive."
+      }
+    },
+    {
+      "code": "AE-UQ",
+      "name": "Umm Al Quwain",
+      "summary": "No emirate income or inheritance tax. Small, lightly developed emirate; emirate fees not verified.",
+      "regime_overrides": {},
+      "markers": [
+        {
+          "name": "Umm Al Quwain",
+          "lon": 55.55517,
+          "lat": 25.56473,
+          "kind": "city",
+          "coordinate_source": "GeoNames 290594"
+        }
+      ],
+      "open_questions": [],
+      "cost_of_living": {
+        "city": "Umm Al Quwain",
+        "prime_rent_monthly": {
+          "value": {
+            "amount": 8333,
+            "currency": "AED"
+          },
+          "year": 2026,
+          "description": "Median yearly rent AED 100,000 (99,999) / 12 of the 25 4-5 bedroom villa listings on the first results page (of 88) on Property Finder, 15 October 2026: 20 x 4-bed, 5 x 5-bed, mostly Al Salamah, also Al Raas and UAQ Marina (Mistral, AED 110,000-115,000). Range AED 65,000-140,000. Asking rents, not transactions; no market report covers Umm Al Quwain.",
+          "source": {
+            "title": "Property Finder - 4-5 bedroom villas for rent in Umm Al Quwain (listings, 2026-10-15)",
+            "url": "https://www.propertyfinder.ae/en/rent/umm-al-quwain/villas-for-rent.html?bdr%5B%5D=4&bdr%5B%5D=5",
+            "publisher": "Property Finder",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "intl_school_annual_fee": {
+          "value": {
+            "amount": 66350,
+            "currency": "AED"
+          },
+          "year": 2026,
+          "description": "No leading British or IB school was found in Umm Al Quwain; the local private schools include Our Own English High School UAQ (Indian curriculum, fees not sourced). A family would realistically commute about 25-30 km to Ajman Academy (British/IB elements), Grade 12 annual tuition 2026/27 plus AED 1,500 book levy; transport from outside Ajman AED 6,000 a year.",
+          "source": {
+            "title": "Ajman Academy - Fees structure 2026/2027",
+            "url": "https://www.ajmanacademy.com/admissions/fees-structure",
+            "publisher": "Ajman Academy",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "School is in neighbouring Ajman (commute)."
+      }
+    },
+    {
+      "code": "AE-RK",
+      "name": "Ras Al Khaimah",
+      "summary": "No emirate income or inheritance tax. Mountains and coast; growing resort development. DIFC Courts Wills guardianship clauses cover minors resident in Dubai or Ras Al Khaimah. Cost of living lower than Dubai (not sourced).",
+      "regime_overrides": {},
+      "markers": [
+        {
+          "name": "Ras Al Khaimah",
+          "lon": 55.9432,
+          "lat": 25.78953,
+          "kind": "city",
+          "coordinate_source": "GeoNames 291074"
+        }
+      ],
+      "open_questions": [
+        "RAK property registration fee not sourced.",
+        "RAK Academy 2026-27 fees and per-campus differences not confirmed (2025-26 schedule used)."
+      ],
+      "cost_of_living": {
+        "city": "Ras Al Khaimah",
+        "prime_rent_monthly": {
+          "value": {
+            "amount": 11333,
+            "currency": "AED"
+          },
+          "year": 2025,
+          "description": "Al Hamra Village (main expat villa community), average asking rent of a 4-bedroom villa AED 136,000 a year in 2025 / 12 (5-bed AED 320,000, likely a small sample). Bayut advertised prices, not transactions. Villa rents rose about 8% year on year to H1 2026 (Cavendish Maxwell, as reported; not opened).",
+          "source": {
+            "title": "Bayut's Annual Ras Al Khaimah Market Report for 2025",
+            "url": "https://www.bayut.com/mybayut/rak-market-report-2025/",
+            "publisher": "Bayut",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "prime_price_per_m2": {
+          "value": {
+            "amount": 12960,
+            "currency": "AED"
+          },
+          "year": 2025,
+          "description": "Al Hamra Village villas, average asking price AED 1,204 per sq ft in 2025 (x 10.764 = AED 12,960 per m2); Mina Al Arab AED 1,171 per sq ft.",
+          "source": {
+            "title": "Bayut's Annual Ras Al Khaimah Market Report for 2025",
+            "url": "https://www.bayut.com/mybayut/rak-market-report-2025/",
+            "publisher": "Bayut",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "intl_school_annual_fee": {
+          "value": {
+            "amount": 46475,
+            "currency": "AED"
+          },
+          "year": 2025,
+          "description": "RAK Academy (international school, IB/American programmes), Grade 12 annual tuition on the 2025-26 schedule (Grade 9: AED 44,550; Grade 11: AED 46,200); AED 5,000 registration deducted from Term 1. The page does not name the year or the campus; dates imply 2025-26.",
+          "source": {
+            "title": "RAK Academy - Fees (2025-26 fee schedule)",
+            "url": "https://www.rakacademy.org/admissions/fees3/",
+            "publisher": "RAK Academy",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Much cheaper than Dubai (about 45-60 minutes' drive). The 2026-27 fee schedule was not found."
+      }
+    },
+    {
+      "code": "AE-FU",
+      "name": "Fujairah",
+      "summary": "No emirate income or inheritance tax. East-coast emirate on the Gulf of Oman; emirate fees not verified.",
+      "regime_overrides": {},
+      "markers": [
+        {
+          "name": "Fujairah",
+          "lon": 56.34141,
+          "lat": 25.11641,
+          "kind": "city",
+          "coordinate_source": "GeoNames 292878"
+        }
+      ],
+      "open_questions": [
+        "GEMS Winchester School - Fujairah fee table columns are unlabelled (tuition vs book fee inferred); Fujairah Private Academy fees not found for comparison."
+      ],
+      "cost_of_living": {
+        "city": "Fujairah",
+        "prime_rent_monthly": {
+          "value": {
+            "amount": 7917,
+            "currency": "AED"
+          },
+          "year": 2026,
+          "description": "Median yearly rent AED 95,000 / 12 of all 15 4-5 bedroom villa listings on Property Finder, 15 October 2026 (11 x 4-bed, 4 x 5-bed; Downtown Fujairah, Corniche, Al Faseel, Sakamkam, Mirbah, Al Dana Villas Sharm). Range AED 60,000-170,000. Asking rents, not transactions; thin market, and no market report covers Fujairah.",
+          "source": {
+            "title": "Property Finder - 4-5 bedroom villas for rent in Fujairah (listings, 2026-10-15)",
+            "url": "https://www.propertyfinder.ae/en/rent/fujairah/villas-for-rent.html?bdr%5B%5D=4&bdr%5B%5D=5",
+            "publisher": "Property Finder",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Dubai and Sharjah schools are 1-1.5 hours away, too far for a daily commute. Fujairah Private Academy's fees were not found (website under maintenance on 2026-10-15).",
+        "intl_school_annual_fee": {
+          "value": {
+            "amount": 40470,
+            "currency": "AED"
+          },
+          "year": 2026,
+          "description": "GEMS Winchester School - Fujairah (British, National Curriculum for England; the only GEMS school in Fujairah), Grade 12 on the 2026-2027 fee structure (Grade 10: AED 38,540; Grade 11: AED 36,710 as listed). The table's two columns are unlabelled under a 'Book Fees' heading; the larger figure is taken as annual tuition and the second (AED 1,800 for Grade 12) as the book fee. No VAT note. AED 500 admission fee. Sixth-form (A Level) provision not confirmed. Fujairah Private Academy (British) not used: its website was under maintenance on 2026-10-15.",
+          "source": {
+            "title": "GEMS Winchester School - Fujairah - Fees and Payments (Fee Structure 2026-2027)",
+            "url": "https://www.gemswinchesterschool-fujairah.com/en/Admissions/Fees-and-Payments",
+            "publisher": "GEMS Winchester School - Fujairah",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      }
+    }
+  ]
+}

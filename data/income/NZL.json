@@ -1,0 +1,226 @@
+{
+  "id": "NZL",
+  "name": "New Zealand",
+  "currency": "NZD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Residents pay 10.5% to NZD 15,600, 17.5% to NZD 53,500, 30% to NZD 78,100, 33% to NZD 180,000 and 39% above; there is no general social security tax. Employees pay the ACC earners' levy of 1.75% up to NZD 156,641; KiwiSaver (3.5% default) is not compulsory. Visitors may work remotely for offshore clients, and new migrants get a four-year foreign income exemption that excludes employment and services income.",
+    "tax_year": "2026/27",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.105
+      },
+      {
+        "from_amount": 15600,
+        "rate": 0.175
+      },
+      {
+        "from_amount": 53500,
+        "rate": 0.3
+      },
+      {
+        "from_amount": 78100,
+        "rate": 0.33
+      },
+      {
+        "from_amount": 180000,
+        "rate": 0.39
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.0175,
+    "employee_social_security_cap": 156641,
+    "self_employed_social_security_rate": 0.0252,
+    "self_employed_social_security_cap": 156641,
+    "self_employed_notes": "Self-employed pay the ACC earners' levy (1.75%), an industry work levy (average NZD 0.69 per 100) and the Working Safer Levy (NZD 0.08 per 100): about 2.52% on average, to the same NZD 156,641 earnings cap. Full-time self-employed have an indicative minimum liable earnings of about NZD 48,000. KiwiSaver is optional.",
+    "local_tax_note": "No local income tax. The Inland Revenue page (updated June 2025, re-read 2026-10-15) lists the same bands as 'from 1 April 2025'; no 2026/27 change was found in the Taxation (Budget Measures) Act 2026 summary (28 May 2026). ACC 2026/27: earners' levy 1.75% GST-inclusive to NZD 156,641 maximum earnings, work levy average NZD 0.69 per 100 (calculate.co.nz). KiwiSaver default 3.5% employee contribution, not counted.",
+    "sources": [
+      {
+        "title": "New Zealand - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/new-zealand/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Inland Revenue - Tax rates for individuals",
+        "url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+        "publisher": "Inland Revenue (New Zealand)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "New Zealand - Other taxes",
+        "url": "https://taxsummaries.pwc.com/new-zealand/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "ACC levy rates (calculate.co.nz)",
+        "url": "https://www.calculate.co.nz/reference/nz-acc-levy-rates.php",
+        "publisher": "calculate.co.nz",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "New Zealand - Deductions",
+        "url": "https://taxsummaries.pwc.com/new-zealand/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "2026/27 income tax bands not shown on any opened page; assumed unchanged from 2025/26 (no change in the 2026 Budget Act summary).",
+      "ACC figures taken from a secondary calculator site; ACC pages not opened."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "verification": "partially_verified",
+      "open_questions": [
+        "The statutory text (Taxation (Annual Rates for 2025-26, Compliance Simplification, and Remedial Measures) Act 2025, per Moore Markhams) could not be opened; the income covered is taken from Moore Markhams and the IRD page, which does not say which income is exempt.",
+        "IRD does not mention a 'comparable jurisdiction' condition that Moore Markhams lists.",
+        "Does not make the nomad a tax resident for stays over the window: the persona who stays 2 years becomes resident and loses this exemption."
+      ],
+      "id": "visitor_visa_remote_work",
+      "name": "Visitor visa remote work and non-resident visitor tax exemption",
+      "kind": "digital_nomad_visa",
+      "description": "Visitor visas applied for from 27 January 2025 allow remote work for an employer or clients outside New Zealand. Inland Revenue's non-resident visitor category (from 1 April 2026) covers a visitor present up to 275 days in any 18-month period who is not a NZ tax resident or transitional resident, is not working for or paid by a NZ resident or NZ branch, does not sell to NZ customers, is not required to be in New Zealand for the work, is lawfully here and pays tax in a country where they are resident. Moore Markhams lists the income covered as employment income, services to non-resident persons and non-resident business income, so a remote worker's pay for work done while in New Zealand is exempt; work that requires physical presence in New Zealand, and work for NZ employers, is not. Counted as covering local work, but only for stays within the 275-day window.",
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 0.75,
+      "duration_note": "Up to 275 days within any 18-month period (Inland Revenue). Immigration NZ's visitor visa page separately cites 92 days (income taxed elsewhere) or 183 days (treaty country) as day thresholds where New Zealand tax may arise; the two are not reconciled. Visitor visa length itself not stated.",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Working remotely in New Zealand on a visitor visa",
+          "url": "https://www.immigration.govt.nz/visit/checking-or-changing-the-conditions-of-your-visitor-visa-or-nzeta/working-remotely-in-new-zealand-on-a-visitor-visa",
+          "publisher": "Immigration New Zealand",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Working from paradise: NZ digital nomad tax rules",
+          "url": "https://www.markhams.co.nz/news/working-from-paradise-what-nzs-new-digital-nomad-tax-rules-mean-for-remote-workers-and-their-employers/",
+          "publisher": "Moore Markhams",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Inland Revenue - Residency: non-resident visitors and transitional residents",
+          "url": "https://www.ird.govt.nz/international/residency/transitional-residents",
+          "publisher": "Inland Revenue (New Zealand)",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "covers_local_work": true
+    },
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "verification": "verified",
+      "open_questions": [],
+      "id": "transitional_resident",
+      "name": "Transitional resident (new migrant foreign income exemption)",
+      "kind": "expat_regime",
+      "description": "A natural person who becomes NZ tax resident after at least 10 years as a non-resident is exempt from NZ tax on most foreign-sourced income for 48 months from the end of the month they become resident (once only; ends if you or your partner claim Working for Families; you can opt out). Inland Revenue's flowchart IR1249 states that foreign employment income and income from the supply of services are not exempt, so it does not cover a nomad's or expat's pay and mainly shelters foreign investment income.",
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 4,
+      "duration_note": "48 months after the end of the month in which the person becomes resident, ignoring the 183-day backdating rule (IR1249).",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Transitional residents (William Buck)",
+          "url": "https://williambuck.com/news/business/general/transitional-residents/",
+          "publisher": "William Buck",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Transitional residency flowchart IR1249",
+          "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1200---ir1299/ir1249/ir1249.pdf",
+          "publisher": "Inland Revenue (New Zealand)",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "covers_local_work": false
+    }
+  ],
+  "costs": {
+    "city": "Auckland (Central)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 2058.68,
+        "currency": "NZD"
+      },
+      "year": 2026,
+      "description": "Barfoot & Thompson average weekly rent NZD 475.08 for 1-bedroom, Central Auckland, May 2026 (620 properties) x 52 / 12; Auckland overall NZD 468.13 (1,938). Numbeo city-centre average NZD 2,342.",
+      "source": {
+        "title": "Barfoot & Thompson rental report, May 2026",
+        "url": "https://www.barfoot.co.nz/market-reports/2026/may/rental-report",
+        "publisher": "Barfoot & Thompson",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 2812.24,
+        "currency": "NZD"
+      },
+      "year": 2026,
+      "description": "Barfoot & Thompson average weekly rent NZD 648.98 for 2-bedroom, Central Auckland, May 2026 (449 properties) x 52 / 12; Auckland overall NZD 588.68 (5,283).",
+      "source": {
+        "title": "Barfoot & Thompson rental report, May 2026",
+        "url": "https://www.barfoot.co.nz/market-reports/2026/may/rental-report",
+        "publisher": "Barfoot & Thompson",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Averages are of Barfoot & Thompson-managed properties (not all market listings). Numbeo 3-bedroom city-centre NZD 3,878 (https://www.numbeo.com/cost-of-living/in/Auckland)."
+  },
+  "residence_routes": "EU, US and other citizens: visitors can work remotely for offshore employers or clients on a visitor visa (applications from 27 January 2025), with no dedicated digital nomad visa; remote work on a visitor visa cannot be for NZ clients and stays are limited by visitor visa length and tax day counts. Skilled employees need an employer-sponsored work visa; categories were not researched.",
+  "open_questions": [
+    "Visitor visa length and NZeTA conditions by nationality not captured.",
+    "Work visa categories not researched."
+  ]
+}

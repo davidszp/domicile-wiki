@@ -1,0 +1,214 @@
+{
+  "id": "CPV",
+  "name": "Cabo Verde",
+  "continent": "Africa",
+  "region": "Western Africa (Atlantic islands)",
+  "currency": "CVE",
+  "researched_on": "2026-10-15",
+  "summary": "Cabo Verde taxes residents on worldwide income. Capital gains on shares and real estate are taxed at a flat 1%, Cabo Verdean dividends at a flat 10%, and foreign income goes into the declared income taxed at 16.5-27.5% with a credit for foreign tax. There is no wealth tax, inheritance or gift tax; inherited or donated Cabo Verdean real estate bears the 1% municipal transfer tax (ITI). A property-ownership tax (IPI) of 0.1% replaced the old IUP from 2026.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Cabo Verde tax resident",
+      "type": "standard",
+      "description": "Worldwide PIT; flat 1% on capital gains, 10% on dividends; foreign income at 16.5-27.5%.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident on more than 183 days in the calendar year, or a dwelling at 31 December suggesting habitual residence. Non-nationals need a residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains of individuals on the disposal of immovable property, intellectual property or shareholdings are taxed at a flat 1% (Category E, final withholding method). Foreign income of residents is taxed under the declarative method at 16.5-27.5%; whether foreign share gains stay at the flat 1% or are taxed at those rates was not established.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Cabo Verde - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/cabo-verde/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cabo Verde - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/cabo-verde/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Rate on a resident's gains on foreign securities and foreign property (1% flat or progressive 16.5-27.5%)."
+        ],
+        "headline_rate": 0.01,
+        "rates": {
+          "listed_securities_domestic": 0.01,
+          "listed_securities_foreign": null,
+          "private_business_sale": 0.01,
+          "real_estate_local": 0.01,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Category E flat 1% for domestic listed shares, private company shares and Cabo Verde real estate. Foreign listed shares and foreign real estate: null (1% or 16.5-27.5% under the declarative method).",
+        "professional_trader": "Habitual dealing would be Category B business income at the PIT rates.",
+        "foreign_assets": "Worldwide taxation; credit for foreign tax up to the Cabo Verde tax on that income.",
+        "important_exceptions": "From 1 January 2026 the IUP (which also taxed certain real estate gains) was repealed and replaced by IPI/ITI; real estate transfer tax ITI 1% on acquisitions."
+      },
+      "dividends": {
+        "summary": "Dividends are investment income (Category D) taxed at a flat 10%. Income obtained abroad by residents is taxed under the declarative method at 16.5% to 27.5% with a credit for foreign tax up to the Cabo Verde tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Cabo Verde - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/cabo-verde/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cabo Verde - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/cabo-verde/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cabo Verde - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/cabo-verde/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether foreign dividends can instead be taxed at the 10% Category D flat rate."
+        ],
+        "headline_rate": 0.275,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.275,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic 10% flat. Foreign: top declarative rate 27.5% (above CVE 1.8 million) before credit.",
+        "withholding_outbound": "10% on dividends (Category D rate; non-residents taxed at the same flat rates).",
+        "treaty_network": "Only three treaties: Portugal, Guinea-Bissau and Macau. US and most EU dividends would bear full statutory source WHT.",
+        "holding_company_notes": "CIT 20% plus fire-brigade surtax (not verified); worldwide basis."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Cabo Verde - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/cabo-verde/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cabo Verde - Corporate - Other taxes",
+            "url": "https://taxsummaries.pwc.com/cabo-verde/corporate/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "property_tax_note": "From 1 January 2026: IPI (property-ownership tax) 0.1% of taxable value (0.15% land), replacing the 1.5% IUP; ITI transfer tax 1% (3% if a party uses a privileged tax regime)."
+      },
+      "inheritance": {
+        "summary": "No inheritance or gift tax was found. From 2026, ITI (municipal real estate transfer tax) of 1% applies to free transfers by death or donation of Cabo Verde real estate, paid by the acquirer. Movable property such as securities is not covered by ITI.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Cabo Verde - Corporate - Other taxes",
+            "url": "https://taxsummaries.pwc.com/cabo-verde/corporate/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cabo Verde - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/cabo-verde/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether the Stamp Duty Code taxes gratuitous acquisitions (inheritance/gifts) of movables."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "gift_tax": "No gift tax found; 1% ITI on donated Cabo Verde real estate.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "important_exceptions": "Stamp duty on gratuitous transfers (as in Portugal's model) was not found in PwC's stamp duty table but was not ruled out.",
+        "foreign_assets": "No tax found.",
+        "domicile_rules": "Not applicable.",
+        "other_transfer_cost_rate": 0.0
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "More than 183 days in aggregate in the calendar year, or fewer days with a dwelling at 31 December suggesting habitual residence (PwC).",
+    "routes": [
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Non-nationals need a residence permit; investor-residence options exist but were not verified in this session."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cabo Verde - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/cabo-verde/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.2,
+    "summary": "CIT 20% on worldwide profits of resident companies; micro and small companies pay a 4% single special tax on turnover.",
+    "sources": [
+      {
+        "title": "Cabo Verde - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/cabo-verde/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Praia",
+      "lon": -23.51254,
+      "lat": 14.93152,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3374333"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed on worldwide income and estates; the app adds the US federal layer. No US-Cabo Verde income tax treaty.",
+  "open_questions": [
+    "The 1% capital gains rate is low enough that its scope for foreign assets matters greatly; it should be confirmed in the PIT Code."
+  ]
+}

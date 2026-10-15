@@ -1,0 +1,771 @@
+{
+  "version": "2026-10-15",
+  "description": "Scoring model. Every metric is normalised to 0-100 (higher = better) and combined as a weighted sum. Weights are points, not percentages; they are normalised to 100% at run time and are editable in the app.",
+  "metrics": {
+    "capital_gains": {
+      "label": "Capital gains tax",
+      "group": "tax",
+      "weight": 15
+    },
+    "dividends": {
+      "label": "Dividend tax",
+      "group": "tax",
+      "weight": 5
+    },
+    "inheritance": {
+      "label": "Inheritance tax to children",
+      "group": "tax",
+      "weight": 10
+    },
+    "wealth_tax": {
+      "label": "Wealth tax",
+      "group": "tax",
+      "weight": 10
+    },
+    "safety": {
+      "label": "Safety and personal security",
+      "group": "nontax",
+      "weight": 8
+    },
+    "stability": {
+      "label": "Political and institutional stability",
+      "group": "nontax",
+      "weight": 15
+    },
+    "corruption": {
+      "label": "Corruption and government integrity",
+      "group": "nontax",
+      "weight": 5
+    },
+    "legal": {
+      "label": "Legal system and property rights",
+      "group": "nontax",
+      "weight": 15
+    },
+    "cost": {
+      "label": "Cost of living and housing",
+      "group": "nontax",
+      "weight": 5
+    },
+    "education": {
+      "label": "Education quality",
+      "group": "nontax",
+      "weight": 5
+    },
+    "healthcare": {
+      "label": "Healthcare quality and access",
+      "group": "nontax",
+      "weight": 5
+    },
+    "hdi": {
+      "label": "Human development and quality of life",
+      "group": "nontax",
+      "weight": 5
+    },
+    "business": {
+      "label": "Business opportunities and economy",
+      "group": "nontax",
+      "weight": 2
+    },
+    "infrastructure": {
+      "label": "Infrastructure and connectivity",
+      "group": "nontax",
+      "weight": 5
+    },
+    "culture": {
+      "label": "Cultural fit and lifestyle",
+      "group": "nontax",
+      "weight": 2
+    }
+  },
+  "reference_family": {
+    "description": "Scores for tax metrics are effective burdens for this illustrative family, not headline rates. Amounts in EUR.",
+    "portfolio": 30000000,
+    "foreign_share": 0.9,
+    "realized_gains": 1200000,
+    "dividends": 600000,
+    "real_estate_local": 5000000,
+    "real_estate_foreign": 0,
+    "net_wealth": 35000000,
+    "estate": 35000000,
+    "children": 3,
+    "source_wht": 0.15,
+    "unrealized_gain_share": 0.4,
+    "annual_payout": 400000
+  },
+  "tax_transforms": {
+    "capital_gains": {
+      "description": "Effective rate = 70% portfolio gains (incl. any lump sum share) + 15% private business sale + 15% local real estate (missing components are dropped and the rest re-weighted, which lowers confidence). Score = 100 x (1 - rate / 0.40), clamped to 0-100.",
+      "component_weights": {
+        "portfolio": 0.7,
+        "business": 0.15,
+        "real_estate": 0.15
+      },
+      "zero_score_rate": 0.4
+    },
+    "dividends": {
+      "description": "Effective residence-country tax on the family's dividends after credit for an assumed 15% treaty withholding, plus the extra US withholding suffered when the country of residence has no US tax treaty (see us_dividend_withholding). Score = 100 x (1 - rate / 0.40).",
+      "zero_score_rate": 0.4
+    },
+    "wealth_tax": {
+      "description": "Annual wealth taxes as a share of net wealth. Score = 100 x (1 - rate / 0.015): 1.5% a year or more scores 0, because at a 4-5% return that consumes about a third of the yield.",
+      "zero_score_rate": 0.015
+    },
+    "inheritance": {
+      "description": "Tax and unavoidable transfer costs on passing the reference estate to three children, as a share of the estate, including any tax on unrealised gains triggered by death (deemed disposal, e.g. Canada; 40% of the estate is assumed to be unrealised gain). Score = 100 - 75 x rate / 0.40, so even a 40% regime scores 25 ('mildly negative'): business relief and lifetime-gift planning usually soften it. +up to 5 points if lifetime gifts become tax-free after a waiting period (5 x (1 - years/15)); -5 points when children are exempt only under conditions.",
+      "max_penalty": 75,
+      "zero_score_rate": 0.4,
+      "gift_window_bonus": 5,
+      "gift_window_years": 15,
+      "conditional_exemption_penalty": 5
+    },
+    "time_limited_regimes": {
+      "description": "The family is assumed to stay two generations (60 years). A regime that expires (e.g. a 15-year non-dom period) is blended with the standard rules over that horizon: score = f x regime + (1 - f) x standard, f = min(1, years / 60). The regime used for a country is the one with the lowest expected tax cost over the 60 years: annual taxes (blended the same way) plus inheritance tax twice, once per generation. Regimes that only survive through artificial arrangements (e.g. leaving the country every few years to reset a counter) are given their real duration, not treated as permanent.",
+      "horizon_years": 60,
+      "generations": 2
+    }
+  },
+  "us_citizen_overlay": {
+    "description": "US citizens remain subject to US federal tax wherever they live. Foreign taxes are generally creditable, so the combined burden is approximated as max(local, US). Lump-sum regimes are not creditable, so the US tax is added on top of them. State taxes are not added for non-US residents. The estate exemption is USD 30M: the reference family is a married couple and the unused exclusion of the first spouse is portable.",
+    "capital_gains_rate": 0.238,
+    "dividends_rate": 0.238,
+    "estate_rate": 0.4,
+    "estate_exemption_usd": 30000000,
+    "sources": [
+      {
+        "title": "IRS — Topic no. 409, Capital gains and losses",
+        "url": "https://www.irs.gov/taxtopics/tc409"
+      },
+      {
+        "title": "IRS — Net Investment Income Tax",
+        "url": "https://www.irs.gov/individuals/net-investment-income-tax"
+      },
+      {
+        "title": "IRS — Estate tax (basic exclusion amount)",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+      }
+    ],
+    "exempt_metrics": {
+      "PRI": {
+        "metrics": [
+          "capital_gains"
+        ],
+        "reason": "Bona fide Puerto Rico residents exclude Puerto Rico-source income from US federal income tax (IRC section 933); gains on securities that accrue after becoming resident are Puerto Rico-source under Act 60. US-source dividends remain US-taxed."
+      }
+    }
+  },
+  "nontax_transforms": {
+    "safety": {
+      "components": {
+        "homicide": 0.7,
+        "wgi_pv": 0.3
+      },
+      "description": "70% intentional homicide rate (log scale: 0 per 100k = 100, 30+ = 0) + 30% WGI Political Stability and Absence of Violence/Terrorism."
+    },
+    "stability": {
+      "components": {
+        "wgi_pv": 0.4,
+        "wgi_ge": 0.3,
+        "wgi_rq": 0.3
+      },
+      "description": "WGI Political Stability (40%), Government Effectiveness (30%) and Regulatory Quality (30%). WGI estimates (-2.5..2.5) map linearly to 0..100."
+    },
+    "corruption": {
+      "components": {
+        "cpi": 0.6,
+        "wgi_cc": 0.4
+      },
+      "description": "TI Corruption Perceptions Index 2025 (60%, used as is) and WGI Control of Corruption (40%)."
+    },
+    "legal": {
+      "components": {
+        "wgi_rl": 0.7,
+        "wgi_va": 0.3
+      },
+      "description": "WGI Rule of Law (70%: contract enforcement, property rights, courts) and Voice and Accountability (30%: checks on arbitrary government)."
+    },
+    "cost": {
+      "components": {
+        "household_cost": 1.0
+      },
+      "description": "Estimated annual cost for a family of five: 12 x prime 4-5 bedroom rent + 3 x leading international school fee + family health insurance + full-time housekeeper + EUR 90,000 of other household spending scaled by the World Bank price level (euro area = 1). Health insurance and housekeeper are estimated from the price level when not researched. Log scale: EUR 150,000 = 100, EUR 750,000 = 0. Missing rent or school fee = not scored."
+    },
+    "education": {
+      "components": {
+        "pisa": 0.7,
+        "learning_outcomes": 0.3
+      },
+      "min_coverage": 0.3,
+      "description": "OECD PISA, the latest cycle (70%; mean of maths, reading and science; 350 = 0, 575 = 100), and World Bank harmonized learning outcomes (30%; 300 = 0, 600 = 100). Countries that do not take part in PISA are scored on learning outcomes alone. Both measure the national school system; international-school availability is described in the profile, not scored."
+    },
+    "healthcare": {
+      "components": {
+        "uhc_index": 0.5,
+        "life_expectancy": 0.5
+      },
+      "description": "WHO UHC service coverage index (50%) and life expectancy at birth (50%; 65 years = 0, 85 = 100)."
+    },
+    "hdi": {
+      "components": {
+        "hdi": 1.0
+      },
+      "description": "UNDP Human Development Index (0.5 = 0, 1.0 = 100)."
+    },
+    "business": {
+      "components": {
+        "wgi_rq": 0.5,
+        "gdp_pc_ppp": 0.5
+      },
+      "description": "WGI Regulatory Quality (50%) and GDP per capita PPP (50%, log scale: $2,000 = 0, $100,000 = 100)."
+    },
+    "infrastructure": {
+      "components": {
+        "internet_users": 0.5,
+        "lpi": 0.5
+      },
+      "description": "Internet users % (50%) and World Bank Logistics Performance Index (50%; 1.5 = 0, 4.3 = 100)."
+    },
+    "culture": {
+      "components": {
+        "english": 0.6,
+        "migrant_share": 0.4
+      },
+      "description": "Proxy for an international, English-speaking environment: EF English Proficiency Index 2025 (60%; 400 = 0, 650+ or English-majority = 100) and international migrant share of the population (40%; 0% = 0, 40%+ = 100). It does not capture personal cultural preference."
+    }
+  },
+  "composite_min_coverage": 0.5,
+  "household_cost": {
+    "other_spending_eur": 90000,
+    "euro_area_reference": [
+      "DEU",
+      "FRA",
+      "ITA",
+      "ESP",
+      "NLD",
+      "BEL",
+      "AUT",
+      "IRL",
+      "PRT",
+      "FIN"
+    ],
+    "health_insurance_reference_eur": 15000,
+    "housekeeper_reference_monthly_eur": 2500,
+    "best_eur": 150000,
+    "worst_eur": 750000,
+    "price_level_fallback": {
+      "description": "Small territories without a World Bank price level use the price level of the economy they share a currency and market with, for the price-scaled components only (other spending, and health insurance or housekeeper when not researched). Rent and school fees are always local sourced figures. These territories are at least as expensive as their partner economy, so this can only understate their cost.",
+      "map": {
+        "MCO": "FRA",
+        "GIB": "GBR",
+        "JEY": "GBR",
+        "GGY": "GBR",
+        "IMN": "GBR",
+        "LIE": "CHE",
+        "AIA": "KNA",
+        "VGB": "VIR"
+      },
+      "pairs_basis": "MCO-France (currency and customs union); GIB, JEY, GGY, IMN-UK (sterling at par); LIE-Switzerland (monetary and customs union); AIA-St Kitts and Nevis (Eastern Caribbean Currency Union neighbours); VGB-US Virgin Islands (US dollar economies, adjacent islands)."
+    }
+  },
+  "status_rules": {
+    "description": "verified: all four tax metrics researched, verified, not low-confidence, and at least 90% of the weighted data present. provisional: all four tax metrics computable and at least 60% of the weighted data present. Otherwise insufficient data (grey, unscored).",
+    "verified_min_completeness": 0.9,
+    "provisional_min_completeness": 0.6
+  },
+  "missing_data_policy": "A missing metric contributes 0 points, and the profile shows the range the score could reach if the missing data were perfect. Missing data are never imputed with favourable values.",
+  "bands": [
+    {
+      "min": 75,
+      "label": "Exceptional",
+      "color": "blue"
+    },
+    {
+      "min": 63,
+      "label": "Very good",
+      "color": "green"
+    },
+    {
+      "min": 52,
+      "label": "Average or mixed",
+      "color": "yellow"
+    },
+    {
+      "min": 40,
+      "label": "Significant disadvantages",
+      "color": "orange"
+    },
+    {
+      "min": 0,
+      "label": "Poor",
+      "color": "red"
+    }
+  ],
+  "sensitivity_tax_shares": [
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "us_dividend_withholding": {
+    "description": "Source-country withholding is not residence tax, but treaty access decides what the family keeps. Residents of a country with a US income tax treaty that reduces dividend withholding suffer about 15% on US dividends; residents elsewhere suffer the statutory 30%. The extra 15 points on the US share of foreign dividends is added to the dividend metric's effective rate. US residents and US citizens are not subject to it.",
+    "us_share_of_foreign_dividends": 0.6,
+    "us_share_basis": "Assumption: roughly the US weight in a global equity index (MSCI ACWI, about 60-65% in 2025-2026). Adjustable in the calculator.",
+    "treaty_rate": 0.15,
+    "statutory_rate": 0.3,
+    "treaty_countries": [
+      "AUS",
+      "AUT",
+      "BGD",
+      "BRB",
+      "BEL",
+      "BGR",
+      "CAN",
+      "CHL",
+      "CHN",
+      "CYP",
+      "CZE",
+      "DNK",
+      "EGY",
+      "EST",
+      "FIN",
+      "FRA",
+      "GEO",
+      "DEU",
+      "GRC",
+      "ISL",
+      "IND",
+      "IDN",
+      "IRL",
+      "ISR",
+      "ITA",
+      "JAM",
+      "JPN",
+      "KAZ",
+      "KOR",
+      "LVA",
+      "LTU",
+      "LUX",
+      "MLT",
+      "MEX",
+      "MAR",
+      "NLD",
+      "NZL",
+      "NOR",
+      "PAK",
+      "PHL",
+      "POL",
+      "PRT",
+      "ROU",
+      "SVK",
+      "SVN",
+      "ZAF",
+      "ESP",
+      "LKA",
+      "SWE",
+      "CHE",
+      "THA",
+      "TTO",
+      "TUN",
+      "TUR",
+      "UKR",
+      "GBR",
+      "VEN"
+    ],
+    "not_applicable": [
+      "USA",
+      "PRI"
+    ],
+    "exclusions_note": "Excluded although listed by the IRS: Hungary (treaty terminated 2024), Russia (suspended 2024), and Armenia, Azerbaijan, Belarus, Kyrgyzstan, Moldova, Tajikistan, Turkmenistan and Uzbekistan (covered only by the 1973 USSR treaty, which has no dividend article). Croatia's 2022 treaty is not in force.",
+    "source": {
+      "title": "IRS — United States income tax treaties A to Z",
+      "url": "https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z"
+    }
+  },
+  "holding_assumption": "The standard regime of every jurisdiction assumes the family holds its portfolio, real estate and business stakes directly as resident private individuals. Holding structures (e.g. a German asset-management GmbH, a Norwegian holding AS, a UK family investment company, an Austrian private foundation) are modelled as separate 'structure' regimes where they give a real advantage: the structure pays its own taxes on gains, dividends and wealth, the family withdraws a fixed annual payout (default EUR 400,000) taxed at the distribution rate, and running costs are added. Structures are used for the score when they beat personal holding, unless 'Consider holding structures' is switched off. They are not offered to US citizens, for whom foreign corporate wrappers usually trigger CFC/PFIC rules.",
+  "knockout": {
+    "description": "Knock-out criteria: a jurisdiction that fails any one of these is shown red and excluded from the rankings, whatever its tax score, because family wealth cannot be considered safe there long-term (arbitrary courts, systemic corruption, armed conflict, extreme violence sanctions that cut residents off from the financial system, or capital controls that stop a foreign family moving its wealth out). The tax-only layer still shows the tax score for reference. Jurisdictions without the underlying data are not knocked out on that criterion.",
+    "criteria": [
+      {
+        "id": "rule_of_law",
+        "label": "Weak rule of law",
+        "indicator": "wgi_rl",
+        "op": "lt",
+        "threshold": -0.5,
+        "explanation": "WGI Rule of Law below -0.5 (roughly the bottom 35% worldwide): contracts, property rights and courts cannot be relied on; expropriation risk."
+      },
+      {
+        "id": "corruption_cpi",
+        "label": "Severe corruption",
+        "indicator": "cpi",
+        "op": "lt",
+        "threshold": 30,
+        "explanation": "Transparency International CPI below 30."
+      },
+      {
+        "id": "corruption_wgi",
+        "label": "Severe corruption",
+        "indicator": "wgi_cc",
+        "op": "lt",
+        "threshold": -0.7,
+        "explanation": "WGI Control of Corruption below -0.7."
+      },
+      {
+        "id": "conflict",
+        "label": "Armed conflict or political violence",
+        "indicator": "wgi_pv",
+        "op": "lt",
+        "threshold": -1.0,
+        "explanation": "WGI Political Stability and Absence of Violence/Terrorism below -1.0."
+      },
+      {
+        "id": "violent_crime",
+        "label": "Extreme violent crime",
+        "indicator": "homicide_rate",
+        "op": "gt",
+        "threshold": 30,
+        "explanation": "More than 30 intentional homicides per 100,000 people a year (UNODC via World Bank; small-island rates are volatile)."
+      }
+    ],
+    "sanctions": {
+      "label": "Comprehensive international sanctions",
+      "explanation": "Broad EU and/or US financial sanctions that restrict residents' access to international banking and capital markets.",
+      "countries": {
+        "RUS": "EU restrictive measures and US sanctions on Russia since 2014/2022",
+        "BLR": "EU restrictive measures and US sanctions on Belarus",
+        "IRN": "EU, UN-reimposed (2025) and US sanctions on Iran",
+        "PRK": "UN, EU and US sanctions on North Korea"
+      },
+      "sources": [
+        {
+          "title": "EU Sanctions Map",
+          "url": "https://www.sanctionsmap.eu/"
+        },
+        {
+          "title": "OFAC — Sanctions Programs and Country Information",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
+        }
+      ]
+    },
+    "capital_controls": {
+      "label": "Capital controls on personal wealth",
+      "explanation": "The IMF reports exchange controls on most capital transactions, and a foreign resident cannot freely move personal savings, investment or property-sale proceeds abroad (annual quota, central-bank approval or case-by-case authorisation). Applies to foreign families; a country's own nationals are not modelled as a citizenship option.",
+      "countries": {
+        "CHN": "IMF Country Report 26/44 (Feb 2026): exchange controls continue to apply to most capital transactions; individuals' foreign-exchange purchases are capped at USD 50,000 a year and a foreigner's property-sale and investment proceeds need documented approval to leave. Also: legal powers to freeze listed foreigners' deposits, securities and real estate (Anti-Foreign Sanctions Law regulations, March 2025) and exit bans (State Council Order 841, September 2026). See docs/research/china_hong_kong_foreign_wealth.md.",
+        "LKA": "IMF lists CFMs on \"suspension/limitation of outward remittances on capital transactions made by residents\" and on emigrants' outward transfers (eased since 2024); CBSL Direction 16 of 2021 lets a Non-National resident or non-resident remit only \"USD 30,000 per annum\" out of the capital proceeds (investment/property) credited to a Capital Transactions Rupee Account (superannuation is uncapped). Direction is 2021; amendments after that not checked. See docs/research/capital_controls_screen.md.",
+        "FJI": "IMF 2025 Article IV lists capital flow measures with thresholds or RBF approval (offshore investment by individuals \"remains suspended\"); RBF Exchange Control Guidelines (1 Jan 2026) give foreign-passport holders quotas: sale of shares/assets up to FJD 250,000 a year, non-resident transfers to own account up to FJD 250,000 per family a year, family transfers FJD 2,000 per applicant, tax clearance above FJD 20,000. See docs/research/capital_controls_screen.md.",
+        "WSM": "IMF CR 25/32: \"a closed capital account\"; CBS Exchange Control Booklet 2026: a resident (including a non-Samoan with a permit over one year on assured income) remitting property or business sale proceeds abroad needs \"CBS Approval\"; emigration allowance delegated limit SAT 50,000. See docs/research/capital_controls_screen.md."
+      },
+      "sources": [
+        {
+          "title": "IMF Country Report No. 26/44: People's Republic of China, 2025 Article IV (Feb 2026)",
+          "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1chnea2026001-source-pdf.pdf"
+        },
+        {
+          "title": "Hughes Hubbard & Reed: China's Anti-Foreign Sanctions Law gets teeth (Apr 2025)",
+          "url": "https://www.hugheshubbard.com/news/chinas-anti-foreign-sanctions-law-gets-teeth-understanding-the-2025-implementation-regulations"
+        },
+        {
+          "title": "Safeguard Defenders: State Council beefs up framework for exit bans (Aug 2026)",
+          "url": "https://safeguarddefenders.com/en/blog/state-council-beefs-framework-exit-bans"
+        },
+        {
+          "title": "LKA: capital-controls source",
+          "url": "https://www.imf.org/-/media/files/publications/cr/2025/english/1lkaea2025002-print-pdf.pdf"
+        },
+        {
+          "title": "LKA: capital-controls source",
+          "url": "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/laws/cdg/Foreign_Exchange_Act_Direction_No_16_of_2021_e.pdf"
+        },
+        {
+          "title": "LKA: capital-controls source",
+          "url": "https://www.hbl.com/srilanka/foreign-currency-account/capital-transaction-rupee-account-ctras"
+        },
+        {
+          "title": "FJI: capital-controls source",
+          "url": "https://www.imf.org/-/media/files/publications/cr/2025/english/1fjiea2025001-print-pdf.pdf"
+        },
+        {
+          "title": "FJI: capital-controls source",
+          "url": "https://www.rbf.gov.fj/wp-content/uploads/2025/12/Exchange-Control-Guidelines-effective-1-January-2026.pdf"
+        },
+        {
+          "title": "WSM: capital-controls source",
+          "url": "https://www.imf.org/-/media/files/publications/cr/2025/english/1wsmea2025001-print-pdf.pdf"
+        },
+        {
+          "title": "WSM: capital-controls source",
+          "url": "https://cbs.gov.ws/media/Exchange-Control-Information-Booklet-2026-final.pdf"
+        }
+      ]
+    },
+    "security_state_courts": {
+      "label": "Rule of law: courts subordinate to state security",
+      "explanation": "A national-security regime that can override ordinary judicial protections, freeze assets without time limit and reach any nationality, documented by government advisories. Courts may still decide ordinary commercial cases, but property and liberty are not reliably protected against the state. A researched list, because the World Bank rule-of-law score does not capture it (China -0.43, Hong Kong +0.94).",
+      "countries": {
+        "CHN": "No independent judiciary (WJP Rule of Law Index 2025: 92nd of 143; Freedom House 2026: 9/100, Not Free); exit bans used in commercial disputes (UK FCDO) and formalised by State Council Order 841 (September 2026); powers to freeze listed foreigners' deposits, securities and real estate (Anti-Foreign Sanctions Law regulations, March 2025). See docs/research/china_hong_kong_foreign_wealth.md.",
+        "HKG": "2020 National Security Law and 2024 Article 23 ordinance: broadly drawn offences applying to any nationality, assets of suspects frozen with no time limit (US Hong Kong Business Advisory, September 2024); overseas judges including Lord Sumption resigned from the Court of Final Appeal in 2024; Freedom House 2026: 41/100, Partly Free. Commercial courts still function (WJP 2025: 24th of 143) and capital moves freely. See docs/research/china_hong_kong_foreign_wealth.md."
+      },
+      "sources": [
+        {
+          "title": "World Justice Project Rule of Law Index 2025",
+          "url": "https://worldjusticeproject.org/rule-of-law-index/downloads/WJPIndex2025.pdf"
+        },
+        {
+          "title": "US Updated Hong Kong Business Advisory (Sept 2024)",
+          "url": "https://ofac.treasury.gov/media/933161/download?inline="
+        },
+        {
+          "title": "UK FCDO travel advice: China, safety and security",
+          "url": "https://www.gov.uk/foreign-travel-advice/china/safety-and-security"
+        },
+        {
+          "title": "Freedom House, Freedom in the World 2026: China",
+          "url": "https://freedomhouse.org/country/china/freedom-world/2026"
+        },
+        {
+          "title": "Freedom House, Freedom in the World 2026: Hong Kong",
+          "url": "https://freedomhouse.org/country/hong-kong/freedom-world/2026"
+        },
+        {
+          "title": "Radio Free Asia: two more British judges resign from Hong Kong's top court (June 2024)",
+          "url": "https://www.rfa.org/english/news/china/hong-kong-british-judges-06072024171639.html"
+        }
+      ]
+    }
+  },
+  "nontax_layer_max_missing": 0.4,
+  "personas": {
+    "family_office": {
+      "label": "Family office",
+      "icon": "🏛",
+      "summary": "Wealthy family of five (two parents, three children) living off a ~EUR 30M portfolio; schools matter; 60-year, two-generation horizon. Investment taxes (capital gains, dividends, inheritance, wealth tax) dominate.",
+      "horizon_years": 60,
+      "knockout": [
+        "rule_of_law",
+        "corruption_cpi",
+        "corruption_wgi",
+        "conflict",
+        "violent_crime",
+        "sanctions",
+        "capital_controls",
+        "security_state_courts"
+      ]
+    },
+    "expat": {
+      "label": "Expat",
+      "icon": "💼",
+      "summary": "Highly educated, internationally mobile employee, no children, career-driven, 5-year horizon. Paid USD 150,000 a year in an average euro-area capital, scaled by official posting multipliers elsewhere. Income tax and social security, money left over after living costs, and career opportunities dominate.",
+      "horizon_years": 5,
+      "income_usd": 150000,
+      "income_kind": "employment",
+      "tax_metrics": [
+        "income_tax"
+      ],
+      "metrics": {
+        "income_tax": {
+          "label": "Income tax and social security",
+          "group": "tax",
+          "weight": 30
+        },
+        "leftover": {
+          "label": "Money left over a year",
+          "group": "nontax",
+          "weight": 15
+        },
+        "business": {
+          "label": "Career and economic opportunity",
+          "group": "nontax",
+          "weight": 10
+        },
+        "safety": {
+          "label": "Safety and personal security",
+          "group": "nontax",
+          "weight": 8
+        },
+        "stability": {
+          "label": "Political and institutional stability",
+          "group": "nontax",
+          "weight": 6
+        },
+        "healthcare": {
+          "label": "Healthcare quality and access",
+          "group": "nontax",
+          "weight": 6
+        },
+        "culture": {
+          "label": "International, English-speaking environment",
+          "group": "nontax",
+          "weight": 6
+        },
+        "hdi": {
+          "label": "Human development and quality of life",
+          "group": "nontax",
+          "weight": 5
+        },
+        "infrastructure": {
+          "label": "Infrastructure and connectivity",
+          "group": "nontax",
+          "weight": 5
+        },
+        "legal": {
+          "label": "Legal system and property rights",
+          "group": "nontax",
+          "weight": 4
+        },
+        "corruption": {
+          "label": "Corruption and government integrity",
+          "group": "nontax",
+          "weight": 3
+        }
+      },
+      "cost": {
+        "rent_field": "rent_2bed_monthly",
+        "other_spending_eur": 22000,
+        "coworking": false,
+        "best_eur": 24000,
+        "worst_eur": 96000,
+        "description": "12 x a city-centre 2-bedroom rent + EUR 22,000 a year of other spending scaled by the World Bank price level (euro area = 1). Log scale: EUR 24,000 = 100, EUR 96,000 = 0."
+      },
+      "knockout": [
+        "conflict",
+        "violent_crime",
+        "sanctions"
+      ],
+      "salary_multiplier": {
+        "base": "euro_area_reference",
+        "scaled_share": 1.0,
+        "description": "USD 150,000 is the salary in an average euro-area capital (the Annual Household Cost reference countries). Elsewhere it is multiplied by the average of official cost-of-living multipliers for staff posted abroad: US State Department post allowance, UN post adjustment, EU correction coefficients and Germany's Kaufkraftausgleich, each rescaled so the euro-area reference countries average 1.0. Allowance tables that only pay extra where costs are higher are fitted to the two-sided tables and their zero entries are left out. Where no table lists the country, the World Bank price level relative to the euro area is used and flagged as estimated."
+      },
+      "leftover": {
+        "zero_eur": 0,
+        "full_eur": 100000,
+        "description": "Salary minus income tax and social security (cheapest eligible regime, averaged over the stay) minus the Annual Household Cost (12 x a city-centre 2-bedroom rent + EUR 22,000 a year of other spending scaled by the price level). Linear: EUR 0 or less = 0, EUR 100,000 or more = 100."
+      }
+    },
+    "nomad": {
+      "label": "Digital nomad",
+      "icon": "💻",
+      "summary": "Independent contractor earning about USD 5,000 a month (USD 60,000 a year) from foreign clients, single, staying 2 years and becoming tax-resident; uses a digital nomad visa where one applies. Income tax, living costs, visa access and connectivity dominate.",
+      "horizon_years": 2,
+      "income_usd": 60000,
+      "income_kind": "self_employment",
+      "tax_metrics": [
+        "income_tax"
+      ],
+      "metrics": {
+        "income_tax": {
+          "label": "Income tax and social security",
+          "group": "tax",
+          "weight": 25
+        },
+        "cost": {
+          "label": "Annual Household Cost",
+          "group": "nontax",
+          "weight": 25
+        },
+        "visa": {
+          "label": "Visa access for remote workers",
+          "group": "nontax",
+          "weight": 10
+        },
+        "safety": {
+          "label": "Safety and personal security",
+          "group": "nontax",
+          "weight": 10
+        },
+        "infrastructure": {
+          "label": "Internet and connectivity",
+          "group": "nontax",
+          "weight": 8
+        },
+        "healthcare": {
+          "label": "Healthcare quality and access",
+          "group": "nontax",
+          "weight": 6
+        },
+        "scene": {
+          "label": "Digital nomad scene",
+          "group": "nontax",
+          "weight": 6
+        },
+        "stability": {
+          "label": "Political and institutional stability",
+          "group": "nontax",
+          "weight": 5
+        },
+        "legal": {
+          "label": "Legal system and property rights",
+          "group": "nontax",
+          "weight": 3
+        },
+        "corruption": {
+          "label": "Corruption and government integrity",
+          "group": "nontax",
+          "weight": 2
+        }
+      },
+      "cost": {
+        "rent_field": "rent_1bed_monthly",
+        "other_spending_eur": 14000,
+        "coworking": true,
+        "coworking_reference_monthly_eur": 180,
+        "best_eur": 12000,
+        "worst_eur": 48000,
+        "description": "12 x a city-centre 1-bedroom rent + 12 x a coworking desk (estimated from the price level when not researched) + EUR 14,000 a year of other spending scaled by the price level. Log scale: EUR 12,000 = 100, EUR 48,000 = 0."
+      },
+      "visa": {
+        "description": "100 = EU/EEA/Swiss citizen in the EU/EEA/Switzerland, or a digital nomad visa open to the citizenship whose income threshold the persona meets; 30 = no dedicated remote-work route (other permits may exist); unscored without research.",
+        "free_movement": [
+          "AUT",
+          "BEL",
+          "BGR",
+          "HRV",
+          "CYP",
+          "CZE",
+          "DNK",
+          "EST",
+          "FIN",
+          "FRA",
+          "DEU",
+          "GRC",
+          "HUN",
+          "IRL",
+          "ITA",
+          "LVA",
+          "LTU",
+          "LUX",
+          "MLT",
+          "NLD",
+          "POL",
+          "PRT",
+          "ROU",
+          "SVK",
+          "SVN",
+          "ESP",
+          "SWE",
+          "ISL",
+          "LIE",
+          "NOR",
+          "CHE"
+        ],
+        "no_route_score": 30
+      },
+      "knockout": [
+        "conflict",
+        "violent_crime",
+        "sanctions"
+      ],
+      "scene": {
+        "description": "How established the local digital-nomad subculture is: how often, and how high, the country's cities appear in 8 published rankings of the best places for digital nomads (Savills, Time Out/Flatio, ScoutLogic, Instant Offices, Nomads.com and others, 2025-2026). Per list: 50 for being named plus up to 50 for the best city's rank; averaged over all lists, so a country no list names scores 0. OpenStreetMap coworking counts are shown for reference but not scored, because their coverage tracks local mapping activity (Dubai 4, Paris 204)."
+      }
+    }
+  },
+  "income_tax_transform": {
+    "description": "Income tax plus the individual's own social security contributions as a share of gross income, under the cheapest eligible regime blended with standard rules over the persona's horizon. Score = 100 x (1 - rate / 0.50): 0% = 100, 50% or more = 0.",
+    "zero_score_rate": 0.5
+  },
+  "red_flags": {
+    "description": "Serious risks that do not trigger a knock-out but should weigh on any decision. Shown on the profile and map tooltip; they do not change the score.",
+    "countries": {}
+  }
+}

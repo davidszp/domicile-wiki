@@ -1,0 +1,590 @@
+{
+  "id": "DEU",
+  "name": "Germany",
+  "continent": "Europe",
+  "region": "Western Europe",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "Germany taxes a resident private investor's capital gains, dividends and interest at a flat 26.375% (25% Abgeltungsteuer plus 5.5% solidarity surcharge; church tax only for church members), with no holding-period exemption for securities bought since 2009. There is no wealth tax (not levied since 1997). Inheritance and gift tax is levied on each heir: each child receives EUR 400,000 tax-free from each parent every 10 years, above which 7%-30% applies (class I). Business-asset relief (85%/100%) does not cover a portfolio of listed shares. The Federal Constitutional Court heard two inheritance-tax cases on 12-13 October 2026; a ruling is pending and could change allowances, rates and business relief.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Unlimited tax liability on worldwide income for anyone with a domicile (Wohnsitz) or habitual abode in Germany. Investment income is taxed under the flat-rate Abgeltungsteuer; there is no special regime for wealthy new arrivals.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Domicile or habitual abode in Germany (§§ 8, 9 AO; habitual abode presumed after a stay of more than six months). Non-EU citizens need a residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains on shares, bonds and funds held privately are taxed at a flat 25% plus 5.5% solidarity surcharge = 26.375% (§ 32d EStG), whatever the holding period, for assets acquired since 2009. A EUR 1,000 saver's allowance (EUR 2,000 for a married couple) covers all investment income. Shareholdings of at least 1% in a company (§ 17 EStG) are taxed under the partial-income method: 60% of the gain at the progressive rate, a top effective rate of about 28.5%. Private real estate (other than the owner-occupied home) is taxed at progressive rates up to 47.475% only if sold within 10 years of purchase; after 10 years the gain is tax-free.",
+        "exemptions_thresholds": "Sparer-Pauschbetrag EUR 1,000 per person per year (EUR 2,000 joint), covering dividends, interest and gains together; actual expenses are not deductible. Private sales of other assets (§ 23 EStG) are exempt if the total gain in a year is below EUR 1,000. Owner-occupied home exempt. Real estate exempt after a 10-year holding period. Gains on securities bought before 1 January 2009 remain exempt (grandfathering).",
+        "eligibility_conditions": "Applies to securities held as private assets by a resident individual. Business assets and shareholdings of at least 1% fall outside the flat rate.",
+        "regional_differences": "None for income tax. Church tax (8% in Bavaria and Baden-Württemberg, 9% elsewhere, of the income tax) applies only to registered church members and is excluded here.",
+        "important_exceptions": "Losses on the sale of shares can only be offset against gains on shares (§ 20(6) sentence 4 EStG). Exit tax (§ 6 AStG) on leaving Germany: shareholdings of at least 1% (and large fund holdings) are deemed sold if the person was fully taxable in Germany for at least 7 of the last 12 years; tax payable in 7 annual instalments, and it lapses if the person returns within 7 years. Portfolios of listed shares below 1% per company are not caught by § 6 AStG.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Einkommensteuergesetz § 32a (tariff, VZ 2026)",
+            "url": "https://www.gesetze-im-internet.de/estg/__32a.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Einkommensteuergesetz § 3 Nr. 40 (partial income method, 40% exempt)",
+            "url": "https://www.gesetze-im-internet.de/estg/__3.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Außensteuergesetz § 6 (exit tax)",
+            "url": "https://www.gesetze-im-internet.de/astg/__6.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Germany - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/germany/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Church tax is excluded from all rates; members of a church pay roughly 27.8%-27.99% instead of 26.375% on investment income."
+        ],
+        "headline_rate": 0.26375,
+        "rates": {
+          "listed_securities_domestic": 0.26375,
+          "listed_securities_foreign": 0.26375,
+          "private_business_sale": 0.28485,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Listed securities: 25% x 1.055 = 26.375% flat (§ 32d EStG plus Solidaritätszuschlag), no church tax. Private business sale (holding >= 1%, § 17 EStG): 60% taxable (§ 3 Nr. 40 EStG) at the top rate of 45% (from EUR 277,826 taxable income in 2026) plus 5.5% surcharge = 47.475% x 0.6 = 28.485%. Real estate: 0 because held longer than the 10-year period (§ 23 EStG); inside 10 years the gain is taxed at up to 47.475%. Foreign real estate is normally exempt in Germany under the treaty with the situs country (with progression) and in any case untaxed after 10 years.",
+        "professional_trader": "Private asset management (Vermögensverwaltung) stays in the flat-rate regime even with frequent trading of securities; the courts rarely recharacterise securities trading by individuals as a business (gewerblicher Wertpapierhandel requires bank-like activity). The risk is higher for real estate: selling more than three properties within five years (Drei-Objekt-Grenze) can make all gains trade income taxed at progressive rates plus trade tax.",
+        "holding_period_rules": "None for securities acquired since 1 January 2009. Real estate: 10 years. Other private assets (e.g. gold, crypto): 1 year.",
+        "foreign_assets": "Worldwide taxation; foreign securities taxed exactly like domestic ones. Foreign brokers do not withhold, so gains are declared in the annual return (Anlage KAP) at the same rate."
+      },
+      "dividends": {
+        "summary": "Dividends, domestic or foreign, are taxed at a flat 26.375% (25% plus solidarity surcharge). German banks withhold the tax at source; foreign dividends are declared in the return. Foreign withholding tax is credited up to 15% (the treaty rate), not beyond.",
+        "exemptions_thresholds": "Shared EUR 1,000 saver's allowance (EUR 2,000 joint).",
+        "eligibility_conditions": "Private shareholder. A shareholder with at least 25%, or at least 1% and working for the company, can opt for the partial-income method (60% taxable at progressive rates).",
+        "regional_differences": "None; church tax only for church members.",
+        "important_exceptions": "Investment funds (including ETFs) have their own regime (InvStG) with partial exemptions and an annual advance lump sum (Vorabpauschale); this file models directly held shares and bonds.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Germany - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/germany/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Einkommensteuergesetz § 3 Nr. 40",
+            "url": "https://www.gesetze-im-internet.de/estg/__3.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The 15% cap on the creditable foreign withholding (§ 32d(5) EStG) is standard practice but the statute text was not opened in this session."
+        ],
+        "headline_rate": 0.26375,
+        "domestic_rate": 0.26375,
+        "foreign_gross_rate": 0.26375,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "25% Abgeltungsteuer x 1.055 solidarity surcharge = 26.375%, no church tax. Foreign dividends: the same rate, minus a credit for foreign withholding tax of at most 15% of the gross dividend; withholding above the treaty rate must be reclaimed from the source country.",
+        "withholding_outbound": "German companies withhold 26.375% (25% plus surcharge) on dividends; non-resident corporations can reclaim 2/5 (net 15.825%); treaty rates typically 15% (portfolio) or 5%/0% for parent companies; 0% under the EU Parent-Subsidiary Directive.",
+        "treaty_network": "About 95 double tax treaties, including the US, UK, Switzerland and all EU states; most reduce source tax on portfolio dividends to 15%.",
+        "holding_company_notes": "Modelled as the structure regime 'vv_gmbh': share gains in a GmbH bear about 1.65% (95% exempt under § 8b(2)-(3) KStG regardless of stake), but portfolio dividends (stakes below 10%) are fully taxed at about 33% including trade tax, and payouts bear 26.375%. A family foundation (Familienstiftung) is an alternative: it is not subject to trade tax if purely asset-managing, but its endowment is a taxable gift and it pays substitute inheritance tax every 30 years (§ 1(1) Nr. 4 ErbStG); not modelled."
+      },
+      "wealth_tax": {
+        "summary": "Germany has no wealth tax. The Vermögensteuer law remains on the statute books but has not been levied since 1997 after the Federal Constitutional Court ruled its valuation rules unconstitutional (1995).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Germany - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/germany/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "important_exceptions": "Proposals to revive a wealth tax recur in political debate (SPD, Greens, Left) but none is in the 2025 coalition agreement or in force.",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Municipal Grundsteuer under the reformed rules in force since 1 January 2025; each state uses its own model and municipalities set the multiplier. Typically a few hundred to a few thousand euros a year for a family home."
+      },
+      "inheritance": {
+        "summary": "Inheritance and gift tax (ErbStG) is charged on each recipient. A child receives EUR 400,000 tax-free from each parent; gifts and inheritances from the same parent within 10 years are added together, and the allowance renews every 10 years. Above the allowance, class I rates of 7% to 30% apply to the whole taxable amount, with a hardship rule smoothing the jumps. A child inheriting EUR 50 million of listed securities from one parent pays about EUR 14.9 million (about 30%). The scope is worldwide if the deceased, donor or heir lives in Germany. The family home passes tax-free to a child who lives in it for 10 years (up to 200 m2).",
+        "exemptions_thresholds": "Children: EUR 400,000 per parent per 10 years (§ 16 ErbStG); spouse EUR 500,000 plus a pension allowance of up to EUR 256,000; grandchildren EUR 200,000. Household goods EUR 41,000 per child. Family home to a child: exempt if occupied by the child for 10 years, up to 200 m2 of living space (§ 13 Nr. 4c). How the brackets were built: § 19(1) applies one rate to the whole taxable amount (7% up to 75,000; 11% to 300,000; 15% to 600,000; 19% to 6m; 23% to 13m; 27% to 26m; 30% above), and § 19(3) caps the extra tax just above each threshold at 50% of the excess. That combined tariff is exactly a marginal schedule: 50% bands just above each threshold (75,000-82,692; 300,000-334,286; 600,000-677,419; 6m-6,888,889; 13m-15,260,870; 26m-29,900,000) after which the whole amount is taxed at the new step rate.",
+        "eligibility_conditions": "Unlimited liability if the deceased/donor or the heir is resident in Germany, or is a German national who left less than 5 years earlier.",
+        "regional_differences": "None; federal law, administered by the states.",
+        "important_exceptions": "The Federal Constitutional Court heard two cases on 12 October 2026 (1 BvF 1/23, Bavaria: real estate valuation, allowances and rates) and 13 October 2026 (1 BvR 804/22: business-asset relief vs. private assets such as securities). A ruling is expected within months; the Court has in past cases declared the law incompatible and let it apply until a reform deadline. The SPD has proposed replacing business relief with a EUR 5 million business allowance. None of this is in force.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Erbschaftsteuer- und Schenkungsteuergesetz § 16 (allowances)",
+            "url": "https://www.gesetze-im-internet.de/erbstg_1974/__16.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Erbschaftsteuer- und Schenkungsteuergesetz § 19 (rates, hardship rule)",
+            "url": "https://www.gesetze-im-internet.de/erbstg_1974/__19.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Erbschaftsteuer- und Schenkungsteuergesetz § 2 (scope, 5-year rule for Germans)",
+            "url": "https://www.gesetze-im-internet.de/erbstg_1974/__2.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Erbschaftsteuer vor dem Bundesverfassungsgericht: Was Mandanten jetzt wissen sollten (05.10.2026)",
+            "url": "https://www.heuking.de/de/news-events/newsletter-fachbeitraege/artikel/erbschaftsteuer-vor-dem-bundesverfassungsgericht-was-mandanten-jetzt-wissen-sollten.html",
+            "publisher": "Heuking",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Erbschaftsteuerreform voraus? Erste Reformüberlegungen im Praxischeck",
+            "url": "https://www.ebnerstolz.de/de/themen/private-clients/erbschaftsteuerreform-2026-104369.html",
+            "publisher": "RSM Ebner Stolz",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Erbschaftsteuer- und Schenkungsteuergesetz § 13b (business relief; Verwaltungsvermögen, 90% test)",
+            "url": "https://www.gesetze-im-internet.de/erbstg_1974/__13b.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Pending Federal Constitutional Court rulings (1 BvF 1/23 and 1 BvR 804/22, heard 12-13 October 2026) may change allowances, rates, real estate valuation and business relief; re-check when the judgments are published.",
+          "The family-home exemption details (§ 13 Nr. 4b/4c ErbStG) were not re-read in the statute in this session."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed",
+        "exemption": 400000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.07
+          },
+          {
+            "from_amount": 75000,
+            "rate": 0.5
+          },
+          {
+            "from_amount": 82692,
+            "rate": 0.11
+          },
+          {
+            "from_amount": 300000,
+            "rate": 0.5
+          },
+          {
+            "from_amount": 334286,
+            "rate": 0.15
+          },
+          {
+            "from_amount": 600000,
+            "rate": 0.5
+          },
+          {
+            "from_amount": 677419,
+            "rate": 0.19
+          },
+          {
+            "from_amount": 6000000,
+            "rate": 0.5
+          },
+          {
+            "from_amount": 6888889,
+            "rate": 0.23
+          },
+          {
+            "from_amount": 13000000,
+            "rate": 0.5
+          },
+          {
+            "from_amount": 15260870,
+            "rate": 0.27
+          },
+          {
+            "from_amount": 26000000,
+            "rate": 0.5
+          },
+          {
+            "from_amount": 29900000,
+            "rate": 0.3
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Gifts are taxed exactly like inheritances, with the same EUR 400,000 allowance per parent and child; all transfers between the same two people within 10 years are aggregated (§ 14 ErbStG), so the allowance can be used again every 10 years.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "§§ 13a-13c ErbStG: 85% (standard) or 100% (option) of qualifying business assets exempt if the business is continued and payroll and holding-period conditions (5 or 7 years) are met; above EUR 26 million per acquisition a needs test or sliding relief applies. Administrative assets (Verwaltungsvermögen) such as securities portfolios are excluded from relief, also when held inside a company. Under constitutional review (1 BvR 804/22). Shares in a company holding a securities portfolio get no relief: securities are Verwaltungsvermögen (§ 13b(4) Nr. 4), and if administrative assets reach 90% of the company's value nothing is relieved (§ 13b(2) Satz 2).",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Worldwide assets are taxable when the deceased, donor or heir is resident in Germany. Foreign inheritance tax paid on foreign assets can be credited (§ 21 ErbStG); Germany has only six estate tax treaties (incl. US, France, Switzerland, Denmark, Sweden, Greece).",
+        "domicile_rules": "Liability follows residence (domicile or habitual abode) of either the deceased/donor or the heir. German nationals remain fully liable for 5 years after leaving Germany (§ 2(1) Nr. 1 b ErbStG). Extended limited liability under § 4 AStG can apply for 10 years after emigration to a low-tax country. Because the heir's residence alone triggers tax, children living in Germany pay German tax on gifts or inheritances from parents living abroad."
+      }
+    },
+    {
+      "id": "vv_gmbh",
+      "name": "Asset-holding GmbH (vermögensverwaltende GmbH)",
+      "type": "structure",
+      "description": "The family holds the portfolio through a German GmbH owned by the parents (or parents and children). Under § 8b KStG, 95% of gains on shares are exempt regardless of the size of the stake, so share gains bear about 1.6% inside the company; dividends from portfolio stakes below 10% are fully taxed at about 33% (corporate income tax plus trade tax). Money taken out is taxed again at 26.375%. Wealth tax (none) and inheritance tax are the same as for direct holding: GmbH shares holding a securities portfolio get no business relief, so those metrics are inherited from the standard regime.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Any German resident can found a GmbH (minimum share capital EUR 25,000, notarised articles, commercial register entry). Contributing an existing portfolio to the company is a taxable disposal at 26.375% of the built-in gain (§ 20(2) EStG; no step-up for portfolio shares acquired before moving to Germany), so the structure is cheapest when funded with cash or freshly bought positions.",
+      "duration_years": null,
+      "duration_note": "A corporate structure under ordinary law with no time limit; it lasts as long as the company exists. The 2025 investment programme cuts the corporate income tax rate by one point a year from 2028 to 10% from 2032, which would make it cheaper still.",
+      "structure": {
+        "entity": "vermögensverwaltende GmbH (asset-holding limited company)",
+        "kind": "company",
+        "payout_tax_rate": 0.26375,
+        "payout_notes": "Dividends paid to resident individual shareholders bear the flat 25% Abgeltungsteuer plus 5.5% solidarity surcharge = 26.375% (church tax excluded), withheld by the company. A shareholder with at least 25% (or at least 1% who works for the company) may opt for the partial-income method (60% taxable at progressive rates, top 28.485%), which is worse at the top rate. Repayment of contributed capital from the tax contribution account (§ 27 KStG) is tax-free. Shareholder loans must be at arm's length; private use of company assets (e.g. a house) or interest-free loans are hidden profit distributions taxed as dividends.",
+        "substance_and_anti_avoidance": "A GmbH is a trade-tax business by legal form (§ 2(2) GewStG), so trade tax applies even to pure asset management. The extended trade-tax reduction (§ 9 Nr. 1 Satz 2 GewStG) only covers income from managing the company's own real estate; it does not remove trade tax on securities dividends or interest, so a securities-only GmbH cannot use it. Portfolio dividends: below 10% of the share capital the corporate exemption is lost (§ 8b(4) KStG), and below 15% the trade-tax reduction is lost (§ 8 Nr. 5, § 9 Nr. 2a/7 GewStG). Interest on bonds is fully taxed at ~33%, more than the 26.375% a private investor pays. Fund units (ETFs) fall under the Investment Tax Act, not § 8b. § 8b(7) KStG (trading book) applies only to banks and financial-services institutions. Domestic company, so no CFC issue; the German CFC rules apply if the family uses a foreign company instead.",
+        "exit_and_liquidation": "Emigration: GmbH shares of at least 1% are deemed sold under § 6 AStG if the shareholder was fully taxable in Germany for 7 of the last 12 years; the latent gain (including all retained profits and unrealised gains inside the company) is taxed under the partial-income method (60% x 47.475% = 28.485%), payable in 7 annual instalments and cancelled if the shareholder returns within 7 years. This is a serious trap for an internationally mobile family. Liquidation or sale of the shares: gain over cost taxed under § 17 EStG at 28.485% (60% taxable); return of paid-in capital tax-free.",
+        "sources": [
+          {
+            "title": "Körperschaftsteuergesetz § 8b (participation income: gains exempt, 5% add-back, § 8b(4) portfolio dividends)",
+            "url": "https://www.gesetze-im-internet.de/kstg_1977/__8b.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Gewerbesteuergesetz § 9 (reductions: Nr. 1 Satz 2 extended reduction, Nr. 2a/7 15% dividend threshold)",
+            "url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Gewerbesteuergesetz § 8 Nr. 5 (add-back of portfolio dividends for trade tax)",
+            "url": "https://www.gesetze-im-internet.de/gewstg/__8.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Germany - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/germany/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Germany - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/germany/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Außensteuergesetz § 6 (exit tax)",
+            "url": "https://www.gesetze-im-internet.de/astg/__6.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Einkommensteuergesetz § 3 Nr. 40 (partial income method, 40% exempt)",
+            "url": "https://www.gesetze-im-internet.de/estg/__3.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Germany - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/germany/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ]
+      },
+      "capital_gains": {
+        "summary": "Gains realised by the GmbH on shares are 95% exempt from corporate income tax and trade tax whatever the size of the stake (§ 8b(2) and (3) KStG): 5% of the gain is added back as non-deductible expenses and taxed at the combined ~33%, an effective 1.65%. The same applies to selling a private company held by the GmbH. Losses on shares are not deductible. Real estate gains inside the company are fully taxable (no 10-year exemption), though a company that also owns real estate can claim the extended trade-tax reduction for the property part.",
+        "exemptions_thresholds": "No minimum stake or holding period for the § 8b(2) gain exemption. Gains on bonds, derivatives and fund units are not covered and are taxed at the full ~33%.",
+        "eligibility_conditions": "Shares held by a German-resident corporation that is not a bank or financial-services institution holding them in a trading book (§ 8b(7) KStG).",
+        "important_exceptions": "Corporate income tax falls from 15% to 10% in steps from 2028 to 2032 (14% in 2028); the 1.65% effective rate on share gains falls accordingly. From 2027 a minimum trade-tax multiplier of 280% (9.8%) applies nationwide.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Körperschaftsteuergesetz § 8b (participation income: gains exempt, 5% add-back, § 8b(4) portfolio dividends)",
+            "url": "https://www.gesetze-im-internet.de/kstg_1977/__8b.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Germany - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/germany/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Germany - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/germany/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Gewerbesteuergesetz § 9 (reductions: Nr. 1 Satz 2 extended reduction, Nr. 2a/7 15% dividend threshold)",
+            "url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "The Munich multiplier of 490% is taken from PwC's city comparison; the exact 2026 Hebesatz of the company's municipality determines the trade-tax part."
+        ],
+        "headline_rate": 0.32975,
+        "rates": {
+          "listed_securities_domestic": 0.01649,
+          "listed_securities_foreign": 0.01649,
+          "private_business_sale": 0.01649,
+          "real_estate_local": 0.15825,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Listed shares and private business sale: 5% x 32.975% = 1.649% (§ 8b(2)-(3) KStG; the exemption also applies for trade tax). Combined rate used: corporate income tax 15% x 1.055 solidarity surcharge = 15.825%, plus trade tax 3.5% x the Munich multiplier (Hebesatz) of 490% = 17.15%, total 32.975%. Munich is the city used for this file's cost of living; multipliers in cities above 80,000 inhabitants range from 250% to 580% (combined 24.6%-36.1%), and family companies are often managed from lower-multiplier suburbs (a genuine place of management is required). Local real estate: 15.825% corporate income tax, assuming the extended trade-tax reduction for the property part (otherwise 32.975%); a privately held property is tax-free after 10 years, so the GmbH is worse for real estate. Foreign real estate: left null; normally taxable in the situs state and exempt in Germany under the treaty.",
+        "professional_trader": "Not relevant: all income of a GmbH is business income anyway, and the § 8b exemption does not depend on holding periods or turnover (except for banks' trading books).",
+        "holding_period_rules": "None for the § 8b(2) exemption.",
+        "foreign_assets": "Foreign shares treated exactly like German shares under § 8b(2)."
+      },
+      "dividends": {
+        "summary": "Dividends from portfolio holdings below 10% are fully taxable in the GmbH (§ 8b(4) KStG) and, below 15%, also fully subject to trade tax (§ 8 Nr. 5 GewStG): about 33% in Munich. Foreign withholding tax can be credited against corporate income tax only (§ 26 KStG), not against trade tax, so a 15% treaty withholding leaves about 17% German trade tax on foreign dividends. Only holdings of at least 10% (corporate tax) and 15% (trade tax) get the 95% exemption.",
+        "exemptions_thresholds": "95% exemption only for stakes of at least 10% at the start of the calendar year (corporate tax) and at least 15% at the start of the year (trade tax).",
+        "eligibility_conditions": "German-resident GmbH holding listed portfolio shares.",
+        "important_exceptions": "A purely asset-managing GmbH cannot use the extended trade-tax reduction for securities income: § 9 Nr. 1 Satz 2 GewStG reduces only the part of trade income attributable to managing the company's own real estate.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Körperschaftsteuergesetz § 8b (participation income: gains exempt, 5% add-back, § 8b(4) portfolio dividends)",
+            "url": "https://www.gesetze-im-internet.de/kstg_1977/__8b.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Gewerbesteuergesetz § 8 Nr. 5 (add-back of portfolio dividends for trade tax)",
+            "url": "https://www.gesetze-im-internet.de/gewstg/__8.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Gewerbesteuergesetz § 9 (reductions: Nr. 1 Satz 2 extended reduction, Nr. 2a/7 15% dividend threshold)",
+            "url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+            "publisher": "Bundesministerium der Justiz",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Germany - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/germany/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Germany - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/germany/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "The model credits the full 15% foreign withholding against 32.975%, leaving 17.975%; in reality the credit also removes the solidarity surcharge but not trade tax, leaving about 17.15%, so foreign dividends are overstated by about 0.8 points."
+        ],
+        "headline_rate": 0.32975,
+        "domestic_rate": 0.32975,
+        "foreign_gross_rate": 0.32975,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Combined rate used: corporate income tax 15% x 1.055 solidarity surcharge = 15.825%, plus trade tax 3.5% x the Munich multiplier (Hebesatz) of 490% = 17.15%, total 32.975%. Munich is the city used for this file's cost of living; multipliers in cities above 80,000 inhabitants range from 250% to 580% (combined 24.6%-36.1%), and family companies are often managed from lower-multiplier suburbs (a genuine place of management is required). Domestic dividends: German 26.375% withholding is credited/refunded against the company's tax, so the final burden is 32.975%. Foreign dividends: 32.975% gross, with foreign withholding credited against corporate income tax up to the German corporate tax on that income.",
+        "withholding_outbound": "The GmbH withholds 26.375% on dividends paid to the family (see payout).",
+        "treaty_network": "A German GmbH is a treaty resident and can claim treaty rates (usually 15% on portfolio dividends) under Germany's ~95 treaties.",
+        "holding_company_notes": "This regime is the GmbH itself; see substance notes for trade-tax traps."
+      },
+      "sources": [
+        {
+          "title": "Körperschaftsteuergesetz § 8b (participation income: gains exempt, 5% add-back, § 8b(4) portfolio dividends)",
+          "url": "https://www.gesetze-im-internet.de/kstg_1977/__8b.html",
+          "publisher": "Bundesministerium der Justiz",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Gewerbesteuergesetz § 9 (reductions: Nr. 1 Satz 2 extended reduction, Nr. 2a/7 15% dividend threshold)",
+          "url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+          "publisher": "Bundesministerium der Justiz",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Erbschaftsteuer- und Schenkungsteuergesetz § 13b (business relief; Verwaltungsvermögen, 90% test)",
+          "url": "https://www.gesetze-im-internet.de/erbstg_1974/__13b.html",
+          "publisher": "Bundesministerium der Justiz",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Erbschaftsteuer- und Schenkungsteuergesetz § 1 (Nr. 4: family foundations taxed every 30 years)",
+          "url": "https://www.gesetze-im-internet.de/erbstg_1974/__1.html",
+          "publisher": "Bundesministerium der Justiz",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Unlimited liability with a domicile (a home kept for use, § 8 AO) or habitual abode (§ 9 AO; a stay of more than six months, short interruptions ignored). Treaty tie-breakers apply for dual residents. There is no special rule for new arrivals and no lump-sum or remittance regime.",
+    "routes": [
+      {
+        "name": "EU/EEA/Swiss free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Registration at the local residents' office (Anmeldung) within two weeks of moving in; no permit."
+      },
+      {
+        "name": "Residence permit for persons of independent means or self-employment",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Germany has no golden visa or residence-by-investment programme. Non-EU nationals apply for a national residence permit (e.g. § 7(1) sentence 3 AufenthG for purposes not covered elsewhere, or § 21 AufenthG self-employment), proving sufficient funds and health insurance; US citizens can apply from within Germany. Granted at the discretion of the immigration authority."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Germany - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/germany/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.15825,
+    "summary": "Corporate income tax 15% plus 5.5% solidarity surcharge (15.825%) plus municipal trade tax (about 7%-17%, typically ~14%), giving roughly 30% combined. The 2025 investment programme (promulgated 18 July 2025) cuts the corporate rate by one point a year from 2028 to 10% from 2032. Participation exemption: 95% of dividends (holdings >= 10%) and capital gains on shares exempt (§ 8b KStG). Controlled-foreign-company rules apply to passive income taxed below 15%.",
+    "special_zones": "None.",
+    "sources": [
+      {
+        "title": "Gesetz für ein steuerliches Investitionssofortprogramm verkündet",
+        "url": "https://www.forvismazars.com/de/en/who-we-are/news/press-media/newsletters/newsletter-steuern/newsletter-steuern-3-2025/steuerliches-investitionssofortprogramm",
+        "publisher": "Forvis Mazars",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Munich",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 24850,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Bavarian International School, annual tuition Grades 10-12, school year 2026-27; excludes one-off entrance fee of EUR 14,790 (spread over three years) and registration fee.",
+      "source": {
+        "title": "BIS School tuition & fees",
+        "url": "https://www.bis-school.com/admissions/school-fees",
+        "publisher": "Bavarian International School gAG",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Munich is the most expensive German city and a likely choice alongside Frankfurt, Hamburg or the Starnberg lake area. Rent is a listing sample of cold asking rents (15 October 2026); purchase price, insurance and staff costs were not sourced.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 4250,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median cold rent (Kaltmiete, excluding service charges) of 22 houses with 5+ rooms and at least 180 m² listed for rent in the city of Munich on the immobilo.de aggregator on 15 October 2026 (duplicates and multi-family houses removed); range EUR 3,100-16,000. The prime district Bogenhausen (81925-81929) ranged EUR 4,700-9,240. City-wide sample, so it understates rents in Grünwald, Bogenhausen or Harlaching.",
+      "source": {
+        "title": "immobilo: Haus mieten in München (aggregated listing sample)",
+        "url": "https://www.immobilo.de/mieten/haus/muenchen",
+        "publisher": "immobilo.de",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "Berlin",
+      "lon": 13.41053,
+      "lat": 52.52437,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2950159"
+    },
+    {
+      "name": "Frankfurt am Main",
+      "lon": 8.68417,
+      "lat": 50.11552,
+      "kind": "financial_centre",
+      "coordinate_source": "GeoNames 2925533"
+    },
+    {
+      "name": "Munich",
+      "lon": 11.57549,
+      "lat": 48.13743,
+      "kind": "city",
+      "coordinate_source": "GeoNames 2867714"
+    }
+  ],
+  "us_citizen_notes": "The US-Germany income tax treaty and the separate US-Germany estate and gift tax treaty (1980) apply. Germany credits US tax only on US-source income; the US credits German tax on German-taxed income under the saving clause. US-domiciled fund holdings are fine; non-US funds can be PFICs for US purposes.",
+  "open_questions": [
+    "Inheritance-tax rulings of the Federal Constitutional Court (heard 12-13 October 2026) are pending.",
+    "Treaty counts (about 95 income tax treaties; 6 inheritance tax treaties) are from general knowledge and were not re-checked against the BMF treaty list.",
+    "Munich rent is a city-wide listing sample (median EUR 4,250 cold rent); a prime-area agency figure for Bogenhausen/Grünwald would be higher."
+  ]
+}

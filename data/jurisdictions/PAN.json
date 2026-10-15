@@ -1,0 +1,241 @@
+{
+  "id": "PAN",
+  "name": "Panama",
+  "continent": "Central America",
+  "region": "Central America",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "summary": "Panama has a territorial tax system: foreign dividends, interest and gains on foreign securities are not taxed, and there is no inheritance, gift or wealth tax. Panamanian-source investment income is taxed lightly (10% on local securities gains, 10%/5% final WHT on local dividends). US/EU withholding taxes on the portfolio are a final cost. The balboa (PAB) is at par with the US dollar, which circulates as legal tender.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence (territorial)",
+      "type": "standard",
+      "description": "Residents and non-residents are taxed only on Panamanian-source income. Foreign dividends, interest and gains on foreign securities are not taxed. Panamanian securities gains 10%; local dividends 10%/5% WHT.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if 183+ days in the current or preceding year, or permanent residence established. Foreign nationals need a residence visa.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains on foreign securities are foreign-source and not taxed. Gains on shares, bonds and other securities issued by Panamanian entities: 10% (buyer withholds 5% of price, which the seller may treat as final). Panamanian real estate: 10% of the gain, or the 3% advance on price as final tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Panama Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-panamahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Panama, Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/panama/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.1,
+        "rates": {
+          "listed_securities_domestic": 0.1,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.1,
+          "real_estate_local": 0.1,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Deloitte Panama Highlights 2026 (updated April 2026); territorial basis. listed_securities_domestic 0.10 ignores a possible exemption for SMV-registered securities sold on an exchange (not verified).",
+        "professional_trader": "Only Panamanian-source trading income could be taxed (25% corporate / up to 25% personal).",
+        "foreign_assets": "Not taxed: territorial system.",
+        "open_questions": [
+          "Exemption for gains on securities registered with the SMV and sold through an organised market (historic Decree-Law 1 of 1999 art. 334) not verified for 2026."
+        ]
+      },
+      "dividends": {
+        "summary": "Foreign dividends are not taxed. Dividends from Panamanian operating companies bear 10% WHT (5% when paid out of foreign-source or exempt income), which is final.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Panama Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-panamahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.1,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Deloitte 2026: dividend WHT 10%/5%; 'subsequent distribution not taxed'. Territorial: foreign dividends exempt.",
+        "withholding_outbound": "10% (Panamanian-source profits) / 5% (foreign-source or exempt profits); 20% for bearer shares; higher retaliatory rates (20%/40%) for discriminating jurisdictions.",
+        "treaty_network": "18 treaties; BEPS MLI in force 1 Mar 2021. No US treaty. As a territorial system, Panama gives no unilateral credit, and US/EU withholding on the family's portfolio is final."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Panama, Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/panama/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Panama Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-panamahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Real estate tax 0%-0.7% for family patrimony/main residence; 0%-1% for other property (Deloitte 2026)."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Panama, Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/panama/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Panama Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-panamahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax (PwC reviewed 4 Aug 2026).",
+        "gifts_same_as_inheritance": true,
+        "important_exceptions": "Real estate transfer tax 2% on transfers of Panamanian property (whether it applies to inheritances not checked)."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "183+ days in the current or preceding calendar year, or permanent residence; centre of economic and family interests relevant (Deloitte 2026).",
+    "routes": [
+      {
+        "name": "Residence visas (e.g. Qualified Investor, Friendly Nations, Pensionado)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Panama offers several residence visas; current investment thresholds were not verified in this research."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Panama Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-panamahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "Territorial CIT 25% (or 4.67% of gross for large taxpayers, whichever greater); 10% dividend WHT, 5% from foreign-source profits; retained earnings tax.",
+    "special_zones": "MHQ regime, Colón Free Zone, Panama Pacifico.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Panama Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-panamahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Panama City (Costa del Este / Punta Pacifica)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 5500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Average monthly asking rent for units with 4 or more bedrooms in Panama City, Global Property Guide's own survey of April 2026 (reported on its Panama price-history page). Mostly large apartments in the upscale districts; a detached house in a gated Costa del Este or Santa Maria community can cost more.",
+      "source": {
+        "title": "Global Property Guide: Panama residential property market analysis (price history)",
+        "url": "https://www.globalpropertyguide.com/latin-america/panama/price-history",
+        "publisher": "Global Property Guide",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    },
+    "prime_price_per_m2": {
+      "value": {
+        "amount": 2500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Costa del Este average resale asking price per m2, Q1 2026 (Galleria Inmobiliario via Panama Equity, reported by Global Property Guide). New-build (preconstruction) prices in Costa del Este were USD 3,800/m2 and in Punta Pacifica USD 4,300/m2.",
+      "source": {
+        "title": "Global Property Guide: Panama residential property market analysis (price history)",
+        "url": "https://www.globalpropertyguide.com/latin-america/panama/price-history",
+        "publisher": "Global Property Guide",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 20328,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "International School of Panama, grades 9-12, school year 2026-27: tuition USD 19,328 (four quarterly payments of USD 4,832) plus the annual non-institutional registration fee of USD 1,000. One-off capital donation of USD 16,000 per student (grades 6-12, paid in two instalments) is excluded. Companies paying fees are charged a USD 4,500 registration fee instead.",
+      "source": {
+        "title": "International School of Panama: Admissions, Tuition SY 26-27",
+        "url": "https://isp.edu.pa/admissions/",
+        "publisher": "International School of Panama",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Health insurance and housekeeper costs not sourced in this pass. The rent is an average for 4+ bedroom units, not a sample of luxury houses only."
+  },
+  "markers": [
+    {
+      "name": "Panama City",
+      "lon": -79.5347,
+      "lat": 8.9711,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q3306 (via en.wikipedia)"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets; the app adds the federal layer. Local tax can generally be credited against US tax on the same foreign-source income only where the US foreign tax credit rules allow. Panama levies no tax on the foreign portfolio, so a US family pays full US rates.",
+  "open_questions": [
+    "Residence visa investment thresholds not verified.",
+    "Exemption for exchange-traded Panamanian securities not verified."
+  ]
+}

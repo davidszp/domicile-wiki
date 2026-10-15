@@ -1,0 +1,158 @@
+{
+  "id": "ROU",
+  "name": "Romania",
+  "currency": "RON",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Flat 10% income tax on most income (exceptions for dividends, capital gains, property transfers and gambling); no local personal income tax. Employees pay CAS 25% and CASS 10% of gross; no ceiling for employees given by PwC. Minimum gross salary implied for 2026 is RON 4,050 a month (RON 48,600 / 12, computed from PwC).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.1
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.35,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.19,
+    "self_employed_social_security_cap": 291600,
+    "self_employed_notes": "Recorded 19% is a derived approximate rate on an income of about EUR 54,000 (about RON 270,000 at an assumed ~5.0 RON/EUR): CAS 25% on a base of 24 minimum salaries (RON 97,200) = RON 24,300, plus CASS 10% of net income = RON 27,000, total RON 51,300 = 19%. At about EUR 130,000 (RON 650,000) CASS is capped at RON 29,160 (10% of 72 minimum salaries), so the total is RON 53,460, about 8%; the recorded 19% with the RON 291,600 cap gives a close figure. Statutory components: Independent activities: 10% on net income (real system or fixed income quota); CAS 25% on a base of the person's choosing, not below 12 minimum gross salaries (RON 48,600) if annual income is 12-24 minimum salaries, or 24 (RON 97,200) if income is 24 or more; CASS 10% on net annual income, capped at 72 minimum salaries (RON 291,600). The recorded cap is the CASS cap; CAS has no separate ceiling stated. Non-salary income (rent, investments) triggers CASS from 6 minimum salaries (RON 24,300).",
+    "social_security_deductible": 1,
+    "local_tax_note": "There are no local taxes on personal income in Romania (PwC).",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Romania, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/romania/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Romania, other taxes",
+        "url": "https://taxsummaries.pwc.com/romania/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Romania, income determination",
+        "url": "https://taxsummaries.pwc.com/romania/individual/income-determination",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Romania individual - deductions",
+        "url": "https://taxsummaries.pwc.com/romania/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "IT-sector income tax exemption not found on the PwC pages opened; nomad exemption (see regime) not confirmed in a statute.",
+      "Employee CAS/CASS ceiling not stated.",
+      "Self-employed 19% is derived at an assumed RON/EUR rate."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "rou_nomad_visa",
+      "name": "Digital nomad long-stay visa",
+      "kind": "digital_nomad_visa",
+      "description": "Long-stay visa for non-EU remote workers earning at least three times the average gross monthly salary in Romania for the months before applying (and during the stay), employed by or owning a company registered abroad. One source requires the foreign company to be at least three years old, an older news report says one year. Sources conflict on duration and on the tax exemption (one article says exemption from taxes on income earned outside Romania and from social contributions for up to six months within 12 months if the stay does not exceed 183 days). Legal basis cited by one secondary source: Art. 49(1)(f1) of Government Emergency Ordinance 194/2002 on foreigners. The only exemption found on an opened page is PwC's non-taxable item 'salary income obtained from a foreign employer for employment activities rendered abroad', which does not cover work performed in Romania; a secondary source's statement that the holder's foreign income is exempt for up to six months in 12 (stay under 183 days) was not confirmed in a statute, so covers_local_work stays unset.",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "Not verified: unofficial sources say 12 months renewable once.",
+      "treatment": "standard",
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Obtaining a long-stay visa for foreign nationals, Part III: digital nomads (Lawyers Week)",
+          "url": "https://lawyersweek.net/24447/obtaining-a-long-stay-visa-for-foreign-nationals-part-iii-the-long-stay-visa-for-digital-nomads.html",
+          "publisher": "Lawyers Week",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Romania to offer visas for digital nomads (Economedia, 17 Jan 2022)",
+          "url": "https://economedia.ro/romania-to-offer-visas-for-digital-nomads.html",
+          "publisher": "Economedia",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries - Romania, income determination",
+          "url": "https://taxsummaries.pwc.com/romania/individual/income-determination",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "unverified",
+      "open_questions": [
+        "Current 2026 amount of 3x average gross salary (the 2022-era figure quoted was RON 23,970 a month) must be taken from INS data and mae.ro.",
+        "Official duration, renewal and tax treatment not confirmed.",
+        "covers_local_work not established: no statute, decree or ANAF page found saying a nomad visa holder's remote-work income earned while physically in Romania is exempt (PwC's exemption covers employment rendered abroad). Treatment kept as standard.",
+        "Sources disagree on the evidence period (six months per Lawyers Week, three months per Economedia 2022)."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Bucharest",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 600,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Monthly asking rent for a two-room flat (one bedroom plus living room), Imobiliare.ro Market 360 Q1 2026, advertised not signed rents, via Finorum.",
+      "source": {
+        "title": "Bucharest monthly asking rents, Imobiliare.ro Market 360 Q1 2026 (via Finorum)",
+        "url": "https://finorum.com/?p=18566",
+        "publisher": "Finorum",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 899,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Monthly asking rent for a three-room flat (two bedrooms), Imobiliare.ro Market 360 Q1 2026, advertised not signed rents, via Finorum.",
+      "source": {
+        "title": "Bucharest monthly asking rents, Imobiliare.ro Market 360 Q1 2026 (via Finorum)",
+        "url": "https://finorum.com/?p=18566",
+        "publisher": "Finorum",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Q1 2026 was the latest public report found; neighbourhood spread is wide (e.g. studio in Berceni about EUR 289, Herastrau/Floreasca two-room EUR 800-1,400+ per a secondary guide)."
+  },
+  "residence_routes": "EU citizens may live and work freely. Non-EU remote workers can apply for the digital nomad long-stay visa; skilled employees need a work permit sponsored by a Romanian employer. No official Romanian page could be opened (mae.ro returned 503), so these routes are unverified.",
+  "open_questions": [
+    "Official 2026 nomad visa threshold, duration and tax treatment (mae.ro 503, evisa.mae.ro has no nomad detail).",
+    "covers_local_work for the nomad visa not established.",
+    "Whether IT-sector exemption still exists (not on PwC income-determination page).",
+    "Rents are Q1 2026 asking rents."
+  ]
+}

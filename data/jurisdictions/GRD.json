@@ -1,0 +1,208 @@
+{
+  "id": "GRD",
+  "name": "Grenada",
+  "continent": "Caribbean",
+  "region": "Windward Islands (Eastern Caribbean)",
+  "currency": "XCD",
+  "researched_on": "2026-10-15",
+  "summary": "Grenada taxes residents only on Grenada-source income. There is no capital gains tax, no tax on dividends received by residents, and no inheritance, gift or net wealth tax, so a portfolio of foreign shares and bonds is effectively untaxed locally. Costs arise on Grenadian real estate (transfer tax up to 15%, 10% alien landholding licence). No treaty relief exists for US/EU withholding taxes.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Resident individuals are taxed only on income derived from Grenada (Deloitte 2026). There is no capital gains tax, no tax on dividends paid to residents, no inheritance, estate or net wealth tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax residence: physical presence of at least 183 days in the fiscal year. Non-citizens need a residence permit or citizenship (see residency routes).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Grenada has no capital gains tax. Gains on domestic or foreign shares, a private business or real estate are not taxed as gains. A real property transfer tax of 5% to 15% (paid by the seller) applies to sales of Grenadian land and buildings.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Grenada Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-grenadahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "0 = no capital gains tax (Deloitte Grenada Highlights 2026). Foreign gains are also outside the territorial income tax. The 5-15% real property transfer tax is a transaction tax on the seller and is not included in the real_estate_local rate.",
+        "professional_trader": "Business income derived from Grenada is taxed at 10% / 28% (personal) or 28% (company). A resident who trades securities as a business in Grenada could in principle be treated as earning business income; no specific guidance was found.",
+        "important_exceptions": "Real property transfer tax 5%-15% (resident vs non-resident), payable by the seller on values above XCD 20,000. Non-resident (non-citizen) purchasers need an Alien Landholding Licence costing 10% of the property value.",
+        "foreign_assets": "Income derived outside Grenada is outside the scope of personal income tax for residents.",
+        "open_questions": [
+          "Deloitte describes the basis as Grenada-source only; the Income Tax Act text was not checked for any rule that taxes foreign income remitted to Grenada."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends paid to residents are not taxed and carry no withholding tax. Foreign dividends are outside the territorial scope of personal income tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Grenada Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-grenadahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Deloitte Grenada 2026: 'Dividends paid to residents are not subject to tax'; residents are taxed on income derived from Grenada only.",
+        "withholding_outbound": "15% on dividends paid to non-resident companies and individuals, unless reduced by treaty. Interest and royalties: 15% to residents and non-residents.",
+        "treaty_network": "Only the CARICOM multilateral tax treaty. No treaties with the US or EU states, so source-country withholding on US/EU dividends is not reduced and cannot be credited (no foreign tax relief).",
+        "open_questions": [
+          "No primary-law confirmation (Income Tax Act, Cap. 152) of the exemption for foreign dividends."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Grenada Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-grenadahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Annual property tax on market value, 0% to 0.5% depending on use, with separate land and building rates; XCD 100,000 exemption on the building value of one owner-occupied home."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. Gifts of Grenadian real property may attract the real property transfer tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Grenada Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-grenadahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax. Deloitte notes that gifts may be subject to the real property transfer tax (transfers by deed above XCD 150,000).",
+        "gifts_same_as_inheritance": true,
+        "important_exceptions": "Real property transfer tax may apply to gifts of Grenadian land; it does not apply to a portfolio of listed securities.",
+        "foreign_assets": "No tax on foreign or local assets passing on death.",
+        "domicile_rules": "Not applicable: no inheritance tax.",
+        "open_questions": [
+          "Whether transfer tax applies to transfers of Grenadian real property on death (Deloitte mentions only gifts) was not verified."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if physically present in Grenada for at least 183 days in a fiscal year (Deloitte 2026). Taxed on Grenada-source income only.",
+    "routes": [
+      {
+        "name": "Citizenship by Investment (CBI)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Grenada operates a citizenship-by-investment programme (donation or approved real estate). Current minimum amounts were not verified in this research."
+      },
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Non-citizens need a residence permit; conditions not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Grenada Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-grenadahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.28,
+    "summary": "Corporate income tax 28%; resident companies (central management and control) are taxed on worldwide income. No capital gains tax, dividends paid to residents not taxed, no participation exemption or holding company regime. Grenada has not committed to Pillar Two.",
+    "special_zones": "Incentives under the Fiscal Incentives Act, Qualified Enterprise Act and Hotel Aids Act.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Grenada Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-grenadahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "St. George's (Egmont / Lance aux Epines / Grand Anse)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 4750,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median of the four 4-bedroom houses among Terra Caribbean's Grenada residential rentals with 4+ bedrooms on 15 Oct 2026: Boujee, Egmont, USD 7,500; Orchard Bay Villa, Westerhall Point (St. David), USD 5,500; Ocean Eyes, Egmont, USD 4,000 (furnished); Beach Side Serenity, Morne Rouge, USD 2,750. Terra also listed three 4-bedroom apartments (USD 2,400-2,800, partly aimed at St George's University students), excluded as not a family home; with them the median of all seven is USD 2,800. No 5-bedroom rental was listed.",
+      "source": {
+        "title": "Terra Caribbean: Grenada residential rentals (4+ bedrooms)",
+        "url": "https://terracaribbean.com/grenada/properties/?country_code=gd&listing_type=rental&currency=usd&zoning[]=residential",
+        "publisher": "Terra Caribbean",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "International school fee not sourced: no Grenada private secondary school fee page could be reached (Westmorland School and St Andrew's/Mount Saint Bernard domains tried). Purchase price per m2, health insurance and housekeeper not sourced. Listings read from Terra Caribbean's listing search (country_code=gd, listing_type=rental, beds_min=4)."
+  },
+  "markers": [
+    {
+      "name": "St. George's",
+      "lon": -61.75305556,
+      "lat": 12.0525,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q41547 (via en.wikipedia)"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. There is no local tax here to credit against US tax on portfolio income, so a US family pays the full US rates. No Puerto Rico-style exclusion applies.",
+  "open_questions": [
+    "Current CBI investment thresholds not verified.",
+    "International/private secondary school fee for Grenada not sourced: re-checked 15 Oct 2026 (web search, Wayback Machine for Westmorland School, third-party listings): no Grenadian private secondary school publishes a fee schedule. Divine Savior Academy (St. George's) publishes 2026-27 fees but only for PreK-Grade 6 (international Kinder-Grade 6: EC$2,000 a term), so it was not used. A secondary fee schedule obtained from a school is needed."
+  ]
+}

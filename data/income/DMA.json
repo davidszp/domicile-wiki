@@ -1,0 +1,184 @@
+{
+  "id": "DMA",
+  "name": "Dominica",
+  "currency": "XCD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Residents pay 15% on the first XCD 20,000 of taxable income, 25% on the next XCD 30,000 and 35% above, after a XCD 30,000 personal allowance. Employees pay 6.75% social security up to XCD 7,000 a month.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 20000,
+        "rate": 0.25
+      },
+      {
+        "from_amount": 50000,
+        "rate": 0.35
+      }
+    ],
+    "personal_allowance": 30000,
+    "employee_social_security_rate": 0.0675,
+    "employee_social_security_cap": 84000,
+    "self_employed_social_security_rate": 0.1375,
+    "self_employed_social_security_cap": 84000,
+    "self_employed_notes": "Self-employed pay quarterly (within 14 days of quarter end, DSS FAQ). The rate is a percentage of annual insurable earnings and rises 0.25 points a year: 13.50% in 2025, 13.75% for 1 January to 31 December 2026, reaching 15% in 2031 (DSS 'Table of Contribution Rates Payable by Self-employed Persons', Second Schedule of SRO 8 of 2012). The XCD 84,000 cap is the employee ceiling of XCD 7,000 a month (Deloitte); the DSS table does not state a separate self-employed ceiling. Self-employed persons are not covered for employment injury benefits (Expanship).",
+    "local_tax_note": "No local income surtax. Resident (183+ days) individuals are taxed on worldwide income, with a foreign tax credit and no capital gains tax. Separate returns only. Brackets apply to taxable income after the XCD 30,000 allowance.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Dominica Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Expanship: Dominica payroll tax guide",
+        "url": "https://www.expanship.com/dm/blog/dominica-payroll-tax",
+        "publisher": "Expanship",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Dominica Social Security: Table of Self-Employed Contribution Rates 2012-2031",
+        "url": "https://dss.dm/wp-content/uploads/2024/12/Table-of-SE-Contribution-Rates-2012-2031-1.pdf",
+        "publisher": "Dominica Social Security",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Dominica Social Security: Table of Employee and Employer Contribution Rates 2012-2031",
+        "url": "https://dss.dm/wp-content/uploads/2024/12/Table-of-EE-ER-Contribution-Rates-2012-2031.pdf",
+        "publisher": "Dominica Social Security",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Inland Revenue Division, Dominica - Guide to completing your Personal Income Tax Return (IT4)",
+        "url": "https://ird.gov.dm/images/documents/guide_to_completing_it4_1.0.pdf",
+        "publisher": "Inland Revenue Division, Commonwealth of Dominica",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "Deloitte and Expanship give the XCD 7,000 monthly ceiling; Expanship says it may be revised. Whether the same ceiling caps the self-employed insurable earnings was not stated by the DSS table.",
+      "Whether the XCD 30,000 allowance is deducted before the 15/25/35% bands (as modelled) is inferred from Deloitte's wording and the Grenada and Saint Lucia pattern.",
+      "The IRD IT4 guide (opened 2026-10-15) states a resident allowance of $15,000 (line 201) while the file uses XCD 30,000 (Deloitte 2026); the guide may predate the increase. Not changed here."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "id": "win",
+      "name": "Work In Nature (WIN) visa",
+      "kind": "digital_nomad_visa",
+      "description": "Visa of up to 18 months for remote workers earning from clients or employers outside Dominica (fees USD 100 application plus USD 800 individual / USD 1,200 family); local employment is prohibited. The official WIN site states: 'You will not be liable to pay income tax in Dominica. Waiver on income tax will be granted for persons working remotely from Dominica under the WIN Visa', and the visa details page repeats that a waiver on income tax is granted to people working remotely from Dominica. Because the waiver is expressly for people working remotely from Dominica, it covers pay for work done while living there (covers_local_work true). Income tax in the holder's home country remains their responsibility; other income such as dividends is not mentioned.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 50000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": 1.5,
+      "duration_note": "Up to 18 months from arrival; the official site reportedly does not describe renewal. Fees: USD 100 application + USD 800 single or USD 1,200 family visa fee. Presence over 183 days makes a person a Dominica tax resident.",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Stamped Nomad: Dominica Work In Nature (WIN) visa",
+          "url": "https://www.stampednomad.com/visas/dominica-work-in-nature-win-visa",
+          "publisher": "Stamped Nomad",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Work in Nature (WIN) Extended Stay Visa: FAQ",
+          "url": "https://windominica.gov.dm/faq",
+          "publisher": "Government of the Commonwealth of Dominica, Work in Nature (WIN) Programme",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Work in Nature (WIN) Extended Stay Visa: Visa details and fees",
+          "url": "https://windominica.gov.dm/details/fees",
+          "publisher": "Government of the Commonwealth of Dominica, Work in Nature (WIN) Programme",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Work in Nature (WIN) Extended Stay Visa: Eligibility",
+          "url": "https://windominica.gov.dm/details/eligibility",
+          "publisher": "Government of the Commonwealth of Dominica, Work in Nature (WIN) Programme",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [
+        "The statutory instrument behind the waiver was not located; the statement is from the official WIN programme site.",
+        "Renewal and the interaction of the 18-month stay with the 183-day residence test are unclear; social security for visa holders is not addressed."
+      ],
+      "covers_local_work": true
+    }
+  ],
+  "costs": {
+    "city": "Roseau (Morne Daniel / outskirts)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1600,
+        "currency": "XCD"
+      },
+      "year": 2026,
+      "description": "Single listing: 1-bedroom, 1-bath apartment for rent in Morne Daniel, EC$1,600 a month (about US$599 as quoted); furnishing not stated. Sample of one.",
+      "source": {
+        "title": "Diamond Realty Dominica: long-term rentals",
+        "url": "https://diamondrealtydominica.com/longterm-rental/",
+        "publisher": "Diamond Realty Dominica",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 2700,
+        "currency": "XCD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 5 two-bedroom long-term units on Diamond Realty: Jimmit EC$850 (unfurnished apartment), Wallhouse EC$2,000, Gommier EC$2,700, Guillet EC$3,500 (furnished), Morne Daniel house EC$4,500; a short-term nightly listing was excluded. Mixed areas and furnishing; small sample from one agency.",
+      "source": {
+        "title": "Diamond Realty Dominica: long-term rentals",
+        "url": "https://diamondrealtydominica.com/longterm-rental/",
+        "publisher": "Diamond Realty Dominica",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "One agency only (Diamond Realty, 10 long-term listings). Nature Isle Realty's rental page shows only USD 1,200 to 5,500 units without bedroom counts; the other Dominican agents' sites were unreachable or block automated access. Treat as indicative."
+  },
+  "residence_routes": "Remote workers of any citizenship can use the WIN visa (up to 18 months, USD 50,000 expected income, USD 100 + USD 800 fees). Employees of a Dominican employer need a work permit (not researched). Citizenship by investment (Economic Diversification Fund from USD 200,000, or approved real estate from USD 200,000) is a separate route cited in data/jurisdictions/DMA.json. US citizens stay taxable in the US on worldwide income; Dominica tax on employment income would be creditable against US tax only to the extent the foreign tax credit rules allow.",
+  "open_questions": [
+    "Rents rest on one agency (1 one-bed, 5 two-bed listings).",
+    "Work-permit terms for employees not researched."
+  ]
+}

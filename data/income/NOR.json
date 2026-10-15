@@ -1,0 +1,128 @@
+{
+  "id": "NOR",
+  "name": "Norway",
+  "currency": "NOK",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "22% on general income plus bracket tax (trinnskatt) of 1.7% to 17.8% on personal income, plus national insurance 7.6% for employees (10.8% self-employed). Top marginal rate 47.4% for employees (22 + 17.8 + 7.6).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.22
+      },
+      {
+        "from_amount": 226101,
+        "rate": 0.237
+      },
+      {
+        "from_amount": 318301,
+        "rate": 0.26
+      },
+      {
+        "from_amount": 725051,
+        "rate": 0.357
+      },
+      {
+        "from_amount": 980101,
+        "rate": 0.388
+      },
+      {
+        "from_amount": 1467201,
+        "rate": 0.398
+      }
+    ],
+    "personal_allowance": 114550,
+    "employee_social_security_rate": 0.076,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.108,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Trygdeavgift for self-employed (other business income) is 10.8% in 2026 per Skatteetaten (PwC's page still shows 11% without a year). Employees 7.6%. No contribution on personal income below NOK 99,650 and the contribution is limited to 25% of income above it.",
+    "social_security_deductible": 0,
+    "local_tax_note": "The 22% general-income rate already includes county, municipal and state elements, so no extra municipal surtax. Bracket thresholds are applied to gross personal income; the 22% is levied after the NOK 114,550 allowance and the minimum deduction (46%, max NOK 95,700), which brackets here do not model.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Norway individual - taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/norway/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Norway individual - deductions",
+        "url": "https://taxsummaries.pwc.com/norway/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Norway individual - other taxes",
+        "url": "https://taxsummaries.pwc.com/norway/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Skatteetaten: Bracket tax (trinnskatt) rates 2026",
+        "url": "https://www.skatteetaten.no/en/rates/bracket-tax/",
+        "publisher": "Norwegian Tax Administration (Skatteetaten)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Skatteetaten: National insurance contributions rates 2026",
+        "url": "https://www.skatteetaten.no/en/rates/national-insurance-contributions/",
+        "publisher": "Norwegian Tax Administration (Skatteetaten)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Minimum deduction (minstefradrag) not modelled in the brackets; effective tax is a little lower than the model for employees.",
+      "Minimum deduction (minstefradrag) is 46% of employment income, maximum NOK 95,700 and minimum NOK 4,000 (PwC); it is not in the brackets or the NOK 114,550 personal allowance, so employee tax is overstated at salaries above about NOK 208,000."
+    ]
+  },
+  "regimes": [],
+  "costs": {
+    "city": "Oslo",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 15989,
+        "currency": "NOK"
+      },
+      "year": 2026,
+      "description": "Average rent of a Norwegian '2-room' flat (one bedroom plus living room) on active contracts, Q2 2026, Hybel / Menon Economics. SSB Rental Market Survey gives NOK 15,260 for Oslo and Bærum.",
+      "source": {
+        "title": "Oslo rents (Hybel/Menon Economics, SSB)",
+        "url": "https://investropa.com/blogs/news/oslo-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 19954,
+        "currency": "NOK"
+      },
+      "year": 2026,
+      "description": "Average rent of a Norwegian '3-room' flat (about two bedrooms) on active contracts, Q2 2026, Hybel / Menon Economics. SSB gives NOK 19,030 for Oslo and Bærum.",
+      "source": {
+        "title": "Oslo rents (Hybel/Menon Economics, SSB)",
+        "url": "https://investropa.com/blogs/news/oslo-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Active-contract averages understate current asking rents, which can exceed NOK 20,000 for a 2-room flat in central areas."
+  },
+  "residence_routes": "EU/EEA citizens register their residence and may work. Third-country citizens (including US) need a skilled-worker or similar permit tied to an employer; Norway has no digital nomad visa (not verified on an official page).",
+  "open_questions": [
+    "No nomad visa or expat tax regime found. The standard deduction for foreign workers was abolished from 1 January 2019 (KPMG); the 25% PAYE source-tax scheme is for non-residents on temporary work only.",
+    "Residence routes not verified on UDI."
+  ]
+}

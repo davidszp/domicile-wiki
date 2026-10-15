@@ -1,0 +1,181 @@
+{
+  "id": "KIR",
+  "name": "Kiribati",
+  "continent": "Oceania",
+  "region": "Micronesia (Central Pacific)",
+  "currency": "AUD",
+  "researched_on": "2026-10-15",
+  "summary": "Kiribati (Income Tax Act 2023) taxes residents on worldwide income at up to 30% above AUD 30,000. Foreign dividends are property income at those rates with a foreign tax credit. Whether private capital gains on shares are taxed, and the rate of the final withholding on Kiribati dividends, were not found: both are left unknown. No inheritance, gift or wealth tax was found. Low confidence overall.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Residents taxed on worldwide income at 0/20/25/30%.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident: permanent home available in Kiribati, or 183 days' presence in any 12 months beginning or ending in the year (Income Tax Act 2023, per the 2023 return instructions).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Not established. The 2023 return instructions tax profits on disposal of business assets (other business income) and treat 'profits on disposal or surrender of a financial instrument' as interest; whether a private investor's gains on listed shares or real estate are taxable under the Income Tax Act 2023 was not found.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Individual income tax return and instructions 2023 (Income Tax Act 2023)",
+            "url": "https://tax.gov.ki/wp-content/uploads/2025/05/Individual-income-tax-return-and-instructions-2023.pdf",
+            "publisher": "Kiribati Tax Department, Ministry of Finance and Economic Development",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "headline_rate": null,
+        "rates": {
+          "listed_securities_domestic": null,
+          "listed_securities_foreign": null,
+          "private_business_sale": null,
+          "real_estate_local": null,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Unknown: the Income Tax Act 2023 text was not available online in this session; only the return instructions were read.",
+        "open_questions": [
+          "Obtain the Income Tax Act 2023 and check whether gains on capital assets (shares, land) of individuals are taxed and whether 'financial instrument' includes shares."
+        ]
+      },
+      "dividends": {
+        "summary": "Residents are taxed on income from all sources (return instructions, Question 19). Dividends are property income (Box 26A) taxed at resident rates: 0% to AUD 5,000, 20% to 15,000, 25% to 30,000, 30% above. Overseas tax on property income is credited separately (Q25). A dividend from a Kiribati resident company from which tax was withheld need not be returned (final withholding; rate not found).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Individual income tax return and instructions 2023 (Income Tax Act 2023)",
+            "url": "https://tax.gov.ki/wp-content/uploads/2025/05/Individual-income-tax-return-and-instructions-2023.pdf",
+            "publisher": "Kiribati Tax Department, Ministry of Finance and Economic Development",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "exemptions_thresholds": "Resident scale (2023 return): nil to AUD 5,000; 20% on 5,000-15,000; AUD 2,000 + 25% on 15,000-30,000; AUD 5,750 + 30% above 30,000. Non-residents 30% flat.",
+        "headline_rate": 0.3,
+        "domestic_rate": null,
+        "foreign_gross_rate": 0.3,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Foreign: top resident rate 30% before the foreign tax credit. Domestic: final withholding on Kiribati company dividends, rate not found (null).",
+        "withholding_outbound": "Not verified (MFED page links an 'International withholding tax on 30%' notice, not read).",
+        "treaty_network": "No comprehensive treaties found (not verified).",
+        "open_questions": [
+          "Rate of the final withholding tax on dividends from Kiribati resident companies.",
+          "2023 is the latest return form found; 2026 rates not confirmed."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax found; MFED lists income tax, business tax and VAT/GST as the taxes collected.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Taxation (Tarawa Tax Office)",
+            "url": "https://www.mfed.gov.ki/node/43",
+            "publisher": "Ministry of Finance and Economic Development, Kiribati",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Not researched.",
+        "open_questions": [
+          "No explicit official statement found."
+        ]
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax found; the Ministry of Finance lists income tax, business tax and VAT/GST as the taxes the Tarawa Tax Office administers.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Taxation (Tarawa Tax Office)",
+            "url": "https://www.mfed.gov.ki/node/43",
+            "publisher": "Ministry of Finance and Economic Development, Kiribati",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax found.",
+        "gifts_same_as_inheritance": true,
+        "open_questions": [
+          "No explicit official statement found; land tenure rules for foreigners not researched."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Income Tax Act 2023 (per the 2023 individual return instructions): resident if a permanent home is available in Kiribati, or present for periods adding up to 183 days in any 12-month period beginning or ending in the tax year, or a citizen official posted overseas. Residents are taxed on worldwide income.",
+    "routes": [
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Individual income tax return and instructions 2023 (Income Tax Act 2023)",
+        "url": "https://tax.gov.ki/wp-content/uploads/2025/05/Individual-income-tax-return-and-instructions-2023.pdf",
+        "publisher": "Kiribati Tax Department, Ministry of Finance and Economic Development",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": null,
+    "summary": "Company tax rate not verified in this session (a 2023 company return exists on tax.gov.ki but was not read).",
+    "sources": [
+      {
+        "title": "Taxation (Tarawa Tax Office)",
+        "url": "https://www.mfed.gov.ki/node/43",
+        "publisher": "Ministry of Finance and Economic Development, Kiribati",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "South Tarawa",
+    "notes": "Not sourced."
+  },
+  "markers": [
+    {
+      "name": "Tarawa (Bairiki)",
+      "lon": 172.97696,
+      "lat": 1.3278,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2110257"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. Where local tax on portfolio income is nil there is nothing to credit against US tax.",
+  "open_questions": [
+    "Kiribati capital gains treatment unknown; metric left null, so the jurisdiction cannot be fully scored."
+  ]
+}

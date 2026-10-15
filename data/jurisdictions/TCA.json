@@ -1,0 +1,239 @@
+{
+  "id": "TCA",
+  "name": "Turks and Caicos Islands",
+  "continent": "Caribbean",
+  "region": "Lucayan Archipelago (British Overseas Territory)",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "summary": "The Turks and Caicos Islands has no direct taxation of any kind: no income, capital gains, dividend, inheritance, estate, gift, wealth or annual property tax. The material cost is stamp duty on buying land (up to 10% of the whole price on Providenciales). Gifts of land to a spouse, parent or child are exempt from stamp duty. Permanent Residence Certificates are available by investment (USD 1 million real estate on Providenciales, USD 300,000 on the smaller islands) plus a USD 25,000 PRC fee.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary residence",
+      "type": "standard",
+      "description": "No direct taxes on individuals.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any lawful resident; non-belongers need a residence permit or Permanent Residence Certificate.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax.",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No direct taxation of any kind (Chambers Private Wealth 2025). All rates 0.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Chambers Private Wealth 2025: Turks and Caicos Islands (Coriats Trust Company)",
+            "url": "https://gpg-pdf.chambers.com/Private-Wealth-2025/547/",
+            "publisher": "Chambers and Partners",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "important_exceptions": "Stamp duty on land purchases (whole value, not marginal): Providenciales and other islands not listed below: 0% under USD 25,000, 6.5% USD 25,000-250,000, 8% USD 250,000-500,000, 10% above USD 500,000. Grand Turk, North, Middle and South Caicos and Salt Cay: 5% USD 25,000-100,000, 6.5% above. Charged on the higher of price and market value, paid by the purchaser within 30 days. Changes in beneficial ownership of land-holding companies are taxed (8% x share fraction x land value)."
+      },
+      "dividends": {
+        "summary": "No tax on dividends.",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No income tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Chambers Private Wealth 2025: Turks and Caicos Islands (Coriats Trust Company)",
+            "url": "https://gpg-pdf.chambers.com/Private-Wealth-2025/547/",
+            "publisher": "Chambers and Partners",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "withholding_outbound": "No withholding taxes on dividends paid by TCI companies (no direct taxation).",
+        "treaty_network": "No income tax treaties; US/EU source withholding on portfolio dividends is not reduced."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "No annual property tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Chambers Private Wealth 2025: Turks and Caicos Islands (Coriats Trust Company)",
+            "url": "https://gpg-pdf.chambers.com/Private-Wealth-2025/547/",
+            "publisher": "Chambers and Partners",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified"
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax (no direct taxation). No forced heirship.",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax. Gifts of land to (or in trust for) a spouse, parent or child are exempt from stamp duty; gifts to siblings, grandparents or grandchildren are exempt if the Permanent Secretary of Finance accepts there is no consideration.",
+        "gifts_same_as_inheritance": true,
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Chambers Private Wealth 2025: Turks and Caicos Islands (Coriats Trust Company)",
+            "url": "https://gpg-pdf.chambers.com/Private-Wealth-2025/547/",
+            "publisher": "Chambers and Partners",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "VisitTCI: Stamp Duty in the Turks and Caicos (editor review 1 June 2026)",
+            "url": "https://visittci.com/real-estate/buying-guide/stamp-duty",
+            "publisher": "Visit Turks and Caicos Islands",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Chambers Real Estate 2026: Turks and Caicos Islands (Dentons)",
+            "url": "https://gpg-pdf.chambers.com/Real-Estate-2026/669/",
+            "publisher": "Chambers and Partners",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Stamp duty on land passing on death (transmission/assent) and probate fees were not found; no primary source (Stamp Duty Ordinance schedule) could be opened. other_transfer_cost_rate is kept at 0 pending a source."
+        ],
+        "foreign_assets": "Not taxed.",
+        "domicile_rules": "No transfer taxes, so domicile is irrelevant locally."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No direct taxes, so tax residence has no local consequence.",
+    "routes": [
+      {
+        "name": "Permanent Residence Certificate by investment",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Real estate for own home: USD 1,000,000 on Providenciales and other islands, USD 300,000 on Grand Turk, Salt Cay, South, Middle or North Caicos (IMI Daily); business route USD 750,000 on the smaller islands (higher on Providenciales, amount unverified). Certificate of Undertaking via Invest Turks and Caicos, then PRC; USD 1,500 admin fee and USD 25,000 PRC fee (TCI Government flowchart). Thresholds come from a secondary source and the government flowchart is undated.",
+        "minimum_investment": {
+          "amount": 1000000,
+          "currency": "USD"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "TCI Government: Permanent Residence Certificate Application Process - Investment Routes (flowchart)",
+        "url": "https://citizenship.gov.tc/images/docs/PRC%20Application%20Process%20Investment%20Routes.pdf",
+        "publisher": "Turks and Caicos Islands Government",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "IMI Daily: Turks & Caicos Investor Visa (Permanent Residence Certificate)",
+        "url": "https://www.imidaily.com/program-updates/turks-caicos-investor-visa-program/",
+        "publisher": "IMI Daily",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.0,
+    "summary": "No corporate income tax or withholding taxes. Economic substance, CRS and FATCA reporting apply; beneficial ownership regime being expanded (Chambers 2025).",
+    "sources": [
+      {
+        "title": "Chambers Private Wealth 2025: Turks and Caicos Islands (Coriats Trust Company)",
+        "url": "https://gpg-pdf.chambers.com/Private-Wealth-2025/547/",
+        "publisher": "Chambers and Partners",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Providenciales",
+      "lon": -72.3004,
+      "lat": 21.8021,
+      "kind": "city",
+      "coordinate_source": "OpenStreetMap relation 7162570 (centroid)"
+    },
+    {
+      "name": "Cockburn Town",
+      "lon": -71.14,
+      "lat": 21.4608,
+      "kind": "capital",
+      "coordinate_source": "OpenStreetMap node 296255680"
+    }
+  ],
+  "us_citizen_notes": "US citizens stay subject to US federal tax on worldwide income, gains and estate; with no local income tax there is no local tax to credit, so the US layer applies in full. No income tax treaty with the US.",
+  "open_questions": [
+    "Whether Pillar Two / a domestic minimum top-up tax has been adopted (not found).",
+    "2026-27 budget tax measures not verified (Citizens' Guide PDF could not be read); no evidence of new direct taxes.",
+    "Homicide override not added: press reports (about 24 murders by mid-August 2025, 47-48 in 2024) are not an official full-year statistic.",
+    "Overall score: TCA has no WGI, CPI, HDI, LPI, learning-outcome or World Bank internet-use data. The TCI Department of Statistics crime-statistics page reads 'Information Coming Soon' (checked 15 Oct 2026) and no official internet-use percentage was found, so no indicator override is added. Even with a rent figure and an internet-use override, weighted data completeness would be about 0.598, still just below the 0.60 provisional threshold.",
+    "Prime rent rests on a single CENTURY 21 listing (USD 10,000 a month, Long Bay Hills); Turks & Caicos Sotheby's and Coldwell Banker TCI sites could not be read, so a broader sample is still needed."
+  ],
+  "cost_of_living": {
+    "city": "Providenciales",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 15039,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "British West Indies Collegiate (Providenciales, non-profit 11-18 school, Cambridge IGCSE/A level), Years 9-13 tuition from September 2026: USD 5,013 a term, 15,039 a year (4% discount for full-year advance payment). Plus a USD 500 annual textbook fee and USD 500 enrolment fee (not included).",
+      "source": {
+        "title": "British West Indies Collegiate: Tuition fees 2026-2027 (fee changes from September 2026)",
+        "url": "https://www.bwic.tc/wp-content/uploads/2026/06/bwic_2026_27-feechanges.pdf",
+        "publisher": "British West Indies Collegiate / TCI Education Foundation",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Purchase price per m2, health insurance and housekeeper not sourced. Other school fees from the school's Application and Fees page. CENTURY 21 rental page: https://century21tci.com/en/s/residential/for-rent",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 10000,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "The only 4-5 bedroom long-term rental on CENTURY 21 Turks & Caicos's Providenciales residential rental page on 15 Oct 2026 (3 rentals listed in all): The Haven at Long Bay Beach, Long Bay Hills, 4 bed / 4.5 bath, 2,500 sq ft, fully furnished, USD 10,000 a month, first and last month's rent plus a USD 10,000 deposit, available from 1 June 2026. A sample of one listing; the other two were a 3-bed house in Blue Mountain (USD 5,500) and a 2-bed townhome (USD 3,500). CENTURY 21 notes a shortage of rentals on Providenciales.",
+      "source": {
+        "title": "CENTURY 21 Turks & Caicos: The Haven at Long Bay Beach, home for rent (MLS 1160959)",
+        "url": "https://century21tci.com/en/d/the-haven-at-long-bay-beach-single-family-homes-for-rent-long-bay-hills-providenciales-1160959",
+        "publisher": "CENTURY 21 Turks & Caicos (Erishar Properties)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "BGR",
+  "name": "Bulgaria",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Flat 10% personal income tax on worldwide income of residents, with some exceptions. Employee contributions 10.58% social security plus 3.2% health (13.78% combined) on a maximum monthly insurance base of EUR 2,111.64 from 1 Jan to 31 Jul 2026 and EUR 2,300 from 1 Aug 2026; the recorded cap is the time-weighted annual figure (7 x 2,111.64 + 5 x 2,300 = EUR 26,281.48).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.1
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.1378,
+    "employee_social_security_cap": 26281.48,
+    "self_employed_social_security_rate": 0.278,
+    "self_employed_social_security_cap": 26281.48,
+    "self_employed_notes": "Freelancer insurance base: EUR 550.66 minimum (to 31 Jul) then EUR 620.20 (from 1 Aug), maximum as above. Rate: one secondary source gives 27.8% (31.3% with the optional illness and maternity fund) and elsewhere about 32-33%, so the recorded 27.8% is unverified. A 25% normative expense deduction for freelancers is commonly cited but was not confirmed in any opened source. PwC's other-taxes page (opened again 2026-10-15) gives freelancer minimum and maximum insurance bases but no freelancer contribution rate, and the NSSI site opened has none either.",
+    "social_security_deductible": 1,
+    "local_tax_note": "",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Bulgaria, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/bulgaria/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Bulgaria, other taxes",
+        "url": "https://taxsummaries.pwc.com/bulgaria/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Euro adoption and Bulgaria taxes (Innovires)",
+        "url": "https://innovires.com/tax-residency/blog/euro-adoption-bulgaria-taxes",
+        "publisher": "Innovires",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Bulgaria individual - deductions",
+        "url": "https://taxsummaries.pwc.com/bulgaria/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Freelancer contribution rate of 27.8% is from a consultancy source only (PwC and NSSI pages opened have no freelancer rate; 32-33% was also seen elsewhere).",
+      "25% normative expenses not confirmed."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "bgr_nomad_permit",
+      "name": "Digital nomad residence permit (Foreigners Act Art. 24s)",
+      "kind": "digital_nomad_visa",
+      "description": "Type D visa then one-year residence permit for third-country nationals who are remote employees, owners of more than 25% of a foreign company, or freelancers with at least one year of activity. Average annual gross income (the Act measures gross income) of at least 50 minimum monthly wages for the previous calendar year (EUR 27,533 on the 2025 wage; EUR 31,010 on the 2026 wage; practice unsettled). Work for Bulgarian clients prohibited; health insurance of at least EUR 30,000. Under 183 days and with the centre of vital interests abroad, remote income is generally not taxable in Bulgaria; a resident pays 10%.",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 27533,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_years": 2,
+      "duration_note": "1 year, renewable once; no path to permanent residence.",
+      "treatment": "standard",
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Digital Nomad Visa Bulgaria 2026 (Innovires)",
+          "url": "https://innovires.com/en/blog/digital-nomad-visa-bulgaria.html",
+          "publisher": "Innovires",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Source is a consultancy blog; rules apply from 20 Dec 2025.",
+        "The minimum wage basis (2025 vs 2026) is unsettled."
+      ],
+      "covers_local_work": null
+    }
+  ],
+  "costs": {
+    "city": "Sofia",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 600,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average monthly rent for a standard furnished 1-bedroom, about BGN 1,170 (typical EUR 500-950), weighted toward non-central stock, per Investropa as of June 2026 (updated 5 Oct 2026); sources Numbeo, Imoti.info, Properties.bg.",
+      "source": {
+        "title": "Sofia rents 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/sofia-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 780,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average monthly rent for a good non-luxury 2-bedroom, about BGN 1,530 (typical EUR 650-1,400), scaled from 1- and 3-bedroom benchmarks, per Investropa, June 2026.",
+      "source": {
+        "title": "Sofia rents 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/sofia-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Publisher's estimate, not official statistics; euro values as stated by the source."
+  },
+  "residence_routes": "EU citizens may live and work freely. US and other third-country remote workers can use the nomad permit; skilled employees need a work permit or EU Blue Card via a Bulgarian employer (not researched from an official page).",
+  "open_questions": [
+    "Official NRA/NSSI freelancer contribution rate.",
+    "Which minimum wage the Migration Directorate uses for the nomad threshold.",
+    "Rents are a publisher's estimate."
+  ]
+}

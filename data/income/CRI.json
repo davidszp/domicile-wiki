@@ -1,0 +1,187 @@
+{
+  "id": "CRI",
+  "name": "Costa Rica",
+  "currency": "CRC",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Territorial tax on Costa Rican-source income. Employment income is taxed monthly at 0% to CRC 918,000, then 10%, 15%, 20% and 25% above CRC 4,727,000 a month; self-employed income uses a separate annual scale starting above CRC 6,244,000. Employees pay about 10.84% to the CCSS and others.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 11016000,
+        "rate": 0.1
+      },
+      {
+        "from_amount": 16164000,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 28368000,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 56724000,
+        "rate": 0.25
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.1084,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.185,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Self-employed income (lucrative activities, annual net income): 0% to CRC 6,244,000; 10% to 8,329,000; 15% to 10,414,000; 20% to 20,872,000; 25% above (Deloitte 2026, Alegra). Social security for the self-employed ranges from 10.5% to 18.5% (Deloitte); 18.5% is shown as the upper bound for a USD 60,000 earner, but which tier applies depends on declared income and was not verified. Deductible expenses apply as for companies. PwC's employee share table (2026 to 2028) differs from Deloitte's 10.84%: PwC gives the worker share of the IVM pension as 4.33% from 2026 (CCSS health and Banco Popular come on top).",
+    "local_tax_note": "Brackets are the 2026 monthly employment scale (CRC 918,000 / 1,347,000 / 2,364,000 / 4,727,000, Decree 45333-H) multiplied by 12; tax on salary is withheld by the employer and there are small credits for spouse and children. Territorial: only Costa Rican-source income is taxed, no foreign tax relief. Employee contribution of 10.84% is Deloitte's figure for all employee deductions; PwC lists the IVM pension share separately (4.33% from 2026). No cap on contributions was found. No municipal income tax. PwC defines Costa Rican-source income as income derived from assets used, goods located or services rendered within Costa Rican territory, so pay for work done while living in Costa Rica is local-source income.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Costa Rica Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-costaricahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Costa Rica, Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/costa-rica/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Costa Rica, Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/costa-rica/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Alegra: Tramos de renta Costa Rica (2026, Decreto 45333-H)",
+        "url": "https://blog.alegra.com/costa-rica/tramos-de-renta/",
+        "publisher": "Alegra",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Teletica: tramos mensuales del impuesto de renta sobre salarios 2026",
+        "url": "https://www.teletica.com/nacional/esta-su-salario-entre-los-que-deberan-pagar-renta-desde-el-1o-de-enero-hacienda-bajo-el-monto-exento_399616",
+        "publisher": "Teletica",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Ley 7092 del Impuesto sobre la Renta (consolidated text)",
+        "url": "https://www.comex.go.cr/media/1894/ley_7092.pdf",
+        "publisher": "Ministerio de Comercio Exterior (COMEX) / Asamblea Legislativa",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Decree 45333-H and Hacienda's own tables were not opened; the 2026 employment scales come from two media/blog pages that agree with each other and with Deloitte's self-employed table. PwC still shows the 2025 self-employed table (exempt to CRC 4,094,000).",
+      "CCSS contribution ceilings and the self-employed tier for a USD 60,000 earner not found (the CCSS site could not be reached); 18.5% is the top of Deloitte's 10.5% to 18.5% range and is assumed to apply at that income.",
+      "Costa Rica: social_security_deductible = 0 for employees is read from Ley 7092 arts. 32-34 in a consolidated text that carries notes up to 2011-2020 (no Hacienda guidance found); payroll sites disagree (Alegra: gross salary; several calculators: net of CCSS). Self-employed (lucrative activities, Title I) may deduct expenses, but whether their own CCSS payments are deductible was not read."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "id": "digital_nomad_law_10008",
+      "name": "Law 10008 international remote worker and service provider visa",
+      "kind": "digital_nomad_visa",
+      "description": "Stay of up to one year, renewable once, for remote workers and service providers earning abroad. Income from abroad is exempt from Costa Rican income tax and the holder is not treated as tax resident; the exemption does not extend to family members.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 36000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": 2,
+      "duration_note": "USD 3,000 a month averaged over the last year for one person (USD 48,000 a year for a household of USD 4,000 a month, spouse income may be pooled). Renewal for a further year requires at least 180 days spent in Costa Rica in the first year. Health insurance with USD 50,000 minimum cover in Costa Rica is required.",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "CRIE: Digital nomad visa in Costa Rica (Law 10008)",
+          "url": "https://www.crie.cr/digital-nomad-visa-in-costa-rica/",
+          "publisher": "CRIE",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries: Costa Rica individual, taxes on personal income (source rule)",
+          "url": "https://taxsummaries.pwc.com/costa-rica/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "covers_local_work not established: PwC defines Costa Rican-source income as including services rendered within Costa Rican territory, so a remote worker's pay for work done in Costa Rica is local-source unless Law 10008 itself exempts it. The consultancy page says Law 10008 gives 'a full exemption from income tax', but the statute text (SINALEVI/Gaceta) could not be opened (script-only site) and Migracion's site returned 403. Left unset, so the regime is shown but not scored.",
+        "The source is an immigration consultancy page, not Migracion or the Gazette. Fees were not listed.",
+        "Whether CCSS contributions are due on a holder's foreign income is not stated.",
+        "A separate source in a search result reported a 180-day stay; this page describes up to one year renewable once."
+      ],
+      "covers_local_work": null
+    }
+  ],
+  "costs": {
+    "city": "San Jose (Escazu / Santa Ana)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 429539.58,
+        "currency": "CRC"
+      },
+      "year": 2026,
+      "description": "Numbeo average for a 1-bedroom apartment in the city centre of San Jose (range CRC 300,000 to 600,000); 546 entries from 38 contributors in the past 12 months, page updated 2 Oct 2026. Crowd-sourced; furnishing not stated; Escazu and Santa Ana are typically dearer.",
+      "source": {
+        "title": "Numbeo: Cost of living in San Jose, Costa Rica",
+        "url": "https://www.numbeo.com/cost-of-living/in/San-Jose-Costa-Rica",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 21 two-bedroom apartments in Escazu/Santa Ana/Lindora/Pozos/San Rafael and central San Jose (Sabana/Mata Redonda, Rohrmoser, Barrio Escalante, Carmen) among 64 listings read on the first 6 results pages of Encuentra24's apartments-for-rent category (3,450 listed nationally); range USD 900 to 4,500 (listings under USD 500 excluded); furnishing mixed.",
+      "source": {
+        "title": "Encuentra24 Costa Rica: apartments for rent (6 results pages)",
+        "url": "https://www.encuentra24.com/costa-rica-en/real-estate-for-rent-apartments",
+        "publisher": "Encuentra24",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "1-bed: Numbeo crowd-sourced average (CRC); Encuentra24's 17 comparable one-bed listings have a median asking rent of USD 1,100 (range 775 to 2,245), higher than Numbeo's CRC 429,540 (about USD 800). 2-bed: Encuentra24 listings in USD. Numbeo gives 3-bedroom city-centre CRC 881,110.67 (not used)."
+  },
+  "residence_routes": "Remote workers of any citizenship can use the Law 10008 visa (USD 3,000 a month, up to one year renewable once, USD 50,000 health cover). Employees of a Costa Rican employer need a work permit or residence (not researched here). The earlier repo research (data/jurisdictions/CRI.json) lists income- and investment-based residence categories (rentista, inversionista, pensionado) without verified thresholds. EU, US and other citizens use the same routes. US citizens remain taxable in the US on worldwide income; Costa Rican tax on Costa Rican-source income can be credited only where the US foreign tax credit rules allow.",
+  "open_questions": [
+    "Work-permit and rentista thresholds not verified.",
+    "2-bed rent is a median of asking prices from the first 6 pages (relevance order) of one portal."
+  ]
+}

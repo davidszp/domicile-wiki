@@ -1,0 +1,252 @@
+{
+  "id": "AND",
+  "name": "Andorra",
+  "continent": "Europe",
+  "region": "Southern Europe (Pyrenees), not an EU member (monetary agreement, uses EUR)",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "Personal income tax (IRPF) at a maximum 10%. Gains on listed or unlisted shares are exempt unless the seller (with family) held more than 25% in the prior 12 months, and even then exempt after 10 years of ownership; gains on investment fund units are exempt. Dividends from Andorran companies are exempt; foreign dividends are taxed at 10% with credit for foreign withholding (first EUR 3,000 of savings income exempt). No inheritance, gift or wealth tax. Andorran real estate gains fall under a separate real estate capital gains tax (1%-15%); foreign real estate gains are exempt after 10 years.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "IRPF (Llei 5/2014) on worldwide income: general rate 10%, with a 5% effective rate on the EUR 24,000-40,000 band delivered via a credit. Savings income base reduced by a EUR 3,000 allowance.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident if living in Andorra more than 183 days in the calendar year, or if the main centre of economic activities or interests is in Andorra, directly or indirectly. Requires an Andorran residence permit (see residency).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains on shares (listed or unlisted, Andorran or foreign) are exempt if the seller, together with related persons and family up to the third degree, did not hold more than 25% of the company in the 12 months before the sale; larger holdings are also exempt if owned for at least 10 years. Gains on units of any collective investment undertaking are exempt. Exemption excluded for shares of companies whose assets are 50%+ Andorran real estate. Taxable gains (e.g. a >25% stake held under 10 years, bonds) are taxed at up to 10%. Foreign real estate gains exempt after 10 years of ownership. Andorran real estate gains are subject to the separate Impost sobre les plusvàlues (1%-15%, rate depending on holding period), not IRPF.",
+        "exemptions_thresholds": "Holding <= 25% (12-month look-back, family aggregated): exempt. >25% held 10+ years: exempt. Funds: exempt. Foreign real estate held 10+ years: exempt. Andorran real estate held over 10 years: not integrated in the IRPF base.",
+        "important_exceptions": "Shares in Andorran property-rich companies (>=50% Andorran real estate) excluded from the exemption.",
+        "tax_year": "2025",
+        "sources": [
+          {
+            "title": "Guia pràctica de l'IRPF 2025",
+            "url": "https://www.govern.ad/documents/d/guest/guia_irpf",
+            "publisher": "Govern d'Andorra",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Impost sobre la renda de les persones físiques (IRPF) - e-tràmits",
+            "url": "https://www.e-tramits.ad/tramits/impostos/irpf",
+            "publisher": "Govern d'Andorra",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Altres impostos (ITP, plusvàlua)",
+            "url": "https://www.govern.ad/ca/tematiques/impostos-taxes-i-duana/impostos-en-andorra/altres-impostos",
+            "publisher": "Govern d'Andorra",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Guide is the 2025 edition; no 2026 change to these exemptions found, but 2026 edition not checked.",
+          "Plusvàlua rate schedule by holding period (1%-15%) and whether it reaches 0% for long holdings not verified; real_estate_local left null.",
+          "Taxation of gains on bonds (assumed taxable at 10%) not specifically checked."
+        ],
+        "headline_rate": 0.1,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": null,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Portfolio holdings (<25%) exempt. private_business_sale 0 assumes a >25% stake held 10+ years (10% if held less than 10 years). Foreign real estate 0 after 10 years (10% otherwise). Andorran real estate: separate plusvàlua tax, rate not verified for long holdings.",
+        "professional_trader": "Exemption applies to transfers of shares regardless of frequency per the guide; trading as a business activity would be business income at 10%.",
+        "holding_period_rules": "10 years for >25% stakes and for foreign real estate.",
+        "foreign_assets": "Same exemptions for foreign shares and funds."
+      },
+      "dividends": {
+        "summary": "Dividends from Andorran-resident companies (and Andorran funds) subject to Andorran corporate tax are exempt. Foreign dividends are taxable at 10% as savings income, with a deduction for international double taxation; the first EUR 3,000 of savings income is exempt. Withholding of 10% applies at Andorran banks by default.",
+        "exemptions_thresholds": "EUR 3,000 savings allowance.",
+        "tax_year": "2025",
+        "sources": [
+          {
+            "title": "Guia pràctica de l'IRPF 2025",
+            "url": "https://www.govern.ad/documents/d/guest/guia_irpf",
+            "publisher": "Govern d'Andorra",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.1,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.1,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "General IRPF rate 10% on foreign dividends; with typical 15% treaty WHT the credit (capped at Andorran tax) eliminates the Andorran tax, though Andorra has few treaties so non-treaty WHT often applies.",
+        "withholding_outbound": "Not researched (dividends paid to non-residents fall under the non-resident income tax).",
+        "treaty_network": "Small treaty network (around a dozen, mainly European: France, Spain, Portugal, Luxembourg, UAE etc.); no treaty with the US (count and list not verified)."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no levy on financial assets. Communes levy small property-related taxes; a vacant-dwelling tax of EUR 5.05/m2 applies to homes empty over 2 years.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Altres impostos",
+            "url": "https://www.govern.ad/ca/tematiques/impostos-taxes-i-duana/impostos-en-andorra/altres-impostos",
+            "publisher": "Govern d'Andorra",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "No official page explicitly states 'no wealth tax'; none is listed among state or communal taxes."
+        ],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Communal property tax (low); vacant dwellings tax EUR 5.05/m2. Property transfer tax (ITP) 4% on purchases."
+      },
+      "inheritance": {
+        "summary": "No inheritance or gift tax. Inheritances and donations are outside the IRPF; gains revealed on transfer at death are exempt; gifts of real estate between relatives up to the third degree are exempt from the real estate capital gains tax, and transfers of shares among relatives up to the third degree are exempt from the 4% ITP.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Impost sobre la renda de les persones físiques (IRPF) - e-tràmits",
+            "url": "https://www.e-tramits.ad/tramits/impostos/irpf",
+            "publisher": "Govern d'Andorra",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Altres impostos (ITP, plusvàlua)",
+            "url": "https://www.govern.ad/ca/tematiques/impostos-taxes-i-duana/impostos-en-andorra/altres-impostos",
+            "publisher": "Govern d'Andorra",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether ITP (4%) applies to an heir receiving Andorran real estate by inheritance was not confirmed (the exemption list mentions transfers of shares between relatives)."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Not needed.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "No tax.",
+        "domicile_rules": "Not relevant."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "More than 183 days in Andorra in the calendar year, or main centre of economic activities or interests in Andorra (directly or indirectly).",
+    "routes": [
+      {
+        "name": "Passive residence (residència sense activitat lucrativa)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Residence without work: minimum investment in Andorra plus a deposit with the Andorran Financial Authority, minimum 90 days a year in Andorra, health insurance. Amounts not verified in this research."
+      },
+      {
+        "name": "Active residence (work or own business)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Employment or self-employment in Andorra; quotas apply. Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Impost sobre la renda de les persones físiques (IRPF) - e-tràmits",
+        "url": "https://www.e-tramits.ad/tramits/impostos/irpf",
+        "publisher": "Govern d'Andorra",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.1,
+    "summary": "Corporate tax (IS) general rate 10%; Andorran collective investment institutions 0%. Special regimes for IP exploitation, holding companies, tax consolidation and accelerated depreciation.",
+    "sources": [
+      {
+        "title": "Impost sobre societats (IS) - e-tràmits",
+        "url": "https://www.e-tramits.ad/tramits/impostos/is",
+        "publisher": "Govern d'Andorra",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Andorra la Vella / Escaldes-Engordany",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 6500,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent of the 6 distinct houses (xalets/cases) with 4+ bedrooms listed for rent on Pisos.ad on 2026-10-15 (8 listings, two apparent duplicates removed): EUR 3,000 (Canillo), 3,500 (Pal), 5,000 (Aixirivall), 8,000 (Erts), 9,100 (Andorra la Vella), 10,000 (Encamp). Very small sample; asking rents.",
+      "source": {
+        "title": "Cases de lloguer a Andorra, 4+ habitacions",
+        "url": "https://www.pisos.ad/lloguer/cases/tots-subtipus?&minRooms=4&minBanys=0&maxRooms=0&maxBanys=0&minMetres=0&minPrice=0&maxPrice=0&reference=&caracteristiques=&order=&immo=0&parro=&promocions=False",
+        "publisher": "Pisos.ad",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 14150,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Agora Andorra International School (L'Aldosa, La Massana; Globeducate), IB Diploma Programme annual tuition 2026-27, paid in 10 instalments. Extra: EUR 1,100 one-time admission fee, EUR 435 annual place reservation, EUR 2,010 lunch. The school states prices exclude taxes.",
+      "source": {
+        "title": "Agora Andorra International School - School Fees 2026-2027",
+        "url": "https://andorra.agorainternationalschool.es/fs/resource-manager/view/2a6be333-c646-400d-b741-eb5a29b0a9c8",
+        "publisher": "Agora Andorra International School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent sample is very small (Andorra's rental market for large houses is thin). Purchase price, health insurance and housekeeper costs not sourced."
+  },
+  "markers": [
+    {
+      "name": "Andorra la Vella",
+      "lon": 1.52109,
+      "lat": 42.50779,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3041563"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain US-taxed on worldwide income. There is no US-Andorra income tax treaty (not verified). For non-US family members resident in Andorra, US-source dividends would bear the 30% non-treaty US withholding.",
+  "open_questions": [
+    "Passive residence investment/deposit amounts and any 2024-2026 changes (including reported measures on property purchases by non-residents) not verified; web search budget exhausted.",
+    "Plusvàlua (Andorran real estate gains) schedule not verified.",
+    "Treaty list not verified.",
+    "Rent based on only 6 listings; purchase price, health insurance and housekeeper costs not sourced."
+  ]
+}

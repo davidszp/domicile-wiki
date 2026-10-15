@@ -1,0 +1,312 @@
+{
+  "id": "ISL",
+  "name": "Iceland",
+  "continent": "Europe",
+  "region": "Northern Europe",
+  "currency": "ISK",
+  "researched_on": "2026-10-15",
+  "summary": "Moderate, simple regime: a flat 22% on capital gains and dividends, no wealth tax, and a flat 10% inheritance tax above a small per-estate allowance (ISK 6.79m in 2026). Advance inheritance during life is also 10% with no allowance. EEA member, so EU citizens can move freely; no investor visa.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Full tax liability on worldwide income; no special regime for wealthy new arrivals.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident after staying in Iceland more than 183 days in any 12-month period, from the arrival date.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains on shares and other investments are capital income taxed at a flat 22%. A combined ISK 300,000 annual allowance (per person) covers interest, dividends and listed-share gains. Gains on a residential home owned more than two years are exempt.",
+        "exemptions_thresholds": "ISK 300,000 per person (ISK 600,000 per couple) combined allowance for interest, dividends and gains on listed shares (2026). Residential property held over 2 years exempt.",
+        "important_exceptions": "No inflation indexation of gains. No exit tax on emigration was found; instead, former residents remain fully tax liable for 3 years after leaving unless they prove tax liability elsewhere.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Helstu tölur og prósentur 2026",
+            "url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/",
+            "publisher": "Skatturinn (Iceland Revenue and Customs)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Iceland - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/iceland/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Iceland - Individual - Residence",
+            "url": "https://taxsummaries.pwc.com/iceland/individual/residence",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Confirm whether gains on foreign listed shares fall within the ISK 300,000 allowance (only relevant for small amounts)."
+        ],
+        "headline_rate": 0.22,
+        "rates": {
+          "listed_securities_domestic": 0.22,
+          "listed_securities_foreign": 0.22,
+          "private_business_sale": 0.22,
+          "real_estate_local": 0.22,
+          "real_estate_foreign": 0.22
+        },
+        "rate_basis": "Flat 22% capital income tax (fjármagnstekjuskattur) on nominal gains; allowance negligible for large gains.",
+        "professional_trader": "Gains from business activity (including trading as a business) are taxed as business income at progressive rates up to 46.29% (2026 top bracket for individuals); passive investors stay at 22%.",
+        "holding_period_rules": "No holding-period relief for shares; residential property exempt after 2 years.",
+        "foreign_assets": "Residents are taxed on worldwide income; foreign tax credit under treaties."
+      },
+      "dividends": {
+        "summary": "Dividends are taxed at a flat 22% capital income tax, with foreign withholding credited under treaties.",
+        "exemptions_thresholds": "Shared ISK 300,000 per-person allowance (2026).",
+        "important_exceptions": "For a working owner of an unlisted company, Icelandic rules can recharacterise part of distributions as wages (higher rates) - check for a private business stake. 2026: leftover personal allowance can no longer be used against capital income tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Helstu tölur og prósentur 2026",
+            "url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/",
+            "publisher": "Skatturinn (Iceland Revenue and Customs)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Iceland - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/iceland/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Iceland - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/iceland/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Skattabreytingar á árinu 2026",
+            "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/23/Skattabreytingar-a-arinu-2026/",
+            "publisher": "Government of Iceland (Ministry of Finance and Economic Affairs)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Wage-recharacterisation rules for working shareholders of private companies not verified in detail."
+        ],
+        "headline_rate": 0.22,
+        "domestic_rate": 0.22,
+        "foreign_gross_rate": 0.22,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Flat 22% on gross dividends; foreign WHT credited up to the Icelandic tax.",
+        "withholding_outbound": "20% WHT on dividends to non-resident individuals and companies (PwC), reduced by treaty.",
+        "treaty_network": "Moderate: about 45 treaties in force (PwC table lists 47 entries, apparently counting Czechia twice); includes the US and all major EU states.",
+        "holding_company_notes": "CIT 20%; company-level participation relief exists but was not verified here; company tax kept separate."
+      },
+      "wealth_tax": {
+        "summary": "Iceland has no net wealth tax (the temporary wealth tax ended after 2014). Municipalities levy property tax on real estate, which is not a wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Iceland - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/iceland/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Municipal property tax on real estate; rates set by each municipality (not verified)."
+      },
+      "inheritance": {
+        "summary": "Inheritance tax of 10% on the estate's taxable base above ISK 6,789,790 (2026, per estate, shared among heirs by inheritance share). Advance inheritance (lifetime transfers to heirs) is taxed at 10% on the full value with no allowance.",
+        "exemptions_thresholds": "ISK 6,789,790 per estate (deaths in 2026; 2025: ISK 6,498,129), indexed to CPI. Surviving spouse exempt.",
+        "important_exceptions": "Parliamentary resolutions to abolish the tax have been tabled but not passed.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Helstu tölur og prósentur 2026",
+            "url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/",
+            "publisher": "Skatturinn (Iceland Revenue and Customs)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Skattabreytingar á árinu 2026",
+            "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/23/Skattabreytingar-a-arinu-2026/",
+            "publisher": "Government of Iceland (Ministry of Finance and Economic Affairs)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance tax (Erfðafjárskattur)",
+            "url": "https://island.is/en/erfdafjarskattur",
+            "publisher": "Island.is (Government of Iceland)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Prepaid inheritance",
+            "url": "https://island.is/en/prepaid-inheritance",
+            "publisher": "Island.is (Government of Iceland)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Iceland - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/iceland/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Whether ordinary gifts to children outside the advance-inheritance procedure are taxed as income of the recipient (likely) was not verified.",
+          "Scope for foreign assets of an Icelandic-domiciled deceased (worldwide presumed) not confirmed on an official page."
+        ],
+        "basis": "estate",
+        "children_treatment": "taxed",
+        "exemption": 6789790,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.1
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Advance inheritance to heirs is taxed at a flat 10% of the full value (no allowance, debts not deductible). Other gifts are not covered by inheritance tax and may be taxable income of the recipient (unverified).",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "None found.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Heirs are taxed on all valuables received when an estate is settled in Iceland; Icelandic real estate is taxed regardless of the deceased's residence.",
+        "domicile_rules": "Estates are settled where the deceased was domiciled; no citizenship-based tail found."
+      },
+      "sources": [
+        {
+          "title": "Iceland - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/iceland/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if staying more than 183 days in any 12-month period (or domiciled in Iceland). Former residents remain fully liable for 3 years after leaving unless they prove tax liability elsewhere.",
+    "routes": [
+      {
+        "name": "EEA free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "EU/EEA/Swiss citizens may live in Iceland and register with Registers Iceland."
+      },
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "No investor visa; non-EEA nationals need a permit on work, family or other grounds. Not verified in detail."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Iceland - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/iceland/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.2,
+    "summary": "CIT 20% (unchanged for 2026). Dividend WHT 20% to non-residents, reduced by treaty.",
+    "sources": [
+      {
+        "title": "Iceland - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/iceland/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Skattabreytingar á árinu 2026",
+        "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/23/Skattabreytingar-a-arinu-2026/",
+        "publisher": "Government of Iceland (Ministry of Finance and Economic Affairs)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Reykjavik",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 510000,
+        "currency": "ISK"
+      },
+      "year": 2026,
+      "description": "Median asking rent of the 8 capital-area listings (Reykjavík, Garðabær, Hafnarfjörður) with 4-5 bedrooms on the first results page of Igloo (myigloo.is) on 2026-10-15 (ISK 400,000-695,000; 57 listings nationwide with 4+ bedrooms). Large houses of 170-240 m² asked ISK 525,000-695,000.",
+      "source": {
+        "title": "Igloo - Íbúðir til leigu (4+ svefnherbergi)",
+        "url": "https://myigloo.is/listings?min_bedrooms=4",
+        "publisher": "Igloo (myigloo.is)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 110000,
+        "currency": "ISK"
+      },
+      "year": 2026,
+      "description": "Iceland's only IB Diploma programme is at Menntaskólinn við Hamrahlíð (MH), a public upper-secondary school with no tuition. Annual cost of the 2-year Diploma = MH fee ISK 15,000 per semester (ISK 30,000 a year) + IB exam and materials fees ISK 160,000 over the programme (ISK 80,000 a year), as on the school's fee page (updated 25.09.2026). The private International School of Iceland stops at Grade 10 and does not publish fees.",
+      "source": {
+        "title": "MH - IB school fee",
+        "url": "https://www.mh.is/is/ib-studies/for-applicants/ib-school-fee",
+        "publisher": "Menntaskólinn við Hamrahlíð",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Health insurance, housekeeper and price per m² not sourced. The school figure reflects a free public IB programme, which makes Reykjavik look cheap on schooling; there is no private international secondary school."
+  },
+  "markers": [
+    {
+      "name": "Reykjavik",
+      "lon": -21.89541,
+      "lat": 64.13548,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3413829"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain US-taxed; Iceland-US treaty (2007) applies with saving clause.",
+  "open_questions": [
+    "Cost-of-living items not sourced.",
+    "Gift taxation outside advance inheritance unverified."
+  ]
+}

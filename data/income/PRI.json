@@ -1,0 +1,162 @@
+{
+  "id": "PRI",
+  "name": "Puerto Rico",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Progressive Puerto Rico income tax of 0% to USD 9,000, then 7%, 14%, 25% and 33% above USD 61,500, with the total tax equal to 95% of the computed amount (92% for gross income up to USD 100,000). Employees pay US FICA of 7.65% (self-employed 15.3%).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 9000,
+        "rate": 0.07
+      },
+      {
+        "from_amount": 25000,
+        "rate": 0.14
+      },
+      {
+        "from_amount": 41500,
+        "rate": 0.25
+      },
+      {
+        "from_amount": 61500,
+        "rate": 0.33
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.0765,
+    "employee_social_security_cap": 184500,
+    "self_employed_social_security_rate": 0.153,
+    "self_employed_social_security_cap": 184500,
+    "self_employed_notes": "Deloitte gives the employee shares: OASDI 6.2% on wages up to USD 184,500 (2026) and Medicare 1.45% on all wages; the cap applies to the OASDI part only. The self-employed pay both shares: 12.4% + 2.9% = 15.3% (summed from Deloitte's employee and employer figures; the page does not state the self-employment rate directly).",
+    "local_tax_note": "Brackets are the nominal Puerto Rico schedule; the first USD 9,000 band reflects the personal exemption. The total tax is 95% of the regular tax (92% when gross income is up to USD 100,000), so the effective top marginal rate at USD 150,000 is about 31.35%; a 5% surtax applies above USD 500,000 of net taxable income and an alternate basic tax may apply. Residents are taxed on worldwide income; long-term capital gains 15%. No municipal income tax. The 95%/92% adjustment is not folded into the brackets.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Puerto Rico Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-puertoricohighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Puerto Rico Internal Revenue Code of 2011 (Act 1-2011, as amended; OGP text rev. 18 June 2026)",
+        "url": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/2-ingles/1-2011.pdf",
+        "publisher": "Oficina de Gerencia y Presupuesto, Puerto Rico",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "The 95%/92% adjustment factor is described by Deloitte as 'total tax equals 95% of the regular tax plus the surtax (92% for gross income up to USD 100,000)'; how it interacts with deductions and credits (and the alternate basic tax) was not researched, and it is not folded into the brackets (it lowers the modelled tax by 5% to 8%).",
+      "US citizens living in Puerto Rico also owe US federal tax on non-Puerto Rico-source income, and self-employment tax; see regimes.",
+      "Puerto Rico: social_security_deductible left null. The PR Internal Revenue Code (OGP text rev. 18 June 2026) lets an individual in trade or business deduct 50% of the federal self-employment tax (s. 1033.01(b)(3)), but no clear deduction for employee FICA was found in s. 1033.15(a); (a)(6) covers government retirement systems only, and the Hacienda booklet is silent. Employee FICA is likely not deductible (0) and half of SE tax is for the self-employed."
+    ],
+    "social_security_deductible": null
+  },
+  "regimes": [
+    {
+      "id": "act60_export_services",
+      "name": "Act 60 export services decree (4% fixed rate)",
+      "kind": "expat_regime",
+      "description": "A decree under Act 60-2019 (Chapter 3, export services) gives an operating business a 4% Puerto Rico income tax rate on eligible income from services performed in Puerto Rico for clients outside Puerto Rico (consulting, technology, marketing, R&D, financial and management services), with dividends from decree income to Puerto Rico resident owners exempt. The DDEC's Incentives Code brochure lists 'Export of services or goods from Puerto Rico to foreign markets' with a '4% income tax rate' and 100% income tax exemption on dividends; InCorp states the services must be performed in Puerto Rico for clients located outside it. The relief is therefore for work done while living and operating in Puerto Rico (covers_local_work true). It is granted to a business (often a one-person company), needs a bona fide office and substance, and does not change a salary earned as an ordinary employee.",
+      "eligible_citizenships": [
+        "US",
+        "EU",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 30,
+      "duration_note": "Decree term 15 years, renewable for another 15 if in compliance (InCorp). A 2% rate for the first five years for businesses with annual volume up to USD 3 million is also reported by InCorp but not verified.",
+      "treatment": "flat_rate",
+      "flat_rate": 0.04,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "InCorp: Puerto Rico Act 60 export services",
+          "url": "https://www.incorp.com/resources/knowledge-base/puerto-rico-act-60-export-services",
+          "publisher": "InCorp",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Taxes for Expats: Puerto Rico tax incentives under Act 60 (2026 guide)",
+          "url": "https://www.taxesforexpats.com/country-guides/pr/puerto-rico-tax-incentives.html",
+          "publisher": "Taxes for Expats",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Puerto Rico Incentives Code brochure (March 2025): Export Activities, 4% income tax rate",
+          "url": "https://docs.pr.gov/files/DDEC/Co%CC%81digo%20de%20Incentivos/Puerto%20Rico%27s%20Incentives%20Code%20Brochure%20_%20Ingl%C3%A9s%20Marzo%202025.pdf",
+          "publisher": "Puerto Rico Department of Economic Development and Commerce (DDEC)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "The DDEC brochure confirms the 4% rate and dividend exemption for export activities; the statutory text of Act 60 Chapter 3, the eligible-services list and the 15+15-year term were taken from the practitioner guide (InCorp) and not checked against the Act. Act 38-2026 reportedly rewrote the individual resident investor chapter but not the export services chapter.",
+        "Whether a freelance individual can qualify without incorporating, and any minimum owner salary, are not answered by the sources.",
+        "US citizens: a bona fide Puerto Rico resident (IRC 933 / 937 tests) generally excludes Puerto Rico-source income from US federal income tax, but self-employment tax (15.3%) still applies and US-source income, dividends and interest stay US-taxable. Green card holders are US taxpayers; EU and other non-US citizens need US immigration status to work in Puerto Rico. The IRS scrutinises residency claims."
+      ],
+      "covers_local_work": true
+    }
+  ],
+  "costs": {
+    "city": "San Juan (Condado / Dorado)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 2500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 3 single 1-bedroom units on Zillow's San Juan rentals first page: Isla Verde/Ocean Park (00913) USD 1,800, Condado (00907) USD 2,500 and 2,990; building 'from' prices excluded. Sample of three; furnishing not stated; Condado is the premium end.",
+      "source": {
+        "title": "Zillow: San Juan, PR rental listings (first results page, 41 of 498)",
+        "url": "https://www.zillow.com/san-juan-pr/rentals/",
+        "publisher": "Zillow",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 4000,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 5 single 2-bedroom units on Zillow's San Juan rentals first page: Condado (00907) USD 2,800, 4,000, 4,500 and 4,700, Old San Juan (00901) USD 3,775; building 'from' prices excluded. Sample of five; furnishing not stated; Condado is the premium end, so this overstates a typical San Juan rent.",
+      "source": {
+        "title": "Zillow: San Juan, PR rental listings (first results page, 41 of 498)",
+        "url": "https://www.zillow.com/san-juan-pr/rentals/",
+        "publisher": "Zillow",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Zillow's first results page for San Juan (41 of 498 rentals; many are building cards with 'from' prices, which were excluded). Numbeo (HTTP 429), Global Property Guide (HTTP 403), Apartments.com and RentCafe (403) and ClasificadosOnline (search-form only) could not be used. Residential medians outside Condado are far lower (single Hato Rey, Santurce and Rio Piedras units appear at USD 745 to 1,900), so treat these as the upper, expat-area end."
+  },
+  "residence_routes": "US citizens can move freely and work. Citizens of the EU and other countries need US immigration status (visa or green card) because Puerto Rico follows US immigration law; there is no remote-worker visa and no nomad tax regime. Act 60 does not give immigration rights. Act 60 export services decrees (4%) are for businesses serving clients outside Puerto Rico; the separate Individual Resident Investor decree concerns investment income, not earned income. US citizenship interaction: a US citizen who becomes a bona fide resident of Puerto Rico (presence, tax home and closer connection tests) excludes Puerto Rico-source income from US federal income tax (IRC 933), so Puerto Rico is the one place where moving lowers US tax; a salary for work done in Puerto Rico is Puerto Rico-source, but US-source income is not covered, Social Security and Medicare (or self-employment) tax still apply, and US estate and gift tax continues to apply to mainland-born citizens.",
+  "open_questions": [
+    "Rents rest on 8 listings from one results page, mostly Condado; low confidence.",
+    "Statutory text of Act 60 Chapter 3 and Act 38-2026 not checked.",
+    "Federal-tax interaction summarised from practitioner guides and the repo's earlier research (data/jurisdictions/PRI.json), not from IRS pages opened in this pass."
+  ]
+}

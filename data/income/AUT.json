@@ -1,0 +1,175 @@
+{
+  "id": "AUT",
+  "name": "Austria",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Austria taxes residents on worldwide income with seven brackets for 2026: 0% to EUR 13,539, then 20%, 30%, 40%, 48%, 50% above EUR 104,859 and 55% above EUR 1 million. There is no municipal income tax in Vienna. Employees pay 18.07% social insurance up to a monthly ceiling of EUR 6,930; the self-employed (GSVG) pay 18.5% pension, 6.8% health and 1.53% self-employed provision on income up to EUR 8,085 a month.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 13539,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 21992,
+        "rate": 0.3
+      },
+      {
+        "from_amount": 36458,
+        "rate": 0.4
+      },
+      {
+        "from_amount": 70365,
+        "rate": 0.48
+      },
+      {
+        "from_amount": 104859,
+        "rate": 0.5
+      },
+      {
+        "from_amount": 1000000,
+        "rate": 0.55
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.1807,
+    "employee_social_security_cap": 97020,
+    "self_employed_social_security_rate": 0.2683,
+    "self_employed_social_security_cap": 97020,
+    "self_employed_notes": "GSVG 2026 for Gewerbetreibende: pension 18.5% + health 6.8% + self-employed provision 1.53% = 26.83% of the contribution base (income-tax profit plus the contributions), plus accident insurance EUR 12.95 a month. Monthly maximum base EUR 8,085 (EUR 97,020 a year, contributions max EUR 2,182.17 a month); minimum base EUR 551.10 a month. Contributions are provisional until the final tax assessment. Free professions have different schemes.",
+    "local_tax_note": "No local income tax. Employee rate 18.07% = sickness 3.87 + unemployment 2.95 + pension 10.25 + miscellaneous 1.00 on the monthly ceiling EUR 6,930 (EUR 13,860 more on special payments, taxed at 17.07%). The 13th and 14th salary are taxed at 6% above an EUR 620 exemption (rates 6% to 55%), not at the scale above. Brackets are the PwC 2026 table.",
+    "sources": [
+      {
+        "title": "Austria - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/austria/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Austria - Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/austria/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Gewerbliche Sozialversicherungsbeiträge - Ausmaß (2026)",
+        "url": "https://www.wko.at/sozialversicherung/gewerbliche-sozialversicherungsbeitraege-ausmass",
+        "publisher": "WKO (Austrian Economic Chamber)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Voraussichtliche Werte in der Sozialversicherung 2026",
+        "url": "https://www.wko.at/sozialversicherung/voraussichtliche-werte-in-der-sozialversicherung-2026",
+        "publisher": "WKO (Austrian Economic Chamber)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Austria - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/austria/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "Employee ceiling shown as annual EUR 97,020 = EUR 6,930 x 14 payments; special payments are subject to a separate annual ceiling (EUR 13,860)."
+    ],
+    "social_security_deductible": 1,
+    "employment_deduction": {
+      "schedule": [
+        {
+          "from_amount": 0,
+          "rate": 0
+        }
+      ],
+      "base": 0,
+      "minimum": 132,
+      "maximum": null,
+      "note": "Standard allowance for employment income (Werbungskostenpauschale) of EUR 132. The 6% rate on the 13th/14th salary is not modelled.",
+      "source": {
+        "title": "PwC Worldwide Tax Summaries - Austria - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/austria/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "regimes": [
+    {
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_note": "Permit validity not stated on the opened page; extension must be applied for no earlier than three months before expiry.",
+      "flat_rate": null,
+      "exempt_share": null,
+      "open_questions": [
+        "No official source found for a separate nomad permit; a 'Digital Nomad' permit mentioned by third-party sites could not be confirmed."
+      ],
+      "id": "self_employed_permit",
+      "name": "Aufenthaltsbewilligung - Selbständiger (temporary self-employed permit)",
+      "kind": "other",
+      "description": "Austria has no dedicated digital nomad permit. The self-employed residence permit needs a contractual obligation to carry out a specific self-employed activity for a client in Austria for more than six months, plus passport, housing, full health insurance and proof of livelihood. It does not fit remote work for foreign clients. Tax treatment is ordinary.",
+      "treatment": "standard",
+      "social_security_applies": true,
+      "duration_years": null,
+      "sources": [
+        {
+          "title": "Aufenthaltsbewilligung - Selbständiger",
+          "url": "https://www.oesterreich.gv.at/de/themen/menschen_aus_anderen_staaten/aufenthalt/3/2/1/1/Seite.120118",
+          "publisher": "oesterreich.gv.at",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    }
+  ],
+  "costs": {
+    "city": "Vienna",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1158.25,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Numbeo average monthly rent for a 1-bedroom city-centre apartment, Vienna; crowd-sourced, 1495 entries from 243 contributors in the past 12 months, last updated 14 October 2026. Unfurnished/furnished not distinguished. Numbeo gives only 1-bedroom and 3-bedroom figures, so no 2-bedroom value is recorded.",
+      "source": {
+        "title": "Cost of living in Vienna (rent prices)",
+        "url": "https://www.numbeo.com/cost-of-living/in/Vienna",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": null,
+    "coworking_monthly": null,
+    "notes": "Numbeo commenters say central Vienna figures look low. ImmoScout24.at puts the Q1 2026 median asking rent in Vienna at EUR 22.41 per m2 (gross, all dwellings), which implies higher rents than Numbeo for new lettings; not converted into a monthly rent. Check pass 2026-10-15: no reachable source for a 2-bedroom rent (see dossier change log)."
+  },
+  "residence_routes": "EU/EEA and Swiss citizens move freely and register after three months. Non-EU nationals staying over six months need a residence title; there is no digital nomad permit. The temporary self-employed permit needs an Austrian client contract over six months. Skilled employees use the Rot-Weiß-Rot Card or EU Blue Card (salary thresholds not verified from an opened source).",
+  "open_questions": [
+    "Official 2026 Rot-Weiß-Rot Card and Blue Card salary minima not verified.",
+    "No source for a 2-bedroom rent in Vienna."
+  ]
+}

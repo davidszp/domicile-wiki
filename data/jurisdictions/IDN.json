@@ -1,0 +1,273 @@
+{
+  "id": "IDN",
+  "name": "Indonesia",
+  "continent": "Asia",
+  "region": "South-East Asia",
+  "currency": "IDR",
+  "researched_on": "2026-10-15",
+  "summary": "Indonesia taxes residents on worldwide income at up to 35%. That rate applies to gains on foreign shares and to foreign dividends, unless the reinvestment-in-Indonesia exemptions apply. Indonesian listed shares bear only a 0.1% tax on sale proceeds, and Indonesian dividends a 10% final tax. Foreign experts can be taxed only on Indonesian income for four years, but that needs qualifying work. There is no inheritance, gift or wealth tax. A golden visa exists for large investors (thresholds not verified).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Indonesian tax resident",
+      "type": "standard",
+      "description": "Worldwide taxation at 5%-35%; final taxes on IDX share sales, Indonesian dividends and Indonesian property.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if residing in Indonesia, present more than 183 days in any 12 months, or present in a year with intent to reside.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Residents are taxed on worldwide income. Capital gains are ordinary income at the progressive rates (5%-35%; 35% above IDR 5 billion), except sales of shares on the Indonesia Stock Exchange (0.1% final tax on proceeds) and transfers of land and buildings (2.5% final tax on the gross transfer value). Gains on foreign listed shares are therefore taxed at up to 35%, with a foreign tax credit.",
+        "exemptions_thresholds": "None for securities. Gains from mutual funds are exempt (PwC).",
+        "important_exceptions": "Foreign experts who become resident may elect to be taxed only on Indonesian-source income for their first four years (Omnibus Law; special regime, needs qualifying skills). Founder shares on IPO: optional 0.5% on listing value.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Indonesia - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Indonesia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Indonesia - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.35,
+        "rates": {
+          "listed_securities_domestic": 0.002,
+          "listed_securities_foreign": 0.35,
+          "private_business_sale": 0.35,
+          "real_estate_local": 0.05,
+          "real_estate_foreign": 0.35
+        },
+        "rate_basis": "Foreign shares, private company shares and foreign property: top progressive rate 35%. Proceeds-based final taxes converted to a rate on the gain assuming the gain is half of the proceeds: IDX shares 0.1% of proceeds -> 0.2% of the gain; Indonesian land and buildings 2.5% of gross value -> 5% of the gain.",
+        "professional_trader": "Trading as a business is taxed as business income at progressive rates; IDX sales remain under the 0.1% final tax.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Worldwide taxation with credit for foreign tax (per-country limit; not detailed by PwC)."
+      },
+      "dividends": {
+        "summary": "Dividends from Indonesian companies bear a 10% final tax, or none if the resident individual reinvests them in Indonesia within the prescribed period. Foreign dividends are taxed at the progressive rates up to 35% with credit for foreign tax, unless they qualify for the reinvestment exemption for foreign dividends introduced by the 2020/2021 tax laws (not verified).",
+        "important_exceptions": "Foreign dividends: exemption if invested in Indonesia within a set period (for listed foreign companies the dividend itself; for unlisted, at least 30% of after-tax profit) under the Omnibus/HPP amendments to Income Tax Law Art. 4(3) (general knowledge, not verified).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Indonesia - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Indonesia - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Indonesia - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Conditions of the foreign dividend reinvestment exemption were not read from the law or regulations."
+        ],
+        "headline_rate": 0.35,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.35,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: 10% final (0 if reinvested in Indonesia). Foreign: top progressive rate 35% before credit, assuming no reinvestment in Indonesia.",
+        "withholding_outbound": "20% WHT on dividends to non-residents, reducible by treaty (corporate summary; not opened).",
+        "treaty_network": "Around 70 treaties including the US and most EU states (count not verified; PwC treaty page opened).",
+        "holding_company_notes": "CIT 22%; foreign dividends received by Indonesian companies exempt if reinvested (not verified)."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Indonesia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "type": "none",
+        "property_tax_note": "Land and buildings tax (PBB) annually at up to 0.5% of the government-determined value; BPHTB acquisition duty up to 5% on purchases; 2.5% final tax for the seller."
+      },
+      "inheritance": {
+        "summary": "Indonesia has no inheritance, estate or gift tax. Property acquired by gift is exempt income for the recipient (PwC lists it as exempt; under the Income Tax Law the exclusion covers gifts between direct-line relatives of one degree), and undivided inheritances are not income. The heir pays land and building acquisition duty (BPHTB, up to 5% above a regional threshold that starts at IDR 300 million for inheritances) on Indonesian real estate.",
+        "important_exceptions": "BPHTB on inherited Indonesian property is not reflected in other_transfer_cost_rate because the family's estate is mostly securities; foreigners can hold only use rights (Hak Pakai) to land.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Indonesia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Indonesia - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax; gifts to children are excluded from the recipient's income. BPHTB up to 5% applies to transfers of Indonesian land and buildings, including by gift and inheritance.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "No tax.",
+        "domicile_rules": "Not applicable."
+      }
+    },
+    {
+      "id": "foreign_expert_territorial",
+      "name": "Foreign expert: Indonesian-source taxation (4 years)",
+      "type": "special",
+      "description": "Foreigners who become resident and meet skill requirements are taxed only on Indonesian-source income for their first four years of residence.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Foreign national who becomes tax resident and has qualifying expertise/skills (implemented by regulation; requires work in Indonesia). Not available where a treaty is used for foreign income.",
+      "duration_years": 4,
+      "requires_qualifying_activity": true,
+      "capital_gains": {
+        "summary": "Foreign gains are not taxed for the first four years; Indonesian gains as standard.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Indonesia - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.35,
+        "rates": {
+          "listed_securities_domestic": 0.002,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.35,
+          "real_estate_local": 0.05,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Foreign-source gains 0; Indonesian-source as standard."
+      },
+      "dividends": {
+        "summary": "Foreign dividends are not taxed for the first four years; Indonesian dividends 10% final as standard.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Indonesia - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/indonesia/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.1,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Foreign-source dividends 0; domestic 10% final."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if residing in Indonesia, present more than 183 days in any 12-month period, or present during a fiscal year with intent to reside. Treaty tie-breakers apply.",
+    "routes": [
+      {
+        "name": "Golden Visa (investor) and other KITAS/KITAP permits",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Indonesia introduced a golden visa for investors in 2023 with 5- and 10-year terms and investment thresholds in company investment or government bonds (amounts not verified). Retirement and second-home visas also exist (not researched)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Indonesia - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/indonesia/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.22,
+    "summary": "22% flat CIT; 19% for listed companies meeting a 40% free-float test; small-business reductions. Worldwide taxation of resident companies.",
+    "special_zones": "Special Economic Zones and tax holidays for pioneer industries (not researched).",
+    "sources": [
+      {
+        "title": "Indonesia - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/indonesia/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Jakarta",
+      "lon": 106.84513,
+      "lat": -6.21462,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 1642911"
+    }
+  ],
+  "us_citizen_notes": "US citizens pay US tax on top; the Indonesia-US treaty (1988) gives credits.",
+  "open_questions": [
+    "Only PwC was opened; Income Tax Law (as amended by the Omnibus Law and the HPP Law) not read.",
+    "Golden visa investment thresholds not verified."
+  ]
+}

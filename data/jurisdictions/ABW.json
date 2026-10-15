@@ -1,0 +1,221 @@
+{
+  "id": "ABW",
+  "name": "Aruba",
+  "continent": "Caribbean",
+  "region": "Leeward Antilles (Kingdom of the Netherlands)",
+  "currency": "AWG",
+  "researched_on": "2026-10-15",
+  "summary": "Aruba taxes residents on worldwide income (top rate 52%). Portfolio capital gains are exempt, but dividends and substantial-interest gains are taxed at a special 25% rate. There is no inheritance, gift or wealth tax. Interest on bank deposits is exempt. No wealthy-immigrant regime was verified.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Worldwide taxation at progressive rates up to 52%. Dividends and gains on a substantial interest (25%+) are taxed at a special 25% rate; other capital gains are exempt. No inheritance or wealth tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Facts and circumstances (centre of existence in Aruba). Non-Dutch nationals need a residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains are exempt, except gains on a substantial interest (25%+ alone or with close relatives, at any time in the last 5 years), taxed at 25%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Aruba Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-arubahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "BDO Aruba: Personal income tax (law effective 1 January 2026)",
+            "url": "https://www.bdoaruba.com/en-gb/tax-system-aruba/tax-system-aruba/personal-income-tax",
+            "publisher": "BDO Aruba",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.25,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.25,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Deloitte Aruba 2026 and BDO (law effective 1 Jan 2026): special 25% rate on substantial-interest gains.",
+        "important_exceptions": "Deemed sale of a substantial interest on emigration, or on death where heirs are non-residents, taxed at 25%. Shareholder loans above AWG 500,000 to a substantial shareholder are disguised dividends from 2025. Real estate transfer tax 3%/6% (buyer)."
+      },
+      "dividends": {
+        "summary": "Dividends are taxed at the special 25% rate (BDO). A 10% dividend withholding applies to dividends paid to individuals. The temporary 10% reduced rate applied only to dividends distributed 2019-2023.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "BDO Aruba: Personal income tax (law effective 1 January 2026)",
+            "url": "https://www.bdoaruba.com/en-gb/tax-system-aruba/tax-system-aruba/personal-income-tax",
+            "publisher": "BDO Aruba",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Aruba Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-arubahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.25,
+        "domestic_rate": 0.25,
+        "foreign_gross_rate": 0.25,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "BDO lists dividends among income taxed at the special 25% rate; Deloitte: foreign tax creditable up to the Aruban tax on that income.",
+        "withholding_outbound": "10% on dividends (5% to companies within the Kingdom of the Netherlands; 0% under the IPC regime until 2027). No WHT on interest or royalties.",
+        "treaty_network": "Tax Arrangement for the Kingdom of the Netherlands; very limited treaty network otherwise.",
+        "important_exceptions": "Interest on deposits with supervised institutions in Aruba or abroad is exempt (BDO).",
+        "open_questions": [
+          "Whether portfolio dividends (holding below 25%) fall under the 25% special rate or the progressive rates up to 52%; BDO describes 'dividends' generally under 25%."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Aruba Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-arubahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Land tax for residents 0% to 0.6% by aggregate value bands; 0.6% for non-residents."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. Deloitte states inherited real property is not subject to transfer tax (though its transfer-tax paragraph also mentions acquisitions under succession).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Aruba Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-arubahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax; donations of Aruban real estate may attract transfer tax (3%/6%).",
+        "gifts_same_as_inheritance": false,
+        "important_exceptions": "Income tax: deemed disposal of a substantial interest at death if heirs are non-resident (25%).",
+        "open_questions": [
+          "Deloitte's transfer-tax text is internally inconsistent on inheritances of real estate."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Centre of existence in Aruba (facts and circumstances).",
+    "routes": [
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Dutch nationals have privileged admission; others need a permit. Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Aruba Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-arubahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.22,
+    "summary": "CIT 22%; participation exemption; IPC regime (10% profit tax, 0% WHT) abolished for financial years starting from 1 Jan 2026 (BDO).",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Aruba Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-arubahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Oranjestad (Eagle Beach / Palm Beach / Noord)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 3500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median of the five 4- and 5-bedroom houses on RE/MAX Aruba's residential rental page on 15 Oct 2026 (mostly recently rented): Ponton 24-a, Eagle Beach, 5 bed, USD 3,600; Wayaca 275, 4 bed, USD 3,596; Constantijn Huygenstraat villa, Oranjestad, 4 bed, USD 3,500; Monte Verde, 4 bed, USD 2,416; Tamarijn, 4 bed, USD 2,360. CENTURY 21 Aruba listed a 4-bedroom Westpunt home at USD 4,000 the same day.",
+      "source": {
+        "title": "RE/MAX Aruba: residential rentals",
+        "url": "https://remaxaruba.com/property/residential-rental",
+        "publisher": "RE/MAX Aruba",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Price per m2, health insurance and housekeeper not sourced. CENTURY 21 Aruba rentals: https://century21aruba.com/en/s/for-rent/single-family-homes",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 39755,
+        "currency": "AWG"
+      },
+      "year": 2025,
+      "description": "International School of Aruba (US-curriculum, the island's only English-language international school), Secondary School Grades 9-12 annual tuition, as shown on the school's admissions page in the Wayback Machine snapshot of 12 Jan 2026 (school year 2025-26; the page states no year): AWG 39,755 (USD 22,460); Grades 7-8 AWG 34,324. Plus a Capital Levy Fee of AWG 14,000 (USD 7,910) a year for new students and a AWG 375 application fee; 5% surcharge for monthly payment. ISA announced in March 2026 it would close after 2025-26; Quality Schools International took over management from 1 July 2026 and as QSI International School of Aruba publishes no 2026-27 tuition, only a USD 600 registration fee.",
+      "source": {
+        "title": "International School of Aruba: Admissions (tuition and fees), Wayback Machine snapshot 12 Jan 2026",
+        "url": "https://web.archive.org/web/20260112210400/https://www.isaruba.com/admissions",
+        "publisher": "International School of Aruba (archived by the Internet Archive)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "Oranjestad",
+      "lon": -70.03583333,
+      "lat": 12.51861111,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q131243 (via en.wikipedia)"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets; the app adds the federal layer. Local tax can generally be credited against US tax on the same foreign-source income only where the US foreign tax credit rules allow.",
+  "open_questions": [
+    "Any pensioner/investor tax regime for new residents not verified.",
+    "Portfolio dividend rate (25% vs progressive) to confirm."
+  ]
+}

@@ -1,0 +1,27 @@
+[project]
+name = "domicile"
+license = "AGPL-3.0-or-later"
+version = "0.1.0"
+description = "domicile.wiki: open, source-linked map of where to live for family offices, expats and digital nomads (data pipeline, scoring, validation)"
+authors = [{ name = "david s", email = "15107452+davidszp@users.noreply.github.com" }]
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic>=2.9",
+    "shapely>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "playwright>=1.64.0",
+    "pytest>=8",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

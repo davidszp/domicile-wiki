@@ -1,0 +1,273 @@
+{
+  "id": "QAT",
+  "name": "Qatar",
+  "continent": "Middle East",
+  "region": "Gulf (GCC)",
+  "currency": "QAR",
+  "researched_on": "2026-10-15",
+  "summary": "Territorial system with no tax on employment income and no tax on capital gains, dividends, interest or rent for individuals who do not carry on a taxable business activity in Qatar. Gains on Qatari real estate and securities are exempt for residents unless part of a taxable activity (non-residents pay 10% on Qatar-source gains). No inheritance, gift or wealth tax; no VAT yet (a draft VAT law has been approved by the Cabinet but not published). Corporate tax 10% on foreign-owned profits; 15% DMTT/IIR for large MNEs from 2025. About 83 treaties, none with the US. Property purchase of QAR 3.65m+ in designated areas gives permanent-residency benefits.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Qatar tax residence",
+      "type": "standard",
+      "description": "No tax on individuals' investment income or gains; territorial system.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any legal resident; no special status required.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax for resident individuals on real estate or securities not held as part of a taxable activity in Qatar.",
+        "exemptions_thresholds": "",
+        "important_exceptions": "Non-residents are taxed at 10% on Qatar-source capital gains. A capital gains return is due within 30 days of a sale where tax applies. A business 'activity' is broadly defined (including exploitation of movable or immovable property), so an individual running a Qatar business could be taxed at 10% on its income.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Qatar - Individual - Taxes on personal income (last reviewed 17 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/qatar/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Qatar - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/qatar/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Qatar income tax is territorial; PwC: gains on disposal of real estate and securities are exempt unless part of a taxable activity. Foreign gains are outside the territorial scope.",
+        "professional_trader": "An individual whose dealing amounts to a taxable 'activity' in Qatar would be taxed at 10% on that Qatar-source business income; passive portfolio investment is not taxed.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Foreign-source gains are outside the territorial scope."
+      },
+      "dividends": {
+        "summary": "No tax on dividends for individuals: dividends from profits already taxed in Qatar or from exempt companies are not taxable, and foreign dividends are outside the territorial scope.",
+        "important_exceptions": "",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Qatar - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/qatar/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Qatar - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/qatar/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Territorial system; PwC income determination: dividends not taxable if paid from taxed or exempt profits; bank interest not taxable for individuals without a taxable activity.",
+        "withholding_outbound": "No WHT on dividends paid by Qatari companies.",
+        "treaty_network": "About 83 treaties listed by PwC; no treaty with the United States, so US dividends held directly bear 30% US WHT.",
+        "holding_company_notes": ""
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Qatar - Individual - Other taxes (last reviewed 17 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/qatar/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "No property tax. Owners pay registration fees on property transfers and landlords pay lease registration fees (rates not verified)."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax.",
+        "exemptions_thresholds": "No tax, so no thresholds.",
+        "important_exceptions": "Succession, not tax, is the issue: personal status (family) law based on Sharia governs inheritance of Muslims, with fixed shares (a son typically takes twice a daughter's share) and at most one third freely disposable by will to non-heirs. How estates of non-Muslim foreigners are handled (home-country law, own religious rules, or Sharia by default) was not verified for this country; non-Muslim families should take local legal advice and hold portfolio assets outside the country or through a structure with a clear governing law.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Qatar - Individual - Other taxes (last reviewed 17 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/qatar/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Treatment of non-Muslim foreigners' estates under Qatari family law (Law 22/2006) not verified."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Not needed (no tax).",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "No tax on any asset, local or foreign.",
+        "domicile_rules": "Not relevant for tax."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Qatar Tax Law (amended by Law 11/2022): resident if the individual has a permanent home in Qatar, or lives in Qatar more than 183 days (continuous or not) in a year, or is a Qatari national. Residence matters little for individuals because tax is territorial and investment income is untaxed.",
+    "routes": [
+      {
+        "name": "Property-owner permanent residency benefits (first class)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Purchase of property worth at least QAR 3,650,000 (about USD 1m) in designated areas gives permanent-residency benefits including health, education and investment rights (Aqarat).",
+        "minimum_investment": {
+          "amount": 3650000,
+          "currency": "QAR"
+        }
+      },
+      {
+        "name": "Property-owner residency (second class)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Purchase of property worth at least QAR 730,000 (about USD 200,000) gives residency tied to the property (Aqarat).",
+        "minimum_investment": {
+          "amount": 730000,
+          "currency": "QAR"
+        }
+      },
+      {
+        "name": "Employment / company residence",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Residence permit through an employer or a company (e.g. Qatar Financial Centre entity)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Qatar - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/qatar/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Own real estate - Investor's journey (residency for property owners)",
+        "url": "https://www.aqarat.gov.qa/en/investors-journey/own-real-estate/",
+        "publisher": "Real Estate Regulatory Authority (Aqarat), Qatar",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.1,
+    "summary": "Flat 10% CIT on Qatar-source profits of foreign-owned entities; entities wholly owned by Qatari and resident GCC nationals currently pay no CIT; oil operations at least 35%. DMTT and IIR (Pillar Two) apply for fiscal years from 1 January 2025; no UTPR. No WHT on dividends.",
+    "special_zones": "Qatar Financial Centre (QFC) and Qatar Free Zones have separate regimes (not verified in this pass).",
+    "sources": [
+      {
+        "title": "Qatar - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/qatar/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Qatar - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/qatar/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Doha",
+      "lon": 51.53096,
+      "lat": 25.28545,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 290030"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed; no Qatar-US income tax treaty.",
+  "open_questions": [
+    "Property registration fee rates not verified.",
+    "VAT introduction date unknown (draft law approved, not published)."
+  ],
+  "cost_of_living": {
+    "city": "Doha",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 29700,
+        "currency": "QAR"
+      },
+      "year": 2026,
+      "description": "Median monthly asking rent of 18 four- and five-bedroom villas on The Pearl (Giardino, Floresta Gardens, Abraj Bay, Viva Bahriya) shown on page 1 of Property Finder's 'villas for rent - The Pearl' results on 15 Oct 2026 (range QAR 23,000-41,000, one QAR 110,000 outlier). Asking prices, not contract rents.",
+      "source": {
+        "title": "Villas for rent in The Pearl Island, Doha",
+        "url": "https://www.propertyfinder.qa/en/rent/doha/villas-for-rent-the-pearl-island.html",
+        "publisher": "Property Finder Qatar",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 66053,
+        "currency": "QAR"
+      },
+      "year": 2026,
+      "description": "Sherborne Qatar (British independent school), Senior School Years 11-13 annual tuition 2026/27 (Years 7-10: QAR 61,196); one-off registration QAR 2,804 and seat reservation QAR 2,000.",
+      "source": {
+        "title": "Sherborne Qatar - School fees 2026/27",
+        "url": "https://www.sherborneqatar.org/admissions/school-fees",
+        "publisher": "Sherborne Qatar",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Doha College's fee page refused access (403). Purchase prices, health insurance and housekeeper costs not sourced."
+  }
+}

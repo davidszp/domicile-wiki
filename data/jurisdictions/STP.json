@@ -1,0 +1,203 @@
+{
+  "id": "STP",
+  "name": "São Tomé and Príncipe",
+  "continent": "Africa",
+  "region": "Middle Africa (Gulf of Guinea)",
+  "currency": "STN",
+  "researched_on": "2026-10-15",
+  "summary": "São Tomé and Príncipe taxes residents on worldwide income. Capital gains and investment income of individuals are subject to a final 15% tax unless aggregated with other income (progressive up to 30%), so foreign portfolio gains and dividends are taxed at about 15%. Inheritances and gifts to children are taxed at 5% of the value received. No wealth tax was identified. The only source found is EY's guides, which conflict on the dividend rate (15% vs 20%), and a 20% special surtax from 2023 may reach large incomes; confidence is low.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "São Toméan tax resident",
+      "type": "standard",
+      "description": "Worldwide PIT; 15% final tax on investment income and capital gains; 5% inheritance and gift tax for children.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if present more than 180 days in a calendar year, having a home available at 31 December that is presumed to be kept as a permanent residence, or having the core of business or economic interests in STP. Non-citizens need a yearly residence visa.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains of individuals (Category D) are taxed under the PIT Code. Unless the taxpayer elects to aggregate them with other income (progressive rates up to 30%), the gross gain is subject to a final 15% tax. Residents are taxed on worldwide income, so gains on foreign securities are in scope.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "EY Worldwide Personal Tax and Immigration Guide 2025-26 (March 2026 edition)",
+            "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/tax-guides/documents/ey-gl-worldwide-personal-immigration-tax-guide-03-2026.pdf",
+            "publisher": "EY",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "exemptions_thresholds": "No allowance for Category D gains other than small lottery prizes. Gain = proceeds less historical acquisition value (no indexation for individuals per EY).",
+        "important_exceptions": "In 2023 a Special Personal Income Tax (IERS) of 20% was introduced on disposable income above STD 50,000 a month (EY; the currency unit and whether it reaches investment income are unclear). If it applies to capital income, the rate on large gains and dividends would be higher than scored. Companies pay 25% on gains as business income. Business-related gains of individuals fall into Category B at progressive rates.",
+        "headline_rate": 0.15,
+        "rates": {
+          "listed_securities_domestic": 0.15,
+          "listed_securities_foreign": 0.15,
+          "private_business_sale": 0.15,
+          "real_estate_local": 0.15,
+          "real_estate_foreign": 0.15
+        },
+        "rate_basis": "15% final rate on Category D gains (EY 2026 personal guide); aggregation at up to 30% is optional and would be chosen only if cheaper. The possible 20% IERS surtax is not included.",
+        "professional_trader": "Gains from a business or professional activity are Category B income taxed at progressive rates up to 30%.",
+        "holding_period_rules": "None identified.",
+        "foreign_assets": "Worldwide taxation of residents; double tax relief is a deduction listed in the PIT Code (mechanics not verified).",
+        "open_questions": [
+          "How a resident declares and pays the 15% tax on foreign gains with no local withholding agent was not verified.",
+          "Scope of the 20% IERS (2023) for investment income not verified."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends are investment income (Category C). The EY personal guide states that the gross amount of Category C income is subject to a final 15% withholding tax unless the individual elects aggregation; it also states that only 50% of Category C income is taxable. EY's corporate guide gives a 20% WHT on dividends paid to residents. Scored at 15% for both domestic and foreign dividends.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "EY Worldwide Personal Tax and Immigration Guide 2025-26 (March 2026 edition)",
+            "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/tax-guides/documents/ey-gl-worldwide-personal-immigration-tax-guide-03-2026.pdf",
+            "publisher": "EY",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "EY Worldwide Corporate Tax Guide 2025 (October 2025 edition)",
+            "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/tax-guides/documents/ey-worldwide-corporate-tax-guide-10-2025.pdf",
+            "publisher": "EY",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "exemptions_thresholds": "50% of Category C income taxable under aggregation (EY).",
+        "important_exceptions": "Conflicting professional figures (15% final for individuals vs 20% dividend WHT). In 2023 a Special Personal Income Tax (IERS) of 20% was introduced on disposable income above STD 50,000 a month (EY; the currency unit and whether it reaches investment income are unclear). If it applies to capital income, the rate on large gains and dividends would be higher than scored.",
+        "headline_rate": 0.15,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.15,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "15% final rate on the gross dividend (EY personal guide). If the corporate guide's 20% WHT applies to individuals, the domestic rate would be 0.20. Foreign dividends assumed at the same 15% rate with credit for foreign tax (double tax relief listed among PIT Code deductions; not verified).",
+        "withholding_outbound": "20% on dividends paid to residents and non-residents (EY corporate guide).",
+        "treaty_network": "Two treaties: Portugal (2017) and Cape Verde (2021). No US treaty, so US dividends bear 30% US WHT.",
+        "holding_company_notes": "25% CIT; participation exemption for domestic dividends (100% with 20% holding for one year, otherwise 50%). Not modelled.",
+        "open_questions": [
+          "Which rate applies to dividends received by resident individuals (15% final, 20% WHT, or 50% inclusion at progressive rates) needs confirmation from the PIT Code."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax is mentioned in EY's 2026 guide, which lists PIT, inheritance and gift tax and social security for individuals.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "EY Worldwide Personal Tax and Immigration Guide 2025-26 (March 2026 edition)",
+            "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/tax-guides/documents/ey-gl-worldwide-personal-immigration-tax-guide-03-2026.pdf",
+            "publisher": "EY",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "type": "none",
+        "property_tax_note": "Property taxes not researched.",
+        "open_questions": [
+          "No source explicitly confirms the absence of a wealth tax or describes property taxes."
+        ]
+      },
+      "inheritance": {
+        "summary": "Inheritance and gift tax is charged on the beneficiary at 5% for lineal descendants, ascendants and the spouse (10% siblings, 15% others), on the net market value of the assets received. Gifts are taxed at the same rates.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "EY Worldwide Personal Tax and Immigration Guide 2025-26 (March 2026 edition)",
+            "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/tax-guides/documents/ey-gl-worldwide-personal-immigration-tax-guide-03-2026.pdf",
+            "publisher": "EY",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "exemptions_thresholds": "Under certain conditions an amount equal to 1,000 national minimum monthly salaries (minimum wage STN 2,500 in 2025, so about STN 2.5 million) is deducted from the taxable amount; not applied in the JSON because the conditions are unknown. Pensions and death grants, and charitable donations, are outside the tax.",
+        "important_exceptions": "Territorial scope (whether foreign assets of a resident decedent or donor are taxed) was not stated by EY.",
+        "basis": "beneficiary",
+        "children_treatment": "taxed_low",
+        "exemption": 0,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.05
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "scope": "worldwide",
+        "gift_tax": "Same 5% rate for gifts to children.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "Not stated; scored as worldwide (conservative).",
+        "domicile_rules": "Not researched.",
+        "open_questions": [
+          "Whether foreign-situs assets are taxed and the conditions for the 1,000-minimum-salaries deduction are unverified."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if any applies: more than 180 days in STP in a calendar year (with or without interruption); a residence available on 31 December presumed to be kept as a permanent residence; the core of business, professional or economic interests in STP; diplomatic staff or crew of STP-operated vessels/aircraft.",
+    "routes": [
+      {
+        "name": "Residence visa",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Yearly residence visas may be granted to foreign citizens on request, renewable for equal periods (EY 2026). Naturalisation can be granted for significant investment or donation (discretionary)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "EY Worldwide Personal Tax and Immigration Guide 2025-26 (March 2026 edition)",
+        "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/tax-guides/documents/ey-gl-worldwide-personal-immigration-tax-guide-03-2026.pdf",
+        "publisher": "EY",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "25% CIT (IRC); capital gains taxed as business income; 20% WHT on dividends, with a participation exemption for resident parent companies; foreign income taxable with a credit.",
+    "special_zones": "Agricultural companies: 50% exemption. Simplified regime for small companies.",
+    "sources": [
+      {
+        "title": "EY Worldwide Corporate Tax Guide 2025 (October 2025 edition)",
+        "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/tax-guides/documents/ey-worldwide-corporate-tax-guide-10-2025.pdf",
+        "publisher": "EY",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "São Tomé",
+      "lon": 6.72732,
+      "lat": 0.33654,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2410763"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed. STP's 15% on gains and dividends is at or below US long-term rates, so the US layer dominates; STP's 5% inheritance tax would apply in addition to any US estate tax. No US treaty.",
+  "open_questions": [
+    "Only EY guides were reachable; no tax authority or legislation source was consulted.",
+    "EY's PIT bracket figures mix new (STN) and old (STD) dobra units (e.g. 'STN 11,700,000, approx. USD 526'), so local thresholds are not recorded."
+  ]
+}

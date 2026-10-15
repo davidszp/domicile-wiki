@@ -1,0 +1,243 @@
+{
+  "id": "NCL",
+  "name": "New Caledonia",
+  "continent": "Oceania",
+  "region": "Melanesia (French special collectivity)",
+  "currency": "XPF",
+  "researched_on": "2026-10-15",
+  "summary": "New Caledonia has its own tax code, separate from France. Private investors' gains on securities are generally untaxed; only real estate gains are taxed (24%). Dividends from local companies bear a 20% final withholding. Foreign dividends appear to fall into progressive income tax, up to 40%. There is no wealth tax. Inheritances and gifts to children are taxed at 5%-20% on worldwide assets when the deceased was resident.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Tax domicile in New Caledonia",
+      "type": "standard",
+      "description": "Residents pay progressive personal income tax (0-40%) on worldwide income, with family quotient splitting capped at XPF 300,000 of savings.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax domicile under the local code: home or principal place of stay, main professional activity, or centre of economic interests in New Caledonia.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains of individuals are generally not taxable. Exception: private real estate gains (PVI) are taxed at 20% plus 4% CCS (24% in total), with exemptions and special rules.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: New Caledonia, Individual - Other taxes (reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/new-caledonia/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "DSF Nouvelle-Calédonie: La contribution calédonienne de solidarité (CCS)",
+            "url": "https://dsf.gouv.nc/impots/la-contribution-caledonienne-de-solidarite-ccs",
+            "publisher": "Direction des services fiscaux de Nouvelle-Calédonie",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether PVI has a holding-period reduction or exemption was not checked.",
+          "Whether frequent trading could be treated as business income (BIC) was not checked."
+        ],
+        "headline_rate": 0.24,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.24,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "PwC (reviewed 9 Sep 2026): 'Capital gains derived by individuals are generally not taxable', except real estate (PVI 20% + CCS 4%). Securities and private business shares 0. Real estate 0.24 is the headline before any holding-period relief (relief not researched). Foreign real estate assumed outside PVI.",
+        "professional_trader": "Habitual trading could be business income under the progressive scale; not researched.",
+        "foreign_assets": "No tax on gains from foreign securities found."
+      },
+      "dividends": {
+        "summary": "Dividends from New Caledonian companies bear 20% at source (IRVM 11.5% + CCS 4% + additional centimes 4.5%) and are not subject to personal income tax. Foreign dividends are not covered by IRVM and appear to be taxed in personal income tax at progressive rates up to 40%, with a foreign tax credit.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: New Caledonia, Individual - Income determination (reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/new-caledonia/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: New Caledonia, Individual - Taxes on personal income (reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/new-caledonia/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "DSF Nouvelle-Calédonie: L'impôt sur le revenu des valeurs mobilières (IRVM)",
+            "url": "https://dsf.gouv.nc/impots/limpot-sur-le-revenu-des-valeurs-mobilieres-irvm",
+            "publisher": "Direction des services fiscaux de Nouvelle-Calédonie",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "DSF Nouvelle-Calédonie: La contribution calédonienne de solidarité (CCS)",
+            "url": "https://dsf.gouv.nc/impots/la-contribution-caledonienne-de-solidarite-ccs",
+            "publisher": "Direction des services fiscaux de Nouvelle-Calédonie",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Tax treatment of foreign-source dividends for resident individuals (progressive scale vs other) not confirmed in the code; CCS 4% might also apply."
+        ],
+        "headline_rate": 0.4,
+        "domestic_rate": 0.2,
+        "foreign_gross_rate": 0.4,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: 0.20 final (PwC income determination; DSF IRVM page 'total de 20%'). Foreign: residents are taxed on worldwide income at 0-40% (PwC), and IRVM applies only to distributions by companies with their seat in New Caledonia (DSF), so foreign dividends are assumed to fall into the progressive scale at the 40% top rate. PwC mentions foreign tax credits. Low confidence for foreign dividends.",
+        "withholding_outbound": "Dividends paid to non-residents: about 20% for individuals, 21% for companies (IRVM + CCS + centimes, plus possibly CAIS 3%); France-New Caledonia treaty: 15% individuals, 5% companies.",
+        "treaty_network": "Only one comprehensive treaty, with France (1983). No treaty with the US or other EU states.",
+        "holding_company_notes": "IRVM reinvestment reduction (art. Lp 543.2-I) for local reinvestment; not relevant to a foreign portfolio."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax (PwC).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: New Caledonia, Individual - Other taxes (reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/new-caledonia/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Contribution foncière on land and buildings, computed from surface area times a rate per m2 and then 8.4% (buildings) or 0.7875% (land), varying by commune (PwC)."
+      },
+      "inheritance": {
+        "summary": "Inheritance and gift duties are charged on each beneficiary. If the deceased or donor was resident in New Caledonia, worldwide assets are taxed; otherwise only New Caledonian assets. Children: progressive rates of 5% to 20% after an allowance of XPF 100,000. Spouses and PACS partners are exempt. Modelled as 20% on everything above XPF 100,000 per child.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: New Caledonia, Individual - Other taxes (reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/new-caledonia/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "DSF Nouvelle-Calédonie: Les droits d'enregistrement (successions et donations, art. 248-417 code des impôts)",
+            "url": "https://dsf.gouv.nc/impots/les-droits-denregistrement",
+            "publisher": "Direction des services fiscaux de Nouvelle-Calédonie",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The band thresholds of the 5%-20% direct-line scale were not found (code des impôts art. 248-417 not reachable); the JSON applies 20% to the whole amount above the allowance, an upper bound that is close for a EUR 11.7M share per child.",
+          "PwC's wording of the XPF 100,000 allowance ('when beneficiaries are direct dependants (spouse or partner…)') is ambiguous.",
+          "Any lifetime gift recall period not researched."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed",
+        "exemption": 100000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.2
+          }
+        ],
+        "gift_tax": "Gifts follow the same rules as inheritances 'but some differences could exist' (PwC).",
+        "gifts_same_as_inheritance": true,
+        "foreign_assets": "Worldwide assets when the deceased/donor is a tax resident of New Caledonia; local assets only otherwise.",
+        "domicile_rules": "Based on the tax domicile of the deceased or donor in New Caledonia.",
+        "business_relief": "Not researched."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Domicile if any of: home or principal place of stay in New Caledonia, main professional activity there, or centre of economic interests there. The France-New Caledonia treaty has tie-breakers (permanent home, vital interests, habitual abode).",
+    "routes": [
+      {
+        "name": "French citizens",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "French citizens can settle freely. Other EU citizens: entry and residence follow French immigration rules specific to New Caledonia (not researched)."
+      },
+      {
+        "name": "Non-French citizens: residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Long stays need a visa and a residence card under the immigration rules applicable in New Caledonia (details not researched)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: New Caledonia, Individual - Residence (reviewed 9 Sep 2026)",
+        "url": "https://taxsummaries.pwc.com/new-caledonia/individual/residence",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "DSF Nouvelle-Calédonie: Impôt sur le revenu - principes généraux",
+        "url": "https://dsf.gouv.nc/particuliers-impots-et-taxes/principes-generaux",
+        "publisher": "Direction des services fiscaux de Nouvelle-Calédonie",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.3,
+    "summary": "CIT 30% (15% for smaller companies below turnover thresholds; 35% mining and metallurgy), plus CAIS 3% on distributions above XPF 30M and an additional social contribution of 5%-15% for large profits. Taxed on New Caledonian-source income.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: New Caledonia, Corporate - Taxes on corporate income (reviewed 9 Sep 2026)",
+        "url": "https://taxsummaries.pwc.com/new-caledonia/corporate/taxes-on-corporate-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: New Caledonia, Corporate - Withholding taxes (reviewed 9 Sep 2026)",
+        "url": "https://taxsummaries.pwc.com/new-caledonia/corporate/withholding-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Nouméa",
+      "lon": 166.4572,
+      "lat": -22.2763,
+      "kind": "capital",
+      "coordinate_source": "Wikipedia (Nouméa), approx."
+    }
+  ],
+  "us_citizen_notes": "No US-New Caledonia tax treaty; US citizens would pay New Caledonian tax plus US federal tax, with foreign tax credits on the US side.",
+  "open_questions": [
+    "Direct-line inheritance bands (5%-20%) not found; the code des impôts on juridoc/Leginova was unreachable.",
+    "Foreign dividends: progressive-scale treatment assumed, not confirmed."
+  ]
+}

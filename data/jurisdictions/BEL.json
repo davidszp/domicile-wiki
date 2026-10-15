@@ -1,0 +1,316 @@
+{
+  "id": "BEL",
+  "name": "Belgium",
+  "continent": "Europe",
+  "region": "Western Europe",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "Belgium introduced a 10% tax on capital gains on financial assets (shares, bonds, funds, crypto, some insurance) realised from 1 January 2026, with gains accrued before 2026 excluded and an annual exemption of EUR 10,000; substantial holdings of 20% or more have a EUR 1 million exemption and rates of 1.25%-10%. Dividends and interest bear a final 30% withholding tax, with no credit for foreign withholding tax. Securities accounts above EUR 1 million pay an annual 0.15% tax. Inheritance and gift tax is regional: in Flanders (used here) a child pays 3% up to EUR 50,000, 9% to EUR 250,000 and 27% above, separately on movable and immovable assets; registered gifts of movables cost a flat 3%, and unregistered gifts escape tax if the donor survives five years.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence (Flanders inheritance rules)",
+      "type": "standard",
+      "description": "Residents are taxed on worldwide income. Movable income (dividends, interest) is taxed at separate flat rates, usually as a final withholding; gains on financial assets fall under the new 2026 capital gains tax. Inheritance and gift tax depend on the region of the deceased's/donor's residence; Flanders is used as the standard here.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Domicile in Belgium, or centre of economic interests there; registration in a commune's population register creates a presumption of residence; for couples, the family home decides.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Since 1 January 2026 (Law of 6 April 2026, published 21 April 2026), gains realised by private individuals on financial assets within the normal management of private wealth are taxed at 10% above an annual exemption of EUR 10,000 (statutory base EUR 4,855, indexed); an unused exemption carries forward by up to EUR 1,000 a year, with at most EUR 5,000 of carried-forward exemption in a year. Only value accrued from 1 January 2026 is taxed: assets held on 31 December 2025 are stepped up to their value on that date. Belgian banks withhold the 10% from 1 June 2026 unless the taxpayer opts out and declares. Shareholdings of 20% or more: first EUR 1 million of gain exempt, then 1.25% up to EUR 2.5 million, 2.5% to EUR 5 million, 5% to EUR 10 million and 10% above. Sales of shares to one's own controlled company ('internal gains') are taxed at 33%. Real estate: buildings sold within 5 years are taxed at 16.5% plus communal tax; land at 33% within 5 years, 16.5% from 5 to 8 years, exempt after 8; the main home is exempt.",
+        "exemptions_thresholds": "EUR 10,000 per taxpayer per year for ordinary financial assets (CIR art. 96/2, 2°: EUR 4,855 before indexation); carry-forward EUR 1,000 a year (base EUR 480), capped at EUR 5,000 a year (base EUR 2,426); EUR 1 million for substantial holdings (deducted from the exemptions used in the previous four years); exits from joint ownership within three years after a death or divorce exempt; real estate exempt after 5 years (buildings) or 8 years (land).",
+        "eligibility_conditions": "Resident individual acting within normal management of private wealth.",
+        "regional_differences": "None for income tax; communal surcharges (0%-9% of income tax, average 7%) apply to real estate gains.",
+        "important_exceptions": "Speculative transactions or operations outside normal private management are taxed at 33% plus communal tax. Withholding by Belgian intermediaries starts 1 June 2026 (Law of 6 April 2026, art. 35); the law takes effect on 1 January 2026. Foreign accounts and opted-out accounts are declared. The personal income tax reform Law of 15 July 2026 (published 29 July 2026) changes the tax-free allowance and other items but was not found to alter the capital gains rates.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Belgium - Individual - Significant developments",
+            "url": "https://taxsummaries.pwc.com/belgium/individual/significant-developments",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Belgium - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/belgium/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Loi du 6 avril 2026 introduisant un impôt sur les plus-values sur les actifs financiers (Moniteur belge 21 avril 2026, numac 2026002780)",
+            "url": "https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=26-04-21&numac=2026002780",
+            "publisher": "Moniteur belge (Belgian Official Gazette)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "The EUR 10,000 and EUR 1,000 figures are the indexed amounts of the statutory EUR 4,855 and EUR 480 as reported by PwC; the indexation coefficient for income year 2026 was not checked on an official page.",
+          "Treatment of investment funds (new CIR art. 95/1 exemption for certain undertakings for collective investment) was not analysed."
+        ],
+        "headline_rate": 0.33,
+        "rates": {
+          "listed_securities_domestic": 0.1,
+          "listed_securities_foreign": 0.1,
+          "private_business_sale": 0.1,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Listed securities: 10% on gains above EUR 10,000 a year (no communal surcharge reported). Private business sale (>= 20%): top bracket 10% above the EUR 1 million exemption (33% applies only to sales to one's own company). Real estate: 0 because held longer than 5 years (buildings) / 8 years (land). Headline 33% = rate for internal gains and gains outside normal private management.",
+        "professional_trader": "Transactions outside the normal management of private wealth (speculation, leverage, short-term trading resembling a professional activity) are taxed as miscellaneous income at 33% plus communal tax, or as professional income at progressive rates up to 50%.",
+        "holding_period_rules": "None for financial assets. Real estate: 5 years for buildings, 8 years for land.",
+        "foreign_assets": "Worldwide gains taxed the same way; foreign real estate gains generally exempt with progression under treaties."
+      },
+      "dividends": {
+        "summary": "Dividends are taxed at a flat 30% withholding tax, final when paid through a Belgian bank; foreign dividends received abroad are declared and taxed at 30%. The first EUR 859 of dividends (income year 2025) is exempt. Foreign withholding tax is not credited for individuals, so a 15% US withholding plus 30% Belgian tax on the net amount gives about 40.5% in total. Interest is also taxed at 30% (savings account interest above EUR 1,050 at 15%).",
+        "exemptions_thresholds": "Dividend exemption EUR 859 per taxpayer (income year 2025; 2026 amount not verified).",
+        "eligibility_conditions": "Resident individual.",
+        "regional_differences": "None; no communal surcharge on movable income withheld at source.",
+        "important_exceptions": "Belgian tax on foreign dividends is computed on the amount net of foreign withholding when collected by a Belgian bank (from general knowledge).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Belgium - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/belgium/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Belgium - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/belgium/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "De nieuwe meerwaardebelasting op financiële activa",
+            "url": "https://kpmg.com/be/nl/home/insights/2025/09/ctx-de-nieuwe-meerwaardebelasting-op-financiele-activa.html",
+            "publisher": "KPMG Belgium",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The absence of a credit for foreign withholding tax on portfolio dividends and the 'net of foreign tax' base were not verified on an official page."
+        ],
+        "headline_rate": 0.3,
+        "domestic_rate": 0.3,
+        "foreign_gross_rate": 0.3,
+        "foreign_tax_credit": "none",
+        "rate_basis": "30% flat rate on movable income. Foreign dividends: 30% Belgian rate; no credit for source-country withholding (the Belgian tax is levied on the net amount after foreign tax).",
+        "withholding_outbound": "30% on dividends paid by Belgian companies, reduced by treaties (often 15%) and to 0% for EU parent companies; reduced rates for some SME dividends.",
+        "treaty_network": "About 95 income tax treaties including the US and all EU states (count from general knowledge).",
+        "holding_company_notes": "A Belgian company pays 25% (20% on the first EUR 100,000 for SMEs); dividends received deduction and exemption of gains on qualifying shares (at least 10% or EUR 2.5 million); distributions to individuals bear 30% withholding. No structure is modelled: a company pays 25% on portfolio dividends and on gains from shares below 10% or EUR 2.5 million (versus 10% CGT for an individual), plus 30% withholding on payouts and the same securities-account tax, and a private foundation is caught by the 2026 capital gains tax through the legal-entities tax."
+      },
+      "wealth_tax": {
+        "summary": "Belgium has no general wealth tax, but an annual tax on securities accounts of 0.15% applies when the average value of a securities account (shares, bonds, funds, certificates held in an account, in Belgium or abroad for residents) reaches EUR 1 million over the reference period. The tax cannot exceed 10% of the amount above EUR 1 million, which smooths the threshold.",
+        "exemptions_thresholds": "Entry threshold EUR 1 million average value per account; above it the whole value is taxed at 0.15%, capped at 10% of the excess over EUR 1 million.",
+        "eligibility_conditions": "Per account (all holders together); applies to residents' accounts worldwide.",
+        "regional_differences": "None.",
+        "important_exceptions": "Directly registered shares (held in a company's share register rather than in a securities account) are outside the tax; an anti-abuse rule targets splitting or conversion into registered shares.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Belgium - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/belgium/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The 10% smoothing cap and the anti-abuse rule are from general knowledge; PwC confirms only the 0.15% rate and EUR 1 million threshold. Proposals in the 2025 federal coalition agreement to change the tax were not checked."
+        ],
+        "type": "limited",
+        "components": [
+          {
+            "name": "Annual tax on securities accounts",
+            "base": "securities_accounts",
+            "exempt_amount": 0,
+            "entry_threshold": 1000000,
+            "bracket_mode": "marginal",
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.0015
+              }
+            ],
+            "notes": "0.15% of the whole average account value once it reaches EUR 1 million, capped at 10% of the excess above EUR 1 million (smoothing up to about EUR 1.015 million)."
+          }
+        ],
+        "property_tax_note": "Annual withholding tax on real estate (onroerende voorheffing / précompte immobilier) on the indexed cadastral income, set regionally and locally."
+      },
+      "inheritance": {
+        "summary": "Inheritance tax is regional and depends on where the deceased lived for most of the last five years. In Flanders (used as the standard here), each child pays 3% on the first EUR 50,000, 9% from EUR 50,000 to 250,000 and 27% above, calculated separately for movable and immovable assets. A child inheriting a EUR 20 million portfolio pays about 26.6%. There is no general tax-free amount for adult children. Gifts are much cheaper: registered gifts of movables cost a flat 3%, and gifts that are not registered (e.g. bank transfers) are tax-free if the donor survives five years.",
+        "exemptions_thresholds": "No general allowance for adult children in Flanders; reductions for children under 21. Family home exempt for the surviving partner.",
+        "eligibility_conditions": "Belgian inheritance tax applies to the worldwide estate of a deceased Belgian resident; the region is the one where the deceased lived longest in the last five years.",
+        "regional_differences": "Brussels-Capital: direct-line rates rise from 3% to 30% (top rate above EUR 500,000, from general knowledge), with a small allowance for children; Wallonia has its own scale (reformed rates from 2028 announced; not verified). The Flemish government plans to reform and lower inheritance tax (2024-2029 coalition agreement) but no decision is in force. Regional files would be needed to score Brussels and Wallonia separately.",
+        "important_exceptions": "Reduced rate for family businesses (Flanders, new rules from 1 January 2026) does not cover listed portfolios. Flemish tax regularisation programme 2026-2029 for evaded inheritance tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Algemeen tarief in de erfbelasting",
+            "url": "https://www.vlaanderen.be/belastingen-en-begroting/vlaamse-belastingen/erfbelasting/tarieven-in-de-erfbelasting/algemeen-tarief-in-de-erfbelasting",
+            "publisher": "Vlaamse overheid (Vlaamse Belastingdienst)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Erfbelasting",
+            "url": "https://www.vlaanderen.be/belastingen-en-begroting/vlaamse-belastingen/erfbelasting",
+            "publisher": "Vlaamse overheid (Vlaamse Belastingdienst)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Belgium - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/belgium/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Brussels and Wallonia scales were not verified (Brussels Fiscalité site redirected); subnational file data/subnational/BEL.json not written.",
+          "Flemish reduced rate for family businesses from 2026 not read in detail."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed",
+        "exemption": 0,
+        "bracket_mode": "marginal",
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.03
+          },
+          {
+            "from_amount": 50000,
+            "rate": 0.09
+          },
+          {
+            "from_amount": 250000,
+            "rate": 0.27
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Registered gifts of movables (notarial deed or registration of a gift document) in the direct line: flat 3% in Flanders and Brussels. Unregistered gifts (hand gifts, bank transfers) are not taxed but are added back to the estate if the donor dies within five years. Gifts of real estate pay progressive regional gift duties.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": 5,
+        "business_relief": "Regional reduced rates for family businesses and companies (Flanders: new rules from 1 January 2026) with continuation conditions; holding companies of listed portfolios do not qualify.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Worldwide estate of a resident deceased; foreign real estate tax credited (Belgium has very few estate tax treaties).",
+        "domicile_rules": "Liability depends on the deceased's residence (domicile or seat of wealth) in Belgium at death; the region is where the deceased lived longest in the five years before death. Non-residents are taxed only on Belgian real estate (estate duty)."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if domiciled in Belgium or, failing that, if the seat of wealth (centre of economic interests) is in Belgium; registration in the population register creates a rebuttable presumption; for married/cohabiting couples the family home decides.",
+    "routes": [
+      {
+        "name": "EU/EEA/Swiss free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Registration with the commune; no permit."
+      },
+      {
+        "name": "Residence permit for third-country nationals",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "No residence-by-investment programme known; routes are employment, self-employment (professional card) or family reunification. Not verified in this session."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Belgium - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/belgium/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "Corporate income tax 25%; 20% on the first EUR 100,000 for qualifying SMEs. Gains on qualifying shares are exempt; dividends received deduction for qualifying participations; minimum tax base rules for large profits.",
+    "special_zones": "None.",
+    "sources": [
+      {
+        "title": "Belgium - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/belgium/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Brussels",
+    "notes": "Rent is a listing-portal sample of agency asking rents (15 October 2026). The International School of Brussels is among the most expensive in Europe; the European Schools and the British School of Brussels are alternatives. Price per m², health insurance and staff costs were not sourced.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 7950,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 22 distinct houses (detached houses, townhouses and 'luxury homes') with 4+ bedrooms listed for rent in the Brussels-Capital Region on LuxuryEstate.com on 15 October 2026, mainly in Uccle, Ixelles and Woluwe-Saint-Pierre; range EUR 3,400-20,000, upper quartile about EUR 12,100. Agency asking rents aggregated by the portal.",
+      "source": {
+        "title": "LuxuryEstate.com: luxury properties for rent in the Brussels-Capital Region (listing sample)",
+        "url": "https://www.luxuryestate.com/rent/belgium/brussels-capital-region",
+        "publisher": "LuxuryEstate.com",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 51105,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "International School of Brussels, Grades 10-12 tuition 2026-27 (Grades 7-9 EUR 48,135). One-time application fee EUR 2,000 per family; bus EUR 3,240 return a year.",
+      "source": {
+        "title": "The International School of Brussels: Tuition & Fees, School Fees 2026-27",
+        "url": "https://www.isb.be/admissions/tuition",
+        "publisher": "The International School of Brussels",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "Brussels",
+      "lon": 4.34878,
+      "lat": 50.85045,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2800866"
+    }
+  ],
+  "us_citizen_notes": "US-Belgium income tax treaty applies; no estate tax treaty. Belgium's securities account tax is not an income tax and not creditable in the US.",
+  "open_questions": [
+    "Special expatriate regime (2022 regime for impatriate taxpayers and researchers) concerns employment income only (30% tax-free allowance) and does not change passive income taxation; not modelled.",
+    "National file uses Flanders for inheritance; Brussels and Wallonia need a subnational file.",
+    "Final capital gains tax law not opened."
+  ]
+}

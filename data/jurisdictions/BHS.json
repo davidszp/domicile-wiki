@@ -1,0 +1,302 @@
+{
+  "id": "BHS",
+  "name": "The Bahamas",
+  "continent": "Caribbean",
+  "region": "Lucayan Archipelago (Atlantic)",
+  "currency": "BSD",
+  "researched_on": "2026-10-15",
+  "summary": "The Bahamas levies no personal income tax, capital gains tax, dividend tax, inheritance, estate, gift or net wealth tax. The costs that do apply are on Bahamian real estate: VAT of up to 10% on conveyances (10% flat for foreign buyers), annual real property tax, and probate/resealing formalities for Bahamian-situs assets. No income tax treaties. Economic permanent residence needs a USD 1 million investment (real estate or Central Bank zero-coupon bonds) held 10 years, up from USD 750,000 since 1 January 2025.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary residence",
+      "type": "standard",
+      "description": "No direct taxes on individuals; residence has no income-tax consequence.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any lawful resident. Non-Bahamians need a residence permit (annual, homeowner or permanent residence).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax. Gains on shares, bonds, private companies and real estate are not taxed.",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No income or capital gains tax exists (PwC; Deloitte 2026). All rates 0.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: The Bahamas, Individual - Other taxes (last reviewed 21 July 2026)",
+            "url": "https://taxsummaries.pwc.com/the-bahamas/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: The Bahamas, Individual - Taxes on personal income (last reviewed 21 July 2026)",
+            "url": "https://taxsummaries.pwc.com/the-bahamas/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Bahamas Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bahamashighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "important_exceptions": "Real estate conveyances bear VAT (replacing the old stamp duty on conveyances): 10% for foreign buyers and entities on the whole value; Bahamians and permanent residents with the right to work pay a sliding scale from 2.5% (under BSD 100,000) to 10% (over BSD 1 million). Base is the higher of price and fair market value; buyer and seller customarily split it 50/50 but that is a commercial choice. Transfers of shares in land-owning companies also attract VAT. Since 1 July 2025 amendments to the Conveyancing and Law of Property Act require the conveyance to be registered (anti-VAT-evasion).",
+        "professional_trader": "No income tax, so trader recharacterisation has no tax effect; a business licence/business licence tax applies to businesses operating in The Bahamas."
+      },
+      "dividends": {
+        "summary": "No tax on dividends received by individuals, whether from Bahamian or foreign companies.",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No personal income tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: The Bahamas, Individual - Taxes on personal income (last reviewed 21 July 2026)",
+            "url": "https://taxsummaries.pwc.com/the-bahamas/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Bahamas Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bahamashighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "withholding_outbound": "No withholding tax on dividends paid by Bahamian companies.",
+        "treaty_network": "No income tax treaties (Deloitte 2026); over 30 TIEAs. US and EU source withholding on the family's portfolio dividends is not reduced by treaty."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Annual real property tax by property class (owner-occupied, residential non-owner-occupied, commercial, vacant land owned by non-residents); owner-occupied capped at BSD 150,000 a year (Deloitte 2026). A new flat 0.625% 'foreign owner-occupied' category was proposed in the 2026-27 Budget; enactment not verified.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: The Bahamas, Individual - Other taxes (last reviewed 21 July 2026)",
+            "url": "https://taxsummaries.pwc.com/the-bahamas/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Bahamas Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bahamashighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Exact real property tax bands in force for 2026 and whether the proposed 0.625% foreign owner-occupied category was enacted."
+        ]
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. A Bahamian grant of probate (or resealing of a foreign grant) is needed only for Bahamian-situs assets.",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax. Stamp duty applies to some instruments (e.g. share transfers); land transfers fall under VAT, with zero-rating for certain voluntary intra-family transfers (Chambers 2026).",
+        "gifts_same_as_inheritance": true,
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: The Bahamas, Individual - Other taxes (last reviewed 21 July 2026)",
+            "url": "https://taxsummaries.pwc.com/the-bahamas/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Bahamas Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bahamashighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Higgs & Johnson: Guide to probate administration in The Bahamas (2012)",
+            "url": "https://www.mondaq.com/property-taxes/201438/guide-to-probate-administration-in-the-bahamas",
+            "publisher": "Mondaq / Higgs & Johnson",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: The Bahamas, Corporate - Other taxes (last reviewed 21 July 2026)",
+            "url": "https://taxsummaries.pwc.com/the-bahamas/corporate/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Whether stamp duty or VAT applies when Bahamian real estate vests in heirs on death (assent/vesting deed) and the size of probate fees. PwC (reviewed 21 July 2026) says only that stamp duty is levied on instruments of all types, at rates that vary, and that there are no transfer taxes; it does not address transfers on death. other_transfer_cost_rate is kept at 0 pending a primary source (Stamp Act schedule)."
+        ],
+        "exemptions_thresholds": "None needed.",
+        "important_exceptions": "Probate/resealing: legal fees scale with Bahamian assets (minimum BSD 2,500 per Higgs & Johnson, 2012). other_transfer_cost_rate set to 0 because a portfolio held outside The Bahamas needs no Bahamian grant; Bahamian real estate passing on death may carry costs not quantified here.",
+        "foreign_assets": "No tax on foreign assets.",
+        "domicile_rules": "No tax, so domicile and residence are irrelevant for transfer taxes. The deceased's home-country rules (e.g. US estate tax) still apply."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No personal income tax, so there is no tax residence test with tax consequences.",
+    "routes": [
+      {
+        "name": "Economic permanent residence",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Minimum USD/BSD 1.0 million investment in Bahamian real estate or Central Bank of The Bahamas zero-coupon bonds, held at least 10 years (Department of Immigration). Raised from USD 750,000 with effect from 1 January 2025 (2024-25 Budget). Non-refundable processing fee BSD 200; certificate fees not verified.",
+        "minimum_investment": {
+          "amount": 1000000,
+          "currency": "BSD"
+        }
+      },
+      {
+        "name": "Annual residence permit / homeowner residence card",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Available to retirees, homeowners and persons of means; conditions and fees not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bahamas Department of Immigration: Permanent Residence",
+        "url": "https://immigration.gov.bs/?p=3786",
+        "publisher": "Government of The Bahamas, Department of Immigration",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Tribune242: Permanent residency reform labelled 'huge' (30 May 2024, 2024-25 Budget)",
+        "url": "https://www.tribune242.com/news/2024/may/30/permanent-residency-reform-labelled-huge/",
+        "publisher": "The Tribune (Nassau)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Chambers Real Estate 2026: Bahamas (Graham Thompson)",
+        "url": "https://gpg-pdf.chambers.com/Real-Estate-2026/39/",
+        "publisher": "Chambers and Partners",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.0,
+    "summary": "No corporate income tax. Domestic Minimum Top-up Tax Act enacted 29 November 2024 (effective for fiscal years from 1 January 2024; for most groups from 2025) applies a 15% Pillar Two top-up only to MNE groups with revenue of EUR 750 million or more. Business licence tax applies to businesses operating locally. No withholding taxes.",
+    "special_zones": "Freeport (Grand Bahama) and free trade zone incentives: exemptions from import/export duties and VAT for qualifying transactions.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: The Bahamas, Corporate - Taxes on corporate income (last reviewed 21 July 2026)",
+        "url": "https://taxsummaries.pwc.com/the-bahamas/corporate/taxes-on-corporate-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Bahamas Highlights 2026 (updated January 2026)",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bahamashighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Nassau (western New Providence: Lyford Cay / Old Fort Bay)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 25000,
+        "currency": "BSD"
+      },
+      "year": 2026,
+      "description": "Median of the three 4-5 bedroom houses in the gated Lyford Cay and Old Fort Bay communities listed for rent by Coldwell Banker Bahamas on 15 Oct 2026: Lyford Cay 4-bed USD 22,500; Old Fort Bay 4-bed USD 25,000 (marked rented); Old Fort Bay 5-bed with dock USD 45,000 (short-term allowed). Excluded: a 6-bed Lyford Cay waterfront estate at USD 55,000. Gated executive 4-5 bed homes nearer Cable Beach (Sandyport, Westridge) were listed at USD 10,000-12,000. Asking rents; BSD is at par with USD.",
+      "source": {
+        "title": "Coldwell Banker Bahamas: Bahamas property rentals (listings sorted by price, viewed 15 Oct 2026)",
+        "url": "https://www.coldwellbankerbahamas.com/bahamas-property-rentals",
+        "publisher": "Coldwell Banker Lightbourn Realty (Bahamas)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 35600,
+        "currency": "BSD"
+      },
+      "year": 2026,
+      "description": "Lyford Cay International School (IB), High School grades 11-12, annual tuition 2026-27 (grades 9-10: 33,000). The school says tuition includes books, technology fees and off-island field trips. Amounts shown in $ (BSD at par with USD).",
+      "source": {
+        "title": "Lyford Cay International School: Tuition & Fees (annual tuition 2026-27)",
+        "url": "https://www.lcis.bs/tuition-and-fees",
+        "publisher": "Lyford Cay International School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Purchase price per m2, health insurance and housekeeper not sourced. Rent sample is small (three gated-community listings) and asking-price based."
+  },
+  "markers": [
+    {
+      "name": "Nassau",
+      "lon": -77.3383,
+      "lat": 25.0782,
+      "kind": "capital",
+      "coordinate_source": "OpenStreetMap node 115664268"
+    },
+    {
+      "name": "Lyford Cay",
+      "lon": -77.5287,
+      "lat": 25.0293,
+      "kind": "city",
+      "coordinate_source": "OpenStreetMap relation 17984659 (centroid)"
+    }
+  ],
+  "us_citizen_notes": "US citizens stay subject to US federal tax on worldwide income, gains and estate; with no local income tax there is no local tax to credit, so the US layer applies in full. No income tax treaty with the US.",
+  "open_questions": [
+    "Economic permanent residence certificate fees and any minimum-presence requirement (secondary sources cite 90 days a year; not confirmed officially).",
+    "No indicator overrides added: The Bahamas is covered by World Bank/WGI data.",
+    "Prime purchase price per m2, family health insurance and housekeeper cost not sourced."
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "id": "COL",
+  "name": "Colombia",
+  "currency": "COP",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Colombian fiscal residents (183 days in any 365) are taxed on worldwide income at progressive rates from 0% to 39% (thresholds in UVT, UVT = COP 52,347 for 2026). Employees pay 4% health and 4% pension (plus solidarity surcharges); independents contribute 12.5% health and 16% pension on a base of 40% of income, capped at 25 minimum wages.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 57058230,
+        "rate": 0.19
+      },
+      {
+        "from_amount": 88989900,
+        "rate": 0.28
+      },
+      {
+        "from_amount": 214622700,
+        "rate": 0.33
+      },
+      {
+        "from_amount": 453848490,
+        "rate": 0.35
+      },
+      {
+        "from_amount": 993022590,
+        "rate": 0.37
+      },
+      {
+        "from_amount": 1622757000,
+        "rate": 0.39
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.08,
+    "employee_social_security_cap": 525271500,
+    "self_employed_social_security_rate": 0.114,
+    "self_employed_social_security_cap": 1313178750,
+    "self_employed_notes": "Independents with service contracts contribute on an IBC of 40% of monthly income (floor one minimum wage COP 1,750,905, ceiling 25 minimum wages COP 43,772,625): health 12.5% + pension 16% = 28.5% of IBC, i.e. an effective 11.4% of gross income (ARL occupational-risk cover is also due for contracts over a month; solidarity-fund surcharge of 1% above 4 minimum wages not added). The cap is expressed on gross income (IBC cap / 0.4).",
+    "local_tax_note": "No municipal surtax on personal income (Medellin levies industry-and-commerce tax on business activity, not modelled).",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Colombia: Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/colombia/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Colombia: Other taxes",
+        "url": "https://taxsummaries.pwc.com/colombia/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Colombia: Residence",
+        "url": "https://taxsummaries.pwc.com/colombia/individual/residence",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "UTP - Seguridad Social 2026 trabajadores independientes",
+        "url": "https://media2.utp.edu.co/oficinas/48/Seguridad-Social-2026.pdf",
+        "publisher": "Universidad Tecnologica de Pereira",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "DIAN Normograma - Oficio 906025 de 2020 (text of Estatuto Tributario arts. 55 and 56)",
+        "url": "https://normograma.dian.gov.co/dian/compilacion/docs/oficio_dian_906025_2020.htm",
+        "publisher": "DIAN",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Colombia: Deductions",
+        "url": "https://taxsummaries.pwc.com/colombia/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "The 25% exempt labour-income deduction (capped) and other deductions are not modelled; PwC page text did not provide them.",
+      "Employee rate excludes the 1% solidarity surcharge above four minimum wages and 0.2-1% extra above 16 minimum wages.",
+      "PwC does not cover self-employed rates; they come from a university accounting presentation (UTP, 2026).",
+      "Brackets (0/19/28/33/35/37/39% at 1,090/1,700/4,100/8,670/18,970/31,000 UVT) and UVT COP 52,347 for 2026 re-checked against PwC on 2026-10-15 and match; the DIAN resolution itself was not reachable."
+    ],
+    "social_security_deductible": 1
+  },
+  "regimes": [
+    {
+      "id": "col_digital_nomad_visa",
+      "name": "Visa V - Digital nomad",
+      "kind": "digital_nomad_visa",
+      "description": "Colombian digital nomad visa for remote workers paid from abroad. Requires regular foreign-source income of at least three monthly minimum wages for the previous three months, health insurance, and no work for Colombian employers or clients. It does not change tax: after more than 183 days in a 365-day period the holder is a fiscal resident taxed on worldwide income.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment",
+        "employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 63032580,
+        "currency": "COP"
+      },
+      "max_income": null,
+      "duration_years": 2,
+      "duration_note": "Valid up to 24 months from issue per the cited guide; renewal not addressed by the source.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Nomad Tax Guide - Colombia digital nomad visa requirements",
+          "url": "https://nomadtaxguide.com/blog/colombia-digital-nomad-visa-requirements/",
+          "publisher": "Nomad Tax Guide",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries - Colombia: Residence",
+          "url": "https://taxsummaries.pwc.com/colombia/individual/residence",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Min income = 3 x 2026 minimum wage COP 1,750,905 x 12 = COP 63,032,580; the guide itself quotes COP 3,900,000/month (outdated multiple) and USD 1,400, so the official Cancilleria figure was not confirmed.",
+        "Renewal rules and social security for visa holders not stated by the source; social_security_applies is True only for residents who contribute as independents/employees locally.",
+        "Official Cancilleria page not reached.",
+        "Visa V holders keep standard tax treatment, so covers_local_work does not apply. Resolucion 5477 of 2022 and 24-month validity confirmed only from nomadtaxguide.com (re-read 2026-10-15), whose 3,900,000 COP/month figure does not match 3 x COP 1,750,905; the guide's claim that remote income is 0% taxed below 183 days does not address work performed in Colombia and is not relied on."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Medellin (El Poblado / Laureles)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 3328852.51,
+        "currency": "COP"
+      },
+      "year": 2026,
+      "description": "Numbeo average 1-bedroom apartment in city centre, Medellin; range COP 1.8-4.68 million; updated 2 Oct 2026; 673 city entries from 53 contributors in 12 months (all categories); user-contributed.",
+      "source": {
+        "title": "Numbeo - Cost of Living in Medellin",
+        "url": "https://www.numbeo.com/cost-of-living/in/Medellin",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 6000000,
+        "currency": "COP"
+      },
+      "year": 2026,
+      "description": "Approximate 2-bedroom rent in El Poblado (estrato 6): Cuanto Me Cuesta (Finca Raiz / Metrocuadrado data, April 2026, orientative) gives COP 3.0-8.0 million regional range and COP 6-8 million+ for 2-3 bedrooms, and a 140 m2 sample listing at COP 6.3 million; 6.0 million is the lower end of that El Poblado band. No sample size.",
+      "source": {
+        "title": "Cuanto Me Cuesta - Arriendo en Medellin (abril 2026)",
+        "url": "https://cuantomecuesta.com/co/arriendo-medellin/",
+        "publisher": "Cuanto Me Cuesta",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Second-bedroom value is a judgement from a published range (low confidence)."
+  },
+  "residence_routes": "EU, US and other visa-exempt nationalities can stay as tourists (up to 180 days a year) without working locally. Remote workers can apply for the Visa V digital nomad visa (foreign income of at least three minimum wages, health insurance), which does not lead to permanent residence by itself. Skilled employees of a Colombian employer need a work visa (Visa M) sponsored by the employer; other visa routes (partner, investor, Mercosur-style agreements for some nationalities) exist but were not researched.",
+  "open_questions": [
+    "Official Cancilleria page for Visa V was not reached; income and duration come from a guide.",
+    "No expat/impatriate tax regime found.",
+    "Rent (2-bedroom): value is the lower end of a published El Poblado range, not a sample median."
+  ]
+}

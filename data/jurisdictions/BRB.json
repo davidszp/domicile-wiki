@@ -1,0 +1,399 @@
+{
+  "id": "BRB",
+  "name": "Barbados",
+  "continent": "Caribbean",
+  "region": "Lesser Antilles",
+  "currency": "BBD",
+  "researched_on": "2026-10-15",
+  "summary": "Barbados has no capital gains, inheritance, gift or wealth tax, but it does tax resident and domiciled individuals on worldwide income at 11.5% up to BBD 50,000 and 27.5% above (2026). Local dividends bear a 15% final withholding tax; foreign dividends are taxed at the marginal rate with a foreign tax credit. Resident but non-domiciled individuals are taxed on foreign income only to the extent a benefit is obtained in Barbados. Real estate and private-company share transfers bear 2.5% property transfer tax plus 1% stamp duty. Treaty network of 30-40 countries, including the US and UK.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Resident and domiciled",
+      "type": "standard",
+      "description": "Worldwide income taxation for individuals resident and domiciled in Barbados.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident (more than 182 days in a calendar year, or ordinarily resident) and domiciled in Barbados.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax.",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Barbados does not impose capital gains tax (PwC Oct 2026; Deloitte 2026; Invest Barbados).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/barbados/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Barbados Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-barbadoshighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Invest Barbados: Barbados tax rates",
+            "url": "https://www.investbarbados.org/barbados-tax-rates/",
+            "publisher": "Invest Barbados (government agency)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "important_exceptions": "Property transfer tax 2.5% on the value of land with buildings above BBD 150,000 (on the whole value of land without buildings) and on private-company shares above BBD 50,000, plus stamp duty BBD 10 per BBD 1,000 (1%). Listed shares on the Barbados Stock Exchange are exempt. Gains from trading are taxed as business income at income tax rates; there are no specific capital gains rules.",
+        "professional_trader": "Gains of a trade (e.g. frequent dealing) are business income taxed at 11.5%/27.5%."
+      },
+      "dividends": {
+        "summary": "Resident and domiciled individuals: dividends from Barbados companies bear a 15% final withholding tax; foreign dividends are taxed at ordinary income tax rates (11.5% up to BBD 50,000, 27.5% above, for 2026) with credit for foreign tax, limited so Barbados tax is not reduced below 1% of taxable income.",
+        "headline_rate": 0.275,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.275,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: 15% final WHT on dividends from post-June 1992 profits. Foreign: top marginal rate 27.5% (income year 2026, PwC Oct 2026; Deloitte Jan 2026 still shows 28.5%).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/barbados/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Taxes on personal income (last reviewed 9 October 2026)",
+            "url": "https://taxsummaries.pwc.com/barbados/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Significant developments",
+            "url": "https://taxsummaries.pwc.com/barbados/individual/significant-developments",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Barbados Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-barbadoshighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "withholding_outbound": "Dividends to non-residents: 0% if paid out of foreign-source income, otherwise 5% (non-treaty); treaty rates 0-15%.",
+        "treaty_network": "About 33 treaties listed by PwC (29 in force) incl. US (5/15), UK (0/15), Canada (15), Switzerland, Netherlands, Luxembourg, Spain, Italy, Portugal, CARICOM; Deloitte cites more than 40 jurisdictions incl. CARICOM. The US treaty reduces US WHT on portfolio dividends to 15%.",
+        "important_exceptions": "A 2% foreign exchange fee applies to transactions requiring remittance or settlement in foreign currency unless made from a foreign currency account."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Annual land tax on residential improved value: 0% to BBD 400,000, 0.1% to 550,000, 0.7% to 950,000, 1% above (PwC); Deloitte cites first BBD 300,000 at 0%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Invest Barbados: Barbados tax rates",
+            "url": "https://www.investbarbados.org/barbados-tax-rates/",
+            "publisher": "Invest Barbados (government agency)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Barbados Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-barbadoshighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified"
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. Gifts of real estate or private-company shares may attract the 2.5% property transfer tax and 1% stamp duty.",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax, but gifts may be subject to property transfer tax (2.5%) and stamp duty (1%) on real estate and private-company shares (Deloitte 2026).",
+        "gifts_same_as_inheritance": false,
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Invest Barbados: Barbados tax rates",
+            "url": "https://www.investbarbados.org/barbados-tax-rates/",
+            "publisher": "Invest Barbados (government agency)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Barbados Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-barbadoshighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Barbados, Corporate - Other taxes",
+            "url": "https://taxsummaries.pwc.com/barbados/corporate/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Whether property transfer tax applies to real estate passing on death (only gifts are mentioned by Deloitte)."
+        ],
+        "foreign_assets": "Not taxed.",
+        "domicile_rules": "No transfer taxes, so domicile is irrelevant for them."
+      }
+    },
+    {
+      "id": "resident_non_domiciled",
+      "name": "Resident but not domiciled",
+      "type": "special",
+      "description": "Individuals resident but not domiciled in Barbados are taxed on Barbados-source income and on foreign-source income only to the extent a benefit is obtained in Barbados (a remittance-type basis).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident but domiciled elsewhere (common-law domicile; a newly arrived foreign family normally keeps its domicile of origin). No time limit found.",
+      "duration_years": null,
+      "dividends": {
+        "summary": "Foreign dividends kept and used outside Barbados are not taxed; amounts from which a benefit is obtained in Barbados are taxed at up to 27.5%. Local dividends: 15% final WHT.",
+        "headline_rate": 0.275,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "foreign_gross_rate 0 assumes no remittance: the family keeps foreign dividends abroad and draws no benefit from them in Barbados; any amount from which a benefit is obtained in Barbados is taxed at up to 27.5%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Taxes on personal income (last reviewed 9 October 2026)",
+            "url": "https://taxsummaries.pwc.com/barbados/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Barbados Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-barbadoshighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "How broadly 'benefit obtained in Barbados' is read in practice (e.g. foreign card spending in Barbados)."
+        ],
+        "eligibility_conditions": "Resident but not domiciled in Barbados. The 0% rate on foreign dividends assumes that no benefit from them is obtained in Barbados, i.e. the dividends (and capital derived from them) are kept and spent abroad and not remitted to or enjoyed in Barbados. Any foreign dividends from which a benefit is obtained in Barbados are taxed at the ordinary rates (11.5% to BBD 50,000, 27.5% above, 2026), with foreign tax credit."
+      },
+      "duration_note": "No statutory time limit: the Income Tax Act taxes a resident but non-domiciled individual on Barbados income and on foreign income only to the extent a benefit is obtained in Barbados (PwC, Individual - Taxes on personal income, reviewed 9 Oct 2026), and neither PwC nor Deloitte reports a deemed-domicile or year-count rule. The status lasts while the individual keeps a foreign domicile under common law; it ends if the individual acquires a Barbados domicile of choice (settling in Barbados with the intention of staying permanently), which is a question of fact that a long-settled family may eventually face.",
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Taxes on personal income (last reviewed 9 October 2026)",
+          "url": "https://taxsummaries.pwc.com/barbados/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/barbados/individual/residence",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "welcome_stamp",
+      "name": "Barbados Welcome Stamp",
+      "type": "special",
+      "description": "12-month remote-work visa; holders are not liable for Barbados income tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Income of at least USD 50,000 a year from work for employers or clients outside Barbados; fee USD 2,000 (individual) or USD 3,000 (family). Renewable by reapplying.",
+      "duration_years": 1,
+      "dividends": {
+        "summary": "Holders are not liable for Barbados income tax, so dividends are untaxed during the stamp.",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Official Welcome Stamp page: holders are not liable for income tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Visit Barbados: Barbados Welcome Stamp",
+            "url": "https://visitbarbados.org/barbados-welcome-stamp",
+            "publisher": "Barbados Tourism Marketing Inc. (government)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether the income-tax exemption covers investment income of a long-stay family that renews the stamp repeatedly."
+        ]
+      },
+      "requires_qualifying_activity": true
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if present more than 182 days in a calendar year, or ordinarily resident. For non-domiciled individuals 'ordinarily resident' may apply: a permanent home in Barbados and election to reside for at least two consecutive income years. Domicile follows common law.",
+    "routes": [
+      {
+        "name": "Welcome Stamp",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "12 months, renewable; USD 50,000+ annual income from outside Barbados; USD 2,000 individual / USD 3,000 family fee."
+      },
+      {
+        "name": "Special Entry and Reside Permit (SERP)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Long-term permit for high-net-worth individuals, investors and retirees. Thresholds and fees could not be verified on an official page in this research."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Visit Barbados: Barbados Welcome Stamp",
+        "url": "https://visitbarbados.org/barbados-welcome-stamp",
+        "publisher": "Barbados Tourism Marketing Inc. (government)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/barbados/individual/residence",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Barbados Highlights 2026 (updated January 2026)",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-barbadoshighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.09,
+    "summary": "Corporate income tax 9% in general (5.5% for some companies; 0-2% insurance; 4.5% qualifying IP income). Qualified domestic minimum top-up tax of 15% from 2024 for MNE groups with revenue of EUR 750m+. Dividends to non-residents: 0% from foreign-source income, 5% otherwise, treaty rates 0-15%.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Barbados, Corporate - Taxes on corporate income (last reviewed 9 October 2026)",
+        "url": "https://taxsummaries.pwc.com/barbados/corporate/taxes-on-corporate-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Barbados, Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/barbados/corporate/withholding-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Barbados Highlights 2026 (updated January 2026)",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-barbadoshighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Bridgetown",
+      "lon": -59.6184,
+      "lat": 13.0978,
+      "kind": "capital",
+      "coordinate_source": "OpenStreetMap relation 7751694 (centroid)"
+    }
+  ],
+  "us_citizen_notes": "US citizens are taxed by the US on worldwide income; the Barbados-US treaty (saving clause) applies. Barbados tax on foreign dividends may be creditable against US tax.",
+  "open_questions": [
+    "SERP eligibility thresholds and any tax features not verified on an official page.",
+    "Prime purchase price per m2, family health insurance and housekeeper cost not sourced; the west-coast rent rests on two listings."
+  ],
+  "cost_of_living": {
+    "city": "West coast (St James) / Bridgetown",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 14000,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Average of the two 4-5 bedroom houses on the west coast (St James) listed as long-term rentals by Barbados Sotheby's International Realty on 15 Oct 2026: Apes Hill, The View, 4-bed USD 13,000; Prior Park 13, 5-bed USD 15,000. Small sample. Elsewhere on the island 4-5 bed long-term rentals were listed at USD 3,250-8,500 (Sotheby's St Michael/St George; Realtors Ltd Christ Church). Asking rents.",
+      "source": {
+        "title": "Barbados Sotheby's International Realty: Long-term rentals (viewed 15 Oct 2026)",
+        "url": "https://www.barbadossothebysrealty.com/long-term-rentals",
+        "publisher": "Barbados Sotheby's International Realty",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 23350,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "The Codrington School (IB World School, St John), MYP 1 - DP 2 annual tuition 2026-27 at the 'Regular' rate for students who are not Barbadian or CARICOM nationals (CARICOM 17,500; Barbadian 11,700). Plus one-time admission fee USD 2,500-6,000, resource fee USD 100 a year and DP exam fee USD 1,000 in DP2.",
+      "source": {
+        "title": "The Codrington School: Statement of annual fees 2026-2027",
+        "url": "https://codrington.edu.bb/wp-content/uploads/2026/03/TCS-STATEMENT-OF-ANNUAL-FEES-2026-2027-2.pdf",
+        "publisher": "The Codrington School (Barbados)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Purchase price per m2, health insurance and housekeeper not sourced."
+  }
+}

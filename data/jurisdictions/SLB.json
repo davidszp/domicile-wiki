@@ -1,0 +1,208 @@
+{
+  "id": "SLB",
+  "name": "Solomon Islands",
+  "continent": "Oceania",
+  "region": "Melanesia (South Pacific)",
+  "currency": "SBD",
+  "researched_on": "2026-10-15",
+  "summary": "Solomon Islands taxes residents on worldwide income at up to 40% (above SBD 60,000, after a SBD 30,080 tax-free threshold). Dividends, domestic and foreign, are income: Solomon dividends bear 20% withholding credited against the 40% scale; foreign dividends get a credit for overseas tax. There is no specific capital gains tax, and capital gains of a private investor appear untaxed (low confidence). No inheritance, gift or wealth tax was found.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Residents taxed on worldwide income at up to 40%; no specific CGT.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if the individual resides in Solomon Islands; deemed resident if present more than six months in aggregate in the year or intending to reside more than six months (Income Tax Act Cap. 123 s. 2).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No specific capital gains tax. Tax is charged on income (business gains, employment, dividends, interest, and 'income from any other source whatsoever', s. 3); capital gains of a private investor are not listed and on ordinary common-law principles are not income.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income Tax Act Cap. 123 (consolidated to 14 November 2012, unofficial IRD consolidation)",
+            "url": "https://irdsb.deezigns.co.nz/wp-content/uploads/2025/10/Consolidated-Income-Tax-Act-Cap-123-121114_Unofficial.pdf",
+            "publisher": "Inland Revenue Division, Solomon Islands",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income Tax (rates for individuals and companies)",
+            "url": "https://www.ird.gov.sb/income-tax/",
+            "publisher": "Inland Revenue Division, Solomon Islands",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Inference from Income Tax Act Cap. 123 s. 3 (charge on income); no CGT provision found. 0 for all classes, low confidence.",
+        "professional_trader": "Gains from a business of dealing in shares or land are business income at up to 40%. The Act also mentions gains of a landowner from the sale of land in its deduction rules (not analysed).",
+        "foreign_assets": "Residents are taxed on income from all sources, but capital gains are not income.",
+        "open_questions": [
+          "No official statement that capital gains are untaxed was found; the 2012 consolidation is unofficial and later amendments were not read.",
+          "IRD publishes a 'formal tax policy work programme' and draft consultations (not read); a tax reform could change this."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends are charged to tax (s. 3(1)(b)) and residents are taxed on income from all sources (s. 3(2)(a)). Resident companies withhold 20% from dividends paid to resident individuals (s. 36; IRD), which is final only if the individual's total income is under SBD 10,000; otherwise the dividend is taxed on the scale (top 40%) with credit for the 20%. Foreign dividends are taxed on the scale with relief for overseas tax at the lower of the two rates (s. 44).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income Tax (rates for individuals and companies)",
+            "url": "https://www.ird.gov.sb/income-tax/",
+            "publisher": "Inland Revenue Division, Solomon Islands",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Withholding Tax (rates on payments to residents and non-residents)",
+            "url": "https://www.ird.gov.sb/withholding-tax/",
+            "publisher": "Inland Revenue Division, Solomon Islands",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income Tax Act Cap. 123 (consolidated to 14 November 2012, unofficial IRD consolidation)",
+            "url": "https://irdsb.deezigns.co.nz/wp-content/uploads/2025/10/Consolidated-Income-Tax-Act-Cap-123-121114_Unofficial.pdf",
+            "publisher": "Inland Revenue Division, Solomon Islands",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "exemptions_thresholds": "IRD: tax-free threshold SBD 30,080 from January 2020; above it 11% to 15,000, 23% to 30,000, 35% to 60,000, 40% above 60,000 (bands applied to income above the threshold as published).",
+        "headline_rate": 0.4,
+        "domestic_rate": 0.4,
+        "foreign_gross_rate": 0.4,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Top marginal rate 40% (IRD income tax page) applies to dividends of a high-income resident; the 20% dividend WHT is a credit, not a final tax, above SBD 10,000 total income (s. 36(5)). Foreign: 40% before s. 44 relief.",
+        "withholding_outbound": "30% on dividends paid to non-residents (IRD withholding page); 20% to residents.",
+        "treaty_network": "No comprehensive treaties found (not verified). US dividends bear 30% US WHT, creditable.",
+        "open_questions": [
+          "The IRD rate table wording ('$1 to $15 000 11%' after the SBD 30,080 threshold) is ambiguous about whether bands start at 0 or at the threshold; the 40% top rate is not affected."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no recurring levy on financial assets.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax legislation (Income Tax Act Cap. 123, Stamp Duty Act Cap. 126, Tax Administration Act 2022)",
+            "url": "https://www.ird.gov.sb/tax-legislation/",
+            "publisher": "Inland Revenue Division, Solomon Islands",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Not researched (provincial and town council rates may exist)."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax appears among the tax laws the Inland Revenue Division administers (Income Tax, Goods Tax, Sales Tax, Stamp Duty, Tax Administration). Stamp duty (Cap. 126) may apply to instruments transferring land or shares.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax legislation (Income Tax Act Cap. 123, Stamp Duty Act Cap. 126, Tax Administration Act 2022)",
+            "url": "https://www.ird.gov.sb/tax-legislation/",
+            "publisher": "Inland Revenue Division, Solomon Islands",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax found; stamp duty may apply to transfer instruments.",
+        "gifts_same_as_inheritance": true,
+        "open_questions": [
+          "Stamp Duty Act Cap. 126 rates on transfers by gift or succession not read."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Income Tax Act Cap. 123 s. 2: an individual is resident if he resides in Solomon Islands except for temporary absences; deemed resident if present more than six months in aggregate in the year, or the Commissioner is satisfied he intends to reside more than six months, or he is present under an employment contract of at least six months.",
+    "routes": [
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Income Tax Act Cap. 123 (consolidated to 14 November 2012, unofficial IRD consolidation)",
+        "url": "https://irdsb.deezigns.co.nz/wp-content/uploads/2025/10/Consolidated-Income-Tax-Act-Cap-123-121114_Unofficial.pdf",
+        "publisher": "Inland Revenue Division, Solomon Islands",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.3,
+    "summary": "Resident companies 30%, non-resident companies 35% (IRD). Dividends paid out bear 20% (resident) or 30% (non-resident) withholding.",
+    "sources": [
+      {
+        "title": "Income Tax (rates for individuals and companies)",
+        "url": "https://www.ird.gov.sb/income-tax/",
+        "publisher": "Inland Revenue Division, Solomon Islands",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Withholding Tax (rates on payments to residents and non-residents)",
+        "url": "https://www.ird.gov.sb/withholding-tax/",
+        "publisher": "Inland Revenue Division, Solomon Islands",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Honiara",
+    "notes": "Not sourced."
+  },
+  "markers": [
+    {
+      "name": "Honiara",
+      "lon": 159.95,
+      "lat": -9.43333,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2108502"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. Where local tax on portfolio income is nil there is nothing to credit against US tax. Solomon Islands tax on foreign dividends (up to 40%) generally exceeds the US rate, so the local tax is the binding layer.",
+  "open_questions": [
+    "Residence routes not researched."
+  ]
+}

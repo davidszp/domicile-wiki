@@ -1,0 +1,281 @@
+{
+  "id": "CYP",
+  "name": "Cyprus",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "From 1 January 2026 resident income tax is 0% to EUR 22,000, 20% to 32,000, 25% to 42,000, 30% to 72,000 and 35% above. Employees pay 8.8% social insurance up to EUR 68,904 and 2.65% GHS (health) up to EUR 180,000; the self-employed pay 16.6% and 4.0%. The recorded combined rates are 11.45% and 20.6% with the social-insurance cap.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 22000,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 32000,
+        "rate": 0.25
+      },
+      {
+        "from_amount": 42000,
+        "rate": 0.3
+      },
+      {
+        "from_amount": 72000,
+        "rate": 0.35
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.1145,
+    "employee_social_security_cap": 68904,
+    "self_employed_social_security_rate": 0.206,
+    "self_employed_social_security_cap": 68904,
+    "self_employed_notes": "Social insurance 16.6% (since 2024) plus GHS 4.00% of income (PwC other taxes, opened 2026-10-15). PwC says self-employed contributions are subject to a minimum and a maximum that depend on profession or trade, set annually, but lists no figures; the cap recorded (EUR 68,904) is the 2026 EMPLOYEE ceiling applied by assumption and could not be confirmed (Ministry of Labour pages returned 404). GHS applies to income up to EUR 180,000, so above EUR 68,904 the recorded rates overstate by the GHS part (2.65% employees, 4% self-employed). Business profits are taxed on the normal scale after deductible expenses.",
+    "local_tax_note": "No local income tax. The 0% bracket to EUR 22,000 stands in for the tax-free amount. Dividends and interest face Special Defence Contribution only for domiciled residents (domicile after 17 of the last 20 years).",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Cyprus, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/cyprus/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Cyprus, other taxes (social insurance, GHS)",
+        "url": "https://taxsummaries.pwc.com/cyprus/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Cyprus - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/cyprus/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Self-employed maximum insurable earnings for 2026 not found on any official page; the employee ceiling of EUR 68,904 (confirmed for employees on PwC) is assumed. Confidence low for the self-employed cap.",
+      "Social insurance and GHS deductions share an overall cap of 1/5 of chargeable income with life insurance, pension/provident (10% of remuneration) and medical fund (2%) items; at EUR 54,000 the cap (EUR 10,800) exceeds the recorded employee contributions (11.45% = about EUR 6,183), so 1 is used. No standard employment deduction on the page."
+    ],
+    "social_security_deductible": 1
+  },
+  "regimes": [
+    {
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 61000,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_note": "One year plus two one-year renewals.",
+      "social_security_applies": true,
+      "open_questions": [
+        "Official page (gov.cy / Migration Department) returned 403; threshold, net basis, duration and the 500-permit cap rest on Remote Work Europe only.",
+        "The EUR 3,500 is net: the gross equivalent of about EUR 61,000 (self-employed) is our derivation and an applicant is judged on documented net income.",
+        "Sources disagree on renewal (one or two further years); three years in total is used."
+      ],
+      "id": "cyp_nomad_visa",
+      "name": "Digital nomad visa",
+      "kind": "digital_nomad_visa",
+      "description": "Visa for non-EU remote workers with stable income of at least EUR 3,500 a month NET (after taxes and contributions) per Remote Work Europe, valid one year and renewable for up to two further years (three in total), capped at 500 permits. min_income is a gross equivalent: EUR 42,000 net needs about EUR 61,000 gross for a self-employed person (16.6% + 4% contributions) and about EUR 54,700 for an employee, using the 2026 Cyprus scale (our arithmetic). The visa does not change tax: a resident (over 183 days) pays the normal scale on worldwide income, and the non-dom regime exempts dividends and certain interest from Special Defence Contribution. The 100% exemption for remuneration for work exercised OUTSIDE Cyprus for over 90 days a year for a non-resident employer (PwC) does not cover work done in Cyprus.",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "duration_years": 3,
+      "treatment": "standard",
+      "sources": [
+        {
+          "title": "Cyprus digital nomad visa guide (Remote Work Europe)",
+          "url": "https://remoteworkeurope.eu/guides/cyprus",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries - Cyprus, income determination (exempt employment income)",
+          "url": "https://taxsummaries.pwc.com/cyprus/individual/income-determination",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "unverified"
+    },
+    {
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": {
+        "amount": 55000,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_note": "",
+      "social_security_applies": true,
+      "open_questions": [
+        "Employment starting 1 January 2022 to 29 June 2023 follows a 10-year non-residence test."
+      ],
+      "id": "cyp_50",
+      "name": "50% exemption on first employment in Cyprus",
+      "kind": "expat_regime",
+      "description": "Half of employment income is exempt for 17 years for people whose first employment in Cyprus starts after 1 January 2022, who were not Cyprus tax resident for at least 15 consecutive years before, and whose remuneration exceeds EUR 55,000 a year. Usable once per person; not combinable with the 20% or 25% exemptions.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "duration_years": 17,
+      "treatment": "partial_exemption",
+      "exempt_share": 0.5,
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries - Cyprus, income determination (exempt employment income)",
+          "url": "https://taxsummaries.pwc.com/cyprus/individual/income-determination",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified"
+    },
+    {
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": null,
+      "max_income": null,
+      "duration_note": "",
+      "social_security_applies": true,
+      "open_questions": [
+        "Cap on the exempt amount (EUR 8,550 a year) is not representable in the model, so exempt_share overstates the relief above EUR 42,750 of income.",
+        "The 25% exemption (cyp_25) is now modelled separately."
+      ],
+      "id": "cyp_20",
+      "name": "20% exemption on first employment in Cyprus",
+      "kind": "expat_regime",
+      "description": "20% of employment income is exempt, capped at EUR 8,550 a year, for seven years starting the tax year after employment begins. Requires employment starting after 26 July 2022, at least three consecutive non-resident years and prior employment abroad by a non-resident employer. Not combinable with the 50% or 25% exemptions.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "duration_years": 7,
+      "treatment": "partial_exemption",
+      "exempt_share": 0.2,
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries - Cyprus, income determination (exempt employment income)",
+          "url": "https://taxsummaries.pwc.com/cyprus/individual/income-determination",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified"
+    },
+    {
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 30000,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_note": "Seven years; applies to employment or business starting between 1 January 2025 and 31 December 2030.",
+      "social_security_applies": true,
+      "open_questions": [
+        "The EUR 25,000 cap on the exempt amount is not modelled (binds above EUR 100,000 of income); the relief is overstated for the expat persona, though the 50% regime is larger where it applies.",
+        "Only PwC opened; the Cyprus Tax Department wording was not reached. Whether self-employed digital nomads working for foreign clients count as 'carrying on a business in Cyprus' was not checked."
+      ],
+      "id": "cyp_25",
+      "name": "25% exemption on first employment or business in Cyprus (2025-2030 starters)",
+      "kind": "expat_regime",
+      "description": "PwC (income determination): 25% of employment income or business profits earned in Cyprus is exempt, up to EUR 25,000 a year, for seven years, for employment or a business starting between 1 January 2025 and 31 December 2030. Conditions: Cyprus tax resident; remuneration or profits above EUR 30,000 in the 12 months after commencement; non-resident for the seven preceding tax years; a recognised university degree plus 36 months of full-time non-Cyprus employment in the prior 84 months (or 84 months). Not combinable with the 50% or 20% exemptions. The EUR 25,000 cap on the exempt amount is not representable: it binds above EUR 100,000 of income, where exempt_share overstates the relief.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "duration_years": 7,
+      "treatment": "partial_exemption",
+      "exempt_share": 0.25,
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries - Cyprus, income determination (exempt employment income)",
+          "url": "https://taxsummaries.pwc.com/cyprus/individual/income-determination",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    }
+  ],
+  "costs": {
+    "city": "Limassol",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1450,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent, 1-bedroom apartments, Limassol (all locations), Global Property Guide 2026 from local portal listings. Furnished status not stated. Nicosia EUR 650.",
+      "source": {
+        "title": "Global Property Guide - Cyprus rental yields (median asking rents)",
+        "url": "https://globalpropertyguide.com/Europe/Cyprus/Rental-Yields",
+        "publisher": "Global Property Guide",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 2100,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent, 2-bedroom apartments, Limassol (all locations), Global Property Guide 2026 from local portal listings. Furnished status not stated. Nicosia EUR 900.",
+      "source": {
+        "title": "Global Property Guide - Cyprus rental yields (median asking rents)",
+        "url": "https://globalpropertyguide.com/Europe/Cyprus/Rental-Yields",
+        "publisher": "Global Property Guide",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "The source page labels its latest update 'Q3, 2027', evidently a typo; the data is treated as 2026. Limassol is the main expat and nomad city; Nicosia is much cheaper. Second rent source not obtained."
+  },
+  "residence_routes": "EU citizens register for residence. US and other non-EU remote workers can use the digital nomad visa (EUR 3,500 net a month, up to three years, 500 permits). Skilled employees from outside the EU need an employer-sponsored work permit under the Cyprus Immigration scheme, which was not researched. Cyprus's 50% and 20% employment exemptions apply to any new employee who meets the non-residence tests.",
+  "open_questions": [
+    "Employer-sponsored work permit rules and quotas not researched.",
+    "Official Civil Registry and Migration Department page for the nomad visa not opened.",
+    "Rents rest on one aggregator (Global Property Guide); no second source obtained."
+  ]
+}

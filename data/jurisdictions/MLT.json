@@ -1,0 +1,433 @@
+{
+  "id": "MLT",
+  "name": "Malta",
+  "continent": "Europe",
+  "region": "Southern Europe (Central Mediterranean), EU member",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "For a foreign family Malta works on the remittance basis: residents who are not Malta-domiciled pay no Maltese tax on foreign capital gains even if brought to Malta, and on foreign dividends only if remitted, subject to a EUR 5,000 annual minimum tax when unremitted foreign income is EUR 35,000 or more. The Global Residence Programme (non-EU) taxes remitted foreign income at 15% with a EUR 15,000 minimum; from 1 Jan 2027 it is replaced by the Individual Tax Programme with a EUR 35,000 minimum (applications by 31 Dec 2026 keep the old terms until 2031). No inheritance, gift or wealth tax, but duty on documents of 5% on inherited Maltese real estate and about 2% on Maltese shares; foreign assets carry no duty.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinarily resident and Malta-domiciled (worldwide basis)",
+      "type": "standard",
+      "description": "Worldwide taxation at progressive rates up to 35%. Applies to individuals both domiciled and ordinarily resident in Malta (Maltese by domicile of origin, a foreigner who acquires a Maltese domicile of choice, or a person married to a domiciled resident). A newly arriving foreign family is normally taxed under the non_dom regime instead.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Ordinary residence plus Maltese domicile (common-law concept; a domicile of choice requires intention to settle permanently).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains on shares and securities (excluding fixed-return securities), immovable property, business assets, IP and partnership/trust interests are taxed at marginal rates up to 35% for domiciled residents. Shares listed on the Malta Stock Exchange are exempt (and certain foreign-listed shares under conditions). Transfers of Maltese immovable property acquired after 2004 attract a final tax of 8% of the transfer value (10% if acquired before 2004).",
+        "exemptions_thresholds": "MSE-listed shares exempt. Bonds/fixed-return securities outside the CGT net. Exemption for a sole ordinary residence exists (conditions not verified).",
+        "important_exceptions": "First EUR 750,000 of certain old/vacant or Urban Conservation Area properties exempt until 31 Dec 2026.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Malta - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/malta/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Malta - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/malta/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Conditions of the exemption for foreign-listed shares ('recognised exchanges') for domiciled residents not verified; 0.35 assumed for foreign listed shares.",
+          "Whether foreign real estate gains are taxed for domiciled residents at 35% assumed, not verified."
+        ],
+        "headline_rate": 0.35,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.35,
+          "private_business_sale": 0.35,
+          "real_estate_local": 0.08,
+          "real_estate_foreign": 0.35
+        },
+        "rate_basis": "Top marginal income tax rate 35% applied to chargeable gains. real_estate_local 0.08 is the final tax on the transfer VALUE (not the gain), property acquired after 2004.",
+        "professional_trader": "Habitual trading may be taxed as trading income at the same 35% top rate.",
+        "holding_period_rules": "None for securities.",
+        "foreign_assets": "Domiciled residents are taxed on worldwide gains."
+      },
+      "dividends": {
+        "summary": "Malta has a full imputation system: dividends from taxed profits of Maltese companies carry a credit for the 35% corporate tax, so no further personal tax (refund possible for lower-rate taxpayers). Foreign dividends are taxed at progressive rates up to 35% for domiciled residents, with credit for foreign withholding tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Malta - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/malta/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Malta - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/malta/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Malta: Taxation (shareholder refund system)",
+            "url": "https://www.legal500.com/intelligence/malta/tax/taxation",
+            "publisher": "Legal 500 (PKF Malta)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.35,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.35,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Top marginal rate 35% (above EUR 60,000). Domestic 0 = no personal tax beyond the imputed 35% corporate tax.",
+        "withholding_outbound": "No withholding tax on dividends paid by Maltese companies (imputation system); non-resident shareholders can claim refunds of 6/7, 5/7 or 2/3 of Maltese corporate tax.",
+        "treaty_network": "Extensive treaty network including the US and all EU states (count not verified).",
+        "holding_company_notes": "Participation exemption for qualifying holdings; full imputation and shareholder refund system brings effective corporate tax to around 5% for trading income. No holding structure is scored for Malta: a Maltese company pays 35% and the 6/7 shareholder refund (about 5% net) only arises when profits are distributed, the FITWI election available since 2025 is a 15% final tax, and an arriving family is normally non-domiciled, so foreign gains held personally are never taxed and foreign dividends kept abroad are untaxed (EUR 5,000 minimum tax); a company would add tax rather than save it."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no levy on financial assets.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Malta - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/malta/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "No annual property tax in Malta."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. But the Duty on Documents and Transfers Act charges duty on transfers causa mortis and gifts of Maltese assets: generally 5% on Maltese immovable property and 2% on shares in Maltese companies (higher for property companies). Foreign assets (e.g. a foreign securities portfolio) carry no Maltese duty. Reliefs: no duty on a dwelling transferred from parent to descendants (conditions); inherited dwelling occupied by heirs 3.5% (threshold raised to EUR 400,000 from 28 Oct 2025); parent-to-child donation of residential property duty-free on first EUR 250,000, then 3.5%; gifts of marketable securities and family business premises to close relatives 1.5% until 31 Dec 2026.",
+        "exemptions_thresholds": "See summary for property reliefs.",
+        "important_exceptions": "Interest of 4% a year on causa mortis duty if the declaration is filed more than one year after death.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Malta - Individual - Other taxes (duty on documents and transfers)",
+            "url": "https://taxsummaries.pwc.com/malta/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Duty on Documents and Transfers Act (Cap. 364) not opened; rates from PwC.",
+          "Exact duty rate on inherited shares in Maltese companies (2% general vs 5% for property companies) on death not checked in the statute."
+        ],
+        "basis": "none",
+        "children_treatment": "exempt_with_conditions",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax. Gifts of Maltese property/shares attract duty on documents (5%/2%, with reliefs for children: first EUR 250,000 of residential property duty-free then 3.5%; securities and family business premises 1.5% to close relatives until end-2026). Gifts of foreign assets: no duty.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "1.5% reduced duty for family business premises transferred to close relatives (until 31 Dec 2026).",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "No duty on foreign assets. Children_treatment 'taxed_low' reflects duty only on Maltese real estate/shares; other_transfer_cost_rate set to 0 because a mostly foreign portfolio bears no duty.",
+        "domicile_rules": "Duty depends on the situs of the asset (Maltese immovable property and Maltese company shares), not on domicile."
+      }
+    },
+    {
+      "id": "non_dom",
+      "name": "Resident non-domiciled (remittance basis)",
+      "type": "special",
+      "description": "Default status for a foreigner who becomes ordinarily resident without acquiring a Maltese domicile: Malta-source income and gains taxed; foreign income taxed only if remitted to Malta; foreign capital gains never taxed, even if remitted. A EUR 5,000 minimum tax applies if (with spouse) unremitted foreign income in the preceding year was EUR 35,000 or more. No time limit.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Ordinarily resident in Malta, not domiciled in Malta, not married to a Malta-domiciled person and not a long-term/permanent resident taxed worldwide. Non-EU need a residence permit (e.g. GRP, MPRP).",
+      "duration_years": null,
+      "lump_sum": {
+        "annual": {
+          "amount": 5000,
+          "currency": "EUR"
+        },
+        "covers": [
+          "foreign_income_all"
+        ],
+        "notes": "Not a forfait: a minimum tax per individual (married couple jointly) where unremitted foreign income is at least EUR 35,000 and no other minimum tax applies; computed before double tax relief; Maltese tax paid counts towards it."
+      },
+      "capital_gains": {
+        "summary": "Foreign capital gains are not taxed even if remitted. Gains on Maltese assets are taxed as for residents (MSE-listed shares exempt; Maltese property 8% final tax on value; unlisted Maltese shares up to 35%).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Malta - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/malta/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Malta - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/malta/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.35,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.08,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Foreign gains outside the charge for non-doms; private_business_sale = 0 assumes a foreign company (a Maltese private company sale is taxable at up to 35%).",
+        "foreign_assets": "Foreign gains exempt regardless of remittance.",
+        "eligibility_conditions": "No remittance assumption needed: foreign capital gains are outside the Maltese charge for non-domiciled residents even if remitted."
+      },
+      "dividends": {
+        "summary": "Foreign dividends taxed only if remitted to Malta (then at progressive rates up to 35% with foreign tax credit). Unremitted foreign income triggers only the EUR 5,000 minimum tax if it is EUR 35,000 or more.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Malta - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/malta/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.35,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Assumes foreign dividends are kept outside Malta; living costs are funded from remitted capital or capital gains, which are not taxed. Remitted dividends: 35% top rate with credit. Plus the EUR 5,000 minimum tax.",
+        "withholding_outbound": "No WHT on dividends paid by Maltese companies.",
+        "eligibility_conditions": "The 0% foreign_gross_rate assumes foreign dividends are NOT remitted to Malta. Any foreign income remitted (received) in Malta is taxed at progressive rates up to 35% with foreign tax credit. The EUR 5,000 minimum tax applies when unremitted foreign income is EUR 35,000 or more."
+      },
+      "duration_note": "No statutory time limit: the remittance basis applies for as long as the individual is resident but not domiciled in Malta (Income Tax Act, Cap. 123, art. 4(1)), and ends only if Maltese domicile is acquired (or by marriage to a Malta-domiciled person). Non-EU nationals also need a residence permit, which is renewable."
+    },
+    {
+      "id": "grp",
+      "name": "Global Residence Programme / Residence Programme (15% on remitted income)",
+      "type": "special",
+      "description": "Special tax status: foreign-source income remitted to Malta taxed at a flat 15% (double tax relief available), minimum annual tax EUR 15,000; foreign capital gains not taxed (non-dom basis); other income at 35%. GRP is for non-EU/EEA/Swiss nationals and gives a residence permit; The Residence Programme (TRP) is the EU/EEA/Swiss equivalent. Replaced from 2027 by the Individual Tax Programme Rules (L.N. 195 of 2026, read 2026-10-15): 15% on foreign income received in Malta by the beneficiary, spouse and dependent children; minimum tax EUR 35,000 for global resident and EU/EEA/Swiss resident status (EUR 15,000 for retired pensioner status); property threshold EUR 700,000 purchase or EUR 14,000/year rent; EUR 8,500 non-refundable application fee; status for 5 years, renewable. Statuses granted or applications received by 31 Dec 2026 keep the old rules until 31 Dec 2031.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "GRP (to 31 Dec 2026): buy Maltese property of at least EUR 275,000 or rent at least EUR 9,600 a year (lower in South Malta/Gozo), stable resources, health insurance, not in Malta more than 183 days in any other jurisdiction, no long-term residence. Not domiciled in Malta. From 2027 (ITP): EUR 700,000 property or EUR 14,000 rent.",
+      "duration_years": null,
+      "lump_sum": {
+        "annual": {
+          "amount": 15000,
+          "currency": "EUR"
+        },
+        "covers": [
+          "foreign_income_all"
+        ],
+        "notes": "Minimum tax, not a forfait: 15% on remitted foreign income, at least EUR 15,000 a year (status granted or applied for by 31 Dec 2026, until 31 Dec 2031). New ITP status from 2027: minimum EUR 35,000 (L.N. 195/2026 rule 5(1)), payable in full in the first and last year. The 15% and the minimum cover the beneficiary, spouse and dependent children (rule 5(1))."
+      },
+      "dividends": {
+        "summary": "Foreign dividends remitted to Malta taxed at 15% (foreign tax credit available); unremitted foreign dividends not taxed; minimum annual tax EUR 15,000 (EUR 35,000 under the 2027 ITP).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Malta - Individual - Taxes on personal income (GRP, ITP)",
+            "url": "https://taxsummaries.pwc.com/malta/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Individual Tax Programme Rules, 2026 (L.N. 195 of 2026)",
+            "url": "https://legislation.mt/eli/ln/2026/195/eng",
+            "publisher": "Government of Malta, legislation.mt",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Individual Tax Programme Rules 2026",
+            "url": "https://www.deloitte.com/mt/en/services/tax/perspectives/tax-alerts/2026/individual-tax-programme-rules-2026.html",
+            "publisher": "Deloitte Malta",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Malta introduces the Individual Tax Programme Rules, 2026",
+            "url": "https://www.bdo.com.mt/en-gb/insights/aml-and-compliance/malta-introduces-the-individual-tax-programme-rules-2026",
+            "publisher": "BDO Malta",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Individual Tax Programme Rules, 2026 (L.N. 195 of 2026), Government Gazette No. 21,686, 14 July 2026 (PDF)",
+            "url": "https://legislation.mt/eli/ln/2026/195/eng/pdf",
+            "publisher": "Government of Malta, legislation.mt",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "TRP (EU nationals) current minimum assumed equal to GRP EUR 15,000; not separately verified."
+        ],
+        "headline_rate": 0.15,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.15,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Flat 15% on remitted foreign income; 0 if not remitted; minimum EUR 15,000 a year.",
+        "eligibility_conditions": "foreign_gross_rate 0.15 assumes foreign dividends ARE remitted to Malta; unremitted foreign dividends are not taxed, but the minimum tax (EUR 15,000; EUR 35,000 for new ITP status from 2027) is due regardless."
+      },
+      "sources": [
+        {
+          "title": "Individual Tax Programme Rules 2026",
+          "url": "https://www.deloitte.com/mt/en/services/tax/perspectives/tax-alerts/2026/individual-tax-programme-rules-2026.html",
+          "publisher": "Deloitte Malta",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Individual Tax Programme Rules, 2026 (L.N. 195 of 2026), Government Gazette No. 21,686, 14 July 2026 (PDF)",
+          "url": "https://legislation.mt/eli/ln/2026/195/eng/pdf",
+          "publisher": "Government of Malta, legislation.mt",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "duration_note": "GRP/TRP status has no fixed end date while its conditions are met. Under L.N. 195 of 2026 (rule 3(3)), statuses granted or applied for by 31 Dec 2026 continue under the old rules until 31 Dec 2031; new statuses run for 5 years and may be renewed for further 5-year periods at the applicant's option, so there is no overall time limit."
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Residence is a facts-and-circumstances test (ordinary residence); 183+ days in a year generally makes an individual resident. Domicile follows common-law principles; a foreigner keeps a foreign domicile unless he acquires a Maltese domicile of choice.",
+    "routes": [
+      {
+        "name": "EU free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Registration as an EU resident; optionally The Residence Programme special tax status."
+      },
+      {
+        "name": "Global Residence Programme (until 31 Dec 2026), then ITP Global Resident Status",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Property purchase of at least EUR 275,000 or rent of EUR 9,600/yr (EUR 700,000 / EUR 14,000 under ITP from 2027), stable resources, health insurance, minimum tax.",
+        "minimum_investment": {
+          "amount": 275000,
+          "currency": "EUR"
+        }
+      },
+      {
+        "name": "Malta Permanent Residence Programme (MPRP)",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Permanent residence against government contribution, administrative fee, EUR 2,000 donation and a qualifying property purchase or lease; restructured by LN 146 of 2025. Current amounts not verified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Malta - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/malta/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.35,
+    "summary": "Headline corporate tax 35%, but the full imputation system with shareholder refunds (6/7 for trading income) gives an effective rate around 5%. Participation exemption for qualifying holdings. Pillar Two applies to large groups.",
+    "sources": [
+      {
+        "title": "Malta - Individual - Income determination",
+        "url": "https://taxsummaries.pwc.com/malta/individual/income-determination",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Sliema / St Julian's (family villas: Madliena, Swieqi, Ibragg, Attard/Balzan/Lija, Iklin, Santa Maria Estate)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 7000,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Approximate median asking rent of 176 'Houses & Villas' with 4+ bedrooms for rent on PropertyMarket.com.mt on 2026-10-15 in Madliena, Swieqi, Ta' l-Ibragg, Attard, Balzan, Lija, Iklin and Santa Maria Estate. Derived from the portal's own price-band counts: 54 listings at or below EUR 5,000, 71 at or below EUR 6,000, 98 at or below EUR 7,500, 127 at or below EUR 10,000; the median (88th listing) lies between EUR 6,000 and EUR 7,500, about EUR 7,000. Asking rents.",
+      "source": {
+        "title": "Houses & villas to rent, 4+ bedrooms, selected localities",
+        "url": "https://www.propertymarket.com.mt/to-rent/?pc=1&nb=4&locations%5B%5D=Madliena&locations%5B%5D=Swieqi&locations%5B%5D=Ta%27+l-Ibragg&locations%5B%5D=Attard&locations%5B%5D=Balzan&locations%5B%5D=Lija&locations%5B%5D=Iklin&locations%5B%5D=Santa+Maria+Estate+%28Mellieha%29",
+        "publisher": "PropertyMarket.com.mt",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 15700,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Verdala International School (Pembroke), Grades 11-12 (IB Diploma) annual tuition 2026-27. Extra: EUR 2,000 annual capital projects contribution, one-time EUR 5,000 registration and EUR 300 administration fees.",
+      "source": {
+        "title": "Verdala International School - Fees and Financial Conditions 2026-2027",
+        "url": "https://www.verdala.org/attachments/download.asp?file=31&type=pdf",
+        "publisher": "Verdala International School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent from a listing-portal sample (asking rents). Purchase price, health insurance and housekeeper costs not sourced."
+  },
+  "markers": [
+    {
+      "name": "Valletta",
+      "lon": 14.5148,
+      "lat": 35.89968,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2562305"
+    }
+  ],
+  "us_citizen_notes": "US citizens are taxed by the US on worldwide income; the remittance basis does not change US tax. The US-Malta treaty contains a saving clause (standard in US treaties).",
+  "open_questions": [
+    "Malta-side shareholder refund rules (6/7, 5/7, 2/3) and the absence of dividend WHT stated from general knowledge; not verified against a source opened in this research.",
+    "MPRP contribution amounts after LN 146/2025 not verified.",
+    "Purchase price per m2, health insurance and housekeeper costs not sourced."
+  ]
+}

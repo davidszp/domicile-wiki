@@ -1,0 +1,172 @@
+{
+  "id": "BRB",
+  "name": "Barbados",
+  "currency": "BBD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Two-band income tax after a BBD 25,000 personal allowance: 11.5% on the next BBD 50,000 and 27.5% above that, from income year 2026 (cut from 12.5% and 28.5%). National Insurance is 11% of earnings up to BBD 5,360 a month for employees and 17% for the self-employed.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.115
+      },
+      {
+        "from_amount": 50000,
+        "rate": 0.275
+      }
+    ],
+    "personal_allowance": 25000,
+    "employee_social_security_rate": 0.11,
+    "employee_social_security_cap": 64320,
+    "self_employed_social_security_rate": 0.17,
+    "self_employed_social_security_cap": 64320,
+    "self_employed_notes": "Self-employed pay 17% of earnings to the National Insurance Scheme (PwC), on the same monthly ceiling of BBD 5,360. Both employees and self-employed also pay a further 0.25% of gross earnings, uncapped, to the Resilience and Regeneration Fund (formerly the Catastrophe Fund). Cap shown is BBD 5,360 x 12.",
+    "local_tax_note": "No local or municipal income tax. Brackets are on taxable income after the BBD 25,000 personal allowance: the BRA describes the 11.5% band as gross income of BBD 25,001 to 75,000 and 27.5% above BBD 75,000. Residents who are not domiciled are taxed on Barbados-source income and on foreign income only to the extent a benefit is obtained in Barbados. The 0.25% Resilience and Regeneration Fund levy is not included in the employee rate shown.",
+    "sources": [
+      {
+        "title": "Barbados Revenue Authority policy note: Reduction of Personal Income Tax Rates",
+        "url": "https://bra.gov.bb/News/Policy-Notes/Reduction-of-Personal-Income-Tax-R",
+        "publisher": "Barbados Revenue Authority",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Significant developments",
+        "url": "https://taxsummaries.pwc.com/barbados/individual/significant-developments",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/barbados/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Barbados, Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/barbados/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Barbados Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-barbadoshighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Barbados Revenue Authority - Income Tax FAQs",
+        "url": "https://bra.gov.bb/FAQs/Income-Tax/",
+        "publisher": "Barbados Revenue Authority",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "Deloitte's January 2026 highlights still show the old 12.5% / 28.5% rates; the BRA policy note (income year 2026: 11.5% on BBD 25,001 to 75,000, 27.5% above) and PwC agree on the new rates, which are used. The BRA page implies but does not state that the BBD 25,000 allowance is unchanged (Deloitte confirms it).",
+      "Compensatory income credit and other credits (BRA policy note OGC 001/2026) not researched."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "id": "welcome_stamp",
+      "name": "Barbados Welcome Stamp",
+      "kind": "digital_nomad_visa",
+      "description": "12-month remote-work visa for people working for employers or clients outside Barbados (fee USD 2,000 individual, USD 3,000 family; reapply after a year). The official programme page states: 'You will not be liable to pay Barbados Income Tax and therefore will not be subject to any double taxation'; the visa is for remote work only. Because the holder is expressly allowed to work remotely in Barbados and is told no Barbados income tax is payable, the relief covers pay for work done while living there (covers_local_work true); 17.5% VAT still applies to purchases.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 50000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": 2,
+      "duration_note": "Valid 12 months; the tourism site says holders can 'easily reapply' but gives no renewal terms or fees, so 2 years assumes one reapplication. Fee USD 2,000 individual, USD 3,000 family bundle.",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Visit Barbados: Barbados Welcome Stamp",
+          "url": "https://www.visitbarbados.org/barbados-welcome-stamp",
+          "publisher": "Barbados Tourism Marketing Inc.",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Barbados Welcome Stamp (official programme site)",
+          "url": "https://www.barbadoswelcomestamp.bb",
+          "publisher": "Government of Barbados, Ministry of Tourism and International Transport",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "The exemption is stated on the Ministry of Tourism programme pages, not in a revenue-authority ruling or the statute; the legal instrument was not found.",
+        "Whether National Insurance is due for a holder is not addressed.",
+        "Renewal is described only as 'you can easily reapply'; the interaction of repeated stamps with the 183-day residence test is not stated."
+      ],
+      "covers_local_work": true
+    }
+  ],
+  "costs": {
+    "city": "Bridgetown (and west coast)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 2366.67,
+        "currency": "BBD"
+      },
+      "year": 2026,
+      "description": "Numbeo average for a 1-bedroom apartment in the city centre of Bridgetown (range BBD 1,500 to 4,000); 61 entries by 6 contributors in the past 12 months, page updated 2 Oct 2026. Crowd-sourced; furnishing not stated. Individual listings on Nvest Estates range from USD 800 (Prospect, St James) to USD 3,700 (serviced residence).",
+      "source": {
+        "title": "Numbeo: Cost of living in Bridgetown",
+        "url": "https://www.numbeo.com/cost-of-living/in/Bridgetown",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 2762.5,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 8 two-bedroom apartments and townhouses in Christ Church, St James and St Michael (south and west coast, Bridgetown area) among 53 residential rental listings on Terra Caribbean; range USD 1,100 to 3,500; all 11 two-bed listings island-wide have a median of USD 2,800; furnishing not stated.",
+      "source": {
+        "title": "Terra Caribbean: Barbados residential rentals (listing page)",
+        "url": "https://terracaribbean.com/barbados/properties/?country_code=bb&listing_type=rental&currency=usd&zoning%5B%5D=residential&property_types%5B%5D=apartment&limit=100&offset=0&order_by=price&order=asc",
+        "publisher": "Terra Caribbean",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "1-bed: Numbeo (crowd-sourced, 6 contributors; Terra Caribbean lists only 5 one-bed units, 3 of them outside the main expat parishes, so no listing median). 2-bed: Terra Caribbean listings read 2026-10-15. Numbeo returned HTTP 429 on retry for 2-bed data and does not publish a 2-bed figure."
+  },
+  "residence_routes": "EU, US and other citizens use the same route for remote work: the 12-month Welcome Stamp (USD 50,000 a year of income from outside Barbados; USD 2,000 individual or USD 3,000 family fee). Skilled employees of a Barbadian employer need a local work permit and a long-term residence status; the Special Entry and Reside Permit (SERP) is a separate high-net-worth/retiree route. Permit thresholds, fees and processing for employees were not verified on an official page. US citizens stay taxable in the US on worldwide income regardless of the Welcome Stamp exemption.",
+  "open_questions": [
+    "Employee work-permit and SERP terms not verified on an official page.",
+    "1-bed rent rests on 6 Numbeo contributors; 2-bed on 8 listings from one agency."
+  ]
+}

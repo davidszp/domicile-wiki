@@ -1,0 +1,240 @@
+{
+  "id": "BWA",
+  "name": "Botswana",
+  "continent": "Africa",
+  "region": "Southern Africa",
+  "currency": "BWP",
+  "researched_on": "2026-10-15",
+  "summary": "Botswana taxes individuals on a source basis: gains on foreign shares are outside the tax, and gains on shares of public or Botswana Stock Exchange-listed companies held at least a year are exempt. Botswana-source gains on other shares and on property are taxed at up to 25% (on 75% of the gain for shares). Dividends bear a 10% final withholding tax; PwC says foreign dividends of resident citizens are taxed at 10%. There is no wealth tax, but a capital transfer tax of up to 5% (individuals) is charged on the recipient of inheritances and gifts, including foreign property received by a beneficiary who lives in Botswana.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Botswana tax resident",
+      "type": "standard",
+      "description": "Source-based income tax 0-25%; separate capital gains table; capital transfer tax on heirs and donees.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if the individual normally has a permanent place of abode in Botswana and is present at least 183 days in the tax year (1 July-30 June) or the previous one. Non-citizens need a residence and (for work) a work permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains are a separate source of income taxed on a separate progressive table up to 25%, but only when the source is in Botswana. Gains on immovable property are inflation-indexed; for other assets 75% of the gain is taxable. Sales of shares of a public company, of shares traded on the Botswana Stock Exchange or of a company that has listed 49% or more of its equity there are exempt if held for at least one year. Gains on foreign shares and foreign property are outside the source-based tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Botswana - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/botswana/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Botswana - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/botswana/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Botswana - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/botswana/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PwC's individual CGT table (bands from BWP 36,000) has not been updated to the 2026 personal scale that starts at BWP 48,000; the 25% top rate is the same either way.",
+          "Whether the listed-share exemption applies to individuals in exactly the same way as to companies (PwC describes it on the corporate page) was not confirmed in the Income Tax Act."
+        ],
+        "headline_rate": 0.25,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.1875,
+          "real_estate_local": 0.25,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Domestic listed: exempt after one year (Income Tax Act exemption described by PwC). Foreign listed and foreign real estate: 0, not Botswana-source. Private business (Botswana company): 25% top rate on 75% of the gain = 18.75%. Local real estate: 25% top rate on the inflation-indexed gain.",
+        "exemptions_thresholds": "Listed/public company shares held 12 months or more: exempt. Taxable share gains: 75% inclusion. Property: inflation-adjusted cost.",
+        "important_exceptions": "Transfer duty on property purchases by non-citizens is 10% up to BWP 2 million and 15% above (buyer-side cost, not modelled).",
+        "holding_period_rules": "12-month holding for the listed-share exemption.",
+        "professional_trader": "Regular dealing in shares or property would be business income at the ordinary 25% top rate.",
+        "foreign_assets": "Foreign gains are not Botswana-source and are not taxed."
+      },
+      "dividends": {
+        "summary": "Dividends paid by Botswana companies bear a 10% withholding tax, which is the final tax. PwC states that the gross income of a resident citizen includes foreign dividends, taxed at 10%; the treatment of foreign dividends received by a resident non-citizen is not stated and was scored at the same 10%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Botswana - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/botswana/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Botswana - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/botswana/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Botswana - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/botswana/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether foreign dividends of a resident non-citizen are taxable at all under the source rules (PwC mentions only resident citizens)."
+        ],
+        "headline_rate": 0.1,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.1,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: 10% final WHT. Foreign: 10% (PwC, resident citizens) with unilateral credit for foreign tax up to the Botswana tax, so treaty-rate WHT of 10% or more would leave no Botswana tax.",
+        "withholding_outbound": "10% on dividends to residents and non-residents; treaties reduce to 5-7.5% for substantial corporate holdings.",
+        "treaty_network": "24 DTAs (mainly southern Africa, plus UK, France, Belgium, Ireland, Luxembourg, Malta, Sweden, India, China, UAE, Russia); no treaty with the US.",
+        "holding_company_notes": "Companies pay 22%; foreign dividends of resident companies are taxed on accrual; IFSC companies 15% on qualifying international income."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Botswana - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/botswana/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "type": "none",
+        "property_tax_note": "PwC states there are no property taxes in Botswana; municipal rates in towns were not checked. Transfer duty on purchases: citizens 5% above BWP 1.5 million; non-citizens 10% to BWP 2 million and 15% above."
+      },
+      "inheritance": {
+        "summary": "Capital transfer tax (Capital Transfer Tax Act, Cap. 53:02) is charged on the donee or heir on the aggregate taxable value of chargeable disposals received from one donor in a tax year, at progressive rates up to 5% for individuals (PwC, January 2026). Spouses inheriting are exempt; children are not, except for maintenance and education until 21. Property outside Botswana is exempt only if the beneficiary lives outside Botswana.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Capital Transfer Tax",
+            "url": "https://www.burs.org.bw/index.php/tax/capital-transfer-tax",
+            "publisher": "Botswana Unified Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Botswana - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/botswana/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Botswana - Corporate - Other taxes",
+            "url": "https://taxsummaries.pwc.com/botswana/corporate/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "CTT rate bands for individuals (PwC: progressive up to 5%) were not obtained from the Act or BURS.",
+          "Whether a disposal by a non-resident donor of foreign property to a resident child is chargeable."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed_low",
+        "exemption": 0,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.05
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "scope": "worldwide",
+        "exemptions_thresholds": "First BWP 100,000 of the distributable value of a deceased estate deducted; casual gifts up to BWP 5,000 a year per donee; marriage gifts below BWP 5,000; household goods below BWP 15,000.",
+        "important_exceptions": "Rate bands below 5% exist but their thresholds were not found in an official source; the JSON applies the 5% top rate to the whole amount, a slight overstatement for a large estate. PwC's corporate page gives 12.5% for companies.",
+        "gift_tax": "Same capital transfer tax on gifts (gratuitous disposals), charged on the donee, aggregated per donor per tax year.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "Property outside Botswana is exempt only when the beneficiary lives outside Botswana; children living in Botswana are taxed on foreign assets received.",
+        "domicile_rules": "The tax follows the beneficiary's place of living for foreign property; Botswana property is always within scope."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Permanent place of abode in Botswana and physical presence of at least 183 days in the tax year (1 July-30 June) or the previous tax year (PwC).",
+    "routes": [
+      {
+        "name": "Residence permit (non-citizens)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Non-citizens need a residence permit, and a work permit to work; Botswana has no residence-by-investment programme for passive investors that was verified in this session."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Botswana - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/botswana/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.22,
+    "summary": "22% flat CIT on a source basis; manufacturing companies with ministerial approval 15%; mining by formula (minimum 22%); diamond mining by agreement. Local dividends are not taxed in the hands of a company; dividend WHT 10%.",
+    "special_zones": "International Financial Services Centre (IFSC) companies: 15% on approved transactions with non-residents.",
+    "sources": [
+      {
+        "title": "Botswana - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/botswana/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Botswana - Corporate - Income determination",
+        "url": "https://taxsummaries.pwc.com/botswana/corporate/income-determination",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Gaborone",
+      "lon": 25.90859,
+      "lat": -24.65451,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 933773"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed on worldwide income and estates; the app adds the US federal layer. No US-Botswana income tax treaty.",
+  "open_questions": [
+    "No 2025/26 or 2026/27 budget changes to CGT, dividend WHT or CTT were checked beyond PwC (reviewed 9 January 2026)."
+  ]
+}

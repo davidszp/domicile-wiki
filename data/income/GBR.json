@@ -1,0 +1,139 @@
+{
+  "id": "GBR",
+  "name": "United Kingdom",
+  "currency": "GBP",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "For 2026/27 (England, Wales and Northern Ireland) UK income tax is 0% up to a GBP 12,570 personal allowance, 20% to GBP 50,270, 40% to GBP 125,140 and 45% above, with an effective 60% rate between GBP 100,000 and GBP 125,140 as the allowance is withdrawn. Employee National Insurance is 8% between GBP 12,570 and GBP 50,270 and 2% above; self-employed Class 4 is 6% and 2%. Scotland has its own rates (not modelled).",
+    "tax_year": "2026/27",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 12570,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 50270,
+        "rate": 0.4
+      },
+      {
+        "from_amount": 100000,
+        "rate": 0.6
+      },
+      {
+        "from_amount": 125140,
+        "rate": 0.45
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.08,
+    "employee_social_security_cap": 50270,
+    "self_employed_social_security_rate": 0.06,
+    "self_employed_social_security_cap": 50270,
+    "self_employed_notes": "Class 4 NIC 6% on profits between GBP 12,570 and GBP 50,270 and 2% above (PwC gives 2025/26 'and onwards'); Class 2 abolished from April 2024 (voluntary GBP 3.50 a week). The nomad persona would pay about 6% on most of the profit.",
+    "local_tax_note": "Brackets are on gross income with the GBP 12,570 allowance built in (0% band), so the personal allowance field is 0; the 60% band reproduces the taper (allowance lost GBP 1 per GBP 2 above GBP 100,000). Thresholds frozen until at least April 2031. NIC: 8% on GBP 12,570-50,270, then 2% on everything above - modelled as 8% with a cap of GBP 50,270, ignoring the 2% above. Employer NIC (15%) not counted. No local income tax in London.",
+    "sources": [
+      {
+        "title": "United Kingdom - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/united-kingdom/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "United Kingdom - Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/united-kingdom/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - United Kingdom - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/united-kingdom/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "PwC's NIC page states 2025/26 'and onwards' thresholds; 2026/27 NIC thresholds not independently confirmed.",
+      "The 2% NIC above the upper limit is not representable in the schema.",
+      "No standard employment deduction; the GBP 12,570 personal allowance is already modelled."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_note": "",
+      "flat_rate": null,
+      "exempt_share": null,
+      "open_questions": [
+        "Treatment recorded as standard because UK employment income is not relieved; the foreign-income exemption does not help the earned-income personas unless they work abroad.",
+        "Applies to a nomad earning from foreign clients only if the work is performed outside the UK; UK-performed self-employment income is taxed normally."
+      ],
+      "id": "fig_4_year",
+      "name": "4-year foreign income and gains (FIG) regime",
+      "kind": "expat_regime",
+      "description": "New UK residents who were non-UK resident for the previous ten tax years can claim exemption on qualifying foreign income and gains during their first four years of UK residence, regardless of domicile. It does NOT cover UK employment income or UK-source earnings; those are taxed at the ordinary rates above. Overseas workday relief for employment duties performed abroad is capped at the lesser of GBP 300,000 or 30% of qualifying employment income a year for eligible FIG individuals (cap not applied to those arriving in 2023/24 or 2024/25).",
+      "duration_years": 4,
+      "treatment": "standard",
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "United Kingdom - Individual - Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/united-kingdom/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    }
+  ],
+  "costs": {
+    "city": "London",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 2150.0,
+        "currency": "GBP"
+      },
+      "year": 2026,
+      "description": "Numbeo average monthly rent for a 1-bedroom city-centre apartment, London; crowd-sourced, 2039 entries from 412 contributors in the past 12 months, last updated 14 October 2026. Unfurnished/furnished not distinguished. Numbeo gives only 1-bedroom and 3-bedroom figures, so no 2-bedroom value is recorded.",
+      "source": {
+        "title": "Cost of living in London (rent prices)",
+        "url": "https://www.numbeo.com/cost-of-living/in/London",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": null,
+    "coworking_monthly": null,
+    "notes": "Numbeo 3-bedroom city-centre average GBP 4,011.54 as a cross-check; no 2-bedroom value. Check pass 2026-10-15: no reachable source for a 2-bedroom rent (see dossier change log)."
+  },
+  "residence_routes": "The UK has no digital nomad visa; the GOV.UK work-visa list contains none for remote workers. EU citizens no longer have free movement and, like US and other nationals, need a visa. Skilled employees use a Skilled Worker visa with a sponsor (general minimum GBP 41,700 or the occupation going rate, whichever is higher, for applications since 22 July 2025). Without a job offer, Global Talent and High Potential Individual routes exist. Self-employed non-UK nationals have no general route (Innovator Founder only).",
+  "open_questions": [
+    "Eligibility rules for Global Talent and HPI not verified.",
+    "Skilled Worker 'general threshold' from a secondary page; the gov.uk page was not opened for the threshold."
+  ]
+}

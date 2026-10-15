@@ -1,0 +1,15 @@
+{
+  "name": "domicile-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/js/*.test.mjs"
+  },
+  "devDependencies": {
+    "d3": "7.9.0",
+    "mapshaper": "0.6.121",
+    "topojson-client": "3.1.0"
+  },
+  "license": "AGPL-3.0-or-later"
+}

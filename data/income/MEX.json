@@ -1,0 +1,254 @@
+{
+  "id": "MEX",
+  "name": "Mexico",
+  "currency": "MXN",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Mexican tax residents pay ISR on worldwide income at progressive rates from 1.92% to 35% (35% above MXN 5,107,703.93 in 2026). Employees owe IMSS social security (employee share capped at MXN 29,103 a year). Self-employed professionals may opt into RESICO (1.00-2.50% on cash receipts up to MXN 3.5 million) instead of the ordinary scale. Mexico City levies no local personal income tax.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.0192
+      },
+      {
+        "from_amount": 10135.12,
+        "rate": 0.064
+      },
+      {
+        "from_amount": 86022.12,
+        "rate": 0.1088
+      },
+      {
+        "from_amount": 151176.2,
+        "rate": 0.16
+      },
+      {
+        "from_amount": 175735.67,
+        "rate": 0.1792
+      },
+      {
+        "from_amount": 210403.7,
+        "rate": 0.2136
+      },
+      {
+        "from_amount": 424353.98,
+        "rate": 0.2352
+      },
+      {
+        "from_amount": 668840.15,
+        "rate": 0.3
+      },
+      {
+        "from_amount": 1276925.99,
+        "rate": 0.32
+      },
+      {
+        "from_amount": 1702567.98,
+        "rate": 0.34
+      },
+      {
+        "from_amount": 5107703.93,
+        "rate": 0.35
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.0272,
+    "employee_social_security_cap": 1070155,
+    "self_employed_social_security_rate": 0.0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "RESICO (art. 113-E LISR): tax on cash receipts invoiced by CFDI with no deductions: 1.00% up to MXN 25,000/month, 1.10% to 50,000, 1.50% to 83,333.33, 2.00% to 208,333.33, 2.50% up to the MXN 3.5 million annual limit (a third-party source cites an inflation-updated limit of MXN 3,652,000; the 2027 budget proposes 5 million). Above the limit or if excluded, ordinary rates apply and the income is business/professional fees. Independent professionals (honorarios) have no mandatory IMSS contribution: since the IMSS Technical Council rules published in the DOF on 28 May 2024 they may enrol voluntarily in the 'Seguro para Trabajadores Independientes' (open to Mexicans and foreigners resident in Mexico), with no single fee: contributions are computed from the declared occupation and insured days and paid monthly to annually (an annual figure of MXN 20,538 from 1 Feb 2026 is quoted for some modalities, e.g. modalidad 44). The 0% self-employed rate recorded here therefore means 'no mandatory contribution'; voluntary enrolment is an optional extra cost not modelled. PwC's Mexico 'Other taxes' page does not mention independent workers.",
+    "local_tax_note": "No municipal or state personal income tax in Mexico City; state payroll taxes fall on employers.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Mexico: Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/mexico/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Mexico: Other taxes",
+        "url": "https://taxsummaries.pwc.com/mexico/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Mexico: Income determination",
+        "url": "https://taxsummaries.pwc.com/mexico/individual/income-determination",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "SATFacil - RESICO 2026 guide (personas fisicas)",
+        "url": "https://www.satfacil.com.mx/blog/regimen-simplificado-confianza-resico-guia-2026",
+        "publisher": "SATFacil",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Basham - IMSS voluntary incorporation for independent workers",
+        "url": "https://basham.com.mx/en/imss-incorporacion-voluntaria-al-regimen-obligatorio-para-trabajadores-independientes/",
+        "publisher": "Basham",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "UnoTV - Guide to voluntary IMSS affiliation as independent worker",
+        "url": "https://www.unotv.com/negocios/guia-para-afiliarte-voluntariamente-al-imss-como-trabajador-independiente/",
+        "publisher": "UnoTV",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Ley del Impuesto sobre la Renta, art. 151 (personal deductions), compendium text",
+        "url": "https://sdv.com.mx/compendio/ley-isr/articulo-151/",
+        "publisher": "SDV Compendio (text of the LISR)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Employee social security rate (0.0272) is derived: PwC's maximum employee contribution MXN 29,103 divided by the MXN 1,070,155 salary above which it maxes out. Below the cap the effective rate differs.",
+      "PwC's Mexico pages do not cover RESICO, and the RESICO table comes from a third-party guide (SATFacil); verify against SAT / LISR art. 113-E and the 2026 inflation-updated limit.",
+      "Whether foreign-client professional services qualify for RESICO and whether a nomad must register as an independent professional with the SAT was not verified.",
+      "Employment subsidy and the annual employment deductions are not modelled.",
+      "Self-employed IMSS: no mandatory contribution found for honorarios professionals; voluntary scheme cost (rates/base) not found in the sources opened. Mandatory status rests on secondary sources (Basham, UnoTV), not on the Ley del Seguro Social text.",
+      "Mexico: social_security_deductible = 0 rests on the absence of IMSS employee contributions from the art. 151 list (secondary transcription of the LISR; the diputados.gob.mx text was unreachable). The recorded self-employed rate is 0, so nothing is deductible there either."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "id": "mex_temporary_resident_solvency",
+      "name": "Temporary Resident visa by economic solvency (de facto remote-worker route)",
+      "kind": "digital_nomad_visa",
+      "description": "Mexico has no dedicated digital nomad visa. Remote workers use the Temporary Resident visa on economic solvency, which does not require an employer and does not change tax rules. Consulates test income or savings against the UMA (117.31 MXN in 2026); amounts vary by consulate. Tax residency is decided by permanent home / centre of vital interests, not a day count.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 957250,
+        "currency": "MXN"
+      },
+      "max_income": null,
+      "duration_years": 4,
+      "duration_note": "Single-entry visa valid 180 days, exchanged for a card valid one year, renewable annually to four years in total, then permanent residence.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Taxes for Expats - Mexico digital nomad visa 2026 guide",
+          "url": "https://www.taxesforexpats.com/country-guides/mexico/mexico-digital-nomad-visa.html",
+          "publisher": "Taxes for Expats",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Minimum income MXN 957,250 a year is 680 x UMA 117.31 x 12 (monthly ~MXN 79,771, quoted by the source as about USD 4,300-4,500 net monthly over six months); consulates differ (San Diego asks a different balance), and the official consulate PDFs could not be read.",
+        "IMSS applicability to a temporary resident without Mexican employer is unclear."
+      ]
+    },
+    {
+      "id": "mex_resico",
+      "name": "RESICO (Regimen Simplificado de Confianza) for self-employed individuals",
+      "kind": "other",
+      "description": "Simplified regime for resident individuals with business or professional income up to MXN 3.5 million a year: tax of 1.00% to 2.50% on cash receipts invoiced by CFDI, with no deductions. Requires Mexican tax residency and SAT registration.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": {
+        "amount": 3500000,
+        "currency": "MXN"
+      },
+      "duration_years": null,
+      "duration_note": "Open-ended while the income limit and conditions are met.",
+      "treatment": "flat_rate",
+      "flat_rate": 0.025,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "SATFacil - RESICO 2026 guide (personas fisicas)",
+          "url": "https://www.satfacil.com.mx/blog/regimen-simplificado-confianza-resico-guia-2026",
+          "publisher": "SATFacil",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "flat_rate records the top RESICO rate (2.50%); lower receipts are taxed at 1.00%-2.00%.",
+        "Not confirmed from SAT or legislation: relies on a third-party guide.",
+        "Eligibility of income paid by foreign clients not verified."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Mexico City (Roma / Condesa / Polanco area)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 18978.33,
+        "currency": "MXN"
+      },
+      "year": 2026,
+      "description": "Numbeo average 1-bedroom apartment in city centre, Mexico City; range MXN 15,000-28,000; page updated 8 Oct 2026; 1,334 city entries from 139 contributors in 12 months (all categories); user-contributed.",
+      "source": {
+        "title": "Numbeo - Cost of Living in Mexico City",
+        "url": "https://www.numbeo.com/cost-of-living/in/Mexico-City",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 45000,
+        "currency": "MXN"
+      },
+      "year": 2026,
+      "description": "Midpoint of the unfurnished 2-bedroom Condesa/Roma Norte asking range MXN 35,000-55,000 (furnished MXN 50,000-67,000) published by Cuanto Me Cuesta from Inmuebles24/Lamudi listings, April 2026; no sample size given, labelled orientative.",
+      "source": {
+        "title": "Cuanto Me Cuesta - Renta en CDMX (abril 2026)",
+        "url": "https://cuantomecuesta.com/mx/renta-cdmx/",
+        "publisher": "Cuanto Me Cuesta",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Numbeo 3-bedroom city-centre average MXN 43,058.82 is not used. Second-bedroom figure is a midpoint of a range, low confidence."
+  },
+  "residence_routes": "EU and other passport holders (including US) may enter visa-free as visitors but cannot work for Mexican entities; remote workers with foreign income typically apply at a consulate for a Temporary Resident visa on economic solvency (income or savings test), exchanged for a card within 30 days of entry, valid one year and renewable to four, then permanent residence. A skilled employee of a Mexican employer needs a work permit (employer-sponsored) via the INM; US, EU and other nationalities follow the same visa categories, with differences only in whether a consular visa is needed to enter. There is no EU free-movement route and no special regime for US citizens other than ordinary rules.",
+  "open_questions": [
+    "No expat/impatriate tax regime found for Mexico.",
+    "Rents: second bedroom is a range midpoint; Numbeo is user-contributed."
+  ]
+}

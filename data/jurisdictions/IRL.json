@@ -1,0 +1,398 @@
+{
+  "id": "IRL",
+  "name": "Ireland",
+  "continent": "Europe",
+  "region": "Western Europe",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "Ireland taxes a resident's capital gains at 33% (EUR 1,270 annual exemption) and dividends as ordinary income at up to about 55% (40% income tax plus 8% USC, a 3% USC surcharge on non-PAYE income above EUR 100,000, and PRSI). There is no wealth tax. Gifts and inheritances are taxed by Capital Acquisitions Tax at 33% above a lifetime threshold per child of EUR 420,000 (Group A, from 7 October 2026; EUR 400,000 before). Residents who are not Irish-domiciled can use the remittance basis: foreign income and foreign gains are taxed only when brought into Ireland, and foreign assets of a non-domiciled donor stay outside CAT until five consecutive years of Irish residence.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence (Irish-domiciled)",
+      "type": "standard",
+      "description": "Resident and domiciled individuals are taxed on worldwide income and gains in the year they arise.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax residence: 183 days in the tax year, or 280 days over the tax year and the previous year (with at least 30 days in each). This regime applies in full to Irish-domiciled residents; a new arrival usually keeps a foreign domicile and can choose the remittance basis instead.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains are taxed at 33% for all asset classes, with an annual exemption of EUR 1,270 per person (not transferable between spouses). The main residence is exempt. Gains on certain fund interests and life policies are taxed separately (PwC cites 40%). A reduced 10% rate (revised entrepreneur relief) applies to qualifying business disposals up to a lifetime limit.",
+        "exemptions_thresholds": "Annual exemption EUR 1,270 per individual. Principal private residence relief.",
+        "eligibility_conditions": "Resident or ordinarily resident individual.",
+        "regional_differences": "None.",
+        "important_exceptions": "Irish and EU-domiciled ETFs/funds: gains and distributions are subject to a separate 'exit tax' regime with an 8-year deemed disposal (rate cited by PwC as 40% for certain fund interests; Finance Act 2025 changes not verified). Ireland has no general exit tax on individuals leaving (not verified in statute).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ireland - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/ireland/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ireland - Individual - Residence",
+            "url": "https://taxsummaries.pwc.com/ireland/individual/residence",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Revised entrepreneur relief (10% up to a lifetime limit, EUR 1m historically; Budget changes not checked) was not verified in this session.",
+          "The current exit-tax/deemed-disposal rate for funds and ETFs after Finance Act 2025 was not verified; PwC still cites 40% for certain fund interests.",
+          "Revenue's CGT rate page returned 404; only PwC was opened for the 33% rate."
+        ],
+        "headline_rate": 0.33,
+        "rates": {
+          "listed_securities_domestic": 0.33,
+          "listed_securities_foreign": 0.33,
+          "private_business_sale": 0.33,
+          "real_estate_local": 0.33,
+          "real_estate_foreign": 0.33
+        },
+        "rate_basis": "Flat 33% CGT rate for all assets; no USC or PRSI on capital gains. Private business sale shown at 33% because revised entrepreneur relief (10%) is capped and conditional on working in the business.",
+        "professional_trader": "Frequent trading can be treated as a trade (Schedule D Case I), taxing profits as income at up to about 55% including USC and PRSI.",
+        "holding_period_rules": "None; no indexation for assets acquired after 2002.",
+        "foreign_assets": "Domiciled residents: worldwide gains taxed as they arise. Non-domiciled residents: see the remittance basis regime."
+      },
+      "dividends": {
+        "summary": "Dividends, Irish or foreign, are taxed as income at the marginal rate of 40% plus USC of 8% plus a 3% USC surcharge on non-PAYE income above EUR 100,000, plus PRSI on unearned income (about 4.2%): around 55% at the top. Irish companies withhold 25% dividend withholding tax, which is credited. Foreign withholding tax is credited under the treaties.",
+        "exemptions_thresholds": "No dividend allowance.",
+        "eligibility_conditions": "Resident individual.",
+        "regional_differences": "None.",
+        "important_exceptions": "PRSI on unearned income has been rising in annual steps each October; the exact 2026 rate was not verified.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ireland - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/ireland/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "USC standard rates and thresholds",
+            "url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+            "publisher": "Revenue Commissioners",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Other rates of USC (3% surcharge)",
+            "url": "https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx",
+            "publisher": "Revenue Commissioners",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ireland - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/ireland/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tax and Duty Manual Part 13-02-05: Surcharge on certain undistributed income of close companies",
+            "url": "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-13/13-02-05.pdf",
+            "publisher": "Revenue Commissioners",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ireland - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/ireland/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PRSI rate on unearned income for 2026 (4.2% assumed, from the 2025 increase schedule) not verified on an official page."
+        ],
+        "headline_rate": 0.552,
+        "domestic_rate": 0.552,
+        "foreign_gross_rate": 0.552,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "40% income tax (above EUR 44,000 single / 53,000-88,000 married) + 8% USC (above EUR 70,044) + 3% USC surcharge (non-PAYE income above EUR 100,000) + 4.2% PRSI (assumed) = 55.2%.",
+        "withholding_outbound": "25% dividend withholding tax on dividends paid by Irish companies; exemptions for non-resident individuals in treaty/EU states and companies with documentation.",
+        "treaty_network": "About 75 income tax treaties, including the US and all EU states (count from general knowledge).",
+        "holding_company_notes": "No holding structure is modelled for Ireland: an Irish investment company pays 33% on gains (the same as personal CGT) and 25% on most portfolio dividends (12.5% for some foreign trading-company dividends), plus the 20% close-company surcharge on undistributed investment income (TCA 1997 s.440); extracting money then bears income tax, USC and PRSI of about 55%, so a resident family gains nothing over direct holding."
+      },
+      "wealth_tax": {
+        "summary": "Ireland has no net wealth tax on individuals.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ireland - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/ireland/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tax and Duty Manual Part 18C-00-01: Domicile Levy (last reviewed August 2026)",
+            "url": "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf",
+            "publisher": "Revenue Commissioners (Ireland)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "important_exceptions": "Domicile levy (Part 18C TCA 1997): EUR 200,000 a year for an individual who in the tax year is Irish-domiciled, has world-wide income above EUR 1 million, an Irish income tax liability below EUR 200,000, and Irish property worth more than EUR 5 million on 31 December. Residence is irrelevant and there is no citizenship test; Irish income tax paid is credited against it. 'Irish property' excludes shares in trading companies and trading holding companies. A non-domiciled arrival is outside it; a family that later acquires an Irish domicile of choice would normally pay more than EUR 200,000 of Irish income tax on a large income and so owe little or nothing. Not modelled as a wealth tax.",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Local Property Tax on Irish residential property, banded by value (generally a fraction of a percent a year)."
+      },
+      "inheritance": {
+        "summary": "Capital Acquisitions Tax (CAT) is charged on the recipient at 33% on gifts and inheritances above a lifetime tax-free threshold per group. A child (Group A) can receive EUR 420,000 in total from both parents combined (all Group A benefits since 5 December 1991 are aggregated) for gifts or inheritances on or after 7 October 2026; the threshold was EUR 400,000 from 2 October 2024 to 6 October 2026. Spouses are exempt. Each person can give EUR 3,000 a year to anyone tax-free.",
+        "exemptions_thresholds": "Group A threshold EUR 420,000 (from 7 October 2026), a lifetime amount covering all gifts and inheritances from parents. Small gift exemption EUR 3,000 per donor per recipient per calendar year. Spouse/civil partner exempt. Dwelling house exemption for a child who lived in the home (conditions not verified).",
+        "eligibility_conditions": "In scope if the disponer or the beneficiary is resident or ordinarily resident in Ireland, or the property is Irish-situated.",
+        "regional_differences": "None.",
+        "important_exceptions": "A foreign-domiciled disponer or beneficiary counts as resident/ordinarily resident for CAT only after five consecutive tax years of Irish residence (and still resident at the date of the gift or inheritance); until then foreign assets passing between non-domiciled persons are outside CAT (rule from general knowledge, s. 6 CATCA 2003; statute page blocked).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "CAT group thresholds",
+            "url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx",
+            "publisher": "Revenue Commissioners",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "CAT thresholds, rates and aggregation rules",
+            "url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/index.aspx",
+            "publisher": "Revenue Commissioners",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Gift and Inheritance Tax (CAT)",
+            "url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/gift-and-inheritance-tax-cat/index.aspx",
+            "publisher": "Revenue Commissioners",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "What do you not pay CAT on?",
+            "url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/gift-and-inheritance-tax-cat/what-do-you-not-pay-cat-on.aspx",
+            "publisher": "Revenue Commissioners",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ireland - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/ireland/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The EUR 420,000 threshold from 7 October 2026 is shown on Revenue's site; confirm it is enacted in the Finance Act following Budget 2027.",
+          "Business relief (90% reduction in taxable value of relevant business property), agricultural relief and the dwelling-house exemption were not verified on official pages (Revenue pages returned 404).",
+          "The five-year rule for foreign-domiciled persons (s. 6 CATCA 2003) could not be opened on irishstatutebook.ie (403)."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed",
+        "exemption": 420000,
+        "bracket_mode": "marginal",
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.33
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Gifts are taxed the same way as inheritances (33% above the shared Group A threshold, aggregated for life since 5 December 1991), plus a EUR 3,000 annual small gift exemption per donor. A gift of assets standing at a gain can also trigger CGT for the donor, creditable against the CAT on the same event.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Business relief reduces the taxable value of relevant business property by 90% under conditions; it does not extend to portfolio investments in listed shares (not verified on an official page in this session).",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Worldwide assets in scope if disponer or beneficiary is resident or ordinarily resident (subject to the five-year rule for non-domiciled persons). Foreign inheritance tax can be credited.",
+        "domicile_rules": "Scope follows residence or ordinary residence of either party; a person stays ordinarily resident for three years after leaving. Non-domiciled persons are treated as in scope only after five consecutive years of residence."
+      }
+    },
+    {
+      "id": "remittance_basis",
+      "name": "Remittance basis for residents not domiciled in Ireland",
+      "type": "special",
+      "description": "A resident who is not Irish-domiciled pays income tax on foreign investment income and CGT on foreign gains only to the extent they are remitted (brought) to Ireland. Irish-source income, Irish dividends and gains on Irish assets stay fully taxable. Inheritance tax follows the standard rules, but foreign assets of a non-domiciled family stay outside CAT for the first five consecutive years of residence.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Irish tax resident but domiciled outside Ireland (domicile of origin abroad, no intention to stay permanently). No minimum stay, fee or application; claimed in the tax return. Must fund Irish living costs from Irish income, unremitted capital or clean capital without bringing in untaxed foreign income or gains.",
+      "duration_years": null,
+      "duration_note": "No statutory time limit: the remittance basis applies for as long as the person is Irish-resident but not Irish-domiciled. It ends if the person acquires an Irish domicile of choice (settling permanently), which becomes more likely the longer the family stays. The CAT advantage for foreign assets lasts only until five consecutive years of residence.",
+      "capital_gains": {
+        "summary": "Foreign gains are taxed at 33% only when the proceeds are remitted to Ireland; unremitted foreign gains are not taxed. Gains on Irish assets (including Irish-listed shares and Irish real estate) are taxed at 33% as they arise.",
+        "exemptions_thresholds": "EUR 1,270 annual exemption on taxable gains; losses on foreign assets are not deductible for a remittance-basis taxpayer.",
+        "eligibility_conditions": "Not Irish-domiciled. The 0% rates for foreign listed securities, foreign private companies and foreign real estate assume the gains (and the sale proceeds containing them) are never remitted to Ireland, directly or indirectly; a remitted foreign gain is taxed at 33% in the year it is brought in. Gains on Irish assets are taxed as they arise.",
+        "important_exceptions": "Domicile can be lost over a long stay (acquiring an Irish domicile of choice) which ends the regime. Remitting the proceeds of a sale also remits the gain.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ireland - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/ireland/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Only PwC was opened; Revenue's guidance on remittance basis and loss treatment was not read."
+        ],
+        "headline_rate": 0.33,
+        "rates": {
+          "listed_securities_domestic": 0.33,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.33,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "0 for foreign listed securities, foreign private companies and foreign real estate on the assumption that proceeds stay outside Ireland; 33% on Irish assets and on anything remitted.",
+        "professional_trader": "As standard.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Taxed only on remittance."
+      },
+      "dividends": {
+        "summary": "Foreign dividends are taxed only when remitted to Ireland, then at up to about 55%. Irish dividends are taxed as they arise.",
+        "exemptions_thresholds": "None.",
+        "eligibility_conditions": "Not Irish-domiciled. The 0% foreign dividend rate assumes the dividends are kept outside Ireland and never remitted; remitted foreign dividends are taxed at the marginal income tax rate plus USC and PRSI (about 55.2% at the top). Irish dividends are taxed as they arise.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ireland - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/ireland/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.552,
+        "domestic_rate": 0.552,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Foreign dividends kept abroad: 0 (taxed at ~55.2% if remitted). Irish dividends as standard.",
+        "withholding_outbound": "As standard (25%).",
+        "treaty_network": "As standard; foreign withholding tax is a final cost on unremitted dividends.",
+        "holding_company_notes": "No holding structure is modelled for Ireland: an Irish investment company pays 33% on gains (the same as personal CGT) and 25% on most portfolio dividends (12.5% for some foreign trading-company dividends), plus the 20% close-company surcharge on undistributed investment income (TCA 1997 s.440); extracting money then bears income tax, USC and PRSI of about 55%, so a resident family gains nothing over direct holding."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if present 183 days in a tax year, or 280 days over the tax year and the previous year (at least 30 days in each); any part of a day counts. Ordinary residence starts after three consecutive years of residence and continues for three years after leaving. Domicile is separate (permanent home), and governs access to the remittance basis.",
+    "routes": [
+      {
+        "name": "EU/EEA/Swiss free movement (and UK under the Common Travel Area)",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "No permit needed."
+      },
+      {
+        "name": "Stamp 0 permission for persons of independent means",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Permission to reside without working for people with sufficient independent income and private health insurance. The Immigrant Investor Programme closed to new applications in 2023. Thresholds not verified in this session."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ireland - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/ireland/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.125,
+    "summary": "12.5% on trading profits; 25% on passive (non-trading) income such as interest, rent and certain foreign dividends; 33% on chargeable gains. Pillar Two 15% minimum for groups with revenue of EUR 750 million or more. Close companies face a surcharge on undistributed investment income.",
+    "special_zones": "None.",
+    "sources": [
+      {
+        "title": "Ireland - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/ireland/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Dublin",
+    "notes": "Rent is a listing-portal sample of asking rents (15 October 2026), not an agency index. Price per m², health insurance and staff costs were not sourced. Many families would instead use Irish fee-paying day schools, which are far cheaper than the international school.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 6198,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent of the 18 distinct houses (not apartments) with 4-6 bedrooms listed for rent on MyHome.ie on 15 October 2026 in the prime south and coastal Dublin areas (Dublin 4/6/14/18, Blackrock, Booterstown, Monkstown, Dún Laoghaire, Glenageary, Stillorgan, Dalkey, Malahide); range EUR 3,500-15,950. Ballsbridge/Sandymount family houses were EUR 10,500-13,000. Asking rents, not achieved rents.",
+      "source": {
+        "title": "MyHome.ie: properties with 4+ bedrooms to rent in Dublin (listing sample)",
+        "url": "https://www.myhome.ie/rentals/dublin/property-to-rent?minbeds=4",
+        "publisher": "MyHome.ie",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 25296,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Nord Anglia International School Dublin (IB Diploma), Grade 11 and Grade 12 yearly fee 2026-2027; Grades 9-10 EUR 23,971. One-time enrolment fee EUR 1,600 (half credited to the first invoice); exam fees, trips, bus and lunches extra.",
+      "source": {
+        "title": "Nord Anglia International School Dublin: 2026-2027 Tuition Fees",
+        "url": "https://www.nordangliaeducation.com/nais-dublin/-/media/nais-dublin/admissions/nais-dublin-tuition-fees-2026-2027.pdf",
+        "publisher": "Nord Anglia International School Dublin",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "Dublin",
+      "lon": -6.24889,
+      "lat": 53.33306,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2964574"
+    }
+  ],
+  "us_citizen_notes": "US-Ireland income tax treaty applies; there is no estate tax treaty. The remittance basis does not help US citizens with US tax. Irish CAT at 33% can be credited against US estate tax only within US foreign death tax credit rules. Irish/EU ETFs are PFICs for US persons.",
+  "open_questions": [
+    "Special Assignee Relief Programme (SARP; renewed to 2030 with a EUR 125,000 minimum income) relieves employment income only and is not modelled.",
+    "PRSI rate on unearned income in 2026 not verified.",
+    "Budget 2027 (announced October 2026) measures beyond the CAT threshold were not checked."
+  ]
+}

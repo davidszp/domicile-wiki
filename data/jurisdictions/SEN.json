@@ -1,0 +1,214 @@
+{
+  "id": "SEN",
+  "name": "Senegal",
+  "continent": "Africa",
+  "region": "Western Africa",
+  "currency": "XOF",
+  "researched_on": "2026-10-15",
+  "summary": "Senegal taxes residents on worldwide income at progressive rates up to 43%, with no unilateral relief for foreign tax. Foreign dividends and, per Deloitte, capital gains fall under that scale; some share gains are taxed at 25%, and Senegalese dividends bear 10%. There is no wealth tax, and Deloitte describes only a fixed XOF 25,000 duty on accepting a succession; gift duties were not verified. Confidence is low: no tax authority source was reachable and the 2026 code reform was not reviewed.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Senegalese tax resident",
+      "type": "standard",
+      "description": "Worldwide income tax at 0-43%; 10% WHT on Senegalese dividends; no wealth tax; fixed duty on successions.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if the permanent home or permanent residence, the main professional activity, or the centre of economic interests is in Senegal. Non-ECOWAS citizens need a residence card.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Residents are taxed on worldwide income. Capital gains of individuals are taxed at the progressive income tax rates (0-43%) on declaration, real-estate gains are collected at source by the notary, and gains on the sale of shares are taxed at 25% 'in certain cases' (Deloitte 2026). Which rule applies to a resident's gains on foreign listed securities is not stated; scored at the 43% top progressive rate.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Senegal Highlights 2026 (updated April 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-senegalhighlights-2026.pdf",
+            "publisher": "Deloitte International Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Senegal - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/senegal/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "exemptions_thresholds": "Progressive scale (XOF, annual): 0-630,000 0%; to 1.5m 20%; to 4m 30%; to 8m 35%; to 13.5m 37%; to 50m 40%; above 50m 43%; household 'shares' (quotient) system.",
+        "important_exceptions": "The 25% rate for some share disposals is thought to be the CGI art. 259 levy (older sources); its scope for listed and foreign shares is unverified. A reform of the Code général des impôts for 2026 was mentioned in search results but not reviewed; whether it changed individual investment-income rules was not checked.",
+        "headline_rate": 0.43,
+        "rates": {
+          "listed_securities_domestic": null,
+          "listed_securities_foreign": 0.43,
+          "private_business_sale": null,
+          "real_estate_local": null,
+          "real_estate_foreign": 0.43
+        },
+        "rate_basis": "Foreign listed securities and foreign real estate: 0.43, the top progressive rate that Deloitte gives as the capital gains rate for individuals. Domestic listed shares and private business shares: null because the 25% share-gain rate applies 'in certain cases' that could not be identified (the range is 25-43%). Senegalese real estate: null because the notary's at-source rate was not found.",
+        "professional_trader": "Trading gains are business income at progressive rates.",
+        "holding_period_rules": "None identified.",
+        "foreign_assets": "Worldwide taxation; Senegal grants no unilateral foreign tax relief, only treaty relief (Deloitte).",
+        "open_questions": [
+          "Which share disposals qualify for the 25% rate and whether it covers listed or foreign shares; the at-source rate on real-estate gains.",
+          "Whether foreign gains of individuals are actually taxed at progressive rates in practice."
+        ]
+      },
+      "dividends": {
+        "summary": "Senegalese dividends bear a 10% withholding tax for residents and non-residents. Foreign dividends of residents fall into worldwide income at progressive rates up to 43%, and Senegal gives no unilateral credit for foreign tax (treaty relief only).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Senegal Highlights 2026 (updated April 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-senegalhighlights-2026.pdf",
+            "publisher": "Deloitte International Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Senegal - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/senegal/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "exemptions_thresholds": "See the progressive scale under capital gains.",
+        "important_exceptions": "Whether the 10% WHT on Senegalese dividends is final (libératoire) for individuals is supported only by older (2006-era) code text and was not confirmed for the current code. A reform of the Code général des impôts for 2026 was mentioned in search results but not reviewed; whether it changed individual investment-income rules was not checked.",
+        "headline_rate": 0.43,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.43,
+        "foreign_tax_credit": "none",
+        "rate_basis": "Domestic: 10% WHT treated as final. Foreign: 43% top progressive rate on worldwide income, no unilateral credit; treaty credit only where a treaty applies (Senegal has more than 30 treaties, mostly African and European).",
+        "withholding_outbound": "10% on dividends to residents and non-residents, reducible by treaty for non-residents.",
+        "treaty_network": "More than 30 treaties; BEPS MLI in force from 1 September 2022 (Deloitte). Includes France; no US treaty, so US dividends bear 30% US WHT.",
+        "holding_company_notes": "Companies pay 30%; dividends received outside the participation exemption are taxed after a 60% abatement. Not modelled.",
+        "open_questions": [
+          "Whether foreign dividends are taxed at progressive rates or at a proportional rate (as for domestic investment income) was not verified."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth or net worth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Senegal - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/senegal/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Senegal Highlights 2026 (updated April 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-senegalhighlights-2026.pdf",
+            "publisher": "Deloitte International Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Land/property tax not researched; transfers of real property bear a 5% registration duty (Deloitte)."
+      },
+      "inheritance": {
+        "summary": "Deloitte reports only a fixed registration duty of XOF 25,000 on deeds accepting a succession or legacy; no proportional inheritance tax is described. Treatment of gifts (donations) to children was not found.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Senegal Highlights 2026 (updated April 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-senegalhighlights-2026.pdf",
+            "publisher": "Deloitte International Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "exemptions_thresholds": "Fixed XOF 25,000 per deed of acceptance of a succession.",
+        "important_exceptions": "Registration duties on donations inter vivos and on transfers of Senegalese real estate by succession were not verified; the PwC summary does not cover inheritance or gift tax. A reform of the Code général des impôts for 2026 was mentioned in search results but not reviewed; whether it changed individual investment-income rules was not checked.",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Not verified: registration duties on donations to children could apply.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "No charge identified.",
+        "domicile_rules": "Not applicable.",
+        "open_questions": [
+          "Registration duty on gifts (donations) to children and on inherited Senegalese real estate not verified; the 'no inheritance tax' scoring rests on one professional summary."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if the individual has a permanent abode or permanent residence in Senegal, carries on a professional activity there (other than a subsidiary one), or has the centre of economic interests there (PwC). No day-count test is stated.",
+    "routes": [
+      {
+        "name": "Residence card",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Non-citizens staying long term need a residence card (carte de résident); ECOWAS citizens have free movement. No residence-by-investment programme identified. Not researched in detail."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Senegal - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/senegal/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Senegal Highlights 2026 (updated April 2026)",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-senegalhighlights-2026.pdf",
+        "publisher": "Deloitte International Tax",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.3,
+    "summary": "30% CIT (15% for free export companies and special economic zones); minimum tax 0.5% of turnover when loss-making (capped XOF 5m). Participation exemption for qualifying dividends; 10% WHT on dividends.",
+    "special_zones": "Special economic zones and free export companies at 15%.",
+    "sources": [
+      {
+        "title": "Senegal Highlights 2026 (updated April 2026)",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-senegalhighlights-2026.pdf",
+        "publisher": "Deloitte International Tax",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Dakar",
+      "lon": -17.44406,
+      "lat": 14.6937,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2253354"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed; Senegal's tax on foreign dividends and gains (up to 43%) exceeds US long-term rates, so Senegal would be the binding layer. No US-Senegal income tax treaty.",
+  "open_questions": [
+    "Senegal's DGID website and the current Code général des impôts could not be reached; figures rest on Deloitte (April 2026) and PwC (August 2026) summaries."
+  ]
+}

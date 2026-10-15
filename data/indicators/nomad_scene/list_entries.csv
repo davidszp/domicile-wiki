@@ -1,0 +1,119 @@
+list_id,rank,place,city,iso3
+savills_eni_2025,1,Dubai,Dubai,ARE
+savills_eni_2025,2,Abu Dhabi,Abu Dhabi,ARE
+savills_eni_2025,3,Málaga,Málaga,ESP
+savills_eni_2025,4,Miami,Miami,USA
+savills_eni_2025,5,Lisbon,Lisbon,PRT
+savills_eni_2025,6,Palma,Palma,ESP
+savills_eni_2025,7,Barcelona,Barcelona,ESP
+savills_eni_2025,9,Auckland,Auckland,NZL
+savills_eni_2025,10,Algarve,Algarve,PRT
+savills_eni_2025,11,Tokyo,Tokyo,JPN
+savills_eni_2025,15,Crete,Crete,GRC
+savills_eni_2025,18,Vancouver,Vancouver,CAN
+savills_eni_2025,27,Athens,Athens,GRC
+savills_eni_2025,28,Berlin,Berlin,DEU
+insuremytrip_2025,1,Brasilia,Brasilia,BRA
+insuremytrip_2025,2,Budapest,Budapest,HUN
+insuremytrip_2025,3,Montevideo,Montevideo,URY
+insuremytrip_2025,4,Libson,Lisbon,PRT
+insuremytrip_2025,5,Kuala Lumpur,Kuala Lumpur,MYS
+insuremytrip_2025,6,Madrid,Madrid,ESP
+insuremytrip_2025,7,Nicosia,Nicosia,CYP
+insuremytrip_2025,8,Buenos Aires,Buenos Aires,ARG
+insuremytrip_2025,9,Podgorica,Podgorica,MNE
+insuremytrip_2025,10,San Jose,San José,CRI
+flatio_timeout_2025,1,Lisbon,Lisbon,PRT
+flatio_timeout_2025,2,Warsaw,Warsaw,POL
+flatio_timeout_2025,3,Prague,Prague,CZE
+flatio_timeout_2025,4,Zagreb,Zagreb,HRV
+flatio_timeout_2025,5,Budapest,Budapest,HUN
+flatio_timeout_2025,6,Berlin,Berlin,DEU
+flatio_timeout_2025,7,Porto,Porto,PRT
+flatio_timeout_2025,8,Vienna,Vienna,AUT
+flatio_timeout_2025,9,Barcelona,Barcelona,ESP
+flatio_timeout_2025,10,Brno,Brno,CZE
+flatio_timeout_2025,11,Madeira,Funchal,PRT
+flatio_timeout_2025,12,Malaga,Málaga,ESP
+flatio_timeout_2025,13,London,London,GBR
+flatio_timeout_2025,14,Split,Split,HRV
+flatio_timeout_2025,15,Madrid,Madrid,ESP
+flatio_timeout_2025,16,Paris,Paris,FRA
+flatio_timeout_2025,17,Bangkok,Bangkok,THA
+flatio_timeout_2025,18,Sofia,Sofia,BGR
+flatio_timeout_2025,19,Albufeira,Albufeira,PRT
+flatio_timeout_2025,20,Valencia,Valencia,ESP
+hotelwithtub_2025,1,Bangkok,Bangkok,THA
+hotelwithtub_2025,2,Dubai,Dubai,ARE
+hotelwithtub_2025,3,London,London,GBR
+hotelwithtub_2025,4,Tokyo,Tokyo,JPN
+hotelwithtub_2025,5,Nakhon Ratchasima,Nakhon Ratchasima,THA
+hotelwithtub_2025,6,Seoul,Seoul,KOR
+hotelwithtub_2025,7,Taipei,Taipei,TWN
+hotelwithtub_2025,8,Barcelona,Barcelona,ESP
+hotelwithtub_2025,9,Buenos Aires,Buenos Aires,ARG
+hotelwithtub_2025,10,Tbilisi,Tbilisi,GEO
+nomadscom_going,1,Bangkok,Bangkok,THA
+nomadscom_going,2,Chiang Mai,Chiang Mai,THA
+nomadscom_going,3,Canggu,Canggu,IDN
+nomadscom_going,4,London,London,GBR
+nomadscom_going,5,Lisbon,Lisbon,PRT
+nomadscom_going,6,Barcelona,Barcelona,ESP
+nomadscom_going,7,Tokyo,Tokyo,JPN
+nomadscom_going,8,New York City,New York,USA
+nomadscom_going,9,Dubai,Dubai,ARE
+nomadscom_going,10,Kuala Lumpur,Kuala Lumpur,MYS
+nomadscom_going,11,Mexico City,Mexico City,MEX
+nomadscom_going,12,San Francisco,San Francisco,USA
+nomadscom_going,13,Berlin,Berlin,DEU
+nomadscom_going,14,Buenos Aires,Buenos Aires,ARG
+nomadscom_going,15,Tbilisi,Tbilisi,GEO
+nomadscom_going,16,Seoul,Seoul,KOR
+nomadscom_going,17,Da Nang,Da Nang,VNM
+nomadscom_going,18,Madrid,Madrid,ESP
+nomadscom_going,19,Singapore,Singapore,SGP
+nomadscom_going,20,Valencia,Valencia,ESP
+nomadscom_going,21,São Paulo,São Paulo,BRA
+nomadscom_going,22,Istanbul,Istanbul,TUR
+nomadscom_going,23,Asuncion,Asunción,PRY
+nomadscom_going,24,Florianopolis,Florianópolis,BRA
+scoutlogic_2025,1,Bangkok,Bangkok,THA
+scoutlogic_2025,2,Nakhon Ratchasima,Nakhon Ratchasima,THA
+scoutlogic_2025,3,Dubai,Dubai,ARE
+scoutlogic_2025,4,Porto,Porto,PRT
+scoutlogic_2025,5,Sydney,Sydney,AUS
+scoutlogic_2025,6,Madrid,Madrid,ESP
+scoutlogic_2025,7,Buenos Aires,Buenos Aires,ARG
+scoutlogic_2025,8,Seoul,Seoul,KOR
+scoutlogic_2025,9,Ericeira,Ericeira,PRT
+scoutlogic_2025,10,Lisbon,Lisbon,PRT
+big7travel_2025,1,Tbilisi,Tbilisi,GEO
+big7travel_2025,2,Medellín,Medellín,COL
+big7travel_2025,3,Chiang Mai,Chiang Mai,THA
+big7travel_2025,4,Kuala Lumpur,Kuala Lumpur,MYS
+big7travel_2025,5,Bansko,Bansko,BGR
+big7travel_2025,6,Cape Town,Cape Town,ZAF
+big7travel_2025,7,Buenos Aires,Buenos Aires,ARG
+big7travel_2025,8,Da Nang,Da Nang,VNM
+big7travel_2025,9,Valencia,Valencia,ESP
+big7travel_2025,10,Tirana,Tirana,ALB
+big7travel_2025,11,Budapest,Budapest,HUN
+big7travel_2025,12,Oaxaca City,Oaxaca,MEX
+big7travel_2025,13,Quito,Quito,ECU
+big7travel_2025,14,Goa,Goa,IND
+big7travel_2025,15,Pipa,Pipa,BRA
+big7travel_2025,16,Tamarindo,Tamarindo,CRI
+big7travel_2025,17,Crete,Crete,GRC
+big7travel_2025,18,Bali,Bali,IDN
+big7travel_2025,19,Tallinn,Tallinn,EST
+big7travel_2025,20,Mauritius,Mauritius,MUS
+big7travel_2025,21,Zadar,Zadar,HRV
+big7travel_2025,22,Santiago,Santiago,CHL
+big7travel_2025,23,"Ponta do Sol, Madeira",Ponta do Sol,PRT
+big7travel_2025,24,Istanbul,Istanbul,TUR
+big7travel_2025,25,Bermuda,Bermuda,BMU
+instantoffices_2025,1,Dubai,Dubai,ARE
+instantoffices_2025,2,Lisbon,Lisbon,PRT
+instantoffices_2025,3,Bangkok,Bangkok,THA
+instantoffices_2025,4,Rotterdam,Rotterdam,NLD
+instantoffices_2025,5,Madrid,Madrid,ESP

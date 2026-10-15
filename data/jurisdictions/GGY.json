@@ -1,0 +1,485 @@
+{
+  "id": "GGY",
+  "name": "Guernsey",
+  "continent": "Europe",
+  "region": "Channel Islands (Crown Dependency)",
+  "currency": "GBP",
+  "researched_on": "2026-10-15",
+  "summary": "Crown Dependency outside the UK and EU. No capital gains tax, no inheritance or gift tax, no wealth tax. Income including dividends is taxed at a flat 20%, with optional caps of £160,000 (foreign income) or £320,000 (worldwide), and a £60,000 cap for four years for newcomers buying Open Market property. A GST was approved in October 2026 (from about 2028).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary Guernsey residence",
+      "type": "standard",
+      "description": "Residents pay a flat 20% income tax on worldwide income. No capital gains, inheritance, gift or wealth tax; probate fee about 0.5% of personal estate, capped at £250,000.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax residence in Guernsey. Newcomers without local housing status can generally only live in Open Market (Part A) housing.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Guernsey has no capital gains tax. Gains by a resident private investor on securities, a private business or real estate are not taxed unless the activity is a trade (taxed as income at 20%).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Probate and estate administration for Guernsey domiciliaries",
+            "url": "https://www.careyolsen.com/sites/default/files/CO_GSY_Probate-and-estate-administration-for-Guernsey-domiciliaries_19-5-20.pdf",
+            "publisher": "Carey Olsen",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Guernsey - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/guernsey/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No capital gains tax (Carey Olsen: 'no ... capital gains taxes'); income tax at 20% applies to income only.",
+        "professional_trader": "Dealing in shares or land as a trade is taxed as income at 20%; Guernsey property development profits are taxed at 20%.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Foreign gains are equally untaxed.",
+        "important_exceptions": "From 2026, repayments of non-commercial shareholder loans from personal investment companies are treated as dividends (anti-avoidance)."
+      },
+      "dividends": {
+        "summary": "Dividends are taxed as income at a flat 20%. Guernsey companies paying dividends to resident individuals deduct tax at source up to 20% (20% if the company paid 0%). Residents can elect tax caps (see special regimes).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Guernsey - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/guernsey/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Guernsey - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/guernsey/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Guernsey Budget 2026",
+            "url": "https://www.grantthorntonci.com/News-Centre/budget-responses/guernsey-budget-2026/",
+            "publisher": "Grant Thornton Channel Islands",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.2,
+        "domestic_rate": 0.2,
+        "foreign_gross_rate": 0.2,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Flat 20% income tax rate on net income after allowances (PwC). Personal allowance £15,200 for 2026, withdrawn above £85,000 of income.",
+        "exemptions_thresholds": "Personal allowance £15,200 (2026), withdrawn from £85,000 of income.",
+        "withholding_outbound": "0% withholding on dividends to non-residents under domestic law; dividends to Guernsey-resident individuals carry a deduction making up tax to 20%.",
+        "treaty_network": "14 comprehensive double tax agreements (incl. UK, Jersey, Isle of Man, Luxembourg, Malta, Cyprus, Singapore, Hong Kong); no US income tax treaty, so US dividends suffer 30% US withholding. Foreign tax relieved by credit.",
+        "open_questions": [
+          "Credit relief mechanics for non-treaty source countries not verified from Revenue Service guidance."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No wealth tax or net worth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Guernsey - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/guernsey/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Tax on Real Property (TRP) is an annual property tax based on property size and use (not a wealth tax). Document duty applies to property purchases; the extra 2% on second/buy-to-let properties was removed in the 2026 Budget."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. A probate registry fee applies to personal (movable) estate: £225 up to £80,000 plus £50 per further £10,000 (0.5%), capped at £250,000 for estates above about £50m. Worldwide personal estate counts if no grant has been taken elsewhere.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Guernsey - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/guernsey/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Guernsey probate (guide dated 27 February 2026)",
+            "url": "https://www.mourant.com/news-and-views/guides/guernsey--probate",
+            "publisher": "Mourant",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Probate and estate administration for Guernsey domiciliaries",
+            "url": "https://www.careyolsen.com/sites/default/files/CO_GSY_Probate-and-estate-administration-for-Guernsey-domiciliaries_19-5-20.pdf",
+            "publisher": "Carey Olsen",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.005,
+        "gift_tax": "No gift tax.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": null,
+        "exemptions_thresholds": "Probate fee 0.5% of gross personal estate (Mourant, Feb 2026), capped at £250,000. Guernsey real property is outside the grant. Older guides (Carey Olsen 2020) show £35 per £10,000 (0.35%), so the scale has risen.",
+        "important_exceptions": "Lifetime gifts attract no fee, and assets already covered by a foreign grant are valued on the Guernsey estate only.",
+        "foreign_assets": "Worldwide movable estate counts for the probate fee unless probate has been obtained in another jurisdiction.",
+        "domicile_rules": "No tax, so no domicile test for tax. Families arriving from the UK remain within UK IHT under the residence-based test from 6 April 2025 for up to 10 years after leaving, depending on years of UK residence.",
+        "open_questions": [
+          "Official Probate Registry fee schedule not located; figures from Mourant guide dated 27 Feb 2026."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Guernsey - Individual - Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/guernsey/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Guernsey - Individual - Other taxes",
+          "url": "https://taxsummaries.pwc.com/guernsey/individual/other-taxes",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "tax_cap",
+      "name": "Income tax cap",
+      "type": "special",
+      "description": "A Guernsey resident can elect to cap income tax on non-Guernsey-source income (including Guernsey bank interest) at £160,000 a year, or on worldwide income at £320,000 a year (2026, unchanged since 2024). Guernsey property income is taxed at 20% on top. Since 2023 each spouse elects individually.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any Guernsey-resident individual, by annual election. Worthwhile when 20% of foreign income exceeds £160,000 (about £800,000 of income).",
+      "duration_years": null,
+      "lump_sum": {
+        "annual": {
+          "amount": 160000,
+          "currency": "GBP"
+        },
+        "covers": [
+          "foreign_dividends",
+          "foreign_capital_gains",
+          "foreign_income_all"
+        ],
+        "notes": "£160,000 is a maximum, not a fixed charge: tax is the lower of 20% of non-Guernsey income and the cap. The £320,000 cap covers worldwide income. Per individual since independent taxation in 2023 (couple: up to £320,000 on foreign income)."
+      },
+      "dividends": {
+        "summary": "Once the £160,000 cap binds, further foreign dividends carry no Guernsey tax. Guernsey-source dividends stay at 20% unless the £320,000 worldwide cap is chosen.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax cap (Revenue Service guidance)",
+            "url": "https://www.gov.gg/taxcap",
+            "publisher": "States of Guernsey, Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Monetary values table (income tax allowances, caps, standard charge, 2018-2024)",
+            "url": "https://gov.gg/CHttpHandler.ashx?id=174308&p=0",
+            "publisher": "States of Guernsey, Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Guernsey Budget 2026",
+            "url": "https://www.grantthorntonci.com/News-Centre/budget-responses/guernsey-budget-2026/",
+            "publisher": "Grant Thornton Channel Islands",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.2,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Marginal rate 0% on foreign income above the cap threshold; cap modelled as the lump sum.",
+        "withholding_outbound": "0% on dividends to non-residents.",
+        "treaty_network": "As standard regime."
+      },
+      "sources": [
+        {
+          "title": "Tax cap (Revenue Service guidance)",
+          "url": "https://www.gov.gg/taxcap",
+          "publisher": "States of Guernsey, Revenue Service",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Monetary values table (income tax allowances, caps, standard charge, 2018-2024)",
+          "url": "https://gov.gg/CHttpHandler.ashx?id=174308&p=0",
+          "publisher": "States of Guernsey, Revenue Service",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Guernsey Budget 2026",
+          "url": "https://www.grantthorntonci.com/News-Centre/budget-responses/guernsey-budget-2026/",
+          "publisher": "Grant Thornton Channel Islands",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Guernsey - Individual - Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/guernsey/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "duration_note": "No time limit: any Guernsey resident can claim the cap each year under sections 39B-39E and the Sixth Schedule of the Income Tax (Guernsey) Law, 1975 (gov.gg tax cap page). The cap amounts are set in each annual Budget; it is apportioned in the year of arrival or departure."
+    },
+    {
+      "id": "open_market_cap",
+      "name": "Open Market new-resident tax cap",
+      "type": "special",
+      "description": "A newcomer who buys an Open Market (Part A) property with at least £50,000 of document duty can cap income tax on worldwide income (except Guernsey property income) at £60,000 a year for the arrival year and the following three years. After that the ordinary caps apply.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Not Guernsey resident in the previous three years; purchase of a Part A Open Market property within 12 months of becoming resident, paying at least £50,000 document duty (roughly a £1.3m+ property).",
+      "duration_years": 4,
+      "lump_sum": {
+        "annual": {
+          "amount": 60000,
+          "currency": "GBP"
+        },
+        "covers": [
+          "foreign_dividends",
+          "foreign_capital_gains",
+          "foreign_income_all",
+          "domestic_income"
+        ],
+        "notes": "Maximum, not a fixed charge. Guernsey land and property income excluded (taxed at 20%). Amount £60,000 since 2024, unchanged for 2026. A June 2026 proposal by Innovate Guernsey to raise it has not been adopted as far as found."
+      },
+      "dividends": {
+        "summary": "During the four capped years, dividends above about £300,000 of income carry no further Guernsey tax because total tax is capped at £60,000.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax cap (Revenue Service guidance)",
+            "url": "https://www.gov.gg/taxcap",
+            "publisher": "States of Guernsey, Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Guernsey Budget 2026",
+            "url": "https://www.grantthorntonci.com/News-Centre/budget-responses/guernsey-budget-2026/",
+            "publisher": "Grant Thornton Channel Islands",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Marginal rate 0% once 20% of income exceeds £60,000.",
+        "withholding_outbound": "0% on dividends to non-residents.",
+        "treaty_network": "As standard regime."
+      },
+      "sources": [
+        {
+          "title": "Tax cap (Revenue Service guidance)",
+          "url": "https://www.gov.gg/taxcap",
+          "publisher": "States of Guernsey, Revenue Service",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Guernsey Budget 2026",
+          "url": "https://www.grantthorntonci.com/News-Centre/budget-responses/guernsey-budget-2026/",
+          "publisher": "Grant Thornton Channel Islands",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Day-count categories: principally resident (182+ days in the year); solely resident (91+ days and not 91+ days elsewhere); resident only (91-182 days, or 35+ days with 365+ days over the previous four years). Resident-only individuals may pay a standard charge (£50,000 for 2026) instead of tax on non-Guernsey income.",
+    "routes": [
+      {
+        "name": "Open Market housing",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Anyone may live in Part A Open Market property without a housing licence. Non-British/Irish nationals also need immigration permission under Bailiwick rules (UK-style; not researched in detail)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Guernsey - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/guernsey/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Tax cap (Revenue Service guidance)",
+        "url": "https://www.gov.gg/taxcap",
+        "publisher": "States of Guernsey, Revenue Service",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Guernsey Budget 2026",
+        "url": "https://www.grantthorntonci.com/News-Centre/budget-responses/guernsey-budget-2026/",
+        "publisher": "Grant Thornton Channel Islands",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "States approve GST package (P.2026/49)",
+        "url": "https://lookuptax.com/tax-changes/guernsey/states-approve-gst-package-2026",
+        "publisher": "Lookuptax (tracking summary)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.0,
+    "summary": "General corporate rate 0%; 10% for banking, fiduciary, fund administration and similar regulated business; 20% for Guernsey property income, utilities and large retail. Pillar Two (domestic top-up tax and multinational top-up tax) from 1 January 2025 for groups with €750m+ revenue. No withholding tax on dividends to non-residents.",
+    "special_zones": "",
+    "sources": [
+      {
+        "title": "Guernsey - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/guernsey/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Guernsey - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/guernsey/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "St Peter Port",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 4875,
+        "currency": "GBP"
+      },
+      "year": 2026,
+      "description": "Median of a small sample: the only 4 long-let houses or flats with 4-5 bedrooms and a stated rent on Guernsey agency sites on 2026-10-15: Swoffers - Connaught House, St Peter Port, 4 bed, Open Market, GBP 72,000 a year (GBP 6,000 pcm); Confidential Instruction, St Martin's, 5 bed, Local Market, GBP 5,000 pcm; Central Park, St Peter Port, 4 bed, Local Market, GBP 3,850 pcm; Livingroom - Valley Lodge, Forest, 4 bed, Open Market, GBP 4,750 pcm (let). Excluded: price-on-application listings, and 3 Belle Vue (listed as 3 bed by Swoffers and Savills). Savills Guernsey had no 4+ bedroom lettings. A newly arriving family without a housing licence can only rent Open Market property; the two Open Market rents are GBP 4,750 and 6,000. Very thin sample: indicative only.",
+      "source": {
+        "title": "Swoffers - Property search: rentals (Local and Open Market)",
+        "url": "https://swoffers.co.uk/property-search?market=rentals",
+        "publisher": "Swoffers",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 16995,
+        "currency": "GBP"
+      },
+      "year": 2026,
+      "description": "Elizabeth College (independent, Years 7-13 incl. sixth form), Upper School day fee 2026-27: £5,665 per term, £16,995 a year, from the school's fee page.",
+      "source": {
+        "title": "Elizabeth College - School fees",
+        "url": "https://elizabethcollege.gg/school-fees/",
+        "publisher": "Elizabeth College",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent is the median of only 4 agency listings (Swoffers, Livingroom; Savills had none at 4+ bedrooms), 2026-10-15. For scale, the official Local Market mix-adjusted average advertised rent was £2,075 a month in Q2 2025 (Guernsey Facts and Figures 2025), across all sizes. Health insurance, housekeeper and price per m² not sourced."
+  },
+  "markers": [
+    {
+      "name": "St Peter Port",
+      "lon": -2.55194,
+      "lat": 49.46,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3042287 / Wikidata Q174262"
+    }
+  ],
+  "us_citizen_notes": "No US-Guernsey income tax treaty; US tax applies on worldwide income with credit for Guernsey tax. Guernsey's caps reduce the local credit available.",
+  "open_questions": [
+    "GST: on 2 October 2026 the States carried P.2026/49 (22-17) directing a GST package with income tax and social security mitigations (reported starting rate 3%, possibly rising to 5%; supporters target 2028). No law made, no start date; income tax effects for high earners unknown (source: lookuptax.com tracking summary, not an official record).",
+    "Non-employed residents pay social security contributions on income up to an upper limit; not modelled here.",
+    "Cost-of-living items not sourced (no official 2026 senior fee found for Elizabeth College)."
+  ],
+  "indicator_overrides": {
+    "life_expectancy": {
+      "value": 83.6,
+      "year": 2024,
+      "source": {
+        "title": "Guernsey Facts and Figures 2025",
+        "url": "https://www.gov.gg/CHttpHandler.ashx?id=194705&p=0",
+        "publisher": "States of Guernsey, Data and Analysis",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Life expectancy at birth, three-year average 2022-2024, provisional (Table 1.1 and Figure 3.15)."
+    },
+    "homicide_rate": {
+      "value": 0.0,
+      "year": 2025,
+      "source": {
+        "title": "Guernsey Police Annual Report 2025",
+        "url": "https://www.guernsey.police.uk/CHttpHandler.ashx?id=200660&p=0",
+        "publisher": "Guernsey Police",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      "notes": "The full list of recorded 'Violence Against the Person' offences for 2025 contains no murder or manslaughter; the 2024 Bailiwick Law Enforcement Annual Report's list also has none. Zero homicides on a population of about 64,000."
+    }
+  }
+}

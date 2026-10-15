@@ -1,0 +1,274 @@
+{
+  "id": "BRA",
+  "name": "Brazil",
+  "continent": "South America",
+  "region": "Eastern South America",
+  "currency": "BRL",
+  "researched_on": "2026-10-15",
+  "summary": "Brazil taxes residents on worldwide income. Since 2024 (Law 14,754/2023) income and gains from financial investments abroad are taxed annually at a flat 15%. From 2026 (Law 15,270/2025) dividends from Brazilian companies above BRL 50,000 a month per company bear 10% withholding, and a minimum tax of up to 10% applies to total income above BRL 600,000 (full 10% above BRL 1.2 million). Inheritance and gifts are taxed by the states (ITCMD, capped at 8%; Sao Paulo 4% flat in 2026). No wealth tax.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Resident individuals: 15% annual tax on foreign financial investment income and gains (Law 14,754/2023); 15%-22.5% on other capital gains; 15% on Brazilian exchange-traded equity gains; 10% WHT on large Brazilian dividends plus the IRPFM minimum tax from 2026; state ITCMD on inheritances and gifts.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Holders of a permanent visa are resident from arrival; holders of a temporary visa without a local employment contract become resident after 183 days of presence within 12 months (PwC Residence).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains on financial investments held abroad (including foreign listed shares and funds) are taxed annually at a flat 15% under Law 14,754/2023, separately from other income. Gains on shares sold on the Brazilian stock exchange are taxed at 15% (20% day trades). Other capital gains (unlisted shares, real estate in Brazil or abroad) are taxed progressively: 15% up to BRL 5 million, rising to 22.5% on the part above BRL 30 million.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Brazil - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/brazil/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Brazil - Individual - Significant developments",
+            "url": "https://taxsummaries.pwc.com/brazil/individual/significant-developments",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Brazil Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-brazilhighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.225,
+        "rates": {
+          "listed_securities_domestic": 0.15,
+          "listed_securities_foreign": 0.15,
+          "private_business_sale": 0.225,
+          "real_estate_local": 0.225,
+          "real_estate_foreign": 0.225
+        },
+        "rate_basis": "PwC Other taxes: 15% flat on foreign financial investments (from 1 Jan 2024); progressive 15%-22.5% capital gains (top band above BRL 30 million) for other assets incl. assets abroad; 15% on Brazilian stock-exchange gains. Top band rates used for a large private business or real estate gain.",
+        "professional_trader": "Day-trade gains taxed at 20%. Individuals are not generally recharacterised as traders; business activity is normally carried on through companies.",
+        "important_exceptions": "Small monthly sales of Brazilian shares (up to BRL 20,000) are exempt (not re-verified). Foreign currency gains on cash held abroad follow specific rules.",
+        "foreign_assets": "Worldwide; gains on foreign financial investments taxed on realisation once a year at 15% with no deductions.",
+        "open_questions": [
+          "Law 14,754/2023 text not opened; rate taken from PwC and Deloitte.",
+          "Whether IRPFM (minimum tax) adds anything for income already taxed at 15% is not analysed; it is credited and should not increase these rates."
+        ]
+      },
+      "dividends": {
+        "summary": "From 1 January 2026 a Brazilian company withholds 10% on the whole monthly amount when it distributes more than BRL 50,000 in a month to the same resident individual. Dividends also count towards the new minimum individual income tax (IRPFM): 0%-10% on income between BRL 600,000 and BRL 1.2 million and 10% above, with credit for tax already paid. Foreign dividends are taxed at a flat 15% annually under Law 14,754/2023.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Brazil - Individual - Significant developments",
+            "url": "https://taxsummaries.pwc.com/brazil/individual/significant-developments",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Brazil - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/brazil/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Brazil - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/brazil/corporate/withholding-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Brazil - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/brazil/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Brazil Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-brazilhighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.15,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": 0.15,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: 10% (WHT and IRPFM top rate) for large dividend flows. Foreign: 15% flat (Law 14,754/2023, PwC Income determination). Credit for foreign tax under treaties or reciprocity (US, UK and Germany recognised) - PwC Foreign tax relief.",
+        "withholding_outbound": "10% WHT on dividends to non-residents from 2026 (treaty rates cannot increase it); 15%/25% on interest and royalties.",
+        "treaty_network": "About 40 treaties (incl. Argentina, Austria, Belgium, Canada, Chile, China, France, India, Italy, Japan, Luxembourg, Mexico, Netherlands, Norway, Portugal, Singapore, Spain, Sweden, Switzerland, UAE); UK, Colombia, Paraguay pending. No US treaty (reciprocity recognised for credits).",
+        "holding_company_notes": "Profits of controlled foreign entities held by individuals are taxed annually at 15% on an accrual basis (Law 14,754/2023); trusts are look-through.",
+        "open_questions": [
+          "Mechanics of the IRPFM reducer (combined corporate + personal cap of 34%) not studied in detail."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax (the constitutional large-fortunes tax has never been enacted).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Brazil - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/brazil/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Brazil Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-brazilhighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Municipal IPTU on urban property (Sao Paulo basic 1% residential); ITBI up to 3% on real-estate purchases."
+      },
+      "inheritance": {
+        "summary": "ITCMD is a state tax on inheritances and gifts, levied on the recipient's acquisition at up to 8% (Senate cap). EC 132/2023 makes progressive rates mandatory and LC 227/2026 (Jan 2026) set national rules, including taxation of assets abroad, but each state must legislate. Sao Paulo (scored here) still applies a single 4% rate in 2026; bills for 1%-4% or up to 8% are pending.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Brazil - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/brazil/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Brazil Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-brazilhighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Planejamento patrimonial e sucessorio diante do ITCMD progressivo (Freitas Ferraz Advogados, Capital Aberto, Aug 2026)",
+            "url": "https://capitalaberto.com.br/insights/freitas-ferraz-advogados/2026/08/planejamento-patrimonial-e-sucessorio-diante-do-itcmd-progressivo",
+            "publisher": "Capital Aberto / Freitas Ferraz Advogados",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "beneficiary",
+        "children_treatment": "taxed_low",
+        "exemption": 0,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.04
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Gifts taxed by ITCMD at the same state rate (Sao Paulo 4%).",
+        "gifts_same_as_inheritance": true,
+        "regional_differences": "Rates vary by state (2%-8%; Deloitte: progressive 2% up to 8%). From 2026 movable property is taxed by the state of the deceased's or donor's domicile; real estate by its location (LC 227/2026).",
+        "important_exceptions": "STF (Dec 2024): no ITCMD on VGBL/PGBL pension plan payouts at death. A transitional pending change: Sao Paulo bills PL 7/2024 (up to 8%) and PL 409/2025 (1%-4%).",
+        "foreign_assets": "LC 227/2026 allows states to tax assets abroad once they legislate; status in Sao Paulo for 2026 uncertain.",
+        "domicile_rules": "Movables: state of domicile of deceased/donor; real estate: state where located.",
+        "open_questions": [
+          "Whether Sao Paulo can already tax foreign-situs assets in 2026 (STF Tema 825 required a complementary law; LC 227/2026 now exists but state law and anteriority rules apply) is unclear; scope set to worldwide conservatively.",
+          "Sao Paulo small-estate exemptions not modelled; Rio de Janeiro and other states use progressive scales up to 8%."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Permanent visa holders are resident from arrival; temporary visa without local employment after 183 days in a 12-month period; Brazilians leaving remain resident for 12 months unless an exit process is filed (PwC Residence).",
+    "routes": [
+      {
+        "name": "Investor visa (VITEM IX / permanent residence by investment)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Residence for investment in real estate or productive activity under the Migration Law (Decree 9,199/2017); amounts not researched."
+      },
+      {
+        "name": "Retiree visa (VITEM XIV)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Requires a minimum foreign pension; not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Brazil - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/brazil/individual/residence",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.34,
+    "summary": "IRPJ 15% + 10% surcharge above BRL 240,000 + CSLL 9% = 34% combined. 10% WHT on dividends from 2026.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Brazil - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/brazil/corporate/taxes-on-corporate-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Brazil - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/brazil/corporate/withholding-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Brasilia",
+      "lon": -47.92972,
+      "lat": -15.77972,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3469058"
+    },
+    {
+      "name": "Sao Paulo",
+      "lon": -46.63611,
+      "lat": -23.5475,
+      "kind": "financial_centre",
+      "coordinate_source": "GeoNames 3448439"
+    }
+  ],
+  "us_citizen_notes": "No US-Brazil income tax treaty; Brazil recognises reciprocity for crediting US tax. US citizens remain subject to US federal income, estate and gift tax.",
+  "open_questions": [
+    "ITCMD on foreign assets in Sao Paulo for 2026 deaths/gifts unresolved.",
+    "Law texts (14,754/2023 and 15,270/2025) not opened directly."
+  ]
+}

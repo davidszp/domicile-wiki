@@ -1,0 +1,171 @@
+{
+  "id": "SRB",
+  "name": "Serbia",
+  "currency": "RSD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Flat 10% salary tax with a monthly non-taxable amount (about RSD 25,000 per CountryTaxCalc; not applied here), plus employee contributions of 19.9% (self-employed entrepreneurs pay 35.05%) (14% pension, 5.15% health, 0.75% unemployment). A supplementary annual personal income tax of 10% above three times the average annual salary and a further rate above six times applies to high earners (thresholds not given in RSD).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.1
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.199,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.3505,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Entrepreneurs (preduzetnici) pay the full contribution themselves at the Article 44(1) rates of the Law on Mandatory Social Insurance Contributions: pension 24% + health 10.3% + unemployment 0.75% = 35.05% of the contribution base (the base is the entrepreneur's own salary, or taxable profit if none, or the lump-sum amount under paušal; Article 22), subject to a minimum and a maximum base (five times the average monthly salary; the RSD amounts were not found, so the cap is left null). Entrepreneurs doing work with enhanced service credit pay a further 3.7-11%. At about EUR 54k (roughly RSD 6.3 million, assuming ~117 RSD/EUR, an assumption) turnover exceeds the RSD 6,000,000 paušal ceiling (Income Tax Law, Art. 40), so the 35.05% on actual profit applies; the paušal option (about RSD 30,000-60,000 a month combined tax and contributions per CountryTaxCalc, an unofficial figure) is not available above that turnover. Income tax on self-employment income is 10% (Art. 38).",
+    "social_security_deductible": 0,
+    "local_tax_note": "Contribution base for employees is between 35.05% and five times the average monthly salary (RSD amounts not found), so the cap is left null. The Income Tax Law page opened shows a monthly non-taxable amount of RSD 37,369 for full-time earnings (indexed yearly; version and 2026 value not confirmed) whereas CountryTaxCalc says about RSD 25,000; neither is applied (effect under ~EUR 400 a year).",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Serbia individual - taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/serbia/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Serbia individual - other taxes",
+        "url": "https://taxsummaries.pwc.com/serbia/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Serbia individual - deductions",
+        "url": "https://taxsummaries.pwc.com/serbia/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Serbia expat tax guide: moving to Serbia 2026",
+        "url": "https://www.countrytaxcalc.com/tax-guides/serbia/expat-tax-guide-moving-to-2026/",
+        "publisher": "CountryTaxCalc",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Zakon o doprinosima za obavezno socijalno osiguranje (Law on Mandatory Social Insurance Contributions)",
+        "url": "https://www.paragraf.rs/propisi/zakon_o_doprinosima_za_obavezno_socijalno_osiguranje.html",
+        "publisher": "Paragraf (consolidated Serbian legislation)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Zakon o porezu na dohodak gradjana (Personal Income Tax Law)",
+        "url": "https://www.paragraf.rs/propisi/zakon_o_porezu_na_dohodak_gradjana.html",
+        "publisher": "Paragraf (consolidated Serbian legislation)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "2026 non-taxable amount in RSD (law text shows 37,369, CountryTaxCalc ~25,000), supplementary-tax thresholds in RSD, and the contribution cap in RSD not found.",
+      "Self-employed 35.05% is the statutory rate; minimum/maximum bases in RSD not found, so the effective rate at low or very high incomes may differ.",
+      "Employee total is 19.9% on PwC (with unemployment); CountryTaxCalc says 19.15%."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "temporary_residence_remote",
+      "name": "Temporary residence for remote workers (reported)",
+      "kind": "digital_nomad_visa",
+      "description": "Third-party summaries (WFA) describe a temporary residence permit for people working for foreign employers or clients, with income of at least USD 42,000 a year, health insurance and funds, valid up to one year and renewable. CountryTaxCalc says Serbia has no official digital nomad visa as of mid-2026 and that the temporary-residence permit does not itself grant work authorization. Legal hook: Article 40(4) of the Law on Foreigners lets the Government define categories of foreigners for temporary residence by a separate act, and its example list includes 'stranci digitalni nomadi'; the implementing act and its income test were not found, so the USD 42,000 figure is unconfirmed. No tax change: Serbian tax residency after 183 days (WFA).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 42000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": 1,
+      "duration_note": "Reported as one year, renewable (a 2026 guide not opened says three years).",
+      "treatment": "standard",
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Digital nomad visa Serbia (WFA)",
+          "url": "https://wfa.team/visa/digital-nomad-visa-serbia/",
+          "publisher": "Work From Anywhere (WFA)",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Serbia expat tax guide: moving to Serbia 2026",
+          "url": "https://www.countrytaxcalc.com/tax-guides/serbia/expat-tax-guide-moving-to-2026/",
+          "publisher": "CountryTaxCalc",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Zakon o strancima (Law on Foreigners), Art. 40",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_strancima.html",
+          "publisher": "Paragraf (consolidated Serbian legislation)",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "unverified",
+      "open_questions": [
+        "The Law on Foreigners (Art. 40(4)) names digital nomads as a category the Government may define, but the implementing act was not found; income threshold USD 42,000 rests on WFA only.",
+        "Social-security treatment of a foreign-paid worker is stated only by WFA."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Belgrade",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 620,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average asking rent for a 1-bedroom in Belgrade, 2026, from Nekretnine.rs, CityExpert and Numbeo as compiled by Investropa; sample size not stated.",
+      "source": {
+        "title": "Belgrade rents",
+        "url": "https://investropa.com/blogs/news/belgrade-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 850,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average asking rent for a 2-bedroom (typical 55-70 m2) in Belgrade, 2026, from Nekretnine.rs, CityExpert and 4zida as compiled by Investropa; sample size not stated.",
+      "source": {
+        "title": "Belgrade rents",
+        "url": "https://investropa.com/blogs/news/belgrade-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Asking rents, not signed leases."
+  },
+  "residence_routes": "EU, US and many other citizens can enter visa-free for 90 days; longer stays need a temporary residence permit (initially one year, renewable) with a lease, funds, health insurance and criminal record (CountryTaxCalc). Working normally needs entrepreneur registration or a work permit. Permanent residence after five years. Serbia is not in the EU or Schengen.",
+  "open_questions": [
+    "Nomad route: legal basis exists (Law on Foreigners Art. 40(4)) but operating criteria, fees and income test unverified on an official page."
+  ]
+}

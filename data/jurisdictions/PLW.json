@@ -1,0 +1,181 @@
+{
+  "id": "PLW",
+  "name": "Palau",
+  "continent": "Oceania",
+  "region": "Micronesia (Western Pacific)",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "summary": "Palau has no general personal income tax: after the January 2023 tax reform (10% Palau Goods and Services Tax, Business Profits Tax, reformed Wages Tax) the Ministry of Finance states that the regime 'does not include a general personal income tax'. Investment income and capital gains of individuals are therefore untaxed as far as found. No inheritance, gift or wealth tax was found.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary residence",
+      "type": "standard",
+      "description": "No general personal income tax; wages tax on employment income; business taxes on businesses.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "No tax residence test is relevant for investment income (no personal income tax).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No tax on individuals' capital gains (no general personal income tax).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Economic and Fiscal Update FY2024 (tax reform section)",
+            "url": "https://www.palaugov.pw/wp-content/uploads/Economic-Fiscal-Update-FY2024.pdf",
+            "publisher": "Ministry of Finance, Republic of Palau",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Ministry of Finance FY2024 Economic and Fiscal Update: 'the current reformed regime does not include a general personal income tax, which would form a second phase of the reforms'.",
+        "professional_trader": "A trading business would fall under Business Profits Tax / gross receipts tax (rates not verified).",
+        "important_exceptions": "A second phase of tax reform could introduce a personal income tax (announced as possible, nothing enacted found).",
+        "open_questions": [
+          "Primary legislation (RPPL 11-11 and the Palau National Code Title 40) not read."
+        ]
+      },
+      "dividends": {
+        "summary": "No tax on individuals' dividends (no general personal income tax).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Economic and Fiscal Update FY2024 (tax reform section)",
+            "url": "https://www.palaugov.pw/wp-content/uploads/Economic-Fiscal-Update-FY2024.pdf",
+            "publisher": "Ministry of Finance, Republic of Palau",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No general personal income tax (FY2024 Economic and Fiscal Update). Foreign withholding (e.g. US 30%) is a final cost.",
+        "treaty_network": "No comprehensive treaties found (not verified). Palau uses the US dollar under its Compact of Free Association."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no recurring levy on financial assets.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Economic and Fiscal Update FY2024 (tax reform section)",
+            "url": "https://www.palaugov.pw/wp-content/uploads/Economic-Fiscal-Update-FY2024.pdf",
+            "publisher": "Ministry of Finance, Republic of Palau",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Not researched."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax found among Palau's taxes (PGST, excises, business profits tax, gross receipts tax, wages tax, room tax).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Economic and Fiscal Update FY2024 (tax reform section)",
+            "url": "https://www.palaugov.pw/wp-content/uploads/Economic-Fiscal-Update-FY2024.pdf",
+            "publisher": "Ministry of Finance, Republic of Palau",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax found.",
+        "gifts_same_as_inheritance": true,
+        "open_questions": [
+          "Foreigners cannot own land in Palau (general knowledge, not verified)."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No personal income tax on investment income, so no relevant tax residence test. Palau's 'digital residency' card is an ID product, not tax or immigration residence.",
+    "routes": [
+      {
+        "name": "Residence/entry permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ministry of Finance (Bureau of Revenue and Taxation)",
+        "url": "https://www.palaugov.pw/executive-branch/ministries/finance/",
+        "publisher": "Government of the Republic of Palau",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": null,
+    "summary": "Business Profits Tax for larger businesses introduced in January 2023, medium businesses stay on the Business Gross Receipts Tax and small ones pay an annual fee (FY2024 Update); rates not verified.",
+    "sources": [
+      {
+        "title": "Economic and Fiscal Update FY2024 (tax reform section)",
+        "url": "https://www.palaugov.pw/wp-content/uploads/Economic-Fiscal-Update-FY2024.pdf",
+        "publisher": "Ministry of Finance, Republic of Palau",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Koror",
+    "notes": "Not sourced."
+  },
+  "markers": [
+    {
+      "name": "Ngerulmud",
+      "lon": 134.62485,
+      "lat": 7.50043,
+      "kind": "capital",
+      "coordinate_source": "GeoNames (Ngerulmud)"
+    },
+    {
+      "name": "Koror",
+      "lon": 134.47326,
+      "lat": 7.34257,
+      "kind": "city",
+      "coordinate_source": "GeoNames (Koror)"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. Where local tax on portfolio income is nil there is nothing to credit against US tax.",
+  "open_questions": [
+    "Palau legislation not read; confidence rests on the Ministry of Finance's description."
+  ]
+}

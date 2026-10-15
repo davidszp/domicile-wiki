@@ -1,0 +1,294 @@
+{
+  "id": "MDA",
+  "name": "Moldova",
+  "continent": "Europe",
+  "region": "Eastern Europe",
+  "currency": "MDL",
+  "researched_on": "2026-10-15",
+  "summary": "Moldova has a flat 12% income tax. Only 50% of a capital gain is taxable, so gains are taxed at an effective 6%. Moldovan dividends bear a final 6%; foreign dividends are taxed at 12%. There is no inheritance or gift tax (KPMG; PwC confirms inheritances received by Moldovan citizens are not taxed). A 0.8% annual 'wealth tax' applies only to residential buildings worth at least 200 average monthly salaries (about MDL 3.48 million in 2026) and at least 120 m2. Whether foreign-national residents are taxed on foreign investment income at all is unclear from the sources.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Ordinary residence; flat 12% PIT.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident with a permanent domicile in Moldova or more than 183 days in the calendar year. Foreigners need a residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "status": "researched",
+        "summary": "There is no separate capital gains tax: 50% of the gain (sale price minus purchase price) is added to taxable income and taxed at 12%, so the effective rate is 6%. Gains on the sale of a permanent abode can be exempt; gains from donations between first-degree relatives are exempt.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Moldova – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/moldova/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Moldova – Individual – Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/moldova/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Moldova – Taxation of International Executives (August 2022)",
+            "url": "https://assets.kpmg.com/content/dam/kpmg/xx/pdf/2023/01/TIES-Moldova.pdf",
+            "publisher": "KPMG",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PwC (reviewed June 2026) says residents are taxed on Moldovan-source income and foreign income for work performed in Moldova, and that Moldovan citizens are also taxed on foreign investment and financial income. Read literally, foreign-national residents would not be taxed on foreign dividends and gains; KPMG (2022) instead describes worldwide taxation for residents. Not resolved; the scope article of the Tax Code (Art. 15/18) was not read."
+        ],
+        "important_exceptions": "From 2024 certain transfers (divorce, bond redemptions, option exercises) are not recognised as gains; from 1 Jan 2025 a basis rule for stock-option shares applies (PwC).",
+        "headline_rate": 0.12,
+        "rates": {
+          "listed_securities_domestic": 0.06,
+          "listed_securities_foreign": 0.06,
+          "private_business_sale": 0.06,
+          "real_estate_local": 0.06,
+          "real_estate_foreign": 0.06
+        },
+        "rate_basis": "12% x 50% taxable portion = 6% for all asset classes. Foreign gains assumed in scope (KPMG 2022: worldwide taxation), but see open question on scope for foreign nationals.",
+        "foreign_assets": "PwC (reviewed June 2026) says residents are taxed on Moldovan-source income and foreign income for work performed in Moldova, and that Moldovan citizens are also taxed on foreign investment and financial income. Read literally, foreign-national residents would not be taxed on foreign dividends and gains; KPMG (2022) instead describes worldwide taxation for residents. Not resolved; the scope article of the Tax Code (Art. 15/18) was not read."
+      },
+      "dividends": {
+        "status": "researched",
+        "summary": "Dividends from Moldovan companies are taxed at a final 6% withheld at source. Foreign dividends received by a resident are declared and taxed at 12% (KPMG 2022).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Moldova – Individual – Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/moldova/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Moldova – Corporate – Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/moldova/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Moldova – Taxation of International Executives (August 2022)",
+            "url": "https://assets.kpmg.com/content/dam/kpmg/xx/pdf/2023/01/TIES-Moldova.pdf",
+            "publisher": "KPMG",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PwC (reviewed June 2026) says residents are taxed on Moldovan-source income and foreign income for work performed in Moldova, and that Moldovan citizens are also taxed on foreign investment and financial income. Read literally, foreign-national residents would not be taxed on foreign dividends and gains; KPMG (2022) instead describes worldwide taxation for residents. Not resolved; the scope article of the Tax Code (Art. 15/18) was not read."
+        ],
+        "headline_rate": 0.12,
+        "domestic_rate": 0.06,
+        "foreign_gross_rate": 0.12,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic 6% final (PwC 2026). Foreign 12% per KPMG (2022 edition; not re-verified for 2026). Relief method for foreign WHT not confirmed.",
+        "withholding_outbound": "6% WHT on dividends to residents and non-residents (15% for 2008–2011 profits); treaty rates may be lower.",
+        "treaty_network": "About 50 operational treaties (PwC)."
+      },
+      "wealth_tax": {
+        "status": "researched",
+        "summary": "Moldova's 'impozit pe avere' (introduced 2016) is a 0.8% annual tax on residential real estate (not land) owned by individuals whose estimated cadastral value is at least 200 average monthly salaries (forecast for the year) and whose area is at least 120 m2. With the 2026 forecast wage of MDL 17,400 (draft government decision), the threshold is MDL 3,480,000.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Moldova – Individual – Other taxes",
+            "url": "https://taxsummaries.pwc.com/moldova/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Moldova – Taxation of International Executives (August 2022)",
+            "url": "https://assets.kpmg.com/content/dam/kpmg/xx/pdf/2023/01/TIES-Moldova.pdf",
+            "publisher": "KPMG",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Proiect HG: cuantumul salariului mediu lunar pe economie prognozat pentru anul 2026 (17 400 lei)",
+            "url": "https://gov.md/sites/default/files/media/documents/sedinte-de-guvern/2025-11/916-MMPS-2025.pdf",
+            "publisher": "Government of the Republic of Moldova (Ministry of Labour and Social Protection)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The 2026 average wage figure (MDL 17,400) is from a draft government decision; the adopted figure was not confirmed."
+        ],
+        "type": "limited",
+        "components": [
+          {
+            "name": "Wealth tax on large residential real estate",
+            "base": "real_estate_local",
+            "exempt_amount": 0,
+            "entry_threshold": 3480000,
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.008
+              }
+            ],
+            "notes": "0.8% of the full cadastral value once value >= 200 x forecast average monthly wage AND area >= 120 m2. Financial assets are not taxed."
+          }
+        ],
+        "property_tax_note": "Ordinary local real estate tax: minimum 0.05% for housing, rates set annually by local authorities (KPMG 2022: 0.05–0.4%)."
+      },
+      "inheritance": {
+        "status": "researched",
+        "summary": "There are no inheritance or gift taxes in Moldova (KPMG). PwC: 'Patrimony received by Moldovan citizens by inheritance is not taxable'; gifts have no separate tax and fall under general rules, with donations between first-degree relatives exempt from capital-gains treatment.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Moldova – Individual – Other taxes",
+            "url": "https://taxsummaries.pwc.com/moldova/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Moldova – Taxation of International Executives (August 2022)",
+            "url": "https://assets.kpmg.com/content/dam/kpmg/xx/pdf/2023/01/TIES-Moldova.pdf",
+            "publisher": "KPMG",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Moldova – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/moldova/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PwC's wording refers to Moldovan citizens; whether inheritances received by foreign-national residents are equally untaxed was not confirmed."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "No separate gift tax; gifts may fall under capital-gains rules, but donations between first-degree relatives are exempt.",
+        "gifts_same_as_inheritance": true
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if permanent domicile address in Moldova or present more than 183 days in the fiscal (calendar) year. Treaty rules may override.",
+    "routes": [
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Moldova is an EU candidate, not a member; foreigners need a residence permit. Routes not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Moldova – Individual – Residence",
+        "url": "https://taxsummaries.pwc.com/moldova/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.12,
+    "summary": "CIT 12% on worldwide income; optional 4% regime for qualifying non-VAT SMEs; 6% dividend WHT.",
+    "special_zones": "Free economic zones and IT parks exist (not researched).",
+    "sources": [
+      {
+        "title": "Moldova – Corporate – Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Moldova – Corporate – Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/moldova/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Chișinău",
+      "lon": 28.835278,
+      "lat": 47.022778,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q21197"
+    }
+  ],
+  "us_citizen_notes": "US–Moldova treaty status (the 1973 US–USSR treaty) not verified.",
+  "open_questions": [
+    "PwC (reviewed June 2026) says residents are taxed on Moldovan-source income and foreign income for work performed in Moldova, and that Moldovan citizens are also taxed on foreign investment and financial income. Read literally, foreign-national residents would not be taxed on foreign dividends and gains; KPMG (2022) instead describes worldwide taxation for residents. Not resolved; the scope article of the Tax Code (Art. 15/18) was not read.",
+    "Transnistria is outside government control; the figures apply to government-controlled territory."
+  ],
+  "cost_of_living": {
+    "city": "Chișinău",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 3500,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent (EUR 3,500/month, about MDL 70,000) of 277 houses for rent of at least 200 m² in Chișinău municipality (range EUR 800–9,600; the 214 in the prime Centru, Telecentru and Buiucani sectors have the same median), from all 635 house-rental listings ('De închiriat lunar') on 999.md retrieved on 2026-10-15. All were priced in EUR. 999.md does not show bedrooms on the results list, so floor area is the size filter; some houses are offered for office use and some agencies repeat the same house. Asking prices on a listing portal.",
+      "source": {
+        "title": "Case de închiriat lunar (houses for monthly rent)",
+        "url": "https://999.md/ro/list/real-estate/house-and-garden?o_16_1=912&applied=1",
+        "publisher": "999.md (Simpals)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 13500,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Heritage International School, Chișinău (Cambridge A Level in the Lyceum), Tier 2 fee (dependants of foreign nationals or temporary residents), Cambridge Pathway Grades 11–12: EUR 13,500 annual tuition plus EUR 450 registration fee (Tier 1 for Moldovan citizens: EUR 7,700 + 350). The page sets the first instalment deadline at 15 June 2026, so this is the 2026–27 schedule. Tuition includes academic expenses; paid in MDL at the bank's sell rate. QSI International School of Chișinău does not publish fees.",
+      "source": {
+        "title": "Tuition fees and due dates",
+        "url": "https://www.heritage.md/en/admissions/tuition-fees-and-due-dates",
+        "publisher": "Heritage International School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent from 999.md (Moldova's main classifieds portal); school fee from Heritage International School's own fee table. QSI Chișinău does not publish fees."
+  }
+}

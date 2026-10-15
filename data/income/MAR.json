@@ -1,0 +1,125 @@
+{
+  "id": "MAR",
+  "name": "Morocco",
+  "currency": "MAD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Resident individuals pay income tax (IR) on worldwide income on a six-band scale from 0% to 37% (0% to MAD 40,000; 37% above MAD 180,000). Employee social security is 4.48% on pay up to MAD 6,000 a month plus 2.26% mandatory health (AMO) with no ceiling. Independents in the single professional contribution (CPU) regime pay 1.5% of turnover.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 40000,
+        "rate": 0.1
+      },
+      {
+        "from_amount": 60000,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 80000,
+        "rate": 0.3
+      },
+      {
+        "from_amount": 100000,
+        "rate": 0.34
+      },
+      {
+        "from_amount": 180000,
+        "rate": 0.37
+      }
+    ],
+    "personal_allowance": 35000,
+    "employee_social_security_rate": 0.0226,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.015,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Self-employed in the CPU regime pay a flat 1.5% of turnover covering AMO, pension and family allowances (Wafir, secondary). Independents outside CPU fall under the TNS regime; rates not found.",
+    "local_tax_note": "No local income surtax found. Personal allowance of MAD 35,000 is the salaried professional-expense deduction: capped at MAD 35,000 (PwC: 25% rate above MAD 78,000 gross), which is reached at any gross salary above MAD 140,000; it is for employees, not for independents, who deduct actual expenses. Family-charge and mandatory-contribution deductions are not applied. Employee rate shown is AMO 2.26% (uncapped), the marginal rate above the ceiling; an additional 4.48% (CNSS short-term 0.33%, retirement 3.96%, IPE 0.19%) applies to pay up to MAD 6,000 a month (MAD 72,000 a year), about MAD 3,226 a year at most (Wafir).",
+    "sources": [
+      {
+        "title": "Morocco - Individual - Taxes on personal income (last reviewed 30 Apr 2026)",
+        "url": "https://taxsummaries.pwc.com/morocco/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Morocco - Individual - Other taxes (last reviewed 30 Apr 2026)",
+        "url": "https://taxsummaries.pwc.com/morocco/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "CNSS tout savoir Maroc 2026 (Wafir)",
+        "url": "https://wafir.ma/fr/guide/cnss-tout-savoir-maroc-2026",
+        "publisher": "Wafir",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Morocco - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/morocco/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Family-charge deductions and deductibility of mandatory CNSS/AMO contributions are not applied (persona is single).",
+      "TNS (non-CPU) self-employed contribution rates not found; CPU 1.5% of turnover comes from Wafir only.",
+      "The 4.48% capped contribution is not representable in the single-rate field.",
+      "PwC page reviewed 30 April 2026 does not state the scale's effective year.",
+      "Deductibility of the AMO health contribution (the recorded 2.26%) and CNSS contributions could not be established: the opened PwC deductions page addresses only pension insurance contributions (capped at 50% of net taxable salary)."
+    ],
+    "social_security_deductible": null
+  },
+  "regimes": [],
+  "costs": {
+    "city": "Casablanca",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 6800,
+        "currency": "MAD"
+      },
+      "year": 2026,
+      "description": "Casablanca 1-bedroom average monthly rent, 2026 (range MAD 5,000-11,000; Mubawab-based estimate using '2 pieces' listings as proxy, asking rents discounted for negotiation). Numbeo city-centre 1-bedroom is MAD 5,892.",
+      "source": {
+        "title": "Average rent in Casablanca 2026 (Sands of Wealth)",
+        "url": "https://sandsofwealth.com/blogs/news/casablanca-rents",
+        "publisher": "Sands of Wealth",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 9200,
+        "currency": "MAD"
+      },
+      "year": 2026,
+      "description": "Casablanca 2-bedroom average monthly rent, 2026 (range MAD 6,500-15,500; Mubawab-based estimate, luxury listings removed, sample size not disclosed).",
+      "source": {
+        "title": "Average rent in Casablanca 2026 (Sands of Wealth)",
+        "url": "https://sandsofwealth.com/blogs/news/casablanca-rents",
+        "publisher": "Sands of Wealth",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Rents are advertised/estimated, not signed-lease medians, unless stated."
+  },
+  "residence_routes": "EU, US and other citizens: non-Moroccans need a residence card (carte de sejour) to settle; skilled employees generally need a work contract approved by the labour authorities and a Moroccan employer. No Moroccan digital-nomad visa was found. Casablanca Finance City offers a company regime but no personal tax relief (existing jurisdiction file).",
+  "open_questions": [
+    "No digital-nomad visa found; not confirmed from an official source.",
+    "Work contract approval (ANAPEC) and residence card process not researched."
+  ]
+}

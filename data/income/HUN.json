@@ -1,0 +1,215 @@
+{
+  "id": "HUN",
+  "name": "Hungary",
+  "currency": "HUF",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Flat 15% personal income tax on nearly all income; independent-activity income counts at 90% of gross or gross minus deductible costs; family and other allowances exist. Employee social security contribution 18.5% of gross, no cap stated (minimum wage HUF 322,800 a month from 1 Jan 2026).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.15
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.185,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.315,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Recorded 31.5% = 18.5% social security contribution (NAV payable-contributions page; stated for insured persons generally) plus 13% social contribution tax (szocho, NAV rate table), both applied to the sole trader's contribution base. The base is NOT confirmed: NAV states that from 1 Jan 2026 the monthly minimum base for full-time sole traders is 100% of the minimum wage or guaranteed wage minimum (HUF 322,800 a month, HUF 3,873,600 a year, so a minimum of about HUF 1.22m a year at 31.5%); how the base is set for flat-rate (atalanyado) traders and any cap were not found, so the effective rate on EUR 54,000 and EUR 130,000 is unverified. KATA is limited since 1 Sep 2022 to full-time sole proprietors whose income is only from private individuals (HUF 50,000 a month standard, ceiling HUF 18m); a revival is announced but not enacted. The flat-rate regime (atalanyado) has a 45% cost ratio for 2026 (50% in 2027), VAT exemption threshold HUF 20m. Employee social_security_deductible: PwC Hungary lists only family and age allowances, no contribution deduction; the figure rests on a secondary guide, so treat as medium confidence.",
+    "social_security_deductible": 0,
+    "local_tax_note": "No local income tax in the PwC page.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Hungary, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/hungary/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Hungary, other taxes",
+        "url": "https://taxsummaries.pwc.com/hungary/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Hungary KATA flat tax comeback guide (beancount.io)",
+        "url": "https://beancount.io/blog/2026/09/18/hungary-kata-flat-tax-comeback-freelancers-b2b-invoicing-guide",
+        "publisher": "beancount.io",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Fizetendo jarulekok 2026. januar 1-jetol (NAV)",
+        "url": "https://nav.gov.hu/ado/jarulek/Fizetendo_jarulekok_2026._januar_1-jetol",
+        "publisher": "NAV (Hungarian tax authority)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "A szocialis hozzajarulasi ado merteke (NAV)",
+        "url": "https://nav.gov.hu/ugyfeliranytu/adokulcsok_jarulekmertekek/szocialis_hozzajarulasi_ado/a-szocialis-hozzajarulasi-ado-merteke",
+        "publisher": "NAV (Hungarian tax authority)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Csokken a szocialis hozzajarulasi ado alapja es valtozik az egyeni vallalkozok bevallasi gyakorisaga (NAV)",
+        "url": "https://nav.gov.hu/ado/szocialis_hozzajarulasi_ado/Csokken_a_szocialis_hozzajarulasi_ado_alapja_es_valtozik_az_egyeni_vallalkozok_bevallasi_gyakorisaga",
+        "publisher": "NAV (Hungarian tax authority)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Country Tax Calc: Hungary tax guide 2026",
+        "url": "https://www.countrytaxcalc.com/tax-guides/hungary-income-tax-guide-2026/",
+        "publisher": "CountryTaxCalc",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Hungary individual - deductions",
+        "url": "https://taxsummaries.pwc.com/hungary/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Self-employed contribution base (and any cap) for flat-rate and itemised-cost sole traders not found; the 31.5% (18.5% + 13%) is the sum of the two statutory rates, applied to a base that is not confirmed.",
+      "KATA and atalanyado details come from one secondary guide."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "hun_white_card",
+      "name": "White Card (digital nomad residence permit)",
+      "kind": "digital_nomad_visa",
+      "description": "Residence permit for non-EEA remote workers with a foreign employer or foreign company income of at least EUR 3,000 NET a month for at least six months before entry and throughout the stay (OIF factsheet, official; a secondary guide says gross, the official source governs). No gainful activity in Hungary and no shares in a Hungarian company. Valid up to 1 year, extendable once for 1 year (extension needs 90 days of stay in the prior 180). Family members generally cannot get a reunification permit. Under 183 days a year the holder is not Hungarian tax-resident per a secondary guide; as a resident the flat 15% applies. The OIF factsheet contains no tax statement.",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 36000,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_years": 2,
+      "duration_note": "Up to 1 year plus one extension of 1 year (OIF factsheet); extension needs 90 days of stay in the prior 180 days.",
+      "treatment": "standard",
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "White Card - residency for digital nomads (OIF factsheet)",
+          "url": "https://oif.gov.hu/factsheets/white-card-residency-for-digital-nomads",
+          "publisher": "National Directorate-General for Aliens Policing (OIF)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Hungary White Card (nomadtaxguide.com)",
+          "url": "https://www.nomadtaxguide.com/blog/hungary-white-card-digital-nomad",
+          "publisher": "nomadtaxguide.com",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "The OIF factsheet states EUR 3,000 net (36,000 EUR a year recorded as net); a secondary guide says gross.",
+        "Tax and social-security treatment (no Hungarian social security for foreign-employer work) is from a secondary guide only; the OIF page has no tax statement."
+      ]
+    },
+    {
+      "id": "hun_atalanyado",
+      "name": "Flat-rate tax (atalanyado) for sole traders",
+      "kind": "other",
+      "description": "Sole traders may deduct a fixed share of revenue instead of actual costs: 45% in 2026, 50% in 2027, so 55% of revenue is taxable at the normal 15% rate. VAT exemption threshold HUF 20 million for 2026.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "Open-ended while elected.",
+      "treatment": "partial_exemption",
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Hungary KATA flat tax comeback guide (beancount.io)",
+          "url": "https://beancount.io/blog/2026/09/18/hungary-kata-flat-tax-comeback-freelancers-b2b-invoicing-guide",
+          "publisher": "beancount.io",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Eligibility limits and contribution base not verified."
+      ],
+      "exempt_share": 0.45
+    }
+  ],
+  "costs": {
+    "city": "Budapest",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 270000,
+        "currency": "HUF"
+      },
+      "year": 2026,
+      "description": "Average monthly rent for a 1-bedroom, typical range HUF 230,000-310,000, median-style long-term levels (not luxury) per Investropa, as of June 2026, updated 5 Oct 2026; no sample size; unfurnished/furnished not stated.",
+      "source": {
+        "title": "Budapest rents 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/budapest-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 380000,
+        "currency": "HUF"
+      },
+      "year": 2026,
+      "description": "Average monthly rent for a 2-bedroom, typical range HUF 320,000-450,000, normal rentals excluding luxury river-view flats, per Investropa, June 2026; no sample size.",
+      "source": {
+        "title": "Budapest rents 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/budapest-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Publisher's own estimate built from KSH, ingatlan.com and Global Property Guide; not a primary dataset."
+  },
+  "residence_routes": "EU citizens may live and work freely. US and other non-EEA remote workers can use the White Card (up to 2 years in total); skilled employees need a work-based permit (e.g. guest worker or Hungarian Card), which was not researched from an official page.",
+  "open_questions": [
+    "Contribution base for self-employed (flat-rate and itemised) not found.",
+    "White Card income is NET per OIF (the official source); the secondary guide's gross reading is rejected.",
+    "Rents are a publisher's estimate."
+  ]
+}

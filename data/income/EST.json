@@ -1,0 +1,150 @@
+{
+  "id": "EST",
+  "name": "Estonia",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Flat 22% on all income of residents; minimum monthly basic allowance EUR 700 from 1 Jan 2026, applicable to everybody, with no phase-out. Employee: unemployment insurance 1.6% (no cap stated) and, for those born after 1982, 2% (or 4% or 6%) to the funded pension; health cover comes from the employer's 33% social tax. The recorded 3.6% is 1.6% plus the 2% minimum pension contribution.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.22
+      }
+    ],
+    "personal_allowance": 8400,
+    "employee_social_security_rate": 0.036,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.33,
+    "self_employed_social_security_cap": 111720,
+    "self_employed_notes": "Sole proprietors pay 33% social tax on net business income (after deductible business expenses; cash-basis accounting). Maximum 2026 liability EUR 36,867.60, equal to a business income of EUR 111,720 (computed: 36,867.60 / 0.33), which is the recorded cap. EMTA's page (re-read 2026-10-15) states the 33% rate and the 2026 maximum of EUR 36,867.60, computed on monthly bases of EUR 8,860 for the first three months and EUR 9,460 for the other nine (EUR 111,720); it gives no minimum. Self-employed also pay 22% income tax on net business income.",
+    "social_security_deductible": 1,
+    "local_tax_note": "No municipal income tax in the PwC page.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Estonia, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/estonia/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Estonia, other taxes",
+        "url": "https://taxsummaries.pwc.com/estonia/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Estonia, deductions",
+        "url": "https://taxsummaries.pwc.com/estonia/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Social tax for self-employed persons (EMTA)",
+        "url": "https://emta.ee/en/business-client/registration-business/businesses/self-employed-persons/social-tax",
+        "publisher": "Estonian Tax and Customs Board (EMTA)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "partially_verified",
+    "open_questions": [
+      "A 2% security tax from 2026 mentioned by a secondary German source was not confirmed.",
+      "Minimum social tax for sole proprietors is not stated on the EMTA page."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "est_dnv",
+      "name": "Digital Nomad Visa (D visa, temporary stay)",
+      "kind": "digital_nomad_visa",
+      "description": "Long-stay (D) visa up to 365 days for people working remotely for a foreign employer, their own foreign company or mainly foreign clients. Income threshold EUR 4,500 a month, shown for the six months before applying (e-Residency FAQ: 'gross of tax', a EUR 150-a-day benchmark, evidence from the past six months; the e-Residency visa page: 'EUR 4,500 net/monthly'). Cannot be renewed: a second visa of up to six months can follow, so total stay is 1.5 years. More than 183 days in 12 months makes the holder an Estonian tax resident taxed at 22%. It is not a residence permit and e-Residency gives no right of residence.",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 54000,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_years": 1.5,
+      "duration_note": "Up to one year, then a separate application for up to six more months.",
+      "treatment": "standard",
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "FAQs about Estonia's Digital Nomad Visa (e-Residency)",
+          "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa/",
+          "publisher": "e-Residency programme",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Digital Nomad Visa vs e-Residency",
+          "url": "https://www.e-resident.gov.ee/nomadvisa/",
+          "publisher": "e-Residency programme",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Gross vs net basis of the EUR 4,500 threshold still conflicts between two e-Residency pages; no Police and Border Guard or Ministry of Foreign Affairs page was reachable. min_income uses the gross reading (EUR 54,000); on the net reading the equivalent gross is higher (about EUR 70,000 a year under the 22% tax, EUR 700 monthly allowance and 3.6% contributions, derived, not sourced).",
+        "Social-security treatment not stated by the sources."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Tallinn",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 580,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Estonia-wide average monthly rent for a 1-bedroom (range EUR 520-650, Tallinn pulls the average upward); asking rents from Kinnisvara24, KV.ee and City24, Investropa 2026 estimate; no Tallinn-only figure was available.",
+      "source": {
+        "title": "Estonia rents 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/tallinn-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 760,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Estonia-wide average monthly rent for a 2-bedroom (range EUR 700-850, good Tallinn units can exceed this); Investropa 2026 estimate from asking rents.",
+      "source": {
+        "title": "Estonia rents 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/tallinn-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "National figures, so Tallinn rents are likely higher; a search snippet of Global Property Guide (not opened) gave Tallinn EUR 620 and EUR 890."
+  },
+  "residence_routes": "EU citizens may live and work freely. US and other non-EU remote workers can use the Digital Nomad Visa (up to 1.5 years total); longer stays and local employment need a residence permit, typically employer-sponsored (not researched from an official page).",
+  "open_questions": [
+    "Gross vs net basis of the nomad income threshold (unresolved).",
+    "Tallinn-specific rents (the source has only Estonia-wide 1- and 2-bedroom figures).",
+    "Minimum social tax for sole proprietors."
+  ]
+}

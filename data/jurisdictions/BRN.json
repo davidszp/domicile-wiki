@@ -1,0 +1,188 @@
+{
+  "id": "BRN",
+  "name": "Brunei",
+  "continent": "Asia",
+  "region": "South-East Asia",
+  "currency": "BND",
+  "researched_on": "2026-10-15",
+  "summary": "Brunei has no personal income tax, so there is no tax on capital gains, dividends or interest for individuals. There is also no inheritance, gift or wealth tax and no VAT. Companies pay 18.5%. Brunei has no residence-by-investment programme, foreigners generally cannot own land, and Sharia criminal law applies alongside common law.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Brunei resident",
+      "type": "standard",
+      "description": "No personal income tax, capital gains, dividend, inheritance, gift or wealth tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if residing in Brunei; employment presence of 183 days in the preceding year also makes one resident (PwC). Living there needs an employment, dependant or other pass.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Brunei does not impose personal income tax on individuals, so there is no tax on individuals' capital gains (PwC). Income tax applies only to companies.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Brunei Darussalam - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/brunei-darussalam/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Brunei Darussalam - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/brunei-darussalam/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Brunei Darussalam - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/brunei-darussalam/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No personal income tax; the Income Tax Act applies only to companies (PwC corporate summary).",
+        "foreign_assets": "Not taxed. Foreigners generally cannot own land in Brunei (general knowledge, not verified)."
+      },
+      "dividends": {
+        "summary": "No personal income tax, so dividends are untaxed for individuals (PwC).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Brunei Darussalam - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/brunei-darussalam/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Brunei Darussalam - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/brunei-darussalam/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No personal income tax.",
+        "withholding_outbound": "No WHT on dividends (general knowledge, not verified).",
+        "treaty_network": "Around 20 DTAs (e.g. UK, Singapore, China, Japan, Hong Kong); no treaty with the US (not verified). US dividends bear 30% US WHT.",
+        "holding_company_notes": "Companies pay 18.5% CIT on income accruing in or derived from Brunei."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax (PwC).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Brunei Darussalam - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/brunei-darussalam/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Municipal property assessment rates on buildings (see PwC corporate other taxes; not opened). Stamp duty on some instruments."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift taxes (PwC).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Brunei Darussalam - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/brunei-darussalam/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "No tax.",
+        "domicile_rules": "Not applicable. Islamic inheritance rules may govern succession for Muslims (not researched)."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Not relevant to individuals (no personal income tax). The Income Tax Act defines a resident individual as one residing in Brunei, including a person present and employed 183 days or more in the preceding year.",
+    "routes": [
+      {
+        "name": "Employment pass, dependant pass, permanent residence",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "No residence-by-investment programme was found; residence is tied to employment or family, and permanent residence is discretionary (not researched in detail)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Brunei Darussalam - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/brunei-darussalam/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.185,
+    "summary": "18.5% CIT on income accruing in or derived from Brunei; partial exemption on the first BND 250,000; companies with turnover up to BND 1 million exempt; petroleum income 55%.",
+    "sources": [
+      {
+        "title": "Brunei Darussalam - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/brunei-darussalam/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Bandar Seri Begawan",
+      "lon": 114.94006,
+      "lat": 4.89035,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 1820906"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed; Brunei levies nothing on individuals, so the US layer is the full cost.",
+  "open_questions": [
+    "Treaty count and residence routes not verified."
+  ]
+}

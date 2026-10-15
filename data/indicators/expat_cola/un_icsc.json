@@ -1,0 +1,12 @@
+{
+  "source": "un_icsc",
+  "title": "ICSC Post adjustment classification memo October 2026 (ICSC-PADJ-1026-01) on top of Consolidated Post Adjustment Circular ICSC/CIRC/PAC/621 (Sept 2026)",
+  "url": "https://icsc.un.org/Home/DataPostAdjustment",
+  "base": "0 = New York-equivalent base salary with no post adjustment; pay = base x (1 + multiplier/100). New York multiplier is 75.6 (Feb 2026).",
+  "effective_date": "2026-10-01",
+  "two_sided": true,
+  "notes": "October memo (https://icsc.un.org/Home/GetDataFile/9302) lists only stations whose multiplier changed; those rows use it (effective 2026-10-01). All others come from PAC/621 (https://icsc.un.org/Home/GetDataFile/9266, effective 1 Sep 2026) with each row's own effective date (some last revised earlier, e.g. UAE Jan-24, Bahrain Sep-24, Panama Nov-24). Multipliers are floored at 0 by design but all here are well above it. Housing is handled separately via rental subsidy/thresholds, not in the multiplier. Country-wide rows used for non-listed cities (post column states this). Multipliers are net of Jan-2026 salary consolidation. Andorra and Taiwan not listed. Italy: Rome used, Milan absent. Used as the index 1 + multiplier/100, proportional to local costs; two-sided (low-cost stations get low multipliers).",
+  "publisher": "International Civil Service Commission (ICSC), United Nations",
+  "includes_housing": false,
+  "value_kind": "multiplier_points"
+}

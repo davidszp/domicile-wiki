@@ -1,0 +1,97 @@
+{
+  "id": "LCA",
+  "name": "Saint Lucia",
+  "currency": "XCD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Income tax is 15% on the first XCD 15,000 of taxable income, 20% on the next XCD 15,000 and 30% above, after a XCD 25,000 personal allowance. Employees pay 5% National Insurance up to XCD 5,000 a month.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 15000,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 30000,
+        "rate": 0.3
+      }
+    ],
+    "personal_allowance": 25000,
+    "employee_social_security_rate": 0.05,
+    "employee_social_security_cap": 60000,
+    "self_employed_social_security_rate": 0.1,
+    "self_employed_social_security_cap": 60000,
+    "self_employed_notes": "UNVERIFIED, derived: no source for the self-employed National Insurance rate could be found (PwC, Deloitte, Hivedesk and Expanship do not give one; the NIC website could not be reached and the US SSA programme page returns 403). 10% equals the combined employee and employer 5% + 5% (PwC confirms the 5% employee share and that the employer matches it), which is how self-employed contributions are normally set in the OECS schemes, but the real figure and any separate self-employed ceiling remain unconfirmed.",
+    "local_tax_note": "No local income surtax. Residents with a permanent place of abode are taxed on worldwide income; those resident 183+ days without a permanent abode are taxed on Saint Lucia-source income only. Capital gains are not taxed. A 2.5% health and citizen security levy applies on sales of goods and services (not an income tax). Brackets apply to taxable income after the XCD 25,000 allowance; further deductions (mortgage interest up to XCD 40,000, medical, education) exist.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: St. Lucia Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-stluciahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Saint Lucia, Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/saint-lucia/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Saint Lucia, Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/saint-lucia/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Inland Revenue Department of Saint Lucia - Tax facts and calculations (new regime)",
+        "url": "https://www.govt.lc/media.govt.lc/www/pressroom/news/attachments/tax-facts---calculations-new-regime-version-2024-view-.pdf",
+        "publisher": "Inland Revenue Department, Saint Lucia",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "low",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Self-employed NIC rate not verified (10% is derived from the 5% + 5% employee and employer shares, not sourced).",
+      "PwC's table layout was scrambled when fetched for the income tax page; rates were taken from Deloitte and the PwC text on residence.",
+      "Saint Lucia: the IRD tax-facts sheet covers 2023-2025 and also caps total allowances and deductions at XCD 30,000; the self-employed 10% rate sits exactly at the 10%-of-assessable-income limit, so it is deductible only if earnings are fully insurable."
+    ],
+    "social_security_deductible": 1
+  },
+  "regimes": [],
+  "costs": {
+    "city": "Rodney Bay / Gros Islet",
+    "rent_1bed_monthly": null,
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1748,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 4 two-bedroom apartments (Gros Islet USD 1,472 and 2,024, Cap Estate 1,656, Rodney Bay 1,840) among 8 residential rental listings on Terra Caribbean Saint Lucia; furnishing not stated. Very small sample.",
+      "source": {
+        "title": "Terra Caribbean: Saint Lucia residential rentals (listing page)",
+        "url": "https://terracaribbean.com/saint-lucia/properties/?country_code=lc&listing_type=rental&currency=usd&zoning%5B%5D=residential&limit=100&offset=0&order_by=price&order=asc",
+        "publisher": "Terra Caribbean",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Terra Caribbean Saint Lucia lists only 8 residential rentals (no 1-bedroom unit; the rest are 3 to 5-bedroom houses and a 4-bed townhouse at USD 2,760 to 5,500). Chestertons Saint Lucia returned HTTP 403 and Numbeo HTTP 429."
+  },
+  "residence_routes": "No remote-worker programme exists in law: the 'Live It' scheme is a tourism marketing label for the standard visitor entry (up to 6 weeks on arrival, extendable in 30-day steps at EC$200) or a multiple-entry non-immigrant visa (EC$190, 12 months) for nationals who need a visa. Skilled employees of a Saint Lucian employer need a work permit (not researched). Citizenship by investment (National Economic Fund, real estate, bonds) is a separate route; amounts not verified. EU, US and other citizens are treated alike in these routes. US citizens remain taxable in the US on worldwide income.",
+  "open_questions": [
+    "No 1-bed rent; the 2-bed figure rests on 4 listings from one agency.",
+    "Work-permit terms and the status of the 'Live It' one-year option not confirmed on an official page."
+  ]
+}

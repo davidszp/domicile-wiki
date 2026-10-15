@@ -1,0 +1,94 @@
+{
+  "id": "BHR",
+  "name": "Bahrain",
+  "currency": "BHD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Bahrain has no personal income tax (PwC, reviewed 26 Jul 2026). Employees in Bahrain contribute to the Social Insurance Organisation: expatriates pay 1% (employer 3%), Bahrainis 8% (employer 18%). Income paid outside Bahrain is not subject to Bahraini tax or social insurance rules.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.01,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Self-employed contributions are not covered by the PwC page; none are assumed. Foreign-paid income is outside the Bahraini social insurance rules.",
+    "local_tax_note": "No local income-based taxes.",
+    "sources": [
+      {
+        "title": "Bahrain - Individual - Taxes on personal income (last reviewed 26 Jul 2026)",
+        "url": "https://taxsummaries.pwc.com/bahrain/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Bahrain - Individual - Other taxes (last reviewed 26 Jul 2026)",
+        "url": "https://taxsummaries.pwc.com/bahrain/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Bahrain - Deductions",
+        "url": "https://taxsummaries.pwc.com/bahrain/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "PwC other-taxes page re-opened 2026-10-15: expatriate employees 1% (employer 3%), Bahrainis 8% (employer 18%). It gives no contribution ceiling, no unemployment-insurance split and no self-employed rate; self-employed 0% is an unsourced assumption (confidence kept at medium).",
+      "SIO website could not be opened (HTTP 403)."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [],
+  "costs": {
+    "city": "Manama",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 380,
+        "currency": "BHD"
+      },
+      "year": 2026,
+      "description": "Bahrain-wide average 1-bedroom monthly rent as of June 2026 (range BHD 250-650; Property Finder asking rents, sample size not disclosed). Not Manama-specific. Numbeo city-centre Manama 1-bedroom is BHD 375.",
+      "source": {
+        "title": "Average rent in Bahrain 2026 (Sands of Wealth)",
+        "url": "https://sandsofwealth.com/blogs/news/bahrain-rents",
+        "publisher": "Sands of Wealth",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 520,
+        "currency": "BHD"
+      },
+      "year": 2026,
+      "description": "Bahrain-wide average 2-bedroom monthly rent as of June 2026 (range BHD 330-900; asking rents, luxury outliers trimmed). Not Manama-specific.",
+      "source": {
+        "title": "Average rent in Bahrain 2026 (Sands of Wealth)",
+        "url": "https://sandsofwealth.com/blogs/news/bahrain-rents",
+        "publisher": "Sands of Wealth",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Rents are advertised/estimated, not signed-lease medians, unless stated."
+  },
+  "residence_routes": "EU, US and other citizens: no visa-free right to work. Skilled employees obtain a work permit and residence through a Bahraini employer. One news article (May 2026, not opened) mentions expanded digital-residency pathways, but no nomad visa terms were verified.",
+  "open_questions": [
+    "Whether Bahrain has a remote-work or digital-residency visa, and on what terms, was not verified from an official source."
+  ]
+}

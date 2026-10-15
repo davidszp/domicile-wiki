@@ -1,0 +1,160 @@
+{
+  "id": "CYM",
+  "name": "Cayman Islands",
+  "currency": "KYD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "No income, withholding, payroll or social security taxes on individuals. The only mandatory contribution is the national pension: 5% from the employee (matched by the employer) up to CI$87,000 of earnings, or 10% for the self-employed.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.05,
+    "employee_social_security_cap": 87000,
+    "self_employed_social_security_rate": 0.1,
+    "self_employed_social_security_cap": 87000,
+    "self_employed_notes": "National Pensions Act s.47: the self-employed must contribute 10% of earnings up to the year's maximum pensionable earnings to a pension plan. The Act's default maximum is CI$87,000, 'or such other amount as may be prescribed by Order'; no Order for 2026 was found. Mandatory health insurance (employer pays at least half of the premium) is not included because the employee share was not verified.",
+    "local_tax_note": "No income tax of any kind (PwC, reviewed 29 May 2026). Work-permit holders must also be covered by health insurance; that cost is not modelled.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Cayman Islands, Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/cayman-islands/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Cayman Islands, Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/cayman-islands/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Cayman Islands Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-caymanislandshighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "National Pensions Act (2024 Revision), Cayman Islands",
+        "url": "https://www.procure.gov.ky/upimages/commonfiles/1751266504NationalPensionsAct2024Revision_1751266507.pdf",
+        "publisher": "Government of the Cayman Islands",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Cayman Islands: Deductions",
+        "url": "https://taxsummaries.pwc.com/cayman-islands/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Whether the CI$87,000 pension ceiling was changed by Cabinet Order is not confirmed on an official 2026 page.",
+      "Mandatory health insurance employee share and the minimum cover not researched; Deloitte states there are no social security contributions or payroll taxes, which does not capture the pension mandate."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "id": "gccp",
+      "name": "Global Citizen Concierge Program (closed)",
+      "kind": "other",
+      "description": "CLOSED. Remote-work certificate launched in October 2020 that let employees of non-Cayman employers live in the Cayman Islands for up to 24 months. The Immigration (Transition) (Global Citizen Exemption) Regulations stopped accepting applications on 31 October 2022 and expired on 30 November 2024 (Maples, 2021 amendment); the Tourism Minister said the programme was 'no longer available as of October 2022' (Caribbean Journal 2023). No relaunch was found, so it is listed for history only and not counted as an open route. The Cayman Islands has no income tax, so the certificate affected access only.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 100000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": 2,
+      "duration_note": "Up to 24 months per Maples (Nov 2021). Currently not open to new applicants. Income threshold of USD 100,000 (USD 150,000 with a spouse) comes from search-result summaries of 2020-21 coverage, not from a page opened here.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Maples: Cayman Islands Government Extends Global Citizen Program (Nov 2021)",
+          "url": "https://maples.com/wp-content/uploads/2023/11/Legal-Update-Cayman-Cayman-Islands-Global-Citizen-Program.pdf",
+          "publisher": "Maples Group",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Caribbean Journal: Cayman Islands Global Citizen Program (19 Jul 2023)",
+          "url": "https://www.caribjournal.com/2023/07/19/cayman-islands-global-citizen-program",
+          "publisher": "Caribbean Journal",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Programme closed (last application 31 Oct 2022, regulations expired 30 Nov 2024); check with Workforce Opportunities and Residency Cayman whether a relaunch has been announced.",
+        "USD 100,000 minimum income and the certificate fee were not confirmed on an official page."
+      ],
+      "covers_local_work": null
+    }
+  ],
+  "costs": {
+    "city": "George Town / Seven Mile Beach (Grand Cayman)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 2000,
+        "currency": "KYD"
+      },
+      "year": 2026,
+      "description": "Median asking rent (CI$ a month) of 7 one-bedroom units among 34 priced residential rentals on CIREBA (pages 1 to 3): George Town, South Sound, West Bay, Bodden Town, Savannah and Spotts; range CI$1,700 to 2,500; two shared-room/house-share listings (CI$1,250 and 1,800) excluded; furnishing and lease term not stated.",
+      "source": {
+        "title": "CIREBA Rentals: Cayman Islands residential rental properties (39 listings, pages 1 to 3)",
+        "url": "https://www.cirebarentals.com/cayman-islands-residential-rental-properties",
+        "publisher": "Cayman Islands Real Estate Brokers Association",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 3500,
+        "currency": "KYD"
+      },
+      "year": 2026,
+      "description": "Median asking rent (CI$ a month) of 6 two-bedroom units among 34 priced residential rentals on CIREBA (pages 1 to 3): South Sound CI$2,300, Savannah 2,800 and 3,800, West Bay 3,200, George Town 3,650, Spotts 3,800; furnishing and lease term not stated.",
+      "source": {
+        "title": "CIREBA Rentals: Cayman Islands residential rental properties (39 listings, pages 1 to 3)",
+        "url": "https://www.cirebarentals.com/cayman-islands-residential-rental-properties",
+        "publisher": "Cayman Islands Real Estate Brokers Association",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "CIREBA Rentals (the brokers' association site), all three pages read 2026-10-15: 34 of 39 listings carried a price; most are 3+ bedroom houses from CI$3,000 to 23,500. Seven Mile Beach condos are thinly represented, so the figures are indicative. RE/MAX Cayman's lease search returned no results."
+  },
+  "residence_routes": "No nomad route is currently open (GCCP closed in 2022). Employees need a work permit sponsored by a Cayman employer (not researched). Non-working residents can use the 25-year Residency Certificate for persons of independent means (CI$1,000,000 investment incl. CI$500,000 in developed real estate, and income of at least CI$120,000 a year without local employment; no right to work) or the Certificate of Permanent Residence (CI$2 million in real estate), per the earlier jurisdiction research in data/jurisdictions/CYM.json. EU, US and other citizens use the same routes. US citizens remain taxable in the US on worldwide income; Cayman has no tax to credit.",
+  "open_questions": [
+    "Work-permit terms for skilled employees not researched.",
+    "Rents rest on 13 listings from one association site."
+  ]
+}

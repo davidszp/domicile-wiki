@@ -1,0 +1,67 @@
+iso3,post,value,value_meaning,effective_date,url
+AUT,Vienna (national),107.4,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=AT&coicop=TOTAL&time=2025-S2
+BEL,Brussels (national),100,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=BE&coicop=TOTAL&time=2025-S2
+BGR,Sofia (national),64.1,"correction coefficient, Brussels = 100",2026-01,https://ec.europa.eu/eurostat/documents/d/civil-servants-remuneration/ares-2026-5853374_eurostat-intermediate-report_2026
+HRV,Zagreb (national),76.8,"correction coefficient, Brussels = 100",2026-01,https://ec.europa.eu/eurostat/documents/d/civil-servants-remuneration/ares-2026-5853374_eurostat-intermediate-report_2026
+CYP,Nicosia (national),80.6,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=CY&coicop=TOTAL&time=2025-S2
+CZE,Prague (national),81.4,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=CZ&coicop=TOTAL&time=2025-S2
+DNK,Copenhagen (national),132,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=DK&coicop=TOTAL&time=2025-S2
+EST,Tallinn (national),96.9,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=EE&coicop=TOTAL&time=2025-S2
+FIN,Helsinki (national),110.4,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=FI&coicop=TOTAL&time=2025-S2
+FRA,Paris (national),104.2,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=FR&coicop=TOTAL&time=2025-S2
+DEU,Berlin (national),100.3,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=DE&coicop=TOTAL&time=2025-S2
+GRC,Athens (national),82.7,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=EL&coicop=TOTAL&time=2025-S2
+HUN,Budapest (national),67.5,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=HU&coicop=TOTAL&time=2025-S2
+IRL,Dublin (national),123.5,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=IE&coicop=TOTAL&time=2025-S2
+ITA,Rome (national),87.6,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=IT&coicop=TOTAL&time=2025-S2
+LVA,Riga (national),74.6,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=LV&coicop=TOTAL&time=2025-S2
+LTU,Vilnius (national),77.9,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=LT&coicop=TOTAL&time=2025-S2
+LUX,Luxembourg (national),100,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=LU&coicop=TOTAL&time=2025-S2
+MLT,Valletta (national),92.1,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=MT&coicop=TOTAL&time=2025-S2
+NLD,Amsterdam (national),110,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=NL&coicop=TOTAL&time=2025-S2
+POL,Warsaw (national),71.1,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=PL&coicop=TOTAL&time=2025-S2
+PRT,Lisbon (national),84.3,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=PT&coicop=TOTAL&time=2025-S2
+ROU,Bucharest (national),68.9,"correction coefficient, Brussels = 100",2026-01,https://ec.europa.eu/eurostat/documents/d/civil-servants-remuneration/ares-2026-5853374_eurostat-intermediate-report_2026
+SVK,Bratislava (national),79.3,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=SK&coicop=TOTAL&time=2025-S2
+SVN,Ljubljana (national),81.1,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=SI&coicop=TOTAL&time=2025-S2
+ESP,Madrid (national),86.8,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=ES&coicop=TOTAL&time=2025-S2
+SWE,Stockholm (national),108.8,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_nat?geo=SE&coicop=TOTAL&time=2025-S2
+ALB,Tirana,66.1,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=AL_CAP&time=2025
+ARE,Abu Dhabi (Dubai not listed),113.3,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=AE_CAP&time=2025
+ARG,Buenos Aires,83.6,"correction coefficient, Brussels = 100",2026-01,https://ec.europa.eu/eurostat/documents/d/civil-servants-remuneration/ares-2026-4658871_staff-regulation-5-per-cent-rule_period-july-2025-january-2026_codes-rp1
+AUS,Canberra (Sydney not listed),89.5,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=AU_CAP&time=2025
+BRA,Brasilia (Sao Paulo not listed),93.2,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=BR_CAP&time=2025
+BRB,Bridgetown,109.3,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=BB_CAP&time=2025
+CAN,Ottawa (Toronto not listed),87.6,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=CA_CAP&time=2025
+CHE,Bern (Zurich not listed),136.0,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=CH_CAP&time=2025
+CHL,Santiago,61.1,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=CL_CAP&time=2025
+COL,Bogota (Medellin not listed),79.6,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=CO_CAP&time=2025
+CRI,San Jose,89.5,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=CR_CAP&time=2025
+DOM,Santo Domingo,65.1,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=DO_CAP&time=2025
+GBR,London,104.5,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=UK_CAP&time=2025
+GEO,Tbilisi,75.8,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=GE_CAP&time=2025
+HKG,Hong Kong,100.1,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=HK_CAP&time=2025
+IDN,Jakarta (Bali not listed),54.2,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=ID_CAP&time=2025
+ISL,Reykjavik,142.3,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=IS_CAP&time=2025
+JPN,Tokyo,83.9,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=JP_CAP&time=2025
+KOR,Seoul,78.5,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=KR_CAP&time=2025
+MAR,Rabat (Casablanca not listed),79.3,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=MA_CAP&time=2025
+MEX,Mexico City,70.4,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=MX_CAP&time=2025
+MKD,Skopje,50.5,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=MK_CAP&time=2025
+MNE,Podgorica,60.6,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=ME_CAP&time=2025
+MUS,Port Louis,71.2,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=MU_CAP&time=2025
+MYS,Kuala Lumpur,75.1,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=MY_CAP&time=2025
+NOR,Oslo,115.8,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=NO_CAP&time=2025
+NZL,Wellington (Auckland not listed),79.6,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=NZ_CAP&time=2025
+PAN,Panama City,89.8,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=PA_CAP&time=2025
+PHL,Manila,76.4,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=PH_CAP&time=2025
+QAT,Doha,101.6,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=QA_CAP&time=2025
+SAU,Riyadh,86.5,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=SA_CAP&time=2025
+SGP,Singapore,121.7,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=SG_CAP&time=2025
+SRB,Belgrade,70.5,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=RS_CAP&time=2025
+THA,Bangkok,87.8,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=TH_CAP&time=2025
+TUR,Ankara (Istanbul not listed),57.6,"correction coefficient, Brussels = 100",2025-11,https://ec.europa.eu/eurostat/documents/d/civil-servants-remuneration/ares-2026-4658871_staff-regulation-5-per-cent-rule_period-july-2025-january-2026_codes-rp1
+TWN,Taipei,75.8,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=TW_CAP&time=2025
+URY,Montevideo,91.2,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=UY_CAP&time=2025
+USA,New York,114.1,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=US_DEL1&time=2025
+ZAF,Pretoria (Cape Town not listed),57.0,"correction coefficient, Brussels = 100",2025-07,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_colc_ext?geo=ZA_CAP&time=2025

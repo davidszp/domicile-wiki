@@ -1,0 +1,279 @@
+{
+  "id": "LUX",
+  "name": "Luxembourg",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Luxembourg taxes residents on a 23-bracket class 1 scale: 0% to EUR 13,230, then 8% rising by one point or two points per band to 39% from EUR 54,090, 40%, 41% and a top rate of 42% above EUR 234,870, plus a 7% solidarity surcharge (9% above EUR 150,000), giving a top rate of about 45.8%. Employees pay about 12.7% social security on income up to a ceiling of about EUR 166,280; the self-employed pay both shares, roughly 26% of income.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.0
+      },
+      {
+        "from_amount": 13230,
+        "rate": 0.0856
+      },
+      {
+        "from_amount": 15435,
+        "rate": 0.0963
+      },
+      {
+        "from_amount": 17640,
+        "rate": 0.107
+      },
+      {
+        "from_amount": 19845,
+        "rate": 0.1177
+      },
+      {
+        "from_amount": 22050,
+        "rate": 0.1284
+      },
+      {
+        "from_amount": 24255,
+        "rate": 0.1498
+      },
+      {
+        "from_amount": 26550,
+        "rate": 0.1712
+      },
+      {
+        "from_amount": 28845,
+        "rate": 0.1926
+      },
+      {
+        "from_amount": 31140,
+        "rate": 0.214
+      },
+      {
+        "from_amount": 33435,
+        "rate": 0.2354
+      },
+      {
+        "from_amount": 35730,
+        "rate": 0.2568
+      },
+      {
+        "from_amount": 38025,
+        "rate": 0.2782
+      },
+      {
+        "from_amount": 40320,
+        "rate": 0.2996
+      },
+      {
+        "from_amount": 42615,
+        "rate": 0.321
+      },
+      {
+        "from_amount": 44910,
+        "rate": 0.3424
+      },
+      {
+        "from_amount": 47205,
+        "rate": 0.3638
+      },
+      {
+        "from_amount": 49500,
+        "rate": 0.3852
+      },
+      {
+        "from_amount": 51795,
+        "rate": 0.4066
+      },
+      {
+        "from_amount": 54090,
+        "rate": 0.4173
+      },
+      {
+        "from_amount": 117450,
+        "rate": 0.428
+      },
+      {
+        "from_amount": 150000,
+        "rate": 0.436
+      },
+      {
+        "from_amount": 176160,
+        "rate": 0.4469
+      },
+      {
+        "from_amount": 234870,
+        "rate": 0.4578
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.127,
+    "employee_social_security_cap": 166279.56,
+    "self_employed_social_security_rate": 0.2515,
+    "self_employed_social_security_cap": 166279.56,
+    "self_employed_notes": "CCSS social parameters 2026 (updated 29.05.2026), total contribution rates: sickness in kind 5.60%, sickness cash benefits 0.50%, dependency 1.40%, pension 17.00%, accident 0.65% (before the accident insurance association's bonus-malus factor) = 25.15%, shown as the rate. Both shares are paid by the self-employed person. Base is professional income, floor = social minimum wage (EUR 2,771.33 a month from 1 June 2026), ceiling EUR 13,856.63 a month = EUR 166,279.56 a year. Not included: optional employers' mutual insurance (0.23%-2.66% by class) and the occupational-health rate of 0.14%, whose applicability to the self-employed the page does not state. Dependency contribution is levied after a fixed monthly deduction (as for employees), so the effective rate on EUR 54,000 is slightly below 25.15%. Replaces the earlier ~26% director estimate from Fiduciaire LPG.",
+    "local_tax_note": "Class 1 (single) scale from PwC (partial) completed from macalculatriceenligne.com; solidarity surcharge (contribution to the employment fund) 7% of tax, 9% where income exceeds EUR 150,000 (applied here as a marginal rate from EUR 150,000, which overstates it slightly, and the source does not say whether 9% applies to the whole tax). Rates in the table already include it (rate x 1.07 or x 1.09). Employee 12.7% = sickness 2.8% + pension 8.5% (ceiling EUR 13,856.63 a month) + dependency insurance 1.4%.",
+    "sources": [
+      {
+        "title": "Luxembourg - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/luxembourg/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Luxembourg - Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/luxembourg/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Calcul de l'Impôt sur le Revenu au Luxembourg 2026 - Classes 1, 1a et 2",
+        "url": "https://macalculatriceenligne.com/finance/impots/calcul-impot-luxembourg/",
+        "publisher": "macalculatriceenligne.com",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Self-employed status in Luxembourg",
+        "url": "https://fiduciaire-lpg.lu/en/publications/labour-law/self-employed-status-luxembourg",
+        "publisher": "Fiduciaire LPG",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Social parameters (minimum wage, contribution ceiling, 2026 contribution rates)",
+        "url": "https://ccss.public.lu/en/parametres-sociaux.html",
+        "publisher": "CCSS (Centre commun de la securite sociale)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Offres et prix annonces de location des appartements 2025-2026 (Observatoire de l'habitat)",
+        "url": "https://logement.public.lu/fr/observatoire-habitat/prix-de-location/loyers-annonces-logements.html",
+        "publisher": "Ministere du Logement, Observatoire de l'habitat",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Luxembourg - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/luxembourg/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Intermediate brackets taken from a secondary calculator page, which flags its own inconsistencies; the ACD pages were not reachable.",
+      "The 9% solidarity rate applies to the whole tax above the threshold per some sources; here it is applied marginally.",
+      "Self-employed accident rate is multiplied by a bonus-malus factor not published on the CCSS page; the mutual-insurance and occupational-health rates are excluded."
+    ],
+    "social_security_deductible": 1,
+    "employment_deduction": {
+      "schedule": [
+        {
+          "from_amount": 0,
+          "rate": 0
+        }
+      ],
+      "base": 0,
+      "minimum": 540,
+      "maximum": null,
+      "note": "Minimum employment-expense deduction of EUR 540 (actual expenses if higher).",
+      "source": {
+        "title": "PwC Worldwide Tax Summaries - Luxembourg - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/luxembourg/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "regimes": [
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": {
+        "amount": 75000,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_note": "Until the end of the eighth year after the initial start date in Luxembourg.",
+      "flat_rate": null,
+      "exempt_share": 0.5,
+      "open_questions": [
+        "Whether social security still applies to the exempt half is not stated on the opened page; the regime is described as an income tax exemption.",
+        "Self-employed people are not covered by the article (employees only).",
+        "Official ACD / guichet.lu pages were not reachable."
+      ],
+      "id": "impatriate_regime",
+      "name": "Impatriate regime (from tax year 2025)",
+      "kind": "expat_regime",
+      "description": "Half of the gross annual remuneration of an impatriate is exempt from income tax, capped at an exemption of EUR 400,000 a year. Conditions: Luxembourg resident; recruited from abroad or seconded; no residence or Luxembourg tax liability and no living within 150 km of the Luxembourg border in the previous five years; gross annual pay at least EUR 75,000; impatriates not above 30% of the company's workforce (waived for companies under ten years old); at least 75% of working time on the qualifying activity; employer reports impatriates by 31 January each year.",
+      "duration_years": 8,
+      "treatment": "partial_exemption",
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Tax and legal considerations of the new impatriate regime",
+          "url": "https://www.loyensloeff.com/insights/news--events/news/tax-and-legal-considerations-of-the-new-impatriate-regime/",
+          "publisher": "Loyens & Loeff",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    }
+  ],
+  "costs": {
+    "city": "Luxembourg City",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1985.21,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Numbeo average monthly rent for a 1-bedroom city-centre apartment, Luxembourg City; crowd-sourced, 789 entries from 111 contributors in the past 12 months, last updated 12 October 2026. Unfurnished/furnished not distinguished. Numbeo gives only 1-bedroom and 3-bedroom figures, so no 2-bedroom value is recorded.",
+      "source": {
+        "title": "Cost of living in Luxembourg (rent prices)",
+        "url": "https://www.numbeo.com/cost-of-living/in/Luxembourg",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 2650,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Investropa 2026 average monthly rent for a 2-bedroom apartment in Luxembourg City; typical range EUR 2,200-3,200. Size and furnished status not stated. Benchmark estimate, not an official statistic.",
+      "source": {
+        "title": "Luxembourg City rents",
+        "url": "https://investropa.com/blogs/news/luxembourg-city-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Numbeo 3-bedroom city-centre average EUR 3,208.46 as a cross-check; no 2-bedroom value. Check pass 2026-10-15: the Observatoire de l'habitat (Ministry of Housing, listings from Immotop.lu, 1 July 2025 - 30 June 2026) gives an average advertised apartment rent of EUR 2,032 a month (EUR 50.17 per m2, 5,655 listings) for the commune of Luxembourg, all apartment sizes mixed, so no 2-bedroom value could be derived; source https://logement.public.lu/fr/observatoire-habitat/prix-de-location/loyers-annonces-logements.html (data file offre-et-prix-annonces-location-appartements-2026t2.xls)."
+  },
+  "residence_routes": "EU/EEA and Swiss citizens may live and work freely and register with the commune. Luxembourg has no digital nomad visa (not confirmed on an official page). Skilled non-EU employees need a Luxembourg employment contract and a work and residence authorisation or EU Blue Card; thresholds were not verified.",
+  "open_questions": [
+    "Nomad visa absence, Blue Card/authorisation salary thresholds not verified from an official page.",
+    "No 2-bedroom rent source."
+  ]
+}

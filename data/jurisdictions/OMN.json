@@ -1,0 +1,309 @@
+{
+  "id": "OMN",
+  "name": "Oman",
+  "continent": "Middle East",
+  "region": "Gulf (GCC)",
+  "currency": "OMR",
+  "researched_on": "2026-10-15",
+  "summary": "In tax year 2026 Oman has no personal income tax, no capital gains, dividend, inheritance, gift or wealth tax for individuals. But a Personal Income Tax Law has been ENACTED (Royal Decree 56/2025) and takes effect 1 January 2028: 5% on worldwide income (including foreign dividends and gains on shares and real estate) above OMR 42,000 for residents, with exemptions for Muscat-listed shares, the main residence, and inheritances/gifts between spouses and first-degree relatives. Corporate tax 15%; dividend/interest WHT suspended; VAT 5%.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Oman tax residence",
+      "type": "standard",
+      "description": "2026: no personal taxes. Enacted 5% PIT on income above OMR 42,000 from 2028.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any legal resident.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "2026: no capital gains tax for individuals. From 1 January 2028 the enacted PIT will tax gains on shares, bonds and real estate at 5% above OMR 42,000 of total taxable income (Muscat-listed shares and main residence exempt).",
+        "exemptions_thresholds": "",
+        "important_exceptions": "ENACTED, NOT YET IN FORCE: Royal Decree 56/2025 (issued 22 June 2025, gazetted 30 June 2025) promulgates a Personal Income Tax Law effective 1 January 2028: 5% on taxable income above OMR 42,000 a year, on worldwide income of tax residents (Omani citizens and expatriates present 183+ days). Taxable categories include returns from stocks, shares and bonds and from their disposal, interest, and gains on real estate. Exemptions include income and disposal proceeds of shares listed on the Muscat Stock Exchange and government bonds, main residence (conditions), one secondary residence once in a lifetime, and inheritances, grants and donations between spouses and first-degree relatives. Executive Regulations are still awaited. From 2028 a wealthy resident would pay up to 5% on foreign dividends and gains above OMR 42,000.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Oman - Individual - Taxes on personal income (last reviewed 7 Jul 2026)",
+            "url": "https://taxsummaries.pwc.com/oman/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Oman - Individual - Significant developments (Royal Decree 56/2025)",
+            "url": "https://taxsummaries.pwc.com/oman/individual/significant-developments",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Oman - Individual - Income determination (PIT from 2028)",
+            "url": "https://taxsummaries.pwc.com/oman/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Oman - Individual - Deductions and exemptions (PIT from 2028)",
+            "url": "https://taxsummaries.pwc.com/oman/individual/deductions",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Royal Decree 56/2025 issuing the Personal Income Tax Law (unofficial reproduction; Official Gazette No. 1602, 30 June 2025)",
+            "url": "https://qanoon.om/p/2025/rd2025056/",
+            "publisher": "Qanoon.om",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Oman Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-omanhighlights-2026.pdf",
+            "publisher": "Deloitte International Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PROMINENT: Oman's Personal Income Tax Law (Royal Decree 56/2025, Art. 4) takes effect 1 January 2028: 5% (Art. 8) on worldwide gross income above OMR 42,000 for residents present more than 183 days, including dividends and gains on shares (Art. 16). This file scores 2026 law (0%); a family planning beyond 2027 should expect up to 5% on foreign dividends and gains.",
+          "Executive Regulations for the PIT law not yet issued; how foreign capital gains are computed and timed is unclear.",
+          "Muscat-listed share exemption: PwC reports an exemption for MSX-listed shares, but a reading of the decree text (qanoon.om reproduction) found Art. 25 exempting only Omani government sukuk/bonds/bills; to be checked against the Official Gazette and the Executive Regulations."
+        ],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Law in force for 2026: no personal income tax (PIT effective 1 Jan 2028 per PwC). Rates 0 for 2026; from 2028 the effective top rate on foreign gains will approach 5%.",
+        "professional_trader": "Not relevant in 2026. Business income of individuals will fall under PIT from 2028 (15% deduction or actual expenses for self-employment).",
+        "holding_period_rules": "None.",
+        "foreign_assets": "2026: not taxed. From 2028 residents are taxed on worldwide income."
+      },
+      "dividends": {
+        "summary": "2026: dividends are not taxed. From 2028 returns from stocks, shares and bonds become taxable at 5% above OMR 42,000 (Muscat-listed shares exempt).",
+        "important_exceptions": "ENACTED, NOT YET IN FORCE: Royal Decree 56/2025 (issued 22 June 2025, gazetted 30 June 2025) promulgates a Personal Income Tax Law effective 1 January 2028: 5% on taxable income above OMR 42,000 a year, on worldwide income of tax residents (Omani citizens and expatriates present 183+ days). Taxable categories include returns from stocks, shares and bonds and from their disposal, interest, and gains on real estate. Exemptions include income and disposal proceeds of shares listed on the Muscat Stock Exchange and government bonds, main residence (conditions), one secondary residence once in a lifetime, and inheritances, grants and donations between spouses and first-degree relatives. Executive Regulations are still awaited. From 2028 a wealthy resident would pay up to 5% on foreign dividends and gains above OMR 42,000.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Oman - Individual - Taxes on personal income (last reviewed 7 Jul 2026)",
+            "url": "https://taxsummaries.pwc.com/oman/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Oman - Individual - Income determination (PIT from 2028)",
+            "url": "https://taxsummaries.pwc.com/oman/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Oman - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/oman/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Royal Decree 56/2025 issuing the Personal Income Tax Law (unofficial reproduction; Official Gazette No. 1602, 30 June 2025)",
+            "url": "https://qanoon.om/p/2025/rd2025056/",
+            "publisher": "Qanoon.om",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Oman Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-omanhighlights-2026.pdf",
+            "publisher": "Deloitte International Tax",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PROMINENT: Oman's Personal Income Tax Law (Royal Decree 56/2025, Art. 4) takes effect 1 January 2028: 5% (Art. 8) on worldwide gross income above OMR 42,000 for residents present more than 183 days, including dividends and gains on shares (Art. 16). This file scores 2026 law (0%); a family planning beyond 2027 should expect up to 5% on foreign dividends and gains.",
+          "Whether foreign tax credits will be available under the 2028 PIT not verified."
+        ],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No PIT in force in 2026; enacted PIT from 1 Jan 2028.",
+        "withholding_outbound": "WHT on dividends and interest paid to non-residents is suspended (0%) per PwC.",
+        "treaty_network": "43 treaty partners listed by PwC (as of 2018; more signed); no treaty with the United States.",
+        "holding_company_notes": ""
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Oman - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/oman/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "PwC: no other taxes on individuals. Property registration fees on transfers not verified."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. The 2028 PIT exempts inheritances, grants and donations between spouses and first-degree relatives.",
+        "exemptions_thresholds": "No tax, so no thresholds.",
+        "important_exceptions": "Succession, not tax, is the issue: personal status (family) law based on Sharia governs inheritance of Muslims, with fixed shares (a son typically takes twice a daughter's share) and at most one third freely disposable by will to non-heirs. How estates of non-Muslim foreigners are handled (home-country law, own religious rules, or Sharia by default) was not verified for this country; non-Muslim families should take local legal advice and hold portfolio assets outside the country or through a structure with a clear governing law. Under the 2028 PIT, 'grants and donations' from persons other than spouses and first-degree relatives are listed as taxable income.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Oman - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/oman/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Oman - Individual - Deductions and exemptions (PIT from 2028)",
+            "url": "https://taxsummaries.pwc.com/oman/individual/deductions",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Treatment of non-Muslim foreigners' estates under Oman's Personal Status Law not verified."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None in 2026. From 2028 gifts from parents to children remain exempt under the PIT; gifts from others may be taxable income.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Not needed (no tax).",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "No tax on any asset.",
+        "domicile_rules": "Not relevant for tax."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No personal income tax in 2026. Under the PIT law from 2028: Omani citizens and expatriates present 183+ days in Oman are tax resident (PwC); residents taxed on worldwide income.",
+    "routes": [
+      {
+        "name": "Investor residency (long-term)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Long-term (5/10-year) investor residence cards exist for property and business investors; thresholds not verified in this pass."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Oman - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/oman/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Personal Income Tax (Tax Authority portal)",
+        "url": "https://tms.taxoman.gov.om/portal/personal-income-tax",
+        "publisher": "Oman Tax Authority",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.15,
+    "summary": "15% corporate income tax; 3% for qualifying Omani SMEs; 55% petroleum income. Income Inclusion Rule (Pillar Two) effective 1 January 2025; no DMTT indicated. WHT on dividends and interest suspended. VAT 5%.",
+    "sources": [
+      {
+        "title": "Oman - Corporate - Taxes on corporate income (last reviewed 7 Jul 2026)",
+        "url": "https://taxsummaries.pwc.com/oman/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Oman - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/oman/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Muscat",
+      "lon": 58.40778,
+      "lat": 23.58413,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 287286"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed; no Oman-US income tax treaty. From 2028 Omani PIT could become creditable against US tax.",
+  "open_questions": [
+    "PROMINENT: Oman's Personal Income Tax Law (Royal Decree 56/2025, Art. 4) takes effect 1 January 2028: 5% (Art. 8) on worldwide gross income above OMR 42,000 for residents present more than 183 days, including dividends and gains on shares (Art. 16). This file scores 2026 law (0%); a family planning beyond 2027 should expect up to 5% on foreign dividends and gains.",
+    "Investor residency thresholds unverified."
+  ],
+  "cost_of_living": {
+    "city": "Muscat",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 2200,
+        "currency": "OMR"
+      },
+      "year": 2026,
+      "description": "Savills Oman guide rent for a 5-bedroom villa in Al Mouj (Tombazi), the prime expatriate waterfront community, on 15 Oct 2026. Other 4-5 bedroom villas in the same Savills listing page: Muscat Hills OMR 1,900, Al Khuwair OMR 2,500, Azaiba OMR 650-750 (6 listings; median OMR 1,400).",
+      "source": {
+        "title": "Properties for rent in Oman",
+        "url": "https://search.savills.com/oma/en/list/property-to-rent/oman",
+        "publisher": "Savills Oman",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 10666,
+        "currency": "OMR"
+      },
+      "year": 2026,
+      "description": "British School Muscat, Key Stage 5 (Years 12-13) annual tuition 2026-27 (KS4: OMR 9,503); plus an infrastructure fee of OMR 300 a term for the first 9 terms. TAISM (American) high school: OMR 11,560 plus OMR 4,500 capital levy.",
+      "source": {
+        "title": "British School Muscat - Fees 2026-2027",
+        "url": "https://britishschoolmuscat.com/admissions/bsm-fees/",
+        "publisher": "British School Muscat",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Purchase prices, health insurance and housekeeper costs not sourced."
+  }
+}

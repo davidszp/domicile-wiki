@@ -1,0 +1,10 @@
+{
+  "cycle": "PISA 2025",
+  "published": "2026-09-08",
+  "title": "PISA 2025 Results (Volume I): Future-Ready Students",
+  "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/09/pisa-2025-results-volume-i_5265bfb1/73451bc5-en.pdf",
+  "doi": "https://doi.org/10.1787/73451bc5-en",
+  "landing_page": "https://www.oecd.org/en/publications/2026/09/pisa-2025-results-volume-i_5265bfb1.html",
+  "publisher": "OECD",
+  "notes": "Scores taken from Table I.1 'Snapshot of performance in science, reading, mathematics and computational problem-solving' (pp. 28-29 of the PDF; source tables I.B1.2a.1-4). The PDF was downloaded and parsed; the oecd.org landing page returned HTTP 403 to automated fetches and was not read. Publication date 8 Sep 2026 per the publication URL path (2026/09), ACER's companion Australian report (dated 9-8-2026) and press coverage; PDF metadata shows a re-build on 2026-10-10. 91 countries/economies; 4 are subnational (B-S-J-Z China, Ukrainian regions 17 of 27, Kurdistan Region Iraq, Dushanbe Tajikistan) and have empty iso3. Asterisked entities (sampling standards not met): Canada, Netherlands, New Zealand, Norway (full reporting); Albania, United States (limited reporting). Uzbekistan: mathematics and reading withheld by OECD. The user's 'PISA 2026' refers to this PISA 2025 cycle, published in 2026."
+}

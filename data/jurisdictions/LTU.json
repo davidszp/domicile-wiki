@@ -1,0 +1,307 @@
+{
+  "id": "LTU",
+  "name": "Lithuania",
+  "continent": "Europe",
+  "region": "Northern Europe (Baltics)",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "2026 reform: most income progressive 20/25/32%, but dividends and gains on shares held over 5 years stay at a flat 15%; real estate gains exempt after 5 years. Children fully exempt from inheritance tax; no gift tax; no wealth tax, but a new progressive tax on residential real estate above thresholds.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Ordinary Lithuanian tax residence; no special regime for new wealthy arrivals.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Permanent home or centre of interests in Lithuania, or 183 days in the tax year, or 280 days over two consecutive years with 90 in one.",
+      "capital_gains": {
+        "summary": "From 2026, gains on securities held 5 years or less are added to total income and taxed at 20/25/32% (32% above about EUR 138,700). Gains on shares/units held more than 5 years and acquired outside an investment account are taxed separately at a flat 15%. Real estate held 5 years or more is exempt (was 10 years).",
+        "exemptions_thresholds": "Gains on financial instruments up to EUR 500/yr exempt; other capital gains up to EUR 2,500/yr. Main home in the EEA exempt after 2 years' declared residence (or reinvestment within 1 year).",
+        "eligibility_conditions": "15% flat rate (PIT Law art. 6(6)(3)): income from selling shares, parts or units (akcijos, dalys, pajai) that were acquired outside an investment account more than 5 years before the sale is taxed at 15% and not added to annual income. A reorganisation or restructuring of the issuer does not restart the 5-year period (VMI clarification reported by KPMG, March 2026). Bonds and other financial instruments are not covered and are taxed at the progressive rates. Investment account (since 2025): withdrawals above contributions taxed at 15%; reinvested returns not taxed. Accounts in EEA/OECD/treaty countries; individual (not joint) only.",
+        "important_exceptions": "2026 reform (adopted 2025, in force 1 Jan 2026): most income is aggregated and taxed at 20% up to 36 average wages (EUR 83,237), 25% up to 60 AW (EUR 138,729) and 32% above; previously 15%/20% for capital gains. Dividends, gains on shares held more than 5 years (outside an investment account) and investment-account withdrawals stay at a separate flat 15%.",
+        "sources": [
+          {
+            "title": "Lithuania - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/lithuania/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Lithuania - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/lithuania/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Lithuania: Tax changes starting 2026 (KPMG TaxNewsFlash, 4 Dec 2025)",
+            "url": "https://kpmg.com/kpmg-us/content/dam/kpmg/taxnewsflash/pdf/2025/12/tnf-lithuania-dec-4-2025.pdf",
+            "publisher": "KPMG",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mokesčių naujienos 2026 (tax news 2026, EN)",
+            "url": "https://motieka.com/wp-content/uploads/2026/03/mokesciu_naujienos_2026_EN.pdf",
+            "publisher": "Motieka (law firm)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mokesčių ir teisės naujienlaiškis, 2026 kovas (VMI clarification on GPMĮ art. 6(6)(3))",
+            "url": "https://kpmg.com/lt/lt/izvalgos/mokesciu-ir-teises-naujienlaiskiai/2026-kovas.html",
+            "publisher": "KPMG Lithuania",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether ETF units of foreign (e.g. Irish UCITS) funds count as 'units' (pajai) for the 5-year 15% rule is assumed (yes), not confirmed in a VMI text.",
+          "Average-wage thresholds are preliminary (KPMG gives EUR 82,962/138,270; PwC EUR 83,237/138,729)."
+        ],
+        "headline_rate": 0.32,
+        "rates": {
+          "listed_securities_domestic": 0.15,
+          "listed_securities_foreign": 0.15,
+          "private_business_sale": 0.15,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Assumes holding beyond the 5-year period: shares 15% flat; real estate exempt after 5 years. Short-term gains (<=5 years) on a large amount: 32% marginal. Headline 32% = top aggregated rate.",
+        "professional_trader": "Individual-activity (self-employed) income has its own regime (effective 5-20% up to EUR 42,500, then progressive); frequent trading recharacterisation not researched.",
+        "holding_period_rules": "Shares/units/interests: more than 5 years -> 15% flat. Real estate: 5 years -> exempt (10 years before 2026).",
+        "foreign_assets": "Worldwide gains taxed; relief for foreign tax under treaties, capped at Lithuanian tax.",
+        "tax_year": "2026",
+        "verified_on": "2026-10-15"
+      },
+      "dividends": {
+        "summary": "Dividends, Lithuanian and foreign, are taxed at a flat 15% PIT, separately from other income (not aggregated). Foreign WHT is credited up to the Lithuanian tax and the treaty rate.",
+        "important_exceptions": "2026 reform (adopted 2025, in force 1 Jan 2026): most income is aggregated and taxed at 20% up to 36 average wages (EUR 83,237), 25% up to 60 AW (EUR 138,729) and 32% above; previously 15%/20% for capital gains. Dividends, gains on shares held more than 5 years (outside an investment account) and investment-account withdrawals stay at a separate flat 15%.",
+        "sources": [
+          {
+            "title": "Lithuania - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/lithuania/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Lithuania: Tax changes starting 2026 (KPMG TaxNewsFlash, 4 Dec 2025)",
+            "url": "https://kpmg.com/kpmg-us/content/dam/kpmg/taxnewsflash/pdf/2025/12/tnf-lithuania-dec-4-2025.pdf",
+            "publisher": "KPMG",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Lithuania - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/lithuania/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Mokesčių naujienos 2026 (tax news 2026, EN)",
+            "url": "https://motieka.com/wp-content/uploads/2026/03/mokesciu_naujienos_2026_EN.pdf",
+            "publisher": "Motieka (law firm)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.15,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.15,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Flat 15% on gross dividend; a 15% US treaty WHT would be fully credited, leaving little or no Lithuanian tax.",
+        "withholding_outbound": "Dividends to non-resident companies: 17% WHT from 2026 (was 15%), 0% under the 10%/12-month participation exemption, reduced by treaty. Dividends to individuals carry 15% PIT withholding.",
+        "treaty_network": "Broad network across EU/OECD and the US; treaties with Russia and Belarus cease to apply from 1 Jan 2026 (PwC). Exact count not verified.",
+        "holding_company_notes": "Lithuania taxes company profits annually (17% from 2026), not on distribution; participation exemption for qualifying dividends and share gains.",
+        "tax_year": "2026",
+        "verified_on": "2026-10-15"
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no recurring levy on financial assets. From 2026 real estate tax became progressive on residential property (see property note), which is a property tax, not a wealth tax.",
+        "sources": [
+          {
+            "title": "Lithuania - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/lithuania/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Lithuania: Tax changes starting 2026 (KPMG TaxNewsFlash, 4 Dec 2025)",
+            "url": "https://kpmg.com/kpmg-us/content/dam/kpmg/taxnewsflash/pdf/2025/12/tnf-lithuania-dec-4-2025.pdf",
+            "publisher": "KPMG",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "From 2026: primary residence taxed only above EUR 450,000 per owner (EUR 900,000 for two co-owners) at 0.1-1% set by the municipality; other residential property taxed progressively 0.2%-1.0% above EUR 50,000 (1.0% above EUR 1,000,000); commercial 0.5-3% plus a 0.2% defence component.",
+        "tax_year": "2026",
+        "verified_on": "2026-10-15"
+      },
+      "inheritance": {
+        "summary": "Inheritance tax exists (5% up to EUR 150,000, 10% above, EUR 3,000 threshold) but children, spouse, parents, grandchildren, grandparents and siblings are fully exempt. There is no gift tax; gifts are a PIT matter and gifts from close family are exempt.",
+        "exemptions_thresholds": "Children (incl. adopted) fully exempt from inheritance tax.",
+        "sources": [
+          {
+            "title": "Successions in Europe - Lithuania",
+            "url": "https://www.notariesofeurope.eu/en/faq3/successions-in-europe/lithuania/",
+            "publisher": "Council of the Notariats of the EU (CNUE)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Lithuania - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/lithuania/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PIT exemption for gifts from close relatives not confirmed in a source opened during this research.",
+          "Notary fees for the certificate of inheritance not verified (assumed small)."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "No gift tax (PwC). Gifts are income for PIT purposes, but gifts from close family members are exempt (general rule; not re-verified).",
+        "gifts_same_as_inheritance": true,
+        "business_relief": "Not needed for children.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Residents' worldwide inheritances are in scope for non-exempt heirs; foreigners only on Lithuanian-registered property.",
+        "domicile_rules": "Liability depends on heir's residence; irrelevant for children (exempt).",
+        "tax_year": "2026",
+        "verified_on": "2026-10-15"
+      },
+      "sources": [
+        {
+          "title": "Lithuania - Individual - Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/lithuania/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if: permanent place of residence in Lithuania; centre of personal, social or economic interests in Lithuania; present 183+ days in the tax period; or 280+ days over consecutive tax periods with at least 90 in one; or certain state-paid citizens abroad.",
+    "routes": [
+      {
+        "name": "EU/EEA free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Register residence as EU citizen."
+      },
+      {
+        "name": "Temporary residence permit (non-EU)",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Permit on grounds such as business/investment or employment under the Law on the Legal Status of Aliens; investment thresholds not verified in this research."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Lithuania - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/lithuania/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.17,
+    "summary": "Standard CIT rose from 16% to 17% from 2026 (reduced rate 7%; 0% for the first two years for small new companies). Annual profit taxation. Participation exemption for dividends (10%/12 months). New loss-utilisation limits on reorganisations.",
+    "sources": [
+      {
+        "title": "Lithuania: Tax changes starting 2026 (KPMG TaxNewsFlash, 4 Dec 2025)",
+        "url": "https://kpmg.com/kpmg-us/content/dam/kpmg/taxnewsflash/pdf/2025/12/tnf-lithuania-dec-4-2025.pdf",
+        "publisher": "KPMG",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Mokesčių naujienos 2026 (tax news 2026, EN)",
+        "url": "https://motieka.com/wp-content/uploads/2026/03/mokesciu_naujienos_2026_EN.pdf",
+        "publisher": "Motieka (law firm)",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Lithuania - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/lithuania/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Vilnius",
+      "lon": 25.2798,
+      "lat": 54.68916,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 593116"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain US-taxed; Lithuania-US treaty in force. No special local issues found.",
+  "open_questions": [],
+  "cost_of_living": {
+    "city": "Vilnius",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 2400,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median of the 8 priced houses for rent in and around Vilnius in Baltic Sotheby's International Realty's rental list on 15 Oct 2026 (EUR 1,700-4,700; Antakalnis new-build 226 m² 4 bedrooms EUR 4,700, Antakalnis 140 m² EUR 3,900, golf-course villas in Vilnius district 125-345 m² EUR 1,700-2,600, several already let). The four homes with 4-5 bedrooms also have a median of EUR 2,400. Thin sample: the main portals (Aruodas, Domoplius, Skelbiu) blocked automated access.",
+      "source": {
+        "title": "Find a property - for rent (houses)",
+        "url": "https://lt.balticsothebysrealty.com/en/find-a-property/?action=rent&type=house",
+        "publisher": "Baltic Sotheby's International Realty (Lithuania)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 26847,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "American International School of Vilnius, Grades 11-12, 2026-2027: tuition EUR 24,349 plus annual capital fee EUR 2,498. New students pay a one-time EUR 2,707 admission fee and a EUR 428 application fee.",
+      "source": {
+        "title": "Tuition fees and payment policy",
+        "url": "https://www.aisv.lt/tuition-fees-and-payment-policy/",
+        "publisher": "American International School of Vilnius",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Prime purchase price per m², family health insurance and housekeeper cost were not sourced in this round and are omitted rather than guessed. Rent is low-confidence (8 listings from one agency)."
+  }
+}

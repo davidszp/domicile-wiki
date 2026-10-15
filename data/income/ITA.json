@@ -1,0 +1,318 @@
+{
+  "id": "ITA",
+  "name": "Italy",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "National IRPEF is 23% to EUR 28,000, 33% to EUR 50,000 and 43% above. With the Lombardy regional surtax (1.23% to 1.73% by income) and the Milan municipal surtax (0.8%, exempt below EUR 23,000) the marginal rates in Milan are about 25% to 45.5%. Employees pay 9.19% pension contributions; the self-employed (Gestione Separata, VAT number, no other cover) pay 26.07% up to a cap of EUR 122,295.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.2503
+      },
+      {
+        "from_amount": 15000,
+        "rate": 0.2538
+      },
+      {
+        "from_amount": 28000,
+        "rate": 0.3552
+      },
+      {
+        "from_amount": 50000,
+        "rate": 0.4553
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.0919,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.2607,
+    "self_employed_social_security_cap": 122295,
+    "self_employed_notes": "Gestione Separata 2026 (PwC): 26.07% for VAT-number holders enrolled only there (24% if covered elsewhere), income ceiling EUR 122,295, minimum income for a contribution credit EUR 18,808. Under the forfettario regime contributions are due on the deemed profit (revenue x 78% for professional services), so the effective rate on gross revenue is about 26.07% x 78% = 20.3% (not modelled in the rate field). Forfettario eligibility and rates are modelled as separate regimes below.",
+    "local_tax_note": "Brackets add the Lombardy regional surtax and the Milan municipal surtax (0.8%) to the national rate. Both surtaxes are in fact levied on the whole taxable income at the rate for the income band, not as marginal rates, so the combined figures are approximations. The Milan figure on the source page is the 2025 rate carried forward.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Italy, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/italy/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Italy, other taxes (social security)",
+        "url": "https://taxsummaries.pwc.com/italy/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Milano - Aliquote 2026 (addizionali comunale e regionale)",
+        "url": "https://tuttocalcolato.it/calcolo/irpef/milano/",
+        "publisher": "tuttocalcolato.it",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Contributi in busta paga: quanto versa il lavoratore dipendente",
+        "url": "https://www.money.it/Contributi-busta-paga-quanto-versa-lavoratore-dipendente",
+        "publisher": "money.it",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Italy - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/italy/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "The 9.19% employee pension rate comes from a news site, not INPS (INPS pages not reachable); the employee contribution ceiling and the extra 1% above the first income threshold were not found.",
+      "Employee deductions (detrazioni) are not modelled.",
+      "IRPEF 2026 brackets (23/33/43) re-checked on PwC; regional/municipal surtax figures come from the original source and were not re-opened.",
+      "Italy relies on employment tax credits (detrazioni) instead of an employment expense deduction; PwC's deductions page gives no figures and they are not modelled."
+    ],
+    "social_security_deductible": 1
+  },
+  "regimes": [
+    {
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 28000,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_note": "One year, renewable annually up to five years.",
+      "social_security_applies": true,
+      "open_questions": [
+        "Decree of 29 February 2024 (G.U. 4 April 2024) not opened and no Italian consulate or ministry page was reachable; the EUR 28,000 (three times the healthcare-exemption threshold), duration (1 year renewable to 5) and requirements rest on Remote Work Europe, which itself cites no links.",
+        "A dedicated nomad tax incentive was proposed but not enacted as of April 2026."
+      ],
+      "id": "ita_nomad_visa",
+      "name": "Digital nomad visa",
+      "kind": "digital_nomad_visa",
+      "description": "Visa for non-EU highly qualified remote workers with annual income of about EUR 28,000 from foreign sources (three times the healthcare exemption threshold), six months of prior experience, a degree or equivalent experience, a one-year lease and EUR 30,000 of health cover. Consulates have accepted applications since 18 March 2026. The visa does not change tax: residents are taxed on worldwide income at the normal scale, with the forfettario or impatriati regimes as options.",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "duration_years": 5,
+      "treatment": "standard",
+      "sources": [
+        {
+          "title": "Italy digital nomad visa complete guide 2026 (Remote Work Europe)",
+          "url": "https://remoteworkeurope.eu/insights/italy-digital-nomad-visa-complete-guide-2026/",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "unverified"
+    },
+    {
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": {
+        "amount": 600000,
+        "currency": "EUR"
+      },
+      "duration_note": "Five tax periods from the first year of residence.",
+      "social_security_applies": true,
+      "open_questions": [
+        "Art. 5 is marked repealed by D.Lgs. 117/2026 from 1 January 2027; the replacement text and any changes were not opened.",
+        "The 'ruling 2/2026' on remote work claimed by Taxing.it was not verified; the statute itself requires only that the activity be performed mainly in Italy.",
+        "Agenzia delle Entrate page not reachable; the statute was read on Normattiva."
+      ],
+      "id": "ita_impatriati",
+      "name": "Impatriati regime (Legislative Decree 209/2023, art. 5)",
+      "kind": "expat_regime",
+      "description": "Art. 5 D.Lgs. 209/2023 (Normattiva): employment, assimilated and SELF-EMPLOYMENT income (lavoro dipendente, assimilati e lavoro autonomo) produced in Italy counts for only 50% of taxable income (so 50% is exempt), up to EUR 600,000 a year, for five tax periods (arrival year plus four); the taxable share falls to 40% (60% exempt) with a minor child. Requires no Italian tax residence in the previous three periods (six or seven if working for the same employer or group), a commitment to stay resident for four years (benefit clawed back with interest otherwise), work mainly performed in Italy, and high qualification or specialisation. No Italian employer is required, so remote work from Italy for a foreign employer or foreign clients is covered by the text. Normattiva flags art. 5 as repealed by D.Lgs. 19 June 2026 n. 117 from 1 January 2027 (presumably moved into the new income-tax code); successor rules not opened.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "duration_years": 5,
+      "treatment": "partial_exemption",
+      "exempt_share": 0.5,
+      "sources": [
+        {
+          "title": "Italian impatriates regime 2024 (Taxing.it)",
+          "url": "https://taxing.it/italian-impatriates-regime-2024",
+          "publisher": "Taxing.it",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries - Italy, taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/italy/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "D.Lgs. 209/2023 art. 5 (impatriati), Normattiva, text in force 2026-10-15",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-10-15",
+          "publisher": "Normattiva",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified"
+    },
+    {
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": {
+        "amount": 85000,
+        "currency": "EUR"
+      },
+      "duration_note": "Open-ended while revenue stays at or below EUR 85,000 (the regime ends the year revenue exceeds EUR 100,000 and the following year if above EUR 85,000).",
+      "social_security_applies": true,
+      "open_questions": [
+        "The 78% coefficient for professional services (Allegato 4) is from Remote Work Europe only; the Allegato was not reached on Normattiva. It depends on the activity's ATECO code.",
+        "Applies to the self-employed who are Italian tax residents; whether the nomad's foreign clients affect eligibility (none under the statute read) was not checked against Agenzia delle Entrate guidance."
+      ],
+      "id": "ita_forfettario",
+      "name": "Forfettario flat-tax regime for sole traders (15% on 78% of revenue)",
+      "kind": "other",
+      "description": "Legge 190/2014 art. 1 commi 54-89 (Normattiva): sole traders and professionals with revenue up to EUR 85,000 pay a 15% substitute tax on deemed profit instead of IRPEF, surtaxes and IRAP; the regime ends in the year revenue exceeds EUR 100,000. Deemed profit = revenue x a coefficient set by ATECO code; for professional, scientific, technical and similar services the coefficient is 78% (Remote Work Europe; Allegato 4 not reached). Arithmetic: flat_rate on revenue = 15% x 78% = 11.7%, the value recorded in flat_rate (it is the rate on gross revenue). No deduction of actual expenses and no VAT charged. Social contributions are due on the deemed profit (about 20.3% of revenue at the 26.07% Gestione Separata rate). A tax resident nomad with revenue below EUR 85,000 can use it.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "duration_years": null,
+      "treatment": "flat_rate",
+      "flat_rate": 0.117,
+      "sources": [
+        {
+          "title": "Legge 190/2014 art. 1 commi 54-89 (regime forfetario), Normattiva",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-15",
+          "publisher": "Normattiva",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Italy digital nomad visa complete guide 2026 (Remote Work Europe)",
+          "url": "https://remoteworkeurope.eu/insights/italy-digital-nomad-visa-complete-guide-2026/",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    },
+    {
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": {
+        "amount": 85000,
+        "currency": "EUR"
+      },
+      "duration_note": "Period in which the activity starts plus the four following periods; then 15% (11.7% of revenue).",
+      "social_security_applies": true,
+      "open_questions": [
+        "Conditions (a)-(c) of comma 65 (no self-employment in the last three years, not a continuation) were not quoted in full; whether prior freelancing abroad counts as prior self-employment was not checked.",
+        "78% coefficient from Remote Work Europe only."
+      ],
+      "id": "ita_forfettario_startup",
+      "name": "Forfettario start-up rate (5% on 78% of revenue, first five years)",
+      "kind": "other",
+      "description": "Same regime with a 5% substitute tax on deemed profit for the period the activity starts and the four following (art. 1 comma 65 L. 190/2014, Normattiva), if the person has not carried on a self-employed activity in the previous three years, the activity is not a mere continuation of a previous one, and, if it continues an activity of a third party, revenue is below EUR 85,000. Arithmetic: 5% x 78% = 3.9% of revenue. A newly arrived nomad starting a freelance activity in Italy can plausibly meet this; the conditions (a)-(c) of comma 65 were not read in full.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "duration_years": 5,
+      "treatment": "flat_rate",
+      "flat_rate": 0.039,
+      "sources": [
+        {
+          "title": "Legge 190/2014 art. 1 commi 54-89 (regime forfetario), Normattiva",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-15",
+          "publisher": "Normattiva",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Italy digital nomad visa complete guide 2026 (Remote Work Europe)",
+          "url": "https://remoteworkeurope.eu/insights/italy-digital-nomad-visa-complete-guide-2026/",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    }
+  ],
+  "costs": {
+    "city": "Milan",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1450,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent, 1-bedroom apartments, Milan (all locations), Global Property Guide 2026 from local portal listings. Furnished status not stated.",
+      "source": {
+        "title": "Global Property Guide - Italy rental yields (median asking rents)",
+        "url": "https://globalpropertyguide.com/Europe/Italy/Rental-Yields",
+        "publisher": "Global Property Guide",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1840,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent, 2-bedroom apartments, Milan (all locations), Global Property Guide 2026 from local portal listings. Furnished status not stated.",
+      "source": {
+        "title": "Global Property Guide - Italy rental yields (median asking rents)",
+        "url": "https://globalpropertyguide.com/Europe/Italy/Rental-Yields",
+        "publisher": "Global Property Guide",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Rome and Milan both appear on the source; Milan chosen as the main expat finance city. The quarter of the Italy page was not captured. Second rent source not obtained in this pass."
+  },
+  "residence_routes": "EU citizens register as residents. US and other non-EU remote workers can use the new digital nomad visa (about EUR 28,000 a year, valid one year, renewable to five). Skilled employees from outside the EU come in under the annual decreto flussi quotas or an EU Blue Card sponsored by an Italian employer, which were not researched; the impatriati regime applies to any new resident.",
+  "open_questions": [
+    "Decreto flussi and Blue Card routes were not researched.",
+    "Health-service registration costs for nomads not researched.",
+    "Rents rest on one aggregator (Global Property Guide); no second source obtained."
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "id": "MNE",
+  "name": "Montenegro",
+  "continent": "Europe",
+  "region": "Southern Europe (Western Balkans)",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "Montenegro (euro, non-EU) taxes residents' worldwide capital gains at a flat 15% (no municipal surtax on gains) and dividends at 15% plus a municipal surtax of up to 15% of the tax (17.25% in Podgorica). No wealth tax, and no inheritance or gift tax for children (only real estate transfer tax for other heirs). No special tax regime for wealthy arrivals.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Ordinary residence; worldwide income taxed.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident if domiciled, centre of vital interests in Montenegro, or 183+ days in the tax year. Non-citizens need a residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "status": "researched",
+        "summary": "Resident individuals pay a flat 15% personal income tax on capital gains from shares, securities and real estate, worldwide. Gain = sale price minus acquisition price. No holding-period exemption for securities. The municipal surtax (prirez) is not charged on capital-gains tax: the Law on Financing Local Self-Government (Art. 8(3)) levies it only on the tax on personal earnings, self-employment income, income from property and property rights, and capital income (dividends, interest).",
+        "exemptions_thresholds": "Exempt: sale of the taxpayer's only and main residence; transfers between spouses linked to marriage, divorce or inheritance; gifts to first-order relatives (spouse, children). Capital losses can be set against gains of the same year.",
+        "eligibility_conditions": "Tax residents (domicile, centre of vital interests, or 183+ days) are taxed on worldwide gains.",
+        "regional_differences": "PIT is national. The municipal surtax does not apply to capital gains (Law on Financing Local Self-Government, Sl. list CG 3/2019, Art. 8(3) lists the taxes it is levied on, and capital gains are not among them).",
+        "important_exceptions": "Since Sl. list CG 152/22 (in force 30 Dec 2022) capital, capital-gains and property income is taxed at 15% (previously 9%). The tax authority can substitute market value when shares in a company are sold below market value.",
+        "sources": [
+          {
+            "title": "Montenegro – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/montenegro/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Montenegro – Individual – Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/montenegro/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Izmjene Zakona o porezu na dohodak fizičkih lica (Sl. list CG 152/22)",
+            "url": "https://unija.com/cg/porez-na-dohodak/",
+            "publisher": "Unija (tax advisory)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Izmjene poreskih propisa u Crnoj Gori (January 2023)",
+            "url": "https://kpmg.com/me/me/analize-i-istrazivanja/poreske-vijesti/2023/01/izmjene-poreskih-propisa-u-crnoj-gori.html",
+            "publisher": "KPMG Montenegro",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Porez na dohodak u Crnoj Gori – guide",
+            "url": "https://eporezi.me/en/vodici/porez-na-dohodak",
+            "publisher": "ePorezi.me",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Zakon o porezu na dohodak fizičkih lica (consolidated to Sl. list CG 67/19; superseded in part)",
+            "url": "https://www.paragraf.me/propisi-crnegore/zakon-o-porezu-na-dohodak-fizickih-lica.html",
+            "publisher": "Paragraf (law database)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Zakon o finansiranju lokalne samouprave (Sl. list CG 3/2019), Art. 8",
+            "url": "https://www.paragraf.me/propisi-crnegore/zakon-o-finansiranju-lokalne-samouprave.html",
+            "publisher": "Paragraf (law database)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Current consolidated text of the PIT law after Sl. list CG 152/22 and later amendments could not be opened; the 15% rate relies on PwC (reviewed Aug 2026) and Unija/ePorezi summaries.",
+          "No exit tax for individuals was found, but this was not confirmed against legislation.",
+          "The surtax conclusion rests on the 2019 text of the local-finance law (Paragraf, last updated 2021); later amendments were not checked."
+        ],
+        "headline_rate": 0.15,
+        "rates": {
+          "listed_securities_domestic": 0.15,
+          "listed_securities_foreign": 0.15,
+          "private_business_sale": 0.15,
+          "real_estate_local": 0.15,
+          "real_estate_foreign": 0.15
+        },
+        "rate_basis": "Flat 15% PIT rate on net capital gains (law amended by Sl. list CG 152/22). No municipal surtax: Art. 8(3) of the local-finance law does not list tax on capital gains in the surtax base.",
+        "professional_trader": "Frequent trading could be treated as self-employment (entrepreneurial) income, taxed at progressive 0/9/15% plus social contributions; no specific guidance found.",
+        "holding_period_rules": "No holding-period exemption for shares or real estate (other than the main-residence exemption).",
+        "foreign_assets": "Worldwide taxation for residents with a foreign tax credit capped at Montenegrin tax; treaties prevail.",
+        "tax_year": "2026",
+        "verified_on": "2026-10-15"
+      },
+      "dividends": {
+        "status": "researched",
+        "summary": "Dividends received by resident individuals are capital income taxed at a flat 15% on the gross amount, withheld by a Montenegrin payer; foreign dividends are self-assessed at 15% with a credit for foreign tax up to the Montenegrin tax. The municipal surtax applies on top, because Art. 8(3) of the Law on Financing Local Self-Government includes the tax on capital income in its base: up to 15% of the tax in Podgorica and Cetinje (15% x 1.15 = 17.25%), up to 13% elsewhere (16.95%).",
+        "exemptions_thresholds": "Interest on bonds of the State, the Central Bank or local governments is not taxable capital income (from 19 Nov 2025, Sl. list CG 133/25).",
+        "regional_differences": "Municipal surtax on the tax on capital income, set by each municipality: up to 15% in Podgorica (Glavni grad) and Cetinje (Prijestonica), up to 13% elsewhere (Art. 8(1)–(2)). Effective 17.25% in Podgorica; the Tivat and Budva rates were not checked (at most 16.95%).",
+        "important_exceptions": "Pre-2023 rate was 9%; some secondary sources still quote 9%.",
+        "sources": [
+          {
+            "title": "Montenegro – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/montenegro/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Montenegro – Corporate – Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/montenegro/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Montenegro – Individual – Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/montenegro/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Izmjene Zakona o porezu na dohodak fizičkih lica (Sl. list CG 152/22)",
+            "url": "https://unija.com/cg/porez-na-dohodak/",
+            "publisher": "Unija (tax advisory)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Porez na dohodak u Crnoj Gori – guide",
+            "url": "https://eporezi.me/en/vodici/porez-na-dohodak",
+            "publisher": "ePorezi.me",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Zakon o finansiranju lokalne samouprave (Sl. list CG 3/2019), Art. 8",
+            "url": "https://www.paragraf.me/propisi-crnegore/zakon-o-finansiranju-lokalne-samouprave.html",
+            "publisher": "Paragraf (law database)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Surtax rates actually set by Tivat and Budva not checked; the JSON uses the Podgorica maximum.",
+          "Whether the surtax is collected on self-assessed foreign dividends in practice (the law applies it to the tax on capital income generally).",
+          "Mechanics of self-assessment for foreign dividends received through a foreign broker."
+        ],
+        "headline_rate": 0.1725,
+        "domestic_rate": 0.1725,
+        "foreign_gross_rate": 0.1725,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "15% PIT on gross dividends (PwC, reviewed 7 Aug 2026) plus the Podgorica municipal surtax of 15% of the tax (local-finance law Art. 8): 0.15 x 1.15 = 0.1725.",
+        "withholding_outbound": "15% WHT on dividends paid to residents and non-residents (30% to entities in listed tax havens), reducible by treaty.",
+        "treaty_network": "47 treaties per PwC, including most EU states, UK, Switzerland, UAE, China; no treaty with the United States.",
+        "holding_company_notes": "Corporate shareholders: dividends from resident companies are generally excluded from the CIT base; not researched in depth.",
+        "tax_year": "2026",
+        "verified_on": "2026-10-15"
+      },
+      "wealth_tax": {
+        "status": "researched",
+        "summary": "Montenegro has no net wealth tax and no recurring levy on financial assets.",
+        "sources": [
+          {
+            "title": "Montenegro – Corporate – Other taxes",
+            "url": "https://taxsummaries.pwc.com/montenegro/corporate/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Montenegro – Individual – Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/montenegro/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "verification": "verified",
+        "property_tax_note": "Annual real estate tax at municipal rates of 0.25%-1% of market value (PwC). A 2025 amendment to the real estate tax law was enacted; its detail was not reviewed.",
+        "type": "none",
+        "components": [],
+        "tax_year": "2026",
+        "verified_on": "2026-10-15"
+      },
+      "inheritance": {
+        "status": "researched",
+        "summary": "There is no inheritance or gift tax on money, securities or other movables. Inherited or gifted real estate is subject to real estate transfer tax (3%/5%/6% progressive), but first-order heirs (children, spouse) and the deceased's parents, and first-order donees and the donor's spouse, are exempt.",
+        "exemptions_thresholds": "Art. 14(1)(1) Law on Real Estate Transfer Tax: no tax for the first-order heir, spouse and parent of the deceased, or a first-order donee and the donor's spouse.",
+        "eligibility_conditions": "Exemption depends on the family relationship only.",
+        "important_exceptions": "Other heirs pay real estate transfer tax: 3% up to EUR 150,000, 5% EUR 150,000-500,000, 6% above (since 1 Jan 2024). Gifts to first-order relatives are also exempt from capital gains tax.",
+        "sources": [
+          {
+            "title": "Zakon o porezu na promet nepokretnosti (Sl. list CG 36/13), art. 9, 11, 14",
+            "url": "https://www.poslodavci.org/site/assets/files/1894/zakon_o_porezu_na_promet_nepokretnosti.pdf",
+            "publisher": "Unija poslodavaca Crne Gore (text of law)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Koliko iznosi porez na promet nepokretnosti u Crnoj Gori u 2026. godini?",
+            "url": "https://kodeksnekretnine.me/koliko-iznosi-porez-na-promet-nepokretnosti/",
+            "publisher": "Kodeks Nekretnine",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Quick charts – Inheritance and gift tax rates",
+            "url": "https://taxsummaries.pwc.com/quick-charts/inheritance-and-gift-tax-rates",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Montenegro – Corporate – Other taxes",
+            "url": "https://taxsummaries.pwc.com/montenegro/corporate/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Zakon o porezu na dohodak fizičkih lica (consolidated to Sl. list CG 67/19; superseded in part)",
+            "url": "https://www.paragraf.me/propisi-crnegore/zakon-o-porezu-na-dohodak-fizickih-lica.html",
+            "publisher": "Paragraf (law database)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Exemption article taken from the 2013 consolidated text; a 2026 secondary source confirms it is unchanged, but the current official consolidated text was not opened.",
+          "Montenegrin real estate held by a foreign estate and probate/court fees were not quantified."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "No gift tax on movables; real estate gifts follow real estate transfer tax with the same first-order exemption.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Not needed for children; no tax on shares.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Transfer tax applies only to real estate located in Montenegro.",
+        "domicile_rules": "Situs-based (Montenegrin real estate only).",
+        "tax_year": "2026",
+        "verified_on": "2026-10-15"
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if domicile or centre of personal and economic interests in Montenegro, or present at least 183 days in a tax year; treaty tie-breakers prevail.",
+    "routes": [
+      {
+        "name": "Temporary residence permit (e.g. real estate ownership, business, family)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Montenegro is not in the EU; all foreigners including EU citizens need a residence permit. Grounds and conditions (including the property-ownership ground) not verified for 2026. The citizenship-by-investment programme closed at the end of 2022 (not re-verified)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Montenegro – Individual – Residence",
+        "url": "https://taxsummaries.pwc.com/montenegro/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.15,
+    "summary": "Progressive CIT: 9% up to EUR 100,000 profit, 12% to EUR 1.5m, 15% above. No municipal CIT. 15% WHT on dividends (30% to tax havens).",
+    "sources": [
+      {
+        "title": "Montenegro – Corporate – Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/montenegro/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Montenegro – Corporate – Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/montenegro/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Tivat (Porto Montenegro); Podgorica as the alternative",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 4500,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 21 long-term house rentals in Tivat municipality with 4–5 bedrooms and at least 200 m² (range EUR 1,300–7,600), parsed from Realitica's Montenegro long-term house rentals filtered on 'Tivat' (113 results) on 2026-10-15. For Podgorica the same filter gives a median of EUR 2,500 (28 listings, EUR 1,100–5,000). Asking prices on a listing portal.",
+      "source": {
+        "title": "Realitica: long-term house rentals, Montenegro (search 'Tivat')",
+        "url": "https://www.realitica.com/?cur_page=0&for=DuziNajam&pZpa=Crna+Gora&pState=Crna+Gora&type%5B%5D=Home&qry=Tivat&lng=en",
+        "publisher": "Realitica",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 22320,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Knightsbridge Schools International, Porto Montenegro, Tivat (IB): IB Diploma Programme EUR 22,320 a year (MYP EUR 20,400), as published on the fee page on 2026-10-15 (the school publishes the next year's fees by 30 April, so taken as 2026/27). One-off: EUR 800 registration and EUR 3,200 capital levy.",
+      "source": {
+        "title": "KSI Montenegro tuition fees",
+        "url": "https://ksi-montenegro.com/tuition-fees/",
+        "publisher": "Knightsbridge Schools International Montenegro",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Cost items are for Tivat, where the main international school is; Podgorica rents are roughly half. Health insurance and housekeeper costs not sourced."
+  },
+  "markers": [
+    {
+      "name": "Podgorica",
+      "lon": 19.26361,
+      "lat": 42.44111,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3193044"
+    }
+  ],
+  "us_citizen_notes": "No US-Montenegro income tax treaty; US citizens rely on US foreign tax credits for Montenegrin 15% tax.",
+  "open_questions": [
+    "Residence permit routes for 2026 not verified.",
+    "Surtax rates in Tivat/Budva not checked."
+  ]
+}

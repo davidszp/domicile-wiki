@@ -1,0 +1,395 @@
+{
+  "id": "SWE",
+  "name": "Sweden",
+  "continent": "Europe",
+  "region": "Northern Europe",
+  "currency": "SEK",
+  "researched_on": "2026-10-15",
+  "summary": "Directly held shares: 30% on gains and dividends. Most investors with listed portfolios use an investment savings account (ISK), which replaces income tax with about 1.065% a year on the account value above SEK 300,000 (2026). No wealth tax (since 2007) and no inheritance or gift tax (since 2005). No exit tax, but Swedish share gains stay taxable for ten years after leaving. No special regime for wealthy arrivals.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence, direct holdings",
+      "type": "standard",
+      "description": "Swedish tax resident holding securities directly, taxed on worldwide income at 30% on capital income.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident by permanent stay/domicile, a continuous stay of more than six months, or essential connection after previous residence.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains on listed shares (Swedish or foreign) held directly are taxed at the flat 30% capital income rate. Gains on unlisted shares that are not 'qualified' are 5/6 taxable (effective 25%). Gains on a private home are 22/30 taxable (effective 22%).",
+        "exemptions_thresholds": "No annual exempt amount. Losses on listed securities offset gains in full; excess losses deductible at 70%. Net capital deficit gives a 30% tax reduction up to SEK 100,000 of deficit and 21% above.",
+        "eligibility_conditions": "Applies to Swedish tax residents on worldwide gains.",
+        "important_exceptions": "Qualified shares in closely held companies (fåmansföretag, where the owner or relatives are active) fall under the 3:12 rules, reformed from 1 January 2026: dividends and gains within the limit amount (gränsbelopp) are taxed at 20% and amounts above as employment income. A family member actively working in the family business could pay far more than 25% on part of a sale gain. No exit tax on emigration, but gains on Swedish shares realised within ten years after leaving remain taxable in Sweden (often limited by treaty). Many investors hold listed portfolios in an ISK instead (see the ISK regime).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Kvittning och kvotering (värdepapper)",
+            "url": "https://www.skatteverket.se/privat/skatter/vardepapper/deklareraaktierochovrigavardepapper/kvittningochkvotering.4.7be5268414bea0646945a21.html",
+            "publisher": "Skatteverket",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Sweden - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/sweden/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Räkna ut vinst, förlust och skatt (försäljning av bostad)",
+            "url": "https://www.skatteverket.se/privat/fastigheterochbostad/forsaljningavbostad/raknautvinstforlustochskatt",
+            "publisher": "Skatteverket",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Gain tax on qualified shares under the 2026 3:12 rules (portion taxed as salary, cap) not verified in detail.",
+          "Taxation of gains on foreign real estate not verified (likely the same 22/30 rule for a private dwelling, 90% for commercial)."
+        ],
+        "headline_rate": 0.3,
+        "rates": {
+          "listed_securities_domestic": 0.3,
+          "listed_securities_foreign": 0.3,
+          "private_business_sale": 0.25,
+          "real_estate_local": 0.22,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "30% flat capital income tax (Skatteverket). Private business sale: 30% x 5/6 = 25% for non-qualified unlisted shares (a passive family-office stake); qualified 3:12 shares can be taxed higher. Real estate: private dwelling 30% x 22/30 = 22%.",
+        "professional_trader": "Securities trading by individuals stays in the capital income category; no recharacterisation to business income in normal practice.",
+        "holding_period_rules": "No holding-period relief.",
+        "foreign_assets": "Worldwide taxation with credit for foreign tax."
+      },
+      "dividends": {
+        "summary": "Dividends from listed Swedish and foreign companies are taxed at 30%. Foreign withholding tax is credited against Swedish tax. Dividends on non-qualified unlisted shares are 5/6 taxable (25%).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Sweden - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/sweden/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Kvittning och kvotering (värdepapper)",
+            "url": "https://www.skatteverket.se/privat/skatter/vardepapper/deklareraaktierochovrigavardepapper/kvittningochkvotering.4.7be5268414bea0646945a21.html",
+            "publisher": "Skatteverket",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Swedish withholding tax on dividends",
+            "url": "https://www.skatteverket.se/servicelankar/otherlanguages/inenglishengelska/businessesandemployers/nonestablishedforeignbusinesses/swedishwithholdingtasondividends.4.34a801ea1041d54f9e28000452.html",
+            "publisher": "Skatteverket",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Sweden - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/sweden/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Investeringssparkonto (ISK) - schablonintäkt och fribelopp 2026",
+            "url": "https://www.skatteverket.se/privat/skatter/vardepapper/investeringssparkontoisk.4.5fc8c94513259a4ba1d800037851.html",
+            "publisher": "Skatteverket",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The 25% rate on unlisted non-qualified dividends is general knowledge and was not found on an opened official page."
+        ],
+        "headline_rate": 0.3,
+        "domestic_rate": 0.3,
+        "foreign_gross_rate": 0.3,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "30% capital income rate on dividends from listed shares (no imputation).",
+        "withholding_outbound": "30% kupongskatt on dividends to non-residents, reduced by treaty; EU parent companies can be exempt.",
+        "treaty_network": "Large treaty network (about 80 treaties per common summaries; count not verified). US-Sweden treaty in force.",
+        "holding_company_notes": "No holding structure is modelled for Sweden: a Swedish AB pays 20.6% on gains and dividends from listed portfolio shares (below 10% of votes they are not business-related shares), and paying out to a passive owner costs about 25% more (5/6 of unlisted dividends taxed at 30%), roughly 40% in total, while an ISK (see the 'isk' regime) taxes the same portfolio only through a standardised yield of about 1.065% of its value a year (2026) with no tax on gains, dividends or withdrawals. A Swedish AB holding company receives dividends and gains on business-related shares tax-free (participation exemption, not verified here), but portfolio holdings under 10% of listed companies are taxed at 20.6% in the company. Distributions to the owner then fall under 3:12 if the company is closely held."
+      },
+      "wealth_tax": {
+        "summary": "No wealth tax. Sweden abolished its net wealth tax from 1 January 2007. (Investors who choose an ISK pay an annual standardised tax on account value instead; see the ISK regime.)",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Sweden - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/sweden/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Municipal property fee (kommunal fastighetsavgift) on homes: max SEK 9,287 or 0.75% of the taxable value, whichever is lower (PwC wording; 2026 cap not separately verified). Not levied on foreign property."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax (abolished from 2005). Heirs take over the deceased's cost basis, so latent gains are taxed when the children sell.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Sweden - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/sweden/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "important_exceptions": "Carry-over of cost basis means the 30% gain tax is deferred, not forgiven.",
+        "open_questions": [
+          "Carry-over of cost basis (kontinuitet) on inheritance stated from general knowledge; not verified on an opened official page."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "None.",
+        "gifts_same_as_inheritance": true,
+        "foreign_assets": "No tax on any assets.",
+        "domicile_rules": "Not applicable."
+      }
+    },
+    {
+      "id": "isk",
+      "name": "Investment savings account (ISK)",
+      "type": "special",
+      "description": "Not a residence regime but a statutory account wrapper open to any Swedish resident. Listed securities held in an ISK are taxed only through an annual standardised yield tax on account value; gains and dividends inside are untaxed.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any individual tax resident in Sweden can open an ISK at a Swedish bank/broker (or EEA institution). Only listed securities, fund units and cash; no holdings of 10% or more.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Inside an investment savings account (ISK) there is no tax on gains or dividends; instead the account is taxed on a standardised yield (see wealth_tax). Gains on assets outside the ISK follow the standard rules.",
+        "exemptions_thresholds": "No annual exempt amount. Losses on listed securities offset gains in full; excess losses deductible at 70%. Net capital deficit gives a 30% tax reduction up to SEK 100,000 of deficit and 21% above.",
+        "eligibility_conditions": "Applies to Swedish tax residents on worldwide gains.",
+        "important_exceptions": "Only permitted assets: instruments listed on a regulated market anywhere in the world, or traded on an MTF within the EEA; fund units; cash. Holdings of 10% or more of a company and qualified shares are not allowed. Moving existing directly held shares into an ISK is treated as a disposal at market value.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Investeringssparkonto (ISK)",
+            "url": "https://www.skatteverket.se/privat/skatter/vardepapper/investeringssparkontoisk.4.5fc8c94513259a4ba1d800037851.html",
+            "publisher": "Skatteverket",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Treatment of transfers of existing holdings into an ISK (deemed disposal) stated from general knowledge."
+        ],
+        "headline_rate": 0.3,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.25,
+          "real_estate_local": 0.22,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "0% on gains realised inside the ISK. Private business and real estate cannot be held in an ISK, so their rates are the standard ones (25% non-qualified unlisted shares; 22% private home).",
+        "professional_trader": "Securities trading by individuals stays in the capital income category; no recharacterisation to business income in normal practice.",
+        "holding_period_rules": "No holding-period relief.",
+        "foreign_assets": "Worldwide taxation with credit for foreign tax."
+      },
+      "dividends": {
+        "summary": "Dividends received inside an ISK are not taxed as income; foreign withholding tax can be credited against the ISK standardised tax (Skatteverket calculates the credit automatically). Withholding above the ISK tax is a cost.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Investeringssparkonto (ISK)",
+            "url": "https://www.skatteverket.se/privat/skatter/vardepapper/investeringssparkontoisk.4.5fc8c94513259a4ba1d800037851.html",
+            "publisher": "Skatteverket",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Exact limit of the foreign tax credit against ISK tax not detailed on the Skatteverket page."
+        ],
+        "headline_rate": 0.3,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "No income tax on dividends inside an ISK; the account is taxed by the standardised yield instead.",
+        "withholding_outbound": "30% kupongskatt on dividends to non-residents, reduced by treaty; EU parent companies can be exempt.",
+        "treaty_network": "Large treaty network (about 80 treaties per common summaries; count not verified). US-Sweden treaty in force.",
+        "holding_company_notes": "No holding structure is modelled for Sweden: a Swedish AB pays 20.6% on gains and dividends from listed portfolio shares (below 10% of votes they are not business-related shares), and paying out to a passive owner costs about 25% more (5/6 of unlisted dividends taxed at 30%), roughly 40% in total, while an ISK (see the 'isk' regime) taxes the same portfolio only through a standardised yield of about 1.065% of its value a year (2026) with no tax on gains, dividends or withdrawals. A Swedish AB holding company receives dividends and gains on business-related shares tax-free (participation exemption, not verified here), but portfolio holdings under 10% of listed companies are taxed at 20.6% in the company. Distributions to the owner then fall under 3:12 if the company is closely held."
+      },
+      "wealth_tax": {
+        "summary": "ISK standardised tax (schablonskatt) for 2026: the capital base above SEK 300,000 (combined across all ISKs, endowment insurance and PEPP) is deemed to yield 3.55% (government bond rate on 30 November 2025 of 2.55% + 1 point, floor 1.25%), taxed at 30%, i.e. 1.065% of the capital base per year, regardless of actual return.",
+        "exemptions_thresholds": "Tax-free basic level SEK 300,000 per person from 1 January 2026 (SEK 150,000 in 2025). Capital base = average of the four quarter-start values plus all deposits during the year.",
+        "important_exceptions": "Behaves economically like a 1.065% wealth tax on the listed portfolio held in the account, with no tax on returns. The rate moves each year with the government bond rate (forecast about 1.2% for 2027 based on the September 2026 rate; not official).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Investeringssparkonto (ISK)",
+            "url": "https://www.skatteverket.se/privat/skatter/vardepapper/investeringssparkontoisk.4.5fc8c94513259a4ba1d800037851.html",
+            "publisher": "Skatteverket",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Whether a new government after the September 2026 election will change the ISK rules for 2027 is unknown."
+        ],
+        "type": "limited",
+        "components": [
+          {
+            "name": "ISK standardised income tax (schablonintäkt x 30%)",
+            "base": "securities_accounts",
+            "exempt_amount": 300000,
+            "entry_threshold": 0,
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.01065
+              }
+            ],
+            "notes": "Per person; each spouse has their own SEK 300,000 allowance. Rate for income year 2026."
+          }
+        ],
+        "property_tax_note": "Municipal property fee (kommunal fastighetsavgift) on homes: max SEK 9,287 or 0.75% of the taxable value, whichever is lower (PwC wording; 2026 cap not separately verified). Not levied on foreign property."
+      },
+      "sources": [
+        {
+          "title": "Investeringssparkonto (ISK)",
+          "url": "https://www.skatteverket.se/privat/skatter/vardepapper/investeringssparkontoisk.4.5fc8c94513259a4ba1d800037851.html",
+          "publisher": "Skatteverket",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "duration_note": "ISK is a permanent statutory account type (Inkomstskattelagen 1999:1229, chapter 42 rules on the standardised yield (schablonintäkt)): there is no time limit, and it applies for as long as the holder keeps the account. The yield parameters (government borrowing rate plus 1 point, and the tax-free allowance) are set each year, so the effective annual charge changes."
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if domiciled (permanent stay) in Sweden, staying continuously more than six months, or having an essential connection after earlier residence. Swedish citizens and foreigners with ten years of residence remain resident after leaving until they prove all important ties are broken; after five years the burden of proof shifts to the tax agency. A proposal to define permanent stay as more than 160 days in a calendar year (or 120 days in two consecutive years) is not yet law.",
+    "routes": [
+      {
+        "name": "EU free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "EU citizens with sufficient means and health insurance have a right of residence; registration with Skatteverket for a personal number. Not verified in this research."
+      },
+      {
+        "name": "Permits for non-EU nationals",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Sweden has no investor visa; non-EU nationals need a permit based on work, own business, family ties or study (Migrationsverket). Not verified in this research."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sweden - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/sweden/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.206,
+    "summary": "20.6% flat corporate income tax; no local corporate taxes. 30% WHT on dividends to non-residents, reduced by treaty or EU directive.",
+    "sources": [
+      {
+        "title": "Sweden - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/sweden/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Swedish withholding tax on dividends",
+        "url": "https://www.skatteverket.se/servicelankar/otherlanguages/inenglishengelska/businessesandemployers/nonestablishedforeignbusinesses/swedishwithholdingtasondividends.4.34a801ea1041d54f9e28000452.html",
+        "publisher": "Skatteverket",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Stockholm",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 191500,
+        "currency": "SEK"
+      },
+      "year": 2026,
+      "description": "Stockholm International School, Grades 11-12 (IB Diploma) annual tuition 2026-27, from the school's own fee page. Excludes the one-off SEK 60,000 enrolment fee and SEK 3,000 application fee. The listed tuition assumes the municipality pays school funding (skolpeng); a pupil who does not qualify pays the full amount on top.",
+      "source": {
+        "title": "Stockholm International School - School fees",
+        "url": "https://stockholmis.se/admissions/school-fees/",
+        "publisher": "Stockholm International School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Health insurance, housekeeper and price per m² not sourced. Stockholm's rental market for large villas is thin; most are owner-occupied.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 55000,
+        "currency": "SEK"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 5 whole-house lettings with 6+ rooms (about 4-5 bedrooms; Swedish room counts include the living room) in Danderyd (Djursholm, Stocksund, Nora) and Lidingö, the prime family suburbs, listed on Qasa on 2026-10-15 (SEK 33,000-59,000; one duplicate listing removed). Across Stockholm, Danderyd, Lidingö, Nacka and Solna the 29 such houses had a median of about SEK 33,300. Small sample.",
+      "source": {
+        "title": "Qasa - houses for rent, Stockholm area",
+        "url": "https://qasa.com/se/en/find-home?homeTypes=house&minRoomCount=5&searchAreas=Stockholm%7E%7Ese",
+        "publisher": "Qasa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "Stockholm",
+      "lon": 18.06871,
+      "lat": 59.32938,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2673730"
+    }
+  ],
+  "us_citizen_notes": "An ISK is a non-US investment account: holding non-US funds in it creates PFIC exposure, and the US does not recognise the ISK wrapper, so US citizens owe US tax on actual gains and dividends while Sweden taxes the standardised yield (credit mismatch). US citizens usually hold individual shares directly.",
+  "open_questions": [
+    "2027 budget and post-election government changes to ISK and capital taxation not found.",
+    "3:12 reform (from 2026) effect on sale gains of qualified shares not detailed.",
+    "Migration routes not verified from Migrationsverket."
+  ]
+}

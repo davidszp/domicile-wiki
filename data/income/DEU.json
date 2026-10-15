@@ -1,0 +1,232 @@
+{
+  "id": "DEU",
+  "name": "Germany",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Germany taxes worldwide income of residents on a progressive scale: 0% up to the EUR 12,348 basic allowance (2026), rising from 14% to 42% by EUR 69,878, 42% from EUR 69,879 and 45% from EUR 277,826. A solidarity surcharge of 5.5% of the tax applies in full from roughly EUR 105,500 taxable income single, so the top marginal rates are about 44.3% and 47.5%. Berlin levies no municipal income tax. Employees pay about 21.75% in social contributions (childless, average health fund), mostly capped; freelancers outside the statutory scheme pay no pension contributions but must carry health and long-term care insurance. Freelancers (Freiberufler) are also exempt from trade tax.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.0
+      },
+      {
+        "from_amount": 12349,
+        "rate": 0.1643
+      },
+      {
+        "from_amount": 15000,
+        "rate": 0.2141
+      },
+      {
+        "from_amount": 17800,
+        "rate": 0.2504
+      },
+      {
+        "from_amount": 24000,
+        "rate": 0.2716
+      },
+      {
+        "from_amount": 30000,
+        "rate": 0.2923
+      },
+      {
+        "from_amount": 36000,
+        "rate": 0.3131
+      },
+      {
+        "from_amount": 42000,
+        "rate": 0.3339
+      },
+      {
+        "from_amount": 48000,
+        "rate": 0.3546
+      },
+      {
+        "from_amount": 54000,
+        "rate": 0.3754
+      },
+      {
+        "from_amount": 60000,
+        "rate": 0.3945
+      },
+      {
+        "from_amount": 65000,
+        "rate": 0.4116
+      },
+      {
+        "from_amount": 69879,
+        "rate": 0.42
+      },
+      {
+        "from_amount": 105500,
+        "rate": 0.4431
+      },
+      {
+        "from_amount": 277826,
+        "rate": 0.47475
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.2175,
+    "employee_social_security_cap": 101400,
+    "self_employed_social_security_rate": 0.211,
+    "self_employed_social_security_cap": 69750,
+    "self_employed_notes": "No mandatory pension or unemployment insurance for most self-employed people (PwC), but health and long-term care insurance are compulsory for every resident (statutory or private). Modelled as voluntary statutory insurance without sick pay: 14.0% reduced health rate + 2.9% average additional contribution + 4.2% long-term care (childless, 23+) = 21.1% of income up to the 2026 ceiling of EUR 69,750 (krankenkassen.de Rechengrößen 2026). Private insurance can be cheaper for young, healthy people. PwC: self-employed people generally pay no mandatory social security contributions; private (or voluntary statutory) health and long-term care insurance is required for the residence permit and its premium is not included in the 0% rate. Freelancers (independent professions) are generally also outside trade tax (general knowledge; PwC page does not address it). Church tax (8-9% of income tax) not included.",
+    "local_tax_note": "Brackets: 0% band up to the EUR 12,348 allowance (EUR 24,696 joint); the two progression zones follow the statutory formula in section 32a(1) EStG for 2026 (zone 2, EUR 12,349-17,799: (914.51 y + 1,400) y with y = (income - 12,348)/10,000; zone 3, EUR 17,800-69,878: (173.10 z + 2,397) z + 1,034.87 with z = (income - 17,799)/10,000; then 0.42 x - 11,135.63). The marginal rate is linear within each zone (14% rising to 23.97%, then 23.97% rising to 42%); it is shown as 11 steps, each the exact average marginal rate over the step, so the tax at every step boundary equals the statutory tax to the euro. Solidarity surcharge: nil if tax is up to EUR 19,950 (about EUR 73,463 taxable); sliding scale up to about EUR 105,500; full 5.5% above (folded into the last two brackets: 42% x 1.055 = 44.31%, 45% x 1.055 = 47.475%). No municipal income tax in Berlin. Employee 21.75% = pension 9.3 + unemployment 1.3 (ceiling EUR 101,400) + health 7.3 + average additional contribution 1.45 + long-term care 1.8 + childless supplement 0.6 (ceiling EUR 69,750 for health/care).",
+    "sources": [
+      {
+        "title": "Germany - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/germany/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Germany - Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/germany/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Steuertarif 2026 (Grundfreibetrag 12.348 EUR, 42% ab 69.879 EUR, 45% ab 277.826 EUR)",
+        "url": "https://www.steuerberater-berlin-schuermann.de/steuernews_mandanten/dezember_2025/steuertarif_2026/",
+        "publisher": "Steuerberater Berlin Schürmann",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Section 32a EStG (Einkommensteuertarif, from VZ 2026)",
+        "url": "https://www.gesetze-im-internet.de/estg/__32a.html",
+        "publisher": "Bundesministerium der Justiz / Bundesamt fuer Justiz",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Germany - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/germany/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Rechengrößen der Sozialversicherung 2026",
+        "url": "https://www.krankenkassen.de/gesetzliche-krankenkassen/system-gesetzliche-krankenversicherung/sozialversicherung-rechengroessen-beitragsbemessungsgrenze-versicherungspflichtgrenze/rechengroessen-2026/",
+        "publisher": "krankenkassen.de",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "PwC page still shows 2025 tables; the 2026 allowance and zone limits are now confirmed from section 32a EStG itself.",
+      "Solidarity surcharge: the 19,950 / 105,500 thresholds are PwC's 2025 figures; 2026 thresholds not verified and the sliding-scale zone (about 73,463-105,500) is not modelled, so the true marginal rate there is higher than 42%.",
+      "Self-employed health and long-term care insurance premium level not verified from an opened source.",
+      "Self-employed: private health insurance (PKV) premiums depend on age and health and can be well below the statutory 21.1%; the statutory figure is used."
+    ],
+    "social_security_deductible": 0.94,
+    "employment_deduction": {
+      "schedule": [
+        {
+          "from_amount": 0,
+          "rate": 0
+        }
+      ],
+      "base": 0,
+      "minimum": 1230,
+      "maximum": null,
+      "note": "Employee's allowance (Arbeitnehmer-Pauschbetrag) of EUR 1,230 a year.",
+      "source": {
+        "title": "PwC Worldwide Tax Summaries - Germany - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/germany/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "regimes": [
+    {
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_note": "Granted for a limited period and extendable while the activity stays viable; no maximum stated on the opened page.",
+      "flat_rate": null,
+      "exempt_share": null,
+      "open_questions": [
+        "Official make-it-in-germany.com page could not be opened (bot check); requirements come from a secondary guide.",
+        "No minimum income figure found; over-45 pension-provision rule seen only on a third-party site."
+      ],
+      "id": "freelance_residence_permit",
+      "name": "Residence permit for freelance work (Freiberufler)",
+      "kind": "other",
+      "description": "No dedicated digital nomad visa exists. Non-EU freelancers apply to the local Ausländerbehörde for a residence permit for freelance employment; approval depends on a viable freelance plan, proof of client demand (contracts or letters of intent), financing of living costs, accepted health insurance and any professional licence. Tax treatment is ordinary resident taxation.",
+      "treatment": "standard",
+      "social_security_applies": false,
+      "duration_years": null,
+      "sources": [
+        {
+          "title": "Freelancer visa Germany",
+          "url": "https://taxfix.de/en/freelancer-visa-germany/",
+          "publisher": "Taxfix",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    }
+  ],
+  "costs": {
+    "city": "Berlin",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1320.8,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Numbeo average monthly rent for a 1-bedroom city-centre apartment, Berlin; crowd-sourced, 1994 entries from 316 contributors in the past 12 months, last updated 15 October 2026. Unfurnished/furnished not distinguished. Numbeo gives only 1-bedroom and 3-bedroom figures, so no 2-bedroom value is recorded.",
+      "source": {
+        "title": "Cost of living in Berlin (rent prices)",
+        "url": "https://www.numbeo.com/cost-of-living/in/Berlin",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1450,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Investropa 2026 citywide average net cold (Nettokaltmiete, before utilities) for a 2-bedroom apartment in Berlin, assuming 75-90 m2; typical range EUR 1,250-1,650. Furnished status not stated (the page says furnished flats carry a EUR 200-500 premium). Benchmark estimate, not an official statistic.",
+      "source": {
+        "title": "Berlin rents",
+        "url": "https://investropa.com/blogs/news/berlin-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Official asking-rent data (Berlin Hyp/CBRE Wohnmarktreport 2026, reported by Berliner Zeitung) gives only a citywide EUR 15.80 per m2 average and EUR 20.01 per m2 in Mitte, with no size breakdown, so it was not converted into a 2-bedroom rent. Check pass 2026-10-15: miet-check.de (asking rents, not an official Mietspiegel) shows EUR 14.47 per m2 for 2-room flats in 2026 but with no sample size, contradicting its own headline of 15.89, and gives no monthly 2-room rent; ImmoScout24, Immowelt and Pararius-type sources were blocked. No usable 2-bedroom rent, left null."
+  },
+  "residence_routes": "EU citizens (and EEA/Swiss) have free movement and need only to register their address. US and other non-EU remote workers have no nomad visa: self-employed professionals can apply for the freelance residence permit (Freiberufler) at the local Ausländerbehörde, which requires proof of client demand, financing and accepted health insurance. Skilled employees with a German employer typically use a skilled-worker permit or EU Blue Card (thresholds not verified in this file).",
+  "open_questions": [
+    "No second-bedroom (2-bed) rent source found for Berlin (second search pass also failed).",
+    "EU Blue Card and skilled-worker salary thresholds not verified."
+  ]
+}

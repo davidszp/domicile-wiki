@@ -1,0 +1,372 @@
+{
+  "id": "PRT",
+  "name": "Portugal",
+  "continent": "Europe",
+  "region": "Southern Europe (Iberia), EU member",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "Residents pay a flat 28% on capital gains and dividends (35% if from blacklisted jurisdictions); since 2024, 10%/20%/30% of gains on listed securities and fund units held 2/5/8+ years is excluded (effective 19.6% after 8 years). Children, spouse and parents are exempt from the 10% stamp duty on inheritances and gifts; only a 0.8% stamp duty on gifts of Portuguese real estate remains. No general wealth tax, but AIMI (from 0.7%) on Portuguese real estate above EUR 600,000 per person. The IFICI regime ('NHR 2.0') exempts most foreign income but only for people working in qualifying high-value activities: it does not help a purely passive investor, and the old NHR is closed to new arrivals.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Worldwide taxation. Investment income and gains taxed at special flat rates (28%), with an option to aggregate at progressive rates (12.5%-48% plus 2.5%/5% solidarity surcharge above EUR 80,000/250,000).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "More than 183 days in Portugal in any 12-month period starting or ending in the year, or a habitual residence in Portugal intended as the primary home.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Flat 28% on gains from shares and other securities. Since 2024, gains on listed securities and fund units are partly excluded: 10% if held 2-5 years, 20% if 5-8 years, 30% if 8 years or more. Securities held under 365 days must be aggregated at progressive rates if taxable income (including them) is at least EUR 86,634. Only 50% of gains on unlisted micro/small company shares is taxed. 35% for blacklisted jurisdictions. Real estate: 50% of the gain added to income at progressive rates (up to 48% plus solidarity surcharge); main-home reinvestment relief.",
+        "exemptions_thresholds": "Holding-period exclusions 10%/20%/30% for listed securities and fund units. 50% inclusion for real estate gains and for unlisted micro/small company shares.",
+        "important_exceptions": "Decree-Law 97/2026: gains on residential property sold 2026-2029 exempt if reinvested in Portuguese residential letting at rents up to EUR 2,300/month (conditions).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Portugal - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/portugal/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Portugal - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/portugal/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Exact scope of the holding-period exclusion (whether it applies to all listed securities including foreign-listed shares, and its start date) only from PwC's brief mention; statute (CIRS art. 43) not opened."
+        ],
+        "headline_rate": 0.28,
+        "rates": {
+          "listed_securities_domestic": 0.196,
+          "listed_securities_foreign": 0.196,
+          "private_business_sale": 0.28,
+          "real_estate_local": 0.265,
+          "real_estate_foreign": 0.265
+        },
+        "rate_basis": "Listed securities held 8+ years: 28% x 70% = 19.6%. Private company (not micro/small): 28%. Real estate: 50% inclusion x (48% + 5% solidarity surcharge) = 26.5%.",
+        "professional_trader": "Gains are category G income at 28% regardless of frequency; short-term (<365 days) gains are aggregated at progressive rates for high earners. Professional activity could be category B (business) income.",
+        "holding_period_rules": "<365 days: compulsory aggregation for high earners. 2/5/8 years: 10/20/30% exclusion on listed securities.",
+        "foreign_assets": "Worldwide gains taxed; credit for foreign tax."
+      },
+      "dividends": {
+        "summary": "Flat 28% on dividends (domestic and foreign), or optional aggregation at progressive rates. 35% on investment income from blacklisted jurisdictions. Foreign tax is credited up to the lower of foreign tax, Portuguese tax and the treaty rate.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Portugal - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/portugal/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Código do IRC - artigo 6.º (Transparência fiscal)",
+            "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc6.aspx",
+            "publisher": "Autoridade Tributária e Aduaneira",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.28,
+        "domestic_rate": 0.28,
+        "foreign_gross_rate": 0.28,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Flat 28% special rate.",
+        "withholding_outbound": "28% on dividends to non-residents (treaty reductions; Parent-Subsidiary exemption). Not verified in a source opened.",
+        "treaty_network": "About 80 treaties including the US (count not verified).",
+        "holding_company_notes": "No holding structure is scored for Portugal: a company that only manages securities or other assets and is majority-owned by one family (or has five or fewer shareholders) is a 'sociedade de simples administração de bens' and is tax-transparent under art. 6 CIRC, so its profit is attributed to the shareholders and taxed as their own income each year; it cannot defer tax, and the participation exemption needs at least a 10% stake."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax. AIMI (adicional ao IMI) is an annual levy on the total tax-registered value of Portuguese residential/urban land held by an individual: 0.7% above a EUR 600,000 allowance (1% and 1.5% on higher tiers). Foreign assets and financial assets are not taxed.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Portugal - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/portugal/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Portugal - Corporate - Other taxes (IMI, AIMI, IMT, stamp tax)",
+            "url": "https://taxsummaries.pwc.com/portugal/corporate/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PwC confirms only the 0.7% individual AIMI rate; the EUR 600,000 allowance (doubled for jointly taxed couples) and the 1% (over EUR 1M) / 1.5% (over EUR 2M) tiers are from general knowledge (CIMI art. 135-A ff.)."
+        ],
+        "type": "limited",
+        "components": [
+          {
+            "name": "AIMI (additional property tax)",
+            "base": "real_estate_local",
+            "exempt_amount": 600000,
+            "entry_threshold": 0,
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.007
+              },
+              {
+                "from_amount": 1000000,
+                "rate": 0.01
+              },
+              {
+                "from_amount": 2000000,
+                "rate": 0.015
+              }
+            ],
+            "notes": "Base: tax-registered (VPT) value of urban residential property and building land; commercial/services property excluded. Allowance EUR 600,000 per person (EUR 1.2M jointly). Tiers above 0.7% unverified."
+          }
+        ],
+        "property_tax_note": "IMI municipal property tax 0.3%-0.45% of registered value (urban). IMT transfer tax up to 7.5% (residential) plus 0.8% stamp duty on purchases."
+      },
+      "inheritance": {
+        "summary": "No inheritance tax as such; free transfers (inheritances and gifts) bear 10% stamp duty (verba 1.2 Tabela Geral), but spouses/de facto partners, descendants and ascendants are exempt (Stamp Duty Code art. 6(1)(e)). Gifts of Portuguese real estate still bear 0.8% stamp duty (verba 1.1). Only assets located in Portugal are in scope.",
+        "exemptions_thresholds": "Children fully exempt from the 10% charge.",
+        "important_exceptions": "Gifts of cash to children should be documented/declared to keep the exemption (not verified).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Código do Imposto do Selo, artigo 6.º (isenções subjectivas)",
+            "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/selo/Pages/selo6.aspx",
+            "publisher": "Autoridade Tributária e Aduaneira",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tabela Geral do Imposto do Selo",
+            "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/selo/Pages/ccod-selo-tabgiselo.aspx",
+            "publisher": "Autoridade Tributária e Aduaneira",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Portugal - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/portugal/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Territorial scope (only Portuguese-situs assets) from general knowledge of CIS art. 4; not read in this research."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "exempt_with_conditions",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Children exempt from the 10% stamp duty on gifts; 0.8% stamp duty on gifts of Portuguese real estate.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Not needed for children.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Foreign assets outside the scope of Portuguese stamp duty.",
+        "domicile_rules": "Situs-based; residence of deceased not decisive."
+      }
+    },
+    {
+      "id": "ifici",
+      "name": "IFICI ('NHR 2.0', scientific research and innovation incentive)",
+      "type": "special",
+      "description": "10-year regime: 20% flat rate on Portuguese employment/business income from eligible high-value activities, and exemption of most foreign-source income (including dividends, interest and capital gains) except pensions and income from blacklisted jurisdictions. Requires carrying out an eligible activity in an eligible entity: a purely passive investor or family-office principal without such a role does not qualify. The old NHR is closed to people becoming resident after 2024.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Become Portuguese tax resident; not resident in the previous 5 years; never benefited from NHR; carry out an eligible activity (e.g. qualified roles in startups, R&D, certain industrial/export companies, university teaching) in an eligible entity. Apply by 15 January of the year after becoming resident.",
+      "duration_years": 10,
+      "capital_gains": {
+        "summary": "Foreign-source capital gains generally exempt (except from blacklisted jurisdictions) for qualifying individuals; Portuguese gains as standard.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Portugal - Individual - Other tax credits and incentives (IFICI, NHR)",
+            "url": "https://taxsummaries.pwc.com/portugal/individual/other-tax-credits-and-incentives",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PwC says 'foreign-sourced income is generally exempt'; whether gains on foreign securities are within the exemption (old NHR taxed them at 28%) needs statute check (EBF art. 58-A)."
+        ],
+        "headline_rate": 0.28,
+        "rates": {
+          "listed_securities_domestic": 0.196,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.265,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Foreign gains exempt (assumed); private_business_sale 0 assumes a foreign company. Portuguese assets as standard."
+      },
+      "dividends": {
+        "summary": "Foreign dividends generally exempt for IFICI beneficiaries (blacklisted sources excluded). Portuguese dividends 28%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Portugal - Individual - Other tax credits and incentives (IFICI, NHR)",
+            "url": "https://taxsummaries.pwc.com/portugal/individual/other-tax-credits-and-incentives",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.28,
+        "domestic_rate": 0.28,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Exemption (possibly with progression) for foreign dividends."
+      },
+      "sources": [
+        {
+          "title": "Portugal - Individual - Other tax credits and incentives",
+          "url": "https://taxsummaries.pwc.com/portugal/individual/other-tax-credits-and-incentives",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "requires_qualifying_activity": true
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if more than 183 days (not necessarily consecutive) in Portugal in any 12-month period starting or ending in the year, or if holding a habitual residence in Portugal on any day of that period with the intention to keep it as primary home. Residence starts from the first day of stay (split year).",
+    "routes": [
+      {
+        "name": "EU free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Registration certificate after 3 months."
+      },
+      {
+        "name": "D7 passive income visa",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Regular passive income and accommodation in Portugal; thresholds not verified."
+      },
+      {
+        "name": "Golden Visa (ARI)",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Investment-based permit; real estate routes removed in 2023; remaining routes (e.g. investment fund units, research, culture donations, job creation) and amounts not verified in this research."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Portugal - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/portugal/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.19,
+    "summary": "Standard IRC rate 19% on mainland Portugal for 2026 (PwC), plus municipal surcharge (up to 1.5%) and state surcharge (3% to 9% on profits above EUR 1.5M). The rate has been cut annually since 2024.",
+    "sources": [
+      {
+        "title": "Portugal - Corporate - Other taxes",
+        "url": "https://taxsummaries.pwc.com/portugal/corporate/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Portugal - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/portugal/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Lisbon (Cascais/Estoril)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 6500,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 75 T4 and T5 houses (moradias) listed for rent in Cascais municipality on Imovirtual on 2026-10-15 (51 T5, 24 T4; interquartile range EUR 3,750-10,000; range EUR 1,500-22,000). Asking rents.",
+      "source": {
+        "title": "Moradias T4/T5 para arrendar em Cascais",
+        "url": "https://www.imovirtual.com/pt/resultados/arrendar/moradia/lisboa/cascais?roomsNumber=%5BFOUR%2CFIVE%5D&limit=72",
+        "publisher": "Imovirtual",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 23532,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Carlucci American International School of Lisbon (CAISL, Linhó, Sintra, near Cascais), Grades 9-12 annual tuition 2026-27. Extra: EUR 600 one-time registration fee and EUR 1,953 annual building fee for the first five years.",
+      "source": {
+        "title": "CAISL 2026-2027 Schedule of Required Fees",
+        "url": "https://www.caislisbon.org/fs/resource-manager/view/669fa5f0-f4a0-4e4f-abba-acfafcc02f1e",
+        "publisher": "Carlucci American International School of Lisbon",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent from a listing-portal sample (asking rents). St. Julian's School (Carcavelos) publishes its 2026/27 fees only as images, not read. Purchase price, health insurance and housekeeper costs not sourced."
+  },
+  "markers": [
+    {
+      "name": "Lisbon",
+      "lon": -9.13333,
+      "lat": 38.71667,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2267057"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain US-taxed; Portuguese 28% is creditable. The US-Portugal treaty has a saving clause. US ETFs held by a Portuguese resident are taxed normally in Portugal; Portuguese/EU funds are PFICs for US purposes.",
+  "open_questions": [
+    "IFICI treatment of foreign capital gains on securities not confirmed in the statute.",
+    "AIMI tiers above 0.7% and the EUR 600,000 allowance not confirmed in an opened source.",
+    "Corporate tax rate, outbound WHT, treaty count and visa thresholds not verified.",
+    "Purchase price per m2, family health insurance and housekeeper costs not sourced."
+  ]
+}

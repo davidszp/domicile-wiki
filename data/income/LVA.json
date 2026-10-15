@@ -1,0 +1,150 @@
+{
+  "id": "LVA",
+  "name": "Latvia",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Progressive resident income tax: 25.5% up to EUR 105,300 of annual income, 33% above, and an additional 3% on the part above EUR 200,000 (first applied in 2026 for 2025 income), recorded as 36%. Fixed personal allowance EUR 550 a month (EUR 6,600 a year, PwC deductions page), applied regardless of income; dependant allowance EUR 250 a month not modelled. Employee state social insurance contributions (NSIC) 10.50% (9.25% for those eligible for retirement), income capped at EUR 105,300; minimum wage EUR 780 a month in 2026.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.255
+      },
+      {
+        "from_amount": 105300,
+        "rate": 0.33
+      },
+      {
+        "from_amount": 200000,
+        "rate": 0.36
+      }
+    ],
+    "personal_allowance": 6600,
+    "employee_social_security_rate": 0.105,
+    "employee_social_security_cap": 105300,
+    "self_employed_social_security_rate": 0.3107,
+    "self_employed_social_security_cap": 105300,
+    "self_employed_notes": "Self-employed NSIC 31.07% (29.36% if eligible for retirement) on income up to EUR 105,300, with minimum contributions based on the EUR 780 monthly minimum wage. Sole traders may apply for micro-enterprise tax status (details in the PwC corporate summary, not opened) and apply the fixed personal allowance to PIT-subject income. Self-employed persons with income below three minimum monthly wages a quarter can opt to pay 10% NSIC on actual income (PwC). Employee social_security_deductible: Rests on a secondary guide (no VID or statute page opened); medium confidence.",
+    "social_security_deductible": 1,
+    "local_tax_note": "No local income tax stated.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Latvia, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/latvia/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Latvia, other taxes",
+        "url": "https://taxsummaries.pwc.com/latvia/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Latvia, deductions",
+        "url": "https://taxsummaries.pwc.com/latvia/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Country Tax Calc: Latvia tax guide 2026",
+        "url": "https://www.countrytaxcalc.com/tax-guides/latvia-income-tax-guide-2026/",
+        "publisher": "CountryTaxCalc",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Micro-enterprise tax terms not read.",
+      "Whether the EUR 6,600 fixed allowance applies to self-employed income in the same way as to wages was not checked beyond PwC's statement that it applies regardless of income level."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "lva_remote_visa",
+      "name": "Long-term visa for remote work (digital nomad visa)",
+      "kind": "digital_nomad_visa",
+      "description": "One-year long-term visa for third-country nationals employed by or self-employed in an OECD member state and able to work remotely from Latvia. Income at least the average gross monthly wage times 2.5 (EUR 3,192.50 per the PMLP page), employees with six months at the same employer, self-employed with six months of income documented. Health insurance valid in Latvia and Schengen with at least EUR 42,600 cover. No right to work for Latvian employers. No special tax regime: a stay over 183 days in a year creates tax residence and standard rates apply.",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 38310,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_years": 1,
+      "duration_note": "One year; renewal not stated.",
+      "treatment": "standard",
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Getting a long-term visa for remote work (PMLP)",
+          "url": "https://www.pmlp.gov.lv/en/getting-long-term-visa-remote-work",
+          "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Another PMLP-linked page reportedly showed EUR 4,213 (a search snippet, not opened); the PMLP page opened 2026-10-15 still shows EUR 3,192.50 (2.5x average wage); the new Immigration Law (15 Sep 2026) may change the rules.",
+        "Renewal not stated on the PMLP page; social-security treatment not stated."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Riga",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 720,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average monthly rent for a 45-55 m2 1-bedroom, excluding utilities (typical EUR 550-950); Investropa estimate adjusted for central, renovated and older stock; sources Arco Real Estate, Latvijas Avize; June 2026.",
+      "source": {
+        "title": "Riga rents 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/riga-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1020,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average monthly rent for a 65-80 m2 2-bedroom, excluding utilities (typical EUR 800-1,350); Investropa estimate, June 2026.",
+      "source": {
+        "title": "Riga rents 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/riga-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Publisher's estimates, not an official dataset."
+  },
+  "residence_routes": "EU citizens may live and work freely. US and other non-EU remote workers can use the one-year remote work visa; skilled employees need a work-based residence permit with a Latvian employer (not researched).",
+  "open_questions": [
+    "Current threshold after the new Immigration Law of 15 Sep 2026.",
+    "Micro-enterprise tax details."
+  ]
+}

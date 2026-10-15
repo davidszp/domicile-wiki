@@ -1,0 +1,255 @@
+{
+  "id": "BIH",
+  "name": "Bosnia and Herzegovina",
+  "continent": "Europe",
+  "region": "Southern Europe (Western Balkans)",
+  "currency": "BAM",
+  "researched_on": "2026-10-15",
+  "summary": "Personal taxes in Bosnia and Herzegovina are set by the two entities and Brčko District, not the state. The standard figures here are for the Federation of BiH (Sarajevo): flat 10% income tax; dividends are not income (Law on Income Tax Art. 5); gains on shares and securities are not a taxable category; real estate gains taxed at 10% only if sold within three years. Republika Srpska taxes capital income and capital gains at 13% (dividends to individuals reportedly exempt). No wealth tax. Inheritance and gift tax is cantonal in the Federation; Sarajevo Canton (8% inheritance, 10% gifts) and Zenica-Doboj both exempt children. Federation rules read from the statutes; Brčko not verified.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence (Federation of BiH)",
+      "type": "standard",
+      "description": "Ordinary residence in the Federation of BiH; residents taxed on worldwide income at a flat 10% under the FBiH Law on Income Tax (last amended Sl. novine FBiH 65/2013).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident of the Federation (residence test not verified in this pass). Foreigners need a BiH residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "status": "researched",
+        "summary": "Federation of BiH (Sarajevo): the Law on Income Tax (Arts. 4, 20–22) has no category for gains on shares or other securities, so they are not taxed: property income covers only rentals and disposals of real estate (Art. 20), property-rights income covers IP and similar rights (Art. 21), and capital-investment income covers only interest on loans and certain insurance payouts (Art. 22). Gains on real estate are taxed at the flat 10% rate (Art. 9) on the PPI-indexed gain, but are not taxed if the property was the taxpayer's home or is sold more than three years after acquisition (Art. 20(9)). Republika Srpska is different (13% on capital gains).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zakon o porezu na dohodak FBiH (Sl. novine FBiH 10/08 ... 65/13)",
+            "url": "https://www.paragraf.ba/propisi/fbih/zakon-o-porezu-na-dohodak.html",
+            "publisher": "Paragraf (law database)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Bosnia & Herzegovina Tax Card 2026",
+            "url": "https://www.mondaq.com/withholding-tax/1747486/bosnia-herzegovina-tax-card-2026",
+            "publisher": "Eurofast via Mondaq",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Bosnia and Herzegovina – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/bosnia-and-herzegovina/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Bosnia and Herzegovina – Individual – Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/bosnia-and-herzegovina/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The statute text read (Paragraf, consolidated to Sl. novine FBiH 65/2013) may not show later amendments; no later amendment adding securities gains was found, and Eurofast's 2026 tax card agrees that capital gains are not taxed in the FBiH.",
+          "Brčko District capital gains rules not verified."
+        ],
+        "regional_differences": "Entity law decides. FBiH (Sarajevo, Mostar): securities gains not taxed; real estate 10%, exempt after three years. Republika Srpska (Banja Luka): capital gains, including on securities and real estate, taxed at 13% (RS Income Tax Law as amended December 2021); property inherited or gifted from direct-line relatives exempt (2020 amendment). Brčko District: flat 10% PIT; capital-gains treatment not verified. Residence in an entity determines which law applies.",
+        "headline_rate": 0.1,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "FBiH: shares and securities (listed or private, domestic or foreign) 0% because their disposal is not a taxable income category (Arts. 4, 20–22). Real estate (local or foreign; Art. 20 is not limited to FBiH property) 0% when held more than three years, otherwise 10% (Art. 9) on the PPI-indexed gain. Headline 10% = the flat PIT rate that applies to short-held real estate. Republika Srpska would be 13% across the board (see regional_differences).",
+        "holding_period_rules": "FBiH real estate: not taxed after three years from acquisition or if used as the taxpayer's residence (Art. 20(9)).",
+        "professional_trader": "Regular trading could be treated as independent business income (10% in FBiH); no guidance found.",
+        "eligibility_conditions": "FBiH residents are taxed on worldwide income in the categories the law lists; securities gains are simply not a listed category, wherever the securities are."
+      },
+      "dividends": {
+        "status": "researched",
+        "summary": "Federation of BiH: income from participation in company profits (dividends or profit shares) is not income under the Law on Income Tax (Art. 5(1)(1)), so dividends are untaxed for individuals. The article does not distinguish domestic from foreign companies. Republika Srpska: a 2025 municipal guidance note states dividends paid to individual founders are exempt; capital income otherwise 13%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zakon o porezu na dohodak FBiH (Sl. novine FBiH 10/08 ... 65/13)",
+            "url": "https://www.paragraf.ba/propisi/fbih/zakon-o-porezu-na-dohodak.html",
+            "publisher": "Paragraf (law database)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Poreski i drugi troškovi DOO u Republici Srpskoj u 2025. godini",
+            "url": "https://www.opstina-novigrad.com/storage/Poreski-i-drugi-troskovi-DOO-u-Republici-Srpskoj-u-2025.-godini.pdf",
+            "publisher": "Opština Novi Grad",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Art. 5(1)(1) does not limit the exclusion to FBiH companies; no FBiH tax-authority ruling on foreign portfolio dividends was found.",
+          "RS: whether the exemption covers foreign dividends and portfolio (non-founder) holdings was not confirmed."
+        ],
+        "regional_differences": "Republika Srpska: dividends to individuals exempt per municipal guidance (2025); capital income otherwise 13%. Brčko: not verified.",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "FBiH Art. 5(1)(1): dividends and profit shares 'are not considered income', with no domestic/foreign distinction, so domestic and foreign 0% (medium confidence for foreign dividends).",
+        "withholding_outbound": "FBiH reportedly withholds 5% on dividends to non-resident legal entities; RS companies exempt (search snippet of a tax card, not verified from statute).",
+        "treaty_network": "BiH treaty network not counted in this pass."
+      },
+      "wealth_tax": {
+        "status": "researched",
+        "summary": "No net wealth tax in either entity or Brčko. Property tax is cantonal in the FBiH, 0.20% of assessed value in RS, and 0.05%–1% in Brčko.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Bosnia and Herzegovina – Individual – Other taxes",
+            "url": "https://taxsummaries.pwc.com/bosnia-and-herzegovina/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "FBiH: cantonal property tax by value and size; RS: 0.20% of assessed value; Brčko: 0.05%–1% of market value."
+      },
+      "inheritance": {
+        "status": "researched",
+        "summary": "In the Federation, inheritance and gift tax is set by each canton. Sarajevo Canton (Sl. novine KS 28/2018): inheritances taxed at 8% and gifts at 10% (Art. 21), but heirs of the first order of succession (children, spouse) pay no inheritance tax and children, spouse and parents of the donor pay no gift tax (Art. 22). Zenica-Doboj Canton (Sl. novine ZDK 24/2025, Art. 18) likewise exempts first-order heirs and donees. Republika Srpska has no separate inheritance tax; property inherited or gifted from direct-line relatives is exempt from capital-gains income tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zakon o porezu na promet nekretnina i porezu na naslijeđe i poklone Kantona Sarajevo (Sl. novine KS 28/2018), Arts. 17–23",
+            "url": "https://www.paragraf.ba/propisi/kantona-sarajevo/zakon-o-porezu-na-promet-nekretnina-i-porezu-na-naslijedje-i-poklone.html",
+            "publisher": "Paragraf (law database)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Zakon o porezu na imovinu, naslijeđe i poklon Zeničko-dobojskog kantona (Sl. novine ZDK 24/2025)",
+            "url": "https://www.paragraf.ba/propisi/zenicko-dobojskog-kantona/zakon-o-porezu-na-imovinu-naslijedje-i-poklon.html",
+            "publisher": "Paragraf (law database)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "RS: oslobađanje nasljeđa i poklona od poreza na kapitalni dobitak",
+            "url": "https://www.paragraf.ba/dnevne-vijesti/04122020/04122020-vijest6.html",
+            "publisher": "Paragraf.ba news",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Only Sarajevo and Zenica-Doboj cantons were read from statute; the other eight FBiH cantons were not checked (none found taxing children).",
+          "Brčko District inheritance rules not verified."
+        ],
+        "regional_differences": "FBiH: ten cantonal laws. Sarajevo: 8% inheritance / 10% gifts, first order exempt. Zenica-Doboj: 5% general, 3% second order, first order exempt. RS: no separate inheritance tax; transfers from direct-line relatives exempt from income tax. Brčko: not verified.",
+        "basis": "beneficiary",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Sarajevo Canton: gifts taxed at 10%, but gifts to children, spouse and parents of the donor are exempt (Art. 22(2)); movables (cash, securities, claims) are in scope only above BAM 5,000 per item. Zenica-Doboj: first-order donees exempt. RS: gifts from direct-line relatives exempt; gifts between unrelated persons above BAM 10,000 a year taxed.",
+        "gifts_same_as_inheritance": true
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Each entity and Brčko District has its own income tax law and residence rules (domicile/habitual residence, 183-day tests); not verified in this pass. FBiH residents are taxed on worldwide income.",
+    "routes": [
+      {
+        "name": "Temporary residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Not in the EU; foreigners need a BiH temporary residence permit. Not researched in this pass."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bosnia and Herzegovina – Individual – Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/bosnia-and-herzegovina/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.1,
+    "summary": "Corporate income tax is a flat 10% in the FBiH, RS and Brčko (Eurofast 2026).",
+    "sources": [
+      {
+        "title": "Bosnia & Herzegovina Tax Card 2026",
+        "url": "https://www.mondaq.com/withholding-tax/1747486/bosnia-herzegovina-tax-card-2026",
+        "publisher": "Eurofast via Mondaq",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Sarajevo",
+      "lon": 18.413056,
+      "lat": 43.856389,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q11194"
+    },
+    {
+      "name": "Banja Luka",
+      "lon": 17.1925,
+      "lat": 44.7725,
+      "kind": "city",
+      "coordinate_source": "Wikidata Q131127"
+    }
+  ],
+  "us_citizen_notes": "The old US–Yugoslavia treaty (1880s/1950s) status for BiH was not verified.",
+  "open_questions": [
+    "Entity-level differences cannot be expressed fully in this national file; a subnational file (BA-BIH, BA-SRP, BA-BRC) would be needed to score Republika Srpska (13% capital gains) separately.",
+    "International school fee (Sarajevo) not published by QSI Sarajevo or Richmond Park; the International Schools Database has a 2026/27 fee only for the German school (to age 15), and doris.school's undated, AI-compiled USD 25,900 for QSI was not used. Only rent is sourced, so the cost metric is unscored."
+  ],
+  "cost_of_living": {
+    "city": "Sarajevo",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 5250,
+        "currency": "BAM"
+      },
+      "year": 2026,
+      "description": "Median asking rent (BAM 5,250/month, about EUR 2,680 at the fixed BAM 1.95583/EUR rate) of 34 houses for rent of at least 200 m² in the Sarajevo urban area (Centar, Stari Grad, Novo Sarajevo, Novi Grad, Ilidža, Vogošća; range BAM 1,500–15,000), from all 137 house-rental listings on OLX.ba (Bosnia's main portal, mostly agency listings) retrieved on 2026-10-15; 43 Sarajevo listings with price 'on request' were excluded. Bedroom counts are given as total rooms (often 5–8+), so floor area is used as the size filter. Some listings are suitable for office use. Asking prices on a listing portal.",
+      "source": {
+        "title": "OLX.ba search API: houses (Kuće, category 24) for rent",
+        "url": "https://api.olx.ba/search?category_id=24&listing_type=rent",
+        "publisher": "OLX.ba",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "International school fee not sourced: QSI International School of Sarajevo and Richmond Park ('tuition details are shared directly by each campus') do not publish fees; the International Schools Database (2026/2027) lists fees only for the German International School (KM 7,900–13,050, ages 5–15, no upper-secondary years). Doris.school shows USD 25,900 for QSI Sarajevo but is an AI-compiled profile with no academic year, so it was not used. Only rent is sourced, so the cost metric stays unscored."
+  }
+}

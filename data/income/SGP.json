@@ -1,0 +1,241 @@
+{
+  "id": "SGP",
+  "name": "Singapore",
+  "currency": "SGD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Residents pay progressive tax from 0% to 24% (YA2026 schedule, income of 2025); non-residents pay 24% on most income or the higher of 15% and resident rates on employment. Foreign-sourced income received in Singapore by individuals is generally exempt. Foreign nationals cannot contribute to CPF, so there is no social security cost.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 20000,
+        "rate": 0.02
+      },
+      {
+        "from_amount": 30000,
+        "rate": 0.035
+      },
+      {
+        "from_amount": 40000,
+        "rate": 0.07
+      },
+      {
+        "from_amount": 80000,
+        "rate": 0.115
+      },
+      {
+        "from_amount": 120000,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 160000,
+        "rate": 0.18
+      },
+      {
+        "from_amount": 200000,
+        "rate": 0.19
+      },
+      {
+        "from_amount": 240000,
+        "rate": 0.195
+      },
+      {
+        "from_amount": 280000,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 320000,
+        "rate": 0.22
+      },
+      {
+        "from_amount": 500000,
+        "rate": 0.23
+      },
+      {
+        "from_amount": 1000000,
+        "rate": 0.24
+      }
+    ],
+    "personal_allowance": 1000,
+    "employee_social_security_rate": 0,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Foreign nationals and their employers are precluded from CPF; permanent residents contribute at reduced rates for two years (20% employee rate for citizens and PRs after year three, OW ceiling SGD 8,000 a month). Medisave for self-employed not covered on the opened pages, but applies to citizens and PRs. Personal allowance shown is earned income relief (lesser of actual or SGD 1,000, under 55); total reliefs are capped at SGD 80,000.",
+    "local_tax_note": "No local income tax. The brackets are on chargeable income for YA2026 (income earned in 2025); the tax year 2026 schedule (YA2027) was not separately verified.",
+    "sources": [
+      {
+        "title": "Singapore - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/singapore/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Singapore - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/singapore/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Singapore - Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/singapore/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Singapore - Individual - Income determination",
+        "url": "https://taxsummaries.pwc.com/singapore/individual/income-determination",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "YA2027 (income of 2026) schedule: PwC's page shows YA2024 onwards rates and mentions no YA2027 change; the IRAS rates page was truncated.",
+      "Self-employed Medisave not relevant to foreigners; not verified."
+    ],
+    "verified_on": "2026-10-15",
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "id": "employment_pass",
+      "name": "Employment Pass (EP)",
+      "kind": "other",
+      "description": "Work pass for foreign professionals; not a tax regime. The minimum qualifying salary is SGD 5,600 a month at age 23 and under, rising to SGD 10,700 at 45+ (financial services SGD 6,200-11,800), and applications must also earn 40 COMPASS points unless the fixed salary is at least SGD 22,500 a month. For new applications from 1 January 2027 the minimum becomes SGD 6,000-11,500 (financial services SGD 6,600-12,700). Tax is standard; foreign income received in Singapore is generally exempt for individuals, but pay for work done in Singapore is Singapore-sourced.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": {
+        "amount": 67200,
+        "currency": "SGD"
+      },
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "Passes are renewable; validity length not stated on the opened page. Minimum shown is the entry level (SGD 5,600 x 12), age-dependent.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Employment Pass eligibility (MOM)",
+          "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
+          "publisher": "Ministry of Manpower Singapore",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [
+        "General EP validity and renewal terms are not on the MOM eligibility page (only that certain tech occupations can get 5 years)."
+      ]
+    },
+    {
+      "id": "one_pass",
+      "name": "Overseas Networks and Expertise (ONE) Pass",
+      "kind": "other",
+      "description": "Five-year personalised pass for top talent: a fixed monthly salary of at least SGD 30,000 (SGD 22,500 on the AI and Tech track from 28 January 2027) from one employer, with an established overseas or Singapore company (market cap USD 500 million or revenue USD 200 million). Holders can start, operate and work for multiple companies. It does not change tax: pay for work done in Singapore is taxed at the normal resident rates, and as a foreigner the holder has no CPF.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": {
+        "amount": 360000,
+        "currency": "SGD"
+      },
+      "max_income": null,
+      "duration_years": 10,
+      "duration_note": "Up to 5 years for first-time holders, renewable for 5 years each time (10 shown as first term plus one renewal).",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "exemption_threshold": null,
+      "covers_local_work": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Overseas Networks and Expertise Pass - Eligibility",
+          "url": "https://www.mom.gov.sg/passes-and-permits/overseas-networks-expertise-pass/eligibility",
+          "publisher": "Ministry of Manpower",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Overseas Networks and Expertise Pass - Key facts",
+          "url": "https://www.mom.gov.sg/passes-and-permits/overseas-networks-expertise-pass/key-facts",
+          "publisher": "Ministry of Manpower",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [
+        "Eligibility for a USD 150,000 earner is not met (SGD 360,000 a year needed); listed for access only."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Singapore",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 3750,
+        "currency": "SGD"
+      },
+      "year": 2026,
+      "description": "Numbeo average 1-bedroom apartment in city centre, 1,689 entries from 269 contributors in 12 months (all city price data); range SGD 2,500-6,000.",
+      "source": {
+        "title": "Cost of Living in Singapore (Numbeo)",
+        "url": "https://www.numbeo.com/cost-of-living/in/Singapore",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "2-bedroom is a regional median from URA contract data, not a city-centre-only figure; the 1-bedroom is a Numbeo city-centre average.",
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 4300,
+        "currency": "SGD"
+      },
+      "year": 2026,
+      "description": "Median monthly rent for a 2-bedroom private condo or apartment in the Rest of Central Region (9,946 URA rental contracts, leases starting Q4 2025 to Q3 2026; middle 50% SGD 3,900-4,850), computed by PropKaki from URA data. Contract rents, whole units; furnishing not stated. Core Central Region median is SGD 5,300 and Outside Central Region SGD 3,600. Cove's April 2026 listing median for 2-bedrooms is SGD 5,000 (furnished, all of Singapore).",
+      "source": {
+        "title": "How much does it cost to rent a condo in Singapore? (PropKaki, URA contract data)",
+        "url": "https://propkaki.sg/market/questions/how-much-does-it-cost-to-rent-a-condo-in-singapore",
+        "publisher": "PropKaki",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "residence_routes": "EU, US and other citizens: there is no digital nomad visa; remote workers cannot use a tourist stay to work. Skilled employees need an Employment Pass (SGD 5,600+ a month and COMPASS points, or SGD 22,500+ a month exempt from COMPASS). The Overseas Networks and Expertise (ONE) Pass for high earners was not verified on an opened page.",
+  "open_questions": [
+    "Tech.Pass status not verified."
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "id": "TUR",
+  "name": "Turkey",
+  "continent": "Asia",
+  "region": "Western Asia",
+  "currency": "TRY",
+  "researched_on": "2026-10-15",
+  "summary": "Turkey taxes residents on worldwide income at progressive rates up to 40%. Borsa Istanbul shares: 0% withholding. Foreign shares, bonds and private company stakes: up to 40% on the gain (PPI-indexed); real estate held over five years and Turkish joint-stock shares held over two years are outside the charge. Half of Turkish dividends is exempt (about 20% effective); foreign dividends up to 40%. Inheritance tax 1–10% by band after a TRY 2.9m exemption per child (2026), but it reaches only Turkish-situs assets unless a Turkish citizen is involved. Gifts from parents 5–15%. No net wealth tax; a 'valuable housing tax' applies to homes over TRY 17.7m. Since 2026 (Law 7582) a new resident with no Turkish residence or tax liability in the prior three years gets a 20-year exemption on all foreign income and gains (no remittance condition) and a flat 1% inheritance rate.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence (full taxpayer)",
+      "type": "standard",
+      "description": "Full taxpayer on worldwide income; progressive rates 15–40%.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Legal residence (domicile) in Turkey, or foreigners staying more than six months in a calendar year. Foreigners need a residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "status": "researched",
+        "summary": "Gains on Borsa Istanbul shares bought after 1 Jan 2006 and sold through a Turkish bank or broker fall under Temporary Article 67 withholding at 0% (final). Other gains are 'değer artışı kazancı' under GVK Mük. Art. 80 and are declared at the progressive rates (top 40%): this covers foreign shares and bonds, shares in limited companies (ortaklık payları), and shares of Turkish joint-stock companies held two years or less. Shares of Turkish joint-stock companies (tam mükellef kurumlar) held more than two years are outside the charge (Mük. 80/1). Real estate is taxed only if sold within five years of acquisition (Mük. 80/6). The cost is indexed by the producer price index when the increase is at least 10% (Mük. 81).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Gelir Vergisi Kanunu (Law 193), consolidated text incl. Mük. 20/D, Mük. 80, Mük. 81, Geçici 67",
+            "url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.4.193.pdf",
+            "publisher": "Mevzuat Bilgi Sistemi (Presidency of Türkiye)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Turkey – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Turkey – Individual – Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/turkey/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether gains on foreign listed shares held through a Turkish intermediary fall under the Temporary Art. 67 withholding (15%/0%) rather than annual declaration was not confirmed; the JSON uses the declaration route at 40%.",
+          "Producer-price indexation (Mük. 81) lowers the effective rate on long-held assets in a high-inflation economy; the JSON shows the statutory top rate."
+        ],
+        "headline_rate": 0.4,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.4,
+          "private_business_sale": 0.4,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Domestic listed shares 0% (Temporary Art. 67 rate for Borsa Istanbul equities). Foreign listed securities 40%: Mük. 80/1 taxes gains on securities other than shares of Turkish resident companies held over two years, at the top progressive rate of 40% (Art. 103), before PPI indexation. Private business sale 40%: assumes a foreign company or a Turkish limited company (Mük. 80/4); a Turkish A.Ş. stake held over two years would be 0%. Real estate (Turkish or foreign) 0% when held more than five years (Mük. 80/6), otherwise up to 40%.",
+        "foreign_assets": "Full taxpayers are taxed on worldwide income (GVK Art. 4), except under the Law 7582 new-resident exemption (Mük. 20/D).",
+        "exemptions_thresholds": "Annual exemption of TRY 150,000 (2026) for capital gains other than on securities (Mük. 80, amount set by GVK General Communiqué 332); it does not apply to securities gains. Real estate held more than five years and Turkish A.Ş. shares held more than two years are outside the charge.",
+        "important_exceptions": "Gains on securities traded abroad are not covered by the Temporary Article 67 withholding regime in this reading and are self-declared; whether foreign shares held through a Turkish bank fall under Art. 67 was not confirmed.",
+        "holding_period_rules": "Turkish A.Ş. shares: exempt after two years. Real estate: exempt after five years. No holding period for foreign securities."
+      },
+      "dividends": {
+        "status": "researched",
+        "summary": "Half of gross dividends from Turkish companies is exempt; the rest is declared at progressive rates if over the TRY 400,000 (2026) threshold, with the 15% WHT (raised from 10% by Presidential Decision 9286, Dec 2024) creditable. Foreign dividends above TRY 22,000 (2026) must be declared and are taxed at progressive rates with a credit for foreign tax; the 50% exemption applies only to holdings of at least 50% remitted to Turkey.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Turkey – Individual – Income determination",
+            "url": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Turkey – Individual – Significant developments",
+            "url": "https://taxsummaries.pwc.com/turkey/individual/significant-developments",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Turkey – Individual – Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/turkey/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "headline_rate": 0.4,
+        "domestic_rate": 0.2,
+        "foreign_gross_rate": 0.4,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: 50% exempt x 40% top rate = 20% (the 15% WHT is credited). Foreign portfolio dividends: fully taxable at 40% top rate.",
+        "withholding_outbound": "15% WHT on dividends to individuals and non-resident companies (from 22 Dec 2024), reducible by treaty.",
+        "treaty_network": "About 92 treaty partners (PwC), including the United States and all major EU states."
+      },
+      "wealth_tax": {
+        "status": "researched",
+        "summary": "No national net wealth tax. Ordinary property tax (0.1% residential, doubled in metropolitan areas) and a 'valuable housing tax' (0.3%–1.0% on the value above TRY 17,711,000 for 2026) apply to Turkish homes.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Turkey – Individual – Other taxes",
+            "url": "https://taxsummaries.pwc.com/turkey/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The valuable housing tax is arguably a limited wealth levy on high-value homes; it is recorded as property tax here because its 2026 band limits were not verified."
+        ],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Property tax 0.1% (residential), 0.2% (other buildings), 0.3% (land), doubled in metropolitan areas. Valuable housing tax: residences valued above TRY 17,711,000 (2026), 0.3%–1.0% on the excess by band."
+      },
+      "inheritance": {
+        "status": "researched",
+        "summary": "Inheritance and gift tax (Law 7338) is levied on the recipient. For 2026 each child (and the spouse) has an exemption of TRY 2,907,136 on an inheritance share (Art. 4(b), Communiqué 57). Inheritances are then taxed by band: 1% on the first TRY 3m, 3% on the next 7m, 5% on the next 15m, 7% on the next 30m, and 10% above TRY 55m (Art. 16). Gifts are taxed at 10–30% on the same bands, but gifts from parents to children pay half those rates (5–15%) after a TRY 66,935 exemption. Scope (Art. 1): property located in Turkey, and property anywhere belonging to or acquired by Turkish citizens. A non-Turkish family inheriting assets held abroad is therefore outside the tax; only Turkish-situs assets are taxed.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Veraset ve İntikal Vergisi Kanunu (Law 7338), consolidated text with 2026 amounts",
+            "url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.7338.pdf",
+            "publisher": "Mevzuat Bilgi Sistemi (Presidency of Türkiye)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Veraset ve İntikal Vergisi Kanunu Genel Tebliği (Seri No: 57), Resmî Gazete 33124 (5. Mük.), 31 Dec 2025",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2025/12/20251231M5-22.pdf",
+            "publisher": "Resmî Gazete / Gelir İdaresi Başkanlığı",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "2026 yılında uygulanacak veraset ve intikal vergisi maktu istisna tutarları ile matrah dilim tutarları yayımlandı",
+            "url": "https://kpmgvergi.com/yayinlar/mali-bultenler/vergi/2026-yilinda-uygulanacak-veraset-ve-intikal-vergisi-maktu-istisna-tutarlari-ile-matrah-dilim-tutarlari-yayimlandi/3355",
+            "publisher": "KPMG Türkiye",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "The band limits come from the consolidated law text and KPMG; the official communiqué publishes the tariff as an image that could not be machine-read. The exemption amounts were read from the communiqué.",
+          "For non-Turkish citizens the brackets apply only to Turkish-situs assets; the scoring cannot express situs scope and may overstate the tax on a foreign portfolio."
+        ],
+        "exemptions_thresholds": "2026: TRY 2,907,136 per child/spouse share (TRY 5,817,845 for a spouse with no descendants); TRY 66,935 for gifts. Household goods and personal effects exempt. Foreign inheritance tax paid on the same assets is deductible.",
+        "basis": "beneficiary",
+        "children_treatment": "taxed",
+        "exemption": 2907136,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.01
+          },
+          {
+            "from_amount": 3000000,
+            "rate": 0.03
+          },
+          {
+            "from_amount": 10000000,
+            "rate": 0.05
+          },
+          {
+            "from_amount": 25000000,
+            "rate": 0.07
+          },
+          {
+            "from_amount": 55000000,
+            "rate": 0.1
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Gifts (ivazsız intikal) are taxed at 10/15/20/25/30% on the same bands after a TRY 66,935 exemption (2026). Gifts from parents, a spouse or children are taxed at half those rates, i.e. 5–15% (Art. 16(2)), still well above the inheritance scale.",
+        "gifts_same_as_inheritance": false,
+        "foreign_assets": "Art. 1: property of Turkish citizens (wherever located) and property located in Turkey. Foreign assets of non-Turkish citizens passing to non-Turkish heirs are outside the tax.",
+        "eligibility_conditions": "Scope depends on citizenship and situs, not residence: Turkish-situs assets are always in scope; foreign-situs assets only when the deceased/donor or heir is a Turkish citizen. Art. 1(3): a foreign heir not domiciled in Turkey who acquires a Turkish citizen's foreign assets is not taxed.",
+        "important_exceptions": "Band limits and exemptions are revalued every year by the VUK revaluation rate (25.49% for 2026). Tax can be paid in six instalments over three years (May and November). Under Law 7582, inheritances from a person holding the Mük. 20/D exemption are taxed at a flat 1% during the 20-year period (see special regime).",
+        "bracket_mode": "marginal",
+        "domicile_rules": "Citizenship and situs based; residence alone does not bring foreign assets into scope.",
+        "scope": "local_assets_only"
+      }
+    },
+    {
+      "id": "law_7582_new_resident",
+      "name": "New-resident foreign-income exemption (Law No. 7582)",
+      "type": "special",
+      "description": "GVK Mük. Art. 20/D (added by Law 7582, in force for individuals becoming resident from 1 Jan 2026): an individual with no Turkish residence and no Turkish tax liability in the three calendar years before becoming resident is exempt from income tax on all foreign-source income and gains for 20 years. Exempt income is not declared and no remittance condition applies. Inheritances from such a person during the 20 years are taxed at a flat 1% (VİVK Art. 16, para. added by Law 7582).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Became resident in Turkey (domicile or more than six months' stay) on or after 1 Jan 2026; no Turkish domicile and no full or limited Turkish tax liability in the three preceding calendar years (prior liability only for Turkish rental, investment or capital-gains income does not disqualify; wages, business or professional income does). Citizenship is irrelevant. An exemption certificate (İstisna Belgesi) must be obtained from the tax office by the end of the year of becoming resident (end of February of the next year if resident in the last two months). Individuals only; companies cannot use it.",
+      "duration_years": 20,
+      "sources": [
+        {
+          "title": "Law No. 7582 (accepted 21 May 2026), Resmî Gazete 33270, 4 June 2026",
+          "url": "https://www.resmigazete.gov.tr/eskiler/2026/06/20260604-1.htm",
+          "publisher": "Resmî Gazete",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Gelir Vergisi Kanunu (Law 193), consolidated text incl. Mük. 20/D, Mük. 80, Mük. 81, Geçici 67",
+          "url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.4.193.pdf",
+          "publisher": "Mevzuat Bilgi Sistemi (Presidency of Türkiye)",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Sirküler 38: Gelir Vergisi Genel Tebliğleri Seri No 333, 334, 335 (GVK mük. 20/D)",
+          "url": "https://tr.andersen.com/tr/images/pdf/and_38-gvkgt-333-334-335.pdf",
+          "publisher": "Andersen Türkiye",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Türkiye'ye yerleşenlere 20 yıllık vergi istisnası",
+          "url": "https://www.ey.com/tr_tr/insights/tax/turkiyeye-yerlesenlere-20-yillik-vergi-istisnasi",
+          "publisher": "EY Türkiye",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Turkey – Individual – Significant developments",
+          "url": "https://taxsummaries.pwc.com/turkey/individual/significant-developments",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "capital_gains": {
+        "status": "researched",
+        "summary": "All foreign-source gains (foreign securities, foreign company stakes, foreign real estate) are exempt for 20 years and not declared. Turkish-source gains follow the standard rules. No remittance condition: the exemption applies whether or not proceeds are brought into Turkey.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Law No. 7582 (accepted 21 May 2026), Resmî Gazete 33270, 4 June 2026",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2026/06/20260604-1.htm",
+            "publisher": "Resmî Gazete",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Gelir Vergisi Kanunu (Law 193), consolidated text incl. Mük. 20/D, Mük. 80, Mük. 81, Geçici 67",
+            "url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.4.193.pdf",
+            "publisher": "Mevzuat Bilgi Sistemi (Presidency of Türkiye)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Sirküler 38: Gelir Vergisi Genel Tebliğleri Seri No 333, 334, 335 (GVK mük. 20/D)",
+            "url": "https://tr.andersen.com/tr/images/pdf/and_38-gvkgt-333-334-335.pdf",
+            "publisher": "Andersen Türkiye",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Türkiye'ye yerleşenlere 20 yıllık vergi istisnası",
+            "url": "https://www.ey.com/tr_tr/insights/tax/turkiyeye-yerlesenlere-20-yillik-vergi-istisnasi",
+            "publisher": "EY Türkiye",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "How the tax office sources gains on foreign securities bought through a Turkish broker (foreign- or Turkish-source) is not addressed in the communiqué summaries read."
+        ],
+        "headline_rate": 0.4,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Foreign-source gains exempt under GVK Mük. 20/D. Domestic listed shares 0% (Temporary Art. 67). Private business sale 0% assumes a foreign company (Turkish company stakes follow the standard rules). Local real estate 0% when held over five years, as in the standard regime.",
+        "eligibility_conditions": "Requires the İstisna Belgesi; foreign taxes on exempt income cannot be credited and related expenses are not deductible. No remittance basis: foreign income is exempt whether or not it is remitted to Turkey."
+      },
+      "dividends": {
+        "status": "researched",
+        "summary": "Foreign dividends and interest are exempt for 20 years and not declared (GVK Mük. 20/D). Turkish dividends as in the standard regime. No remittance condition.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Law No. 7582 (accepted 21 May 2026), Resmî Gazete 33270, 4 June 2026",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2026/06/20260604-1.htm",
+            "publisher": "Resmî Gazete",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Gelir Vergisi Kanunu (Law 193), consolidated text incl. Mük. 20/D, Mük. 80, Mük. 81, Geçici 67",
+            "url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.4.193.pdf",
+            "publisher": "Mevzuat Bilgi Sistemi (Presidency of Türkiye)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Sirküler 38: Gelir Vergisi Genel Tebliğleri Seri No 333, 334, 335 (GVK mük. 20/D)",
+            "url": "https://tr.andersen.com/tr/images/pdf/and_38-gvkgt-333-334-335.pdf",
+            "publisher": "Andersen Türkiye",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Türkiye'ye yerleşenlere 20 yıllık vergi istisnası",
+            "url": "https://www.ey.com/tr_tr/insights/tax/turkiyeye-yerlesenlere-20-yillik-vergi-istisnasi",
+            "publisher": "EY Türkiye",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [],
+        "headline_rate": 0.4,
+        "domestic_rate": 0.2,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Foreign-source income exempt under Mük. 20/D; domestic as standard (50% exemption x 40% = 20% effective).",
+        "eligibility_conditions": "Requires the İstisna Belgesi. No remittance basis: foreign dividends are exempt whether or not remitted. Foreign withholding tax is a final cost (no credit)."
+      },
+      "inheritance": {
+        "status": "researched",
+        "summary": "VİVK Art. 16 (paragraph added by Law 7582, Art. 2): for a person who holds the Mük. 20/D exemption, inheritance transfers that occur within the 20-year exemption period are taxed at a flat 1% instead of the 1–10% scale. The per-child exemption of TRY 2,907,136 (Art. 4) still applies. Gifts are not covered and stay on the normal gift scale (5–15% from parents). The flat rate matters mainly for Turkish-situs assets and Turkish citizens, since foreign assets of non-Turkish citizens are outside the tax anyway.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Law No. 7582 (accepted 21 May 2026), Resmî Gazete 33270, 4 June 2026",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2026/06/20260604-1.htm",
+            "publisher": "Resmî Gazete",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Veraset ve İntikal Vergisi Kanunu (Law 7338), consolidated text with 2026 amounts",
+            "url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.7338.pdf",
+            "publisher": "Mevzuat Bilgi Sistemi (Presidency of Türkiye)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Türkiye'ye yerleşenlere 20 yıllık vergi istisnası",
+            "url": "https://www.ey.com/tr_tr/insights/tax/turkiyeye-yerlesenlere-20-yillik-vergi-istisnasi",
+            "publisher": "EY Türkiye",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "Whether the Art. 4 exemption applies before the flat 1% is assumed (the new paragraph sets only the rate)."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed_low",
+        "exemption": 2907136,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.01
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Not covered by the 1% rate: lifetime gifts from parents to children are taxed at 5–15% (half the 10–30% gift scale) after a TRY 66,935 exemption.",
+        "gifts_same_as_inheritance": false,
+        "exemptions_thresholds": "Per-child exemption TRY 2,907,136 (2026).",
+        "eligibility_conditions": "The deceased must have held the Mük. 20/D exemption and died within its 20-year period. Applies to transfers by inheritance (veraset) only.",
+        "foreign_assets": "Same citizenship/situs scope as the standard regime (Art. 1).",
+        "scope": "local_assets_only"
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Full taxpayer if legal residence (domicile) in Turkey or intention to settle; foreigners staying more than six months in a calendar year are resident, except for temporary projects or force majeure.",
+    "routes": [
+      {
+        "name": "Residence permit / citizenship by investment",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Turkey is not in the EU; foreigners need a residence permit. Residence permits and citizenship by real-estate investment exist; amounts and conditions not verified in this pass."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Turkey – Individual – Residence",
+        "url": "https://taxsummaries.pwc.com/turkey/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "CIT 25% (30% financial sector), domestic minimum corporate tax 10% from 2025; 5-point reduction on export income; 15% dividend WHT.",
+    "sources": [
+      {
+        "title": "Turkey – Corporate – Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/turkey/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Turkey – Corporate – Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/turkey/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Istanbul",
+      "lon": 28.960278,
+      "lat": 41.01,
+      "kind": "financial_centre",
+      "coordinate_source": "Wikidata Q406"
+    },
+    {
+      "name": "Ankara",
+      "lon": 32.83869,
+      "lat": 39.93576,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q3640"
+    }
+  ],
+  "us_citizen_notes": "US–Turkey income tax treaty in force (saving clause). Under the Law 7582 exemption Turkish tax on foreign income is zero, so US tax applies in full.",
+  "open_questions": [
+    "Gains on foreign shares held through a Turkish broker: Art. 67 withholding vs declaration not confirmed.",
+    "Prime price per m², health insurance and housekeeper costs not sourced."
+  ],
+  "cost_of_living": {
+    "city": "Istanbul (Sarıyer / Zekeriyaköy)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 165000,
+        "currency": "TRY"
+      },
+      "year": 2026,
+      "description": "Median asking rent of the 16 villas for rent in Sarıyer district listed on Emlakjet on 2026-10-15 (range TRY 125,000–965,000; furnished 5+1/5+2 villas in gated compounds with pools asked TRY 300,000–440,000). Sarıyer includes Zekeriyaköy, the villa area near the main international schools. Listing portal sample, asking prices, room counts not filtered.",
+      "source": {
+        "title": "İstanbul Sarıyer kiralık villa ilanları",
+        "url": "https://www.emlakjet.com/kiralik-villa/istanbul-sariyer/",
+        "publisher": "Emlakjet",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 47400,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Istanbul International Community School (IB, non-profit), individual (self-paying) fees 2026–27: Grades 9–10 USD 47,400 a year (Grades 11–12 USD 48,900), VAT included, both campuses. New students also pay a USD 8,000 one-time capital levy and USD 1,500 application/registration fees.",
+      "source": {
+        "title": "IICS School Fees (Individual Fees 2026–2027, Hisar and Marmara campuses)",
+        "url": "https://www.iics.k12.tr/school-fees/",
+        "publisher": "Istanbul International Community School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent is in TRY at 2026-10 prices; Turkish inflation erodes TRY figures quickly. School fees are set in USD."
+  }
+}

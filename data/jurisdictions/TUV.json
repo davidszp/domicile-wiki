@@ -1,0 +1,183 @@
+{
+  "id": "TUV",
+  "name": "Tuvalu",
+  "continent": "Oceania",
+  "region": "Polynesia (Central Pacific)",
+  "currency": "AUD",
+  "researched_on": "2026-10-15",
+  "summary": "Tuvalu's Income Tax Act (Cap. 26.16, 2022 revision) taxes individuals at 0/15/30% (30% above AUD 14,000). Proceeds of capital assets (assets not acquired mainly for resale) are not gross income, so a long-term investor's gains are untaxed. Dividends from Tuvalu companies are exempt. Section 7 as revised taxes residents only on Tuvalu-source income, which would leave foreign dividends untaxed, but other provisions assume foreign dividends are taxed: the foreign rate is left unknown. No inheritance, gift or wealth tax was found.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Individuals taxed at 0/15/30%; capital assets' gains outside income; Tuvalu dividends exempt.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident: permanent place of abode in Tuvalu, or present in Tuvalu for more than 183 days (Income Tax Act s. 2 'resident').",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax. Gross income includes proceeds of disposal of revenue assets and business profits or gains (s. 9), but a 'capital asset' is one not acquired with the principal purpose of disposal, and its proceeds are not gross income (except depreciation recapture on business assets, Schedule 2 para 5).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income Tax Act Cap. 26.16 (2022 Revised Edition)",
+            "url": "https://tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1992/1992-0005/1992-0005_2.pdf",
+            "publisher": "Office of the Attorney General, Tuvalu (Tuvalu Legislation Online)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Income Tax Act Cap. 26.16 s. 2 ('capital asset', 'revenue asset') and s. 9: only revenue-asset proceeds and business gains are gross income. A long-term portfolio is capital assets = 0.",
+        "professional_trader": "Assets acquired with the principal purpose of disposal are revenue assets: their proceeds are gross income taxed at up to 30%. Frequent trading risks this treatment.",
+        "foreign_assets": "See dividends on the source rule in s. 7."
+      },
+      "dividends": {
+        "summary": "Dividends from resident companies are exempt for residents (Schedule 1 Part 3 para 1). For foreign dividends the Act is internally inconsistent: s. 7(1) as revised says a resident includes gross income 'only if it is derived from a source within' Tuvalu, and s. 8(2) says dividends of non-resident companies never have a Tuvalu source, which would exempt them; but s. 27(4) and Schedule 1 Part 3 paras 3-4 exempt foreign dividends only to the extent overseas tax covers the Tuvalu rate, which presupposes they are taxable at up to 30%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income Tax Act Cap. 26.16 (2022 Revised Edition)",
+            "url": "https://tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1992/1992-0005/1992-0005_2.pdf",
+            "publisher": "Office of the Attorney General, Tuvalu (Tuvalu Legislation Online)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "exemptions_thresholds": "Schedule 6: individuals 0% to AUD 10,000; 15% to 14,000; 30% above 14,000.",
+        "headline_rate": 0.3,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": null,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: Schedule 1 Part 3 para 1 = 0. Foreign: null because s. 7(1) (territorial) conflicts with s. 27(4)/Schedule 1 Part 3 paras 3-4 (taxable with a credit-type exemption at the 30% rate). Headline 0.30 = top individual rate that would apply if taxable.",
+        "withholding_outbound": "15% non-resident withholding on dividends (Schedule 5), reducible by treaty.",
+        "treaty_network": "No comprehensive treaties found (not verified).",
+        "open_questions": [
+          "Resolve whether residents' foreign dividends are taxable: check the amending act that produced the current s. 7 wording, or ask the Tuvalu Revenue office."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no recurring levy on financial assets.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Index of all legislation (no estate or gift duty act listed)",
+            "url": "https://tuvalu-legislation.tv/cms/component/legislation/?view=index_all&Itemid=683",
+            "publisher": "Office of the Attorney General, Tuvalu (Tuvalu Legislation Online)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Not researched."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax: the official index of Tuvalu legislation lists no estate, succession or gift duty act (only a Wills Act and Native Estates regulations). Estate distributions already taxed in the hands of the executor are exempt for beneficiaries (Schedule 1 Part 1 para 10).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Index of all legislation (no estate or gift duty act listed)",
+            "url": "https://tuvalu-legislation.tv/cms/component/legislation/?view=index_all&Itemid=683",
+            "publisher": "Office of the Attorney General, Tuvalu (Tuvalu Legislation Online)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income Tax Act Cap. 26.16 (2022 Revised Edition)",
+            "url": "https://tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1992/1992-0005/1992-0005_2.pdf",
+            "publisher": "Office of the Attorney General, Tuvalu (Tuvalu Legislation Online)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax found.",
+        "gifts_same_as_inheritance": true,
+        "open_questions": [
+          "Land in Tuvalu is largely customary; foreign ownership rules not researched."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Income Tax Act s. 2: an individual is resident if the permanent place of abode is in Tuvalu or if personally present in Tuvalu for more than 183 days (in the year, as summarised; full text of the day-count rule not re-read).",
+    "routes": [
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Income Tax Act Cap. 26.16 (2022 Revised Edition)",
+        "url": "https://tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1992/1992-0005/1992-0005_2.pdf",
+        "publisher": "Office of the Attorney General, Tuvalu (Tuvalu Legislation Online)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.3,
+    "summary": "Resident companies 30% (Schedule 6 (i)); Schedule 6 (j) also lists a 40% rate for a category of company (text garbled in extraction; likely non-resident). National Bank and approved funds have own rates.",
+    "sources": [
+      {
+        "title": "Income Tax Act Cap. 26.16 (2022 Revised Edition)",
+        "url": "https://tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1992/1992-0005/1992-0005_2.pdf",
+        "publisher": "Office of the Attorney General, Tuvalu (Tuvalu Legislation Online)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Funafuti",
+    "notes": "Not sourced."
+  },
+  "markers": [
+    {
+      "name": "Funafuti",
+      "lon": 179.19417,
+      "lat": -8.52425,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2110394"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. Where local tax on portfolio income is nil there is nothing to credit against US tax.",
+  "open_questions": [
+    "Foreign dividend treatment unresolved (null)."
+  ]
+}

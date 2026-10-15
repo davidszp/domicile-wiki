@@ -1,0 +1,374 @@
+{
+  "id": "CYP",
+  "name": "Cyprus",
+  "continent": "Europe",
+  "region": "Southern Europe (Eastern Mediterranean), EU member",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "No tax on gains from shares and bonds (listed or not, domestic or foreign) for any resident; capital gains tax (20%) applies only to Cyprus real estate and shares of companies holding it. No inheritance, estate or gift tax since 2000 and no wealth tax. Dividends: a newcomer without a Cyprus domicile of origin is 'non-dom' for 17 of 20 years and pays no Special Defence Contribution (SDC); only the 2.65% health contribution (GHS, capped at EUR 180,000 of income) applies. After 17 years SDC on dividends is 5% (2026 reform, down from 17%), usually fully offset by foreign withholding tax; non-dom status can be bought for two further 5-year blocks at EUR 250,000 each.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Tax resident, Cyprus-domiciled for SDC",
+      "type": "standard",
+      "description": "Ordinary Cyprus tax residence for an individual who is domiciled in Cyprus for Special Defence Contribution (SDC) purposes: a Cypriot by domicile of origin, or a foreigner after 17 of the last 20 years of residence (unless the lump-sum extension is bought). A newly arriving foreign family is NOT in this regime for its first 17 years; see the non_dom regime.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Cyprus tax residence (183-day rule, or 60-day rule with Cyprus business/employment/directorship and a permanent home in Cyprus) plus Cyprus domicile for SDC (domicile of origin, or deemed domicile after 17 of 20 years of residence).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains on 'titles' (shares, bonds, options, fund units), listed or unlisted, Cypriot or foreign, are unconditionally exempt from income tax. Capital gains tax (CGT) of 20% applies only to Cyprus immovable property and to shares of companies holding Cyprus property (directly, or indirectly where from 2026 at least 20% of their value derives from it; listed shares excluded). Foreign real estate gains are not taxed in Cyprus.",
+        "exemptions_thresholds": "From 1 Jan 2026, lifetime CGT exemptions: EUR 150,000 for a principal private residence (conditions), EUR 50,000 farmland of a farmer, EUR 30,000 any other disposal, overall cap EUR 150,000 (before 2026: EUR 85,430 / 25,629 / 17,086). Gifts to children, spouse and relatives up to third degree, to family companies and charities are exempt from CGT (conditions).",
+        "eligibility_conditions": "Applies to all Cyprus tax residents regardless of domicile.",
+        "important_exceptions": "Property transfer levy of 0.4% of sale proceeds on Cyprus property (and shares of property-holding companies; listed shares exempt), paid by seller. From 2026 crypto-asset gains are taxed at a flat 8%. From 2031, redemptions of units/shares in certain corporate collective investment schemes are treated as dividends.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Cyprus - Individual - Other taxes (CGT, transfer fees, GHS)",
+            "url": "https://taxsummaries.pwc.com/cyprus/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cyprus - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/cyprus/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Summary of Cyprus's 2026 tax reforms",
+            "url": "https://www.tridenttrust.com/knowledge/news/summary-of-cyprus-s-2026-tax-reforms",
+            "publisher": "Trident Trust",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Statute text (Income Tax Law art. 8 exemption for titles; Capital Gains Tax Law as amended Dec 2025) not opened; figures from PwC and Trident Trust."
+        ],
+        "headline_rate": 0.2,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.2,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Securities gains exempt from income tax and outside CGT; private_business_sale = 0 assumes the company does not derive 20%+ of its value from Cyprus immovable property (otherwise 20% CGT on the property-attributable gain). Real estate local = 20% CGT on the gain (plus 0.4% levy on proceeds, not included).",
+        "professional_trader": "The 'titles' exemption applies even to trading gains (gains on titles are excluded from income tax regardless of frequency), so there is no professional-trader recharacterisation risk for securities. Profits from trading in real estate are business income taxed at income tax rates up to 35%.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Foreign securities and foreign real estate gains are not taxed in Cyprus."
+      },
+      "dividends": {
+        "summary": "Dividends are exempt from personal income tax. A resident domiciled individual pays SDC: 5% on dividends paid out of profits of 2026 onwards (17% for profits of tax years up to 2025, grandfathered when distributed by end-2031). GHS health contribution of 2.65% also applies to dividend income, capped at EUR 180,000 of total annual income (maximum about EUR 4,770). Foreign withholding tax is credited against SDC, so a typical 15% treaty WHT eliminates the 5% SDC.",
+        "exemptions_thresholds": "GHS cap EUR 180,000 of annual income.",
+        "important_exceptions": "Dividends from Cyprus companies paid out of pre-2026 profits keep 17% SDC. The 2026 reform abolished deemed dividend distribution but widened the dividend definition (capital reductions, liquidations, redemptions, certain capitalisations) and introduced disguised dividend rules.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Cyprus - Individual - Taxes on personal income (SDC)",
+            "url": "https://taxsummaries.pwc.com/cyprus/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cyprus - Individual - Other taxes (GHS contributions)",
+            "url": "https://taxsummaries.pwc.com/cyprus/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cyprus - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/cyprus/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Official SDC Law text as amended (Dec 2025) not opened."
+        ],
+        "headline_rate": 0.05,
+        "domestic_rate": 0.05,
+        "foreign_gross_rate": 0.05,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "SDC 5% on post-2025 profits; GHS 2.65% excluded from the rate because it is capped at EUR 180,000 of income (immaterial for a large portfolio).",
+        "withholding_outbound": "Generally 0% on dividends paid to non-resident individuals and companies. Exceptions: 17% on dividends from non-listed companies to companies in EU-blacklisted jurisdictions; from 2026 a WHT on dividends to related companies in low-tax jurisdictions (PwC states both 5% and 17%; unresolved).",
+        "treaty_network": "About 67 double tax treaties (PwC table), including the US (1984 treaty) and nearly all EU states; unilateral credit relief also available.",
+        "holding_company_notes": "Corporate tax 15% from 2026; dividends received by a Cyprus company are generally exempt."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no recurring levy on financial assets. The annual immovable property tax was abolished from 1 January 2017.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Cyprus - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/cyprus/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "National immovable property tax abolished 2017. Municipalities charge small local fees (refuse, sewerage, municipal property fee) based on property value."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. Estate duty was abolished from 1 January 2000. Lifetime gifts to children are free of CGT (even of Cyprus property) and Land Registry transfer fees on a free transfer of property from parent to child are nil. Stamp duty was fully repealed from 1 January 2026.",
+        "exemptions_thresholds": "No thresholds needed: no tax applies.",
+        "important_exceptions": "Executor must file a statement of the deceased's assets and liabilities with the Tax Department within 6 months of death. Probate/court and legal fees apply in practice.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax Facts & Figures 2023 - Inheritance tax (PwC Cyprus)",
+            "url": "https://www.mondaq.com/cyprus/tax-authorities/1342608/tax-facts-figures-2023-inheritance-tax",
+            "publisher": "PwC Cyprus via Mondaq",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cyprus - Individual - Other taxes (transfer fees, CGT gift exemption)",
+            "url": "https://taxsummaries.pwc.com/cyprus/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Summary of Cyprus's 2026 tax reforms (stamp duty repeal)",
+            "url": "https://www.tridenttrust.com/knowledge/news/summary-of-cyprus-s-2026-tax-reforms",
+            "publisher": "Trident Trust",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Estate Duty abolition law (reported as Law 118(I)/2000) not opened on CyLaw; abolition confirmed by PwC Cyprus."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None. Gifts to children are also exempt from CGT and from property transfer fees.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Not needed (no tax).",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "No tax on any assets, Cypriot or foreign.",
+        "domicile_rules": "Not relevant (no tax). Succession law (forced heirship) may apply to Cyprus-domiciled persons; EU Succession Regulation allows choice of nationality law."
+      }
+    },
+    {
+      "id": "non_dom",
+      "name": "Non-domiciled resident (SDC exemption, 17 years, extendable)",
+      "type": "special",
+      "description": "Automatic for a new resident without a Cyprus domicile of origin: exempt from SDC on dividends and interest until resident 17 of the last 20 years. From 1 Jan 2026 (Art. 3D SDC Law) a deemed-domiciled person can extend non-dom status for up to two further 5-year periods by paying EUR 250,000 upfront per period (irrevocable, non-refundable, Commissioner approval; Circular 2/2026). Capital gains, inheritance and wealth treatment are the same as standard.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Cyprus tax residence; no Cyprus domicile of origin (normally the father's domicile at birth). No application needed. Extension: individuals deemed domiciled under Art. 2(3) SDC Law; apply by 30 June of the first year of the 5-year period (transitional deadline 30 June 2026 for those deemed domiciled in 2024-2026).",
+      "duration_years": 17,
+      "lump_sum": null,
+      "dividends": {
+        "summary": "Non-doms pay no SDC on dividends (domestic or foreign), so no Cyprus income tax or SDC applies. The GHS health contribution of 2.65% still applies to dividend income up to the EUR 180,000 income cap (max about EUR 4,770 per person per year). Foreign withholding tax is a final cost.",
+        "exemptions_thresholds": "GHS cap EUR 180,000 of annual income.",
+        "eligibility_conditions": "Non-domiciled for SDC: for 17 of 20 years of residence; extendable 2 x 5 years at EUR 250,000 per period (total EUR 500,000 for 10 more years).",
+        "important_exceptions": "Anti-abuse provisions apply. Non-doms married to a Cypriot domiciliary are still assessed on their own domicile.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Cyprus - Individual - Taxes on personal income (SDC, non-dom)",
+            "url": "https://taxsummaries.pwc.com/cyprus/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Circular 2/2026: Extensions of the non-dom regime",
+            "url": "https://kpmg.com/cy/en/insights/tax-alerts/circular-2-2026-extensions-of-the-non-dom-regime.html",
+            "publisher": "KPMG Cyprus",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cyprus Tax Facts 2026",
+            "url": "https://www.ey.com/en_cy/cyprus-tax-facts",
+            "publisher": "EY Cyprus",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Circular 2/2026 itself (Tax Department, 29 May 2026) not opened: the official PDF link redirects to the Tax Department home page; terms confirmed again from KPMG (17 June 2026) on 2026-10-15.",
+          "Whether the 2.65% GHS also applies to non-doms is stated by PwC for all individuals with dividend income; not checked against GHS law."
+        ],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "SDC exempt for non-doms; income tax exempt for dividends. GHS 2.65% (capped) not included in the rate.",
+        "withholding_outbound": "Same as standard: generally 0%.",
+        "treaty_network": "About 67 treaties; the non-dom bears foreign WHT as a final cost (no Cyprus tax to credit against)."
+      },
+      "sources": [
+        {
+          "title": "Circular 2/2026: Extensions of the non-dom regime",
+          "url": "https://kpmg.com/cy/en/insights/tax-alerts/circular-2-2026-extensions-of-the-non-dom-regime.html",
+          "publisher": "KPMG Cyprus",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if more than 183 days in Cyprus in the calendar year, or under the 60-day rule: at least 60 days in Cyprus, not in any other single state for more than 183 days, business/employment/directorship of a Cyprus company held at year end, and a permanent home in Cyprus (owned or rented) all year. From 1 Jan 2026 the condition 'not tax resident in any other state' was removed from the 60-day rule.",
+    "routes": [
+      {
+        "name": "EU free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Registration certificate (MEU1) after 3 months; no investment needed."
+      },
+      {
+        "name": "Permanent residence by investment (immigration permit)",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Investment of at least EUR 300,000 excl. VAT in new residential property (up to two units), commercial property, shares of a Cyprus company with presence and 5 employees, or Cyprus fund units. Secured annual income EUR 50,000 plus EUR 15,000 for the spouse and EUR 10,000 per child (income must be foreign for the residential route). Covers spouse and minor children; dependent children 18-25 in education apply separately. Visit at least once every 2 years.",
+        "minimum_investment": {
+          "amount": 300000,
+          "currency": "EUR"
+        }
+      },
+      {
+        "name": "Temporary residence (Category F, visitor) or business permits",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Proof of sufficient foreign income; not a route to work. Details not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cyprus - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/cyprus/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Cyprus residency by investment",
+        "url": "https://gk-lawfirm.com/practice-areas/immigration-law/cyprus-residency-by-investment",
+        "publisher": "GK Law Firm",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.15,
+    "summary": "Corporate income tax 15% from 1 Jan 2026 (was 12.5%). Dividend income of companies generally exempt; gains on titles exempt. Deemed dividend distribution abolished for profits from 2026. Losses carried forward 7 years. Pillar Two 15% top-up for large groups. Cyprus IP box available.",
+    "special_zones": "",
+    "sources": [
+      {
+        "title": "Cyprus Tax Facts 2026",
+        "url": "https://www.ey.com/en_cy/cyprus-tax-facts",
+        "publisher": "EY Cyprus",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Summary of Cyprus's 2026 tax reforms",
+        "url": "https://www.tridenttrust.com/knowledge/news/summary-of-cyprus-s-2026-tax-reforms",
+        "publisher": "Trident Trust",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Limassol",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 12285,
+        "currency": "EUR"
+      },
+      "year": 2025,
+      "description": "The Heritage Private School, Limassol, Year 12-13 annual tuition 2025-2026 (excludes registration, deposit, books, uniform).",
+      "source": {
+        "title": "Heritage Private School secondary fees 2025-2026",
+        "url": "https://www.heritageschool.ac.cy/_files/ugd/db7817_5c89941076374fd2a96b11ab343016b5.pdf",
+        "publisher": "The Heritage Private School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent from a listing-portal sample (asking rents). Purchase price, health insurance and housekeeper costs not sourced.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 6950,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 64 four- and five-bedroom villas/detached houses listed for rent on Bazaraki on 2026-10-15 in Limassol's eastern coastal belt (Agios Tychonas, Germasogeia incl. Potamos, Mouttagiaka, Parekklisia, Pyrgos, Limassol Marina); interquartile range EUR 5,500-12,000. Sample: 480 house listings in Limassol district (8 result pages), filtered by title for 4-5 bedroom villa/detached house and rent >= EUR 1,000. Asking rents, not contract rents.",
+      "source": {
+        "title": "Houses to rent in Limassol district",
+        "url": "https://www.bazaraki.com/real-estate-to-rent/houses/lemesos-district-limassol/",
+        "publisher": "Bazaraki",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "Nicosia",
+      "lon": 33.3642,
+      "lat": 35.17531,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 146268"
+    },
+    {
+      "name": "Limassol",
+      "lon": 33.03794,
+      "lat": 34.68406,
+      "kind": "financial_centre",
+      "coordinate_source": "GeoNames 146384"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain US-taxed on worldwide income. Cyprus's 0% on securities gains and 0% SDC as non-dom leave the US tax as the binding layer; the US-Cyprus treaty (1984) has a saving clause. Cyprus funds/companies held by a US person may be PFIC/CFC.",
+  "open_questions": [
+    "PwC is internally inconsistent on the 2026 WHT rate (5% vs 17%) on dividends to related companies in low-tax jurisdictions.",
+    "Taxation of passive interest from 2026 (PIT exemption stated only up to 31 Dec 2025) not resolved; not central for an equity portfolio.",
+    "Circular 2/2026 (Tax Department, 29 May 2026) confirmed via KPMG Cyprus (17 June 2026: EUR 250,000 upfront per 5-year period, max two periods, irrevocable, non-refundable); the Tax Department PDF linked by KPMG (mof.gov.cy .../2026_02.pdf) redirected to the Tax Department home page on 2026-10-15, so the circular itself is still unread.",
+    "Purchase price per m2, family health insurance and housekeeper costs not sourced."
+  ]
+}

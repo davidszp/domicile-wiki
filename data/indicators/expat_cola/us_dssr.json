@@ -1,0 +1,12 @@
+{
+  "source": "us_dssr",
+  "publisher": "US Department of State, Office of Allowances",
+  "title": "DSSR Section 920 Post (Cost-of-Living) Allowance, Post Allowance by location",
+  "url": "https://aoprals.state.gov/Web920/cola.asp",
+  "base": "0 = no post allowance (post costs no more than Washington DC); N = N% of spendable income paid above Washington DC",
+  "effective_date": "2026-10-04",
+  "two_sided": false,
+  "includes_housing": false,
+  "notes": "Page header read: Effective 10/04/2026. Post allowance only, no hardship differential, danger pay or LQA. One-sided: cheaper-than-DC posts show 0%. Explicit 0% listed for e.g. Dominican Republic, Indonesia, Malaysia, Mauritius, Panama, Philippines, South Africa, Turkey, Brazil(other), St Kitts, North Macedonia. Posts substituted: CHE Bern (no Zurich; Bern, Geneva, Other all 110%), COL Bogota (no Medellin; Other also 20%), IDN Jakarta (no Bali; all posts 0%), JPN Tokyo City (15%; Tokyo-To also 15%), ATG St. Johns, KNA/LCA/BHR/MUS/MLT/SGP country-level posts, DEU Berlin, CYP Nicosia (no Limassol; Other also 15%), MEX Mexico City D.F., USA/PRI not in DSSR. Not listed, omitted: AND, CYM, DMA. Percent is of spendable income, not of total pay. Table has no federal OPM non-foreign COLA for Puerto Rico (not looked up).",
+  "value_kind": "percent_allowance"
+}

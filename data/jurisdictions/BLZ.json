@@ -1,0 +1,218 @@
+{
+  "id": "BLZ",
+  "name": "Belize",
+  "continent": "Central America",
+  "region": "Central America (Caribbean coast)",
+  "currency": "BZD",
+  "researched_on": "2026-10-15",
+  "summary": "Belize's income tax now applies only to employed persons, at 25% on income accruing in or derived from Belize (IBTA s. 6 as replaced by Act 40 of 2024). Others pay business tax on gross receipts of a trade, business or profession carried on in Belize. A passive investor living on foreign dividends and gains therefore pays no Belize income tax, and there is no capital gains or wealth tax. No inheritance tax was found (low confidence). The QRP residence programme (age 40+, USD 2,000 a month of foreign income) confirms exemption from tax on foreign income, capital gains and inheritance tax.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary residence",
+      "type": "standard",
+      "description": "Territorial: income tax only on employed persons' Belize-source income; business tax on gross receipts of a business carried on in Belize. Foreign portfolio income is untaxed.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Residence and immigration permit (e.g. permanent residence after one year, or QRP).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "There is no capital gains tax in the Income and Business Tax Act. From basis year 2020, income tax is charged only on employed persons (s. 6(2)-(3), Act 40 of 2024). Business tax applies to revenue receipts of a person carrying on a trade or business in Belize (Part XI definition of 'receipts' and 'revenue receipts', the latter excluding receipts of a capital nature).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income and Business Tax Act, Chapter 55 (Revised Edition 2011)",
+            "url": "https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf",
+            "publisher": "Belize Tax Service",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income and Business Tax (Amendment) Act, 2024 (Act No. 40 of 2024)",
+            "url": "https://media.bts.gov.bz/uploads/Act_No_40_of_2024_Income_and_Business_Tax_Amendment_Act_2024_b6bf496b66.pdf",
+            "publisher": "Belize Tax Service",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Belize Tourism Board: The Qualified Retirement Program (QRP)",
+            "url": "https://www.belizetourismboard.org/programs-events/retirement-program/",
+            "publisher": "Belize Tourism Board",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "IBTA s. 6 (replaced 2024): no income tax on anyone other than employed persons; capital receipts excluded from business tax base. No CGT legislation found.",
+        "professional_trader": "A person carrying on a trade in Belize (e.g. real estate developers, share-transfer sales) pays business tax on gross receipts (1.75% for real estate sales and share transfer sales, Ninth Schedule).",
+        "open_questions": [
+          "Stamp duty on transfers of Belize land and shares (around 5%-8%) not researched."
+        ]
+      },
+      "dividends": {
+        "summary": "A passive individual is not liable to income tax (employed persons only) and not liable to business tax unless carrying on a business in Belize. Foreign dividends are therefore untaxed. Dividends are listed as business-tax receipts at 15% (Ninth Schedule (h)) for persons carrying on a business in Belize.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income and Business Tax Act, Chapter 55 (Revised Edition 2011)",
+            "url": "https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf",
+            "publisher": "Belize Tax Service",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income and Business Tax (Amendment) Act, 2024 (Act No. 40 of 2024)",
+            "url": "https://media.bts.gov.bz/uploads/Act_No_40_of_2024_Income_and_Business_Tax_Amendment_Act_2024_b6bf496b66.pdf",
+            "publisher": "Belize Tax Service",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.15,
+        "domestic_rate": null,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Act 40 of 2024 s. 6(2): no income tax on non-employed persons; business tax only on receipts of a person carrying on trade/business in Belize (IBTA s. 106 and Part XI definitions).",
+        "withholding_outbound": "Not researched.",
+        "treaty_network": "CARICOM agreement, UK (1947), Austria and a few others.",
+        "open_questions": [
+          "Whether dividends from Belize companies to a passive resident individual attract business tax (15%) was not established; domestic_rate left null."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No wealth tax found in Belize law.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income and Business Tax Act, Chapter 55 (Revised Edition 2011)",
+            "url": "https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf",
+            "publisher": "Belize Tax Service",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Municipal/land tax on real property; rates not researched."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax was found. The Belize Tourism Board states that QRP members are exempt from inheritance tax, which suggests some estate duty may exist for non-QRP residents; not verified.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Belize Tourism Board: The Qualified Retirement Program (QRP)",
+            "url": "https://www.belizetourismboard.org/programs-events/retirement-program/",
+            "publisher": "Belize Tourism Board",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None found.",
+        "gifts_same_as_inheritance": true,
+        "open_questions": [
+          "Whether Belize levies any estate duty or stamp duty on transfers on death is unknown."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Not relevant for a passive investor given the territorial, employment-only income tax; residence is otherwise judged on facts.",
+    "routes": [
+      {
+        "name": "Qualified Retirement Program (QRP)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Age 40+; foreign retirement income of at least USD 2,000 a month deposited in Belize; dependants include spouse and children under 18; 30 consecutive days a year in Belize. QRP members are exempt from tax on foreign income, capital gains and inheritance tax (Belize Tourism Board). Qualifying nationalities include Commonwealth, US, EU and South American countries."
+      },
+      {
+        "name": "Permanent residence",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "After one year of continuous residence; not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Belize Tourism Board: The Qualified Retirement Program (QRP)",
+        "url": "https://www.belizetourismboard.org/programs-events/retirement-program/",
+        "publisher": "Belize Tourism Board",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": null,
+    "summary": "Companies pay business tax on gross receipts (generally 1.75%-19.5% depending on activity, Ninth Schedule); no profit-based CIT for most companies (petroleum operations 40%).",
+    "sources": [
+      {
+        "title": "Income and Business Tax Act, Chapter 55 (Revised Edition 2011)",
+        "url": "https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf",
+        "publisher": "Belize Tax Service",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Income and Business Tax (Amendment) Act, 2024 (Act No. 40 of 2024)",
+        "url": "https://media.bts.gov.bz/uploads/Act_No_40_of_2024_Income_and_Business_Tax_Amendment_Act_2024_b6bf496b66.pdf",
+        "publisher": "Belize Tax Service",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Belmopan",
+      "lon": -88.76667,
+      "lat": 17.25,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3582672"
+    },
+    {
+      "name": "Belize City",
+      "lon": -88.19756,
+      "lat": 17.49952,
+      "kind": "city",
+      "coordinate_source": "GeoNames 3582677"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully subject to US federal tax; Belize's zero local tax gives no credit to offset it.",
+  "open_questions": [
+    "Estate duty/stamp duty on inheritances.",
+    "Business tax on domestic dividends of a passive individual."
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "id": "JPN",
+  "name": "Japan",
+  "continent": "Asia",
+  "region": "East Asia",
+  "currency": "JPY",
+  "researched_on": "2026-10-15",
+  "summary": "Japan taxes gains on listed shares and listed-company dividends separately at 20.315% (15.315% national including reconstruction surtax plus 5% local), but for 2025 and 2026 a minimum tax of 22.5% applies to aggregate income above JPY 330 million, and from 2027 the threshold is JPY 165 million at 30% (per PwC), so very large realised gains face more. There is no wealth tax. Inheritance and gift tax is among the world's highest: 10% to 55% on each heir's statutory share above a basic deduction of JPY 30 million plus 6 million per statutory heir. Foreigners on working-type visas who have lived in Japan 10 years or less in the last 15 are taxed only on Japanese assets at death, and for the first 5 years non-permanent residents are taxed on foreign income only if it is paid in or remitted to Japan. An exit tax applies to departing residents with JPY 100 million or more of securities.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Permanent resident taxpayer (Japanese national, or foreigner resident more than 5 of the last 10 years)",
+      "type": "standard",
+      "description": "Worldwide income; separate 20.315% taxation of listed share gains and listed dividends; worldwide inheritance tax once the foreigner thresholds are passed.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident with a domicile (jusho) in Japan or a residence for 1 year or more; permanent-resident taxpayer status for a foreigner after more than 5 years of stay in the last 10. Worldwide inheritance tax for a foreigner after more than 10 of the last 15 years (or with a permanent-type visa).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains on listed shares are taxed separately at 20.315% (income tax 15% + 2.1% reconstruction surtax on it + 5% local inhabitant tax). Unlisted shares are also taxed separately at 20.315%, and listed and unlisted losses cannot offset each other. Real estate: 20.315% if held more than 5 years at 1 January of the sale year, 39.63% if shorter. Minimum tax on high earners: for 2025 and 2026, 22.5% of aggregate income (including separately taxed gains) above JPY 330 million, charged to the extent it exceeds regular tax; per PwC, from 2027 the threshold falls to JPY 165 million and the rate rises to 30%.",
+        "exemptions_thresholds": "NISA tax-free accounts (limited amounts, not relevant at this scale). Minimum tax threshold JPY 330 million (2025-2026).",
+        "important_exceptions": "Exit tax (Income Tax Act art. 60-2; NTA Tax Answer 1478): residents who lived in Japan more than 5 of the last 10 years and hold JPY 100 million or more of securities and similar assets are deemed to sell them on departure; payment can be deferred 5 (up to 10) years with a tax agent and collateral. Gifts or bequests of such assets to non-residents trigger the same deemed sale.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Japan - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/japan/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Japan - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/japan/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "No.1478 Exit taxation (国外転出をする場合の譲渡所得等の特例)",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1478.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.20315,
+        "rates": {
+          "listed_securities_domestic": 0.20315,
+          "listed_securities_foreign": 0.20315,
+          "private_business_sale": 0.20315,
+          "real_estate_local": 0.20315,
+          "real_estate_foreign": 0.20315
+        },
+        "rate_basis": "Separate taxation at 15.315% national + 5% local = 20.315% for listed and unlisted shares and long-term real estate. Foreign listed shares through a Japanese broker are taxed the same way. Not modelled: the minimum tax, which lifts the effective rate towards 22.5% on income far above JPY 330 million (2025-2026) and towards 30% above JPY 165 million from 2027.",
+        "professional_trader": "Share gains of individuals remain separately taxed at 20.315% even for active traders; business-scale trading of other assets falls into aggregate income (top about 55.945%).",
+        "holding_period_rules": "Real estate: more than 5 years (counted to 1 January of the year of sale) for 20.315%, otherwise 39.63%. No holding period for shares.",
+        "foreign_assets": "Permanent residents are taxed on worldwide gains with a foreign tax credit. Foreign asset report required above JPY 50 million (not verified)."
+      },
+      "dividends": {
+        "summary": "Dividends are in principle aggregate income (top about 55.945%, with a small dividend credit for Japanese dividends), but dividends from listed companies (shareholders under 3%) can be taxed separately at 20.315%, which is final. Foreign listed dividends received through a Japanese payer are taxed at 20.315% after foreign withholding, with a foreign tax credit available by filing.",
+        "exemptions_thresholds": "None at this scale.",
+        "important_exceptions": "Holders of 3% or more of a listed company, and owners of unlisted companies, are taxed at aggregate rates up to about 55.945% on dividends (minus dividend credit).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Japan - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/japan/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Japan - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/japan/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Japan - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/japan/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.55945,
+        "domestic_rate": 0.20315,
+        "foreign_gross_rate": 0.20315,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Listed portfolio dividends: separate taxation 20.315% (domestic and foreign listed). Headline = aggregate top rate 45% x 1.021 + 10% = 55.945% for non-listed/large holdings.",
+        "withholding_outbound": "20.42% on dividends to non-residents (15.315% for listed dividends to portfolio holders), reduced by treaty.",
+        "treaty_network": "Broad network covering the US, EU and Asian partners (count not verified).",
+        "holding_company_notes": "Large companies in Tokyo pay about 31.5% effective; a defense special corporate tax of 4% of national CIT applies from 2026. Small family companies face an additional tax on retained earnings (not verified). No holding structure is modelled: an asset-management company pays roughly 30% or more on portfolio gains and on foreign portfolio dividends (the 95% foreign-dividend exclusion needs a 25% stake, and only 20% of domestic dividends on stakes under 5% are excluded; PwC), against 20.315% for an individual, and its distributions are taxed to the family at progressive rates up to about 55% less the dividend credit. The inheritance-valuation rules for share-holding companies (net asset value less a deduction for unrealised gains, which reportedly excludes gains on assets contributed in kind; not verified) do not make up for this on a listed portfolio."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Japan - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/japan/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Fixed asset tax of 1.4% a year on the appraised value of real property (plus city planning tax in urban areas, not verified); registration and licence tax 0.1-2% on registration."
+      },
+      "inheritance": {
+        "summary": "Inheritance tax is charged on heirs, but computed on the estate: the basic deduction (JPY 30 million + 6 million per statutory heir) is subtracted, the remainder is divided notionally by statutory shares, each share is taxed at progressive rates from 10% to 55% (above JPY 600 million), and the total is allocated to the actual recipients. Gifts are taxed at similar progressive rates (annual exemption JPY 1.1 million per recipient); gifts within 7 years before death are added back. Permanent residents (and foreigners who have lived in Japan more than 10 of the last 15 years) are taxed on worldwide property.",
+        "exemptions_thresholds": "Basic deduction JPY 30 million + JPY 6 million x number of statutory heirs (family of five with a surviving spouse: 4 heirs = JPY 54 million in total). Spouse credit (tax-free up to the larger of the statutory share or JPY 160 million; general knowledge, not verified). Coded exemption per child: JPY 13.5 million (= 54 million / 4 heirs).",
+        "important_exceptions": "Optional inheritance-time settlement gift regime: parents aged 60+ to children aged 18+, 20% flat gift tax above a JPY 25 million lifetime deduction, credited against later inheritance tax. 'Temporary resident' and 'foreign decedent' rules exempt foreign property for foreigners who have lived in Japan 10 years or less in the last 15 (see special regimes).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "No.4155 Inheritance tax rates (相続税の税率)",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4155.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "No.4138 Heirs living abroad and scope of inheritance tax",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4138.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Japan - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/japan/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "basis": "beneficiary",
+        "children_treatment": "taxed",
+        "exemption": 13500000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.1
+          },
+          {
+            "from_amount": 10000000,
+            "rate": 0.15
+          },
+          {
+            "from_amount": 30000000,
+            "rate": 0.2
+          },
+          {
+            "from_amount": 50000000,
+            "rate": 0.3
+          },
+          {
+            "from_amount": 100000000,
+            "rate": 0.4
+          },
+          {
+            "from_amount": 200000000,
+            "rate": 0.45
+          },
+          {
+            "from_amount": 300000000,
+            "rate": 0.5
+          },
+          {
+            "from_amount": 600000000,
+            "rate": 0.55
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Progressive gift tax up to 55% above JPY 1.1 million a year per recipient (special lower scale for gifts from parents/grandparents to adult descendants; not detailed), or the elective 20% inheritance-time settlement regime. Gifts within 7 years before death are added to the estate.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": 7,
+        "business_relief": "Business succession deferral for unlisted company shares exists (conditions not verified); listed portfolios get no relief.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Worldwide for Japanese nationals domiciled in Japan within the last 10 years and for foreigners beyond the temporary thresholds; only Japan-situs property for temporary foreigners and their heirs.",
+        "domicile_rules": "NTA No.4138: temporary resident = holds a residence status and has lived in Japan 10 years or less in the 15 years before inheritance; foreign decedent = held a residence status and Japanese address at death. Japanese nationals stay in worldwide scope for 10 years after leaving."
+      }
+    },
+    {
+      "id": "non_permanent_resident",
+      "name": "Non-permanent resident + temporary foreigner (first 5 years)",
+      "type": "special",
+      "description": "A foreign national resident in Japan for 5 years or less in the last 10 is a non-permanent resident: taxed on Japan-source income and on foreign-source income only if paid in or remitted to Japan. During this time (and up to 10 years in the last 15) a foreigner holding a work-type residence status is a 'temporary' person for inheritance tax: foreign property is outside Japanese inheritance and gift tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Non-Japanese national with a Japanese domicile; aggregate stay 5 years or less in the previous 10. For inheritance: holder of a residence status listed in Table 1 (work/business-type visas such as Business Manager; not permanent resident or spouse visas) with 10 years or less of residence in the past 15. A non-working family needs a qualifying visa; the Business Manager visa requires running a real business in Japan (requirements not verified).",
+      "duration_years": 5,
+      "capital_gains": {
+        "summary": "Non-permanent residents are taxed on income other than foreign-source income, and on foreign-source income paid in Japan or remitted from abroad (Income Tax Act art. 7(1)(ii)). Since the 2017 reform, gains on securities are treated as non-foreign-source (taxed in full regardless of remittance) when the securities were acquired during a period as a non-permanent resident within the 10 years before the sale. Gains on securities acquired BEFORE becoming resident in Japan ('specified securities') are foreign-source when sold on a foreign exchange, through a foreign broker, or from a foreign custody account, and are taxed only if paid in Japan or remitted (Order art. 17(1)). Foreign listed gains are coded at 20.315% because any portfolio turnover after arrival creates fully taxable holdings.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Japan - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/japan/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Japan - Individual - Residence",
+            "url": "https://taxsummaries.pwc.com/japan/individual/residence",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income Tax Act (Act No. 33 of 1965), Article 7 (scope of taxable income)",
+            "url": "https://laws.e-gov.go.jp/law/340AC0000000033",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Order for Enforcement of the Income Tax Act (Cabinet Order No. 96 of 1965), Article 17 (scope of taxable income of non-permanent residents)",
+            "url": "https://laws.e-gov.go.jp/law/340CO0000000096",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "No.2010 Taxpayers who are individuals (residents, non-permanent residents, non-residents)",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2010.htm",
+            "publisher": "National Tax Agency",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "headline_rate": 0.20315,
+        "rates": {
+          "listed_securities_domestic": 0.20315,
+          "listed_securities_foreign": 0.20315,
+          "private_business_sale": 0.20315,
+          "real_estate_local": 0.20315,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "listed_securities_foreign 20.315% (15.315% national incl. reconstruction surtax + 5% local): applies to securities acquired while a non-permanent resident (Order art. 17(1), last 10 years) and to remitted gains on pre-arrival holdings; a family that never sells or remits pre-arrival holdings could pay 0% on those, which is not scored. Foreign real estate: foreign-source, taxable only if paid in Japan or remitted (0% if kept abroad). Domestic listed shares, private business and Japanese real estate: as standard.",
+        "open_questions": [
+          "How the 'acquired while a non-permanent resident' test treats funds or ETFs bought abroad before arrival and later reinvested (Order art. 17(2) first-in-first-out matching) was not checked against NTA guidance."
+        ],
+        "eligibility_conditions": "Remittance basis for pre-arrival holdings only: the 0% foreign real estate rate and the remittance-only treatment of pre-arrival foreign securities ASSUME the proceeds are kept abroad and not remitted (remittances are deemed to come first from other foreign-paid taxable income, Order art. 17(4)). Securities bought while a non-permanent resident are taxed at 20.315% regardless of remittance."
+      },
+      "dividends": {
+        "summary": "Foreign dividends paid and kept abroad are not taxed for a non-permanent resident; amounts remitted to Japan are taxed. Japanese dividends as standard.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Japan - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/japan/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Order for Enforcement of the Income Tax Act (Cabinet Order No. 96 of 1965), Article 17 (scope of taxable income of non-permanent residents)",
+            "url": "https://laws.e-gov.go.jp/law/340CO0000000096",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "No.2010 Taxpayers who are individuals (residents, non-permanent residents, non-residents)",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2010.htm",
+            "publisher": "National Tax Agency",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.55945,
+        "domestic_rate": 0.20315,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Foreign-source dividends not paid in or remitted to Japan are outside the charge; remitted amounts taxed (aggregate rates or 20.315%). Remittance ordering rules are complex.",
+        "eligibility_conditions": "Remittance basis: the 0% foreign_gross_rate ASSUMES foreign dividends are paid and kept abroad. Amounts remitted to Japan are taxed (remittances are deemed to come first from other foreign-paid non-foreign-source income, then from foreign-source income, Order art. 17(4)). Dividends paid through a Japanese broker are paid in Japan and fully taxed."
+      },
+      "inheritance": {
+        "summary": "While the decedent is a 'foreign decedent' and the heirs are temporary residents, only Japan-situs property is subject to inheritance tax; foreign property (e.g. a portfolio held with a foreign custodian in foreign securities) is outside the charge. Japanese property is taxed on the standard scale.",
+        "eligibility_conditions": "Decedent held a Table 1 residence status and lived in Japan 10 years or less in the last 15; heirs likewise temporary or non-resident foreigners.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "No.4138 Heirs living abroad and scope of inheritance tax",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4138.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Japan - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/japan/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "beneficiary",
+        "children_treatment": "exempt_with_conditions",
+        "exemption": 13500000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.1
+          },
+          {
+            "from_amount": 10000000,
+            "rate": 0.15
+          },
+          {
+            "from_amount": 30000000,
+            "rate": 0.2
+          },
+          {
+            "from_amount": 50000000,
+            "rate": 0.3
+          },
+          {
+            "from_amount": 100000000,
+            "rate": 0.4
+          },
+          {
+            "from_amount": 200000000,
+            "rate": 0.45
+          },
+          {
+            "from_amount": 300000000,
+            "rate": 0.5
+          },
+          {
+            "from_amount": 600000000,
+            "rate": 0.55
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Gift tax likewise only on Japan-situs property for temporary foreigners.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": 7,
+        "foreign_assets": "Foreign-situs property exempt (shares/bonds situs = issuer's head office; deposits = branch).",
+        "domicile_rules": "Brackets apply only to Japan-situs property.",
+        "scope": "local_assets_only"
+      }
+    },
+    {
+      "id": "temporary_foreigner_years_6_10",
+      "name": "Temporary foreigner for inheritance tax (years 6 to 10)",
+      "type": "special",
+      "description": "After 5 years the foreigner becomes a permanent-resident taxpayer for income tax (worldwide income at standard rates), but remains outside inheritance and gift tax on foreign property until more than 10 years of residence in the last 15, provided the residence status remains a Table 1 (work-type) status.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "As for the non-permanent resident regime, years 6 to 10 of residence; not available to holders of permanent residence or spouse-type visas.",
+      "duration_years": 5,
+      "inheritance": {
+        "summary": "Foreign property outside inheritance tax; Japanese property taxed on the standard scale. Income tax as standard.",
+        "eligibility_conditions": "10 years or less of residence in the past 15 years; Table 1 residence status.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "No.4138 Heirs living abroad and scope of inheritance tax",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4138.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "beneficiary",
+        "children_treatment": "exempt_with_conditions",
+        "exemption": 13500000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.1
+          },
+          {
+            "from_amount": 10000000,
+            "rate": 0.15
+          },
+          {
+            "from_amount": 30000000,
+            "rate": 0.2
+          },
+          {
+            "from_amount": 50000000,
+            "rate": 0.3
+          },
+          {
+            "from_amount": 100000000,
+            "rate": 0.4
+          },
+          {
+            "from_amount": 200000000,
+            "rate": 0.45
+          },
+          {
+            "from_amount": 300000000,
+            "rate": 0.5
+          },
+          {
+            "from_amount": 600000000,
+            "rate": 0.55
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Only Japan-situs property.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": 7,
+        "foreign_assets": "Foreign-situs property exempt.",
+        "domicile_rules": "Brackets apply only to Japan-situs property.",
+        "scope": "local_assets_only"
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if domiciled (jusho, centre of life) in Japan or with a residence (kyosho) for one year or more. Foreigners are non-permanent residents until their stay exceeds 5 years in the last 10.",
+    "routes": [
+      {
+        "name": "Business Manager / Highly Skilled Professional and other work-type visas",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Japan has no passive investor or golden visa; residence requires a work, business-manager or family-based status. Business Manager requires setting up and running a business in Japan (capital and staffing requirements were reportedly tightened in 2025; not verified)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Japan - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/japan/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "No.2875 Determination of residents and non-residents",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2875.htm",
+        "publisher": "National Tax Agency Japan",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.3152,
+    "summary": "National CIT 23.2%; combined effective rate about 31.52% for large companies in Tokyo (32.71% statutory before deducting enterprise taxes); smaller companies have reduced national rates on the first JPY 8 million. Defense special corporate tax of 4% of national CIT (after a JPY 5 million deduction) from fiscal years in 2026. Pillar Two: IIR from fiscal years beginning 1 April 2024; QDMTT and UTPR from 1 April 2026.",
+    "sources": [
+      {
+        "title": "Japan - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/japan/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Tokyo",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 1650000,
+        "currency": "JPY"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 59 unique listings with 4 or 5 bedrooms (4LDK/4SLDK/5LDK and larger) in Minato ward (Azabu, Hiroo, Akasaka, Shirokane, Takanawa) on SUUMO, all result pages read 15 October 2026; median floor area 211 m2, first quartile JPY 1.2 million, third quartile JPY 2.1 million. Rent excludes management fees; deposits and key money (often 1-2 months each) are extra.",
+      "source": {
+        "title": "SUUMO rental search: Minato-ku, Tokyo, 4K-5K+ layouts",
+        "url": "https://suumo.jp/jj/chintai/ichiran/FR301FC001/?ar=030&bs=040&ta=13&sc=13103&md=11&md=12&md=13&md=14&pc=50",
+        "publisher": "SUUMO (Recruit Co., Ltd.)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 4076000,
+        "currency": "JPY"
+      },
+      "year": 2026,
+      "description": "The American School in Japan (Chofu campus), Grades 9-12 tuition 2026-27 JPY 3,826,000 plus annual capital assessment JPY 250,000. One-time fees: registration JPY 300,000 and building maintenance JPY 1,525,000.",
+      "source": {
+        "title": "Tuition & Fees (2026-27 Schedule of Tuition & Fees)",
+        "url": "https://www.asij.ac.jp/admissions/tuition-fees",
+        "publisher": "The American School in Japan",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in Chofu; families choosing it often live in Chofu/Setagaya, where rents are well below Minato."
+  },
+  "markers": [
+    {
+      "name": "Tokyo",
+      "lon": 139.69171,
+      "lat": 35.6895,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 1850147"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain US-taxed; Japan's 20.315% on gains/dividends is creditable against US tax. The US-Japan estate and gift tax treaty coordinates the two inheritance taxes (details not verified). Japanese investment trusts are PFICs.",
+  "open_questions": [
+    "Minimum tax on ultra-high income (22.5% above JPY 330 million in 2025-2026; 30% above JPY 165 million from 2027 per PwC) is not reflected in the CGT rates; for a gain of several billion yen the effective rate exceeds 20.315%.",
+    "Non-permanent residents' foreign securities gains now verified against Income Tax Act art. 7 and Order art. 17 (e-Gov); the treatment of reinvested funds bought before arrival is not confirmed.",
+    "Inheritance exemption per child is an approximation of Japan's estate-level basic deduction divided among four statutory heirs.",
+    "Business Manager visa requirements not verified; cost of living: purchase prices, health insurance and housekeeper wages not sourced."
+  ]
+}

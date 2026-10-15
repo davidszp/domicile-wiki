@@ -1,0 +1,200 @@
+{
+  "id": "VGB",
+  "name": "British Virgin Islands",
+  "continent": "Caribbean",
+  "region": "Leeward Islands (British Overseas Territory)",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "summary": "The BVI has a zero-rated income tax for individuals and no capital gains, dividend, inheritance, gift or wealth tax. Employees pay 8% payroll tax on remuneration above USD 10,000. Property purchases by non-Belongers carry 12% stamp duty. The source used is Deloitte's January 2025 edition; no 2026 edition was available.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary residence",
+      "type": "standard",
+      "description": "Zero-rated income tax for individuals; no capital gains, inheritance, estate or wealth tax. Payroll tax applies to employment income only.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Lawful residence; non-belongers need residence/work permission.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: British Virgin Islands Highlights 2025",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2025/dttl-tax-britishvirginislandshighlights-2025.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Zero-rated income tax regime for individuals; no CGT (Deloitte BVI Highlights 2025).",
+        "important_exceptions": "Stamp duty on BVI land transactions: 12% (4% for Belongers)."
+      },
+      "dividends": {
+        "summary": "Dividends are not taxed; no withholding taxes.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: British Virgin Islands Highlights 2025",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2025/dttl-tax-britishvirginislandshighlights-2025.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Zero-rated income tax; no filing obligation.",
+        "withholding_outbound": "None.",
+        "treaty_network": "No tax treaties (25+ TIEAs). US/EU withholding on portfolio dividends is not reduced."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: British Virgin Islands Highlights 2025",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2025/dttl-tax-britishvirginislandshighlights-2025.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Land tax USD 50-150 per year per parcel band; house tax 1.5% of assessed annual rental value."
+      },
+      "inheritance": {
+        "summary": "No inheritance or estate tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: British Virgin Islands Highlights 2025",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2025/dttl-tax-britishvirginislandshighlights-2025.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax reported.",
+        "gifts_same_as_inheritance": true,
+        "important_exceptions": "BVI-situs assets (e.g. shares in BVI companies, BVI land) need a BVI grant of probate; stamp duty applies to land transfers."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No personal income tax, so residence has no local tax consequence.",
+    "routes": [
+      {
+        "name": "Residence/work permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Non-Belongers need immigration permission; land purchase needs a Non-Belonger's Land Holding Licence. Details not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Deloitte International Tax: British Virgin Islands Highlights 2025",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2025/dttl-tax-britishvirginislandshighlights-2025.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.0,
+    "summary": "BVI Business Companies are exempt from income tax. Economic substance rules apply to relevant activities (including holding). No WHT, no transfer pricing rules.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: British Virgin Islands Highlights 2025",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2025/dttl-tax-britishvirginislandshighlights-2025.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Road Town (Tortola)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 3500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median of the three 4-5 bedroom long-term rentals on Smiths Gore's BVI long-term rental page on 15 Oct 2026 (all Tortola place names): Havers House villa, 5 bed, USD 7,500; McNamara apartment, 4 bed, USD 3,500; Great Mountain apartment, 4 bed, USD 3,200. Small sample, and two of the three are apartments; the only house/villa (USD 7,500) is closer to what a wealthy family would rent, so treat the median as a floor.",
+      "source": {
+        "title": "Smiths Gore BVI: long-term rentals",
+        "url": "https://smithsgore.com/properties/long-term-rentals",
+        "publisher": "Smiths Gore (BVI)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 23870,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Cedar International School (Road Town, IB World School), IB Diploma years DP1-DP2 tuition 2026-27 paid annually (MYP4-5: USD 23,480). Plus a USD 75 a month school development fee (PYP1-DP2), lab supplies/textbooks for secondary students and a 10% pre-enrolment deposit (credited to June tuition); USD 300 application fee. Currency shown as $; the BVI uses the US dollar.",
+      "source": {
+        "title": "Cedar International School: Tuition and Fees 2026-2027 (PDF)",
+        "url": "https://cedar.vg/wp-content/uploads/2026/06/TUITION-FEES-2026.pdf",
+        "publisher": "Cedar International School (Tortola)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Purchase price per m2, health insurance and housekeeper not sourced. Cedar's fee page: https://cedar.vg/admissions/tuition-and-fees/"
+  },
+  "markers": [
+    {
+      "name": "Road Town",
+      "lon": -64.62305556,
+      "lat": 18.43138889,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q179431 (via en.wikipedia)"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. There is no local tax here to credit against US tax on portfolio income, so a US family pays the full US rates. No Puerto Rico-style exclusion applies.",
+  "open_questions": [
+    "Deloitte 2026 edition not available; 2025 edition used. 2025/2026 reforms not checked (web search budget exhausted).",
+    "Indicator gaps (checked 2026-10-15): the World Bank WGI dataset has no British Virgin Islands entry at all (the API returns no row under any code), so stability, legal and corruption scores cannot be filled with a same-definition value. The latest World Bank/UNODC homicide rate is from 2006 (8.2 per 100,000), too old for the pipeline; no current Royal Virgin Islands Police Force or statistics-office figure was reachable (gov.vg statistics page has no data tables). Life expectancy (2024) and internet use (2017) are already in the World Bank data. Not proxied from the UK."
+  ]
+}

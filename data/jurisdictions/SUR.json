@@ -1,0 +1,221 @@
+{
+  "id": "SUR",
+  "name": "Suriname",
+  "continent": "South America",
+  "region": "Guianas",
+  "currency": "SRD",
+  "researched_on": "2026-10-15",
+  "summary": "Suriname taxes residents on worldwide income (Wet Inkomstenbelasting 1922): dividends and interest, domestic or foreign, are taxed at progressive rates reaching 38% above SRD 234,000, with 25% Surinamese dividend tax credited. Private capital gains on securities are not among the taxable income sources. Suriname still levies a net wealth tax on residents' worldwide net assets: the consolidated law published by the tax authority states 3% of net wealth above SRD 100,000 (SRD 120,000 married), which would be very costly for this family. Inheritance tax not verified.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Worldwide income tax on dividends and interest (up to 38%); no tax on private capital gains; annual vermogensbelasting on worldwide net wealth.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Natural persons who live in Suriname ('in Suriname wonen'), judged on the facts and circumstances (IB art. 1).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "The Income Tax Act taxes income from sources (business and work, immovable property, movable capital, periodic payments). Gains on the private sale of securities or real estate are not a listed source and are untaxed unless realised in a business. Business cessation gains can be taxed at 25% on request (art. 34(4)).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Wet Inkomstenbelasting 1922 (geldende tekst, laatstelijk gewijzigd bij S.B. 2024 no. 3)",
+            "url": "https://belastingdienst.sr/wp-content/uploads/2024/10/Wet-Inkomstenbelasting.pdf",
+            "publisher": "Belastingdienst Suriname",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Wet Inkomstenbelasting 1922 arts. 5-7 define income from immovable property, movable capital (dividends, interest) and enterprise/work; private capital gains are not included.",
+        "professional_trader": "Gains forming part of business profits are taxed at the progressive rates up to 38%.",
+        "open_questions": [
+          "No explicit statement found; conclusion drawn from the structure of IB arts. 4-7. Substantial-shareholding rules not found in the consolidated text."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends and interest from shares, bonds and other securities are income from movable capital (art. 6), taxed in the progressive scale: 0% to SRD 108,000, then 8%, 18%, 28% and 38% above SRD 234,000 (art. 34). Surinamese companies withhold 25% dividend tax, credited against income tax (art. 52e).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Wet Inkomstenbelasting 1922 (geldende tekst, laatstelijk gewijzigd bij S.B. 2024 no. 3)",
+            "url": "https://belastingdienst.sr/wp-content/uploads/2024/10/Wet-Inkomstenbelasting.pdf",
+            "publisher": "Belastingdienst Suriname",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Wet Dividendbelasting (geldende tekst)",
+            "url": "https://belastingdienst.sr/wp-content/uploads/2024/10/Wet-Dividendbelasting.pdf",
+            "publisher": "Belastingdienst Suriname",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Belastingdienst Suriname: Inkomstenbelasting",
+            "url": "https://belastingdienst.sr/belastingen/inkomstenbelasting/",
+            "publisher": "Belastingdienst Suriname",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "headline_rate": 0.38,
+        "domestic_rate": 0.38,
+        "foreign_gross_rate": 0.38,
+        "foreign_tax_credit": "none",
+        "rate_basis": "Art. 34(1) top rate 38% above SRD 234,000; Wet Dividendbelasting art. 5: 25% WHT, credited as a prepayment (IB art. 52e) so the total is 38%.",
+        "withholding_outbound": "25% dividend tax (Wet Dividendbelasting art. 5).",
+        "treaty_network": "Very small network (Netherlands Kingdom arrangements; not researched).",
+        "open_questions": [
+          "Unilateral relief for foreign tax on foreign dividends depends on a Staatsbesluit (art. on voorkoming dubbele belasting); not found, scored as none."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "Vermogensbelasting: residents are taxed on worldwide net wealth (all assets with money value minus debts; foreign assets must be declared). Art. 14: the tax is 3% of the taxable sum, being net wealth minus SRD 100,000 (unmarried) or SRD 120,000 (married). Non-residents are taxed only on Surinamese real estate and permanent-establishment assets. The tax authority still issues the 2026 return.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Wet Vermogensbelasting 1944 (geldende tekst, laatstelijk gewijzigd bij S.B. 2002 no. 107)",
+            "url": "https://belastingdienst.sr/wp-content/uploads/2024/10/Wet-Vermogensbelasting.pdf",
+            "publisher": "Belastingdienst Suriname",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Aangiftebiljet Vermogensbelasting 2026",
+            "url": "https://belastingdienst.sr/wp-content/uploads/2026/04/Vermogensbelasting-2026.pdf",
+            "publisher": "Belastingdienst Suriname",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "type": "broad",
+        "components": [
+          {
+            "name": "Vermogensbelasting (Wet Vermogensbelasting 1944, art. 14)",
+            "base": "net_wealth_worldwide",
+            "exempt_amount": 120000,
+            "entry_threshold": 0,
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.03
+              }
+            ],
+            "notes": "Allowance SRD 120,000 for a married taxpayer (SRD 100,000 unmarried). Unilateral relief by decree possible for foreign assets taxed abroad."
+          }
+        ],
+        "property_tax_note": "Huurwaardebelasting (rental value tax) exists as a separate law; not researched.",
+        "open_questions": [
+          "The 3% rate is as printed in the tax authority's consolidated text (last amended S.B. 2002 no. 107). A rate of 3% on net wealth is unusually high; it may be a transcription of 3 per mille. Needs confirmation from the official gazette or a Surinamese adviser before relying on it."
+        ]
+      },
+      "inheritance": {
+        "summary": "Not verified. No inheritance or gift tax law is published on the tax authority's legislation page, and no other source could be opened. Scored as an untaxed placeholder with low confidence; treat as unknown.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Belastingdienst Suriname: Inkomstenbelasting",
+            "url": "https://belastingdienst.sr/belastingen/inkomstenbelasting/",
+            "publisher": "Belastingdienst Suriname",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "basis": "beneficiary",
+        "children_treatment": "taxed_low",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Unknown.",
+        "gifts_same_as_inheritance": true,
+        "open_questions": [
+          "Placeholder: no inheritance/gift tax law could be verified, so the metric is treated as missing (not as untaxed).",
+          "Whether Suriname levies a successierecht/inheritance tax on residents' estates, at what rates for children, is unknown."
+        ],
+        "status": "not_researched"
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Living in Suriname, judged on the circumstances (IB art. 1; Wet Vermogensbelasting art. 1).",
+    "routes": [
+      {
+        "name": "Residence permit (verblijfsvergunning)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wet Inkomstenbelasting 1922 (geldende tekst, laatstelijk gewijzigd bij S.B. 2024 no. 3)",
+        "url": "https://belastingdienst.sr/wp-content/uploads/2024/10/Wet-Inkomstenbelasting.pdf",
+        "publisher": "Belastingdienst Suriname",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.36,
+    "summary": "Income tax on bodies (lichamen) at 36% (IB art. 36). 25% dividend withholding tax.",
+    "sources": [
+      {
+        "title": "Wet Inkomstenbelasting 1922 (geldende tekst, laatstelijk gewijzigd bij S.B. 2024 no. 3)",
+        "url": "https://belastingdienst.sr/wp-content/uploads/2024/10/Wet-Inkomstenbelasting.pdf",
+        "publisher": "Belastingdienst Suriname",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Wet Dividendbelasting (geldende tekst)",
+        "url": "https://belastingdienst.sr/wp-content/uploads/2024/10/Wet-Dividendbelasting.pdf",
+        "publisher": "Belastingdienst Suriname",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Paramaribo",
+      "lon": -55.16682,
+      "lat": 5.86638,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3383330"
+    }
+  ],
+  "us_citizen_notes": "No US-Suriname income tax treaty known. US citizens remain subject to US federal tax.",
+  "open_questions": [
+    "Wealth tax rate (3% vs possible 3 per mille).",
+    "Inheritance tax unknown."
+  ]
+}

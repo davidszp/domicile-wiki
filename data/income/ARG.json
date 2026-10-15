@@ -1,0 +1,222 @@
+{
+  "id": "ARG",
+  "name": "Argentina",
+  "currency": "ARS",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Argentine residents pay Ganancias on a progressive scale of 5% to 35% (article 94 scale, values for July-December 2026, indexed twice a year by INDEC CPI). Employees and autonomos get a non-taxable minimum and a special deduction. Employees contribute 17% of salary up to a monthly cap; autonomos pay fixed monthly amounts by category.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.05
+      },
+      {
+        "from_amount": 2168491.89,
+        "rate": 0.09
+      },
+      {
+        "from_amount": 4336983.77,
+        "rate": 0.12
+      },
+      {
+        "from_amount": 6505475.65,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 9758213.49,
+        "rate": 0.19
+      },
+      {
+        "from_amount": 19516426.99,
+        "rate": 0.23
+      },
+      {
+        "from_amount": 29274640.48,
+        "rate": 0.27
+      },
+      {
+        "from_amount": 43911960.73,
+        "rate": 0.31
+      },
+      {
+        "from_amount": 65867941.1,
+        "rate": 0.35
+      }
+    ],
+    "personal_allowance": 25135816.2,
+    "employee_social_security_rate": 0.17,
+    "employee_social_security_cap": 52975828.56,
+    "self_employed_social_security_rate": 0.32,
+    "self_employed_social_security_cap": 10352472.12,
+    "self_employed_notes": "Autonomos (general regime) pay a fixed monthly amount by category, not a share of actual income: from 15 January 2026 category I is ARS 62,743.08 (reference income ARS 196,072.13) up to category V ARS 276,065.92 (reference income ARS 862,706.01), i.e. 32% of the reference income in every category (calcularsueldo.com.ar, 19 Jan 2026 page). Category V is the highest, so the contribution stops growing with income: the cap field is category V's reference income x 12 (ARS 10,352,472) and rate 0.32 applies up to it (about ARS 3.31 million a year; on a EUR ~54k income this is a small share of income). Later 2026 category amounts (a prior pass noted ARS 318,759 for category V from mid-June, not re-sourced) are higher, so this slightly understates. Monotributo (simplified) alternative exists but has revenue ceilings and was not researched.",
+    "local_tax_note": "No city-level personal income tax in Buenos Aires; provincial turnover tax (Ingresos Brutos) applies to professionals but is not modelled. Scale and allowances are the July-December 2026 values (the latest ARCA update, 8.42% above the January-June values, taken as the year-end annual scale).",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Argentina: Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/argentina/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Argentina: Other taxes",
+        "url": "https://taxsummaries.pwc.com/argentina/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Argentina: Residence",
+        "url": "https://taxsummaries.pwc.com/argentina/individual/residence",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "iProfesional - Ganancias 2026: escalas y deducciones primer semestre",
+        "url": "https://www.iprofesional.com/impuestos/446403-impuesto-a-las-ganancias-2026-arca-confirmo-nuevas-escalas-y-deducciones-para-primer-semestre",
+        "publisher": "iProfesional",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Calcular Sueldo - Escalas y deducciones de Ganancias 2026 (enero-junio)",
+        "url": "https://calcularsueldo.com.ar/?p=13161",
+        "publisher": "Calcular Sueldo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Calcular Sueldo - Autonomos 2026: escalas y montos",
+        "url": "https://calcularsueldo.com.ar/impuestos/13170/autonomos-2026-arca-confirmo-todas-las-escalas-y-nuevos-montos-desde-enero.html",
+        "publisher": "Calcular Sueldo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Calcular Sueldo - Escala del articulo 94 de Ganancias (julio a diciembre 2026)",
+        "url": "https://calcularsueldo.com.ar/ganancias/escalas",
+        "publisher": "Calcular Sueldo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Calcular Sueldo - Deducciones personales Ganancias (julio a diciembre 2026)",
+        "url": "https://calcularsueldo.com.ar/ganancias/deducciones-personales",
+        "publisher": "Calcular Sueldo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Argentina: Deductions",
+        "url": "https://taxsummaries.pwc.com/argentina/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "low",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Scale and deductions are the July-December 2026 values from calcularsueldo.com.ar citing ARCA (scale page and personal-deductions page, opened 2026-10-15); consistent with a uniform 8.423% uplift of the January-June values, but the ARCA resolution itself and the definitive annual-return values for 2026 were not read. The calcularsueldo scale page carries a stale footnote dated 2024.",
+      "personal_allowance = non-taxable minimum ARS 5,585,736.93 + general special deduction ARS 18,031,308.76 x 1.08423 = ARS 19,550,079.27 (July-December 2026); the special deduction applies to employees and certain autonomos only.",
+      "Employee cap converted from the PwC monthly cap ARS 4,414,652.38 (1 June 2026) x 12; the cap is indexed monthly and bonus months add 50%.",
+      "Self-employed 0.32 is the ratio of contribution to reference income in the category table (consistent across categories), not a rate stated by a source; the legal split (pension, PAMI, health) was not read.",
+      "PwC Argentina pages do not cover autonomos or monotributo."
+    ],
+    "social_security_deductible": 1
+  },
+  "regimes": [
+    {
+      "id": "arg_nomad_visa",
+      "name": "Digital nomad transitory residence (Disposicion 758/2022)",
+      "kind": "digital_nomad_visa",
+      "description": "Transitory residence of up to 180 days for foreigners from visa-exempt countries who work remotely for clients or employers abroad; extendable once for the same length. No minimum income is set at application; extension requires income receipts and at least 50% of the period spent in Argentina. It carries no tax benefit; non-working residents become tax resident from the 13th month.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment",
+        "employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 1,
+      "duration_note": "180 days plus one extension of the same length (about 12 months).",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Abogados.com.ar - Disposicion 758/2022: visado para nomadas digitales",
+          "url": "https://abogados.com.ar/disposicion-n7582022-de-la-direccion-nacional-de-migraciones-nuevo-tipo-de-visado-especifico-para-nomadas-digitales/30510",
+          "publisher": "Abogados.com.ar",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "PwC Worldwide Tax Summaries - Argentina: Residence",
+          "url": "https://taxsummaries.pwc.com/argentina/individual/residence",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Source is a May 2022 article; current requirements and fees on the Migraciones site were not reached.",
+        "A longer stay needs another residence category.",
+        "Treatment is standard (visa carries no tax benefit), so covers_local_work does not apply; Argentine residents are taxed on worldwide income (PwC)."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Buenos Aires (Palermo / Recoleta / Belgrano)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 873668,
+        "currency": "ARS"
+      },
+      "year": 2026,
+      "description": "Zonaprop Index July 2026: average rent of a 2-ambientes (about 50 m2, 1 bedroom) apartment across CABA, ARS 873,668/month (all listings published on Zonaprop; Palermo is among the pricier barrios). Peso asking rents.",
+      "source": {
+        "title": "Zonaprop Index - Informe del mercado inmobiliario CABA, julio 2026",
+        "url": "https://www.zonaprop.com.ar/blog/wp-content/uploads/2026/08/INDEX_CABA_REPORTE_2026-07.pdf",
+        "publisher": "Zonaprop",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1177672,
+        "currency": "ARS"
+      },
+      "year": 2026,
+      "description": "Zonaprop Index July 2026: average rent of a 3-ambientes (about 70 m2, typically 2 bedrooms) apartment across CABA, ARS 1,177,672/month.",
+      "source": {
+        "title": "Zonaprop Index - Informe del mercado inmobiliario CABA, julio 2026",
+        "url": "https://www.zonaprop.com.ar/blog/wp-content/uploads/2026/08/INDEX_CABA_REPORTE_2026-07.pdf",
+        "publisher": "Zonaprop",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Numbeo quotes USD 744.60 (1-bed centre) and USD 1,597.15 (3-bed centre) but gives no ARS; Zonaprop is used as the primary source. Many foreign-targeted rentals are priced in USD."
+  },
+  "residence_routes": "EU and US citizens can enter without a visa as tourists; remote workers can use the digital nomad transitory residence (180 days, extendable once). Temporary or permanent residence for a skilled employee needs a local employer; Mercosur nationals have a simplified residence route. Citizenship and other routes were not researched.",
+  "open_questions": [
+    "Monotributo not researched.",
+    "The scale is from a secondary calculator site citing ARCA; the definitive annual values for 2026 are not published yet.",
+    "No expat tax regime found."
+  ]
+}

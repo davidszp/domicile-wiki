@@ -1,0 +1,79 @@
+iso3,city,spaces,lat,lon,directory,url,accessed
+ALB,Tirana,7,41.3281,19.8184,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+AND,Andorra la Vella,0,42.4979,1.5032,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+ARE,Dubai,4,25.0743,55.1886,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+ARG,Buenos Aires,18,-34.6096,-58.3888,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+ATG,"St. John's, Antigua",0,17.1185,-61.8449,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+AUS,Sydney,26,-33.8698,151.2083,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+AUT,Vienna,28,48.2084,16.3725,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+BEL,Brussels,54,50.8467,4.3525,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+BGR,Sofia,17,42.6977,23.3217,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+BHR,Manama,0,26.2235,50.5822,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+BHS,"Nassau, Bahamas",0,25.0782,-77.3383,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+BRA,Sao Paulo,13,-23.5507,-46.6334,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+BRB,Bridgetown,0,13.0978,-59.6184,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+CAN,Toronto,20,43.6535,-79.3839,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+CHE,Zurich,19,47.3744,8.541,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+CHL,"Santiago, Chile",22,-33.4377,-70.6511,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+COL,Medellin,6,6.2697,-75.6026,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+CRI,"San Jose, Costa Rica",7,9.9327,-84.0797,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+CYM,"George Town, Cayman Islands",0,19.2954,-81.3808,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+CYP,Nicosia,2,35.1747,33.3639,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+CZE,Prague,12,50.0875,14.4213,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+DEU,Berlin,143,52.5174,13.3951,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+DMA,Roseau,0,48.771,-95.7698,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+DNK,Copenhagen,36,55.6867,12.5701,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+DOM,Santo Domingo,0,18.4714,-69.8918,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+ESP,Barcelona,68,41.3826,2.1771,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+EST,Tallinn,10,59.4372,24.7573,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+FIN,Helsinki,21,60.1666,24.9435,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+FRA,Paris,204,48.8589,2.32,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+GBR,London,157,51.5074,-0.1278,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+GEO,Tbilisi,29,41.6935,44.8014,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+GRC,Athens,1,33.9598,-83.3764,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+GRD,"St. George's, Grenada",0,12.0535,-61.7518,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+HKG,Hong Kong,4,22.3492,114.1858,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+HRV,Zagreb,4,45.8131,15.9773,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+HUN,Budapest,29,47.4818,19.1449,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+IDN,"Canggu, Bali",9,-8.6399,115.1436,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+IRL,Dublin,18,53.3494,-6.2606,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+ISL,Reykjavik,2,64.146,-21.9422,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+ITA,Milan,32,45.4642,9.1896,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+JPN,Tokyo,63,35.6769,139.7639,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+KNA,Basseterre,0,17.2961,-62.7223,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+KOR,Seoul,13,37.5667,126.9783,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+LCA,Castries,18,43.6779,3.9869,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+LTU,Vilnius,3,54.687,25.2829,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+LUX,"Luxembourg, Luxembourg",6,49.6113,6.1298,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+LVA,Riga,6,56.9494,24.1052,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+MAR,Casablanca,1,33.5945,-7.62,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+MEX,Mexico City,7,19.3208,-99.1515,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+MKD,Skopje,5,41.9962,21.4319,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+MLT,Sliema,6,35.9128,14.5021,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+MNE,Budva,3,42.2886,18.842,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+MUS,Grand Baie,1,-20.013,57.5846,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+MYS,Kuala Lumpur,22,3.1517,101.6942,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+NLD,Amsterdam,34,52.3731,4.8925,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+NOR,Oslo,9,59.9133,10.739,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+NZL,Auckland,17,-36.8521,174.7632,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+OMN,Muscat,0,23.6124,58.5938,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+PAN,Panama City,0,30.1587,-85.6603,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+PHL,Makati,19,14.5568,121.0211,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+POL,Warsaw,17,52.2334,21.0711,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+PRI,"San Juan, Puerto Rico",0,18.3842,-66.0534,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+PRT,Lisbon,38,38.7078,-9.1366,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+QAT,Doha,1,25.3109,51.5082,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+ROU,Bucharest,9,44.4361,26.1027,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+SAU,Riyadh,1,24.6389,46.716,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+SGP,Singapore,23,1.3571,103.8195,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+SRB,Belgrade,12,44.8153,20.4457,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+SVK,Bratislava,10,48.1435,17.1083,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+SVN,Ljubljana,4,46.05,14.5069,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+SWE,Stockholm,30,59.3251,18.0711,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+THA,Bangkok,22,13.7525,100.4935,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+TUR,Istanbul,22,41.0064,28.9759,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+TWN,Taipei,32,25.0375,121.5637,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+URY,Montevideo,4,-34.9059,-56.1913,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+USA,New York City,48,40.7127,-74.006,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+VNM,Da Nang,2,16.0685,108.224,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15
+ZAF,Cape Town,5,-33.9288,18.4172,"OpenStreetMap via ohsome API, 2026-07-27 (amenity=coworking_space or office=coworking within 15 km)",https://api.ohsome.org/,2026-10-15

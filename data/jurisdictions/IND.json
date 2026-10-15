@@ -1,0 +1,288 @@
+{
+  "id": "IND",
+  "name": "India",
+  "continent": "Asia",
+  "region": "South Asia",
+  "currency": "INR",
+  "researched_on": "2026-10-15",
+  "summary": "India taxes residents and ordinarily residents on worldwide income. Long-term capital gains cost 14.95% all-in (12.5% plus capped surcharge and cess) and dividends up to 35.88% at the slab rate. Newcomers are usually 'not ordinarily resident' for their first two tax years and are not taxed on foreign income kept abroad. There is no inheritance, estate, gift (between relatives) or wealth tax. The Income-tax Act, 2025 replaced the 1961 Act from 1 April 2026 with the rates carried over. There is no residence route for a non-working foreign investor family except for people of Indian origin (OCI).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Resident and ordinarily resident (ROR)",
+      "type": "standard",
+      "description": "Worldwide taxation at slab rates up to 30% plus surcharge and cess; long-term capital gains 12.5% (14.95% all-in).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident with 182 days in the tax year (or 60 days plus 365 days in the four preceding years); ROR once the RNOR conditions are no longer met (usually from the third year).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Residents and ordinarily residents (ROR) are taxed on worldwide capital gains. Long-term gains (listed Indian securities held over 12 months; other assets, including foreign shares, over 24 months) are taxed at 12.5% without indexation for transfers from 23 July 2024; Indian listed equity on which securities transaction tax (STT) was paid has an annual exemption of INR 125,000. Short-term gains on STT-paid listed equity are taxed at 20%; other short-term gains at the slab rates up to 30%. Surcharge on long-term gains is capped at 15%, plus 4% health and education cess.",
+        "exemptions_thresholds": "INR 125,000 a year of long-term gains on STT-paid listed equity/equity funds. Reinvestment reliefs for gains reinvested in an Indian residential house (capped at INR 100 million) or specified bonds/funds.",
+        "important_exceptions": "Land and buildings acquired before 23 July 2024: choice of 12.5% without or 20% with indexation. Unlisted debentures/bonds: always short-term. From 1 April 2026 the Income-tax Act, 2025 replaces the 1961 Act (PwC refers to the 'New Act'); the rates above are carried over. Buy-backs from 1 April 2026 are taxed as capital gains, with an additional tax for promoters (>10% holders).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "India - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/india/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "India - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/india/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.125,
+        "rates": {
+          "listed_securities_domestic": 0.1495,
+          "listed_securities_foreign": 0.1495,
+          "private_business_sale": 0.1495,
+          "real_estate_local": 0.1495,
+          "real_estate_foreign": 0.1495
+        },
+        "rate_basis": "Long-term 12.5% x 1.15 (surcharge on long-term gains capped at 15%) x 1.04 (cess) = 14.95% for large gains, for all asset classes once held beyond 12 months (Indian listed) or 24 months (foreign shares, unlisted shares, real estate). Short-term gains would cost 20.8% (STT-paid listed equity: 20% x 1.04 with surcharge on such gains capped at 15% -> 23.92%) or up to 39% (30% slab x 1.25 x 1.04).",
+        "professional_trader": "Frequent trading can be treated as business income taxed at slab rates (up to 39% with surcharge and cess); intent, frequency and holding period decide.",
+        "holding_period_rules": "12 months for listed Indian securities and equity-oriented funds; 24 months for other assets including foreign listed shares.",
+        "foreign_assets": "RORs are taxed on worldwide gains with credit for foreign tax under treaties (and unilaterally under s.91 of the 1961 Act where no treaty). RNORs (special regime) are not taxed on foreign gains earned and received outside India."
+      },
+      "dividends": {
+        "summary": "Since 1 April 2020 dividends are taxed in the shareholder's hands at slab rates (top 30%). The surcharge on dividend income is capped at 15%, plus 4% cess. Foreign dividends of an ROR are taxed the same way, with credit for foreign tax under the treaty.",
+        "important_exceptions": "Surcharge cap of 15% on dividend income (Finance Act 2022) is applied from general knowledge; PwC states the cap for long-term capital gains and listed-equity gains only.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "India - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/india/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "India - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/india/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "India - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/india/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Dividend surcharge cap of 15% not confirmed in an opened source."
+        ],
+        "headline_rate": 0.3588,
+        "domestic_rate": 0.3588,
+        "foreign_gross_rate": 0.3588,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "30% slab x 1.15 (dividend surcharge cap) x 1.04 cess = 35.88%. Without the cap (25% surcharge under the default regime above INR 50 million) it would be 39%.",
+        "withholding_outbound": "Indian companies withhold 20% (plus surcharge and cess) on dividends to non-residents, reducible by treaty; 10% on resident individuals above INR 5,000 (not verified for 2026).",
+        "treaty_network": "Comprehensive treaties with most countries including the US and all major EU states, plus eight limited agreements (PwC).",
+        "holding_company_notes": "Domestic companies pay 25.17% (22% optional regime with surcharge and cess) or up to 34.94%; a company structure is not assumed."
+      },
+      "wealth_tax": {
+        "summary": "No wealth tax (Wealth-tax Act abolished from FY 2015/16).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "India - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/india/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "type": "none",
+        "property_tax_note": "Municipal property tax set by each city, generally low and linked to local values. Stamp duty on property purchases set by states (roughly 5%-7%; not verified)."
+      },
+      "inheritance": {
+        "summary": "India has no inheritance or estate tax (estate duty abolished 1985) and no gift tax on the donor. Gifts received by an individual are taxable income of the recipient above INR 50,000 a year, but gifts from relatives (including lineal descendants and ascendants) and amounts received under a will or by inheritance are exempt.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "India - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/india/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax; gifts from relatives (children, parents, spouse, siblings) and inheritances are excluded from the recipient's income. Stamp duty applies to gifts of Indian immovable property (state rates, often reduced for family members; not verified).",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "No tax.",
+        "domicile_rules": "Not applicable. Heirs inherit the deceased's cost for later capital gains."
+      }
+    },
+    {
+      "id": "rnor",
+      "name": "Resident but not ordinarily resident (RNOR)",
+      "type": "special",
+      "description": "Newcomers who are resident but not ordinarily resident are taxed only on Indian income and on income received in India; foreign income earned and received abroad is not taxed.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident in the year but non-resident in 9 of the 10 preceding years, or present 729 days or fewer in the 7 preceding years. A family arriving after years abroad and staying full time is usually RNOR for its first two tax years.",
+      "duration_years": 2,
+      "capital_gains": {
+        "summary": "Foreign gains earned and received outside India are not taxed for an RNOR; Indian gains are taxed as for an ROR.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "India - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/india/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "India - Individual - Residence",
+            "url": "https://taxsummaries.pwc.com/india/individual/residence",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.125,
+        "rates": {
+          "listed_securities_domestic": 0.1495,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.1495,
+          "real_estate_local": 0.1495,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Foreign gains 0 if not received in India; Indian assets as standard (14.95%).",
+        "foreign_assets": "Keep foreign proceeds outside India; amounts received in India are taxable."
+      },
+      "dividends": {
+        "summary": "Foreign dividends earned and received outside India are not taxed for an RNOR; Indian dividends taxed at slab rates as standard.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "India - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/india/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "India - Individual - Residence",
+            "url": "https://taxsummaries.pwc.com/india/individual/residence",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.3588,
+        "domestic_rate": 0.3588,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Foreign dividends 0 when received abroad; domestic as standard."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Tax year 1 April-31 March. Resident if present 182 days or more, or 60 days or more in the year plus 365 days or more in the four preceding years (120 days for Indian citizens/persons of Indian origin with Indian income above INR 1.5 million). Indian citizens not taxable elsewhere with Indian income above INR 1.5 million are deemed resident (RNOR). RNOR if non-resident in 9 of 10 preceding years or present 729 days or fewer in the 7 preceding years.",
+    "routes": [
+      {
+        "name": "Overseas Citizen of India (OCI) card",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Only for foreign citizens of Indian origin and their spouses/children; lifelong multiple-entry visa allowing residence."
+      },
+      {
+        "name": "Employment, business or entry visas",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "No residence-by-investment for passive investors was found; long-term stays need an employment/business purpose or family ties (not researched in detail)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "India - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/india/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.2517,
+    "summary": "Domestic companies can opt for 22% plus 10% surcharge and 4% cess (25.17%), without most incentives; otherwise 25% (turnover up to INR 4 billion) or 30% plus surcharge and cess (up to 34.94%). Foreign company branches 35% plus surcharge and cess. MAT changes under the Finance Act, 2026 from tax year 2026/27.",
+    "special_zones": "GIFT City International Financial Services Centre (IFSC) and Special Economic Zones with concessions (not researched).",
+    "sources": [
+      {
+        "title": "India - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/india/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "New Delhi",
+      "lon": 77.22445,
+      "lat": 28.63576,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 1261481"
+    },
+    {
+      "name": "Mumbai",
+      "lon": 72.88261,
+      "lat": 19.07283,
+      "kind": "financial_centre",
+      "coordinate_source": "GeoNames 1275339"
+    }
+  ],
+  "us_citizen_notes": "US citizens pay US tax on top; the India-US treaty gives credits. As RNOR they pay no Indian tax on foreign income kept abroad.",
+  "open_questions": [
+    "Only PwC was opened; the Income-tax Act, 2025 text and its section numbering were not read.",
+    "RNOR duration of two years assumes full-time presence from arrival; earlier visits to India shorten it."
+  ]
+}

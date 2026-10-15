@@ -1,0 +1,346 @@
+{
+  "id": "ARE",
+  "name": "United Arab Emirates",
+  "continent": "Middle East",
+  "region": "Gulf (GCC)",
+  "currency": "AED",
+  "researched_on": "2026-10-15",
+  "summary": "Federal level: no personal income tax, so no tax on capital gains, dividends or interest for individual investors; no inheritance, gift or wealth tax. Corporate Tax is 9% above AED 375,000 (0% for Qualifying Free Zone Persons on qualifying income; 15% Domestic Minimum Top-up Tax for MNE groups with EUR 750m+ revenue from 2025); VAT 5%. Emirate level: property registration fees (Dubai 4%), municipality fees on rent, and the common-law financial free zones DIFC (Dubai) and ADGM (Abu Dhabi) with their own courts and will registries. Main planning issue: forced heirship (Sharia for Muslims; a statutory 50/50 spouse/children split for non-Muslims without a registered will). No US tax treaty, so US dividends held directly bear 30% US WHT.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "UAE tax residence (no personal income tax)",
+      "type": "standard",
+      "description": "Federal level: no personal income, capital gains, dividend, inheritance, gift or wealth tax. Federal VAT 5%. Emirate level: land registration fees and municipality fees on rent.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any legal resident (residence visa, e.g. Golden Visa). No tax status needs to be claimed; tax residence under Cabinet Decision 85/2022 matters only for treaty access and for the home country's exit rules.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No personal income tax and no capital gains tax for individuals. Gains on listed or private shares, bonds and real estate held as personal investments are untaxed.",
+        "exemptions_thresholds": "Natural persons are within UAE Corporate Tax only if they run a business with turnover above AED 1,000,000 in a calendar year; wage, personal investment income and real estate investment income are excluded regardless of amount (Cabinet Decision 49/2023, Art. 2).",
+        "eligibility_conditions": "Applies to all individuals, resident or not.",
+        "regional_differences": "None: there is no emirate-level income tax.",
+        "important_exceptions": "Personal Investment income is excluded from Corporate Tax only if the activity does not require a licence from a UAE licensing authority. Running a licensed business, or trading activity that requires a licence, can bring a natural person into 9% Corporate Tax. Real estate disposals carry emirate land registration fees, not a gains tax: Dubai 4% of value on third-party sales, usually paid by the buyer (PwC); Abu Dhabi commonly reported at 2% (law-firm commentary; not confirmed from an ADREC fee schedule). See the emirate file.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "United Arab Emirates - Individual - Taxes on personal income (last reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/united-arab-emirates/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cabinet Decision No. 49 of 2023 on natural persons conducting business (AED 1m turnover; wage, personal investment and real estate investment income excluded)",
+            "url": "https://mof.gov.ae/wp-content/uploads/2023/05/Cabinet-Decision-No.-49-of-2023.pdf?fm=pdf",
+            "publisher": "UAE Ministry of Finance",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No personal income tax (PwC, Sep 2026). Cabinet Decision 49/2023 Art. 2(2) excludes Personal Investment income and Real Estate Investment income of natural persons from Corporate Tax. All rates 0.",
+        "professional_trader": "Low risk for a private investor. Investing on personal account that needs no licence is Personal Investment, outside Corporate Tax. A licensed trading or investment-management business would be taxed at 9% above AED 375,000 of profit once turnover exceeds AED 1m.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Foreign gains untaxed. No exit tax."
+      },
+      "dividends": {
+        "summary": "Dividends are not taxed in the UAE. The only cost is foreign withholding tax at source; the UAE has about 110 tax treaties but none with the United States, so US dividends held directly suffer 30% US WHT.",
+        "exemptions_thresholds": "",
+        "important_exceptions": "No UAE-US income tax treaty: US-source dividends paid directly to a UAE resident non-US person bear 30% US withholding. Many UAE families hold US equities through Irish-domiciled UCITS funds (15% US WHT at fund level under the Ireland-US treaty); that is a structuring choice, not a UAE rule.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "United Arab Emirates - Individual - Taxes on personal income (last reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/united-arab-emirates/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cabinet Decision No. 49 of 2023 on natural persons conducting business (AED 1m turnover; wage, personal investment and real estate investment income excluded)",
+            "url": "https://mof.gov.ae/wp-content/uploads/2023/05/Cabinet-Decision-No.-49-of-2023.pdf?fm=pdf",
+            "publisher": "UAE Ministry of Finance",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "United Arab Emirates - Corporate - Withholding taxes (last reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/united-arab-emirates/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No personal income tax; personal investment income excluded from Corporate Tax for natural persons (Cabinet Decision 49/2023).",
+        "withholding_outbound": "0% domestic WHT on dividends paid by UAE companies to non-residents (PwC).",
+        "treaty_network": "About 110 double tax treaties in force (PwC list, may be incomplete), covering most of the EU, UK, Switzerland, Japan, Singapore, Canada, China and India. No treaty with the United States. A Tax Residency Certificate from the FTA is needed to claim treaty rates.",
+        "holding_company_notes": "UAE companies pay 9% Corporate Tax above AED 375,000; a participation exemption for dividends and gains on qualifying shareholdings exists (conditions not verified in this pass). ADGM/DIFC foundations can be used to hold family assets; tax transparency elections exist for family foundations under the CT law (not verified from a primary source here)."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no recurring tax on financial assets.",
+        "regional_differences": "Emirates levy a municipality fee on residential property based on annual rental value (Dubai 5%, generally paid by the tenant, or by the owner-occupier), collected with utility bills.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "United Arab Emirates - Individual - Other taxes (last reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/united-arab-emirates/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "No property tax on capital value. Dubai municipality fee: 5% of annual rental value for residential property (tenant pays; owner if not rented). Other emirates charge similar fees at their own rates."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. Children inherit tax-free. Forced heirship (Sharia for Muslims; the 2023 civil personal status law for non-Muslims without a will) governs who inherits UAE assets, so registered wills are essential.",
+        "exemptions_thresholds": "No tax, so no thresholds.",
+        "eligibility_conditions": "None for the tax exemption. Testamentary freedom for non-Muslims depends on a registered will (DIFC, ADGM, or local court).",
+        "regional_differences": "No emirate levies inheritance tax. Abu Dhabi has its own non-Muslim personal status law (2021) and the ADGM will registry; Dubai has the DIFC Courts Wills Service. Emirate land departments charge registration fees when inherited real estate is transferred into heirs' names (rates per emirate; not verified for inheritance transfers).",
+        "important_exceptions": "MATERIAL PLANNING ISSUE - forced heirship, not tax. (1) Muslims: Sharia fixed shares apply to the estate (sons typically receive twice a daughter's share; spouse and parents have fixed fractions; only up to one third may be left freely by will to non-heirs). A will cannot opt out of this for a Muslim testator. (2) Non-Muslims: since 1 Feb 2023 Federal Decree-Law 41/2022 (civil personal status) applies by default: without a will, 50% to the surviving spouse and 50% split equally among the children regardless of gender; with no children, parents, then siblings (Trowers). Foreign heirs may ask for the law of the deceased's nationality to apply, but not against a registered will (Art. 11(3), per law-firm commentary). Abu Dhabi has had a similar non-Muslim personal status law since 2021 (Abu Dhabi Law No. 14/2021, per Withers); ADGM Courts register non-Muslim wills. (3) Wills: the DIFC Courts Wills Service registers English-language common-law wills (Full Will AED 10,000, mirror wills AED 15,000 for a couple; guardianship clauses for minors resident in Dubai or Ras Al Khaimah). Withers notes the post-2023 rules are recent and untested, that jointly owned assets with a Muslim are subject to Sharia, and that transferring land through trusts or wills is restricted under local law. In practice a non-Muslim family should register wills (DIFC or ADGM) and consider an ADGM/DIFC foundation for the portfolio; bank accounts in the deceased's sole name are commonly frozen until a court succession order (not verified from a primary source). (4) The family's home-country inheritance tax may still apply (e.g. citizenship-based US estate tax, or tails of the former residence country).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "United Arab Emirates - Individual - Other taxes (last reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/united-arab-emirates/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "UAE announces new Federal Personal Status Law (Federal Decree-Law 41/2022)",
+            "url": "https://www.trowers.com/insights/2022/december/uae-announces-new-federal-personal-status-law",
+            "publisher": "Trowers & Hamlins",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Estate planning for non-Muslims and residents in the UAE",
+            "url": "https://www.withersworldwide.com/en-gb/insight/read/estate-planning-for-non-muslims-and-residents-in-the-uae",
+            "publisher": "Withers",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "DIFC Courts Wills - Full Will (fees)",
+            "url": "https://www.difccourts.ae/difc-courts-wills/services/full-will",
+            "publisher": "DIFC Courts",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Official text of Federal Decree-Law 41/2022 (elaws.moj.gov.ae / uaelegislation.gov.ae) could not be opened (connection refused / 403); Article 11 intestacy shares taken from Trowers and Withers.",
+          "Whether the new Federal Personal Status Law for Muslims (reported as Federal Decree-Law 41/2024, in force 2025) changed the default for non-Muslims who do not elect civil law was not verified.",
+          "Land department fees on transfer of inherited property into heirs' names were not verified for any emirate."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None. Lifetime gifts to children are not taxed. Gifts of UAE real estate trigger emirate land registration procedures (fees for gifts between relatives not verified).",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Not needed (no tax).",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "No UAE tax on foreign assets inherited or gifted. Succession to foreign assets is governed by the law of where they are situated and by the will.",
+        "domicile_rules": "Not relevant for tax. For succession, religion and (for non-Muslim foreigners) the choice of nationality law matter."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Cabinet Decision No. 85 of 2022 (in force 1 March 2023), clarified by Ministerial Decision 27/2023: an individual is UAE tax resident if (a) their usual or primary place of residence and centre of financial and personal interests is in the UAE; or (b) they are physically present 183 days or more in a 12-month period; or (c) they are present 90 days or more in a 12-month period, are a UAE/GCC national or hold a UAE residence permit, and have a permanent place of residence or employment/business in the UAE. Part days count as full days. Tax Residency Certificate (FTA via EmaraTax): AED 50 submission fee plus AED 1,000 for an electronic certificate for an individual without a CT number; covers a current or past calendar year or 12-month period, never a future one; processing about 10 business days. Evidence: Emirates ID, passport with official entry/exit report, and for the 90-day and centre-of-interests tests proof of residence/employment/interests.",
+    "routes": [
+      {
+        "name": "Golden Visa - investor (public investment, e.g. deposit/fund)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "10-year renewable residence visa per u.ae; minimum capital AED 2,000,000. Can sponsor spouse and children; may stay outside the UAE beyond the usual 6-month limit.",
+        "minimum_investment": {
+          "amount": 2000000,
+          "currency": "AED"
+        }
+      },
+      {
+        "name": "Golden Visa - real estate investor",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Property worth at least AED 2,000,000. The federal portal u.ae (updated 28 Jul 2026, citing ICP) lists this category as a 5-year renewable visa (10 years only for public investment); ICP describes Golden Residence as 5 to 10 years. Many advisers and the Dubai Land Department channel describe a 10-year property visa since 2022: the official federal statement is 5 years, so plan on 5 and confirm the term at application. Family can be sponsored.",
+        "minimum_investment": {
+          "amount": 2000000,
+          "currency": "AED"
+        }
+      },
+      {
+        "name": "Ordinary investor / employment / company-owner residence",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "2-3 year residence visas through a mainland or free zone company (e.g. a DIFC/ADGM family office entity) or employment. Requires presence at least once every 6 months (not Golden Visa)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "United Arab Emirates - Individual - Residence (last reviewed 9 Sep 2026)",
+        "url": "https://taxsummaries.pwc.com/united-arab-emirates/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "New Guide on Tax Residence and Tax Residency Certificates Application Procedure - Natural Persons (FTA guide TPGTR1)",
+        "url": "https://cms.law/en/are/legal-updates/new-guide-on-tax-residence-and-tax-residency-certificates-application-procedure-natural-persons",
+        "publisher": "CMS",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Issuance of Tax Certificates for Tax Residency",
+        "url": "https://tax.gov.ae/en/services/issuance.of.tax.certificates.aspx",
+        "publisher": "Federal Tax Authority",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Golden visa (u.ae, last updated 28 Jul 2026; source ICP)",
+        "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/golden-visa",
+        "publisher": "UAE Government portal (u.ae)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Golden Residence",
+        "url": "https://icp.gov.ae/en/golden-residence/",
+        "publisher": "Federal Authority for Identity, Citizenship, Customs & Port Security (ICP)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.09,
+    "summary": "Federal Decree-Law 47/2022, for periods from 1 June 2023: 0% on taxable income up to AED 375,000, 9% above. Qualifying Free Zone Persons pay 0% on qualifying income and 9% on other income. Domestic Minimum Top-up Tax of 15% for MNE groups with consolidated revenue of EUR 750m+ in two of the four preceding years, for periods starting on or after 1 January 2025 (Cabinet Decision 142/2024). Natural persons are taxed only on licensed business activity with turnover above AED 1m. No withholding tax on dividends paid out.",
+    "special_zones": "Free zones (e.g. DMCC, JAFZA) with the 0% QFZP regime subject to substance and de minimis conditions. DIFC (Dubai) and ADGM (Abu Dhabi) are financial free zones with English-language common-law courts, trust and foundation laws, and will registries; they host most single-family offices. Free-zone status does not change personal taxation (already nil).",
+    "sources": [
+      {
+        "title": "United Arab Emirates - Corporate - Taxes on corporate income (last reviewed 9 Sep 2026)",
+        "url": "https://taxsummaries.pwc.com/united-arab-emirates/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Corporate Tax (Ministry of Finance)",
+        "url": "https://mof.gov.ae/en/public-finance/tax/corporate-tax/",
+        "publisher": "UAE Ministry of Finance",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Cabinet Decision No. 49 of 2023 on natural persons conducting business (AED 1m turnover; wage, personal investment and real estate investment income excluded)",
+        "url": "https://mof.gov.ae/wp-content/uploads/2023/05/Cabinet-Decision-No.-49-of-2023.pdf?fm=pdf",
+        "publisher": "UAE Ministry of Finance",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Dubai",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 50322,
+        "currency": "AED"
+      },
+      "year": 2026,
+      "description": "Dubai Hills Estate, average annual rent of a 4-bedroom villa AED 603,860 (Property Monitor data, May 2026 YTD) / 12. 5-bedroom: AED 892,073 a year; Palm Jumeirah 4-bed AED 1,280,418; Dubai-wide 4-bed average AED 343,461.",
+      "source": {
+        "title": "Villa rental prices in Dubai (Property Monitor data, May 2026 YTD)",
+        "url": "https://www.engelvoelkers.com/ae/en/resources/villa-rental-prices",
+        "publisher": "Engel & Völkers Dubai",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 110305,
+        "currency": "AED"
+      },
+      "year": 2026,
+      "description": "Dubai College (British curriculum, KHDA-regulated), Years 12-13 annual tuition 2026-27 (Years 9-11: AED 97,415); plus 5% annual re-registration fee.",
+      "source": {
+        "title": "Dubai College - School fees 2026-2027",
+        "url": "https://www.dubaicollege.org/admissions/school-fees",
+        "publisher": "Dubai College",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent is an average asking/contract rent from Property Monitor data published by Engel & Völkers, for Dubai Hills Estate (a prime family villa community). Abu Dhabi (Saadiyat 4-bed AED 558,000 a year) and Ras Al Khaimah figures are in the emirate file. Prime purchase prices, health insurance (mandatory in Dubai and Abu Dhabi) and housekeeper costs were not sourced; omitted rather than estimated."
+  },
+  "markers": [
+    {
+      "name": "Abu Dhabi",
+      "lon": 54.39696,
+      "lat": 24.45118,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 292968"
+    },
+    {
+      "name": "Dubai",
+      "lon": 55.30927,
+      "lat": 25.07725,
+      "kind": "financial_centre",
+      "coordinate_source": "GeoNames 292223"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed. There is no UAE-US income tax treaty and no estate tax treaty, so there is no UAE tax to credit and no treaty relief; UAE tax is nil, so the US layer is the whole burden.",
+  "open_questions": [
+    "Official legislation sites (uaelegislation.gov.ae, elaws.moj.gov.ae) were unreachable; Decree-Law 41/2022 provisions rely on law-firm summaries.",
+    "Golden Visa real-estate term: the federal portal u.ae (updated 28 Jul 2026, source ICP) says 5 years for real estate and 10 years for public investment; ICP itself says 5-10 years. The widely reported 10-year property visa could not be confirmed from an official page (Dubai Land Department page not found). Treated as 5 years.",
+    "Abu Dhabi property registration fee (commonly 2%) not confirmed from an official ADREC/TAMM schedule.",
+    "Prime purchase prices per m2, health insurance and housekeeper costs for Dubai not sourced."
+  ]
+}

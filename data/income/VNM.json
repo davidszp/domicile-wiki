@@ -1,0 +1,140 @@
+{
+  "id": "VNM",
+  "name": "Vietnam",
+  "currency": "VND",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Residents pay 5% to 35% on employment income under a five-bracket schedule, after a VND 15.5 million monthly (VND 186 million a year) personal deduction for tax periods from 1 January 2026 (Resolution 110/2025). The new Personal Income Tax Law 109/2025/QH15 takes effect 1 July 2026; KPMG and Rödl report its resident salary and wage rules, and the five brackets, as applying from the 2026 tax period. Residents are taxed on worldwide income. Self-employed business income is taxed on revenue (0.5-5%) or profit (15-20%), with a revenue threshold below which no PIT is due (PwC: VND 1 billion; KPMG and Rödl report VND 500 million under the new law). Employees pay 9% social and health insurance up to VND 50.6 million a month.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.05
+      },
+      {
+        "from_amount": 120000000,
+        "rate": 0.1
+      },
+      {
+        "from_amount": 360000000,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 720000000,
+        "rate": 0.3
+      },
+      {
+        "from_amount": 1200000000,
+        "rate": 0.35
+      }
+    ],
+    "personal_allowance": 186000000,
+    "employee_social_security_rate": 0.09,
+    "employee_social_security_cap": 607200000,
+    "self_employed_social_security_rate": 0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Employee: social insurance 8% + health insurance 1% (as listed by PwC) on salary up to 20x the statutory base salary (VND 50.6 million a month from 1 July 2026, VND 46.8 million before); unemployment insurance 1% is for Vietnamese only. The annual cap shown uses VND 50.6 million x 12. SI needs a work permit and a Vietnamese labour contract of one year or more; HI applies from one month. Independent foreign contractors have no mandatory SI. Business income: 0.5-5% of revenue or 15-20% of profit; PIT-free revenue threshold: PwC says VND 1 billion; KPMG (24 Feb 2026) and Rödl (Feb 2026) report a rise from VND 100 million to VND 500 million under Law 109/2025, so treat VND 1 billion as unconfirmed.",
+    "local_tax_note": "No local income tax. Dependant deduction VND 6.2 million a month each (Resolution 110/2025).",
+    "sources": [
+      {
+        "title": "Vietnam - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/vietnam/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Vietnam - Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/vietnam/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "KPMG GMS Flash Alert 2025-237 (family deduction increase)",
+        "url": "https://kpmg.com/xx/en/our-insights/gms-flash-alert/flash-alert-2025-237.html",
+        "publisher": "KPMG",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Vietnam statutory base salary increase from July 2026 (Roedl)",
+        "url": "https://www.roedl.com/en/insights/vietnam-increase-statutory-base-salary",
+        "publisher": "Roedl & Partner",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Vietnam: Personal Income Tax Law 109/2025 (KPMG GMS Flash Alert 2026-040)",
+        "url": "https://kpmg.com/xx/en/our-insights/gms-flash-alert/2026/flash-alert-2026-040.html",
+        "publisher": "KPMG",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Vietnam: new Personal Income Tax Law (Rödl & Partner, 18 Feb 2026)",
+        "url": "https://www.roedl.com/en/insights/updates-vietnam-personal-inocme-tax-law/",
+        "publisher": "Rödl & Partner",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Vietnam - Deductions",
+        "url": "https://taxsummaries.pwc.com/vietnam/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Law 109/2025/QH15 takes effect 1 July 2026; KPMG's alert gives no separate date for the brackets and Rödl says resident salary rules apply from the 2026 tax period. Whether the five-bracket table applied from 1 January or 1 July 2026 was not confirmed from the law text.",
+      "Revenue threshold for PIT-free business income: PwC VND 1 billion vs KPMG/Rödl VND 500 million.",
+      "Treatment of foreign contractors paid from abroad (business income vs. employment) not verified; KPMG's alert does not cover sourcing rules."
+    ],
+    "verified_on": "2026-10-15",
+    "social_security_deductible": 1
+  },
+  "regimes": [],
+  "costs": {
+    "city": "Ho Chi Minh City",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 15215659,
+        "currency": "VND"
+      },
+      "year": 2026,
+      "description": "Numbeo average 1-bedroom apartment in city centre, 1,080 entries from 109 contributors in 12 months (all city price data); range VND 12-25 million.",
+      "source": {
+        "title": "Cost of Living in Ho Chi Minh City (Numbeo)",
+        "url": "https://www.numbeo.com/cost-of-living/in/Ho-Chi-Minh-City",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "2-bedroom value is a weak guide estimate quoted in USD (Numbeo has no 2-bedroom line; 3-bedroom city centre VND 32.97 million).",
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1750,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Midpoint of the USD 1,300-2,200 monthly range that Cities Insider gives as its 2026 estimate for a 2-bedroom apartment in Thao Dien (District 2), the main expat area. No sample size or method is stated and furnishing is not specified; a guide estimate, not a market-report median. Individual agent listings seen for Thao Dien 2-bedrooms ranged about VND 22-38 million.",
+      "source": {
+        "title": "Ho Chi Minh City housing guide (Cities Insider)",
+        "url": "https://citiesinsider.com/country/vietnam/ho-chi-minh-city/guides/ho-chi-minh-city-chi-minh-city-housing/en",
+        "publisher": "Cities Insider",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "residence_routes": "EU, US and other citizens: Vietnam has no digital nomad visa as of February 2026; remote workers rely on visa exemption (about 14-45 days by nationality) or the 90-day multiple-entry e-visa, which is a tourist permit so working remotely sits in a grey area. Skilled employees need a work permit and temporary residence card via a Vietnamese employer; a five-year Talent Visa launched in August 2025 for high-profile professionals. Work permit rules were not researched in detail.",
+  "open_questions": [
+    "No nomad visa; no expat tax regime found.",
+    "Work permit and residence card requirements not researched.",
+    "2-bedroom rent is a USD guide range midpoint without a stated method."
+  ]
+}

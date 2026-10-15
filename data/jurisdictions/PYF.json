@@ -1,0 +1,246 @@
+{
+  "id": "PYF",
+  "name": "French Polynesia",
+  "continent": "Oceania",
+  "region": "Polynesia (French overseas collectivity)",
+  "currency": "XPF",
+  "researched_on": "2026-10-15",
+  "summary": "French Polynesia has no general personal income tax. Gains on securities and income from foreign assets are untaxed for individuals. Local dividends bear IRCM plus a 5% solidarity levy (CST). Real estate gains are taxed at 50% within 5 years, then on a sliding scale to 0% after 10 years. There is no wealth tax. Inheritance duties exist, but their rates for children could not be found, so the inheritance score is unverified.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Residence in French Polynesia",
+      "type": "standard",
+      "description": "No general income tax. Separate levies hit specific income: CST on wages and pensions, IRCM + CST on distributions by local companies, and the real estate gains tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Living in French Polynesia; no general income tax return. The DICP can only certify which local taxes a person is registered for.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No tax on gains from securities for individuals (no general income tax). Real estate gains are taxed at 50% if the property was held under 5 years, then 20%, 16%, 12%, 8% and 4% in years 5-9, and 0% after 10 years (from 10 Dec 2024).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "DICP Polynésie française: S'installer en Polynésie française (FAQ: no general income tax)",
+            "url": "https://www.service-public.pf/dicp/autres-situations/sinstaller-en-polynesie-francaise/",
+            "publisher": "Direction des impôts et des contributions publiques (DICP)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "OpenFisca Polynésie française parameter daf.rch.plus_values_immobiliere (taux de la plus-value immobilière, from 10 Dec 2024)",
+            "url": "https://api.gov.pf/dsi/openfisca-pf/v1/parameter/daf/rch/plus_values_immobiliere",
+            "publisher": "Gouvernement de la Polynésie française (DSI)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "IEOM Polynésie française: Rapport annuel économique 2025",
+            "url": "https://www.ieom.fr/IMG/pdf/ra_economique_de_polynesie_francaise_2025.pdf",
+            "publisher": "Institut d'émission d'outre-mer (IEOM)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether sales of shares in property-rich companies (SCI) fall under the real estate gains tax was not checked.",
+          "Whether habitual trading could become taxable business activity (patente / CST-NS) was not checked."
+        ],
+        "headline_rate": 0.5,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "DICP: 'Il n'existe pas en Polynésie française d'impôt général sur l'ensemble des revenus.' The real estate scale is from the government's OpenFisca parameter (in force 10 Dec 2024), consistent with IEOM 2025 (50% under 5 years since 2022, disappears after 10 years). Real estate scored at 0 because the guide assumes a holding beyond every holding period. Headline 0.50 = the short-holding real estate rate.",
+        "holding_period_rules": "Real estate: 50% under 5 years, 20% in year 5 falling 4 points a year to 0% from year 10.",
+        "foreign_assets": "Foreign assets untaxed (DICP: foreign rental income not taxable; no general income tax)."
+      },
+      "dividends": {
+        "summary": "Dividends from local companies are subject to IRCM (withheld and declared by the paying company) plus CST on investment income at 5%. Foreign dividends received directly by a resident are not taxed: there is no general income tax and IRCM applies to distributions by entities in French Polynesia.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "DICP Polynésie française: S'installer en Polynésie française (FAQ: no general income tax)",
+            "url": "https://www.service-public.pf/dicp/autres-situations/sinstaller-en-polynesie-francaise/",
+            "publisher": "Direction des impôts et des contributions publiques (DICP)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "DICP FAQ: La CST sur le revenu des capitaux mobiliers (5%)",
+            "url": "https://www.service-public.pf/dicp/faq-items/la-cst-sur-le-revenu-des-capitaux-mobiliers/",
+            "publisher": "Direction des impôts et des contributions publiques (DICP)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "DICP: Modèle de déclaration de l'impôt sur le revenu des capitaux mobiliers (IRCM) et CST-RCM",
+            "url": "https://www.service-public.pf/dicp/wp-content/uploads/sites/59/2025/02/Annexe-Modele-type-de-la-declaration-a-limpot-sur-le-revenu-des-capitaux-mobiliers-2.pdf",
+            "publisher": "Direction des impôts et des contributions publiques (DICP)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "IRCM rate on dividends from local companies not found (Lexpol unreachable on 15 Oct 2026).",
+          "Whether IRCM reaches foreign dividends paid through a local bank or paying agent was not confirmed."
+        ],
+        "headline_rate": null,
+        "domestic_rate": null,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Foreign 0: no general income tax (DICP), and the IRCM return is filed by the distributing local entity (DICP IRCM form). Domestic rate left null: the IRCM rate was not found in an accessible source (the code des impôts on Lexpol was offline); CST-RCM is 5% on top.",
+        "withholding_outbound": "IRCM plus 5% CST-RCM on distributions by local companies (IRCM does not apply to dividends paid to companies with their seat in French Polynesia, art. LP.178-1).",
+        "treaty_network": "Only a tax agreement with France (1957); no treaties with the US or other countries.",
+        "holding_company_notes": "Dividends to local companies are outside IRCM (art. LP.178-1)."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax was found among the taxes administered by the DICP.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "DICP Polynésie française: S'installer en Polynésie française (FAQ: no general income tax)",
+            "url": "https://www.service-public.pf/dicp/autres-situations/sinstaller-en-polynesie-francaise/",
+            "publisher": "Direction des impôts et des contributions publiques (DICP)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "DICP: Propriétaire d'un immeuble - vous êtes redevable de l'impôt foncier",
+            "url": "https://www.service-public.pf/dicp/document/proprietaire-dun-immeuble-vous-etes-redevable-de-limpot-foncier/",
+            "publisher": "Direction des impôts et des contributions publiques (DICP)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Impôt foncier on built property (DICP), plus communal additional centimes."
+      },
+      "inheritance": {
+        "summary": "Transfers on death are declared to and taxed by the Direction des affaires foncières (Recette-Conservation des hypothèques), which liquidates registration duties on 'mutations par décès'. The direct-line rates and allowances could not be found, so this metric is unverified: the JSON scores no duty, which may overstate how favourable French Polynesia is.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "DAF Polynésie française: Section Recette Conservation des Hypothèques (mutations par décès, droits d'enregistrement)",
+            "url": "https://www.service-public.pf/daf/recette-conservation-des-hypotheques/",
+            "publisher": "Direction des affaires foncières (DAF)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "open_questions": [
+          "Placeholder: inheritance/gift duty rates for French Polynesia were not found, so the metric is treated as missing rather than untaxed.",
+          "Direct-line inheritance and gift duty rates and allowances not found (code des impôts on Lexpol unreachable, no web search budget left). Score is provisional.",
+          "Scope for foreign movable assets of a resident deceased not researched."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed_low",
+        "exemption": 0,
+        "brackets": [],
+        "gift_tax": "Gifts are registered acts subject to registration duties; a 10% real estate publicity tax rate on donations of real estate is listed in the government's OpenFisca parameters. Rates for movable gifts not found.",
+        "gifts_same_as_inheritance": false,
+        "foreign_assets": "Not researched.",
+        "domicile_rules": "Not researched.",
+        "status": "not_researched"
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "There is no general income tax, hence no general tax residence certificate: the DICP only attests the local taxes a person is registered for, optionally with a municipal residence certificate.",
+    "routes": [
+      {
+        "name": "French citizens",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "French citizens can settle freely. Other EU citizens: French immigration rules specific to French Polynesia apply (not researched)."
+      },
+      {
+        "name": "Non-French citizens: long-stay visa and residence card",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Long stays need a visa and residence card under the French immigration rules applicable in French Polynesia (not researched)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "DICP: Note d'information - résidence fiscale et non-imposition sur le revenu",
+        "url": "https://www.service-public.pf/dicp/wp-content/uploads/sites/59/2025/02/Note-dinformation-residence-fiscale-et-non-imposition-sur-le-revenu.pdf",
+        "publisher": "Direction des impôts et des contributions publiques (DICP)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "DICP Polynésie française: S'installer en Polynésie française (FAQ: no general income tax)",
+        "url": "https://www.service-public.pf/dicp/autres-situations/sinstaller-en-polynesie-francaise/",
+        "publisher": "Direction des impôts et des contributions publiques (DICP)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "Corporate income tax 25% (27% until 2022), plus a CSIS surcharge on large profits rising to 15% above XPF 400M (government OpenFisca parameters). Local investment tax credits (défiscalisation locale).",
+    "sources": [
+      {
+        "title": "OpenFisca Polynésie française parameter dicp.impot_societe.taux.is_par_activite.NORMALE",
+        "url": "https://api.gov.pf/dsi/openfisca-pf/v1/parameter/dicp/impot_societe/taux/is_par_activite/NORMALE",
+        "publisher": "Gouvernement de la Polynésie française (DSI)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "OpenFisca Polynésie française parameter dicp.impot_societe.taux.csis",
+        "url": "https://api.gov.pf/dsi/openfisca-pf/v1/parameter/dicp/impot_societe/taux/csis",
+        "publisher": "Gouvernement de la Polynésie française (DSI)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "IEOM Polynésie française: Rapport annuel économique 2025",
+        "url": "https://www.ieom.fr/IMG/pdf/ra_economique_de_polynesie_francaise_2025.pdf",
+        "publisher": "Institut d'émission d'outre-mer (IEOM)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Papeete",
+      "lon": -149.5696,
+      "lat": -17.535,
+      "kind": "capital",
+      "coordinate_source": "Wikipedia (Papeete), approx."
+    }
+  ],
+  "us_citizen_notes": "No US treaty. A US citizen living in French Polynesia still pays full US federal tax on worldwide income and US estate tax; the local regime gives almost nothing to credit.",
+  "open_questions": [
+    "Inheritance duty rates for children not found: highest-priority gap.",
+    "IRCM rate on local dividends not found."
+  ]
+}

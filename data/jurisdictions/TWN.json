@@ -1,0 +1,322 @@
+{
+  "id": "TWN",
+  "name": "Taiwan",
+  "continent": "Asia",
+  "region": "East Asia",
+  "currency": "TWD",
+  "researched_on": "2026-10-15",
+  "summary": "Taiwan taxes individuals on Taiwan-source income at up to 40%. Foreign income, including foreign capital gains and dividends, is reached only by the 20% alternative minimum tax (income basic tax), which applies when foreign income is TWD 1 million or more and basic income exceeds TWD 7.5 million; for a family of this size that is close to a flat 20%. Taiwan listed-share gains are exempt (0.3% transaction tax), and Taiwan dividends cost up to 28%. Estate and gift tax (10%-20%) reaches only Taiwan-situs property of foreign nationals. There is no wealth tax and no US tax treaty.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Taiwan resident",
+      "type": "standard",
+      "description": "Taiwan-source income at 5%-40%; foreign income only through the 20% income basic tax above TWD 7.5 million; estate tax on Taiwan assets only for foreigners.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Foreigners are resident if present 183 days or more in a calendar year.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Taiwan taxes individuals' Taiwan-source income at 5%-40%. Gains on Taiwan securities are exempt from income tax (a 0.3% securities transaction tax applies to share sales). Foreign-source income, including gains on foreign securities and foreign property, is outside the regular income tax but enters the alternative minimum tax (income basic tax, IBT) at 20% once a resident's foreign income is TWD 1 million or more and basic income exceeds TWD 7.5 million, with a credit for foreign tax. Taiwan real estate acquired from 2016 is under the consolidated house and land income tax: 45% (2 years or less), 35% (2-5), 20% (5-10), 15% (over 10 years); a self-used home qualifies for TWD 4 million exemption and 10% above it.",
+        "exemptions_thresholds": "IBT: TWD 7.5 million deduction from basic income (2025 filing figure); foreign income under TWD 1 million is excluded entirely.",
+        "important_exceptions": "IBT is payable only to the extent it exceeds regular income tax. For the family's scale (foreign income far above TWD 7.5 million) the effective rate approaches 20%. Gains on certain unlisted/privately placed securities are IBT add-back items.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Taiwan - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/taiwan/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Taiwan - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/taiwan/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Amendments to the consolidated house and land income tax (House and Land Tax 2.0)",
+            "url": "https://www.leeandli.com/EN/Newsletters/6742.htm",
+            "publisher": "Lee and Li, Attorneys-at-Law",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Treatment of gains on unlisted Taiwan shares under IBT not verified.",
+          "IBT deduction for 2026 income (TWD 7.5 million used) may be indexed."
+        ],
+        "headline_rate": 0.45,
+        "rates": {
+          "listed_securities_domestic": 0.006,
+          "listed_securities_foreign": 0.2,
+          "private_business_sale": 0.2,
+          "real_estate_local": 0.15,
+          "real_estate_foreign": 0.2
+        },
+        "rate_basis": "Foreign gains: 20% IBT. Domestic listed: income-tax exempt, 0.3% securities transaction tax on proceeds = 0.6% of the gain assuming the gain is half the proceeds. Private business sale (unlisted Taiwan company): assumed to fall into IBT at 20% (low confidence). Local real estate held over 10 years: 15%. Headline 45% = short-holding house and land rate.",
+        "professional_trader": "Securities gains remain exempt even for frequent traders (general knowledge); property dealing businesses are taxed under the house and land rules.",
+        "holding_period_rules": "House and land tax rates fall with holding period (above).",
+        "foreign_assets": "Foreign income is taxed only through IBT (20%) and only for residents (183 days or domiciled)."
+      },
+      "dividends": {
+        "summary": "Taiwan dividends of resident individuals are either included in consolidated income (up to 40%) with an 8.5% credit capped at TWD 80,000, or taxed separately at 28%. Foreign dividends are foreign-source income, outside regular tax but included in IBT at 20% (same thresholds as above) with credit for foreign tax.",
+        "important_exceptions": "Dividend options from the 2018 integrated-system reform (general knowledge; PwC page opened does not list them).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Taiwan - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/taiwan/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Taiwan - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/taiwan/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Dividend taxation options were not verified in an opened source."
+        ],
+        "headline_rate": 0.28,
+        "domestic_rate": 0.28,
+        "foreign_gross_rate": 0.2,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: separate 28% option (better than 40% less the capped credit for large dividends). Foreign: 20% IBT before credit; US 30% WHT (no treaty) would fully absorb it.",
+        "withholding_outbound": "21% WHT on dividends to non-residents, reducible by treaty (corporate summary, not opened).",
+        "treaty_network": "About 35 comprehensive agreements; no income tax treaty with the US (the 2025 US legislation to extend treaty benefits was not verified as in force).",
+        "holding_company_notes": "CIT 20% plus 5% profit retention tax on undistributed earnings."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Taiwan - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/taiwan/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "type": "none",
+        "property_tax_note": "Land value tax 1%-5.5% of assessed land value (lower rate for owner-occupied residences, not verified) and house tax 1%-4.8% of assessed value for non-commercial buildings (PwC); luxury tax 10% on certain goods."
+      },
+      "inheritance": {
+        "summary": "Estate tax applies to the estate (estate basis) at 10% up to TWD 56.21 million, 15% to TWD 112.42 million and 20% above (inflation-indexed amounts from January 2025), after an exemption of TWD 13.33 million and deductions (e.g. TWD 560,000 per lineal descendant). For non-ROC nationals, and ROC nationals without habitual residence, only property located in Taiwan is taxed (Estate and Gift Tax Act Arts. 1 and 3). Gift tax: 10%-20% after a TWD 2.44 million annual exemption per donor, same scope rule.",
+        "exemptions_thresholds": "Estate exemption TWD 13.33 million per decedent; TWD 560,000 deduction per child (plus TWD 560,000 per year under 18); spouse deduction TWD 5.53 million; funeral TWD 1.38 million. Gift: TWD 2.44 million per donor per year.",
+        "important_exceptions": "A foreign family pays estate tax only on Taiwan-situs assets (e.g. a Taiwan home and Taiwan shares). ROC nationals are taxed worldwide if domiciled in Taiwan within two years before death or resident more than 365 days in those two years (Art. 4).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Taiwan - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/taiwan/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Estate and Gift Tax Act (English translation)",
+            "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=G0340072",
+            "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "basis": "estate",
+        "children_treatment": "taxed",
+        "exemption": 13330000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.1
+          },
+          {
+            "from_amount": 56210000,
+            "rate": 0.15
+          },
+          {
+            "from_amount": 112420000,
+            "rate": 0.2
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "scope": "local_assets_only",
+        "gift_tax": "Gift tax 10% to TWD 28.11 million, 15% to 56.21 million, 20% above, after TWD 2.44 million per donor per year; non-nationals only on gifts of Taiwan property.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "Not taxed for non-ROC nationals (Art. 1).",
+        "domicile_rules": "Nationality plus habitual residence (Art. 4): ROC nationals with a domicile in the two prior years or 365+ days of stay are taxed worldwide; non-nationals are always taxed on Taiwan property only."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Foreign individuals: resident if present 183 days or more in a calendar year. ROC nationals with household registration are resident if domiciled and habitually residing, unless the 31-day rule applies.",
+    "routes": [
+      {
+        "name": "Investment-based resident certificate (ARC), Employment Gold Card, APRC",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Residence through investment in a Taiwan business, employment, or the Employment Gold Card for professionals; permanent residence (APRC) after qualifying years or for major investors (thresholds not verified)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Taiwan - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/taiwan/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.2,
+    "summary": "20% CIT (income up to TWD 120,000 exempt); 5% profit retention tax on undistributed earnings; 12% corporate IBT, with proposals to raise it to 15% for Pillar Two groups.",
+    "sources": [
+      {
+        "title": "Taiwan - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/taiwan/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "indicator_overrides": {
+    "wgi_va": {
+      "value": 1.0469534,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Voice and Accountability estimate, Taiwan, China",
+        "url": "https://api.worldbank.org/v2/country/TWN/indicator/GOV_WGI_VA.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses (WGI covers 'Taiwan, China'); the World Bank API returns it with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "wgi_pv": {
+      "value": 0.9986707,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Political Stability and Absence of Violence/Terrorism estimate, Taiwan, China",
+        "url": "https://api.worldbank.org/v2/country/TWN/indicator/GOV_WGI_PV.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses (WGI covers 'Taiwan, China'); the World Bank API returns it with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "wgi_ge": {
+      "value": 1.5111702,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Government Effectiveness estimate, Taiwan, China",
+        "url": "https://api.worldbank.org/v2/country/TWN/indicator/GOV_WGI_GE.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses (WGI covers 'Taiwan, China'); the World Bank API returns it with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "wgi_rq": {
+      "value": 1.1954985,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Regulatory Quality estimate, Taiwan, China",
+        "url": "https://api.worldbank.org/v2/country/TWN/indicator/GOV_WGI_RQ.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses (WGI covers 'Taiwan, China'); the World Bank API returns it with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "wgi_rl": {
+      "value": 1.2009747,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Rule of Law estimate, Taiwan, China",
+        "url": "https://api.worldbank.org/v2/country/TWN/indicator/GOV_WGI_RL.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses (WGI covers 'Taiwan, China'); the World Bank API returns it with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "wgi_cc": {
+      "value": 1.1826295,
+      "year": 2025,
+      "source": {
+        "title": "Worldwide Governance Indicators, Control of Corruption estimate, Taiwan, China",
+        "url": "https://api.worldbank.org/v2/country/TWN/indicator/GOV_WGI_CC.EST?format=json&mrnev=1",
+        "publisher": "World Bank",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Same WGI series the pipeline uses (WGI covers 'Taiwan, China'); the World Bank API returns it with an empty ISO3 code, so the automatic fetch drops it."
+    },
+    "life_expectancy": {
+      "value": 80.77,
+      "year": 2024,
+      "source": {
+        "title": "113年國人平均壽命80.77歲，較上年增加0.54歲 (2024 abridged life table press release, 23 August 2025)",
+        "url": "https://www.moi.gov.tw/News_Content.aspx?n=4&s=330934",
+        "publisher": "Ministry of the Interior, Department of Statistics",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      "notes": "Life expectancy at birth, both sexes, 2024 abridged life table (male 77.42, female 84.30). A 2025 table may have been published in August 2026 but was not found."
+    },
+    "homicide_rate": {
+      "value": 0.68,
+      "year": 2025,
+      "source": {
+        "title": "Statistical Tables (Yearbook): Table 4 Criminal cases known to the police by classification; Table 1 crime rate per 100,000",
+        "url": "https://www.npa.gov.tw/en/app/data/view?module=wg055&id=8026&serno=6f85cc4f-cd02-40d9-b4ea-2c0cc066c17b",
+        "publisher": "National Police Agency, Ministry of the Interior",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      "notes": "158 intentional homicide (故意殺人, 'murder') offences known to the police in 2025, divided by 23.35 million population implied by Table 1 (608,717 criminal cases at 2,606.96 per 100,000). Counts offences, not victims, and Taiwan's category may include attempted murder, so it is not exactly the UNODC victim-based definition (2024: 136 offences, about 0.58)."
+    }
+  },
+  "markers": [
+    {
+      "name": "Taipei",
+      "lon": 121.53185,
+      "lat": 25.04776,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 1668341"
+    }
+  ],
+  "us_citizen_notes": "No US-Taiwan income tax treaty in force (to the extent checked); US citizens credit Taiwan IBT against US tax on the same income. Taiwan estate tax on Taiwan assets is creditable against US estate tax within limits.",
+  "open_questions": [
+    "Only PwC, the Estate and Gift Tax Act (English) and a law-firm note were opened; the Income Basic Tax Act was not read.",
+    "Residence and investment-immigration thresholds not verified."
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "id": "ARG",
+  "name": "Argentina",
+  "continent": "South America",
+  "region": "Southern Cone",
+  "currency": "ARS",
+  "researched_on": "2026-10-15",
+  "summary": "Argentina taxes residents on worldwide income. Gains on foreign listed shares are taxed at a flat 15% (Argentine listed shares are exempt); foreign dividends are taxed at the progressive rates up to 35%, with a foreign tax credit. There is no federal inheritance or gift tax (the Province of Buenos Aires has one; the City of Buenos Aires does not). The personal assets tax (Bienes Personales) is a broad wealth tax on worldwide gross assets: 0.5% to 0.75% in 2026, falling to 0.25% from 2027 under Law 27.743. New residents become taxable after 12 months of residence.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Resident individuals pay income tax on worldwide income (5%-35% progressive; schedular 15% on securities gains) and the annual personal assets tax on worldwide assets above the non-taxable minimum. The capital, Ciudad Autonoma de Buenos Aires, levies no inheritance tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Foreign individuals residing in Argentina for reasons other than work become tax resident from the 13th month of presence (PwC Residence). A residence permit is needed for non-Mercosur nationals.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains of resident individuals on shares, bonds and fund units are taxed at a flat 15% (schedular). Gains on shares traded on a CNV-supervised Argentine market or issued in an IPO, and on Argentine government/corporate bonds and local mutual funds, are exempt. Gains on foreign securities are foreign-source and taxed at 15%. From 1 January 2026 gains on the sale of real estate by resident individuals are exempt (reform effective for transfers on or after 1 Jan 2026).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Argentina - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/argentina/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Argentina Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-argentinahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "iProfesional: Impuesto a las Ganancias - renta financiera de fuente extranjera (15% on purchase-sale results, LIG art. 90 3rd paragraph, now art. 94)",
+            "url": "https://www.iprofesional.com/impuestos/291480-Impuesto-a-las-Ganancias-Renta-financiera-de-fuente-extranjera",
+            "publisher": "iProfesional",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Argentina - Individual - Significant developments",
+            "url": "https://taxsummaries.pwc.com/argentina/individual/significant-developments",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.15,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.15,
+          "private_business_sale": 0.15,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "LIG schedular rate 15% on results from the sale of shares and securities by resident individuals (PwC Income determination; Deloitte 2026); exemption for CNV-listed shares/IPO shares. Foreign listed securities: 15% foreign-source rate. private_business_sale = unlisted shares at 15%. Local real estate exempt for transfers from 1 Jan 2026 (PwC, Significant developments).",
+        "professional_trader": "Habitual dealers carrying on a business are taxed on business income at progressive rates up to 35%.",
+        "important_exceptions": "Gains on digital currencies 15%. Gains computed on foreign securities in foreign currency for foreign-source rules (not verified). Provincial stamp tax (around 1%-1.5%) may apply to some contracts.",
+        "foreign_assets": "Worldwide; foreign tax credit limited to the Argentine tax on the foreign-source income (PwC Foreign tax relief).",
+        "open_questions": [
+          "The 15% rate for foreign-source share gains (LIG art. 94, ex-art. 90 3rd paragraph) is confirmed only by a press article and practitioner consultations, not by the consolidated law text (infoleg page could not be opened).",
+          "Whether the 2026 real-estate exemption also covers foreign real estate held by residents is not stated; real_estate_foreign left null."
+        ]
+      },
+      "dividends": {
+        "summary": "Foreign dividends are foreign-source income taxed at the general progressive rates (top 35%). Dividends from Argentine companies out of profits from 2018 onwards bear a 7% withholding tax, which is final for individuals.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Argentina - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/argentina/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Argentina - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/argentina/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Argentina - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/argentina/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Argentina Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-argentinahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.35,
+        "domestic_rate": 0.07,
+        "foreign_gross_rate": 0.35,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Foreign dividends at the top progressive PIT rate 35% (PwC Taxes on personal income, FY2026 top rate 35%). Domestic dividends: 7% WHT on dividends from 2018+ profits (PwC Income determination; Deloitte 2026). Credit for foreign tax up to the Argentine tax on that income.",
+        "withholding_outbound": "7% WHT on dividends to residents and non-residents (profits from 2018 onwards); 35% equalisation tax only on distributions of pre-2018 untaxed earnings. Argentine companies also pay the 0.5% personal assets tax on shares held by individuals as substitute taxpayer.",
+        "treaty_network": "About 30 treaties (PwC list includes Australia, Belgium, Brazil, Canada, Chile, Denmark, Finland, France, Germany, Italy, Mexico, Netherlands, Norway, Qatar, Russia, Spain, Sweden, Switzerland, Turkey, UAE, UK; Japan, Luxembourg and China pending). No treaty with the US.",
+        "holding_company_notes": "Controlled foreign entities with passive income may be looked through under transparency rules (PwC).",
+        "open_questions": [
+          "FY2026 brackets are indexed semi-annually; the 35% rate applied above ARS 60,750,914 of semi-annual taxable income for January-June 2026."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "The Impuesto sobre los Bienes Personales taxes resident individuals on worldwide assets (no deduction for liabilities) above the non-taxable minimum (ARS 384,728,044.57 for FY2025, indexed annually). Law 27.743 sets the 2026 scale at 0.50% up to ARS 13,688,704.13 (2023 base, indexed) and 0.75% above; from 2027 the rate is a flat 0.25%. Argentine bank deposits and government bonds are exempt; the owner-occupied home is exempt up to ARS 1,346,548,155.99 (FY2025).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ley 27.743 (2024), Title on Impuesto sobre los Bienes Personales: art. 25 scale of Law 23.966 for fiscal periods 2023-2027 and REIBP",
+            "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401268/norma.htm",
+            "publisher": "InfoLEG (Ministerio de Justicia, Argentina)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Argentina - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/argentina/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Argentina Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-argentinahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "broad",
+        "components": [
+          {
+            "name": "Impuesto sobre los Bienes Personales (FY2026 scale, FY2025 indexed amounts)",
+            "base": "net_wealth_worldwide",
+            "exempt_amount": 384728044.57,
+            "entry_threshold": 0,
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.005
+              },
+              {
+                "from_amount": 52664283,
+                "rate": 0.0075
+              }
+            ],
+            "notes": "Base is gross assets (liabilities generally not deductible), so net_wealth_worldwide overstates the deduction. Bracket threshold ARS 52,664,283 is the FY2025 indexed value of the 2023 base ARS 13,688,704.13. Rate falls to 0.25% flat from FY2027 (Law 27.743 art. 25(e)). Foreign wealth taxes on foreign assets are creditable. Argentine shares are taxed at 0.5% via the company (substitute taxpayer), not in the individual's return."
+          }
+        ],
+        "property_tax_note": "Provincial/municipal real estate tax (e.g. ABL in Buenos Aires City) on fiscal value; 0.6% tax on bank account debits and credits; provincial stamp tax.",
+        "important_exceptions": "Law 27.743 rate path: 2023 0.5%-1.5%, 2024 0.5%-1.25%, 2025 0.5%-1.0%, 2026 0.5%-0.75%, 2027 onwards 0.25%. Individuals working in Argentina for up to five years are taxed only on Argentine assets (requires employment).",
+        "open_questions": [
+          "Indexed 2026 amounts (non-taxable minimum, bracket threshold, home exemption) are published only after year-end; FY2025 values are used in the JSON.",
+          "The REIBP advance-payment regime (fiscal stability to 2038) is open only to persons resident at 31 Dec 2023 and does not help a new arrival."
+        ]
+      },
+      "inheritance": {
+        "summary": "There is no federal inheritance or gift tax. The Province of Buenos Aires levies a gratuitous transfer tax (Impuesto a la Transmision Gratuita de Bienes) under its own conditions; the City of Buenos Aires (CABA), where the family would most likely live, does not. The JSON scores the CABA position.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Argentina - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/argentina/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Argentina Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-argentinahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No federal gift tax; Province of Buenos Aires taxes gifts under its gratuitous-transfer tax.",
+        "gifts_same_as_inheritance": true,
+        "regional_differences": "Province of Buenos Aires (not CABA) levies an inheritance and gift tax; other provinces currently do not (PwC).",
+        "foreign_assets": "No national tax on any assets.",
+        "domicile_rules": "Provincial tax depends on domicile in the Province of Buenos Aires / situs there.",
+        "open_questions": [
+          "Province of Buenos Aires gratuitous-transfer tax rates and scope (whether it reaches foreign assets of a PBA domiciliary) not researched.",
+          "PwC notes that the federal government and other provinces may introduce similar taxes."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Foreign nationals become resident from the 13th month of presence in Argentina (for reasons other than work); foreign nationals assigned to work for up to five years remain non-resident. Law 27,802 clarified that citizenship by naturalisation for relevant investments does not by itself make a person tax resident (PwC Residence).",
+    "routes": [
+      {
+        "name": "Mercosur residence",
+        "citizenships": [
+          "OTHER"
+        ],
+        "requirements": "Nationals of Mercosur and associated states can obtain residence under the Mercosur residence agreement (not researched in detail)."
+      },
+      {
+        "name": "Rentista / pensionado / investor residence permits",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Temporary residence categories exist for persons with passive income or investments; amounts not researched. A citizenship-by-investment route exists (Law 27,802 reference in PwC) but terms were not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Argentina - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/argentina/individual/residence",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Argentina Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-argentinahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.35,
+    "summary": "Progressive CIT 25%/30%/35% (indexed brackets; 35% above ARS 1,335,141,857 for 2026). 7% WHT on dividends. Worldwide taxation with foreign tax credit. RIGI large-investment incentive regime.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Argentina - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/argentina/corporate/taxes-on-corporate-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Argentina Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-argentinahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Buenos Aires",
+      "lon": -58.37723,
+      "lat": -34.61315,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3435910"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal tax; no US-Argentina income tax treaty, so relief depends on foreign tax credits on each side.",
+  "open_questions": [
+    "Consolidated text of LIG art. 94 (15% on foreign-source securities gains) not opened.",
+    "2026 indexed amounts for Bienes Personales not yet published."
+  ]
+}

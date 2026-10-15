@@ -1,0 +1,301 @@
+{
+  "id": "SGP",
+  "name": "Singapore",
+  "continent": "Asia",
+  "region": "South-East Asia",
+  "currency": "SGD",
+  "researched_on": "2026-10-15",
+  "summary": "Singapore has no capital gains tax on investment gains, no tax on Singapore one-tier dividends, does not tax foreign-sourced investment income received by individuals (dividends, interest, gains), has had no estate duty since 15 February 2008, and has no gift or wealth tax. The main costs for a wealthy family are high stamp duties on buying residential property as foreigners (additional buyer's stamp duty, ABSD, of up to 65% depending on buyer status and number of properties), progressive property tax on homes, and the high cost of living. Residence for a non-citizen investor normally runs through the EDB Global Investor Programme (PR) or an employment pass via a family office.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Territorial personal income tax (0-24%) on Singapore-source income; foreign-sourced investment income received by individuals is exempt.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident if ordinarily residing in Singapore or present/working 183 days or more in the prior calendar year; needs an immigration status (PR via GIP, employment pass, dependant pass).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax. IRAS states gains from the sale of property, shares and financial instruments are generally not taxable for individuals. Only gains that amount to trading (badges of trade) are taxed as income at progressive rates up to 24%.",
+        "exemptions_thresholds": "No tax on capital gains of any amount; no holding period required.",
+        "important_exceptions": "Gains are taxable as income if IRAS treats the activity as a trade (frequency, intention, financing, holding period). Seller's stamp duty (SSD) of up to 16% applies to residential property sold within the SSD holding period (rate up to 16% for properties bought from 4 July 2025, per PwC; the length of the holding period was not verified from an opened source). Section 10L (foreign disposal gains of entities without economic substance, from 2024) applies to entities, not to individuals holding directly.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Gains from sale of property, shares and financial instruments",
+            "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/gains-from-sale-of-property-shares-and-financial-instruments",
+            "publisher": "Inland Revenue Authority of Singapore",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Singapore - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/singapore/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Singapore - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/singapore/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No capital gains tax for a private investor holding for investment. Local real estate 0% assumes a sale after the seller's stamp duty holding period; inside it SSD of up to 16% of price applies.",
+        "professional_trader": "If IRAS concludes an individual is trading (frequent short-term dealing, intention to profit from resale, borrowed money), gains become income taxed at resident rates up to 24% (above SGD 1,000,000). Long-term portfolio investment is ordinarily capital.",
+        "holding_period_rules": "None for securities. SSD on residential property sold within the SSD holding period.",
+        "foreign_assets": "Gains on foreign assets are not taxed; foreign-sourced income received by individuals is exempt (except through a Singapore partnership)."
+      },
+      "dividends": {
+        "summary": "Dividends from Singapore companies are exempt under the one-tier system. Foreign dividends received by individuals (other than through a Singapore partnership) are not taxable, so foreign source withholding tax is the final cost and is not credited.",
+        "exemptions_thresholds": "All one-tier dividends exempt; foreign-sourced investment income exempt for individuals.",
+        "important_exceptions": "Foreign income received through a Singapore partnership is taxable. Singapore has no comprehensive income tax treaty with the United States, so US-source dividends paid to a Singapore-resident non-US person bear the 30% US statutory withholding tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income received from overseas",
+            "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/income-received-from-overseas",
+            "publisher": "Inland Revenue Authority of Singapore",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Singapore - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/singapore/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Singapore - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/singapore/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "One-tier dividends are exempt in shareholders' hands; foreign-sourced dividends received by a resident individual are exempt, so the Singapore rate is 0% and only source-country withholding remains.",
+        "withholding_outbound": "Singapore levies no withholding tax on dividends paid to non-residents (0% under domestic law and all treaties).",
+        "treaty_network": "Large network (PwC lists about 98 partners), but the treaties with the United States, Hong Kong, Chile and Bermuda are limited (shipping/air transport or information exchange only). US dividends therefore bear 30% US WHT for a Singapore resident, a real cost for a US-heavy portfolio.",
+        "holding_company_notes": "Singapore companies pay 17% CIT; a family office fund vehicle can obtain exemptions under sections 13O/13U (MAS-approved) for specified investment income."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no levy on financial assets.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Singapore - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/singapore/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Annual property tax on the property's annual value: owner-occupied residential 0% to 32% (progressive), non-owner-occupied residential 12% to 36%, non-residential 10%. Buying residential property: BSD up to 6% plus ABSD up to 65% depending on residency status and number of properties (highest for foreigners and entities); nationals of certain FTA countries are treated like Singapore citizens."
+      },
+      "inheritance": {
+        "summary": "No inheritance tax: estate duty was removed for deaths on and after 15 February 2008. No gift tax. Transfers of Singapore shares or property to children can attract stamp duty, and a gift of residential property attracts buyer's stamp duty (and ABSD) on market value.",
+        "exemptions_thresholds": "No tax of any amount on inheritances or gifts to children.",
+        "important_exceptions": "Stamp duty applies to transfers of Singapore real estate (BSD/ABSD on market value) and to transfers of Singapore shares by instrument; the share stamp duty rate was not verified. Income of the estate after death remains subject to income tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Estate Duty",
+            "url": "https://www.iras.gov.sg/taxes/other-taxes/estate-duty/estate-duty",
+            "publisher": "Inland Revenue Authority of Singapore",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Singapore - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/singapore/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None. Stamp duty applies to gifts of Singapore shares and real estate.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "No tax on foreign assets either.",
+        "domicile_rules": "Not applicable; there is no estate duty for any decedent dying on or after 15 February 2008."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if the individual ordinarily resides in Singapore (apart from reasonable temporary absences) or is physically present or works in Singapore for 183 days or more in the calendar year before the year of assessment. Foreigners staying over three consecutive calendar years are treated as resident for all three years by concession.",
+    "routes": [
+      {
+        "name": "Global Investor Programme (permanent residence) - Option A, business",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Invest at least SGD 10 million in a new or existing Singapore business, with a substantial business track record. Grants PR to the investor and immediate family. Thresholds per a 2026 professional summary of EDB's May 2025 factsheet; confirm with EDB.",
+        "minimum_investment": {
+          "amount": 10000000,
+          "currency": "SGD"
+        }
+      },
+      {
+        "name": "Global Investor Programme - Option C, single family office",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Set up a Singapore single family office with at least SGD 200 million AUM and deploy at least SGD 50 million into specified Singapore investment categories; PR for the principal and immediate family. Option B (SGD 25 million into a GIP-select fund) also exists.",
+        "minimum_investment": {
+          "amount": 50000000,
+          "currency": "SGD"
+        }
+      },
+      {
+        "name": "Employment pass via own family office (13O/13U fund manager)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Family members employed as investment professionals by a single family office can hold employment passes; dependants' passes for spouse and children. Requirements are set by MOM/MAS and were not verified in detail."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Singapore - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/singapore/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Global Investor Programme",
+        "url": "https://www.edb.gov.sg/en/how-we-help/global-investor-programme.html",
+        "publisher": "Singapore Economic Development Board",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Singapore Global Investor Programme (2026 rules)",
+        "url": "https://vccsingapore.com/singapore-global-investor-programme/",
+        "publisher": "VCC Singapore (advisory site)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.17,
+    "summary": "17% flat CIT with partial exemption on the first SGD 200,000 of chargeable income; one-tier system (no tax on dividends paid out, no dividend WHT). For YA2026 a 50% CIT rebate (capped at SGD 40,000, or SGD 38,000 plus a SGD 2,000 grant) applies. Pillar Two: Multinational Enterprise (Minimum Tax) Act 2024 introduces the domestic top-up tax (DTT) and MTT from financial years starting 1 January 2025; UTPR not adopted.",
+    "special_zones": "Fund tax incentives under sections 13O (onshore fund) and 13U (enhanced-tier fund) exempt specified income of family office vehicles, subject to MAS approval, minimum AUM, local spending and investment professionals.",
+    "sources": [
+      {
+        "title": "Singapore - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/singapore/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Singapore",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 49926,
+        "currency": "SGD"
+      },
+      "year": 2026,
+      "description": "UWCSEA Grade 11-12 tuition 2026/27, per student; plus a development levy of SGD 9,537 in the first year and SGD 5,166 after.",
+      "source": {
+        "title": "UWCSEA Fee Schedule 2026/2027",
+        "url": "https://www.uwcsea.edu.sg/fs/pages/4572",
+        "publisher": "United World College of South East Asia",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Prime rent uses Savills' published June 2026 prime rent (EUR/m2/week) for a stated 250 m2 home, because listing portals (PropertyGuru, 99.co, SRX) refuse automated access. Cross-check: URA's 'Rentals of Non-Landed Residential Buildings, Quarterly' dataset on data.gov.sg (d_149ac00a2734bb0a03867bbe2ec0e7b0, 2026-Q2) gives a median of project medians of 5.76 across 154 projects (3,063 contracts) in postal districts 9, 10 and 11 (D9 5.94, D10 5.58, D11 5.19; 75th percentile of projects 6.72); the dataset metadata does not state the unit; read as SGD per sq ft per month (the unit agencies use for URA rents, e.g. Knight Frank's Q1 2026 update charts URA Realis rents in S$ per sq ft per month), it would give roughly SGD 15,500 for 2,690 sq ft, the same order as the Savills figure. Not used for the score because the unit is not confirmed in the dataset. The URA figures cover all unit sizes, and smaller units rent at higher psf. Housekeeper salary source: MOM written answer to PQ, 3 Nov 2021 (https://www.mom.gov.sg/newsroom/parliament-questions-and-replies/2021/1103-written-answer-to-pq-on-data-on-employer-types-and-market-salaries-for-the-existing-mdws). Purchase prices and family health insurance were not sourced. Foreign buyers face high ABSD on residential purchases (up to 65% depending on status), so most foreign families rent until they obtain PR.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 10649,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Derived from Savills' average prime residential rent for Singapore as at June 2026, EUR 9.83 per m2 per week (USD 1.06 per sq ft per week; joint 8th of 30 cities, rents +1.7% in H1 2026). Savills' figure is a city-wide prime average, not a quote for a specific 4-5 bedroom home. Converted for a stated 250 m2 (about 2,690 sq ft) large prime condo or small landed home: 9.83 x 250 x 52 / 12 = EUR 10,649 a month (USD equivalent 1.06 x 2,691 x 52 / 12 = about USD 12,360). Kept in EUR as published, so no separate SGD exchange rate is assumed. Landed houses in Districts 10/11 (Holland, Bukit Timah, Nassim) are usually larger and rent for more.",
+      "source": {
+        "title": "Savills Prime Residential World Cities Index H1 2026 (report PDF, 'Prime residential rents as at June 2026')",
+        "url": "https://pdf.savills.com/Savills+Prime+Residential+World+Cities+H1+2026.pdf",
+        "publisher": "Savills Research",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    },
+    "housekeeper_monthly": {
+      "value": {
+        "amount": 920,
+        "currency": "SGD"
+      },
+      "year": 2026,
+      "description": "Live-in migrant domestic worker employed by a foreign (non-citizen) family: MOM monthly levy SGD 300 for the first helper (2026 rate; the SGD 60 concession needs a Singapore-citizen child under 16, or a citizen/qualifying PR aged 67+ or with a disability, so it does not apply to a foreign family; a second helper costs SGD 450) plus salary SGD 620, MOM's latest published average monthly salary of a new helper hired from overseas (September 2021; transfer helpers about SGD 40 more). Singapore has no statutory minimum wage for domestic workers. Excludes food, lodging, mandatory insurance and agency fees; experienced helpers in 2026 are often paid more, so treat as a floor.",
+      "source": {
+        "title": "Paying levy for a migrant domestic worker (MDW)",
+        "url": "https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/foreign-domestic-worker-levy/paying-levy",
+        "publisher": "Ministry of Manpower, Singapore",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "Singapore",
+      "lon": 103.85007,
+      "lat": 1.28967,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 1880252"
+    }
+  ],
+  "us_citizen_notes": "US citizens stay taxed by the US on worldwide income and estates. Singapore has no comprehensive income tax treaty with the US; since Singapore does not tax foreign investment income, the US layer is the full cost. Singapore company or fund structures may be CFCs/PFICs for a US person.",
+  "open_questions": [
+    "GIP thresholds (SGD 10m / 25m / 200m AUM with SGD 50m deployment) are from a professional summary of EDB's 2025 factsheet; EDB's own page did not show the figures.",
+    "Purchase price per m2 and family private health insurance not sourced. Prime rent is a Savills city-wide prime average converted to a stated 250 m2 home, not a sample of 4-5 bedroom leases; helper salary is MOM's 2021 average (no newer official figure found)."
+  ]
+}

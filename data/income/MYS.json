@@ -1,0 +1,248 @@
+{
+  "id": "MYS",
+  "name": "Malaysia",
+  "currency": "MYR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Residents pay progressive tax from 0% to 30% (30% above MYR 2 million) after a MYR 9,000 personal relief. Foreign-sourced income received in Malaysia is exempt for residents under an exemption order running to 31 December 2036 (PwC), but not for pay for work done in Malaysia. Foreign employees pay 2% EPF; the self-employed have no mandatory scheme in the sources.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 5000,
+        "rate": 0.01
+      },
+      {
+        "from_amount": 20000,
+        "rate": 0.03
+      },
+      {
+        "from_amount": 35000,
+        "rate": 0.06
+      },
+      {
+        "from_amount": 50000,
+        "rate": 0.11
+      },
+      {
+        "from_amount": 70000,
+        "rate": 0.19
+      },
+      {
+        "from_amount": 100000,
+        "rate": 0.25
+      },
+      {
+        "from_amount": 400000,
+        "rate": 0.26
+      },
+      {
+        "from_amount": 600000,
+        "rate": 0.28
+      },
+      {
+        "from_amount": 2000000,
+        "rate": 0.3
+      }
+    ],
+    "personal_allowance": 9000,
+    "employee_social_security_rate": 0.02,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Non-Malaysian employees: EPF 2% with no wage limit; SOCSO employee share capped at MYR 29.75 a month (employment injury and invalidity, small). Non-citizens are outside EIS. Self-employed contributions were not covered on the PwC page; set to 0 and flagged.",
+    "local_tax_note": "No local income tax. Rebates for chargeable income below MYR 35,000 are not modelled. Bracket start values are lower bounds of each band (rate applies to income above).",
+    "sources": [
+      {
+        "title": "Malaysia - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/malaysia/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Malaysia - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/malaysia/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Malaysia - Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/malaysia/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Self-employed social security (SESKSO/EPF voluntary) not verified.",
+      "PwC labels rates 'prevailing' and does not state YA2026 explicitly; reliefs page shows YA2026.",
+      "Non-Employment Injury Scheme (0.75% of salary up to MYR 6,000 ceiling, from 1 June 2026) is listed by PwC without saying who bears it or whether non-citizens are in scope; not included in the employee rate.",
+      "EPF relief is capped at MYR 4,000 a year (SOCSO relief MYR 350 separately; SOCSO not in the recorded rate): the deductible share is about 0.81 at EUR 54k income (2% = MYR 4,936) and about 0.33 at EUR 134k (MYR 12,249); the field holds one share, 0.81 used."
+    ],
+    "verified_on": "2026-10-15",
+    "social_security_deductible": 0.81
+  },
+  "regimes": [
+    {
+      "id": "de_rantau",
+      "name": "DE Rantau Nomad Pass",
+      "kind": "digital_nomad_visa",
+      "description": "MDEC-run Professional Visit Pass for remote workers and freelancers with foreign employers or clients. Minimum income USD 24,000 a year for tech talent and USD 60,000 for non-tech professionals; 3-12 months with one 12-month renewal (24 months total). The pass itself does not change tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 60000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": 2,
+      "duration_note": "USD 24,000 applies to tech roles (non-tech USD 60,000). Pass valid 3-12 months, renewable once for 12 months. Employer or clients must not be registered in Malaysia; passport validity over 14 months at application. A tourist pass cannot be converted.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "DE Rantau Pass FAQ",
+          "url": "https://mdec.my/static/pdf/derantau/foreign/De Rantau Pass FAQ.pdf",
+          "publisher": "MDEC (Malaysia Digital Economy Corporation)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "DE Rantau",
+          "url": "https://mdec.my/derantau",
+          "publisher": "MDEC",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [
+        "Fees not confirmed (Section C of the FAQ was not read in full).",
+        "Whether a pass holder staying 182+ days becomes tax resident and gets the foreign income exemption: see the foreign-income regime."
+      ]
+    },
+    {
+      "id": "foreign_income_exemption",
+      "name": "Foreign-sourced income exemption for resident individuals",
+      "kind": "other",
+      "description": "Resident individuals are exempt on foreign-sourced income received in Malaysia (all classes except income received from a partnership business in Malaysia), subject to conditions that PwC does not list. PwC gives the period as income received from 1 January 2022 to 31 December 2036. It does not cover a remote worker's pay for work done in Malaysia: PwC's income-determination page says an employee is taxed on employment income earned for work performed in Malaysia regardless of where payment is made, so such pay is Malaysian-sourced, not foreign-sourced. The same sourcing logic applies to freelance services performed in Malaysia. Applies to anyone tax resident, not only pass holders.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 10,
+      "duration_note": "Exemption period runs to 31 December 2036 per PwC (about 10 years from 2026). Earlier statements of 2026 or 2030 in other sources are superseded; the gazetted order itself was not opened.",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Malaysia - Individual - Income determination",
+          "url": "https://taxsummaries.pwc.com/malaysia/individual/income-determination",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Gazetted Exemption Order (PU(A)) and LHDN conditions not opened; end date taken from PwC only.",
+        "Whether pay for services performed in Malaysia for a foreign client is Malaysian-sourced under s.3 ITA was inferred from PwC's employment-income sourcing statement, not from LHDN guidance."
+      ],
+      "covers_local_work": false
+    },
+    {
+      "id": "iskandar_knowledge_worker",
+      "name": "Iskandar Malaysia knowledge worker 15% rate",
+      "kind": "expat_regime",
+      "description": "Flat 15% on employment income for qualified knowledge workers employed by a designated company in a qualified activity in the Iskandar region (Johor). Applies in a specific region and sector only.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "Duration not stated on the PwC page.",
+      "treatment": "flat_rate",
+      "flat_rate": 0.15,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Malaysia - Individual - Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/malaysia/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Conditions, approval route, duration and whether the incentive is still open were not on the PwC page.",
+        "The Returning Expert Programme (15%, five years) was not listed as open to foreigners."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Kuala Lumpur",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 2525,
+        "currency": "MYR"
+      },
+      "year": 2026,
+      "description": "Numbeo average 1-bedroom apartment in city centre, 1,051 entries from 158 contributors in 12 months (all city price data); range MYR 1,250-4,000.",
+      "source": {
+        "title": "Cost of Living in Kuala Lumpur (Numbeo)",
+        "url": "https://www.numbeo.com/cost-of-living/in/Kuala-Lumpur",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "No 2-bedroom figure from Numbeo (3-bedroom city centre MYR 4,729); left null."
+  },
+  "residence_routes": "EU, US and other citizens: the DE Rantau Nomad Pass (Professional Visit Pass, up to 24 months) is open to remote workers and freelancers earning USD 24,000 (tech) or USD 60,000 (non-tech) from outside Malaysia. Skilled employees need an Employment Pass sponsored by a Malaysian employer (conditions not researched here). Visa-free entry does not permit work.",
+  "open_questions": [
+    "Employment Pass thresholds not researched.",
+    "2-bedroom rent unavailable: Numbeo, Expatistan, Global Property Guide and iProperty pages could not be read."
+  ]
+}

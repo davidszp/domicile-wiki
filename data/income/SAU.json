@@ -1,0 +1,88 @@
+{
+  "id": "SAU",
+  "name": "Saudi Arabia",
+  "currency": "SAR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "There is no individual income tax scheme in Saudi Arabia; employment income is untaxed (PwC, reviewed 29 Jul 2026). Non-employment income is taxed under entity/permanent-establishment rules. Non-Saudi employees pay no GOSI contribution (the 2% occupational-hazard charge is borne by the employer); Saudi employees pay 9.75% (9% plus 0.75% SANED).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Self-employed contributions not covered by PwC. A freelancer's non-employment income can fall under the entity (corporate) rules rather than personal tax; the 20% foreign-owned profit tax is noted in the existing jurisdiction file.",
+    "local_tax_note": "No local income-based taxes. Saudi employees' GOSI base is basic salary plus housing, capped at SAR 45,000 a month.",
+    "sources": [
+      {
+        "title": "Saudi Arabia - Individual - Taxes on personal income (last reviewed 29 Jul 2026)",
+        "url": "https://taxsummaries.pwc.com/saudi-arabia/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Saudi Arabia - Individual - Other taxes (last reviewed 29 Jul 2026)",
+        "url": "https://taxsummaries.pwc.com/saudi-arabia/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "How a foreign freelancer's self-employment income is taxed in practice (entity rules) is not detailed on the PwC page.",
+      "PwC other-taxes page re-opened 2026-10-15: non-Saudi employees 2% (employer-paid occupational hazard only), Saudi employees 9.75% employee share; no self-employed rate listed (0% is a reading of silence)."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [],
+  "costs": {
+    "city": "Riyadh",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 2500,
+        "currency": "SAR"
+      },
+      "year": 2026,
+      "description": "Riyadh average 1-bedroom monthly rent, 2026 (range SAR 2,000-5,500; portal asking rents adjusted, sample size not disclosed). Numbeo city-centre 1-bedroom is SAR 4,452, so central expat areas are far above this citywide figure.",
+      "source": {
+        "title": "Average rent in Riyadh 2026 (Sands of Wealth)",
+        "url": "https://sandsofwealth.com/blogs/news/riyadh-rents",
+        "publisher": "Sands of Wealth",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 4800,
+        "currency": "SAR"
+      },
+      "year": 2026,
+      "description": "Riyadh average 2-bedroom monthly rent, 2026 (range SAR 3,000-10,000; Bayut, JLL, CBRE based, sample size not disclosed).",
+      "source": {
+        "title": "Average rent in Riyadh 2026 (Sands of Wealth)",
+        "url": "https://sandsofwealth.com/blogs/news/riyadh-rents",
+        "publisher": "Sands of Wealth",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Rents are advertised/estimated, not signed-lease medians, unless stated."
+  },
+  "residence_routes": "EU, US and other citizens: no visa-free right to work. Skilled employees are sponsored by a Saudi employer for an iqama (residence and work permit). Premium Residency for wealthy foreigners is noted in the existing jurisdiction file. No dedicated digital-nomad visa was found.",
+  "open_questions": [
+    "No digital-nomad visa found; not confirmed from an official source.",
+    "Premium Residency terms and employer-sponsorship rules not re-verified."
+  ]
+}

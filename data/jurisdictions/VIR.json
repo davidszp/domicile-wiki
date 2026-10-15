@@ -1,0 +1,260 @@
+{
+  "id": "VIR",
+  "name": "US Virgin Islands",
+  "continent": "Caribbean",
+  "region": "Virgin Islands (US territory)",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "summary": "The USVI applies the US Internal Revenue Code as its own income tax (the 'mirror code'), with 'Virgin Islands' read for 'United States'. A bona fide resident files only with the VI Bureau of Internal Revenue and pays the same rates as on the mainland: 20% on long-term gains and qualified dividends, up to 37% on other income. Whether the 3.8% NIIT is mirrored is unclear. EDC incentives (90% income tax reduction) cover only qualifying business income, not a passive portfolio. No local inheritance or wealth tax was found; US federal estate tax still reaches US citizens (and US-situs assets of non-citizens).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Bona fide residence (mirror code)",
+      "type": "standard",
+      "description": "Mirror-code income tax paid to the USVI at US federal rates on worldwide income. No local estate/inheritance tax found.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Bona fide residence tests of IRC s. 937 (presence, tax home, closer connection). Non-US citizens need US immigration status to live in the USVI.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Long-term capital gains are taxed at the mirrored US rates, top 20% (plus 25% unrecaptured real-estate depreciation, 28% collectibles). A bona fide VI resident (including a US citizen) satisfies the US filing obligation by filing with the VI (IRC s. 932(c)). The NIIT (3.8%) does not directly apply; the IRS tells residents to ask the VI about mirrored application.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "IRS Publication 570 (2025), Tax Guide for Individuals With Income From U.S. Territories",
+            "url": "https://www.irs.gov/publications/p570",
+            "publisher": "Internal Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "26 U.S. Code 932 - Coordination of United States and Virgin Islands income taxes",
+            "url": "https://www.law.cornell.edu/uscode/text/26/932",
+            "publisher": "Cornell LII",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "26 U.S. Code 934 - Limitation on reduction in income tax liability incurred to the Virgin Islands",
+            "url": "https://www.law.cornell.edu/uscode/text/26/934",
+            "publisher": "Cornell LII",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.2,
+        "rates": {
+          "listed_securities_domestic": 0.2,
+          "listed_securities_foreign": 0.2,
+          "private_business_sale": 0.2,
+          "real_estate_local": 0.2,
+          "real_estate_foreign": 0.2
+        },
+        "rate_basis": "Mirror code: US long-term capital gains rates (top 20%) apply as VI tax. Held over one year assumed.",
+        "professional_trader": "Trader status as under US rules (mark-to-market election possible).",
+        "open_questions": [
+          "Whether the USVI applies a mirrored 3.8% NIIT is not confirmed (IRS Pub. 570); rates exclude it.",
+          "For gains on US-source/non-VI assets, IRC s. 934 prevents the VI from granting reductions (e.g. EDC) on non-VI income."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends are taxed under the mirror code: qualified dividends at up to 20%, ordinary dividends at up to 37%. Under the mirror, which foreign (including US mainland) companies' dividends count as 'qualified' is not settled in the sources opened.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "IRS Publication 570 (2025), Tax Guide for Individuals With Income From U.S. Territories",
+            "url": "https://www.irs.gov/publications/p570",
+            "publisher": "Internal Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "26 U.S. Code 932 - Coordination of United States and Virgin Islands income taxes",
+            "url": "https://www.law.cornell.edu/uscode/text/26/932",
+            "publisher": "Cornell LII",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "headline_rate": 0.37,
+        "domestic_rate": 0.2,
+        "foreign_gross_rate": null,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Mirror code rates: 20% qualified, 37% ordinary.",
+        "withholding_outbound": "Mirror of US rules (30% on dividends to foreign persons, reduced only where VI rules allow; not researched).",
+        "treaty_network": "US tax treaties do not apply to the VI as a separate jurisdiction.",
+        "open_questions": [
+          "Qualified-dividend status of US and other foreign company dividends for a VI resident under the mirror code not confirmed; foreign_gross_rate left null (20% if qualified, 37% if not)."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "IRS Publication 570 (2025), Tax Guide for Individuals With Income From U.S. Territories",
+            "url": "https://www.irs.gov/publications/p570",
+            "publisher": "Internal Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Virgin Islands Bureau of Internal Revenue",
+            "url": "https://bir.vi.gov/",
+            "publisher": "Virgin Islands Bureau of Internal Revenue",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Real property tax on assessed value (rates not researched)."
+      },
+      "inheritance": {
+        "summary": "No USVI inheritance, estate or gift tax was found. US federal estate and gift tax continues to apply to US citizens resident in the USVI unless citizenship was acquired solely by birth or residence in a possession (IRC s. 2209). A non-US citizen domiciled in the USVI is a nonresident alien for federal estate tax and is taxed only on US-situs assets (e.g. shares in US companies) (Form 706-NA).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "26 U.S. Code 2209 - Certain residents of possessions considered nonresidents not citizens of the United States",
+            "url": "https://www.law.cornell.edu/uscode/text/26/2209",
+            "publisher": "Cornell LII",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "IRS Instructions for Form 706-NA",
+            "url": "https://www.irs.gov/instructions/i706na",
+            "publisher": "Internal Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Virgin Islands Bureau of Internal Revenue",
+            "url": "https://bir.vi.gov/",
+            "publisher": "Virgin Islands Bureau of Internal Revenue",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No local gift tax found; US federal gift tax for US citizens.",
+        "gifts_same_as_inheritance": true,
+        "foreign_assets": "US-situs assets of non-citizens fall under US federal estate tax.",
+        "open_questions": [
+          "Local inheritance/estate tax under the Virgin Islands Code not checked against the statute.",
+          "For a non-US family, US federal estate tax on US-situs shares (up to 40%, USD 60,000 exemption) is a real cost not modelled by the app."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Bona fide residence under IRC s. 937: presence test (e.g. 183 days), no tax home outside the VI, no closer connection elsewhere (IRS Pub. 570).",
+    "routes": [
+      {
+        "name": "US citizens",
+        "citizenships": [
+          "US"
+        ],
+        "requirements": "Free to move; become bona fide residents."
+      },
+      {
+        "name": "Non-US citizens",
+        "citizenships": [
+          "EU",
+          "OTHER"
+        ],
+        "requirements": "US immigration law applies (green card or visa); no special residence-by-investment route."
+      }
+    ],
+    "sources": [
+      {
+        "title": "IRS Publication 570 (2025), Tax Guide for Individuals With Income From U.S. Territories",
+        "url": "https://www.irs.gov/publications/p570",
+        "publisher": "Internal Revenue Service",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.21,
+    "summary": "Mirror code CIT 21%. Economic Development Commission (EDC) beneficiaries get up to 90% income tax reduction on qualifying business income (requires a qualifying VI business); IRC s. 934 limits benefits on non-VI income.",
+    "sources": [
+      {
+        "title": "26 U.S. Code 934 - Limitation on reduction in income tax liability incurred to the Virgin Islands",
+        "url": "https://www.law.cornell.edu/uscode/text/26/934",
+        "publisher": "Cornell LII",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "St. Thomas (East End / Red Hook / Northside)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 7500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median of the five St. Thomas long-term rental listings with 4-6 bedrooms on Island Real Estate (Christie's International Real Estate affiliate) MLS rentals page, filter 4+ beds, on 15 Oct 2026: USD 3,200 (4 bed, Anna's Retreat), 4,950 (4 bed, St. Joseph & Rosendahl, Northside), 7,500 (4 bed/5 bath, Lerkenlund, Northside), 8,500 (4 bed/4 bath condominium, Cowpet Bay West, Red Hook), 10,000 (6 bed, Bakkero, Frenchmans Bay). A 9-bedroom estate at USD 48,500 was excluded. Thin sample; asking rents, listings undated; furnishing not stated.",
+      "source": {
+        "title": "St. Thomas Long-Term Rentals (4+ beds)",
+        "url": "https://www.usvirealestate.com/st-thomas-rentals/?min_bed=4",
+        "publisher": "Island Real Estate / Christie's International Real Estate (USVI)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 31600,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Antilles School (independent PreK-12 college-preparatory day school, St. Thomas), 2026-2027 tuition for Grades 9-12: USD 31,600 a year (Grades 6-8 USD 30,500). A USD 600 enrollment deposit is credited against tuition. School's own fee page.",
+      "source": {
+        "title": "Antilles School: Tuition and Financial Aid (2026-2027 Tuition and Fees)",
+        "url": "https://www.antilles.vi/admission/tuition-and-financial-aid",
+        "publisher": "Antilles School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Rent from a small MLS rental sample on a Christie's affiliate site; school fee from the school's 2026-27 schedule. Purchase price per m2, health insurance and housekeeper not sourced."
+  },
+  "markers": [
+    {
+      "name": "Charlotte Amalie",
+      "lon": -64.9307,
+      "lat": 18.3419,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 4795467"
+    }
+  ],
+  "us_citizen_notes": "A US citizen who is a bona fide USVI resident for the whole year files with the VI only and has no US income tax liability (IRC s. 932(c)); the VI tax equals the mirrored US tax, so there is no saving on portfolio income. EDC 90% reductions apply only to qualifying VI business income. US estate and gift tax continues to apply (IRC s. 2209 exception only for citizenship acquired via a possession).",
+  "open_questions": [
+    "NIIT mirroring.",
+    "Qualified dividend status under the mirror code.",
+    "Local estate/inheritance tax statute."
+  ]
+}

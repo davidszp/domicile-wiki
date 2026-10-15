@@ -1,0 +1,164 @@
+{
+  "id": "PAN",
+  "name": "Panama",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Territorial tax on Panamanian-source income: 0% up to USD 11,000, 15% to USD 50,000 and 25% above. Employees pay 9.75% social security plus 1.25% educational insurance with no ceiling.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 11000,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 50000,
+        "rate": 0.25
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.11,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.135,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Deloitte states that contributions of independent contractors and professionals 'may vary from 9% to 13.5%' of fees; the top of that range is shown and the tier for a given income was not verified. Whether educational insurance is added for the self-employed is not stated. Professionals (including independents contracted in Panama) face 15% withholding at source on gross fees (Deloitte).",
+    "local_tax_note": "Territorial: residents and non-residents are taxed only on Panamanian-source income (Deloitte; PwC). Employee rate is CSS 9.75% (from April 2025) plus 1.25% educational insurance (PwC). Deductions include mortgage interest up to USD 15,000, medical insurance and expenses, and USD 800 (married filing jointly); not applied to the brackets. No local income surtax.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Panama Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-panamahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Panama, Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/panama/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Panama, Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/panama/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Direccion General de Ingresos (Panama) - Renta, asalariados: return instructions",
+        "url": "https://dgi.mef.gob.pa/DInforme/pdf/RENTA%20-%20ASALARIADOS.pdf",
+        "publisher": "Direccion General de Ingresos, Ministerio de Economia y Finanzas",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "Self-employed contribution tier not verified: Deloitte gives 9% to 13.5% of fees for independents and the top is shown.",
+      "Employer rate increases from March 2027 (13.25% to 14.25%) do not affect employee rates.",
+      "Panama: social_security_deductible = 0 follows from the DGI instruction sheet listing no social security deduction; PwC's deductions page is silent, and the Gaceta Oficial text of Ley 8 of 2010 (which repealed numerals of art. 709) could not be opened."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "id": "short_stay_remote_worker",
+      "name": "Short Stay Visa as a Remote Worker (Executive Decree 198 of 2021)",
+      "kind": "digital_nomad_visa",
+      "description": "Nine-month stay, extendable once for nine months, for remote workers with a foreign employer or autonomous remote work for clients abroad, earning at least USD 36,000 a year from foreign sources. Holders swear not to work in Panama. The visa itself carries no tax clause: any relief comes from Panama's territorial system (only Panamanian-source income is taxed, Deloitte and PwC 2026), which does not reach pay for work physically performed in Panama, so covers_local_work is false and the regime is not scored as a tax relief.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 36000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": 1.5,
+      "duration_note": "9 months plus one 9-month extension. Health insurance for the whole stay is required. A stay beyond 183 days in a calendar year or two makes the person tax resident, which does not change the territorial basis.",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Kraemer Law: Visa for Remote Workers (Executive Decree 198 of May 7 2021)",
+          "url": "https://kraemerlaw.com/en/articles/visa-for-remote-workers-digital-nomads-executive-decree-198-of-may-7-2021/",
+          "publisher": "Kraemer Law",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Deloitte International Tax: Panama Highlights 2026",
+          "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-panamahighlights-2026.pdf",
+          "publisher": "Deloitte",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Kraemer Law does not discuss tax; the 'exempt' treatment follows from Panama's territorial system as described by Deloitte and PwC, not from a visa clause. Neither source defines when remote work done in Panama for a foreign employer is Panamanian-source, so covers_local_work false rests on the general source rule and on there being no statutory exemption; a DGI ruling could change this.",
+        "Government fees and the need for a lawyer to file were not verified.",
+        "Panama's SEM (multinational headquarters) employee regime is not researched."
+      ],
+      "covers_local_work": false
+    }
+  ],
+  "costs": {
+    "city": "Panama City (Costa del Este / Punta Pacifica)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1300,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 13 one-bedroom apartments in Bella Vista, Avenida Balboa, Punta Pacifica, Costa del Este, San Francisco, Carrasquilla and nearby central districts among 120 listings read on the first 4 results pages of Encuentra24's apartments-for-rent category (9,757 listed); range USD 750 to 2,800; studios and ads under USD 500 excluded; furnishing mixed.",
+      "source": {
+        "title": "Encuentra24 Panama: apartments for rent (4 results pages)",
+        "url": "https://www.encuentra24.com/panama-en/real-estate-for-rent-apartments",
+        "publisher": "Encuentra24",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 28 two-bedroom apartments in Bella Vista, Avenida Balboa, Punta Pacifica, Costa del Este, San Francisco, Marbella, Obarrio, Coco del Mar, Calle 50 and nearby central districts among 120 listings read on the first 4 results pages of Encuentra24's apartments-for-rent category (9,757 listed); range USD 700 to 3,500; furnishing mixed.",
+      "source": {
+        "title": "Encuentra24 Panama: apartments for rent (4 results pages)",
+        "url": "https://www.encuentra24.com/panama-en/real-estate-for-rent-apartments",
+        "publisher": "Encuentra24",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Encuentra24 results pages 1 to 4 (relevance order, so featured ads are over-represented); bedroom counts read from the listing cards. Numbeo returned HTTP 429 and Global Property Guide HTTP 403, so there is no second source."
+  },
+  "residence_routes": "Remote workers of any citizenship can use the Short Stay Remote Worker visa (USD 36,000 a year, 9 months + 9 months). Employees of a Panamanian employer need a work permit/visa (not researched). The earlier repo research (data/jurisdictions/PAN.json) lists residence visas (Qualified Investor, Friendly Nations, Pensionado) without verified thresholds. EU, US and other citizens use the same routes. US citizens remain taxable in the US on worldwide income; Panama levies no tax on foreign-source income, so there is nothing to credit.",
+  "open_questions": [
+    "Rents come from asking prices on one portal's first 4 pages.",
+    "Work-permit and Friendly Nations thresholds not verified."
+  ]
+}

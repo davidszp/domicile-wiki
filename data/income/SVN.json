@@ -1,0 +1,213 @@
+{
+  "id": "SVN",
+  "name": "Slovenia",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Progressive income tax of 16% to EUR 9,721.43, 26% to 28,592.44, 33% to 57,184.88, 39% to 82,346.23 and 50% above, after a general allowance of EUR 5,551.93 (higher at low incomes). Employees pay 22.1% social security plus 1% long-term care; the self-employed bear the employee and employer shares.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.16
+      },
+      {
+        "from_amount": 9721.43,
+        "rate": 0.26
+      },
+      {
+        "from_amount": 28592.44,
+        "rate": 0.33
+      },
+      {
+        "from_amount": 57184.88,
+        "rate": 0.39
+      },
+      {
+        "from_amount": 82346.23,
+        "rate": 0.5
+      }
+    ],
+    "personal_allowance": 5551.93,
+    "employee_social_security_rate": 0.231,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.402,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "PwC (other taxes) lists employee rates 22.10% (pension 15.50, health 6.36, unemployment 0.14, parental 0.10) and employer rates 16.10% (pension 8.85, health 6.56, unemployment 0.06, injury 0.53, parental 0.10), plus long-term care of 1% for employees, 1% for employers and, expressly, 2% of the relevant base for the self-employed. A compulsory supplementary health contribution of EUR 39.36 a month applies March 2026 to February 2027. The recorded self-employed rate 40.2% = 22.1% + 16.1% + 2% is DERIVED: it assumes sole proprietors bear both the employee and employer shares (Remote Work Europe says they 'bear both shares'); PwC does not list self-employed rates, and the injury share may not apply. The contribution base (minimum/maximum) and any ceiling were not found, so no cap is recorded. Flat-rate (normirani) expense rules for sole proprietors were not found. Employee social_security_deductible: BDO guide is from 2022 (22.1% rate); the recorded 23.1% includes the 1% long-term-care contribution added later, assumed deducted alike. Medium confidence.",
+    "social_security_deductible": 1,
+    "local_tax_note": "No municipal income tax. The general allowance is EUR 5,551.93 for income at or above EUR 17,766.18 and is larger below that; the recorded value is the flat amount.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Slovenia, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/slovenia/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Slovenia, other taxes (social security)",
+        "url": "https://taxsummaries.pwc.com/slovenia/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Slovenia, deductions (general allowance)",
+        "url": "https://taxsummaries.pwc.com/slovenia/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Slovenia digital nomad permit guide (Remote Work Europe)",
+        "url": "https://remoteworkeurope.eu/guides/slovenia",
+        "publisher": "Remote Work Europe",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "BDO Slovenia Tax Facts Inpatriates 2022",
+        "url": "https://www.global-tst2.bdo.global/getmedia/bcf79868-104c-4659-b545-dc573a92faa2/Slovenia-Tax-Facts-Inpatriates-2022.pdf.aspx",
+        "publisher": "BDO",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Self-employed total of 40.2% is derived from PwC's employee and employer rates plus the stated 2% long-term care; PwC and the opened gov.si pages do not list self-employed rates or the base (confidence low for this figure).",
+      "Contribution ceiling for employees and the minimum/maximum bases for the self-employed were not found."
+    ]
+  },
+  "regimes": [
+    {
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 38400,
+        "currency": "EUR"
+      },
+      "max_income": null,
+      "duration_note": "Up to one year, cannot be extended; re-application possible six months after expiry (gov.si).",
+      "social_security_applies": true,
+      "open_questions": [
+        "The monthly amount (2x average net wage, Official Gazette) was not found on an official page; EUR 3,200 net is from Remote Work Europe, which also quotes EUR 3,098. The test is on net funds, so the gross equivalent is higher (not derived here).",
+        "Permit is one year and non-renewable (gov.si), so a two-year stay requires a six-month gap or another permit type.",
+        "Whether permit holders become tax residents (183 days) was not covered by the opened pages."
+      ],
+      "id": "svn_nomad_permit",
+      "name": "Digital nomad permit",
+      "kind": "digital_nomad_visa",
+      "description": "Temporary residence permit for non-EU nationals employed by, or under a civil-law contract with, a business based outside Slovenia, or self-employed abroad, working entirely remotely with ICT (gov.si, 21 Nov 2025). Requires monthly funds of at least twice the average monthly net salary in Slovenia (figure from the Official Gazette; any lawful income counts). Valid up to one year and 'cannot be extended'; a new application is possible six months after expiry, or a different permit type (e.g. employment) during validity. Family may join immediately. No flat tax for foreign remote workers: a resident pays the normal scale. The euro threshold (about EUR 3,200 net a month on Remote Work Europe, EUR 38,400 a year; a teaser there says about EUR 3,098) could not be tied to the Official Gazette figure.",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "duration_years": 1,
+      "treatment": "standard",
+      "sources": [
+        {
+          "title": "Slovenia digital nomad permit guide (Remote Work Europe)",
+          "url": "https://remoteworkeurope.eu/guides/slovenia",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Gov.si - Temporary residence permit for digital nomads (2025-11-21)",
+          "url": "https://www.gov.si/en/news/2025-11-21-temporary-residence-permit-for-digital-nomads/",
+          "publisher": "Government of Slovenia",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    },
+    {
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": null,
+      "max_income": null,
+      "duration_note": "Maximum 60 months within 10 years from the first secondment.",
+      "social_security_applies": true,
+      "open_questions": [
+        "The page does not say whether it applies to employees who relocate under a local contract rather than a secondment.",
+        "The EUR 1,000 a month cap limits the benefit to EUR 12,000 of excluded salary a year; recorded as a 20% share."
+      ],
+      "id": "svn_secondment",
+      "name": "Special tax base for seconded employees",
+      "kind": "expat_regime",
+      "description": "For employees seconded to or from abroad for more than 30 uninterrupted days, with a workplace over 200 km away, a salary of at least 1.5 times the last known Slovenian average wage and no tax residence in the secondment country in the previous five years, 20% of salary (capped at EUR 1,000 a month) is excluded from the tax base. Covers income paid within at most 60 months in a 10-year period.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "duration_years": 5,
+      "treatment": "partial_exemption",
+      "exempt_share": 0.2,
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries - Slovenia, other tax credits and incentives (secondment)",
+          "url": "https://taxsummaries.pwc.com/slovenia/individual/other-tax-credits-and-incentives",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified"
+    }
+  ],
+  "costs": {
+    "city": "Ljubljana",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1000,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent, 1-bedroom apartments, Ljubljana (all locations), Global Property Guide Q3 2026 from a local portal. Furnished status not stated; the source warns that Slovenian portals list few apartments, so the sample is thin. Centre EUR 1,150.",
+      "source": {
+        "title": "Global Property Guide - Slovenia rental yields (median asking rents)",
+        "url": "https://globalpropertyguide.com/Europe/Slovenia/Rental-Yields",
+        "publisher": "Global Property Guide",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1600,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent, 2-bedroom apartments, Ljubljana (all locations), Global Property Guide Q3 2026 from a local portal. Furnished status not stated; thin sample. Centre EUR 1,800.",
+      "source": {
+        "title": "Global Property Guide - Slovenia rental yields (median asking rents)",
+        "url": "https://globalpropertyguide.com/Europe/Slovenia/Rental-Yields",
+        "publisher": "Global Property Guide",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "The source states that Slovenian property portals lack enough listings for a reliable overview, so these medians are less certain than those for other countries. Second rent source not obtained."
+  },
+  "residence_routes": "EU citizens register their stay. US and other non-EU remote workers can use the digital nomad permit (about EUR 3,200 net a month, one year, described as non-renewable). Skilled employees from outside the EU need a single permit sponsored by a Slovenian employer or an EU Blue Card, which were not researched.",
+  "open_questions": [
+    "Single-permit and Blue Card routes not researched.",
+    "Official gov.si pages for the nomad permit not opened.",
+    "Rents rest on one aggregator with a thin Slovenian sample; no second source obtained."
+  ]
+}

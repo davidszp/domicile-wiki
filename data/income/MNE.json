@@ -1,0 +1,189 @@
+{
+  "id": "MNE",
+  "name": "Montenegro",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Salaries are taxed at 0% up to EUR 700 a month, 9% from EUR 700 to 1,000 and 15% above (EUR 8,400 and 12,000 a year); entrepreneurial income uses the same annual thresholds (EUR 8,400 and 12,000) from 1 January 2026. A municipal surtax of 15% of the tax applies in Podgorica (13% in most other towns), giving effective marginal rates of 10.35% and 17.25%. Employees pay 10% pension contributions (capped, EUR 75,453 in 2025) and 0.5% unemployment insurance.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 8400,
+        "rate": 0.1035
+      },
+      {
+        "from_amount": 12000,
+        "rate": 0.1725
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.105,
+    "employee_social_security_cap": 75453,
+    "self_employed_social_security_rate": 0.105,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "UNVERIFIED: the self-employed rate is assumed equal to the employee rate (10.5%: 10% pension + 0.5% unemployment, health abolished January 2022 per eporezi.me). Neither PwC nor eporezi.me states regular entrepreneur rates or base; eporezi.me gives only the new (1 January 2026) supplementary entrepreneurial activity category for people employed elsewhere, with a base of 60% / 100% / 150% of the average monthly wage by turnover (up to EUR 9,000 / EUR 15,000 / above), rates not stated. Entrepreneurs can opt for lump-sum taxation if the previous year's turnover is at most EUR 30,000. Employee social_security_deductible: Based on professional and secondary guides, not Poreska uprava or the statute; medium-low confidence.",
+    "social_security_deductible": 0,
+    "local_tax_note": "Podgorica surtax: 15% of the income tax (13% in most municipalities, 10% in Budva). The brackets already include it (9% x 1.15 = 10.35%, 15% x 1.15 = 17.25%). The 0% band stands in for the EUR 700 monthly allowance.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Montenegro, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/montenegro/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Montenegro, other taxes (social security)",
+        "url": "https://taxsummaries.pwc.com/montenegro/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Porez na dohodak u Crnoj Gori - guide (eporezi.me)",
+        "url": "https://eporezi.me/en/vodici/porez-na-dohodak",
+        "publisher": "eporezi.me",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "eporezi.me - Social contributions in Montenegro (2026 rates)",
+        "url": "https://eporezi.me/en/vodici/socijalni-doprinosi",
+        "publisher": "eporezi.me",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Eurofast Payroll Guide 2025: Montenegro",
+        "url": "https://eurofast.eu/wp-content/uploads/2025/02/PayrollGuide2025_Montenegro.pdf",
+        "publisher": "Eurofast",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Country Tax Calc: Montenegro tax guide",
+        "url": "https://www.countrytaxcalc.com/tax-guides/montenegro-tax-guide/",
+        "publisher": "CountryTaxCalc",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Montenegro individual - deductions",
+        "url": "https://taxsummaries.pwc.com/montenegro/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "low",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Entrepreneur contribution rates and base are not on any opened page; 10.5% is the employee rate assumed (confidence low).",
+      "Employee pension cap: PwC gives EUR 75,453 annually (2025 figure), while eporezi.me states for 2026 that the maximum base is unlimited; the cap is kept pending a primary source.",
+      "The salary thresholds are monthly in the sources; the annual brackets multiply by 12, and the eporezi.me procedure section describes the 9% band as applying to EUR 300 of a net base, which is not reconciled.",
+      "PwC (reviewed 7 Aug 2026) confirms the 0% / 9% / 15% scale and entrepreneurial thresholds of EUR 8,400 / 12,000 but states the municipal surtax as 15% in Podgorica and Cetinje, 13% elsewhere."
+    ]
+  },
+  "regimes": [
+    {
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_note": "Up to two years, renewable for the same period (realistic maximum four).",
+      "social_security_applies": false,
+      "open_questions": [
+        "The statutory wording is taken from a law-firm page quoting the Personal Income Tax Law; the Official Gazette text and the article number (32d per Remote Work Europe) were not opened.",
+        "Exact minimum wage and therefore the annual income threshold were not found; min_income left null (open to all).",
+        "Widely repeated claim that the exemption ends in 2026: no sunset clause found in statute by Remote Work Europe, none stated on eporezi.me; unconfirmed either way.",
+        "Social security exemption stated by two secondary sources, not a statute."
+      ],
+      "id": "mne_nomad_residence",
+      "name": "Digital nomad temporary residence",
+      "kind": "digital_nomad_visa",
+      "description": "Temporary residence for non-EU remote workers earning at least three times the Montenegrin minimum wage (roughly EUR 1,800 to 2,400 a month per Remote Work Europe) from non-Montenegrin employers or clients, valid up to two years and renewable for the same period; the status was codified in the Law on Foreigners in January 2026 (eporezi.me). Tax: the Personal Income Tax Law exempts a person's income from personal earnings OR self-employment 'from an employer not registered in Montenegro on the basis of acquired digital nomad status under the law governing the residence and work of foreigners' (wording quoted by the Unija law-firm page on the Sl. list CG 152/22 amendments; Remote Work Europe cites art. 32d). Because it exempts the holder's pay by employer registration and status, not by where the work is done, it covers work performed in Montenegro (covers_local_work true). Social contributions reportedly do not apply (eporezi.me, Remote Work Europe). A stay over 183 days can create tax residency; how the status interacts with that test is not stated.",
+      "eligible_citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "duration_years": 4,
+      "treatment": "exempt",
+      "sources": [
+        {
+          "title": "Montenegro digital nomad temporary residence (Remote Work Europe)",
+          "url": "https://remoteworkeurope.eu/insights/montenegro-digital-nomad-visa",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Izmjene Zakona o porezu na dohodak fizickih lica (Sl. list CG 152/22)",
+          "url": "https://unija.com/cg/porez-na-dohodak/",
+          "publisher": "Unija",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "eporezi.me - Foreign residents (digital nomads)",
+          "url": "https://eporezi.me/en/vodici/strani-rezidenti",
+          "publisher": "eporezi.me",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "covers_local_work": true
+    }
+  ],
+  "costs": {
+    "city": "Podgorica",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 550,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent, 1-bedroom apartments, Podgorica (all locations), Global Property Guide Q2 2026 from a leading local property platform. Furnished status not stated. Budva EUR 650, Tivat EUR 800.",
+      "source": {
+        "title": "Global Property Guide - Montenegro rental yields (median asking rents)",
+        "url": "https://globalpropertyguide.com/Europe/Montenegro/Rental-Yields",
+        "publisher": "Global Property Guide",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 700,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent, 2-bedroom apartments, Podgorica (all locations), Global Property Guide Q2 2026 from a leading local property platform. Furnished status not stated. Budva EUR 950, Tivat EUR 1,000.",
+      "source": {
+        "title": "Global Property Guide - Montenegro rental yields (median asking rents)",
+        "url": "https://globalpropertyguide.com/Europe/Montenegro/Rental-Yields",
+        "publisher": "Global Property Guide",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Coastal towns (Budva, Tivat) are more expensive and popular with expats. Second rent source not obtained."
+  },
+  "residence_routes": "Montenegro is not in the EU; all foreigners, including EU citizens, need a temporary residence permit beyond 90 visa-free days. Remote workers can apply for the digital nomad temporary residence (three times the minimum wage, up to two years, renewable); skilled employees get a residence and work permit through a Montenegrin employer, which was not researched; company registration is a common route for longer stays.",
+  "open_questions": [
+    "Work-permit routes for skilled employees not researched.",
+    "Official Ministry of Interior page for the nomad permit not opened.",
+    "Rents rest on one aggregator (Global Property Guide); no second source obtained."
+  ]
+}

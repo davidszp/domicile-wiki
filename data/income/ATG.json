@@ -1,0 +1,173 @@
+{
+  "id": "ATG",
+  "name": "Antigua and Barbuda",
+  "currency": "XCD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "No personal income tax on employment income. A resident self-employed person pays the unincorporated business tax (UBT) on worldwide net business income: 0% up to XCD 42,000, 8% to XCD 186,000 and 25% above; this is modelled as the brackets (employees do not pay it). Employees pay 7% social security plus 3.5% medical benefits up to XCD 6,500 a month; the self-employed pay 10% social security on declared earnings.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.105,
+    "employee_social_security_cap": 78000,
+    "self_employed_social_security_rate": 0.1,
+    "self_employed_social_security_cap": 78000,
+    "self_employed_notes": "Social security for the self-employed is 10% of declared insurable earnings (Social Security (Self Employed Persons) Regulations 2013, reg. 9(1), S.I. 17 of 2013); professionals, consultants and IT specialists fall in class V and must declare at least XCD 6,000 a month (Schedule substituted by S.I. 59 of 2016). The XCD 78,000 cap is the employee ceiling of XCD 6,500 a month (Deloitte); the Regulations do not state a separate self-employed ceiling. Third-party guides add 5% for the medical benefits scheme; that was not confirmed on an official page and is not included. UBT is due quarterly on net income after expenses (IRD FAQ; Deloitte 2026); the registration fee (XCD 0 to 400 by gross income) counts against the tax. Self-employed people pay the unincorporated business tax; whether their own social security contributions are deductible from it was not established. The employee figure (0, no tax) governs.",
+    "local_tax_note": "Antigua and Barbuda has had no personal income tax since 2016 (IRD FAQ), but resident individuals pay the unincorporated business tax on worldwide self-employment income (Deloitte 2026; IRD FAQ bands for a sole trader: 0% to XCD 42,000, 8% to XCD 186,000, 25% above). The self-employed brackets are those UBT bands, because a resident freelancer with foreign clients is taxed on that income and no exemption for Nomad Digital Residence holders could be found (see the regime). Employees pay no income tax, so the wage brackets are nil. Employee contributions: social security 7% and medical benefits 3.5% (Deloitte), ceiling XCD 6,500 a month. A 17% sales tax applies, with registration compulsory for professional service providers.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Antigua and Barbuda Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-antiguaandbarbudahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Antigua and Barbuda Inland Revenue Department: Unincorporated Business Tax (UBT) FAQ",
+        "url": "https://ird.gov.ag/wp-content/uploads/2021/07/Unincorporated-Business-Tax-FAQ.pdf",
+        "publisher": "Inland Revenue Department, Antigua and Barbuda",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Global Citizen Solutions: Antigua and Barbuda Tax guide",
+        "url": "https://www.globalcitizensolutions.com/antigua-and-barbuda-tax/",
+        "publisher": "Global Citizen Solutions",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Hivedesk: Antigua compliance guide",
+        "url": "https://www.hivedesk.com/compliance/antigua",
+        "publisher": "Hivedesk",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Antigua and Barbuda Social Security (Self Employed Persons) Regulations 2013, S.I. No. 17 of 2013",
+        "url": "https://socialsecurity.gov.ag/wp-content/uploads/2021/03/no-17-of-2013-self-employed-persons-amendment.pdf",
+        "publisher": "Antigua and Barbuda Social Security Board",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Social Security (Self Employed Persons) (Amendment) Regulations 2016, S.I. No. 59 of 2016 (earnings classes)",
+        "url": "https://socialsecurity.gov.ag/wp-content/uploads/2021/03/no-59-of-2016-self-employed-persons-amendment.pdf",
+        "publisher": "Antigua and Barbuda Social Security Board",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "UBT bands are from the 2021 IRD FAQ; Deloitte (January 2026) confirms the 0% to 25% sliding scale but not the band edges, so 2026 edges are not reconfirmed.",
+      "The 3.5% medical benefit is not confirmed to share the XCD 6,500 monthly ceiling, and the self-employed medical benefit contribution (third-party: 5%) was not found on an official page."
+    ],
+    "self_employed_brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 42000,
+        "rate": 0.08
+      },
+      {
+        "from_amount": 186000,
+        "rate": 0.25
+      }
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "id": "nomad_digital_residence",
+      "name": "Nomad Digital Residence (NDR)",
+      "kind": "digital_nomad_visa",
+      "description": "Special-resident authorisation for people whose work can be done remotely for an employer or business outside Antigua and Barbuda, valid for up to two years in the first instance. Local employment is not allowed. No official statement that holders are exempt from income tax or UBT could be found, so it is recorded as a visa with standard taxation.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 50000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": 2,
+      "duration_note": "Up to two years in the first instance; renewal terms were not found. Fee USD 1,500 single, USD 2,000 couple, USD 3,000 family of three or more.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "High Commission for Antigua and Barbuda (UK): Nomad Digital Residence visa programme",
+          "url": "https://antigua-barbuda.com/ova_sev/nomad-digital-residence-visa-programme/",
+          "publisher": "High Commission for Antigua and Barbuda in the United Kingdom",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Nomad Digital Residence Act 2020: the Act text is not on laws.gov.ag (searched the media library and the 2020/2021 act lists) and the programme's own site antiguanomadresidence.com is a parked domain, so whether the Act exempts holders from income tax and business tax could not be established. The High Commission page does not address tax. If the Act does exempt holders' income, treatment becomes exempt with covers_local_work true.",
+        "Whether social security contributions apply to NDR holders is not stated."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "St John's / Jolly Harbour (Antigua)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1000,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 13 one-bedroom units (studios excluded) among 82 long-term rental listings read from pages 1 to 5 of Chestertons Antigua (St John's, Jolly Harbour, Hodges Bay, Crosbies and nearby); range USD 850 to 1,800; units marked Rented excluded; furnishing not stated.",
+      "source": {
+        "title": "Chestertons Antigua: all properties for long-term rent (88 listings)",
+        "url": "https://www.chestertonsantigua.com/all-properties-for-long-term-rent",
+        "publisher": "Chestertons Antigua",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1900,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 22 two-bedroom units (apartments, cottages and villas) among 82 long-term rental listings read from pages 1 to 5 of Chestertons Antigua (St John's, Jolly Harbour, Hodges Bay, Crosbies, Nonsuch Bay); range USD 1,000 to 2,800; units marked Rented excluded; furnishing not stated.",
+      "source": {
+        "title": "Chestertons Antigua: all properties for long-term rent (88 listings)",
+        "url": "https://www.chestertonsantigua.com/all-properties-for-long-term-rent",
+        "publisher": "Chestertons Antigua",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Chestertons Antigua long-term rentals (88 listings in total, 82 priced and read; the rest were commercial or unpriced). The earlier first-page-only reading showed only large villas."
+  },
+  "residence_routes": "Remote workers of any citizenship can apply for the Nomad Digital Residence (USD 50,000 a year, two-year authorisation, USD 1,500 single). Employees of a local employer need a work permit (not researched). Citizenship by investment (National Development Fund USD 230,000 or approved real estate from USD 300,000, per the CIU pages cited in data/jurisdictions/ATG.json) is a separate route. US citizens remain taxable in the US on worldwide income and have no Antigua tax to credit on employment income.",
+  "open_questions": [
+    "Work-permit terms not researched."
+  ]
+}

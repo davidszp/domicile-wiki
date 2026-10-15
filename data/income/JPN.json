@@ -1,0 +1,255 @@
+{
+  "id": "JPN",
+  "name": "Japan",
+  "currency": "JPY",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "National income tax runs 5% to 45% (seven brackets) plus a 2.1% surtax on the tax and a flat 10% inhabitant tax, giving a combined top marginal rate of about 55.9%. Employees pay about 14.7% in social insurance (health 4.925%, child support 0.115%, welfare pension 9.15%, unemployment 0.5%), each with its own ceiling; the self-employed use National Pension (flat JPY 17,920 a month) and National Health Insurance. The basic deduction is JPY 620,000 for total income of JPY 6.55m to 23.5m (JPY 1.04m below JPY 4.89m, JPY 670,000 up to JPY 6.55m).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.15105
+      },
+      {
+        "from_amount": 1950000,
+        "rate": 0.2021
+      },
+      {
+        "from_amount": 3300000,
+        "rate": 0.3042
+      },
+      {
+        "from_amount": 6950000,
+        "rate": 0.33483
+      },
+      {
+        "from_amount": 9000000,
+        "rate": 0.43693
+      },
+      {
+        "from_amount": 18000000,
+        "rate": 0.5084
+      },
+      {
+        "from_amount": 40000000,
+        "rate": 0.55945
+      }
+    ],
+    "personal_allowance": 620000,
+    "employee_social_security_rate": 0.1469,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.1469,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "National Pension is a flat JPY 17,920 a month in fiscal 2026 (JPY 215,040 a year; re-read on the Japan Pension Service page). National Health Insurance premiums are set by municipality (income-based plus per-capita parts) and no Tokyo ward rate table could be opened (several ward pages returned 404), so the self-employed rate here is a PLACEHOLDER equal to the employee rate, not a verified figure.",
+    "local_tax_note": "Combined rate = national rate x 1.021 (2.1% surtax) + 10% inhabitant tax (flat, charged on the prior year's income, not deductible). Per-capita inhabitant tax JPY 5,000 and forest tax JPY 1,000 not included. personal_allowance is the national basic deduction of JPY 620,000 that applies to total income between JPY 6.55m and 23.5m (PwC deductions page, 2026 and 2027); it is higher (JPY 670,000 to JPY 1.04m) below JPY 6.55m, and the inhabitant-tax basic deduction is JPY 430,000. The employment income deduction (JPY 740,000 minimum, up to JPY 1.95m above JPY 8.5m of salary; employees only) and the blue-return and social-insurance deductions are not included. Employee social insurance: health 4.925% to JPY 1.39m/month, welfare pension 9.15% to JPY 650,000/month; the 14.69% total is therefore not applied uniformly above those ceilings and no single cap is recorded. Long-term care 0.81% from age 40 is extra.",
+    "sources": [
+      {
+        "title": "Japan - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/japan/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Japan - Other taxes (social insurance)",
+        "url": "https://taxsummaries.pwc.com/japan/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Japan Pension Service - National Pension contributions",
+        "url": "https://www.nenkin.go.jp/international/english/japanese-system/nationalpension/np_contribution.html",
+        "publisher": "Japan Pension Service",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Japan - Deductions",
+        "url": "https://taxsummaries.pwc.com/japan/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "No.1130 社会保険料控除 (Deduction for social insurance premiums)",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1130.htm",
+        "publisher": "National Tax Agency (国税庁)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "National Health Insurance rates and caps for a Tokyo ward not found; the self-employed rate is a placeholder equal to the employee rate (confidence low for that figure).",
+      "Employee social insurance has per-component ceilings (pension JPY 650,000/month, health JPY 1.39m/month) that cannot be expressed as one cap.",
+      "The lower-income basic deduction tiers are not modelled."
+    ],
+    "social_security_deductible": 1,
+    "employment_deduction": {
+      "schedule": [
+        {
+          "from_amount": 0,
+          "rate": 0.3
+        },
+        {
+          "from_amount": 3600000,
+          "rate": 0.2
+        },
+        {
+          "from_amount": 6600000,
+          "rate": 0.1
+        },
+        {
+          "from_amount": 8500000,
+          "rate": 0
+        }
+      ],
+      "base": 80000,
+      "minimum": 740000,
+      "maximum": 1950000,
+      "note": "Employment income deduction (2026): JPY 740,000 minimum; 30% + JPY 80,000 up to JPY 3.6M of pay; 20% + JPY 440,000 to 6.6M; 10% + JPY 1.1M to 8.5M; JPY 1.95M above, expressed as marginal steps.",
+      "source": {
+        "title": "Japan - Deductions",
+        "url": "https://taxsummaries.pwc.com/japan/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "regimes": [
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "verification": "partially_verified",
+      "open_questions": [
+        "Ministry of Foreign Affairs page returned HTTP 403; requirements taken from a secondary guide.",
+        "Whether a six-month stay creates Japanese tax residence (jusho/one-year kyosho test, see PwC residence page) and whether foreign income is taxable was not settled; social_security_applies=false is an inference (no residence card, no health insurance enrolment) and unverified."
+      ],
+      "id": "designated_activities_dn",
+      "name": "Digital nomad visa (Designated Activities), from 2024",
+      "kind": "digital_nomad_visa",
+      "description": "Six-month stay for remote workers earning at least JPY 10m a year from foreign sources, with private insurance covering at least JPY 10m of medical treatment. Limited to nationals of countries and regions with both a visa-exemption arrangement and a tax convention with Japan; no residence card is issued and the status cannot be extended.",
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 10000000,
+        "currency": "JPY"
+      },
+      "max_income": null,
+      "duration_years": 0.5,
+      "duration_note": "Six months; extension not allowed, new application only after six months outside Japan.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Japan digital nomad visa: requirements and US tax rules",
+          "url": "https://www.taxesforexpats.com/country-guides/japan/japan-digital-nomad-visa.html",
+          "publisher": "TaxesForExpats",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "verification": "unverified",
+      "open_questions": [
+        "Remittance-basis treatment of foreign-source income not verified on an opened page; treatment is recorded as standard because no share could be quantified."
+      ],
+      "id": "non_permanent_resident",
+      "name": "Non-permanent resident taxpayer status",
+      "kind": "expat_regime",
+      "description": "A resident foreign national with an aggregate stay of five years or less in the preceding ten years is a non-permanent resident (PwC residence page). Per the Japan jurisdiction research in this repository, foreign-source income is taxed only to the extent paid in or remitted to Japan (not confirmed on an opened page). It does not cover a remote worker's pay for work done in Japan: PwC states that Japan-source employment income is remuneration earned for services rendered in Japan, regardless of where or when it is paid.",
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 5,
+      "duration_note": "Status lasts while aggregate stay is five years or less in the preceding ten.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Japan - Residence",
+          "url": "https://taxsummaries.pwc.com/japan/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Japan - Income determination",
+          "url": "https://taxsummaries.pwc.com/japan/individual/income-determination",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "covers_local_work": false
+    }
+  ],
+  "costs": {
+    "city": "Tokyo (central five wards)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 193000,
+        "currency": "JPY"
+      },
+      "year": 2026,
+      "description": "Average 1LDK rent in Chiyoda, Chuo, Minato, Shinjuku and Shibuya, author's calculation from E-Housing ward data, article dated 18 March 2026. Numbeo city-centre 1-bedroom average JPY 202,375 (14 Oct 2026).",
+      "source": {
+        "title": "Can you afford Tokyo in 2026: salary vs rent",
+        "url": "https://e-housing.jp/post/can-you-afford-tokyo-in-2026-salary-vs-rent-breakdown-and-cost-of-living-guide",
+        "publisher": "E-Housing",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 298800,
+        "currency": "JPY"
+      },
+      "year": 2026,
+      "description": "Average 2LDK rent in the same central five wards (E-Housing, March 2026). The 23-ward 2LDK average is about JPY 206,500.",
+      "source": {
+        "title": "Can you afford Tokyo in 2026: salary vs rent",
+        "url": "https://e-housing.jp/post/can-you-afford-tokyo-in-2026-salary-vs-rent-breakdown-and-cost-of-living-guide",
+        "publisher": "E-Housing",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Sample sizes not stated by E-Housing. Initial move-in costs (key money, deposit, agency fee) not included."
+  },
+  "residence_routes": "EU, US and other citizens: the digital nomad status is only for nationals of countries with both visa exemption and a tax convention (the US qualifies per the source); stay is six months, non-extendable. Skilled employees need a work visa sponsored by an employer; the specific categories (Engineer/Specialist in Humanities/International Services, Highly Skilled Professional points) were not verified from opened official pages.",
+  "open_questions": [
+    "Official visa pages (MOFA, ISA) not reachable; work-visa categories unverified.",
+    "Fee changes reported for 1 July 2026 for visas not confirmed."
+  ]
+}

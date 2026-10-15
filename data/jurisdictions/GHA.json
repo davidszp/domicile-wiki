@@ -1,0 +1,220 @@
+{
+  "id": "GHA",
+  "name": "Ghana",
+  "continent": "Africa",
+  "region": "Western Africa",
+  "currency": "GHS",
+  "researched_on": "2026-10-15",
+  "summary": "Ghana taxes residents on worldwide income at up to 35%. Gains on investment assets are taxed as income or, by election, at a flat 25%, including gains on foreign shares; the old exemption for Ghana Stock Exchange shares is reported to have lapsed. Ghanaian dividends bear an 8% final withholding tax; foreign dividends are taxed at up to 35% with a foreign tax credit. There is no wealth tax. Gifts are taxed as income, but receipts under a will or on intestacy and gifts from a parent are exempt.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ghanaian tax resident",
+      "type": "standard",
+      "description": "Worldwide PIT 0-35%; 25% elective rate on investment-asset gains and on investment gifts; 8% final dividend WHT.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if present 183 days or more in any 12-month period that begins or ends in the year, or (citizens) with a permanent home in Ghana. Non-citizens need a residence permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains from the realisation of investment assets are included in chargeable income (up to 35%) or, at the resident individual's election, taxed at a flat 25% (Income Tax (Amendment) Act 2023, Act 1094). This applies to foreign as well as Ghanaian assets. The exemption for gains on Ghana Stock Exchange securities applied until 31 December 2021 according to TaxLawGH; a later extension was reported in 2022 but not confirmed. Payers withhold 3% of the consideration from resident sellers as an advance.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ghana - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/ghana/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ghana - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/ghana/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ghana capital gains tax",
+            "url": "https://www.taxlawgh.com/ghana-capital-gains-tax",
+            "publisher": "TaxLawGH (MSL Business School)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether gains on GSE-listed securities are exempt in 2026 (TaxLawGH: exemption expired after 2021; press reported a 2022 extension)."
+        ],
+        "headline_rate": 0.25,
+        "rates": {
+          "listed_securities_domestic": 0.25,
+          "listed_securities_foreign": 0.25,
+          "private_business_sale": 0.25,
+          "real_estate_local": 0.25,
+          "real_estate_foreign": 0.25
+        },
+        "rate_basis": "25% elected flat rate on the net gain for all asset classes (lower than the 35% top scale rate).",
+        "professional_trader": "Gains from trading are business income at up to 35%; the 25% election covers investment assets only.",
+        "foreign_assets": "Worldwide; foreign tax credit limited to the average Ghanaian rate.",
+        "important_exceptions": "A realisation return is due within 30 days. Transfers by gift can trigger market-value rules for the transferor."
+      },
+      "dividends": {
+        "summary": "Dividends paid by Ghanaian companies bear an 8% final WHT. Foreign dividends are investment income of a resident, included in chargeable income at up to 35%, with a foreign tax credit not exceeding the average Ghanaian rate.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ghana - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/ghana/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ghana - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/ghana/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ghana - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/ghana/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether foreign dividends can be taxed at the 8% rate (not supported by PwC)."
+        ],
+        "headline_rate": 0.35,
+        "domestic_rate": 0.08,
+        "foreign_gross_rate": 0.35,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic 8% final WHT. Foreign: 35% top marginal rate before credit.",
+        "withholding_outbound": "8% final WHT on dividends to residents and non-residents, subject to treaties.",
+        "treaty_network": "14 DTTs (Belgium, Czech Republic, Denmark, France, Germany, Italy, Mauritius, Morocco, Netherlands, Qatar, Singapore, South Africa, Switzerland, UK); none with the US.",
+        "holding_company_notes": "CIT 25% plus Growth and Sustainability Levy (2.5% of profit before tax for most companies, 2023-2028)."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ghana - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/ghana/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ghana - Corporate - Other taxes",
+            "url": "https://taxsummaries.pwc.com/ghana/corporate/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "property_tax_note": "Property rates are levied by district/municipal assemblies at locally set rates. Stamp duty 0.25-1% on conveyances."
+      },
+      "inheritance": {
+        "summary": "There is no separate inheritance, estate or gift tax. Gifts are taxable income of the recipient (25% for investment gifts to residents per GRA), but a gift received under a will or on intestacy, or from a spouse, child, parent, sibling, aunt, uncle, nephew or niece, is exempt (GRA).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Gift Tax",
+            "url": "https://gra.gov.gh/portfolio/gift-tax/",
+            "publisher": "Ghana Revenue Authority",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ghana - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/ghana/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether the death of an owner triggers a deemed realisation (capital gains) under Act 896 was not checked."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "gift_tax": "Gifts from a parent to a child are exempt; other gifts are taxed as income (25% investment-gift rate for residents per GRA, or the marginal rate).",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "The exemption for heirs and family gifts covers assets in and outside Ghana.",
+        "domicile_rules": "Not applicable.",
+        "other_transfer_cost_rate": 0.0
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if a citizen (unless living abroad in a permanent home all year), present 183 days or more in any 12-month period that begins or ends in the year, a government official posted abroad, or a citizen temporarily absent up to 365 days with a permanent home in Ghana (PwC).",
+    "routes": [
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Non-citizens need a residence permit; Ghana's Right of Abode is for persons of African descent. Investment thresholds not verified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ghana - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/ghana/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "General CIT 25% (35% mining and upstream petroleum, 22% hotels, 8% non-traditional exports) plus the Growth and Sustainability Levy (2.5-5% of profit before tax, 2023-2028).",
+    "sources": [
+      {
+        "title": "Ghana - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/ghana/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Accra",
+      "lon": -0.1969,
+      "lat": 5.55602,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2306104"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed on worldwide income and estates; the app adds the US federal layer. No US-Ghana income tax treaty.",
+  "open_questions": [
+    "PwC (reviewed 11 March 2026) may not reflect the 2026 budget measures; not checked."
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "id": "CHE",
+  "name": "Switzerland",
+  "currency": "CHF",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Income tax in Switzerland is levied federally, cantonally and by municipality. For a single resident of the City of Zurich the combined 2026 marginal rate reaches about 41.0% between CHF 185,100 and CHF 793,900 (federal 13.2% plus Zurich cantonal 13% x 2.14). Employees pay AHV/IV/EO 5.3% and unemployment 1.1% (capped at CHF 148,200) plus non-occupational accident cover and pension fund; the self-employed pay about 10% AHV on net profit. Health insurance is a separate mandatory personal premium.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.0
+      },
+      {
+        "from_amount": 7000,
+        "rate": 0.0428
+      },
+      {
+        "from_amount": 12000,
+        "rate": 0.0642
+      },
+      {
+        "from_amount": 15200,
+        "rate": 0.0719
+      },
+      {
+        "from_amount": 16800,
+        "rate": 0.0933
+      },
+      {
+        "from_amount": 24800,
+        "rate": 0.1147
+      },
+      {
+        "from_amount": 33200,
+        "rate": 0.1158
+      },
+      {
+        "from_amount": 34500,
+        "rate": 0.1372
+      },
+      {
+        "from_amount": 43500,
+        "rate": 0.1548
+      },
+      {
+        "from_amount": 45700,
+        "rate": 0.1762
+      },
+      {
+        "from_amount": 58000,
+        "rate": 0.1795
+      },
+      {
+        "from_amount": 58800,
+        "rate": 0.2009
+      },
+      {
+        "from_amount": 76200,
+        "rate": 0.2306
+      },
+      {
+        "from_amount": 76400,
+        "rate": 0.252
+      },
+      {
+        "from_amount": 82100,
+        "rate": 0.2586
+      },
+      {
+        "from_amount": 108900,
+        "rate": 0.2806
+      },
+      {
+        "from_amount": 110400,
+        "rate": 0.302
+      },
+      {
+        "from_amount": 141500,
+        "rate": 0.324
+      },
+      {
+        "from_amount": 144100,
+        "rate": 0.3454
+      },
+      {
+        "from_amount": 185100,
+        "rate": 0.3674
+      },
+      {
+        "from_amount": 197400,
+        "rate": 0.3888
+      },
+      {
+        "from_amount": 266700,
+        "rate": 0.4102
+      },
+      {
+        "from_amount": 793900,
+        "rate": 0.3932
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.064,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.1,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Self-employed pay both halves of AHV/IV/EO: about 10.0% of net profit uncapped (sliding scale from about 5.4% at low income; minimum about CHF 530 a year); second pillar (BVG) is optional for sole proprietors, Pillar 3a up to CHF 36,288 without a pension fund. Rate comes from a secondary guide; PwC says only that the self-employed cover employer and employee shares.",
+    "local_tax_note": "Combined single-filer schedule for the City of Zurich: federal direct tax scale (marginal 0.77% to 13.2%, 11.5% above CHF 793,900) plus Zurich basic tax (marginal 2% to 13%) multiplied by the cantonal factor 0.95 plus the City of Zurich municipal factor 1.19 = 2.14. Church tax (factor 0.08-0.14) excluded. Both levels are applied to the same income, ignoring different deductions. Cantonal variation is large: municipal factors in Zurich canton range 0.71 to 1.28, and other cantons (Zug, Schwyz) are much lower while Geneva is higher; one guide estimates tax on CHF 100,000 taxable profit at about CHF 15,000-18,000 in Zug versus about CHF 28,000 in Geneva (not verified). Employee 6.4% = AHV/IV/EO 5.3 + ALV 1.1; ALV is capped at CHF 148,200 and nothing is levied above, so the cap is shown as none for the AHV. Not included: non-occupational accident premium 1-4% and pension fund (BVG) contributions.",
+    "sources": [
+      {
+        "title": "Switzerland - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/switzerland/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Switzerland - Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/switzerland/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Freelancing in Switzerland: tax guide, cantonal AHV, VAT",
+        "url": "https://beancount.io/blog/2026/07/21/freelancing-switzerland-tax-guide-cantonal-ahv-vat",
+        "publisher": "Beancount.io",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Switzerland - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/switzerland/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Self-employed AHV rate from a secondary guide, not the Compensation Office.",
+      "Federal and cantonal deductions differ so the combined schedule is an approximation.",
+      "Mandatory health insurance premium (not tax) not included.",
+      "Employee figure used. Employee pension (pillar 2) contributions to recognised schemes are deductible at actual cost; PwC gives no flat professional-expense amount, so none to add."
+    ],
+    "social_security_deductible": 1
+  },
+  "regimes": [],
+  "costs": {
+    "city": "Zurich",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 2820,
+        "currency": "CHF"
+      },
+      "year": 2025,
+      "description": "neho.ch average asking rent for a 2.5-room apartment in the city of Zurich (2025 data, listing-based; 2.5 rooms is roughly one bedroom plus living room). Numbeo gives a lower crowd-sourced 1-bedroom city-centre average of CHF 2,466.84 (1,154 entries, 165 contributors, 6 October 2026).",
+      "source": {
+        "title": "Mietpreise in Zürich - Aktuelle Zahlen und Trends für 2026",
+        "url": "https://neho.ch/de/blog/mietpreise-zurich-stadt",
+        "publisher": "neho",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 3436,
+        "currency": "CHF"
+      },
+      "year": 2025,
+      "description": "neho.ch average asking rent for a 3.5-room apartment in the city of Zurich (2025 data, listing-based; 3.5 rooms is roughly two bedrooms plus living room).",
+      "source": {
+        "title": "Mietpreise in Zürich - Aktuelle Zahlen und Trends für 2026",
+        "url": "https://neho.ch/de/blog/mietpreise-zurich-stadt",
+        "publisher": "neho",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Stadt Zürich 2026 survey: median net rent of existing contracts is CHF 1,497 (2 rooms), 1,628 (3 rooms), 1,955 (4 rooms), and CHF 30.5 per m2 for new non-subsidised lettings (CHF 2,287 for a typical 75 m2 flat), far below asking rents because of rent control on existing leases. Vacancy was 0.07% in June 2024."
+  },
+  "residence_routes": "EU/EFTA citizens have a right to work under the free movement agreement and mainly register with the canton (permit is essentially a registration). Non-EU/EFTA nationals (including US) need a work permit tied to a Swiss employer or business; annual quotas apply to third-country permits (figures not verified from an opened page). Switzerland has no digital nomad visa and non-EU remote workers cannot simply settle. Any person living 90+ days in Switzerland (30 if working) becomes tax resident.",
+  "open_questions": [
+    "No dedicated nomad visa confirmed on an official SEM page.",
+    "Other cantons not modelled; only the City of Zurich."
+  ]
+}

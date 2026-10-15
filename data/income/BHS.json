@@ -1,0 +1,115 @@
+{
+  "id": "BHS",
+  "name": "The Bahamas",
+  "currency": "BSD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "There is no personal income tax in The Bahamas. National Insurance is 4.65% of wages for employees and 10.3% for the self-employed, up to a weekly ceiling of BSD 830 (BSD 43,160 a year).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.0465,
+    "employee_social_security_cap": 43160,
+    "self_employed_social_security_rate": 0.103,
+    "self_employed_social_security_cap": 43160,
+    "self_employed_notes": "Self-employed pay 10.3% of average insurable income to the National Insurance Board (NIB). Self-employed people trading locally may also owe the turnover-based annual business licence fee (Deloitte); not modelled. Cap shown is the PwC weekly ceiling BSD 830 x 52.",
+    "local_tax_note": "No income tax, no local income surtax. No health levy appears on the PwC or Deloitte pages.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: The Bahamas, Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/the-bahamas/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: The Bahamas, Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/the-bahamas/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: The Bahamas Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bahamashighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "NIB wage ceiling: PwC (reviewed 21 July 2026) gives BSD 830 a week and the 10.3% self-employed rate; Deloitte's January 2026 highlights give BSD 3,510 a month / BSD 810 a week, 'last adjusted July 2024'. PwC's newer figure is used; the NIB site is a script-only page and could not be read."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "id": "beats",
+      "name": "Bahamas Extended Access Travel Stay (BEATS)",
+      "kind": "digital_nomad_visa",
+      "description": "Annual residence permit for professionals working remotely for a non-Bahamian employer or on their own account, and for students studying remotely. The Bahamas has no personal income tax, so the permit changes access, not tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 3,
+      "duration_note": "Permit valid 12 months; annual renewals are considered for a maximum of three years. Fee USD 25 application + USD 1,000 permit for an individual; family adds USD 25 + USD 500 per dependant (renewal fees not listed).",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Bahamas Extended Access Travel Stay (BEATS): FAQ",
+          "url": "https://www.bahamasbeats.com/faq",
+          "publisher": "Government of The Bahamas (BEATS programme)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Bahamas Extended Access Travel Stay (BEATS)",
+          "url": "https://www.bahamasbeats.com",
+          "publisher": "Government of The Bahamas (BEATS programme)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "No minimum income is published on the official FAQ (job letter or proof of self-employment only); some third-party guides quote a threshold, not verified.",
+        "The official pages do not address tax or National Insurance for BEATS holders.",
+        "The 'professionals' page is the official FAQ; the 3-year maximum is the FAQ's wording ('considered for a maximum of three years')."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Nassau (New Providence)",
+    "rent_1bed_monthly": null,
+    "rent_2bed_monthly": null,
+    "coworking_monthly": null,
+    "notes": "No reliable long-term 1-bed or 2-bed rent was found. Coldwell Banker Bahamas lists only luxury homes (USD 15,000 to 55,000); Bahamas Realty returned HTTP 403; the Bahamas Real Estate Association site lists vacation rentals only; Numbeo returned HTTP 429 on two attempts and Expatistan HTTP 403."
+  },
+  "residence_routes": "Remote workers of any citizenship (EU, US, other) can use BEATS: a 12-month permit renewable annually for up to three years, USD 1,025 for an individual. Employees of a Bahamian employer need a work permit (not researched). Permanent residence is by economic investment of BSD 1 million or more (Department of Immigration, per repo research in data/jurisdictions/BHS.json); that route is not tied to income. US citizens remain taxable in the US on worldwide income; the Bahamas has no tax to credit.",
+  "open_questions": [
+    "No rent data; Nassau long-term 1-bed/2-bed rents need a listing source that can be opened (several agent sites block automated access).",
+    "Employee work-permit terms not researched."
+  ]
+}

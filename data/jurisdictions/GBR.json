@@ -1,0 +1,722 @@
+{
+  "id": "GBR",
+  "name": "United Kingdom",
+  "continent": "Europe",
+  "region": "Northern Europe",
+  "currency": "GBP",
+  "researched_on": "2026-10-15",
+  "summary": "High-tax for a long-term resident: 24% CGT, 39.35% top dividend rate (from April 2026), 40% inheritance tax on worldwide assets after 10 years of residence, no wealth tax. New arrivals get a 4-year exemption for foreign income and gains (FIG regime) and stay outside IHT on foreign assets for about 10 years. No investor visa route. A family investment company pays 25% on gains but nothing on most dividends, with dividend tax (up to 39.35%) or tax-free loan repayments on extraction, and lets future growth pass to the children outside IHT.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary UK tax residence",
+      "type": "standard",
+      "description": "Arising-basis taxation of worldwide income and gains for UK residents under the Statutory Residence Test. The remittance basis and domicile concept were abolished from 6 April 2025.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "UK tax resident under the Statutory Residence Test (183+ days, only home in the UK, or sufficient ties). Requires a visa for all except British and Irish citizens.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "UK residents pay CGT on worldwide gains. From 6 April 2025 (unchanged for 2026/27) the rates are 18% within the basic-rate band and 24% above it, for shares and residential property alike. A large gain for a wealthy investor is taxed at 24%. Annual exempt amount £3,000.",
+        "exemptions_thresholds": "Annual exempt amount £3,000 (individuals). Main home exempt under private residence relief. Gains inside ISAs (£20,000/year subscription) and on UK government gilts and qualifying corporate bonds are exempt. Business Asset Disposal Relief and Investors' Relief: 18% from 6 April 2026 (14% in 2025/26), on up to £1m lifetime gains each.",
+        "eligibility_conditions": "Applies to individuals resident under the Statutory Residence Test.",
+        "regional_differences": "CGT is UK-wide; Scottish income tax bands do not change CGT rates (the band test uses UK bands).",
+        "important_exceptions": "No CGT uplift on lifetime gifts: a gift to a child is a disposal at market value (holdover relief only for business assets/trusts). Death gives a CGT-free uplift to market value. Temporary non-residence: gains realised abroad within 5 years of leaving can be taxed on return. Carried interest moved wholly into income tax from 6 April 2026.",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Capital Gains Tax: what you pay it on, rates and allowances",
+            "url": "https://www.gov.uk/capital-gains-tax/rates",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Budget 2025: Overview of tax legislation and rates (OOTLAR), Annex A: rates and allowances",
+            "url": "https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances",
+            "publisher": "HM Treasury / HMRC",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "United Kingdom: Individual - Income determination (last reviewed 23 July 2026)",
+            "url": "https://taxsummaries.pwc.com/united-kingdom/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [],
+        "headline_rate": 0.24,
+        "rates": {
+          "listed_securities_domestic": 0.24,
+          "listed_securities_foreign": 0.24,
+          "private_business_sale": 0.24,
+          "real_estate_local": 0.24,
+          "real_estate_foreign": 0.24
+        },
+        "rate_basis": "Higher/additional-rate taxpayer rate of 24% (2026/27) on all asset types including residential property. Private business sale shown at 24%; the first £1m of lifetime qualifying gains under BADR is taxed at 18% (2026/27), which barely changes the rate on a large sale.",
+        "professional_trader": "Frequent dealing can be treated as a trade (badges of trade) and taxed as income at up to 45% plus National Insurance. A long-term investor holding a diversified portfolio is normally within CGT.",
+        "holding_period_rules": "No holding period reduces the rate. BADR needs a 2-year qualifying period (5% shareholding and employee/officer of a trading company).",
+        "foreign_assets": "Worldwide gains taxed on the arising basis (remittance basis abolished from 6 April 2025). Foreign tax on the gain is creditable."
+      },
+      "dividends": {
+        "summary": "Dividends above a £500 allowance are taxed at 10.75% (basic), 35.75% (higher) and 39.35% (additional rate, income above £125,140) from 6 April 2026. Budget 2025 raised the two lower rates by 2 points; the 39.35% top rate is unchanged. A wealthy family pays 39.35% at the margin on UK and foreign dividends.",
+        "exemptions_thresholds": "£500 dividend allowance. Dividends inside ISAs are exempt. Personal allowance (£12,570) withdrawn between £100,000 and £125,140.",
+        "regional_differences": "Dividend rates are UK-wide (Scotland's own rates apply only to non-savings, non-dividend income).",
+        "important_exceptions": "Interest income (relevant for bonds) is taxed at 20/40/45% in 2026/27, rising to 22/42/47% from 6 April 2027 (savings rates increase announced in Budget 2025). Offshore funds without reporting status: gains taxed as income (up to 45%).",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Tax on dividends",
+            "url": "https://www.gov.uk/tax-on-dividends",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Change to tax rates for property, savings and dividend income: technical note",
+            "url": "https://www.gov.uk/government/publications/changes-to-tax-rates-for-property-savings-and-dividend-income/change-to-tax-rates-for-property-savings-and-dividend-income-technical-note",
+            "publisher": "HM Revenue & Customs",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Budget 2025: Overview of tax legislation and rates (OOTLAR), Annex A: rates and allowances",
+            "url": "https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances",
+            "publisher": "HM Treasury / HMRC",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "United Kingdom: Individual - Income determination (last reviewed 23 July 2026)",
+            "url": "https://taxsummaries.pwc.com/united-kingdom/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [],
+        "headline_rate": 0.3935,
+        "domestic_rate": 0.3935,
+        "foreign_gross_rate": 0.3935,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Additional dividend rate 39.35% for income above £125,140 (2026/27). UK dividends carry no tax credit; foreign dividends taxed at the same rates with credit for treaty-rate withholding.",
+        "withholding_outbound": "The UK generally withholds no tax on dividends paid by UK companies (REIT/PAIF property income distributions: 20%, 22% from 6 April 2027).",
+        "treaty_network": "Very large: roughly 120+ treaties listed by PwC, including the US (15% WHT on portfolio dividends) and all EU states.",
+        "holding_company_notes": "Modelled as the 'family_investment_company' structure regime: a UK FIC is exempt on most dividends received, pays 25% corporation tax on gains and interest (no small profits rate for a close investment-holding company), and is taxed again on extraction as dividends unless funded by a repayable loan."
+      },
+      "wealth_tax": {
+        "summary": "The UK has no annual wealth tax.",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "United Kingdom: Individual - Other taxes (last reviewed 23 July 2026)",
+            "url": "https://taxsummaries.pwc.com/united-kingdom/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "High Value Council Tax Surcharge",
+            "url": "https://www.gov.uk/government/publications/high-value-council-tax-surcharge/high-value-council-tax-surcharge",
+            "publisher": "HM Treasury",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Council tax (flat per dwelling by 1991 valuation band; modest, e.g. a few thousand £/year in London). From April 2028 a High Value Council Tax Surcharge applies in England to homes worth £2m+ (2026 valuation): £2,500 (£2-2.5m), £3,500 (£2.5-3.5m), £5,000 (£3.5-5m), £7,500 (£5m+), CPI-indexed from 2029-30; announced, design consulted on in 2026, not yet in force. Purchase taxes: SDLT up to 12% on a main home (17% for second homes, +2% for non-resident buyers); 0.5% stamp duty/SDRT on purchases of UK shares.",
+        "open_questions": [
+          "High Value Council Tax Surcharge: final legislation not yet seen; rates are from the Budget 2025 policy paper."
+        ]
+      },
+      "inheritance": {
+        "summary": "Inheritance tax (IHT) of 40% on the estate above a £325,000 nil-rate band (frozen to April 2031). Since 6 April 2025 scope depends on residence, not domicile: a 'long-term UK resident' (UK resident in at least 10 of the previous 20 tax years) is taxed on worldwide assets; others only on UK-situs assets. Children are not exempt.",
+        "exemptions_thresholds": "Nil-rate band £325,000 per person (transferable to spouse). Residence nil-rate band £175,000 for a home left to children, withdrawn by £1 per £2 above a £2m estate (so nil for a wealthy family). Spouse exemption unlimited between two long-term residents (capped at £325,000 to a non-long-term-resident spouse). Annual gift exemption £3,000; regular gifts from surplus income exempt without limit.",
+        "eligibility_conditions": "Applies to deaths and transfers on or after 6 April 2025 under the long-term residence rules (IHTA 1984 ss.6A-6C).",
+        "important_exceptions": "Business Property Relief / Agricultural Property Relief: from 6 April 2026 100% relief is capped at a combined £2.5m per person (raised from the £1m first announced; unused allowance transferable to a spouse, so up to £5m), 50% relief above it. Shares on non-'listed' markets such as AIM get only 50% relief (effective 20% IHT). Unused pension funds and most pension death benefits come into the estate from 6 April 2027 (Finance Act 2026). Excluded-property trusts largely lose protection under the new rules.",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Inheritance Tax if you're a long-term UK resident",
+            "url": "https://www.gov.uk/guidance/inheritance-tax-if-youre-a-long-term-uk-resident",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance Tax Act 1984, section 6A (long-term UK resident), inserted by Finance Act 2025 s.44",
+            "url": "https://www.legislation.gov.uk/ukpga/1984/51/section/6A",
+            "publisher": "legislation.gov.uk (The National Archives)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Budget 2025: Overview of tax legislation and rates (OOTLAR), Annex A: rates and allowances",
+            "url": "https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances",
+            "publisher": "HM Treasury / HMRC",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance Tax: gifts (7-year rule, taper relief, exemptions)",
+            "url": "https://www.gov.uk/inheritance-tax/gifts",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Business Relief for Inheritance Tax: what qualifies",
+            "url": "https://www.gov.uk/business-relief-inheritance-tax/what-qualifies-for-business-relief",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Changes to Agricultural Property Relief and Business Property Relief (policy paper)",
+            "url": "https://www.gov.uk/government/publications/changes-to-agricultural-property-relief-and-business-property-relief",
+            "publisher": "HM Treasury / HMRC",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance Tax on pensions: technical note",
+            "url": "https://www.gov.uk/government/publications/inheritance-tax-on-pensions-technical-note",
+            "publisher": "HM Revenue & Customs",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Applying for probate: fees",
+            "url": "https://www.gov.uk/applying-for-probate/fees",
+            "publisher": "HM Courts & Tribunals Service",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "United Kingdom: Individual - Other taxes (last reviewed 23 July 2026)",
+            "url": "https://taxsummaries.pwc.com/united-kingdom/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "The app's single rate cannot show that a newly arrived family's non-UK assets fall outside IHT for roughly their first 10 years of residence; scored here as the long-term-resident position."
+        ],
+        "basis": "estate",
+        "children_treatment": "taxed",
+        "exemption": 325000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.4
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "No gift tax on outright gifts to individuals (potentially exempt transfers). If the donor dies within 7 years, the gift is brought back into charge (40%, tapered: 32% at 3-4 years, 24% at 4-5, 16% at 5-6, 8% at 6-7). Gifts into most trusts are chargeable immediately at 20% above the nil-rate band.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": 7,
+        "business_relief": "BPR 100% on unlisted trading company shares and business interests up to £2.5m (combined with APR) per person from 6 April 2026, 50% above; 50% on AIM shares and controlling holdings of listed companies; investment-holding businesses excluded; 2-year ownership. Any unused part of the £2.5m allowance transfers to a surviving spouse or civil partner (GOV.UK, page updated 3 March 2026; the allowance was raised from the £1m first announced).",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Long-term UK residents: worldwide estate. Non-long-term residents: UK-situs assets only (including UK shares, UK property and, through look-through rules, UK residential property held via companies).",
+        "domicile_rules": "Long-term UK resident = UK resident for at least 10 of the previous 20 tax years (s.6A IHTA 1984, from 6 April 2025). Tail after leaving: 3 years for 10-13 years of residence, rising by one year per extra year to 10 years for 20 years of residence. Ten consecutive non-resident years reset the count. Under-20s have modified rules (s.6B). Probate fee £526 for estates over £5,000 (negligible)."
+      }
+    },
+    {
+      "id": "fig_4_year",
+      "name": "4-year foreign income and gains (FIG) regime",
+      "type": "special",
+      "description": "Replaced the remittance basis from 6 April 2025. New arrivals who were non-UK resident for at least 10 consecutive tax years can claim, in each of their first 4 tax years of UK residence, that foreign income and gains are not taxed in the UK, whether or not brought into the UK. Claims cost the personal allowance and CGT annual exempt amount.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "First 4 tax years of UK residence after at least 10 consecutive tax years of non-residence; annual claim; available regardless of nationality or domicile. Foreign employment income is excluded (Overseas Workday Relief may apply). Temporary Repatriation Facility (12% in 2025/26-2026/27, 15% in 2027/28) is only for pre-April-2025 income of former remittance-basis users.",
+      "duration_years": 4,
+      "capital_gains": {
+        "summary": "For a qualifying new arrival who claims the 4-year FIG regime, foreign capital gains are not taxed in the UK in tax years 1-4 of residence, and can be brought into the UK freely. UK gains (UK shares, UK property) stay taxable at 24%. Claimants lose the £3,000 CGT annual exempt amount.",
+        "exemptions_thresholds": "Foreign gains claimed under the regime are exempt. No CGT annual exempt amount and no income-tax personal allowance in a year of claim.",
+        "eligibility_conditions": "UK tax resident and within the first 4 tax years of residence after at least 10 consecutive tax years of non-UK residence. Claim made each year in the self-assessment return; sources can be chosen; unused years cannot be carried forward; years of temporary non-residence cannot be claimed.",
+        "regional_differences": "CGT is UK-wide; Scottish income tax bands do not change CGT rates (the band test uses UK bands).",
+        "important_exceptions": "Foreign gains on assets sold after year 4 are taxed in full (no rebasing for the regime). Gains realised in the 4 years are exempt even if the money is remitted. Being away for 10 consecutive years is needed before a new 4-year period can start.",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Check if you can claim the 4-year foreign income and gains regime",
+            "url": "https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "United Kingdom: Individual - Taxes on personal income (last reviewed 23 July 2026)",
+            "url": "https://taxsummaries.pwc.com/united-kingdom/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Situs of a gain on a non-UK company stake is assumed foreign; check case-specific (e.g. UK property-rich companies are taxed)."
+        ],
+        "headline_rate": 0.24,
+        "rates": {
+          "listed_securities_domestic": 0.24,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.24,
+          "real_estate_local": 0.24,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Claimed foreign gains: 0%. UK-situs assets: 24%. Private business sale shown at 24% assuming a UK company; a sale of a non-UK company's shares is a foreign gain and would be 0% under a claim.",
+        "professional_trader": "Frequent dealing can be treated as a trade (badges of trade) and taxed as income at up to 45% plus National Insurance. A long-term investor holding a diversified portfolio is normally within CGT.",
+        "holding_period_rules": "No holding period reduces the rate. BADR needs a 2-year qualifying period (5% shareholding and employee/officer of a trading company).",
+        "foreign_assets": "Worldwide gains taxed on the arising basis (remittance basis abolished from 6 April 2025). Foreign tax on the gain is creditable."
+      },
+      "dividends": {
+        "summary": "Under a FIG claim, dividends from non-UK resident companies are not taxed in the UK in tax years 1-4 and can be remitted freely. UK dividends stay taxable at up to 39.35%.",
+        "exemptions_thresholds": "Foreign dividends claimed are exempt; the £500 dividend allowance and personal allowance are lost in a year of claim.",
+        "regional_differences": "Dividend rates are UK-wide (Scotland's own rates apply only to non-savings, non-dividend income).",
+        "important_exceptions": "Foreign withholding tax on exempt dividends cannot be credited (it is a final cost). Claimed income still counts for adjusted net income (child benefit charge, childcare support).",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Check if you can claim the 4-year foreign income and gains regime",
+            "url": "https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "United Kingdom: Individual - Taxes on personal income (last reviewed 23 July 2026)",
+            "url": "https://taxsummaries.pwc.com/united-kingdom/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [],
+        "headline_rate": 0.3935,
+        "domestic_rate": 0.3935,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Claimed foreign dividends 0%; UK dividends 39.35% (additional rate).",
+        "withholding_outbound": "The UK generally withholds no tax on dividends paid by UK companies (REIT/PAIF property income distributions: 20%, 22% from 6 April 2027).",
+        "treaty_network": "Very large: roughly 120+ treaties listed by PwC, including the US (15% WHT on portfolio dividends) and all EU states.",
+        "holding_company_notes": "Modelled as the 'family_investment_company' structure regime: a UK FIC is exempt on most dividends received, pays 25% corporation tax on gains and interest (no small profits rate for a close investment-holding company), and is taxed again on extraction as dividends unless funded by a repayable loan.",
+        "eligibility_conditions": "Not a remittance basis: relieved foreign dividends are untaxed whether or not they are brought to the UK."
+      },
+      "inheritance": {
+        "summary": "The FIG regime itself does not change IHT, but a family that qualifies for it is by definition not a long-term UK resident: for roughly its first 10 tax years in the UK, only UK-situs assets are in the IHT net (40% above £325,000). Non-UK assets (e.g. a foreign custody portfolio of non-UK securities) are outside IHT until 10 of the previous 20 years are UK-resident years.",
+        "exemptions_thresholds": "Nil-rate band £325,000 per person (transferable to spouse). Residence nil-rate band £175,000 for a home left to children, withdrawn by £1 per £2 above a £2m estate (so nil for a wealthy family). Spouse exemption unlimited between two long-term residents (capped at £325,000 to a non-long-term-resident spouse). Annual gift exemption £3,000; regular gifts from surplus income exempt without limit.",
+        "eligibility_conditions": "Not a long-term UK resident (fewer than 10 of the previous 20 tax years UK resident).",
+        "important_exceptions": "Business Property Relief / Agricultural Property Relief: from 6 April 2026 100% relief is capped at a combined £2.5m per person (raised from the £1m first announced; unused allowance transferable to a spouse, so up to £5m), 50% relief above it. Shares on non-'listed' markets such as AIM get only 50% relief (effective 20% IHT). Unused pension funds and most pension death benefits come into the estate from 6 April 2027 (Finance Act 2026). Excluded-property trusts largely lose protection under the new rules.",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Inheritance Tax if you're a long-term UK resident",
+            "url": "https://www.gov.uk/guidance/inheritance-tax-if-youre-a-long-term-uk-resident",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance Tax Act 1984, section 6A (long-term UK resident), inserted by Finance Act 2025 s.44",
+            "url": "https://www.legislation.gov.uk/ukpga/1984/51/section/6A",
+            "publisher": "legislation.gov.uk (The National Archives)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Budget 2025: Overview of tax legislation and rates (OOTLAR), Annex A: rates and allowances",
+            "url": "https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances",
+            "publisher": "HM Treasury / HMRC",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance Tax: gifts (7-year rule, taper relief, exemptions)",
+            "url": "https://www.gov.uk/inheritance-tax/gifts",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Business Relief for Inheritance Tax: what qualifies",
+            "url": "https://www.gov.uk/business-relief-inheritance-tax/what-qualifies-for-business-relief",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Changes to Agricultural Property Relief and Business Property Relief (policy paper)",
+            "url": "https://www.gov.uk/government/publications/changes-to-agricultural-property-relief-and-business-property-relief",
+            "publisher": "HM Treasury / HMRC",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance Tax on pensions: technical note",
+            "url": "https://www.gov.uk/government/publications/inheritance-tax-on-pensions-technical-note",
+            "publisher": "HM Revenue & Customs",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Applying for probate: fees",
+            "url": "https://www.gov.uk/applying-for-probate/fees",
+            "publisher": "HM Courts & Tribunals Service",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "United Kingdom: Individual - Other taxes (last reviewed 23 July 2026)",
+            "url": "https://taxsummaries.pwc.com/united-kingdom/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "The 0% on foreign assets lasts ~10 years, longer than the 4-year FIG regime; the app cannot express this split. Brackets shown apply to UK-situs assets only."
+        ],
+        "basis": "estate",
+        "children_treatment": "taxed",
+        "exemption": 325000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.4
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "No gift tax on outright gifts to individuals (potentially exempt transfers). If the donor dies within 7 years, the gift is brought back into charge (40%, tapered: 32% at 3-4 years, 24% at 4-5, 16% at 5-6, 8% at 6-7). Gifts into most trusts are chargeable immediately at 20% above the nil-rate band.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": 7,
+        "business_relief": "BPR 100% on unlisted trading company shares and business interests up to £2.5m (combined with APR) per person from 6 April 2026, 50% above; 50% on AIM shares and controlling holdings of listed companies; investment-holding businesses excluded; 2-year ownership.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Non-UK assets outside IHT while not long-term resident. UK-registered shares, UK property and UK bank deposits are UK-situs and taxable.",
+        "domicile_rules": "Long-term UK resident = UK resident for at least 10 of the previous 20 tax years (s.6A IHTA 1984, from 6 April 2025). Tail after leaving: 3 years for 10-13 years of residence, rising by one year per extra year to 10 years for 20 years of residence. Ten consecutive non-resident years reset the count. Under-20s have modified rules (s.6B). Probate fee £526 for estates over £5,000 (negligible).",
+        "scope": "local_assets_only"
+      },
+      "sources": [
+        {
+          "title": "Check if you can claim the 4-year foreign income and gains regime",
+          "url": "https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime",
+          "publisher": "HM Revenue & Customs",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "United Kingdom: Individual - Taxes on personal income (last reviewed 23 July 2026)",
+          "url": "https://taxsummaries.pwc.com/united-kingdom/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "family_investment_company",
+      "name": "Family investment company (FIC, private limited company)",
+      "type": "structure",
+      "description": "The parents fund a UK private company, usually with a loan plus a small subscription, and the company holds the portfolio. It pays 25% corporation tax on gains (one point more than personal CGT at 24%) and on interest, but most dividends it receives are exempt, against 39.35% personally. Money comes out as dividends at 10.75% / 35.75% / 39.35%, or tax-free as repayment of the parents' loan. The main reason families use a FIC is inheritance tax: children hold growth or non-voting 'alphabet' shares, so future growth accrues outside the parents' estates while the parents keep control. IHT itself (40%) is unchanged on whatever the parents still own; the inheritance metric is inherited from the standard regime. For a newly arrived family the 4-year FIG regime and the 10-year IHT exclusion of foreign assets are usually better in the early years: FIC shares are UK-situs assets and are within IHT from day one.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Any UK resident can incorporate a company (Companies House). Works for a passive investor family. US citizens are excluded: a UK company with US shareholders is a CFC/PFIC for US tax, so its passive income is taxed in the US currently.",
+      "duration_years": null,
+      "duration_note": "Ordinary corporation-tax rules with no time limit; the company lasts as long as the family keeps it.",
+      "capital_gains": {
+        "summary": "Gains realised by the company are taxed at the 25% main corporation tax rate. A FIC is normally a close investment-holding company, so it cannot use the 19% small profits rate or marginal relief. No indexation for assets acquired from 1 January 2018. The substantial shareholding exemption needs a 10% stake in a trading company, so portfolio gains are fully taxable. Real estate gains are also taxed at 25%.",
+        "exemptions_thresholds": "No annual exempt amount for companies. Substantial shareholding exemption: 10%+ holdings in trading companies/groups.",
+        "important_exceptions": "Funding the FIC with existing shares is a disposal at market value by the parents (connected parties), taxed at 24%; FICs are therefore usually funded with cash. A gain-standing portfolio inside a FIC gets no uplift on the parents' death (only the FIC shares are revalued).",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Marginal Relief for Corporation Tax",
+            "url": "https://www.gov.uk/guidance/corporation-tax-marginal-relief",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "United Kingdom - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/united-kingdom/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Why you should take care with family investment companies",
+            "url": "https://www.icaew.com/technical/tax/tax-faculty/taxline/articles/2025/why-you-should-take-care-with-family-investment-companies",
+            "publisher": "ICAEW Tax Faculty (TAXline)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [],
+        "headline_rate": 0.25,
+        "rates": {
+          "listed_securities_domestic": 0.25,
+          "listed_securities_foreign": 0.25,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.25,
+          "real_estate_foreign": 0.25
+        },
+        "rate_basis": "Main corporation tax rate 25%, no small profits rate for a close investment-holding company (GOV.UK, Marginal Relief). Private business sale 0: a 10%+ stake in a trading company held through the FIC qualifies for the substantial shareholding exemption (PwC: most disposals of 10%+ shareholdings are exempt).",
+        "professional_trader": "A company dealing in securities is taxed on trading profits at 25% as well; no rate difference.",
+        "holding_period_rules": "SSE needs 12 months' holding of a 10% stake; none for portfolio shares (taxable anyway).",
+        "foreign_assets": "Worldwide taxation of the UK company; foreign tax credited on taxable income."
+      },
+      "dividends": {
+        "summary": "Most UK and foreign dividends received by a UK company are exempt from corporation tax: dividends on ordinary non-redeemable shares and on portfolio holdings fall within the exempt classes of CTA 2009 Part 9A. Foreign withholding tax on exempt dividends cannot be credited and is a final cost. Interest from bonds and cash is taxed at 25%.",
+        "exemptions_thresholds": "Exempt classes include distributions on non-redeemable ordinary shares (s.931F) and portfolio holdings under 10% (s.931G). Small companies have a separate, narrower exemption; a FIC with this portfolio is not small for this purpose in most cases (not verified).",
+        "important_exceptions": "Dividends that are deductible for the payer (hybrids) and certain schemes fall outside the exemption. Bond interest is taxable at 25% (better than the 45% additional rate for individuals, 47% from April 2027).",
+        "tax_year": "2026/27",
+        "sources": [
+          {
+            "title": "Corporation Tax Act 2009, section 931F (exempt class: non-redeemable ordinary shares)",
+            "url": "https://www.legislation.gov.uk/ukpga/2009/4/section/931F",
+            "publisher": "legislation.gov.uk (The National Archives)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "United Kingdom - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/united-kingdom/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Corporation Tax Act 2009, section 931G (exempt class: portfolio holdings)",
+            "url": "https://www.legislation.gov.uk/ukpga/2009/4/section/931G",
+            "publisher": "legislation.gov.uk (The National Archives)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether the FIC is a 'small company' for the narrower Part 9A small-company exemption was not checked; portfolio dividends from qualifying-territory companies are exempt in either case."
+        ],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Distribution exemption (CTA 2009 s.931B ff.; PwC: 'most foreign and UK dividends received by UK companies are exempt'). Foreign withholding tax is lost.",
+        "withholding_outbound": "No UK withholding on dividends.",
+        "treaty_network": "As standard (about 120 territories).",
+        "holding_company_notes": "This regime models the FIC itself."
+      },
+      "structure": {
+        "entity": "Family investment company (private company limited by shares)",
+        "kind": "company",
+        "payout_tax_rate": 0.3935,
+        "payout_notes": "Dividends to UK-resident individuals are taxed at 10.75% (basic), 35.75% (higher) and 39.35% (additional rate, income above GBP 125,140) in 2026/27, after a GBP 500 allowance; 0.3935 assumes the parents are additional-rate taxpayers. Dividends can be steered to adult children or a spouse with lower bands through alphabet share classes (settlements legislation applies to minor children of the settlor and to bounty). The usual design funds the company with an interest-free loan from the parents repayable on demand: repaying the loan returns capital free of personal tax, so in practice withdrawals of GBP 400k a year can be tax-free for many years (the loan stays in the parents' estates for IHT). Salaries are subject to income tax and NIC.",
+        "substance_and_anti_avoidance": "No small profits rate (close investment-holding company). No business property relief for IHT: shares in a company whose business is wholly or mainly making or holding investments are not relevant business property (IHTA 1984 s.105(3)). Anti-avoidance to plan around: settlements legislation (ITTOIA 2005 Part 5 Chapter 5), transactions in securities (ITA 2007 s.684), gifts with reservation of benefit, IHTA s.98 on altering share rights, and s.3(3) IHTA if dividend rights are not exercised. Funds put into a FIC are not potentially exempt transfers in themselves; gifts of shares to children are PETs (40% IHT falls away after 7 years). HMRC's earlier review of FICs found no link to non-compliance but HMRC has not ruled out future challenges (ICAEW). Annual accounts and a corporation tax return are required; audit is usually not needed for a small company.",
+        "exit_and_liquidation": "On liquidation, distributions are capital for the shareholders and taxed at 24% CGT (no Business Asset Disposal Relief for an investment company; the TAAR in ITTOIA s.396B can tax them as dividends if the activity continues). The company stays UK-resident if the family emigrates (UK has no exit tax on individuals); dividends to non-residents bear no UK withholding, but the 5-year temporary non-residence rule taxes close-company distributions received while abroad on return. Moving central management abroad would trigger a corporate exit charge. IHT: growth/freezer share structures shift future growth to children; FIC shares (UK-situs) remain in the IHT net even for non-long-term residents.",
+        "sources": [
+          {
+            "title": "Marginal Relief for Corporation Tax",
+            "url": "https://www.gov.uk/guidance/corporation-tax-marginal-relief",
+            "publisher": "HM Revenue & Customs",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tax on dividends",
+            "url": "https://www.gov.uk/tax-on-dividends",
+            "publisher": "GOV.UK",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance Tax Act 1984, section 105 (relevant business property)",
+            "url": "https://www.legislation.gov.uk/ukpga/1984/51/section/105",
+            "publisher": "legislation.gov.uk (The National Archives)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Why you should take care with family investment companies",
+            "url": "https://www.icaew.com/technical/tax/tax-faculty/taxline/articles/2025/why-you-should-take-care-with-family-investment-companies",
+            "publisher": "ICAEW Tax Faculty (TAXline)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "How Family Investment Companies use Growth and Freezer Shares for smarter wealth planning",
+            "url": "https://www.geldards.com/insights/how-family-investment-companies-use-growth-and-freezer-shares-for-smarter-wealth-planning/",
+            "publisher": "Geldards LLP",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "United Kingdom - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/united-kingdom/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Statutory Residence Test (Finance Act 2013 Sch. 45), tax year 6 April-5 April. Automatically non-resident with fewer than 16 days (46 if not resident in the previous 3 years). Automatically resident with 183+ days or an only home in the UK used 30+ days. Otherwise the sufficient-ties test combines days with ties (family, accommodation, work, 90-day, country).",
+    "routes": [
+      {
+        "name": "Innovator Founder visa",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Business idea endorsed by an approved endorsing body (£1,000 endorsement fee, check-points at 12 and 24 months); no fixed minimum investment; partner and children can join; settlement possible after 3 years. Since Brexit EU citizens (except Irish) need a visa like everyone else."
+      },
+      {
+        "name": "Global Talent / work / family routes",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "No passive investor visa: the Tier 1 Investor route closed in 2022. A wealthy family without a job, business plan, recognised talent or UK family link has no straightforward route. Irish citizens live in the UK freely (Common Travel Area)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tax on foreign income: work out your residence status",
+        "url": "https://www.gov.uk/tax-foreign-income/residence",
+        "publisher": "HM Revenue & Customs",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "RDR3: Statutory Residence Test (SRT)",
+        "url": "https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt",
+        "publisher": "HM Revenue & Customs",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Innovator Founder visa",
+        "url": "https://www.gov.uk/innovator-founder-visa",
+        "publisher": "Home Office (GOV.UK)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "Main rate 25% (profits above £250,000), 19% small profits rate below £50,000 with marginal relief between. Most dividends received are exempt; the substantial shareholding exemption covers gains on trading subsidiaries. No dividend withholding tax.",
+    "special_zones": "Freeports and investment zones offer limited property/capital allowance reliefs; not relevant to a portfolio holding.",
+    "sources": [
+      {
+        "title": "United Kingdom: Corporate - Taxes on corporate income (last reviewed 23 July 2026)",
+        "url": "https://taxsummaries.pwc.com/united-kingdom/corporate/taxes-on-corporate-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "United Kingdom: Corporate - Withholding taxes (last reviewed 23 July 2026)",
+        "url": "https://taxsummaries.pwc.com/united-kingdom/corporate/withholding-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "London",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 39960,
+        "currency": "GBP"
+      },
+      "year": 2026,
+      "description": "ACS International School Cobham (Surrey, London commuter belt), Grade 12 day tuition 2026-27, VAT included (20% VAT on private school fees since January 2025).",
+      "source": {
+        "title": "ACS International Schools - Cobham school fees 2026-27",
+        "url": "https://www.acs-schools.com/cobham/wp-content/uploads/sites/2/2026/03/ACS-2026-27-VAT-FeeSheets-Cob.pdf",
+        "publisher": "ACS International School Cobham",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Health insurance, housekeeper and price per m² not sourced. The school fee is for a Surrey international school; central London day schools charge similar or higher fees.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 12500,
+        "currency": "GBP"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 123 4-5 bedroom homes (houses and large flats) to let in the Royal Borough of Kensington and Chelsea on Rightmove on 2026-10-15, weekly rents converted at x52/12 (interquartile range £8,500-£15,167 pcm; 312 listings in total, newest first).",
+      "source": {
+        "title": "Rightmove - 4-5 bedroom property to rent in Kensington and Chelsea",
+        "url": "https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E61229&minBedrooms=4&maxBedrooms=5&sortType=6",
+        "publisher": "Rightmove",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "London",
+      "lon": -0.12574,
+      "lat": 51.50853,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2643743"
+    },
+    {
+      "name": "City of London",
+      "lon": -0.09184,
+      "lat": 51.51279,
+      "kind": "financial_centre",
+      "coordinate_source": "GeoNames 2643741"
+    }
+  ],
+  "us_citizen_notes": "US citizens are taxed in the US regardless. The UK-US income tax treaty and the separate UK-US estate and gift tax treaty apply. Income or gains exempted under the FIG regime carry no UK tax, so no UK credit offsets the US tax on them. The 24% UK CGT rate generally exceeds the US 20% (+3.8% NIIT) federal rate on long-term gains, so UK tax usually absorbs US tax on gains via credit; watch timing mismatches (e.g. UK funds as US PFICs, ISAs not tax-free in the US).",
+  "open_questions": [
+    "A possible invitation-only investor visa was reported in 2026 but not announced; not included.",
+    "Savings income rates rise to 22/42/47% from 6 April 2027 (Budget 2025) - matters for bond-heavy portfolios.",
+    "Prime London rent and price per m² not sourced."
+  ]
+}

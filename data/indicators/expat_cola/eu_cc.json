@@ -1,0 +1,12 @@
+{
+  "source": "eu_cc",
+  "publisher": "European Union (Eurostat calculation for the Commission/PMO; adopted via Council regulation and Commission OJ C notices)",
+  "title": "Correction coefficients applicable to remuneration of EU officials: member states (national, Belgium=100) and third-country duty stations (Extra-EU delegations), Brussels = 100",
+  "url": "https://ec.europa.eu/eurostat/web/civil-servants-remuneration/publications",
+  "base": "100 = Brussels/Belgium; 110 = pay is multiplied by 1.10",
+  "effective_date": "Member states: 2025-07-01 annual update, except BG/HR/RO 2026-01-01 specific update; third countries: 2025-07-01 annual update (OJ C/2025/6571), with later interim values for ARG and TUR",
+  "two_sided": true,
+  "includes_housing": true,
+  "notes": "Could NOT open the Official Journal texts (EUR-Lex blocks automated access with a WAF challenge), so numbers come from Eurostat, which computes the coefficients: database prc_colc_nat (member states, coicop TOTAL, 2025-S2, i.e. 1 July 2025 values; TOTAL includes actual rents, 'TOT_X_CP041_042' excludes them) and prc_colc_ext (third countries, annual 2025 = 1 July 2025 values), cross-checked with the Eurostat intermediate reports (Ares(2026)5853374 intra-EU; Ares(2026)4658871 extra-EU). Member states: national values; post = capital in the post column. BG 64.1, HR 76.8, RO 68.9 are the 1 Jan 2026 finalised specific updates (Eurostat intra-EU report, appendix 4); the report notes values below 100 are not applied in practice to pensions, and the staff duty-station values for Zagreb 91.3 and Bucharest 77.5 differ from the national ones. All other states unchanged since 1 July 2025 (no general intermediate update in 2026). United Kingdom is in the third-country set (London 104.5). Third countries: ARG 83.6 (from Jan 2026) and TUR/Ankara 57.6 (from Nov 2025) are interim values from the Eurostat 5% rule file, described there as 'proposed interim adjustment'; OJ adoption not verified. Third-country values are for duty stations (Extra-EU delegations), generally capitals; Switzerland Bern 136.0 equals Geneva. Omitted (no coefficient published): AND, ATG, BHR (covered by Saudi delegation, no own value), BHS, CYM, DMA, GRD, KNA, LCA, OMN, PRI, VEN etc. Two-sided: values below 100 are published and apply to salary.",
+  "value_kind": "index"
+}

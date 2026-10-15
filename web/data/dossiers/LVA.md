@@ -1,0 +1,95 @@
+# Latvia — family-office tax dossier
+
+Last reviewed: 2026-10-15
+Tax year: 2026
+Reviewer: research agent (Claude), unreviewed by a tax adviser
+
+## Summary
+Capital gains taxed at 25.5% (from 2025) plus a 3% surtax on income above EUR 200k; foreign and domestic dividends that were taxed at source are PIT-exempt (but count for the 3% surtax); no inheritance, gift-to-children or wealth tax. Companies pay 20/80 CIT only on distribution.
+
+## Residence and eligibility
+- Tax residence: Resident if the declared place of residence is in Latvia, or present 183 days or more in any 12-month period, or a Latvian citizen employed abroad by a Latvian employer.
+- EU/EEA free movement (EU): Register residence; EU citizen right of residence.
+- Temporary residence permit via real estate (US, OTHER): Real estate of total value at least EUR 250,000 (one property in Riga/Jūrmala/listed municipalities; up to two elsewhere), cadastral value at least EUR 80,000 or appraisal; 5% of purchase price paid to the state budget with the first application. Other Immigration Law Section 23 routes (company capital, bank deposit, state bonds) not verified.
+
+## Capital gains
+- Rule in force: Capital gains on shares, funds, bonds, real estate and crypto are taxed at 25.5% (since 1 Jan 2025, up from 20%), plus the 3% additional rate on total annual income above EUR 200,000, so 28.5% at the margin for a large gain.
+- Exemptions/thresholds: Latvian real estate: exempt if held 60 months and declared primary residence for 12 months, or held 60 months as the only property, or proceeds reinvested in a like property within 12 months. Capital losses offset capital gains (crypto separately).
+- Conditions: Investment account (ieguldījumu konts): income is taxed only when withdrawals exceed deposits (PIT Law Section 11.9(11)(6) and the rule that follows it), so a listed portfolio can be rolled over without tax until money is taken out.
+- Holding periods: Securities: none. Latvian real estate: 60 months for the residence/sole-property exemption.
+- Foreign assets: Worldwide gains taxed; foreign tax credited up to Latvian tax on that income.
+- Trader risk: No specific recharacterisation regime found; business income of a self-employed person is taxed at progressive rates (25.5%/33%) plus social contributions.
+- Exceptions, reforms, announced changes: Transactions begun but not completed by 31 Dec 2024 and notified to the SRS remain at 20% in 2025-2027. Section 15(5) of the PIT Law: 25.5% on income from capital, including capital gains. Section 15.1 (in force 1 Jan 2026 wording): an additional 3% on the excess of total annual income over EUR 200,000, payable through the annual return; the base expressly includes taxable income 'including capital gains and income from capital' and the dividends and liquidation quotas exempted by Section 9(1)(2.1)-(2.2).
+- Confidence: high, verified.
+- JSON: headline 28.5%; listed domestic 28.5%, listed foreign 28.5%, private business 28.5%, local real estate 28.5%, foreign real estate 28.5%. Basis: 25.5% capital income rate + 3% additional rate on income above EUR 200k = 28.5% for a large gain; no holding-period relief except the main-home/sole-property exemption. Investment account can defer tax on listed portfolios.
+
+Verified 2026-10-15 in the PIT Law (likumi.lv): Section 15(5) 25.5% on capital income incl. gains; Section 15.1 3% additional rate on total annual income above EUR 200,000, base expressly including capital gains and exempt dividends. JSON 0.285 confirmed; confidence raised to high.
+
+## Dividends
+- Rule in force: Dividends are exempt from PIT when CIT was paid on the distributed profit in Latvia, or when CIT (or an equivalent tax) was paid abroad or PIT/WHT was withheld abroad on the dividend (PIT Law Section 9(1)(2.1)); otherwise taxed at 25.5%. Tax-haven dividends are always taxed. Even exempt dividends count toward the 3% additional rate on income above EUR 200,000 (Section 15.1(2)).
+- Exemptions/thresholds: Exemption needs evidence of foreign CIT or WHT (EU/EEA companies generally excepted from proof, but SRS may ask).
+- Exceptions, reforms, announced changes: Ordinary foreign portfolio dividends that suffered source WHT (e.g. 15% US treaty WHT) or come from a company that paid CIT abroad are exempt, not taxed at 25.5% with a credit: the statute settles the conflict with a broker article (TWINO) that described a credit method. An additional 3% PIT applies to the part of total annual income above EUR 200,000, and the base includes exempt dividends. From 2026 Latvian companies wholly owned by individuals may opt into a 15% CIT + 6% PIT dividend regime.
+- Confidence: high, verified.
+- JSON: headline 28.5%, domestic 3%, foreign gross 3%, relief method 'exemption'. Basis: 0% PIT on dividends from taxed profits/with foreign WHT, plus the 3% additional rate for a family whose income exceeds EUR 200k = 3%. Headline 28.5% = 25.5% + 3% for dividends not meeting the condition (e.g. tax havens).
+- Outbound withholding: Latvian companies pay 20% CIT on gross distributions (20/80); no WHT on dividends to non-resident companies except tax-haven residents (20%).
+- Treaties: 64 effective double tax treaties (PwC).
+- Holding companies: Distribution-based CIT: retained profits including portfolio gains untaxed until distributed.
+
+Verified 2026-10-15: Section 9(1)(2.1)(b) exempts dividends where CIT was paid abroad or tax was withheld abroad, so foreign portfolio dividends are exempt (not 25.5% with credit); only the 3% additional rate applies above EUR 200,000. Confidence raised to high.
+
+## Inheritance and gifts to children
+- Rule in force: No inheritance tax and no gift tax for children. Heirs pay a Land Register state fee only on inherited Latvian real estate: 0.25% for children who lived with the deceased, 0.5% for other children; no fee on movable property such as securities.
+- Exemptions/thresholds: No state fee if the inherited real estate is worth less than ten minimum monthly wages.
+- Foreign assets: No tax; the state fee only concerns Latvian real estate.
+- Exceptions, reforms, announced changes: other_transfer_cost_rate set to 0 because the fee (0.25-0.5%) applies only to Latvian real estate, a small share of a portfolio estate.
+- Confidence: high, verified.
+- Gifts: Gifts from individuals are PIT-taxable above EUR 1,425/yr, but gifts between spouses and relatives up to the third degree are fully exempt.
+- Business relief: Not applicable.
+- Domicile/scope: Not applicable.
+- JSON: basis 'none', children 'fully_exempt', exemption 0 EUR, brackets none, other transfer cost 0%.
+
+## Wealth tax
+- Rule in force: No net wealth tax and no recurring levy on financial assets.
+- Confidence: high, verified.
+- Property taxes (not a wealth tax): Municipal immovable property tax on land and buildings; rates are set by municipalities (not researched in detail).
+- JSON: type 'none'.
+
+## Special regimes
+None. No special tax regime for newly arriving wealthy individuals was found; only ordinary residence (JSON regime 'standard').
+
+## Company taxation (kept separate from personal tax)
+- Headline CIT 20%. 20% CIT on distributed profits, applied to the gross-up (net/0.8), i.e. 25% of net distribution; retained profits untaxed. From 2026 an optional regime for companies owned only by individuals: 15% CIT on net/0.85 plus 6% PIT withheld.
+
+## Cost of living notes
+
+City: Riga.
+- Prime family-home rent (monthly): EUR 2,200 (2026). Median asking rent of 15 distinct houses of 180-500 m² for long-term rent in Riga (Mežaparks, Bieriņi, Imanta, Vecāķi, Torņakalns, Centre, Jaunciems) on SS.lv, all listing pages, 15 Oct 2026; range EUR 1,100-4,840 (Mežaparks EUR 2,000-4,500). Small sample; Jūrmala excluded. Source: SS.LV Houses, cottages - Riga, Hand over, https://www.ss.lv/en/real-estate/homes-summer-residences/riga/all/hand_over/
+- International school (annual, per child): EUR 20,900 (2026). International School of Riga, Grades 9-12, 2026/27: tuition EUR 19,400 plus yearly capital fee EUR 1,500 (EUR 2,000 for new students). New students also pay a one-time EUR 1,600 membership fee. Source: Tuition & Fees (2026/27), https://isriga.lv/admissions/tuition-fees/
+
+Prime purchase price per m², family health insurance and housekeeper cost were not sourced in this round and are omitted rather than guessed.
+
+## Open questions
+
+- Exact conditions for an account to qualify as an investment account (e.g. foreign brokers) not summarised here.
+- Whether the SRS demands proof of foreign CIT/WHT for every portfolio dividend in practice.
+- Notary fees for the inheritance case not verified.
+
+## Sources
+- [Latvia - Individual - Income determination](https://taxsummaries.pwc.com/latvia/individual/income-determination)
+- [Latvia - Individual - Taxes on personal income](https://taxsummaries.pwc.com/latvia/individual/taxes-on-personal-income)
+- [Investment taxes in Latvia: what to know about capital gains and income (Mar 2026)](https://www.twino.eu/blog/investment-taxes-in-latvia-what-to-know-about-capital-gains-and-income)
+- [Par nodokļa piemērošanu individuālajā situācijā (VID answer on dividend taxation, 2025)](https://lvportals.lv/e-konsultacijas/35792-par-nodokla-piemerosanu-individualaja-situacija-jauzzina-vid-2025)
+- [Latvia - Individual - Foreign tax relief and tax treaties](https://taxsummaries.pwc.com/latvia/individual/foreign-tax-relief-and-tax-treaties)
+- [Latvia - Individual - Other taxes](https://taxsummaries.pwc.com/latvia/individual/other-taxes)
+- [Successions in Europe - Latvia](https://www.notariesofeurope.eu/en/faq3/successions-in-europe/latvia/)
+- [Latvia - Individual - Residence](https://taxsummaries.pwc.com/latvia/individual/residence)
+- [Real estate owner (temporary residence permit)](https://www.pmlp.gov.lv/en/real-estate-owner)
+- [Latvia - Corporate - Taxes on corporate income](https://taxsummaries.pwc.com/latvia/corporate/taxes-on-corporate-income)
+- [Latvia - Corporate - Withholding taxes](https://taxsummaries.pwc.com/latvia/corporate/withholding-taxes)
+- Likums 'Par iedzīvotāju ienākuma nodokli' (consolidated, likumi.lv): https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli
+- SS.LV Houses, cottages - Riga, Hand over: https://www.ss.lv/en/real-estate/homes-summer-residences/riga/all/hand_over/
+- Tuition & Fees (2026/27): https://isriga.lv/admissions/tuition-fees/
+
+## Change log
+- 2026-10-15: initial research.
+- 2026-10-15: confirmed from the PIT Law the foreign-dividend exemption (Section 9(1)(2.1)) and the scope of the 3% additional rate (Section 15.1: includes capital gains and exempt dividends); capital_gains and dividends now high/verified; added Riga cost of living (SS.LV rent sample, ISR 2026/27 fee).

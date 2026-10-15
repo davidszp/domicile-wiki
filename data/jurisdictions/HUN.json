@@ -1,0 +1,646 @@
+{
+  "id": "HUN",
+  "name": "Hungary",
+  "continent": "Europe",
+  "region": "Central Europe",
+  "currency": "HUF",
+  "researched_on": "2026-10-15",
+  "summary": "Hungary taxes capital gains and dividends at a flat 15% (plus a capped 13% social contribution tax on some income), has no inheritance or gift tax between parents and children, and has no wealth tax in force in 2026. However, a 1% wealth tax on net wealth above HUF 1 billion (about EUR 2.6m) is in draft and would apply to wealth held on 31 December 2026 if passed. The US-Hungary tax treaty ended in 2024, which makes US dividends expensive (about 35%).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Flat 15% PIT on capital income; no special regime for new arrivals.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax residence: Hungarian citizens; EEA nationals with a Hungarian registration card spending 183+ days; settled third-country nationals; otherwise permanent home / centre of vital interests / 183 days.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains on listed shares and bonds are taxed at a flat 15% personal income tax (PIT). If the trade is a 'controlled capital market transaction' (ellenőrzött tőkepiaci ügylet: through an investment service provider in Hungary, another EEA state or a treaty state), there is no 13% social contribution tax (szocho) and losses can be netted. Other gains (e.g. sale of a private company stake) pay 15% PIT plus 13% szocho, but szocho is capped at a base of 24x the monthly minimum wage (HUF 7,747,200 in 2026). Real estate gains are 15%, falling to 0 after five years of ownership.",
+        "exemptions_thresholds": "TBSZ long-term investment account: gains are tax-free if the account is kept 5 years after the deposit (collection) year; 10% PIT (and reduced szocho) if closed in years 4-5; full rates if closed within 3 years. Real estate held over 5 years: gain exempt. Szocho cap 2026: base of HUF 7,747,200 (24 x HUF 322,800 minimum wage), reduced by other szocho-bearing income such as salary.",
+        "eligibility_conditions": "Controlled capital market treatment needs a broker/investment service provider in an EEA state or in a country with which Hungary has a tax treaty. Since the US treaty ended (2024), trades through a US broker no longer qualify: they lose loss netting and attract 13% szocho up to the cap.",
+        "important_exceptions": "Professional trading activity is taxed as business income. Gains on shares in low-tax-country companies may be reclassified as 'other income' in the consolidated base (progressive-like treatment: 15% PIT + 13% szocho). The proposed wealth tax (see wealth_tax) does not change CGT.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Hungary - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/hungary/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Hungary - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/hungary/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Így lehet elkerülni a hozamok utáni adófizetést a befektetéseknél (TBSZ, controlled capital market transactions)",
+            "url": "https://telex.hu/nevertek/2026/07/18/befektetesek-igy-lehet-elkerulni-a-hozamok-utani-adofizetest-tbsz-allampapir-nyugdijmegtakaritas-lehetosegek-ajanlatok",
+            "publisher": "Telex",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tax consequences of the termination of the US-Hungarian tax treaty",
+            "url": "https://www.rsm.hu/en/blog/2023/09/tax-consequences-of-the-termination-of-the-us-hungarian-tax-treaty",
+            "publisher": "RSM Hungary",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Draft PIT return 2026",
+            "url": "https://wtsklient.hu/en/2026/03/18/draft-pit-return/",
+            "publisher": "WTS Klient Hungary",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Exact TBSZ szocho rates in years 4-5 after the 2025 change (sources give 8%); not material for a 5-year holding."
+        ],
+        "headline_rate": 0.15,
+        "rates": {
+          "listed_securities_domestic": 0.15,
+          "listed_securities_foreign": 0.15,
+          "private_business_sale": 0.15,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Flat 15% PIT on the gain. Listed securities via an EEA/treaty-country broker: no szocho. Private business sale: 15% PIT + 13% szocho capped at a HUF 7.75m base (max about HUF 1.0m), negligible for a large gain, so 0.15. Real estate (domestic or foreign) held over 5 years: exempt, 0.",
+        "professional_trader": "Habitual trading organised as a business is taxed as self-employment/business income with higher social charges; ordinary portfolio management through a broker is taxed as capital gains.",
+        "holding_period_rules": "No holding period for securities (except TBSZ 3/5-year rule). Real estate: gain exempt after 5 years.",
+        "foreign_assets": "Residents are taxed on worldwide gains. Foreign broker in EEA/treaty state keeps controlled-transaction treatment; a non-treaty broker (now including US brokers) does not."
+      },
+      "dividends": {
+        "summary": "Dividends are taxed at a flat 15% PIT. Dividends from companies listed on an EEA regulated market carry no social contribution tax; other dividends (including from US-listed companies) also carry 13% szocho, but only on a base up to HUF 7,747,200 a year (2026), so the extra cost is at most about HUF 1.0m. Foreign withholding tax is credited up to the treaty rate.",
+        "exemptions_thresholds": "Szocho cap: 24x the monthly minimum wage (HUF 7,747,200 in 2026), reduced by other szocho-bearing income.",
+        "important_exceptions": "The US-Hungary income tax treaty was terminated by the US with effect from 1 January 2024 (withholding). US dividends paid to Hungarian residents now suffer 30% US withholding; Hungary credits foreign tax but, for non-treaty income, leaves at least 5% Hungarian PIT, so US dividends cost about 35% in total (RSM). Dividends from treaty countries: foreign WHT credited up to the 15% Hungarian rate. Dividends from low-tax-country companies are 'other income' taxed in the consolidated base with szocho.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Hungary - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/hungary/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Hungary - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/hungary/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tax consequences of the termination of the US-Hungarian tax treaty",
+            "url": "https://www.rsm.hu/en/blog/2023/09/tax-consequences-of-the-termination-of-the-us-hungarian-tax-treaty",
+            "publisher": "RSM Hungary",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Announcement 2024-5: Termination of United States-Hungary tax treaty effective January 1, 2024",
+            "url": "https://kpmg.com/us/en/home/insights/2023/12/tnf-announcement-2024-5-termination-hungary-tax-treaty.html",
+            "publisher": "KPMG US",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Hungary - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/hungary/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Whether dividends credited inside a TBSZ account are sheltered like gains; not verified."
+        ],
+        "headline_rate": 0.15,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.15,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "15% PIT; szocho 13% applies to non-EEA-listed dividends but is capped at a HUF 7.75m base, immaterial for large portfolios. For US dividends the true burden is about 35% (30% US WHT, no treaty, plus 5% minimum Hungarian tax).",
+        "withholding_outbound": "No WHT on dividends paid to non-resident companies. Dividends to non-resident individuals: 15% domestic rate, reduced by treaty.",
+        "treaty_network": "Broad network covering the EU and most OECD states; no treaty with the US since 1 January 2024, which matters for a portfolio heavy in US equities.",
+        "holding_company_notes": "A Hungarian company pays 9% CIT and receives dividends exempt; distribution to a resident individual then pays 15% PIT (+ capped szocho)."
+      },
+      "wealth_tax": {
+        "summary": "PRO FORMA (scored as if enacted, by editorial decision of 2026-10-15): the government's wealth tax bill published for consultation on 6 October 2026 would charge 1% a year on net worldwide wealth above HUF 1 billion and 1.5% on the part above HUF 100 billion, for resident individuals, with trusts and private/asset-management foundations taxed as separate taxpayers. Law in force in 2026: no wealth tax. As of 15 October 2026 the bill had not been submitted to Parliament; the governing party holds a constitutional majority and the measure was a manifesto pledge, so enactment is treated as near-certain. If enacted as drafted it enters into force on 15 December 2026, with the first assessment on wealth held on 31 December 2026 and payment by 31 August 2027.",
+        "exemptions_thresholds": "Draft only: HUF 1 billion allowance per individual (each spouse separately); minors' non-inherited assets are added to the parent's base; personal-use movables excluded except art/jewellery above HUF 3m and vehicles above HUF 10m; debts deductible.",
+        "important_exceptions": "PENDING DRAFT WEALTH TAX (not law, not scored): 1% above HUF 1bn net worldwide wealth, 1.5% above HUF 100bn; first valuation date 31 Dec 2026. A family arriving in 2026 would be caught on 31 Dec 2026 if it passes as drafted. Draft scope: resident individuals on worldwide assets; non-residents only on Hungarian real estate and shares in Hungarian companies. Trusts, private foundations and similar foreign structures managed from Hungary are separate taxpayers and related structures share a single HUF 1bn threshold, so a vagyonkezelő alapítvány would not escape it. Minors' non-inherited assets count toward the parent. On loss of residence during the year, wealth is measured the day before. No main-home exemption appears in the government summary. Listed securities valued at market price; foreign real estate at cost indexed 3% a year or by an official index.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Hungary - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/hungary/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Társadalmi egyeztetés a vagyonadóról szóló törvényjavaslatról (public consultation on the wealth tax bill)",
+            "url": "https://kormany.hu/dokumentumtar/tarsadalmi-egyeztetes-a-vagyonadorol-szolo-torvenyjavaslatrol",
+            "publisher": "Hungarian Government - Ministry of Finance",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tartalmi összefoglaló a vagyonadóról szóló tervezethez (summary of the wealth tax draft)",
+            "url": "https://kormany.hu/application/documents/6025c5a8-77c8-476c-a3f3-a05d86d7b9bf/download",
+            "publisher": "Hungarian Government - Ministry of Finance",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Vagyonadó 2026-2027 Magyarországon",
+            "url": "https://www.rsm.hu/blog/csaladi-vallalat/vagyonado-2026-2027-magyarorszagon",
+            "publisher": "RSM Hungary",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Hungary government proposes wealth tax on ultra-rich (Reuters)",
+            "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/06/hungary-government-proposes-wealth-tax-on-ultra-rich",
+            "publisher": "Reuters via Internazionale",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Felajánlható lesz a vagyonadó egy része, részleteket közölt a Pénzügyminisztérium",
+            "url": "https://index.hu/gazdasag/2026/10/10/vagyonado-penzugyminiszterium-karman-andras-tarsadalmi-egyeztetes/",
+            "publisher": "Index.hu",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Scored pro forma from the consultation draft; final rates, allowance, valuation rules and the treatment of foundations may change in Parliament.",
+          "Draft wealth tax (1% above HUF 1bn net wealth, 1.5% above HUF 100bn) published 6 Oct 2026; consultation closed 14 Oct 2026; not yet submitted to Parliament as of 15 Oct 2026. If enacted as drafted it applies to wealth held on 31 Dec 2026. Re-check parlament.hu and switch this metric to 'broad' with the enacted brackets when passed.",
+          "Whether the final law adds an exit tax or a main-home exemption, and how the announced 5% 'offering' of the tax to public causes works."
+        ],
+        "type": "broad",
+        "components": [
+          {
+            "name": "Vagyonadó (draft wealth tax bill, 6 Oct 2026)",
+            "base": "net_wealth_worldwide",
+            "exempt_amount": 2000000000,
+            "entry_threshold": 0,
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.01
+              },
+              {
+                "from_amount": 98000000000,
+                "rate": 0.015
+              }
+            ],
+            "bracket_mode": "marginal",
+            "notes": "PRO FORMA: draft bill as published for consultation, scored as if enacted. 1% on net worldwide wealth above the HUF 1bn allowance per individual; 1.5% on the part of wealth above HUF 100bn (99bn above the allowance). Each spouse has a separate HUF 1bn allowance; the reference family is a married couple, so HUF 2bn is deducted (the 1.5% band still starts at HUF 100bn of wealth)."
+          }
+        ],
+        "property_tax_note": "Municipalities may levy a local building tax and land tax up to statutory caps (per m2 or value-based). Not a wealth tax.",
+        "basis": "pro_forma_draft"
+      },
+      "inheritance": {
+        "summary": "Inheritances and gifts between lineal relatives (parents, children, grandchildren) and between spouses are fully exempt from Hungarian inheritance and gift duty, regardless of amount or asset type. The general rate for others is 18% (9% for residential property); siblings are also exempt since 2020.",
+        "exemptions_thresholds": "Unlimited exemption for lineal relatives and the surviving spouse. No reporting obligation for exempt gifts between lineal relatives.",
+        "eligibility_conditions": "Applies to relationships by blood or adoption; stepchildren and foster children are not lineal relatives.",
+        "important_exceptions": "Hungarian probate (hagyatéki eljárás) is conducted by a notary with modest fees. A vagyonkezelő alapítvány (asset management foundation) is often used for succession; its own tax rules (CIT on the foundation, taxation of distributions) were not verified here.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Hungary - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/hungary/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Illetékmentes a testvérek közötti öröklés és ajándékozás (NAV)",
+            "url": "https://nav.gov.hu/ado/illetek/Illetekmentes_a_testv20200715",
+            "publisher": "Nemzeti Adó- és Vámhivatal (NAV)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Notary probate fees for a large estate not quantified; treated as negligible."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Gift duty exists (18%, 9% for residential property) but gifts between lineal relatives and spouses are fully exempt.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Not needed for children: the lineal exemption covers all assets.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Whatever the scope rules for foreign assets, transfers to children are exempt.",
+        "domicile_rules": "No domicile concept; scope follows location of property and residence/citizenship of the heir."
+      },
+      "sources": [
+        {
+          "title": "Hungary - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/hungary/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "asset_management_foundation",
+      "name": "Asset management foundation (vagyonkezelő alapítvány)",
+      "type": "structure",
+      "description": "The family contributes the portfolio to a Hungarian asset management foundation (Act XIII of 2021) with the parents and children as beneficiaries. The foundation is a 9% corporate taxpayer, but where founder and beneficiaries are individuals and its income comes only from holding and disposing of financial instruments, securities, receivables and cash, that income is not taxed, so gains and dividends compound tax-free. Since 31 August 2026 (tax package adopted 28 July 2026) distributions are taxed as dividends (15%), profits first, and the tax-free step-up of contributed assets after five years is gone for new contributions. No inheritance event arises (and Hungary does not tax children anyway). The draft wealth tax (scored pro forma, as in the standard regime) treats the foundation as a separate taxpayer with its own HUF 1bn allowance.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Founded by deed (notarial) and registered by the court; founder(s) and named beneficiaries are the family; a board (kuratórium) or asset manager runs it. Contributing assets does not in itself trigger personal income tax, but for contributions after 31 August 2026 the original acquisition value and unrealised gain must be recorded and are taxed on distribution.",
+      "duration_years": null,
+      "duration_note": "A holding vehicle has no statutory time limit; it lasts as long as the family keeps it and stays resident, subject to changes in the law.",
+      "structure": {
+        "entity": "Vagyonkezelő alapítvány (asset management foundation, Act XIII of 2021)",
+        "kind": "foundation",
+        "payout_tax_rate": 0.15,
+        "payout_notes": "From 31 August 2026 distributions are treated as dividend income in a fixed order: accumulated yield first, then the recorded increase in value of contributed assets, and only the remainder as tax-free return of original capital; distributing an original asset in kind is tax-free (the beneficiary takes over the historical cost). Dividend income bears 15% personal income tax plus 13% social contribution tax (szocho) only until the year's income reaches 24 times the minimum wage, which on a EUR 400,000 payout adds well under 1% and is left out, as in the standard regime. Assets contributed before 31 August 2026 keep the old rules (tax-free distribution of revalued assets after 5 years). Free use of foundation property (e.g. a house) is a taxable benefit borne by the foundation.",
+        "annual_running_cost": {
+          "amount": 6000000,
+          "currency": "HUF"
+        },
+        "setup_cost": {
+          "amount": 2000000,
+          "currency": "HUF"
+        },
+        "substance_and_anti_avoidance": "The tax-free treatment needs individual founders and beneficiaries and income solely from financial instruments, securities, receivables and cash; real estate, operating businesses and other income are taxed at 9% CIT. New from the 2026 tax package: annual reporting of foundations and trusts to NAV (first report for 2026 due 31 March 2027); mandatory NAV audits of structures registered before 12 September 2023 and, from 1 January 2028, of all structures within the limitation period; special rules for crypto-assets. Draft wealth tax: foundations and trusts are separate taxpayers, structures of the same or related founders share a single HUF 1bn allowance, and foreign structures managed from Hungary count as domestic. Running and setup costs are estimates (accounting, CIT declaration and annual report, board fees, notary and court registration); no official figure was found.",
+        "exit_and_liquidation": "The foundation is a separate person, so a beneficiary's emigration does not move its assets; distributions to non-resident beneficiaries were not researched. On dissolution, assets distributed are taxed under the same ordering rules (dividend tax on yield and value increases). On the founder's death the beneficiaries' tax cost is aligned to the revalued amount (WTS).",
+        "sources": [
+          {
+            "title": "Tax alert 4 August 2026: first tax package of the new government",
+            "url": "https://kpmg.com/hu/en/insights/2026/08/taxalert-2026-08-04.html",
+            "publisher": "KPMG Hungary",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "The most important changes in the summer tax package (2026)",
+            "url": "https://www.forvismazars.com/hu/en/insights/newsletters/tax-newsletters-2026/important-changes-in-the-summer-tax-package",
+            "publisher": "Forvis Mazars Hungary",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "The 2026 Hungarian tax package (29 July 2026)",
+            "url": "https://wtsklient.hu/en/2026/07/29/the-2026-hungarian-tax-package/",
+            "publisher": "WTS Klient Hungary",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Trusts in Hungary - key tax considerations, part 2 (23 April 2026)",
+            "url": "https://blog.peterkapartners.com/trusts-in-hungary-key-tax-considerations-part-2/",
+            "publisher": "PETERKA & PARTNERS",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cross-border wealth structuring between Turkey and Hungary: trusts, AMFs and tax efficiency (5 January 2026)",
+            "url": "https://webiis10.mondaq.com/turkey/withholding-tax/1727338/cross-border-wealth-structuring-between-turkey-and-hungary-trusts-amfs-and-tax-efficiency",
+            "publisher": "Mondaq",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ]
+      },
+      "capital_gains": {
+        "summary": "An asset management foundation pays no corporate tax on gains from listed shares and bonds when its founder and beneficiaries are individuals and its income comes solely from acquiring, holding and disposing of financial instruments, securities, receivables and cash (same rule as for Hungarian trusts; Peterka 2026, Mondaq 2026). Other income is taxed at 9% CIT.",
+        "exemptions_thresholds": "No threshold; the condition is the nature of the income and of the founder/beneficiaries.",
+        "important_exceptions": "Real estate and private company holdings fall outside the financial-instrument rule (9% CIT). The 2026 tax package changed distributions and contributions, not the foundation-level exemption.",
+        "headline_rate": 0.09,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.09,
+          "real_estate_local": 0.09,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Listed securities: 0 (financial-instrument income not taxable). Private business sale and real estate: 9% CIT as an upper bound; a sale of shares registered as an 'announced participation' could be exempt (not checked).",
+        "professional_trader": "No trading test; the exemption depends on the asset type.",
+        "holding_period_rules": "None at foundation level. For assets contributed before 31 Aug 2026, the old five-year rule for tax-free distribution of revalued assets still applies.",
+        "foreign_assets": "Same treatment for foreign financial instruments.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Trusts in Hungary - key tax considerations, part 2 (23 April 2026)",
+            "url": "https://blog.peterkapartners.com/trusts-in-hungary-key-tax-considerations-part-2/",
+            "publisher": "PETERKA & PARTNERS",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cross-border wealth structuring between Turkey and Hungary: trusts, AMFs and tax efficiency (5 January 2026)",
+            "url": "https://webiis10.mondaq.com/turkey/withholding-tax/1727338/cross-border-wealth-structuring-between-turkey-and-hungary-trusts-amfs-and-tax-efficiency",
+            "publisher": "Mondaq",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tax alert 4 August 2026: first tax package of the new government",
+            "url": "https://kpmg.com/hu/en/insights/2026/08/taxalert-2026-08-04.html",
+            "publisher": "KPMG Hungary",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The CIT Act provision for asset management foundations (2022 amendment) was not read in the statute (njt.hu unreachable); sources describe the rule for trusts and say it applies equally to foundations.",
+          "Treatment of a private-company sale inside the foundation (9% or exempt as an announced participation) not verified."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends received by the foundation are financial-instrument income and not taxed when founder and beneficiaries are individuals. Foreign withholding tax cannot be credited and is a final cost (the US-Hungary treaty was terminated from 2024, so US dividends bear 30% withholding).",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "none",
+        "rate_basis": "0% at foundation level; no Hungarian tax to credit source withholding against.",
+        "holding_company_notes": "This is the foundation structure itself; tax on distributions (15%) is in the structure terms.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Trusts in Hungary - key tax considerations, part 2 (23 April 2026)",
+            "url": "https://blog.peterkapartners.com/trusts-in-hungary-key-tax-considerations-part-2/",
+            "publisher": "PETERKA & PARTNERS",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Cross-border wealth structuring between Turkey and Hungary: trusts, AMFs and tax efficiency (5 January 2026)",
+            "url": "https://webiis10.mondaq.com/turkey/withholding-tax/1727338/cross-border-wealth-structuring-between-turkey-and-hungary-trusts-amfs-and-tax-efficiency",
+            "publisher": "Mondaq",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Hungary - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/hungary/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Statutory reference for the foundation-level exemption not read; based on professional summaries."
+        ]
+      },
+      "wealth_tax": {
+        "basis": "pro_forma_draft",
+        "summary": "PRO FORMA, consistent with the standard regime: the wealth tax bill published for consultation on 6 October 2026 (not law; scored as if enacted by editorial decision) charges 1% a year on net wealth above HUF 1bn (1.5% above HUF 100bn) and treats private and asset management foundations as separate taxpayers, separate from the founder and beneficiaries. The foundation therefore pays on the portfolio above its own HUF 1bn allowance (shared by all structures of related founders), and the family pays on its personal wealth (the home) above the individual allowance.",
+        "exemptions_thresholds": "HUF 1bn for the foundation (one allowance for all related structures); HUF 1bn per individual (the standard regime applies one allowance to the family; the draft gives each spouse their own).",
+        "important_exceptions": "Draft only; first valuation date 31 Dec 2026 if enacted as drafted.",
+        "type": "broad",
+        "components": [
+          {
+            "name": "Vagyonadó on the foundation (draft, separate taxpayer)",
+            "base": "financial_assets_all",
+            "exempt_amount": 1000000000,
+            "entry_threshold": 0,
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.01
+              },
+              {
+                "from_amount": 99000000000,
+                "rate": 0.015
+              }
+            ],
+            "notes": "PRO FORMA draft: portfolio held by the foundation, own HUF 1bn allowance."
+          },
+          {
+            "name": "Vagyonadó on the family's personal wealth (draft)",
+            "base": "real_estate_all",
+            "exempt_amount": 1000000000,
+            "entry_threshold": 0,
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.01
+              },
+              {
+                "from_amount": 99000000000,
+                "rate": 0.015
+              }
+            ],
+            "notes": "PRO FORMA draft: the home stays with the parents; one HUF 1bn allowance, as in the standard regime."
+          }
+        ],
+        "property_tax_note": "Local building tax as in the standard regime.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tartalmi összefoglaló a vagyonadóról szóló tervezethez (summary of the wealth tax draft)",
+            "url": "https://kormany.hu/application/documents/6025c5a8-77c8-476c-a3f3-a05d86d7b9bf/download",
+            "publisher": "Hungarian Government - Ministry of Finance",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Társadalmi egyeztetés a vagyonadóról szóló törvényjavaslatról (public consultation on the wealth tax bill)",
+            "url": "https://kormany.hu/dokumentumtar/tarsadalmi-egyeztetes-a-vagyonadorol-szolo-torvenyjavaslatrol",
+            "publisher": "Hungarian Government - Ministry of Finance",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Draft bill may change in Parliament, including the treatment of foundations.",
+          "Whether a foundation's allowance is shared with the founder's personal allowance (the draft summary only says related structures cannot multiply the HUF 1bn threshold)."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Tax alert 4 August 2026: first tax package of the new government",
+          "url": "https://kpmg.com/hu/en/insights/2026/08/taxalert-2026-08-04.html",
+          "publisher": "KPMG Hungary",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "The most important changes in the summer tax package (2026)",
+          "url": "https://www.forvismazars.com/hu/en/insights/newsletters/tax-newsletters-2026/important-changes-in-the-summer-tax-package",
+          "publisher": "Forvis Mazars Hungary",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "The 2026 Hungarian tax package (29 July 2026)",
+          "url": "https://wtsklient.hu/en/2026/07/29/the-2026-hungarian-tax-package/",
+          "publisher": "WTS Klient Hungary",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Trusts in Hungary - key tax considerations, part 2 (23 April 2026)",
+          "url": "https://blog.peterkapartners.com/trusts-in-hungary-key-tax-considerations-part-2/",
+          "publisher": "PETERKA & PARTNERS",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Cross-border wealth structuring between Turkey and Hungary: trusts, AMFs and tax efficiency (5 January 2026)",
+          "url": "https://webiis10.mondaq.com/turkey/withholding-tax/1727338/cross-border-wealth-structuring-between-turkey-and-hungary-trusts-amfs-and-tax-efficiency",
+          "publisher": "Mondaq",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Tartalmi összefoglaló a vagyonadóról szóló tervezethez (summary of the wealth tax draft)",
+          "url": "https://kormany.hu/application/documents/6025c5a8-77c8-476c-a3f3-a05d86d7b9bf/download",
+          "publisher": "Hungarian Government - Ministry of Finance",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if: Hungarian citizen; EEA national holding a Hungarian registration card and present 183+ days in the calendar year; third-country national with permanent settlement status; or, failing those, Hungary is the only permanent home, or the centre of vital interests, or (if undeterminable) 183+ days of presence.",
+    "routes": [
+      {
+        "name": "EU/EEA free movement (registration certificate)",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Register residence after 90 days; no investment needed."
+      },
+      {
+        "name": "Guest Investor residence permit (vendégbefektetői tartózkodási engedély)",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Introduced July 2024 (investment-based; the lowest route was an approved real estate fund investment). The Tisza government has said it intends to abolish the scheme; status uncertain as of October 2026. Otherwise ordinary national residence permits (work, business, self-sufficiency)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hungary - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/hungary/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Hungary - Election results: potential impact on immigration policy",
+        "url": "https://vialtopartners.com/regional-alerts/hungary-immigration-election-results-potential-impact-on-immigration-policy",
+        "publisher": "Vialto Partners",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.09,
+    "summary": "Flat 9% CIT, among the lowest in the EU, plus local business tax up to 2% of adjusted revenue (dividends and interest exempt from LBT). Dividends received are exempt from CIT; capital gains on reported participations can be exempt. No WHT on dividends, interest or royalties paid to foreign companies.",
+    "special_zones": "",
+    "sources": [
+      {
+        "title": "Hungary - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/hungary/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Hungary - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/hungary/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Budapest",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 33250,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "American International School of Budapest, Grades 11-12 IB Diploma, 2026/27 tuition USD 29,750 plus USD 3,500 building fee (new students also pay one-off registration and deposit).",
+      "source": {
+        "title": "AISB fees and medical requirements 2026/27",
+        "url": "https://aisb.hu/joining-us/fees-and-medical-requirements",
+        "publisher": "American International School of Budapest",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Prime purchase price per m², family health insurance and housekeeper cost were not sourced in this round and are omitted rather than guessed.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 1237500,
+        "currency": "HUF"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 22 houses/large homes with 4+ bedrooms and 200-450 m² in Buda districts II, III, XI and XII (Pasarét, Rózsadomb, Budaliget, Svábhegy, Istenhegy, Testvérhegy etc.) in the full rental stock of Tower Budapest, an expat-focused letting agency (40 result pages, 324 listings, read 15 Oct 2026); range HUF 690,000-3,367,000 (about EUR 1,900-9,250). Excludes common costs and utilities.",
+      "source": {
+        "title": "Tower Budapest rentals (full listing)",
+        "url": "https://www.towerbudapest.com/en/rentals",
+        "publisher": "Tower Budapest",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "Budapest",
+      "lon": 19.03991,
+      "lat": 47.49801,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3054643"
+    }
+  ],
+  "us_citizen_notes": "No US-Hungary income tax treaty since 1 January 2024: no treaty tie-breaker or saving-clause relief; US tax is credited only up to a point (Hungary keeps at least 5% on US-source dividends) and double taxation risk is higher than in treaty countries. US citizens need a residence permit (Guest Investor route may close).",
+  "open_questions": [
+    "Wealth tax is scored PRO FORMA from the 6 Oct 2026 draft bill (1% above HUF 1bn, 1.5% above HUF 100bn); it is not yet law.",
+    "Final enactment of the wealth tax bill (draft of 6 Oct 2026; not submitted to Parliament as of 15 Oct 2026).",
+    "Tax treatment of the vagyonkezelő alapítvány (asset management foundation): CIT exemption of portfolio income, taxation of distributions to beneficiaries, and pending 2026 changes were not verified from primary sources; the draft wealth tax treats such foundations as separate taxpayers.",
+    "Future of the Guest Investor residence programme."
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "id": "THA",
+  "name": "Thailand",
+  "currency": "THB",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Residents (180 days or more in a calendar year) pay progressive tax from 0% to 35% on net income; employment income gets a 50% expense deduction capped at THB 100,000 plus a THB 60,000 personal allowance. Foreign income earned from 2024 is taxable when remitted to Thailand. Employees pay 5% social security on wages up to THB 17,500 a month (max THB 875).",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 150000,
+        "rate": 0.05
+      },
+      {
+        "from_amount": 300000,
+        "rate": 0.1
+      },
+      {
+        "from_amount": 500000,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 750000,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 1000000,
+        "rate": 0.25
+      },
+      {
+        "from_amount": 2000000,
+        "rate": 0.3
+      },
+      {
+        "from_amount": 5000000,
+        "rate": 0.35
+      }
+    ],
+    "personal_allowance": 60000,
+    "employee_social_security_rate": 0.05,
+    "employee_social_security_cap": 210000,
+    "self_employed_social_security_rate": 0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Section 33 applies to employees (foreign employees with work permits included). Independent contractors without a Thai employer pay no mandatory contribution; whether foreigners may join voluntary Section 40 was not verified from an official SSO page. Self-employed (section 40(2) etc.) may deduct actual expenses or a standard 10-60% depending on the business; the exact rate per activity was not listed on the PwC page.",
+    "local_tax_note": "No local income tax. Bracket thresholds are on net income after the 50% employment expense deduction (max THB 100,000) and allowances (THB 60,000 taxpayer, THB 60,000 non-filing spouse). The social security cap is THB 17,500 x 12 = THB 210,000 of wages.",
+    "sources": [
+      {
+        "title": "Thailand - Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/thailand/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Thailand - Individual - Deductions",
+        "url": "https://taxsummaries.pwc.com/thailand/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Thailand - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/thailand/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Thailand - Individual - Other taxes",
+        "url": "https://taxsummaries.pwc.com/thailand/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Thai Social Security wage ceiling increase 2026 (KPMG Tax News Flash 157)",
+        "url": "https://kpmg.com/th/en/insights/2026/01/th-tax-news-flash-issue-157.html",
+        "publisher": "KPMG Thailand",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "Whether foreigners on non-work visas can join voluntary Section 40 (not confirmed on an official SSO page).",
+      "Standard deduction percentage for freelance/consulting income (section 40(2)/(8)) not listed on the PwC page."
+    ],
+    "verified_on": "2026-10-15",
+    "social_security_deductible": 1
+  },
+  "regimes": [
+    {
+      "id": "ltr_highly_skilled",
+      "name": "Long-Term Resident (LTR) visa - Highly-Skilled Professional",
+      "kind": "expat_regime",
+      "description": "BOI Long-Term Resident visa for highly skilled professionals working in a targeted industry. The Revenue Department's LTR tax presentation states the 17% rate is a flat withholding rate on employment income, granted to Highly-Skilled Professionals (LTR-H) who work for a company operating in a targeted industry (as defined under the Competitiveness Enhancement for Target Industries Act, the Investment Promotion Act or the Eastern Economic Corridor Act). Conditions: the employer must notify the Area Revenue Office on the prescribed form and the 17% applies from the date the office acknowledges it; tax withheld at 17% can be treated as final, provided the holder does not claim a refund or credit; the holder still files PND 95 and needs a Tax ID. The separate exemption for foreign-sourced income belongs to the Wealthy Global Citizen, Wealthy Pensioner and Work-from-Thailand Professional categories, not to LTR-H.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": {
+        "amount": 80000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": 10,
+      "duration_note": "First permission 5 years, extendable by another 5 if still qualified. USD 80,000 a year average over the past two years; USD 40,000-80,000 needs extra proof (e.g. a master's degree in science or technology). Needs health insurance of USD 50,000 or Thai social security or USD 100,000 on deposit for 12 months. Fee THB 50,000.",
+      "treatment": "flat_rate",
+      "flat_rate": 0.17,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "LTR Visa - Thailand BOI",
+          "url": "https://ltr.boi.go.th/",
+          "publisher": "Thailand Board of Investment",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Tax Essentials for LTR Visa Holders (Revenue Department presentation)",
+          "url": "https://ltr.boi.go.th/documents/PPT_Tax_Essentialsfor_LTR_Visa_Holders.pdf",
+          "publisher": "Revenue Department / BOI",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [
+        "The Revenue Department slides do not state a cap or minimum for income taxed at 17%; whether it covers bonuses and benefits in kind was not checked."
+      ]
+    },
+    {
+      "id": "dtv",
+      "name": "Destination Thailand Visa (DTV)",
+      "kind": "digital_nomad_visa",
+      "description": "Five-year multiple-entry visa with stays of up to 180 days each (extendable) and a THB 500,000 funds requirement per the e-visa site. It does not change tax: a holder staying 180 days or more in a year is a Thai tax resident, taxed on foreign income earned from 2024 only when remitted to Thailand.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 5,
+      "duration_note": "Five-year validity, 180 days per stay with an extension option. THB 500,000 in funds. Income test not given on the opened page.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "Thailand e-Visa - Destination Thailand Visa",
+          "url": "https://www.thaievisa.go.th/",
+          "publisher": "Royal Thai Ministry of Foreign Affairs",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Thailand - Individual - Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/thailand/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Official page opened gave only a summary; eligibility rules, fee and whether remote work for foreign clients is explicitly allowed need checking on the e-visa site."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Bangkok",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 22463,
+        "currency": "THB"
+      },
+      "year": 2026,
+      "description": "Numbeo average 1-bedroom apartment in city centre, 1,285 entries from 196 contributors in 12 months (all city price data, not rent only); typical range THB 16,000-35,000.",
+      "source": {
+        "title": "Cost of Living in Bangkok (Numbeo)",
+        "url": "https://www.numbeo.com/cost-of-living/in/Bangkok",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 39000,
+        "currency": "THB"
+      },
+      "year": 2026,
+      "description": "Midpoint of an indicative THB 28,000-50,000+ range for 2-bedroom condos in Thonglor, Asoke and Phrom Phong (Sukhumvit); the article gives no sample size or method. Treat as rough.",
+      "source": {
+        "title": "Average Bangkok condo rental prices by district 2026 (Superagent, 2 May 2026)",
+        "url": "https://www.superagent.co/en/blog/average-bangkok-condo-rental-prices-real-data-by-district-2026",
+        "publisher": "Superagent (property agency blog)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Numbeo provides no 2-bedroom figure; the 2-bedroom value is a weak midpoint estimate."
+  },
+  "residence_routes": "EU, US and other citizens: the Destination Thailand Visa (DTV, five years, 180-day stays, THB 500,000 funds) suits remote workers; highly skilled employees can apply for the BOI Long-Term Resident visa (Highly-Skilled Professional: USD 80,000 average income, five years, extendable by five) or take a work visa and permit through a Thai employer. Visa-exempt entry does not allow work. Nationality does not change the routes, though visa-exemption and e-visa details vary by passport.",
+  "open_questions": [
+    "2-bedroom rent is a weak estimate (agency blog range midpoint).",
+    "Work-from-Thailand Professional LTR category (USD 80,000 income, foreign-sourced income exempt per the Revenue Department) is not modelled; whether its exemption reaches pay for work done in Thailand was not established."
+  ]
+}

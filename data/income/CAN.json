@@ -1,0 +1,160 @@
+{
+  "id": "CAN",
+  "name": "Canada",
+  "currency": "CAD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Canadian residents pay federal tax (14% to 33% in 2026) plus Ontario tax (5.05% to 13.16%) and Ontario surtaxes of 20% and 36% on provincial tax; the combined top marginal rate in Ontario is 53.53% above CAD 258,482. Employees pay CPP (5.95% to CAD 74,600 plus CPP2 above it) and EI; the self-employed pay both CPP shares and may opt out of EI.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.1905
+      },
+      {
+        "from_amount": 53891,
+        "rate": 0.2315
+      },
+      {
+        "from_amount": 58523,
+        "rate": 0.2965
+      },
+      {
+        "from_amount": 87729,
+        "rate": 0.3148
+      },
+      {
+        "from_amount": 105521,
+        "rate": 0.3477
+      },
+      {
+        "from_amount": 107785,
+        "rate": 0.3791
+      },
+      {
+        "from_amount": 117045,
+        "rate": 0.4341
+      },
+      {
+        "from_amount": 150000,
+        "rate": 0.4497
+      },
+      {
+        "from_amount": 181440,
+        "rate": 0.4797
+      },
+      {
+        "from_amount": 220000,
+        "rate": 0.4953
+      },
+      {
+        "from_amount": 258482,
+        "rate": 0.5353
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.0773,
+    "employee_social_security_cap": 74600,
+    "self_employed_social_security_rate": 0.10933,
+    "self_employed_social_security_cap": 85000,
+    "self_employed_notes": "Self-employed pay both CPP shares: 11.9% on pensionable earnings between CAD 3,500 and CAD 74,600 (CRA: maximum CAD 8,460.90 for 2026) plus CPP2 (both shares) on earnings from CAD 74,600 to about CAD 85,000; PwC's maximum for self-employed is CAD 9,292.90 (CPP2 part CAD 832, derived; the CPP2 rate and second ceiling were not on an opened page). The rate recorded, 0.10933, is that maximum spread over the CAD 85,000 cap, an approximation of the basic exemption and CPP2 steps. Half of base CPP and all CPP2 are deductible. Self-employed people are not liable for EI premiums unless they opt in (EI 2026: 1.63% to CAD 68,900, maximum CAD 1,123.07, CRA). Deductibility for the self-employed differs: they deduct the employer-equivalent half of the base CPP (3,519.45), both shares of the enhanced CPP (1,422.00) and both shares of CPP2 (832.00), i.e. 5,773.45 of the 9,292.90 maximum, about 0.62, against 0.195 for an employee; the employee figure governs the field. The other half of the base CPP and EI give a federal 15% credit that is not modelled.",
+    "local_tax_note": "Toronto has no municipal income tax; combined figures are federal + Ontario with the 20%/36% surtax built in. Combined marginal rates are computed from the opened federal and Ontario tables before non-refundable credits: surtax thresholds (provincial tax of CAD 5,818 and 7,446) are reached at about CAD 87,729 and 105,521 of taxable income. The Ontario Health Premium (up to CAD 900) is not included and the credit amounts that shift the surtax thresholds slightly are ignored.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Canada: Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/canada/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Canada: Other taxes",
+        "url": "https://taxsummaries.pwc.com/canada/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Canada Revenue Agency - CPP contribution rates, maximums and exemptions (2026)",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html",
+        "publisher": "Canada Revenue Agency",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "EY Global Tax News - Ontario Budget 2026 (2026 Ontario brackets and surtax)",
+        "url": "https://taxnews.ey.com/news/2026-0747-canada-ontario-budget-2026",
+        "publisher": "EY",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "CRA - EI premium rates and maximums",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html",
+        "publisher": "CRA",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "CRA - Line 30800 and line 22215: CPP/QPP contributions on employment income",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30800-cpp-qpp-contributions-through-employment.html",
+        "publisher": "Canada Revenue Agency",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Combined brackets re-derived on 2026-10-15 from the PwC federal table (14/20.5/26/29/33% at 58,523/117,045/181,440/258,482) and the EY Ontario table and surtax thresholds (CAD 5,818 and 7,446): every listed combined rate reproduces (e.g. 19.05%, 29.65%, 31.48%, 34.77%, 37.91%, 43.41%, 53.53%). The CRA and Ontario pages themselves were not read.",
+      "Non-refundable credits are not modelled: the federal basic personal amount (EY: CAD 14,829 plus up to CAD 1,623 additional, i.e. up to CAD 16,452, worth about CAD 2,300 at 14%) and Ontario credits reduce tax; the Ontario surtax thresholds are applied to tax before credits, so the 31.48% and 34.77% brackets in reality start at somewhat higher incomes. Ontario low-income tax reduction (no provincial tax up to CAD 18,930) and Ontario Health Premium also ignored. Net effect: tax is overstated by roughly CAD 2,500-3,000 at the persona incomes.",
+      "Employee rate 0.0773 is derived: PwC's maximum employee CPP (CAD 4,646.45 including CPP2) plus maximum EI (CAD 1,123.07; CRA confirms 1.63% to CAD 68,900) = CAD 5,769.52, divided by the CAD 74,600 maximum pensionable earnings. CRA confirms base CPP 5.95%, maximum CAD 4,230.45 (employee) and CAD 8,460.90 (self-employed) for 2026.",
+      "CPP2 maximum (CAD 416 employee, CAD 832 self-employed) is inferred as the difference between PwC's and CRA's maximums; the CPP2 rate and ceiling page returned 404.",
+      "Canada gives credits rather than deductions for base CPP (4.95%, line 30800) and EI. social_security_deductible = 0.195 is the approximate deductible share only (enhanced CPP + CPP2 over CPP + CPP2 + EI); the 2026 base/enhanced split (4.95%/1.00%) is the CRA 2025 line 30800/22215 maximums (3,356.10 and 678.00 on 67,800) carried forward, and CPP2 (4% to 85,000) was not read on an opened CRA page. The credit value is not modelled."
+    ],
+    "social_security_deductible": 0.195
+  },
+  "regimes": [],
+  "costs": {
+    "city": "Toronto (downtown / Yorkville)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 2049,
+        "currency": "CAD"
+      },
+      "year": 2026,
+      "description": "Zumper Toronto rent research page, October 2026: average asking rent for 1-bedroom apartments about $2,049 (citywide median all types $2,375); the page does not name the currency (CAD presumed) or sample size.",
+      "source": {
+        "title": "Zumper - Toronto, ON rent research",
+        "url": "https://www.zumper.com/rent-research/toronto-on",
+        "publisher": "Zumper",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 2629,
+        "currency": "CAD"
+      },
+      "year": 2026,
+      "description": "Zumper Toronto rent research page, October 2026: average asking rent for 2-bedroom apartments about $2,629; currency not named on the page (CAD presumed); sample size not stated.",
+      "source": {
+        "title": "Zumper - Toronto, ON rent research",
+        "url": "https://www.zumper.com/rent-research/toronto-on",
+        "publisher": "Zumper",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Citywide averages, not downtown only; downtown asking rents are typically higher but no sourced figure."
+  },
+  "residence_routes": "There is no digital nomad visa; visitors may not work for Canadian clients and generally may work remotely for foreign employers only as short-stay visitors. Skilled employees enter through Express Entry (permanent residence) or an employer-specific work permit (LMIA or exempt, such as intra-company transfers and CUSMA professionals for US and Mexican citizens); EU nationals may qualify for International Experience Canada working-holiday permits in some countries. Canada taxes residents on worldwide income and its resident definition rests on residential ties rather than a day count.",
+  "open_questions": [
+    "Official CRA/Ontario rate pages for income tax were not reachable.",
+    "Rent currency from Zumper unlabelled.",
+    "No nomad visa or special regime exists; covers_local_work does not apply."
+  ]
+}

@@ -1,0 +1,82 @@
+[
+ {
+  "id": "savills_eni_2025",
+  "title": "Savills Executive Nomad Index 2025",
+  "publisher": "Savills Research",
+  "url": "https://impacts.savills.com/social-change/executive-nomads-2025-quality-of-life-is-a-priority-in-location-choices.html",
+  "published": "2025-09",
+  "method": "Savills ranked 30 destinations on internet speed, air connectivity, climate stability, prime residential prices and quality of life (page names only 14 with ranks; those are recorded).",
+  "ranked": true,
+  "length": 14
+ },
+ {
+  "id": "insuremytrip_2025",
+  "title": "10 Best Cities for Digital Nomads 2025",
+  "publisher": "InsureMyTrip (via USA Today / Hotel Online)",
+  "url": "https://www.hotel-online.com/news/from-affordability-to-safety-the-10-best-cities-for-digital-nomads-2025",
+  "published": "2025-03",
+  "method": "Scored on country happiness score, cost of living, US State Dept advisories, things to do and safety index; all cities have a nomad visa.",
+  "ranked": true,
+  "length": 10
+ },
+ {
+  "id": "flatio_timeout_2025",
+  "title": "Best cities for digital nomads in 2025 (Flatio)",
+  "publisher": "Flatio (published by Time Out)",
+  "url": "https://www.timeout.com/news/these-are-officially-the-best-cities-for-digital-nomads-in-2025-020425",
+  "published": "2025-02",
+  "method": "Flatio ranked the top 20 on cost of living, internet speed and quality of life; weighting not described.",
+  "ranked": true,
+  "length": 20
+ },
+ {
+  "id": "hotelwithtub_2025",
+  "title": "Top 100 digital nomad destinations 2025",
+  "publisher": "hotelwithtub.com (via Travelling for Business)",
+  "url": "https://travellingforbusiness.co.uk/?p=16446",
+  "published": "2025-05",
+  "method": "Weighted score over 1,370 locations (affordability, safety, quality of life, infrastructure, return rates, social media presence) from Nomad List, Numbeo, Instagram; article shows only the top 10 of 100.",
+  "ranked": true,
+  "length": 10
+ },
+ {
+  "id": "nomadscom_going",
+  "title": "Nomads.com city list ranked by people going",
+  "publisher": "Nomads.com (formerly Nomad List)",
+  "url": "https://nomads.com/",
+  "published": "2026-10",
+  "method": "Live homepage city list sorted by number of nomads 'going' to each city (page does not label the measure); top 24 cities captured 2026-10-15.",
+  "ranked": true,
+  "length": 24
+ },
+ {
+  "id": "scoutlogic_2025",
+  "title": "Hottest digital nomad destinations of 2025 (ScoutLogic)",
+  "publisher": "ScoutLogic (published by Time Out)",
+  "url": "https://www.timeout.com/usa/news/want-to-work-abroad-these-are-the-hottest-digital-nomad-destinations-of-2025-082525",
+  "published": "2025-08",
+  "method": "ScoutLogic study of cost of living, connectivity, culture, healthcare, environment and local nomad community engagement.",
+  "ranked": true,
+  "length": 10
+ },
+ {
+  "id": "big7travel_2025",
+  "title": "The 25 Best Cities for Digital Nomads 2025",
+  "publisher": "Big 7 Travel (via Business Report)",
+  "url": "https://businessreport.co.za/news/south-africa/2025-01-29-cape-town-ranks-6th-among-the-best-cities-for-digital-nomads-in-2025",
+  "published": "2025-01",
+  "method": "Editorial ranking weighing internet speed, safety, coworking, cost, nomad community/events and visa access.",
+  "ranked": true,
+  "length": 25
+ },
+ {
+  "id": "instantoffices_2025",
+  "title": "Best places to be a digital nomad 2025 (Instant Offices)",
+  "publisher": "Instant Offices (via Time Out)",
+  "url": "https://www.timeout.com/news/the-5-best-cities-to-be-a-digital-nomad-in-2025-081525",
+  "published": "2025-08",
+  "method": "Instant Offices scored cities on connectivity, affordability and weather; Time Out reports only the top 5 (Dubai scored 52.11).",
+  "ranked": true,
+  "length": 5
+ }
+]

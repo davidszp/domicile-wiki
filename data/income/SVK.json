@@ -1,0 +1,197 @@
+{
+  "id": "SVK",
+  "name": "Slovakia",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "2026 scale: 19% on the tax base up to EUR 43,983.32 (154.8x the subsistence minimum), 25% to EUR 60,349.21, 30% to EUR 75,010.32, 35% above. Non-taxable amount EUR 5,966.73 a year, full up to a tax base of EUR 26,367.26 and zero from EUR 50,234.18. Employee contributions: 9.4% social (maximum monthly assessment base EUR 16,764, i.e. EUR 201,168 a year) and 5% health (no cap); the recorded rate is the combined 14.4% and the cap applies to the social part only.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.19
+      },
+      {
+        "from_amount": 43983.32,
+        "rate": 0.25
+      },
+      {
+        "from_amount": 60349.21,
+        "rate": 0.3
+      },
+      {
+        "from_amount": 75010.32,
+        "rate": 0.35
+      }
+    ],
+    "personal_allowance": 5966.73,
+    "employee_social_security_rate": 0.144,
+    "employee_social_security_cap": 201168,
+    "self_employed_social_security_rate": 0.4915,
+    "self_employed_social_security_cap": 201168,
+    "self_employed_notes": "Self-employed contributions 2026: social 33.15% (sickness 4.40, old-age 18, disability 6, solidarity reserve 4.75) on a base of about one twelfth of the business tax base times 1.486, minimum EUR 914.40 a month (minimum payment EUR 303.11), maximum EUR 16,764 a month; health 16% on a base of at least EUR 762 (minimum EUR 121.92 a month), no maximum. The recorded 49.15% is the statutory sum on the assessment base, not an effective rate on gross income. Business income: a 15% rate applies to self-employed income up to EUR 100,000 (Forvis Mazars); option of 60% lump-sum expenses up to EUR 20,000 a year for non-VAT-payers (PwC).",
+    "social_security_deductible": 1,
+    "local_tax_note": "No local income tax in the sources opened.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Slovak Republic, taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/slovak-republic/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Slovak Republic, other taxes",
+        "url": "https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Slovak Republic, deductions",
+        "url": "https://taxsummaries.pwc.com/slovak-republic/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "CEE tax guide 2026 (Forvis Mazars Slovakia)",
+        "url": "https://www.forvismazars.com/sk/en/insights/publications-and-events/surveys-and-studies/cee-tax-guide-2026",
+        "publisher": "Forvis Mazars",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Odvody SZCO (zivnostnikov) od 1.1.2026",
+        "url": "https://podnikajte.sk/socialne-a-zdravotne-odvody/odvody-szco-zivnostnikov-od-1-1-2026",
+        "publisher": "podnikajte.sk",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "Conditions for the 15% self-employed rate were read from one secondary guide only.",
+      "The allowance phase-out is not modelled in the brackets.",
+      "Self-employed 49.15% is the statutory sum on the assessment base (minimums EUR 914.40 social / EUR 121.92 health a month), not an effective rate on gross income; the base conversion was not re-derived."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "svk_flat_expenses",
+      "name": "Flat-rate expenses for self-employed (60%, max EUR 20,000)",
+      "kind": "other",
+      "description": "Self-employed people who are not Slovak VAT payers and do not have only rental income may deduct 60% of income as lump-sum expenses up to EUR 20,000 a year instead of actual costs.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "Open-ended while elected.",
+      "treatment": "partial_exemption",
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries - Slovak Republic, deductions",
+          "url": "https://taxsummaries.pwc.com/slovak-republic/individual/deductions",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [],
+      "exempt_share": 0.6
+    },
+    {
+      "id": "svk_15_self_employed",
+      "name": "15% rate on self-employed income up to EUR 100,000",
+      "kind": "other",
+      "description": "A 15% income tax rate applies to natural persons earning entrepreneurial income, per the Forvis Mazars 2026 CEE guide, with an annual cap of EUR 100,000.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": {
+        "amount": 100000,
+        "currency": "EUR"
+      },
+      "duration_years": null,
+      "duration_note": "Open-ended while income stays below the cap.",
+      "treatment": "flat_rate",
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "CEE tax guide 2026 (Forvis Mazars Slovakia)",
+          "url": "https://www.forvismazars.com/sk/en/insights/publications-and-events/surveys-and-studies/cee-tax-guide-2026",
+          "publisher": "Forvis Mazars",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Exact conditions (turnover vs profit) not opened."
+      ],
+      "flat_rate": 0.15
+    }
+  ],
+  "costs": {
+    "city": "Bratislava",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 908,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average rent for a Slovak '2-room' flat (one bedroom plus living room), Bencont Investments 1Q 2026 average (EUR 908) as quoted by Investropa, updated 5 Oct 2026; Investropa states about EUR 900-925, range 800-1,050.",
+      "source": {
+        "title": "Bratislava rents 2026 (Bencont averages via Investropa)",
+        "url": "https://investropa.com/blogs/news/bratislava-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1199,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Average rent for a Slovak '3-room' flat (two bedrooms), Bencont Investments 1Q 2026 average (EUR 1,199) as quoted by Investropa; Investropa states about EUR 1,200, range 1,000-1,400.",
+      "source": {
+        "title": "Bratislava rents 2026 (Bencont averages via Investropa)",
+        "url": "https://investropa.com/blogs/news/bratislava-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Bencont figures as reported by a secondary site; Deloitte Rent Index Q2 2026 reports Bratislava all-flat average EUR 931 (search snippet, not opened)."
+  },
+  "residence_routes": "EU citizens can live and work freely. Non-EU nationals need a temporary residence permit for employment (with a job offer) or for business; no remote-worker visa was found and no official page was opened, so the details are unverified.",
+  "open_questions": [
+    "Official residence routes for non-EU nationals not opened.",
+    "Rents are second-hand figures from a secondary site quoting Bencont."
+  ]
+}

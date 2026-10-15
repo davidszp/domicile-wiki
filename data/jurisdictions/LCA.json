@@ -1,0 +1,258 @@
+{
+  "id": "LCA",
+  "name": "Saint Lucia",
+  "continent": "Caribbean",
+  "region": "Windward Islands (Eastern Caribbean)",
+  "currency": "XCD",
+  "researched_on": "2026-10-15",
+  "summary": "Saint Lucia taxes ordinarily resident individuals on worldwide income (top rate 30%), but capital gains are not taxed and dividends ('distributions from companies') are exempt income by statute. There is no inheritance, gift or net wealth tax. The main residual exposure for a portfolio investor is foreign interest income, which is taxable at up to 30%.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Residents with a permanent place of abode in Saint Lucia are taxed on worldwide income at 15%/20%/30%, but capital gains are not taxed and 'distributions from companies' are exempt income under s. 25 of the Income Tax Act. Foreign interest (other than on Saint Lucian bank deposits) is taxable.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if permanent place of abode in Saint Lucia and present for some time in the year, or present 183 days or more. Non-citizens need a residence permit or citizenship.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains are not taxed. Income from trading in securities 'other than by way of a business' is also listed as exempt income.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: St. Lucia Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-stluciahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Saint Lucia, Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/saint-lucia/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income Tax Act (Cap. 15.02), section 25 - Exemptions (Revised Laws of Saint Lucia)",
+            "url": "https://www.attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-25",
+            "publisher": "Attorney General's Chambers, Saint Lucia",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "0 = no capital gains tax (Deloitte 2026, PwC reviewed 12 Oct 2026); ITA s.25(1)(zs) exempts income from trading in securities other than by way of a business.",
+        "professional_trader": "Securities trading carried on as a business is outside the s.25(1)(zs) exemption and would be business income taxed at up to 30%.",
+        "important_exceptions": "Stamp duty on sale of Saint Lucian real property: seller 2.5%-5% (resident) or 10% (non-resident), buyer 2%. Shares of companies with 75%+ real property assets follow real property rates; other share transfers 0.5%.",
+        "foreign_assets": "Foreign gains are not taxed either."
+      },
+      "dividends": {
+        "summary": "Dividends ('distributions from companies') are exempt income under ITA s.25(1)(x); Saint Lucia levies no dividend withholding tax. The exemption wording is not limited to Saint Lucian companies.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income Tax Act (Cap. 15.02), section 25 - Exemptions (Revised Laws of Saint Lucia)",
+            "url": "https://www.attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-25",
+            "publisher": "Attorney General's Chambers, Saint Lucia",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Saint Lucia, Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/saint-lucia/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: St. Lucia Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-stluciahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "ITA s.25(1)(x) 'distributions from companies' exempt. PwC confirms dividends from Saint Lucian corporations are exempt; it does not separately discuss foreign dividends, so foreign_gross_rate 0 rests on the statutory wording.",
+        "withholding_outbound": "No withholding tax on dividends paid out. Interest and royalties: 10% to residents, 25% to non-residents.",
+        "treaty_network": "CARICOM multilateral treaty only; no relief for US/EU source withholding on portfolio dividends.",
+        "important_exceptions": "Interest is taxable unless on a deposit in a bank in Saint Lucia (s.25(1)(g)(i)) or another listed exemption; foreign bond interest is taxable at up to 30% for an ordinarily resident individual.",
+        "open_questions": [
+          "No PwC/Deloitte statement explicitly confirming that foreign portfolio dividends received by an ordinarily resident individual fall under s.25(1)(x)."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Saint Lucia, Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/saint-lucia/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: St. Lucia Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-stluciahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Property tax 0.25% of open market value for residential property, 0.4% commercial."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Saint Lucia, Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/saint-lucia/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: St. Lucia Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-stluciahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax.",
+        "gifts_same_as_inheritance": true,
+        "important_exceptions": "Stamp duty may arise on instruments transferring Saint Lucian real property.",
+        "foreign_assets": "Not applicable.",
+        "domicile_rules": "Not applicable."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if permanent place of abode in Saint Lucia plus physical presence during the year, or 183+ days. Residents without a permanent place of abode in Saint Lucia are taxed only on Saint Lucia-source income; PwC describes a remittance basis for foreign income of those resident but not ordinarily resident.",
+    "routes": [
+      {
+        "name": "Citizenship by Investment",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Saint Lucia operates a CBI programme (National Economic Fund donation, real estate, enterprise or bonds). Current amounts not verified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Deloitte International Tax: St. Lucia Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-stluciahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Saint Lucia, Individual - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/saint-lucia/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.3,
+    "summary": "CIT 30%. Dividend income and capital gains of companies are not taxed; no participation exemption needed. Foreign tax credit available. Losses carried forward 6 years, capped at 50% of taxable income.",
+    "special_zones": "Fiscal Incentives Act and Tourism Incentive Act holidays.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: St. Lucia Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-stluciahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Rodney Bay / Cap Estate (Gros Islet, north of Castries)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 4222.5,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median (midpoint) of the only two 4+ bedroom residential rentals on Terra Caribbean's Saint Lucia rental listings on 15 Oct 2026: Flamboyant Drive House, Rodney Bay, 5 bed house, USD 5,500 a month; Allamanda, Hawks Cry, Cap Estate, 4 bed ocean-view townhouse, USD 2,945 a month. Sample of two; treat as indicative.",
+      "source": {
+        "title": "Terra Caribbean: Saint Lucia residential rentals (4+ bedrooms)",
+        "url": "https://terracaribbean.com/saint-lucia/rent/",
+        "publisher": "Terra Caribbean",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 24300,
+        "currency": "XCD"
+      },
+      "year": 2024,
+      "description": "International School of St Lucia (Rodney Bay; New Brunswick Canadian high-school diploma), tuition for international students in Grades 7-12: XCD 24,300 (USD 9,000) a year; local/CARICOM students XCD 16,000. Grades 11-12 also pay New Brunswick online course fees of XCD 1,890 a semester (XCD 3,780 a year), plus an annual facility fee (XCD 690, Grade 12 XCD 1,365) and a one-time USD 1,750 international registration fee. The fee page states no school year and is marked 'Updated April 2024'; no newer schedule is published, so year is recorded as 2024.",
+      "source": {
+        "title": "International School of St Lucia: Tuition",
+        "url": "https://www.intschoolstlucia.org/tuition",
+        "publisher": "International School of St Lucia (ISSL)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Purchase price per m2, health insurance and housekeeper not sourced. Listings read from Terra Caribbean's listing search (country_code=lc, listing_type=rental, beds_min=4)."
+  },
+  "markers": [
+    {
+      "name": "Castries",
+      "lon": -60.98944444,
+      "lat": 14.01083333,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q41699 (via en.wikipedia)"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. There is no local tax here to credit against US tax on portfolio income, so a US family pays the full US rates. No Puerto Rico-style exclusion applies.",
+  "open_questions": [
+    "Current CBI amounts not verified.",
+    "Prime rent rests on two Terra Caribbean listings (USD 2,945 and 5,500 a month); Saint Lucia Sotheby's and other agencies could not be read, so a broader sample is needed. ISSL's fee page dates from April 2024; check for a 2025/26 or 2026/27 schedule."
+  ]
+}

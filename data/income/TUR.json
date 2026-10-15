@@ -1,0 +1,225 @@
+{
+  "id": "TUR",
+  "name": "Turkey",
+  "currency": "TRY",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Progressive income tax with a 2026 top rate of 40% (15/20/27/35/40%); the employment-income table is used (35% from TRY 1.5 million; non-employment income reaches 35% already at TRY 1.0 million). Employees pay 14% social security plus 1% unemployment insurance up to TRY 297,270 a month; Bag-Kur self-employed premium is 35.75% between a monthly floor and ceiling. Law 7582 gives individuals who become resident from 2026 a 20-year exemption on income obtained outside Turkey; per Tebliğ No. 333 it does not cover income from work or services performed in Turkey.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 190000,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 400000,
+        "rate": 0.27
+      },
+      {
+        "from_amount": 1500000,
+        "rate": 0.35
+      },
+      {
+        "from_amount": 5300000,
+        "rate": 0.4
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.15,
+    "employee_social_security_cap": 3567240,
+    "self_employed_social_security_rate": 0.3575,
+    "self_employed_social_security_cap": 3567240,
+    "self_employed_notes": "Self-employed (Bag-Kur, 4/1-b) premium 35.75% on earnings between TRY 1,101 a day (floor, TRY 11,808.23 a month premium) and TRY 9,909 a day (ceiling, TRY 106,274.03 a month premium). Cap shown is the annual earnings ceiling (9,909 x 360). Brackets above are the employment-income table (35% band from TRY 1.5 million). Free-lance (non-employment) income uses a different table in which the 27% band ends at TRY 1.0 million, adding up to TRY 40,000 of tax above TRY 1.5 million (PwC, opened 2026-10-15). A fixed filing fee of TRY 1,189.50 applies to taxpayers filing returns; salaried payroll pays 0.759% stamp tax.",
+    "social_security_deductible": 1,
+    "local_tax_note": "No local income surtax. Employee social security (14%) is deductible from taxable income. The cap is the monthly ceiling TRY 297,270 x 12; the 1% unemployment insurance is paid by foreigners only if reciprocity exists.",
+    "sources": [
+      {
+        "title": "Turkey - Individual - Taxes on personal income (last reviewed 9 Sep 2026)",
+        "url": "https://taxsummaries.pwc.com/turkey/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Turkey - Individual - Other taxes (last reviewed 9 Sep 2026)",
+        "url": "https://taxsummaries.pwc.com/turkey/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "2026 prime esas kazanclarin alt ve ust sinirlari (Cott Group)",
+        "url": "https://www.cottgroup.com/en/component/zoo/item/2026-yilina-ait-prime-esas-kazanclarin-alt-ve-ust-sinirlari-ile-guncel-tutarlarin-aciklandigi-genelge-yayimlandi",
+        "publisher": "Cott Group",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Bag-Kur 35.75% rate and limits come from a Cott Group summary of SGK circular 2026/2, not the circular itself.",
+      "PwC lists 14% for employee social security; PwC's other-taxes page lists the 1% unemployment insurance separately, combined here as 15%.",
+      "Bracket correction 2026-10-15: the 35% band was listed from TRY 1.0 million (non-employment table) although the summary says the employment table is used; PwC gives TRY 1.5 million for employment income, now applied."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "tr_digital_nomad_visa",
+      "name": "Turkiye Digital Nomad Visa / certificate",
+      "kind": "digital_nomad_visa",
+      "description": "One-year digital nomad permit for remote workers employed by or owning a company outside Turkey, from age 21 to 55 with a university degree. The visa itself does not change tax: a holder who stays about six months becomes a tax resident on worldwide income unless an exemption applies; the Law 7582 exemption does not cover fees or salary for work performed in Turkey (see that regime).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 36000,
+        "currency": "USD"
+      },
+      "max_income": null,
+      "duration_years": 2,
+      "duration_note": "Initial 12 months, renewable to 24 months in total (WhereNext).",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Turkey digital nomad visa guide (Wise)",
+          "url": "https://wise.com/gb/blog/turkey-digital-nomad-visa",
+          "publisher": "Wise",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Turkey Digital Nomad Visa 2026 - WhereNext",
+          "url": "https://getwherenext.com/digital-nomad-visas/tr",
+          "publisher": "WhereNext",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "No official GoTurkiye page was reachable; income (USD 3,000 a month), age band and renewal come from Wise and WhereNext.",
+        "WhereNext mentions an 80% deduction for self-employed service income to foreign clients, with a 100% deduction pending; not verified."
+      ]
+    },
+    {
+      "id": "tr_law_7582_foreign_income_exemption",
+      "name": "New-resident exemption for foreign income (Law 7582, GVK 20/D)",
+      "kind": "expat_regime",
+      "description": "Individuals who become Turkish residents on or after 1 January 2026, with no Turkish residence or tax liability in the preceding three calendar years, are exempt from income tax on income and earnings obtained outside Turkey for 20 years (GVK mukerrer art. 20/D, added by Law 7582 of 21 May 2026). Does not cover work done in Turkey: Income Tax General Communique No. 333 (Official Gazette 4 July 2026), art. 3(7), says only income obtained abroad is exempt and Turkish-source income stays taxable, and its Example 10 states that a freelance engineer working in Turkey and advising clients abroad earns self-employment income that is not exempt. A remote worker living and working in Turkey is therefore not covered for those fees or that salary (covers_local_work false). An exemption certificate must be obtained from the tax office by the end of the calendar year of becoming resident (by end of February of the next year if resident in the last two months).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 20,
+      "duration_note": "20 years from becoming resident; applies to people resident from 1 January 2026.",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Turkey - Individual - Significant developments (last reviewed 9 Sep 2026)",
+          "url": "https://taxsummaries.pwc.com/turkey/individual/s",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Turkiye'ye yerlesenlere 20 yillik vergi istisnasi (EY Turkiye)",
+          "url": "https://www.ey.com/tr_tr/insights/tax/turkiyeye-yerlesenlere-20-yillik-vergi-istisnasi",
+          "publisher": "EY Turkiye",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Gelir Vergisi Genel Tebligleri 333, 334, 335 (Andersen circular 2026/38 reproducing Tebliğ No. 333, RG 4 July 2026)",
+          "url": "https://tr.andersen.com/tr/images/pdf/and_38-gvkgt-333-334-335.pdf",
+          "publisher": "Andersen Turkey",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Law No. 7582 published in the Official Gazette (KPMG Turkey tax bulletin)",
+          "url": "https://kpmgvergi.com/yayinlar/mali-bultenler/tax-bulletins/law-no-7582-on-amendments-to-certain-laws-was-published-in-the-official-gazette/4499",
+          "publisher": "KPMG Turkey",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "high",
+      "verification": "verified",
+      "open_questions": [
+        "The Turkish-source salary of a local employer is taxed at normal rates. Whether a foreign employer's salary for work done in Turkey is Turkish-source follows the general source rules; the communique's Example 10 (self-employment) points the same way but no example covers a foreign-paid employee.",
+        "GVK art. 89/13 service-export deduction for individuals serving foreign clients (an 80% deduction is mentioned by WhereNext) was not verified and is not modelled."
+      ],
+      "covers_local_work": false
+    }
+  ],
+  "costs": {
+    "city": "Istanbul",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 26000,
+        "currency": "TRY"
+      },
+      "year": 2026,
+      "description": "Istanbul 1-bedroom (55-70 m2) average monthly rent, 2026 (range TRY 23,000-30,000; Endeksa anchored estimate, asking-market evidence). Numbeo city-centre 1-bedroom is TRY 49,070 (range 40,000-69,412), so central areas are far higher.",
+      "source": {
+        "title": "Average rent in Istanbul 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/istanbul-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 38000,
+        "currency": "TRY"
+      },
+      "year": 2026,
+      "description": "Istanbul 2-bedroom (80-100 m2) average monthly rent, 2026 (range TRY 34,000-43,000; estimate from Endeksa, CBRT and BETAM-sahibinden data).",
+      "source": {
+        "title": "Average rent in Istanbul 2026 (Investropa)",
+        "url": "https://investropa.com/blogs/news/istanbul-rents",
+        "publisher": "Investropa",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "Rents are advertised/estimated, not signed-lease medians, unless stated."
+  },
+  "residence_routes": "EU, US and other citizens: foreigners generally need a residence permit; a remote worker for a non-Turkish employer can use the Digital Nomad Visa (USD 3,000 a month, age 21-55, degree), and a skilled employee needs a work permit and residence permit via a Turkish employer. Citizenship matters mainly for visa-free entry, not for the routes. Residence is also available through property purchase (see existing jurisdiction file).",
+  "open_questions": [
+    "Official GoTurkiye requirements could not be opened.",
+    "Work-permit minimum salary rules not researched."
+  ]
+}

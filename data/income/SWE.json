@@ -1,0 +1,147 @@
+{
+  "id": "SWE",
+  "name": "Sweden",
+  "currency": "SEK",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Average municipal tax 32.38% on all taxable income plus 20% state tax above SEK 643,000, giving a 52.38% top marginal rate. Basic allowance SEK 17,400-45,600. Employee pension fee 7% (capped, fully creditable); self-employed egenavgifter 28.97%.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.3238
+      },
+      {
+        "from_amount": 643000,
+        "rate": 0.5238
+      }
+    ],
+    "personal_allowance": 17400,
+    "employee_social_security_rate": 0.0,
+    "employee_social_security_cap": 673038,
+    "self_employed_social_security_rate": 0.2897,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Egenavgifter 28.97% in total for those born 1959 or later (Skatteverket); roughly 25% of it is deductible. Employee 7% pension fee (max SEK 47,100) is normally fully credited against tax, so the real cost is nil. Employer contributions of 31.42% are not counted. Employee rate set to 0: the 7% general pension fee (allmän pensionsavgift) is offset by a tax reduction for the full amount (Skatteverket), so it adds no net cost for an employee with tax to offset.",
+    "social_security_deductible": 0,
+    "local_tax_note": "Skatteverket's 2026 average municipal rate is 32.38% (PwC rounds to 32%). Stockholm city itself is lower than the average; the exact figure was not opened. The basic allowance falls from SEK 45,600 to the 17,400 minimum at high incomes; 17,400 used.",
+    "sources": [
+      {
+        "title": "Belopp och procent - inkomstår 2026",
+        "url": "https://www.skatteverket.se/privat/skatter/beloppochprocent/2026",
+        "publisher": "Swedish Tax Agency (Skatteverket)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Sweden individual - taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/sweden/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Sweden individual - other taxes",
+        "url": "https://taxsummaries.pwc.com/sweden/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Sweden individual - deductions",
+        "url": "https://taxsummaries.pwc.com/sweden/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Skatteverket: Skattereduktioner",
+        "url": "https://www.skatteverket.se/privat/skatter/arbeteochinkomst/skattereduktioner",
+        "publisher": "Skatteverket",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "Stockholm municipal rate not verified; average used.",
+      "Whether egenavgifter has a ceiling on parts of the contribution was not checked (28.97% total is Skatteverket's 2026 figure)."
+    ]
+  },
+  "regimes": [
+    {
+      "id": "expert_tax_relief",
+      "name": "Expert tax relief (expertskatt)",
+      "kind": "expat_regime",
+      "description": "Key personnel, experts and specialists recruited from abroad pay Swedish tax on 75% of salary: 25% is exempt, and employer contributions are also calculated on 75%. Salary route: monthly pay above 1.5 times the price base amount (SEK 88,800 in 2026); a competence route also exists. Applications go to the Taxation of Research Workers Board within three months of starting work. Maximum seven years, and no Swedish residence in the previous five years. A proposal to raise the relief to 30% and extend the look-back to ten years (planned for 1 Jan 2026) was not enacted in the autumn 2025 budget bill.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": {
+        "amount": 1065600,
+        "currency": "SEK"
+      },
+      "max_income": null,
+      "duration_years": 7,
+      "duration_note": "First seven years of work in Sweden.",
+      "treatment": "partial_exemption",
+      "exempt_share": 0.25,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Sweden's expert tax regime: current rules, proposed changes and practical implications",
+          "url": "https://www.bdo.se/en-gb/insights/sweden%E2%80%99s-expert-tax-regime-current-rules,-proposed-changes-and-practical-implications",
+          "publisher": "BDO Sweden",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Belopp och procent - inkomstår 2026",
+          "url": "https://www.skatteverket.se/privat/skatter/beloppochprocent/2026",
+          "publisher": "Swedish Tax Agency (Skatteverket)",
+          "kind": "tax_authority",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Source is a BDO page; Skatteverket's own expert-tax page returned 404.",
+        "Secondary sources disagree on the look-back (five vs ten years) and on pending 2027 reform."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Stockholm",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 18500,
+        "currency": "SEK"
+      },
+      "year": 2026,
+      "description": "Midpoint of the 17,000-20,000 typical second-hand rent band for a two-room flat (Swedish tvåa, treated as 1-bedroom) in central districts (Östermalm, Norrmalm-Vasastan, Kungsholmen, Södermalm), Residensportalen 2026 data. First-hand (regulated) average is only 9,729 and is hard for newcomers to obtain.",
+      "source": {
+        "title": "Average rent in Stockholm: monthly prices",
+        "url": "https://getcostidea.com/average-rent-in-stockholm-monthly-prices/",
+        "publisher": "GetCostIdea",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": null,
+    "notes": "No 2-bedroom (three-room) rent was found on a page opened. Qasa second-hand medians for Stockholm (2025, via Investropa): 11,000 for one room, 14,500 for two rooms and 18,000 for '3+ rooms' (includes larger flats, so not used as a 2-bed value); sample size not disclosed. Bofrid's 2026 guide only gives 12,000-18,000 for a one-bedroom."
+  },
+  "residence_routes": "EU/EEA citizens may live and work freely and register with the Tax Agency. US and other third-country citizens need a work permit tied to an employer (the expert tax relief assumes such a job); Sweden has no digital nomad visa and remote work for foreign clients is not a permit category (not verified on an official page).",
+  "open_questions": [
+    "2-bedroom rent missing.",
+    "Residence-route details not verified on Migrationsverket."
+  ]
+}

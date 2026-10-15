@@ -1,0 +1,343 @@
+{
+  "id": "DNK",
+  "name": "Denmark",
+  "continent": "Europe",
+  "region": "Northern Europe",
+  "currency": "DKK",
+  "researched_on": "2026-10-15",
+  "summary": "High-tax option. Share gains and dividends are taxed at 42% above a small band (27% up to DKK 79,400), with annual mark-to-market on many funds and an exit tax on shares. No wealth tax. Children pay 15% estate duty above an allowance of DKK 392,300 per estate; the new government proposes 30% on estates above DKK 10 million (not yet law).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Full tax liability on worldwide income. The researcher/expat scheme (27% + 8% labour-market tax) covers employment income only and does not help a family living off a portfolio.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident when having a home in Denmark and staying there, or staying 6 consecutive months.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains on listed shares (Danish and foreign) are 'share income' taxed on realisation at 27% on the first DKK 79,400 (2026; DKK 158,800 for a married couple) and 42% above. A large gain is therefore taxed at effectively 42%. Many funds/ETFs are instead taxed annually on unrealised gains (mark-to-market). Real-estate gains (not the main home) are capital income, taxed at up to about 42%.",
+        "exemptions_thresholds": "27% band: DKK 79,400 per person (2026; 2025: DKK 67,500), doubled for spouses. Main home on a plot under 1,400 m2 is exempt (parcelhusreglen). Aktiesparekonto (share savings account): 17% annual mark-to-market on deposits up to DKK 174,200 (2026) - too small to matter for this family.",
+        "important_exceptions": "Mark-to-market (lagerprincippet): shares in investment companies (most foreign accumulating ETFs/funds) are taxed every year on unrealised value changes; those on SKAT's list of equity-based investment companies are taxed as share income (27/42%), others as capital income. Exit tax: on leaving Denmark with shares worth DKK 100,000 or more after at least 7 years of Danish tax liability, unrealised gains are taxed; deferral is available without interest (collateral required if moving outside the EU/Nordics). Foreign real estate is also subject to an exit gain rule. Announced, NOT in force (Deloitte, 3 and 24 June 2026, on the new government platform; no bill tabled as of the articles): raise the 27% share-income band to about DKK 110,000; raise the aktiesparekonto cap to DKK 500,000; a capital-taxation reform prepared by a commission; corporate tax cut from 22% to 19% over three years.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax on shares (buying and selling shares and securities)",
+            "url": "https://skat.dk/en-us/individuals/shares-and-securities/buying-and-selling-shares-and-securities",
+            "publisher": "Danish Tax Agency (Skattestyrelsen)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "C.E.15.2 Oversigt - kalenderår 2024-2026 (Den juridiske vejledning)",
+            "url": "https://info.skat.dk/data.aspx?oid=2292849",
+            "publisher": "Danish Tax Agency (Skattestyrelsen)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Denmark - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/denmark/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Denmark - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/denmark/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tax on shares if you leave Denmark",
+            "url": "https://skat.dk/en-us/individuals/shares-and-securities/tax-on-shares-if-you-leave-denmark",
+            "publisher": "Danish Tax Agency (Skattestyrelsen)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Nyt regeringsudspil: skat og afgifter",
+            "url": "https://www.deloitte.com/dk/en/services/tax/perspectives/nyt-regeringsudspil-skat-og-afgifter.html",
+            "publisher": "Deloitte Denmark",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Exact maximum marginal rate on positive net capital income (real-estate gains) under the 2026 bracket structure (new middle/top/top-top tax): PwC states 'up to 42%'; not independently recomputed.",
+          "Timing and final form of the announced capital-taxation reform and the higher 27% band (DKK ~110,000)."
+        ],
+        "headline_rate": 0.42,
+        "rates": {
+          "listed_securities_domestic": 0.42,
+          "listed_securities_foreign": 0.42,
+          "private_business_sale": 0.42,
+          "real_estate_local": 0.42,
+          "real_estate_foreign": 0.42
+        },
+        "rate_basis": "Top share-income rate 42% applies to a large realised gain on shares (listed or unlisted, Danish or foreign); the 27% band of DKK 79,400 is negligible for a large gain. Real estate: capital income, PwC gives a 2026 maximum of 42% (municipal + state tax on capital income, excluding church tax). No holding-period relief exists.",
+        "professional_trader": "Share gains are share income regardless of trading frequency for individuals; there is no separate trader regime for shares. Trading in real estate can be taxed as business (personal) income at up to ~60.5% marginal (+8% labour-market contribution).",
+        "holding_period_rules": "No holding-period exemption for shares (abolished 2006). Realisation basis for directly held shares (FIFO / average cost); mark-to-market for many investment funds.",
+        "foreign_assets": "Residents are taxed on worldwide gains. Foreign shares are not covered by Danish broker reporting; gains are self-declared. Foreign real estate gains taxed in Denmark with credit/exemption under treaties."
+      },
+      "dividends": {
+        "summary": "Dividends (Danish and foreign) are share income: 27% up to DKK 79,400 (2026) and 42% above. Foreign withholding tax is credited up to the treaty rate.",
+        "exemptions_thresholds": "Same 27% band as for gains (DKK 79,400 per person, shared between dividends and gains).",
+        "important_exceptions": "Announced, NOT in force (Deloitte, 3 and 24 June 2026, on the new government platform; no bill tabled as of the articles): raise the 27% share-income band to about DKK 110,000; raise the aktiesparekonto cap to DKK 500,000; a capital-taxation reform prepared by a commission; corporate tax cut from 22% to 19% over three years.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax on shares (buying and selling shares and securities)",
+            "url": "https://skat.dk/en-us/individuals/shares-and-securities/buying-and-selling-shares-and-securities",
+            "publisher": "Danish Tax Agency (Skattestyrelsen)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Denmark - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/denmark/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Denmark - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/denmark/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Denmark - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/denmark/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.42,
+        "domestic_rate": 0.42,
+        "foreign_gross_rate": 0.42,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Top share-income rate 42% for a large dividend stream; Danish dividends have 27% withheld at source, settled at final assessment. Foreign dividend tax credit is limited to the treaty rate; excess withholding must be reclaimed abroad.",
+        "withholding_outbound": "27% Danish WHT on dividends to non-residents (individuals and companies), reduced to the treaty rate via refund claims; corporate parent-subsidiary relief available.",
+        "treaty_network": "Large: about 76 treaties in force per PwC (treaty with Spain terminated 2009). Note the US-Denmark treaty limits US WHT on portfolio dividends to 15%.",
+        "holding_company_notes": "No holding structure is modelled for Denmark: a Danish ApS pays 22% on dividends and gains on listed portfolio shares (stakes below 10% are 'taxable portfolio shares', and listed ones are taxed annually on the mark-to-market principle), and distributions to the owners are then share income at 27%/42%, about 55% in total against 42% personally. Company-level taxation is separate (CIT 22%); distributions to the individual are share income at 27/42%. Personally owned investment companies are subject to CFC/anti-avoidance rules; check before relying on a holding structure."
+      },
+      "wealth_tax": {
+        "summary": "Denmark has had no wealth tax since 1997. Owner-occupied homes pay a property value tax (ejendomsværdiskat) and municipal land tax, which are not wealth taxes.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Denmark - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/denmark/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "property_tax_note": "Property value tax on owner-occupied homes: 0.51% of value up to DKK 9,007,000 and 1.4% above (2026, PwC). Municipal land tax (grundskyld) on land value, rate varies by municipality.",
+        "open_questions": [
+          "Left-wing parties proposed a wealth tax before the 2026 election; it is not in the new government platform as summarised by Deloitte (3 June 2026). Monitor."
+        ]
+      },
+      "inheritance": {
+        "summary": "Estate duty (boafgift) of 15% is levied on the part of the estate passing to children after a basic allowance of DKK 392,300 per estate (2026). Lifetime gifts to children are tax-free up to DKK 80,600 per year per donor (2026); excess is taxed at 15%.",
+        "exemptions_thresholds": "Basic allowance DKK 392,300 per estate (2026), not per child. Spouses are exempt. Gift allowance DKK 80,600 per donor per child per year (2026).",
+        "eligibility_conditions": "Children, stepchildren, their descendants, parents and cohabitants of 2+ years are in the 15% class; the 25% additional duty applies only to more distant heirs.",
+        "important_exceptions": "Announced, NOT in force: the June 2026 government platform proposes raising the allowance to DKK 550,000 and adding 15 percentage points (30% total) on estates whose taxable base exceeds DKK 10 million; Deloitte understands estates with succession-qualifying (business) assets would be excluded; timing unknown, no bill tabled. Siblings move into the 15% class from 1 January 2027.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Denmark - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/denmark/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Boafgift og bundfradrag",
+            "url": "https://www.aeldresagen.dk/viden-og-raadgivning/vaerd-at-vide/a/arv-testamente-doedsbo-gaver/boafgift/boafgift-og-bundfradrag",
+            "publisher": "Ældre Sagen",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Boafgift på 30 pct.",
+            "url": "https://www.deloitte.com/dk/en/services/tax/perspectives/boafgift-paa-30-pct.html",
+            "publisher": "Deloitte Denmark",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Nyt regeringsudspil: skat og afgifter",
+            "url": "https://www.deloitte.com/dk/en/services/tax/perspectives/nyt-regeringsudspil-skat-og-afgifter.html",
+            "publisher": "Deloitte Denmark",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Whether and when the proposed 30% rate on estates above DKK 10 million is enacted, and whether gift tax follows - this would materially worsen Denmark for this family.",
+          "Scope for foreign real estate of a Danish-domiciled deceased (whether excluded from the Danish estate when administered abroad) not verified.",
+          "Current rate of the reduced duty on family-business generational transfers (succession) not verified."
+        ],
+        "basis": "estate",
+        "children_treatment": "taxed",
+        "exemption": 392300,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.15
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "15% on gifts to children above DKK 80,600 per donor per year (2026); same 15% rate as estate duty.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Business assets can be transferred with succession (tax on latent gains deferred to the heir); gift/estate duty on business is assessed on value; portfolio holdings do not qualify (passive capital rules).",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Danish estate duty applies to the estate of a person domiciled in Denmark administered in Denmark, generally worldwide assets; foreign tax credit relief.",
+        "domicile_rules": "Probate jurisdiction follows the deceased's last domicile (residence) in Denmark; no citizenship-based tail found."
+      },
+      "sources": [
+        {
+          "title": "Denmark - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/denmark/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Full tax liability if the person has a home available in Denmark and stays there (other than short holidays), or stays in Denmark for 6 consecutive months (holidays abroad do not interrupt).",
+    "routes": [
+      {
+        "name": "EU/EEA free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "EU/EEA/Swiss citizens may reside with sufficient resources and register (EU residence document)."
+      },
+      {
+        "name": "Non-EU residence permit",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "No investor or golden visa. Non-EU nationals need a permit (work, business, family); Denmark's immigration rules are strict. Not verified in detail."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Denmark - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/denmark/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.22,
+    "summary": "CIT 22%. Dividends paid to non-residents bear 27% WHT (refund to treaty rate). Government platform (June 2026) proposes a cut to 19% over three years; not enacted.",
+    "sources": [
+      {
+        "title": "Denmark - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/denmark/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Denmark - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/denmark/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Nyt regeringsudspil: skat og afgifter",
+        "url": "https://www.deloitte.com/dk/en/services/tax/perspectives/nyt-regeringsudspil-skat-og-afgifter.html",
+        "publisher": "Deloitte Denmark",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Copenhagen",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 59500,
+        "currency": "DKK"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 12 houses/villas with 6+ rooms (about 4-5 bedrooms; Danish room counts include living rooms) listed on lejebolig.dk on 2026-10-15 in Gentofte municipality's prime districts: Hellerup, Charlottenlund, Gentofte and Klampenborg (DKK 29,800-120,000). Pages checked: lejebolig.dk/huse/hellerup, /charlottenlund, /gentofte, /klampenborg.",
+      "source": {
+        "title": "Lejebolig.dk - Huse til leje i Hellerup",
+        "url": "https://www.lejebolig.dk/huse/hellerup",
+        "publisher": "Lejebolig.dk",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 215000,
+        "currency": "DKK"
+      },
+      "year": 2026,
+      "description": "Copenhagen International School, Grades 11-12 (IB Diploma) annual tuition 2026-27. One-off fees extra: DKK 40,000 registration and DKK 3,000 application.",
+      "source": {
+        "title": "CIS General & Financial Conditions - Tuition and Fees 2026/2027",
+        "url": "https://www.copenhageninternational.school/wp-content/uploads/2026/02/General-Financial-Conditions-School-Fees-26-27.pdf",
+        "publisher": "Copenhagen International School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Health insurance, housekeeper and price per m² not sourced. Most prime north-Copenhagen family houses are owner-occupied; the rental sample is small."
+  },
+  "markers": [
+    {
+      "name": "Copenhagen",
+      "lon": 12.56553,
+      "lat": 55.67594,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2618425"
+    },
+    {
+      "name": "Aarhus",
+      "lon": 10.21076,
+      "lat": 56.15674,
+      "kind": "city",
+      "coordinate_source": "GeoNames 2624652"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain US-taxed; the US-Denmark treaty has a saving clause. Danish mark-to-market on funds and US PFIC rules can interact badly for US persons holding non-US funds.",
+  "open_questions": [
+    "Announced but unenacted reforms (estate duty 30% above DKK 10m, higher share-income band, capital-tax reform, CIT cut) should be rechecked in 2027.",
+    "Cost-of-living items for Copenhagen not sourced."
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "id": "DMA",
+  "name": "Dominica",
+  "continent": "Caribbean",
+  "region": "Lesser Antilles (Windward Islands)",
+  "currency": "XCD",
+  "researched_on": "2026-10-15",
+  "summary": "Dominica taxes resident individuals on worldwide income at up to 35% (above XCD 80,000 including the XCD 30,000 allowance), so foreign dividends and interest are taxed, with a unilateral foreign tax credit. There is no capital gains, inheritance, estate or wealth tax. Domestic dividends carry a dividend tax credit that largely removes the tax. Residents who are not ordinarily resident are taxed on foreign income only when received in Dominica. Citizenship by investment from USD 200,000.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Resident",
+      "type": "standard",
+      "description": "Resident individuals are taxed on worldwide income; no capital gains tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Physically present at least 183 days in the year (Deloitte; IRD), or otherwise resident under the Income Tax Act definition.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax.",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No capital gains tax (Deloitte 2026; CBIU). Income Tax Act s.33 taxes 'gains or profits' of a business and a residual category; capital gains of an investor are not charged.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Dominica Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Dominica Citizenship by Investment Unit: home page",
+            "url": "https://cbiu.gov.dm/",
+            "publisher": "Government of Dominica, CBIU",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income Tax Act, Chap. 67:01 (Dominica, consolidated; ss. 8, 36, 63-65)",
+            "url": "https://dominica.gov.dm/laws/chapters/chap67-01.pdf",
+            "publisher": "Government of the Commonwealth of Dominica",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "important_exceptions": "Stamp duty on transfers of immovable property: 2.5% paid by the seller and 2% by the buyer (also on sales of shares in companies with more than 50% real property). Additional fees may apply: assurance fund 1%, judicial fee 1%, solicitor's fee up to 2.5% plus 15% VAT. Non-citizens need an alien landholding licence (cost not verified).",
+        "professional_trader": "Gains of a business (e.g. dealing in securities) are business income at up to 35%."
+      },
+      "dividends": {
+        "summary": "Dividends from Dominican companies are included in income but carry a tax credit (s.63): full credit where the marginal rate is 30% or less, otherwise 35% of the net dividend, so domestic dividends are effectively untaxed. Foreign dividends are taxed at up to 35% with credit for foreign tax (lesser of foreign tax and Dominica tax).",
+        "headline_rate": 0.35,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.35,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Bands after the XCD 30,000 resident allowance: 15% next 20,000, 25% next 30,000, 35% above XCD 80,000 (IRD, from 1 January 2018). Domestic: s.63(2) credit offsets the tax. Foreign: top rate 0.35.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Dominica Inland Revenue Division: Current income tax rates",
+            "url": "https://ird.gov.dm/customer-service/current-income-tax-rates",
+            "publisher": "Inland Revenue Division, Commonwealth of Dominica",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income Tax Act, Chap. 67:01 (Dominica, consolidated; ss. 8, 36, 63-65)",
+            "url": "https://dominica.gov.dm/laws/chapters/chap67-01.pdf",
+            "publisher": "Government of the Commonwealth of Dominica",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Dominica Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Dominica Inland Revenue Division: Withholding tax",
+            "url": "https://ird.gov.dm/tax-laws/withholding-tax",
+            "publisher": "Inland Revenue Division, Commonwealth of Dominica",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The Income Tax Act copy used is an older consolidation; later amendments to s.63 (dividend credit) not checked."
+        ],
+        "withholding_outbound": "15% on dividends to non-residents; no WHT on dividends to residents.",
+        "treaty_network": "Only the CARICOM multilateral treaty. No US or EU treaties, so foreign WHT on the portfolio is not reduced; it is creditable unilaterally (ss.64-65).",
+        "important_exceptions": "Resident but not ordinarily resident individuals: foreign-source income is taxed only to the extent received in Dominica (s.8(2))."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "No national property tax; municipal tax paid to city and village councils.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Dominica Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Dominica Citizenship by Investment Unit: home page",
+            "url": "https://cbiu.gov.dm/",
+            "publisher": "Government of Dominica, CBIU",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified"
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax. Transfers of property by gift may bear transfer taxes and fees.",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax. A parent transferring property to a child pays 2% stamp duty on its value; assurance fund (1%) and judicial (1%) fees may also apply (Deloitte 2026).",
+        "gifts_same_as_inheritance": false,
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Dominica Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Dominica Citizenship by Investment Unit: home page",
+            "url": "https://cbiu.gov.dm/",
+            "publisher": "Government of Dominica, CBIU",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Stamp duty and fees when land passes on death."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident: present 183 days or more in the year (Deloitte; IRD); the Act also treats as resident a person present for a continuous period spanning adjacent years. 'Ordinarily resident' individuals are taxed on worldwide income; residents not ordinarily resident only on foreign income received in Dominica.",
+    "routes": [
+      {
+        "name": "Citizenship by investment: Economic Diversification Fund",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Non-refundable USD 200,000 single applicant; USD 250,000 for a main applicant plus up to 3 dependants; USD 25,000 per extra dependant under 18, USD 40,000 per extra dependant 18+. Fees: processing USD 1,000, due diligence USD 7,500 main + USD 4,000 per dependant 16+, naturalisation USD 500 each, interview USD 1,000. Applications only through authorised agents (CBI Regulations 2024).",
+        "minimum_investment": {
+          "amount": 200000,
+          "currency": "USD"
+        }
+      },
+      {
+        "name": "Citizenship by investment: approved real estate",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "USD 200,000 in an approved project, held 3 years (5 if resold to another CBI applicant); government fee USD 100,000 for main applicant + up to 3 dependants.",
+        "minimum_investment": {
+          "amount": 200000,
+          "currency": "USD"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "Dominica CBIU: Economic Diversification Fund",
+        "url": "https://www.cbiu.gov.dm/investment-options/economic-diversification-fund/",
+        "publisher": "Government of Dominica, CBIU",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Dominica CBIU: Real estate investment",
+        "url": "https://www.cbiu.gov.dm/investment-options/real-estate/",
+        "publisher": "Government of Dominica, CBIU",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Dominica Inland Revenue Division: Personal income tax",
+        "url": "https://ird.gov.dm/tax-laws/personal-income-tax",
+        "publisher": "Inland Revenue Division, Commonwealth of Dominica",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "Corporate income tax 25%; branch remittance tax 15%; no CGT; unilateral foreign tax credit; no Pillar Two commitment. 15% WHT on dividends, interest and royalties to non-residents.",
+    "sources": [
+      {
+        "title": "Dominica Inland Revenue Division: Current income tax rates",
+        "url": "https://ird.gov.dm/customer-service/current-income-tax-rates",
+        "publisher": "Inland Revenue Division, Commonwealth of Dominica",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Dominica Highlights 2026 (updated January 2026)",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-dominicahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Roseau (Morne Daniel / outskirts)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 4000,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median of the three priced family houses on Caribbean Paradise Realty's Dominica 'furnished, US$3,000 and up' long-term rental page on 15 Oct 2026: a 4-bedroom, 4.5-bath ocean-view house in Morne Daniel USD 8,000 (tenant pays electricity); a 3-bedroom house with pool near Roseau USD 4,000 (main house; a 1-bedroom lower apartment can be added); a 3-bedroom house with a separate 1-bedroom apartment in Morne Daniel USD 3,500. Only one is a true 4-bedroom house; the other two reach 4 bedrooms only with their annex apartments. Listings undated. Small sample.",
+      "source": {
+        "title": "Caribbean Paradise Realty: Dominica long-term rentals, furnished US$3,000 and up",
+        "url": "https://www.caribbeanparadiserealty.net/highend-rentals.html",
+        "publisher": "Caribbean Paradise Realty",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "International school fee not sourced: no private or international secondary school in Dominica publishes a fee schedule online (re-checked 15 Oct 2026). Purchase price per m2, health insurance and housekeeper not sourced."
+  },
+  "markers": [
+    {
+      "name": "Roseau",
+      "lon": -61.3873,
+      "lat": 15.2992,
+      "kind": "capital",
+      "coordinate_source": "OpenStreetMap node 4950552057"
+    }
+  ],
+  "us_citizen_notes": "US citizens are taxed by the US on worldwide income; Dominica tax on foreign dividends may be creditable in the US. No US-Dominica treaty.",
+  "open_questions": [
+    "2025-2026 CBI changes (regional Eastern Caribbean regulator, harmonised USD 200,000 minimum) not verified on an official page; CBIU news lists no price change in July-September 2026.",
+    "Precise meaning of 'ordinarily resident' for a newly arrived family (definition partly illegible in the scanned Act).",
+    "Private/international secondary school fee for Dominica not sourced: re-checked 15 Oct 2026 including third-party listings (International Schools Database, expat guides): no dated fee schedule for a Dominica private secondary school is published; undated expat-guide ranges were not used. The household cost metric lacks the school component until one is obtained from a school."
+  ]
+}

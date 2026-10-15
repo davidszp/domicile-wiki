@@ -1,0 +1,469 @@
+{
+  "id": "PRI",
+  "name": "Puerto Rico",
+  "continent": "Caribbean",
+  "region": "Greater Antilles (US territory)",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "summary": "Ordinary Puerto Rico residents pay 15% on long-term gains and dividends, and there is no local estate, gift or wealth tax. The draw is the Act 60 resident investor decree: 0% on dividends, interest and post-move gains until 2035 for applications filed by 31 Dec 2026; Act 38-2026 sets 4% until 2055 for later applicants. For US citizens, federal income tax still reaches non-Puerto Rico-source income such as foreign dividends, and US federal estate and gift tax still applies.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence (no decree)",
+      "type": "standard",
+      "description": "Residents are taxed on worldwide income. Long-term capital gains 15%, dividends 15%, progressive rates up to 33% plus a 5% surtax above USD 500,000 on other income.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Domicile in Puerto Rico; presence of 180+ days creates a presumption of residence. Non-US citizens need US immigration status to live in Puerto Rico.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Long-term capital gains (assets held over one year) are taxed at a special 15% rate; short-term gains at ordinary rates up to 33%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Puerto Rico Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-puertoricohighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Puerto Rico, Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/puerto-rico/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.15,
+        "rates": {
+          "listed_securities_domestic": 0.15,
+          "listed_securities_foreign": 0.15,
+          "private_business_sale": 0.15,
+          "real_estate_local": 0.15,
+          "real_estate_foreign": 0.15
+        },
+        "rate_basis": "15% special long-term rate (Deloitte 2026; PwC reviewed 7 Aug 2026). Alternate basic tax may apply in some cases; not modelled.",
+        "holding_period_rules": "More than one year for long-term treatment.",
+        "foreign_assets": "Worldwide basis; foreign taxes (including US federal tax) creditable.",
+        "open_questions": [
+          "Interaction with the alternate basic tax for very large gains not checked."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends are taxed at a flat 15% (withheld at 15% when paid by Puerto Rico companies).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Puerto Rico Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-puertoricohighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Puerto Rico, Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/puerto-rico/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.15,
+        "domestic_rate": 0.15,
+        "foreign_gross_rate": 0.15,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "PwC: dividends flat 15%. Foreign dividends assumed at the same 15% with credit for foreign tax (Deloitte: residents may credit taxes paid to foreign governments and the US).",
+        "withholding_outbound": "15% to individuals; 10% to non-resident companies.",
+        "treaty_network": "Puerto Rico has no tax treaties; it is outside US treaties for most purposes.",
+        "open_questions": [
+          "Whether foreign (non-PR) dividends qualify for the 15% flat rate or are taxed at ordinary rates was not confirmed in a primary source."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Puerto Rico, Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/puerto-rico/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Puerto Rico Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-puertoricohighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Municipal real property tax on 1957/1958 assessed values (roughly 8%-12.3% of that historical value per Deloitte); personal property tax applies to business property."
+      },
+      "inheritance": {
+        "summary": "Puerto Rico levies no inheritance, estate or gift tax of its own (Deloitte 2026). US citizens living in Puerto Rico remain within the US federal estate and gift tax (the app adds this layer); see us_citizen_notes.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Puerto Rico Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-puertoricohighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "26 U.S. Code § 2209 - Certain residents of possessions considered nonresidents not citizens",
+            "url": "https://www.law.cornell.edu/uscode/text/26/2209",
+            "publisher": "Legal Information Institute (Cornell)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No Puerto Rico gift tax.",
+        "gifts_same_as_inheritance": true,
+        "domicile_rules": "US citizens: federal estate/gift tax applies on worldwide assets unless IRC §2209 applies (citizenship acquired solely through birth/residence in a possession), which is not the case for mainland-born arrivals.",
+        "open_questions": [
+          "Puerto Rico statute repealing the local estate and gift tax was not opened; relies on Deloitte."
+        ]
+      }
+    },
+    {
+      "id": "act60_iri_0pct",
+      "name": "Act 60 Individual Resident Investor (application filed by 31 Dec 2026)",
+      "type": "special",
+      "description": "Decree under Chapter 2 of Act 60-2019 (ex Act 22): 0% Puerto Rico tax on interest, dividends and on capital gains accrued after becoming resident, until 31 Dec 2035. Pre-move gains: 5% if recognised 10+ years after moving, otherwise ordinary rules.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Application must reach DDEC by 31 Dec 2026, 11:59 pm. Applicant must not have been a Puerto Rico resident between 17 Jan 2006 and 17 Jan 2012. Buy a primary residence in Puerto Rico within two years of the decree. Annual USD 10,000 donation to Puerto Rico nonprofits, annual report and fees. Background check. Must become a bona fide Puerto Rico resident.",
+      "duration_years": 9,
+      "capital_gains": {
+        "summary": "Post-move capital gains: 0% Puerto Rico tax until 31 Dec 2035. Appreciation accrued before the move: 5% if recognised after 10 years of residence (by 2035), otherwise taxed under the normal rules (15%).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "DDEC Informative Bulletin No. 2026-004: Clarifications and FAQs regarding amendments enacted under Act No. 38-2026",
+            "url": "https://docs.pr.gov/files/DDEC/Aviso%20Pu%CC%81blico/Informative%20Bulletin%20DDEC%20NO.%202026-004%20Final.pdf",
+            "publisher": "Department of Economic Development and Commerce of Puerto Rico (DDEC)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Puerto Rico individual resident investor tax benefits extended through 2055",
+            "url": "https://www.dlapiper.com/insights/publications/2026/03/puerto-rico-individual-resident-investor-tax-benefits-extended-through-2055",
+            "publisher": "DLA Piper",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Puerto Rico Extends Act 60 Resident Investor Program to 2055 and Introduces New 4% Tax Regime",
+            "url": "https://www.procopio.com/resource/puerto-rico-extends-act-60-resident-investor-program",
+            "publisher": "Procopio",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": null,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Act 60 §2022.01(a) as described in DDEC Bulletin 2026-004 and DLA Piper (Mar 2026). Rates are for gains accrued after residency; real estate left null because whether Puerto Rico real estate gains are covered was not verified.",
+        "important_exceptions": "Pre-residency built-in gains are not exempt (5% after 10 years, otherwise 15%).",
+        "open_questions": [
+          "Whether the exemption extends to gains on Puerto Rico real estate and on private business interests in all cases."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends and interest: 0% Puerto Rico tax until 31 Dec 2035.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "DDEC Informative Bulletin No. 2026-004: Clarifications and FAQs regarding amendments enacted under Act No. 38-2026",
+            "url": "https://docs.pr.gov/files/DDEC/Aviso%20Pu%CC%81blico/Informative%20Bulletin%20DDEC%20NO.%202026-004%20Final.pdf",
+            "publisher": "Department of Economic Development and Commerce of Puerto Rico (DDEC)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Puerto Rico individual resident investor tax benefits extended through 2055",
+            "url": "https://www.dlapiper.com/insights/publications/2026/03/puerto-rico-individual-resident-investor-tax-benefits-extended-through-2055",
+            "publisher": "DLA Piper",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Act 60 §2022.02(b) total exemption (DDEC Bulletin 2026-004).",
+        "withholding_outbound": "As standard."
+      },
+      "sources": [
+        {
+          "title": "DDEC Informative Bulletin No. 2026-004: Clarifications and FAQs regarding amendments enacted under Act No. 38-2026",
+          "url": "https://docs.pr.gov/files/DDEC/Aviso%20Pu%CC%81blico/Informative%20Bulletin%20DDEC%20NO.%202026-004%20Final.pdf",
+          "publisher": "Department of Economic Development and Commerce of Puerto Rico (DDEC)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Puerto Rico individual resident investor tax benefits extended through 2055",
+          "url": "https://www.dlapiper.com/insights/publications/2026/03/puerto-rico-individual-resident-investor-tax-benefits-extended-through-2055",
+          "publisher": "DLA Piper",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Act 60 Amendment 2026: Act 38-2026 Explained",
+          "url": "https://lawyerinpr.com/act-60-amendment-2026-act-38-2026-filing-deadline/",
+          "publisher": "lawyerinpr.com",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "act60_iri_4pct",
+      "name": "Act 60 Individual Resident Investor, 4% track (Act 38-2026)",
+      "type": "special",
+      "description": "For applications filed from 1 Jan 2027 (or by election for earlier applicants): 4% fixed Puerto Rico rate on interest, dividends and post-move capital gains until 31 Dec 2055.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Not a Puerto Rico resident in the 6 years before relocating; primary residence owned directly (individual, with spouse, or grantor trust) and recorded in the Property Registry; annual donation and report. Act 38-2026 enacted 10 Mar 2026; law-firm reports in spring 2026 said endorsement by the Financial Oversight and Management Board was still pending; the Board's documents library (checked 15 Oct 2026) lists no letter on Act 38-2026, while DDEC Informative Bulletin 2026-004 (24 Apr 2026) applies the Act as in force.",
+      "duration_years": 29,
+      "capital_gains": {
+        "summary": "Post-move gains 4%; pre-move gains 5% if recognised after 10 years of residence.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "DDEC Informative Bulletin No. 2026-004: Clarifications and FAQs regarding amendments enacted under Act No. 38-2026",
+            "url": "https://docs.pr.gov/files/DDEC/Aviso%20Pu%CC%81blico/Informative%20Bulletin%20DDEC%20NO.%202026-004%20Final.pdf",
+            "publisher": "Department of Economic Development and Commerce of Puerto Rico (DDEC)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Puerto Rico individual resident investor tax benefits extended through 2055",
+            "url": "https://www.dlapiper.com/insights/publications/2026/03/puerto-rico-individual-resident-investor-tax-benefits-extended-through-2055",
+            "publisher": "DLA Piper",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Puerto Rico Extends Act 60 Resident Investor Program to 2055 and Introduces New 4% Tax Regime",
+            "url": "https://www.procopio.com/resource/puerto-rico-extends-act-60-resident-investor-program",
+            "publisher": "Procopio",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "headline_rate": 0.04,
+        "rates": {
+          "listed_securities_domestic": 0.04,
+          "listed_securities_foreign": 0.04,
+          "private_business_sale": 0.04,
+          "real_estate_local": null,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Act 60 §2022.01(b) as amended by Act 38-2026 (DDEC Bulletin 2026-004).",
+        "open_questions": [
+          "FOMB position on Act 38-2026 not found: no Board letter on the Act appears in its documents library as of 15 Oct 2026 (latest Act 60-related letters there date from 2022). DDEC treats the Act as in force (Bulletin 2026-004). A PROMESA s.204 challenge remains a theoretical risk."
+        ]
+      },
+      "dividends": {
+        "summary": "Dividends and interest 4% until 2055.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "DDEC Informative Bulletin No. 2026-004: Clarifications and FAQs regarding amendments enacted under Act No. 38-2026",
+            "url": "https://docs.pr.gov/files/DDEC/Aviso%20Pu%CC%81blico/Informative%20Bulletin%20DDEC%20NO.%202026-004%20Final.pdf",
+            "publisher": "Department of Economic Development and Commerce of Puerto Rico (DDEC)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Puerto Rico individual resident investor tax benefits extended through 2055",
+            "url": "https://www.dlapiper.com/insights/publications/2026/03/puerto-rico-individual-resident-investor-tax-benefits-extended-through-2055",
+            "publisher": "DLA Piper",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "headline_rate": 0.04,
+        "domestic_rate": 0.04,
+        "foreign_gross_rate": 0.04,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Act 60 §2022.02(d) 4% fixed rate (DDEC Bulletin 2026-004).",
+        "open_questions": [
+          "Whether foreign tax credits are available against the 4% rate."
+        ]
+      },
+      "sources": [
+        {
+          "title": "DDEC Informative Bulletin No. 2026-004: Clarifications and FAQs regarding amendments enacted under Act No. 38-2026",
+          "url": "https://docs.pr.gov/files/DDEC/Aviso%20Pu%CC%81blico/Informative%20Bulletin%20DDEC%20NO.%202026-004%20Final.pdf",
+          "publisher": "Department of Economic Development and Commerce of Puerto Rico (DDEC)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Puerto Rico individual resident investor tax benefits extended through 2055",
+          "url": "https://www.dlapiper.com/insights/publications/2026/03/puerto-rico-individual-resident-investor-tax-benefits-extended-through-2055",
+          "publisher": "DLA Piper",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Financial Oversight and Management Board for Puerto Rico: Documents library",
+          "url": "https://oversightboard.pr.gov/documents/",
+          "publisher": "Financial Oversight and Management Board for Puerto Rico",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Domicile; 180+ days in a calendar year raises a presumption of residence (Deloitte 2026). For US federal purposes, bona fide residence under IRC §937 (presence, tax home, closer connection) is needed for the §933 exclusion.",
+    "routes": [
+      {
+        "name": "US citizens: free movement",
+        "citizenships": [
+          "US"
+        ],
+        "requirements": "No immigration permission needed."
+      },
+      {
+        "name": "Non-US citizens: US immigration status",
+        "citizenships": [
+          "EU",
+          "OTHER"
+        ],
+        "requirements": "Puerto Rico follows US immigration law: a visa or green card is needed. A green card makes the holder a US tax resident; see open questions."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Puerto Rico Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-puertoricohighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "26 U.S. Code § 933 - Income from sources within Puerto Rico",
+        "url": "https://www.law.cornell.edu/uscode/text/26/933",
+        "publisher": "Legal Information Institute (Cornell)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.185,
+    "summary": "Base CIT 18.5% plus graduated surcharge 5%-19% (top combined 37.5%); branch profits tax 10%; dividends to non-resident companies 10% WHT. Act 60 export services decrees offer 4% CIT (not researched in detail).",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Puerto Rico Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-puertoricohighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "San Juan (Dorado / Condado)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 5235,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Puerto Rico-wide average monthly rent for 4+ bedroom condos and townhouses in Global Property Guide's Q3 2026 survey (purchase price USD 760,000). Same survey: Condado-Miramar 3-bedroom USD 4,995. Gated Dorado Beach / Dorado estates were not sampled and rent for considerably more, so this understates a prime family home.",
+      "source": {
+        "title": "Global Property Guide: Puerto Rico rental yields (Q3 2026)",
+        "url": "https://www.globalpropertyguide.com/latin-america/puerto-rico/rental-yields",
+        "publisher": "Global Property Guide",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 21167,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Baldwin School of Puerto Rico (Guaynabo, IB), grade 12, 2026-27: tuition USD 20,017 plus annual per-student enrollment (USD 400), technology (USD 500) and class (USD 250) fees. Excluded: building and campus fee USD 3,000 per household per year, one-time initial enrollment fee USD 4,000 per household.",
+      "source": {
+        "title": "Baldwin School of Puerto Rico: Tuition and registration fees, 2026-27 academic year (PDF linked from the school's Tuition & Fees page)",
+        "url": "https://drive.google.com/file/d/1NDj6x-PAu8QWuszaX49_rImzLPBtok-7/view",
+        "publisher": "Baldwin School of Puerto Rico",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Price per m2, health insurance and housekeeper not sourced. The rent figure is a Puerto Rico-wide average for large condos, not Dorado villas."
+  },
+  "markers": [
+    {
+      "name": "San Juan",
+      "lon": -66.06388889,
+      "lat": 18.40638889,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q41211 (via en.wikipedia)"
+    }
+  ],
+  "us_citizen_notes": "Puerto Rico is the one place where a US citizen can reduce US federal income tax by moving. A bona fide Puerto Rico resident excludes Puerto Rico-source income from US gross income (IRC §933). Gains on securities sold by a bona fide resident are generally Puerto Rico-source for appreciation after the move (IRC §865/§937 regulations; gains accrued in the 10 years before the move are treated as US-source - not re-verified here). Dividends and interest from US or foreign companies are NOT Puerto Rico-source, so they remain fully US-taxed even with an Act 60 decree. US federal estate and gift tax continues to apply to mainland-born US citizens: IRC §2209 treats a possession resident as a non-citizen only if citizenship came solely from the possession. The IRS has an active compliance campaign on Act 60 residency claims.",
+  "open_questions": [
+    "FOMB endorsement status of Act 38-2026: no Board letter or statement on the Act found in its documents library (checked 2026-10-15); DDEC applies it as in force.",
+    "Tax position of non-US citizens (EU/OTHER) living in Puerto Rico under US immigration status (green card makes them US tax residents) not modelled; Act 60 is designed for US citizens.",
+    "Source rules for pre-move gains (IRC §937 regulations) not re-verified in this pass."
+  ]
+}

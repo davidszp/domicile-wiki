@@ -1,0 +1,299 @@
+{
+  "id": "BMU",
+  "name": "Bermuda",
+  "continent": "Caribbean",
+  "region": "North Atlantic",
+  "currency": "BMD",
+  "researched_on": "2026-10-15",
+  "summary": "Bermuda has no personal income, capital gains, dividend or wealth tax. It does levy stamp duty on the estates of deceased persons, but only on property situated in Bermuda (Bermuda real estate, local-currency deposits, shares in Bermuda companies outside the exemptions): first BMD 100,000 nil, then 5.25%, 10.5%, 15.75% and 21% above BMD 2 million. A portfolio of foreign securities held abroad is outside the charge. Gifts of Bermuda property bear stamp duty of 2.1%-7.35%. Since 2025 a 15% corporate income tax applies to Bermuda entities of multinational groups with revenue of EUR 750 million or more.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary residence",
+      "type": "standard",
+      "description": "No income or capital gains tax on individuals; estate stamp duty on Bermuda-situs property.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Lawful residents; non-Bermudians need a Residential Certificate or work permit. Property ownership by non-Bermudians requires a licence.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax for individuals.",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Neither resident nor non-resident individuals pay income, withholding or capital gains tax (Deloitte 2026; PwC 2026).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Bermuda, Individual - Taxes on personal income (last reviewed 19 February 2026)",
+            "url": "https://taxsummaries.pwc.com/bermuda/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Bermuda Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bermudahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Government of Bermuda: Stamp duty tax on legal transactions",
+            "url": "https://www.gov.bm/articles/stamp-duty-tax-legal-transactions",
+            "publisher": "Government of Bermuda",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "important_exceptions": "Stamp duty on conveyances on sale of Bermuda land (marginal): 2.1% on first BMD 100,000, 3.15% next 400,000, 4.2% next 500,000, 6.3% to BMD 1.5m, 7.35% above (Stamp Duties Act Head 14). First-time homeowners exempt on first BMD 1 million (2023). Non-Bermudian buyers also need a licence to acquire land (fees not researched)."
+      },
+      "dividends": {
+        "summary": "No tax on dividends.",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No income tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Bermuda, Individual - Taxes on personal income (last reviewed 19 February 2026)",
+            "url": "https://taxsummaries.pwc.com/bermuda/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Bermuda Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bermudahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "withholding_outbound": "No withholding taxes on dividends, interest or royalties.",
+        "treaty_network": "No comprehensive income tax treaties; TIEAs and a limited US convention (insurance, mutual assistance). US/EU withholding on portfolio dividends is not reduced."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Annual land tax on annual rental value (ARV), progressive for private dwellings (0.8% to 55% of ARV by band); commercial 9.5%. Foreign currency purchase tax 1.25% on foreign currency bought from local banks by residents.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Bermuda Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bermudahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified"
+      },
+      "inheritance": {
+        "summary": "Stamp duty on the affidavit of value of a deceased's estate, charged only on property situated in Bermuda: first BMD 100,000 nil, next 100,000 at 5.25%, next 800,000 at 10.5%, next 1,000,000 at 15.75%, balance at 21% (marginal; rates from 1 April 2023). Foreign securities and foreign-currency bank deposits are outside the charge.",
+        "basis": "estate",
+        "children_treatment": "taxed",
+        "exemption": 100000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0525
+          },
+          {
+            "from_amount": 100000,
+            "rate": 0.105
+          },
+          {
+            "from_amount": 900000,
+            "rate": 0.1575
+          },
+          {
+            "from_amount": 1900000,
+            "rate": 0.21
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax as such, but a conveyance operating as a voluntary disposition inter vivos bears stamp duty (Head 17): Bermuda property 2.1%/3.15%/4.2%/6.3%/7.35% marginal bands as for sales; property that is not Bermuda property 1.05% where a dutiable instrument arises. Settlements on trust fall under Head 40.",
+        "gifts_same_as_inheritance": false,
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Stamp Duties Act 1976 (consolidated), s.47 and Schedule Heads 2, 14 and 17",
+            "url": "https://www.bermudalaws.bm/Laws/Consolidated%20Law/1976/Stamp%20Duties%20Act%201976",
+            "publisher": "Government of Bermuda (Bermuda Laws Online)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Government of Bermuda: How to probate an estate in Bermuda",
+            "url": "https://www.gov.bm/articles/how-probate-estate-bermuda",
+            "publisher": "Government of Bermuda",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Bermuda Highlights 2026 (updated January 2026)",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bermudahighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Whether a transfer of foreign listed securities by a Bermuda resident through a foreign broker creates a Bermuda instrument chargeable at 1.05% (Head 17(ii)) in practice."
+        ],
+        "exemptions_thresholds": "First BMD 100,000 of the net Bermuda estate. Deductions: legacies to a surviving spouse; the designated primary family homestead (only for owners with Bermudian status, s.47A); debts.",
+        "foreign_assets": "s.47(2)(b): 'property' means real and personal property situated in Bermuda. Excluded (s.47(3)): foreign-currency deposits with Bermuda banks, securities of exempted undertakings, non-BMD Bermuda fund units, and foreign securities/land held through a qualifying Bermuda personal holding company (≤5 individual owners, ≥75% securities/foreign land). A family portfolio held abroad is not charged; the main exposure is a Bermuda home (the homestead deduction needs Bermudian status).",
+        "domicile_rules": "The charge depends on situs, not domicile; domicile only affects deduction of foreign debts (s.48(2)) and inclusion of life insurance.",
+        "important_exceptions": "Probate application fee BMD 250 for estates over BMD 200,000, plus small oath/affidavit fees (other cost treated as 0). Duty payable within 90 days of the grant or resealing.",
+        "regional_differences": "None.",
+        "scope": "local_assets_only"
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No income tax, so no tax residence test.",
+    "routes": [
+      {
+        "name": "Economic Investment and Residential Certificate (EIRC)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Invest at least USD/BMD 2.5 million in qualifying Bermuda categories (existing or new business, real estate; government bonds removed June 2024) for residency rights for the investor, spouse and minor dependants. 2026 Policy (end of September 2026): minimum BMD 25,000 charitable donation, BMD 10,000 BDA application fee, enhanced due diligence and risk-rating. Residential Certificate fee BMD 2,755. No permanent residence route stated.",
+        "minimum_investment": {
+          "amount": 2500000,
+          "currency": "BMD"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "Government of Bermuda: Economic Investment Certificate / Residential Certificate",
+        "url": "https://www.gov.bm/services/economic-investment-certificate-residential-certificate",
+        "publisher": "Government of Bermuda",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Government of Bermuda: Government updates investment options for Economic Investment and Residential Certificates (9 June 2024)",
+        "url": "https://www.gov.bm/news/government-updates-investment-options-economic-investment-and-residential-certificates",
+        "publisher": "Government of Bermuda",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Government of Bermuda: Updates to Bermuda's Economic Investment Residential Certificate programme (2 October 2026)",
+        "url": "https://www.gov.bm/news/updates-to-bermudas-economic-investment-residential-certificate-programme",
+        "publisher": "Government of Bermuda",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.0,
+    "summary": "No tax on profits for ordinary Bermuda companies; exempted undertakings hold tax assurance certificates to 31 March 2035. Corporate Income Tax Act 2023 (law since 27 December 2023): 15% CIT for fiscal years beginning on or after 1 January 2025, only for Bermuda entities of MNE groups with annual revenue of EUR 750 million or more (GloBE-style base; no IIR/UTPR). cit_rate recorded as 0 because a family holding or family-office company is outside scope. Payroll tax (employee portion 0.5%-12.5% marginal, 2025/26) and land tax apply.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Bermuda, Corporate - Taxes on corporate income (last reviewed 19 February 2026)",
+        "url": "https://taxsummaries.pwc.com/bermuda/corporate/taxes-on-corporate-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries: Bermuda, Corporate - Other taxes (land tax, payroll tax)",
+        "url": "https://taxsummaries.pwc.com/bermuda/corporate/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Deloitte International Tax: Bermuda Highlights 2026 (updated January 2026)",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-bermudahighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Hamilton",
+      "lon": -64.7853,
+      "lat": 32.2943,
+      "kind": "capital",
+      "coordinate_source": "OpenStreetMap relation 2833628 (centroid)"
+    },
+    {
+      "name": "Hamilton financial centre",
+      "lon": -64.7853,
+      "lat": 32.2943,
+      "kind": "financial_centre",
+      "coordinate_source": "OpenStreetMap relation 2833628 (centroid)"
+    }
+  ],
+  "us_citizen_notes": "US citizens stay subject to US federal tax on worldwide income, gains and estate; with no local income tax there is no local tax to credit, so the US layer applies in full. No income tax treaty with the US. Bermuda estate stamp duty on Bermuda-situs property may be creditable against US estate tax under IRC s.2014; not verified.",
+  "open_questions": [
+    "Fees for licences to acquire land by non-Bermudians and the minimum ARV thresholds for restricted persons not researched.",
+    "No indicator overrides: Bermuda is in the World Bank/WGI data (homicide 2023, internet users 2017, life expectancy 2024). UNDP publishes no HDI and TI no CPI for Bermuda; there is no same-definition substitute, so the hdi and corruption composites stay unscored."
+  ],
+  "cost_of_living": {
+    "city": "Hamilton / Paget-Warwick (Bermuda)",
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 27820,
+        "currency": "BMD"
+      },
+      "year": 2026,
+      "description": "Saltus Grammar School, annual tuition 2026-27 paid in one instalment (two-, three- and ten-payment plans cost 28,260-28,720). The page gives a single figure, not a per-grade table. Amounts shown in $ (BMD at par with USD).",
+      "source": {
+        "title": "Saltus Grammar School: Tuition at Saltus (2026-27)",
+        "url": "https://www.saltus.bm/admissions/tuition-at-saltus",
+        "publisher": "Saltus Grammar School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Purchase price per m2, health insurance and housekeeper not sourced. Coldwell Banker Bermuda's own rental list on 15 Oct 2026 had no 4+ bedroom home.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 16750,
+        "currency": "BMD"
+      },
+      "year": 2026,
+      "description": "Median of the four priced 4-5 bedroom houses offered on long lets among the 49 residential rentals on propertyskipper (Bermuda's main property portal, listings from all agencies) on 15 Oct 2026: Gilbert Hill, Smith's (4 bed) 13,500; Fen Gables, Devonshire (4 bed, unfurnished) 15,500; St Helier's, Paget (4 bed, unfurnished) 18,000; Soundwinds, Hamilton Parish (5 bed, furnished, 1.3 acres) 25,000 a month. Excluded: Buckingham, Southampton (5 bed, 14,000 a month but only for November 2026-June 2027; with it the median is 15,500) and three price-on-application listings. Amounts in $ (BMD at par with USD).",
+      "source": {
+        "title": "propertyskipper: Properties to rent in Bermuda (residential)",
+        "url": "https://www.propertyskipper.com/properties/all/tender_type/rental/property_type/residential",
+        "publisher": "propertyskipper",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  }
+}

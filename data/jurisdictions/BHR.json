@@ -1,0 +1,262 @@
+{
+  "id": "BHR",
+  "name": "Bahrain",
+  "continent": "Middle East",
+  "region": "Gulf (GCC)",
+  "currency": "BHD",
+  "researched_on": "2026-10-15",
+  "summary": "No personal income tax, no capital gains tax, no tax on dividends or interest, no wealth tax and no inheritance or estate tax. No general corporate tax (46% on oil and gas; 15% DMTT for MNE groups with EUR 750m+ revenue from 2025). VAT 10%. Real estate transfers carry 2% stamp duty (1.7% if paid within two months). About 50 treaties, none with the US.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Bahrain tax residence",
+      "type": "standard",
+      "description": "No personal taxes on income, gains, wealth or estates.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any legal resident.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax for individuals on any asset.",
+        "exemptions_thresholds": "",
+        "important_exceptions": "Real estate transfers bear 2% stamp duty (1.7% if paid within two months), a transaction cost rather than a gains tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Bahrain - Individual - Taxes on personal income (last reviewed 26 Jul 2026)",
+            "url": "https://taxsummaries.pwc.com/bahrain/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Bahrain - Corporate - Taxes on corporate income (last reviewed 26 Jul 2026)",
+            "url": "https://taxsummaries.pwc.com/bahrain/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No PIT regime (PwC); no general taxes on income, sales, capital gains or estates (PwC corporate).",
+        "professional_trader": "No risk: there is no income tax on individuals or general corporate tax.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Not taxed."
+      },
+      "dividends": {
+        "summary": "No tax on dividends.",
+        "important_exceptions": "",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Bahrain - Individual - Taxes on personal income (last reviewed 26 Jul 2026)",
+            "url": "https://taxsummaries.pwc.com/bahrain/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Bahrain - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/bahrain/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No PIT regime; income not paid in Bahrain is outside local tax.",
+        "withholding_outbound": "No WHT on dividends, interest or royalties.",
+        "treaty_network": "About 50 treaties in force (PwC); no treaty with the United States, so US dividends held directly bear 30% US WHT.",
+        "holding_company_notes": ""
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Bahrain - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/bahrain/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "No general property tax. A 10% municipality tax applies to rent on property let to expatriates (paid by the owner); this is a rental levy, not a wealth tax."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax.",
+        "exemptions_thresholds": "No tax, so no thresholds.",
+        "important_exceptions": "Succession, not tax, is the issue: personal status (family) law based on Sharia governs inheritance of Muslims, with fixed shares (a son typically takes twice a daughter's share) and at most one third freely disposable by will to non-heirs. How estates of non-Muslim foreigners are handled (home-country law, own religious rules, or Sharia by default) was not verified for this country; non-Muslim families should take local legal advice and hold portfolio assets outside the country or through a structure with a clear governing law.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Bahrain - Corporate - Taxes on corporate income (last reviewed 26 Jul 2026)",
+            "url": "https://taxsummaries.pwc.com/bahrain/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Bahrain - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/bahrain/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "PwC confirms no general tax on estates; a dedicated statement on gift tax was not found (no gift tax is believed to exist).",
+          "Treatment of non-Muslim foreigners' estates under Bahraini family law not verified."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Not needed (no tax).",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "No tax on any asset.",
+        "domicile_rules": "Not relevant for tax."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No personal income tax, so tax residence is not defined for PIT purposes (PwC). Treaty residence certificates are issued by the National Bureau for Revenue (procedure not verified).",
+    "routes": [
+      {
+        "name": "Golden Residency (property or wealth)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "10-year renewable residency for property owners and holders of substantial assets; thresholds (commonly reported as BHD 200,000 property) could not be verified because the official NPRA page was unreachable."
+      },
+      {
+        "name": "Employment / investor residence",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Residence permit via an employer or a Bahraini company (100% foreign ownership allowed in most sectors; not verified here)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bahrain - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/bahrain/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.0,
+    "summary": "No general corporate income tax. 46% tax on oil and gas profits. 15% Domestic Minimum Top-up Tax for MNE groups with EUR 750m+ consolidated revenue, financial years from 1 January 2025. No WHT on dividends, interest or royalties. VAT 10%.",
+    "sources": [
+      {
+        "title": "Bahrain - Corporate - Taxes on corporate income (last reviewed 26 Jul 2026)",
+        "url": "https://taxsummaries.pwc.com/bahrain/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Bahrain - Corporate - Other taxes (VAT, stamp duty, municipality tax)",
+        "url": "https://taxsummaries.pwc.com/bahrain/corporate/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Bahrain - Corporate - Withholding taxes",
+        "url": "https://taxsummaries.pwc.com/bahrain/corporate/withholding-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Manama",
+      "lon": 50.58565,
+      "lat": 26.22787,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 290340"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed; no Bahrain-US income tax treaty.",
+  "open_questions": [
+    "Golden Residency thresholds unverified."
+  ],
+  "cost_of_living": {
+    "city": "Manama area (Saar, Janabiya, Amwaj)",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 1350,
+        "currency": "BHD"
+      },
+      "year": 2026,
+      "description": "Median monthly asking rent of the 27 four- and five-bedroom villas on page 1 of Property Finder Bahrain results (1,813 listings) on 15 Oct 2026, mostly Saar, Janabiya, Hamala and Amwaj (range BHD 500-3,600; mean 1,397). Asking prices, not contract rents; mostly unfurnished.",
+      "source": {
+        "title": "4-5 bedroom villas for rent in Bahrain",
+        "url": "https://www.propertyfinder.bh/en/rent/villas-for-rent.html?bdr[]=4&bdr[]=5",
+        "publisher": "Property Finder Bahrain",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 9081,
+        "currency": "BHD"
+      },
+      "year": 2026,
+      "description": "The British School of Bahrain, Year 13 annual tuition 2026/27 (Year 12: BHD 8,991; Years 10-11: BHD 7,092) plus BHD 40 EdTech fee; one-off registration BHD 250.",
+      "source": {
+        "title": "The British School of Bahrain - Fees 2026/27",
+        "url": "https://www.britishschoolbahrain.com/admissions/fees",
+        "publisher": "The British School of Bahrain",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "St Christopher's School fee page refused access (403). Purchase prices, health insurance and housekeeper costs not sourced."
+  }
+}

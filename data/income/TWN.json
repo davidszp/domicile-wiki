@@ -1,0 +1,242 @@
+{
+  "id": "TWN",
+  "name": "Taiwan",
+  "currency": "TWD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Resident individuals pay progressive tax of 5% to 40% (top rate above TWD 4.98m), plus an alternative minimum tax. Employees' own social insurance is small: labor insurance 2.3%, employment insurance 0.2% (both capped at TWD 45,800 monthly insured salary) and national health insurance about 1.55% (insured-salary cap TWD 313,000). The Employment Gold Card exempts 50% of salary above TWD 3m for up to five years.",
+    "tax_year": "2025",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.05
+      },
+      {
+        "from_amount": 590000,
+        "rate": 0.12
+      },
+      {
+        "from_amount": 1330000,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 2660000,
+        "rate": 0.3
+      },
+      {
+        "from_amount": 4980000,
+        "rate": 0.4
+      }
+    ],
+    "personal_allowance": 228000,
+    "employee_social_security_rate": 0.01551,
+    "employee_social_security_cap": 3756000,
+    "self_employed_social_security_rate": 0.01551,
+    "self_employed_social_security_cap": 3756000,
+    "self_employed_notes": "Self-employed contribution rules (occupational union, higher NHI share) could not be found on any opened page (NHI and Bureau of Labor Insurance pages returned 403/404), so the self-employed rate is a PLACEHOLDER equal to the employee NHI share and is not verified; the real cost is probably higher because the employer's share falls on the self-employed person.",
+    "local_tax_note": "No local income tax. Rates are for the 2025 return (filed 2026), the latest on PwC (page reviewed 20 August 2026); 2026 rates were not published. Allowance = personal exemption TWD 97,000 + standard deduction TWD 131,000 for a single filer; employees also get a salary special deduction of TWD 218,000 (not included). Alternative minimum tax: 20% on income above TWD 7.5m, payable if higher. Employee social insurance: labor insurance 11.5% x 20% = 2.3% and employment insurance 1% x 20% = 0.2% on insured salary up to TWD 45,800 a month (about TWD 1,145 a month), plus NHI 5.17% x 30% = 1.551% on insured salary up to TWD 313,000 a month; the recorded 1.551% rate and TWD 3,756,000 annual cap cover only NHI, so labor and employment insurance (small, capped) are excluded. Foreigners cannot join the labor pension.",
+    "sources": [
+      {
+        "title": "Taiwan - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/taiwan/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Taiwan - Deductions",
+        "url": "https://taxsummaries.pwc.com/taiwan/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Taiwan - Other taxes",
+        "url": "https://taxsummaries.pwc.com/taiwan/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Employer costs in Taiwan 2026: labor insurance and more",
+        "url": "https://slasify.com/en/blog/employer-costs-in-taiwan-2026",
+        "publisher": "Slasify",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Taiwan - Residence",
+        "url": "https://taxsummaries.pwc.com/taiwan/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Self-employed social insurance rates not found.",
+      "Labor and employment insurance (max about TWD 1,145 a month) excluded from the employee rate; NHI cap of TWD 313,000 from a payroll blog (PwC says only 'various caps').",
+      "2026 tax-year brackets/allowances not yet published; 2025 figures used.",
+      "Deductibility of NHI premiums (the recorded 1.551%) not established: PwC deductions page mentions only labour and group insurance premiums (TWD 24,000 a person, itemised deductions)."
+    ],
+    "social_security_deductible": null,
+    "employment_deduction": {
+      "schedule": [
+        {
+          "from_amount": 0,
+          "rate": 1.0
+        }
+      ],
+      "base": 0,
+      "minimum": 0,
+      "maximum": 218000,
+      "note": "Salary special deduction of up to TWD 218,000 a person (or the salary if lower).",
+      "source": {
+        "title": "Taiwan - Deductions",
+        "url": "https://taxsummaries.pwc.com/taiwan/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "regimes": [
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "verification": "partially_verified",
+      "open_questions": [
+        "KPMG alert dates from 2023; conditions may have changed.",
+        "Whether the incentive applies to self-employment income (the text says 'salary') is not confirmed; applies_to is employment only."
+      ],
+      "id": "employment_gold_card_tax",
+      "name": "Employment Gold Card: 50% exemption on salary above TWD 3m",
+      "kind": "expat_regime",
+      "description": "Gold Card holders working in Taiwan for the first time may apply for a 50% exemption on annual salary above TWD 3 million for the first 5 years (Gold Card site); KPMG adds that the holder must reside more than 183 days in the year and not have been a Taiwan tax resident in the five prior years, and that the exempt portion is excluded from the AMT. exemption_threshold is TWD 3,000,000: only salary above it is 50% exempt. The card itself lets a professional stay and work 1 to 3 years with no sponsor or job offer.",
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 5,
+      "duration_note": "Five years of tax incentive; card issued for 1 to 3 years and presumably renewed (renewal not verified). Exemption applies only to the part of salary above TWD 3m, so there is no minimum income to qualify for the card's tax benefit.",
+      "treatment": "partial_exemption",
+      "flat_rate": null,
+      "exempt_share": 0.5,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Taiwan Employment Gold Card - About",
+          "url": "https://goldcard.nat.gov.tw/en/about/",
+          "publisher": "National Development Council, Taiwan",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "KPMG Flash Alert 2023-085: Taiwan Employment Gold Card tax incentive",
+          "url": "https://kpmg.com/xx/en/our-insights/gms-flash-alert/flash-alert-2023-085.html",
+          "publisher": "KPMG",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "exemption_threshold": {
+        "amount": 3000000,
+        "currency": "TWD"
+      }
+    },
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "verification": "partially_verified",
+      "open_questions": [
+        "Taxation of foreign-source income of residents (overseas income basic tax) not found on opened pages; only a 183-day residence test was confirmed."
+      ],
+      "id": "nomad_none",
+      "name": "No digital nomad visa (Gold Card is the nearest route)",
+      "kind": "other",
+      "description": "No digital nomad visa was found. Foreigners staying 183 days or more in a calendar year are tax residents; the Gold Card needs no sponsor and is the route for independent professionals. Resident status taxes income per the normal regime.",
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 3,
+      "duration_note": "Gold Card lasts 1 to 3 years.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Taiwan Employment Gold Card - About",
+          "url": "https://goldcard.nat.gov.tw/en/about/",
+          "publisher": "National Development Council, Taiwan",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Taiwan - Residence",
+          "url": "https://taxsummaries.pwc.com/taiwan/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low"
+    }
+  ],
+  "costs": {
+    "city": "Taipei (Da'an / Xinyi)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 32250,
+        "currency": "TWD"
+      },
+      "year": 2026,
+      "description": "Numbeo average for a city-centre 1-bedroom apartment in Taipei (range TWD 18,000-65,000), updated 4 Oct 2026; sample size for rent not stated.",
+      "source": {
+        "title": "Numbeo - Cost of living in Taipei",
+        "url": "https://www.numbeo.com/cost-of-living/in/Taipei",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 48000,
+        "currency": "TWD"
+      },
+      "year": 2026,
+      "description": "Da'an 2-bedroom condo (35-45 m2) typical rent, market listings compiled May 2026 (Xinyi: TWD 58,000), Migaku guide; sourcing is a blog.",
+      "source": {
+        "title": "Taipei neighbourhoods compared: Da'an, Xinyi, Zhongshan",
+        "url": "https://migaku.com/ja/blog/language-fun/best-neighborhoods-in-taipei-daan-xinyi-and-zhongshan-compared",
+        "publisher": "Migaku",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "The two figures come from different sources (Numbeo citywide centre vs Migaku Da'an) and are not like-for-like; Migaku gives a Da'an studio at TWD 24,000."
+  },
+  "residence_routes": "EU, US and other citizens: the Employment Gold Card (assessed on professional skills, no sponsor or job offer, 1-3 years) is the route for both remote workers and skilled employees; ordinary employer-sponsored work permits also exist but were not researched. Foreigners spending 183 days or more in a calendar year are tax residents.",
+  "open_questions": [
+    "Official visa pages beyond the Gold Card site not opened.",
+    "No dedicated digital nomad visa."
+  ]
+}

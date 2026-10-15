@@ -1,0 +1,223 @@
+{
+  "id": "VUT",
+  "name": "Vanuatu",
+  "continent": "Oceania",
+  "region": "Melanesia (South Pacific)",
+  "currency": "VUV",
+  "researched_on": "2026-10-15",
+  "summary": "Vanuatu levies no income tax on individuals or companies, no capital gains tax, no withholding tax and no estate or death duties (Vanuatu Investment Promotion Authority). Revenue comes from 15% VAT, import duties, a 15% tax on rental income above VT 200,000 per six months and stamp duty of up to 1% on some property and share transfers. Vanuatu sells citizenship (from about USD 130,000, reported), but the EU suspended visa-free travel for Vanuatu passports over that programme.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary residence",
+      "type": "standard",
+      "description": "No personal or corporate income tax, no capital gains, wealth or inheritance tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "No tax residence test is needed because there is no income tax; residence requires an immigration permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Vanuatu's friendly tax regime",
+            "url": "https://investvanuatu.vu/tax/",
+            "publisher": "Vanuatu Investment Promotion Authority",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "No income and corporate tax (low-tax jurisdiction)",
+            "url": "https://investvanuatu.vu/untapped-potential/low-tax-jurisdiction/",
+            "publisher": "Vanuatu Investment Promotion Authority",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "important_exceptions": "Stamp duty of up to 1% (minimum VT 2,500) on some property transactions and share transfers. Corporate tax 'zero except on some real estate transactions' (VIPA).",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "VIPA: 'No capital gains tax' and 'No income or company tax: for residents'. All classes 0 (stamp duty is a transaction cost, not modelled).",
+        "professional_trader": "No income tax, so no recharacterisation risk.",
+        "open_questions": [
+          "Primary legislation not checked (Vanuatu has no income tax act). The VIPA tax page is partly stale (it still gives VAT as 12.5%; the other VIPA page gives 15%)."
+        ]
+      },
+      "dividends": {
+        "summary": "No income tax on dividends, domestic or foreign, and no dividend withholding tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Vanuatu's friendly tax regime",
+            "url": "https://investvanuatu.vu/tax/",
+            "publisher": "Vanuatu Investment Promotion Authority",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "No income and corporate tax (low-tax jurisdiction)",
+            "url": "https://investvanuatu.vu/untapped-potential/low-tax-jurisdiction/",
+            "publisher": "Vanuatu Investment Promotion Authority",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No income tax for individuals (VIPA). Source-country withholding on US/EU dividends is a final cost (no treaties).",
+        "withholding_outbound": "None ('No withholding taxes', VIPA).",
+        "treaty_network": "No comprehensive tax treaties (general knowledge; not verified). US dividends bear 30% US WHT.",
+        "open_questions": [
+          "Vanuatu has been on the EU list of non-cooperative jurisdictions for tax purposes (reported in a search summary, not verified); this can trigger defensive measures in EU source states."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no recurring levy on financial assets.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Vanuatu's friendly tax regime",
+            "url": "https://investvanuatu.vu/tax/",
+            "publisher": "Vanuatu Investment Promotion Authority",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "No income and corporate tax (low-tax jurisdiction)",
+            "url": "https://investvanuatu.vu/untapped-potential/low-tax-jurisdiction/",
+            "publisher": "Vanuatu Investment Promotion Authority",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Not researched (land is held on long leases; rental income tax 15% above VT 200,000 per six months)."
+      },
+      "inheritance": {
+        "summary": "No estate or death duties (VIPA).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Vanuatu's friendly tax regime",
+            "url": "https://investvanuatu.vu/tax/",
+            "publisher": "Vanuatu Investment Promotion Authority",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "No income and corporate tax (low-tax jurisdiction)",
+            "url": "https://investvanuatu.vu/untapped-potential/low-tax-jurisdiction/",
+            "publisher": "Vanuatu Investment Promotion Authority",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax reported; stamp duty may apply to transfers of property or shares.",
+        "gifts_same_as_inheritance": true,
+        "open_questions": [
+          "Whether stamp duty applies to transfers of land leases or shares on death or by gift not verified."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No income tax, so no tax residence test. Note that holding Vanuatu citizenship or residence does not by itself end tax residence elsewhere.",
+    "routes": [
+      {
+        "name": "Citizenship by investment (Development Support Program and related options)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Reported government contribution about USD 130,000 for a single applicant plus about USD 25,000 for a spouse and further amounts per child, plus due diligence fees; no residence requirement (consultant guide, not verified against the Vanuatu Citizenship Commission). The EU partially suspended visa-free travel for Vanuatu passports issued since 25 May 2015 (Council decision March 2022), later reported as a full suspension; current status not verified. Citizenship alone gives no tax residence anywhere."
+      },
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "EU Council approves partial suspension of visa waiver agreement with Vanuatu (March 2022)",
+        "url": "https://investmentmigration.org/news/europe-eu-council-approves-partial-suspension-of-visa-waiver-agreement-with-vanuatu/",
+        "publisher": "Investment Migration Council",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Vanuatu citizenship by investment: complete guide 2026",
+        "url": "https://globallawexperts.com/vanuatu-citizenship-by-investment-complete-guide-2026/",
+        "publisher": "Global Law Experts",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.0,
+    "summary": "No company income tax, 'except on some real estate transactions' (VIPA). VAT 15%. Offshore/international company regime exists (not researched).",
+    "sources": [
+      {
+        "title": "No income and corporate tax (low-tax jurisdiction)",
+        "url": "https://investvanuatu.vu/untapped-potential/low-tax-jurisdiction/",
+        "publisher": "Vanuatu Investment Promotion Authority",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Port Vila",
+    "notes": "Not sourced."
+  },
+  "markers": [
+    {
+      "name": "Port Vila",
+      "lon": 168.32188,
+      "lat": -17.73381,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2135171"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. Where local tax on portfolio income is nil there is nothing to credit against US tax.",
+  "open_questions": [
+    "Official Vanuatu Citizenship Commission pages could not be reached; programme amounts are from a consultant guide.",
+    "Current EU visa-waiver status for Vanuatu passports and current EU non-cooperative-list status not verified."
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "KNA",
+  "name": "Saint Kitts and Nevis",
+  "currency": "XCD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "There is no individual income tax. Employees pay 5% social security up to XCD 6,500 a month and a graduated Housing and Social Development Levy (3.5%, 10%, 12%) on monthly earnings above XCD 2,253.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 27040,
+        "rate": 0.035
+      },
+      {
+        "from_amount": 78000,
+        "rate": 0.1
+      },
+      {
+        "from_amount": 96000,
+        "rate": 0.12
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.05,
+    "employee_social_security_cap": 78000,
+    "self_employed_social_security_rate": 0.1,
+    "self_employed_social_security_cap": 78000,
+    "self_employed_notes": "Self-employed persons between 16 and 62 pay 10% of their selected income category, subject to the contribution ceiling of XCD 6,500 a month (XCD 78,000 a year): Social Security Regulations, Schedule 1 Part III and Schedule 2 (Cap. 22.10, 2017 revision). The Housing and Social Development Levy does not apply to self-employment income: the Act imposes it on 'the wages of every person employed' (s.3) and defines 'employed person' by reference to the employments in the First Schedule to the Social Security Act (s.2); no provision charges self-employed persons. Employer-side items (5% + 1% injury + 3% levy + 1% severance) are not counted.",
+    "local_tax_note": "KNA has no personal income tax (Deloitte). The wage brackets are the employee-paid Housing and Social Development Levy, a levy on employees' wages (Cap. 20.21, s.3), expressed annually from Deloitte's monthly bands (XCD 2,253.33 / 6,500 / 8,000 times 12): nil up to XCD 27,040; 3.5% on earnings to XCD 78,000; 10% to XCD 96,000; 12% above. The statute's 2017 text shows a lower nil band (XCD 18,720); Deloitte's 2026 figure is used. It is kept in the brackets because it is a levy on employment income and the only direct charge on pay, but it is a payroll levy, not an income tax, and it does not apply to self-employed income, so a self-employed nomad pays social security only. The Inland Revenue Department now refers to a 'Social Services Levy' on wages (December 2025 bonus waiver notice); whether this is the renamed levy was not confirmed. It is charged on top of the 5% social security contribution (capped at XCD 78,000). The self-employed brackets are nil, because the levy does not reach self-employment income.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: St. Kitts and Nevis Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-stkittsandnevishighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Housing and Social Development Levy Act, Cap. 20.21 (Revised Laws 2017)",
+        "url": "https://lawcommission.gov.kn/wp-content/documents/Revised-Acts-of-St-Kitts-and-Nevis/Revised-Acts-of-St-Kitts-and-Nevis-2017/Ch-20_21-Housing-and-Social-Development-Levy-Act.pdf",
+        "publisher": "St Kitts and Nevis Law Commission",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Social Security Act, Cap. 22.10, with Regulations, Schedule 1 (rates of contributions) and Schedule 2 (ceiling) (Revised Laws 2017)",
+        "url": "https://lawcommission.gov.kn/wp-content/documents/Revised-Acts-of-St-Kitts-and-Nevis/Revised-Acts-of-St-Kitts-and-Nevis-2017/Ch-22_10-Social-Security-Act.pdf",
+        "publisher": "St Kitts and Nevis Law Commission",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Inland Revenue Department: temporary waiver of the Social Services Levy on December 2025 bonuses",
+        "url": "https://www.sknird.com/government-of-saint-christopher-and-nevis-announces-temporary-waiver-of-social-services-levy-on-december-2025-bonuses/",
+        "publisher": "Inland Revenue Department, Saint Christopher and Nevis",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "The Law Commission's 2017 revision of the self-employed rate and ceiling was read; later amendments were not checked, but Deloitte 2026 still gives the XCD 6,500 monthly ceiling and 5% employee rate.",
+      "Whether the Social Services Levy named in a December 2025 IRD notice is the renamed Housing and Social Development Levy, and whether its rates changed, was not confirmed."
+    ],
+    "self_employed_brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      }
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "id": "digital_resident",
+      "name": "Digital resident status (Immigration (Amendment) Act 2021)",
+      "kind": "digital_nomad_visa",
+      "description": "A category created by the 2021 immigration amendment for people employed full time by a company registered and operating outside St Kitts and Nevis who want to work remotely there for up to twelve months. Fees were left to regulations.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 1,
+      "duration_note": "Up to 12 months; the Bill refers to renewal but sets no terms.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "St. Kitts and Nevis Consulate Toronto: Immigration (Amendment) Bill, 2021 (digital resident)",
+          "url": "https://skncgtoronto.gov.kn/2021/11/30/immigration-amendment-bill/",
+          "publisher": "Government of St. Kitts and Nevis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low",
+      "verification": "unverified",
+      "open_questions": [
+        "Only the 2021 Bill text (as posted by the Toronto consulate) was found; no current immigration-department page confirms the category is being issued, and other guides say it is not. No income threshold, fee or tax statement was found.",
+        "KNA has no personal income tax, so the status is tax-neutral for earnings apart from the payroll levy."
+      ]
+    }
+  ],
+  "costs": {
+    "city": "Basseterre / Frigate Bay",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 925,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 8 one-bedroom units (Frigate Bay condos, Basseterre, St Peters, near Ross University; two marked Currently Rented excluded) on SKN Real Estate's long-term rental page; range USD 750 to 1,500. Posting ages run from 1 month to 6 years, so some asks are stale; furnishing mixed.",
+      "source": {
+        "title": "St Kitts Real Estate: apartments and long-term rentals in St Kitts",
+        "url": "https://sknrealestate.com/st-kitts-apartments-long-term-rentals/",
+        "publisher": "SKN Real Estate",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 1750,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 4 two-bedroom units on SKN Real Estate's long-term rental page: Atlantic View house USD 1,400, Frigate Bay apartment 1,700 and St Christopher Club condo 1,800 (all-inclusive), Vista Villas condo 2,550. Posting ages run from 3 to 6 years, so asks are stale; furnishing mixed.",
+      "source": {
+        "title": "St Kitts Real Estate: apartments and long-term rentals in St Kitts",
+        "url": "https://sknrealestate.com/st-kitts-apartments-long-term-rentals/",
+        "publisher": "SKN Real Estate",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "coworking_monthly": null,
+    "notes": "SKN Real Estate (the agency's long-term rental page, 17 distinct listings read 2026-10-15). Many postings are 2 to 6 years old, so levels are indicative and probably below current asks. The earlier single Caribbean Paradise Realty 2-bed (USD 1,500, Halfway Tree) is consistent but was dropped for the larger sample."
+  },
+  "residence_routes": "The 2021 'digital resident' category (up to 12 months, full-time employee of a foreign company) exists in law but its operation was not confirmed; otherwise remote workers enter as visitors. Skilled employees of a local employer need a work permit (not researched). Citizenship by investment (Sustainable Island State Contribution USD 250,000, or real estate from USD 325,000, per data/jurisdictions/KNA.json) is separate. EU, US and other citizens are treated alike. US citizens remain taxable in the US on worldwide income; there is no local income tax to credit.",
+  "open_questions": [
+    "Whether the digital resident status is currently issued.",
+    "Rents come from one agency's page with old postings (8 one-bed, 4 two-bed)."
+  ]
+}

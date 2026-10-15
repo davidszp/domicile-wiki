@@ -1,0 +1,210 @@
+{
+  "id": "TON",
+  "name": "Tonga",
+  "continent": "Oceania",
+  "region": "Polynesia (South Pacific)",
+  "currency": "TOP",
+  "researched_on": "2026-10-15",
+  "summary": "Tonga taxes residents on worldwide income at up to 25%. The Income Tax Act 2007 has no capital gains tax: only gains on business assets are taxed, so a private investor's gains appear untaxed (low confidence). Dividends from Tongan companies are exempt; foreign dividends are property income taxed at up to 25% with a foreign tax credit. No inheritance, gift or wealth tax was found.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Residents taxed on worldwide business, employment and property income at 0-25%; no tax on private capital gains found.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident individual: home in Tonga at any time in the year, or 183 days' presence in any 12 months commencing or ending in the year (Income Tax Act 2007 s. 4(3)).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax. Gross income consists of business, employment, property and other income (s. 11); gains are taxed only on disposal of a business asset (s. 12(c)). Gains on a privately held portfolio, private company shares or a non-business property appear outside the tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income Tax Act 2007 (Act No. 10 of 2007)",
+            "url": "https://www.revenue.gov.to/sites/default/files/inline-files/IncomeTaxAct2007.pdf",
+            "publisher": "Ministry of Revenue and Customs, Tonga",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Company, partnership, cooperative society, trust",
+            "url": "https://www.revenue.gov.to/company-partnership-corporative-society-trust",
+            "publisher": "Ministry of Revenue and Customs, Tonga",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "important_exceptions": "s. 44(5): transmission of an asset by succession or under a will is treated as a disposal by the deceased (relevant to business assets). Business assets include any asset used or held ready for use in a business.",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Income Tax Act 2007 s. 11-14: only gains on disposal of business assets are in business income; no other charge on gains found. Assumes the family is a passive investor and not 'conducting a business'.",
+        "professional_trader": "If investing amounted to a business, gains on business assets would be business income at up to 25%. A rented property could be a business asset.",
+        "foreign_assets": "Residents are taxed on worldwide income (s. 11(2)), but private capital gains are not income.",
+        "open_questions": [
+          "No official statement that Tonga does not tax private capital gains was found; the 0% is an inference from the Act's income definitions.",
+          "Amendments to the Income Tax Act since 2007 were not reviewed."
+        ]
+      },
+      "dividends": {
+        "summary": "A dividend paid by a resident company to a resident person is exempt (s. 21). Foreign dividends are property income of a resident (s. 14), taxed at the individual rates (25% above TOP 70,000 from July 2021), with a foreign tax credit (s. 62).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income Tax Act 2007 (Act No. 10 of 2007)",
+            "url": "https://www.revenue.gov.to/sites/default/files/inline-files/IncomeTaxAct2007.pdf",
+            "publisher": "Ministry of Revenue and Customs, Tonga",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income Tax (Amendment) Order 2017 (individual rates)",
+            "url": "https://www.revenue.gov.to/sites/default/files/inline-files/IncomeTax%28Amendment%29Order2017%28FinalEnglish%29.pdf",
+            "publisher": "Ministry of Revenue and Customs, Tonga",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Individual - employee (tax rates from July 2021)",
+            "url": "https://www.revenue.gov.to/individual-employee",
+            "publisher": "Ministry of Revenue and Customs, Tonga",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "exemptions_thresholds": "Individual rates from July 2021 (Ministry page): 0% to TOP 12,000; 10% to 30,000; 15% to 50,000; 20% to 70,000; 25% above 70,000. The 2017 Order set the rates on 'chargeable income of an individual' (then 0/10/20/25%).",
+        "headline_rate": 0.25,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.25,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: s. 21 exempt = 0. Foreign: top individual rate 25% before the s. 62 foreign tax credit.",
+        "withholding_outbound": "15% non-resident withholding on dividends, interest, royalties and fees (s. 79; Ministry page).",
+        "treaty_network": "No comprehensive tax treaties found (not verified). US dividends bear 30% US WHT, creditable up to Tongan tax.",
+        "open_questions": [
+          "The July 2021 rate table is published on the employee page; that it applies to all chargeable income of individuals is inferred from the 2017 Order."
+        ]
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax and no recurring levy on financial assets.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income Tax Act 2007 (Act No. 10 of 2007)",
+            "url": "https://www.revenue.gov.to/sites/default/files/inline-files/IncomeTaxAct2007.pdf",
+            "publisher": "Ministry of Revenue and Customs, Tonga",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Not researched."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax was found. Under the Income Tax Act, transmission of an asset on death is a deemed disposal by the deceased (s. 44(5)), but only gains on business assets are taxable.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Income Tax Act 2007 (Act No. 10 of 2007)",
+            "url": "https://www.revenue.gov.to/sites/default/files/inline-files/IncomeTaxAct2007.pdf",
+            "publisher": "Ministry of Revenue and Customs, Tonga",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax found.",
+        "gifts_same_as_inheritance": true,
+        "open_questions": [
+          "No official statement on the absence of estate/gift duty found.",
+          "Land in Tonga cannot be owned freehold by foreigners (leases only; general knowledge, not verified)."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Income Tax Act 2007 s. 4(3): resident if the individual has a home in Tonga at any time during the year, is present 183 days in any 12-month period commencing or ending in the year, or is a government employee posted abroad. Part-year rules apply on arrival and departure.",
+    "routes": [
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Non-residents and visitors (residence tests, withholding)",
+        "url": "https://www.revenue.gov.to/non-residents-and-visitors",
+        "publisher": "Ministry of Revenue and Customs, Tonga",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Income Tax Act 2007 (Act No. 10 of 2007)",
+        "url": "https://www.revenue.gov.to/sites/default/files/inline-files/IncomeTaxAct2007.pdf",
+        "publisher": "Ministry of Revenue and Customs, Tonga",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "Resident and non-resident companies pay 25% on chargeable income (Ministry of Revenue and Customs). Partnerships are taxed as companies. Dividends between resident persons exempt.",
+    "sources": [
+      {
+        "title": "Company, partnership, cooperative society, trust",
+        "url": "https://www.revenue.gov.to/company-partnership-corporative-society-trust",
+        "publisher": "Ministry of Revenue and Customs, Tonga",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Nuku'alofa",
+    "notes": "Not sourced."
+  },
+  "markers": [
+    {
+      "name": "Nuku'alofa",
+      "lon": -175.2018,
+      "lat": -21.13938,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 4032402"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. Where local tax on portfolio income is nil there is nothing to credit against US tax.",
+  "open_questions": [
+    "Residence routes not researched."
+  ]
+}

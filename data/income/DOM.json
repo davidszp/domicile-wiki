@@ -1,0 +1,173 @@
+{
+  "id": "DOM",
+  "name": "Dominican Republic",
+  "currency": "DOP",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "The Dominican Republic taxes on a territorial basis: Dominican-source income is taxed at 0% up to DOP 416,220, then 15%, 20% and 25%; foreign-source income is generally not taxed, except foreign investments and financial gains, and new residents are taxed on these after the third year. Employees withhold 2.87% pension and 3.04% health.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 416220,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 624329,
+        "rate": 0.2
+      },
+      {
+        "from_amount": 867123,
+        "rate": 0.25
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.0591,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.0,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "No mandatory contribution found for independent workers: the SIPEN FAQ (opened 2026-10-15) says the contributory-subsidised pension regime for independents 'aun no ha entrado en vigor' (has not yet taken effect), so the 0% rate means 'no contribution currently required', not a confirmed exemption; voluntary or subsidised enrolment exists for low earners. Invoicing within the country requires an RNC registration (per Bolsillo Practico).",
+    "local_tax_note": "No municipal income tax. Pension contributions are capped at 20 minimum wages and health at 10 minimum wages; the minimum wage amount was not stated, so no peso cap is recorded. The 0.5% technical-education levy applies to bonuses only. Employee rate 0.0591 = 2.87% + 3.04%.",
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries - Dominican republic: Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/dominican-republic/individual/taxes-on-personal-income",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Dominican republic: Other taxes",
+        "url": "https://taxsummaries.pwc.com/dominican-republic/individual/other-taxes",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "SIPEN - Preguntas frecuentes",
+        "url": "https://sipen.gob.do/contenido/preguntas-frecuentes",
+        "publisher": "SIPEN (Superintendencia de Pensiones)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "DGII - Ley 11-92 Codigo Tributario",
+        "url": "https://www.dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/11-92.pdf",
+        "publisher": "DGII",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "DGII - Guia del Contribuyente No. 11: Retenciones del Impuesto Sobre la Renta",
+        "url": "https://dgii.gov.do/publicacionesOficiales/bibliotecaVirtual/contribuyentes/retencionesRetribucionesComplementarias/Documents/2-Guia-11-Retenciones%20del%20Impuesto%20Sobre%20la%20Renta.pdf",
+        "publisher": "Direccion General de Impuestos Internos (DGII)",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "PwC Worldwide Tax Summaries - Dominican Republic: Deductions",
+        "url": "https://taxsummaries.pwc.com/dominican-republic/individual/deductions",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Peso caps on contributions (20 minimum wages for pension, 10 for health, per PwC) not converted because the cotizable minimum wage was not retrieved (CNSS/TSS/Ministry of Labour pages blocked or not found); the employee rate is therefore recorded uncapped, slightly overstating contributions at high incomes.",
+      "Self-employed: per the SIPEN FAQ the independent-workers contributory regime is not yet in force; the TSS/CNSS resolutions were not reachable to confirm nothing else applies.",
+      "Remote work performed while living in the DR: Art. 272 (c) of Ley 11-92 lists income 'del trabajo personal, ejercicio de profesiones u oficios' as Dominican-source without a territorial qualifier, and Art. 269 taxes residents on Dominican-source income; a secondary blog (Bolsillo Practico) says foreign-client income 'en principio' is untaxed. No DGII ruling on remote work for foreign clients was found.",
+      "PwC shows a different scale from 2027 (zero up to DOP 480,000 and a 27% top bracket above DOP 4.8 million); 2026 figures are used here."
+    ],
+    "social_security_deductible": 1
+  },
+  "regimes": [
+    {
+      "id": "dom_territorial_new_resident",
+      "name": "Territorial taxation - foreign-source income of residents",
+      "kind": "other",
+      "description": "Dominican law taxes only Dominican-source income. Foreign-source income, including remote work for foreign clients, is generally outside the income tax base; foreign investments and financial gains of residents are taxed, and for individuals who become residents, foreign-source items of that kind only after the third year. Caveat: Art. 272 of the Codigo Tributario (Ley 11-92) treats income from personal work and professional practice as Dominican-source and Art. 269 taxes residents on all Dominican-source income, so pay for work physically done in the DR is not clearly outside the base; only income from work genuinely performed abroad is.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "applies_to": [
+        "self_employment",
+        "employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "Permanent feature of the tax system, not time-limited.",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": false,
+      "sources": [
+        {
+          "title": "PwC Worldwide Tax Summaries - Dominican republic: Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/dominican-republic/individual/taxes-on-personal-income",
+          "publisher": "PwC",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Bolsillo Practico - Visa de nomada digital en Republica Dominicana (abril 2026)",
+          "url": "https://bolsillopractico.com/?p=1274",
+          "publisher": "Bolsillo Practico",
+          "kind": "other",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "DGII - Ley 11-92 Codigo Tributario (arts. 269, 272)",
+          "url": "https://www.dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/11-92.pdf",
+          "publisher": "DGII (Dominican tax authority)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "verification": "partially_verified",
+      "open_questions": [
+        "Not a visa. As of April 2026 one source reports no formal digital nomad visa (a Senate bill is pending); remote workers use tourist stays (about 150 days), the rentista residence (foreign passive income of at least USD 2,000 a month under Law 171-07) or ordinary temporary residence.",
+        "Treatment of local-source income of the Expat persona's Dominican employer is the ordinary scale.",
+        "covers_local_work=false is a reading of Art. 272(b)-(c) and Art. 269 of Ley 11-92 (personal work income is Dominican-source; no explicit exemption for remote work done in the DR); no DGII ruling was found, so treat as low-medium confidence."
+      ],
+      "covers_local_work": false
+    }
+  ],
+  "costs": {
+    "city": "Santo Domingo (Piantini / Naco / Evaristo Morales)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 43741.48,
+        "currency": "DOP"
+      },
+      "year": 2026,
+      "description": "Numbeo average 1-bedroom apartment in city centre, Santo Domingo; range DOP 20,000-61,500; updated 14 Oct 2026; 605 city entries from 34 contributors in 12 months (all categories); user-contributed.",
+      "source": {
+        "title": "Numbeo - Cost of Living in Santo Domingo",
+        "url": "https://www.numbeo.com/cost-of-living/in/Santo-Domingo",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": null,
+    "coworking_monthly": null,
+    "notes": "No sourced 2-bedroom rent (Numbeo 3-bedroom city-centre average DOP 87,490.84)."
+  },
+  "residence_routes": "No formal digital nomad visa as of April 2026 per one source. EU, US and many nationals enter on a tourist card/visa and may extend stays to about 150 days; longer stays use the rentista residence (foreign passive income of at least USD 2,000 a month) or temporary residence with a bank certification (RT-9). A skilled employee needs a work permit and temporary residence sponsored by a Dominican employer.",
+  "open_questions": [
+    "Official migration pages were not reached; routes are from one secondary source.",
+    "2-bedroom rent not found (Numbeo gives only 1- and 3-bedroom; Cuanto Me Cuesta has no DR page; Expatistan and Supercasas could not be used)."
+  ]
+}

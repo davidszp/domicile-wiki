@@ -1,0 +1,198 @@
+{
+  "id": "COK",
+  "name": "Cook Islands",
+  "continent": "Oceania",
+  "region": "Polynesia (self-governing, in free association with New Zealand)",
+  "currency": "NZD",
+  "researched_on": "2026-10-15",
+  "summary": "Residents pay income tax on worldwide income at up to 30% (above NZD 80,000 on Rarotonga). There is no capital gains tax: only gains from dealing or from property bought for resale are income. Dividends, foreign ones included, are ordinary income at up to 30%, with credit for foreign tax. No wealth, estate or gift tax was found.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Tax residence (home in the Cook Islands)",
+      "type": "standard",
+      "description": "Residents are taxed on worldwide income at 0% up to NZD 14,600, then 17%, 27% and 30% above NZD 80,000 (Rarotonga). The Pa Enua (outer islands) scale is 0% to NZD 60,000, then 27% and 30%.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "A person whose home is in the Cook Islands (Income Tax Act 1997 s.82(1)). Residence permits are controlled by the Cook Islands Government.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax. Gains on property are income only if the taxpayer deals in such property, acquired it for resale, or made them in a profit-making scheme (Income Tax Act 1997 s.46(1)(c)).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Cook Islands Income Tax Act 1997 (No. 12 of 1997)",
+            "url": "https://www.mfem.gov.ck/_files/ugd/dbdf40_ef039a088ac247b2aeaf8dcc59fb90a6.pdf",
+            "publisher": "Cook Islands Ministry of Finance and Economic Management",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Later amendments to s.46 (Income Tax Amendment Acts 1997-2023, several only as scanned PDFs) were not all read.",
+          "Treatment of land sales (MFEM 'Taxation of Land Transactions' guidance) not read; that PDF is a scan."
+        ],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Income Tax Act 1997 s.46(1)(c) taxes only gains from dealing, from property bought for resale, or from profit-making schemes. A long-term investor's gains on listed securities, business shares and real estate are therefore scored at 0.",
+        "professional_trader": "Frequent trading or buying for resale makes gains ordinary income at up to 30% (s.46(1)(c)).",
+        "foreign_assets": "Same rule for foreign assets."
+      },
+      "dividends": {
+        "summary": "All dividends are assessable income (s.46(1)(g)) at the individual's marginal rate, up to 30%. Foreign income tax on foreign income is credited (s.85).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Cook Islands Income Tax Act 1997 (No. 12 of 1997)",
+            "url": "https://www.mfem.gov.ck/_files/ugd/dbdf40_ef039a088ac247b2aeaf8dcc59fb90a6.pdf",
+            "publisher": "Cook Islands Ministry of Finance and Economic Management",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "MFEM Revenue Management Division: Tax rates - Rarotonga (from 1 Jan 2021) and Pa Enua (from 1 Jul 2023)",
+            "url": "https://www.mfem.gov.ck/inland-revenue",
+            "publisher": "Cook Islands Ministry of Finance and Economic Management",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether any amendment introduced imputation credits or a final withholding for resident shareholders was not checked."
+        ],
+        "headline_rate": 0.3,
+        "domestic_rate": 0.3,
+        "foreign_gross_rate": 0.3,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Top rate 30% (MFEM tax rates; above NZD 80,000). Dividends are gross income under s.46(1)(g). No imputation system was found in the 1997 Act; companies may elect to deduct dividends (s.59(k)).",
+        "withholding_outbound": "15% withholding tax on dividends, interest and royalties paid to non-residents (s.100).",
+        "treaty_network": "No comprehensive treaties; agreements with New Zealand and Australia cover only allocation of taxing rights for certain individuals' income and transfer-pricing MAP. TIEAs and CRS in place."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax. The tax legislation MFEM administers covers income tax, VAT, departure tax and customs only.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "MFEM: Tax Acts, Regulations, Policy, Rulings and Court Cases (list of tax legislation administered)",
+            "url": "https://www.mfem.gov.ck/policy-court-cases-rulings",
+            "publisher": "Cook Islands Ministry of Finance and Economic Management",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "No general property tax was found; most land is customary land held under leases."
+      },
+      "inheritance": {
+        "summary": "No estate, inheritance or gift duty was found: the tax legislation MFEM administers covers income tax, VAT, departure tax and customs only.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "MFEM: Tax Acts, Regulations, Policy, Rulings and Court Cases (list of tax legislation administered)",
+            "url": "https://www.mfem.gov.ck/policy-court-cases-rulings",
+            "publisher": "Cook Islands Ministry of Finance and Economic Management",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "No statement explicitly confirming the absence of estate/gift duty was found; inferred from the list of tax legislation."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "gift_tax": "No gift duty found.",
+        "gifts_same_as_inheritance": true,
+        "domicile_rules": "Not applicable."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "An individual is resident if their home is in the Cook Islands (Income Tax Act 1997 s.82(1)). The standard deduction may be apportioned by residence or days present.",
+    "routes": [
+      {
+        "name": "Residence permit (Cook Islands immigration)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "The Cook Islands controls immigration itself, including for New Zealand citizens who are not Cook Islanders. Long-term residence needs a permit (details not researched)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cook Islands Income Tax Act 1997 (No. 12 of 1997)",
+        "url": "https://www.mfem.gov.ck/_files/ugd/dbdf40_ef039a088ac247b2aeaf8dcc59fb90a6.pdf",
+        "publisher": "Cook Islands Ministry of Finance and Economic Management",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "MFEM Revenue Management Division: Tax rates - Rarotonga (from 1 Jan 2021) and Pa Enua (from 1 Jul 2023)",
+        "url": "https://www.mfem.gov.ck/inland-revenue",
+        "publisher": "Cook Islands Ministry of Finance and Economic Management",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.2,
+    "summary": "Resident companies 20% (Income Tax Act 1997 First Schedule). Company residence was narrowed in 2021 (Income Tax (Company Residence) Amendment Act 2021) so that most international companies are not resident.",
+    "sources": [
+      {
+        "title": "Cook Islands Income Tax Act 1997 (No. 12 of 1997)",
+        "url": "https://www.mfem.gov.ck/_files/ugd/dbdf40_ef039a088ac247b2aeaf8dcc59fb90a6.pdf",
+        "publisher": "Cook Islands Ministry of Finance and Economic Management",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "MFEM Public Consultation - Tax residency rules for companies (22 Nov 2021)",
+        "url": "https://www.mfem.gov.ck/_files/ugd/dbdf40_15e3585ddaa64bf7953dd761c94ed1dd.pdf",
+        "publisher": "Cook Islands Ministry of Finance and Economic Management",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Avarua",
+      "lon": -159.775,
+      "lat": -21.2078,
+      "kind": "capital",
+      "coordinate_source": "Wikipedia (Avarua), approx."
+    }
+  ],
+  "us_citizen_notes": "No US treaty. US citizens pay US federal tax on worldwide income with credit for Cook Islands tax; US estate tax applies.",
+  "open_questions": [
+    "Consolidated current text of the Income Tax Act 1997 (amendments to 2023) not read; scanned amendment PDFs not OCR'd.",
+    "Immigration and residence permit requirements not researched."
+  ]
+}

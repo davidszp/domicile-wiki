@@ -1,0 +1,208 @@
+{
+  "id": "AUS",
+  "name": "Australia",
+  "currency": "AUD",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Residents pay 0% to AUD 18,200, then 15% (from 1 July 2026, down from 16%), 30% above AUD 45,000, 37% above AUD 135,000 and 45% above AUD 190,000, plus a 2% Medicare levy. There is no social security tax; employers pay 12% superannuation on top. Temporary visa holders are exempt on foreign-source income.",
+    "tax_year": "2026/27",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0
+      },
+      {
+        "from_amount": 18200,
+        "rate": 0.15
+      },
+      {
+        "from_amount": 45000,
+        "rate": 0.3
+      },
+      {
+        "from_amount": 135000,
+        "rate": 0.37
+      },
+      {
+        "from_amount": 190000,
+        "rate": 0.45
+      }
+    ],
+    "personal_allowance": 0,
+    "employee_social_security_rate": 0.02,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.02,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "The Medicare levy of 2% of taxable income applies to residents (surcharge of 1% to 1.5% without private hospital cover above income thresholds, not included). Superannuation at 12% is an employer cost for employees; PwC does not address compulsory super for the self-employed, so none is counted.",
+    "local_tax_note": "No state or municipal income tax. The tax-free threshold of AUD 18,200 is built into the brackets (0% band). Rates for 2025-26 were 16% on AUD 18,201-45,000. Low Income Tax Offset not included. The Medicare levy is recorded as the 'social security' rate, not in the brackets, to avoid double counting.",
+    "sources": [
+      {
+        "title": "Australia - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/australia/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Australia - Other taxes",
+        "url": "https://taxsummaries.pwc.com/australia/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Australia - Deductions",
+        "url": "https://taxsummaries.pwc.com/australia/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "high",
+    "verification": "verified",
+    "open_questions": [
+      "Medicare levy low-income thresholds and surcharge thresholds not stated on the opened page.",
+      "From 1 July 2026 PwC reports a flat 'standard tax deduction' of up to AUD 1,000 for work-related expenses without substantiation; not modelled."
+    ],
+    "social_security_deductible": 0
+  },
+  "regimes": [
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "verification": "partially_verified",
+      "open_questions": [
+        "ATO and legislation pages (ITAA 1997 s768-910) returned HTTP 403; the exclusion of Australian-source employment income rests on PwC's source rule.",
+        "Medicare levy exemption for temporary residents not checked."
+      ],
+      "id": "temporary_resident_foreign_income",
+      "name": "Temporary resident: foreign-source income exemption",
+      "kind": "expat_regime",
+      "description": "A temporary visa holder who is not an Australian resident under the Social Security Act and has no Australian spouse is a temporary resident for tax and is exempt from Australian tax on foreign-source income (PwC residence page). It does not cover pay for work done in Australia: PwC states that foreign nationals are taxable on salary and allowances for services performed in Australia regardless of where the payment is made and whether it is remitted. A remote worker's salary or fees earned while living in Australia stay taxable, so the benefit is on passive foreign income.",
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "Applies while holding a temporary visa; length depends on the visa. No minimum income is a condition of the exemption (the Core Skills Income Threshold for the employer-sponsored 482 visa is AUD 79,423 from 1 July 2026, specialist stream AUD 146,576).",
+      "treatment": "exempt",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Australia - Residence",
+          "url": "https://taxsummaries.pwc.com/australia/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "KPMG Flash Alert 2026-181: Australia 482 income thresholds from 1 July 2026",
+          "url": "https://kpmg.com/xx/en/our-insights/gms-flash-alert/2026/flash-alert-2026-181.html",
+          "publisher": "KPMG",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Australia - Income determination",
+          "url": "https://taxsummaries.pwc.com/australia/individual/income-determination",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium",
+      "covers_local_work": false
+    },
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "verification": "partially_verified",
+      "open_questions": [
+        "Home Affairs page not opened; no nomad visa existence confirmed only by absence of search results."
+      ],
+      "id": "no_nomad_visa",
+      "name": "No digital nomad visa; skilled route via Subclass 482",
+      "kind": "other",
+      "description": "No digital nomad visa was found. Employees use employer-sponsored Subclass 482 visas (income thresholds A$79,423 Core Skills and A$146,576 Specialist Skills from 1 July 2026). A visitor-visa remote worker would not generally be allowed to work; this was not verified.",
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": {
+        "amount": 79423,
+        "currency": "AUD"
+      },
+      "max_income": null,
+      "duration_years": null,
+      "duration_note": "Visa length not verified.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "KPMG Flash Alert 2026-181: Australia 482 income thresholds from 1 July 2026",
+          "url": "https://kpmg.com/xx/en/our-insights/gms-flash-alert/2026/flash-alert-2026-181.html",
+          "publisher": "KPMG",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low"
+    }
+  ],
+  "costs": {
+    "city": "Sydney (inner suburbs)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 3615.59,
+        "currency": "AUD"
+      },
+      "year": 2026,
+      "description": "Numbeo average for a city-centre 1-bedroom apartment in Sydney (range AUD 2,800-4,800), updated 14 Oct 2026; sample size for rent not stated.",
+      "source": {
+        "title": "Numbeo - Cost of living in Sydney",
+        "url": "https://www.numbeo.com/cost-of-living/in/Sydney",
+        "publisher": "Numbeo",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 4203.33,
+        "currency": "AUD"
+      },
+      "year": 2026,
+      "description": "Surry Hills 2-bedroom unit around AUD 970 a week x 52 / 12, ProperEasy article of 27 June 2026; approximate and unsourced in the article. Citywide unit median asking rent is AUD 780 a week (Domain, June quarter 2026, all unit sizes).",
+      "source": {
+        "title": "Sydney rental market 2026 (ProperEasy)",
+        "url": "https://propereasy.com.au/articles/sydney-rental-market-2026-vacancy-rates-median-rents-suburbs-1",
+        "publisher": "ProperEasy",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Weekly rents converted at 52/12. The citywide figures for 2-bedroom units ($580 a week in a March 2026 Domain-cited article) are far below inner-suburb rents."
+  },
+  "residence_routes": "EU, US and other citizens: no digital nomad visa found; remote workers cannot rely on a visitor visa (not verified). Skilled employees are sponsored by an employer on a Subclass 482 visa (Core Skills at least A$79,423, Specialist Skills at least A$146,576 from 1 July 2026), with later options for permanent residence (not researched).",
+  "open_questions": [
+    "Home Affairs/ATO pages not reachable (HTTP 403).",
+    "Nomad visa status should be re-checked.",
+    "Sydney 2-bedroom rent is an unsourced suburb figure in a secondary article."
+  ]
+}

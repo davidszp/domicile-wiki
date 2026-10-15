@@ -1,0 +1,446 @@
+{
+ "date": "2026-10-14",
+ "fetched": "2026-10-15",
+ "rates": {
+  "AED": {
+   "per_eur": 4.11136375,
+   "source": "Central Bank of the UAE peg; USD via ECB 2026-10-14"
+  },
+  "ALL": {
+   "per_eur": 98.08630292418283,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "AMD": {
+   "per_eur": 437.31494589457884,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "ANG": {
+   "per_eur": 2.003905,
+   "source": "Central Bank of Cura\u00e7ao and Sint Maarten peg (legacy guilder); USD via ECB 2026-10-14"
+  },
+  "ARS": {
+   "per_eur": 1402.1409883416645,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "AUD": {
+   "per_eur": 1.5971,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "AWG": {
+   "per_eur": 2.003905,
+   "source": "Centrale Bank van Aruba peg; USD via ECB 2026-10-14"
+  },
+  "BAM": {
+   "per_eur": 1.95583,
+   "source": "Central Bank of Bosnia and Herzegovina currency board"
+  },
+  "BBD": {
+   "per_eur": 2.239,
+   "source": "Central Bank of Barbados peg; USD via ECB 2026-10-14"
+  },
+  "BHD": {
+   "per_eur": 0.420932,
+   "source": "Central Bank of Bahrain peg; USD via ECB 2026-10-14"
+  },
+  "BMD": {
+   "per_eur": 1.1195,
+   "source": "Bermuda Monetary Authority 1:1 peg; USD via ECB 2026-10-14"
+  },
+  "BND": {
+   "per_eur": 1.4359,
+   "source": "Brunei dollar at par with the Singapore dollar (Currency Interchangeability Agreement); SGD rate as above"
+  },
+  "BOB": {
+   "per_eur": 7.808183478431362,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "BRL": {
+   "per_eur": 5.6246,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "BSD": {
+   "per_eur": 1.1195,
+   "source": "Central Bank of The Bahamas 1:1 peg; USD via ECB 2026-10-14"
+  },
+  "BTN": {
+   "per_eur": 106.5283,
+   "source": "Bhutanese ngultrum at par with the Indian rupee (Royal Monetary Authority of Bhutan); INR rate as above"
+  },
+  "BWP": {
+   "per_eur": 15.257465479418242,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "BYN": {
+   "per_eur": 3.468115995284309,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "BZD": {
+   "per_eur": 2.239,
+   "source": "Central Bank of Belize peg; USD via ECB 2026-10-14"
+  },
+  "CAD": {
+   "per_eur": 1.5918,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "CHF": {
+   "per_eur": 0.933,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "CLP": {
+   "per_eur": 1074.9862412097755,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "CNY": {
+   "per_eur": 7.4925,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "COP": {
+   "per_eur": 4579.975144670251,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "CRC": {
+   "per_eur": 568.9429302430545,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "CVE": {
+   "per_eur": 110.265,
+   "source": "Cabo Verde escudo peg (Banco de Cabo Verde)"
+  },
+  "CZK": {
+   "per_eur": 24.357,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "DKK": {
+   "per_eur": 7.4754,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "DOP": {
+   "per_eur": 70.04377506965996,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "EGP": {
+   "per_eur": 55.62653397656818,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "EUR": {
+   "per_eur": 1.0,
+   "source": "base currency"
+  },
+  "FJD": {
+   "per_eur": 2.597868898653587,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "FKP": {
+   "per_eur": 0.84385,
+   "source": "Falkland Islands pound, at par with GBP; GBP via ECB 2026-10-14"
+  },
+  "GBP": {
+   "per_eur": 0.84385,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "GEL": {
+   "per_eur": 3.099138834866001,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "GGP": {
+   "per_eur": 0.84385,
+   "source": "Guernsey pound, at par with GBP; GBP via ECB 2026-10-14"
+  },
+  "GHS": {
+   "per_eur": 14.189000507460763,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "GIP": {
+   "per_eur": 0.84385,
+   "source": "Gibraltar pound, at par with GBP; GBP via ECB 2026-10-14"
+  },
+  "GMD": {
+   "per_eur": 80.55579932675018,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "GYD": {
+   "per_eur": 235.60148411764672,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "HKD": {
+   "per_eur": 8.7859,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "HUF": {
+   "per_eur": 363.3,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "IDR": {
+   "per_eur": 20062.67,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "ILS": {
+   "per_eur": 3.4443,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "IMP": {
+   "per_eur": 0.84385,
+   "source": "Manx pound, at par with GBP; GBP via ECB 2026-10-14"
+  },
+  "INR": {
+   "per_eur": 106.5283,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "ISK": {
+   "per_eur": 136.4,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "JEP": {
+   "per_eur": 0.84385,
+   "source": "Jersey pound, at par with GBP; GBP via ECB 2026-10-14"
+  },
+  "JMD": {
+   "per_eur": 179.77628118298298,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "JOD": {
+   "per_eur": 0.7937254999999999,
+   "source": "Central Bank of Jordan peg; USD via ECB 2026-10-14"
+  },
+  "JPY": {
+   "per_eur": 177.39,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "KES": {
+   "per_eur": 146.10972607598197,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "KMF": {
+   "per_eur": 491.96775,
+   "source": "Central Bank of Comoros peg"
+  },
+  "KRW": {
+   "per_eur": 1496.54,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "KWD": {
+   "per_eur": 0.3462887296231936,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "KYD": {
+   "per_eur": 0.9329162934999999,
+   "source": "Cayman Islands Monetary Authority peg (KYD 1 = USD 1.20); USD via ECB 2026-10-14"
+  },
+  "KZT": {
+   "per_eur": 588.7607639196069,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "LKR": {
+   "per_eur": 339.9576397267802,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "LSL": {
+   "per_eur": 18.4382,
+   "source": "Lesotho loti at par with the rand (Common Monetary Area); ZAR rate as above"
+  },
+  "MAD": {
+   "per_eur": 10.565655305779218,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "MDL": {
+   "per_eur": 19.63667456952622,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "MKD": {
+   "per_eur": 61.75919070056193,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "MNT": {
+   "per_eur": 4005.9524482197326,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "MOP": {
+   "per_eur": 9.049477,
+   "source": "Macau pataca linked to the Hong Kong dollar (AMCM); HKD rate as above"
+  },
+  "MUR": {
+   "per_eur": 51.975796698209,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "MVR": {
+   "per_eur": 17.41945567787917,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "MWK": {
+   "per_eur": 1312.0170550949842,
+   "source": "World Bank official exchange rate, 2023 average (PA.NUS.FCRF)"
+  },
+  "MXN": {
+   "per_eur": 20.56,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "MYR": {
+   "per_eur": 4.5704,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "NAD": {
+   "per_eur": 18.4382,
+   "source": "Namibian dollar at par with the rand (Common Monetary Area); ZAR rate as above"
+  },
+  "NGN": {
+   "per_eur": 1715.7448673201545,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "NOK": {
+   "per_eur": 10.6035,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "NZD": {
+   "per_eur": 1.9941,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "OMR": {
+   "per_eur": 0.43044774999999996,
+   "source": "Central Bank of Oman peg; USD via ECB 2026-10-14"
+  },
+  "PAB": {
+   "per_eur": 1.1195,
+   "source": "Panama 1:1 with USD; USD via ECB 2026-10-14"
+  },
+  "PEN": {
+   "per_eur": 4.030721947240303,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "PHP": {
+   "per_eur": 70.393,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "PLN": {
+   "per_eur": 4.3658,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "PYG": {
+   "per_eur": 8526.227596627434,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "QAR": {
+   "per_eur": 4.07498,
+   "source": "Qatar Central Bank peg; USD via ECB 2026-10-14"
+  },
+  "RON": {
+   "per_eur": 5.3442,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "RSD": {
+   "per_eur": 117.49044868933316,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "RUB": {
+   "per_eur": 94.52591438921556,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "RWF": {
+   "per_eur": 1614.1563633441215,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "SAR": {
+   "per_eur": 4.198125,
+   "source": "Saudi Central Bank peg; USD via ECB 2026-10-14"
+  },
+  "SBD": {
+   "per_eur": 9.409191422328224,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "SCR": {
+   "per_eur": 16.639517273138328,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "SEK": {
+   "per_eur": 11.158,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "SGD": {
+   "per_eur": 1.4359,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "SRD": {
+   "per_eur": 42.103374149429605,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "STN": {
+   "per_eur": 24.5,
+   "source": "S\u00e3o Tom\u00e9 and Pr\u00edncipe dobra peg (Banco Central de STP)"
+  },
+  "THB": {
+   "per_eur": 37.587,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "TND": {
+   "per_eur": 3.386973789503256,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "TOP": {
+   "per_eur": 2.723854708623623,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "TRY": {
+   "per_eur": 55.2921,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "TTD": {
+   "per_eur": 7.626082860937557,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "TWD": {
+   "per_eur": 35.75683,
+   "source": "Federal Reserve H.10 (latest daily rate, 31.9400 per USD); USD via ECB 2026-10-14"
+  },
+  "UAH": {
+   "per_eur": 47.10794841677132,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "USD": {
+   "per_eur": 1.1195,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "UYU": {
+   "per_eur": 46.54511186535117,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "VND": {
+   "per_eur": 27305.91350535646,
+   "source": "World Bank official exchange rate, 2024 average (PA.NUS.FCRF)"
+  },
+  "VUV": {
+   "per_eur": 135.96441385938274,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "WST": {
+   "per_eur": 3.154352243226571,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  },
+  "XAF": {
+   "per_eur": 655.957,
+   "source": "BEAC peg"
+  },
+  "XCD": {
+   "per_eur": 3.02265,
+   "source": "Eastern Caribbean Central Bank peg; USD via ECB 2026-10-14"
+  },
+  "XCG": {
+   "per_eur": 2.003905,
+   "source": "Central Bank of Cura\u00e7ao and Sint Maarten peg; USD via ECB 2026-10-14"
+  },
+  "XOF": {
+   "per_eur": 655.957,
+   "source": "BCEAO peg"
+  },
+  "XPF": {
+   "per_eur": 119.33174,
+   "source": "CFP franc, fixed to the euro (IEOM)"
+  },
+  "ZAR": {
+   "per_eur": 18.4382,
+   "source": "ECB reference rate 2026-10-14"
+  },
+  "ZMW": {
+   "per_eur": 28.56110258097487,
+   "source": "World Bank official exchange rate, 2025 average (PA.NUS.FCRF)"
+  }
+ }
+}

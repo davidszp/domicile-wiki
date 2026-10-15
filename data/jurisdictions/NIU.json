@@ -1,0 +1,191 @@
+{
+  "id": "NIU",
+  "name": "Niue",
+  "continent": "Oceania",
+  "region": "Polynesia (self-governing, in free association with New Zealand)",
+  "currency": "NZD",
+  "researched_on": "2026-10-15",
+  "summary": "Residents pay income tax on worldwide income at 10%, 20% and 30% (above NZD 20,000). There is no capital gains tax outside dealing. Dividends are exempt income under the Income Tax Act 1961, though they count when setting the rate on other income. The Tax Office's return form lists dividends as income, so this is low confidence. No wealth, estate or gift tax was found.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Tax residence in Niue",
+      "type": "standard",
+      "description": "Residents are taxed on worldwide income (Income Tax Act 1961 s.80) at 10% up to NZD 10,000, 20% to NZD 20,000 and 30% above.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Domicile in Niue, or 183 days' presence in a 12-month period (s.2 'resident').",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax. Gains are income only if the taxpayer deals in the property, acquired it for resale, or made them in a profit-making scheme (Income Tax Act 1961, assessable income provisions).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Niue Income Tax Act 1961 (consolidated, Niue Legislation Act 2019 edition)",
+            "url": "https://mof.gov.nu/wp-content/uploads/2024/04/IncomeTax_1961.pdf",
+            "publisher": "Niue Ministry of Finance",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Amendments after the 2019 consolidation not checked."
+        ],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Income Tax Act 1961: profits from the sale of property are assessable only when the business is dealing, the property was acquired for resale, or under a profit-making scheme. An investor's gains are therefore scored at 0.",
+        "professional_trader": "Dealing in securities makes gains ordinary income at up to 30%.",
+        "foreign_assets": "Same rule for foreign assets."
+      },
+      "dividends": {
+        "summary": "Income Tax Act 1961 s.49(1)(d) exempts 'dividends and other profits derived from shares… in companies other than companies which are exempt from income tax'. Under s.40 they still count when setting the rate on other assessable income. The current TF1 return nevertheless asks for dividends as income.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Niue Income Tax Act 1961 (consolidated, Niue Legislation Act 2019 edition)",
+            "url": "https://mof.gov.nu/wp-content/uploads/2024/04/IncomeTax_1961.pdf",
+            "publisher": "Niue Ministry of Finance",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Niue Tax Office: TF1 Individual Income Tax Return",
+            "url": "https://mof.gov.nu/wp-content/uploads/2024/06/TF1-Inidividual-Income-Tax-Form.pdf",
+            "publisher": "Niue Ministry of Finance",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Conflict between the statutory dividend exemption (s.49(1)(d)) and the TF1 return listing dividends as income; Tax Office practice not confirmed.",
+          "Whether dividends from foreign companies qualify for the exemption is not explicit."
+        ],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Statutory exemption, s.49(1)(d); s.40(2)(c) refers to dividends 'derived by an absentee from sources out of Niue', which implies foreign dividends are within the exemption too. Scored at 0. Low confidence because the Tax Office's TF1 form lists 'DIVIDENDS' among income and the exemption's application to foreign companies is not explicit.",
+        "withholding_outbound": "Not researched.",
+        "treaty_network": "No comprehensive tax treaties (s.85 allows agreements with other countries)."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax. The Niue Tax Office administers income tax, consumption tax (NCT), business licensing and company registration.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Niue Tax Office (Ministry of Finance): taxes administered, forms and guides",
+            "url": "https://mof.gov.nu/niuetax/",
+            "publisher": "Niue Ministry of Finance",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "No property tax found; most land is customary land."
+      },
+      "inheritance": {
+        "summary": "No estate, inheritance or gift duty was found among the taxes administered by the Niue Tax Office.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Niue Tax Office (Ministry of Finance): taxes administered, forms and guides",
+            "url": "https://mof.gov.nu/niuetax/",
+            "publisher": "Niue Ministry of Finance",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "open_questions": [
+          "Absence of estate/gift duty not confirmed in legislation (Niue Act 1966 and the Niue legislation database not checked)."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "gift_tax": "No gift duty found.",
+        "gifts_same_as_inheritance": true,
+        "domicile_rules": "Not applicable."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if domiciled in Niue at any time in the year, or present 183 days in any 12-month period beginning or ending in the year (Income Tax Act 1961 s.2). Part-year rules for arrival and departure years.",
+    "routes": [
+      {
+        "name": "Niue immigration permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Niue controls its own immigration (Ministry of Finance immigration office). Long-term residence requires a permit (details not researched)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Niue Income Tax Act 1961 (consolidated, Niue Legislation Act 2019 edition)",
+        "url": "https://mof.gov.nu/wp-content/uploads/2024/04/IncomeTax_1961.pdf",
+        "publisher": "Niue Ministry of Finance",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Niue Tax Office (Ministry of Finance): taxes administered, forms and guides",
+        "url": "https://mof.gov.nu/niuetax/",
+        "publisher": "Niue Ministry of Finance",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.3,
+    "summary": "Companies are taxed at 30% (Income Tax Act 1961, Schedule 1, clause 2).",
+    "sources": [
+      {
+        "title": "Niue Income Tax Act 1961 (consolidated, Niue Legislation Act 2019 edition)",
+        "url": "https://mof.gov.nu/wp-content/uploads/2024/04/IncomeTax_1961.pdf",
+        "publisher": "Niue Ministry of Finance",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Alofi",
+      "lon": -169.9187,
+      "lat": -19.0595,
+      "kind": "capital",
+      "coordinate_source": "Wikipedia (Alofi), approx."
+    }
+  ],
+  "us_citizen_notes": "No US treaty. US citizens pay US federal tax on worldwide income; US estate tax applies.",
+  "open_questions": [
+    "Dividend exemption vs TF1 form practice.",
+    "Immigration requirements not researched."
+  ]
+}

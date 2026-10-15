@@ -1,0 +1,222 @@
+{
+  "wgi_va": {
+    "description": "Voice and Accountability, WGI estimate (-2.5 to 2.5)",
+    "source": "Worldwide Governance Indicators (World Bank), 2025 release",
+    "url": "https://data.worldbank.org/indicator/GOV_WGI_VA.EST",
+    "code": "GOV_WGI_VA.EST",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 211
+  },
+  "wgi_pv": {
+    "description": "Political Stability and Absence of Violence/Terrorism, WGI estimate",
+    "source": "Worldwide Governance Indicators (World Bank), 2025 release",
+    "url": "https://data.worldbank.org/indicator/GOV_WGI_PV.EST",
+    "code": "GOV_WGI_PV.EST",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 211
+  },
+  "wgi_ge": {
+    "description": "Government Effectiveness, WGI estimate",
+    "source": "Worldwide Governance Indicators (World Bank), 2025 release",
+    "url": "https://data.worldbank.org/indicator/GOV_WGI_GE.EST",
+    "code": "GOV_WGI_GE.EST",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 209
+  },
+  "wgi_rq": {
+    "description": "Regulatory Quality, WGI estimate",
+    "source": "Worldwide Governance Indicators (World Bank), 2025 release",
+    "url": "https://data.worldbank.org/indicator/GOV_WGI_RQ.EST",
+    "code": "GOV_WGI_RQ.EST",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 209
+  },
+  "wgi_rl": {
+    "description": "Rule of Law, WGI estimate",
+    "source": "Worldwide Governance Indicators (World Bank), 2025 release",
+    "url": "https://data.worldbank.org/indicator/GOV_WGI_RL.EST",
+    "code": "GOV_WGI_RL.EST",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 211
+  },
+  "wgi_cc": {
+    "description": "Control of Corruption, WGI estimate",
+    "source": "Worldwide Governance Indicators (World Bank), 2025 release",
+    "url": "https://data.worldbank.org/indicator/GOV_WGI_CC.EST",
+    "code": "GOV_WGI_CC.EST",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 211
+  },
+  "homicide_rate": {
+    "description": "Intentional homicides per 100,000 people (UNODC via World Bank)",
+    "source": "World Bank World Development Indicators API",
+    "url": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5",
+    "code": "VC.IHR.PSRC.P5",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 37,
+    "count": 158
+  },
+  "life_expectancy": {
+    "description": "Life expectancy at birth, years",
+    "source": "World Bank World Development Indicators API",
+    "url": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
+    "code": "SP.DYN.LE00.IN",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 216
+  },
+  "uhc_index": {
+    "description": "UHC service coverage index (WHO via World Bank), 0-100",
+    "source": "World Bank World Development Indicators API",
+    "url": "https://data.worldbank.org/indicator/SH_UHC_SCI",
+    "code": "SH_UHC_SCI",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 193
+  },
+  "learning_outcomes": {
+    "description": "Harmonized learning outcomes (Human Capital Index), test-score points",
+    "source": "World Bank World Development Indicators API",
+    "url": "https://data.worldbank.org/indicator/HD.HCI.HLOS",
+    "code": "HD.HCI.HLOS",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 172
+  },
+  "gdp_pc_ppp": {
+    "description": "GDP per capita, PPP, constant 2021 international $",
+    "source": "World Bank World Development Indicators API",
+    "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD",
+    "code": "NY.GDP.PCAP.PP.KD",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 199
+  },
+  "internet_users": {
+    "description": "Individuals using the Internet, % of population",
+    "source": "World Bank World Development Indicators API",
+    "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
+    "code": "IT.NET.USER.ZS",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 6,
+    "count": 207
+  },
+  "lpi": {
+    "description": "Logistics Performance Index, overall (1-5)",
+    "source": "World Bank World Development Indicators API",
+    "url": "https://data.worldbank.org/indicator/LP.LPI.OVRL.XQ",
+    "code": "LP.LPI.OVRL.XQ",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 2,
+    "count": 167
+  },
+  "migrant_share": {
+    "description": "International migrant stock, % of population",
+    "source": "World Bank World Development Indicators API",
+    "url": "https://data.worldbank.org/indicator/SM.POP.TOTL.ZS",
+    "code": "SM.POP.TOTL.ZS",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 215
+  },
+  "price_level_ratio": {
+    "description": "Price level ratio: household-consumption PPP conversion factor / market exchange rate (US = 1)",
+    "source": "World Bank WDI (PA.NUS.PRVT.PP / PA.NUS.FCRF, same year)",
+    "url": "https://data.worldbank.org/indicator/PA.NUS.PRVT.PP",
+    "code": "PA.NUS.PRVT.PP/PA.NUS.FCRF",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 204
+  },
+  "hdi": {
+    "description": "Human Development Index (0-1)",
+    "source": "UNDP Human Development Report 2025, composite indices time series",
+    "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 193
+  },
+  "cpi": {
+    "description": "Corruption Perceptions Index 2025 (0-100, higher = cleaner)",
+    "source": "Transparency International",
+    "url": "https://images.transparencycdn.org/images/CPI2025_Results.xlsx",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 181
+  },
+  "english_epi": {
+    "description": "EF English Proficiency Index 2025 score; jurisdictions where English is the majority language (not ranked by EF) are set to 700, above the top EF score",
+    "source": "EF Education First EPI 2025; English-majority list from CIA World Factbook language entries",
+    "url": "https://www.ef.com/wwen/epi/",
+    "english_majority_list_url": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_English_is_an_official_language",
+    "english_majority": [
+      "GBR",
+      "IRL",
+      "USA",
+      "CAN",
+      "AUS",
+      "NZL",
+      "IMN",
+      "JEY",
+      "GGY",
+      "GIB",
+      "BMU",
+      "BHS",
+      "CYM",
+      "TCA",
+      "VGB",
+      "AIA",
+      "MSR",
+      "ATG",
+      "KNA",
+      "DMA",
+      "GRD",
+      "LCA",
+      "VCT",
+      "BRB",
+      "JAM",
+      "TTO",
+      "BLZ",
+      "GUY",
+      "VIR",
+      "FLK",
+      "SHN"
+    ],
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 154
+  },
+  "pisa": {
+    "description": "OECD PISA 2025: mean of mathematics, reading and science scores of 15-year-olds",
+    "source": "OECD, PISA 2025 Results (Volume I): Future-Ready Students (2026-09-08)",
+    "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/09/pisa-2025-results-volume-i_5265bfb1/73451bc5-en.pdf",
+    "fetched": "2026-10-15",
+    "dropped_older_than": 2016,
+    "dropped_count": 0,
+    "count": 87
+  }
+}

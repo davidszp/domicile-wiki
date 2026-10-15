@@ -1,0 +1,302 @@
+{
+  "id": "KOR",
+  "name": "South Korea",
+  "continent": "Asia",
+  "region": "East Asia",
+  "currency": "KRW",
+  "researched_on": "2026-10-15",
+  "summary": "South Korea taxes residents on worldwide income. Gains on foreign shares cost 22%, while Korean listed shares are exempt below major-shareholder thresholds. Financial income above KRW 20 million a year is taxed at up to 49.5%. Foreigners resident five years or less in ten are taxed on foreign dividends only if they are remitted to Korea. Inheritance tax is estate-based at 10%-50%, with a KRW 500 million deduction, and covers worldwide assets of a resident. There is no net wealth tax, but a national holding tax on high-value housing applies. An exit tax reaches foreign shares from 2027.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Korean resident (worldwide)",
+      "type": "standard",
+      "description": "Worldwide taxation: foreign-share gains 22%, financial income above KRW 20 million at up to 49.5%; estate-basis inheritance tax up to 50%.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if domiciled in Korea or residing 183 days or more in a tax year (from 2026 also 183 consecutive days spanning two years). Foreigners are taxed worldwide once resident more than five of the last ten years.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains are taxed separately from global income. Gains on Korean listed shares are exempt for shareholders below the 'major shareholder' thresholds (1% stake on KOSPI, or KRW 5 billion market value). Gains on foreign shares are taxed at 20% national plus 10% local income tax (22% in total) after a KRW 2.5 million annual deduction. Major shareholders' Korean shares and unlisted shares are taxed at 22% up to KRW 300 million of gain and 27.5% above (local tax included). Real estate gains are taxed at the progressive rates of 6%-45% plus local tax, with a long-term holding deduction.",
+        "exemptions_thresholds": "KRW 2.5 million basic deduction per category per year. One house per household exempt under conditions (high-value homes partly taxable).",
+        "important_exceptions": "The planned financial investment income tax was repealed before taking effect (general knowledge). Exit tax: residents of 5+ years who are major shareholders pay tax on unrealised gains on Korean shares when emigrating; from 1 January 2027 foreign shares are included (above KRW 500 million in total, with carve-outs for foreign employees). Heavier rates for multi-home owners in regulated areas have been suspended by decree (status after May 2026 not verified).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Korea, Republic of - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Korea, Republic of - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "National Tax Service - English home (tax guides for foreigners)",
+            "url": "https://www.nts.go.kr/english/main.do",
+            "publisher": "National Tax Service of Korea",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether short-term foreign residents (5 years or less in the last 10) are taxed on foreign-share gains only when remitted was not confirmed; the special regime therefore keeps 22% on foreign-share gains."
+        ],
+        "headline_rate": 0.495,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.22,
+          "private_business_sale": 0.275,
+          "real_estate_local": 0.495,
+          "real_estate_foreign": 0.495
+        },
+        "rate_basis": "Foreign listed shares 20% + 10% local = 22%. Domestic listed 0 for a holding below 1% and KRW 5 billion. Private business (unlisted, major shareholder) 25% + local = 27.5% on gains above KRW 300 million. Real estate: top 45% + local = 49.5% before the long-term holding deduction (up to 30% of the gain for general property held 15 years; more for a qualifying single home). Foreign real estate taxed the same way once resident 5 years.",
+        "professional_trader": "Trading as a business is business income at global rates up to 49.5%.",
+        "holding_period_rules": "Major-shareholder shares held under one year: 33%. Real estate held under 1-2 years: higher flat rates (not detailed).",
+        "foreign_assets": "Gains on foreign assets other than shares are taxable only if the seller has been resident 5 years or more at the time of sale (PwC). Foreign-share gains taxed at 22%."
+      },
+      "dividends": {
+        "summary": "Dividends are part of financial income: up to KRW 20 million a year is taxed at 15.4% (14% plus local tax) by withholding; above that, financial income is added to global income at progressive rates up to 45% plus 10% local tax (49.5%). Domestic dividends get a gross-up and dividend tax credit. Foreign dividends of residents taxed on worldwide income are included at global rates with a foreign tax credit. From 2026 to 2028, dividends from qualifying high-dividend Korean companies can be taxed separately at 14%-30%.",
+        "important_exceptions": "Foreign residents with five years or less of residence in the last ten are taxed on foreign dividends only if paid by a Korean entity or remitted to Korea (special regime).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Korea, Republic of - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Korea, Republic of - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Korea, Republic of - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Dividend gross-up rate for 2026 (10% assumed) not verified."
+        ],
+        "headline_rate": 0.495,
+        "domestic_rate": 0.4345,
+        "foreign_gross_rate": 0.495,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Foreign: 45% + 10% local = 49.5% before credit. Domestic: grossed-up dividend (assumed 10% gross-up) taxed at 45% less a credit equal to the gross-up gives 39.5% national + 3.95% local = 43.45% (gross-up rate not verified); qualifying high-dividend companies 2026-2028: separate 14%-30% national.",
+        "withholding_outbound": "22% WHT (20% + local) on dividends to non-residents, reducible by treaty (not opened).",
+        "treaty_network": "97 income tax treaties as of January 2026, including the US and EU states (PwC).",
+        "holding_company_notes": "CIT 10%-25% plus local tax; dividends received deduction for Korean subsidiaries (not researched)."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax (PwC). Korea does levy a national comprehensive real estate holding tax (CRET, 종합부동산세) on individuals whose total official value of housing exceeds KRW 900 million (KRW 1.2 billion for a one-house household); it is treated here as a property tax, not a wealth tax, because it reaches only Korean real estate and its current rate schedule could not be verified.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Korea, Republic of - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "종합부동산세 (Comprehensive real estate holding tax)",
+            "url": "https://ko.wikipedia.org/wiki/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8",
+            "publisher": "Wikipedia (Korean)",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "CRET is arguably a limited wealth tax on Korean housing; it was not modelled because the 2026 brackets were not verified."
+        ],
+        "type": "none",
+        "property_tax_note": "Local property tax 0.07%-5% of statutory value (PwC). CRET (national): on (official housing value - KRW 900 million / 1.2 billion) x fair-market-value ratio, progressive rates (top 2.7% for owners of two homes or fewer and up to 5% for three or more under the 2023 law, from general knowledge, not verified), plus 20% rural special tax. A EUR 5 million home would pay CRET. Acquisition tax 1%-12%."
+      },
+      "inheritance": {
+        "summary": "Korea levies inheritance tax on the whole estate (estate basis) at 10%-50%: 10% up to KRW 100 million, 20% to 500 million, 30% to 1 billion, 40% to 3 billion and 50% above. A lump-sum deduction of KRW 500 million (or a basic deduction plus personal deductions) and a spouse deduction of at least KRW 500 million (up to 3 billion) apply. Gift tax uses the same rates per recipient, with a deduction for gifts from parents to an adult child of KRW 50 million per 10 years (KRW 20 million for a minor). Gifts within 10 years before death are added back to the estate.",
+        "exemptions_thresholds": "Lump-sum deduction KRW 500 million per estate; spouse deduction KRW 0.5-3 billion; financial asset deduction up to KRW 200 million; 3% credit for timely filing (general knowledge, not verified).",
+        "important_exceptions": "Government reform proposals (heir-based taxation from 2028, higher child deductions, top rate cut) were not in force for 2026 as far as checked; PwC still shows 10%-50%. Business succession deduction for family businesses does not cover a listed portfolio.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Korea, Republic of - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "상속세 (Inheritance tax in South Korea) - rate table",
+            "url": "https://ko.wikipedia.org/wiki/%EC%83%81%EC%86%8D%EC%84%B8",
+            "publisher": "Wikipedia (Korean)",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "National Tax Service - English home (tax guides for foreigners)",
+            "url": "https://www.nts.go.kr/english/main.do",
+            "publisher": "National Tax Service of Korea",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Rate table cited from Korean Wikipedia and PwC (10%-50%); the Inheritance and Gift Tax Act text was not opened.",
+          "Whether lifetime gifts more than 10 years before death fully escape aggregation (10 years for heirs is the general rule) not re-verified."
+        ],
+        "basis": "estate",
+        "children_treatment": "taxed",
+        "exemption": 500000000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.1
+          },
+          {
+            "from_amount": 100000000,
+            "rate": 0.2
+          },
+          {
+            "from_amount": 500000000,
+            "rate": 0.3
+          },
+          {
+            "from_amount": 1000000000,
+            "rate": 0.4
+          },
+          {
+            "from_amount": 3000000000,
+            "rate": 0.5
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "scope": "worldwide",
+        "gift_tax": "Gift tax 10%-50% on each recipient's gifts (10-year aggregation per donor group); KRW 50 million deduction per 10 years for an adult child from lineal ascendants (KRW 20 million for minors); a separate marriage/childbirth gift deduction was added in 2024 (not verified).",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": 10,
+        "business_relief": "Family business succession deduction (up to KRW 60 billion) for qualifying SMEs and mid-sized companies; not for portfolio shares.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "If the deceased was a Korean resident (domicile or residence of 183 days or more), worldwide assets are taxed; for a non-resident deceased, Korean assets only.",
+        "domicile_rules": "Residence of the deceased decides scope; there is no special exclusion for foreign nationals (not verified). Gift tax: a resident recipient is taxed on worldwide gifts."
+      }
+    },
+    {
+      "id": "foreign_resident_5y",
+      "name": "Short-term foreign resident (5 years or less in 10)",
+      "type": "special",
+      "description": "Foreign residents who have lived in Korea for five years or less in the last ten are taxed on foreign-source income only if it is paid by a Korean entity or remitted to Korea.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Foreign national resident in Korea with cumulative residence of five years or less in the preceding ten years.",
+      "duration_years": 5,
+      "dividends": {
+        "summary": "Foreign dividends not paid by a Korean entity and not remitted to Korea are not taxed; Korean dividends as standard.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Korea, Republic of - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Korea, Republic of - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.495,
+        "domestic_rate": 0.4345,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Foreign dividends 0 if kept abroad (remittance basis); domestic as standard."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if domiciled in Korea, residing 183 days or more in a tax year, or (from tax years beginning 2026) residing 183 consecutive days across two tax years; facts-and-circumstances test (family, assets, occupation). Foreigners: worldwide taxation only after more than five years of residence in the last ten.",
+    "routes": [
+      {
+        "name": "Investor visa (D-8) / immigrant investor (F-2/F-5) and other visas",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Investor and real-estate/public-fund investment immigration schemes exist (thresholds not verified in this pass)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Korea, Republic of - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "CIT for fiscal years from 1 January 2026: 10% to KRW 200 million, 20% to 20 billion, 22% to 300 billion, 25% above, plus local income tax of 10% of CIT (top 27.5%). Additional 20% tax on excess retained earnings of large conglomerate companies to 2028.",
+    "sources": [
+      {
+        "title": "Korea, Republic of - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/republic-of-korea/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Seoul",
+      "lon": 126.9784,
+      "lat": 37.566,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 1835848"
+    }
+  ],
+  "us_citizen_notes": "US citizens pay US tax on top; the Korea-US treaty (1976) gives credits. Korean inheritance tax applies to a resident's worldwide estate in addition to US estate tax (no estate tax treaty).",
+  "open_questions": [
+    "Inheritance-tax reform (heir-based system) is under discussion; scored on the law in force.",
+    "Investment immigration thresholds not verified."
+  ]
+}

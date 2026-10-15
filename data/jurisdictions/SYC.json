@@ -1,0 +1,219 @@
+{
+  "id": "SYC",
+  "name": "Seychelles",
+  "continent": "Africa",
+  "region": "East Africa (Indian Ocean)",
+  "currency": "SCR",
+  "researched_on": "2026-10-15",
+  "summary": "Seychelles levies personal income tax on employment emoluments and business tax on business income; there is no capital gains tax, and foreign-source dividends and investment income of a private individual are not taxed (territorial system). No wealth, inheritance or gift tax; foreigners owning residential property pay an annual immovable property tax of 0.25% of market value. Residence for foreigners needs a permit. Low-to-medium confidence: no Big-4 summary was available.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Seychelles residence",
+      "type": "standard",
+      "description": "Territorial: no CGT; foreign dividends untaxed; no wealth or inheritance tax.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Lawful resident with a permit.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Capital gains are not subject to tax in Seychelles (Lloyds Bank Trade). Business tax applies only to Seychelles-sourced business income (territorial since 2019, Business Tax Act 2009 as amended).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Seychelles: Business environment - taxes",
+            "url": "https://www.lloydsbanktrade.com/en/market-potential/seychelles/taxes",
+            "publisher": "Lloyds Bank Trade (Export Entreprises)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Seychelles-sourced income: official guidance (updated Aug 2025)",
+            "url": "https://www.uniwide.com/seychelles-sourced-income-official-guidance/",
+            "publisher": "Uniwide Formations",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Seychelles Revenue Commission: Domestic taxation (Income and Non-Monetary Benefits Tax)",
+            "url": "https://www.src.gov.sc/",
+            "publisher": "Seychelles Revenue Commission",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "unverified",
+        "open_questions": [
+          "The Business Tax Act text was not read; gains that form part of a business (trading) could be business income."
+        ],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No CGT; all rates 0.",
+        "professional_trader": "Gains of a business (trading) could fall under business tax; private investors not affected."
+      },
+      "dividends": {
+        "summary": "Individuals' income tax is levied on employment emoluments (SRC). Foreign dividends of a private individual are not taxed. Seychelles-company dividends: 15% WHT to non-residents; 0% between resident entities.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Seychelles Revenue Commission: Domestic taxation (Income and Non-Monetary Benefits Tax)",
+            "url": "https://www.src.gov.sc/",
+            "publisher": "Seychelles Revenue Commission",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Seychelles: Business environment - taxes",
+            "url": "https://www.lloydsbanktrade.com/en/market-potential/seychelles/taxes",
+            "publisher": "Lloyds Bank Trade (Export Entreprises)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Seychelles-sourced income: official guidance (updated Aug 2025)",
+            "url": "https://www.uniwide.com/seychelles-sourced-income-official-guidance/",
+            "publisher": "Uniwide Formations",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "open_questions": [
+          "Whether a resident individual receiving dividends from a Seychelles company suffers 15% WHT was not verified."
+        ],
+        "headline_rate": 0.0,
+        "domestic_rate": null,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Foreign dividends 0 (outside both the employment-income tax and Seychelles-source business tax). Domestic rate unknown (null).",
+        "withholding_outbound": "15% WHT on dividends, interest and royalties paid to non-residents; 0% between resident entities (Lloyds).",
+        "treaty_network": "Treaty network size not verified; no treaty with the United States."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Seychelles: Business environment - taxes",
+            "url": "https://www.lloydsbanktrade.com/en/market-potential/seychelles/taxes",
+            "publisher": "Lloyds Bank Trade (Export Entreprises)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "unverified",
+        "open_questions": [],
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Foreigners who own residential immovable property pay an annual immovable property tax of 0.25% of market value (Lloyds). Stamp duty 5% on purchases by residents; special rules for non-residents. Not a wealth tax."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax was found.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Seychelles: Business environment - taxes",
+            "url": "https://www.lloydsbanktrade.com/en/market-potential/seychelles/taxes",
+            "publisher": "Lloyds Bank Trade (Export Entreprises)",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Seychelles Revenue Commission: Domestic taxation (Income and Non-Monetary Benefits Tax)",
+            "url": "https://www.src.gov.sc/",
+            "publisher": "Seychelles Revenue Commission",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "unverified",
+        "open_questions": [
+          "Stamp duty on transfers of immovable property on death or by gift not verified."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "None found.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "No tax found on any asset.",
+        "domicile_rules": "Not relevant.",
+        "business_relief": "Not needed (no tax)."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Generally resident if present 183+ days in a year (not verified against the statute).",
+    "routes": [
+      {
+        "name": "Residence permit / Gainful Occupation Permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Foreigners need a residence permit (e.g. for retirees, investors or dependants) or a Gainful Occupation Permit; foreign purchase of property requires government sanction. Terms not verified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Seychelles: Business environment - taxes",
+        "url": "https://www.lloydsbanktrade.com/en/market-potential/seychelles/taxes",
+        "publisher": "Lloyds Bank Trade (Export Entreprises)",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.33,
+    "summary": "Business tax 25% on the first SCR 1M of taxable income and 33% above (Uniwide, 2019 figures; not verified for 2026). Companies with economic substance can be exempt on foreign passive income.",
+    "sources": [
+      {
+        "title": "Seychelles-sourced income: official guidance (updated Aug 2025)",
+        "url": "https://www.uniwide.com/seychelles-sourced-income-official-guidance/",
+        "publisher": "Uniwide Formations",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Seychelles: Business environment - taxes",
+        "url": "https://www.lloydsbanktrade.com/en/market-potential/seychelles/taxes",
+        "publisher": "Lloyds Bank Trade (Export Entreprises)",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Victoria",
+      "lon": 55.45,
+      "lat": -4.61667,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 241131"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain US-taxed; no US-Seychelles tax treaty.",
+  "open_questions": []
+}

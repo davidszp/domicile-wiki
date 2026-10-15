@@ -1,0 +1,230 @@
+{
+  "id": "NRU",
+  "name": "Nauru",
+  "continent": "Oceania",
+  "region": "Micronesia (Central Pacific)",
+  "currency": "AUD",
+  "researched_on": "2026-10-15",
+  "summary": "Nauru has no general personal income tax. Employment and Services Tax applies to wages and service fees, and Business Tax (20% for individuals) applies to persons conducting a business; since 1 January 2021 resident businesses are taxed on worldwide income. Whether a resident family managing its own portfolio is 'conducting a business' (defined as any activity for economic gain) is unclear, so gains and foreign dividends are left unknown. Dividends from Nauru companies are excluded. No inheritance, gift or wealth tax was found. Nauru sells citizenship from USD 90,000 (offer to 31 December 2026).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary residence",
+      "type": "standard",
+      "description": "No general income tax; Business Tax on business income (worldwide for residents since 2021); Employment and Services Tax on wages/fees.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident individual as defined in ESTA s. 7 and BTA s. 8 (not read in detail).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No capital gains tax as such. Business profits tax applies to gross revenue from conducting a business, including 'a gain on disposal of a business asset' (BTA s. 17(1)(b)); since 1 January 2021 residents are taxed on worldwide amounts (s. 17(2A)). 'Business' means 'any activity, whether continuous or short term, conducted for the purposes of economic gain, other than an employment' (s. 3), which could arguably cover managing a large portfolio. Rates left unknown.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Business Tax Act 2016 (consolidated, as of 1 January 2021)",
+            "url": "https://naurufinance.info/wp-content/uploads/2023/05/Business-Tax-Act-2016.pdf",
+            "publisher": "Nauru Revenue Office, Department of Finance",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Nauru Revenue Office (BTA worldwide taxation from 1 January 2021)",
+            "url": "https://naurufinance.info/nauru-revenue-office/",
+            "publisher": "Nauru Revenue Office, Department of Finance",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "headline_rate": 0.2,
+        "rates": {
+          "listed_securities_domestic": null,
+          "listed_securities_foreign": null,
+          "private_business_sale": null,
+          "real_estate_local": null,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "If portfolio management is a business: gains on business assets at 20% (individual BPT rate; NRO). If not: 0. Not resolved, so null.",
+        "professional_trader": "The broad statutory definition of 'business' is the issue: any activity for economic gain.",
+        "open_questions": [
+          "Ask the NRO whether a resident individual's passive portfolio (foreign listed shares) is a 'business' under BTA s. 3; the NRO 'Guide to Completing Schedule 1 - Foreign Income' was not read."
+        ]
+      },
+      "dividends": {
+        "summary": "Distributions by a resident company, partnership or trust are excluded from gross revenue (BTA s. 17(2)(a)). Foreign dividends are taxed only if they are proceeds of a business (worldwide basis since 2021, with a foreign tax credit); whether a passive investor is in business is unresolved, so the foreign rate is left unknown.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Business Tax Act 2016 (consolidated, as of 1 January 2021)",
+            "url": "https://naurufinance.info/wp-content/uploads/2023/05/Business-Tax-Act-2016.pdf",
+            "publisher": "Nauru Revenue Office, Department of Finance",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "NRO administered legislation (ESTA, BTA and rates)",
+            "url": "https://naurufinance.info/nro-administered-legislation/",
+            "publisher": "Nauru Revenue Office, Department of Finance",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Nauru Revenue Office (BTA worldwide taxation from 1 January 2021)",
+            "url": "https://naurufinance.info/nauru-revenue-office/",
+            "publisher": "Nauru Revenue Office, Department of Finance",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "exemptions_thresholds": "Individuals' business profits tax 20%; Nauruan residents have a AUD 250,000 tax-free threshold (NRO).",
+        "headline_rate": 0.2,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": null,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Domestic: s. 17(2)(a) excludes resident-company distributions = 0. Foreign: 20% if part of a business, else 0; null pending clarification.",
+        "withholding_outbound": "Non-resident tax 20% on interest, royalties and insurance premiums (NRO); dividends not listed.",
+        "treaty_network": "No comprehensive treaties found (not verified)."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax: the NRO administers only the Revenue Administration Act, Employment and Services Tax Act, Business Tax Act, Telecommunications Service Tax Act and Gaming Act.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "NRO administered legislation (ESTA, BTA and rates)",
+            "url": "https://naurufinance.info/nro-administered-legislation/",
+            "publisher": "Nauru Revenue Office, Department of Finance",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Not researched."
+      },
+      "inheritance": {
+        "summary": "No inheritance, estate or gift tax: none appears among the tax laws administered by the Nauru Revenue Office.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "NRO administered legislation (ESTA, BTA and rates)",
+            "url": "https://naurufinance.info/nro-administered-legislation/",
+            "publisher": "Nauru Revenue Office, Department of Finance",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax found.",
+        "gifts_same_as_inheritance": true,
+        "open_questions": [
+          "Land in Nauru is almost entirely customary/landowner-held; not researched."
+        ]
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Employment and Services Tax Act 2014 s. 7 and Business Tax Act 2016 s. 8 define resident individuals; the explanatory memoranda list factors (OECD CRS residency sheet). Detailed tests not read.",
+    "routes": [
+      {
+        "name": "Naoero Economic and Climate Resilience Citizenship Program",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Contribution USD 90,000 for a principal applicant under a limited-time offer to 31 December 2026 (USD 25,000 discount), USD 2,000 per additional dependant aged 16+, USD 15,000 per sibling; plus application fees (USD 5,000 + 2,000 per dependant), due diligence (USD 6,000 + 3,000 per dependant 16+), bank fees and USD 500 per passport. No residence requirement; dual citizenship allowed. Citizenship does not create tax residence.",
+        "minimum_investment": {
+          "amount": 90000,
+          "currency": "USD"
+        }
+      },
+      {
+        "name": "Residence permit",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Nauru: Information on residency for tax purposes (CRS)",
+        "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/nauru-tax-residency.pdf",
+        "publisher": "OECD",
+        "kind": "intergovernmental",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Naoero Economic and Climate Resilience Citizenship Program: contribution and fees",
+        "url": "https://www.ecrcp.gov.nr/contribution",
+        "publisher": "Government of the Republic of Naoero (Program Office)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Naoero ECRCP: frequently asked questions",
+        "url": "https://www.ecrcp.gov.nr/frequently-asked-questions",
+        "publisher": "Government of the Republic of Naoero (Program Office)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": null,
+    "summary": "Business profits tax on companies at rates depending on category, residence and turnover (not verified); individuals 20%; small business tax 2.5% of gross revenue for non-resident individuals with turnover up to AUD 250,000; worldwide basis for residents since 2021.",
+    "sources": [
+      {
+        "title": "NRO administered legislation (ESTA, BTA and rates)",
+        "url": "https://naurufinance.info/nro-administered-legislation/",
+        "publisher": "Nauru Revenue Office, Department of Finance",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Nauru Revenue Office (BTA worldwide taxation from 1 January 2021)",
+        "url": "https://naurufinance.info/nauru-revenue-office/",
+        "publisher": "Nauru Revenue Office, Department of Finance",
+        "kind": "tax_authority",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Yaren",
+    "notes": "Not sourced."
+  },
+  "markers": [
+    {
+      "name": "Yaren",
+      "lon": 166.9252,
+      "lat": -0.55085,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 7626461"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets wherever they live; the app adds the federal layer. Where local tax on portfolio income is nil there is nothing to credit against US tax.",
+  "open_questions": [
+    "Whether passive portfolio income of a resident individual is business income (decisive for the scored rates)."
+  ]
+}

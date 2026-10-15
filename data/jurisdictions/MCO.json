@@ -1,0 +1,224 @@
+{
+  "id": "MCO",
+  "name": "Monaco",
+  "continent": "Europe",
+  "region": "Western Europe (French Riviera), not an EU member (customs union and VAT with France)",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "Residents of Monaco pay no personal income tax (so no tax on capital gains, dividends or interest) and no wealth tax or annual property tax. Inheritance and gift tax applies only to assets situated in Monaco and is 0% between parents and children and between spouses (8% siblings up to 16% unrelated). The big exception: French nationals resident in Monaco are taxed by France as if French residents under the 1963 France-Monaco convention. Real estate purchases bear 4.5%-7.5% registration duty.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary Monaco residence (non-French nationals)",
+      "type": "standard",
+      "description": "No personal income tax for residents genuinely established in Monaco. Does not apply to French nationals, who remain taxable in France on worldwide income under the 1963 Bilateral Convention (with narrow historical exceptions not researched).",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Monaco residence card (carte de séjour) and genuine establishment in Monaco. 'EU' here excludes French nationals (see description).",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "No personal income tax, therefore no tax on capital gains from securities, private businesses or real estate for resident individuals.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax in Monaco",
+            "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+            "publisher": "Government of Monaco (MonServicePublic)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The government page confirms no income tax for residents but does not mention capital gains explicitly; inferred from absence of any income tax."
+        ],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "No personal income or capital gains tax. Foreign real estate gains may be taxed by the situs country.",
+        "professional_trader": "Not relevant to individuals (Business Profit Tax applies only to commercial businesses with more than 25% of turnover outside Monaco).",
+        "foreign_assets": "Not taxed in Monaco."
+      },
+      "dividends": {
+        "summary": "No personal income tax on dividends, domestic or foreign. Foreign withholding tax is a final cost; Monaco has very few income tax treaties, so treaty-reduced WHT is generally not available.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax in Monaco",
+            "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+            "publisher": "Government of Monaco (MonServicePublic)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Monaco's treaty network (very limited; France convention, few others) not researched in detail."
+        ],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "No income tax.",
+        "withholding_outbound": "No withholding tax on dividends (general knowledge, not verified).",
+        "treaty_network": "Very limited for income tax; investors bear full non-treaty WHT on foreign dividends (e.g. 30% on US dividends without treaty)."
+      },
+      "wealth_tax": {
+        "summary": "No wealth tax, no annual property tax and no council tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tax in Monaco",
+            "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+            "publisher": "Government of Monaco (MonServicePublic)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "No annual property tax or council tax."
+      },
+      "inheritance": {
+        "summary": "Inheritance and gift (transfer) tax applies only to property situated in Monaco, regardless of the deceased's domicile or nationality. Rate between parents and children (direct line) and spouses: 0%. Siblings 8%, uncles/aunts/nephews/nieces 10%, other relatives 13%, unrelated 16%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Inheritance tax",
+            "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/inheritance-tax",
+            "publisher": "Government of Monaco (MonServicePublic)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Registration Duty",
+            "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/registration-duty",
+            "publisher": "Government of Monaco (MonServicePublic)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "The government page applies the transfer tax to gifts of Monaco-situs property under the same situs rule but does not state separately that gift rates by relationship match the inheritance rates (0% for children is consistent with the registration-duty schedule but was not re-read)."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Gifts of Monaco-situs property follow the same transfer-tax principle; 0% for children.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Not needed for children.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Only Monaco-situs assets are within scope; foreign assets are not taxed by Monaco (the deceased's nationality country may tax them, e.g. France for French nationals).",
+        "domicile_rules": "Situs-based. Declarations of inheritance must be registered within strict deadlines."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "No income tax, so residence matters mainly for proving non-residence elsewhere: a Monaco residence card and genuine establishment (main home, presence) are required; the tax department issues certificates of domicile/usual residence.",
+    "routes": [
+      {
+        "name": "Monaco residence card (carte de séjour)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Accommodation in Monaco (purchase or lease), proof of sufficient means (in practice a substantial bank deposit with a Monaco bank), clean record; non-EU nationals first need a long-stay French visa. Amounts not verified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tax in Monaco",
+        "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+        "publisher": "Government of Monaco (MonServicePublic)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": null,
+    "summary": "Business Profit Tax (ISB) applies only to industrial/commercial businesses earning more than 25% of turnover outside Monaco (rate not stated on the government page). VAT as in France.",
+    "sources": [
+      {
+        "title": "Tax in Monaco",
+        "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+        "publisher": "Government of Monaco (MonServicePublic)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Monaco",
+    "notes": "No cost item other than rent and school fees was sourced. Real estate purchase registration duty 4.5% (transparent buyers) or 7.5%. Rent is a small listing sample; Monaco rents vary enormously with size and building.",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 110000,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 11 distinct apartments with 4-5 bedrooms listed for rent in Monaco on LuxuryEstate.com on 15 October 2026 (offices excluded); range EUR 22,000 (4 bedrooms, 196 m²) to EUR 190,000 (5 bedrooms, Carré d'Or); 4-bedroom flats of about 200-300 m² asked EUR 22,000-35,000, larger 400-700 m² units EUR 70,000-190,000. Small, very dispersed sample of agency asking rents.",
+      "source": {
+        "title": "LuxuryEstate.com: luxury properties for rent in Monaco (listing sample)",
+        "url": "https://www.luxuryestate.com/rent/monaco",
+        "publisher": "LuxuryEstate.com",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 34400,
+        "currency": "EUR"
+      },
+      "year": 2025,
+      "description": "International School of Monaco, Classes 10 to 13 (upper secondary/IB) annual school fees for 2025/2026, the latest year for which the school's published terms give the fee table. One-time charges in 2025/26: application EUR 500, registration EUR 2,000, Capital Development Fund EUR 10,000 (the 2026-2027 bilingual-section terms show EUR 25,000). Sibling discounts from the third child.",
+      "source": {
+        "title": "The International School of Monaco: Enrolment Terms & Conditions 2025-26",
+        "url": "https://ismonaco.org/wp-content/uploads/2025/01/Enrolment-Terms-Conditions-2025-26.pdf",
+        "publisher": "The International School of Monaco",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "markers": [
+    {
+      "name": "Monaco",
+      "lon": 7.41667,
+      "lat": 43.73333,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2993458"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed on worldwide income; Monaco adds nothing and there is no US-Monaco income tax treaty. French nationals: taxed by France as French residents (1963 convention), so Monaco gives them no income-tax benefit.",
+  "open_questions": [
+    "French nationals exception: details of the 1963 convention (e.g. historical exemption for those resident before 1957) not researched; the app should treat French citizens separately (schema only distinguishes EU/US/OTHER).",
+    "Residence card financial requirements not verified.",
+    "ISB corporate rate not stated in source opened.",
+    "School fee is the 2025/26 ISM figure; the 2026/27 tuition table was not found in the school's published 2026-2027 documents (the bilingual-section terms list a EUR 25,000 Capital Development Fund).",
+    "Indicators: the World Bank WGI (all six), life expectancy, internet use, UHC index and migrant share are present for Monaco in the pipeline data, so no WGI override is needed. Homicide rate, HDI, CPI, GDP per capita PPP and the other missing indicators have no same-definition official source located: no crime series was found on the IMSEE (Monaco Statistics) site and no police homicide count was located. They remain missing rather than proxied from France."
+  ]
+}

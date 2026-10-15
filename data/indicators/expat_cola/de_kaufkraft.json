@@ -1,0 +1,13 @@
+{
+  "source": "de_kaufkraft",
+  "publisher": "Auswaertiges Amt (Referat Z23), Germany",
+  "title": "Zusammenstellung der Saetze des Kaufkraftausgleiches und der Stufen des Auslandszuschlags - Laenderliste (Stand 01.10.2026)",
+  "url": "https://www.auswaertiges-amt.de/resource/blob/2657502/48edbbc7e2bd1b6d115b041fe1025878/laenderliste-data.pdf",
+  "base": "0 = same purchasing power as Germany (no surcharge); value is the Kaufkraftausgleich percentage added to the Auslandszuschlag-relevant pay under section 55 BBesG; 5 = +5%",
+  "effective_date": "2026-10-01 (Stand of the table); per-row effective_date is the month of the post's last rate change",
+  "two_sided": false,
+  "includes_housing": null,
+  "notes": "Value = last 'KKA ab %' entry in each post's history. The table is effectively floored at 0 but not strictly one-sided: it does contain -5 steps (Montenegro/Podgorica -5 from 2026-09 in this set; also Kosovo, Chennai, Kolkata, Minsk elsewhere in the table), and cheap places such as Indonesia/Georgia/Serbia sit at 0, so it cannot show how cheap a place is. Steps are multiples of 5. Where a city is not listed the post used is in the post column; '->' rows in the PDF point to another post whose rate applies. Not in the table (omitted): AND, ATG, BHS, BRB, CYM, DMA, GRD, KNA, LCA, MUS, DEU (home country, no KKA), PRI. Not stated in the document whether housing is included (rent is handled separately by Mietzuschuss in BBesG, not checked). The Auswaertiges Amt Zuschlag zum Auslandszuschlag PDF (hardship) is a different, absolute-euro table and was not used. Destatis not used.",
+  "value_kind": "percent_allowance",
+  "base_country": "DEU"
+}

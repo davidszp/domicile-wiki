@@ -1,0 +1,74 @@
+import { h, extLink, fmtPct } from "../dom.js";
+import { state, isIncomePersona } from "../state.js";
+import { personaMethodology } from "./persona.js";
+import { normalizeWeights, bandRange } from "../scoring.js";
+
+export function renderMethodology(panel) {
+  if (isIncomePersona()) {
+    panel.append(h("h2", null, "Methodology"), ...personaMethodology(),
+      h("p", { class: "small muted" }, "Switch to Family office in the top bar for the investment-tax methodology, the indicator datasets, colour bands and missing-data rules, which apply to every persona."));
+    return;
+  }
+  const cfg = state.cfg;
+  const meta = state.data.meta;
+  const w = normalizeWeights(state.defaultWeights);
+  const ref = cfg.reference_family;
+  panel.append(h("h2", null, "Methodology"),
+    h("p", null, "Every map colour, ranking and profile score is produced by a documented pipeline: researched tax rules (one dated dossier and one structured file per jurisdiction), public indicator datasets, and a scoring configuration. The same configuration drives the Python build and this page."),
+
+    h("h3", null, "1. Geography"),
+    h("ul", null,
+      h("li", null, "Boundaries: ", extLink("https://www.naturalearthdata.com/", "Natural Earth"), " 1:10m admin-0 countries and admin-1 states/provinces (public domain), simplified with shared topology by mapshaper so neighbouring borders stay gap-free."),
+      h("li", null, "Projections: Natural Earth for the world, Lambert conformal conic for Europe, Mercator for the UAE and Caribbean close-ups (with a separate Bermuda inset), Albers USA for US states."),
+      h("li", null, "Small jurisdictions (Monaco, Andorra, Liechtenstein, Malta, Caribbean islands…) get a clickable circle at Natural Earth's official label point when their outline is too small to click. Labels use collision avoidance and leader lines."),
+      h("li", null, "Automated tests check that every marker lies inside its jurisdiction, that labels reference the right feature, that each scored jurisdiction exists in the boundary data, and that the close-ups contain the jurisdictions they promise.")),
+
+    h("h3", null, "2. Weights"),
+    h("p", null, "Default weights are points, converted to percentages:"),
+    h("div", { class: "table-wrap" }, h("table", { class: "grid small" },
+      h("thead", null, h("tr", null, h("th", null, "Metric"), h("th", null, "Points"), h("th", null, "Share"), h("th", null, "Transformation to 0–100"))),
+      h("tbody", null, Object.entries(cfg.metrics).map(([k, m]) => h("tr", null, h("td", null, m.label), h("td", { class: "num" }, String(m.weight)),
+        h("td", { class: "num" }, fmtPct(w[k])), h("td", null, (cfg.tax_transforms[k] || cfg.nontax_transforms[k]).description)))))),
+    h("p", null, "Overall score = Σ (metric score × normalised weight). The tax-only score uses the four tax metrics alone."),
+
+    h("h3", null, "3. Tax metrics use an effective burden, not headline rates"),
+    h("p", null, h("strong", null, "Personal holding and holding structures. "), cfg.holding_assumption),
+    h("p", null, `Each tax metric is computed for an illustrative family: a €${(ref.portfolio / 1e6).toFixed(0)}M portfolio (${ref.foreign_share * 100}% foreign), €${(ref.realized_gains / 1e6).toFixed(1)}M realised gains and €${(ref.dividends / 1e6).toFixed(1)}M dividends a year, €${(ref.real_estate_local / 1e6).toFixed(0)}M home, €${(ref.net_wealth / 1e6).toFixed(0)}M net wealth, and a €${(ref.estate / 1e6).toFixed(0)}M estate passing to ${ref.children} children. A zero headline rate therefore does not guarantee 100: real-estate gains, business-sale gains, transfer duties and treaty access all count.`),
+    h("p", null, cfg.tax_transforms.time_limited_regimes.description),
+    h("p", null, "Special regimes: each jurisdiction is scored under the best regime the selected citizenship can use (for example Italy's lump-sum regime or Cyprus non-dom), with the standard regime shown alongside it. The regime used is the one a family would actually pick: the lowest expected tax cost in euros (annual capital gains, dividend and wealth taxes plus inheritance tax once per generation, over a 60-year, two-generation horizon, with time-limited regimes blended with the standard rules). The weights then compare countries, not regimes. Regimes that require employment, a directorship or another qualifying activity (Spain's Beckham law, Portugal's IFICI, France's impatriate regime, Barbados's Welcome Stamp) are not counted for a passive investor family unless “Family will work locally” is ticked."),
+    h("p", null, "Lump sums (Italy, Greece, Swiss forfait, …) are fixed amounts, so their value depends on income: they are allocated across the metrics in proportion to the standard-regime taxes they replace, so a lump-sum regime scores better only when it actually costs less. Use the calculator to test larger or smaller incomes."),
+    h("p", null, h("strong", null, "US citizens. "), cfg.us_citizen_overlay.description),
+    h("p", null, h("strong", null, "US dividend withholding. "), cfg.us_dividend_withholding.description, " ", cfg.us_dividend_withholding.exclusions_note, " Source: ",
+      extLink(cfg.us_dividend_withholding.source.url, cfg.us_dividend_withholding.source.title), "."),
+
+    h("h3", null, "4. Knock-out criteria"),
+    h("p", null, cfg.knockout.description),
+    h("ul", null, cfg.knockout.criteria.map((c) => h("li", null, h("strong", null, `${c.label}: `), c.explanation)),
+      ["sanctions", "capital_controls", "security_state_courts"].filter((k) => cfg.knockout[k]).map((k) => h("li", null, h("strong", null, `${cfg.knockout[k].label}: `), cfg.knockout[k].explanation, " ",
+        Object.keys(cfg.knockout[k].countries).join(", "), ". Sources: ",
+        cfg.knockout[k].sources.map((s, i) => [i ? ", " : "", extLink(s.url, s.title)])))),
+    ...(cfg.red_flags && Object.keys(cfg.red_flags.countries).length ? [h("h3", null, "4a. Red flags"), h("p", null, cfg.red_flags.description),
+      h("ul", null, Object.entries(cfg.red_flags.countries).map(([id, f]) => h("li", null, h("strong", null, `${state.data.jurisdictions[id]?.name ?? id} — ${f.label}: `), f.explanation)))] : []),
+    h("h3", null, "4b. Data status and missing data"),
+    h("p", null, cfg.status_rules.description),
+    h("p", null, cfg.missing_data_policy),
+    h("p", null, "Jurisdictions whose tax rules have not been researched are grey on the overall and tax layers. Their non-tax indicators are still available under the “Non-tax score only” layer."),
+
+    h("h3", null, "5. Colour bands"),
+    h("ul", null, cfg.bands.map((b, i) => h("li", null, h("i", { class: `swatch band-${b.color}` }), ` ${b.label}: ${bandRange(cfg, i)}`))),
+
+    h("h3", null, "6. Indicator datasets"),
+    h("div", { class: "table-wrap" }, h("table", { class: "grid small" },
+      h("thead", null, h("tr", null, h("th", null, "Indicator"), h("th", null, "Source"), h("th", null, "Coverage"), h("th", null, "Fetched"))),
+      h("tbody", null, Object.entries(meta.indicators).map(([, m]) => h("tr", null, h("td", null, m.description), h("td", null, extLink(m.url, m.source)),
+        h("td", { class: "num" }, String(m.count)), h("td", null, m.fetched)))))),
+    h("p", { class: "small" }, "Datasets measure different things and refer to different years (each value's year is shown in the profile). Values older than ten years are discarded rather than presented as current."),
+
+    h("h3", null, "7. Limitations"),
+    h("ul", null,
+      h("li", null, "Rules are summarised at the top end for a large private investor; personal circumstances, anti-avoidance rules, exit taxes and treaty tie-breakers can change outcomes."),
+      h("li", null, "Research was carried out with AI assistance against official and professional sources and has not been reviewed by a licensed tax adviser. Confidence and open questions are shown for every metric."),
+      h("li", null, "“Cultural fit” is a proxy for an international, English-speaking environment, not a judgement of culture."),
+      h("li", null, `Build ${meta.built}; FX ${meta.fx_date} (ECB reference rates, with official pegs where applicable).`)),
+    h("p", { class: "disclaimer" }, "Not tax, legal or investment advice."));
+}

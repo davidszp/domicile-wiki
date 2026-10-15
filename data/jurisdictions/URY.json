@@ -1,0 +1,433 @@
+{
+  "id": "URY",
+  "name": "Uruguay",
+  "continent": "South America",
+  "region": "Río de la Plata",
+  "currency": "UYU",
+  "researched_on": "2026-10-15",
+  "summary": "Uruguay taxes residents' foreign interest and dividends at 12% and, since 1 January 2026, also foreign capital gains (12% of the gain, or an elective 2.4% of sale price). New residents from 2026 can opt for an 11-year holiday on foreign capital income if they spend 183 days a year or make a qualifying investment (USD 2m real estate or about USD 100k a year in funds). There is no inheritance tax (3% ITP on inherited Uruguayan real estate) and a 0.1% wealth tax on Uruguayan assets only.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Residents pay IRPF at a flat 12% on capital income, including foreign interest and dividends and, from 1 Jan 2026 (Law 20.446), foreign capital gains and foreign rents. Dividends from Uruguayan companies 7%. Net wealth tax at 0.1% on Uruguay-located net assets above about UYU 6.65m.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if 183+ days, or centre of vital/economic interests in Uruguay (spouse and minor children living in Uruguay create a presumption), or qualifying Uruguayan investments.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "From 1 Jan 2026, gains on foreign movable assets (e.g. foreign shares) and foreign real estate are taxable at 12% of the actual gain; the taxpayer may instead elect a deemed gain of 20% of the sale price (2.4% of price) or 15% for real estate (1.8%). Gains on Uruguayan shares 12%; titles issued by Uruguayan entities effectively 2.4%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Uruguay, Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/uruguay/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Puesta al día: cambios en el IRPF de residentes y en el Tax Holiday (Ley 20.446)",
+            "url": "https://galantemartins.com/ley-20446-presupuesto-2025-2029-irpf-rentas-exterior-tax-holiday-uruguay/",
+            "publisher": "Galante & Martins",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Nueva Ley, Nuevas reglas: Modificaciones previstas en la Ley de Presupuesto 2025-2029",
+            "url": "https://www.forvismazars.com/uy/es/insights/nuestras-publicaciones/impuestos/modificaciones-previstas-en-la-ley-de-presupuesto",
+            "publisher": "Forvis Mazars Uruguay",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "IRPF y Rentas del Exterior en Uruguay: cambios relevantes y situación actual en 2026",
+            "url": "https://www.gro.com.uy/single-post/irpf-y-rentas-del-exterior-en-uruguay-cambios-relevantes-y-situaci%C3%B3n-actual-en-2026",
+            "publisher": "GRO",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Uruguay Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-uruguayhighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.12,
+        "rates": {
+          "listed_securities_domestic": 0.12,
+          "listed_securities_foreign": 0.12,
+          "private_business_sale": 0.12,
+          "real_estate_local": 0.12,
+          "real_estate_foreign": 0.12
+        },
+        "rate_basis": "12% IRPF capital income rate on actual gain (Deloitte 2026; PwC reviewed 2 Sep 2026). The annual election of a deemed 20%-of-price base (effective 2.4% of proceeds) can be far cheaper for large gains. Listed foreign assets bought before 2026: cost stepped up to the 31 Dec 2025 quoted value (Galante & Martins).",
+        "important_exceptions": "Real estate transfer tax (ITP) 2% each for buyer and seller on Uruguayan property.",
+        "foreign_assets": "Taxed from 2026 (previously foreign gains were outside IRPF). Transparency rules for 5%+ stakes in foreign entities introduced by the May 2026 decree.",
+        "open_questions": [
+          "Implementing decree of 6 May 2026 not read in the original; withholding mechanics (possible 8% final rate via local agents) still pending as of April 2026."
+        ]
+      },
+      "dividends": {
+        "summary": "Foreign dividends and interest: 12% IRPF, with credit for foreign tax up to the Uruguayan tax. Dividends from Uruguayan companies: 7% withheld.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Uruguay Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-uruguayhighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Uruguay, Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/uruguay/individual/taxes-on-personal-income",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "PwC Worldwide Tax Summaries: Uruguay, Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/uruguay/individual/income-determination",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "headline_rate": 0.12,
+        "domestic_rate": 0.07,
+        "foreign_gross_rate": 0.12,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Deloitte 2026: 7% on dividends from resident companies, 12% general rate for other capital income; credit for foreign tax on foreign investment income.",
+        "withholding_outbound": "7% on dividends to non-residents (from 2026 also where profits were untaxed under IRAE, if the recipient's country taxes them and grants a credit).",
+        "treaty_network": "About 25 treaties; BEPS MLI in force since 1 Jun 2020. No comprehensive US treaty."
+      },
+      "wealth_tax": {
+        "summary": "Impuesto al Patrimonio: residents pay 0.1% on net wealth located in Uruguay above the non-taxable minimum (UYU 6,653,000 per person; double for a family unit). Foreign assets are outside the base.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "PwC Worldwide Tax Summaries: Uruguay, Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/uruguay/individual/other-taxes",
+            "publisher": "PwC",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Calculadora impuesto al patrimonio Uruguay (MNI 2026)",
+            "url": "https://hacecuentas.com/uy/calculadora-impuesto-patrimonio-uruguay",
+            "publisher": "hacecuentas.com",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Impuesto al Patrimonio de Personas Físicas: aspectos clave ante los próximos vencimientos",
+            "url": "https://www.forvismazars.com/uy/es/insights/nuestras-publicaciones/impuestos/impuesto-al-patrimonio-de-personas-fisicas",
+            "publisher": "Forvis Mazars Uruguay",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Uruguay Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-uruguayhighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "broad",
+        "components": [
+          {
+            "name": "Impuesto al Patrimonio (personas físicas)",
+            "base": "net_wealth_local",
+            "exempt_amount": 6653000,
+            "entry_threshold": 0,
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.001
+              }
+            ],
+            "bracket_mode": "marginal",
+            "notes": "PwC (2 Sep 2026): residents 0.1%, threshold about USD 160,000 for 2026. The UYU 6,653,000 figure comes from Forvis Mazars and a calculator site; whether it is a deductible allowance or only a filing threshold should be confirmed. Real estate valued at cadastral value."
+          }
+        ],
+        "property_tax_note": "Municipal real estate tax (contribución inmobiliaria) applies separately.",
+        "open_questions": [
+          "Conflict: PwC/calculator give a single 0.1% resident rate; another source describes progressive 0.1%-1.6% bands being phased down. 0.1% used."
+        ]
+      },
+      "inheritance": {
+        "summary": "No inheritance or gift tax. Inheritances of Uruguayan real estate bear the property transfer tax (ITP) at 3% of cadastral value for children (4% for other heirs).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Deloitte International Tax: Uruguay Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-uruguayhighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "DGI: Trasmisión causa muerte, heredero hijo natural - tasa aplicable (ITP)",
+            "url": "https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/trasmision-causa-muerte-heredero-es-hijo-natural-es-tasa-aplicable",
+            "publisher": "Dirección General Impositiva",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "basis": "none",
+        "children_treatment": "exempt_with_conditions",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "No gift tax; gifts of Uruguayan real estate also attract ITP.",
+        "gifts_same_as_inheritance": true,
+        "important_exceptions": "ITP 3% (children) applies to Uruguayan real estate only, on cadastral value; a foreign portfolio passes free. children_treatment taxed_low reflects ITP on local real estate.",
+        "foreign_assets": "No tax on foreign assets.",
+        "domicile_rules": "Not applicable.",
+        "open_questions": [
+          "ITP rate for inheritances confirmed only by a 2006 DGI publication."
+        ]
+      }
+    },
+    {
+      "id": "new_resident_holiday_2026",
+      "name": "Tax holiday for new residents (Law 20.446, from 2026)",
+      "type": "special",
+      "description": "Individuals becoming tax resident from 1 Jan 2026 may elect to be taxed under IRNR (non-resident tax, territorial) on foreign capital income and gains for the year of arrival plus 10 years. Foreign dividends, interest and gains are then untaxed. The former permanent 7% option is not available to 2026 arrivals.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "New tax residence from 2026. If residence is via 183 days' presence: no investment needed, presence must be kept each year. If via centre of interests or investments: real estate over UI 12,500,000 (about USD 2m) or annual fund capitalisation of UI 625,000 (about USD 100,000) in productive/research projects.",
+      "duration_years": 11,
+      "capital_gains": {
+        "summary": "Foreign gains not taxed during the holiday; Uruguayan-source gains taxed as usual.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Puesta al día: cambios en el IRPF de residentes y en el Tax Holiday (Ley 20.446)",
+            "url": "https://galantemartins.com/ley-20446-presupuesto-2025-2029-irpf-rentas-exterior-tax-holiday-uruguay/",
+            "publisher": "Galante & Martins",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Nueva Ley, Nuevas reglas: Modificaciones previstas en la Ley de Presupuesto 2025-2029",
+            "url": "https://www.forvismazars.com/uy/es/insights/nuestras-publicaciones/impuestos/modificaciones-previstas-en-la-ley-de-presupuesto",
+            "publisher": "Forvis Mazars Uruguay",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Uruguay Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-uruguayhighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.12,
+        "rates": {
+          "listed_securities_domestic": 0.12,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.12,
+          "real_estate_local": 0.12,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Election to apply IRNR on foreign-source capital income for 1+10 years (Galante & Martins; Forvis Mazars). private_business_sale 0.12 assumes a Uruguayan company; a foreign company stake would be 0.",
+        "open_questions": [
+          "Implementing decree details for the investment routes.",
+          "The consolidated text of the new-resident holiday as amended by Law 20.446 was not located on IMPO in this pass (the law's IMPO page lists article 653 amending T.O. 2023 Title 7 art. 6, which brings foreign capital income and gains into IRPF from 2026, and article 193 amending Title 8 art. 10); the 1+10-year IRNR option and the end of the permanent 7% option rest on Galante & Martins and Forvis Mazars."
+        ]
+      },
+      "dividends": {
+        "summary": "Foreign dividends and interest not taxed during the holiday; Uruguayan dividends 7%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Puesta al día: cambios en el IRPF de residentes y en el Tax Holiday (Ley 20.446)",
+            "url": "https://galantemartins.com/ley-20446-presupuesto-2025-2029-irpf-rentas-exterior-tax-holiday-uruguay/",
+            "publisher": "Galante & Martins",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Nueva Ley, Nuevas reglas: Modificaciones previstas en la Ley de Presupuesto 2025-2029",
+            "url": "https://www.forvismazars.com/uy/es/insights/nuestras-publicaciones/impuestos/modificaciones-previstas-en-la-ley-de-presupuesto",
+            "publisher": "Forvis Mazars Uruguay",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Deloitte International Tax: Uruguay Highlights 2026",
+            "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-uruguayhighlights-2026.pdf",
+            "publisher": "Deloitte",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.07,
+        "domestic_rate": 0.07,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "IRNR applies only to Uruguayan-source income."
+      },
+      "sources": [
+        {
+          "title": "Puesta al día: cambios en el IRPF de residentes y en el Tax Holiday (Ley 20.446)",
+          "url": "https://galantemartins.com/ley-20446-presupuesto-2025-2029-irpf-rentas-exterior-tax-holiday-uruguay/",
+          "publisher": "Galante & Martins",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Nueva Ley, Nuevas reglas: Modificaciones previstas en la Ley de Presupuesto 2025-2029",
+          "url": "https://www.forvismazars.com/uy/es/insights/nuestras-publicaciones/impuestos/modificaciones-previstas-en-la-ley-de-presupuesto",
+          "publisher": "Forvis Mazars Uruguay",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Deloitte International Tax: Uruguay Highlights 2026",
+          "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-uruguayhighlights-2026.pdf",
+          "publisher": "Deloitte",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Ley 20.446 (Presupuesto Nacional 2025-2029), texto en IMPO",
+          "url": "https://www.impo.com.uy/bases/leyes/20446-2025",
+          "publisher": "IMPO (Dirección Nacional de Impresiones y Publicaciones Oficiales)",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "T.O. 2023 (DGI), Título 7, artículo 6 (aspecto espacial del IRPF), redacción dada por Ley 20.446 art. 653",
+          "url": "https://www.impo.com.uy/bases/todgi2023/101-2024/6_T7",
+          "publisher": "IMPO",
+          "kind": "legislation",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "183+ days (sporadic absences count), or base of activities/vital or economic interests in Uruguay, or presumptions based on investment (e.g. UI 3.5m real estate from 1 Jul 2020 plus 60 days' presence; UI 15m in companies with 15 jobs) (PwC reviewed 2 Sep 2026).",
+    "routes": [
+      {
+        "name": "Legal residence (temporary/permanent)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Residence permit via Dirección Nacional de Migración; tax residence via presence or investment as above. Amounts for migration not researched."
+      }
+    ],
+    "sources": [
+      {
+        "title": "PwC Worldwide Tax Summaries: Uruguay, Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/uruguay/individual/residence",
+        "publisher": "PwC",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.25,
+    "summary": "IRAE 25% territorial; 7% dividend WHT; undistributed profits after three years deemed distributed (7%). Domestic minimum top-up tax introduced by Law 20.446.",
+    "special_zones": "Free trade zones.",
+    "sources": [
+      {
+        "title": "Deloitte International Tax: Uruguay Highlights 2026",
+        "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-uruguayhighlights-2026.pdf",
+        "publisher": "Deloitte",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Puesta al día: cambios en el IRPF de residentes y en el Tax Holiday (Ley 20.446)",
+        "url": "https://galantemartins.com/ley-20446-presupuesto-2025-2029-irpf-rentas-exterior-tax-holiday-uruguay/",
+        "publisher": "Galante & Martins",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "cost_of_living": {
+    "city": "Montevideo (Carrasco) / Punta del Este",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 5500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median monthly asking rent of the 20 four-bedroom houses listed for rent in Carrasco (Montevideo's most expensive district) on InfoCasas on 15 Oct 2026; range USD 3,300-12,000, most USD 4,200-6,000 for 250-450 m2 houses, often with pool. One listing in UYU excluded.",
+      "source": {
+        "title": "InfoCasas: casas en alquiler, Carrasco (Montevideo), 4 dormitorios",
+        "url": "https://www.infocasas.com.uy/alquiler/casas/montevideo/carrasco/4-dormitorios",
+        "publisher": "InfoCasas",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "prime_price_per_m2": {
+      "value": {
+        "amount": 4266,
+        "currency": "USD"
+      },
+      "year": 2025,
+      "description": "Carrasco average residential price per m2, mid-2025, from an El Observador report cited by Global Property Guide. Punta del Este frontline luxury apartments (Mouette, Trump Tower) quoted at USD 7,000-10,000/m2 by the same page.",
+      "source": {
+        "title": "Global Property Guide: Uruguay residential property market analysis (price history)",
+        "url": "https://www.globalpropertyguide.com/latin-america/uruguay/price-history",
+        "publisher": "Global Property Guide",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "International school fee not sourced: the Uruguayan American School (Montevideo) does not publish fees on its website or brochure; no other school fee page was opened. Health insurance and housekeeper not sourced. Rents are quoted in USD."
+  },
+  "markers": [
+    {
+      "name": "Montevideo",
+      "lon": -56.18416667,
+      "lat": -34.90555556,
+      "kind": "capital",
+      "coordinate_source": "Wikidata Q1335 (via en.wikipedia)"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain subject to US federal income, estate and gift tax on worldwide income and assets; the app adds the federal layer. Local tax can generally be credited against US tax on the same foreign-source income only where the US foreign tax credit rules allow.",
+  "open_questions": [
+    "Law 20.446 implementing decree (6 May 2026) details on the holiday investment routes and post-holiday options (50% rate for 5 years; fixed annual payment of UI 1,875,000 for 20 years) not read in the original.",
+    "Residents who opted for the old regime before 2026 (including the permanent 7% option) keep it; not modelled."
+  ]
+}

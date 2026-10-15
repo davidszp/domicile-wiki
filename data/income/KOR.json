@@ -1,0 +1,262 @@
+{
+  "id": "KOR",
+  "name": "South Korea",
+  "currency": "KRW",
+  "researched_on": "2026-10-15",
+  "income_tax": {
+    "summary": "Progressive income tax of 6% to 45% plus local income tax of 10% of the tax gives a top combined marginal rate of 49.5%. Foreign employees who start work in Korea by 31 December 2026 can elect a flat 19% (20.9% with local tax) for up to 20 years in place of progressive rates and deductions; a 21% rate and 2029 deadline are only proposed. Employees pay about 9.7% in pension, health, long-term care and employment insurance.",
+    "tax_year": "2026",
+    "brackets": [
+      {
+        "from_amount": 0,
+        "rate": 0.066
+      },
+      {
+        "from_amount": 14000000,
+        "rate": 0.165
+      },
+      {
+        "from_amount": 50000000,
+        "rate": 0.264
+      },
+      {
+        "from_amount": 88000000,
+        "rate": 0.385
+      },
+      {
+        "from_amount": 150000000,
+        "rate": 0.418
+      },
+      {
+        "from_amount": 300000000,
+        "rate": 0.44
+      },
+      {
+        "from_amount": 500000000,
+        "rate": 0.462
+      },
+      {
+        "from_amount": 1000000000,
+        "rate": 0.495
+      }
+    ],
+    "personal_allowance": 1500000,
+    "employee_social_security_rate": 0.097174,
+    "employee_social_security_cap": null,
+    "self_employed_social_security_rate": 0.1763,
+    "self_employed_social_security_cap": null,
+    "self_employed_notes": "Self-employed people are 'local subscribers': they pay the full National Pension (9.5% total rate in 2026, no employer share; PwC) and regional health insurance. The NHIS page gives a 2026 health insurance rate of 7.19%, and long-term care is 13.14% of the health premium (braindetox.kr), which matches PwC's roughly 8.135% for health plus long-term care. The 17.63% used (9.5% + 7.19% x 1.1314) is therefore built from sourced rates but is an upper-bound ESTIMATE: regional premiums are also assessed on property points, and the pension is capped at the same KRW 6,590,000 monthly income ceiling (about KRW 79m a year), neither of which is modelled.",
+    "local_tax_note": "Marginal rates shown already include local income tax of 10% of the tax (PwC, reviewed 2 July 2026). personal_allowance is the basic personal deduction of KRW 1.5 million for the taxpayer (PwC deductions page); the employment income deduction (70% of the first KRW 5m, 40% to KRW 15m, 15% to KRW 45m, 5% to KRW 100m, 2% above; capped at KRW 20m; employees only) and the insurance deductions are not included. Employee contributions: National Pension 4.75% on monthly pay up to KRW 6,590,000 (from July 2026; maximum KRW 313,025 a month), health insurance including long-term care about 4.0674% (monthly cap KRW 10,390,220 in total), employment insurance 0.90%. The pension cap means the 9.7174% total overstates contributions at high pay; no single cap is recorded.",
+    "sources": [
+      {
+        "title": "Korea, Republic of - Taxes on personal income",
+        "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/taxes-on-personal-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Korea, Republic of - Other taxes",
+        "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/other-taxes",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Korea's Four Major Social Insurances - Complete Guide 2026",
+        "url": "https://braindetox.kr/en/posts/four_major_insurances_guide.html",
+        "publisher": "braindetox.kr",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Korea, Republic of - Deductions",
+        "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "National Health Insurance Service - Contribution",
+        "url": "https://www.nhis.or.kr/english/wbheaa02300m01.do",
+        "publisher": "National Health Insurance Service, Korea",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
+    ],
+    "verified_on": "2026-10-15",
+    "confidence": "medium",
+    "verification": "partially_verified",
+    "open_questions": [
+      "Self-employed rate is a composite of sourced component rates; the exact regional (local subscriber) income-point formula and the property component were not found.",
+      "Employment income deduction and tax credits are not modelled (only the KRW 1.5m basic deduction).",
+      "Pension ceiling KRW 6,590,000 (PwC, July 2026) vs KRW 6,370,000 (secondary guide): PwC used."
+    ],
+    "social_security_deductible": 1,
+    "employment_deduction": {
+      "schedule": [
+        {
+          "from_amount": 0,
+          "rate": 0.7
+        },
+        {
+          "from_amount": 5000000.0,
+          "rate": 0.4
+        },
+        {
+          "from_amount": 15000000.0,
+          "rate": 0.15
+        },
+        {
+          "from_amount": 45000000.0,
+          "rate": 0.05
+        },
+        {
+          "from_amount": 100000000.0,
+          "rate": 0.02
+        }
+      ],
+      "base": 0,
+      "minimum": 0,
+      "maximum": 20000000.0,
+      "note": "Earned income deduction: 70% of pay to KRW 5M; 40% of the excess to 15M; 15% to 45M; 5% to 100M; 2% above; capped at KRW 20M.",
+      "source": {
+        "title": "Korea, Republic of - Deductions",
+        "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/deductions",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    }
+  },
+  "regimes": [
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "verification": "verified",
+      "open_questions": [
+        "Proposal to move to 21% from 2027 and extend to 2029 was not enacted as of the source.",
+        "Local income tax (10% of the tax) is on top of the 19%."
+      ],
+      "id": "flat_19_foreign_employee",
+      "name": "19% flat tax for foreign employees",
+      "kind": "expat_regime",
+      "description": "Foreign employees who start work in Korea no later than 31 December 2026 may elect a flat 19% rate (excluding 10% local tax, so 20.9%) on employment income instead of progressive 6-45%. Electing forfeits other deductions, exemptions and credits; not available when working for a related-party company. Lasts 20 years from first day of work.",
+      "applies_to": [
+        "employment"
+      ],
+      "requires_foreign_income": false,
+      "requires_local_employment": true,
+      "min_income": null,
+      "max_income": null,
+      "duration_years": 20,
+      "duration_note": "20 years from the first day of work in Korea through the end of the tax year before the 20-year anniversary. A reform proposal of 3 August 2026 would raise the rate to 21% (23.1% with local tax) and extend the sunset to 31 December 2029 from 1 January 2027; not enacted.",
+      "treatment": "flat_rate",
+      "flat_rate": 0.19,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "Korea, Republic of - Individual income determination (19% flat rate)",
+          "url": "https://taxsummaries.pwc.com/Republic-of-Korea/Individual/Income-determination",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "KPMG Flash Alert 2026-235: Korea 2026 tax reform proposal",
+          "url": "https://kpmg.com/xx/en/our-insights/gms-flash-alert/2026/flash-alert-2026-235.html",
+          "publisher": "KPMG",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "verification": "partially_verified",
+      "open_questions": [
+        "Threshold is the 2023 figure (KRW 85m, twice the prior year's GNI per capita) on the consulate page; the current-year GNI-based figure was not found.",
+        "Foreign-source income of a resident visitor: PwC says residents with five years or less in the last ten are taxed on Korea-source income, and foreign-source income only if paid by a Korean entity or transferred to Korea; whether a nomad's pay for work done in Korea counts as Korea-source was not found, so treatment stays standard."
+      ],
+      "id": "f_1_d_workation",
+      "name": "Workation visa (F-1-D)",
+      "kind": "digital_nomad_visa",
+      "description": "One-year visa for people who work remotely for a foreign company, with annual income of twice Korea's prior-year GNI per capita (about KRW 85m per the 2024 consulate page), one year of experience in the same industry, age 18+ and KRW 100m medical and repatriation insurance. Local employment is restricted.",
+      "applies_to": [
+        "employment",
+        "self_employment"
+      ],
+      "requires_foreign_income": true,
+      "requires_local_employment": false,
+      "min_income": {
+        "amount": 85000000,
+        "currency": "KRW"
+      },
+      "max_income": null,
+      "duration_years": 2,
+      "duration_note": "Valid one year, one extension of one year possible in Korea.",
+      "treatment": "standard",
+      "flat_rate": null,
+      "exempt_share": null,
+      "social_security_applies": true,
+      "sources": [
+        {
+          "title": "F-1-D for Workation (Digital Nomad) - Korean Consulate General Houston",
+          "url": "https://overseas.mofa.go.kr/us-houston-en/brd/m_5573/view.do?seq=759909",
+          "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      ],
+      "confidence": "low"
+    }
+  ],
+  "costs": {
+    "city": "Seoul (Yongsan)",
+    "rent_1bed_monthly": {
+      "value": {
+        "amount": 1500000,
+        "currency": "KRW"
+      },
+      "year": 2026,
+      "description": "Typical Yongsan 1-bedroom monthly rent (wolse), Seoulstart neighbourhood data Q2 2026, with a KRW 35m deposit; Numbeo city-centre average KRW 1,187,649 (14 Oct 2026).",
+      "source": {
+        "title": "Seoulstart - Yongsan cost of living for foreign residents (2026)",
+        "url": "https://seoulstart.com/neighborhoods/yongsan/cost-of-living",
+        "publisher": "Seoulstart",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "rent_2bed_monthly": {
+      "value": {
+        "amount": 2300000,
+        "currency": "KRW"
+      },
+      "year": 2026,
+      "description": "Typical Yongsan 2-bedroom monthly rent, Seoulstart Q2 2026, with a KRW 180m deposit; Numbeo 3-bedroom city-centre average KRW 3,316,866.",
+      "source": {
+        "title": "Seoulstart - Yongsan cost of living for foreign residents (2026)",
+        "url": "https://seoulstart.com/neighborhoods/yongsan/cost-of-living",
+        "publisher": "Seoulstart",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Seoulstart figures are 'typical ranges' with no sample size. Monthly rent is paid on top of a large refundable deposit; jeonse (lump-sum deposit) is an alternative."
+  },
+  "residence_routes": "EU, US and other citizens: remote workers can use the F-1-D workation visa (foreign employer or own foreign company, income about KRW 85m, 1+1 years). Skilled employees need an employer-sponsored work visa (E-series); specific categories were not verified on an opened official page. The 19% flat tax is open to foreign employees of any nationality who start work by 31 December 2026.",
+  "open_questions": [
+    "Official Ministry of Justice / HiKorea pages not opened.",
+    "Current workation income threshold."
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "id": "TUN",
+  "name": "Tunisia",
+  "continent": "Africa",
+  "region": "Northern Africa",
+  "currency": "TND",
+  "researched_on": "2026-10-15",
+  "summary": "Tunisia taxes residents on worldwide income at up to 40% (40.5% with the social solidarity contribution), but foreign income already taxed abroad is exempt (Income Tax Code art. 36). Tunisian dividends bear 10%, gains on Tunisian shares 10-15% and on Tunisian property 10-15%. The rate on foreign portfolio gains and on foreign dividends not taxed at source is not settled in the sources found. Since 2026 a wealth tax of 0.5%/1% applies above TND 3 million to real estate (worldwide for residents, main home excluded) and Tunisian movables. Inheritances to children bear 2.5% registration duty.",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Tunisian tax resident",
+      "type": "standard",
+      "description": "Worldwide PIT 0-40% with exemption for foreign income taxed abroad; flat rates on dividends and Tunisian gains; wealth tax from TND 3 million.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Resident if the principal residence (domicile) is in Tunisia or, with a home abroad, presence of at least 183 days in the calendar year. Foreigners need a residence card.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Residents pay 10% on gains on unlisted Tunisian shares sold after the year following acquisition (15% if sooner) and 10% on gains on Tunisian-listed shares (Finance Law 2023; PwC describes the 10% for sales within that period). Tunisian real estate gains are taxed at 10% after five years (15% within five years). Gains on foreign securities fall under worldwide taxation, but whether they are taxed at the PIT scale (up to 40.5%), a flat rate, or exempted under art. 36 was not established.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tunisia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/tunisia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tunisia - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/tunisia/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tunisia - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/tunisia/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "unverified",
+        "open_questions": [
+          "Rate on a resident's gains on foreign listed securities (PIT scale up to 40.5%, a flat rate, or exempt) not found.",
+          "Whether gains on Tunisian-listed shares held beyond the year following acquisition are exempt or taxed at 10% after the Finance Law 2023."
+        ],
+        "headline_rate": 0.15,
+        "rates": {
+          "listed_securities_domestic": 0.1,
+          "listed_securities_foreign": null,
+          "private_business_sale": 0.1,
+          "real_estate_local": 0.1,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Domestic listed 10% (scored as an upper bound; long-held listed shares may be exempt). Unlisted Tunisian shares held past the year after purchase 10%. Tunisian property held over five years 10%. Foreign listed shares and foreign property: null (rate not established).",
+        "holding_period_rules": "Shares: 10% if sold after the end of the year following acquisition, else 15%. Property: 10% after five years, else 15%.",
+        "professional_trader": "Habitual dealing is business income at the PIT scale.",
+        "foreign_assets": "Worldwide taxation; foreign income already taxed in the source state is exempt (art. 36 Income Tax Code)."
+      },
+      "dividends": {
+        "summary": "Dividends from Tunisian companies are taxed at 10%, as a final withholding tax (an advance on PIT if under TND 10,000). Foreign dividends are taxable in Tunisia unless they bore a similar tax in the source state (art. 36 exemption method); typical portfolio dividends that suffer source WHT (e.g. US, EU) are therefore exempt. The rate on foreign dividends not taxed abroad is not stated in the sources found.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tunisia - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/tunisia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tunisia - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/tunisia/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Tunisia - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/tunisia/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether 'subject to a similar tax' requires a minimum source rate, and the rate applying when no foreign tax was paid."
+        ],
+        "headline_rate": 0.1,
+        "domestic_rate": 0.1,
+        "foreign_gross_rate": null,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Domestic 10% final. Foreign: exempt when taxed at source; otherwise taxable at a rate not established (PIT scale up to 40.5% possible), so foreign_gross_rate is null.",
+        "withholding_outbound": "10% on dividends to residents and non-residents, subject to treaties.",
+        "treaty_network": "Broad network listed on PwC's corporate withholding page (Europe, Arab and African states, and the United States).",
+        "holding_company_notes": "General CIT 20% (35% for SICAF/SICAR investment companies); see corporate section."
+      },
+      "wealth_tax": {
+        "summary": "Wealth tax (impôt sur la fortune immobilière, Finance Law 2023; widened by Finance Law 2026) on individuals whose taxable assets at 1 January are worth TND 3 million or more: Tunisian real estate (and, for residents, foreign real estate) net of related debt, plus from 2026 movable assets situated in Tunisia. The main home and its furniture, professional assets, bank deposits and cars up to 12 CV are excluded. 0.5% of the whole value between TND 3 and 5 million, 1% of the whole value above TND 5 million. A foreign securities portfolio is outside the base.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tunisia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/tunisia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether foreign real estate of residents remains in the base after the Finance Law 2026 rewrite (PwC lists it under the 2023 rules)."
+        ],
+        "type": "limited",
+        "components": [
+          {
+            "name": "Wealth tax on real estate (worldwide for residents) and Tunisian movables",
+            "base": "real_estate_all",
+            "exempt_amount": 0,
+            "entry_threshold": 3000000,
+            "bracket_mode": "whole_amount",
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.005
+              },
+              {
+                "from_amount": 5000000,
+                "rate": 0.01
+              }
+            ],
+            "notes": "Main residence, professional property, bank deposits and foreign movables excluded; Tunisian movables (e.g. Tunisian shares, going concerns) included from 2026. Rate applies to the whole value once a band is reached."
+          }
+        ],
+        "property_tax_note": "Municipal taxes on built property (taxe sur les immeubles bâtis) not researched."
+      },
+      "inheritance": {
+        "summary": "Inheritances from parents to children (ascendants and descendants) bear 2.5% registration duty on the value of inherited movable and immovable property (PwC). There is no exemption amount. Brothers and sisters pay 5%, more distant relatives 25-35%.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tunisia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/tunisia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Gift (donation) registration rates in direct line not found.",
+          "Territorial scope of inheritance registration duty for foreign assets of residents not verified."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed_low",
+        "exemption": 0,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.025
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "scope": "worldwide",
+        "gift_tax": "Registration duties on gifts between ascendants and descendants were not found in the sources consulted.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": null,
+        "foreign_assets": "Assumed to cover foreign movables of a resident deceased (not verified).",
+        "domicile_rules": "Not verified."
+      }
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if the principal residence (domicile) is in Tunisia, or if the person has a principal dwelling abroad but stays in Tunisia at least 183 days in the calendar year; treaty tie-breakers apply (PwC).",
+    "routes": [
+      {
+        "name": "Residence card (carte de séjour)",
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Foreigners staying long-term need a residence card; no residence-by-investment programme verified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tunisia - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/tunisia/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.2,
+    "summary": "General CIT 20% since the Finance Law 2025 (was 15%); 10% for crafts, agriculture, fishing and regional-development zones after the deduction period; 35% for telecoms, hydrocarbons, SICAF/SICAR investment companies and others; 40% for banks, financial institutions and insurers. 10% final WHT on dividends.",
+    "special_zones": "Free trade zones; Code for financial services to non-residents (offshore banks).",
+    "sources": [
+      {
+        "title": "Tunisia - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/tunisia/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Tunis",
+      "lon": 10.16579,
+      "lat": 36.81897,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2464470"
+    }
+  ],
+  "us_citizen_notes": "US citizens remain fully US-taxed on worldwide income and estates; the app adds the US federal layer. ",
+  "open_questions": [
+    "No source found for the tax on foreign portfolio gains, which is the largest gap for this family."
+  ]
+}

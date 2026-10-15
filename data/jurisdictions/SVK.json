@@ -1,0 +1,296 @@
+{
+  "id": "SVK",
+  "name": "Slovakia",
+  "continent": "Europe",
+  "region": "Central Europe",
+  "currency": "EUR",
+  "researched_on": "2026-10-15",
+  "summary": "Slovakia exempts gains on listed shares held over one year (foreign exchanges included), taxes dividends at 7%, and has no inheritance, gift or wealth tax. The catch is a private business sale or short-term trading, which is taxed at up to 35% from 2026 plus 15% uncapped health insurance (about 50% at the top).",
+  "regimes": [
+    {
+      "id": "standard",
+      "name": "Ordinary tax residence",
+      "type": "standard",
+      "description": "Progressive PIT (19/25/30/35% from 2026) with exemptions for long-held listed securities and real estate; 7% dividends.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Tax resident with permanent residence, a habitual home with intent to stay, or 183+ days in a calendar year.",
+      "duration_years": null,
+      "capital_gains": {
+        "summary": "Gains on securities admitted to trading on an EU regulated market or a comparable foreign regulated market are exempt if held more than one year (§9(1)(k) ZDP). Other gains (unlisted shares, stakes in a limited company, listed shares sold within a year) are 'other income' under §8, which §4(1)(a) puts in the general tax base taxed at the progressive 19%/25%/30%/35% rates (§15(a)(1)); the separate 19% base is only for §7 capital income such as interest. Taxable §8 income also bears 15% public health insurance on the same base with no cap. Real estate held more than 5 years is exempt.",
+        "exemptions_thresholds": "Listed securities held > 1 year (and listed > 1 year): exempt (§9(1)(k) ZDP). Real estate held > 5 years: exempt (§9(1)(a)). EUR 500 a year exemption for net other income including securities gains (§9(1)(i)). Gains inside the long-term investment savings scheme (DIS) exempt after 15 years.",
+        "eligibility_conditions": "Not for securities held as business assets or received as employee benefits in kind.",
+        "important_exceptions": "No holding-period exemption for unlisted shares or s.r.o. stakes: a private business sale is taxed at up to 35% plus 15% health insurance, about 50% at the top for a person insured in the Slovak public system. Health insurance: §10b(1)(d) and §13(7) of Act 580/2004 make the §8 tax base an assessment base, rate 15% (§12(1)(b)); the only cap in §13 is the 60x average-wage cap for dividends (§13(6)). A resident covered by another EU state's social security under Regulation 883/2004 would not pay it. 2026 brackets: 25% above 154.8x, 30% above 212.4x, 35% above 264x the subsistence minimum.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zákon č. 595/2003 Z. z. o dani z príjmov (time version effective 1.1.2026 - 30.12.2026, PDF)",
+            "url": "https://www.slov-lex.sk/static/pdf/2003/595/ZZ_2003_595_20260101.pdf",
+            "publisher": "Slov-Lex (Ministry of Justice of the Slovak Republic)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Slovak Republic - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/slovak-republic/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Slovak Republic - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/slovak-republic/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Slovak Republic - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Zákon č. 580/2004 Z. z. o zdravotnom poistení (consolidated, effective 1.7.2026)",
+            "url": "https://www.slov-lex.sk/static/pdf/2004/580/ZZ_2004_580_20260701.pdf",
+            "publisher": "Ministry of Justice of the Slovak Republic (Slov-Lex)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "PwC describes capital gains as falling in a separate 19% base; the law (§8(1)(e)-(f), §4(1)(a), §15(a)(1)-(4) ZDP, version effective 1 Jan 2026) puts gains on securities and company stakes in the general progressive base and reserves the separate 19% base for §7 capital income. We follow the law text.",
+          "Euro amounts of the 2026 bracket thresholds (multiples of the subsistence minimum valid on 1 Jan 2026) not computed here."
+        ],
+        "headline_rate": 0.35,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.5,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Listed securities held > 1 year: exempt (foreign regulated markets included). Private company stake: top marginal PIT 35% (2026) plus 15% health insurance on the same taxable gain = 0.50 for a Slovak-insured resident. Real estate held > 5 years: exempt. headline_rate 0.35 is the top statutory PIT rate.",
+        "professional_trader": "Securities held as business assets are excluded from the exemption and taxed as business income.",
+        "holding_period_rules": "1 year for listed securities; 5 years for real estate; none for unlisted shares.",
+        "foreign_assets": "Residents taxed on worldwide income; the exemption explicitly covers comparable foreign regulated markets."
+      },
+      "dividends": {
+        "summary": "Dividends paid out of profits for 2025 onwards are taxed at 7% (10% applied to 2024 profits), withheld at source by Slovak companies and self-assessed in a separate base for foreign dividends. Dividends from non-cooperative jurisdictions: 35%. No health insurance on dividends from 2017+ profits.",
+        "exemptions_thresholds": "Dividends from 2004-2016 profits are not taxed.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zákon č. 595/2003 Z. z. o dani z príjmov (time version effective 1.1.2026 - 30.12.2026, PDF)",
+            "url": "https://www.slov-lex.sk/static/pdf/2003/595/ZZ_2003_595_20260101.pdf",
+            "publisher": "Slov-Lex (Ministry of Justice of the Slovak Republic)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Slovak Republic - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/slovak-republic/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Slovak Republic - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/slovak-republic/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Slovak Republic - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Whether a 15% foreign WHT fully extinguishes the 7% Slovak tax under the credit method for every treaty (expected yes)."
+        ],
+        "headline_rate": 0.07,
+        "domestic_rate": 0.07,
+        "foreign_gross_rate": 0.07,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "§15(a)(5) ZDP: 7% on the separate dividend base (§51e(3)(a)); 35% for dividends from non-cooperative states (§15(a)(6)). Foreign WHT credited under treaties, so typical 15% WHT leaves no Slovak tax.",
+        "withholding_outbound": "7% WHT on dividends to individuals; 35% to recipients in non-cooperative jurisdictions or with unidentified beneficial owners.",
+        "treaty_network": "Broad network covering the EU, the US and most OECD states.",
+        "holding_company_notes": "Slovak CIT is 10%/21%/24% by taxable income; distribution to an individual then bears 7%."
+      },
+      "wealth_tax": {
+        "summary": "No wealth tax or net worth tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Slovak Republic - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Local real estate tax set by municipalities; not a wealth tax."
+      },
+      "inheritance": {
+        "summary": "There is no inheritance or gift tax, and income acquired by gift or inheritance is outside the scope of income tax for every recipient.",
+        "exemptions_thresholds": "Unlimited.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Slovak Republic - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/slovak-republic/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Zákon č. 595/2003 Z. z. o dani z príjmov (time version effective 1.1.2026 - 30.12.2026, PDF)",
+            "url": "https://www.slov-lex.sk/static/pdf/2003/595/ZZ_2003_595_20260101.pdf",
+            "publisher": "Slov-Lex (Ministry of Justice of the Slovak Republic)",
+            "kind": "legislation",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Notary probate fees not quantified; treated as negligible."
+        ],
+        "basis": "none",
+        "children_treatment": "fully_exempt",
+        "exemption": 0,
+        "brackets": [],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "None; gifts and inheritances are not subject to income tax (§3(2)(b) ZDP).",
+        "gifts_same_as_inheritance": true,
+        "business_relief": "Not needed.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Same: not taxed.",
+        "domicile_rules": "Not applicable."
+      },
+      "sources": [
+        {
+          "title": "Slovak Republic - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/slovak-republic/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "residency": {
+    "tax_residency_test": "Resident if the individual has permanent residence in Slovakia, a home there not only for occasional use with evident intent to stay permanently, or is present 183+ days in a calendar year (study and medical stays excluded); treaty tie-breakers apply.",
+    "routes": [
+      {
+        "name": "EU/EEA free movement",
+        "citizenships": [
+          "EU"
+        ],
+        "requirements": "Register residence; no investment requirement."
+      },
+      {
+        "name": "Temporary residence permit",
+        "citizenships": [
+          "US",
+          "OTHER"
+        ],
+        "requirements": "Purpose-based permit (business, employment, family); no investor programme found (unverified)."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Slovak Republic - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/slovak-republic/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "corporate": {
+    "cit_rate": 0.21,
+    "summary": "From 2025: 10% for taxable revenue up to EUR 100,000, 21% standard, 24% for revenue above EUR 5 million (§15(b) ZDP, 2026 version). Minimum tax rules apply.",
+    "sources": [
+      {
+        "title": "Slovak Republic - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Zákon č. 595/2003 Z. z. o dani z príjmov (time version effective 1.1.2026 - 30.12.2026, PDF)",
+        "url": "https://www.slov-lex.sk/static/pdf/2003/595/ZZ_2003_595_20260101.pdf",
+        "publisher": "Slov-Lex (Ministry of Justice of the Slovak Republic)",
+        "kind": "legislation",
+        "accessed": "2026-10-15"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "name": "Bratislava",
+      "lon": 17.10674,
+      "lat": 48.14816,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 3060972"
+    }
+  ],
+  "us_citizen_notes": "Slovak exemptions do not shelter gains from US tax.",
+  "open_questions": [],
+  "cost_of_living": {
+    "city": "Bratislava",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 3000,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 71 houses of 180-450 m² for rent in Bratislava (all districts; mostly Koliba, Záhorská Bystrica, Rusovce, Ahoj, Horský park, castle hill), read from all six result pages of Nehnutelnosti.sk on 15 Oct 2026 (about 155 listings; range EUR 1,290-8,500; offices excluded). Asking rents, utilities extra.",
+      "source": {
+        "title": "Domy Bratislava - ponuka domov na prenájom",
+        "url": "https://www.nehnutelnosti.sk/vysledky/domy/bratislava/prenajom",
+        "publisher": "Nehnutelnosti.sk (United Classifieds / Ringier)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 27530,
+        "currency": "EUR"
+      },
+      "year": 2026,
+      "description": "The British International School Bratislava (Nord Anglia), Year 13 (IB Diploma), school year 2026/27: EUR 27,530 tuition (includes IBDP exam fees; no capital fee). New students pay a one-off EUR 900 registration fee and a refundable EUR 1,200 deposit.",
+      "source": {
+        "title": "BISB tuition fees 2026-27 (Schedule of Fee 2026/2027)",
+        "url": "https://www.nordangliaeducation.com/bisb-bratislava/admissions/tuition-fees",
+        "publisher": "The British International School Bratislava (Nord Anglia Education)",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Prime purchase price per m², family health insurance and housekeeper cost were not sourced in this round and are omitted rather than guessed."
+  }
+}
