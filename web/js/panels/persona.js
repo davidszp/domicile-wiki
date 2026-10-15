@@ -49,24 +49,19 @@ function metricsTable(r) {
 }
 
 function costSection(block, inc) {
-  const persona = personaCfg();
   const hc = block.household_cost_detail;
   const c = inc && inc.costs;
   const items = [];
   if (c) {
-    const it = (label, x) => x && items.push(h("li", null, `${label}: ${fmtMoney(x.value.amount, x.value.currency)} (${x.year}) — ${x.description} `, extLink(x.source.url, x.source.publisher)));
-    it("1-bedroom rent / month", c.rent_1bed_monthly);
-    it("2-bedroom rent / month", c.rent_2bed_monthly);
-    it("Coworking desk / month", c.coworking_monthly);
+    const it = (label, x) => x && items.push(h("li", { title: x.description }, `${label}: ${fmtMoney(x.value.amount, x.value.currency)} a month `, extLink(x.source.url, "source")));
+    it("1-bedroom rent", c.rent_1bed_monthly);
+    it("2-bedroom rent", c.rent_2bed_monthly);
+    it("Coworking desk", c.coworking_monthly);
   }
   const parts = hc ? Object.entries(hc.parts).map(([k, v]) => `${k.replace("_", " ")} ${fmtEur(v)}`).join(", ") : "";
   return h("details", { class: "fold" }, h("summary", null, h("h3", null, "Annual Household Cost", c ? ` — ${c.city}` : "", hc ? `: ${fmtEur(hc.total_eur)}` : "")),
-    hc ? h("p", null, h("strong", null, `Annual Household Cost (estimate, not taxes): ${fmtEur(hc.total_eur)}`), ` (${parts}).`,
-      hc.estimated_from_price_level.length ? ` Estimated from the price level: ${hc.estimated_from_price_level.join(", ")}.` : "")
-      : h("p", { class: "muted" }, "Not scored: the rent has not been sourced or no price level is available."),
-    h("p", { class: "small muted" }, moneyText(persona.cost.description)),
-    items.length ? h("ul", { class: "small" }, items) : null,
-    c && c.notes ? h("p", { class: "small" }, c.notes) : null);
+    hc ? h("p", null, parts, ".") : h("p", { class: "muted" }, "Not scored: no rent sourced yet."),
+    items.length ? h("ul", { class: "small" }, items) : null);
 }
 
 async function showDossier(container, iso) {
@@ -79,43 +74,53 @@ async function showDossier(container, iso) {
   }
 }
 
+/** One line of the key-facts block at the top of a profile. */
+export function fact(label, ...value) {
+  return h("div", { class: "fact" }, h("dt", null, label), h("dd", null, ...value));
+}
+
 /** Profile body for an income persona, once the profile JSON `p` has loaded. */
 export function renderPersonaBody(body, p, id, r) {
-  const persona = personaCfg();
   const block = p.persona_detail && p.persona_detail[state.persona];
   const inc = p.income;
   const e = jur(id);
-  body.append(h("p", { class: "small muted" }, h("strong", null, `${persona.label}: `), persona.summary));
-  if (e.parent && inc) body.append(h("p", { class: "notice small" }, `Earned-income rules are national: ${jur(e.parent)?.name ?? e.parent}'s figures (${inc.costs?.city ?? "main city"}) are used for this region.`));
+  const reg = p.income_region;
+  if (e.parent && inc) body.append(h("p", { class: "small muted" }, reg ? `Includes ${reg.name} state and ${reg.city} taxes and costs.` : `National figures (${inc.costs?.city ?? "main city"}).`));
   if (!inc || !block) {
-    body.append(h("p", { class: "notice" }, "Earned-income taxation, expat and nomad regimes and rents have not been researched for this country yet, so it is unscored (grey) for this persona."),
-      h("h3", null, "Other metrics"), metricsTable(r));
+    body.append(h("p", { class: "notice" }, "Not researched for this persona yet, so it is unscored (grey)."), foldSection("All metrics", metricsTable(r)));
     return;
   }
   const it = inc.income_tax;
   const rows = block.tax[state.citizenship] || [];
   const best = r.regime;
+  const bestRow = rows.find((x) => best && x.id === best.id) || rows[0];
   const income = block.income_eur;
   const sm = block.salary_multiplier;
   const lo = block.leftover ? block.leftover[state.citizenship] : null;
+  const ns = block.nomad_scene;
   append(body, [usCitizenNote()]);
 
-  // append() (not the native method) so the optional salary line can be null without printing "null".
-  append(body, [h("h3", null, `Income tax and social security for a ${KIND_LABEL[persona.income_kind]} earning ${fmtEur(income)} a year`),
-    sm ? h("p", { class: "small" }, h("strong", null, `Salary ${fmtEur(income)}: `),
-      `USD ${persona.income_usd.toLocaleString("en-GB")} in an average euro-area capital × ${sm.multiplier.toFixed(2)} for the cost of living here`,
-      sm.estimated ? " (no posting allowance table lists this country: estimated from the World Bank price level)."
-        : ` (average of ${Object.entries(sm.sources).map(([k, v]) => `${COLA_LABEL[k] || k} ${v.toFixed(2)}`).join(", ")}).`) : null,
-    h("p", { class: "small muted" }, `${sm ? "" : `USD ${persona.income_usd.toLocaleString("en-GB")} at the build's exchange rate. `}Each regime is blended with the standard rules over the ${persona.horizon_years}-year stay when it runs out sooner; the cheapest one available to ${CZ_LABEL[state.citizenship]} is used for the score.`),
+  // Key facts first; how each is worked out lives in tooltips and on the Method page.
+  const salaryTip = sm && (sm.estimated ? "Estimated from the World Bank price level (no posting-allowance table lists this country)"
+    : Object.entries(sm.sources).map(([k, v]) => `${COLA_LABEL[k] || k} ${v.toFixed(2)}`).join(" · "));
+  append(body, [h("dl", { class: "facts" },
+    fact(sm ? "Salary" : "Income", `${fmtEur(income)} a year`,
+      sm && Math.abs(sm.multiplier - 1) >= 0.005 ? h("span", { class: "muted", title: salaryTip }, ` · ×${sm.multiplier.toFixed(2)} for local costs`) : null),
+    bestRow ? fact("Tax + social security", fmtPct(bestRow.detail.rate),
+      h("span", { class: "muted" }, ` · ${fmtEur(bestRow.cost)} a year${bestRow.type !== "standard" ? ` · ${bestRow.name}` : ""}`)) : null,
+    fact("Living costs", block.household_cost ? `${fmtEur(block.household_cost)} a year` : "not sourced"),
+    lo && lo.eur !== null && lo.eur !== undefined ? fact("Left over", `${fmtEur(lo.eur)} a year`) : null,
+    ns ? fact("Nomad scene", ns.lists_named ? `in ${ns.lists_named} of ${ns.lists_total} rankings${ns.hub ? ` · ${ns.hub}` : ""}` : "not in the rankings") : null)]);
+
+  body.append(foldSection("Tax regimes compared",
     h("div", { class: "table-wrap" }, h("table", { class: "grid" },
-      h("thead", null, h("tr", null, h("th", null, "Regime"), h("th", { class: "num" }, "Tax + social security"), h("th", { class: "num", title: "Average a year over the stay" }, "A year"), h("th", null, "Score"))),
+      h("thead", null, h("tr", null, h("th", null, "Regime"), h("th", { class: "num" }, "Rate"), h("th", { class: "num", title: "Average a year over the stay" }, "A year"), h("th", null, "Score"))),
       h("tbody", null, rows.map((row) => h("tr", { class: best && best.id === row.id ? "best" : "" },
         h("td", null, row.name, best && best.id === row.id ? h("div", null, h("span", { class: "badge" }, "used for score")) : null,
-          h("div", { class: "small muted" }, row.duration ? `${row.duration} years` : "indefinite",
-            row.detail.blend_factor !== undefined && row.detail.blend_factor < 1 ? `: ${Math.round(row.detail.blend_factor * 100)}% of the stay, then standard rules` : "")),
-        h("td", { class: "num" }, fmtPct(row.detail.rate), h("div", { class: "small muted" }, `${fmtEur(row.detail.tax)} tax + ${fmtEur(row.detail.ssc)} social security`)),
-        h("td", { class: "num" }, h("strong", null, fmtEur(row.cost))),
-        h("td", null, scoreChip(row.scores.income_tax, state.cfg)))))))]);
+          row.duration ? h("div", { class: "small muted" }, `${row.duration} years`) : null),
+        h("td", { class: "num", title: `${fmtEur(row.detail.tax)} tax + ${fmtEur(row.detail.ssc)} social security` }, fmtPct(row.detail.rate)),
+        h("td", { class: "num" }, fmtEur(row.cost)),
+        h("td", null, scoreChip(row.scores.income_tax, state.cfg)))))))));
   if (inc.regimes.length) {
     const regSec = h("details", { class: "fold" }, h("summary", null, h("h3", null, "Nomad visas and expat regimes")));
     body.append(regSec);
@@ -152,31 +157,18 @@ export function renderPersonaBody(body, p, id, r) {
       field("Employees' standard expense deduction", it.employment_deduction ? it.employment_deduction.note : null),
       field("Social security deducted before income tax", it.social_security_deductible === null || it.social_security_deductible === undefined ? "not researched (treated as not deductible)" : fmtPct(it.social_security_deductible, 0)),
       field("Self-employed notes", it.self_employed_notes),
-      field("Local taxes", it.local_tax_note)),
+      field("Local taxes", it.local_tax_note),
+      p.income_region ? field("State and city tax", p.income_region.income_tax.note) : null),
     openQuestions(it.open_questions), sourceList(it.sources),
     h("div", { class: "meta-line" }, `Tax year ${it.tax_year} · verified ${it.verified_on} · confidence `, h("span", { class: `conf conf-${it.confidence}` }, it.confidence), ` · ${it.verification.replace("_", " ")}`)));
 
-  body.append(h("h3", null, "All metrics"), metricsTable(r));
-  const ns = block.nomad_scene;
-  if (ns) {
-    body.append(h("p", { class: "small" }, h("strong", null, "Digital nomad scene: "),
-      ns.lists_named ? `named in ${ns.lists_named} of ${ns.lists_total} published nomad rankings` : `not named in any of the ${ns.lists_total} published nomad rankings used`,
-      ns.hub ? `; best-placed city ${ns.hub}` : "", ".",
-      ns.coworking_osm ? h("span", { class: "muted" }, ` OpenStreetMap lists ${ns.coworking_osm.spaces} coworking spaces within 15 km of ${ns.coworking_osm.city} (reference only: coverage depends on local mappers, so it is not scored).`) : null));
-  } else if ("scene" in personaCfg().metrics) {
-    body.append(h("p", { class: "small muted" }, "Digital nomad scene: no data."));
-  }
+  body.append(foldSection("All metrics", metricsTable(r)));
   body.append(costSection(block, inc));
-  if (lo && lo.eur !== null && lo.eur !== undefined) {
-    body.append(h("p", null, h("strong", null, `Money left over a year: ${fmtEur(lo.eur)}`),
-      ` = salary ${fmtEur(income)} − tax and social security ${fmtEur(best ? best.cost : null)} − Annual Household Cost ${fmtEur(block.household_cost)}.`));
-  }
   body.append(foldSection("Residence and work rights", h("p", null, inc.residence_routes)));
-  if (inc.open_questions.length) body.append(h("details", { class: "fold" }, h("summary", null, h("h3", null, `Open questions (${inc.open_questions.length})`)), h("ul", null, inc.open_questions.map((q) => h("li", null, q)))));
-  body.append(h("p", { class: "small muted" }, `Researched ${inc.researched_on}. Amounts converted to ${displayCurrency()} at ECB reference rates of ${state.data.meta.fx_date}.`));
+  if (inc.open_questions.length) body.append(foldSection(`Open questions (${inc.open_questions.length})`, h("ul", null, inc.open_questions.map((q) => h("li", null, q)))));
+  body.append(h("p", { class: "small muted" }, `Researched ${inc.researched_on} · ${displayCurrency()} at ECB rates of ${state.data.meta.fx_date}`));
   const dossier = h("div", { class: "dossier" });
-  body.append(h("section", null, h("h3", null, "Earned-income dossier"),
-    h("button", { onclick: () => showDossier(dossier, inc.id) }, "Show the dated dossier"), dossier));
+  body.append(h("section", null, h("button", { onclick: () => showDossier(dossier, inc.id) }, "Show the full dossier"), dossier));
 }
 
 /** A section folded under its heading, closed by default. */
@@ -253,7 +245,7 @@ export function renderIncomeCalculator(panel) {
     if (jur(cid)?.researched) inp.targets = [cid];
   }
   panel.append(h("h2", null, `${persona.label}: income tax calculator`),
-    h("p", { class: "disclaimer" }, "Illustrative only. Applies the researched resident rates, the basic allowance and the individual's own social security to gross income. It ignores deductible expenses, family allowances, tax credits beyond the basic allowance, double-tax relief and the tax position in the country being left."));
+    h("p", { class: "small muted" }, "Illustrative; not tax advice. Assumptions under Method."));
   append(panel, [usCitizenNote()]);
   const form = h("form", { class: "calc-form", onsubmit: (e) => e.preventDefault() });
   const out = h("div", { class: "calc-out", "aria-live": "polite" });
@@ -282,19 +274,21 @@ export function renderIncomeCalculator(panel) {
   kind.value = inp.kind;
   kind.addEventListener("change", () => { inp.kind = kind.value; run(); });
   form.append(h("label", { class: "ctl", for: "ic-kind" }, h("span", null, "Work"), kind));
-  form.append(h("p", { class: "small" }, `Citizenship: ${{ EU: "EU", US: "US", OTHER: "other" }[state.citizenship]} (change it in the top bar).`));
   for (let i = 0; i < 5; i++) {
     const s = countryOptions(inp.targets[i] || "", `Country ${i + 1}…`);
     s.addEventListener("change", () => { inp.targets[i] = s.value; run(); });
     form.append(h("label", { class: "ctl" }, h("span", null, `Country ${i + 1}`), s));
   }
-  panel.append(form, out,
-    h("h3", null, "How to read it"),
-    h("ul", { class: "small" },
-      h("li", null, "Effective rate: income tax plus own social security in a year the regime applies, as a share of gross income."),
-      h("li", null, "Average a year over the stay: a time-limited regime is blended with the standard rules for the years after it ends."),
-      h("li", null, "Left over a year: gross income minus that average and the persona's Annual Household Cost (rent and everyday spending in the main city).")));
+  panel.append(form, out);
   run();
+}
+
+/** The earned-income calculator's assumptions, shown on the Method page. */
+export function incomeCalculatorAssumptions() {
+  return h("ul", { class: "small" },
+    h("li", null, "Resident rates, the basic allowance, the person's own social security and standard deductions, applied to gross income."),
+    h("li", null, "Not included: deductible expenses, family allowances, other tax credits, double-tax relief, and the tax position in the country being left."),
+    h("li", null, "A time-limited regime is averaged with the standard rules over the stay. Left over = income − that average − the Annual Household Cost."));
 }
 
 // ------------------------------------------------------------------ methodology
@@ -303,24 +297,30 @@ export function personaMethodology() {
   const persona = personaCfg();
   const w = normalizeWeights(state.defaultWeights);
   const cfg = state.cfg;
+  const cola = state.data.meta.config.personas.expat.salary_multiplier;
+  const describe = (k) => moneyText(k === "income_tax" ? cfg.income_tax_transform.description : k === "cost" ? persona.cost.description
+    : k === "leftover" ? persona.leftover.description : k === "scene" ? persona.scene.description
+      : k === "visa" ? persona.visa.description : (cfg.nontax_transforms[k] || {}).description || "");
   return [
-    h("h3", null, `Persona: ${persona.label}`),
-    h("p", null, persona.summary),
+    h("h3", null, "Metrics and weights"),
     h("div", { class: "table-wrap" }, h("table", { class: "grid small" },
-      h("thead", null, h("tr", null, h("th", null, "Metric"), h("th", null, "Points"), h("th", null, "Share"), h("th", null, "Transformation to 0–100"))),
-      h("tbody", null, Object.entries(persona.metrics).map(([k, m]) => h("tr", null, h("td", null, m.label), h("td", { class: "num" }, String(m.weight)),
-        h("td", { class: "num" }, fmtPct(w[k])),
-        h("td", null, moneyText(k === "income_tax" ? cfg.income_tax_transform.description : k === "cost" ? persona.cost.description
-          : k === "leftover" ? persona.leftover.description
-          : k === "scene" ? persona.scene.description
-          : k === "visa" ? persona.visa.description : (cfg.nontax_transforms[k] || {}).description || ""))))))),
-    h("p", null, "Income tax and social security come from one researched file per country (", h("code", null, "data/income/"), "): resident rates with the main city's local surtax, the basic allowance, the employee's or self-employed person's own social security (employer contributions are not counted; where the law deducts those contributions from taxable income, they are deducted before the brackets), and every digital nomad visa and expat regime with its conditions. A regime counts only when its conditions fit the persona: nomad visas need foreign clients, expat regimes a local employer, and income thresholds must be met."),
-    h("p", null, `Knock-outs for this persona: ${persona.knockout.join(", ").replaceAll("_", " ")}. Rule-of-law and corruption thresholds apply to the HNWI persona only: they matter for wealth held for generations, less for a ${persona.horizon_years}-year stay, and remain visible in the scores.`),
-    persona.salary_multiplier ? h("p", null, h("strong", null, "Salary by location. "), moneyText(persona.salary_multiplier.description)) : null,
-    h("p", null, "Not modelled: US citizenship-based taxation (foreign earned income exclusion, self-employment tax), deductible expenses, family allowances and the exit position in the country being left."),
-    h("p", null, `Regions use their country's earned-income rules and main-city costs. Scores for the HNWI persona are unchanged by this persona.`),
-    h("p", { class: "small muted" }, `Reference income: USD ${persona.income_usd.toLocaleString("en-GB")} a year, ${fmtEur(persona.income_usd / state.data.meta.fx_usd_per_eur)} at the build rate.`),
-  ].filter(Boolean);
+      h("thead", null, h("tr", null, h("th", null, "Metric"), h("th", { class: "num" }, "Share"), h("th", null, "How it is scored"))),
+      h("tbody", null, Object.entries(persona.metrics).map(([k, m]) => h("tr", null, h("td", null, m.label),
+        h("td", { class: "num" }, fmtPct(w[k], 0)), h("td", null, describe(k))))))),
+    h("h3", null, "Income tax"),
+    h("p", null, "One researched file per country: resident rates (with the main city's local tax), the basic allowance, the person's own social security and standard deductions where the law allows, and every nomad visa and expat regime with its conditions. A regime counts only if it fits: nomad visas need foreign clients, expat regimes a local employer, and income thresholds must be met. A regime that runs out before the stay ends is averaged with the standard rules."),
+    h("p", null, "Foreign-income exemptions count for the nomad only where a source shows they cover work done while living in the country; most do not."),
+    h("p", null, "US states add their own income tax (and the main city's, e.g. New York City or Philadelphia) on top of federal tax, with the state's main-city rents and price level. The national US figures use Austin, Texas. Other countries' regions use national rules."),
+    persona.salary_multiplier ? [h("h3", null, "Salary by location"), h("p", null, moneyText(cola.description)),
+      h("p", { class: "small" }, "Tables used: US State Department post allowance, UN post adjustment, EU correction coefficients, German Kaufkraftausgleich (sources in ATTRIBUTION.md). Hover the salary in a profile to see each table's value.")] : null,
+    "scene" in persona.metrics ? [h("h3", null, "Digital nomad scene"), h("p", null, moneyText(persona.scene.description))] : null,
+    h("h3", null, "Knock-outs"),
+    h("p", null, `Ruled out for this persona: ${knockoutLabels(persona).join(", ").toLowerCase()}. Rule-of-law and corruption knock-outs apply to the HNWI only: they matter for wealth held for generations, less for a ${persona.horizon_years}-year stay.`),
+    h("h3", null, "Not modelled"),
+    h("ul", { class: "small" }, persona.profile.not_modelled.map((t) => h("li", null, t))),
+    h("h3", null, "Calculator"),
+    incomeCalculatorAssumptions(),
+  ].flat().filter(Boolean);
 }
 
 // ------------------------------------------------------------------ "Who is this for?" card
@@ -335,38 +335,31 @@ function knockoutLabels(persona) {
   return [...new Set(persona.knockout.map((id) => labels[id] || id.replaceAll("_", " ")))];
 }
 
-/** The money assumptions behind a persona, worded from the live config so they cannot drift. */
+/** The money assumptions behind a persona in a few short lines, from the live config. */
 function moneyLines(pid) {
   const cfg = state.cfg;
   const p = cfg.personas[pid];
-  const usdPerEur = state.data.meta.fx_usd_per_eur;
   if (pid === "family_office") {
     const rf = cfg.reference_family;
-    const hc = cfg.household_cost;
     const horizon = cfg.tax_transforms.time_limited_regimes;
     return [
-      `${fmtEur(rf.portfolio)} investment portfolio (${pct(rf.foreign_share)} invested abroad), a ${fmtEur(rf.real_estate_local)} home, ${fmtEur(rf.net_wealth)} net wealth.`,
-      `Every year: ${fmtEur(rf.realized_gains)} of realised capital gains and ${fmtEur(rf.dividends)} of dividends (foreign dividends arrive after ${pct(rf.source_wht)} withholding, credited where the country allows).`,
-      `Spends about ${fmtEur(rf.annual_payout)} a year, taken from the portfolio (or paid out by a holding structure where one is used).`,
-      `The local Annual Household Cost (a 4-bedroom family home in a good, upper-middle-class area, three international-school places, family health insurance, a housekeeper and ${fmtEur(hc.other_spending_eur)} of other spending, scaled to local prices) is estimated for each country and scored separately.`,
-      `Leaves a ${fmtEur(rf.estate)} estate to ${rf.children} children. Horizon: ${horizon.horizon_years} years, ${horizon.generations} generations, so a 10-year tax holiday counts for a sixth of the time.`,
-      "Holds investments personally by default; holding structures (company, foundation, trust) can be included or left out in the top bar.",
+      `${fmtEur(rf.portfolio)} portfolio, mostly invested abroad`,
+      `${fmtEur(rf.realized_gains)} of gains and ${fmtEur(rf.dividends)} of dividends a year`,
+      `Spends about ${fmtEur(rf.annual_payout)} a year`,
+      `${fmtEur(rf.estate)} estate to ${rf.children} children · ${horizon.horizon_years}-year horizon`,
     ];
   }
-  const income = p.income_usd / usdPerEur;
   if (pid === "expat") {
     const m = (id) => state.data.jurisdictions[id]?.personas?.expat?.salary_multiplier;
-    const ex = [["GBR", "London"], ["CHE", "Zurich"], ["ROU", "Bucharest"]].filter(([id]) => m(id)).map(([id, city]) => `${m(id).toFixed(2)}× in ${city}`);
+    const ex = [["GBR", "London"], ["ROU", "Bucharest"]].filter(([id]) => m(id)).map(([id, city]) => `×${m(id).toFixed(2)} ${city}`);
     return [
-      `Earns ${usd(p.income_usd)} (about ${fmtEur(income)}) gross a year in an average euro-area capital, as an employee of a local employer.`,
-      `Elsewhere the salary follows local living costs, using the multipliers governments and the UN apply to staff posted abroad${ex.length ? `: for example ${ex.join(", ")}` : ""}.`,
-      `Stays ${p.horizon_years} years. Lives in a city-centre 2-bedroom flat, plus ${fmtEur(p.cost.other_spending_eur)} a year of other spending scaled to local prices.`,
+      `${usd(p.income_usd)} salary in an average euro-area city, adjusted for local costs${ex.length ? ` (${ex.join(", ")})` : ""}`,
+      `Local employer · ${p.horizon_years} years · 2-bedroom city flat`,
     ];
   }
   return [
-    `Earns ${usd(p.income_usd / 12)} a month (${usd(p.income_usd)}, about ${fmtEur(income)} a year) as a self-employed contractor with clients abroad. The income is the same wherever they live, so cheaper places stretch it further.`,
-    `Stays ${p.horizon_years} years and becomes tax-resident, using a digital nomad visa where one exists.`,
-    `Lives in a city-centre 1-bedroom flat with a coworking desk, plus ${fmtEur(p.cost.other_spending_eur)} a year of other spending scaled to local prices.`,
+    `${usd(p.income_usd / 12)} a month from clients abroad, the same everywhere`,
+    `${p.horizon_years} years · 1-bedroom flat and a coworking desk`,
   ];
 }
 
@@ -381,13 +374,9 @@ export function personaCard(pid = state.persona) {
     h("p", null, prof.headline),
     h("h4", null, "Money"),
     h("ul", null, moneyLines(pid).map((t) => h("li", null, t))),
-    h("h4", null, "What matters most"),
+    h("h4", null, "What matters most (default weights)"),
     h("ul", { class: "priorities" }, prof.priorities.map((pr) => h("li", null,
       h("span", { class: "share", title: pr.metrics.map((m) => metrics[m]?.label).filter(Boolean).join(", ") }, pct(pr.metrics.reduce((a, m) => a + (w[m] || 0), 0))),
       " ", pr.text))),
-    h("p", { class: "small muted" }, "Shares are the default weights; change them under Weights."),
-    h("h4", null, "Ruled out (shown red)"),
-    h("p", { class: "small" }, knockoutLabels(p).join(" · ")),
-    h("h4", null, "Not modelled"),
-    h("ul", { class: "small" }, prof.not_modelled.map((t) => h("li", null, t))));
+    h("p", { class: "small muted" }, `Ruled out: ${knockoutLabels(p).join(", ").toLowerCase()}. Details under Method.`));
 }

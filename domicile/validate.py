@@ -11,7 +11,7 @@ from pathlib import Path
 
 from pydantic import ValidationError
 
-from domicile.schema import IncomeFile, Jurisdiction, Subnational
+from domicile.schema import IncomeFile, Jurisdiction, Subnational, RegionalIncomeFile
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -21,7 +21,7 @@ def validate_file(path: Path) -> list[str]:
         data = json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
         return [f"{path}: invalid JSON: {e}"]
-    model = {"subnational": Subnational, "income": IncomeFile}.get(path.parent.name, Jurisdiction)
+    model = {"subnational": Subnational, "income": IncomeFile, "income_regions": RegionalIncomeFile}.get(path.parent.name, Jurisdiction)
     try:
         obj = model.model_validate(data)
     except ValidationError as e:
@@ -38,7 +38,7 @@ def validate_file(path: Path) -> list[str]:
 
 def main(argv: list[str]) -> int:
     paths = [Path(a) for a in argv] or sorted(
-        [*ROOT.glob("data/jurisdictions/*.json"), *ROOT.glob("data/subnational/*.json"), *ROOT.glob("data/income/*.json")]
+        [*ROOT.glob("data/jurisdictions/*.json"), *ROOT.glob("data/subnational/*.json"), *ROOT.glob("data/income/*.json"), *ROOT.glob("data/income_regions/*.json")]
     )
     errors = [e for p in paths for e in validate_file(p)]
     for e in errors:

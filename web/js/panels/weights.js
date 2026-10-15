@@ -39,7 +39,7 @@ export function renderWeights(panel, ctx) {
   };
 
   panel.append(h("h2", null, `Weights: ${personaCfg().label}`),
-    h("p", { class: "small muted" }, "Weights are points, not percentages; they are normalised so the total is always 100%. Changes apply instantly to the map, rankings and profiles and are remembered in this browser only. Each persona keeps its own weights."),
+    h("p", { class: "small muted" }, "Points, shown as shares of 100%. Changes apply at once and are remembered in this browser. How each metric is scored: hover a label, or see Method."),
     summary,
     h("div", { class: "row-actions" },
       h("button", { onclick: () => applyPreset({ ...state.defaultWeights }) }, "Reset to defaults"),
@@ -66,8 +66,8 @@ export function renderWeights(panel, ctx) {
         update({ weights: next }, { persist: true });
         refreshNumbers();
       });
-      panel.append(h("div", { class: "weight-row" }, h("label", { for: `w-${k}` }, m.label), input, out,
-        h("div", { class: "small muted", id: `w-${k}-desc` }, metricDescription(k))));
+      panel.append(h("div", { class: "weight-row" }, h("label", { for: `w-${k}`, title: metricDescription(k) }, m.label), input, out,
+        h("div", { class: "sr-only", id: `w-${k}-desc` }, metricDescription(k))));
     }
   }
   refreshNumbers();

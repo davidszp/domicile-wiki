@@ -33,6 +33,13 @@ function ssc(rules, income, kind) {
 }
 
 /** Income tax and own social security on `income` (EUR) for `kind` (employment / self_employment). */
+/** State and city income tax on top of national tax; national regimes do not change it. */
+export function regionalTax(rules, income) {
+  const r = rules.regional;
+  if (!r) return 0;
+  return applyBrackets(Math.max(0, income - r.allowance), r.brackets) + applyBrackets(Math.max(0, income - r.local_allowance), r.local_brackets);
+}
+
 export function earnedTax(rules, income, kind, regime = null) {
   let s = ssc(rules, income, kind);
   if (regime && !regime.ssc) s = 0;
@@ -49,6 +56,7 @@ export function earnedTax(rules, income, kind, regime = null) {
     const above = Math.max(0, top - (regime.exempt_above ?? 0));
     tax = standardTax(rules, income - above * regime.exempt_share, kind, d);
   } else tax = standardTax(rules, income, kind, d);
+  tax += regionalTax(rules, income);
   const total = tax + s;
   return { tax: round2(tax), ssc: round2(s), total: round2(total), rate: income ? total / income : 0 };
 }

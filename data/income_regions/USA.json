@@ -1,0 +1,4706 @@
+{
+  "parent": "USA",
+  "currency": "USD",
+  "researched_on": "2026-10-15",
+  "tax_year": "2026",
+  "notes": "State and main-city income tax added on top of federal tax for the Expat and Digital nomad personas, with each state's main-city rents and BEA Regional Price Parity (benchmark: Austin-Round Rock-San Marcos, TX metro = 98.066, 2024). Single filer; credits and high-income phase-outs are mostly not modelled (see each unit's open_questions).",
+  "units": [
+    {
+      "code": "US-AK",
+      "name": "Alaska",
+      "city": "Anchorage",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Alaska levies no individual income tax (Tax Foundation 2026 table).",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Anchorage, AK (Metropolitan Statistical Area)",
+        "value": 105.42,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Anchorage",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1340,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Anchorage, AK, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Anchorage, AK rent research",
+            "url": "https://www.zumper.com/rent-research/anchorage-ak",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1700,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Anchorage, AK, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Anchorage, AK rent research",
+            "url": "https://www.zumper.com/rent-research/anchorage-ak",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-AL",
+      "name": "Alabama",
+      "city": "Birmingham",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.02
+          },
+          {
+            "from_amount": 500,
+            "rate": 0.04
+          },
+          {
+            "from_amount": 3000,
+            "rate": 0.05
+          }
+        ],
+        "allowance": 4500,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.01
+          }
+        ],
+        "local_allowance": 0,
+        "note": "State only: 2%/4%/5% single brackets, standard deduction USD 3,000 (phases down with AGI, floor 2,500 per TF note) plus personal exemption USD 1,500. Federal income tax paid is deductible in Alabama, not modelled (lowers the effective rate). Birmingham occupational tax of 1% of gross wages earned in the city is included as local.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "low",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Birmingham 1% occupational tax rate seen only in a web search summary (no official page opened); it applies to wages earned in the city, not to residence. Suburbs do not levy it."
+        ]
+      },
+      "price_parity": {
+        "metro": "Birmingham, AL (Metropolitan Statistical Area)",
+        "value": 91.644,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Birmingham",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1095,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Birmingham, AL, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Birmingham, AL rent research",
+            "url": "https://www.zumper.com/rent-research/birmingham-al",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1074,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Birmingham, AL, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Birmingham, AL rent research",
+            "url": "https://www.zumper.com/rent-research/birmingham-al",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper 2-bedroom average (1,074) is below the 1-bedroom (1,095) on the page; thin sample."
+      ]
+    },
+    {
+      "code": "US-AR",
+      "name": "Arkansas",
+      "city": "Little Rock",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.02
+          },
+          {
+            "from_amount": 4600,
+            "rate": 0.039
+          }
+        ],
+        "allowance": 2470,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "State only: 2% to 3.9% (TF footnote: lower-rate tables for low incomes use 2025 figures); standard deduction USD 2,470; USD 29 personal credit not modelled. No local income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Arkansas bracket values flagged in TF as 2025 figures for low-income tables."
+        ]
+      },
+      "price_parity": {
+        "metro": "Little Rock-North Little Rock-Conway, AR (Metropolitan Statistical Area)",
+        "value": 89.364,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Little Rock",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 950,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Little Rock, AR, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Little Rock, AR rent research",
+            "url": "https://www.zumper.com/rent-research/little-rock-ar",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1000,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Little Rock, AR, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Little Rock, AR rent research",
+            "url": "https://www.zumper.com/rent-research/little-rock-ar",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-AZ",
+      "name": "Arizona",
+      "city": "Phoenix",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.025
+          }
+        ],
+        "allowance": 8350,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Flat 2.5%; standard deduction USD 8,350 (conforms to pre-OBBBA federal amount per TF). No local income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Phoenix-Mesa-Chandler, AZ (Metropolitan Statistical Area)",
+        "value": 103.316,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Phoenix",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1150,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Phoenix, AZ, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Phoenix, AZ rent research",
+            "url": "https://www.zumper.com/rent-research/phoenix-az",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1495,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Phoenix, AZ, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Phoenix, AZ rent research",
+            "url": "https://www.zumper.com/rent-research/phoenix-az",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-CA",
+      "name": "California",
+      "city": "Los Angeles",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.01
+          },
+          {
+            "from_amount": 11079,
+            "rate": 0.02
+          },
+          {
+            "from_amount": 26264,
+            "rate": 0.04
+          },
+          {
+            "from_amount": 41452,
+            "rate": 0.06
+          },
+          {
+            "from_amount": 57542,
+            "rate": 0.08
+          },
+          {
+            "from_amount": 72724,
+            "rate": 0.093
+          },
+          {
+            "from_amount": 371479,
+            "rate": 0.103
+          },
+          {
+            "from_amount": 445771,
+            "rate": 0.113
+          },
+          {
+            "from_amount": 742953,
+            "rate": 0.123
+          },
+          {
+            "from_amount": 1000000,
+            "rate": 0.133
+          }
+        ],
+        "allowance": 5540,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "State only; TF shows 2025 bracket widths (2026 indexation not yet in table). Standard deduction USD 5,540; USD 153 exemption credit (phases out at higher AGI) not modelled. The 1.3% SDI payroll tax and 1% mental health surcharge above USD 1m (included in 13.3% top rate per TF) are separate. Los Angeles levies no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "TF shows 2025 bracket widths for California; 2026 indexed values not seen."
+        ]
+      },
+      "price_parity": {
+        "metro": "Los Angeles-Long Beach-Anaheim, CA (Metropolitan Statistical Area)",
+        "value": 113.566,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Los Angeles",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 2050,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Los Angeles, CA, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Los Angeles, CA rent research",
+            "url": "https://www.zumper.com/rent-research/los-angeles-ca",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2808,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Los Angeles, CA, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Los Angeles, CA rent research",
+            "url": "https://www.zumper.com/rent-research/los-angeles-ca",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-CO",
+      "name": "Colorado",
+      "city": "Denver",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.044
+          }
+        ],
+        "allowance": 16100,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Flat 4.4% on federal-based taxable income (federal standard deduction USD 16,100 included). Denver has a flat occupational privilege tax (per-month dollar amount), not an income tax; not modelled.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Denver-Aurora-Centennial, CO (Metropolitan Statistical Area)",
+        "value": 105.782,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Denver",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1546,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Denver, CO, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Denver, CO rent research",
+            "url": "https://www.zumper.com/rent-research/denver-co",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2109,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Denver, CO, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Denver, CO rent research",
+            "url": "https://www.zumper.com/rent-research/denver-co",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-CT",
+      "name": "Connecticut",
+      "city": "Stamford",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.02
+          },
+          {
+            "from_amount": 10000,
+            "rate": 0.045
+          },
+          {
+            "from_amount": 50000,
+            "rate": 0.055
+          },
+          {
+            "from_amount": 100000,
+            "rate": 0.06
+          },
+          {
+            "from_amount": 200000,
+            "rate": 0.065
+          },
+          {
+            "from_amount": 250000,
+            "rate": 0.069
+          },
+          {
+            "from_amount": 500000,
+            "rate": 0.0699
+          }
+        ],
+        "allowance": 15000,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "State only; personal exemption USD 15,000 phases out with AGI and Connecticut has tax-benefit recapture and credit phaseouts (TF notes i,p,q,r) - not modelled, so tax is understated slightly at 150k. No city income tax. City is Stamford (Fairfield County finance hub); BEA MSA is Bridgeport-Stamford-Danbury.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Connecticut exemption/credit phaseouts and recapture at USD 150,000 not modelled."
+        ]
+      },
+      "price_parity": {
+        "metro": "Bridgeport-Stamford-Danbury, CT Metropolitan Statistical Area",
+        "value": 106.864,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Stamford",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 2517,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Stamford, CT, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Stamford, CT rent research",
+            "url": "https://www.zumper.com/rent-research/stamford-ct",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 3349,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Stamford, CT, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Stamford, CT rent research",
+            "url": "https://www.zumper.com/rent-research/stamford-ct",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-DC",
+      "name": "District of Columbia",
+      "city": "Washington",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.04
+          },
+          {
+            "from_amount": 10000,
+            "rate": 0.06
+          },
+          {
+            "from_amount": 40000,
+            "rate": 0.065
+          },
+          {
+            "from_amount": 60000,
+            "rate": 0.085
+          },
+          {
+            "from_amount": 250000,
+            "rate": 0.0925
+          },
+          {
+            "from_amount": 500000,
+            "rate": 0.0975
+          },
+          {
+            "from_amount": 1000000,
+            "rate": 0.1075
+          }
+        ],
+        "allowance": 16100,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "DC individual income tax (TF 2026 table), standard deduction USD 16,100 (tied to federal). No separate city tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Washington-Arlington-Alexandria, DC-VA-MD-WV (Metropolitan Statistical Area)",
+        "value": 108.884,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Washington",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 2150,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Washington, DC, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Washington, DC rent research",
+            "url": "https://www.zumper.com/rent-research/washington-dc",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2850,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Washington, DC, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Washington, DC rent research",
+            "url": "https://www.zumper.com/rent-research/washington-dc",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-DE",
+      "name": "Delaware",
+      "city": "Wilmington",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          },
+          {
+            "from_amount": 2000,
+            "rate": 0.022
+          },
+          {
+            "from_amount": 5000,
+            "rate": 0.039
+          },
+          {
+            "from_amount": 10000,
+            "rate": 0.048
+          },
+          {
+            "from_amount": 20000,
+            "rate": 0.052
+          },
+          {
+            "from_amount": 25000,
+            "rate": 0.0555
+          },
+          {
+            "from_amount": 60000,
+            "rate": 0.066
+          }
+        ],
+        "allowance": 3250,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0125
+          }
+        ],
+        "local_allowance": 0,
+        "note": "State only: standard deduction USD 3,250; USD 110 personal credit not modelled. City of Wilmington wage/earned-income tax 1.25% on residents' earned income included as local (no deduction).",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Delaware Wilmington Earned Income Tax Guide 2026",
+            "url": "https://www.countrytaxcalc.com/tax-guides/usa/delaware-wilmington-earned-income-tax-guide-2026/",
+            "publisher": "CountryTaxCalc",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Wilmington 1.25% rate taken from a secondary site (CountryTaxCalc); not confirmed on a City of Wilmington page. Applies to Wilmington residents and to work performed in the city."
+        ]
+      },
+      "price_parity": {
+        "metro": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (Metropolitan Statistical Area)",
+        "value": 102.554,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Wilmington",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1650,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Wilmington, DE, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Wilmington, DE rent research",
+            "url": "https://www.zumper.com/rent-research/wilmington-de",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1724,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Wilmington, DE, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Wilmington, DE rent research",
+            "url": "https://www.zumper.com/rent-research/wilmington-de",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-FL",
+      "name": "Florida",
+      "city": "Miami",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Florida levies no individual income tax (Tax Foundation 2026 table).",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Miami-Fort Lauderdale-West Palm Beach, FL (Metropolitan Statistical Area)",
+        "value": 114.155,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Miami",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 2500,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Miami, FL, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Miami, FL rent research",
+            "url": "https://www.zumper.com/rent-research/miami-fl",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2900,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Miami, FL, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Miami, FL rent research",
+            "url": "https://www.zumper.com/rent-research/miami-fl",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-GA",
+      "name": "Georgia",
+      "city": "Atlanta",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0519
+          }
+        ],
+        "allowance": 12000,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Flat 5.19% (TF 2026 table); standard deduction USD 12,000. No local income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Atlanta-Sandy Springs-Roswell, GA (Metropolitan Statistical Area)",
+        "value": 100.058,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Atlanta",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1627,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Atlanta, GA, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Atlanta, GA rent research",
+            "url": "https://www.zumper.com/rent-research/atlanta-ga",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2021,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Atlanta, GA, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Atlanta, GA rent research",
+            "url": "https://www.zumper.com/rent-research/atlanta-ga",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-HI",
+      "name": "Hawaii",
+      "city": "Honolulu",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.014
+          },
+          {
+            "from_amount": 9600,
+            "rate": 0.032
+          },
+          {
+            "from_amount": 14400,
+            "rate": 0.055
+          },
+          {
+            "from_amount": 19200,
+            "rate": 0.064
+          },
+          {
+            "from_amount": 24000,
+            "rate": 0.068
+          },
+          {
+            "from_amount": 36000,
+            "rate": 0.072
+          },
+          {
+            "from_amount": 48000,
+            "rate": 0.076
+          },
+          {
+            "from_amount": 125000,
+            "rate": 0.079
+          },
+          {
+            "from_amount": 175000,
+            "rate": 0.0825
+          },
+          {
+            "from_amount": 225000,
+            "rate": 0.09
+          },
+          {
+            "from_amount": 275000,
+            "rate": 0.1
+          },
+          {
+            "from_amount": 325000,
+            "rate": 0.11
+          }
+        ],
+        "allowance": 5544,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "State only: standard deduction USD 4,400 + exemption USD 1,144. No city income tax. Top 11% (TF).",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Urban Honolulu, HI (Metropolitan Statistical Area)",
+        "value": 110.961,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Honolulu",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 2300,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Urban Honolulu, HI, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Urban Honolulu, HI rent research",
+            "url": "https://www.zumper.com/rent-research/urban-honolulu-hi",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 3200,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Urban Honolulu, HI, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Urban Honolulu, HI rent research",
+            "url": "https://www.zumper.com/rent-research/urban-honolulu-hi",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper slug urban-honolulu-hi; the plain honolulu-hi page did not exist."
+      ]
+    },
+    {
+      "code": "US-IA",
+      "name": "Iowa",
+      "city": "Des Moines",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.038
+          }
+        ],
+        "allowance": 16100,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Flat 3.8% (2026); standard deduction USD 16,100; USD 40 personal credit not modelled. School-district surtax not modelled.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Des Moines-West Des Moines, IA (Metropolitan Statistical Area)",
+        "value": 91.701,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Des Moines",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 820,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Des Moines, IA, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Des Moines, IA rent research",
+            "url": "https://www.zumper.com/rent-research/des-moines-ia",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1025,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Des Moines, IA, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Des Moines, IA rent research",
+            "url": "https://www.zumper.com/rent-research/des-moines-ia",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-ID",
+      "name": "Idaho",
+      "city": "Boise",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          },
+          {
+            "from_amount": 4811,
+            "rate": 0.053
+          }
+        ],
+        "allowance": 16100,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Flat 5.3% above USD 4,811 (per TF); standard deduction USD 16,100 (federal). No local income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Boise City, ID (Metropolitan Statistical Area)",
+        "value": 98.391,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Boise",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1315,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Boise, ID, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Boise, ID rent research",
+            "url": "https://www.zumper.com/rent-research/boise-id",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1600,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Boise, ID, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Boise, ID rent research",
+            "url": "https://www.zumper.com/rent-research/boise-id",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-IL",
+      "name": "Illinois",
+      "city": "Chicago",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0495
+          }
+        ],
+        "allowance": 2925,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Flat 4.95%; personal exemption USD 2,925 (unavailable above USD 250,000 AGI); no standard deduction. Chicago has no income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "partially_verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Chicago-Naperville-Elgin, IL-IN (Metropolitan Statistical Area)",
+        "value": 103.595,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Chicago",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 2300,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Chicago, IL, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Chicago, IL rent research",
+            "url": "https://www.zumper.com/rent-research/chicago-il",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2695,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Chicago, IL, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Chicago, IL rent research",
+            "url": "https://www.zumper.com/rent-research/chicago-il",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-IN",
+      "name": "Indiana",
+      "city": "Indianapolis",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0295
+          }
+        ],
+        "allowance": 1000,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0202
+          }
+        ],
+        "local_allowance": 1000,
+        "note": "State flat 2.95% with USD 1,000 exemption; Marion County resident county tax 2.02% (Indiana DOR Departmental Notice #1, effective 1 Jan 2026) included as local, same base.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Departmental Notice #1 - Indiana county tax rates, effective Jan. 1, 2026",
+            "url": "https://www.in.gov/dor/files/dn01.pdf",
+            "publisher": "Indiana Department of Revenue",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Indianapolis-Carmel-Greenwood, IN (Metropolitan Statistical Area)",
+        "value": 95.696,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Indianapolis",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1025,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Indianapolis, IN, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Indianapolis, IN rent research",
+            "url": "https://www.zumper.com/rent-research/indianapolis-in",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1300,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Indianapolis, IN, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Indianapolis, IN rent research",
+            "url": "https://www.zumper.com/rent-research/indianapolis-in",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-KS",
+      "name": "Kansas",
+      "city": "Overland Park",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.052
+          },
+          {
+            "from_amount": 23000,
+            "rate": 0.0558
+          }
+        ],
+        "allowance": 12765,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "State only: 5.2%/5.58%; standard deduction USD 3,605 + exemption USD 9,160. No city income tax. City is Overland Park (Kansas City metro); Kansas City, MO-KS MSA.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Kansas City, MO-KS (Metropolitan Statistical Area)",
+        "value": 92.543,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "Regional Price Parities by State and Metro Area (MARPP, 2024)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Overland Park",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1150,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Overland Park, KS, October 2026 (last updated 15 Oct 2026): average 1-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Overland Park, KS rent research",
+            "url": "https://www.zumper.com/rent-research/overland-park-ks",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1599,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper rent research page for Overland Park, KS, October 2026 (last updated 15 Oct 2026): average 2-bedroom asking rent, all property types, rolling 30 days; sample size not stated for the bedroom figure.",
+          "source": {
+            "title": "Zumper - Overland Park, KS rent research",
+            "url": "https://www.zumper.com/rent-research/overland-park-ks",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper page for Overland Park, KS (Kansas City metro suburb)."
+      },
+      "open_questions": []
+    },
+    {
+      "code": "US-KY",
+      "name": "Kentucky",
+      "city": "Louisville",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.035
+          }
+        ],
+        "allowance": 3360,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.022
+          }
+        ],
+        "local_allowance": 0,
+        "note": "Kentucky flat 3.5% on taxable income after the $3,360 standard deduction (Tax Foundation, 1 Jan 2026). Local: Louisville Metro occupational license tax 2.2% of compensation or net profit for residents (1.25% Metro + 0.20% TARC + 0.75% school boards; non-residents 1.45%), no allowance; the tax-year-2024 instructions were the latest opened.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Form OL-3 Instructions, Tax Year 2024 (Occupational License Tax)",
+            "url": "https://louisvilleky.gov/sites/default/files/2024-12/ol-3_instructions_2024.pdf",
+            "publisher": "Louisville Metro Revenue Commission",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Louisville 2.2% taken from the tax-year-2024 OL-3 instructions; 2026 rate not confirmed on a 2026 page.",
+          "Louisville occupational tax is deductible-base differences (e.g. no standard deduction) not modelled beyond the flat 2.2%."
+        ]
+      },
+      "price_parity": {
+        "metro": "Louisville/Jefferson County, KY-IN (Metropolitan Statistical Area)",
+        "value": 93.074,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Louisville",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 975,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Louisville, KY Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/louisville-ky",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1200,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Louisville, KY Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/louisville-ky",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-LA",
+      "name": "Louisiana",
+      "city": "New Orleans",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.03
+          }
+        ],
+        "allowance": 12875,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Louisiana flat 3.0% on taxable income after the $12,875 standard deduction (Tax Foundation, 1 Jan 2026). New Orleans levies no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "New Orleans city income tax absence not checked on a city page."
+        ]
+      },
+      "price_parity": {
+        "metro": "New Orleans-Metairie, LA (Metropolitan Statistical Area)",
+        "value": 92.597,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "New Orleans",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1400,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "New Orleans, LA Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/new-orleans-la",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1600,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "New Orleans, LA Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/new-orleans-la",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-MA",
+      "name": "Massachusetts",
+      "city": "Boston",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.05
+          },
+          {
+            "from_amount": 1083150,
+            "rate": 0.09
+          }
+        ],
+        "allowance": 4400,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Massachusetts 5% on taxable income, 9% above $1,083,150 (includes 4% surtax); personal exemption $4,400, no standard deduction (Tax Foundation, 1 Jan 2026). Boston has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Boston city income tax absence not checked on a city page."
+        ]
+      },
+      "price_parity": {
+        "metro": "Boston-Cambridge-Newton, MA-NH (Metropolitan Statistical Area)",
+        "value": 108.266,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Boston",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 2900,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Boston, MA Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/boston-ma",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 3470,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Boston, MA Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/boston-ma",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-MD",
+      "name": "Maryland",
+      "city": "Baltimore",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.02
+          },
+          {
+            "from_amount": 1000,
+            "rate": 0.03
+          },
+          {
+            "from_amount": 2000,
+            "rate": 0.04
+          },
+          {
+            "from_amount": 3000,
+            "rate": 0.0475
+          },
+          {
+            "from_amount": 100000,
+            "rate": 0.05
+          },
+          {
+            "from_amount": 125000,
+            "rate": 0.0525
+          },
+          {
+            "from_amount": 150000,
+            "rate": 0.055
+          },
+          {
+            "from_amount": 250000,
+            "rate": 0.0575
+          },
+          {
+            "from_amount": 500000,
+            "rate": 0.0625
+          },
+          {
+            "from_amount": 1000000,
+            "rate": 0.065
+          }
+        ],
+        "allowance": 6550,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.032
+          }
+        ],
+        "local_allowance": 0,
+        "note": "Maryland graduated 2%-6.5% single-filer brackets (Tax Foundation, 1 Jan 2026). Allowance = $3,350 standard deduction + $3,200 personal exemption as listed there. Local: Baltimore City 'county' piggyback tax 3.20% for CY2026 (Maryland DLS table), flat on Maryland taxable income.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Local Income Tax Rates in Maryland, CY 2022-2026",
+            "url": "https://dls.maryland.gov/pubs/prod/NoPblTabPDF/2026CountyLocalTaxRates.pdf",
+            "publisher": "Maryland Department of Legislative Services",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "Maryland personal exemption phases out at higher AGI (above about $100k single), so $150k expat likely gets no exemption; allowance may be overstated by up to $3,200.",
+          "Standard deduction listed as $3,350 by Tax Foundation; Maryland's actual rule is 15% of AGI within a min/max band, not re-checked."
+        ]
+      },
+      "price_parity": {
+        "metro": "Baltimore-Columbia-Towson, MD (Metropolitan Statistical Area)",
+        "value": 104.487,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Baltimore",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1200,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Baltimore, MD Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/baltimore-md",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1650,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Baltimore, MD Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/baltimore-md",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-ME",
+      "name": "Maine",
+      "city": "Portland",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.058
+          },
+          {
+            "from_amount": 27399,
+            "rate": 0.0675
+          },
+          {
+            "from_amount": 64849,
+            "rate": 0.0715
+          }
+        ],
+        "allowance": 13650,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Maine 5.8% / 6.75% / 7.15% (Tax Foundation, 1 Jan 2026). Allowance = $8,350 standard deduction + $5,300 personal exemption as listed. Portland, ME has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "Maine standard deduction and exemption phase out at higher incomes; not modelled.",
+          "Portland city income tax absence not checked on a city page."
+        ]
+      },
+      "price_parity": {
+        "metro": "Portland-South Portland, ME (Metropolitan Statistical Area)",
+        "value": 101.858,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Portland",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1803,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Portland, ME Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/portland-me",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2480,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Portland, ME Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/portland-me",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-MI",
+      "name": "Michigan",
+      "city": "Detroit",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0425
+          }
+        ],
+        "allowance": 5900,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.024
+          }
+        ],
+        "local_allowance": 600,
+        "note": "Michigan flat 4.25% after a $5,900 personal exemption, no standard deduction (Tax Foundation, 1 Jan 2026). Local: Detroit resident income tax 2.4% with a $600 personal exemption (City of Detroit). Many Detroit-area suburbs have no city tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Detroit income tax rates and personal exemption",
+            "url": "https://detroitmi.gov/taxonomy/term/2286",
+            "publisher": "City of Detroit",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Detroit chosen as main city; most professionals in metro Detroit live in suburbs without city tax (Detroit is the conservative case)."
+        ]
+      },
+      "price_parity": {
+        "metro": "Detroit-Warren-Dearborn, MI (Metropolitan Statistical Area)",
+        "value": 100.298,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Detroit",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 925,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Detroit, MI Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/detroit-mi",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1150,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Detroit, MI Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/detroit-mi",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-MN",
+      "name": "Minnesota",
+      "city": "Minneapolis",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0535
+          },
+          {
+            "from_amount": 33310,
+            "rate": 0.068
+          },
+          {
+            "from_amount": 109430,
+            "rate": 0.0785
+          },
+          {
+            "from_amount": 203150,
+            "rate": 0.0985
+          }
+        ],
+        "allowance": 15300,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Minnesota 5.35% / 6.8% / 7.85% / 9.85% with a $15,300 standard deduction (Tax Foundation, 1 Jan 2026). Minneapolis has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "Minnesota standard deduction phases out at high income; not modelled.",
+          "Minneapolis city income tax absence not checked on a city page."
+        ]
+      },
+      "price_parity": {
+        "metro": "Minneapolis-St. Paul-Bloomington, MN-WI (Metropolitan Statistical Area)",
+        "value": 104.822,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Minneapolis",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1275,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Minneapolis, MN Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/minneapolis-mn",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1764,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Minneapolis, MN Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/minneapolis-mn",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-MO",
+      "name": "Missouri",
+      "city": "Kansas City",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          },
+          {
+            "from_amount": 1348,
+            "rate": 0.02
+          },
+          {
+            "from_amount": 2696,
+            "rate": 0.025
+          },
+          {
+            "from_amount": 4044,
+            "rate": 0.03
+          },
+          {
+            "from_amount": 5392,
+            "rate": 0.035
+          },
+          {
+            "from_amount": 6740,
+            "rate": 0.04
+          },
+          {
+            "from_amount": 8088,
+            "rate": 0.045
+          },
+          {
+            "from_amount": 9436,
+            "rate": 0.047
+          }
+        ],
+        "allowance": 16100,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.01
+          }
+        ],
+        "local_allowance": 0,
+        "note": "Missouri 2%-4.7% brackets (0% under $1,348) after a $16,100 standard deduction (Tax Foundation, 1 Jan 2026). Local: Kansas City MO 1% earnings tax on residents' earned income wherever earned (withheld on wages; profits return for self-employed), no allowance. St. Louis has the same 1%.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Have You Paid Your KCMO Earnings Tax (E-Tax)?",
+            "url": "https://www.kcmo.gov/city-hall/departments/finance/earnings-tax",
+            "publisher": "City of Kansas City, Missouri",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "KC 1% rate read from a search-result summary of kcmo.gov; the kcmo.gov pages returned 403 when opened.",
+          "Whether the Missouri federal-tax deduction rules change taxable income not modelled."
+        ]
+      },
+      "price_parity": {
+        "metro": "Kansas City, MO-KS (Metropolitan Statistical Area)",
+        "value": 92.543,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Kansas City",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1142,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Kansas City, MO Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/kansas-city-mo",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1395,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Kansas City, MO Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/kansas-city-mo",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-MS",
+      "name": "Mississippi",
+      "city": "Jackson",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          },
+          {
+            "from_amount": 10000,
+            "rate": 0.04
+          }
+        ],
+        "allowance": 8300,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Mississippi 0% on the first $10,000 of taxable income and 4.0% above it (Tax Foundation, 1 Jan 2026). Allowance = $2,300 standard deduction + $6,000 personal exemption. Jackson has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "Jackson city income tax absence not checked on a city page."
+        ]
+      },
+      "price_parity": {
+        "metro": "Jackson, MS (Metropolitan Statistical Area)",
+        "value": 89.048,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Jackson",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 895,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Jackson, MS Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/jackson-ms",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1010,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Jackson, MS Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/jackson-ms",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-MT",
+      "name": "Montana",
+      "city": "Billings",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.047
+          },
+          {
+            "from_amount": 47500,
+            "rate": 0.0565
+          }
+        ],
+        "allowance": 16100,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Montana 4.7% up to $47,500 and 5.65% above, with a $16,100 standard deduction (Tax Foundation, 1 Jan 2026). Billings has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "Montana's actual standard deduction is a percentage of income within limits; Tax Foundation's flat $16,100 used.",
+          "Billings is Montana's largest city; Bozeman/Missoula may be more typical for remote workers."
+        ]
+      },
+      "price_parity": {
+        "metro": "Billings, MT (Metropolitan Statistical Area)",
+        "value": 93.526,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Billings",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 995,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Billings, MT Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/billings-mt",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1275,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Billings, MT Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/billings-mt",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-NC",
+      "name": "North Carolina",
+      "city": "Charlotte",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0399
+          }
+        ],
+        "allowance": 12750,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "North Carolina flat 3.99% after a $12,750 standard deduction (Tax Foundation, 1 Jan 2026). Charlotte has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Charlotte city income tax absence not checked on a city page."
+        ]
+      },
+      "price_parity": {
+        "metro": "Charlotte-Concord-Gastonia, NC-SC (Metropolitan Statistical Area)",
+        "value": 97.348,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Charlotte",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1385,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Charlotte, NC Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/charlotte-nc",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1699,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Charlotte, NC Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/charlotte-nc",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-ND",
+      "name": "North Dakota",
+      "city": "Fargo",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          },
+          {
+            "from_amount": 48475,
+            "rate": 0.0195
+          },
+          {
+            "from_amount": 244825,
+            "rate": 0.025
+          }
+        ],
+        "allowance": 16100,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "North Dakota 0% to $48,475, 1.95% to $244,825, 2.5% above, with a $16,100 standard deduction (Tax Foundation, 1 Jan 2026). Fargo has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "Fargo city income tax absence not checked on a city page."
+        ]
+      },
+      "price_parity": {
+        "metro": "Fargo, ND-MN (Metropolitan Statistical Area)",
+        "value": 90.871,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Fargo",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1050,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Fargo, ND Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/fargo-nd",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1195,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Fargo, ND Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/fargo-nd",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-NE",
+      "name": "Nebraska",
+      "city": "Omaha",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0246
+          },
+          {
+            "from_amount": 4130,
+            "rate": 0.0351
+          },
+          {
+            "from_amount": 24760,
+            "rate": 0.0455
+          }
+        ],
+        "allowance": 8850,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Nebraska 2.46% / 3.51% / 4.55% with an $8,850 standard deduction (Tax Foundation, 1 Jan 2026); the small personal-exemption credit ($176) is not included. Omaha has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "Nebraska $176 personal exemption credit omitted from allowance.",
+          "Omaha city income tax absence not checked on a city page."
+        ]
+      },
+      "price_parity": {
+        "metro": "Omaha, NE-IA (Metropolitan Statistical Area)",
+        "value": 91.911,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Omaha",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 995,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Omaha, NE Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/omaha-ne",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1366,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Omaha, NE Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/omaha-ne",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-NH",
+      "name": "New Hampshire",
+      "city": "Manchester",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "New Hampshire taxes no wage income; the interest and dividends tax was repealed as of 2025 (Tax Foundation, 2026). Manchester has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Manchester-Nashua, NH (Metropolitan Statistical Area)",
+        "value": 105.657,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Manchester",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1650,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Manchester, NH Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/manchester-nh",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1995,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Manchester, NH Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/manchester-nh",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-NJ",
+      "name": "New Jersey",
+      "city": "Jersey City",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.014
+          },
+          {
+            "from_amount": 20000,
+            "rate": 0.0175
+          },
+          {
+            "from_amount": 35000,
+            "rate": 0.035
+          },
+          {
+            "from_amount": 40000,
+            "rate": 0.0553
+          },
+          {
+            "from_amount": 75000,
+            "rate": 0.0637
+          },
+          {
+            "from_amount": 500000,
+            "rate": 0.0897
+          },
+          {
+            "from_amount": 1000000,
+            "rate": 0.1075
+          }
+        ],
+        "allowance": 1000,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "New Jersey graduated 1.4%-10.75% single-filer brackets with a $1,000 personal exemption and no standard deduction (Tax Foundation, 1 Jan 2026). Jersey City's payroll tax falls on employers, not employees, so no local income tax is included.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "Jersey City used as the NYC-area NJ city; BEA metro is New York-Newark-Jersey City, NY-NJ, which includes NYC.",
+          "Jersey City employer payroll tax and any NYC non-resident treatment not modelled."
+        ]
+      },
+      "price_parity": {
+        "metro": "New York-Newark-Jersey City, NY-NJ (Metropolitan Statistical Area)",
+        "value": 112.563,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Jersey City",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 2650,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Jersey City, NJ Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/jersey-city-nj",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2942,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Jersey City, NJ Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/jersey-city-nj",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-NM",
+      "name": "New Mexico",
+      "city": "Albuquerque",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.015
+          },
+          {
+            "from_amount": 5500,
+            "rate": 0.032
+          },
+          {
+            "from_amount": 16500,
+            "rate": 0.043
+          },
+          {
+            "from_amount": 33500,
+            "rate": 0.047
+          },
+          {
+            "from_amount": 66500,
+            "rate": 0.049
+          },
+          {
+            "from_amount": 210000,
+            "rate": 0.059
+          }
+        ],
+        "allowance": 16100,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "New Mexico 1.5%-5.9% brackets with a $16,100 standard deduction (Tax Foundation, 1 Jan 2026). Albuquerque has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "verified",
+        "open_questions": [
+          "Albuquerque city income tax absence not checked on a city page."
+        ]
+      },
+      "price_parity": {
+        "metro": "Albuquerque, NM (Metropolitan Statistical Area)",
+        "value": 95.546,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Albuquerque",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 987,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Albuquerque, NM Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/albuquerque-nm",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1234,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Albuquerque, NM Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/albuquerque-nm",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-NV",
+      "name": "Nevada",
+      "city": "Las Vegas",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Nevada has no individual income tax (Tax Foundation, 2026). Las Vegas has no city income tax.",
+        "sources": [
+          {
+            "title": "State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Las Vegas-Henderson-North Las Vegas, NV (Metropolitan Statistical Area)",
+        "value": 100.215,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA Regional Price Parities by MSA, 2008-2024 (MARPP)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Las Vegas",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1109,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "1-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Las Vegas, NV Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/las-vegas-nv",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1425,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "2-bedroom, Zumper rent research, average rent by bedroom (all property types), rolling 30 days, page updated 15 Oct 2026",
+          "source": {
+            "title": "Las Vegas, NV Rent Prices (Zumper rent research)",
+            "url": "https://www.zumper.com/rent-research/las-vegas-nv",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        }
+      },
+      "open_questions": [
+        "Zumper labels bedroom figures 'average rent', not median."
+      ]
+    },
+    {
+      "code": "US-NY",
+      "name": "New York",
+      "city": "New York City",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.039
+          },
+          {
+            "from_amount": 8500,
+            "rate": 0.044
+          },
+          {
+            "from_amount": 11700,
+            "rate": 0.0515
+          },
+          {
+            "from_amount": 13900,
+            "rate": 0.054
+          },
+          {
+            "from_amount": 80650,
+            "rate": 0.059
+          },
+          {
+            "from_amount": 215400,
+            "rate": 0.0685
+          },
+          {
+            "from_amount": 1077550,
+            "rate": 0.0965
+          },
+          {
+            "from_amount": 5000000,
+            "rate": 0.103
+          },
+          {
+            "from_amount": 25000000,
+            "rate": 0.109
+          }
+        ],
+        "allowance": 8000,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.03078
+          },
+          {
+            "from_amount": 12000,
+            "rate": 0.03762
+          },
+          {
+            "from_amount": 25000,
+            "rate": 0.03819
+          },
+          {
+            "from_amount": 50000,
+            "rate": 0.03876
+          }
+        ],
+        "local_allowance": 0,
+        "note": "NY State 2026 single brackets (Tax Foundation, as of 1 Jan 2026) on NY taxable income after the USD 8,000 standard deduction, plus New York City resident tax 3.078%-3.876% (NYS Tax Dept IT-201 instructions, 2025 schedule, unchanged per secondary sources). Top marginal at 150,000 about 5.9% + 3.876%. Excludes the NY benefit recapture above AGI 107,650, MCTMT and Yonkers.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "NYS Tax Dept - IT-201 instructions (NYC rate schedule, 2025)",
+            "url": "https://www.tax.ny.gov/forms/current-forms/it/it201i.htm",
+            "publisher": "NYS Department of Taxation and Finance",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "NYC rates are read from the 2025 IT-201 instructions; the 2026 schedule was not opened (secondary sources say unchanged).",
+          "State 2026 rates come from Tax Foundation; the NYS 2025 schedule shows 4%-6% for the lowest brackets.",
+          "Tax-benefit recapture above AGI 107,650 not modelled."
+        ]
+      },
+      "price_parity": {
+        "metro": "New York-Newark-Jersey City, NY-NJ",
+        "value": 112.563,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "New York City",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 4700,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper New York City 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - new-york-ny rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/new-york-ny",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 5500,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper New York City 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - new-york-ny rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/new-york-ny",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-OH",
+      "name": "Ohio",
+      "city": "Columbus",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          },
+          {
+            "from_amount": 26050,
+            "rate": 0.0275
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.025
+          }
+        ],
+        "local_allowance": 0,
+        "note": "Ohio 2026: 0% up to USD 26,050 then flat 2.75% (Tax Foundation). Personal exemption (USD 1,900-2,400 by AGI) not included in allowance. Columbus municipal income tax 2.5% flat on wages and net profits of residents (City of Columbus Income Tax Division).",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "City of Columbus - Video 2: What does a 2.5% municipal income tax mean? (script PDF)",
+            "url": "https://www.columbus.gov/files/sharedassets/city/v/1/city-auditor/income-tax/video-2-what-does-a-2.5-municipal-income-tax-mean.pdf",
+            "publisher": "City of Columbus, City Auditor",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Ohio personal exemption (1,900-2,150 at these incomes) left out of the allowance; school district income taxes not modelled."
+        ]
+      },
+      "price_parity": {
+        "metro": "Columbus, OH",
+        "value": 95.469,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Columbus",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1150,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Columbus 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - columbus-oh rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/columbus-oh",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1343,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Columbus 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - columbus-oh rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/columbus-oh",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-OK",
+      "name": "Oklahoma",
+      "city": "Oklahoma City",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          },
+          {
+            "from_amount": 3750,
+            "rate": 0.025
+          },
+          {
+            "from_amount": 4900,
+            "rate": 0.035
+          },
+          {
+            "from_amount": 7200,
+            "rate": 0.045
+          }
+        ],
+        "allowance": 7350,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Oklahoma 2026 single brackets 2.5%/3.5%/4.5% starting at 3,750/4,900/7,200 (Tax Foundation); allowance = USD 6,350 standard deduction + USD 1,000 personal exemption. No city income tax in Oklahoma City.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Bracket thresholds are taken as Tax Foundation prints them; the Oklahoma Tax Commission schedule was not opened.",
+          "Absence of a city income tax in Oklahoma City was not separately sourced."
+        ]
+      },
+      "price_parity": {
+        "metro": "Oklahoma City, OK",
+        "value": 90.408,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Oklahoma City",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 884,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Oklahoma City 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - oklahoma-city-ok rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/oklahoma-city-ok",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1099,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Oklahoma City 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - oklahoma-city-ok rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/oklahoma-city-ok",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-OR",
+      "name": "Oregon",
+      "city": "Portland",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0475
+          },
+          {
+            "from_amount": 4550,
+            "rate": 0.0675
+          },
+          {
+            "from_amount": 11400,
+            "rate": 0.0875
+          },
+          {
+            "from_amount": 125000,
+            "rate": 0.099
+          }
+        ],
+        "allowance": 2910,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          },
+          {
+            "from_amount": 125000,
+            "rate": 0.025
+          },
+          {
+            "from_amount": 250000,
+            "rate": 0.04
+          }
+        ],
+        "local_allowance": 0,
+        "note": "Oregon 2026 single brackets 4.75%-9.9% (Tax Foundation) after USD 2,910 standard deduction (the USD 256 personal exemption is a credit, not included). Local = Metro Supportive Housing Services 1% above USD 125,000 plus Multnomah County Preschool for All 1.5% above USD 125,000 and 3% above USD 250,000 (single filers, City of Portland Revenue Division). Portland USD 35 arts tax and Oregon statewide transit tax not modelled.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "City of Portland - Metro, Multnomah County remind residents to file and pay (SHS and PFA thresholds)",
+            "url": "https://www.portland.gov/revenue/news/2026/3/15/city-portland-metro-and-multnomah-county-remind-residents-file-and-pay-your",
+            "publisher": "City of Portland Revenue Division",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "SHS thresholds are inflation-adjusted from 2026 per the City page, but the adjusted amounts were not found; USD 125,000 used (a third-party guide claims 128,000).",
+          "Local bases (Oregon vs Multnomah taxable income) approximated by state taxable income; Oregon state tax uses 'above USD 125,000' per Tax Foundation."
+        ]
+      },
+      "price_parity": {
+        "metro": "Portland-Vancouver-Hillsboro, OR-WA",
+        "value": 105.421,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Portland",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1406,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Portland 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - portland-or rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/portland-or",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1695,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Portland 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - portland-or rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/portland-or",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-PA",
+      "name": "Pennsylvania",
+      "city": "Philadelphia",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0307
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.03735
+          }
+        ],
+        "local_allowance": 0,
+        "note": "Pennsylvania flat 3.07%, no deduction or exemption (Tax Foundation). Philadelphia resident wage tax 3.735% from 1 July 2026 (3.74% before; City of Philadelphia), applied to wages/net profits with no allowance. Philadelphia is the main city; other PA local EIT rates differ.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "City of Philadelphia - Wage Tax for employers (rate table)",
+            "url": "https://www.phila.gov/services/payments-assistance-taxes/business-taxes/wage-tax-employers/",
+            "publisher": "City of Philadelphia",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "Philadelphia Net Profits Tax rate for the self-employed follows the same rate table but was not opened separately."
+        ]
+      },
+      "price_parity": {
+        "metro": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+        "value": 102.554,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Philadelphia",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1444,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Philadelphia 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - philadelphia-pa rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/philadelphia-pa",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1695,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Philadelphia 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - philadelphia-pa rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/philadelphia-pa",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-RI",
+      "name": "Rhode Island",
+      "city": "Providence",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0375
+          },
+          {
+            "from_amount": 82050,
+            "rate": 0.0475
+          },
+          {
+            "from_amount": 186450,
+            "rate": 0.0599
+          }
+        ],
+        "allowance": 16450,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Rhode Island 2026 single brackets 3.75%/4.75%/5.99% (Tax Foundation); allowance USD 11,200 standard deduction + USD 5,250 personal exemption (phase out between USD 261,000 and 290,800 AGI). No city income tax in Providence.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Rhode Island Division of Taxation schedule not opened; Providence local income tax absence not separately sourced."
+        ]
+      },
+      "price_parity": {
+        "metro": "Providence-Warwick, RI-MA",
+        "value": 101.773,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Providence",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1788,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Providence 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - providence-ri rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/providence-ri",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2000,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Providence 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - providence-ri rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/providence-ri",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-SC",
+      "name": "South Carolina",
+      "city": "Charleston",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          },
+          {
+            "from_amount": 3640,
+            "rate": 0.03
+          },
+          {
+            "from_amount": 18230,
+            "rate": 0.06
+          }
+        ],
+        "allowance": 8350,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "South Carolina 2026 single brackets 0%/3%/6% (Tax Foundation) with USD 8,350 standard deduction. Tax Foundation notes the top rate is scheduled to revert to 6.2% on 1 July 2026. No city income tax in Charleston.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether the top rate is 6.0% or 6.2% from July 2026 was not resolved.",
+          "SC Department of Revenue schedule not opened."
+        ]
+      },
+      "price_parity": {
+        "metro": "Charleston-North Charleston, SC",
+        "value": 100.962,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Charleston",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1950,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Charleston 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - charleston-sc rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/charleston-sc",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2538,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Charleston 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - charleston-sc rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/charleston-sc",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-SD",
+      "name": "South Dakota",
+      "city": "Sioux Falls",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "South Dakota levies no individual income tax (Tax Foundation 2026 table); no local income tax.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Sioux Falls, SD-MN",
+        "value": 90.631,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Sioux Falls",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 890,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Sioux Falls 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - sioux-falls-sd rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/sioux-falls-sd",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1100,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Sioux Falls 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - sioux-falls-sd rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/sioux-falls-sd",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-TN",
+      "name": "Tennessee",
+      "city": "Nashville",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Tennessee levies no individual income tax on wages (Hall tax repealed; Tax Foundation 2026 table); no local income tax in Nashville.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+        "value": 96.338,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Nashville",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1625,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Nashville 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - nashville-tn rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/nashville-tn",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1850,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Nashville 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - nashville-tn rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/nashville-tn",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-TX",
+      "name": "Texas",
+      "city": "Austin",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Texas levies no individual income tax (Tax Foundation 2026 table); no local income tax in Austin.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Austin-Round Rock-San Marcos, TX",
+        "value": 98.066,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Austin",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1305,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Austin 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - austin-tx rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/austin-tx",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1650,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Austin 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - austin-tx rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/austin-tx",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-UT",
+      "name": "Utah",
+      "city": "Salt Lake City",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.045
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Utah flat 4.5% (Tax Foundation). The standard deduction is a nonrefundable credit of 6% of the federal standard deduction (USD 966 listed), phasing out at 1.3 cents per dollar of AGI above about USD 18,213; at these incomes it is mostly or wholly phased out, so allowance is set to 0. No city income tax in Salt Lake City.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Residual Utah taxpayer credit (up to about USD 966, mostly phased out at 60,000-150,000) not modelled."
+        ]
+      },
+      "price_parity": {
+        "metro": "Salt Lake City-Murray, UT",
+        "value": 100.868,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Salt Lake City",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1195,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Salt Lake City 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - salt-lake-city-ut rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/salt-lake-city-ut",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1595,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Salt Lake City 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - salt-lake-city-ut rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/salt-lake-city-ut",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-VA",
+      "name": "Virginia",
+      "city": "Richmond",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.02
+          },
+          {
+            "from_amount": 3000,
+            "rate": 0.03
+          },
+          {
+            "from_amount": 5000,
+            "rate": 0.05
+          },
+          {
+            "from_amount": 17000,
+            "rate": 0.0575
+          }
+        ],
+        "allowance": 9680,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Virginia 2026 single brackets 2%/3%/5%/5.75% (Tax Foundation); allowance USD 8,750 standard deduction + USD 930 personal exemption. City used is Richmond; Virginia has no local income tax (Northern Virginia would have a higher RPP, DC metro 108.884).",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Virginia Department of Taxation schedule not opened; no-local-income-tax statement not separately sourced."
+        ]
+      },
+      "price_parity": {
+        "metro": "Richmond, VA",
+        "value": 97.858,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Richmond",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1427,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Richmond 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - richmond-va rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/richmond-va",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1650,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Richmond 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - richmond-va rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/richmond-va",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-VT",
+      "name": "Vermont",
+      "city": "Burlington",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0335
+          },
+          {
+            "from_amount": 49400,
+            "rate": 0.066
+          },
+          {
+            "from_amount": 119700,
+            "rate": 0.076
+          },
+          {
+            "from_amount": 249700,
+            "rate": 0.0875
+          }
+        ],
+        "allowance": 12950,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Vermont 2026 single brackets 3.35%-8.75% (Tax Foundation); allowance USD 7,650 standard deduction + USD 5,300 personal exemption. No city income tax in Burlington.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Vermont Department of Taxes schedule not opened."
+        ]
+      },
+      "price_parity": {
+        "metro": "Burlington-South Burlington, VT",
+        "value": 100.949,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Burlington",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1795,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Burlington 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - burlington-vt rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/burlington-vt",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2100,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Burlington 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - burlington-vt rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/burlington-vt",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-WA",
+      "name": "Washington",
+      "city": "Seattle",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Washington levies no wage income tax (capital-gains tax only, irrelevant here); no local income tax in Seattle. A 0.58% WA Cares payroll premium on wages (Tax Foundation table note) is a payroll levy and not modelled.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [
+          "WA Cares 0.58% premium on wages not modelled (payroll, not income tax)."
+        ]
+      },
+      "price_parity": {
+        "metro": "Seattle-Tacoma-Bellevue, WA",
+        "value": 111.133,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Seattle",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1899,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Seattle 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - seattle-wa rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/seattle-wa",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 2650,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Seattle 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - seattle-wa rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/seattle-wa",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-WI",
+      "name": "Wisconsin",
+      "city": "Milwaukee",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.035
+          },
+          {
+            "from_amount": 15110,
+            "rate": 0.044
+          },
+          {
+            "from_amount": 51950,
+            "rate": 0.053
+          },
+          {
+            "from_amount": 332720,
+            "rate": 0.0765
+          }
+        ],
+        "allowance": 700,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Wisconsin 2026 single brackets 3.5%/4.4%/5.3%/7.65% (Tax Foundation). The USD 13,960 standard deduction phases out from AGI 20,119 to zero at 136,453, so only the USD 700 personal exemption is used (right for 150,000; understates the deduction for a 60,000 earner, about USD 9,000). No Milwaukee income tax.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Standard deduction for the 60,000 persona (about USD 9,000 after phase-out) not included."
+        ]
+      },
+      "price_parity": {
+        "metro": "Milwaukee-Waukesha, WI",
+        "value": 96.937,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Milwaukee",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 1095,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Milwaukee 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - milwaukee-wi rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/milwaukee-wi",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1275,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Milwaukee 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - milwaukee-wi rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/milwaukee-wi",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-WV",
+      "name": "West Virginia",
+      "city": "Charleston",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.0222
+          },
+          {
+            "from_amount": 10000,
+            "rate": 0.0296
+          },
+          {
+            "from_amount": 25000,
+            "rate": 0.0333
+          },
+          {
+            "from_amount": 40000,
+            "rate": 0.0444
+          },
+          {
+            "from_amount": 60000,
+            "rate": 0.0482
+          }
+        ],
+        "allowance": 2000,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "West Virginia 2026 single brackets 2.22%-4.82% (Tax Foundation); allowance USD 2,000 personal exemption, no standard deduction. No city income tax in Charleston (the municipal service fee is not an income tax).",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "West Virginia State Tax Department schedule not opened; Charleston's USD 3/week service fee not modelled."
+        ]
+      },
+      "price_parity": {
+        "metro": "Charleston, WV",
+        "value": 88.717,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Charleston",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 750,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Charleston 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - charleston-wv rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/charleston-wv",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 950,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Charleston 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - charleston-wv rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/charleston-wv",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    },
+    {
+      "code": "US-WY",
+      "name": "Wyoming",
+      "city": "Cheyenne",
+      "income_tax": {
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0
+          }
+        ],
+        "allowance": 0,
+        "local_brackets": [],
+        "local_allowance": 0,
+        "note": "Wyoming levies no individual income tax (Tax Foundation 2026 table); no local income tax in Cheyenne.",
+        "sources": [
+          {
+            "title": "Tax Foundation - State Individual Income Tax Rates and Brackets, 2026",
+            "url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+            "publisher": "Tax Foundation",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        ],
+        "verified_on": "2026-10-15",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": []
+      },
+      "price_parity": {
+        "metro": "Cheyenne, WY",
+        "value": 96.491,
+        "benchmark_value": 98.066,
+        "year": 2024,
+        "source": {
+          "title": "BEA - Regional Price Parities by MSA (MARPP_MSA_2008_2024.csv, all items)",
+          "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
+      },
+      "costs": {
+        "city": "Cheyenne",
+        "rent_1bed_monthly": {
+          "value": {
+            "amount": 950,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Cheyenne 1-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - cheyenne-wy rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/cheyenne-wy",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "rent_2bed_monthly": {
+          "value": {
+            "amount": 1250,
+            "currency": "USD"
+          },
+          "year": 2026,
+          "description": "Zumper Cheyenne 2-bedroom rent, all property types, 30-day window, October 2026 (page updated 2026-10-15). Zumper labels the bedroom table 'average rent', not median.",
+          "source": {
+            "title": "Zumper - cheyenne-wy rent research (bedroom table, read 2026-10-15)",
+            "url": "https://www.zumper.com/rent-research/cheyenne-wy",
+            "publisher": "Zumper",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
+        },
+        "notes": "Zumper bedroom table values are averages of asking rents over the last 30 days (not medians); one source for all states."
+      },
+      "open_questions": [
+        "Rents are Zumper averages, not medians (Apartment List returned HTTP 403)."
+      ]
+    }
+  ]
+}

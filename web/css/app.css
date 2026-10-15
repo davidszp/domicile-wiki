@@ -309,3 +309,11 @@ details.fold[open] > summary::before { transform: rotate(90deg); }
 details.fold > summary h3 { margin: 0; }
 details.fold > summary:hover h3 { color: var(--accent); }
 details.fold[open] { padding-bottom: 8px; }
+
+/* Key facts at the top of a profile: label left, value right, one line each. */
+.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 12px 0 14px; padding: 12px 14px;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; }
+.facts .fact { display: contents; }
+.facts dt { color: var(--muted); font-size: 13px; }
+.facts dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+.facts dd .muted { font-weight: 400; }

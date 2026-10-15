@@ -551,10 +551,10 @@
         "security_state_courts"
       ],
       "profile": {
-        "headline": "A wealthy family living off its investments, choosing a home for the next two generations.",
+        "headline": "A wealthy family living off its investments, choosing a home for two generations.",
         "priorities": [
           {
-            "text": "Keeping wealth safe for generations: courts that protect property, political stability and clean government weigh nearly as much as taxes.",
+            "text": "Safety of wealth: rule of law, stability, clean government",
             "metrics": [
               "legal",
               "stability",
@@ -562,7 +562,7 @@
             ]
           },
           {
-            "text": "Low taxes on investment income and wealth: capital gains, dividends, inheritance to the children and any annual wealth tax.",
+            "text": "Low taxes on gains, dividends, inheritance and wealth",
             "metrics": [
               "capital_gains",
               "dividends",
@@ -571,7 +571,7 @@
             ]
           },
           {
-            "text": "Good schools and healthcare for three children, and personal safety.",
+            "text": "Schools, healthcare and personal safety",
             "metrics": [
               "education",
               "healthcare",
@@ -579,7 +579,7 @@
             ]
           },
           {
-            "text": "Quality of life, infrastructure and the cost of running a family household.",
+            "text": "Quality of life and living costs",
             "metrics": [
               "hdi",
               "infrastructure",
@@ -688,28 +688,28 @@
         "description": "Salary minus income tax and social security (cheapest eligible regime, averaged over the stay) minus the Annual Household Cost (12 x a city-centre 2-bedroom rent + EUR 22,000 a year of other spending scaled by the price level). Linear: EUR 0 or less = 0, EUR 100,000 or more = 100."
       },
       "profile": {
-        "headline": "A highly skilled employee moving abroad for a job, usually single or a couple without children.",
+        "headline": "A skilled employee moving abroad for a job, without children.",
         "priorities": [
           {
-            "text": "Take-home pay: income tax and their own social security on the salary.",
+            "text": "Take-home pay after tax",
             "metrics": [
               "income_tax"
             ]
           },
           {
-            "text": "What is left each year after tax and living costs, because salaries rise with local prices.",
+            "text": "Money left over after living costs",
             "metrics": [
               "leftover"
             ]
           },
           {
-            "text": "Career prospects and an economy worth moving for.",
+            "text": "Career prospects",
             "metrics": [
               "business"
             ]
           },
           {
-            "text": "Everyday life: safety, healthcare, an international environment, stability and infrastructure.",
+            "text": "Safety, healthcare and everyday life",
             "metrics": [
               "safety",
               "stability",
@@ -846,23 +846,23 @@
         "description": "How established the local digital-nomad subculture is: how often, and how high, the country's cities appear in 8 published rankings of the best places for digital nomads (Savills, Time Out/Flatio, ScoutLogic, Instant Offices, Nomads.com and others, 2025-2026). Per list: 50 for being named plus up to 50 for the best city's rank; averaged over all lists, so a country no list names scores 0. OpenStreetMap coworking counts are shown for reference but not scored, because their coverage tracks local mapping activity (Dubai 4, Paris 204)."
       },
       "profile": {
-        "headline": "A self-employed remote worker with clients abroad, trying a place for a couple of years.",
+        "headline": "A self-employed remote worker with clients abroad, trying a place for two years.",
         "priorities": [
           {
-            "text": "Low taxes and low living costs, so more of the income is kept.",
+            "text": "Low taxes and living costs",
             "metrics": [
               "income_tax",
               "cost"
             ]
           },
           {
-            "text": "Easy access: a digital nomad visa or free movement, without a local employer.",
+            "text": "Easy visa access",
             "metrics": [
               "visa"
             ]
           },
           {
-            "text": "Fast internet and an easy, safe daily life.",
+            "text": "Fast internet and an easy, safe daily life",
             "metrics": [
               "infrastructure",
               "safety",
@@ -870,13 +870,13 @@
             ]
           },
           {
-            "text": "Community: an established digital nomad scene.",
+            "text": "A digital nomad community",
             "metrics": [
               "scene"
             ]
           },
           {
-            "text": "Stability, the legal system and clean government.",
+            "text": "Stability and clean government",
             "metrics": [
               "stability",
               "legal",

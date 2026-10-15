@@ -1,11 +1,30 @@
 import { h, extLink, fmtPct, fmtEur, moneyText } from "../dom.js";
 import { state, isIncomePersona } from "../state.js";
 import { personaMethodology, personaCard } from "./persona.js";
+import { calculatorAssumptions } from "./calculator.js";
 import { normalizeWeights, bandRange } from "../scoring.js";
 
+/** Folds the page: each h3 and the nodes after it (up to the next h3) become one closed section. */
+function foldSections(panel) {
+  let fold = null;
+  for (const node of [...panel.childNodes]) {
+    if (node.nodeName === "H3") {
+      fold = h("details", { class: "fold" }, h("summary", null, h("h3", null, node.textContent)));
+      node.replaceWith(fold);
+    } else if (fold && !(node.classList && node.classList.contains("disclaimer"))) {
+      fold.append(node);
+    }
+  }
+}
+
 export function renderMethodology(panel) {
+  renderMethodologyContent(panel);
+  foldSections(panel);
+}
+
+function renderMethodologyContent(panel) {
   if (isIncomePersona()) {
-    panel.append(h("h2", null, "Methodology"), personaCard(), personaCard(), ...personaMethodology(),
+    panel.append(h("h2", null, "Methodology"), personaCard(), ...personaMethodology(),
       h("p", { class: "small muted" }, "Switch to HNWI in the top bar for the investment-tax methodology, the indicator datasets, colour bands and missing-data rules, which apply to every persona."));
     return;
   }
@@ -16,7 +35,7 @@ export function renderMethodology(panel) {
   panel.append(h("h2", null, "Methodology"),
     h("p", null, "Every map colour, ranking and profile score is produced by a documented pipeline: researched tax rules (one dated dossier and one structured file per jurisdiction), public indicator datasets, and a scoring configuration. The same configuration drives the Python build and this page."),
 
-    h("h3", null, "1. Geography"),
+    h("h3", null, "1. Maps"),
     h("ul", null,
       h("li", null, "Boundaries: ", extLink("https://www.naturalearthdata.com/", "Natural Earth"), " 1:10m admin-0 countries and admin-1 states/provinces (public domain), simplified with shared topology by mapshaper so neighbouring borders stay gap-free."),
       h("li", null, "Projections: Natural Earth for the world, Lambert conformal conic for Europe, Mercator for the UAE and Caribbean close-ups (with a separate Bermuda inset), Albers USA for US states."),
@@ -31,7 +50,7 @@ export function renderMethodology(panel) {
         h("td", { class: "num" }, fmtPct(w[k])), h("td", null, moneyText((cfg.tax_transforms[k] || cfg.nontax_transforms[k]).description))))))),
     h("p", null, "Overall score = Σ (metric score × normalised weight). The tax-only score uses the four tax metrics alone."),
 
-    h("h3", null, "3. Tax metrics use an effective burden, not headline rates"),
+    h("h3", null, "3. How taxes are scored"),
     h("p", null, h("strong", null, "Personal holding and holding structures. "), cfg.holding_assumption),
     h("p", null, `Each tax metric is computed for an illustrative family: a ${fmtEur(ref.portfolio)} portfolio (${ref.foreign_share * 100}% foreign), ${fmtEur(ref.realized_gains)} realised gains and ${fmtEur(ref.dividends)} dividends a year, ${fmtEur(ref.real_estate_local)} home, ${fmtEur(ref.net_wealth)} net wealth, and a ${fmtEur(ref.estate)} estate passing to ${ref.children} children. A zero headline rate therefore does not guarantee 100: real-estate gains, business-sale gains, transfer duties and treaty access all count.`),
     h("p", null, moneyText(cfg.tax_transforms.time_limited_regimes.description)),
@@ -41,30 +60,33 @@ export function renderMethodology(panel) {
     h("p", null, h("strong", null, "US dividend withholding. "), cfg.us_dividend_withholding.description, " ", cfg.us_dividend_withholding.exclusions_note, " Source: ",
       extLink(cfg.us_dividend_withholding.source.url, cfg.us_dividend_withholding.source.title), "."),
 
-    h("h3", null, "4. Knock-out criteria"),
+    h("h3", null, "4. Knock-outs"),
     h("p", null, cfg.knockout.description),
     h("ul", null, cfg.knockout.criteria.map((c) => h("li", null, h("strong", null, `${c.label}: `), c.explanation)),
       ["sanctions", "capital_controls", "security_state_courts"].filter((k) => cfg.knockout[k]).map((k) => h("li", null, h("strong", null, `${cfg.knockout[k].label}: `), cfg.knockout[k].explanation, " ",
         Object.keys(cfg.knockout[k].countries).join(", "), ". Sources: ",
         cfg.knockout[k].sources.map((s, i) => [i ? ", " : "", extLink(s.url, s.title)])))),
-    ...(cfg.red_flags && Object.keys(cfg.red_flags.countries).length ? [h("h3", null, "4a. Red flags"), h("p", null, cfg.red_flags.description),
+    ...(cfg.red_flags && Object.keys(cfg.red_flags.countries).length ? [h("h3", null, "Red flags"), h("p", null, cfg.red_flags.description),
       h("ul", null, Object.entries(cfg.red_flags.countries).map(([id, f]) => h("li", null, h("strong", null, `${state.data.jurisdictions[id]?.name ?? id} — ${f.label}: `), f.explanation)))] : []),
-    h("h3", null, "4b. Data status and missing data"),
+    h("h3", null, "5. Missing data"),
     h("p", null, cfg.status_rules.description),
     h("p", null, cfg.missing_data_policy),
     h("p", null, "Jurisdictions whose tax rules have not been researched are grey on the overall and tax layers. Their non-tax indicators are still available under the “Non-tax score only” layer."),
 
-    h("h3", null, "5. Colour bands"),
+    h("h3", null, "6. Colour bands"),
     h("ul", null, cfg.bands.map((b, i) => h("li", null, h("i", { class: `swatch band-${b.color}` }), ` ${b.label}: ${bandRange(cfg, i)}`))),
 
-    h("h3", null, "6. Indicator datasets"),
+    h("h3", null, "7. Data sources"),
     h("div", { class: "table-wrap" }, h("table", { class: "grid small" },
       h("thead", null, h("tr", null, h("th", null, "Indicator"), h("th", null, "Source"), h("th", null, "Coverage"), h("th", null, "Fetched"))),
       h("tbody", null, Object.entries(meta.indicators).map(([, m]) => h("tr", null, h("td", null, m.description), h("td", null, extLink(m.url, m.source)),
         h("td", { class: "num" }, String(m.count)), h("td", null, m.fetched)))))),
     h("p", { class: "small" }, "Datasets measure different things and refer to different years (each value's year is shown in the profile). Values older than ten years are discarded rather than presented as current."),
 
-    h("h3", null, "7. Limitations"),
+    h("h3", null, "8. Calculator"),
+    calculatorAssumptions(),
+
+    h("h3", null, "9. Limitations"),
     h("ul", null,
       h("li", null, "Rules are summarised at the top end for a large private investor; personal circumstances, anti-avoidance rules, exit taxes and treaty tie-breakers can change outcomes."),
       h("li", null, "Research was carried out with AI assistance against official and professional sources and has not been reviewed by a licensed tax adviser. Confidence and open questions are shown for every metric."),

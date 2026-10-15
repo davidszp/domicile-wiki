@@ -180,3 +180,15 @@ def test_expat_salary_multipliers_are_sourced_and_anchored():
     assert all(v is not None for v in mults.values()), [k for k, v in mults.items() if v is None]
     assert abs(statistics.mean(mults[c] for c in ref if c in mults) - 1.0) < 0.05
     assert mults["CHE"] > mults["DEU"] > mults["ROU"]
+
+
+def test_regional_income_units_match_map_regions():
+    """US states (and any other regional income file) must map to existing regions of their parent."""
+    from domicile.schema import RegionalIncomeFile
+
+    data = scores()["jurisdictions"]
+    for path in sorted((ROOT / "data" / "income_regions").glob("*.json")):
+        f = RegionalIncomeFile.model_validate_json(path.read_text())
+        for u in f.units:
+            assert u.code in data and data[u.code]["parent"] == f.parent, u.code
+            assert data[u.code]["personas"]["expat"]["researched"], u.code

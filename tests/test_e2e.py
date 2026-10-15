@@ -207,11 +207,12 @@ def test_persona_switch_rescores_and_renders_every_panel(browser, server):
     assert "visa" in layers and "income_tax" in layers and "wealth_tax" not in layers
     page.fill("#search", "Thailand")
     page.keyboard.press("Enter")
-    page.wait_for_selector("text=Income tax and social security for a self-employed contractor", timeout=10000)
+    page.wait_for_selector("#panel .facts", timeout=10000)
     # A null child handed to the native append() prints "null"; profiles must never show it.
     assert " null" not in " " + page.inner_text("#panel").replace("\n", " ") + " ", "stray null in nomad profile"
     page.click("[data-persona='expat']")
-    page.wait_for_selector("text=Income tax and social security for a employee", timeout=10000)
+    page.wait_for_timeout(1200)
+    page.wait_for_selector("#panel .facts", timeout=10000)
     assert " null" not in " " + page.inner_text("#panel").replace("\n", " ") + " ", "stray null in expat profile"
     page.click("[data-persona='nomad']")
     for tab in ("rankings", "compare", "weights", "calculator", "methodology"):

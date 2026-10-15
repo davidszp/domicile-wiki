@@ -12,7 +12,7 @@ from __future__ import annotations
 import math
 
 from domicile.fx import to_eur
-from domicile.schema import IncomeFile
+from domicile.schema import IncomeFile, RegionalIncomeUnit
 from domicile.taxcalc import apply_brackets
 
 
@@ -62,6 +62,34 @@ def _costs(f: IncomeFile, fx: dict) -> dict | None:
     return out
 
 
+def compile_regional(unit: RegionalIncomeUnit, national: dict, currency: str, fx: dict) -> dict:
+    """A region's rules: the national rules plus the region's own income tax (and main-city tax), its
+    main-city rents and its price level relative to the national benchmark city."""
+    t = unit.income_tax
+    b = lambda bs: [[_eur(x.from_amount, currency, fx), x.rate] for x in sorted(bs, key=lambda x: x.from_amount)]
+    rules = {**national, "regional": {
+        "brackets": b(t.brackets), "allowance": _eur(t.allowance, currency, fx),
+        "local_brackets": b(t.local_brackets), "local_allowance": _eur(t.local_allowance, currency, fx)}}
+    if unit.costs is not None:
+        out = {"city": unit.costs.city}
+        for key in ("rent_1bed", "rent_2bed", "coworking"):
+            item = getattr(unit.costs, key + "_monthly")
+            out[key] = _eur(item.value.amount, item.value.currency, fx) if item else None
+        rules["costs"] = out
+    pp = unit.price_parity
+    rules["price_ratio"] = round(pp.value / pp.benchmark_value, 4) if pp else 1.0
+    return rules
+
+
+def regional_tax(rules: dict, income: float) -> float:
+    """State and city income tax on top of national tax; national regimes do not change it."""
+    r = rules.get("regional")
+    if not r:
+        return 0.0
+    return (apply_brackets(max(0.0, income - r["allowance"]), r["brackets"])
+            + apply_brackets(max(0.0, income - r["local_allowance"]), r["local_brackets"]))
+
+
 def _standard_tax(rules: dict, income: float, kind: str = "employment", deduction: float = 0.0) -> float:
     brackets = rules["brackets_self"] if kind == "self_employment" and rules.get("brackets_self") else rules["brackets"]
     return apply_brackets(max(0.0, income - rules["allowance"] - deduction), brackets)
@@ -87,6 +115,7 @@ def earned_tax(rules: dict, income: float, kind: str, regime: dict | None = None
     ssc = _ssc(rules, income, kind)
     if regime and not regime["ssc"]:
         ssc = 0.0
+    local = regional_tax(rules, income)
     # Own contributions (where the law allows) and an employee's standard work-expense deduction come off taxable income.
     d = ssc * rules["ssc_deductible"] + employment_deduction(rules, income, kind)
     treatment = regime["treatment"] if regime else "standard"
@@ -104,6 +133,7 @@ def earned_tax(rules: dict, income: float, kind: str, regime: dict | None = None
         tax = _standard_tax(rules, income - above * regime["exempt_share"], kind, d)
     else:
         tax = _standard_tax(rules, income, kind, d)
+    tax += local
     total = tax + ssc
     return {"tax": round(tax, 2), "ssc": round(ssc, 2), "total": round(total, 2), "rate": total / income if income else 0.0}
 

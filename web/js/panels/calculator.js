@@ -131,7 +131,7 @@ export function renderCalculator(panel) {
   if (isIncomePersona()) return renderIncomeCalculator(panel);
   inputs ??= initInputs(state.cfg.reference_family);
   panel.append(h("h2", null, "Family tax scenario calculator"),
-    h("p", { class: "disclaimer" }, "Illustrative only. The calculator applies simplified top-end rates from the researched rules to your figures: no personal allowances, timing, treaty tie-breakers, anti-avoidance rules or exit taxes in your current country. It does not replace individual cross-border tax advice."));
+    h("p", { class: "small muted" }, "Illustrative, simplified top-end rates; not tax advice. Assumptions under Method."));
   const form = h("form", { class: "calc-form", onsubmit: (e) => e.preventDefault() });
   for (const [k, label, lo, hi] of NUM_FIELDS) {
     // Money fields are shown and typed in the display currency; inputs stay in EUR.
@@ -149,7 +149,7 @@ export function renderCalculator(panel) {
   const fsOut = h("output", { for: "c-fs" }, `${Math.round(inputs.foreign_share * 100)}%`);
   fs.addEventListener("input", () => { fsOut.textContent = `${fs.value}%`; });
   fs.addEventListener("change", () => { inputs.foreign_share = Number(fs.value) / 100; run(); });
-  form.append(h("label", { class: "ctl", for: "c-fs" }, h("span", null, "Share of portfolio and dividends from abroad (asset location)"), fs, fsOut));
+  form.append(h("label", { class: "ctl", for: "c-fs" }, h("span", null, "Share invested abroad"), fs, fsOut));
   const us = h("input", { type: "range", min: 0, max: 100, step: 5, value: inputs.us_share * 100, id: "c-us" });
   const usOut = h("output", { for: "c-us" }, `${Math.round(inputs.us_share * 100)}%`);
   us.addEventListener("input", () => { usOut.textContent = `${us.value}%`; });
@@ -159,10 +159,9 @@ export function renderCalculator(panel) {
   const ugOut = h("output", { for: "c-ug" }, `${Math.round(inputs.unrealized_gain_share * 100)}%`);
   ug.addEventListener("input", () => { ugOut.textContent = `${ug.value}%`; });
   ug.addEventListener("change", () => { inputs.unrealized_gain_share = Number(ug.value) / 100; run(); });
-  form.append(h("label", { class: "ctl", for: "c-ug" }, h("span", null, "Unrealised gains as share of the estate (deemed disposal at death)"), ug, ugOut));
+  form.append(h("label", { class: "ctl", for: "c-ug" }, h("span", null, "Unrealised gains in the estate"), ug, ugOut));
 
   if (!inputs.targets.length && state.selected && jur(state.selected)?.researched && !jur(state.selected).inherited) inputs.targets = [state.selected];
-  form.append(h("p", { class: "small" }, `Citizenship: ${{ EU: "EU", US: "US", OTHER: "other" }[state.citizenship]} (change it in the top bar).`));
   const cur = jurisdictionOptions(inputs.current, "Current tax residence…");
   cur.addEventListener("change", () => { inputs.current = cur.value; run(); });
   form.append(h("label", { class: "ctl" }, h("span", null, "Current tax residence"), cur));
@@ -172,18 +171,19 @@ export function renderCalculator(panel) {
     form.append(h("label", { class: "ctl" }, h("span", null, `Intended residence ${i + 1}`), s));
   }
   const out = h("div", { class: "calc-out", "aria-live": "polite" });
-  panel.append(form, out,
-    h("h3", null, "Time horizon"),
-    h("p", { class: "small" }, "Capital gains, dividend and wealth taxes recur every year. Inheritance tax is a one-off liability when assets pass to the children, shown separately and never added to the annual total. Special regimes are time-limited; the duration is shown under each regime."),
-    h("h3", null, "Assumptions and exclusions"),
-    h("ul", { class: "small" },
-      h("li", null, "Standard and special regimes use the researched top-end rates for a resident private investor (not a professional trader) holding assets directly. Holding-structure rows ('via …') use the structure's own taxes, plus tax on the annual payout you enter and the structure's running costs; deferred tax on undistributed profits is not shown."),
-      h("li", null, "Foreign dividends are assumed to suffer 15% treaty withholding, credited where the country allows. Where the country of residence has no US income tax treaty, US dividends suffer 30%: the extra is shown separately."),
-      h("li", null, "Inheritance assumes the estate passes in equal shares to the children, without business relief or lifetime gifts."),
-      h("li", null, "US citizens: the US top-up approximates US federal tax after foreign tax credits (lump sums are not creditable). State taxes are not added for non-US residents."),
-      h("li", null, `Amounts are converted to ${displayCurrency()} at the ECB reference rates of ${state.data.meta.fx_date} used for the build.`)));
+  panel.append(form, out);
   function run() {
     compute(out);
   }
   run();
+}
+
+/** The HNWI calculator's assumptions, shown on the Method page. */
+export function calculatorAssumptions() {
+  return h("ul", { class: "small" },
+    h("li", null, "Gains, dividends and wealth tax recur every year; inheritance tax is a one-off when assets pass to the children and is shown separately."),
+    h("li", null, "Researched top-end rates for a private investor holding assets directly. Holding-structure rows add the structure's own taxes, tax on the payout you enter and running costs; tax deferred inside the structure is not shown."),
+    h("li", null, "Foreign dividends suffer 15% withholding, credited where the country allows. Without a US tax treaty, US dividends suffer 30%; the extra is shown separately."),
+    h("li", null, "The estate passes in equal shares to the children, without business relief or lifetime gifts."),
+    h("li", null, "US citizens: a US top-up approximates US federal tax after foreign tax credits (lump sums are not creditable)."));
 }

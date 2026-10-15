@@ -58,6 +58,15 @@ summarises facts from them in its own words; it does not reproduce their text.
 | [IRS: United States income tax treaties A to Z](https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z) | US dividend withholding (treaty list) |
 | Rent figures (Global Property Guide, Investropa, Numbeo, Daft.ie, listing sites, statistical offices) | Annual Household Cost; each figure cites its source in `data/income/` or `data/jurisdictions/` |
 
+## US states for the Expat and Digital nomad (`data/income_regions/USA.json`)
+
+| Source | Used for | Terms |
+|---|---|---|
+| [Tax Foundation, State Individual Income Tax Rates and Brackets 2026](https://taxfoundation.org/) and state revenue departments | State income tax brackets and deductions | Facts summarised with attribution; each unit cites its pages |
+| City tax authorities (New York City, Philadelphia, Detroit, Columbus and others) | City income taxes | Government publications |
+| [US Bureau of Economic Analysis, Regional Price Parities](https://apps.bea.gov/regional/zip/MARPP.zip) (2024) | Price level of each state's main metro relative to Austin; also rescales the US salary multiplier from New York to Austin | US government work, public domain |
+| [Zumper National Rent Report](https://www.zumper.com/) city pages, October 2026 | 1- and 2-bedroom city rents | Published averages used with attribution |
+
 ## Expat salary multipliers (`data/indicators/expat_cola/`)
 
 | Source | Terms |

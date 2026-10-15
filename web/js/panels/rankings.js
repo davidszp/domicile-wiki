@@ -104,8 +104,8 @@ function sensitivity() {
   const { base, ranks } = sensCache;
   const top = base.slice(0, 20);
   const taxNow = taxMetrics().reduce((a, m) => a + state.weights[m], 0) / Object.values(state.weights).reduce((a, b) => a + b, 0);
-  return h("section", null, h("h3", null, "Sensitivity: rank if taxes carried more weight"),
-    h("p", { class: "small muted" }, `Current tax share ${(taxNow * 100).toFixed(0)}%. Columns rescale the tax weights to the given share and the non-tax weights to the rest, keeping proportions within each group. Countries only.`),
+  return h("section", null, h("h3", null, "Sensitivity"),
+    h("p", { class: "small muted" }, `Rank if taxes carried more weight (now ${(taxNow * 100).toFixed(0)}%). Countries only.`),
     h("div", { class: "table-wrap" }, h("table", { class: "grid small" },
       h("thead", null, h("tr", null, h("th", null, "Jurisdiction"), h("th", null, "Now"), ...shares.map((s) => h("th", null, `Tax ${s * 100}%`)))),
       h("tbody", null, top.map((x, i) => h("tr", null, h("td", null, x.e.name), h("td", null, `#${i + 1}`),
@@ -131,7 +131,7 @@ export function renderRankings(panel, ctx) {
       check("Low capital-gains tax (score ≥ 75)", "lowCgt"),
       check("Favourable dividend tax (score ≥ 75)", "goodDividends")];
   panel.append(h("h2", null, `Rankings: ${persona.label}`),
-    h("p", { class: "small muted" }, "Tax-only and overall rankings side by side: a jurisdiction can be excellent for taxes and weaker on housing, security or services. Only researched jurisdictions are ranked."),
+    h("p", { class: "small muted" }, "Researched places only."),
     h("div", { class: "filters" },
       control("Rank by", select([["score", `Overall ${personaNoun()} score`], ["tax", "Tax score only"], ["cost", "Annual Household Cost (lowest first)"]], "sort")),
       control("Show", select([["countries", "Countries"], ["regions", "Regions (cantons, communities, emirates, states)"], ["all", "All"]], "level")),

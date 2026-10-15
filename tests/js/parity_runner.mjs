@@ -60,7 +60,7 @@ const INCOMES = [20000, 60000, 150000, 700000];
 const earned = {};
 for (const f of readdirSync(join(web, "profiles"))) {
   const p = JSON.parse(readFileSync(join(web, "profiles", f)));
-  if (!p.income_rules || p.level !== "country") continue;
+  if (!p.income_rules || (p.level !== "country" && !p.income_rules.regional)) continue;
   earned[p.id] = [];
   for (const income of INCOMES)
     for (const kind of ["employment", "self_employment"])

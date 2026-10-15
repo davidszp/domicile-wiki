@@ -18,7 +18,7 @@ from pathlib import Path
 
 from domicile import cola, earned, scene, scoring
 from domicile.fx import load as load_fx, to_eur
-from domicile.schema import CostOfLiving, IncomeFile, Jurisdiction, Regime, Subnational
+from domicile.schema import CostOfLiving, IncomeFile, Jurisdiction, RegionalIncomeFile, Regime, Subnational
 from domicile.taxcalc import compile_regime
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -45,6 +45,10 @@ def load_jurisdictions() -> dict[str, Jurisdiction]:
 
 def load_income() -> dict[str, IncomeFile]:
     return {p.stem: IncomeFile.model_validate_json(p.read_text()) for p in sorted((DATA / "income").glob("*.json"))}
+
+
+def load_income_regions() -> dict[str, RegionalIncomeFile]:
+    return {p.stem: RegionalIncomeFile.model_validate_json(p.read_text()) for p in sorted((DATA / "income_regions").glob("*.json"))}
 
 
 def load_subnational() -> dict[str, Subnational]:
@@ -258,6 +262,9 @@ def main() -> None:
     subs = load_subnational()
     income = load_income()
     income_rules = {k: earned.compile_income(f, fx) for k, f in income.items()}
+    # Regions with their own earned-income rules (US states): national rules plus state/city tax, rents, price level.
+    regional_rules = {u.code: earned.compile_regional(u, income_rules[rf.parent], rf.currency, fx)
+                      for rf in load_income_regions().values() if rf.parent in income_rules for u in rf.units}
     usd_per_eur = fx["rates"]["USD"]["per_eur"]
     world = json.loads((DATA / "build" / "countries.geojson").read_text())["features"]
     regions = json.loads((DATA / "build" / "regions.geojson").read_text())["features"]
@@ -286,8 +293,15 @@ def main() -> None:
 
         def personas(indicators: dict, nontax: dict, ko: list[dict]) -> None:
             plr, _ = price_level(iso_for_indicators, indicators, cfg, ind)
-            blocks = persona_block(iso_for_indicators, income_rules.get(iso_for_indicators), income.get(iso_for_indicators),
-                                   nontax, ko, plr, plr_ref, cfg, usd_per_eur, mults.get(iso_for_indicators),
+            rules = regional_rules.get(jid) or income_rules.get(iso_for_indicators)
+            mult = mults.get(iso_for_indicators)
+            if jid in regional_rules:  # salary and everyday prices follow the region's price level
+                ratio = regional_rules[jid]["price_ratio"]
+                plr = plr * ratio if plr else plr
+                if mult:
+                    mult = {**mult, "multiplier": round(mult["multiplier"] * ratio, 4), "regional_ratio": ratio}
+            blocks = persona_block(iso_for_indicators, rules, income.get(iso_for_indicators),
+                                   nontax, ko, plr, plr_ref, cfg, usd_per_eur, mult,
                                    scenes.get(iso_for_indicators))
             entry["personas"] = {pid: {"tax": None if b["tax"] is None else {cz: [{k: r[k] for k in ("id", "name", "type", "duration", "cost", "scores", "verification") if k in r}
                                                                                    for r in rows] for cz, rows in b["tax"].items()},
@@ -300,7 +314,9 @@ def main() -> None:
                                  for pid, b in blocks.items()}
             profiles_extra[jid] = {"persona_detail": blocks,
                                    "income": json.loads(income[iso_for_indicators].model_dump_json()) if iso_for_indicators in income else None,
-                                   "income_rules": income_rules.get(iso_for_indicators)}
+                                   "income_rules": rules,
+                                   "income_region": json.loads(next((u.model_dump_json() for rf in load_income_regions().values()
+                                                                     for u in rf.units if u.code == jid), "null"))}
 
         if j is None:
             indicators = ind.get(iso_for_indicators, {})

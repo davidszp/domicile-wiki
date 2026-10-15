@@ -473,3 +473,59 @@ class IncomeFile(Strict):
     costs: PersonaCosts | None = None
     residence_routes: str = Field(min_length=20, description="How a remote worker / skilled expat gets the right to live (and work) there, per citizenship group")
     open_questions: list[str] = []
+
+
+# ---------------------------------------------------------------------------------------------
+# Regional earned income (e.g. US states): data/income_regions/<ISO3>.json
+# ---------------------------------------------------------------------------------------------
+
+class RegionalIncomeTax(Strict):
+    """Income tax levied by a region (and optionally its main city) ON TOP of the national income tax."""
+
+    brackets: list[Bracket] = Field(min_length=1, description="Regional marginal rates on regional taxable income "
+                                                              "(local currency); [{from_amount: 0, rate: 0}] for no tax")
+    allowance: float = Field(0, ge=0, description="Regional standard deduction plus personal exemption for a single filer")
+    local_brackets: list[Bracket] = Field([], description="City/local income tax in the unit's main city, if any")
+    local_allowance: float = Field(0, ge=0)
+    note: str = Field(min_length=10, description="What is included (state, city), flat or graduated, special rules")
+    sources: list[Source] = Field(min_length=1)
+    verified_on: dt.date
+    confidence: Confidence
+    verification: Verification
+    open_questions: list[str] = []
+
+
+class RegionalPriceParity(Strict):
+    """Price level of the unit's main metro relative to the national benchmark city's metro (official statistic)."""
+
+    metro: str
+    value: float = Field(gt=0, description="The statistic as published (e.g. BEA RPP, US = 100)")
+    benchmark_value: float = Field(gt=0, description="Same statistic for the national benchmark city's metro")
+    year: int
+    source: Source
+
+
+class RegionalIncomeUnit(Strict):
+    code: str = Field(pattern=r"^[A-Z]{2}-[A-Z0-9]{1,3}$")
+    name: str
+    city: str = Field(description="Main city used for rents and local tax")
+    income_tax: RegionalIncomeTax
+    price_parity: RegionalPriceParity | None = None
+    costs: PersonaCosts | None = None
+    open_questions: list[str] = []
+
+
+class RegionalIncomeFile(Strict):
+    parent: str = Field(pattern=r"^[A-Z]{3}$")
+    currency: str = Field(pattern=r"^[A-Z]{3}$")
+    researched_on: dt.date
+    tax_year: str
+    notes: str = ""
+    units: list[RegionalIncomeUnit] = Field(min_length=1)
+
+    @model_validator(mode="after")
+    def _unique_codes(self) -> RegionalIncomeFile:
+        codes = [u.code for u in self.units]
+        if len(codes) != len(set(codes)):
+            raise ValueError("duplicate unit codes")
+        return self
