@@ -182,9 +182,7 @@ Special zones: None relevant.
 
 Paris (16th, 7th, 6th and 8th arrondissements).
 
-- Prime family rent: EUR 13,400/month, the median of 34 distinct 4+ bedroom apartments and houses for rent in Paris on
-  LuxuryEstate.com on 15 October 2026 (range EUR 4,430-63,000; interquartile about EUR 9,100-20,000). Agency asking
-  rents, many furnished.
+- Prime family rent: EUR 5,839/month. Median asking rent of 5 flats of 165-233 m2 in family areas in and next to Paris, read 2026-10-15: Neuilly-sur-Seine (Foncia: 165 m2 EUR 4,650; 205 m2 EUR 5,839; 233 m2 4 bedrooms EUR 6,000, charges included), Ville-d'Avray (188 m2, 5 bedrooms, EUR 4,990) and Paris 9e (169 m2, 4 bedrooms, EUR 7,297 furnished), the last two on LesiteImmo. Range EUR 4,650-7,297. Paris 15e/16e/17e family flats of 150 m2 or more were almost absent from portals that load; Paris 8e (200 m2, EUR 11,000) left out as prime. Cross-check: OLAP January 2026 median rents are EUR 41/m2 (15e), 43 (17e) and 48 (16e), i.e. about EUR 7,000-8,000 for 165 m2 at the medium-size average. Thin sample; replaces EUR 9,150 from two listings. Source: Foncia, Neuilly-sur-Seine 5 pieces ou plus.
 - International school: American School of Paris (Saint-Cloud), Grades 9-12, EUR 41,400 tuition + EUR 2,000
   mandatory security fee = EUR 43,400 a year for 2026-27; capital assessment EUR 12,200 and application fee EUR 1,450
   once.
@@ -204,6 +202,7 @@ Paris (16th, 7th, 6th and 8th arrondissements).
 - (impatriate_155b / dividends) Same CDHR/reference-income question as capital gains under this regime.
 
 US citizens: The US-France income tax treaty gives a special credit for US citizens resident in France on US-source income; CSG/CRDS on investment income have been treated as creditable by the US since the 2019 treaty-related changes (not re-verified). The 1978 US-France estate and gift tax treaty applies.
+- Family rent (EUR 5,839) is the median of only 5 flats (3 in Neuilly-sur-Seine, 1 in Ville-d'Avray, 1 in Paris 9e); OLAP per-m2 medians for the 15e/16e/17e suggest EUR 7,000-8,000 for 165 m2, so it may understate a Paris family flat.
 
 ## Sources
 
@@ -225,6 +224,10 @@ US citizens: The US-France income tax treaty gives a special credit for US citiz
 - [Lois de finances pour 2026 (première partie) : analyse des mesures les plus significatives](https://blog.avocats.deloitte.fr/lois-de-finances-pour-2026-premiere-partie-analyse-des-mesures-les-plus-significatives/) — Deloitte Société d'Avocats (professional)
 - [France - Corporate - Income determination](https://taxsummaries.pwc.com/france/corporate/income-determination) — PwC Worldwide Tax Summaries (professional)
 - [France - Corporate - Group taxation](https://taxsummaries.pwc.com/france/corporate/group-taxation) — PwC Worldwide Tax Summaries (professional)
+- LesiteImmo: location appartement 6 pieces Paris 16 (viewed 15 Oct 2026): https://www.lesiteimmo.com/louer/appartement-6pieces/paris-16-75016
+- [Location appartement 5 pieces ou plus, Neuilly-sur-Seine](https://fr.foncia.com/location/neuilly-sur-seine-92200/appartement_5-pieces-ou-plus) — Foncia (other)
+- [Prix loyer m2 a Paris (OLAP, janvier 2026)](https://www.nousgerons.com/prix-loyer-m2-a-paris.html) — NousGerons (other)
+- [Location appartement 5 pieces, Neuilly-sur-Seine (LesiteImmo nearby listings: Ville-d'Avray, Paris 9e)](https://www.lesiteimmo.com/louer/appartement-5pieces/neuilly-sur-seine-92200) — LesiteImmo (other)
 
 ## Change log
 
@@ -232,3 +235,5 @@ US citizens: The US-France income tax treaty gives a special credit for US citiz
 - 2026-10-15: CDHR confirmed for 2026 income (BOFiP ACTU-2026-00104; loi n° 2026-103 art. 2) and 18.6% social charges / 31.4% PFU from 1 January 2026 confirmed on Service-Public; dividends raised to high/verified. Art. 155 B regime re-checked on BOFiP (eligibility, 8-year duration, treaty-state condition, full social charges); foreign securities/dividend rate changed from 25% to 28.6% to apply the CDHR consistently with the standard regime (lower bound; still low confidence). Added prime rent (LuxuryEstate sample, EUR 13,400/month) and American School of Paris fee (EUR 43,400, 2026-27).
 - 2026-10-15: flagged `impatriate_155b` as requiring employment or a qualifying activity (`requires_qualifying_activity`), so it is no longer used as the best regime for a passive investor family unless the user opts in.
 - 2026-10-15: added structure regime `holding_is` (holding company at IS: 25% on portfolio gains/dividends, PFU 31.4% on payouts; 2026 holding tax on sumptuary assets does not reach securities) and a Holding structures section.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 13,400 to EUR 9,150 (Paris 9e and 8e).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 9,150 to EUR 5,839 (5 flats of 165-233 m2: Neuilly-sur-Seine, Ville-d'Avray, Paris 9e); still thin.

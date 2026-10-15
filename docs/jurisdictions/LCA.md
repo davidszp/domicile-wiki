@@ -64,3 +64,4 @@ City: Rodney Bay / Cap Estate (Gros Islet, north of Castries), where expatriate 
 
 - 2026-10-15: initial research.
 - 2026-10-15: cost of living pass: added prime rent (USD 4,222.50, two Terra Caribbean listings) and International School of St Lucia tuition (XCD 24,300, international Grades 7-12; page updated April 2024); city set to Rodney Bay / Cap Estate.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

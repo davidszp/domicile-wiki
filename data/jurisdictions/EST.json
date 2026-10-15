@@ -298,7 +298,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 19 distinct houses of 180-500 m² for rent within Tallinn city (Nõmme, Haabersti, Pirita, Kesklinn/Kadriorg) in City24.ee's house-rental search for Estonia on 15 Oct 2026 (first 100 results; a EUR 1 placeholder and duplicates removed); range EUR 999-5,300. Viimsi and other suburbs excluded. Asking rents.",
+      "description": "Median asking rent of 19 distinct houses of 180-500 m² for rent within Tallinn city (Nõmme, Haabersti, Pirita, Kesklinn/Kadriorg) in City24.ee's house-rental search for Estonia on 15 Oct 2026 (first 100 results; a EUR 1 placeholder and duplicates removed); range EUR 999-5,300. Viimsi and other suburbs excluded. Asking rents. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Houses for rent, Tallinn (City24 search)",
         "url": "https://www.city24.ee/en/real-estate-search/houses-for-rent/tallinn",

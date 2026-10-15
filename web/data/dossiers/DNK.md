@@ -82,3 +82,4 @@ City: Copenhagen.
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added prime rent (lejebolig.dk, Hellerup/Charlottenlund/Gentofte/Klampenborg villas, DKK 59,500/month) and Copenhagen International School fee (DKK 215,000, Grades 11-12, 2026-27).
 - 2026-10-15: holding-structure review: no structure added (ApS taxed 22% on listed portfolio shares, then 27/42% on payout); holding_company_notes updated.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

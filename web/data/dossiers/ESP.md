@@ -85,7 +85,7 @@ CIT 25%; SMEs 23% in 2026 (falling to 20% by 2029); start-ups 15% (PwC, reviewed
 City: Madrid.
 
 - **School:** Runnymede College Sixth Form EUR 7,900 per term for 2026-27 (EUR 23,700 a year, plus a EUR 3,500 enrolment fee).
-- **Prime rent: EUR 8,000 a month.** Median asking rent of 30 distinct 4-6 bedroom homes listed for rent in Madrid on LuxuryEstate.com on 2026-10-15 (monthly or unlabelled prices, duplicates removed; interquartile range EUR 5,875-14,175). Mostly 4-5 bedroom flats; villas in La Moraleja, Arturo Soria and Puerta de Hierro list at EUR 8,000-16,000. Asking rents on a luxury portal, not agency-report or agreed rents.
+- Prime family rent: EUR 5,200/month. Estimate for an upper-middle-class 4-bedroom family flat (about 215 m2, midpoint of 180-250 m2) in Madrid: the mean of the Q2-2026 asking rents per m2 per month in Chamartin (EUR 24.29), Chamberi (26.51), Retiro (25.37) and Moncloa-Aravaca (19.86), i.e. EUR 24.0/m2, times 215 m2 = about EUR 5,160, rounded to EUR 5,200. Derived from a district report, not from 4-bedroom listings (idealista, fotocasa and pisos.com could not be read automatically). Replaces the earlier LuxuryEstate.com median of EUR 8,000, which included La Moraleja villas. Source: Brains Real Estate: Alquiler de pisos en Madrid, Q2-2026 (updated 1 Oct 2026).
 - **Prime price per m²: EUR 7,816.** Median asking price per m² of 71 homes for sale in Madrid on LuxuryEstate.com (first five result pages, EUR 500,000+ and 80 m²+; interquartile range EUR 5,833-11,714).
 - Health insurance and housekeeper costs were not sourced and are omitted rather than guessed.
 
@@ -97,6 +97,7 @@ Regional cities (Barcelona, Marbella, Palma, Valencia, Tenerife, San Sebastián)
 - New arrivals: regional ISD benefits depend on the deceased having spent most days of the prior 5 years in that region; days abroad count for no region. Practical application for a family that arrived recently should be confirmed with an adviser.
 - Whether Beckham taxpayers can use regional IP allowances/rebates was not verified.
 - Participation exemption (art. 21 LIS) not re-verified.
+- Family rent (EUR 5,200) is derived from district asking rents per m2 times 215 m2, not from 4-bedroom listings; check against idealista or fotocasa listings in Chamberi/Chamartin.
 
 ## Sources
 
@@ -116,9 +117,11 @@ Regional cities (Barcelona, Marbella, Palma, Valencia, Tenerife, San Sebastián)
 - LuxuryEstate.com, luxury properties for rent in Madrid — https://www.luxuryestate.com/rent/spain/community-of-madrid/province-of-madrid/madrid
 - LuxuryEstate.com, luxury properties for sale in Madrid — https://www.luxuryestate.com/spain/community-of-madrid/province-of-madrid/madrid
 - [Spain - Corporate - Income determination](https://taxsummaries.pwc.com/spain/corporate/income-determination) — PwC Worldwide Tax Summaries (professional)
+- Brains Real Estate: Alquiler de pisos en Madrid, Q2-2026: https://brainsre.news/alquiler-pisos-madrid/
 
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15 (data-quality pass): added Madrid prime rent (EUR 8,000/month) and prime price per m² (EUR 7,816) from a LuxuryEstate.com listing sample; resolved the Beckham-regime top savings rate (30% from 2025 per BOE, DF 7.3 Ley 7/2024; PwC's 28% is out of date) and removed that open question.
 - 2026-10-15: flagged `beckham_art93` as requiring employment or a qualifying activity (`requires_qualifying_activity`), so it is no longer used as the best regime for a passive investor family unless the user opts in.
 - 2026-10-15: added a Holding structures section and a holding_company_notes sentence explaining why no holding structure is scored.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 8,000 to EUR 5,200 (Chamartin, Chamberi, Retiro, Moncloa-Aravaca).

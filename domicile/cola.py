@@ -75,10 +75,26 @@ def multipliers(sources: dict[str, dict], euro_ref: list[str], price_level: dict
         k = statistics.median(ratios)
         norm[n] = {c: k * v for c, v in pos.items()}
     out = {}
+    adjust = city_adjustments()
     for c in countries:
         vals = {n: round(v[c], 4) for n, v in norm.items() if c in v}
         if vals:
             out[c] = {"multiplier": round(statistics.mean(vals.values()), 4), "sources": vals, "estimated": False}
         elif price_level.get(c) and plr_ref:
             out[c] = {"multiplier": round(price_level[c] / plr_ref, 4), "sources": {}, "estimated": True}
+        if c in out and c in adjust:
+            a = adjust[c]
+            out[c]["multiplier"] = round(out[c]["multiplier"] * a["factor"], 4)
+            out[c]["city_adjustment"] = {"from": a["from"]["city"], "to": a["to"]["city"], "factor": a["factor"], "source": a["source"], "url": a["url"]}
+    return out
+
+
+def city_adjustments(path: Path = DIR) -> dict[str, dict]:
+    """``<iso2 or iso3>_city_adjustment.json``: the tables quote a country at one post (the US at New York);
+    this rescales it to the benchmark city by an official price-level ratio (BEA Regional Price Parities)."""
+    prefix_iso = {"us": "USA"}
+    out = {}
+    for p in sorted(path.glob("*_city_adjustment.json")):
+        prefix = p.name.removesuffix("_city_adjustment.json")
+        out[prefix_iso.get(prefix, prefix.upper())] = json.loads(p.read_text())
     return out

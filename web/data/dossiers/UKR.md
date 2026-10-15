@@ -116,3 +116,4 @@ US citizens: US–Ukraine income tax treaty exists (listed by PwC); saving claus
 
 - 2026-10-15: initial research.
 - 2026-10-15 (household cost pass): added Kyiv prime rent USD 3,200 a month (DOM.RIA, Pechersk 4+ room flats of 120 m²+, n=224) and Kyiv International School fee USD 19,600 (2026-27).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (USD 3,200).

@@ -250,7 +250,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 126 house listings of 200-500 m² in Sofia's prime residential areas at the foot of Vitosha and in the centre (Boyana, Dragalevtsi, Simeonovo, Malinova Dolina, Lozenets, Bistritsa, Pancharevo, Center, Izgrev and similar), from all 10 pages of imot.bg 'houses for rent, Sofia' (375 listings) on 15 Oct 2026; range EUR 1,000-10,000. imot.bg itself reports a median of EUR 2,554 for all Sofia house rentals.",
+      "description": "Median asking rent of 126 house listings of 200-500 m² in Sofia's prime residential areas at the foot of Vitosha and in the centre (Boyana, Dragalevtsi, Simeonovo, Malinova Dolina, Lozenets, Bistritsa, Pancharevo, Center, Izgrev and similar), from all 10 pages of imot.bg 'houses for rent, Sofia' (375 listings) on 15 Oct 2026; range EUR 1,000-10,000. imot.bg itself reports a median of EUR 2,554 for all Sofia house rentals. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Къщи под наем в град София",
         "url": "https://www.imot.bg/obiavi/naemi/grad-sofiya/kashta",

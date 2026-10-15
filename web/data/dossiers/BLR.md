@@ -108,3 +108,4 @@ US citizens: US sanctions and banking restrictions apply; US persons face signif
 - 2026-10-15: phase 2 data-quality pass: read the consolidated Tax Code Special Part on pravo.by. Capital gains now 13% on all asset classes (25/30% bands exclude gains, Art. 199(82)); foreign dividends 13%; no wealth tax; no inheritance/gift tax and close-relative gifts exempt (Art. 208(21), (22-1)), so inheritance basis set to none / fully_exempt. All four metrics raised from low to medium (official text, no professional cross-check).
 - 2026-10-15 (household cost pass): added Minsk prime rent USD 1,893 a month (realt.by, 4+ room flats of 120 m²+, n=48). School fee not published by QSI Minsk; left out with an open question.
 - 2026-10-15 (household cost pass 2): re-tried the QSI Minsk fee with third-party listings and Wayback; no dated fee found, so the metric stays unscored.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

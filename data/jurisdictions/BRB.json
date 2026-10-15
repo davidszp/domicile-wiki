@@ -360,17 +360,18 @@
   "us_citizen_notes": "US citizens are taxed by the US on worldwide income; the Barbados-US treaty (saving clause) applies. Barbados tax on foreign dividends may be creditable against US tax.",
   "open_questions": [
     "SERP eligibility thresholds and any tax features not verified on an official page.",
-    "Prime purchase price per m2, family health insurance and housekeeper cost not sourced; the west-coast rent rests on two listings."
+    "Prime purchase price per m2, family health insurance and housekeeper cost not sourced.",
+    "Family rent (USD 6,000) rests on three upper-middle 4-5 bedroom listings (Sotheby's and Nvest Estates, 15 Oct 2026); the sample is small."
   ],
   "cost_of_living": {
     "city": "West coast (St James) / Bridgetown",
     "prime_rent_monthly": {
       "value": {
-        "amount": 14000,
+        "amount": 6000,
         "currency": "USD"
       },
       "year": 2026,
-      "description": "Average of the two 4-5 bedroom houses on the west coast (St James) listed as long-term rentals by Barbados Sotheby's International Realty on 15 Oct 2026: Apes Hill, The View, 4-bed USD 13,000; Prior Park 13, 5-bed USD 15,000. Small sample. Elsewhere on the island 4-5 bed long-term rentals were listed at USD 3,250-8,500 (Sotheby's St Michael/St George; Realtors Ltd Christ Church). Asking rents.",
+      "description": "Median of the three 4-5 bedroom houses on Barbados outside the west-coast trophy belt (St James/Apes Hill) listed as long-term rentals on 15 Oct 2026: Belori, The Farm, 4-bed (about 600 m2) USD 5,000; Frere Pilgrim 9, Christ Church, executive 4-bed with pool USD 6,000 (Nvest Estates); Buchanan, St Michael, 5-bed (about 465 m2) USD 8,500 (Barbados Sotheby's International Realty). Furnishing not stated. Small sample; asking rents. The previous figure (USD 14,000) used the Apes Hill and Prior Park St James trophy houses. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Barbados Sotheby's International Realty: Long-term rentals (viewed 15 Oct 2026)",
         "url": "https://www.barbadossothebysrealty.com/long-term-rentals",

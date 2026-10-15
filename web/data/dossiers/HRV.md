@@ -96,3 +96,4 @@ Zagreb.
 
 - 2026-10-15: initial research.
 - 2026-10-15 (data-quality pass): added prime rent (Nekretnine.hr sample, EUR 3,500/month).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

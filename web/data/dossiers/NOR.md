@@ -185,3 +185,4 @@ City: Oslo.
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added prime rent (finn.no, Oslo 4-5 bedroom detached houses, NOK 47,000/month).
 - 2026-10-15: added the holding AS structure regime (`holding_as`) and the Holding structures section; standard holding_company_notes now points to it.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

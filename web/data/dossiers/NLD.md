@@ -155,3 +155,4 @@ US citizens: US-Netherlands income tax treaty and the 1969 US-Netherlands estate
 - 2026-10-15: initial research.
 - 2026-10-15: added prime rent (Huurstunt sample, EUR 4,500/month) and International School of Amsterdam fee (EUR 32,755, 2026-27).
 - 2026-10-15: added the holding structure regime `beleggings_bv` (BV: 25.8% on realised gains and dividends, no Box 3, Box 2 payout 31%); Holding structures section.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

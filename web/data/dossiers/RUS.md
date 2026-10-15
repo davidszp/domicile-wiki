@@ -104,3 +104,4 @@ US citizens: US sanctions apply; the US–Russia treaty status after Russia's 20
 
 - 2026-10-15: initial research.
 - 2026-10-15 (household cost pass): added Moscow cost of living: prime rent RUB 465,000 a month (Cian, central Moscow 4-5 room flats, n=360) and International School of Moscow Year 12 fee EUR 47,900 (2026-27).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

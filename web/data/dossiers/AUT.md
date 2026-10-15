@@ -146,3 +146,4 @@ US citizens: The US-Austria income tax treaty and the 1982 US-Austria estate and
 - 2026-10-15: initial research.
 - 2026-10-15: added prime rent (willhaben sample, EUR 5,950/month) and Vienna International School fee (EUR 29,160, 2026/27).
 - 2026-10-15: Holding structures section: no structure modelled; recorded the 2026 rise of the Privatstiftung interim tax to 27.5% and entry tax to 3.5%.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

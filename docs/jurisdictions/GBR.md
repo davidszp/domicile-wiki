@@ -82,14 +82,14 @@ Corporation tax 25% main rate (profits above £250,000), 19% small profits rate 
 
 City: London.
 
-- **Prime rent (monthly):** 12,500 GBP (2026). Median asking rent of 123 4-5 bedroom homes (houses and large flats) to let in the Royal Borough of Kensington and Chelsea on Rightmove on 2026-10-15, weekly rents converted at x52/12 (interquartile range £8,500-£15,167 pcm; 312 listings in total, newest first). Source: [Rightmove - 4-5 bedroom property to rent in Kensington and Chelsea](https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E61229&minBedrooms=4&maxBedrooms=5&sortType=6).
+- **Prime rent (monthly):** 6,000 GBP (2026). Median asking rent of 24 4-bedroom houses and flats to let in Fulham on Rightmove on 2026-10-15 (35 results, first 24 distinct listings read; range £3,500-£22,500 pcm, mostly £5,000-£9,500). Wandsworth and Richmond were similar and not used. Source: [Rightmove - 4 bedroom property to rent in Fulham](https://www.rightmove.co.uk/property-to-rent/Fulham.html?minBedrooms=4&maxBedrooms=4).
 - **International school fee (annual, per child):** 39,960 GBP (2026). ACS International School Cobham (Surrey, London commuter belt), Grade 12 day tuition 2026-27, VAT included (20% VAT on private school fees since January 2025). Source: [ACS International Schools - Cobham school fees 2026-27](https://www.acs-schools.com/cobham/wp-content/uploads/sites/2/2026/03/ACS-2026-27-VAT-FeeSheets-Cob.pdf).
 - Health insurance, housekeeper and price per m² not sourced. The school fee is for a Surrey international school; central London day schools charge similar or higher fees.
 
 ## Open questions
 - A possible invitation-only investor visa was reported in 2026 but not announced; not included.
 - Savings income rates rise to 22/42/47% from 6 April 2027 (Budget 2025) - matters for bond-heavy portfolios.
-- Prime London rent and price per m² not sourced.
+- Prime London price per m² not sourced.
 - The app's single rate cannot show that a newly arrived family's non-UK assets fall outside IHT for roughly their first 10 years of residence; scored here as the long-term-resident position.
 - High Value Council Tax Surcharge: final legislation not yet seen; rates are from the Budget 2025 policy paper.
 
@@ -116,7 +116,7 @@ City: London.
 - United Kingdom: Corporate - Taxes on corporate income (last reviewed 23 July 2026): https://taxsummaries.pwc.com/united-kingdom/corporate/taxes-on-corporate-income
 - United Kingdom: Corporate - Withholding taxes (last reviewed 23 July 2026): https://taxsummaries.pwc.com/united-kingdom/corporate/withholding-taxes
 - ACS International Schools - Cobham school fees 2026-27: https://www.acs-schools.com/cobham/wp-content/uploads/sites/2/2026/03/ACS-2026-27-VAT-FeeSheets-Cob.pdf
-- [Rightmove - 4-5 bedroom property to rent in Kensington and Chelsea](https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E61229&minBedrooms=4&maxBedrooms=5&sortType=6)
+- [Rightmove - 4 bedroom property to rent in Fulham](https://www.rightmove.co.uk/property-to-rent/Fulham.html?minBedrooms=4&maxBedrooms=4)
 - Marginal Relief for Corporation Tax (GOV.UK): https://www.gov.uk/guidance/corporation-tax-marginal-relief
 - Tax on dividends (GOV.UK): https://www.gov.uk/tax-on-dividends
 - United Kingdom - Corporate - Income determination (PwC): https://taxsummaries.pwc.com/united-kingdom/corporate/income-determination
@@ -131,3 +131,4 @@ City: London.
 - 2026-10-15: data-quality pass: added prime rent (Rightmove, Kensington and Chelsea 4-5 bedrooms, £12,500/month); re-verified on GOV.UK the 2026/27 dividend rates (10.75/35.75/39.35%) and the £2.5m APR/BPR allowance (transferable to a spouse) and added the transfer to the JSON; stated that the FIG regime is not remittance-based.
 - 2026-10-15: inheritance scope set to local assets only for fig_4_year in the structured data (a new arrival is not a long-term UK resident during the 4-year FIG period, so non-UK assets are outside inheritance tax); previously the scoring applied the rates to the worldwide estate, which overstated the tax.
 - 2026-10-15: added the family investment company structure regime (`family_investment_company`) and the Holding structures section; holding_company_notes updated.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from £12,500 to £6,000 (Fulham instead of Kensington and Chelsea).

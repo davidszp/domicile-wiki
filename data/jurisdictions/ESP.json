@@ -577,15 +577,15 @@
     "city": "Madrid",
     "prime_rent_monthly": {
       "value": {
-        "amount": 8000,
+        "amount": 5200,
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 30 distinct homes (interquartile range EUR 5,875-14,175; mostly 4-5 bedroom flats; villas in La Moraleja, Arturo Soria and Puerta de Hierro list at EUR 8,000-16,000) on LuxuryEstate.com (Madrid), snapshot taken 2026-10-15: listings with 4-6 bedrooms, priced per month or with no period stated, duplicates removed. Asking rents, not agreed rents; a luxury listing portal skews to the top of the market, and some listings may be furnished or seasonal lets.",
+      "description": "Estimate for an upper-middle-class 4-bedroom family flat (about 215 m2, midpoint of 180-250 m2) in Madrid: the mean of the Q2-2026 asking rents per m2 per month in Chamartin (EUR 24.29), Chamberi (26.51), Retiro (25.37) and Moncloa-Aravaca (19.86), i.e. EUR 24.0/m2, times 215 m2 = about EUR 5,160, rounded to EUR 5,200. Derived from a district report, not from 4-bedroom listings (idealista, fotocasa and pisos.com could not be read automatically). Replaces the earlier LuxuryEstate.com median of EUR 8,000, which included La Moraleja villas. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
-        "title": "LuxuryEstate.com - Luxury properties for rent in Madrid",
-        "url": "https://www.luxuryestate.com/rent/spain/community-of-madrid/province-of-madrid/madrid",
-        "publisher": "LuxuryEstate.com",
+        "title": "Brains Real Estate: Alquiler de pisos en Madrid, Q2-2026 (updated 1 Oct 2026)",
+        "url": "https://brainsre.news/alquiler-pisos-madrid/",
+        "publisher": "Brains Real Estate (brainsre.news)",
         "kind": "other",
         "accessed": "2026-10-15"
       }
@@ -649,6 +649,7 @@
   "open_questions": [
     "ITSGF has no end date; a reform of regional financing could replace it.",
     "For newly arrived families, regional inheritance benefits depend on the deceased having spent most days of the prior 5 years in that region (art. 28 Ley 22/2009); days abroad count for no region.",
-    "Participation exemption details (art. 21 LIS) were not re-verified in this pass."
+    "Participation exemption details (art. 21 LIS) were not re-verified in this pass.",
+    "Family rent (EUR 5,200) is derived from district asking rents per m2 times 215 m2, not from 4-bedroom listings; check against idealista or fotocasa listings in Chamberi/Chamartin."
   ]
 }

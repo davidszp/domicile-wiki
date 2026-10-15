@@ -120,3 +120,4 @@ usually offsets it in full. Non-dom status can be extended twice, by 5 years eac
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15 (data-quality pass): added prime rent (Bazaraki sample, EUR 6,950/month); re-checked Circular 2/2026 via KPMG (official PDF unreachable).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

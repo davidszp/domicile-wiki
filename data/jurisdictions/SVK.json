@@ -267,7 +267,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 71 houses of 180-450 m² for rent in Bratislava (all districts; mostly Koliba, Záhorská Bystrica, Rusovce, Ahoj, Horský park, castle hill), read from all six result pages of Nehnutelnosti.sk on 15 Oct 2026 (about 155 listings; range EUR 1,290-8,500; offices excluded). Asking rents, utilities extra.",
+      "description": "Median asking rent of 71 houses of 180-450 m² for rent in Bratislava (all districts; mostly Koliba, Záhorská Bystrica, Rusovce, Ahoj, Horský park, castle hill), read from all six result pages of Nehnutelnosti.sk on 15 Oct 2026 (about 155 listings; range EUR 1,290-8,500; offices excluded). Asking rents, utilities extra. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Domy Bratislava - ponuka domov na prenájom",
         "url": "https://www.nehnutelnosti.sk/vysledky/domy/bratislava/prenajom",

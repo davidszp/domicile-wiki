@@ -192,3 +192,4 @@ US citizens: US-Ireland income tax treaty applies; there is no estate tax treaty
 - 2026-10-15: initial research.
 - 2026-10-15: added prime rent (MyHome.ie sample, EUR 6,198/month) and NAIS Dublin fee (EUR 25,296, 2026-27); remittance-basis eligibility conditions now state that the 0% rates assume no remittance; domicile levy conditions re-checked against Revenue's Tax and Duty Manual Part 18C (August 2026).
 - 2026-10-15: holding-structure review: no structure added (33% gains, 25% passive income, 20% close-company surcharge, ~55% payout); holding_company_notes updated.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

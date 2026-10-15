@@ -153,3 +153,4 @@ US citizens: US-Belgium income tax treaty applies; no estate tax treaty. Belgium
 - 2026-10-15: initial research.
 - 2026-10-15: capital gains re-verified against the Law of 6 April 2026 (Moniteur belge 21 April 2026): 10% rate, EUR 10,000 indexed exemption (base EUR 4,855), effect 1 January 2026, withholding from 1 June 2026, 31 December 2025 step-up, substantial-holding bands; confidence raised to high/verified. Added prime rent (LuxuryEstate sample, EUR 7,950/month) and ISB fee (EUR 51,105, 2026-27).
 - 2026-10-15: Holding structures section: no structure modelled (company 25% on portfolio income; private foundations covered by the 2026 capital gains tax).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

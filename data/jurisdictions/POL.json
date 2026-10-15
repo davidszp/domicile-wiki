@@ -498,7 +498,7 @@
         "currency": "PLN"
       },
       "year": 2026,
-      "description": "Median asking rent of 73 houses of 200-400 m² for rent in Warsaw (mostly Wilanów, Mokotów/Sadyba, Saska Kępa and Żoliborz), from the first Otodom.pl results page (72 per page) on 15 Oct 2026; range PLN 13,000-47,500. Some listings are offered for office use; asking rents, utilities extra.",
+      "description": "Median asking rent of 73 houses of 200-400 m² for rent in Warsaw (mostly Wilanów, Mokotów/Sadyba, Saska Kępa and Żoliborz), from the first Otodom.pl results page (72 per page) on 15 Oct 2026; range PLN 13,000-47,500. Some listings are offered for office use; asking rents, utilities extra. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Domy na wynajem: Warszawa (200-400 m²)",
         "url": "https://www.otodom.pl/pl/wyniki/wynajem/dom/mazowieckie/warszawa/warszawa/warszawa?areaMin=200&areaMax=400&limit=72",

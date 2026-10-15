@@ -293,7 +293,7 @@
         "currency": "DKK"
       },
       "year": 2026,
-      "description": "Median asking rent of 12 houses/villas with 6+ rooms (about 4-5 bedrooms; Danish room counts include living rooms) listed on lejebolig.dk on 2026-10-15 in Gentofte municipality's prime districts: Hellerup, Charlottenlund, Gentofte and Klampenborg (DKK 29,800-120,000). Pages checked: lejebolig.dk/huse/hellerup, /charlottenlund, /gentofte, /klampenborg.",
+      "description": "Median asking rent of 12 houses/villas with 6+ rooms (about 4-5 bedrooms; Danish room counts include living rooms) listed on lejebolig.dk on 2026-10-15 in Gentofte municipality's prime districts: Hellerup, Charlottenlund, Gentofte and Klampenborg (DKK 29,800-120,000). Pages checked: lejebolig.dk/huse/hellerup, /charlottenlund, /gentofte, /klampenborg. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Lejebolig.dk - Huse til leje i Hellerup",
         "url": "https://www.lejebolig.dk/huse/hellerup",

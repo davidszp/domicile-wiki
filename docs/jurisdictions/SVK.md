@@ -84,3 +84,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15: resolved capital-gains base from the law text (general progressive base, not the separate 19% base) and added 15% uncapped health insurance to private_business_sale (0.35 -> 0.50); capital_gains now high/verified; added Bratislava cost of living (Nehnutelnosti.sk rent sample, BISB 2026/27 fee).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

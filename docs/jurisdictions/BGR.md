@@ -114,3 +114,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 
 - 2026-10-15: initial research.
 - 2026-10-15: added Sofia cost of living (imot.bg rent sample, AAS 2026-27 fees); read the 2026 PITA definition of regulated/growth market for the share-gain exemption.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

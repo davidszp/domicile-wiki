@@ -238,7 +238,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of the 15 distinct houses with 4 or more bedrooms listed for rent in Luxembourg City on athome.lu on 15 October 2026 (16 listings, one duplicate removed; range EUR 3,200-8,900; mostly 150-315 m² in Belair, Merl, Limpertsberg, Cents, Gasperich, Hamm, Hollerich and the centre). Asking rents excluding charges, not achieved rents.",
+      "description": "Median asking rent of the 15 distinct houses with 4 or more bedrooms listed for rent in Luxembourg City on athome.lu on 15 October 2026 (16 listings, one duplicate removed; range EUR 3,200-8,900; mostly 150-315 m² in Belair, Merl, Limpertsberg, Cents, Gasperich, Hamm, Hollerich and the centre). Asking rents excluding charges, not achieved rents. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "athome.lu: houses with 4+ bedrooms for rent in Luxembourg City (listing sample)",
         "url": "https://www.athome.lu/en/rent/house/luxembourg?bedrooms_min=4",

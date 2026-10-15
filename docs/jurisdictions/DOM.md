@@ -123,3 +123,4 @@ City: Santo Domingo (Los Cacicazgos / Arroyo Hondo / Bella Vista / Piantini).
 
 - 2026-10-15: initial research.
 - 2026-10-15: cost of living added: prime rent USD 4,500 (median of 69 SuperCasas 4-6 bed houses, prime DN sectors) and Carol Morgan School high school tuition USD 25,750 (State Department 2026 fact sheet).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

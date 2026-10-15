@@ -91,7 +91,7 @@ General corporate rate 0%; 10% for regulated financial services companies; 20% f
 
 City: St Helier.
 
-- **Prime rent (monthly):** 4,800 GBP (2026). Median asking rent of the 27 Jersey 4-5 bedroom houses listed to let by Livingroom on 2026-10-15, including 20 marked recently let (£2,750-£9,250 pcm; the 7 still available had a median of about £5,700). These are qualified-tenant (local market) homes; HVRs with 2(1)(e) consent can rent any property. Source: [Livingroom - Property to rent (Guernsey and Jersey)](https://www.livingroomproperty.com/rent).
+- **Prime rent (monthly):** 4,800 GBP (2026). Median asking rent of the 27 Jersey 4-5 bedroom houses listed to let by Livingroom on 2026-10-15, including 20 marked recently let (£2,750-£9,250 pcm; the 7 still available had a median of about £5,700). These are qualified-tenant (local market) homes; HVRs with 2(1)(e) consent can rent any property. Checked 2026-10-15 against the upper-middle-class standard. Source: [Livingroom - Property to rent (Guernsey and Jersey)](https://www.livingroomproperty.com/rent).
 - **International school fee (annual, per child):** 8,760 GBP (2026). Jersey College for Girls (government-provided fee-paying secondary school) 2026-27 fee £2,920 per term x 3 terms. Jersey's leading fee-paying schools are state-subsidised; private boarding in the UK would cost far more. Source: [Jersey College for Girls - Fees](https://jerseycollegeforgirls.com/jcg/fees).
 - Health insurance, housekeeper and price per m² not sourced. No World Bank price level for Jersey, so the app cannot compute the household-cost estimate even with rent and school fee.
 
@@ -138,3 +138,4 @@ US citizens: No US-Jersey income tax treaty; US tax applies on worldwide income 
 
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added rent (Livingroom, Jersey 4-5 bedroom lettings, £4,800/month); added duration_note to the HVR regime; P.51/2026 still unread (site blocks access), open question rewritten; added indicator overrides: WGI 2025 (six estimates from the World Bank API), life expectancy 83.2 and homicide rate 0.0 (Statistics Jersey Better Life Index 2025).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

@@ -247,14 +247,14 @@
     "city": "Nassau (western New Providence: Lyford Cay / Old Fort Bay)",
     "prime_rent_monthly": {
       "value": {
-        "amount": 25000,
+        "amount": 10000,
         "currency": "BSD"
       },
       "year": 2026,
-      "description": "Median of the three 4-5 bedroom houses in the gated Lyford Cay and Old Fort Bay communities listed for rent by Coldwell Banker Bahamas on 15 Oct 2026: Lyford Cay 4-bed USD 22,500; Old Fort Bay 4-bed USD 25,000 (marked rented); Old Fort Bay 5-bed with dock USD 45,000 (short-term allowed). Excluded: a 6-bed Lyford Cay waterfront estate at USD 55,000. Gated executive 4-5 bed homes nearer Cable Beach (Sandyport, Westridge) were listed at USD 10,000-12,000. Asking rents; BSD is at par with USD.",
+      "description": "Sandyport (gated canal-front community, Cable Beach area, western Nassau; upper-middle executive housing, not Lyford Cay or Old Fort Bay). Two 4-bedroom houses listed by Coldwell Banker Bahamas, both USD 10,000 a month and both marked RENTED, read 15 Oct 2026: a 4-bed, 4-bath, 3,200 sq ft (about 297 m2) house with pool, dock and generator (listing 71327), and a fully furnished 3-bed plus office (usable as a fourth bedroom), 2,500 sq ft (about 232 m2) canal-front house (listing 81437). Both give USD 10,000 (BSD at par with USD). Earlier note: gated executive 4-5 bed homes at Sandyport and Westridge were USD 10,000-12,000. Very thin sample, asking rents of let homes. Replaces the Lyford Cay/Old Fort Bay figure (BSD 25,000), which was ultra-prime.",
       "source": {
-        "title": "Coldwell Banker Bahamas: Bahamas property rentals (listings sorted by price, viewed 15 Oct 2026)",
-        "url": "https://www.coldwellbankerbahamas.com/bahamas-property-rentals",
+        "title": "Coldwell Banker Bahamas: RENTED Sandyport Executive Home For Rent (listing 71327; also listing 81437)",
+        "url": "https://www.coldwellbankerbahamas.com/listing-rented-nassau-executive-home-for-rent-71327.html",
         "publisher": "Coldwell Banker Lightbourn Realty (Bahamas)",
         "kind": "other",
         "accessed": "2026-10-15"
@@ -297,6 +297,7 @@
   "open_questions": [
     "Economic permanent residence certificate fees and any minimum-presence requirement (secondary sources cite 90 days a year; not confirmed officially).",
     "No indicator overrides added: The Bahamas is covered by World Bank/WGI data.",
-    "Prime purchase price per m2, family health insurance and housekeeper cost not sourced."
+    "Prime purchase price per m2, family health insurance and housekeeper cost not sourced.",
+    "Family rent rests on only two Sandyport 4-bedroom listings (both rented, USD 10,000); a larger Nassau sample (Sandyport, Westridge, Prospect Ridge) would firm it up."
   ]
 }

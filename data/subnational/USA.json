@@ -1630,7 +1630,7 @@
             "currency": "USD"
           },
           "year": 2026,
-          "description": "Median asking rent of all 26 single-family houses with 4 or 5 bedrooms listed for rent in Coral Gables (Miami-Dade) on Zillow, 15 October 2026 (range USD 4,400-35,000; 5-bedroom homes mostly USD 16,000-35,000).",
+          "description": "Median asking rent of all 26 single-family houses with 4 or 5 bedrooms listed for rent in Coral Gables (Miami-Dade) on Zillow, 15 October 2026 (range USD 4,400-35,000; 5-bedroom homes mostly USD 16,000-35,000). Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Zillow rental listings, Coral Gables, FL: 4-5 bedrooms (search of 15 October 2026)",
             "url": "https://www.zillow.com/coral-gables-fl/rentals/",
@@ -4380,7 +4380,7 @@
             "currency": "USD"
           },
           "year": 2026,
-          "description": "Median asking rent of 12 single-family houses with 4 or 5 bedrooms listed for rent in Cambridge (home of Buckingham Browne & Nichols) on Zillow, 15 October 2026 (range USD 4,100-16,000). Brookline (6 listings, median USD 6,600) and Newton (10, median USD 7,200) are cheaper.",
+          "description": "Median asking rent of 12 single-family houses with 4 or 5 bedrooms listed for rent in Cambridge (home of Buckingham Browne & Nichols) on Zillow, 15 October 2026 (range USD 4,100-16,000). Brookline (6 listings, median USD 6,600) and Newton (10, median USD 7,200) are cheaper. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Zillow rental listings, Cambridge, MA: 4-5 bedrooms (search of 15 October 2026)",
             "url": "https://www.zillow.com/cambridge-ma/rentals/",
@@ -5682,7 +5682,7 @@
             "currency": "USD"
           },
           "year": 2026,
-          "description": "Median asking rent of 33 single-family houses with 4 or 5 bedrooms listed for rent in ZIP 89135 (Summerlin South, including The Ridges) on Zillow, 15 October 2026 (range USD 2,195-35,000). Prime guard-gated estates in The Ridges ask far more than the median.",
+          "description": "Median asking rent of 33 single-family houses with 4 or 5 bedrooms listed for rent in ZIP 89135 (Summerlin South, including The Ridges) on Zillow, 15 October 2026 (range USD 2,195-35,000). Prime guard-gated estates in The Ridges ask far more than the median. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Zillow rental listings, 89135 (Summerlin South, Las Vegas), NV: 4-5 bedrooms (search of 15 October 2026)",
             "url": "https://www.zillow.com/las-vegas-nv-89135/rentals/",
@@ -6463,14 +6463,14 @@
         "city": "New York City",
         "prime_rent_monthly": {
           "value": {
-            "amount": 27500,
+            "amount": 8998,
             "currency": "USD"
           },
           "year": 2026,
-          "description": "Median asking rent of 23 rental listings with 4 or 5 bedrooms (apartments, condos and townhouses) on Manhattan's Upper East Side on Zillow, 15 October 2026 (range USD 7,595-111,000).",
+          "description": "Median asking rent of 26 single-family houses with 4 or 5 bedrooms (2,000-5,000 sq ft, about 185-465 m²) listed for rent on Zillow, 15 October 2026, in Westchester County's family suburbs: Scarsdale 13, Bronxville/Eastchester/Tuckahoe/Yonkers 4, Rye 4, Larchmont/Mamaroneck 2, Mount Kisco/Ossining 3 (first results page of each town; range USD 3,950-15,000; one Rye apartment excluded). Unfurnished houses assumed; asking rents. Replaces the Upper East Side median of USD 27,500 (range up to USD 111,000). Manhattan Upper West Side had one 4-5 bedroom listing (USD 19,500).",
           "source": {
-            "title": "Zillow rental listings, Upper East Side, New York, NY: 4-5 bedrooms (search of 15 October 2026)",
-            "url": "https://www.zillow.com/upper-east-side-new-york-ny/rentals/",
+            "title": "Zillow rental listings, Scarsdale, Bronxville, Rye, Larchmont and Chappaqua area, Westchester, NY: 4-5 bedroom houses (searches of 15 October 2026)",
+            "url": "https://www.zillow.com/scarsdale-ny/rentals/",
             "publisher": "Zillow",
             "kind": "other",
             "accessed": "2026-10-15"
@@ -6491,7 +6491,7 @@
             "accessed": "2026-10-15"
           }
         },
-        "notes": "Leading private day schools (e.g. Trinity, Dalton) charge roughly USD 65,000-72,000; not verified. Rent is a Zillow asking-rent median for the neighbourhood named; purchase prices not sourced."
+        "notes": "Leading private day schools (e.g. Trinity, Dalton) charge roughly USD 65,000-72,000; not verified. Rent is a Zillow asking-rent median for family houses in Westchester County towns (Scarsdale, Rye and others); the school fee is a Manhattan figure; purchase prices not sourced."
       },
       "markers": [
         {
@@ -8387,7 +8387,7 @@
             "currency": "USD"
           },
           "year": 2026,
-          "description": "Median asking rent of 14 single-family houses with 4 or 5 bedrooms listed for rent in ZIP 78746 (West Lake Hills / Westlake / Rollingwood, Austin) on Zillow, 15 October 2026 (range USD 4,500-20,000).",
+          "description": "Median asking rent of 14 single-family houses with 4 or 5 bedrooms listed for rent in ZIP 78746 (West Lake Hills / Westlake / Rollingwood, Austin) on Zillow, 15 October 2026 (range USD 4,500-20,000). Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Zillow rental listings, 78746 (West Lake Hills, Austin), TX: 4-5 bedrooms (search of 15 October 2026)",
             "url": "https://www.zillow.com/austin-tx-78746/rentals/",
@@ -9435,7 +9435,7 @@
             "currency": "USD"
           },
           "year": 2026,
-          "description": "Median asking rent of 30 single-family houses with 4 or 5 bedrooms listed for rent in ZIP 98004 (West Bellevue, across Lake Washington from Seattle) on Zillow, 15 October 2026 (range USD 4,150-22,500). Mercer Island: 25 listings, median USD 7,495.",
+          "description": "Median asking rent of 30 single-family houses with 4 or 5 bedrooms listed for rent in ZIP 98004 (West Bellevue, across Lake Washington from Seattle) on Zillow, 15 October 2026 (range USD 4,150-22,500). Mercer Island: 25 listings, median USD 7,495. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Zillow rental listings, 98004 (Bellevue), WA: 4-5 bedrooms (search of 15 October 2026)",
             "url": "https://www.zillow.com/bellevue-wa-98004/rentals/",
@@ -9809,7 +9809,7 @@
             "currency": "USD"
           },
           "year": 2026,
-          "description": "Median asking rent of 9 single-family houses with 4 or 5 bedrooms listed for rent in Teton County (Jackson, Wilson, Teton Village) on Zillow, 15 October 2026 (range USD 6,500-30,000); small sample, many listings are seasonal.",
+          "description": "Median asking rent of 9 single-family houses with 4 or 5 bedrooms listed for rent in Teton County (Jackson, Wilson, Teton Village) on Zillow, 15 October 2026 (range USD 6,500-30,000); small sample, many listings are seasonal. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Zillow rental listings, Teton County, WY: 4-5 bedrooms (search of 15 October 2026)",
             "url": "https://www.zillow.com/teton-county-wy/rentals/",

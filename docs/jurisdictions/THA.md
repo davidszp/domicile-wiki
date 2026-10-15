@@ -136,3 +136,4 @@ Many ISB families live near the school in Nichada Thani (Nonthaburi), where rent
 - 2026-10-15: initial research.
 - 2026-10-15: reviewed special-regime durations: LTR 10 years (5 + 5 renewal, unchanged).
 - 2026-10-15 (data-quality pass): standard-regime capital gains and dividends now state explicitly that the 35% foreign rates assume remittance (0% if kept abroad); LTR metrics state the exemption applies even when remitted. Added cost of living: Watthana 4-5 bedroom house asking rent THB 180,000 a month (Dot Property sample, n=278) and ISB High School tuition THB 1,197,000 (2026/27).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (THB 180,000).

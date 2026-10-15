@@ -166,3 +166,4 @@ City: Stockholm.
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added prime rent (Qasa, Danderyd/Lidingö houses, SEK 55,000/month); school fee now from Stockholm International School's own page (SEK 191,500, Grades 11-12, 2026-27); added duration_note to the ISK regime.
 - 2026-10-15: holding-structure review: no structure added (AB vs ISK explained); holding_company_notes updated.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (SEK 55,000).

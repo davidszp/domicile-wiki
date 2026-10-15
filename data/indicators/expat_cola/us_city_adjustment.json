@@ -1,0 +1,15 @@
+{
+  "source": "US Bureau of Economic Analysis, Regional Price Parities by metropolitan statistical area (MARPP, line 1: RPPs, all items)",
+  "url": "https://apps.bea.gov/regional/zip/MARPP.zip",
+  "year": 2024,
+  "from": {
+    "city": "New York",
+    "rpp": 112.563
+  },
+  "to": {
+    "city": "Austin, TX",
+    "rpp": 98.066
+  },
+  "factor": 0.8712,
+  "notes": "RPP index, US = 100, 2024 (BEA release of 2026-02-19; next release scheduled 2026-12-10; release page https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area, data table download https://apps.bea.gov/regional/downloadzip.htm). Metro areas: Austin-Round Rock-San Marcos, TX and New York-Newark-Jersey City, NY-NJ. All-items factor 0.8712. Housing component alone: Austin 120.361, New York 148.616 (ratio 0.8099). Goods: 93.757 vs 110.261."
+}

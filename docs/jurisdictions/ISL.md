@@ -57,3 +57,4 @@ City: Reykjavik.
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added rent (Igloo, capital-area 4-5 bedroom listings, ISK 510,000/month) and the MH IB Diploma cost (ISK 110,000/year; public school, no tuition).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

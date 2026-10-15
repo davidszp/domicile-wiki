@@ -273,7 +273,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 22 distinct houses (detached houses, townhouses and 'luxury homes') with 4+ bedrooms listed for rent in the Brussels-Capital Region on LuxuryEstate.com on 15 October 2026, mainly in Uccle, Ixelles and Woluwe-Saint-Pierre; range EUR 3,400-20,000, upper quartile about EUR 12,100. Agency asking rents aggregated by the portal.",
+      "description": "Median asking rent of 22 distinct houses (detached houses, townhouses and 'luxury homes') with 4+ bedrooms listed for rent in the Brussels-Capital Region on LuxuryEstate.com on 15 October 2026, mainly in Uccle, Ixelles and Woluwe-Saint-Pierre; range EUR 3,400-20,000, upper quartile about EUR 12,100. Agency asking rents aggregated by the portal. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "LuxuryEstate.com: luxury properties for rent in the Brussels-Capital Region (listing sample)",
         "url": "https://www.luxuryestate.com/rent/belgium/brussels-capital-region",

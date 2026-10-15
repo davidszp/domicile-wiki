@@ -207,7 +207,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of the 6 distinct houses (xalets/cases) with 4+ bedrooms listed for rent on Pisos.ad on 2026-10-15 (8 listings, two apparent duplicates removed): EUR 3,000 (Canillo), 3,500 (Pal), 5,000 (Aixirivall), 8,000 (Erts), 9,100 (Andorra la Vella), 10,000 (Encamp). Very small sample; asking rents.",
+      "description": "Median asking rent of the 6 distinct houses (xalets/cases) with 4+ bedrooms listed for rent on Pisos.ad on 2026-10-15 (8 listings, two apparent duplicates removed): EUR 3,000 (Canillo), 3,500 (Pal), 5,000 (Aixirivall), 8,000 (Erts), 9,100 (Andorra la Vella), 10,000 (Encamp). Very small sample; asking rents. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Cases de lloguer a Andorra, 4+ habitacions",
         "url": "https://www.pisos.ad/lloguer/cases/tots-subtipus?&minRooms=4&minBanys=0&maxRooms=0&maxBanys=0&minMetres=0&minPrice=0&maxPrice=0&reference=&caracteristiques=&order=&immo=0&parro=&promocions=False",

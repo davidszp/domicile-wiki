@@ -216,7 +216,7 @@
         "currency": "USD"
       },
       "year": 2026,
-      "description": "Median of the five St. Thomas long-term rental listings with 4-6 bedrooms on Island Real Estate (Christie's International Real Estate affiliate) MLS rentals page, filter 4+ beds, on 15 Oct 2026: USD 3,200 (4 bed, Anna's Retreat), 4,950 (4 bed, St. Joseph & Rosendahl, Northside), 7,500 (4 bed/5 bath, Lerkenlund, Northside), 8,500 (4 bed/4 bath condominium, Cowpet Bay West, Red Hook), 10,000 (6 bed, Bakkero, Frenchmans Bay). A 9-bedroom estate at USD 48,500 was excluded. Thin sample; asking rents, listings undated; furnishing not stated.",
+      "description": "Median of the five St. Thomas long-term rental listings with 4-6 bedrooms on Island Real Estate (Christie's International Real Estate affiliate) MLS rentals page, filter 4+ beds, on 15 Oct 2026: USD 3,200 (4 bed, Anna's Retreat), 4,950 (4 bed, St. Joseph & Rosendahl, Northside), 7,500 (4 bed/5 bath, Lerkenlund, Northside), 8,500 (4 bed/4 bath condominium, Cowpet Bay West, Red Hook), 10,000 (6 bed, Bakkero, Frenchmans Bay). A 9-bedroom estate at USD 48,500 was excluded. Thin sample; asking rents, listings undated; furnishing not stated. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "St. Thomas Long-Term Rentals (4+ beds)",
         "url": "https://www.usvirealestate.com/st-thomas-rentals/?min_bed=4",

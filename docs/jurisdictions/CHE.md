@@ -164,3 +164,4 @@ Zurich.
 - 2026-10-15: initial research.
 - 2026-10-15: added duration_note to the lump-sum regime (no statutory limit; ends on naturalisation, Swiss gainful activity or cantonal abolition); recorded the official result of the 30 November 2025 vote on the JUSO inheritance-tax initiative (rejected, 21.7% yes, all cantons); added Zurich prime rent (ImmoStreet sample, CHF 6,435/month).
 - 2026-10-15: Holding structures section: no structure modelled (private capital gains already untaxed).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

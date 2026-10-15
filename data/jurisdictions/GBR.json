@@ -683,14 +683,14 @@
     "notes": "Health insurance, housekeeper and price per m² not sourced. The school fee is for a Surrey international school; central London day schools charge similar or higher fees.",
     "prime_rent_monthly": {
       "value": {
-        "amount": 12500,
+        "amount": 6000,
         "currency": "GBP"
       },
       "year": 2026,
-      "description": "Median asking rent of 123 4-5 bedroom homes (houses and large flats) to let in the Royal Borough of Kensington and Chelsea on Rightmove on 2026-10-15, weekly rents converted at x52/12 (interquartile range £8,500-£15,167 pcm; 312 listings in total, newest first).",
+      "description": "Median asking rent of 24 4-bedroom houses and flats to let in Fulham (SW6/W14/W6 postcodes, Hammersmith and Fulham) on Rightmove on 2026-10-15 (35 results in all, first 24 distinct listings read; range £3,500-£22,500 pcm, mostly £5,000-£9,500; unfurnished/furnished not distinguished). Wandsworth (£3,100-£8,500, 24 read of 112) and Richmond (£3,000-£8,000, 10 results) were similar but not used. Replaces the Kensington and Chelsea figure (£12,500), which is ultra-prime.",
       "source": {
-        "title": "Rightmove - 4-5 bedroom property to rent in Kensington and Chelsea",
-        "url": "https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E61229&minBedrooms=4&maxBedrooms=5&sortType=6",
+        "title": "Rightmove - 4 bedroom property to rent in Fulham",
+        "url": "https://www.rightmove.co.uk/property-to-rent/Fulham.html?minBedrooms=4&maxBedrooms=4",
         "publisher": "Rightmove",
         "kind": "other",
         "accessed": "2026-10-15"
@@ -717,6 +717,6 @@
   "open_questions": [
     "A possible invitation-only investor visa was reported in 2026 but not announced; not included.",
     "Savings income rates rise to 22/42/47% from 6 April 2027 (Budget 2025) - matters for bond-heavy portfolios.",
-    "Prime London rent and price per m² not sourced."
+    "Prime London price per m² not sourced."
   ]
 }

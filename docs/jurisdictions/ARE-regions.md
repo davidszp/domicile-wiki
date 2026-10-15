@@ -48,7 +48,7 @@ No emirate income or inheritance tax. Dubai Land Department registration fee 4% 
 ### Abu Dhabi (AE-AZ)
 
 Federal capital. No emirate income or inheritance tax. Property registration fee on sales commonly reported as 2% of value (law-firm commentary; not confirmed from an official ADREC schedule). ADGM (Al Maryah and Al Reem islands) is a financial free zone that applies English common law directly, with its own courts and a non-Muslim wills registry; Abu Dhabi has its own non-Muslim personal status law (2021). Hotel municipality fee 4%. Schools regulated by ADEK.
-- **prime_rent_monthly**: 46,500 AED (2026). Saadiyat Island (ultra-luxury villa area), average asking rent of a 4-bedroom villa AED 558,000 a year in H1 2026 / 12 (5-bed: AED 762,000; Yas Island 4-bed AED 351,000). Bayut asking prices for ready properties advertised by agencies, not transactions. Source: [Bayut's Abu Dhabi Rental Market Report H1 2026](https://www.bayut.com/mybayut/abu-dhabi-rental-market-report-h1-2026/).
+- **prime_rent_monthly**: 29,250 AED (2026). Yas Island (luxury but not ultra-luxury; a family villa area), average asking rent of a 4-bedroom villa AED 351,000 a year in H1 2026 / 12 (5-bed: AED 425,000; Al Raha Gardens 4-bed AED 205,000; Saadiyat Island, the ultra-luxury area, AED 558,000 and no longer used). Bayut asking prices for ready properties advertised by agencies, not transactions. Source: [Bayut's Abu Dhabi Rental Market Report H1 2026](https://www.bayut.com/mybayut/abu-dhabi-rental-market-report-h1-2026/).
 - **intl_school_annual_fee**: 80,780 AED (2026). Brighton College Abu Dhabi (ADEK-regulated), Years 10-13 annual tuition 2026/27 (Year 9: AED 68,560). Source: [Brighton College Abu Dhabi - School fees 2026/27](https://www.brightoncollege.ae/admissions/school-fees).
 - In June 2026 Abu Dhabi froze rent increases on renewals (reported; not verified from ADREC). Purchase prices not sourced.
 
@@ -119,3 +119,10 @@ No emirate income or inheritance tax. East-coast emirate on the Gulf of Oman; em
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added prime villa rents for Dubai (Dubai Hills 4-bed, Property Monitor via Engel & Völkers), Abu Dhabi (Saadiyat 4-bed, Bayut H1 2026) and Ras Al Khaimah (Al Hamra Village 4-bed, Bayut 2025), RAK price per m2 and RAK Academy fee; Abu Dhabi 2% registration fee recorded as reported but unconfirmed.
 - 2026-10-15: household-cost pass: added villa rents for Sharjah (Tilal City, Bayut 2025), Ajman (Al Yasmeen, Bayut 2025), Umm Al Quwain and Fujairah (Property Finder listing medians), and 2026-27 school fees for Sharjah (Sharjah English School) and Ajman/Umm Al Quwain (Ajman Academy) and Fujairah (GEMS Winchester School - Fujairah).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (AE-DU Dubai Hills 4-bed AED 50,322).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (AE-SH Tilal City).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (AE-AJ Al Yasmeen).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (AE-UQ).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (AE-RK Al Hamra Village).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (AE-FU).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from AED 46,500 to AED 29,250 for AE-AZ (Saadiyat Island ultra-luxury to Yas Island 4-bed villa, Bayut H1 2026).

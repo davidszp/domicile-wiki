@@ -65,3 +65,4 @@ City: Oranjestad (Eagle Beach / Palm Beach / Noord).
 - 2026-10-15: initial research.
 - 2026-10-15: added prime rent from RE/MAX Aruba listings; school fee not published by QSI Aruba.
 - 2026-10-15: added international school fee (AWG 39,755, International School of Aruba Grades 9-12, 2025-26, from a 12 Jan 2026 Wayback snapshot; QSI publishes no 2026-27 tuition).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

@@ -240,7 +240,7 @@
         "currency": "GIP"
       },
       "year": 2026,
-      "description": "Median asking rent of 13 residential lettings with 4+ bedrooms on PropertyGibraltar.com on 2026-10-15 (14 listed; one at GBP 895, evidently a room let, excluded). Range GBP 3,350-14,000; South District and Westside villas GBP 6,700-14,000. Large family houses are scarce; most are apartments. Asking rents in GBP (GIP at par).",
+      "description": "Median asking rent of 13 residential lettings with 4+ bedrooms on PropertyGibraltar.com on 2026-10-15 (14 listed; one at GBP 895, evidently a room let, excluded). Range GBP 3,350-14,000; South District and Westside villas GBP 6,700-14,000. Large family houses are scarce; most are apartments. Asking rents in GBP (GIP at par). Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Gibraltar rentals, 4+ beds",
         "url": "https://www.propertygibraltar.com/rentals?sale=0&category=1&beds=4&order=price_desc&np=1",

@@ -445,7 +445,7 @@
         "currency": "NOK"
       },
       "year": 2026,
-      "description": "Median asking rent of 14 detached houses (enebolig) with 4-5 bedrooms for rent in Oslo municipality on finn.no on 2026-10-15 (NOK 30,500-180,000; one duplicate removed). The upper half is in the prime west (Bygdøy, Holmenkollen, Smestad, Vinderen) at NOK 55,000-180,000.",
+      "description": "Median asking rent of 14 detached houses (enebolig) with 4-5 bedrooms for rent in Oslo municipality on finn.no on 2026-10-15 (NOK 30,500-180,000; one duplicate removed). The upper half is in the prime west (Bygdøy, Holmenkollen, Smestad, Vinderen) at NOK 55,000-180,000. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "FINN.no - Bolig til leie, Oslo, enebolig, 4+ soverom",
         "url": "https://www.finn.no/realestate/lettings/search.html?location=0.20061&min_bedrooms=4&property_type=1",

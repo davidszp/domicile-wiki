@@ -737,15 +737,15 @@
     "notes": "Prime rent not sourced: immobiliare.it, idealista.it, casa.it and wikicasa.it blocked automated access, and the open portals sampled (Gabetti, Tecnocasa, realtor.com international) had too few whole-home 4-5 bedroom listings or were dominated by room lets. Purchase price, health insurance and housekeeper costs not sourced.",
     "prime_rent_monthly": {
       "value": {
-        "amount": 8250,
+        "amount": 3275,
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 12 distinct 4-6 bedroom homes in Milan on LuxuryEstate.com (snapshot 2026-10-15; interquartile range EUR 5,533-15,000; mostly 185-300 m2 flats). Asking rents; some listings are likely furnished short lets.",
+      "description": "Median asking rent of 10 distinct four-room (quadrilocale, about 3 bedrooms) flats of 130-178 m2 in Porta Romana / Montenero / Cadore (Milan) on MioAffitto, read 2026-10-15 from pages 1-4 of 5 of the Porta Romana quadrilocale search (61 results; repeated ads for the same flat counted once; flats under 130 m2 and the penthouse ignored). Range EUR 2,500-3,950; most are furnished or part-furnished; condominium charges excluded. Replaces the LuxuryEstate.com median of EUR 8,250, a luxury portal. Larger 5-room homes in CityLife or Washington would rent higher.",
       "source": {
-        "title": "LuxuryEstate.com - Luxury properties for rent in Milan",
-        "url": "https://www.luxuryestate.com/rent/italy/lombardy/milan/milan",
-        "publisher": "LuxuryEstate.com",
+        "title": "MioAffitto - Affitto quadrilocale Porta Romana, Milano",
+        "url": "https://mioaffitto.it/affitti/affitto-quadrilocale-porta-romana_0_67355_50/1",
+        "publisher": "MioAffitto",
         "kind": "other",
         "accessed": "2026-10-15"
       }
@@ -773,6 +773,7 @@
     "Investor and elective residence visa thresholds not verified.",
     "New TUIR (D.Lgs. 117/2026) applies from 1 Jan 2027: new article number for the flat tax and whether the 26% substitute tax (D.Lgs. 461/1997) and IVAFE/IVIE (DL 201/2011) are absorbed not confirmed; described as a consolidation without rate changes.",
     "Inheritance/gift relief for 24-bis (art. 1(158) L. 232/2016) read via secondary quotation, not on Normattiva.",
-    "Milan prime rent not sourced (main portals block automated access); purchase price, health insurance and housekeeper costs not sourced."
+    "Milan prime rent not sourced (main portals block automated access); purchase price, health insurance and housekeeper costs not sourced.",
+    "Milan family rent (EUR 3,275, MioAffitto Porta Romana) rests on four-room flats of 130-178 m2 (about 3 bedrooms); 5-room homes in CityLife/Washington/Isola were not found on portals that load and would rent higher."
   ]
 }

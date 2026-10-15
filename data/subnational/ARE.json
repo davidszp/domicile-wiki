@@ -29,7 +29,7 @@
             "currency": "AED"
           },
           "year": 2026,
-          "description": "Dubai Hills Estate, average annual rent of a 4-bedroom villa AED 603,860 (Property Monitor data, May 2026 YTD) / 12. 5-bedroom: AED 892,073 a year; Palm Jumeirah 4-bed AED 1,280,418; Dubai-wide 4-bed average AED 343,461.",
+          "description": "Dubai Hills Estate, average annual rent of a 4-bedroom villa AED 603,860 (Property Monitor data, May 2026 YTD) / 12. 5-bedroom: AED 892,073 a year; Palm Jumeirah 4-bed AED 1,280,418; Dubai-wide 4-bed average AED 343,461. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Villa rental prices in Dubai (Property Monitor data, May 2026 YTD)",
             "url": "https://www.engelvoelkers.com/ae/en/resources/villa-rental-prices",
@@ -78,11 +78,11 @@
         "city": "Abu Dhabi",
         "prime_rent_monthly": {
           "value": {
-            "amount": 46500,
+            "amount": 29250,
             "currency": "AED"
           },
           "year": 2026,
-          "description": "Saadiyat Island (ultra-luxury villa area), average asking rent of a 4-bedroom villa AED 558,000 a year in H1 2026 / 12 (5-bed: AED 762,000; Yas Island 4-bed AED 351,000). Bayut asking prices for ready properties advertised by agencies, not transactions.",
+          "description": "Yas Island (luxury but not ultra-luxury; a family villa area), average asking rent of a 4-bedroom villa AED 351,000 a year in H1 2026 / 12 (5-bed: AED 425,000; Al Raha Gardens 4-bed AED 205,000; Saadiyat Island, the ultra-luxury area, AED 558,000 and no longer used). Bayut asking prices for ready properties advertised by agencies, not transactions.",
           "source": {
             "title": "Bayut's Abu Dhabi Rental Market Report H1 2026",
             "url": "https://www.bayut.com/mybayut/abu-dhabi-rental-market-report-h1-2026/",
@@ -134,7 +134,7 @@
             "currency": "AED"
           },
           "year": 2025,
-          "description": "Tilal City (Sharjah's most popular villa-rental area in 2025), average asking rent of a 4-bedroom villa AED 186,000 a year / 12 (5-bed: AED 352,000; Hoshi 4-bed AED 152,000; Al Rahmaniya 4-bed AED 148,000). Bayut advertised prices for ready properties, not transactions; the report gives no figures for Al Zahia or Aljada. Villa rents rose by up to 31% in 2025.",
+          "description": "Tilal City (Sharjah's most popular villa-rental area in 2025), average asking rent of a 4-bedroom villa AED 186,000 a year / 12 (5-bed: AED 352,000; Hoshi 4-bed AED 152,000; Al Rahmaniya 4-bed AED 148,000). Bayut advertised prices for ready properties, not transactions; the report gives no figures for Al Zahia or Aljada. Villa rents rose by up to 31% in 2025. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Sharjah's Annual Market Report for 2025 by Bayut",
             "url": "https://www.bayut.com/mybayut/sharjah-market-report-2025/",
@@ -184,7 +184,7 @@
             "currency": "AED"
           },
           "year": 2025,
-          "description": "Al Yasmeen (the most-searched villa area in Ajman), average asking rent of a 4-bedroom villa AED 102,000 a year in 2025 / 12 (5-bed: AED 113,000; Al Zahya 4-bed AED 90,000). Bayut advertised prices, not transactions. Ajman has no high-end villa market comparable to Dubai.",
+          "description": "Al Yasmeen (the most-searched villa area in Ajman), average asking rent of a 4-bedroom villa AED 102,000 a year in 2025 / 12 (5-bed: AED 113,000; Al Zahya 4-bed AED 90,000). Bayut advertised prices, not transactions. Ajman has no high-end villa market comparable to Dubai. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Bayut's Ajman Annual Market Report for 2025",
             "url": "https://www.bayut.com/mybayut/ajman-market-report-2025/",
@@ -234,7 +234,7 @@
             "currency": "AED"
           },
           "year": 2026,
-          "description": "Median yearly rent AED 100,000 (99,999) / 12 of the 25 4-5 bedroom villa listings on the first results page (of 88) on Property Finder, 15 October 2026: 20 x 4-bed, 5 x 5-bed, mostly Al Salamah, also Al Raas and UAQ Marina (Mistral, AED 110,000-115,000). Range AED 65,000-140,000. Asking rents, not transactions; no market report covers Umm Al Quwain.",
+          "description": "Median yearly rent AED 100,000 (99,999) / 12 of the 25 4-5 bedroom villa listings on the first results page (of 88) on Property Finder, 15 October 2026: 20 x 4-bed, 5 x 5-bed, mostly Al Salamah, also Al Raas and UAQ Marina (Mistral, AED 110,000-115,000). Range AED 65,000-140,000. Asking rents, not transactions; no market report covers Umm Al Quwain. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Property Finder - 4-5 bedroom villas for rent in Umm Al Quwain (listings, 2026-10-15)",
             "url": "https://www.propertyfinder.ae/en/rent/umm-al-quwain/villas-for-rent.html?bdr%5B%5D=4&bdr%5B%5D=5",
@@ -287,7 +287,7 @@
             "currency": "AED"
           },
           "year": 2025,
-          "description": "Al Hamra Village (main expat villa community), average asking rent of a 4-bedroom villa AED 136,000 a year in 2025 / 12 (5-bed AED 320,000, likely a small sample). Bayut advertised prices, not transactions. Villa rents rose about 8% year on year to H1 2026 (Cavendish Maxwell, as reported; not opened).",
+          "description": "Al Hamra Village (main expat villa community), average asking rent of a 4-bedroom villa AED 136,000 a year in 2025 / 12 (5-bed AED 320,000, likely a small sample). Bayut advertised prices, not transactions. Villa rents rose about 8% year on year to H1 2026 (Cavendish Maxwell, as reported; not opened). Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Bayut's Annual Ras Al Khaimah Market Report for 2025",
             "url": "https://www.bayut.com/mybayut/rak-market-report-2025/",
@@ -354,7 +354,7 @@
             "currency": "AED"
           },
           "year": 2026,
-          "description": "Median yearly rent AED 95,000 / 12 of all 15 4-5 bedroom villa listings on Property Finder, 15 October 2026 (11 x 4-bed, 4 x 5-bed; Downtown Fujairah, Corniche, Al Faseel, Sakamkam, Mirbah, Al Dana Villas Sharm). Range AED 60,000-170,000. Asking rents, not transactions; thin market, and no market report covers Fujairah.",
+          "description": "Median yearly rent AED 95,000 / 12 of all 15 4-5 bedroom villa listings on Property Finder, 15 October 2026 (11 x 4-bed, 4 x 5-bed; Downtown Fujairah, Corniche, Al Faseel, Sakamkam, Mirbah, Al Dana Villas Sharm). Range AED 60,000-170,000. Asking rents, not transactions; thin market, and no market report covers Fujairah. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "Property Finder - 4-5 bedroom villas for rent in Fujairah (listings, 2026-10-15)",
             "url": "https://www.propertyfinder.ae/en/rent/fujairah/villas-for-rent.html?bdr%5B%5D=4&bdr%5B%5D=5",

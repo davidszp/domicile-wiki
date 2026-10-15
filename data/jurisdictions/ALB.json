@@ -217,7 +217,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent (EUR 2,500/month) of the 25 villas for rent in Tirana whose agency reference codes indicate a 2025–26 listing date (range EUR 1,000–10,000), out of 176 villa rentals listed in Real Estate Albania's 'Villa for rent in Tirana' section (12 pages) on 2026-10-15; the median of all 176, including older listings, is EUR 2,000. Bedroom counts are not consistently given, so the sample is villas generally (typically 200–500 m² built, often in Lundër/Long Hill, TEG, Sauk, Farka); some are offered for office use. Agency asking prices, not achieved rents. The reading of reference codes as month-year is our inference.",
+      "description": "Median asking rent (EUR 2,500/month) of the 25 villas for rent in Tirana whose agency reference codes indicate a 2025–26 listing date (range EUR 1,000–10,000), out of 176 villa rentals listed in Real Estate Albania's 'Villa for rent in Tirana' section (12 pages) on 2026-10-15; the median of all 176, including older listings, is EUR 2,000. Bedroom counts are not consistently given, so the sample is villas generally (typically 200–500 m² built, often in Lundër/Long Hill, TEG, Sauk, Farka); some are offered for office use. Agency asking prices, not achieved rents. The reading of reference codes as month-year is our inference. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Villa for rent in Tirana",
         "url": "https://www.realestate.al/en/villa-for-rent-in-Tirana",

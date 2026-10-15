@@ -71,3 +71,4 @@ City: Roseau (Morne Daniel / outskirts).
 - 2026-10-15: second pass. Re-checked cost of living with direct site checks; still no school fee schedule or rental listings found, open question sharpened. No other changes.
 - 2026-10-15: added prime rent (USD 4,000, median of three high-end furnished long lets near Roseau, Caribbean Paradise Realty); school fee still not sourced.
 - 2026-10-15: school fee re-checked with third-party and archive sources; still not sourced.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

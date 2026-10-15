@@ -67,7 +67,7 @@ CIT is 20%. Government proposal HE 151/2026 would cut it to 18% from 2027 (and c
 
 City: Helsinki.
 
-- **Prime rent (monthly):** 2,490 EUR (2026). Median asking rent of the 5 whole houses with 5+ rooms and 4 bedrooms for rent in Helsinki and Espoo on Qasa on 2026-10-15 (EUR 1,890-3,450; room lets excluded). Very thin sample, not limited to prime districts, so it probably understates a prime family house (e.g. Kulosaari, Westend). Source: [Qasa - houses for rent, Helsinki](https://qasa.com/fi/en/find-home?homeTypes=house&minRoomCount=5&searchAreas=Helsinki%7E%7Efi).
+- **Prime rent (monthly):** 4,000 EUR (2026). Median asking rent of 5 family homes of 113-164 m2 in the west-coast districts on Vuokraovi, read 2026-10-15: Lauttasaari, Helsinki (Katajaharju row house 5h 128 m2 EUR 2,900; Nahkahousunkuja 4, 3h 146 m2 EUR 4,000; Pohjoiskaari 6, 3h 113 m2 furnished EUR 3,700) and Espoo's Nuottaniemi (6h 164 m2 EUR 4,970) and Koukkuniemi (5h 159-167 m2 EUR 4,250). Range EUR 2,900-4,970. No 4+ room rental was listed in Munkkiniemi, Kulosaari or Westend itself (Westend had one studio). Asking rents; thin sample. Replaces EUR 2,490 (5 Qasa houses across Helsinki and Espoo). Source: [Vuokraovi - Vuokra-asunnot Lauttasaari](https://www.vuokraovi.com/vuokra-asunnot/helsinki/lauttasaari).
 - **International school fee (annual, per child):** 16,608 EUR (2026). International School of Helsinki, grades 11-12 (IB Diploma), basic + supplementary tuition 2026-2027, annual payment. Entry and other fees extra. Source: [ISH Summary of Annual Fees 2026-2027](https://ishelsinki.fi/wp-content/uploads/2026/04/Fee-summary-2026-2027-website.pdf).
 - Health insurance, housekeeper and price per m² not sourced. Vuokraovi and Oikotie listings could not be read automatically (scripted pages).
 
@@ -77,6 +77,7 @@ City: Helsinki.
 - Whether the 3-year residence tail applies to inheritance and gift tax.
 - The equity savings account cap.
 - Cost-of-living items.
+- Family rent (EUR 4,000) rests on 5 Vuokraovi listings in Lauttasaari, Nuottaniemi and Koukkuniemi; no 4+ room rentals were listed in Munkkiniemi, Kulosaari or Westend, and two of the five are 3-room flats of 113-146 m2.
 
 ## Sources
 - Finland - Individual - Income determination, PwC: https://taxsummaries.pwc.com/finland/individual/income-determination
@@ -95,8 +96,12 @@ City: Helsinki.
 - [Qasa - houses for rent, Helsinki](https://qasa.com/fi/en/find-home?homeTypes=house&minRoomCount=5&searchAreas=Helsinki%7E%7Efi)
 - Finland - Corporate - Income determination, PwC: https://taxsummaries.pwc.com/finland/corporate/income-determination
 - Dividend from an unlisted company, Vero: https://vero.fi/en/individuals/property/investments/dividends/dividend-from-an-unlisted-company/
+- [Vuokraovi - Vuokra-asunnot Lauttasaari, Helsinki](https://www.vuokraovi.com/vuokra-asunnot/helsinki/lauttasaari)
+- [Vuokraovi - Vuokra-asunnot omakotitalo, Espoo](https://www.vuokraovi.com/vuokra-asunnot/espoo/omakotitalo)
 
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added prime rent (Qasa, Helsinki/Espoo 4-bedroom houses, EUR 2,490/month; thin sample).
 - 2026-10-15: added the family investment Oy structure regime (`holding_oy`) and the Holding structures section; standard holding_company_notes updated.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (thin sample; open question added: may understate).
+- 2026-10-15: family rent re-checked a second time: changed from EUR 2,490 (Qasa) to EUR 4,000 (5 Vuokraovi listings, Lauttasaari/Nuottaniemi/Koukkuniemi); still thin.

@@ -63,3 +63,4 @@ City: Panama City (Costa del Este / Punta Pacifica).
 
 - 2026-10-15: initial research.
 - 2026-10-15: added cost of living (rent, price per m2, school fee) from Global Property Guide and the International School of Panama fee page.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

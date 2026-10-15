@@ -149,3 +149,4 @@ US citizens: No US-Liechtenstein income tax treaty (a TIEA and FATCA IGA exist).
 - 2026-10-15: added international school fee (International School Rheintal, CHF 35,470, 2026/27); prime rent still not sourced.
 - 2026-10-15: Holding structures section: no structure modelled (dedication tax prices out the wealth-tax saving). Tried again to source a Vaduz/Schaan prime rent: the main portals blocked automated access; the open question now names what is needed.
 - 2026-10-15: added prime rent (CHF 2,500, median of ten 5.5+-room house lets across Liechtenstein on immoboerse.li and nemo.li; no priced Vaduz house, so likely understates prime).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

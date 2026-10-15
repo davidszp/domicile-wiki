@@ -1,12 +1,12 @@
-import { h, extLink, fmtPct } from "../dom.js";
+import { h, extLink, fmtPct, fmtEur, moneyText } from "../dom.js";
 import { state, isIncomePersona } from "../state.js";
-import { personaMethodology } from "./persona.js";
+import { personaMethodology, personaCard } from "./persona.js";
 import { normalizeWeights, bandRange } from "../scoring.js";
 
 export function renderMethodology(panel) {
   if (isIncomePersona()) {
-    panel.append(h("h2", null, "Methodology"), ...personaMethodology(),
-      h("p", { class: "small muted" }, "Switch to Family office in the top bar for the investment-tax methodology, the indicator datasets, colour bands and missing-data rules, which apply to every persona."));
+    panel.append(h("h2", null, "Methodology"), personaCard(), personaCard(), ...personaMethodology(),
+      h("p", { class: "small muted" }, "Switch to HNWI in the top bar for the investment-tax methodology, the indicator datasets, colour bands and missing-data rules, which apply to every persona."));
     return;
   }
   const cfg = state.cfg;
@@ -28,16 +28,16 @@ export function renderMethodology(panel) {
     h("div", { class: "table-wrap" }, h("table", { class: "grid small" },
       h("thead", null, h("tr", null, h("th", null, "Metric"), h("th", null, "Points"), h("th", null, "Share"), h("th", null, "Transformation to 0–100"))),
       h("tbody", null, Object.entries(cfg.metrics).map(([k, m]) => h("tr", null, h("td", null, m.label), h("td", { class: "num" }, String(m.weight)),
-        h("td", { class: "num" }, fmtPct(w[k])), h("td", null, (cfg.tax_transforms[k] || cfg.nontax_transforms[k]).description)))))),
+        h("td", { class: "num" }, fmtPct(w[k])), h("td", null, moneyText((cfg.tax_transforms[k] || cfg.nontax_transforms[k]).description))))))),
     h("p", null, "Overall score = Σ (metric score × normalised weight). The tax-only score uses the four tax metrics alone."),
 
     h("h3", null, "3. Tax metrics use an effective burden, not headline rates"),
     h("p", null, h("strong", null, "Personal holding and holding structures. "), cfg.holding_assumption),
-    h("p", null, `Each tax metric is computed for an illustrative family: a €${(ref.portfolio / 1e6).toFixed(0)}M portfolio (${ref.foreign_share * 100}% foreign), €${(ref.realized_gains / 1e6).toFixed(1)}M realised gains and €${(ref.dividends / 1e6).toFixed(1)}M dividends a year, €${(ref.real_estate_local / 1e6).toFixed(0)}M home, €${(ref.net_wealth / 1e6).toFixed(0)}M net wealth, and a €${(ref.estate / 1e6).toFixed(0)}M estate passing to ${ref.children} children. A zero headline rate therefore does not guarantee 100: real-estate gains, business-sale gains, transfer duties and treaty access all count.`),
-    h("p", null, cfg.tax_transforms.time_limited_regimes.description),
+    h("p", null, `Each tax metric is computed for an illustrative family: a ${fmtEur(ref.portfolio)} portfolio (${ref.foreign_share * 100}% foreign), ${fmtEur(ref.realized_gains)} realised gains and ${fmtEur(ref.dividends)} dividends a year, ${fmtEur(ref.real_estate_local)} home, ${fmtEur(ref.net_wealth)} net wealth, and a ${fmtEur(ref.estate)} estate passing to ${ref.children} children. A zero headline rate therefore does not guarantee 100: real-estate gains, business-sale gains, transfer duties and treaty access all count.`),
+    h("p", null, moneyText(cfg.tax_transforms.time_limited_regimes.description)),
     h("p", null, "Special regimes: each jurisdiction is scored under the best regime the selected citizenship can use (for example Italy's lump-sum regime or Cyprus non-dom), with the standard regime shown alongside it. The regime used is the one a family would actually pick: the lowest expected tax cost in euros (annual capital gains, dividend and wealth taxes plus inheritance tax once per generation, over a 60-year, two-generation horizon, with time-limited regimes blended with the standard rules). The weights then compare countries, not regimes. Regimes that require employment, a directorship or another qualifying activity (Spain's Beckham law, Portugal's IFICI, France's impatriate regime, Barbados's Welcome Stamp) are not counted for a passive investor family unless “Family will work locally” is ticked."),
     h("p", null, "Lump sums (Italy, Greece, Swiss forfait, …) are fixed amounts, so their value depends on income: they are allocated across the metrics in proportion to the standard-regime taxes they replace, so a lump-sum regime scores better only when it actually costs less. Use the calculator to test larger or smaller incomes."),
-    h("p", null, h("strong", null, "US citizens. "), cfg.us_citizen_overlay.description),
+    h("p", null, h("strong", null, "US citizens. "), moneyText(cfg.us_citizen_overlay.description)),
     h("p", null, h("strong", null, "US dividend withholding. "), cfg.us_dividend_withholding.description, " ", cfg.us_dividend_withholding.exclusions_note, " Source: ",
       extLink(cfg.us_dividend_withholding.source.url, cfg.us_dividend_withholding.source.title), "."),
 

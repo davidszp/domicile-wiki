@@ -140,7 +140,7 @@ def price_level(jid: str, indicators: dict, cfg: dict, all_ind: dict) -> tuple[f
 
 
 def income_personas(cfg: dict) -> dict[str, dict]:
-    """Personas scored on earned income (everything except the family office)."""
+    """Personas scored on earned income (everything except the HNWI persona, id family_office)."""
     return {k: p for k, p in cfg["personas"].items() if "income_kind" in p}
 
 

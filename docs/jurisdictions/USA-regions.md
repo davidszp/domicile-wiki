@@ -299,9 +299,9 @@ State corporate income taxes (0% to about 11.5%) apply on top of federal 21% CIT
 
 ### New York (New York City)
 
-- prime_rent_monthly: USD 27,500 (2026). Median asking rent of 23 rental listings with 4 or 5 bedrooms (apartments, condos and townhouses) on Manhattan's Upper East Side on Zillow, 15 October 2026 (range USD 7,595-111,000). Source: [Zillow rental listings, Upper East Side, New York, NY: 4-5 bedrooms (search of 15 October 2026)](https://www.zillow.com/upper-east-side-new-york-ny/rentals/).
+- prime_rent_monthly: USD 8,998 (2026). Median asking rent of 26 single-family houses with 4 or 5 bedrooms (2,000-5,000 sq ft) listed for rent on Zillow, 15 October 2026, in Westchester County's family suburbs: Scarsdale 13, Bronxville/Eastchester/Tuckahoe/Yonkers 4, Rye 4, Larchmont/Mamaroneck 2, Mount Kisco/Ossining 3 (first results page of each town; range USD 3,950-15,000). Replaces the Upper East Side median of USD 27,500. Source: [Zillow rental listings, Scarsdale, Bronxville, Rye, Larchmont and Chappaqua area, Westchester, NY: 4-5 bedroom houses (searches of 15 October 2026)](https://www.zillow.com/scarsdale-ny/rentals/).
 - intl_school_annual_fee: USD 52,167 (2026). United Nations International School, Grade 12 tuition 2026-27 (grades 9-10 USD 50,911), plus USD 1,400 capital surcharge. Source: [Tuition and fees 2026-27](https://www.unis.org/admissions/tuition-fees-2026-27).
-- Leading private day schools (e.g. Trinity, Dalton) charge roughly USD 65,000-72,000; not verified. Rent is a Zillow asking-rent median for the neighbourhood named; purchase prices not sourced.
+- Leading private day schools (e.g. Trinity, Dalton) charge roughly USD 65,000-72,000; not verified. Rent is a Zillow asking-rent median for family houses in Westchester County towns (Scarsdale, Rye and others); the school fee is a Manhattan figure; purchase prices not sourced.
 
 ### Texas (Austin)
 
@@ -389,7 +389,7 @@ State corporate income taxes (0% to about 11.5%) apply on top of federal 21% CIT
 - [Zillow rental listings, Cambridge, MA: 4-5 bedrooms (search of 15 October 2026)](https://www.zillow.com/cambridge-ma/rentals/)
 - [Montana Code Annotated 15-30-2103 (rate of tax; net long-term capital gains), MCA 2025](https://mca.legmt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html)
 - [Zillow rental listings, 89135 (Summerlin South, Las Vegas), NV: 4-5 bedrooms (search of 15 October 2026)](https://www.zillow.com/las-vegas-nv-89135/rentals/)
-- [Zillow rental listings, Upper East Side, New York, NY: 4-5 bedrooms (search of 15 October 2026)](https://www.zillow.com/upper-east-side-new-york-ny/rentals/)
+- [Zillow rental listings, Scarsdale, Bronxville, Rye, Larchmont and Chappaqua area, Westchester, NY: 4-5 bedroom houses (searches of 15 October 2026)](https://www.zillow.com/scarsdale-ny/rentals/)
 - [S.C. Code Title 12, Chapter 6 (sections 12-6-510 tax rates and 12-6-1150 net capital gain deduction)](https://www.scstatehouse.gov/code/t12c006.php)
 - [Zillow rental listings, 78746 (West Lake Hills, Austin), TX: 4-5 bedrooms (search of 15 October 2026)](https://www.zillow.com/austin-tx-78746/rentals/)
 - [Zillow rental listings, 98004 (Bellevue), WA: 4-5 bedrooms (search of 15 October 2026)](https://www.zillow.com/bellevue-wa-98004/rentals/)
@@ -400,3 +400,10 @@ State corporate income taxes (0% to about 11.5%) apply on top of federal 21% CIT
 - 2026-10-15: initial research.
 - 2026-10-15 (data-quality pass): added prime_rent_monthly (Zillow asking-rent medians for 4-5 bedroom homes, 15 October 2026) for Florida (Coral Gables, USD 15,250), New York (Upper East Side, USD 27,500), Massachusetts (Cambridge, USD 9,900), Texas (78746 West Lake Hills, USD 6,800), Nevada (89135 Summerlin South, USD 4,995), Washington (98004 Bellevue, USD 7,968) and Wyoming (Teton County, USD 17,500; still no school fee, so Wyoming's cost stays unscored). California (San Francisco) rent not added: Zillow blocked further requests and no other usable sample was found. Montana capital gains/dividends verified against MCA 15-30-2103 (confidence low -> high); South Carolina's 44% capital gain deduction verified in S.C. Code 12-6-1150 (confidence low -> medium; 6% vs 6.2% rate for 2026 still open). Hawaii, Illinois and Rhode Island estate tax items remain low confidence (statute sites still refused access).
 - 2026-10-15: (1) combined state+federal estate brackets re-based on the USD 30M federal exclusion with portability (the federal 40% bracket now starts where the estate net of state tax exceeds USD 30M); (2) each state's capital gains, dividend and estate overrides are mirrored into the dynasty_trust regime, because grantor-trust income and the remaining estate stay subject to state tax.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (US-FL Coral Gables).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (US-MA Cambridge).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (US-NV Summerlin South).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (US-TX Austin 78746).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (US-WA West Bellevue).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (US-WY Teton County).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from USD 27,500 to USD 8,998 for US-NY (Manhattan Upper East Side apartments to Westchester family houses, Zillow).

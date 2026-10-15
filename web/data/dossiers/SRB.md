@@ -105,3 +105,4 @@ Health insurance and housekeeper costs not sourced.
 
 - 2026-10-15: initial research.
 - 2026-10-15: phase 2 data-quality pass: added Belgrade cost of living (Dedinje/Senjak prime house rent EUR 4,000/month median from 4zida.rs; International School of Belgrade Grades 9-12 USD 28,945 for 2026/27).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

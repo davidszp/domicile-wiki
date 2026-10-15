@@ -64,9 +64,7 @@ them separately.
 
 Monaco.
 
-- Prime family rent: EUR 110,000/month, the median of 11 distinct 4-5 bedroom apartments for rent on
-  LuxuryEstate.com on 15 October 2026 (range EUR 22,000-190,000; 4-bedroom flats of 200-300 m² asked
-  EUR 22,000-35,000). Very dispersed; the median is pulled up by large Carré d'Or and Monte-Carlo units.
+- Prime family rent: EUR 28,500/month for a 4-bedroom flat of about 200-300 m² (midpoint of the EUR 22,000-35,000 asking rents of such flats on LuxuryEstate.com, 15 Oct 2026), consistent with prime rents of about EUR 114.50/m² a month ([Jarnias, 2026](https://www.jarniascyril.com/?p=25449)). The sample's EUR 110,000 median reflected 400-700 m² penthouses and duplexes and is not used.
 - International school: International School of Monaco, Classes 10-13, EUR 34,400 a year for 2025/26 (latest published
   table); one-time registration EUR 2,000 and Capital Development Fund EUR 10,000 (EUR 25,000 in the 2026-27
   bilingual-section terms).
@@ -90,6 +88,9 @@ Monaco.
 - [LuxuryEstate.com: luxury properties for rent in Monaco (listing sample)](https://www.luxuryestate.com/rent/monaco) — LuxuryEstate.com (other)
 - [The International School of Monaco: Enrolment Terms & Conditions 2025-26](https://ismonaco.org/wp-content/uploads/2025/01/Enrolment-Terms-Conditions-2025-26.pdf) — The International School of Monaco (other)
 
+- [Rental yield in Monaco: what an apartment in Monte-Carlo really earns in 2026](https://www.jarniascyril.com/?p=25449) — Cyril Jarnias (other)
+
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15: re-checked direct-line 0% inheritance rate on the government page; recorded that WGI does cover Monaco while homicide/HDI/CPI have no official same-definition source (no override added); added prime rent (LuxuryEstate sample, EUR 110,000/month) and ISM fee (EUR 34,400, 2025/26).
+- 2026-10-15: prime rent corrected from EUR 110,000 to EUR 28,500 a month: the earlier median was dominated by 400-700 m² penthouses; now a 200-300 m² 4-bedroom flat, cross-checked against EUR 114.50/m².

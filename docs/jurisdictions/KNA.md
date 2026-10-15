@@ -68,3 +68,4 @@ City: Basseterre / Frigate Bay (St Kitts).
 - 2026-10-15: initial research.
 - 2026-10-15: second pass. Re-checked cost of living with direct site checks; still no school fee schedule or rental listings found, open question sharpened. No other changes.
 - 2026-10-15: added cost of living: St. Kitts International Academy Grades 11-12 expatriate fee (XCD 25,440, 2025-26) and prime rent (USD 3,000, single 4-bed listing).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

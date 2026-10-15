@@ -41,7 +41,7 @@ export const state = {
   includeStructures: true, // count holding structures (GmbH, foundation, ...)
   view: "world",
   layer: "overall",
-  showRegions: true,
+  showRegions: false, // cantons, Spanish and Italian regions: off until the user ticks the box
   selected: null,
   compare: [],
   shortlist: [],
@@ -113,6 +113,12 @@ export const isIncomePersona = (persona = state.persona) => persona !== "family_
 
 export function personaCfg(persona = state.persona) {
   return state.cfg.personas[persona];
+}
+
+/** The persona's name for use inside a sentence: lower case, except acronyms such as "HNWI". */
+export function personaNoun(persona = state.persona) {
+  const label = personaCfg(persona).label;
+  return label === label.toUpperCase() ? label : label.toLowerCase();
 }
 
 /** Metric definitions (label, group, default weight) for a persona. */

@@ -111,3 +111,4 @@ US citizens: No US–Albania income tax treaty was found in the PwC treaty list,
 - 2026-10-15: initial research.
 - 2026-10-15: phase 2 data-quality pass: added World Academy of Tirana 2026-27 IB Diploma fee (EUR 14,950 incl. guarantee fee). Prime rent not sourced (listing portals not machine-readable), so the cost metric stays unscored.
 - 2026-10-15: cost-of-living pass: added Tirana prime rent (EUR 2,500/month, median of 25 recent villa-rental listings on Real Estate Albania), so the household cost metric is now scorable.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

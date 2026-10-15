@@ -278,7 +278,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median of the 8 priced houses for rent in and around Vilnius in Baltic Sotheby's International Realty's rental list on 15 Oct 2026 (EUR 1,700-4,700; Antakalnis new-build 226 m² 4 bedrooms EUR 4,700, Antakalnis 140 m² EUR 3,900, golf-course villas in Vilnius district 125-345 m² EUR 1,700-2,600, several already let). The four homes with 4-5 bedrooms also have a median of EUR 2,400. Thin sample: the main portals (Aruodas, Domoplius, Skelbiu) blocked automated access.",
+      "description": "Median of the 8 priced houses for rent in and around Vilnius in Baltic Sotheby's International Realty's rental list on 15 Oct 2026 (EUR 1,700-4,700; Antakalnis new-build 226 m² 4 bedrooms EUR 4,700, Antakalnis 140 m² EUR 3,900, golf-course villas in Vilnius district 125-345 m² EUR 1,700-2,600, several already let). The four homes with 4-5 bedrooms also have a median of EUR 2,400. Thin sample: the main portals (Aruodas, Domoplius, Skelbiu) blocked automated access. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Find a property - for rent (houses)",
         "url": "https://lt.balticsothebysrealty.com/en/find-a-property/?action=rent&type=house",

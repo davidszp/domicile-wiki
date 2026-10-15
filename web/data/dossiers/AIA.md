@@ -72,3 +72,4 @@ City: The Valley.
 - 2026-10-15: cost of living pass: added Omololu International School tuition (USD 9,000, international Grades 7-11); prime rent still not sourced.
 - 2026-10-15: rent re-checked (Island Dream Properties long-term label shows nightly rates only); still not sourced.
 - 2026-10-15: prime rent added: USD 4,000 a month, single 4-bed long-let listing (Axarealtor, Sile Bay); open question narrowed to sample size.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

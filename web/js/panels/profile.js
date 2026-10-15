@@ -1,9 +1,9 @@
-import { h, clear, extLink, fmtPct, fmtScore, fmtEur, fmtMoney } from "../dom.js";
-import { state, entries, jur, toggleIn, MAX_COMPARE, metricsFor, isIncomePersona, personaCfg } from "../state.js";
+import { h, append, clear, extLink, displayCurrency, moneyText, fmtPct, fmtScore, fmtEur, fmtMoney } from "../dom.js";
+import { state, entries, jur, toggleIn, MAX_COMPARE, metricsFor, isIncomePersona, personaCfg, personaNoun } from "../state.js";
 import { loadProfile, loadDossier } from "../data.js";
 import { bandFor, TAX_METRICS } from "../scoring.js";
 import { renderMarkdown } from "../markdown.js";
-import { renderPersonaBody } from "./persona.js";
+import { renderPersonaBody, personaCard } from "./persona.js";
 
 const STATUS = {
   verified: ["Verified", "All four tax metrics verified against sources; at least 90% of weighted data present."],
@@ -117,7 +117,7 @@ function nontaxTable(p) {
     const d = p.nontax_detail[k] || {};
     const comps = Object.entries(d.components || {}).map(([c, v]) => `${c.replaceAll("_", " ")}: ${v === null ? "missing" : v.toFixed(0)}`).join(" · ");
     rows.push(h("tr", null, h("th", { scope: "row" }, cfg.metrics[k].label), h("td", null, scoreChip(d.score ?? null, cfg)),
-      h("td", { class: "small" }, comps, d.partial ? " (partial)" : "", h("div", { class: "muted" }, spec.description))));
+      h("td", { class: "small" }, comps, d.partial ? " (partial)" : "", h("div", { class: "muted" }, moneyText(spec.description)))));
   }
   return h("div", { class: "table-wrap" }, h("table", { class: "grid" }, h("thead", null, h("tr", null, h("th", null, "Metric"), h("th", null, "Score"), h("th", null, "Components and method"))), h("tbody", null, rows)));
 }
@@ -138,13 +138,13 @@ function costSection(p) {
   const items = [];
   if (col) {
     const it = (label, x) => x && items.push(h("li", null, `${label}: ${fmtMoney(x.value.amount, x.value.currency)} (${x.year}) — ${x.description} `, extLink(x.source.url, x.source.publisher)));
-    it("Prime 4–5 bedroom rent / month", col.prime_rent_monthly);
+    it("Family home rent (about 4 bedrooms, upper-middle-class area) / month", col.prime_rent_monthly);
     it("Prime purchase price / m²", col.prime_price_per_m2);
     it("International school / child / year", col.intl_school_annual_fee);
     it("Family health insurance / year", col.family_health_insurance_annual);
     it("Full-time housekeeper / month", col.housekeeper_monthly);
   }
-  return h("section", null, h("h3", null, "Annual Household Cost", col ? ` — ${col.city}` : ""),
+  return h("details", { class: "fold" }, h("summary", null, h("h3", null, "Annual Household Cost", col ? ` — ${col.city}` : "", hc ? `: ${fmtEur(hc.total_eur)}` : "")),
     p.cost_from_parent ? h("p", { class: "notice small" }, `No regional cost data yet: these are the national figures for ${p.cost_from_parent}.`) : null,
     hc ? h("p", null, h("strong", null, `Annual Household Cost (estimate, not taxes): ${fmtEur(hc.total_eur)}`),
       ` (rent ${fmtEur(hc.parts.rent)}, three school places ${fmtEur(hc.parts.schools)}, health ${fmtEur(hc.parts.health_insurance)}, housekeeper ${fmtEur(hc.parts.housekeeper)}, other spending ${fmtEur(hc.parts.other_spending)}).`,
@@ -152,8 +152,16 @@ function costSection(p) {
       hc.price_level_note ? ` ${hc.price_level_note}` : "")
       : h("p", { class: "muted" }, col && col.prime_rent_monthly && col.intl_school_annual_fee
         ? "Not scored: no price level is available to estimate everyday spending, health insurance and staff costs."
-        : "Not scored: prime rent and international-school fees have not both been sourced."),
+        : "Not scored: family home rent and international-school fees have not both been sourced."),
     items.length ? h("ul", { class: "small" }, items) : null);
+}
+
+/** A section folded under its heading, closed by default: detail most readers can skip. */
+function fold(parent, title, ...children) {
+  const sec = h("details", { class: "fold" }, h("summary", null, h("h3", null, title)));
+  append(sec, children); // the helper skips null children instead of printing "null"
+  parent.append(sec);
+  return sec;
 }
 
 function subRegions(id, ctx) {
@@ -183,9 +191,10 @@ export function renderProfile(panel, ctx) {
   const id = state.selected;
   if (!id) {
     panel.append(h("div", { class: "intro" },
-      h("h2", null, "Family-office relocation map"),
-      h("p", null, "Click a country, region, island marker or search for a jurisdiction to see its tax rules, scores and sources. Use the view buttons for the Europe, UAE and Caribbean close-ups, where small jurisdictions get their own clickable markers."),
-      h("p", null, "Taxation carries the most weight by default: capital gains, dividends, inheritance to children and wealth tax. Weights are adjustable under Weights, and every score is explained under Method."),
+      h("h2", null, "Where should you make your home?"),
+      h("p", null, "Pick who is moving in the top bar: a high-net-worth family (HNWI), an expat employee or a digital nomad. Each is scored on what matters to them, with the assumptions below. Then click a country, region or island marker, or search, to see its rules, scores and sources."),
+      personaCard(),
+      h("p", null, "Every score is explained under Method; weights are adjustable under Weights. The Europe, UAE and Caribbean close-ups give small jurisdictions their own clickable markers."),
       h("p", { class: "disclaimer" }, "Illustrative research, not tax or legal advice. Rules change and individual circumstances differ; consult qualified advisers in each jurisdiction.")));
     return;
   }
@@ -207,9 +216,10 @@ export function renderProfile(panel, ctx) {
         onclick: (e) => { toggleIn("compare", id, { max: MAX_COMPARE }); e.currentTarget.textContent = compareLabel(id); } }, compareLabel(id)),
       h("button", { onclick: () => ctx.select(id) }, "Show on map")));
   panel.append(head);
+  panel.append(h("details", { class: "persona-fold" }, h("summary", null, `Who is this scored for? ${personaCfg().label}: ${personaCfg().profile.headline}`), personaCard()));
   if (e.ko && e.ko.length) {
     panel.append(h("div", { class: "ko-box", role: "note" },
-      h("strong", null, isIncomePersona() ? `Knocked out for the ${personaCfg().label.toLowerCase()} persona.` : "Knocked out: family wealth is not considered safe here long-term."),
+      h("strong", null, isIncomePersona() ? `Knocked out for the ${personaNoun()} persona.` : "Knocked out: family wealth is not considered safe here long-term."),
       h("ul", null, e.ko.map((k) => h("li", null, h("strong", null, `${k.label}: `),
         k.value !== null ? `${k.value} (threshold ${k.threshold}). ` : "", k.explanation))),
       r.rawScore ? h("div", { class: "small" }, `Unadjusted overall score would be ${fmtScore(r.rawScore)}; tax score ${fmtScore(r.taxScore)}.`) : null));
@@ -243,9 +253,9 @@ export function renderProfile(panel, ctx) {
     if (state.citizenship === "US") body.append(h("p", { class: "small muted" }, "US citizens remain subject to US federal tax; scores apply max(local, US) as described under Method."));
 
     // Regimes
-    body.append(h("h3", null, "Tax regimes available to ", { EU: "EU citizens", US: "US citizens", OTHER: "other nationals" }[state.citizenship]));
-    if (!rows.length) body.append(h("p", { class: "muted" }, "No regime recorded as available to this citizenship."));
-    body.append(h("div", { class: "table-wrap" }, h("table", { class: "grid" },
+    const regSec = fold(body, ["Tax regimes available to ", { EU: "EU citizens", US: "US citizens", OTHER: "other nationals" }[state.citizenship]]);
+    if (!rows.length) regSec.append(h("p", { class: "muted" }, "No regime recorded as available to this citizenship."));
+    regSec.append(h("div", { class: "table-wrap" }, h("table", { class: "grid" },
       h("thead", null, h("tr", null, h("th", null, "Regime"), h("th", null, "Duration"), ...TAX_METRICS.map((m) => h("th", null, state.cfg.metrics[m].label.replace(" tax", "").replace(" taxation", ""))))),
       h("tbody", null, rows.map((row) => h("tr", { class: best && best.id === row.id ? "best" : "" },
         h("td", null, row.name, best && best.id === row.id ? h("span", { class: "badge" }, "used for score") : null,
@@ -255,7 +265,7 @@ export function renderProfile(panel, ctx) {
           row.cost !== null && row.cost !== undefined ? h("div", { class: "small muted", title: "Expected tax cost a year: capital gains, dividends and wealth tax, plus inheritance tax once per generation over 60 years" }, `≈ ${fmtEur(row.cost)}/yr`) : null),
         ...TAX_METRICS.map((m) => h("td", null, scoreChip(row.scores[m], state.cfg)))))))));
     for (const reg of d.regimes.slice(1)) {
-      body.append(h("details", { class: "regime" }, h("summary", null, reg.type === "structure" ? "Structure: " : "", reg.name, reg.duration_years ? ` (${reg.duration_years} years)` : ""),
+      regSec.append(h("details", { class: "regime" }, h("summary", null, reg.type === "structure" ? "Structure: " : "", reg.name, reg.duration_years ? ` (${reg.duration_years} years)` : ""),
         h("p", null, reg.description), h("p", { class: "small" }, h("strong", null, "Eligibility: "), reg.eligibility),
         reg.structure ? h("dl", { class: "small" },
           field("Vehicle", `${reg.structure.entity} (${reg.structure.kind})`),
@@ -274,29 +284,29 @@ export function renderProfile(panel, ctx) {
     const std = d.regimes[0];
     const det = best ? (rows.find((x) => x.id === best.id) || {}).detail || {} : {};
     const viaStructure = regData && regData.type === "structure";
-    body.append(h("h3", null, viaStructure ? `Taxation via ${regData.structure.entity}` : "Personal taxation"),
+    const taxSec = fold(body, viaStructure ? `Taxation via ${regData.structure.entity}` : "Personal taxation",
       h("p", { class: "small muted" }, viaStructure
         ? `Rates below are structure-level taxes. The family withdraws ${fmtEur(state.cfg.reference_family.annual_payout)} a year, taxed at ${fmtPct(regData.structure.payout_tax_rate)}; that payout tax and running costs are included in the effective rates.`
         : "Assets held directly by resident private individuals: no company, foundation or trust wrapper."));
     for (const m of ["capital_gains", "dividends", "inheritance", "wealth_tax"]) {
       const own = regData && regData[m];
-      body.append(taxCard(m, own || std[m], det[m], own && regData.type !== "standard" ? regData.name : null, d.currency));
+      taxSec.append(taxCard(m, own || std[m], det[m], own && regData.type !== "standard" ? regData.name : null, d.currency));
     }
 
-    body.append(h("h3", null, "Residency and eligibility"), h("p", null, d.residency.tax_residency_test),
+    fold(body, "Residency and eligibility", h("p", null, d.residency.tax_residency_test),
       d.residency.routes.length ? h("ul", null, d.residency.routes.map((rt) => h("li", null, h("strong", null, rt.name), ` (${rt.citizenships.join(", ")}): ${rt.requirements}`,
         rt.minimum_investment ? ` Minimum ${fmtMoney(rt.minimum_investment.amount, rt.minimum_investment.currency)}.` : ""))) : null,
       sourceList(d.residency.sources));
-    body.append(h("h3", null, "Company taxation"), h("p", { class: "small muted" }, "Shown separately: company tax does not enter the personal tax scores."),
+    fold(body, "Company taxation", h("p", { class: "small muted" }, "Shown separately: company tax does not enter the personal tax scores."),
       h("p", null, `Headline corporate income tax: ${fmtPct(d.corporate.cit_rate)}. ${d.corporate.summary}`),
       d.corporate.special_zones ? h("p", { class: "small" }, d.corporate.special_zones) : null, sourceList(d.corporate.sources));
 
-    body.append(h("h3", null, "Safety, stability, institutions and quality of life"), nontaxTable(p), indicatorTable(p));
+    fold(body, "Safety, stability, institutions and quality of life", nontaxTable(p), indicatorTable(p));
     body.append(costSection(p));
     const sub = subRegions(e.parent ? e.parent : id, ctx);
     if (sub && !e.parent) body.append(sub);
-    if (d.open_questions && d.open_questions.length) body.append(h("section", null, h("h3", null, "Open questions"), h("ul", null, d.open_questions.map((q) => h("li", null, q)))));
-    body.append(h("p", { class: "small muted" }, `Researched ${d.researched_on}. Amounts converted to EUR at ECB reference rates of ${state.data.meta.fx_date}.`));
+    if (d.open_questions && d.open_questions.length) body.append(h("details", { class: "fold" }, h("summary", null, h("h3", null, `Open questions (${d.open_questions.length})`)), h("ul", null, d.open_questions.map((q) => h("li", null, q)))));
+    body.append(h("p", { class: "small muted" }, `Researched ${d.researched_on}. Amounts converted to ${displayCurrency()} at ECB reference rates of ${state.data.meta.fx_date}.`));
     const dossier = h("div", { class: "dossier" });
     body.append(h("section", null, h("h3", null, "Full legal dossier"),
       h("button", { onclick: () => showDossier(dossier, id) }, "Show the dated dossier"), dossier));

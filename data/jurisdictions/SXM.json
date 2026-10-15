@@ -256,7 +256,7 @@
         "currency": "USD"
       },
       "year": 2026,
-      "description": "Median of the four houses/villas with 4-5 bedrooms in Century 21 St. Maarten's long-term rentals list (108 listings) on 15 Oct 2026: USD 3,500 (4 bed/3 bath villa, Great Bay Terraces, Point Blanche), 4,000 (4 bed/5 bath furnished house, Oyster Pond), 5,000 (four-bedroom 'Villa Aruba', Madame Estate, 'available for yearly rentals', per month), 9,000 (5 bed villa with pool, Chateau Diamante, Cole Bay). Excluded: a 4-bed condo at Dawn Beach (USD 4,000) and a St Johns Estate home listed as 4 bedrooms but described as 3 (USD 2,200). Including the Dawn Beach condo the median is USD 4,000. Thin sample; asking rents, listings undated. Sint Maarten Sotheby's and other agencies list only holiday villa rates.",
+      "description": "Median of the four houses/villas with 4-5 bedrooms in Century 21 St. Maarten's long-term rentals list (108 listings) on 15 Oct 2026: USD 3,500 (4 bed/3 bath villa, Great Bay Terraces, Point Blanche), 4,000 (4 bed/5 bath furnished house, Oyster Pond), 5,000 (four-bedroom 'Villa Aruba', Madame Estate, 'available for yearly rentals', per month), 9,000 (5 bed villa with pool, Chateau Diamante, Cole Bay). Excluded: a 4-bed condo at Dawn Beach (USD 4,000) and a St Johns Estate home listed as 4 bedrooms but described as 3 (USD 2,200). Including the Dawn Beach condo the median is USD 4,000. Thin sample; asking rents, listings undated. Sint Maarten Sotheby's and other agencies list only holiday villa rates. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Century 21 St. Maarten: long-term rentals",
         "url": "https://www.century21-stmaarten.com/property_contract/long-term-rentals/",

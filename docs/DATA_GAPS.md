@@ -10,7 +10,7 @@ Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate
 
 ## Systematic gaps
 
-- **Cost of living and housing** missing for 63 of 145 researched countries.
+- **Cost of living and housing** missing for 62 of 145 researched countries.
 - **Cultural fit and lifestyle** missing for 51 of 145 researched countries.
 - **Corruption and government integrity** missing for 38 of 145 researched countries.
 - **Education quality** missing for 34 of 145 researched countries.
@@ -39,7 +39,7 @@ Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate
 | Australia | provisional | 100% | – | temporary_resident.capital_gains, temporary_resident.dividends | 8 |
 | Austria | provisional | 100% | – | – | 7 |
 | Bahrain | provisional | 98% | Cultural fit and lifestyle | – | 3 |
-| Barbados | verified | 96% | Education quality | – | 5 |
+| Barbados | verified | 96% | Education quality | – | 6 |
 | Belarus | knocked_out | 96% | Cost of living and housing | – | 8 |
 | Belgium | provisional | 100% | – | – | 9 |
 | Belize | insufficient | 87% | Cost of living and housing, Education quality | standard.inheritance | 5 |
@@ -68,8 +68,8 @@ Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate
 | Estonia | provisional | 100% | – | – | 5 |
 | Faroe Islands | insufficient | 51% | Safety and personal security, Political and institutional stability, Corruption and government integrity, Legal system and property rights, Education quality, Human development and quality of life, Cultural fit and lifestyle | – | 6 |
 | Fiji | knocked_out | 94% | Cost of living and housing, Cultural fit and lifestyle | standard.dividends, standard.inheritance | 8 |
-| Finland | verified | 100% | – | – | 9 |
-| France | provisional | 98% | Cultural fit and lifestyle | impatriate_155b.capital_gains, impatriate_155b.dividends | 13 |
+| Finland | verified | 100% | – | – | 10 |
+| France | provisional | 98% | Cultural fit and lifestyle | impatriate_155b.capital_gains, impatriate_155b.dividends | 14 |
 | French Polynesia | insufficient | 45% | Safety and personal security, Political and institutional stability, Corruption and government integrity, Cost of living and housing, Education quality, Human development and quality of life, Business opportunities and economy, Cultural fit and lifestyle | standard.dividends, standard.inheritance | 9 |
 | Georgia | provisional | 100% | – | – | 3 |
 | Germany | provisional | 100% | – | – | 9 |
@@ -89,7 +89,7 @@ Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate
 | Ireland | provisional | 100% | – | – | 11 |
 | Isle of Man | insufficient | 54% | Political and institutional stability, Corruption and government integrity, Legal system and property rights, Education quality, Human development and quality of life, Business opportunities and economy, Infrastructure and connectivity | – | 6 |
 | Israel | provisional | 100% | – | – | 5 |
-| Italy | provisional | 100% | – | – | 17 |
+| Italy | provisional | 100% | – | – | 18 |
 | Japan | provisional | 100% | – | – | 5 |
 | Jersey | provisional | 82% | Corruption and government integrity, Education quality, Human development and quality of life, Infrastructure and connectivity | – | 6 |
 | Jordan | provisional | 96% | Cost of living and housing | – | 3 |
@@ -129,7 +129,7 @@ Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate
 | Philippines | provisional | 96% | Cost of living and housing | – | 3 |
 | Poland | verified | 100% | – | – | 8 |
 | Portugal | provisional | 100% | – | – | 8 |
-| Puerto Rico | provisional | 85% | Corruption and government integrity, Education quality, Human development and quality of life, Cultural fit and lifestyle | – | 9 |
+| Puerto Rico | provisional | 85% | Corruption and government integrity, Education quality, Human development and quality of life, Cultural fit and lifestyle | – | 10 |
 | Qatar | provisional | 100% | – | – | 3 |
 | Romania | provisional | 100% | – | – | 11 |
 | Russia | knocked_out | 100% | – | – | 8 |
@@ -149,7 +149,7 @@ Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate
 | Slovenia | provisional | 98% | Cultural fit and lifestyle | – | 5 |
 | Solomon Islands | provisional | 87% | Safety and personal security, Cost of living and housing, Cultural fit and lifestyle | standard.capital_gains, standard.wealth_tax, standard.inheritance | 5 |
 | South Korea | provisional | 96% | Cost of living and housing | – | 7 |
-| Spain | verified | 100% | – | – | 5 |
+| Spain | verified | 100% | – | – | 6 |
 | Sri Lanka | knocked_out | 96% | Cost of living and housing | – | 4 |
 | Suriname | insufficient | 80% | Cost of living and housing, Education quality, Cultural fit and lifestyle | standard.capital_gains, standard.wealth_tax, standard.inheritance | 7 |
 | Sweden | provisional | 100% | – | – | 10 |
@@ -157,7 +157,7 @@ Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate
 | São Tomé and Príncipe | provisional | 82% | Safety and personal security, Cost of living and housing, Education quality, Cultural fit and lifestyle | standard.capital_gains, standard.dividends, standard.wealth_tax, standard.inheritance | 7 |
 | Taiwan | provisional | 85% | Cost of living and housing, Human development and quality of life, Infrastructure and connectivity, Cultural fit and lifestyle | – | 5 |
 | Thailand | provisional | 93% | Safety and personal security | – | 5 |
-| The Bahamas | knocked_out | 96% | Education quality | – | 5 |
+| The Bahamas | knocked_out | 96% | Education quality | – | 6 |
 | The Gambia | provisional | 87% | Safety and personal security, Cost of living and housing, Cultural fit and lifestyle | standard.dividends, standard.wealth_tax, standard.inheritance | 5 |
 | Tonga | provisional | 89% | Corruption and government integrity, Cost of living and housing, Cultural fit and lifestyle | standard.capital_gains, standard.inheritance | 6 |
 | Tunisia | insufficient | 78% | Cost of living and housing | standard.capital_gains, standard.dividends | 7 |
@@ -168,7 +168,7 @@ Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate
 | Ukraine | knocked_out | 100% | – | – | 8 |
 | United Arab Emirates | provisional | 100% | – | – | 7 |
 | United Kingdom | verified | 100% | – | – | 8 |
-| United States | verified | 96% | Cost of living and housing | – | 4 |
+| United States | verified | 100% | – | – | 4 |
 | Uruguay | provisional | 96% | Cost of living and housing | – | 7 |
 | Vanuatu | provisional | 89% | Cost of living and housing, Infrastructure and connectivity, Cultural fit and lifestyle | – | 5 |
 | Vietnam | provisional | 88% | Safety and personal security, Cost of living and housing | standard.capital_gains, standard.inheritance | 4 |
@@ -255,6 +255,6 @@ Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate
 | Turkey | partially_verified, medium | 100% | – | tr_law_7582_foreign_income_exemption | – | 9 |
 | United Arab Emirates | verified, high | 0% | dubai_virtual_working_programme | – | – | 4 |
 | United Kingdom | partially_verified, medium | 0% | – | – | rent_2bed | 7 |
-| United States | partially_verified, medium | 0% | – | – | – | 6 |
+| United States | partially_verified, medium | 0% | – | – | – | 7 |
 | Uruguay | partially_verified, medium | not researched | – | ury_new_resident_tax_holiday | – | 11 |
 | Vietnam | partially_verified, medium | 100% | – | – | – | 6 |

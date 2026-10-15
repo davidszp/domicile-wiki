@@ -72,3 +72,4 @@ Purchase price per m2, health insurance and housekeeper not sourced.
 - 2026-10-15: second pass. Added Saltus Grammar School 2026-27 tuition (BMD 27,820). Prime rent still not sourced (no 4+ bed listing at Coldwell Banker Bermuda). Indicator overrides reviewed: none added (BMU covered by World Bank data; no same-definition HDI/CPI).
 - 2026-10-15: inheritance scope set to local assets only for standard in the structured data (Bermuda estate duty reaches only property situated in Bermuda (Stamp Duties Act s.47(2)(b))); previously the scoring applied the rates to the worldwide estate, which overstated the tax.
 - 2026-10-15: added prime rent (BMD 16,750, median of four priced 4-5 bed long lets on propertyskipper).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

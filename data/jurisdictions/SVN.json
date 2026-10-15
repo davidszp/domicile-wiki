@@ -269,7 +269,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of the 3 houses of 250 m2 or more for rent in Ljubljana municipality on Bolha.com on 2026-10-15 (EUR 3,000 Zagradišče 269 m2; EUR 3,750 Vič 267 m2, built 2020; EUR 4,950 Center villa 457 m2). All 5 Ljubljana house listings: EUR 2,900-4,950, median EUR 3,000. Very small sample (nepremicnine.net, the main portal, blocked automated access).",
+      "description": "Median asking rent of the 3 houses of 250 m2 or more for rent in Ljubljana municipality on Bolha.com on 2026-10-15 (EUR 3,000 Zagradišče 269 m2; EUR 3,750 Vič 267 m2, built 2020; EUR 4,950 Center villa 457 m2). All 5 Ljubljana house listings: EUR 2,900-4,950, median EUR 3,000. Very small sample (nepremicnine.net, the main portal, blocked automated access). Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Oddaja hiš - Osrednjeslovenska",
         "url": "https://www.bolha.com/oddaja-hise/osrednjeslovenska",

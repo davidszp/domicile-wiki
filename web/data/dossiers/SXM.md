@@ -121,3 +121,4 @@ City: Dutch Sint Maarten (Point Blanche / Oyster Pond / Cole Bay / Madame Estate
 - 2026-10-15: initial research.
 - 2026-10-15: inheritance marked not_researched: Placeholder: Sint Maarten's own rates were not found; the Curaçao table is shown for reference only and the metric is treated as missing.
 - 2026-10-15: cost of living added: prime rent USD 4,500 (median of four 4-5 bed long lets, Century 21, thin) and Learning Unlimited Preparatory School Grades 6-12 tuition USD 15,500 (2026-27).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (USD 4,500).

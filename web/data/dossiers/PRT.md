@@ -90,8 +90,7 @@ Not researched in this pass.
 ## Cost of living notes
 
 - Lisbon / Cascais.
-- Prime rent: EUR 6,500 a month = median asking rent of 75 T4/T5 houses (moradias) for rent in Cascais municipality on
-  Imovirtual on 2026-10-15 (51 T5, 24 T4; interquartile range EUR 3,750-10,000).
+- Family home rent (monthly): EUR 3,100 (2026). Median asking rent of 13 T4 flats of 157-241 m2 in Lisbon family districts on Imovirtual, read 2026-10-15 from the first 37 of 193 results of the Lisbon T4 apartment rental search: Avenidas Novas/Campo Pequeno (3: EUR 3,100, 4,500, 7,000; plus Gulbenkian EUR 7,500 and Parque Eduardo VII EUR 4,500), Areeiro (EUR 2,900), Alvalade/Entrecampos (EUR 2,500), Estrela (EUR 2,950), Restelo (EUR 2,600), Benfica/Laranjeiras (EUR 2,400 and 2,950), Campolide (EUR 3,980) and Rato/Amoreiras (EUR 3,850). Range EUR 2,400-7,500. Chiado, Avenida da Liberdade and a 306 m2 Parque das Nacoes flat left out as prime or oversized. Asking rents, partly furnished. Replaces the Cascais figure of EUR 6,500 (75 T4/T5 houses), because Lisbon is the main city. Source: Imovirtual, Apartamentos T4 para arrendar em Lisboa. Cascais/Estoril houses (many international families) rent higher: EUR 6,500 median of 75 T4/T5 moradias on Imovirtual, 2026-10-15.
 - School: Carlucci American International School of Lisbon (CAISL), Grades 9-12 EUR 23,532 a year (2026-27), plus a
   EUR 600 one-time registration fee and a EUR 1,953 annual building fee for the first five years. St. Julian's School
   publishes its 2026/27 fees only as images, not read.
@@ -116,7 +115,8 @@ Not researched in this pass.
 - PwC, Portugal residence: https://taxsummaries.pwc.com/portugal/individual/residence
 - AT, Código do Imposto do Selo art. 6: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/selo/Pages/selo6.aspx
 - AT, Tabela Geral do Imposto do Selo: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/selo/Pages/ccod-selo-tabgiselo.aspx
-- Imovirtual, moradias T4/T5 para arrendar em Cascais: https://www.imovirtual.com/pt/resultados/arrendar/moradia/lisboa/cascais?roomsNumber=%5BFOUR%2CFIVE%5D&limit=72
+- Imovirtual, apartamentos T4 para arrendar em Lisboa: https://www.imovirtual.com/pt/resultados/arrendar/apartamento/lisboa/lisboa?roomsNumber=%5BFIVE%5D&limit=72
+- Imovirtual, moradias T4/T5 para arrendar em Cascais (previous figure): https://www.imovirtual.com/pt/resultados/arrendar/moradia/lisboa/cascais?roomsNumber=%5BFOUR%2CFIVE%5D&limit=72
 - CAISL, 2026-2027 Schedule of Required Fees: https://www.caislisbon.org/fs/resource-manager/view/669fa5f0-f4a0-4e4f-abba-acfafcc02f1e
 - [Código do IRC - artigo 6.º (Transparência fiscal)](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc6.aspx) — Autoridade Tributária e Aduaneira (tax_authority)
 
@@ -126,3 +126,5 @@ Not researched in this pass.
 - 2026-10-15: flagged `ifici` as requiring employment or a qualifying activity (`requires_qualifying_activity`), so it is no longer used as the best regime for a passive investor family unless the user opts in.
 - 2026-10-15: added a Holding structures section and a holding_company_notes sentence explaining why no holding structure is scored (art. 6 CIRC transparency).
 - 2026-10-15: fact check: corporate income tax rate filled in (19% mainland IRC for 2026, PwC), previously left blank.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-15: family rent re-checked a second time: changed from EUR 6,500 (Cascais houses) to EUR 3,100 (13 Lisbon T4 flats, Avenidas Novas/Areeiro/Alvalade/Estrela/Restelo/Benfica).

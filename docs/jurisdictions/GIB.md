@@ -95,3 +95,4 @@ Territorial. The rate was not verified in this research.
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15 (data-quality pass): confirmed Category 2 cap (GBP 118,000), minimum (GBP 37,000) and maximum tax (GBP 42,380) from the Income Tax Office; added duration_note; added prime rent (GBP 7,000) and Prior Park fee (GBP 20,994).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

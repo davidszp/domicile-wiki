@@ -548,7 +548,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median cold rent (Kaltmiete, excluding service charges) of 22 houses with 5+ rooms and at least 180 m² listed for rent in the city of Munich on the immobilo.de aggregator on 15 October 2026 (duplicates and multi-family houses removed); range EUR 3,100-16,000. The prime district Bogenhausen (81925-81929) ranged EUR 4,700-9,240. City-wide sample, so it understates rents in Grünwald, Bogenhausen or Harlaching.",
+      "description": "Median cold rent (Kaltmiete, excluding service charges) of 22 houses with 5+ rooms and at least 180 m² listed for rent in the city of Munich on the immobilo.de aggregator on 15 October 2026 (duplicates and multi-family houses removed); range EUR 3,100-16,000. The prime district Bogenhausen (81925-81929) ranged EUR 4,700-9,240. City-wide sample, so it understates rents in Grünwald, Bogenhausen or Harlaching. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "immobilo: Haus mieten in München (aggregated listing sample)",
         "url": "https://www.immobilo.de/mieten/haus/muenchen",

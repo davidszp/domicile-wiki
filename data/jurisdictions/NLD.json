@@ -456,7 +456,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of the 11 Amsterdam homes with 5+ rooms (about 4 bedrooms) and at least 150 m² found among the rental listings on Huurstunt.nl on 15 October 2026 (range EUR 3,750-8,950; houses and large apartments, e.g. Marnixkade, Egelantiersstraat, Gerrit van der Veenstraat). Small sample; asking rents.",
+      "description": "Median asking rent of the 11 Amsterdam homes with 5+ rooms (about 4 bedrooms) and at least 150 m² found among the rental listings on Huurstunt.nl on 15 October 2026 (range EUR 3,750-8,950; houses and large apartments, e.g. Marnixkade, Egelantiersstraat, Gerrit van der Veenstraat). Small sample; asking rents. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Huurstunt: huurwoningen in Amsterdam (listing sample)",
         "url": "https://www.huurstunt.nl/huren/amsterdam",

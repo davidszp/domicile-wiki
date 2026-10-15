@@ -23,7 +23,9 @@
    "name": "Lombardia",
    "summary": "Lombardia: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
    "regime_overrides": {},
-   "open_questions": [],
+   "open_questions": [
+    "Prime rent (EUR 8,250, Milan) comes from a LuxuryEstate.com luxury-portal sample; it may be ultra-prime rather than an upper-middle family home (4 bedrooms, 180-250 m²). Re-check 2026-10-15 failed: Immobiliare.it, Idealista, Casa.it, Wikicasa and Subito blocked automated access (HTTP 403). A district-level listing median (e.g. Porta Romana, Washington, CityLife) is needed."
+   ],
    "cost_of_living": {
     "city": "Milan",
     "prime_rent_monthly": {
@@ -109,7 +111,9 @@
    "name": "Liguria",
    "summary": "Liguria: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
    "regime_overrides": {},
-   "open_questions": [],
+   "open_questions": [
+    "Prime rent (EUR 15,000) is a LuxuryEstate.com sample of villas in Santa Margherita Ligure and Rapallo, probably dominated by summer lets and clearly ultra-prime compared with a Genoa family home (Albaro, Castelletto). Re-check 2026-10-15 failed: Italian listing portals blocked automated access. A Genoa district listing median is needed."
+   ],
    "cost_of_living": {
     "city": "Genoa / Tigullio coast (Santa Margherita Ligure, Rapallo, Portofino)",
     "prime_rent_monthly": {
@@ -181,7 +185,9 @@
    "name": "Toscana",
    "summary": "Toscana: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
    "regime_overrides": {},
-   "open_questions": [],
+   "open_questions": [
+    "Prime rent (EUR 12,000, Florence) comes from a LuxuryEstate.com luxury-portal sample that includes furnished short lets; it may be ultra-prime rather than an upper-middle family home (nearer EUR 8,000 at the lower quartile). Re-check 2026-10-15 failed: Italian listing portals blocked automated access. A district listing median (e.g. Campo di Marte, Oltrarno) is needed."
+   ],
    "cost_of_living": {
     "city": "Florence",
     "prime_rent_monthly": {
@@ -260,7 +266,9 @@
    "name": "Lazio",
    "summary": "Lazio: no regional difference for the family's taxes. Capital gains, dividends and interest of a private investor taxed at the 26% imposta sostitutiva (or withholding as final tax), IVAFE, IVIE and inheritance tax are national and identical in this region. The regional IRPEF surcharge (addizionale regionale, 1.23% base rate, raised by many regions) and the municipal surcharge apply only to income in the progressive IRPEF base (reddito complessivo, art. 50 D.Lgs. 446/1997), not to investment income under the 26% substitute tax; they matter only for salary, pension or other ordinary income.",
    "regime_overrides": {},
-   "open_questions": [],
+   "open_questions": [
+    "Prime rent (EUR 10,000, Rome) comes from a LuxuryEstate.com luxury-portal sample including penthouses and villas; it may be ultra-prime rather than an upper-middle family home. Re-check 2026-10-15 failed: Italian listing portals blocked automated access. A district listing median (e.g. Trieste/Salario, Monteverde, EUR) is needed."
+   ],
    "cost_of_living": {
     "city": "Rome",
     "prime_rent_monthly": {

@@ -134,9 +134,9 @@ Headline CIT rate: 31.52% (0.3152). National CIT 23.2%; combined effective rate 
 ## Cost of living notes
 
 City: Tokyo.
-- Prime rent, monthly: 1,650,000 JPY (2026). Median asking rent of 59 unique listings with 4 or 5 bedrooms (4LDK/4SLDK/5LDK and larger) in Minato ward (Azabu, Hiroo, Akasaka, Shirokane, Takanawa) on SUUMO, all result pages read 15 October 2026; median floor area 211 m2, first quartile JPY 1.2 million, third quartile JPY 2.1 million. Rent excludes management fees; deposits and key money (often 1-2 months each) are extra. Source: SUUMO rental search: Minato-ku, Tokyo, 4K-5K+ layouts.
+- Prime rent, monthly: 438,000 JPY (2026). Median asking rent of 205 current SUUMO listings of 100 m2 or more with 4 or more rooms (4LDK/4SLDK/5LDK and larger; mostly apartments plus some houses) in Setagaya, Meguro and Suginami wards, Tokyo, read from all result pages on 15 October 2026 (313 listings in the three wards before the 100 m2 filter, median JPY 350,000); first quartile JPY 300,000, third quartile JPY 680,000; median floor area 127 m2. Setagaya, Meguro and Suginami are the sought-after family districts (Chofu/Setagaya for ASIJ), well below the Minato expat-luxury segment (JPY 1.65 million, replaced). Rent excludes management fees; deposits and key money are extra.
 - International school, annual per child: 4,076,000 JPY (2026). The American School in Japan (Chofu campus), Grades 9-12 tuition 2026-27 JPY 3,826,000 plus annual capital assessment JPY 250,000. One-time fees: registration JPY 300,000 and building maintenance JPY 1,525,000. Source: Tuition & Fees (2026-27 Schedule of Tuition & Fees).
-Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in Chofu; families choosing it often live in Chofu/Setagaya, where rents are well below Minato.
+Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in Chofu; families choosing it often live in Chofu/Setagaya, where the family rent in the figure above is taken.
 
 ## Open questions
 
@@ -159,7 +159,7 @@ Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in 
 - No.2010 Taxpayers who are individuals (residents, non-permanent residents, non-residents) (National Tax Agency, tax_authority): https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2010.htm
 - No.2875 Determination of residents and non-residents (National Tax Agency Japan, tax_authority): https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2875.htm
 - Japan - Corporate - Taxes on corporate income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/japan/corporate/taxes-on-corporate-income
-- SUUMO rental search: Minato-ku, Tokyo, 4K-5K+ layouts (SUUMO (Recruit Co., Ltd.), other): https://suumo.jp/jj/chintai/ichiran/FR301FC001/?ar=030&bs=040&ta=13&sc=13103&md=11&md=12&md=13&md=14&pc=50
+- SUUMO rental search: Setagaya-ku, Meguro-ku and Suginami-ku, Tokyo, 4K-5K+ layouts (SUUMO (Recruit Co., Ltd.), other): https://suumo.jp/jj/chintai/ichiran/FR301FC001/?ar=030&bs=040&ta=13&sc=13112&md=11&md=12&md=13&md=14&pc=50
 - Tuition & Fees (2026-27 Schedule of Tuition & Fees) (The American School in Japan, other): https://www.asij.ac.jp/admissions/tuition-fees
 - Japan - Corporate - Income determination (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/japan/corporate/income-determination
 
@@ -170,3 +170,4 @@ Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in 
 - 2026-10-15 (data-quality pass): non-permanent-resident capital gains verified against Income Tax Act art. 7 and Order art. 17 (e-Gov): securities bought while a non-permanent resident are taxed regardless of remittance, pre-arrival holdings sold abroad only if remitted; confidence raised from low to medium, rate unchanged at 20.315%. Remittance assumptions now stated in eligibility_conditions for capital gains and dividends. Added cost of living: Minato 4-5 bedroom asking rent JPY 1,650,000 a month (SUUMO, n=59) and ASIJ Grades 9-12 fee JPY 4,076,000 (2026-27, tuition plus capital assessment).
 - 2026-10-15: inheritance scope set to local assets only for non_permanent_resident, temporary_foreigner_years_6_10 in the structured data (foreign-situs property of temporary foreigners and their heirs is exempt); previously the scoring applied the rates to the worldwide estate, which overstated the tax.
 - 2026-10-15: reviewed holding structures; none modelled (asset-management company taxed more heavily than direct holding); added a Holding structures section.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from JPY 1,650,000 (Minato) to JPY 438,000 (Setagaya/Meguro/Suginami, 205 listings of 100 m2 or more).

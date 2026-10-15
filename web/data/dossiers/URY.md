@@ -79,3 +79,4 @@ City: Montevideo (Carrasco) / Punta del Este.
 - 2026-10-15: initial research.
 - 2026-10-15: added cost of living (Carrasco rent sample from InfoCasas, price per m2 from Global Property Guide); re-checked Law 20.446 on IMPO and sharpened the holiday open question.
 - 2026-10-15: children_treatment set to exempt_with_conditions: there is no inheritance or gift tax; only Uruguayan real estate bears 3% transfer tax on its cadastral value, which the structured model cannot express as a rate on the estate.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (USD 5,500).

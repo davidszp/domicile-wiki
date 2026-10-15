@@ -105,3 +105,4 @@ City: Tórshavn (incl. Hoyvík and Argir).
 
 - 2026-10-15: initial research.
 - 2026-10-15 (household cost pass): added Tórshavn prime rent DKK 14,750/month (median of 4 Kitt.fo listings of 140 m²+, thin sample) and a school fee of DKK 0 (no international school; public Glasir upper secondary is free, taught in Faroese).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

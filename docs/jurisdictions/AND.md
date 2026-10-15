@@ -97,3 +97,4 @@ None. The ordinary regime is already low-tax.
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15 (data-quality pass): added prime rent (Pisos.ad, EUR 6,500/month, 6 listings) and Agora Andorra IB fee (EUR 14,150).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

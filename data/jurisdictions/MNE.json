@@ -304,17 +304,17 @@
     ]
   },
   "cost_of_living": {
-    "city": "Tivat (Porto Montenegro); Podgorica as the alternative",
+    "city": "Podgorica (international school fee is for Tivat)",
     "prime_rent_monthly": {
       "value": {
-        "amount": 4500,
+        "amount": 2200,
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 21 long-term house rentals in Tivat municipality with 4–5 bedrooms and at least 200 m² (range EUR 1,300–7,600), parsed from Realitica's Montenegro long-term house rentals filtered on 'Tivat' (113 results) on 2026-10-15. For Podgorica the same filter gives a median of EUR 2,500 (28 listings, EUR 1,100–5,000). Asking prices on a listing portal.",
+      "description": "Median asking rent of 177 long-term house rentals in Podgorica city with 4-6 bedrooms and at least 180 m2 (range EUR 300-5,000; first quartile EUR 1,500, third quartile EUR 3,000; median area 250 m2) in Donja Gorica, Gornja Gorica, Gorica C, Tolosi, Stari Aerodrom, Zlatica, Zabjelo, Zagoric and other city districts, parsed from all 29 result pages of Realitica's Montenegro long-term house rentals filtered on 'Podgorica' (714 results) on 2026-10-15. Agency listings may repeat; asking prices on a listing portal. Replaces the Tivat (Porto Montenegro) figure of EUR 4,500, which is a marina enclave.",
       "source": {
-        "title": "Realitica: long-term house rentals, Montenegro (search 'Tivat')",
-        "url": "https://www.realitica.com/?cur_page=0&for=DuziNajam&pZpa=Crna+Gora&pState=Crna+Gora&type%5B%5D=Home&qry=Tivat&lng=en",
+        "title": "Realitica: long-term house rentals, Montenegro (search 'Podgorica')",
+        "url": "https://www.realitica.com/?cur_page=0&for=DuziNajam&pZpa=Crna+Gora&pState=Crna+Gora&type%5B%5D=Home&qry=Podgorica&lng=en",
         "publisher": "Realitica",
         "kind": "other",
         "accessed": "2026-10-15"
@@ -335,7 +335,7 @@
         "accessed": "2026-10-15"
       }
     },
-    "notes": "Cost items are for Tivat, where the main international school is; Podgorica rents are roughly half. Health insurance and housekeeper costs not sourced."
+    "notes": "Rent is for Podgorica, the capital. The international school fee is for Tivat (Porto Montenegro), the only IB school found; Podgorica has no comparable figure here. Health insurance and housekeeper costs not sourced."
   },
   "markers": [
     {

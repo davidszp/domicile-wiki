@@ -12,7 +12,11 @@
       "name": "Ordinary residence",
       "type": "standard",
       "description": "Territorial salaries/profits tax; passive investment income and gains of individuals are outside the charge.",
-      "eligible_citizenships": ["EU", "US", "OTHER"],
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
       "eligibility": "Any individual living in Hong Kong with a right to stay (New CIES, employment or dependant visa). Domestic liability does not depend on residence status.",
       "duration_years": null,
       "capital_gains": {
@@ -21,8 +25,20 @@
         "important_exceptions": "Profits tax applies if an individual carries on a trade of dealing in securities or property in Hong Kong. Stamp duty of 0.2% of consideration (shared buyer/seller) applies to transfers of Hong Kong stock. Special and buyer's stamp duties on property were reduced to 0% from 28 February 2024.",
         "tax_year": "2026/27",
         "sources": [
-          {"title": "Hong Kong SAR - Individual - Income determination", "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/income-determination", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Hong Kong SAR - Individual - Other taxes", "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/other-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+          {
+            "title": "Hong Kong SAR - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Hong Kong SAR - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "high",
@@ -46,8 +62,20 @@
         "important_exceptions": "No treaty with the United States: US dividends bear 30% US withholding for a non-US person resident in Hong Kong. The FSIE regime (from 2023) applies to multinational-group entities, not to individuals.",
         "tax_year": "2026/27",
         "sources": [
-          {"title": "Hong Kong SAR - Individual - Income determination", "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/income-determination", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Hong Kong SAR - Corporate - Withholding taxes", "url": "https://taxsummaries.pwc.com/hong-kong-sar/corporate/withholding-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+          {
+            "title": "Hong Kong SAR - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Hong Kong SAR - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/hong-kong-sar/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "high",
@@ -65,7 +93,13 @@
         "summary": "No net wealth tax and no levy on financial assets.",
         "tax_year": "2026/27",
         "sources": [
-          {"title": "Hong Kong SAR - Individual - Other taxes", "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/other-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+          {
+            "title": "Hong Kong SAR - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "high",
@@ -79,8 +113,20 @@
         "important_exceptions": "Stamp duty on a gift (voluntary disposition inter vivos) of Hong Kong stock or property is charged on market value. Transfers on death by will or intestacy are not dutiable as gifts (general rule; not separately verified).",
         "tax_year": "2026/27",
         "sources": [
-          {"title": "Estate Duty", "url": "https://www.ird.gov.hk/eng/tax/edu.htm", "publisher": "Inland Revenue Department, HKSAR", "kind": "tax_authority", "accessed": "2026-10-15"},
-          {"title": "Hong Kong SAR - Individual - Other taxes", "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/other-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+          {
+            "title": "Estate Duty",
+            "url": "https://www.ird.gov.hk/eng/tax/edu.htm",
+            "publisher": "Inland Revenue Department, HKSAR",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Hong Kong SAR - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "high",
@@ -103,15 +149,40 @@
     "routes": [
       {
         "name": "New Capital Investment Entrant Scheme (New CIES)",
-        "citizenships": ["EU", "US", "OTHER"],
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
         "requirements": "Net assets of at least HKD 30 million (from 1 March 2025 assessed over the 6 months before application, jointly owned family assets count pro rata) and investment of HKD 30 million in permissible Hong Kong assets within 6 months; can be held through a wholly owned private company including an FIHV. From 1 November 2026, only assets transacted through designated accounts count. Spouse and unmarried dependent children under 18 can accompany (general immigration rule; not verified here). The split between permissible assets, the CIES Investment Portfolio and real estate was not verified.",
-        "minimum_investment": {"amount": 30000000, "currency": "HKD"}
+        "minimum_investment": {
+          "amount": 30000000,
+          "currency": "HKD"
+        }
       }
     ],
     "sources": [
-      {"title": "Hong Kong SAR - Individual - Residence", "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/residence", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-      {"title": "New Capital Investment Entrant Scheme", "url": "https://www.newcies.gov.hk/en/", "publisher": "Invest Hong Kong", "kind": "government", "accessed": "2026-10-15"},
-      {"title": "Enhancement measures to New CIES (press release, 7 January 2025)", "url": "https://www.info.gov.hk/gia/general/202501/07/P2025010600305.htm", "publisher": "HKSAR Government", "kind": "government", "accessed": "2026-10-15"}
+      {
+        "title": "Hong Kong SAR - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/hong-kong-sar/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "New Capital Investment Entrant Scheme",
+        "url": "https://www.newcies.gov.hk/en/",
+        "publisher": "Invest Hong Kong",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Enhancement measures to New CIES (press release, 7 January 2025)",
+        "url": "https://www.info.gov.hk/gia/general/202501/07/P2025010600305.htm",
+        "publisher": "HKSAR Government",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
     ]
   },
   "corporate": {
@@ -119,33 +190,58 @@
     "summary": "Profits tax 16.5% (8.25% on the first HKD 2 million under the two-tier regime; one entity per connected group). Territorial: offshore profits are untaxed, but under the FSIE regime (from 2023, extended 2024) foreign dividends, interest and disposal gains received in Hong Kong by MNE group entities are taxed unless economic substance or participation requirements are met. Pillar Two: IIR and the Hong Kong minimum top-up tax apply from fiscal years beginning 1 January 2025. No dividend WHT.",
     "special_zones": "0% for eligible family-owned investment holding vehicles (FIHV) managed by a Hong Kong single family office (from 1 April 2022); fund exemption for qualifying private funds (from 2019).",
     "sources": [
-      {"title": "Hong Kong SAR - Corporate - Taxes on corporate income", "url": "https://taxsummaries.pwc.com/hong-kong-sar/corporate/taxes-on-corporate-income", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+      {
+        "title": "Hong Kong SAR - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/hong-kong-sar/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
     ]
   },
   "cost_of_living": {
     "city": "Hong Kong",
     "prime_rent_monthly": {
-      "value": {"amount": 92800, "currency": "HKD"},
+      "value": {
+        "amount": 124000,
+        "currency": "HKD"
+      },
       "year": 2026,
-      "description": "Derived: RVD average rent for Class E flats (160 m2 saleable or more) on Hong Kong Island, January-August 2026 monthly average HKD 464/m2 saleable per month (monthly values 422-505; August 2026 provisional), applied to a 200 m2 saleable 4-bedroom family flat. The 200 m2 size is an assumption, not an RVD figure. Cross-check: Centaline reported that Peak/Southern district luxury lettings of HKD 80,000-150,000 a month were the most sought after in August 2026 (reported by The Star/SCMP, 11 September 2026). Houses on the Peak rent for far more.",
-      "source": {"title": "Private Domestic - Average Rents by Class (from 1982), monthly series up to August 2026", "url": "https://www.rvd.gov.hk/doc/en/statistics/his_data_1.xls", "publisher": "Rating and Valuation Department, HKSAR Government", "kind": "government", "accessed": "2026-10-15"}
+      "description": "Median asking rent of 18 four-bedroom flats of about 1,360-2,840 sq ft saleable (about 125-265 m2) on OKAY.com, read 2026-10-15 (first results page only of each district): Tai Tam (10: Pacific View HKD 83,500-85,000; The Redhill Peninsula HKD 110,000-158,000), Pokfulam (Carrianna Sassoon 2,586 sq ft HKD 150,000), Mid-Levels West/Central/East (The Morgan HKD 103,000, Elegant Terrace 160,000, Kennedy Park 120,000, Borrett Mansions 120,000, 3 Macdonnell Road 160,000, United Mansion 78,000) and Happy Valley (Beverly Hill 78,000). Range HKD 78,000-160,000; 9th and 10th of 18 are HKD 120,000 and 128,000, midpoint 124,000. Excluded as trophy: the villa estates (Provident Villas, Felix Villas, Bel-Air on the Peak), The Summit, the Peak and Redhill units above 3,000 sq ft. Rents mostly inclusive of management fees.",
+      "source": {
+        "title": "Properties for rent in Tai Tam (with Pokfulam, Happy Valley, Mid-levels searches)",
+        "url": "https://www.okay.com/en/property-search/rent/tai-tam",
+        "publisher": "OKAY.com",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
     },
-    "prime_price_per_m2": {
-      "value": {"amount": 253460, "currency": "HKD"},
-      "year": 2026,
-      "description": "RVD average price for Class E flats (160 m2 saleable or more) on Hong Kong Island, mean of the January-August 2026 monthly figures (range HKD 212,464-323,894 per m2 saleable; several months based on fewer than 20 transactions; secondary-market sales only).",
-      "source": {"title": "Private Domestic - Average Prices by Class (from 1982), monthly series up to August 2026", "url": "https://www.rvd.gov.hk/doc/en/statistics/his_data_2.xls", "publisher": "Rating and Valuation Department, HKSAR Government", "kind": "government", "accessed": "2026-10-15"}
-    },
+    "prime_price_per_m2": null,
     "intl_school_annual_fee": {
-      "value": {"amount": 297100, "currency": "HKD"},
+      "value": {
+        "amount": 297100,
+        "currency": "HKD"
+      },
       "year": 2026,
       "description": "Hong Kong International School, Grades 9-12, 2026-27: tuition HKD 136,300 per semester (HKD 272,600 a year) plus capital levy HKD 12,250 per semester (HKD 24,500 a year). One-time entry fee HKD 15,000 for new students.",
-      "source": {"title": "Tuition and Fees", "url": "https://www.hkis.edu.hk/admissions/tuition-fees", "publisher": "Hong Kong International School", "kind": "other", "accessed": "2026-10-15"}
+      "source": {
+        "title": "Tuition and Fees",
+        "url": "https://www.hkis.edu.hk/admissions/tuition-fees",
+        "publisher": "Hong Kong International School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
     },
     "notes": "Rent is derived from official RVD per-m2 averages and an assumed 200 m2 flat, so treat it as indicative. Family health insurance and domestic helper costs were not sourced (the statutory Minimum Allowable Wage for foreign domestic helpers was not re-read in this pass)."
   },
   "markers": [
-    {"name": "Hong Kong (Central/Victoria)", "lon": 114.17469, "lat": 22.27832, "kind": "financial_centre", "coordinate_source": "GeoNames 1819729"}
+    {
+      "name": "Hong Kong (Central/Victoria)",
+      "lon": 114.17469,
+      "lat": 22.27832,
+      "kind": "financial_centre",
+      "coordinate_source": "GeoNames 1819729"
+    }
   ],
   "us_citizen_notes": "US citizens remain US-taxed on worldwide income; there is no US-Hong Kong income tax treaty, and Hong Kong levies nothing on investment income, so the US federal layer is the whole tax. An FIHV or Hong Kong company owned by a US person is likely a CFC/PFIC.",
   "open_questions": [

@@ -640,15 +640,15 @@
     "notes": "Rent is a listing-portal sample of agency asking rents (15 October 2026). Bilingual private schools under contract with the State (e.g. École Jeannine Manuel) cost far less. Price per m², health insurance and staff costs were not sourced.",
     "prime_rent_monthly": {
       "value": {
-        "amount": 13400,
+        "amount": 5839,
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 34 distinct apartments and houses with 4+ bedrooms listed for rent in Paris on LuxuryEstate.com on 15 October 2026, mostly in the 16th (La Muette, Auteuil), 7th, 6th and 8th arrondissements; range EUR 4,430-63,000, interquartile range about EUR 9,100-20,000. Agency asking rents aggregated by the portal; many listings are furnished.",
+      "description": "Median asking rent of 5 flats of 165-233 m2 in family areas in and next to Paris, read 2026-10-15: Neuilly-sur-Seine (Foncia: 165 m2 EUR 4,650; 205 m2 EUR 5,839; 233 m2 4 bedrooms EUR 6,000, charges included), Ville-d'Avray (188 m2, 5 bedrooms, EUR 4,990) and Paris 9e (169 m2, 4 bedrooms, EUR 7,297 furnished), the last two on LesiteImmo. Range EUR 4,650-7,297. Paris 15e/16e/17e family flats of 150 m2 or more were almost absent from portals that load; Paris 8e (200 m2, EUR 11,000) left out as prime. Cross-check: OLAP January 2026 median rents are EUR 41/m2 (15e), 43 (17e) and 48 (16e), i.e. about EUR 7,000-8,000 for 165 m2 at the medium-size average. Thin sample; replaces EUR 9,150 from two listings.",
       "source": {
-        "title": "LuxuryEstate.com: luxury properties for rent in Paris (listing sample)",
-        "url": "https://www.luxuryestate.com/rent/france/ile-de-france/paris/paris",
-        "publisher": "LuxuryEstate.com",
+        "title": "Foncia - Location appartement 5 pieces ou plus, Neuilly-sur-Seine",
+        "url": "https://fr.foncia.com/location/neuilly-sur-seine-92200/appartement_5-pieces-ou-plus",
+        "publisher": "Foncia",
         "kind": "other",
         "accessed": "2026-10-15"
       }
@@ -681,6 +681,7 @@
   "us_citizen_notes": "The US-France income tax treaty gives a special credit for US citizens resident in France on US-source income; CSG/CRDS on investment income have been treated as creditable by the US since the 2019 treaty-related changes (not re-verified). The 1978 US-France estate and gift tax treaty applies.",
   "open_questions": [
     "Finance Law 2026 measures on holding companies, Dutreil and IFI should be checked against the promulgated text.",
-    "The 2026 Finance Law was promulgated in February 2026 (PwC corporate page: measures applying from 19 February 2026); its personal-tax measures beyond the CSG increase were not reviewed."
+    "The 2026 Finance Law was promulgated in February 2026 (PwC corporate page: measures applying from 19 February 2026); its personal-tax measures beyond the CSG increase were not reviewed.",
+    "Family rent (EUR 5,839) is the median of only 5 flats (3 in Neuilly-sur-Seine, 1 in Ville-d'Avray, 1 in Paris 9e); the OLAP per-m2 medians for the 15e/16e/17e (EUR 41-48/m2) suggest EUR 7,000-8,000 for 165 m2, so it may understate a Paris family flat."
   ]
 }

@@ -181,3 +181,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: editorial decision to score the draft wealth tax PRO FORMA (as if enacted): 1% on net worldwide wealth above HUF 1bn and 1.5% above HUF 100bn per the 6 Oct 2026 consultation draft. The law in force in 2026 still has no wealth tax; the JSON wealth_tax metric carries basis "pro_forma_draft".
 - 2026-10-15: added structure regime `asset_management_foundation` (0% on financial-instrument income, 15% on distributions under the rules in force from 31 Aug 2026, draft wealth tax pro forma with the foundation as a separate taxpayer) and a Holding structures section.
 - 2026-10-15: pro-forma wealth tax now applies both spouses' HUF 1bn allowances (HUF 2bn) for the married reference couple, consistent with the draft.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

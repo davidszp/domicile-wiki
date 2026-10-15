@@ -111,3 +111,4 @@ US citizens: US citizens remain US-taxed; Georgia's near-zero tax on foreign inc
 - 2026-10-15: phase 2 data-quality pass: added Tbilisi prime house rent (USD 3,300/month median of 26 prime-district 4-5 bedroom listings on Myhome.ge). International school fees are not published online (QSI, BIST), so the cost metric stays unscored.
 - 2026-10-15: cost-of-living pass: re-tried school fees (QSI Tbilisi, BIST incl. its policy PDFs, European School, New School); none published online. Rent unchanged; metric still unscored.
 - 2026-10-15 (household cost pass): added the GZAAT Grades 9–12 tuition (GEL 31,000, 2026–27, school's own page) as the school fee; with rent already sourced the metric can now be scored.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

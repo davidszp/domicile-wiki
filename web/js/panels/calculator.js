@@ -1,4 +1,4 @@
-import { h, clear, fmtEur, fmtPct } from "../dom.js";
+import { h, clear, fmtEur, fmtPct, displayCurrency, toDisplay, fromDisplay } from "../dom.js";
 import { state, entries, jur, isIncomePersona } from "../state.js";
 import { renderIncomeCalculator } from "./persona.js";
 import { loadProfile } from "../data.js";
@@ -26,14 +26,14 @@ const initInputs = (ref) => ({
 });
 
 const NUM_FIELDS = [
-  ["realized_gains", "Annual realised capital gains (EUR)", 0, 1e10],
-  ["dividends", "Annual dividends (EUR)", 0, 1e10],
-  ["portfolio", "Investment portfolio value (EUR)", 0, 1e11],
-  ["net_wealth", "Annual net wealth (EUR)", 0, 1e11],
-  ["real_estate_local", "Real estate in the country of residence (EUR)", 0, 1e11],
-  ["real_estate_foreign", "Real estate abroad (EUR)", 0, 1e11],
-  ["estate", "Estate to pass to the children (EUR)", 0, 1e11],
-  ["annual_payout", "Annual payout from a holding structure (EUR)", 0, 1e9],
+  ["realized_gains", "Annual realised capital gains", 0, 1e10],
+  ["dividends", "Annual dividends", 0, 1e10],
+  ["portfolio", "Investment portfolio value", 0, 1e11],
+  ["net_wealth", "Annual net wealth", 0, 1e11],
+  ["real_estate_local", "Real estate in the country of residence", 0, 1e11],
+  ["real_estate_foreign", "Real estate abroad", 0, 1e11],
+  ["estate", "Estate to pass to the children", 0, 1e11],
+  ["annual_payout", "Annual payout from a holding structure", 0, 1e9],
   ["children", "Number of children", 1, 20],
 ];
 
@@ -134,9 +134,16 @@ export function renderCalculator(panel) {
     h("p", { class: "disclaimer" }, "Illustrative only. The calculator applies simplified top-end rates from the researched rules to your figures: no personal allowances, timing, treaty tie-breakers, anti-avoidance rules or exit taxes in your current country. It does not replace individual cross-border tax advice."));
   const form = h("form", { class: "calc-form", onsubmit: (e) => e.preventDefault() });
   for (const [k, label, lo, hi] of NUM_FIELDS) {
-    const inp = h("input", { type: "number", min: lo, max: hi, step: k === "children" ? 1 : 1000, value: inputs[k], inputmode: "numeric", id: `c-${k}` });
-    inp.addEventListener("change", () => { inputs[k] = clampNum(inp.value, lo, hi); inp.value = inputs[k]; run(); });
-    form.append(h("label", { class: "ctl", for: `c-${k}` }, h("span", null, label), inp));
+    // Money fields are shown and typed in the display currency; inputs stay in EUR.
+    const money = k !== "children";
+    const shown = (v) => (money ? Math.round(toDisplay(v)) : v);
+    const inp = h("input", { type: "number", min: lo, max: hi, step: money ? 1000 : 1, value: shown(inputs[k]), inputmode: "numeric", id: `c-${k}` });
+    inp.addEventListener("change", () => {
+      inputs[k] = money ? clampNum(fromDisplay(Number(inp.value)), lo, hi) : clampNum(inp.value, lo, hi);
+      inp.value = shown(inputs[k]);
+      run();
+    });
+    form.append(h("label", { class: "ctl", for: `c-${k}` }, h("span", null, money ? `${label} (${displayCurrency()})` : label), inp));
   }
   const fs = h("input", { type: "range", min: 0, max: 100, step: 5, value: inputs.foreign_share * 100, id: "c-fs" });
   const fsOut = h("output", { for: "c-fs" }, `${Math.round(inputs.foreign_share * 100)}%`);
@@ -174,7 +181,7 @@ export function renderCalculator(panel) {
       h("li", null, "Foreign dividends are assumed to suffer 15% treaty withholding, credited where the country allows. Where the country of residence has no US income tax treaty, US dividends suffer 30%: the extra is shown separately."),
       h("li", null, "Inheritance assumes the estate passes in equal shares to the children, without business relief or lifetime gifts."),
       h("li", null, "US citizens: the US top-up approximates US federal tax after foreign tax credits (lump sums are not creditable). State taxes are not added for non-US residents."),
-      h("li", null, "Amounts are converted to EUR at the ECB reference rates used for the build.")));
+      h("li", null, `Amounts are converted to ${displayCurrency()} at the ECB reference rates of ${state.data.meta.fx_date} used for the build.`)));
   function run() {
     compute(out);
   }

@@ -92,3 +92,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15: resolved the reported 2026 '2% surcharge' (security tax scrapped May 2025; EMTA lists none for 2026); added Tallinn cost of living (City24 rent sample, ISE 2026-27 fee).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

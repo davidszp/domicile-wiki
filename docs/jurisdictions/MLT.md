@@ -154,3 +154,4 @@ No holding structure is scored for Malta.
 - 2026-10-15 (data-quality pass): added prime rent (EUR 7,000) and Verdala fee (EUR 15,700); duration_note for non_dom and grp; read L.N. 195/2026 itself (minimums, 5-year renewable term, transition to 2031); remittance assumptions stated in eligibility_conditions.
 - 2026-10-15: added a Holding structures section and a holding_company_notes sentence explaining why no holding structure is scored (non-dom personal holding beats a company).
 - 2026-10-15: children_treatment set to exempt_with_conditions: there is no inheritance or gift tax; duty applies only to transfers of Maltese assets (family home to descendants exempt under conditions, Maltese shares 2%), which the structured model cannot express as a rate on the estate.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

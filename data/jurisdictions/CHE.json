@@ -545,7 +545,7 @@
         "currency": "CHF"
       },
       "year": 2026,
-      "description": "Median monthly asking rent of the 8 distinct houses with 5.5+ rooms (about 4+ bedrooms) and at least 180 m² (one without stated area) listed for rent in the city of Zurich on ImmoStreet.ch on 15 October 2026; range CHF 4,000-9,800 (semi-detached and single-family houses in Witikon, Seefeld, Enge, Höngg). Very thin market: large family homes in Zurich are usually rented as apartments or on the Gold Coast (Küsnacht, Zollikon), where rents run higher. Asking rents as displayed.",
+      "description": "Median monthly asking rent of the 8 distinct houses with 5.5+ rooms (about 4+ bedrooms) and at least 180 m² (one without stated area) listed for rent in the city of Zurich on ImmoStreet.ch on 15 October 2026; range CHF 4,000-9,800 (semi-detached and single-family houses in Witikon, Seefeld, Enge, Höngg). Very thin market: large family homes in Zurich are usually rented as apartments or on the Gold Coast (Küsnacht, Zollikon), where rents run higher. Asking rents as displayed. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "ImmoStreet.ch: Haus mieten, Zürich (listing sample)",
         "url": "https://www.immostreet.ch/de/mieten/haus/zuerich",

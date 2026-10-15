@@ -255,16 +255,16 @@
     "notes": "Prime rent uses Savills' published June 2026 prime rent (EUR/m2/week) for a stated 250 m2 home, because listing portals (PropertyGuru, 99.co, SRX) refuse automated access. Cross-check: URA's 'Rentals of Non-Landed Residential Buildings, Quarterly' dataset on data.gov.sg (d_149ac00a2734bb0a03867bbe2ec0e7b0, 2026-Q2) gives a median of project medians of 5.76 across 154 projects (3,063 contracts) in postal districts 9, 10 and 11 (D9 5.94, D10 5.58, D11 5.19; 75th percentile of projects 6.72); the dataset metadata does not state the unit; read as SGD per sq ft per month (the unit agencies use for URA rents, e.g. Knight Frank's Q1 2026 update charts URA Realis rents in S$ per sq ft per month), it would give roughly SGD 15,500 for 2,690 sq ft, the same order as the Savills figure. Not used for the score because the unit is not confirmed in the dataset. The URA figures cover all unit sizes, and smaller units rent at higher psf. Housekeeper salary source: MOM written answer to PQ, 3 Nov 2021 (https://www.mom.gov.sg/newsroom/parliament-questions-and-replies/2021/1103-written-answer-to-pq-on-data-on-employer-types-and-market-salaries-for-the-existing-mdws). Purchase prices and family health insurance were not sourced. Foreign buyers face high ABSD on residential purchases (up to 65% depending on status), so most foreign families rent until they obtain PR.",
     "prime_rent_monthly": {
       "value": {
-        "amount": 10649,
-        "currency": "EUR"
+        "amount": 13350,
+        "currency": "SGD"
       },
       "year": 2026,
-      "description": "Derived from Savills' average prime residential rent for Singapore as at June 2026, EUR 9.83 per m2 per week (USD 1.06 per sq ft per week; joint 8th of 30 cities, rents +1.7% in H1 2026). Savills' figure is a city-wide prime average, not a quote for a specific 4-5 bedroom home. Converted for a stated 250 m2 (about 2,690 sq ft) large prime condo or small landed home: 9.83 x 250 x 52 / 12 = EUR 10,649 a month (USD equivalent 1.06 x 2,691 x 52 / 12 = about USD 12,360). Kept in EUR as published, so no separate SGD exchange rate is assumed. Landed houses in Districts 10/11 (Holland, Bukit Timah, Nassim) are usually larger and rent for more.",
+      "description": "Median asking rent of the 14 four-bedroom condominiums for rent in Bukit Timah / Holland / Upper Bukit Timah (mostly District 10: D'Leedon, Duchess Crest, Fourth Avenue Residences, Royalgreen, The Tresor; two in District 21) on EdgeProp Singapore on 2026-10-15: SGD 13,350 a month, the midpoint of the 7th and 8th of 14 (SGD 13,200 and 13,500); range SGD 9,000-19,000, sizes 1,464-3,854 sq ft (about 136-358 m2, most around 185-270 m2). Condominium flats, not Good Class Bungalows; asking rents, furnishing not stated. Replaces the Savills city-wide prime average converted to EUR 10,649.",
       "source": {
-        "title": "Savills Prime Residential World Cities Index H1 2026 (report PDF, 'Prime residential rents as at June 2026')",
-        "url": "https://pdf.savills.com/Savills+Prime+Residential+World+Cities+H1+2026.pdf",
-        "publisher": "Savills Research",
-        "kind": "professional",
+        "title": "EdgeProp Singapore - Condo Apartment for Rent in Bukit Timah, 4 Bedroom",
+        "url": "https://www.edgeprop.sg/condo-apartment-for-rent/bukit-timah/4-bedroom",
+        "publisher": "EdgeProp Singapore",
+        "kind": "other",
         "accessed": "2026-10-15"
       }
     },
@@ -296,6 +296,6 @@
   "us_citizen_notes": "US citizens stay taxed by the US on worldwide income and estates. Singapore has no comprehensive income tax treaty with the US; since Singapore does not tax foreign investment income, the US layer is the full cost. Singapore company or fund structures may be CFCs/PFICs for a US person.",
   "open_questions": [
     "GIP thresholds (SGD 10m / 25m / 200m AUM with SGD 50m deployment) are from a professional summary of EDB's 2025 factsheet; EDB's own page did not show the figures.",
-    "Purchase price per m2 and family private health insurance not sourced. Prime rent is a Savills city-wide prime average converted to a stated 250 m2 home, not a sample of 4-5 bedroom leases; helper salary is MOM's 2021 average (no newer official figure found)."
+    "Purchase price per m2 and family private health insurance not sourced. Prime rent is the median of 14 asking rents for 4-bedroom Bukit Timah/Holland condos on EdgeProp; helper salary is MOM's 2021 average (no newer official figure found)."
   ]
 }

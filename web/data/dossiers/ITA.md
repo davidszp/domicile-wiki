@@ -161,9 +161,7 @@ Milan.
 
 - School: American School of Milan, Grades 11-12 EUR 24,300 a year at the private rate (2026-27, IB exam fees
   included), plus EUR 1,350 annual enrolment, EUR 5,000 one-time new-student fee and EUR 2,500 building fund.
-- Prime rent: not sourced. immobiliare.it, idealista.it, casa.it and wikicasa.it block automated access. The open
-  portals sampled (Gabetti, Tecnocasa, realtor.com international) had too few whole-home 4-5 bedroom listings or were
-  dominated by room lets. Without rent the cost metric stays unscored.
+- Family home rent (monthly): EUR 3,275 (2026). Median asking rent of 10 distinct four-room (quadrilocale, about 3 bedrooms) flats of 130-178 m2 in Porta Romana / Montenero / Cadore (Milan) on MioAffitto, read 2026-10-15 from pages 1-4 of 5 of the Porta Romana quadrilocale search (61 results; repeated ads for the same flat counted once; flats under 130 m2 and the penthouse ignored). Range EUR 2,500-3,950; most are furnished or part-furnished; condominium charges excluded. Replaces the LuxuryEstate.com median of EUR 8,250, a luxury portal. Larger 5-room homes in CityLife or Washington would rent higher. Source: MioAffitto, Affitto quadrilocale Porta Romana. immobiliare.it, idealista.it and casa.it block automated access.
 - Purchase price, health insurance and housekeeper costs are not sourced.
 
 ## Open questions
@@ -172,7 +170,7 @@ Milan.
 - New TUIR (D.Lgs. 117/2026, from 2027): new article numbers and placement of the 26% substitute tax and IVAFE/IVIE.
 - Confirm the foreign dividend rule and the 12.5% bond rate.
 - Visa thresholds.
-- Milan prime rent, purchase price, health insurance and housekeeper costs.
+- Milan family rent is four-room flats only (no 5-room CityLife/Washington sample); purchase price, health insurance and housekeeper costs not sourced.
 - `holding_srl`: whether PEX gains count as revenue in the non-operating company test; Agenzia practice on fixed-asset booking of a rebalanced minority portfolio; ETF units outside PEX (general knowledge); conversion-law changes to art. 11 DL 38/2026.
 
 ## Sources
@@ -186,7 +184,7 @@ Milan.
 - Edotto, Benefici tributari per i neo residenti (Notariato study, art. 1 c. 158 L. 232/2016): https://edotto.com/articolo/benefici-tributari-per-i-neo-residenti-con-elevato-patrimonio-in-uno-studio-del-notariato
 - Euroconference News, In Gazzetta il nuovo TUIR, in vigore dal 1 gennaio 2027: https://www.ecnews.it/lavoro/imposte-contributi-e-premi/tassazione-e-redditi-di-lavoro/in-gazzetta-il-nuovo-tuir-in-vigore-dal-1-gennaio-2027/
 - American School of Milan, Tuition and Fees 2026-27: https://www.asmilan.org/admissions/tuition-and-fees/
-- LuxuryEstate.com - Luxury properties for rent in Milan (LuxuryEstate.com): https://www.luxuryestate.com/rent/italy/lombardy/milan/milan
+- MioAffitto - Affitto quadrilocale Porta Romana, Milano (MioAffitto, other): https://mioaffitto.it/affitti/affitto-quadrilocale-porta-romana_0_67355_50/1
 - [Approfondimento D.L. 27 marzo 2026 n. 38: ripristino regime dividendi e PEX](https://it.andersen.com/wp-content/uploads/2026/04/2026.04.02_Andersen-Italia-Approfondimento_D.L.-27-marzo-2026-n.38.pdf) — Andersen Italia (professional)
 - [Participation Exemption 2026: il decreto fiscale ripristina il regime PEX](https://fiscomania.com/ripristinata-pex/) — Fiscomania (other)
 - [Risoluzione n. 84/E del 16 settembre 2014 (imposta di bollo su comunicazioni relative a prodotti finanziari)](https://agenziaentrate.gov.it/portale/documents/20143/303732/Risoluzione+84E+del+16+settembre+2014_RIS+84e+del+16+09+14.pdf/e2373152-d447-28cc-86e7-2a809e677fc7) — Agenzia delle Entrate (tax_authority)
@@ -205,3 +203,5 @@ Milan.
 - 2026-10-15: inheritance scope set to local assets only for flat_tax_24bis in the structured data (art. 1(158) L. 232/2016: only assets existing in Italy are taxed while the option is valid); previously the scoring applied the 4% to the worldwide estate.
 - 2026-10-15: added structure regime `holding_srl` (S.r.l. with 95% dividend exclusion and PEX, 1.2%; DL 38/2026 repealed the 2026 Budget Law 5%/EUR 500,000 thresholds retroactively; stamp duty capped at EUR 14,000; 26% on payouts) and a Holding structures section.
 - 2026-10-15: re-verified `holding_srl` against statute texts: art. 11 DL 38/2026 (conv. L. 88/2026) repeals the L. 199/2025 5%/EUR 500,000 thresholds from 1 Jan 2026 (read on Normattiva); art. 87 TUIR conditions read; added the non-operating company test (art. 30 L. 724/1994: 1% presumed revenue, 0.75% minimum income, IRES 34.5%; no exclusion for minority holders of listed shares) and IRAP for holdings (dividends and share gains outside the base). Rates unchanged at 1.2% but now explicitly conditional; verification raised to verified, confidence kept medium.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept at EUR 8,250 but flagged as possibly ultra-prime (LuxuryEstate); no usable non-luxury 4-bedroom listings could be opened, open question added.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 8,250 (LuxuryEstate) to EUR 3,275 (10 four-room flats, Porta Romana/Montenero, MioAffitto).

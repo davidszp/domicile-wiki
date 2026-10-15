@@ -246,7 +246,7 @@
         "currency": "CZK"
       },
       "year": 2026,
-      "description": "Median asking rent of 48 distinct houses/villas of 200-400 m² for rent in Prague's prime western and southern districts (Praha 6: Dejvice, Bubeneč, Střešovice, Nebušice, Vokovice, Veleslavín, Suchdol; Praha 5; Praha 4/Podolí/Braník), sampled from Sreality.cz on 15 Oct 2026 (range CZK 49,999-190,000; median of all 67 Prague listings in that size band CZK 85,000). Asking rents, utilities extra.",
+      "description": "Median asking rent of 48 distinct houses/villas of 200-400 m² for rent in Prague's prime western and southern districts (Praha 6: Dejvice, Bubeneč, Střešovice, Nebušice, Vokovice, Veleslavín, Suchdol; Praha 5; Praha 4/Podolí/Braník), sampled from Sreality.cz on 15 Oct 2026 (range CZK 49,999-190,000; median of all 67 Prague listings in that size band CZK 85,000). Asking rents, utilities extra. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Pronájem domu od 200 m² do 400 m² Praha (listing search)",
         "url": "https://www.sreality.cz/hledani/pronajem/domy/praha?plocha-od=200&plocha-do=400",

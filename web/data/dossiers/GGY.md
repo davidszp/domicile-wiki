@@ -147,3 +147,4 @@ US citizens: No US-Guernsey income tax treaty; US tax applies on worldwide incom
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added Elizabeth College fee (£16,995, 2026-27); rent still not sourced; added duration_note to the tax cap; added indicator overrides: life expectancy 83.6 (Facts and Figures 2025) and homicide rate 0.0 (Guernsey Police Annual Report 2025).
 - 2026-10-15 (household cost pass): added prime rent £4,875 a month, the median of the only 4 priced 4-5 bedroom long-lets on Swoffers and Livingroom (Savills had none); small sample, described as such.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

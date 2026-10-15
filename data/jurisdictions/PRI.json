@@ -425,7 +425,7 @@
         "currency": "USD"
       },
       "year": 2026,
-      "description": "Puerto Rico-wide average monthly rent for 4+ bedroom condos and townhouses in Global Property Guide's Q3 2026 survey (purchase price USD 760,000). Same survey: Condado-Miramar 3-bedroom USD 4,995. Gated Dorado Beach / Dorado estates were not sampled and rent for considerably more, so this understates a prime family home.",
+      "description": "Puerto Rico-wide average monthly rent for 4+ bedroom condos and townhouses in Global Property Guide's Q3 2026 survey (purchase price USD 760,000). Same survey: Condado-Miramar 3-bedroom USD 4,995. Gated Dorado Beach / Dorado estates were not sampled and rent for considerably more, so this understates a prime family home. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Global Property Guide: Puerto Rico rental yields (Q3 2026)",
         "url": "https://www.globalpropertyguide.com/latin-america/puerto-rico/rental-yields",
@@ -464,6 +464,7 @@
   "open_questions": [
     "FOMB endorsement status of Act 38-2026: no Board letter or statement on the Act found in its documents library (checked 2026-10-15); DDEC applies it as in force.",
     "Tax position of non-US citizens (EU/OTHER) living in Puerto Rico under US immigration status (green card makes them US tax residents) not modelled; Act 60 is designed for US citizens.",
-    "Source rules for pre-move gains (IRC §937 regulations) not re-verified in this pass."
+    "Source rules for pre-move gains (IRC §937 regulations) not re-verified in this pass.",
+    "Family rent (USD 5,235) is an island-wide condo/townhouse average and was not replaced: only individual Dorado/Guaynabo 4-bedroom houses were seen in search results (USD 3,600-4,900 in Dorado del Mar/Paseo del Mar, USD 4,200 in Mansiones Reales, USD 9,500 in Garden Hills Estates), and Zillow, Trulia, Realtor, RentHop and Maxlife pages returned 403 or were off the market, so no median of several current listings could be opened; it may understate a Garden Hills/Dorado family house."
   ]
 }

@@ -123,3 +123,4 @@ City: Dubai.
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added Dubai prime villa rent (Dubai Hills Estate 4-bed, Property Monitor via Engel & Völkers); Golden Visa real-estate term checked on u.ae (5 years, updated 28 Jul 2026) and ICP (5-10 years), route text and open question rewritten; Abu Dhabi ~2% registration fee noted as unconfirmed; Dubai marker renamed (GeoNames city point, not DIFC).
 
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

@@ -107,3 +107,4 @@ Ljubljana.
 
 - 2026-10-15: initial research.
 - 2026-10-15 (data-quality pass): added BISL fee (EUR 19,300, 2025-26, school's own schedule) and prime rent (Bolha.com, EUR 3,750/month, thin sample).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (EUR 3,750).

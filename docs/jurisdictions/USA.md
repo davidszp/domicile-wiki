@@ -107,13 +107,20 @@ Special zones/regimes: Opportunity zones (deferral/exclusion of reinvested gains
 
 ## Cost of living notes
 
-Not researched.
+City: Austin, TX (upper-middle-class benchmark city).
+
+- **Family home rent (monthly):** 4,550 USD (2026). Median asking rent of 10 four-bedroom houses to let in family areas of Austin on Zumper, read 2026-10-15 from all four pages (192 results) of the Austin 4-bedroom house search, keeping only family districts and dropping the University of Texas student-house belt (West University, Hancock, North University, Hyde Park, North Loop). Listings: Circle C (3: USD 3,800, 3,945, 4,100), Westlake/Barton Hills area ZIP 78746 (2: USD 6,894, 7,495), Mueller (USD 5,000), Wooten (USD 6,900), North Shoal Creek (USD 3,600), ZIP 78730 northwest (USD 2,750) and South River City (USD 6,800). Range USD 2,750-7,495; most listings do not state floor area, those that do are 1,784-3,068 sq ft (about 165-285 m2). Tarrytown and Allandale had no 4-bedroom house listed. Base rent; fees may apply. Source: [Zumper - 4 bedroom houses for rent in Austin, TX](https://www.zumper.com/houses-for-rent/austin-tx/4-beds).
+- **International school (annual, upper secondary):** 41,500 USD (2026-27). St. Stephen's Episcopal School, Austin: Upper School (grades 9-12) day tuition 2026-27 USD 41,500; with the USD 1,000 facilities fee and USD 2,500 food service the school quotes a total of USD 45,000 for a day student, plus USD 500-800 for books. Tuition only is used here. Source: [St. Stephen's Episcopal School - Tuition and fees 2026-27](https://www.sstx.org/fs/pages/442).
+- Price per m2, family health insurance and housekeeper: not sourced, omitted.
+
+Austin, TX (upper-middle-class benchmark, replacing New York). Prime price per m2, family health insurance and housekeeper not sourced and omitted. The rent sample is skewed by student-oriented houses near the University of Texas; the median is a central-Austin figure, not a Tarrytown or Westlake figure.
+
 
 ## Open questions
 
 - State taxes are deliberately excluded (covered by the subnational file).
 - EB-5 investment amounts and visa routes not verified in this session.
-- Cost of living omitted: it depends entirely on the state/city, which the subnational research covers.
+- Cost of living covers Austin, TX only (price per m2, health insurance and housekeeper omitted); other cities not researched.
 - Whether the US Pillar Two 'side-by-side' arrangement affects family holding companies was not researched (it concerns large multinationals).
 
 ## Sources
@@ -134,6 +141,8 @@ Not researched.
 - 26 U.S.C. § 541 - Imposition of personal holding company tax (Legal Information Institute (Cornell), legislation): https://www.law.cornell.edu/uscode/text/26/541
 - 26 U.S.C. § 542 - Definition of personal holding company (Legal Information Institute (Cornell), legislation): https://www.law.cornell.edu/uscode/text/26/542
 - 26 U.S.C. § 531 - Imposition of accumulated earnings tax (Legal Information Institute (Cornell), legislation): https://www.law.cornell.edu/uscode/text/26/531
+- Zumper - 4 bedroom houses for rent in Austin, TX (Zumper, other): https://www.zumper.com/houses-for-rent/austin-tx/4-beds
+- St. Stephen's Episcopal School - Tuition and fees 2026-27 (St. Stephen's Episcopal School, other): https://www.sstx.org/fs/pages/442
 
 ## Change log
 
@@ -141,3 +150,5 @@ Not researched.
 - 2026-10-15: reviewed special-regime durations: no special regime.
 - 2026-10-15: added the `dynasty_trust` structure regime (GST-exempt grantor dynasty trust) and a Holding structures section; holding-company notes now describe the personal holding company and accumulated earnings taxes from the statute.
 - 2026-10-15: federal estate tax now scored with portability for the married reference couple (USD 30M combined exclusion instead of USD 15M); the US-citizen overlay uses the same figure. With portability the dynasty trust no longer shows an inheritance advantage in the static model; its real benefit (keeping post-gift growth and the GST-exempt amount out of future estates) is described in text.
+- 2026-10-15: added the cost_of_living block for Austin, TX (family home rent from 31 Zumper 4-bedroom listings, St. Stephen's upper-school tuition 2026-27).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from USD 4,300 to USD 4,550 (10 family-area Austin houses; student belt removed).

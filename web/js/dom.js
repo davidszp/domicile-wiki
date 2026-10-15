@@ -54,9 +54,34 @@ export function extLink(url, text) {
 
 export const fmtPct = (x, digits = 1) => (x === null || x === undefined ? "n/a" : `${(x * 100).toFixed(digits)}%`);
 export const fmtScore = (x) => (x === null || x === undefined ? "–" : x.toFixed(1));
-const eurFmt = new Intl.NumberFormat("en-GB", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
-export const fmtEur = (x) => (x === null || x === undefined ? "n/a" : eurFmt.format(x));
+// Display currency. Every amount is computed in EUR; US citizens see USD, converted at the build's
+// ECB reference rate (main.js sets it from the citizenship). fmtEur takes EUR and shows the
+// display currency.
+let display = { currency: "EUR", perEur: 1 };
+const formatter = (currency) => new Intl.NumberFormat(currency === "USD" ? "en-US" : "en-GB", { style: "currency", currency, maximumFractionDigits: 0 });
+let moneyFmt = formatter("EUR");
+
+export function setDisplayCurrency(currency, perEur) {
+  display = { currency, perEur: currency === "EUR" ? 1 : perEur };
+  moneyFmt = formatter(currency);
+}
+export const displayCurrency = () => display.currency;
+export const toDisplay = (eur) => eur * display.perEur; // EUR -> display currency
+export const fromDisplay = (x) => x / display.perEur; // display currency -> EUR
+export const fmtEur = (x) => (x === null || x === undefined ? "n/a" : moneyFmt.format(x * display.perEur));
+
+/** Converts EUR amounts written in prose ("EUR 24,000", "€1.2M", "EUR 30M") to the display currency. */
+export function moneyText(text) {
+  if (display.currency === "EUR" || !text) return text;
+  const units = { k: 1e3, thousand: 1e3, m: 1e6, million: 1e6, bn: 1e9, billion: 1e9 };
+  return String(text).replace(/(?:EUR\s?|€)(\d[\d,]*(?:\.\d+)?)(\s?(?:k|m|bn|thousand|million|billion)\b)?/gi, (_, num, unit) => {
+    const value = Number(num.replaceAll(",", "")) * (unit ? units[unit.trim().toLowerCase()] : 1);
+    return fmtEur(value);
+  });
+}
 export function fmtMoney(amount, currency) {
+  // Euro amounts follow the display currency; other currencies are quoted as the law states them.
+  if (currency === "EUR") return fmtEur(amount);
   try {
     return new Intl.NumberFormat("en-GB", { style: "currency", currency, maximumFractionDigits: 0 }).format(amount);
   } catch {

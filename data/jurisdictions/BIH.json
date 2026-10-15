@@ -241,7 +241,7 @@
         "currency": "BAM"
       },
       "year": 2026,
-      "description": "Median asking rent (BAM 5,250/month, about EUR 2,680 at the fixed BAM 1.95583/EUR rate) of 34 houses for rent of at least 200 m² in the Sarajevo urban area (Centar, Stari Grad, Novo Sarajevo, Novi Grad, Ilidža, Vogošća; range BAM 1,500–15,000), from all 137 house-rental listings on OLX.ba (Bosnia's main portal, mostly agency listings) retrieved on 2026-10-15; 43 Sarajevo listings with price 'on request' were excluded. Bedroom counts are given as total rooms (often 5–8+), so floor area is used as the size filter. Some listings are suitable for office use. Asking prices on a listing portal.",
+      "description": "Median asking rent (BAM 5,250/month, about EUR 2,680 at the fixed BAM 1.95583/EUR rate) of 34 houses for rent of at least 200 m² in the Sarajevo urban area (Centar, Stari Grad, Novo Sarajevo, Novi Grad, Ilidža, Vogošća; range BAM 1,500–15,000), from all 137 house-rental listings on OLX.ba (Bosnia's main portal, mostly agency listings) retrieved on 2026-10-15; 43 Sarajevo listings with price 'on request' were excluded. Bedroom counts are given as total rooms (often 5–8+), so floor area is used as the size filter. Some listings are suitable for office use. Asking prices on a listing portal. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "OLX.ba search API: houses (Kuće, category 24) for rent",
         "url": "https://api.olx.ba/search?category_id=24&listing_type=rent",

@@ -102,3 +102,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: initial research.
 - 2026-10-15: added Prague cost of living (Sreality.cz rent sample, ISP 2026/27 fees); confirmed in the law text the 3-year securities time test, the 2026 removal of the CZK 40m cap for securities (now crypto only) and the §38v CZK 5m reporting duty.
 - 2026-10-15: added a Holding structures section and a holding_company_notes sentence explaining why no holding structure is scored (3-year time test beats a company).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

@@ -85,3 +85,4 @@ School fee is for the International School of Bologna (Italy), because San Marin
 - 2026-10-15 (data-quality pass): read Law 84/1981 arts. 3-4 (foreign assets exempt by statute); inheritance confidence low -> medium; cost of living still unsourced (no international school, no rental listings found).
 - 2026-10-15 (cost-of-living pass): added the International School of Bologna Grades 11–12 fee (EUR 21,870, 2026–27) as the nearest international school; prime rent still not sourced, so the metric stays unscored.
 - 2026-10-15 (household cost pass): added prime rent EUR 2,150/month (median of two 3-bedroom villas on Mioaffitto.it; no 4–5 bedroom long-let listed, thin sample); with the Bologna school fee the metric can now be scored.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

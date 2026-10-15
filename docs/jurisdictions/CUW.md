@@ -72,3 +72,4 @@ City: Willemstad.
 
 - 2026-10-15: initial research.
 - 2026-10-15: added cost of living (CENTURY 21 rental sample, ISC 2026-27 fees); added duration_note to the penshonado regime (no statutory time limit, art. 23D conditions).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

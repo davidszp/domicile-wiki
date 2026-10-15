@@ -96,3 +96,4 @@ City: Manama area (Saar, Janabiya, Amwaj).
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added prime rent (4-5 bed villas, Property Finder Bahrain sample) and school fee (British School of Bahrain 2026/27).
 
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

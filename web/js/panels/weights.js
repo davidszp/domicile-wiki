@@ -1,10 +1,14 @@
-import { h } from "../dom.js";
+import { h, moneyText } from "../dom.js";
 import { state, update, metricsFor, taxMetrics, personaCfg, isIncomePersona } from "../state.js";
 import { normalizeWeights, reweightTaxShare } from "../scoring.js";
 
 // This panel is not re-rendered when weights change (main.js gives it no dependencies): sliders keep
 // keyboard focus, and the percentages are updated in place. Presets re-render it explicitly.
 function metricDescription(k) {
+  return moneyText(rawDescription(k));
+}
+
+function rawDescription(k) {
   const cfg = state.cfg;
   if (isIncomePersona()) {
     const p = personaCfg();

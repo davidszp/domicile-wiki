@@ -208,6 +208,12 @@ def test_persona_switch_rescores_and_renders_every_panel(browser, server):
     page.fill("#search", "Thailand")
     page.keyboard.press("Enter")
     page.wait_for_selector("text=Income tax and social security for a self-employed contractor", timeout=10000)
+    # A null child handed to the native append() prints "null"; profiles must never show it.
+    assert " null" not in " " + page.inner_text("#panel").replace("\n", " ") + " ", "stray null in nomad profile"
+    page.click("[data-persona='expat']")
+    page.wait_for_selector("text=Income tax and social security for a employee", timeout=10000)
+    assert " null" not in " " + page.inner_text("#panel").replace("\n", " ") + " ", "stray null in expat profile"
+    page.click("[data-persona='nomad']")
     for tab in ("rankings", "compare", "weights", "calculator", "methodology"):
         page.click(f"#tab-{tab}")
         page.wait_for_timeout(150)
@@ -215,10 +221,34 @@ def test_persona_switch_rescores_and_renders_every_panel(browser, server):
     assert page.inner_text("#panel h2").startswith("Methodology")
     page.click("#tab-weights")
     assert "Digital nomad" in page.inner_text("#panel h2")
-    # Back to the family office: its own weights and options return.
+    # Back to the HNWI persona: its own weights and options return.
     page.click("[data-persona='family_office']")
     assert page.is_visible("#structures-wrap")
     assert "wealth_tax" in page.eval_on_selector_all("#layer option", "os => os.map(o => o.value)")
     page.reload()
     page.wait_for_selector("[data-persona='family_office'][aria-pressed='true']", timeout=20000)
+    assert not problems, problems
+
+
+def test_us_citizens_see_dollars_everyone_else_euros(browser, server):
+    page, problems = open_page(browser, server)
+    page.click("[data-persona='family_office']")
+    page.select_option("#citizenship", "US")
+    for tab in ("rankings", "calculator"):
+        page.click(f"#tab-{tab}")
+        page.wait_for_timeout(600)
+        text = page.inner_text("#panel")
+        assert ("$" in text or "USD" in text) and "€" not in text and "EUR" not in text, (tab, text[:300])
+    page.fill("#search", "Portugal")
+    page.keyboard.press("Enter")
+    page.wait_for_selector(".score-row", timeout=10000)
+    page.wait_for_timeout(800)
+    for f in page.query_selector_all("details.fold"):
+        f.evaluate("d => d.open = true")
+    assert "€" not in page.inner_text("#panel")
+    page.select_option("#citizenship", "EU")
+    page.click("#tab-rankings")
+    page.wait_for_timeout(600)
+    text = page.inner_text("#panel")
+    assert "€" in text and "$" not in text
     assert not problems, problems

@@ -655,7 +655,7 @@
             "currency": "CHF"
           },
           "year": 2026,
-          "description": "Median monthly asking rent of 8 houses with 6+ rooms and at least 180 m² listed for rent in the canton of Lucerne on ImmoStreet.ch on 15 October 2026 (Luzern, Kastanienbaum, Horw, Weggis, Kriens, Sempach, Willisau); range CHF 2,000-20,000 (one listing showing a sale price excluded). Small, very dispersed sample; lakeside Lucerne villas asked CHF 13,400-20,000.",
+          "description": "Median monthly asking rent of 8 houses with 6+ rooms and at least 180 m² listed for rent in the canton of Lucerne on ImmoStreet.ch on 15 October 2026 (Luzern, Kastanienbaum, Horw, Weggis, Kriens, Sempach, Willisau); range CHF 2,000-20,000 (one listing showing a sale price excluded). Small, very dispersed sample; lakeside Lucerne villas asked CHF 13,400-20,000. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "ImmoStreet.ch: Haus mieten, Kanton Luzern (listing sample)",
             "url": "https://www.immostreet.ch/de/mieten/haus/kanton-luzern",
@@ -1214,7 +1214,7 @@
             "currency": "CHF"
           },
           "year": 2026,
-          "description": "Median monthly asking rent of the 5 houses with 5.5+ rooms listed for rent in the canton of Schwyz on ImmoStreet.ch on 15 October 2026 (Lachen, Altendorf, Siebnen, Einsiedeln, Seewen); range CHF 4,730-9,500. None was in the Höfe district (Wollerau/Freienbach), where rents are higher; small sample of asking rents.",
+          "description": "Median monthly asking rent of the 5 houses with 5.5+ rooms listed for rent in the canton of Schwyz on ImmoStreet.ch on 15 October 2026 (Lachen, Altendorf, Siebnen, Einsiedeln, Seewen); range CHF 4,730-9,500. None was in the Höfe district (Wollerau/Freienbach), where rents are higher; small sample of asking rents. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "ImmoStreet.ch: Haus mieten, Kanton Schwyz (listing sample)",
             "url": "https://www.immostreet.ch/de/mieten/haus/kanton-schwyz",
@@ -2316,7 +2316,7 @@
             "currency": "CHF"
           },
           "year": 2026,
-          "description": "Median monthly asking rent of the 6 houses with 5.5+ rooms and at least 180 m² (where stated) listed for rent in the canton of Zug on ImmoStreet.ch on 15 October 2026 (Zug, Baar, Hünenberg, Oberägeri); range CHF 4,500-20,000. Small sample of asking rents.",
+          "description": "Median monthly asking rent of the 6 houses with 5.5+ rooms and at least 180 m² (where stated) listed for rent in the canton of Zug on ImmoStreet.ch on 15 October 2026 (Zug, Baar, Hünenberg, Oberägeri); range CHF 4,500-20,000. Small sample of asking rents. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "ImmoStreet.ch: Haus mieten, Kanton Zug (listing sample)",
             "url": "https://www.immostreet.ch/de/mieten/haus/kanton-zug",
@@ -3205,7 +3205,7 @@
             "currency": "CHF"
           },
           "year": 2026,
-          "description": "Median monthly asking rent of the 7 houses with 5.5+ rooms and at least 180 m² listed for rent in Basel-Stadt (Basel and Riehen) on ImmoStreet.ch on 15 October 2026; range CHF 3,700-8,000. Small sample of asking rents.",
+          "description": "Median monthly asking rent of the 7 houses with 5.5+ rooms and at least 180 m² listed for rent in Basel-Stadt (Basel and Riehen) on ImmoStreet.ch on 15 October 2026; range CHF 3,700-8,000. Small sample of asking rents. Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "ImmoStreet.ch: Haus mieten, Kanton Basel-Stadt (listing sample)",
             "url": "https://www.immostreet.ch/de/mieten/haus/kanton-basel-stadt",
@@ -5599,17 +5599,17 @@
             "accessed": "2026-10-15"
           }
         },
-        "notes": "Prime rent is a small listing-portal sample of asking rents (15 October 2026). Health insurance and housekeeper costs were not sourced for this canton; see the national file for the federal housekeeper minimum wage.",
+        "notes": "Prime rent is a small listing-portal sample (Lugano flats of 5+ rooms; penthouse and lakefront excluded) of asking rents (15 October 2026). Health insurance and housekeeper costs were not sourced for this canton; see the national file for the federal housekeeper minimum wage.",
         "prime_rent_monthly": {
           "value": {
-            "amount": 9500,
+            "amount": 4300,
             "currency": "CHF"
           },
           "year": 2026,
-          "description": "Median monthly asking rent of the 6 houses/villas with 5.5+ rooms listed for rent in Lugano on ImmoStreet.ch on 15 October 2026; range CHF 1,700-12,000 (villas of 300-600 m² at CHF 8,400-12,000). Small sample of asking rents.",
+          "description": "Median monthly asking rent of 5 flats of 5-7.5 rooms and 150-251 m² in Lugano (Besso and other residential streets) on ImmoStreet.ch on 15 October 2026 (houses and flats of 5+ rooms and 150-300 m², search over all result pages); range CHF 2,350-6,900. Excluded: a penthouse (CHF 15,000), a lakefront flat on Via Riva Caccia (CHF 12,400), an office listing and a 300 m² villa (CHF 8,400); the Lugano house results are all 300-600 m² villas at CHF 8,400-12,000. Small sample of asking rents.",
           "source": {
-            "title": "ImmoStreet.ch: Haus mieten, Lugano (listing sample)",
-            "url": "https://www.immostreet.ch/de/mieten/haus/lugano",
+            "title": "ImmoStreet.ch: Wohnung & Haus mieten, Lugano (listing sample)",
+            "url": "https://www.immostreet.ch/de/mieten/wohnung_und_haus/in-lugano",
             "publisher": "ImmoStreet.ch",
             "kind": "other",
             "accessed": "2026-10-15"
@@ -5959,7 +5959,7 @@
             "currency": "CHF"
           },
           "year": 2026,
-          "description": "Median monthly asking rent of 9 distinct detached houses/villas with 6.5+ rooms and at least 180 m² (where stated) listed for rent in the Lake Geneva communes of Vaud on immobilier.ch on 15 October 2026 (Coppet, Commugny area, Mont-sur-Rolle, Aubonne, Préverenges, Saint-Prex, Bougy-Villars, La Tour-de-Peilz); range CHF 5,900-21,000. Duplicate listings and inland/Jura villages removed. Lausanne city itself had only four large houses (CHF 3,750-5,700).",
+          "description": "Median monthly asking rent of 9 distinct detached houses/villas with 6.5+ rooms and at least 180 m² (where stated) listed for rent in the Lake Geneva communes of Vaud on immobilier.ch on 15 October 2026 (Coppet, Commugny area, Mont-sur-Rolle, Aubonne, Préverenges, Saint-Prex, Bougy-Villars, La Tour-de-Peilz); range CHF 5,900-21,000. Duplicate listings and inland/Jura villages removed. Lausanne city itself had only four large houses (CHF 3,750-5,700). Checked 2026-10-15 against the upper-middle-class standard.",
           "source": {
             "title": "immobilier.ch: houses to rent, canton of Vaud (listing sample)",
             "url": "https://www.immobilier.ch/en/rent/house/vaud",
@@ -7015,14 +7015,14 @@
             "accessed": "2026-10-15"
           }
         },
-        "notes": "Prime rent is a small listing-portal sample of asking rents (15 October 2026). Health insurance and housekeeper costs were not sourced for this canton; see the national file for the federal housekeeper minimum wage.",
+        "notes": "Prime rent is a small listing-portal sample (Cologny and estate-size houses excluded) of asking rents (15 October 2026). Health insurance and housekeeper costs were not sourced for this canton; see the national file for the federal housekeeper minimum wage.",
         "prime_rent_monthly": {
           "value": {
-            "amount": 9000,
+            "amount": 7200,
             "currency": "CHF"
           },
           "year": 2026,
-          "description": "Median monthly asking rent of 13 detached houses/villas with 6+ rooms and at least 180 m² (where stated) listed for rent in the canton of Geneva on immobilier.ch on 15 October 2026 (Cologny, Anières, Chêne-Bougeries, Choulex, Jussy, Thônex, Vernier); range CHF 3,800-16,500, Cologny houses CHF 12,500-14,900. Listings with rent on request excluded.",
+          "description": "Median monthly asking rent of 6 detached houses/villas with 6+ rooms and at most 300 m² (where stated) listed for rent in the canton of Geneva on immobilier.ch on 15 October 2026 (Anières 4, Thônex 1, Vernier 1; unfurnished family houses); range CHF 3,800-9,500. Excluded as estate or trophy homes: 3 Cologny houses (CHF 12,500-14,900) and 3 houses of 348-600 m² in Choulex, Jussy and Chêne-Bougeries (CHF 8,000-16,500). Small sample of asking rents.",
           "source": {
             "title": "immobilier.ch: houses to rent, canton of Geneva (listing sample)",
             "url": "https://www.immobilier.ch/en/rent/house/geneva",

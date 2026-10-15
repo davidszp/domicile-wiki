@@ -276,11 +276,11 @@
     "city": "Muscat",
     "prime_rent_monthly": {
       "value": {
-        "amount": 2200,
+        "amount": 1400,
         "currency": "OMR"
       },
       "year": 2026,
-      "description": "Savills Oman guide rent for a 5-bedroom villa in Al Mouj (Tombazi), the prime expatriate waterfront community, on 15 Oct 2026. Other 4-5 bedroom villas in the same Savills listing page: Muscat Hills OMR 1,900, Al Khuwair OMR 2,500, Azaiba OMR 650-750 (6 listings; median OMR 1,400).",
+      "description": "Median monthly guide rent of the 6 four- and five-bedroom villas in Savills Oman's first results page of Muscat rentals on 2026-10-15 (Azaiba 5-bed 750, Azaiba 4-bed 650, Muscat townhouse 4-bed 900, Muscat Hills 5-bed 1,900, Al Mouj 5-bed 2,200, Al Khuwair 5-bed 2,500; OMR 650-2,500): OMR 1,400, the midpoint of 900 and 1,900. Replaces the Al Mouj waterfront 5-bedroom figure (OMR 2,200). Thin sample of one page; unfurnished/furnished not stated.",
       "source": {
         "title": "Properties for rent in Oman",
         "url": "https://search.savills.com/oma/en/list/property-to-rent/oman",

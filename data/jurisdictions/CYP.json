@@ -338,7 +338,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 64 four- and five-bedroom villas/detached houses listed for rent on Bazaraki on 2026-10-15 in Limassol's eastern coastal belt (Agios Tychonas, Germasogeia incl. Potamos, Mouttagiaka, Parekklisia, Pyrgos, Limassol Marina); interquartile range EUR 5,500-12,000. Sample: 480 house listings in Limassol district (8 result pages), filtered by title for 4-5 bedroom villa/detached house and rent >= EUR 1,000. Asking rents, not contract rents.",
+      "description": "Median asking rent of 64 four- and five-bedroom villas/detached houses listed for rent on Bazaraki on 2026-10-15 in Limassol's eastern coastal belt (Agios Tychonas, Germasogeia incl. Potamos, Mouttagiaka, Parekklisia, Pyrgos, Limassol Marina); interquartile range EUR 5,500-12,000. Sample: 480 house listings in Limassol district (8 result pages), filtered by title for 4-5 bedroom villa/detached house and rent >= EUR 1,000. Asking rents, not contract rents. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Houses to rent in Limassol district",
         "url": "https://www.bazaraki.com/real-estate-to-rent/houses/lemesos-district-limassol/",

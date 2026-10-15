@@ -236,7 +236,7 @@
         "currency": "USD"
       },
       "year": 2026,
-      "description": "Median asking rent of 48 distinct long-term listings (interquartile range USD 1,407-2,556) of flats with 4+ rooms and at least 120 m2 in the city of Minsk on realt.by, snapshot 2026-10-15: all 1,461 long-term flat listings on the site were read and filtered; duplicates (same rooms, area, address) removed. Listings priced in BYN or EUR were converted at the National Bank of Belarus rates of 15 October 2026 (USD 1 = BYN 3.0113; EUR 1 = BYN 3.3706); the median is about BYN 5,700. Asking rents; Belarusian room counts include the living room. Large houses near Minsk (Drozdy, Ratomka, Tarasovo) list from about USD 2,500 to 7,000 but that sample is mixed with short-stay and corporate lets and was not used.",
+      "description": "Median asking rent of 48 distinct long-term listings (interquartile range USD 1,407-2,556) of flats with 4+ rooms and at least 120 m2 in the city of Minsk on realt.by, snapshot 2026-10-15: all 1,461 long-term flat listings on the site were read and filtered; duplicates (same rooms, area, address) removed. Listings priced in BYN or EUR were converted at the National Bank of Belarus rates of 15 October 2026 (USD 1 = BYN 3.0113; EUR 1 = BYN 3.3706); the median is about BYN 5,700. Asking rents; Belarusian room counts include the living room. Large houses near Minsk (Drozdy, Ratomka, Tarasovo) list from about USD 2,500 to 7,000 but that sample is mixed with short-stay and corporate lets and was not used. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Realt.by - Аренда квартир на длительный срок (Минск)",
         "url": "https://realt.by/rent/flat-for-long/",

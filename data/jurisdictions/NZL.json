@@ -453,9 +453,9 @@
   "cost_of_living": {
     "city": "Auckland",
     "prime_rent_monthly": {
-      "value": {"amount": 5742, "currency": "NZD"},
+      "value": {"amount": 4550, "currency": "NZD"},
       "year": 2026,
-      "description": "Median weekly rent for houses with 5 or more bedrooms in Remuera, Auckland, from bonds lodged 1 March-31 August 2026: NZD 1,325 a week (lower quartile 1,100, upper quartile 1,550; 158 active bonds), converted to a month as x52/12. 4-bedroom houses: median NZD 1,050. Official MBIE bond data, not asking rents.",
+      "description": "Median weekly rent for 4-bedroom houses in Remuera, Auckland, from bonds lodged 1 March-31 August 2026: NZD 1,050 a week (462 active bonds), converted to a month as x52/12 (NZD 4,550). Remuera is a sought-after upper-middle family suburb. 5+ bedroom houses: median NZD 1,325 (158 bonds). Official MBIE bond data, not asking rents. Replaces the 5+ bedroom figure (NZD 5,742).",
       "source": {"title": "Market rent: Auckland - Remuera, 01 Mar 2026 - 31 Aug 2026", "url": "https://www.tenancy.govt.nz/rent-bond-and-bills/market-rent/?location=Remuera&period=42&action_doSearch=Search", "publisher": "Tenancy Services, Ministry of Business, Innovation and Employment", "kind": "government", "accessed": "2026-10-15"}
     },
     "intl_school_annual_fee": {

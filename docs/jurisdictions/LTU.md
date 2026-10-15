@@ -59,7 +59,7 @@ None. No special tax regime for newly arriving wealthy individuals was found; on
 ## Cost of living notes
 
 City: Vilnius.
-- Prime family-home rent (monthly): EUR 2,400 (2026). Median of the 8 priced houses for rent in and around Vilnius in Baltic Sotheby's International Realty's rental list on 15 Oct 2026 (EUR 1,700-4,700; Antakalnis new-build 226 m² 4 bedrooms EUR 4,700, Antakalnis 140 m² EUR 3,900, golf-course villas in Vilnius district 125-345 m² EUR 1,700-2,600, several already let). The four homes with 4-5 bedrooms also have a median of EUR 2,400. Thin sample: the main portals (Aruodas, Domoplius, Skelbiu) blocked automated access. Source: Find a property - for rent (houses), https://lt.balticsothebysrealty.com/en/find-a-property/?action=rent&type=house
+- Prime family-home rent (monthly): EUR 2,400 (2026). Median of the 8 priced houses for rent in and around Vilnius in Baltic Sotheby's International Realty's rental list on 15 Oct 2026 (EUR 1,700-4,700; Antakalnis new-build 226 m² 4 bedrooms EUR 4,700, Antakalnis 140 m² EUR 3,900, golf-course villas in Vilnius district 125-345 m² EUR 1,700-2,600, several already let). The four homes with 4-5 bedrooms also have a median of EUR 2,400. Thin sample: the main portals (Aruodas, Domoplius, Skelbiu) blocked automated access. Checked 2026-10-15 against the upper-middle-class standard. Source: Find a property - for rent (houses), https://lt.balticsothebysrealty.com/en/find-a-property/?action=rent&type=house
 - International school (annual, per child): EUR 26,847 (2026). American International School of Vilnius, Grades 11-12, 2026-2027: tuition EUR 24,349 plus annual capital fee EUR 2,498. New students pay a one-time EUR 2,707 admission fee and a EUR 428 application fee. Source: Tuition fees and payment policy, https://www.aisv.lt/tuition-fees-and-payment-policy/
 
 Prime purchase price per m², family health insurance and housekeeper cost were not sourced in this round and are omitted rather than guessed. Rent is low-confidence (8 listings from one agency).
@@ -88,3 +88,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15: confirmed conditions of the 15% rate on shares held over 5 years (KPMG LT / VMI, March 2026); added Vilnius cost of living (Baltic Sotheby's rent sample, AISV 2026-27 fees).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

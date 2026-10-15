@@ -64,3 +64,4 @@ City: St. George's (Egmont / Lance aux Epines / Grand Anse).
 - 2026-10-15: cost of living pass: added prime rent (USD 4,750, median of four 4-bed houses on Terra Caribbean); school fee still not sourced.
 - 2026-10-15: school fee re-checked; still not published online by any Grenadian private secondary school.
 - 2026-10-15: school fee re-checked with third-party and archive sources; still not sourced (Divine Savior Academy fees found but primary only).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

@@ -52,7 +52,7 @@ Method for rent and price per m²: a snapshot of LuxuryEstate.com taken on 2026-
 
 - The per-region addizionale regionale rates for 2026 were not tabulated. They affect only ordinary income.
 - Normattiva shows the TUIR (DPR 917/1986) repealed by D.Lgs. 19 June 2026 n. 117 from 1 January 2027, as part of a recodification. This is for the national file to assess. Tax year 2026 is unaffected.
-- Rents are luxury-portal asking-rent medians from small samples (7-18 listings); Florence and Liguria are probably inflated by short or seasonal lets. An agency report (e.g. Knight Frank, Engel & Völkers) would be a better source.
+- Rents are luxury-portal asking-rent medians from small samples (7-18 listings); they may be ultra-prime rather than upper-middle-class family homes (re-check of 2026-10-15 could not replace them: Immobiliare.it, Idealista, Casa.it, Wikicasa and Subito block automated access); Florence and Liguria are probably inflated by short or seasonal lets. An agency report (e.g. Knight Frank, Engel & Völkers) would be a better source.
 - The International School in Genoa fee (2023-24 table) is probably out of date.
 - No health insurance or housekeeper figures for any city.
 
@@ -69,3 +69,7 @@ Method for rent and price per m²: a snapshot of LuxuryEstate.com taken on 2026-
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15 (data-quality pass): added prime rent and price per m² for Milan, Rome, Florence and the Ligurian Tigullio coast from LuxuryEstate.com listing samples; added the International School of Florence 2026-27 fee (EUR 26,420); re-checked the Genoa school (no newer fee table, kept); added a Lake Como note under Lombardia.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept IT-25 (Milan EUR 8,250), but flagged as possibly ultra-prime in open_questions (no usable district listings reachable).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept IT-42 (Liguria EUR 15,000, Santa Margherita villas), but flagged as possibly ultra-prime in open_questions (no usable district listings reachable).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept IT-52 (Florence EUR 12,000), but flagged as possibly ultra-prime in open_questions (no usable district listings reachable).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept IT-62 (Rome EUR 10,000), but flagged as possibly ultra-prime in open_questions (no usable district listings reachable).

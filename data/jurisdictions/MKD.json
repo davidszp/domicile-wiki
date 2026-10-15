@@ -222,7 +222,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent (EUR 2,400/month, about MKD 148,000) of 49 houses for rent of at least 200 m² in Skopje's Centar and Karpoš municipalities (which include Vodno, Crniče, Kozle, Zhdanec and the Bardovci villa area; range EUR 1,000–11,200), from the detail pages of the 122 Centar/Karpoš listings among the first six pages (300 listings) of Pazar3.mk's Skopje houses/villas-for-rent search on 2026-10-15. Listings with a placeholder price (EUR 1) and two explicitly for business use were excluded. Rooms are given as total rooms, so floor area is the size filter. Asking prices on a listing portal.",
+      "description": "Median asking rent (EUR 2,400/month, about MKD 148,000) of 49 houses for rent of at least 200 m² in Skopje's Centar and Karpoš municipalities (which include Vodno, Crniče, Kozle, Zhdanec and the Bardovci villa area; range EUR 1,000–11,200), from the detail pages of the 122 Centar/Karpoš listings among the first six pages (300 listings) of Pazar3.mk's Skopje houses/villas-for-rent search on 2026-10-15. Listings with a placeholder price (EUR 1) and two explicitly for business use were excluded. Rooms are given as total rooms, so floor area is the size filter. Asking prices on a listing portal. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Куќи/Вили – Издавање – Скопје (houses/villas for rent, Skopje)",
         "url": "https://www.pazar3.mk/oglasi/zivealista/kukji-vili/izdavanje/skopje",

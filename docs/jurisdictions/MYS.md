@@ -83,7 +83,7 @@ Special zones/regimes: Labuan international business centre; Forest City Special
 ## Cost of living notes
 
 City: Kuala Lumpur.
-- Prime rent, monthly: 8,200 MYR (2026). Median asking rent of 40 unique 4- and 5-bedroom listings (condominiums, bungalows, semi-detached and terraced houses) located in Mont Kiara, Sri Hartamas, Bangsar, Damansara Heights, Bukit Tunku, Kenny Hills, Ampang Hilir or KLCC, taken from all Mudah.my Kuala Lumpur house and condominium rental listings with 4 or 5 bedrooms read 15 October 2026 (503 listings city-wide, median MYR 2,400). First quartile MYR 5,000, third quartile MYR 12,500; detached bungalows in these areas ask MYR 10,000-18,500. Source: Houses and apartments/condominiums for rent with 4 and 5 bedrooms in Kuala Lumpur (listing search).
+- Prime rent, monthly: 8,200 MYR (2026). Median asking rent of 40 unique 4- and 5-bedroom listings (condominiums, bungalows, semi-detached and terraced houses) located in Mont Kiara, Sri Hartamas, Bangsar, Damansara Heights, Bukit Tunku, Kenny Hills, Ampang Hilir or KLCC, taken from all Mudah.my Kuala Lumpur house and condominium rental listings with 4 or 5 bedrooms read 15 October 2026 (503 listings city-wide, median MYR 2,400). First quartile MYR 5,000, third quartile MYR 12,500; detached bungalows in these areas ask MYR 10,000-18,500. Checked 2026-10-15 against the upper-middle-class standard. Source: Houses and apartments/condominiums for rent with 4 and 5 bedrooms in Kuala Lumpur (listing search).
 - International school, annual per child: 129,712 MYR (2026). The Alice Smith School, Kuala Lumpur, Years 10-13 annual school fee 2026-27: MYR 122,370 plus 6% SST (MYR 7,342). Refundable parent deposit MYR 24,000 and enrolment fee extra. Source: Tuition and Fees.
 Purchase prices, health insurance and housekeeper costs not sourced. Foreign buyers face state minimum purchase prices (MYR 1 million or more in Kuala Lumpur, not re-verified).
 
@@ -113,3 +113,4 @@ Purchase prices, health insurance and housekeeper costs not sourced. Foreign buy
 - 2026-10-15: initial research.
 - 2026-10-15: reviewed special-regime durations: no special regime (the foreign-income exemption to 2036 applies to all residents and is in the standard regime).
 - 2026-10-15 (data-quality pass): added cost of living: prime-area 4-5 bedroom asking rent MYR 8,200 a month (Mudah.my sample, n=40) and Alice Smith School Years 10-13 fee MYR 129,712 incl. 6% SST (2026-27).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

@@ -214,3 +214,15 @@ or rates borrowed from a neighbouring jurisdiction), set that metric's `"status"
 scorer then treats it as missing, which lowers completeness instead of awarding an invented value. Keep
 whatever you did find in the text fields.
 
+
+## Addendum (2026-10-15): family home rent is upper-middle-class, not ultra-prime
+
+`cost_of_living.prime_rent_monthly` (the field name is historical) is the monthly rent of an
+**upper-middle-class family home**: about 4 bedrooms and 180-250 m², house or large flat, in a good,
+sought-after residential area of the main city, where well-off professional and international families
+live. It is **not** ultra-prime: no penthouses, seafront or trophy homes, no billionaire enclaves (e.g.
+not Kensington/Mayfair, Palm Jumeirah, Monaco's Carré d'Or, Lyford Cay). Benchmarks: Dubai Hills Estate
+4-bedroom villa about AED 50,000 a month; Monaco 200-300 m² 4-bedroom flat about EUR 28,500; London
+upper-middle districts such as Fulham, Wandsworth, Richmond or Hampstead's outskirts rather than Kensington.
+Prefer the median of several listings (state the count, area and date) or a market report; name the
+district in the description. `prime_price_per_m2` follows the same segment, or is null.

@@ -181,9 +181,9 @@ small samples, see the JSON descriptions for the filters and ranges):
 - CH-SZ Schwyz: CHF 5,890/month (ImmoStreet.ch, 15 October 2026)
 - CH-ZG Zug: CHF 6,500/month (ImmoStreet.ch, 15 October 2026)
 - CH-BS Basel-Stadt: CHF 6,300/month (ImmoStreet.ch, 15 October 2026)
-- CH-TI Ticino: CHF 9,500/month (ImmoStreet.ch, 15 October 2026)
+- CH-TI Ticino: CHF 4,300/month (ImmoStreet.ch, Lugano flats of 5+ rooms, 15 October 2026)
 - CH-VD Vaud: CHF 9,800/month (immobilier.ch, 15 October 2026)
-- CH-GE Geneva: CHF 9,000/month (immobilier.ch, 15 October 2026)
+- CH-GE Geneva: CHF 7,200/month (immobilier.ch, detached houses excluding Cologny and estate-size homes, 15 October 2026)
 - CH-ZH (national file): CHF 6,435/month (ImmoStreet.ch, city of Zurich).
 
 ## Open questions
@@ -227,9 +227,17 @@ small samples, see the JSON descriptions for the filters and ranges):
 - [ImmoStreet.ch: Haus mieten, Kanton Zug (listing sample)](https://www.immostreet.ch/de/mieten/haus/kanton-zug) — ImmoStreet.ch (other)
 - [ImmoStreet.ch: Haus mieten, Kanton Basel-Stadt (listing sample)](https://www.immostreet.ch/de/mieten/haus/kanton-basel-stadt) — ImmoStreet.ch (other)
 - [ImmoStreet.ch: Haus mieten, Lugano (listing sample)](https://www.immostreet.ch/de/mieten/haus/lugano) — ImmoStreet.ch (other)
+- [ImmoStreet.ch: Wohnung & Haus mieten, Lugano (listing sample)](https://www.immostreet.ch/de/mieten/wohnung_und_haus/in-lugano) — ImmoStreet.ch (other)
 - [immobilier.ch: houses to rent, canton of Vaud (listing sample)](https://www.immobilier.ch/en/rent/house/vaud) — immobilier.ch (other)
 - [immobilier.ch: houses to rent, canton of Geneva (listing sample)](https://www.immobilier.ch/en/rent/house/geneva) — immobilier.ch (other)
 
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15: added prime_rent_monthly for ZG, GE, VD, TI, SZ, BS and LU from listing-portal samples (ImmoStreet.ch, immobilier.ch) of 15 October 2026.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (CH-LU).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (CH-SZ).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (CH-ZG).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (CH-BS).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (CH-VD).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from CHF 9,500 to CHF 4,300 for CH-TI (Lugano villas of 300-600 m² to 5-7.5 room flats of 150-251 m²).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from CHF 9,000 to CHF 7,200 for CH-GE (Cologny and 350-600 m² estate houses excluded).

@@ -83,10 +83,10 @@ Special zones/regimes: 0% for eligible family-owned investment holding vehicles 
 ## Cost of living notes
 
 City: Hong Kong.
-- Prime rent, monthly: 92,800 HKD (2026). Derived: RVD average rent for Class E flats (160 m2 saleable or more) on Hong Kong Island, January-August 2026 monthly average HKD 464/m2 saleable per month (monthly values 422-505; August 2026 provisional), applied to a 200 m2 saleable 4-bedroom family flat. The 200 m2 size is an assumption, not an RVD figure. Cross-check: Centaline reported that Peak/Southern district luxury lettings of HKD 80,000-150,000 a month were the most sought after in August 2026 (reported by The Star/SCMP, 11 September 2026). Houses on the Peak rent for far more. Source: Private Domestic - Average Rents by Class (from 1982), monthly series up to August 2026.
-- Prime price per m²: 253,460 HKD (2026). RVD average price for Class E flats (160 m2 saleable or more) on Hong Kong Island, mean of the January-August 2026 monthly figures (range HKD 212,464-323,894 per m2 saleable; several months based on fewer than 20 transactions; secondary-market sales only). Source: Private Domestic - Average Prices by Class (from 1982), monthly series up to August 2026.
+- Prime rent, monthly: 124,000 HKD (2026). Median asking rent of 18 four-bedroom flats of about 1,360-2,840 sq ft saleable (about 125-265 m2) on OKAY.com, read 2026-10-15 (first results page only of each district): Tai Tam (10: Pacific View HKD 83,500-85,000; The Redhill Peninsula HKD 110,000-158,000), Pokfulam (Carrianna Sassoon 2,586 sq ft HKD 150,000), Mid-Levels West/Central/East (The Morgan HKD 103,000, Elegant Terrace 160,000, Kennedy Park 120,000, Borrett Mansions 120,000, 3 Macdonnell Road 160,000, United Mansion 78,000) and Happy Valley (Beverly Hill 78,000). Range HKD 78,000-160,000; 9th and 10th of 18 are HKD 120,000 and 128,000, midpoint 124,000. Excluded as trophy: the villa estates (Provident Villas, Felix Villas, Bel-Air on the Peak), The Summit, the Peak and Redhill units above 3,000 sq ft. Rents mostly inclusive of management fees. Replaces HKD 120,000 (7 flats) and the earlier derived HKD 92,800. Source: Properties for rent in Tai Tam (OKAY.com).
+- Prime price per m²: not set (the earlier RVD Class E figure of HKD 253,460 covers luxury flats including the Peak, so it was cleared).
 - International school, annual per child: 297,100 HKD (2026). Hong Kong International School, Grades 9-12, 2026-27: tuition HKD 136,300 per semester (HKD 272,600 a year) plus capital levy HKD 12,250 per semester (HKD 24,500 a year). One-time entry fee HKD 15,000 for new students. Source: Tuition and Fees.
-Rent is derived from official RVD per-m2 averages and an assumed 200 m2 flat, so treat it as indicative. Family health insurance and domestic helper costs were not sourced (the statutory Minimum Allowable Wage for foreign domestic helpers was not re-read in this pass).
+Family health insurance and domestic helper costs were not sourced (the statutory Minimum Allowable Wage for foreign domestic helpers was not re-read in this pass).
 
 ## Open questions
 
@@ -105,11 +105,14 @@ Rent is derived from official RVD per-m2 averages and an assumed 200 m2 flat, so
 - Enhancement measures to New CIES (press release, 7 January 2025) (HKSAR Government, government): https://www.info.gov.hk/gia/general/202501/07/P2025010600305.htm
 - Hong Kong SAR - Corporate - Taxes on corporate income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/hong-kong-sar/corporate/taxes-on-corporate-income
 - Private Domestic - Average Rents by Class (from 1982), monthly series up to August 2026 (Rating and Valuation Department, HKSAR Government, government): https://www.rvd.gov.hk/doc/en/statistics/his_data_1.xls
-- Private Domestic - Average Prices by Class (from 1982), monthly series up to August 2026 (Rating and Valuation Department, HKSAR Government, government): https://www.rvd.gov.hk/doc/en/statistics/his_data_2.xls
+- Properties for rent in Mid-levels West (OKAY.com, other): https://www.okay.com/en/property-search/rent/mid-levels-west
 - Tuition and Fees (Hong Kong International School, other): https://www.hkis.edu.hk/admissions/tuition-fees
+- Properties for rent in Tai Tam, Pokfulam, Happy Valley (OKAY.com, other): https://www.okay.com/en/property-search/rent/tai-tam , https://www.okay.com/en/property-search/rent/pokfulam , https://www.okay.com/en/property-search/rent/happy-valley
 
 ## Change log
 
 - 2026-10-15: initial research.
 - 2026-10-15: reviewed special-regime durations: no special regime.
 - 2026-10-15 (data-quality pass): added cost of living for Hong Kong: prime rent HKD 92,800 a month (RVD Class E Hong Kong Island average rent Jan-Aug 2026, HKD 464/m2, times an assumed 200 m2 flat), prime price HKD 253,460 per m2 (RVD Class E Hong Kong Island, Jan-Aug 2026 average) and HKIS Grades 9-12 fee HKD 297,100 (2026-27 tuition plus capital levy).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from HKD 92,800 to HKD 120,000 (Mid-Levels and Happy Valley 4-bedroom flats); price per m² cleared as ultra-prime.
+- 2026-10-15: family rent re-checked a second time: changed from HKD 120,000 (7 flats) to HKD 124,000 (18 four-bedroom flats in Tai Tam, Pokfulam, Mid-Levels and Happy Valley, trophy villas excluded).

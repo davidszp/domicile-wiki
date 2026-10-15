@@ -8,7 +8,7 @@
 # domicile.wiki
 
 An open, source-linked map of where to make your home: it ranks countries and regions for three
-kinds of mover. A **family office** (capital gains, dividends, inheritance and wealth taxes over two
+kinds of mover. A **high-net-worth individual (HNWI)** and family (capital gains, dividends, inheritance and wealth taxes over two
 generations), an **expat** employee (income tax, salary by location, money left over after living
 costs) and a **digital nomad** (income tax, living costs, visas, the local nomad scene), each also
 scored on safety, stability, rule of law, corruption, healthcare and quality of life. Every score can
@@ -104,6 +104,10 @@ Cloudflare Pages, connected to the GitHub repository (redeploys on every push):
 3. Add the custom domain under the project's Custom domains tab.
 
 To update the live site: rebuild locally (`make build test`), commit `web/data/`, push.
+
+Or deploy straight from this machine with Wrangler (`wrangler.jsonc` serves `web/` as static assets and
+applies `web/_headers`): `npx wrangler@4.151.0 login` once, then `npx wrangler@4.151.0 deploy`. The
+preview runs at <https://domicile-preview.domicile-web.workers.dev>.
 
 ### Security
 

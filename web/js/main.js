@@ -1,5 +1,5 @@
-import { h, clear, fmtScore, fmtEur } from "./dom.js";
-import { state, initState, update, subscribe, entries, jur, regimeOpts, metricsFor, taxMetrics, isIncomePersona, personaCfg } from "./state.js";
+import { h, clear, fmtScore, fmtEur, setDisplayCurrency } from "./dom.js";
+import { state, initState, update, subscribe, entries, jur, regimeOpts, metricsFor, taxMetrics, isIncomePersona, personaCfg, personaNoun } from "./state.js";
 import { loadScores, loadWorld, loadDetail, loadRegions, loadViews, DataError } from "./data.js";
 import { evaluate, nontaxOnly, bandFor, bandRange } from "./scoring.js";
 import { createMap } from "./map.js";
@@ -196,7 +196,7 @@ function renderLegend() {
 function fillLayers() {
   const layerSel = $("#layer");
   clear(layerSel);
-  const label = personaCfg().label.toLowerCase();
+  const label = personaNoun();
   const groups = { Summary: [["overall", `Overall ${label} score`], ["tax", "Tax score only"], ["nontax", "Non-tax score only"]] };
   groups["Single metric"] = Object.entries(metricsFor()).map(([k, m]) => [k, m.label]);
   for (const [g, opts] of Object.entries(groups)) {
@@ -209,7 +209,7 @@ function fillLayers() {
 
 function markPersona() {
   for (const b of document.querySelectorAll("[data-persona]")) b.setAttribute("aria-pressed", String(b.dataset.persona === state.persona));
-  // The activity and structure options only concern the family office's investment regimes.
+  // The activity and structure options only concern the HNWI persona's investment regimes.
   for (const id of ["#activity-wrap", "#structures-wrap"]) $(id).hidden = isIncomePersona();
   $("#persona-summary").textContent = personaCfg().summary;
 }
@@ -322,7 +322,13 @@ function showFatal(msg) {
   clear(el).append(h("strong", null, "The map could not load. "), msg, " ", h("button", { onclick: () => window.location.reload() }, "Retry"));
 }
 
+/** US citizens see USD, everyone else EUR (amounts are computed in EUR; see dom.js). */
+function applyCurrency() {
+  setDisplayCurrency(state.citizenship === "US" ? "USD" : "EUR", state.data.meta.fx_usd_per_eur);
+}
+
 function onStateChange(patch) {
+  if ("citizenship" in patch) applyCurrency();
   if ("persona" in patch) {
     fillLayers();
     markPersona();
@@ -343,11 +349,12 @@ async function boot() {
     const [scores, world, viewsJson] = await Promise.all([loadScores(), loadWorld(), loadViews()]);
     views = viewsJson;
     initState(scores);
+    applyCurrency();
     $("#built").textContent = `Data built ${scores.meta.built} · FX ${scores.meta.fx_date}`;
     const topo = { world, detail: null, regions: null };
     const mapRoot = $("#map");
     map = createMap(mapRoot, {
-      views, topo, colorOf, statusOf, tooltipOf, markersOf, isResearched: (id) => Boolean(jur(id)?.researched),
+      views, topo, colorOf, statusOf, tooltipOf, markersOf, showRegions: state.showRegions, isResearched: (id) => Boolean(jur(id)?.researched),
       // Keep the zoomed-out maps readable: researched jurisdictions are always labelled, others
       // (and regions that only inherit national rules) once the user zooms in.
       labelOf: (id, k) => {

@@ -41,7 +41,7 @@ Corporate income tax 9% in general (5.5% for some companies; 0-2% insurance; 4.5
 ## Cost of living notes
 
 City: West coast (St James) / Bridgetown.
-- Prime 4-5 bedroom rent (monthly): USD 14,000 (2026). Average of the two 4-5 bedroom houses on the west coast (St James) listed as long-term rentals by Barbados Sotheby's International Realty on 15 Oct 2026: Apes Hill, The View, 4-bed USD 13,000; Prior Park 13, 5-bed USD 15,000. Small sample. Elsewhere on the island 4-5 bed long-term rentals were listed at USD 3,250-8,500 (Sotheby's St Michael/St George; Realtors Ltd Christ Church). Asking rents. Source: Barbados Sotheby's International Realty: Long-term rentals (viewed 15 Oct 2026).
+- Prime family rent: USD 6,000/month. Median of the three 4-5 bedroom houses on Barbados outside the west-coast trophy belt (St James/Apes Hill) listed as long-term rentals on 15 Oct 2026: Belori, The Farm, 4-bed (about 600 m2) USD 5,000; Frere Pilgrim 9, Christ Church, executive 4-bed with pool USD 6,000 (Nvest Estates); Buchanan, St Michael, 5-bed (about 465 m2) USD 8,500 (Barbados Sotheby's International Realty). Furnishing not stated. Small sample; asking rents. The previous figure (USD 14,000) used the Apes Hill and Prior Park St James trophy houses. Source: Barbados Sotheby's International Realty: Long-term rentals (viewed 15 Oct 2026).
 - International school fee (annual, per child): USD 23,350 (2026). The Codrington School (IB World School, St John), MYP 1 - DP 2 annual tuition 2026-27 at the 'Regular' rate for students who are not Barbadian or CARICOM nationals (CARICOM 17,500; Barbadian 11,700). Plus one-time admission fee USD 2,500-6,000, resource fee USD 100 a year and DP exam fee USD 1,000 in DP2. Source: The Codrington School: Statement of annual fees 2026-2027.
 
 Purchase price per m2, health insurance and housekeeper not sourced.
@@ -49,10 +49,11 @@ Purchase price per m2, health insurance and housekeeper not sourced.
 ## Open questions
 
 - SERP eligibility thresholds and any tax features not verified on an official page.
-- Prime purchase price per m2, family health insurance and housekeeper cost not sourced; the west-coast rent rests on two listings.
+- Prime purchase price per m2, family health insurance and housekeeper cost not sourced.
 - inheritance (standard): Whether property transfer tax applies to real estate passing on death (only gifts are mentioned by Deloitte).
 - dividends (resident_non_domiciled): How broadly 'benefit obtained in Barbados' is read in practice (e.g. foreign card spending in Barbados).
 - dividends (welcome_stamp): Whether the income-tax exemption covers investment income of a long-stay family that renews the stamp repeatedly.
+- Family rent (USD 6,000) rests on three upper-middle 4-5 bedroom listings (Sotheby's and Nvest Estates, 15 Oct 2026); the sample is small.
 
 ## Sources
 
@@ -74,3 +75,4 @@ Purchase price per m2, health insurance and housekeeper not sourced.
 - 2026-10-15: initial research.
 - 2026-10-15: second pass. Added duration_note to resident_non_domiciled (no statutory limit; ends on acquiring a Barbados domicile of choice) and stated in its eligibility_conditions that the 0% foreign-dividend rate assumes no remittance/benefit in Barbados. Added cost of living: west-coast 4-5 bed rent USD 14,000/month (Barbados Sotheby's) and Codrington School 2026-27 IB tuition USD 23,350 (regular rate).
 - 2026-10-15: flagged `welcome_stamp` as requiring employment or a qualifying activity (`requires_qualifying_activity`), so it is no longer used as the best regime for a passive investor family unless the user opts in.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from USD 14,000 to USD 6,000 (The Farm, Christ Church, St Michael).

@@ -69,3 +69,4 @@ Purchase price per m2, health insurance and housekeeper not sourced.
 - 2026-10-15: initial research.
 - 2026-10-15: second pass. Added Island Academy 2026-27 IB tuition (XCD 30,000, grades 12-13). Prime rent not sourced.
 - 2026-10-15: added prime rent (USD 4,000, median of seven 4-5 bed long lets at Chestertons Antigua; Lush Locations corroborates).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

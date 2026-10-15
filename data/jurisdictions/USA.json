@@ -525,5 +525,39 @@
     "EB-5 investment amounts and visa routes not verified in this session.",
     "Cost of living omitted: it depends entirely on the state/city, which the subnational research covers.",
     "Whether the US Pillar Two 'side-by-side' arrangement affects family holding companies was not researched (it concerns large multinationals)."
-  ]
+  ],
+  "cost_of_living": {
+    "city": "Austin, TX",
+    "prime_rent_monthly": {
+      "value": {
+        "amount": 4550,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "Median asking rent of 10 four-bedroom houses to let in family areas of Austin on Zumper, read 2026-10-15 from all four pages (192 results) of the Austin 4-bedroom house search, keeping only family districts and dropping the University of Texas student-house belt (West University, Hancock, North University, Hyde Park, North Loop). Listings: Circle C (3: USD 3,800, 3,945, 4,100), Westlake/Barton Hills area ZIP 78746 (2: USD 6,894, 7,495), Mueller (USD 5,000), Wooten (USD 6,900), North Shoal Creek (USD 3,600), ZIP 78730 northwest (USD 2,750) and South River City (USD 6,800). Range USD 2,750-7,495; most listings do not state floor area, those that do are 1,784-3,068 sq ft (about 165-285 m2). Tarrytown and Allandale had no 4-bedroom house listed. Base rent; fees may apply.",
+      "source": {
+        "title": "Zumper - 4 bedroom houses for rent in Austin, TX",
+        "url": "https://www.zumper.com/houses-for-rent/austin-tx/4-beds",
+        "publisher": "Zumper",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "intl_school_annual_fee": {
+      "value": {
+        "amount": 41500,
+        "currency": "USD"
+      },
+      "year": 2026,
+      "description": "St. Stephen's Episcopal School, Austin: Upper School (grades 9-12) day tuition 2026-27 USD 41,500; with the USD 1,000 facilities fee and USD 2,500 food service the school quotes a total of USD 45,000 for a day student, plus USD 500-800 for books. Tuition only is used here.",
+      "source": {
+        "title": "St. Stephen's Episcopal School - Tuition and fees 2026-27",
+        "url": "https://www.sstx.org/fs/pages/442",
+        "publisher": "St. Stephen's Episcopal School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
+    },
+    "notes": "Austin, TX (upper-middle-class benchmark, replacing New York). Prime price per m2, family health insurance and housekeeper not sourced and omitted. The rent sample is skewed by student-oriented houses near the University of Texas; the median is a central-Austin figure, not a Tarrytown or Westlake figure."
+  }
 }

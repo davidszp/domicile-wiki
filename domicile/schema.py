@@ -242,7 +242,9 @@ class CostItem(Strict):
 
 class CostOfLiving(Strict):
     city: str
-    prime_rent_monthly: CostItem | None = Field(None, description="4-5 bedroom family home, prime area")
+    prime_rent_monthly: CostItem | None = Field(None, description="Upper-middle-class family home: about 4 bedrooms, "
+                                                "180-250 m², good residential area of the main city; not ultra-prime "
+                                                "(field name is historical; see RESEARCH_GUIDE addendum)")
     prime_price_per_m2: CostItem | None = None
     intl_school_annual_fee: CostItem | None = Field(None, description="Leading international school, secondary, per child")
     family_health_insurance_annual: CostItem | None = None

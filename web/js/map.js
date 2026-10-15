@@ -36,7 +36,7 @@ export function createMap(root, opts) {
   let current = null;
   let selected = null;
   let hovered = null;
-  let showRegions = true;
+  let showRegions = opts.showRegions ?? false; // cantons and Spanish/Italian regions start hidden
 
   // Keyed by the topology object itself, so a later-loaded file can never be served from a stale entry.
   const featureCache = new WeakMap();

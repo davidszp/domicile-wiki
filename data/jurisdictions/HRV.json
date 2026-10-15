@@ -251,7 +251,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 47 detached family houses (obiteljska/višeobiteljska kuća) for rent at EUR 1,000 or more on Nekretnine.hr on 2026-10-15 in Zagreb's prime residential districts (Šestine-Mlinovi, Gračani, Podsljeme, Pantovčak, Tuškanac, Gornji Grad-Medveščak, Srebrnjak). Interquartile range about EUR 2,700-6,000; top listings EUR 10,000-14,000 (Tuškanac, Gračani). Bedroom counts are not shown in the list view; typical sizes 240-500 m2. Sample from 396 detached houses for rent in Zagreb (14 pages). Asking rents.",
+      "description": "Median asking rent of 47 detached family houses (obiteljska/višeobiteljska kuća) for rent at EUR 1,000 or more on Nekretnine.hr on 2026-10-15 in Zagreb's prime residential districts (Šestine-Mlinovi, Gračani, Podsljeme, Pantovčak, Tuškanac, Gornji Grad-Medveščak, Srebrnjak). Interquartile range about EUR 2,700-6,000; top listings EUR 10,000-14,000 (Tuškanac, Gračani). Bedroom counts are not shown in the list view; typical sizes 240-500 m2. Sample from 396 detached houses for rent in Zagreb (14 pages). Asking rents. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Najam samostojećih kuća Zagreb",
         "url": "https://www.nekretnine.hr/najam-samostojeca-kuce/zagreb/",

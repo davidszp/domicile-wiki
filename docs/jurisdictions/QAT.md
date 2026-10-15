@@ -99,4 +99,4 @@ City: Doha.
 
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added prime rent (The Pearl 4-5 bed villas, Property Finder sample) and school fee (Sherborne Qatar 2026/27).
-
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

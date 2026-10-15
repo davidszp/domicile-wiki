@@ -441,15 +441,15 @@
     "notes": "Health insurance, housekeeper and price per m² not sourced. Vuokraovi and Oikotie listings could not be read automatically (scripted pages).",
     "prime_rent_monthly": {
       "value": {
-        "amount": 2490,
+        "amount": 4000,
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of the 5 whole houses with 5+ rooms and 4 bedrooms for rent in Helsinki and Espoo on Qasa on 2026-10-15 (EUR 1,890-3,450; room lets excluded). Very thin sample, not limited to prime districts, so it probably understates a prime family house (e.g. Kulosaari, Westend).",
+      "description": "Median asking rent of 5 family homes of 113-164 m2 in the west-coast districts on Vuokraovi, read 2026-10-15: Lauttasaari, Helsinki (Katajaharju row house 5h 128 m2 EUR 2,900; Nahkahousunkuja 4, 3h 146 m2 EUR 4,000; Pohjoiskaari 6, 3h 113 m2 furnished EUR 3,700) and Espoo's Nuottaniemi (6h 164 m2 EUR 4,970) and Koukkuniemi (5h 159-167 m2 EUR 4,250). Range EUR 2,900-4,970. No 4+ room rental was listed in Munkkiniemi, Kulosaari or Westend itself (Westend had one studio). Asking rents; thin sample. Replaces EUR 2,490 (5 Qasa houses across Helsinki and Espoo).",
       "source": {
-        "title": "Qasa - houses for rent, Helsinki",
-        "url": "https://qasa.com/fi/en/find-home?homeTypes=house&minRoomCount=5&searchAreas=Helsinki%7E%7Efi",
-        "publisher": "Qasa",
+        "title": "Vuokraovi - Vuokra-asunnot Lauttasaari, Helsinki (with Espoo omakotitalo search)",
+        "url": "https://www.vuokraovi.com/vuokra-asunnot/helsinki/lauttasaari",
+        "publisher": "Vuokraovi",
         "kind": "other",
         "accessed": "2026-10-15"
       }
@@ -468,6 +468,7 @@
   "open_questions": [
     "Whether HE 151/2026 (CIT 18% from 2027) has been passed by Parliament.",
     "Additional inheritance deduction for minor children in 2026.",
-    "Cost-of-living items other than school fees."
+    "Cost-of-living items other than school fees.",
+    "Family rent (EUR 4,000) rests on 5 Vuokraovi listings in Lauttasaari, Nuottaniemi and Koukkuniemi; no 4+ room rentals were listed in Munkkiniemi, Kulosaari or Westend, and two of the five are 3-room flats of 113-146 m2."
   ]
 }

@@ -155,7 +155,7 @@ Special zones/regimes: Portfolio investment entities (PIE) regime caps investor 
 ## Cost of living notes
 
 City: Auckland.
-- Prime rent, monthly: 5,742 NZD (2026). Median weekly rent for houses with 5 or more bedrooms in Remuera, Auckland, from bonds lodged 1 March-31 August 2026: NZD 1,325 a week (lower quartile 1,100, upper quartile 1,550; 158 active bonds), converted to a month as x52/12. 4-bedroom houses: median NZD 1,050. Official MBIE bond data, not asking rents. Source: Market rent: Auckland - Remuera, 01 Mar 2026 - 31 Aug 2026.
+- Prime rent, monthly: 4,550 NZD (2026). Median weekly rent for 4-bedroom houses in Remuera, Auckland, from bonds lodged 1 March-31 August 2026: NZD 1,050 a week (462 active bonds), converted to a month as x52/12 (NZD 4,550). Remuera is a sought-after upper-middle family suburb. 5+ bedroom houses: median NZD 1,325 (158 bonds). Official MBIE bond data, not asking rents. Replaces the 5+ bedroom figure (NZD 5,742). Source: Market rent: Auckland - Remuera, 01 Mar 2026 - 31 Aug 2026.
 - International school, annual per child: 33,422 NZD (2026). King's College, Auckland, 2026 domestic day-student total for Years 11-13: tuition NZD 32,572 plus campus and building levy NZD 850 (GST inclusive). Children of residence-class visa holders pay domestic fees; international students pay a separate, higher schedule (2027 PDF not opened). Source: College Fees.
 Purchase prices, health insurance and housekeeper costs not sourced. Foreign buyers are generally barred from buying existing homes (Overseas Investment Act), with an Active Investor Plus exception.
 
@@ -192,3 +192,4 @@ Purchase prices, health insurance and housekeeper costs not sourced. Foreign buy
 - 2026-10-15: reviewed special-regime durations: transitional resident 4 years (unchanged); revenue account method is an indefinite election, so duration stays null and a duration_note now explains why.
 - 2026-10-15 (data-quality pass): added cost of living: Remuera 5+ bedroom house rent NZD 5,742 a month (MBIE market rent, bonds Mar-Aug 2026) and King's College Years 11-13 domestic day fee NZD 33,422 (2026).
 - 2026-10-15: added the `investment_company` structure regime (FIF at the 28% company rate) and a Holding structures section.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from 5,742 NZD to 4,550 NZD (Remuera 4-bedroom house).

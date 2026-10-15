@@ -495,14 +495,14 @@
     "city": "Tokyo",
     "prime_rent_monthly": {
       "value": {
-        "amount": 1650000,
+        "amount": 438000,
         "currency": "JPY"
       },
       "year": 2026,
-      "description": "Median asking rent of 59 unique listings with 4 or 5 bedrooms (4LDK/4SLDK/5LDK and larger) in Minato ward (Azabu, Hiroo, Akasaka, Shirokane, Takanawa) on SUUMO, all result pages read 15 October 2026; median floor area 211 m2, first quartile JPY 1.2 million, third quartile JPY 2.1 million. Rent excludes management fees; deposits and key money (often 1-2 months each) are extra.",
+      "description": "Median asking rent of 205 current SUUMO listings of 100 m2 or more with 4 or more rooms (4LDK/4SLDK/5LDK and larger; mostly apartments plus some houses) in Setagaya, Meguro and Suginami wards, Tokyo, read from all result pages on 15 October 2026 (313 listings in the three wards before the 100 m2 filter, median JPY 350,000); first quartile JPY 300,000, third quartile JPY 680,000; median floor area 127 m2. Setagaya, Meguro and Suginami are the sought-after family districts (Chofu/Setagaya for ASIJ), well below the Minato expat-luxury segment (JPY 1.65 million, replaced). Rent excludes management fees; deposits and key money are extra.",
       "source": {
-        "title": "SUUMO rental search: Minato-ku, Tokyo, 4K-5K+ layouts",
-        "url": "https://suumo.jp/jj/chintai/ichiran/FR301FC001/?ar=030&bs=040&ta=13&sc=13103&md=11&md=12&md=13&md=14&pc=50",
+        "title": "SUUMO rental search: Setagaya-ku, Meguro-ku and Suginami-ku, Tokyo, 4K-5K+ layouts",
+        "url": "https://suumo.jp/jj/chintai/ichiran/FR301FC001/?ar=030&bs=040&ta=13&sc=13112&md=11&md=12&md=13&md=14&pc=50",
         "publisher": "SUUMO (Recruit Co., Ltd.)",
         "kind": "other",
         "accessed": "2026-10-15"
@@ -523,7 +523,7 @@
         "accessed": "2026-10-15"
       }
     },
-    "notes": "Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in Chofu; families choosing it often live in Chofu/Setagaya, where rents are well below Minato."
+    "notes": "Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in Chofu; families choosing it often live in Chofu/Setagaya, where the family rent in the figure above is taken."
   },
   "markers": [
     {

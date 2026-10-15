@@ -160,3 +160,4 @@ US citizens: The US-Germany income tax treaty and the separate US-Germany estate
 - 2026-10-15: initial research.
 - 2026-10-15: added prime rent (immobilo.de listing sample, EUR 4,250/month cold rent).
 - 2026-10-15: added the holding structure regime `vv_gmbh` (asset-holding GmbH: share gains 1.649%, portfolio dividends 32.975% at the Munich multiplier, payout 26.375%); noted that the extended trade-tax reduction does not cover securities income; added § 13b ErbStG detail on GmbH shares; Holding structures section.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

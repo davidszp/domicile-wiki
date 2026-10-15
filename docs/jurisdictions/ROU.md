@@ -122,3 +122,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 
 - 2026-10-15: initial research.
 - 2026-10-15: added Bucharest cost of living (Storia.ro rent sample, AISB 2026-27 fees).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

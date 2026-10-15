@@ -43,7 +43,7 @@ No corporate income tax or withholding taxes. Economic substance, CRS and FATCA 
 City: Providenciales.
 - International school fee (annual, per child): USD 15,039 (2026). British West Indies Collegiate (Providenciales, non-profit 11-18 school, Cambridge IGCSE/A level), Years 9-13 tuition from September 2026: USD 5,013 a term, 15,039 a year (4% discount for full-year advance payment). Plus a USD 500 annual textbook fee and USD 500 enrolment fee (not included). Source: British West Indies Collegiate: Tuition fees 2026-2027 (fee changes from September 2026).
 
-- Prime rent: USD 10,000 a month (2026). The only 4-5 bedroom long-term rental on CENTURY 21 Turks & Caicos's Providenciales rental page on 15 Oct 2026: The Haven at Long Bay Beach, Long Bay Hills, 4 bed / 4.5 bath, furnished, first and last month plus a USD 10,000 deposit. Sample of one (the page listed three rentals in all; a 3-bed Blue Mountain house was USD 5,500).
+- Prime rent: USD 6,000 a month (2026). Median of four Providenciales 3-4 bedroom houses/townhomes for long-term rent on 15 Oct 2026 (only two have 4 bedrooms): USD 4,500 Turtle Tail, 5,500 Discovery Bay, 6,500 Grace Bay townhome, 10,000 Long Bay Hills (TCI Rent; CENTURY 21 TCI). Thin sample.
 
 Purchase price per m2, health insurance and housekeeper not sourced. Other fees from the school's Application and Fees page.
 
@@ -54,7 +54,7 @@ Purchase price per m2, health insurance and housekeeper not sourced. Other fees 
 - Homicide override not added: press reports (about 24 murders by mid-August 2025, 47-48 in 2024) are not an official full-year statistic.
 - Overall score: TCA has no WGI, CPI, HDI, LPI, learning-outcome or World Bank internet-use data. The TCI Department of Statistics crime-statistics page reads 'Information Coming Soon' (checked 15 Oct 2026) and no official internet-use percentage was found, so no indicator override is added. Even with a rent figure and an internet-use override, weighted data completeness would be about 0.598, still just below the 0.60 provisional threshold.
 - inheritance (standard): Stamp duty on land passing on death (transmission/assent) and probate fees were not found; no primary source (Stamp Duty Ordinance schedule) could be opened. other_transfer_cost_rate is kept at 0 pending a source.
-- Prime rent rests on a single CENTURY 21 listing (USD 10,000 a month, Long Bay Hills); Turks & Caicos Sotheby's and Coldwell Banker TCI sites could not be read, so a broader sample is still needed.
+- Prime rent rests on only four Providenciales house listings (two with 4 bedrooms); Sotheby's and Coldwell Banker TCI sites could not be read.
 
 ## Sources
 
@@ -65,9 +65,11 @@ Purchase price per m2, health insurance and housekeeper not sourced. Other fees 
 - IMI Daily: Turks & Caicos Investor Visa (Permanent Residence Certificate): https://www.imidaily.com/program-updates/turks-caicos-investor-visa-program/
 - British West Indies Collegiate: Tuition fees 2026-2027 (fee changes from September 2026): https://www.bwic.tc/wp-content/uploads/2026/06/bwic_2026_27-feechanges.pdf
 - CENTURY 21 Turks & Caicos: The Haven at Long Bay Beach, home for rent (MLS 1160959): https://century21tci.com/en/d/the-haven-at-long-bay-beach-single-family-homes-for-rent-long-bay-hills-providenciales-1160959
+- TCI Rent: long-term rental search (Providenciales): https://tcirent.com/en/search
 
 ## Change log
 
 - 2026-10-15: initial research.
 - 2026-10-15: second pass. Added British West Indies Collegiate 2026-27 tuition (USD 15,039, Years 9-13). Prime rent not sourced. Looked for official homicide and internet-use statistics for overrides: the TCI statistics office crime page has no data yet, so none added; TCA stays below the completeness threshold. Probate/stamp duty on land to heirs still unsourced.
 - 2026-10-15: cost of living pass: added prime rent (USD 10,000 a month, single CENTURY 21 Providenciales listing); open question replaced with a sample-size caveat.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from USD 10,000 (single Long Bay Hills listing) to USD 6,000 (median of 4 Providenciales 3-4 bed houses).

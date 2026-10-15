@@ -157,7 +157,7 @@
         "currency": "USD"
       },
       "year": 2026,
-      "description": "Median of the three 4-5 bedroom long-term rentals on Smiths Gore's BVI long-term rental page on 15 Oct 2026 (all Tortola place names): Havers House villa, 5 bed, USD 7,500; McNamara apartment, 4 bed, USD 3,500; Great Mountain apartment, 4 bed, USD 3,200. Small sample, and two of the three are apartments; the only house/villa (USD 7,500) is closer to what a wealthy family would rent, so treat the median as a floor.",
+      "description": "Median of the three 4-5 bedroom long-term rentals on Smiths Gore's BVI long-term rental page on 15 Oct 2026 (all Tortola place names): Havers House villa, 5 bed, USD 7,500; McNamara apartment, 4 bed, USD 3,500; Great Mountain apartment, 4 bed, USD 3,200. Small sample, and two of the three are apartments; the only house/villa (USD 7,500) is closer to what a wealthy family would rent, so treat the median as a floor. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Smiths Gore BVI: long-term rentals",
         "url": "https://smithsgore.com/properties/long-term-rentals",

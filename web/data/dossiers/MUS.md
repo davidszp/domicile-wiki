@@ -88,7 +88,7 @@ Special zones/regimes: Freeport zone (3%), GBL regime for international business
 
 City: Grand Baie / Tamarin (north and west coasts); Moka for schools.
 
-- **prime_rent_monthly**: 130,000 MUR (2026). Median monthly rent of the 17 long-term rental houses and villas with 4-5 bedrooms listed by Pam Golding Mauritius on 15 Oct 2026 (Tamarin, Pereybere, Grand Baie area, Rivière Noire, La Louisa, Piton, etc.); range MUR 55,000-265,000. Agency asking rents; furnishing mostly not stated. Source: [Long-term rental properties in Mauritius](https://www.pamgolding.mu/en/rent-properties-mauritius/long-term-rental-mauritius.html).
+- **prime_rent_monthly**: 130,000 MUR (2026). Median monthly rent of the 17 long-term rental houses and villas with 4-5 bedrooms listed by Pam Golding Mauritius on 15 Oct 2026 (Tamarin, Pereybere, Grand Baie area, Rivière Noire, La Louisa, Piton, etc.); range MUR 55,000-265,000. Agency asking rents; furnishing mostly not stated. Checked 2026-10-15 against the upper-middle-class standard. Source: [Long-term rental properties in Mauritius](https://www.pamgolding.mu/en/rent-properties-mauritius/long-term-rental-mauritius.html).
 - **intl_school_annual_fee**: 286,880 MUR (2026). Lycée des Mascareignes (Moka; French AEFE-network lycée), seconde to terminale annual fee 2026-27 for families of other nationalities, standard track (international BFI track: MUR 390,610; French or Mauritian parents: MUR 234,410); one-time first-registration fee MUR 100,000. Source: [Lycée des Mascareignes - Frais de scolarité et règlement financier 2026-2027](https://www.lyceedesmascareignes.org/frais-de-scolarite-et-reglement-financier).
 - English-curriculum schools (Northfields, Le Bocage) do not publish fees online or could not be reached. Purchase prices, health insurance and housekeeper costs not sourced.
 
@@ -117,4 +117,4 @@ City: Grand Baie / Tamarin (north and west coasts); Moka for schools.
 - 2026-10-15: initial research.
 - 2026-10-15: reviewed special-regime durations: no special regime.
 - 2026-10-15: data-quality pass: added rent (Pam Golding 4-5 bed houses/villas, median) and school fee (Lycée des Mascareignes 2026-27); Fair Share Contribution re-verified with Deloitte Mauritius Highlights 2026; remittance basis stated explicitly in dividend and capital-gains eligibility conditions; dividend WHT 0% and 50+ treaties confirmed.
-
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

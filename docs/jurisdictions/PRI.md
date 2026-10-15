@@ -48,6 +48,7 @@ City: San Juan (Dorado / Condado).
 
 ## Open questions
 
+- Family rent (USD 5,235) is an island-wide condo/townhouse average and was not replaced: only individual Dorado/Guaynabo 4-bedroom houses were seen in search results (USD 3,600-4,900 in Dorado del Mar/Paseo del Mar, USD 4,200 in Mansiones Reales, USD 9,500 in Garden Hills Estates), and Zillow, Trulia, Realtor, RentHop and Maxlife pages returned 403 or were off the market, so no median of several current listings could be opened; it may understate a Garden Hills/Dorado family house.
 - FOMB endorsement status of Act 38-2026: no Board letter or statement on the Act found in its documents library (checked 2026-10-15); DDEC applies it as in force.
 - Tax position of non-US citizens (EU/OTHER) living in Puerto Rico under US immigration status (green card makes them US tax residents) not modelled; Act 60 is designed for US citizens.
 - Source rules for pre-move gains (IRC §937 regulations) not re-verified in this pass.
@@ -77,3 +78,5 @@ City: San Juan (Dorado / Condado).
 
 - 2026-10-15: initial research.
 - 2026-10-15: added cost of living (Global Property Guide rent, Baldwin School 2026-27 fees); checked the FOMB documents library for Act 38-2026 (nothing found) and updated the open question.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-15: family rent re-checked a second time: kept at USD 5,235; no median of several Dorado/Guaynabo listings could be opened (portals blocked), open question expanded.

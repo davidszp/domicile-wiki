@@ -4,81 +4,45 @@
   "currency": "USD",
   "researched_on": "2026-10-15",
   "income_tax": {
-    "summary": "US federal income tax runs 10% to 37% (2026 single brackets; standard deduction USD 16,100). New York State (3.9% to 10.9% in 2026) and New York City (3.078% to 3.876%) are stacked on top, giving roughly 41-47% at the 150,000 level. Employees pay 6.2% social security up to USD 184,500 plus 1.45% Medicare; the self-employed pay 15.3% (12.4% + 2.9%). Other states vary widely: nine have no wage income tax (for example Texas and Florida).",
+    "summary": "US federal income tax only: 10% to 37% (2026 single brackets; standard deduction USD 16,100, modelled as the personal allowance). Austin, Texas adds no personal income tax: Texas has no state income tax and no local income tax was found for Austin. About 22% federal marginal rate at the 150,000 level. Employees pay 6.2% social security up to USD 184,500 plus 1.45% Medicare (plus 0.9% Additional Medicare Tax on wages above USD 200,000, not modelled); the self-employed pay 15.3% (12.4% + 2.9%) on 92.35% of net earnings. Other states vary widely: nine have no wage income tax (for example Texas and Florida).",
     "tax_year": "2026",
     "brackets": [
       {
         "from_amount": 0,
-        "rate": 0.16978
-      },
-      {
-        "from_amount": 400,
-        "rate": 0.17478
-      },
-      {
-        "from_amount": 3600,
-        "rate": 0.18228
-      },
-      {
-        "from_amount": 3900,
-        "rate": 0.18912
-      },
-      {
-        "from_amount": 5800,
-        "rate": 0.19162
+        "rate": 0.1
       },
       {
         "from_amount": 12400,
-        "rate": 0.21162
-      },
-      {
-        "from_amount": 16900,
-        "rate": 0.21219
-      },
-      {
-        "from_amount": 41900,
-        "rate": 0.21276
+        "rate": 0.12
       },
       {
         "from_amount": 50400,
-        "rate": 0.31276
-      },
-      {
-        "from_amount": 72550,
-        "rate": 0.31776
+        "rate": 0.22
       },
       {
         "from_amount": 105700,
-        "rate": 0.33776
+        "rate": 0.24
       },
       {
         "from_amount": 201775,
-        "rate": 0.41776
-      },
-      {
-        "from_amount": 207300,
-        "rate": 0.42726
+        "rate": 0.32
       },
       {
         "from_amount": 256225,
-        "rate": 0.45726
+        "rate": 0.35
       },
       {
         "from_amount": 640600,
-        "rate": 0.47726
-      },
-      {
-        "from_amount": 1069450,
-        "rate": 0.50526
+        "rate": 0.37
       }
     ],
-    "personal_allowance": 0,
+    "personal_allowance": 16100,
     "employee_social_security_rate": 0.0765,
     "employee_social_security_cap": 184500,
     "self_employed_social_security_rate": 0.1413,
     "self_employed_social_security_cap": 199783,
     "self_employed_notes": "Self-employment tax is 15.3% (12.4% social security + 2.9% Medicare) applied to 92.35% of net self-employment earnings (IRS Schedule SE line 4a/5b, opened 2026-10-15), so the rate on net earnings is 15.3% x 0.9235 = 14.13%. The 12.4% part stops at the wage base (USD 184,500 for 2026, i.e. net earnings of about USD 199,783 after the 92.35% factor); the cap field uses that point, but the 2.9% Medicare part is uncapped and a 0.9% Additional Medicare Tax applies above USD 200,000 (single; IRS), neither modelled above the cap. Half of the SE tax is deductible in computing income tax (IRS), not modelled. Self-employed people may deduct the employer-equivalent half of self-employment tax (IRS, in adjusted gross income), so about 0.5 of their contributions reduce taxable income; the employee figure (0) governs the field.",
-    "local_tax_note": "Brackets are combined federal + New York State + New York City stacked on the FEDERAL taxable income (single, standard deduction USD 16,100). NYS uses a USD 8,000 standard deduction, so NY thresholds were shifted by USD 8,100 (NY taxable = federal taxable + 8,100). NYS 2026 rates for the five lowest brackets are the 2025 rates minus 0.1 point (3.9%, 4.4%, 5.15%, 5.4%, 5.9%). The NYS benefit recapture above USD 107,650 AGI, the NYC school tax credit, state and local tax itemising, FICA non-deductibility and the federal QBI/pass-through rules are not modelled. State variation: for example Texas, Florida, Nevada and Washington have no tax on wage income.",
+    "local_tax_note": "Brackets are the 2026 US federal schedule for a single filer on TAXABLE income (IRS release), applied after the USD 16,100 standard deduction (field personal_allowance). Texas levies no state income tax (Texas Comptroller) and no Austin local income tax was found; the previous New York State and New York City layers were removed. Not modelled: the 0.9% Additional Medicare Tax on wages above USD 200,000 (employer withholding, single filer), the Net Investment Income Tax, itemised deductions, the QBI deduction, and FICA non-deductibility (social_security_deductible 0). Texas property tax and sales tax are not income taxes and are outside this field.",
     "sources": [
       {
         "title": "IRS - Tax inflation adjustments for tax year 2026",
@@ -88,24 +52,10 @@
         "accessed": "2026-10-15"
       },
       {
-        "title": "NY Tax Dept - 2025 IT-201 instructions (NYS and NYC rate schedules)",
-        "url": "https://www.tax.ny.gov/forms/html-instructions/2025/it/it201i-2025.htm",
-        "publisher": "NYS Department of Taxation and Finance",
-        "kind": "tax_authority",
-        "accessed": "2026-10-15"
-      },
-      {
-        "title": "TaxFormCalculator - New York tax tables 2026 (standard deduction)",
-        "url": "https://www.taxformcalculator.com/new-york/tax-tables/2026.html",
-        "publisher": "TaxFormCalculator",
-        "kind": "other",
-        "accessed": "2026-10-15"
-      },
-      {
-        "title": "Anchin - New York State 2026 budget (bottom-five bracket cut)",
-        "url": "https://www.anchin.com/articles/new-york-states-2026-fiscal-year-budget-finally-passes/",
-        "publisher": "Anchin",
-        "kind": "other",
+        "title": "Texas Comptroller - Texas is open for small business ('Texas has no state income tax')",
+        "url": "https://comptroller.texas.gov/economy/fiscal-notes/industry/2025/small-biz-info/",
+        "publisher": "Texas Comptroller of Public Accounts",
+        "kind": "government",
         "accessed": "2026-10-15"
       },
       {
@@ -148,48 +98,49 @@
     "confidence": "medium",
     "verification": "partially_verified",
     "open_questions": [
-      "Combined federal + NYS + NYC brackets re-derived on 2026-10-15 and reconcile: federal thresholds and the USD 16,100 standard deduction match the IRS 2026 release; NY thresholds shifted by USD 8,100 (NY standard deduction USD 8,000 vs 16,100) and NYC rates 3.078/3.762/3.819/3.876% stacked give every listed combined rate. Not read directly: the 2026 NYS and NYC schedules (only the 2025 IT-201 instructions plus a firm's description of the 0.1-point cut to the five lowest NYS rates).",
-      "PwC's US pages give 2025 figures (self-employment wage base USD 176,100); 2026 federal brackets and standard deduction are from the IRS release and the 2026 social security wage base (USD 184,500) from the Journal of Accountancy.",
-      "Employer-side tax, state disability/paid-leave deductions, the SALT deduction, the NYS benefit recapture, the NYC school tax credit and the QBI deduction are not modelled.",
-      "Other state rates were not researched; combined brackets are New York City only."
+      "Federal 2026 brackets and the USD 16,100 standard deduction are from the IRS release (the page is marked historical content); rates 10-37% follow the statutory schedule shown there.",
+      "Texas has no state income tax (Texas Comptroller); the absence of any Austin/Travis County local income tax was not separately sourced.",
+      "PwC's US pages give 2025 figures (self-employment wage base USD 176,100); the 2026 social security wage base (USD 184,500) is from the Journal of Accountancy.",
+      "The 0.9% Additional Medicare Tax above USD 200,000, the Net Investment Income Tax, employer-side tax, itemised deductions and the QBI deduction are not modelled.",
+      "Other states not researched; combined brackets are Austin, Texas (federal only)."
     ],
     "social_security_deductible": 0
   },
   "regimes": [],
   "costs": {
-    "city": "New York City (Manhattan / Brooklyn)",
+    "city": "Austin, TX",
     "rent_1bed_monthly": {
       "value": {
-        "amount": 4700,
+        "amount": 2079,
         "currency": "USD"
       },
       "year": 2026,
-      "description": "Zumper rent research page for New York, NY, October 2026: average 1-bedroom asking rent USD 4,700 (rolling 30 days; the same page also shows 4,800 and a metro-report median of 4,580 for the previous month); sample size not stated.",
+      "description": "Unweighted mean of three popular central-Austin neighbourhood averages on RentCafe (Yardi Matrix), 1-bedroom: Downtown USD 2,841 (about 793 sq ft, 2026-09-30), Zilker USD 2,028 (755 sq ft, 2026-09-21), South Congress USD 1,367 (741 sq ft, 2026-09-30) = USD 2,079. Pages: https://www.rentcafe.com/average-rent-market-trends/us/tx/austin/downtown-austin/ , .../zilker/ , .../south-congress/. Citywide cross-checks: RentCafe USD 1,427 (2026-09-30); Zumper USD 1,305 (30-day average, 2026-10-15). Asking rents of apartment buildings, unfurnished.",
       "source": {
-        "title": "Zumper - New York, NY rent research",
-        "url": "https://www.zumper.com/rent-research/new-york-ny",
-        "publisher": "Zumper",
+        "title": "RentCafe - Austin, TX average rent",
+        "url": "https://www.rentcafe.com/average-rent-market-trends/us/tx/austin/",
+        "publisher": "RentCafe (Yardi Matrix data)",
         "kind": "other",
         "accessed": "2026-10-15"
       }
     },
     "rent_2bed_monthly": {
       "value": {
-        "amount": 5500,
+        "amount": 2872,
         "currency": "USD"
       },
       "year": 2026,
-      "description": "Zumper rent research page for New York, NY, October 2026: average 2-bedroom asking rent USD 5,500 (another section shows 5,499); sample size not stated.",
+      "description": "Unweighted mean of the same three RentCafe (Yardi Matrix) neighbourhood averages, 2-bedroom: Downtown USD 4,318 (about 1,269 sq ft), Zilker USD 2,664 (1,095 sq ft), South Congress USD 1,633 (1,063 sq ft) = USD 2,872. Citywide cross-checks: RentCafe USD 1,822 (2026-09-30); Zumper USD 1,650 (2026-10-15). Asking rents, unfurnished.",
       "source": {
-        "title": "Zumper - New York, NY rent research",
-        "url": "https://www.zumper.com/rent-research/new-york-ny",
-        "publisher": "Zumper",
+        "title": "RentCafe - Austin, TX average rent",
+        "url": "https://www.rentcafe.com/average-rent-market-trends/us/tx/austin/",
+        "publisher": "RentCafe (Yardi Matrix data)",
         "kind": "other",
         "accessed": "2026-10-15"
       }
     },
     "coworking_monthly": null,
-    "notes": "Asking rents, not median signed leases."
+    "notes": "Asking rents, not median signed leases; Downtown is far dearer than South Congress, so the mean of three areas is an approximation, not a market median. Coworking not sourced: only unopened or undated search snippets were found. Cross-check source: Zumper https://www.zumper.com/rent-research/austin-tx (Austin citywide 1-bed USD 1,305, 2-bed USD 1,650, 2026-10-15)."
   },
   "residence_routes": "There is no digital nomad visa. EU and many other nationals can visit on ESTA or B-1/B-2 status but may not work for US clients while there, so a remote worker has no direct immigration route; long stays need a work visa (H-1B, L-1, O-1, TN for Canada/Mexico), an investor visa or family sponsorship, all employer- or relationship-based. US citizens need no immigration route but owe US tax on worldwide income wherever they live. A skilled employee at a US employer typically uses H-1B (annual lottery), L-1 intra-company transfer or O-1.",
   "open_questions": [

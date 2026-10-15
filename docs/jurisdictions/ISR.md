@@ -141,3 +141,4 @@ City: Tel Aviv.
 - 2026-10-15: reviewed special-regime durations: new immigrant exemption 10 years (unchanged).
 - 2026-10-15: data-quality pass: added rent (north Tel Aviv 4.5-6-room apartments, homeless.co.il sample) and school fee (WBAIS 2026-27); added Deloitte Israel Highlights 2026 as a second source (gov.il ITA pages blocked automated access); land appreciation tax rates confirmed and standard capital_gains confidence raised to high; new-immigrant eligibility conditions, 2026 reporting rule and the separate 2026-2030 tax holiday for active income documented.
 - 2026-10-15: reviewed holding structures; none modelled; added a Holding structures section.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

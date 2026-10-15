@@ -102,3 +102,4 @@ US citizens: No US–Kosovo income tax treaty in the PwC list; US citizens rely 
 
 - 2026-10-15: initial research.
 - 2026-10-15: cost-of-living pass: added Prishtina prime rent (EUR 1,100/month, median of 75 houses of 200 m² or more on MerrJep.com) and Prishtina High School international high-school tuition (EUR 16,500, 2026–27).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (EUR 1,100).

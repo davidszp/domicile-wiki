@@ -12,7 +12,11 @@
       "name": "Australian tax resident",
       "type": "standard",
       "description": "Worldwide taxation at resident rates (2026/27: 45% above AUD 190,000) plus 2% Medicare levy.",
-      "eligible_citizenships": ["EU", "US", "OTHER"],
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
       "eligibility": "Resident under the domicile test, the 183-day test or ordinary concepts; permanent residents and citizens are taxed on worldwide income.",
       "duration_years": null,
       "capital_gains": {
@@ -21,10 +25,34 @@
         "important_exceptions": "Budget 2026-27 (12 May 2026): from 1 July 2027 the 50% discount is replaced by cost-base indexation and a 30% minimum tax on capital gains arising after 1 July 2027; pre-CGT assets become taxable; investors in new builds may choose the old discount. Not yet in force; legislative status not verified. Ceasing residence is a CGT event (I1) on non-Australian assets (general rule, not verified from an opened source in this session).",
         "tax_year": "2026/27",
         "sources": [
-          {"title": "Australia - Individual - Income determination", "url": "https://taxsummaries.pwc.com/australia/individual/income-determination", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Australia - Individual - Taxes on personal income", "url": "https://taxsummaries.pwc.com/australia/individual/taxes-on-personal-income", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Budget 2026-27: Tax reform", "url": "https://budget.gov.au/content/04-tax-reform.htm", "publisher": "Australian Government (Treasury)", "kind": "government", "accessed": "2026-10-15"},
-          {"title": "Australia - Individual - Significant developments", "url": "https://taxsummaries.pwc.com/australia/individual/significant-developments", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+          {
+            "title": "Australia - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/australia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Australia - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/australia/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Budget 2026-27: Tax reform",
+            "url": "https://budget.gov.au/content/04-tax-reform.htm",
+            "publisher": "Australian Government (Treasury)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Australia - Individual - Significant developments",
+            "url": "https://taxsummaries.pwc.com/australia/individual/significant-developments",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "medium",
@@ -48,8 +76,20 @@
         "important_exceptions": "Controlled foreign company rules can attribute passive income of foreign companies controlled by Australians.",
         "tax_year": "2026/27",
         "sources": [
-          {"title": "Australia - Individual - Income determination", "url": "https://taxsummaries.pwc.com/australia/individual/income-determination", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Australia - Corporate - Withholding taxes", "url": "https://taxsummaries.pwc.com/australia/corporate/withholding-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+          {
+            "title": "Australia - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/australia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Australia - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/australia/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "high",
@@ -68,7 +108,13 @@
         "important_exceptions": "Division 296: per PwC, from 1 July 2026 individuals with total superannuation balances above AUD 3 million pay an extra 15% on earnings attributable to the balance between AUD 3 million and 10 million and 25% above AUD 10 million. This is an earnings tax on superannuation, not a wealth tax; it matters only to families with large super balances.",
         "tax_year": "2026/27",
         "sources": [
-          {"title": "Australia - Individual - Other taxes", "url": "https://taxsummaries.pwc.com/australia/individual/other-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+          {
+            "title": "Australia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/australia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "high",
@@ -83,7 +129,13 @@
         "regional_differences": "Probate fees are set by each state's Supreme Court and are modest in absolute terms (not verified).",
         "tax_year": "2026/27",
         "sources": [
-          {"title": "Australia - Individual - Other taxes", "url": "https://taxsummaries.pwc.com/australia/individual/other-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+          {
+            "title": "Australia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/australia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "medium",
@@ -105,7 +157,9 @@
       "name": "Temporary resident (temporary visa holder)",
       "type": "special",
       "description": "Holders of temporary visas who are not Social Security Act residents and have no Australian-resident spouse are exempt from Australian tax on foreign-source income and on capital gains on assets that are not taxable Australian property. No current visa lets a non-working wealthy family live in Australia on a temporary basis, so this regime is effectively unavailable; it is kept only as a low-confidence placeholder.",
-      "eligible_citizenships": ["OTHER"],
+      "eligible_citizenships": [
+        "OTHER"
+      ],
       "eligibility": "Hold a temporary visa under the Migration Act 1958; not an Australian resident for Social Security Act purposes; spouse not an Australian resident under that Act. No realistic visa exists today for a non-working wealthy family. Home Affairs states that the Business Innovation and Investment Program (subclass 188, including the Significant Investor stream) is closed as of 31 July 2024. The National Innovation visa (subclass 858) is a permanent visa ('Permanently' per Home Affairs), so holders are ordinary residents and the exemption does not apply. Every other temporary visa requires work, study or sponsorship (e.g. the Skills in Demand visa needs genuine employment by an approved sponsor). The only temporary visa open without those conditions is the Visitor visa (subclass 600), granted for stays of 3, 6 or 12 months and not meant for living in Australia; duration is therefore set to 1 year as a placeholder. Eligible citizenships are restricted to OTHER as an empty-safe choice: in practice only New Zealand citizens (Special Category visa, subclass 444, no fixed term) can live in Australia indefinitely on a temporary visa without working, and they fall in OTHER. EU and US families cannot use this regime.",
       "duration_years": 1,
       "capital_gains": {
@@ -113,8 +167,20 @@
         "eligibility_conditions": "Temporary visa; not a Social Security Act resident; no Australian-resident spouse. No visa route exists for a non-working wealthy family (BIIP closed 31 July 2024; National Innovation visa is permanent), so this regime is a placeholder restricted to OTHER (New Zealand citizens on a subclass 444 visa) with a 1-year visitor-visa duration.",
         "tax_year": "2026/27",
         "sources": [
-          {"title": "Australia - Individual - Residence", "url": "https://taxsummaries.pwc.com/australia/individual/residence", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Business Innovation and Investment (Provisional) visa (subclass 188) - site notice 'BIIP refunds and closure'", "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188", "publisher": "Department of Home Affairs (Australia)", "kind": "government", "accessed": "2026-10-15"}
+          {
+            "title": "Australia - Individual - Residence",
+            "url": "https://taxsummaries.pwc.com/australia/individual/residence",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Business Innovation and Investment (Provisional) visa (subclass 188) - site notice 'BIIP refunds and closure'",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188",
+            "publisher": "Department of Home Affairs (Australia)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "low",
@@ -137,8 +203,20 @@
         "summary": "Foreign dividends are exempt for temporary residents. Australian franked dividends are taxed as for residents.",
         "tax_year": "2026/27",
         "sources": [
-          {"title": "Australia - Individual - Residence", "url": "https://taxsummaries.pwc.com/australia/individual/residence", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Business Innovation and Investment (Provisional) visa (subclass 188) - site notice 'BIIP refunds and closure'", "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188", "publisher": "Department of Home Affairs (Australia)", "kind": "government", "accessed": "2026-10-15"}
+          {
+            "title": "Australia - Individual - Residence",
+            "url": "https://taxsummaries.pwc.com/australia/individual/residence",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Business Innovation and Investment (Provisional) visa (subclass 188) - site notice 'BIIP refunds and closure'",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188",
+            "publisher": "Department of Home Affairs (Australia)",
+            "kind": "government",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "low",
@@ -156,9 +234,27 @@
       },
       "duration_note": "",
       "sources": [
-        {"title": "Business Innovation and Investment (Provisional) visa (subclass 188) - site notice 'BIIP refunds and closure'", "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188", "publisher": "Department of Home Affairs (Australia)", "kind": "government", "accessed": "2026-10-15"},
-        {"title": "Visitor visa (subclass 600)", "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600", "publisher": "Department of Home Affairs (Australia)", "kind": "government", "accessed": "2026-10-15"},
-        {"title": "National Innovation visa (subclass 858)", "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/national-innovation-visa-858", "publisher": "Department of Home Affairs (Australia)", "kind": "government", "accessed": "2026-10-15"}
+        {
+          "title": "Business Innovation and Investment (Provisional) visa (subclass 188) - site notice 'BIIP refunds and closure'",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188",
+          "publisher": "Department of Home Affairs (Australia)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "Visitor visa (subclass 600)",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600",
+          "publisher": "Department of Home Affairs (Australia)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        },
+        {
+          "title": "National Innovation visa (subclass 858)",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/national-innovation-visa-858",
+          "publisher": "Department of Home Affairs (Australia)",
+          "kind": "government",
+          "accessed": "2026-10-15"
+        }
       ]
     },
     {
@@ -338,43 +434,107 @@
     "routes": [
       {
         "name": "Permanent or temporary skilled/business visas (e.g. National Innovation visa)",
-        "citizenships": ["EU", "US", "OTHER"],
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
         "requirements": "Home Affairs states that the Business Innovation and Investment Program (subclass 188/888, including the AUD 5 million Significant Investor stream) is closed as of 31 July 2024; applications lodged before then are still processed. Remaining routes require skills, sponsorship or exceptional-talent criteria (the National Innovation visa, subclass 858, is permanent). There is no investor or self-funded residence visa for a non-working family."
       }
     ],
     "sources": [
-      {"title": "Australia - Individual - Residence", "url": "https://taxsummaries.pwc.com/australia/individual/residence", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-      {"title": "Business Innovation and Investment (Provisional) visa (subclass 188) - site notice 'BIIP refunds and closure'", "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188", "publisher": "Department of Home Affairs (Australia)", "kind": "government", "accessed": "2026-10-15"},
-      {"title": "National Innovation visa (subclass 858)", "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/national-innovation-visa-858", "publisher": "Department of Home Affairs (Australia)", "kind": "government", "accessed": "2026-10-15"}
+      {
+        "title": "Australia - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/australia/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Business Innovation and Investment (Provisional) visa (subclass 188) - site notice 'BIIP refunds and closure'",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188",
+        "publisher": "Department of Home Affairs (Australia)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "National Innovation visa (subclass 858)",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/national-innovation-visa-858",
+        "publisher": "Department of Home Affairs (Australia)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
     ]
   },
   "corporate": {
     "cit_rate": 0.3,
     "summary": "30% CIT; 25% for base rate entities (aggregated turnover under AUD 50 million and passive income no more than 80% of assessable income, so a pure investment company pays 30%). Full imputation: franking credits pass to resident shareholders. Pillar Two: IIR and 15% domestic minimum tax from 1 January 2024, UTPR from 1 January 2025. Budget 2026-27 announced a 30% minimum tax on discretionary trusts from 1 July 2028.",
     "sources": [
-      {"title": "Australia - Corporate - Taxes on corporate income", "url": "https://taxsummaries.pwc.com/australia/corporate/taxes-on-corporate-income", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-      {"title": "Budget 2026-27: Tax reform", "url": "https://budget.gov.au/content/04-tax-reform.htm", "publisher": "Australian Government (Treasury)", "kind": "government", "accessed": "2026-10-15"}
+      {
+        "title": "Australia - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/australia/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "Budget 2026-27: Tax reform",
+        "url": "https://budget.gov.au/content/04-tax-reform.htm",
+        "publisher": "Australian Government (Treasury)",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
     ]
   },
   "cost_of_living": {
     "city": "Sydney",
     "prime_rent_monthly": {
-      "value": {"amount": 16792, "currency": "AUD"},
+      "value": {
+        "amount": 7572,
+        "currency": "AUD"
+      },
       "year": 2026,
-      "description": "Median weekly rent for new bonds on houses with 4 or more bedrooms in postcode 2088 (Mosman), April-June 2026: AUD 3,875 a week (first quartile 2,313, third quartile 4,950; 30 or fewer new bonds, flagged 's'), converted to a month as x52/12. Postcode 2030 (Vaucluse, Dover Heights) median AUD 3,625. Official bond-lodgement data, not asking rents.",
-      "source": {"title": "Rent and Sales Report: rent tables, June 2026 quarter (Table 2, weekly rents by postcode)", "url": "https://dcj.nsw.gov.au/content/dam/dcj/dcj-website/documents/about-us/families-and-communities-statistics/housing-and-rent-sales/rent-tables-june-2026-quarter.xlsx", "publisher": "NSW Department of Communities and Justice", "kind": "government", "accessed": "2026-10-15"}
+      "description": "Upper-middle North Shore and Lower North Shore houses with 4 or more bedrooms, new bonds April-June 2026, weekly median rent by postcode: 2065 (St Leonards, Wollstonecraft, Greenwich) AUD 1,725; 2066 (Lane Cove, Riverview) 1,880; 2067 (Chatswood) 1,710; 2069 (Roseville, Castle Cove) 2,000; 2070 (Lindfield) 1,620; 2071 (Killara) 1,770 (all flagged 's', 30 or fewer new bonds each; 140-290 bonds lodged for every size of dwelling). Value is the median of these six postcode medians, AUD 1,747.50 a week, x52/12 per month. Official bond-lodgement data, not asking rents. Mosman (2088, median 3,875 a week) and Vaucluse/Dover Heights (2030, 3,625) were dropped as ultra-prime harbourside areas.",
+      "source": {
+        "title": "Rent and Sales Report: rent tables, June 2026 quarter (Table 2, weekly rents by postcode)",
+        "url": "https://dcj.nsw.gov.au/content/dam/dcj/dcj-website/documents/about-us/families-and-communities-statistics/housing-and-rent-sales/rent-tables-june-2026-quarter.xlsx",
+        "publisher": "NSW Department of Communities and Justice",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
     },
     "intl_school_annual_fee": {
-      "value": {"amount": 52410, "currency": "AUD"},
+      "value": {
+        "amount": 52410,
+        "currency": "AUD"
+      },
       "year": 2026,
       "description": "Sydney Grammar School (boys, College Street), annual tuition fee 2026 for Forms I-VI (Years 7-12), schedule issued 25 November 2025. Australian school fees follow the calendar year.",
-      "source": {"title": "Schedule of Fees 2026", "url": "https://www.sydgram.nsw.edu.au/admissions/fees/", "publisher": "Sydney Grammar School", "kind": "other", "accessed": "2026-10-15"}
+      "source": {
+        "title": "Schedule of Fees 2026",
+        "url": "https://www.sydgram.nsw.edu.au/admissions/fees/",
+        "publisher": "Sydney Grammar School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
     },
     "notes": "Foreign persons cannot buy established homes until 30 June 2029, so a newly arrived family rents. Purchase prices, health insurance and housekeeper costs not sourced."
   },
   "markers": [
-    {"name": "Canberra", "lon": 149.12807, "lat": -35.28346, "kind": "capital", "coordinate_source": "GeoNames 2172517"},
-    {"name": "Sydney", "lon": 151.20732, "lat": -33.86785, "kind": "financial_centre", "coordinate_source": "GeoNames 2147714"}
+    {
+      "name": "Canberra",
+      "lon": 149.12807,
+      "lat": -35.28346,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 2172517"
+    },
+    {
+      "name": "Sydney",
+      "lon": 151.20732,
+      "lat": -33.86785,
+      "kind": "financial_centre",
+      "coordinate_source": "GeoNames 2147714"
+    }
   ],
   "us_citizen_notes": "US citizens remain US-taxed; Australian superannuation, franking credits and Australian managed funds (PFICs) are poorly coordinated with US rules. The US-Australia treaty limits Australian dividend WHT to 15% for portfolio holdings.",
   "open_questions": [

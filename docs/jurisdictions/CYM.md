@@ -74,3 +74,4 @@ Purchase price per m2, health insurance and housekeeper not sourced. Budget up t
 
 - 2026-10-15: initial research.
 - 2026-10-15: second pass. Added prime rent (KYD 12,500/month, median of nine 4-5 bed CIREBA MLS listings in Seven Mile Corridor/South Sound/West Bay/Spotts). Stamp duty on land to heirs re-checked against PwC (7.5% on transfers generally; death transfers not addressed; open question sharpened). Indicator overrides reviewed: none added, because CYM is covered by World Bank data and no same-definition HDI/CPI exists.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

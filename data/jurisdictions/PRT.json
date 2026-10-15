@@ -323,14 +323,14 @@
     "city": "Lisbon (Cascais/Estoril)",
     "prime_rent_monthly": {
       "value": {
-        "amount": 6500,
+        "amount": 3100,
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 75 T4 and T5 houses (moradias) listed for rent in Cascais municipality on Imovirtual on 2026-10-15 (51 T5, 24 T4; interquartile range EUR 3,750-10,000; range EUR 1,500-22,000). Asking rents.",
+      "description": "Median asking rent of 13 T4 flats of 157-241 m2 in Lisbon family districts on Imovirtual, read 2026-10-15 from the first 37 of 193 results of the Lisbon T4 apartment rental search: Avenidas Novas/Campo Pequeno (3: EUR 3,100, 4,500, 7,000; plus Gulbenkian EUR 7,500 and Parque Eduardo VII EUR 4,500), Areeiro (EUR 2,900), Alvalade/Entrecampos (EUR 2,500), Estrela (EUR 2,950), Restelo (EUR 2,600), Benfica/Laranjeiras (EUR 2,400 and 2,950), Campolide (EUR 3,980) and Rato/Amoreiras (EUR 3,850). Range EUR 2,400-7,500. Chiado, Avenida da Liberdade and a 306 m2 Parque das Nacoes flat left out as prime or oversized. Asking rents, partly furnished. Replaces the Cascais figure of EUR 6,500 (75 T4/T5 houses), because Lisbon is the main city.",
       "source": {
-        "title": "Moradias T4/T5 para arrendar em Cascais",
-        "url": "https://www.imovirtual.com/pt/resultados/arrendar/moradia/lisboa/cascais?roomsNumber=%5BFOUR%2CFIVE%5D&limit=72",
+        "title": "Apartamentos T4 para arrendar em Lisboa",
+        "url": "https://www.imovirtual.com/pt/resultados/arrendar/apartamento/lisboa/lisboa?roomsNumber=%5BFIVE%5D&limit=72",
         "publisher": "Imovirtual",
         "kind": "other",
         "accessed": "2026-10-15"

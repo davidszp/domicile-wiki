@@ -355,7 +355,7 @@
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of the 18 distinct houses (not apartments) with 4-6 bedrooms listed for rent on MyHome.ie on 15 October 2026 in the prime south and coastal Dublin areas (Dublin 4/6/14/18, Blackrock, Booterstown, Monkstown, Dún Laoghaire, Glenageary, Stillorgan, Dalkey, Malahide); range EUR 3,500-15,950. Ballsbridge/Sandymount family houses were EUR 10,500-13,000. Asking rents, not achieved rents.",
+      "description": "Median asking rent of the 18 distinct houses (not apartments) with 4-6 bedrooms listed for rent on MyHome.ie on 15 October 2026 in the prime south and coastal Dublin areas (Dublin 4/6/14/18, Blackrock, Booterstown, Monkstown, Dún Laoghaire, Glenageary, Stillorgan, Dalkey, Malahide); range EUR 3,500-15,950. Ballsbridge/Sandymount family houses were EUR 10,500-13,000. Asking rents, not achieved rents. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "MyHome.ie: properties with 4+ bedrooms to rent in Dublin (listing sample)",
         "url": "https://www.myhome.ie/rentals/dublin/property-to-rent?minbeds=4",

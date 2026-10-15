@@ -76,12 +76,12 @@ CIT rate in JSON: 0.15. Progressive CIT: 9% up to EUR 100,000 profit, 12% to EUR
 
 ## Cost of living notes
 
-City: Tivat (Porto Montenegro); Podgorica as the alternative.
+City: Podgorica (international school fee is for Tivat).
 
-- Prime rent (monthly): EUR 4,500 (2026). Median asking rent of 21 long-term house rentals in Tivat municipality with 4–5 bedrooms and at least 200 m² (range EUR 1,300–7,600), parsed from Realitica's Montenegro long-term house rentals filtered on 'Tivat' (113 results) on 2026-10-15. For Podgorica the same filter gives a median of EUR 2,500 (28 listings, EUR 1,100–5,000). Asking prices on a listing portal. Source: Realitica: long-term house rentals, Montenegro (search 'Tivat'): https://www.realitica.com/?cur_page=0&for=DuziNajam&pZpa=Crna+Gora&pState=Crna+Gora&type%5B%5D=Home&qry=Tivat&lng=en
+- Prime rent (monthly): EUR 2,200 (2026). Median asking rent of 177 long-term house rentals in Podgorica city with 4-6 bedrooms and at least 180 m2 (range EUR 300-5,000; first quartile EUR 1,500, third quartile EUR 3,000; median area 250 m2) in Donja Gorica, Gornja Gorica, Gorica C, Tolosi, Stari Aerodrom, Zlatica, Zabjelo, Zagoric and other city districts, parsed from all 29 result pages of Realitica's Montenegro long-term house rentals filtered on 'Podgorica' (714 results) on 2026-10-15. Agency listings may repeat; asking prices on a listing portal. Replaces the Tivat (Porto Montenegro) figure of EUR 4,500, which is a marina enclave. Source: Realitica: long-term house rentals, Montenegro (search 'Podgorica'): https://www.realitica.com/?cur_page=0&for=DuziNajam&pZpa=Crna+Gora&pState=Crna+Gora&type%5B%5D=Home&qry=Podgorica&lng=en
 - International school (annual, per child): EUR 22,320 (2026). Knightsbridge Schools International, Porto Montenegro, Tivat (IB): IB Diploma Programme EUR 22,320 a year (MYP EUR 20,400), as published on the fee page on 2026-10-15 (the school publishes the next year's fees by 30 April, so taken as 2026/27). One-off: EUR 800 registration and EUR 3,200 capital levy. Source: KSI Montenegro tuition fees: https://ksi-montenegro.com/tuition-fees/
 
-Cost items are for Tivat, where the main international school is; Podgorica rents are roughly half. Health insurance and housekeeper costs not sourced.
+Rent is for Podgorica, the capital. The international school fee is for Tivat (Porto Montenegro), the only IB school found. Health insurance and housekeeper costs not sourced.
 
 ## Open questions
 
@@ -113,10 +113,11 @@ Cost items are for Tivat, where the main international school is; Podgorica rent
 - Montenegro – Individual – Residence: https://taxsummaries.pwc.com/montenegro/individual/residence
 - Montenegro – Corporate – Taxes on corporate income: https://taxsummaries.pwc.com/montenegro/corporate/taxes-on-corporate-income
 - Zakon o finansiranju lokalne samouprave (Sl. list CG 3/2019), Art. 8: https://www.paragraf.me/propisi-crnegore/zakon-o-finansiranju-lokalne-samouprave.html
-- Realitica: long-term house rentals, Montenegro (search 'Tivat'): https://www.realitica.com/?cur_page=0&for=DuziNajam&pZpa=Crna+Gora&pState=Crna+Gora&type%5B%5D=Home&qry=Tivat&lng=en
+- Realitica: long-term house rentals, Montenegro (search 'Podgorica'): https://www.realitica.com/?cur_page=0&for=DuziNajam&pZpa=Crna+Gora&pState=Crna+Gora&type%5B%5D=Home&qry=Podgorica&lng=en
 - KSI Montenegro tuition fees: https://ksi-montenegro.com/tuition-fees/
 
 ## Change log
 
 - 2026-10-15: initial research.
 - 2026-10-15: phase 2 data-quality pass: municipal surtax resolved from the Law on Financing Local Self-Government (Sl. list CG 3/2019, Art. 8): it applies to the tax on capital income (dividends now 17.25% in Podgorica) but not to capital gains (stay 15%). Added Tivat cost of living (prime 4-5 bedroom house rent EUR 4,500/month median from Realitica; KSI Montenegro IB Diploma EUR 22,320).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 4,500 (Tivat, Porto Montenegro) to EUR 2,200 (Podgorica, 177 listings).

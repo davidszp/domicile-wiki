@@ -317,7 +317,7 @@
         "currency": "ILS"
       },
       "year": 2026,
-      "description": "Median monthly asking rent of the five 4.5-6-room apartments (3.5-5 bedrooms) in north Tel Aviv (Old North, Kikar HaMedina, Nofei Yam, Ramat Aviv Gimel, Lamed) on the first Tel Aviv results page of homeless.co.il on 15 Oct 2026; range ILS 11,699-22,000. Small sample of asking prices; detached houses are rare in Tel Aviv (families choosing a villa usually look at Herzliya Pituach or Kfar Shmaryahu, not sourced).",
+      "description": "Median monthly asking rent of the five 4.5-6-room apartments (3.5-5 bedrooms) in north Tel Aviv (Old North, Kikar HaMedina, Nofei Yam, Ramat Aviv Gimel, Lamed) on the first Tel Aviv results page of homeless.co.il on 15 Oct 2026; range ILS 11,699-22,000. Small sample of asking prices; detached houses are rare in Tel Aviv (families choosing a villa usually look at Herzliya Pituach or Kfar Shmaryahu, not sourced). Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Apartments for rent in Tel Aviv",
         "url": "https://www.homeless.co.il/rent/city=%d7%aa%d7%9c%20%d7%90%d7%91%d7%99%d7%91",

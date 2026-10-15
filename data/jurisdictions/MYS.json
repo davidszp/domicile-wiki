@@ -12,7 +12,11 @@
       "name": "Malaysian tax resident",
       "type": "standard",
       "description": "Territorial-style taxation: Malaysian-source income at 0-30%; foreign income received by resident individuals exempt to 2036.",
-      "eligible_citizenships": ["EU", "US", "OTHER"],
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
       "eligibility": "Resident if physically present 182 days or more in a calendar year (with linking rules). Non-citizens typically use the MM2H programme.",
       "duration_years": null,
       "capital_gains": {
@@ -21,9 +25,27 @@
         "important_exceptions": "The capital gains tax introduced from 1 January 2024 on disposals of unlisted shares and foreign capital assets applies to companies, LLPs, trusts and co-operatives, not individuals (PwC: no general capital gains tax for individuals). A family holding company would be subject to it.",
         "tax_year": "2026",
         "sources": [
-          {"title": "Malaysia - Individual - Income determination", "url": "https://taxsummaries.pwc.com/malaysia/individual/income-determination", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Malaysia - Individual - Other taxes", "url": "https://taxsummaries.pwc.com/malaysia/individual/other-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Inland Revenue Board of Malaysia - home (RPGT and CGT links)", "url": "https://www.hasil.gov.my/en/", "publisher": "Lembaga Hasil Dalam Negeri Malaysia", "kind": "tax_authority", "accessed": "2026-10-15"}
+          {
+            "title": "Malaysia - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/malaysia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Malaysia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/malaysia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inland Revenue Board of Malaysia - home (RPGT and CGT links)",
+            "url": "https://www.hasil.gov.my/en/",
+            "publisher": "Lembaga Hasil Dalam Negeri Malaysia",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "high",
@@ -47,8 +69,20 @@
         "important_exceptions": "No comprehensive treaty with the US (only air/sea transport), so US dividends bear 30% US WHT. Without a treaty, Malaysian credit relief is limited to half the foreign tax (relevant only if foreign income were taxable).",
         "tax_year": "2026",
         "sources": [
-          {"title": "Malaysia - Individual - Income determination", "url": "https://taxsummaries.pwc.com/malaysia/individual/income-determination", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Malaysia - Individual - Foreign tax relief and tax treaties", "url": "https://taxsummaries.pwc.com/malaysia/individual/foreign-tax-relief-and-tax-treaties", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+          {
+            "title": "Malaysia - Individual - Income determination",
+            "url": "https://taxsummaries.pwc.com/malaysia/individual/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Malaysia - Individual - Foreign tax relief and tax treaties",
+            "url": "https://taxsummaries.pwc.com/malaysia/individual/foreign-tax-relief-and-tax-treaties",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "medium",
@@ -66,7 +100,13 @@
         "summary": "No net wealth tax.",
         "tax_year": "2026",
         "sources": [
-          {"title": "Malaysia - Individual - Other taxes", "url": "https://taxsummaries.pwc.com/malaysia/individual/other-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+          {
+            "title": "Malaysia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/malaysia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "high",
@@ -80,8 +120,20 @@
         "important_exceptions": "Reintroduction of an inheritance tax has been discussed publicly but no law exists (general knowledge).",
         "tax_year": "2026",
         "sources": [
-          {"title": "Malaysia - Individual - Other taxes", "url": "https://taxsummaries.pwc.com/malaysia/individual/other-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-          {"title": "Inheritance tax (country overview)", "url": "https://en.wikipedia.org/wiki/Inheritance_tax", "publisher": "Wikipedia", "kind": "other", "accessed": "2026-10-15"}
+          {
+            "title": "Malaysia - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/malaysia/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance tax (country overview)",
+            "url": "https://en.wikipedia.org/wiki/Inheritance_tax",
+            "publisher": "Wikipedia",
+            "kind": "other",
+            "accessed": "2026-10-15"
+          }
         ],
         "verified_on": "2026-10-15",
         "confidence": "high",
@@ -104,13 +156,29 @@
     "routes": [
       {
         "name": "Malaysia My Second Home (MM2H) - Silver, Gold, Platinum, SEZ/SFZ",
-        "citizenships": ["EU", "US", "OTHER"],
+        "citizenships": [
+          "EU",
+          "US",
+          "OTHER"
+        ],
         "requirements": "Age 25+, fixed deposit and property purchase requirements per tier (amounts shown only in images on the official site and not verified; commonly cited 2024 figures: USD 150,000 / 500,000 / 1,000,000 fixed deposit). Minimum stay 90 days a year for participants under 50. Spouse, children under 21 (and unmarried unemployed children to 34) and parents can be included. Pass renewed every 5 years."
       }
     ],
     "sources": [
-      {"title": "Malaysia - Individual - Residence", "url": "https://taxsummaries.pwc.com/malaysia/individual/residence", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
-      {"title": "MM2H Guidelines", "url": "https://www.mm2h.gov.my/apply/guidelines", "publisher": "Ministry of Tourism, Arts and Culture Malaysia", "kind": "government", "accessed": "2026-10-15"}
+      {
+        "title": "Malaysia - Individual - Residence",
+        "url": "https://taxsummaries.pwc.com/malaysia/individual/residence",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      },
+      {
+        "title": "MM2H Guidelines",
+        "url": "https://www.mm2h.gov.my/apply/guidelines",
+        "publisher": "Ministry of Tourism, Arts and Culture Malaysia",
+        "kind": "government",
+        "accessed": "2026-10-15"
+      }
     ]
   },
   "corporate": {
@@ -118,27 +186,57 @@
     "summary": "24% CIT (SME rates 15%/17% on the first MYR 600,000). Single-tier system. Since 1 January 2024 companies, LLPs, trusts and co-operatives pay capital gains tax on unlisted Malaysian shares and foreign capital assets (details not verified). Pillar Two: QDMTT and MTT from financial years starting 1 January 2025; UTPR not adopted.",
     "special_zones": "Labuan international business centre; Forest City Special Financial Zone; Iskandar Malaysia (not researched).",
     "sources": [
-      {"title": "Malaysia - Corporate - Taxes on corporate income", "url": "https://taxsummaries.pwc.com/malaysia/corporate/taxes-on-corporate-income", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
+      {
+        "title": "Malaysia - Corporate - Taxes on corporate income",
+        "url": "https://taxsummaries.pwc.com/malaysia/corporate/taxes-on-corporate-income",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-15"
+      }
     ]
   },
   "cost_of_living": {
     "city": "Kuala Lumpur",
     "prime_rent_monthly": {
-      "value": {"amount": 8200, "currency": "MYR"},
+      "value": {
+        "amount": 8200,
+        "currency": "MYR"
+      },
       "year": 2026,
-      "description": "Median asking rent of 40 unique 4- and 5-bedroom listings (condominiums, bungalows, semi-detached and terraced houses) located in Mont Kiara, Sri Hartamas, Bangsar, Damansara Heights, Bukit Tunku, Kenny Hills, Ampang Hilir or KLCC, taken from all Mudah.my Kuala Lumpur house and condominium rental listings with 4 or 5 bedrooms read 15 October 2026 (503 listings city-wide, median MYR 2,400). First quartile MYR 5,000, third quartile MYR 12,500; detached bungalows in these areas ask MYR 10,000-18,500.",
-      "source": {"title": "Houses and apartments/condominiums for rent with 4 and 5 bedrooms in Kuala Lumpur (listing search)", "url": "https://www.mudah.my/kuala-lumpur/apartment-condominium-for-rent/4-bedrooms", "publisher": "Mudah.my", "kind": "other", "accessed": "2026-10-15"}
+      "description": "Median asking rent of 40 unique 4- and 5-bedroom listings (condominiums, bungalows, semi-detached and terraced houses) located in Mont Kiara, Sri Hartamas, Bangsar, Damansara Heights, Bukit Tunku, Kenny Hills, Ampang Hilir or KLCC, taken from all Mudah.my Kuala Lumpur house and condominium rental listings with 4 or 5 bedrooms read 15 October 2026 (503 listings city-wide, median MYR 2,400). First quartile MYR 5,000, third quartile MYR 12,500; detached bungalows in these areas ask MYR 10,000-18,500. Checked 2026-10-15 against the upper-middle-class standard.",
+      "source": {
+        "title": "Houses and apartments/condominiums for rent with 4 and 5 bedrooms in Kuala Lumpur (listing search)",
+        "url": "https://www.mudah.my/kuala-lumpur/apartment-condominium-for-rent/4-bedrooms",
+        "publisher": "Mudah.my",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
     },
     "intl_school_annual_fee": {
-      "value": {"amount": 129712, "currency": "MYR"},
+      "value": {
+        "amount": 129712,
+        "currency": "MYR"
+      },
       "year": 2026,
       "description": "The Alice Smith School, Kuala Lumpur, Years 10-13 annual school fee 2026-27: MYR 122,370 plus 6% SST (MYR 7,342). Refundable parent deposit MYR 24,000 and enrolment fee extra.",
-      "source": {"title": "Tuition and Fees", "url": "https://www.alice-smith.edu.my/join/tuition-and-fees", "publisher": "The Alice Smith School", "kind": "other", "accessed": "2026-10-15"}
+      "source": {
+        "title": "Tuition and Fees",
+        "url": "https://www.alice-smith.edu.my/join/tuition-and-fees",
+        "publisher": "The Alice Smith School",
+        "kind": "other",
+        "accessed": "2026-10-15"
+      }
     },
     "notes": "Purchase prices, health insurance and housekeeper costs not sourced. Foreign buyers face state minimum purchase prices (MYR 1 million or more in Kuala Lumpur, not re-verified)."
   },
   "markers": [
-    {"name": "Kuala Lumpur", "lon": 101.68653, "lat": 3.1412, "kind": "capital", "coordinate_source": "GeoNames 1735161"}
+    {
+      "name": "Kuala Lumpur",
+      "lon": 101.68653,
+      "lat": 3.1412,
+      "kind": "capital",
+      "coordinate_source": "GeoNames 1735161"
+    }
   ],
   "us_citizen_notes": "US citizens remain fully US-taxed; Malaysia has no comprehensive income tax treaty with the US and does not tax their foreign income, so the US layer is the full cost.",
   "open_questions": [

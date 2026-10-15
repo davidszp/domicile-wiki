@@ -62,3 +62,4 @@ City: Road Town (Tortola).
 - 2026-10-15: initial research.
 - 2026-10-15: searched for same-definition indicator values (WGI absent for the BVI; homicide data only to 2006); documented the gap in open questions. No data values changed.
 - 2026-10-15: cost of living pass: added prime rent (USD 3,500, Smiths Gore long-term listings) and Cedar International School 2026-27 DP tuition (USD 23,870; school moved to cedar.vg).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (USD 3,500).

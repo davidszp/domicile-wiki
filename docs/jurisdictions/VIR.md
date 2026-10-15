@@ -105,3 +105,4 @@ City: St. Thomas (East End / Red Hook / Northside).
 
 - 2026-10-15: initial research.
 - 2026-10-15: cost of living added: prime rent USD 7,500 (median of five 4-6 bed MLS long lets, thin) and Antilles School Grades 9-12 tuition USD 31,600 (2026-27).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (USD 7,500).

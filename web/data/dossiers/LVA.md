@@ -63,7 +63,7 @@ None. No special tax regime for newly arriving wealthy individuals was found; on
 ## Cost of living notes
 
 City: Riga.
-- Prime family-home rent (monthly): EUR 2,200 (2026). Median asking rent of 15 distinct houses of 180-500 m² for long-term rent in Riga (Mežaparks, Bieriņi, Imanta, Vecāķi, Torņakalns, Centre, Jaunciems) on SS.lv, all listing pages, 15 Oct 2026; range EUR 1,100-4,840 (Mežaparks EUR 2,000-4,500). Small sample; Jūrmala excluded. Source: SS.LV Houses, cottages - Riga, Hand over, https://www.ss.lv/en/real-estate/homes-summer-residences/riga/all/hand_over/
+- Prime family-home rent (monthly): EUR 2,200 (2026). Median asking rent of 15 distinct houses of 180-500 m² for long-term rent in Riga (Mežaparks, Bieriņi, Imanta, Vecāķi, Torņakalns, Centre, Jaunciems) on SS.lv, all listing pages, 15 Oct 2026; range EUR 1,100-4,840 (Mežaparks EUR 2,000-4,500). Small sample; Jūrmala excluded. Checked 2026-10-15 against the upper-middle-class standard. Source: SS.LV Houses, cottages - Riga, Hand over, https://www.ss.lv/en/real-estate/homes-summer-residences/riga/all/hand_over/
 - International school (annual, per child): EUR 20,900 (2026). International School of Riga, Grades 9-12, 2026/27: tuition EUR 19,400 plus yearly capital fee EUR 1,500 (EUR 2,000 for new students). New students also pay a one-time EUR 1,600 membership fee. Source: Tuition & Fees (2026/27), https://isriga.lv/admissions/tuition-fees/
 
 Prime purchase price per m², family health insurance and housekeeper cost were not sourced in this round and are omitted rather than guessed.
@@ -93,3 +93,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15: confirmed from the PIT Law the foreign-dividend exemption (Section 9(1)(2.1)) and the scope of the 3% additional rate (Section 15.1: includes capital gains and exempt dividends); capital_gains and dividends now high/verified; added Riga cost of living (SS.LV rent sample, ISR 2026/27 fee).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

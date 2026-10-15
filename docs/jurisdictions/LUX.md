@@ -142,3 +142,4 @@ US citizens: US-Luxembourg income tax treaty applies; there is no estate tax tre
 - 2026-10-15: initial research.
 - 2026-10-15: added prime rent (athome.lu listing sample, EUR 5,300/month) and international school fee (ISL Grades 9-12, EUR 24,226, 2026-27) to cost of living.
 - 2026-10-15: Holding structures section: no structure modelled (SPF/Soparfi worse than direct holding); SPF subscription-tax minimum EUR 1,000 and maximum EUR 125,000 verified.
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

@@ -42,11 +42,11 @@ No corporate income tax. Domestic Minimum Top-up Tax Act enacted 29 November 202
 
 ## Cost of living notes
 
-City: Nassau (western New Providence: Lyford Cay / Old Fort Bay).
-- Prime 4-5 bedroom rent (monthly): BSD 25,000 (2026). Median of the three 4-5 bedroom houses in the gated Lyford Cay and Old Fort Bay communities listed for rent by Coldwell Banker Bahamas on 15 Oct 2026: Lyford Cay 4-bed USD 22,500; Old Fort Bay 4-bed USD 25,000 (marked rented); Old Fort Bay 5-bed with dock USD 45,000 (short-term allowed). Excluded: a 6-bed Lyford Cay waterfront estate at USD 55,000. Gated executive 4-5 bed homes nearer Cable Beach (Sandyport, Westridge) were listed at USD 10,000-12,000. Asking rents; BSD is at par with USD. Source: Coldwell Banker Bahamas: Bahamas property rentals (listings sorted by price, viewed 15 Oct 2026).
+City: Nassau (western New Providence: Sandyport).
+- Family rent, 4 bedrooms (monthly): BSD 10,000 (2026). Sandyport (gated canal-front community, Cable Beach area, western Nassau; upper-middle executive housing, not Lyford Cay or Old Fort Bay). Two 4-bedroom houses listed by Coldwell Banker Bahamas, both USD 10,000 a month and both marked RENTED, read 15 Oct 2026: a 4-bed, 4-bath, 3,200 sq ft (about 297 m2) house with pool, dock and generator (listing 71327), and a fully furnished 3-bed plus office (usable as a fourth bedroom), 2,500 sq ft (about 232 m2) canal-front house (listing 81437). Both give USD 10,000 (BSD at par with USD). Earlier note: gated executive 4-5 bed homes at Sandyport and Westridge were USD 10,000-12,000. Very thin sample, asking rents of let homes. Replaces the Lyford Cay/Old Fort Bay figure (BSD 25,000), which was ultra-prime.
 - International school fee (annual, per child): BSD 35,600 (2026). Lyford Cay International School (IB), High School grades 11-12, annual tuition 2026-27 (grades 9-10: 33,000). The school says tuition includes books, technology fees and off-island field trips. Amounts shown in $ (BSD at par with USD). Source: Lyford Cay International School: Tuition & Fees (annual tuition 2026-27).
 
-Purchase price per m2, health insurance and housekeeper not sourced. Rent sample is small (three gated-community listings) and asking-price based.
+Purchase price per m2, health insurance and housekeeper not sourced. Rent sample is small (two Sandyport listings) and asking-price based.
 
 ## Open questions
 
@@ -68,9 +68,11 @@ Purchase price per m2, health insurance and housekeeper not sourced. Rent sample
 - Chambers Real Estate 2026: Bahamas (Graham Thompson): https://gpg-pdf.chambers.com/Real-Estate-2026/39/
 - PwC Worldwide Tax Summaries: The Bahamas, Corporate - Taxes on corporate income (last reviewed 21 July 2026): https://taxsummaries.pwc.com/the-bahamas/corporate/taxes-on-corporate-income
 - Coldwell Banker Bahamas: Bahamas property rentals (listings sorted by price, viewed 15 Oct 2026): https://www.coldwellbankerbahamas.com/bahamas-property-rentals
+- Coldwell Banker Bahamas: RENTED Sandyport Executive Home For Rent (listings 71327 and 81437) (Coldwell Banker Lightbourn Realty, other): https://www.coldwellbankerbahamas.com/listing-rented-nassau-executive-home-for-rent-71327.html and https://www.coldwellbankerbahamas.com/listing-nassau-executive-home-for-rent-81437.html
 - Lyford Cay International School: Tuition & Fees (annual tuition 2026-27): https://www.lcis.bs/tuition-and-fees
 
 ## Change log
 
 - 2026-10-15: initial research.
 - 2026-10-15: second pass. Added prime rent (BSD 25,000/month, Coldwell Banker Bahamas Lyford Cay/Old Fort Bay listings) and replaced the undated OpenApply school fee with LCIS's own 2026-27 fee (BSD 35,600, grades 11-12). Probate/stamp cost on land passing to heirs re-checked against PwC (no answer; open question sharpened, other_transfer_cost_rate still 0).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from 25,000 to 10,000 BSD (Sandyport, Nassau; was Lyford Cay/Old Fort Bay).

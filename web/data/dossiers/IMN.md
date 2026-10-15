@@ -123,3 +123,4 @@ US citizens: No US-Isle of Man income tax treaty, so no treaty relief and no sav
 
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added rent (Rightmove, Isle of Man 4-5 bedrooms, £3,000/month) and King William's College fee (£33,900, Years 12-13, 2026-27); added duration_note to the tax cap; added a homicide-rate indicator override (1.18 per 100,000, Isle of Man Constabulary 2025-26).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.

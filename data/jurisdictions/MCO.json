@@ -172,14 +172,14 @@
   },
   "cost_of_living": {
     "city": "Monaco",
-    "notes": "No cost item other than rent and school fees was sourced. Real estate purchase registration duty 4.5% (transparent buyers) or 7.5%. Rent is a small listing sample; Monaco rents vary enormously with size and building.",
+    "notes": "No cost item other than rent and school fees was sourced. Real estate purchase registration duty 4.5% (transparent buyers) or 7.5%. Rent is a small listing sample; Monaco rents vary enormously with size and building, so the figure is for a 200-300 m² 4-bedroom flat, not the penthouses that dominate agency listings.",
     "prime_rent_monthly": {
       "value": {
-        "amount": 110000,
+        "amount": 28500,
         "currency": "EUR"
       },
       "year": 2026,
-      "description": "Median asking rent of 11 distinct apartments with 4-5 bedrooms listed for rent in Monaco on LuxuryEstate.com on 15 October 2026 (offices excluded); range EUR 22,000 (4 bedrooms, 196 m²) to EUR 190,000 (5 bedrooms, Carré d'Or); 4-bedroom flats of about 200-300 m² asked EUR 22,000-35,000, larger 400-700 m² units EUR 70,000-190,000. Small, very dispersed sample of agency asking rents.",
+      "description": "Prime 4-bedroom family flat of about 200-300 m²: midpoint of the EUR 22,000-35,000 asking rents of the 4-bedroom flats in that size range listed on LuxuryEstate.com on 15 October 2026. Cross-check: prime rents average about EUR 114.50/m² a month (Jarnias, 2026: https://www.jarniascyril.com/?p=25449), i.e. about EUR 28,600 for 250 m². The same sample's median (EUR 110,000) was not used: it was dominated by 400-700 m² penthouses and duplexes in the Carré d'Or and Mareterra (EUR 70,000-190,000), far larger than the family home assumed elsewhere.",
       "source": {
         "title": "LuxuryEstate.com: luxury properties for rent in Monaco (listing sample)",
         "url": "https://www.luxuryestate.com/rent/monaco",

@@ -261,7 +261,7 @@
         "currency": "DKK"
       },
       "year": 2026,
-      "description": "Median asking rent of the 4 listings of at least 140 m² in Tórshavn municipality (Tórshavn, Hoyvík, Argir) on Kitt.fo, the Faroese rental portal, on 2026-10-15: a 204 m² 5-room house in Hoyvík (DKK 14,500, 6-month let), a 192 m² 3-bedroom-plus-office flat in Argir (DKK 16,900, let over 3 years), a 150 m² house in central Tórshavn (DKK 15,000) and a 145 m² house in central Tórshavn (DKK 13,000), both lets under 1 year. Kitt.fo showed 48 listings in all on that date; no other listing had 4 or more bedrooms. Some rents include electricity, heating and internet. Very thin sample: the Faroese rental market is small and many lets are arranged privately or through Facebook groups, so treat this as indicative only.",
+      "description": "Median asking rent of the 4 listings of at least 140 m² in Tórshavn municipality (Tórshavn, Hoyvík, Argir) on Kitt.fo, the Faroese rental portal, on 2026-10-15: a 204 m² 5-room house in Hoyvík (DKK 14,500, 6-month let), a 192 m² 3-bedroom-plus-office flat in Argir (DKK 16,900, let over 3 years), a 150 m² house in central Tórshavn (DKK 15,000) and a 145 m² house in central Tórshavn (DKK 13,000), both lets under 1 year. Kitt.fo showed 48 listings in all on that date; no other listing had 4 or more bedrooms. Some rents include electricity, heating and internet. Very thin sample: the Faroese rental market is small and many lets are arranged privately or through Facebook groups, so treat this as indicative only. Checked 2026-10-15 against the upper-middle-class standard.",
       "source": {
         "title": "Kitt — Leiguportalurin: search (all rental listings)",
         "url": "https://www.kitt.fo/search/",

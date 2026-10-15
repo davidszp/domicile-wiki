@@ -70,7 +70,7 @@ None. Every resident is taxed the same way; no special regime is needed because 
 
 City: Muscat.
 
-- **prime_rent_monthly**: 2,200 OMR (2026). Savills Oman guide rent for a 5-bedroom villa in Al Mouj (Tombazi), the prime expatriate waterfront community, on 15 Oct 2026. Other 4-5 bedroom villas in the same Savills listing page: Muscat Hills OMR 1,900, Al Khuwair OMR 2,500, Azaiba OMR 650-750 (6 listings; median OMR 1,400). Source: [Properties for rent in Oman](https://search.savills.com/oma/en/list/property-to-rent/oman).
+- **prime_rent_monthly**: 1,400 OMR (2026). Median monthly guide rent of the 6 four- and five-bedroom villas in Savills Oman's first results page of Muscat rentals on 2026-10-15 (Azaiba 5-bed 750, Azaiba 4-bed 650, Muscat townhouse 4-bed 900, Muscat Hills 5-bed 1,900, Al Mouj 5-bed 2,200, Al Khuwair 5-bed 2,500; OMR 650-2,500): OMR 1,400, the midpoint of 900 and 1,900. Replaces the Al Mouj waterfront 5-bedroom figure (OMR 2,200). Thin sample of one page; unfurnished/furnished not stated. Source: Properties for rent in Oman.
 - **intl_school_annual_fee**: 10,666 OMR (2026). British School Muscat, Key Stage 5 (Years 12-13) annual tuition 2026-27 (KS4: OMR 9,503); plus an infrastructure fee of OMR 300 a term for the first 9 terms. TAISM (American) high school: OMR 11,560 plus OMR 4,500 capital levy. Source: [British School Muscat - Fees 2026-2027](https://britishschoolmuscat.com/admissions/bsm-fees/).
 - Purchase prices, health insurance and housekeeper costs not sourced.
 
@@ -105,4 +105,4 @@ City: Muscat.
 
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added prime rent (Savills Oman, Al Mouj 5-bed villa) and school fee (British School Muscat 2026-27); 2028 personal income tax moved to the top of open questions; decree text read via qanoon.om (Art. 4, 8, 16, 25) and Deloitte 2026 added; flagged a possible discrepancy on the Muscat-listed share exemption.
-
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from 2,200 OMR to 1,400 OMR (Muscat 4-5 bed villas, median of 6).

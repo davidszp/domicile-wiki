@@ -1,5 +1,5 @@
-import { h, fmtScore, fmtEur } from "../dom.js";
-import { state, entries, jur, regimeOpts, toggleIn, MAX_COMPARE, metricsFor, taxMetrics, isIncomePersona, personaCfg } from "../state.js";
+import { h, fmtScore, fmtEur, moneyText, displayCurrency } from "../dom.js";
+import { state, entries, jur, regimeOpts, toggleIn, MAX_COMPARE, metricsFor, taxMetrics, isIncomePersona, personaCfg, personaNoun } from "../state.js";
 import { rank, reweightTaxShare } from "../scoring.js";
 import { scoreChip, statusBadge } from "./profile.js";
 
@@ -133,7 +133,7 @@ export function renderRankings(panel, ctx) {
   panel.append(h("h2", null, `Rankings: ${persona.label}`),
     h("p", { class: "small muted" }, "Tax-only and overall rankings side by side: a jurisdiction can be excellent for taxes and weaker on housing, security or services. Only researched jurisdictions are ranked."),
     h("div", { class: "filters" },
-      control("Rank by", select([["score", `Overall ${persona.label.toLowerCase()} score`], ["tax", "Tax score only"], ["cost", "Annual Household Cost (lowest first)"]], "sort")),
+      control("Rank by", select([["score", `Overall ${personaNoun()} score`], ["tax", "Tax score only"], ["cost", "Annual Household Cost (lowest first)"]], "sort")),
       control("Show", select([["countries", "Countries"], ["regions", "Regions (cantons, communities, emirates, states)"], ["all", "All"]], "level")),
       control("Continent", select([["", "All"], ...continents.map((c) => [c, c])], "continent")),
       control("Minimum confidence", select([["provisional", "Provisional or verified"], ["verified", "Verified only"]], "minStatus")),
@@ -146,7 +146,7 @@ export function renderRankings(panel, ctx) {
     h("button", { onclick: () => exportRows(rows) }, "Export CSV")));
   const table = h("table", { class: "grid rank-table" },
     h("thead", null, h("tr", null, h("th", null, "#"), h("th", null, "Jurisdiction"), h("th", null, "Overall"), h("th", null, "Tax"),
-      h("th", null, "Status"), h("th", { title: isIncomePersona() ? `Annual Household Cost: ${persona.cost.description} Not taxes.` : "Annual Household Cost: estimate for a family of five (prime rent, three international-school places, health insurance, housekeeper, other spending). Not taxes." }, "Annual Household Cost (€)"), h("th", null, h("span", { class: "sr-only" }, "Actions")))),
+      h("th", null, "Status"), h("th", { title: isIncomePersona() ? `Annual Household Cost: ${moneyText(persona.cost.description)} Not taxes.` : "Annual Household Cost: estimate for a family of five (prime rent, three international-school places, health insurance, housekeeper, other spending). Not taxes." }, `Annual Household Cost (${displayCurrency()})`), h("th", null, h("span", { class: "sr-only" }, "Actions")))),
     h("tbody", null, rows.map(({ id, e, r }, i) => h("tr", { class: state.selected === id ? "sel" : "" },
       h("td", null, String(i + 1)),
       h("td", null, h("button", { class: "linklike", onclick: () => ctx.select(id) }, e.name),
