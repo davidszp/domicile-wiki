@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Northern Europe (Baltics)",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "2026 reform: most income progressive 20/25/32%, but dividends and gains on shares held over 5 years stay at a flat 15%; real estate gains exempt after 5 years. Children fully exempt from inheritance tax; no gift tax; no wealth tax, but a new progressive tax on residential real estate above thresholds.",
   "regimes": [
     {
@@ -271,7 +271,10 @@
     }
   ],
   "us_citizen_notes": "US citizens remain US-taxed; Lithuania-US treaty in force. No special local issues found.",
-  "open_questions": [],
+  "open_questions": [
+    "Holding structures (2026-10-16): a Lithuanian UAB holding company was considered and not added as a regime. Its profit is taxed every year at 17%, not on distribution; gains on shares are exempt only for a stake above 10% held at least two years (PwC), so a diversified portfolio's gains and non-EEA dividends would be taxed at 17% inside the company, then dividends again at 15% on payout. It is never better than direct holding, and no source shows advisers recommending it for a listed portfolio. A private foundation or trust was not researched.",
+    "Health insurance (PSD, 6.98%) on dividends and gains of an individual was searched for and not found in any source read; the file assumes none applies to these items. Check with VMI or the Law on Health Insurance."
+  ],
   "cost_of_living": {
     "city": "Vilnius",
     "prime_rent_monthly": {

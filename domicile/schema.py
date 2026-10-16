@@ -74,9 +74,21 @@ class CapitalGainsRates(Strict):
     real_estate_foreign: Rate | None = None
 
 
+class IncomeSurtax(Strict):
+    """An extra rate on each spouse's investment income above a threshold (Poland's 4% solidarity levy, Latvia's 3%).
+    The reference couple holds everything 50/50, so each spouse has the threshold."""
+
+    rate: Rate
+    threshold_per_person: Money
+    counts_dividends: bool = Field(description="Dividends count towards the threshold and bear the surtax (Latvia: yes, even exempt ones)")
+    counts_gains: bool
+    notes: str = ""
+
+
 class CapitalGains(MetricBase):
     headline_rate: Rate | None
     rates: CapitalGainsRates
+    income_surtax: IncomeSurtax | None = Field(None, description="Surtax above a per-person threshold, on top of the rates")
     rate_basis: str = Field(min_length=10, description="How the rates were derived (marginal top rate, holding period assumed, ...)")
     professional_trader: str = ""
     holding_period_rules: str = ""

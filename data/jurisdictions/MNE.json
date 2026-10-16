@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Southern Europe (Western Balkans)",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Montenegro (euro, non-EU) taxes residents' worldwide capital gains at a flat 15% (no municipal surtax on gains) and dividends at 15% plus a municipal surtax of up to 15% of the tax (17.25% in Podgorica). No wealth tax, and no inheritance or gift tax for children (only real estate transfer tax for other heirs). No special tax regime for wealthy arrivals.",
   "regimes": [
     {
@@ -163,7 +163,7 @@
         "rate_basis": "15% PIT on gross dividends (PwC, reviewed 7 Aug 2026) plus the Podgorica municipal surtax of 15% of the tax (local-finance law Art. 8): 0.15 x 1.15 = 0.1725.",
         "withholding_outbound": "15% WHT on dividends paid to residents and non-residents (30% to entities in listed tax havens), reducible by treaty.",
         "treaty_network": "47 treaties per PwC, including most EU states, UK, Switzerland, UAE, China; no treaty with the United States.",
-        "holding_company_notes": "Corporate shareholders: dividends from resident companies are generally excluded from the CIT base; not researched in depth.",
+        "holding_company_notes": "Corporate shareholders: dividends from Montenegrin profit-tax payers are excluded from the base (Art. 9 of the profit tax law); foreign dividends are taxable profit at 9%/12%/15% with a credit for foreign tax (Art. 33). See the holding_doo regime.",
         "tax_year": "2026",
         "verified_on": "2026-10-15"
       },
@@ -260,6 +260,143 @@
         "spouse_treatment": "fully_exempt",
         "spouse_note": "No tax on movables; the spouse of the deceased is exempt from real estate transfer tax on inherited real estate (Law on Real Estate Transfer Tax, Art. 14(1)(1))."
       }
+    },
+    {
+      "id": "holding_doo",
+      "name": "Family holding company (d.o.o.)",
+      "type": "structure",
+      "description": "The family holds the portfolio through a Montenegrin d.o.o. owned by the parents. The company pays progressive profit tax (9% to EUR 100,000, 12% to EUR 1.5m, 15% above) on foreign dividends and on realised gains alike: the dividend exclusion in Art. 9 covers only payers that are themselves Montenegrin profit-tax payers, and there is no relief for gains on shares. Foreign tax is credited up to the Montenegrin tax on that profit (Art. 33). Money taken out is taxed again as a dividend at 15% plus the municipal surtax. Wealth tax (none) and inheritance (none on movables) are the same as for direct holding, so those metrics are inherited from the standard regime. The company is rarely better than personal holding; it is shown because it is the ordinary vehicle for holding assets in a company.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Any resident, including a foreigner with a residence permit, can found a d.o.o. (formalities not researched). Contributing an existing portfolio in kind is a transfer for the individual, so a gain would be taxed at 15% (not verified for contributions).",
+      "duration_years": null,
+      "duration_note": "A corporate structure under ordinary law with no time limit; it lasts as long as the company exists.",
+      "structure": {
+        "entity": "drustvo sa ogranicenom odgovornoscu (d.o.o.), a private limited company holding securities",
+        "kind": "company",
+        "payout_tax_rate": 0.1725,
+        "payout_notes": "Dividends paid to a resident individual are capital income taxed at 15% (PwC), withheld by the payer, plus the municipal surtax of up to 15% of the tax in Podgorica or Cetinje (13% elsewhere), giving 17.25% as in the standard regime. Whether the surtax applies to a shareholder who carries on no activity in the municipality is open (Art. 8(1) of the local finance law speaks of persons carrying on an activity there). Loans to shareholders were not researched.",
+        "annual_running_cost": null,
+        "running_cost_deductible_at": null,
+        "substance_and_anti_avoidance": "Art. 9 of the profit tax law excludes dividends only when the payer is a taxpayer under that law, so dividends from foreign companies are taxable profit (PwC). Art. 34a gives a credit for tax paid by a non-resident branch/subsidiary on dividends included in income; the conditions for a portfolio shareholder were not researched. Dividends paid by the d.o.o. to a foreign parent are exempt from withholding only within the EU parent-subsidiary rule (Art. 29h); not relevant to residents. Pillar Two top-up tax (adopted early 2026) applies only to large groups. Anti-avoidance rules were not researched.",
+        "exit_and_liquidation": "Not researched: liquidation proceeds (Art. 27 treats liquidation as a sale at market value at company level) and the sale of d.o.o. shares by the family (capital gains tax 15% under the personal income tax law).",
+        "sources": [
+          {
+            "title": "Zakon o porezu na dobit pravnih lica, prociscen tekst (Sl. list CG 65/01 ... 152/22, 28/23), Arts 9, 21-24, 28, 33",
+            "url": "https://www.investinkotor.me/files/documents/1706539733-Zakon%20o%20porezu%20na%20dobit%20pravnih%20lica.pdf",
+            "publisher": "Pravni ekspert doo (Katalog propisa 2023), via investinkotor.me",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Montenegro - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/montenegro/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Montenegro - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/montenegro/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ]
+      },
+      "capital_gains": {
+        "summary": "Gains realised by the d.o.o. on shares and securities are included in its taxable profit in the year they arise (Arts 21-22), at the progressive rates 9% (to EUR 100,000), 12% (to EUR 1.5m) and 15% above. There is no holding-period exemption in the current consolidated text. Capital losses offset capital gains of the same year and carry forward five years.",
+        "exemptions_thresholds": "None for gains on shares found in the consolidated text to Sl. list CG 28/23.",
+        "eligibility_conditions": "Montenegrin-resident d.o.o.",
+        "important_exceptions": "The first EUR 1.5m of profit is taxed at lower bands; the file records the 15% top rate.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zakon o porezu na dobit pravnih lica, prociscen tekst (Sl. list CG 65/01 ... 152/22, 28/23), Arts 9, 21-24, 28, 33",
+            "url": "https://www.investinkotor.me/files/documents/1706539733-Zakon%20o%20porezu%20na%20dobit%20pravnih%20lica.pdf",
+            "publisher": "Pravni ekspert doo (Katalog propisa 2023), via investinkotor.me",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Montenegro - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/montenegro/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Montenegro - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/montenegro/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The consolidated text read ends with Sl. list CG 28/23; later amendments (2024-2026) were not checked against the Gazette. PwC (reviewed Aug 2026) shows the same rates."
+        ],
+        "headline_rate": 0.15,
+        "rates": {
+          "listed_securities_domestic": 0.15,
+          "listed_securities_foreign": 0.15,
+          "private_business_sale": 0.15,
+          "real_estate_local": 0.15,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Top corporate rate 15% on profit above EUR 1.5m (Art. 28); profit below that is taxed at 9%/12% bands: EUR 9,000 + 12% of the excess over EUR 100,000 up to EUR 1.5m, EUR 177,000 + 15% above EUR 1.5m. The engine applies the single 15% rate. Foreign real estate not examined (null).",
+        "professional_trader": "Not relevant: all income of the company is taxable profit.",
+        "holding_period_rules": "None for the company.",
+        "foreign_assets": "Resident companies are taxed on worldwide profit; foreign profit tax is credited up to the Montenegrin tax on that profit (Art. 33)."
+      },
+      "dividends": {
+        "summary": "Dividends from foreign companies are included in the d.o.o.'s taxable profit at the progressive 9%/12%/15% rates: the exclusion in Art. 9 applies only when the payer is a Montenegrin profit-tax payer (consolidated text; PwC). Foreign tax paid on the profit is credited up to the Montenegrin tax on it (Art. 33); that source withholding counts as foreign profit tax is assumed.",
+        "exemptions_thresholds": "Dividends from Montenegrin profit-tax payers are excluded (Art. 9); foreign dividends are not.",
+        "eligibility_conditions": "Montenegrin-resident d.o.o.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zakon o porezu na dobit pravnih lica, prociscen tekst (Sl. list CG 65/01 ... 152/22, 28/23), Arts 9, 21-24, 28, 33",
+            "url": "https://www.investinkotor.me/files/documents/1706539733-Zakon%20o%20porezu%20na%20dobit%20pravnih%20lica.pdf",
+            "publisher": "Pravni ekspert doo (Katalog propisa 2023), via investinkotor.me",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Montenegro - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/montenegro/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Montenegro - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/montenegro/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether a treaty-limited withholding tax on a portfolio dividend counts as 'tax on profit paid in that state' under Art. 33 was not confirmed; Art. 34a speaks only of tax paid by a non-resident subsidiary."
+        ],
+        "headline_rate": 0.15,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.15,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Foreign dividends: top rate 15% (Art. 28), credit for foreign tax up to the Montenegrin tax on that profit (Art. 33). Domestic dividends: 0% (Art. 9).",
+        "withholding_outbound": "15% on dividends the d.o.o. pays out to residents and non-residents (PwC), 30% to listed tax havens; the family-level tax on payout is in the structure terms.",
+        "treaty_network": "A Montenegrin d.o.o. is a treaty resident (47 treaties per PwC); no treaty with the United States.",
+        "holding_company_notes": "This regime is the company itself."
+      }
     }
   ],
   "residency": {
@@ -287,7 +424,7 @@
   },
   "corporate": {
     "cit_rate": 0.15,
-    "summary": "Progressive CIT: 9% up to EUR 100,000 profit, 12% to EUR 1.5m, 15% above. No municipal CIT. 15% WHT on dividends (30% to tax havens).",
+    "summary": "Progressive CIT (Art. 28): 9% up to EUR 100,000 profit, EUR 9,000 + 12% to EUR 1.5m, EUR 177,000 + 15% above. No municipal CIT. Dividends are excluded only when paid by a Montenegrin profit-tax payer (Art. 9); foreign dividends and all capital gains on shares are taxable profit, with a credit for foreign profit tax up to the Montenegrin tax (Art. 33). 15% WHT on dividends (30% to tax havens).",
     "sources": [
       {
         "title": "Montenegro – Corporate – Taxes on corporate income",
@@ -302,6 +439,20 @@
         "publisher": "PwC Worldwide Tax Summaries",
         "kind": "professional",
         "accessed": "2026-10-15"
+      },
+      {
+        "title": "Zakon o porezu na dobit pravnih lica, prociscen tekst (Sl. list CG 65/01 ... 152/22, 28/23), Arts 9, 21-24, 28, 33",
+        "url": "https://www.investinkotor.me/files/documents/1706539733-Zakon%20o%20porezu%20na%20dobit%20pravnih%20lica.pdf",
+        "publisher": "Pravni ekspert doo (Katalog propisa 2023), via investinkotor.me",
+        "kind": "legislation",
+        "accessed": "2026-10-16"
+      },
+      {
+        "title": "Montenegro - Corporate - Income determination",
+        "url": "https://taxsummaries.pwc.com/montenegro/corporate/income-determination",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-16"
       }
     ]
   },

@@ -1,0 +1,135 @@
+{
+  "id": "TUR",
+  "name": "Turkey",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "estate": "portfolio",
+      "note": "Full taxpayer on worldwide income: foreign dividends and foreign share gains are declared and taxed at the progressive rates up to 40%, with foreign withholding credited up to the Turkish tax. No wealth tax. Inheritance tax reaches only Turkish-situs assets of non-citizens, so the foreign portfolio passes untaxed."
+    },
+    {
+      "id": "law_7582",
+      "name": "New-resident foreign-income exemption (Law 7582), then ordinary rules",
+      "regime": "law_7582_new_resident",
+      "estate": "portfolio",
+      "note": "For 20 years from becoming resident, foreign-source income and gains are outside Turkish income tax (GVK Mük. 20/D); then the standard rules apply. Requires no Turkish domicile or tax liability in the 3 calendar years before and the exemption certificate. The 1% inheritance rate applies only to deaths inside the 20 years, so neither modelled death (years 30 and 60) benefits."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000000,
+      "realised_gains": 10000000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 9000000,
+      "working": "Assumes the family's other income already exceeds TRY 5,300,000, so dividends and gains are taxed entirely at the 2026 top rate of 40% (GVK art. 103 as set by Communique 332; lower bands ignored, as the brief asks for top marginal rates). Foreign dividends are fully taxable (the 50% exemption of GVK art. 22 needs a 50% holding, PwC): 20,000,000 x 40% = 8,000,000, less foreign tax credit (GVK art. 123, limited to the Turkish tax on that income, PwC) for the 15% withholding 3,000,000 = 5,000,000. Gains on foreign listed shares are a value-increase gain under GVK Muk. 80/1, declared with no exemption or declaration threshold (the 2-year exemption covers only shares of Turkish companies; GIB 2026 guide, ozelge): the 10,000,000 given is taken as the taxable gain after PPI indexation of cost (Muk. 81). 10,000,000 x 40% = 4,000,000. Total 5,000,000 + 4,000,000 = 9,000,000. No wealth tax."
+    },
+    {
+      "path": "law_7582",
+      "kind": "annual",
+      "dividends": 20000000,
+      "realised_gains": 10000000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "For a person who became resident with no Turkish domicile or tax liability in the 3 prior calendar years and holds the exemption certificate, foreign-source income and gains are exempt from income tax for 20 years (GVK Muk. 20/D added by Law 7582): foreign dividends 20,000,000 and gains on foreign shares 10,000,000 are not taxed and not declared. Foreign withholding is not creditable and is outside this figure. Total 0."
+    },
+    {
+      "path": "law_7582",
+      "phase": "after",
+      "kind": "annual",
+      "dividends": 20000000,
+      "realised_gains": 10000000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 9000000,
+      "working": "After the 20 years the ordinary rules apply: the same calculation as for the standard regime, assuming the 2026 rates and the top rate of 40% on income above TRY 5,300,000: dividends 20,000,000 x 40% = 8,000,000 less 15% foreign tax credit 3,000,000 (GVK art. 123) = 5,000,000; gains 10,000,000 x 40% = 4,000,000 (GVK Muk. 80/1). Total 9,000,000."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 100000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Law 7338 art. 1: tax falls on assets of persons of Turkish citizenship and on assets located in Turkey; a person who is not a Turkish citizen and whose estate is outside Turkey is not within it. The EU parents and children are not Turkish citizens and the estate of 100,000,000 here is the foreign listed portfolio, so no Turkish inheritance tax is due: 0. Art. 1 paragraph 3 adds that a foreign person not domiciled in Turkey who gets a Turkish citizen's foreign assets is also outside it. For illustration (not in the figure): a Turkish-situs estate of 300,000,000 split between three children is 100,000,000 each, less the 2,907,136 exemption of art. 4(b) = 97,092,864, taxed on the art. 16 bands: 1% x 3,000,000 + 3% x 7,000,000 + 5% x 15,000,000 + 7% x 30,000,000 + 10% x 42,092,864 = 30,000 + 210,000 + 750,000 + 2,100,000 + 4,209,286 = 7,299,286 per child, about 21.9 million for the three."
+    },
+    {
+      "path": "law_7582",
+      "kind": "inheritance",
+      "estate": 100000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Law 7338 art. 1: tax falls on assets of persons of Turkish citizenship and on assets located in Turkey; a person who is not a Turkish citizen and whose estate is outside Turkey is not within it. The EU parents and children are not Turkish citizens and the estate of 100,000,000 here is the foreign listed portfolio, so no Turkish inheritance tax is due: 0. The flat 1% rate of art. 16 (paragraph added by Law 7582 art. 2) applies only to Turkish-taxable transfers within the 20-year exemption period; with no Turkish-situs asset in the estate nothing is taxable, so 0. If the home in Turkey (Turkish-situs) were inherited inside the 20 years it would pay 1% above the art. 4(b) exemption of 2,907,136 per child (assumed to apply before the 1%)."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens and stay non-Turkish; becoming a Turkish citizen (citizenship by investment) would bring the family's foreign assets into the inheritance tax (Law 7338 art. 1).",
+    "The family arrive in 2026 or later with no Turkish domicile or tax liability in the 3 previous calendar years and obtain the exemption certificate on time (end of the year of arrival), so they qualify for Law 7582.",
+    "Top marginal rates: other income already exceeds TRY 5,300,000, so dividends and gains are taxed at 40% throughout; allowances and the TRY 22,000 declaration threshold are ignored.",
+    "The EUR 5M home in Turkey is Turkish-situs and would be in the inheritance tax; the hand-worked inheritance checks use a foreign-only estate, as the check takes only an estate amount.",
+    "Gains are the taxable gain after PPI indexation; foreign withholding is 15% on dividends.",
+    "Residence permit by real estate investment is only the entry route; it changes no rate."
+  ],
+  "open_questions": [
+    "Structure not modelled: a Turkish holding A.S. pays 25% corporate tax on foreign portfolio dividends and share gains, because the foreign-dividend exemption needs a 10% holding for a year taxed at 15% abroad and the share-gain relief (50%) covers only domestic participations (PwC Turkey corporate income determination); distributions then bear 15% withholding. It is never better than direct holding and no adviser recommendation was found. Private foundations (vakif) and trusts are not available for family wealth.",
+    "Whether the Art. 4 exemption applies before the flat 1% rate was not confirmed (the new paragraph sets only the rate).",
+    "The top income tax rate of 40% applies above TRY 5,300,000 for non-wage income per GIB and PwC; the article of the credit rule (GVK art. 123) was not opened.",
+    "Situs: the zero inheritance tax assumes the portfolio is held outside Turkey. Shares held at a Turkish custodian might count as property located in Turkey (VİVK art. 1); then the children would pay about TRY 4.1M on TRY 100M (scale) or about 0.9M at the 1% rate within the Law 7582 period. Also unconfirmed: whether foreign shares held through a Turkish broker stay foreign-source for the 20/D exemption, and the exemption certificate procedure (Communiqué 333, Official Gazette 4 July 2026)."
+  ],
+  "sources": [
+    {
+      "title": "Veraset ve Intikal Vergisi Kanunu (Law No. 7338), consolidated text",
+      "url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.7338.pdf",
+      "publisher": "Mevzuat Bilgi Sistemi",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Gelir Vergisi Tarifesi 2026",
+      "url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-tarifeleri%2Fgelir-vergisi-tarifesi-2026.pdf",
+      "publisher": "Gelir Idaresi Baskanligi",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Turkey - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/turkey/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Turkey - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Turkey - Individual - Foreign tax relief and tax treaties",
+      "url": "https://taxsummaries.pwc.com/turkey/individual/foreign-tax-relief-and-tax-treaties",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Turkey - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/turkey/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Turkey's Foreign Investor Tax Package 2026: What Law No. 7582 Actually Enacted",
+      "url": "https://istanbullawyerfirm.com/blog/turkey-foreign-investor-tax-package-2026",
+      "publisher": "Istanbul Lawyer Firm",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

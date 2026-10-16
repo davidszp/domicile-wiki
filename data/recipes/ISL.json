@@ -1,0 +1,108 @@
+{
+  "id": "ISL",
+  "name": "Iceland",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "estate": "portfolio",
+      "note": "Flat 22% capital income tax on dividends and realised gains (foreign withholding credited against it); no wealth tax. The portfolio is in the estate: 10% inheritance tax on the estate above a CPI-indexed allowance (ISK 6,789,790 in 2026), spouse exempt."
+    },
+    {
+      "id": "ehf_holding",
+      "name": "Investment holding company (ehf.)",
+      "regime": "ehf_holding",
+      "estate": "portfolio",
+      "note": "An Icelandic ehf. owned by the parents deducts dividends from and gains on shares of qualifying (OECD-rate) companies, so the portfolio is taxed at about 0% inside the company; foreign withholding is lost; payouts to the owners bear 22%. The ehf. shares are in the estate at value, taxed like any asset (no business relief for investment assets was found)."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 100000000,
+      "realised_gains": 50000000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 18000000,
+      "working": "Capital income of an individual not in business is taxed at a flat 22% (Income Tax Act No. 90/2003 as applied by Skatturinn, Helstu tolur 2026). Dividends 100,000,000 x 22% = 22,000,000, less the 15% foreign withholding credited under the treaty (resident individuals can credit foreign tax; PwC) 15,000,000, which is below the Icelandic tax on that income: 7,000,000. Gains on foreign listed shares 50,000,000 x 22% = 11,000,000 (no indexation, no holding-period relief). Total 18,000,000. The ISK 600,000 couple's allowance on dividends and listed-share gains (Skatturinn) is ignored as negligible. No wealth tax."
+    },
+    {
+      "path": "ehf_holding",
+      "kind": "annual",
+      "dividends": 100000000,
+      "realised_gains": 50000000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "Company tax is 20%, but dividends received from foreign companies are deductible when their profits were taxed abroad at a rate not lower than the general rate in any OECD, EEA or EFTA state, and gains on shares of such companies are deductible in full with 0% tax effect (KPMG, Icelandic Tax Facts 2026, s. 3.7.2 and 3.5.1; PwC Iceland corporate income determination). Assuming the portfolio is listed shares of OECD-resident companies: taxable income from dividends 100,000,000 - 100,000,000 = 0 and from gains 50,000,000 - 50,000,000 = 0, so company tax is 0. The 15,000,000 foreign withholding cannot be credited (no Icelandic tax) and is a cost outside this figure. No annual running cost is recorded in the tax file. Payout tax (22% withheld on distributions to the owners) excluded. No wealth tax."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 1500000000,
+      "children": 3,
+      "expected": 149321021,
+      "working": "Inheritance tax is 10% (Act no. 14/2004 art. 2(1)) of the estate's tax base above the tax-free amount, which is ISK 6,789,790 for deaths in 2026 (statutory base ISK 5,000,000 raised in line with consumer prices, art. 2(2); Skatturinn Helstu tolur 2026). It is levied on the estate as a whole whatever the number of heirs, and the tax is on all assets passing to heirs when the estate is divided (art. 1(1)). (1,500,000,000 - 6,789,790) x 10% = 1,493,210,210 x 10% = 149,321,021. The estate passes to the three children, not to a spouse, so the spouse exemption (art. 2(3)) does not apply. Debts and funeral costs ignored."
+    },
+    {
+      "path": "ehf_holding",
+      "kind": "inheritance",
+      "estate": 1500000000,
+      "children": 3,
+      "expected": 149321021,
+      "working": "The parents' ehf. shares are assets passing to the heirs (Act no. 14/2004 art. 1(1)); no relief for an investment company was found. Valued at about the portfolio, the same calculation as for personal holding: (1,500,000,000 - 6,789,790) x 10% = 149,321,021. Unrealised gains inside the company are not taxed at death (no deemed disposal found)."
+    }
+  ],
+  "assumptions": [
+    "Inheritance tax applies to the family's whole estate at the second death, as if the Icelandic estate were settled in Iceland (Act 14/2004 art. 1(1)); the first death to a spouse is exempt (art. 2(3)).",
+    "Private foundation and trust are not modelled: Icelandic sjalfseignarstofnun are for declared purposes, not family wealth, and trusts are not an Icelandic legal form.",
+    "The holding ehf. is funded with cash or shares at today's value, so no Icelandic tax arises on contributing the portfolio; the portfolio is listed shares of OECD-resident companies held directly, so the dividend and share-gain deductions apply.",
+    "Foreign dividends carry 15% withholding; the ISK 600,000 couple's allowance and the 22% top rate apply (no progressive tax on capital income)."
+  ],
+  "open_questions": [
+    "The ehf. running costs (accounting, audit, directors) are not in the tax file, so the ehf. check counts none.",
+    "Whether fund units (ETFs) and emerging-market shares qualify for the company dividend and share-gain deductions was not verified; the article of the Income Tax Act (art. 31) was not opened.",
+    "How an ehf.'s shares are valued for inheritance tax (market, book or tax value) was not found; market value is used.",
+    "Transferring existing low-cost shares into an ehf. may be a realisation taxable at 22%, or may qualify for a share-exchange roll-over; not verified."
+  ],
+  "sources": [
+    {
+      "title": "Helstu tolur og prosentur 2026",
+      "url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/",
+      "publisher": "Skatturinn (Iceland Revenue and Customs)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Lög um erfðafjárskatt nr. 14/2004",
+      "url": "https://lagasafn.hi.is/2004014.html",
+      "publisher": "Althingi / Lagasafn",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Icelandic Tax Facts 2026",
+      "url": "https://assets.kpmg.com/content/dam/kpmgsites/is/pdf/2026/Icelandic%20Tax%20Facts%202026.pdf.coredownload.pdf",
+      "publisher": "KPMG Iceland",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Iceland - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/iceland/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Iceland - Individual - Foreign tax relief and tax treaties",
+      "url": "https://taxsummaries.pwc.com/iceland/individual/foreign-tax-relief-and-tax-treaties",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

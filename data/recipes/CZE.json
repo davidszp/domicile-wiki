@@ -1,0 +1,68 @@
+{
+  "id": "CZE",
+  "name": "Czechia",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Gains on securities held more than 3 years are exempt from income tax with no cap (§4(1)(u) ZDP); dividends are taxed at 15% (Czech payers withhold it, foreign dividends go in a separate 15% base with the foreign withholding credited). No wealth tax, no inheritance tax (§4a(a)) and no gift tax between relatives (§10(3)(c)(1)). Children who inherit take over the deceased's holding time (§4(1)(u)), so nothing is taxed on the way down."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 15000000,
+      "realised_gains": 10000000,
+      "wealth": 0,
+      "foreign_share": 0.9,
+      "expected": 225000,
+      "working": "Resident taxpayer; 90% of the portfolio income is foreign. DIVIDENDS 15,000,000: the 10% from Czech companies, 1,500,000, bear the special rate of 15% (§36(2)(a) ZDP), withheld by the payer and final for a resident (§8(3)) = 225,000. The foreign 90%, 13,500,000, are taxable (§8(1)(a), (4)); the taxpayer elects to put them all into the separate tax base taxed at a flat 15% (§8(8), §16a(1)) = 2,025,000, so the 23% band above 36 times the average wage (§16(1)) is not reached. The 15% foreign withholding, 2,025,000, is credited under the ordinary credit method of the treaty and §38f(2), up to the Czech tax on that income, which is also 2,025,000: Czech tax 0. GAINS 10,000,000 on securities held more than 3 years: exempt (§4(1)(u)); there is no cap on securities (the CZK 40m cap in §4(3) concerns crypto-assets only); the exempt income above CZK 5m must be reported (§38v) but bears no tax. No wealth tax. Total 225,000 + 0 + 0 = 225,000. Ignored: the CZK 100,000 small-sales exemption and personal allowances."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 250000000,
+      "children": 3,
+      "expected": 0,
+      "working": "An estate of CZK 250,000,000 (about EUR 10m) passes at the second death to three children. Czechia has no inheritance tax; income from acquiring an inheritance or legacy is exempt from personal income tax (§4a(a) ZDP), whoever the heir. Gifts between relatives are not income either (§10(3)(c)(1)), so lifetime gifts are also free. Unrealised gains are not taxed at death and the heirs take over the deceased's holding time (§4(1)(u)). Exempt income above CZK 5m has to be reported to the tax office (§38v), which is a duty, not a tax. Tax 0."
+    }
+  ],
+  "assumptions": [
+    "Positions have been held more than 3 years, or the family brought them with the original acquisition date: the time test counts from acquisition, not from the move to Czechia, and applies to foreign and Czech securities alike. Shares sold earlier than 3 years would be taxed at 15% (23% above CZK 1,762,812) as 'other income' and are not modelled.",
+    "Foreign dividends carry 15% withholding and the family elects the separate 15% base of §8(8); the credit equals the Czech tax, so only Czech-source dividends (10% of the total) leave a tax to pay.",
+    "The family are EU citizens and registered residents; Czechia has no special regime for new arrivals. The family home is left out of every check.",
+    "A company, a trust fund (svěřenský fond) and a family foundation (rodinná fundace) were considered and not scored: each pays 21% CIT (§21(1)) and its payout to an individual bears 15% (§8(1)(i), §36(2)(a)), while holding personally is exempt on gains after 3 years and inheritance is untaxed. They serve control and asset protection, not tax, and no source shows families using them for a listed portfolio."
+  ],
+  "open_questions": [
+    "Social and health insurance on the family's income: dividends and exempt gains bear none, but a non-working resident may have to be covered by public health insurance (a monthly contribution, not researched); not modelled and not a tax on the portfolio.",
+    "The corporate treatment of portfolio gains inside a Czech holding, trust fund or foundation (21%, no participation exemption below a 10% stake) was taken from PwC, not read in the participation articles of the ZDP.",
+    "The letters §4(1)(t) and (u) follow the consolidated text effective 1 August 2026 as published on zakonyprolidi.cz; the tax file cites §4(1) without letters.",
+    "Czech tax law changes after the 2025 election were not found in the consolidated text effective 1 August 2026; re-check the 3-year test and the 15%/23% bands in January 2027."
+  ],
+  "sources": [
+    {
+      "title": "Zákon č. 586/1992 Sb., o daních z příjmů (consolidated, version effective 1.8.2026)",
+      "url": "https://www.zakonyprolidi.cz/cs/1992-586",
+      "publisher": "Zákony pro lidi (Collection of Laws)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Czech Republic - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/czech-republic/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Czech Republic - Individual - Other taxes",
+      "url": "https://taxsummaries.pwc.com/czech-republic/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

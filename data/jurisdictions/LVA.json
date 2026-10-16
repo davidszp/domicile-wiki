@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Northern Europe (Baltics)",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Capital gains taxed at 25.5% (from 2025) plus a 3% surtax on income above EUR 200k; foreign and domestic dividends that were taxed at source are PIT-exempt (but count for the 3% surtax); no inheritance, gift-to-children or wealth tax. Companies pay 20/80 CIT only on distribution.",
   "regimes": [
     {
@@ -58,20 +58,30 @@
         "open_questions": [
           "Exact conditions for an account to qualify as an investment account (e.g. foreign brokers) not summarised here."
         ],
-        "headline_rate": 0.285,
+        "headline_rate": 0.255,
         "rates": {
-          "listed_securities_domestic": 0.285,
-          "listed_securities_foreign": 0.285,
-          "private_business_sale": 0.285,
-          "real_estate_local": 0.285,
-          "real_estate_foreign": 0.285
+          "listed_securities_domestic": 0.255,
+          "listed_securities_foreign": 0.255,
+          "private_business_sale": 0.255,
+          "real_estate_local": 0.255,
+          "real_estate_foreign": 0.255
         },
-        "rate_basis": "25.5% capital income rate + 3% additional rate on income above EUR 200k = 28.5% for a large gain; no holding-period relief except the main-home/sole-property exemption. Investment account can defer tax on listed portfolios.",
+        "rate_basis": "25.5% capital income rate + 3% additional rate on income above EUR 200k = 28.5% for a large gain; no holding-period relief except the main-home/sole-property exemption. Investment account can defer tax on listed portfolios. 25.5% on capital income (§15(5)); the 3% additional rate above EUR 200,000 per person is in income_surtax.",
         "professional_trader": "No specific recharacterisation regime found; business income of a self-employed person is taxed at progressive rates (25.5%/33%) plus social contributions.",
         "holding_period_rules": "Securities: none. Latvian real estate: 60 months for the residence/sole-property exemption.",
         "foreign_assets": "Worldwide gains taxed; foreign tax credited up to Latvian tax on that income.",
         "tax_year": "2026",
-        "verified_on": "2026-10-15"
+        "verified_on": "2026-10-15",
+        "income_surtax": {
+          "rate": 0.03,
+          "threshold_per_person": {
+            "amount": 200000,
+            "currency": "EUR"
+          },
+          "counts_dividends": true,
+          "counts_gains": true,
+          "notes": "Additional rate (PIT Law §15.1, from 1 January 2026): 3% on the excess of a person's total income over EUR 200,000 a year, where total income includes capital gains and the dividends exempt under §9(1)(2.1); per taxpayer (no joint filing). Not indexed."
+        }
       },
       "dividends": {
         "summary": "Dividends are exempt from PIT when CIT was paid on the distributed profit in Latvia, or when CIT (or an equivalent tax) was paid abroad or PIT/WHT was withheld abroad on the dividend (PIT Law Section 9(1)(2.1)); otherwise taxed at 25.5%. Tax-haven dividends are always taxed. Even exempt dividends count toward the 3% additional rate on income above EUR 200,000 (Section 15.1(2)).",
@@ -127,13 +137,13 @@
           "Whether the SRS demands proof of foreign CIT/WHT for every portfolio dividend in practice."
         ],
         "headline_rate": 0.285,
-        "domestic_rate": 0.03,
-        "foreign_gross_rate": 0.03,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
         "foreign_tax_credit": "exemption",
-        "rate_basis": "0% PIT on dividends from taxed profits/with foreign WHT, plus the 3% additional rate for a family whose income exceeds EUR 200k = 3%. Headline 28.5% = 25.5% + 3% for dividends not meeting the condition (e.g. tax havens).",
+        "rate_basis": "0% PIT on dividends from taxed profits/with foreign WHT, plus the 3% additional rate for a family whose income exceeds EUR 200k = 3%. Headline 28.5% = 25.5% + 3% for dividends not meeting the condition (e.g. tax havens). Dividends are PIT-exempt where Latvian CIT was paid or tax was withheld or paid abroad (§9(1)(2.1)); they count only towards the 3% additional rate, which is in the capital-gains income_surtax.",
         "withholding_outbound": "Latvian companies pay 20% CIT on gross distributions (20/80); no WHT on dividends to non-resident companies except tax-haven residents (20%).",
         "treaty_network": "64 effective double tax treaties (PwC).",
-        "holding_company_notes": "Distribution-based CIT: retained profits including portfolio gains untaxed until distributed.",
+        "holding_company_notes": "Modelled as the structure regime 'sia_holding': a Latvian SIA pays no tax on dividends or gains it keeps; 20% of the grossed-up distribution (25% of the net amount) is due when it distributes, and the shareholder's dividend is PIT-exempt but counts toward the 3% additional rate above EUR 200,000 a year.",
         "tax_year": "2026",
         "verified_on": "2026-10-15"
       },
@@ -204,6 +214,113 @@
           "accessed": "2026-10-15"
         }
       ]
+    },
+    {
+      "id": "sia_holding",
+      "name": "Latvian holding company (SIA)",
+      "type": "structure",
+      "description": "The family holds the portfolio through a Latvian private limited company (SIA) owned by the parents. Latvia taxes a company's profit only when it is distributed or deemed distributed: 20% of the gross-up (net distribution divided by 0.8), i.e. 25% of the net amount. Dividends and gains the SIA earns and keeps are untaxed. A resident individual shareholder pays no personal income tax on a dividend from profit on which Latvian company income tax was paid (PIT Law Section 9(1)(2.1)(a)), but the exempt dividend still counts toward the 3% additional rate on a person's total annual income above EUR 200,000 (Section 15.1). Wealth tax (none) and inheritance tax (none) are the same as for direct holding, so they inherit from the standard regime.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Any person can found an SIA (articles, Commercial Register entry). The shareholders must be Latvian tax residents for the personal-side treatment modelled here. Contributing an existing portfolio in kind is a disposal for the individual (tax at 25.5% on the gain under PIT Law Section 15(5), not verified for contributions to capital); the structure is cheapest funded with cash or newly bought positions.",
+      "duration_years": null,
+      "duration_note": "A company under ordinary law with no time limit; the distribution-based system has no sunset in the sources read.",
+      "structure": {
+        "entity": "sabiedrība ar ierobežotu atbildību (SIA, private limited company)",
+        "kind": "company",
+        "payout_tax_rate": 0.224,
+        "payout_notes": "Company income tax of 20% on the grossed-up distribution (net / 0.8), so 20% of the cash the company uses (EUR 80 paid out costs EUR 20 of tax on a EUR 100 outlay; PwC). The shareholder's dividend is exempt from personal income tax (PIT Law Section 9(1)(2.1)(a)), but counts toward the additional 3% rate on a taxpayer's total annual income above EUR 200,000 (Section 15.1(1),(2)): 3% x 80 = 2.4 per 100 of outlay at the top marginal rate, so payout_tax_rate = 0.20 + 0.024 = 0.224. A couple sharing a EUR 400,000 net payout equally sits at the EUR 200,000 threshold per person; the threshold is not indexed, and the top marginal case is assumed. Liquidation quota is exempt from PIT where Latvian company tax was paid (Section 9(1)(2.2)). Since 1 January 2026 an SIA owned only by individuals may opt for an alternative: 15% company tax on net/0.85 plus 6% PIT withheld on the dividend (PIT Law Section 15(5.1); Corporate Income Tax Law Article 4.2). Not modelled: per EUR 100 received it costs about 28.3 against 28.0 for the standard route if the 3% rate also applies, so it is not better.",
+        "annual_running_cost": null,
+        "substance_and_anti_avoidance": "Deemed distributions are taxed at the 20/80 rate when they arise: non-business expenses, loans to related parties (with exclusions), excess interest, transfer-pricing adjustments, hybrid mismatches, assets transferred abroad (PwC). Private use of company assets or loans to the shareholders therefore costs 25% of the net amount. Dividends to tax-haven recipients are always taxed. No substance test is needed for a resident SIA holding a portfolio.",
+        "exit_and_liquidation": "On liquidation, surplus assets are a deemed distribution taxed at 20/80 (PwC); the liquidation quota is then PIT-exempt for the shareholder (Section 9(1)(2.2)). Exit tax on an individual who emigrates with SIA shares was not researched.",
+        "sources": [
+          {
+            "title": "Likums 'Par iedzīvotāju ienākuma nodokli' (consolidated, likumi.lv): Sections 9(1)(2.1),(2.2),(9), 11.9, 11.13, 15(5), 15(5.1), 15.1",
+            "url": "https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli",
+            "publisher": "likumi.lv (Latvijas Vēstnesis)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Latvia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/latvia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Latvia - Individual - Taxes on personal income",
+            "url": "https://taxsummaries.pwc.com/latvia/individual/taxes-on-personal-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ]
+      },
+      "capital_gains": {
+        "status": "researched",
+        "summary": "Gains the SIA realises on shares and other assets are not taxed when realised: Latvian company income tax falls only on distributed or deemed-distributed profit. Selling and reinvesting inside the company costs nothing until money is paid out.",
+        "exemptions_thresholds": "No holding period or minimum stake for retained gains.",
+        "eligibility_conditions": "Latvian-resident SIA.",
+        "important_exceptions": "Payout at 20/80 is in the structure terms, not in these rates.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Latvia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/latvia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The Corporate Income Tax Law text was not opened (likumi.lv id not located); the rate and base are taken from PwC (reviewed 30 June 2026)."
+        ],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "0%: PwC: 'all undistributed corporate profits are exempt', covering active and passive income and most capital gains; tax is postponed until distribution. The 20/80 charge on paying out is the structure's payout rate.",
+        "professional_trader": "Not relevant: a company's trading profit is likewise untaxed until distributed.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Worldwide gains of the company are exempt until distribution."
+      },
+      "dividends": {
+        "status": "researched",
+        "summary": "Dividends the SIA receives, from Latvian or foreign companies, are not taxed while the profit stays in the company; tax arises only when the SIA distributes. Foreign withholding on the portfolio's dividends (15% for most) is a final cost inside the SIA.",
+        "exemptions_thresholds": "",
+        "important_exceptions": "",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Latvia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/latvia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "none",
+        "rate_basis": "0%: no company-level tax on received dividends while retained; 'none' because the foreign withholding is assumed lost.",
+        "withholding_outbound": "No withholding on dividends to resident individuals; the company pays 20/80 on distribution.",
+        "treaty_network": "As for the standard regime.",
+        "holding_company_notes": "This is the holding company: distribution-based CIT, see structure terms."
+      }
     }
   ],
   "residency": {
@@ -276,7 +393,9 @@
     }
   ],
   "us_citizen_notes": "US citizens remain US-taxed; Latvia-US treaty in force. No special local issues found.",
-  "open_questions": [],
+  "open_questions": [
+    "Holding structures: a Latvian SIA is modelled (regime 'sia_holding'). The 2026 alternative regime for individually owned companies (15% on net/0.85 plus 6% PIT) is in the PIT Law (Section 15(5.1)) but the Corporate Income Tax Law text and the SRS explanation (27 July 2026) were not opened; one Finance Ministry note read in a search result put its start at reporting years from 2028, PwC says 1 January 2026. A private family foundation or trust was not researched and is not modelled."
+  ],
   "cost_of_living": {
     "city": "Riga",
     "prime_rent_monthly": {

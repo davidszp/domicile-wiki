@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Northern Europe (Baltics)",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Flat 22% income tax in 2026 (planned rise to 24% cancelled in Dec 2025); capital gains taxed at 22% but deferrable indefinitely through the investment account; foreign portfolio dividends generally exempt; no inheritance, gift or wealth tax. Companies pay 22/78 only on distribution.",
   "regimes": [
     {
@@ -133,10 +133,10 @@
         "domestic_rate": 0.0,
         "foreign_gross_rate": 0.0,
         "foreign_tax_credit": "exemption",
-        "rate_basis": "domestic_rate 0: tax borne by the company at 22/78 (=28.2% of net dividend). foreign_gross_rate 0: exempt where source WHT was withheld or underlying profit taxed, which covers ordinary listed foreign shares; 22% with credit otherwise.",
+        "rate_basis": "domestic_rate 0: tax borne by the company at 22/78 (=28.2% of net dividend). foreign_gross_rate 0: exempt where source WHT was withheld or underlying profit taxed, which covers ordinary listed foreign shares; 22% with credit otherwise. Foreign dividends are exempt for a resident individual when income tax was withheld abroad or paid on the underlying profit (EMTA, 'Income derived in a foreign state': declared in table 8.8, not taxed in Estonia whatever the foreign tax); only dividends with no foreign tax are taxed at 22%.",
         "withholding_outbound": "Dividends paid by Estonian companies carry company-level CIT 22/78 on distribution; no additional WHT on dividends to non-residents in the standard case (7% WHT only for redistributed pre-2025 14/86 profits).",
         "treaty_network": "Broad treaty network with EU/OECD states and the US (exact count not verified); foreign tax credit is limited to the Estonian tax per country.",
-        "holding_company_notes": "Distribution-based CIT: retained and reinvested profits of an Estonian company, including portfolio gains, are untaxed until distribution.",
+        "holding_company_notes": "Modelled as the structure regime 'oue_holding': an Estonian OÜ pays no tax on dividends or gains it keeps; 22/78 of the net amount is due when it distributes (Income Tax Act § 50(1)), with no further personal tax on a resident shareholder.",
         "tax_year": "2026",
         "verified_on": "2026-10-15"
       },
@@ -217,6 +217,144 @@
           "accessed": "2026-10-15"
         }
       ]
+    },
+    {
+      "id": "oue_holding",
+      "name": "Estonian holding company (osaühing, OÜ)",
+      "type": "structure",
+      "description": "The family holds the portfolio through an Estonian private limited company (OÜ) owned by the parents. Estonia taxes a company's profit only when it is distributed (22/78 of the net distribution, Income Tax Act § 50(1)), so dividends and gains the OÜ earns and keeps are untaxed, and a portfolio can compound without annual tax. Distributing 78 costs 22 of company tax and nothing further for a resident individual shareholder (since 1 January 2025 dividends are taxed only at company level). Wealth tax (none) and inheritance tax (none) are the same as for direct holding, so those metrics inherit from the standard regime.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Any person can found an OÜ (notarised or e-filed articles, commercial register entry, share capital as set by the Commercial Code). The shareholders must be Estonian tax residents to get the personal-side treatment modelled here. Contributing an existing portfolio in kind may be a disposal for the individual taxed at 22% on the built-in gain (not verified in the statute), so the structure is cheapest funded with cash or newly bought positions.",
+      "duration_years": null,
+      "duration_note": "A company under ordinary law with no time limit; it lasts as long as the OÜ exists. The distribution-based system has no sunset in the sources read.",
+      "structure": {
+        "entity": "osaühing (OÜ, private limited company)",
+        "kind": "company",
+        "payout_tax_rate": 0.22,
+        "payout_notes": "Company-level income tax of 22/78 of the net distribution (Income Tax Act § 50(1), rate in § 4), i.e. 22% of the cash the company uses (EUR 78 paid out costs EUR 22 of tax on a EUR 100 outlay), so the rate is 0.22 of the gross outlay. No personal income tax and no withholding on dividends to resident individuals from 1 January 2025 (the 14/86 rate and the 7% withholding were abolished; the 7% applies only to legacy lower-taxed profits). Distributions include deemed ones (expenses without a business purpose, gifts, fringe benefits, transfer-pricing adjustments). Reductions of share capital and liquidation proceeds are taxed differently and were not researched. The planned 2% defence/security tax was scrapped in 2025 (see the standard regime notes).",
+        "annual_running_cost": null,
+        "substance_and_anti_avoidance": "No substance test is needed for a resident OÜ holding a portfolio. Deemed distributions (non-business expenses, loans to shareholders on non-market terms, private use of company assets) are taxed at 22/78 when they arise. Dividends from foreign companies received by an OÜ are exempt from the CIT charge on onward distribution only where the OÜ holds at least 10% and (outside the EEA and Switzerland) the profit was taxed abroad or tax was withheld (PwC); portfolio stakes below 10% therefore get no such relief, but this is irrelevant while profits are retained. Foreign withholding tax on the portfolio's dividends is assumed lost inside the OÜ: PwC says certain foreign taxes can be credited against the 22/78 charge, but conditions were not found. CFC rules do not arise for a resident company.",
+        "exit_and_liquidation": "Not researched in the statute. Retained profits are taxed only when paid out, so a family leaving Estonia keeps the same deferral inside the OÜ; any exit tax on the shares of an individual who emigrates was not found. Liquidation proceeds and capital reductions above paid-in capital are taxed as distributions (not verified).",
+        "sources": [
+          {
+            "title": "Taxation of dividends (income tax 22/78 on distribution, Income Tax Act § 50(1), § 4(1),(11))",
+            "url": "https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/taxation-dividends",
+            "publisher": "Estonian Tax and Customs Board (EMTA)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Estonia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/estonia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Estonia - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/estonia/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Taxes in Estonia (Ministry of Finance, updated 22.04.2026)",
+            "url": "https://fin.ee/en/taxes",
+            "publisher": "Estonian Ministry of Finance",
+            "kind": "government",
+            "accessed": "2026-10-16"
+          }
+        ]
+      },
+      "capital_gains": {
+        "status": "researched",
+        "summary": "Gains the OÜ realises on shares, funds and other assets are not taxed when realised: Estonian corporate income tax falls only on distributions. Selling and reinvesting inside the company therefore costs nothing until money is paid out.",
+        "exemptions_thresholds": "No holding period or minimum stake for retained gains. Distribution tax of 22/78 applies to whatever is paid out, whether it comes from gains or dividends.",
+        "eligibility_conditions": "Estonian-resident OÜ.",
+        "important_exceptions": "Payout at 22/78 is in the structure terms, not in these rates. A planned rise of the rate to 24/76 for 2026 was cancelled (EMTA lists 22/78).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Estonia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/estonia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Taxation of dividends (income tax 22/78 on distribution, Income Tax Act § 50(1), § 4(1),(11))",
+            "url": "https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/taxation-dividends",
+            "publisher": "Estonian Tax and Customs Board (EMTA)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Income Tax Act § 50 (text on Riigi Teataja) was not opened; relied on EMTA's dividends page (which cites § 50(1), § 4(1),(11)) and PwC."
+        ],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "0%: retained profit and gains are exempt in an Estonian company until distributed (PwC: 'all undistributed corporate profits are tax exempt'; gains on all asset types are exempt while undistributed). The 22/78 charge on paying them out is the structure's payout rate.",
+        "professional_trader": "Not relevant: a company's trading profit is likewise untaxed until distributed.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Worldwide gains of the company are exempt until distribution."
+      },
+      "dividends": {
+        "status": "researched",
+        "summary": "Dividends the OÜ receives, from Estonian or foreign companies, are not taxed while the profit stays in the company; tax of 22/78 arises only when the OÜ distributes. Foreign withholding on the portfolio's dividends (15% for most) is treated as a final cost inside the OÜ.",
+        "exemptions_thresholds": "Relief on onward distribution of received dividends needs a stake of at least 10% (PwC); not relevant for a diversified portfolio.",
+        "important_exceptions": "If the foreign withholding can in fact be credited against the 22/78 charge on distribution (PwC mentions credits but gives no conditions), the OÜ would be slightly better off than modelled.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Estonia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/estonia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Estonia - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/estonia/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Taxation of dividends (income tax 22/78 on distribution, Income Tax Act § 50(1), § 4(1),(11))",
+            "url": "https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/taxation-dividends",
+            "publisher": "Estonian Tax and Customs Board (EMTA)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether foreign withholding on portfolio dividends can be credited against the 22/78 distribution charge was not found in a source."
+        ],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "none",
+        "rate_basis": "0%: no company-level tax on received dividends while retained; 'none' because the foreign withholding is assumed lost (no credit found).",
+        "withholding_outbound": "No withholding on dividends to resident individuals from 2025; the company pays 22/78 on distribution.",
+        "treaty_network": "As for the standard regime.",
+        "holding_company_notes": "This is the holding company: distribution-based CIT, see structure terms."
+      }
     }
   ],
   "residency": {
@@ -335,6 +473,7 @@
   ],
   "us_citizen_notes": "US citizens remain US-taxed; Estonia-US treaty applies. Estonian investment-account deferral has no US effect; US PFIC rules make EU UCITS funds unattractive.",
   "open_questions": [
-    "Reports of a '2% surcharge' in 2026 (e.g. Remote Work Europe) refer to the abolished security tax; EMTA's 2026 rate page shows none. Resolved as: no surcharge in 2026."
+    "Reports of a '2% surcharge' in 2026 (e.g. Remote Work Europe) refer to the abolished security tax; EMTA's 2026 rate page shows none. Resolved as: no surcharge in 2026.",
+    "Holding structures: an Estonian OÜ is modelled (regime 'oue_holding'). A private family foundation or a trust was not researched and is not modelled; neither is known to be a common way to hold a family portfolio in Estonia (unverified)."
   ]
 }

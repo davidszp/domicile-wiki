@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Central Europe",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Slovenia taxes capital gains and dividends at 25%. The capital gains rate falls to 20% after 5 years, 15% after 10 and 0% after 15 years of holding. Children are fully exempt from inheritance and gift tax, and there is no wealth tax. No special regime for wealthy arrivals.",
   "regimes": [
     {
@@ -219,6 +219,172 @@
           "accessed": "2026-10-15"
         }
       ]
+    },
+    {
+      "id": "holding_doo",
+      "name": "Family holding company (d.o.o.)",
+      "type": "structure",
+      "description": "The family holds the portfolio through a Slovenian d.o.o. owned by the parents. The company pays corporate income tax at 22% (2024-2028; 19% afterwards) on realised gains; a listed minority holding gets no gains exemption (the 50% exemption needs a stake of at least 8% and an employee). Dividends are excluded from the base except a flat 5% treated as non-deductible expense, so they bear 22% x 5% = 1.1%. Money taken out is taxed again as a dividend at 25%. Wealth tax (none) and inheritance tax (children exempt) are the same as for direct holding, so those metrics are inherited from the standard regime.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Any Slovenian resident can found a d.o.o. Contributing an existing portfolio in kind is probably a disposal for the individual under ZDoh-2 (gain taxed at 25%, falling with the holding period to 0% after 15 years; not verified for contributions), so the structure is cheapest when funded with cash or with positions held over 15 years.",
+      "duration_years": null,
+      "duration_note": "A corporate structure under ordinary law with no time limit. The 22% rate is temporary: Art. 64 ZORZFS sets it for 2024-2028 and the general rate is 19% (FURS); the tax file uses the rate in force.",
+      "structure": {
+        "entity": "druzba z omejeno odgovornostjo (d.o.o.), a private limited company holding securities",
+        "kind": "company",
+        "payout_tax_rate": 0.25,
+        "payout_notes": "Dividends paid to a resident individual shareholder bear the 25% final withholding income tax (Art. 132 ZDoh-2; FURS guide of 4 Aug 2026), with no allowance. A buy-back of the shareholder's shares by the company is also taxed as a dividend (LIFO), reduced by the cost of the shares. Loans to shareholders and private use of company assets were not researched.",
+        "annual_running_cost": null,
+        "running_cost_deductible_at": null,
+        "substance_and_anti_avoidance": "Dividend exclusion: the payer must be subject to Slovenian or a comparable profit tax; dividends from a non-EU company resident in a country with a profit tax below 12.5% on the Ministry of Finance list are not excluded, and dividends paid out of untaxed reserves are not excluded (PwC). 5% of dividends received counts as a non-deductible expense (FURS guide, section 5.1). No minimum holding applies to dividends (PwC). Gains on shares: the 50% exemption needs a stake of at least 8% for 6 months and one employee (FURS), which a passive portfolio company does not meet. Dividends from funds and ETFs (not companies) were not researched. Whether a passive holding company meets the substance tests for treaty benefits was not researched.",
+        "exit_and_liquidation": "Not researched: tax on liquidation proceeds and on sale of the d.o.o. shares by the family (a gain on shares is capital gain under ZDoh-2, 25% falling to 0% after 15 years).",
+        "sources": [
+          {
+            "title": "Splosno o DDPO (FURS guide to corporate income tax: rate, sections 4.0 and 5.1)",
+            "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Splosno_o_DDPO.doc",
+            "publisher": "FURS",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Slovenia - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/slovenia/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Slovenia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/slovenia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Pojasnilo FURS 0920-13147/2022-3: Izvzem dividend po 24. clenu ZDDPO-2, ki so bile obdavcene na viru",
+            "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Poslovanje_z_nami/Novodila_in_pojasnila/2022/0920-13147_2022-3_Izvzem_dividend_po_24_clenu_ZDDPO-2_ki_so_bile_obdavcene_na_viru.docx",
+            "publisher": "FURS",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ]
+      },
+      "capital_gains": {
+        "summary": "Gains realised by the d.o.o. on listed shares are part of its taxable profit and bear corporate income tax at 22% (2024-2028). The only relief, a 50% exemption for gains on disposal of a shareholding, needs an interest of at least 8% in capital or management, held for at least 6 months, and at least one employee in that period; a passive holding of listed minority stakes qualifies for none of it. Unrealised gains are not taxed.",
+        "exemptions_thresholds": "50% exemption only for stakes of at least 8% held 6 months with one employee; losses on such disposals are then recognised at 50% (FURS guide, section 5.1).",
+        "eligibility_conditions": "Slovenian-resident d.o.o.",
+        "important_exceptions": "The 22% rate applies to 2024-2028; the general rate is 19%. Pillar Two top-up tax (ZMD) applies only to large groups and was not examined.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Splosno o DDPO (FURS guide to corporate income tax: rate, sections 4.0 and 5.1)",
+            "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Splosno_o_DDPO.doc",
+            "publisher": "FURS",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Slovenia - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/slovenia/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Slovenia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/slovenia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Pojasnilo FURS 0920-13147/2022-3: Izvzem dividend po 24. clenu ZDDPO-2, ki so bile obdavcene na viru",
+            "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Poslovanje_z_nami/Novodila_in_pojasnila/2022/0920-13147_2022-3_Izvzem_dividend_po_24_clenu_ZDDPO-2_ki_so_bile_obdavcene_na_viru.docx",
+            "publisher": "FURS",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Davek od dohodkov pravnih oseb (DDPO) (22% for 2024-2028, Art. 64 ZORZFS)",
+            "url": "https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/davek_od_dohodkov_pravnih_oseb_ddpo",
+            "publisher": "FURS",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Article numbers of ZDDPO-2 (24, 25, 60, 75) come from the FURS guide and PwC; the statute text at PisRS could not be read by the tool."
+        ],
+        "headline_rate": 0.22,
+        "rates": {
+          "listed_securities_domestic": 0.22,
+          "listed_securities_foreign": 0.22,
+          "private_business_sale": 0.22,
+          "real_estate_local": 0.22,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "22% corporate income tax (FURS: 22% for 2024-2028 under Art. 64 ZORZFS) on the whole gain. Private business sale: the family holding has no employee and the exemption needs an 8% stake, so 22% is used. Real estate gains were not examined for the company (foreign: null).",
+        "professional_trader": "Not relevant: all income of the company is taxable profit.",
+        "holding_period_rules": "None for the company (the personal 15-year rule does not apply).",
+        "foreign_assets": "Worldwide profits of a resident company are taxed."
+      },
+      "dividends": {
+        "summary": "Dividends received by the d.o.o. are excluded from its tax base (Art. 24 ZDDPO-2), but 5% of the dividends received is treated as a non-deductible expense, so the effective rate is 5% x 22% = 1.1%. No minimum holding is required. Foreign withholding tax is not credited against the corporate tax, because the dividend is excluded in the gross amount.",
+        "exemptions_thresholds": "The payer must be subject to Slovenian CIT or a comparable profit tax; dividends from non-EU low-tax (below 12.5%) countries on the Ministry of Finance list and from untaxed reserves are not excluded.",
+        "eligibility_conditions": "Slovenian-resident d.o.o.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Splosno o DDPO (FURS guide to corporate income tax: rate, sections 4.0 and 5.1)",
+            "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Splosno_o_DDPO.doc",
+            "publisher": "FURS",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Slovenia - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/slovenia/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Slovenia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/slovenia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Pojasnilo FURS 0920-13147/2022-3: Izvzem dividend po 24. clenu ZDDPO-2, ki so bile obdavcene na viru",
+            "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Poslovanje_z_nami/Novodila_in_pojasnila/2022/0920-13147_2022-3_Izvzem_dividend_po_24_clenu_ZDDPO-2_ki_so_bile_obdavcene_na_viru.docx",
+            "publisher": "FURS",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether foreign dividends from an investment fund or ETF qualify for the exclusion was not researched (only dividends of companies were).",
+          "Whether foreign withholding tax can be credited when the dividend is excluded (Art. 75 ZDDPO-2): the FURS clarification 0920-13147/2022-3 treats it as a tax booked outside the profit, so no credit is assumed."
+        ],
+        "headline_rate": 0.011,
+        "domestic_rate": 0.011,
+        "foreign_gross_rate": 0.011,
+        "foreign_tax_credit": "none",
+        "rate_basis": "22% corporate income tax x 5% of the dividend (non-deductible flat expense) = 1.1% (FURS guide section 5.1 and 4.0). Foreign withholding is lost, not credited.",
+        "withholding_outbound": "The d.o.o. withholds the 25% dividend tax when it pays the family (see structure payout terms).",
+        "treaty_network": "A Slovenian d.o.o. is a treaty resident (59 treaties per PwC).",
+        "holding_company_notes": "This regime is the company itself."
+      }
     }
   ],
   "residency": {
@@ -252,7 +418,7 @@
   },
   "corporate": {
     "cit_rate": 0.22,
-    "summary": "CIT is 22% for 2024–2028 (temporarily raised from 19%). Participation-exemption details not verified here.",
+    "summary": "CIT is 22% for 2024-2028 (Art. 64 ZORZFS; the general rate is 19%) (FURS). Dividends received are excluded from the base (Art. 24 ZDDPO-2) with 5% treated as a non-deductible expense, with no minimum holding; the payer must be subject to a comparable profit tax, and non-EU payers in countries below 12.5% on the Ministry of Finance list are excluded. Gains on shares are exempt at 50% only for stakes of at least 8% held 6 months with an employee (PwC; FURS guide).",
     "sources": [
       {
         "title": "Slovenia – Corporate – Taxes on corporate income",
@@ -260,6 +426,27 @@
         "publisher": "PwC Worldwide Tax Summaries",
         "kind": "professional",
         "accessed": "2026-10-15"
+      },
+      {
+        "title": "Splosno o DDPO (FURS guide to corporate income tax: rate, sections 4.0 and 5.1)",
+        "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Splosno_o_DDPO.doc",
+        "publisher": "FURS",
+        "kind": "tax_authority",
+        "accessed": "2026-10-16"
+      },
+      {
+        "title": "Davek od dohodkov pravnih oseb (DDPO) (22% for 2024-2028, Art. 64 ZORZFS)",
+        "url": "https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/davek_od_dohodkov_pravnih_oseb_ddpo",
+        "publisher": "FURS",
+        "kind": "tax_authority",
+        "accessed": "2026-10-16"
+      },
+      {
+        "title": "Slovenia - Corporate - Income determination",
+        "url": "https://taxsummaries.pwc.com/slovenia/corporate/income-determination",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-16"
       }
     ]
   },

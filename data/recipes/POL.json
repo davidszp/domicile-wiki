@@ -1,0 +1,149 @@
+{
+  "id": "POL",
+  "name": "Poland",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Dividends 19% flat (art. 30a PIT Act) with the foreign withholding credited up to that 19%, so 15% US/EU withholding leaves 4% to pay; gains on shares 19% (art. 30b) plus a 4% solidarity levy on a person's gains above PLN 1,000,000 a year (art. 30h). No wealth tax. Children inherit tax-free if the acquisition is reported within six months (inheritance tax act art. 4a)."
+    },
+    {
+      "id": "lump_sum_foreign_income",
+      "name": "Lump sum on foreign income for new residents (10 years, then ordinary rules)",
+      "regime": "lump_sum_foreign_income",
+      "note": "A fixed PLN 200,000 a year for the main taxpayer and PLN 100,000 for the spouse replaces all tax on revenue obtained outside Poland, including foreign dividends and gains on foreign shares (art. 30j-30p PIT Act), for 10 consecutive tax years from the year of the move. It also demands PLN 100,000 a year of public-benefit spending (art. 30m), which is not a tax. After year 10 the ordinary rules apply, so both deaths (years 30 and 60) fall under them."
+    },
+    {
+      "id": "family_foundation",
+      "name": "Family foundation (fundacja rodzinna)",
+      "regime": "family_foundation",
+      "estate": "outside_estate",
+      "note": "A Polish family foundation is a separate legal person: the family contributes the portfolio, so nothing of it passes at death. Its income from securities and holdings is exempt from CIT (art. 6(1)(25) CIT Act), so only the running costs fall on the annual figure. Benefits paid out bear 15% CIT in the foundation (art. 24q) and are PIT-free for the spouse and children (art. 21(1)(157) PIT Act); the payout tax is outside the annual check. Bill UD447 would raise it to 19% from 2027 but is not law."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 2000000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 460000,
+      "working": "Resident taxpayer; the whole portfolio income is foreign and belongs to one spouse (each spouse is taxed on their own income in Poland, so the PLN 1,000,000 levy threshold applies per person; the check puts all gains in one person's hands). DIVIDENDS 2,000,000: 19% flat tax on dividends and other income from profit shares in legal persons (art. 30a(1) pt 4 PIT Act) = 380,000. The foreign tax paid, 15% x 2,000,000 = 300,000, is deducted from that tax, up to the 19% Polish tax (art. 30a(9)); 300,000 is below the cap, so the credit is 300,000. Dividend tax 380,000 - 300,000 = 80,000. Dividends are not in the solidarity levy base (art. 30h(2) lists only art. 27, 30b, 30c and 30f income). GAINS 2,000,000 on securities: 19% (art. 30b(1) pts 1-2) = 380,000. Solidarity levy: 4% of the part of the income under art. 30b above PLN 1,000,000 (art. 30h(1)-(2)) = 4% x 1,000,000 = 40,000. Total 80,000 + 380,000 + 40,000 = 500,000. No wealth tax. Ignored: the PLN 4m exit tax (departure only) and the family home. The couple holds the portfolio 50/50 and each spouse has the PLN 1M threshold: 1M of gains each, so no levy: 80,000 + 380,000 = 460,000."
+    },
+    {
+      "path": "lump_sum_foreign_income",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 2000000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 300000,
+      "working": "Both spouses elect (the portfolio is held jointly) and the move to Poland is treated as a full first year; the election was filed by the end of January of the following year, with a residence certificate, and the family was not resident in Poland in at least 5 of the 6 prior years (art. 30j(1)). All dividends and gains are revenue obtained outside Poland (art. 30k(1)) and are not combined with other income (art. 30k(2)), so neither the 19% on dividends nor the 19% + 4% on gains is charged. The lump sum is PLN 200,000 a year whatever the foreign revenue (art. 30l(1)) for the main taxpayer, plus PLN 100,000 for the spouse (art. 30p(1) pt 1). The children have no income and do not elect. 200,000 + 100,000 = 300,000. The required spending of at least PLN 100,000 a year on public-benefit purposes (art. 30m(1)) is not a tax, cannot be deducted (art. 30k(3)) and is left out of the figure."
+    },
+    {
+      "path": "lump_sum_foreign_income",
+      "phase": "after",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 2000000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 460000,
+      "working": "The lump sum applies for 10 consecutive tax years counted from the year of the move (art. 30n); afterwards the ordinary rules of the standard regime apply, worked as for the personal path. Dividends 2,000,000: 19% = 380,000 less the 15% foreign tax credited, 300,000 (art. 30a(1) pt 4 and (9)) = 80,000, outside the solidarity levy base (art. 30h(2)). Gains 2,000,000: 19% (art. 30b(1)) = 380,000 plus 4% of the part above PLN 1,000,000 (art. 30h) = 40,000. Total 500,000. Couple 50/50, each below the PLN 1M levy threshold: 460,000."
+    },
+    {
+      "path": "family_foundation",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 2000000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 40000,
+      "working": "The foundation is a CIT payer exempt on income from its permitted activity (art. 6(1)(25) CIT Act): acquiring and selling securities and holding interests in companies and funds abroad are permitted (art. 5(1) pts 3-4 Foundation Act), so the dividends of 2,000,000 and the gains of 2,000,000 bear no Polish tax, and the 15% foreign withholding is a cost abroad with no Polish credit. No wealth tax. The CIT on benefits (15%, art. 24q(1)) falls only when money is paid out and is excluded from the check. What remains are the running costs of the foundation (full accounts, board, administration), PLN 40,000 a year as an estimate in the tax file (Freenance gives PLN 20,000-45,000 a year; there is no official tariff). They save no tax because the income is exempt. Total 40,000. This figure is an estimate, not a statutory amount."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 60000000,
+      "children": 3,
+      "expected": 0,
+      "working": "A married couple's estate of PLN 60,000,000 passes at the second death to three children, who each receive 20,000,000. Children are in the zero group (art. 4a(1) Inheritance and Gift Tax Act: spouse, descendants, ascendants, stepchild, siblings, step-parents) and the acquisition is exempt without limit if it is reported to the tax office within six months of the court ruling on the estate becoming final or of the registration of the notarial certificate of succession (art. 4a(1) pt 1 and (1a)); the condition on cash gifts (art. 4a(1) pt 2) does not arise for an inheritance. The exemption applies because the children are citizens of an EU state or live in Poland (art. 4(4)). Foreign assets are in scope because the children live in Poland (art. 2) but are exempt all the same. Tax 0 provided the report is filed in time; otherwise Group I rates would apply (art. 4a(3))."
+    },
+    {
+      "path": "family_foundation",
+      "kind": "inheritance",
+      "estate": 60000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The portfolio belongs to the foundation, a separate legal person, not to the founders (Foundation Act art. 2(1)), so nothing of it is acquired by inheritance at the founders' deaths and no inheritance tax arises: 0. Benefits the children later receive from the foundation are not an inheritance; they bear the 15% CIT of art. 24q(1) in the foundation (payout tax, excluded here) and are PIT-exempt for the founder's descendants (art. 21(1)(157) PIT Act)."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens with no Polish links in the five years before the move, so they qualify for the lump sum (art. 30j(1) pt 2); the election and, from the second year, the PLN 100,000 spending are done on time.",
+    "The lump-sum check assumes both spouses elect (PLN 300,000 a year); the children have no foreign income and do not elect. If the portfolio belonged to one spouse only, the lump sum would be PLN 200,000 for that person.",
+    "Gains in the checks are assumed to be one person's income. Spouses are taxed separately in Poland, so a real couple could split gains and use the PLN 1,000,000 levy threshold twice.",
+    "Foreign dividends carry 15% withholding in the checks; the credit under art. 30a(9) is limited to the 19% Polish tax, so it is used in full. Gains are realised on long-held positions; Poland has no holding-period exemption.",
+    "The family foundation is a Polish foundation set up by the parents (or by will) with the portfolio contributed, run within the permitted activity of art. 5 of the Foundation Act. The running cost of PLN 40,000 a year is an estimate. The family home stays outside every path.",
+    "A company (sp. z o.o.) holding the portfolio was considered and not scored: a company pays 19% CIT on portfolio dividends and gains (PwC; the statute articles on the participation exemption and on the Estonian CIT were not read) and the payout to the shareholder is taxed again at 19%, so it is not better than holding personally and the Polish advisers' structure of choice for families is the foundation.",
+    "Inheritance: the family home (EUR 5m) is left out; the check uses PLN 60,000,000. Children are assumed to live in Poland, so worldwide assets are in scope."
+  ],
+  "open_questions": [
+    "Needs an engine change: the lump sum regime obliges the main taxpayer to spend at least PLN 100,000 a year on public-benefit purposes from the second year (art. 30m PIT Act). It is not a tax but is a mandatory cost of the regime and is not in the engine's lump sum.",
+    "Needs an engine change: when the main taxpayer dies the spouse's lump sum becomes PLN 200,000 and the spending duty passes to the spouse (art. 30p(1) pt 4); this falls outside the 10 years of the regime and is not modelled.",
+    "Needs an engine change: the lump sum can be lost before 10 years if the amount is not paid or the spending is missed (art. 30o); the engine runs it for the full 10 years.",
+    "Whether gains on foreign-listed shares sold through a Polish or foreign broker are 'revenue obtained outside Poland' (art. 30k(1)) is not defined in the statute; the check assumes yes.",
+    "Government bill UD447 (August 2026) would raise the family foundation's payout tax from 15% to 19% from 2027 and add a holding period (36 months or two years, reports differ), CFC rules and a tax on unrealised gains. It is not law and not modelled; the 2027 figures need a re-check.",
+    "The family foundation's running cost (PLN 40,000 a year) rests on commercial estimates only; the payout tax (15%) is excluded from the annual check but is charged by the engine's payout logic.",
+    "Whether source countries grant treaty withholding rates to a CIT-exempt Polish family foundation was not researched; the engine assumes 15% on foreign dividends in every path.",
+    "The founder's side of contributing the portfolio (PIT or CIT neutrality of the contribution of listed shares) was not read in the statute.",
+    "Gifts: the check covers inheritance at the second death only. Gifts to children during life follow the same zero-group exemption with the same six-month report (art. 4a)."
+  ],
+  "sources": [
+    {
+      "title": "Ustawa o podatku dochodowym od osób fizycznych - tekst jednolity Dz.U. 2026 poz. 592 (art. 21, 30a, 30b, 30h, 30j-30p, 30da)",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf",
+      "publisher": "Sejm RP (Dziennik Ustaw)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ustawa o podatku od spadków i darowizn - tekst jednolity Dz.U. 2026 poz. 478 (art. 2, 4, 4a)",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/478/text.pdf",
+      "publisher": "Sejm RP (Dziennik Ustaw)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ustawa o podatku dochodowym od osób prawnych - tekst jednolity Dz.U. 2026 poz. 554 (art. 6, 24q, 24r)",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/554/text.pdf",
+      "publisher": "Sejm RP (Dziennik Ustaw)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ustawa z dnia 26 stycznia 2023 r. o fundacji rodzinnej, Dz.U. 2023 poz. 326 (art. 2, 5)",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/326/text.pdf",
+      "publisher": "Sejm RP (Dziennik Ustaw)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Fundacja rodzinna 2026 - koszt zalozenia i oplaty roczne",
+      "url": "https://freenance.io/dziedziczenie/fundacja-rodzinna-koszt-zalozenia-2026-notariusz-oplaty-roczne-minimalny-majatek/",
+      "publisher": "Freenance",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Fundacja rodzinna na nowych zasadach opodatkowania od 2027 roku",
+      "url": "https://www.pitax.pl/wiedza/aktualnosci/fundacja-rodzinna-na-nowych-zasadach-opodatkowania-od-2027-roku/",
+      "publisher": "Pitax",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

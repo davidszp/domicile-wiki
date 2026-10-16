@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Southeast Europe",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Croatia taxes dividends at a flat 12%. Gains on securities are taxed at 12% only if they are sold within 2 years, and are untaxed after that. Real estate gains are 24% within 2 years. Children are exempt from inheritance and gift tax, and there is no wealth tax. No special regime for wealthy arrivals.",
   "regimes": [
     {
@@ -186,6 +186,158 @@
         "spouse_treatment": "fully_exempt",
         "spouse_note": "Spouses (including out-of-wedlock and life partners) are exempt from the 4% inheritance and gift tax on cash, securities and movables (Local Taxes Act); the Tax Administration says the 3% real estate transfer tax exemption covers direct-line relatives only, so Croatian real estate could still bear 3%."
       }
+    },
+    {
+      "id": "holding_doo",
+      "name": "Family holding company (d.o.o.)",
+      "type": "structure",
+      "description": "The family holds the portfolio through a Croatian d.o.o. owned by the parents. Dividends received from companies are not taxed in the company (Art. 6(1) item 1 Profit Tax Act), with no minimum holding. Realised gains on shares are part of its profit and bear profit tax at 18% (10% only if the company's revenue is below EUR 1m a year). Money taken out as dividends is taxed again at 12%. Wealth tax (none) and inheritance tax (direct line exempt) are the same as for direct holding, so those metrics are inherited from the standard regime. For a Croatian resident, personal holding is the lower-tax route (gains on financial assets are untaxed after 2 years and dividends bear 12%); the company is shown because advisers use it to defer the 12% on dividends.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Any Croatian resident can found a d.o.o. (share capital and formalities not researched). Contributing an existing portfolio in kind is a disposal for the individual, untaxed when the financial assets were held over 2 years (Art. 67 Income Tax Act); the company's cost basis was not researched.",
+      "duration_years": null,
+      "duration_note": "A corporate structure under ordinary law with no time limit; it lasts as long as the company exists.",
+      "structure": {
+        "entity": "drustvo s ogranicenom odgovornoscu (d.o.o.), a private limited company holding securities",
+        "kind": "company",
+        "payout_tax_rate": 0.12,
+        "payout_notes": "Dividends and profit shares paid to a resident individual are taxed by withholding at 12% (Art. 70 para. 19 Income Tax Act; Tax Administration: final tax at 12%), with no municipal surtax. Loans to shareholders, salaries and private use of company assets were not researched.",
+        "annual_running_cost": null,
+        "running_cost_deductible_at": null,
+        "substance_and_anti_avoidance": "Dividend relief (Art. 6(1) item 1 Profit Tax Act): the payer must be subject to profit tax or a similar tax, be a legal form comparable to a capital company, and the payment must not have been deductible for the payer; no percentage or holding period is stated in the article. Dividends from investment funds or ETFs (not capital companies) were not researched. Revenue of EUR 1m or more a year puts the company at 18% instead of 10% (Art. 28). General anti-avoidance and CFC rules were not researched.",
+        "exit_and_liquidation": "Not researched: tax on liquidation proceeds and on the sale of the d.o.o. shares by the family (gains on shares of a company not tradable on a capital market are taxed at 12%, Art. 70 para. 17 Income Tax Act).",
+        "sources": [
+          {
+            "title": "Zakon o porezu na dobit (Profit Tax Act), Art. 6(1) item 1, Art. 28",
+            "url": "https://www.zakon.hr/z/99/Zakon-o-porezu-na-dobit",
+            "publisher": "zakon.hr",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Croatia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/croatia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Croatia - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/croatia/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Zakon o porezu na dohodak (Income Tax Act), Arts 67, 70, 80",
+            "url": "https://www.zakon.hr/z/85/zakon-o-porezu-na-dohodak",
+            "publisher": "zakon.hr",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Oporezivanje kapitala (dividends 12% final withholding)",
+            "url": "https://porezna-uprava.gov.hr/hr/oporezivanje-kapitala/4745",
+            "publisher": "Porezna uprava",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ]
+      },
+      "capital_gains": {
+        "summary": "Gains realised by the d.o.o. on shares are part of its taxable profit (capital gains and losses are inside the profit tax regime, PwC) and bear 18% (10% if revenue is below EUR 1m). Unrealised revaluation gains are left out of the base (Art. 6(1) item 2 Profit Tax Act). There is no holding-period exemption in the company.",
+        "exemptions_thresholds": "None for gains on portfolio shares found.",
+        "eligibility_conditions": "Croatian-resident d.o.o.",
+        "important_exceptions": "The reduced 10% rate depends on the company's revenue for the period being below EUR 1,000,000 (Art. 28); a portfolio paying EUR 600,000 of dividends plus gains realised will reach the 18% rate.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zakon o porezu na dobit (Profit Tax Act), Art. 6(1) item 1, Art. 28",
+            "url": "https://www.zakon.hr/z/99/Zakon-o-porezu-na-dobit",
+            "publisher": "zakon.hr",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Croatia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/croatia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Croatia - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/croatia/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "No specific participation exemption for gains on shares was found in the parts of the Profit Tax Act read (the page was read in part); PwC says gains are inside the profit tax regime.",
+          "Whether exempt dividends count as revenue for the EUR 1m threshold of Art. 28 was not confirmed; the accounting revenue is assumed."
+        ],
+        "headline_rate": 0.18,
+        "rates": {
+          "listed_securities_domestic": 0.18,
+          "listed_securities_foreign": 0.18,
+          "private_business_sale": 0.18,
+          "real_estate_local": 0.18,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Profit tax 18% (Art. 28 item 2; the 10% rate applies only below EUR 1m of revenue, which a EUR 30m portfolio exceeds). Real estate gains of the company were not examined (foreign: null).",
+        "professional_trader": "Not relevant: all income of the company is taxable profit.",
+        "holding_period_rules": "None for the company.",
+        "foreign_assets": "Resident companies are taxed on worldwide profit; foreign tax is credited up to the Croatian tax (Art. 30 Profit Tax Act)."
+      },
+      "dividends": {
+        "summary": "Dividends and profit shares received by the d.o.o. from capital companies subject to profit tax or a similar tax are deducted from its tax base (Art. 6(1) item 1 Profit Tax Act): effective rate 0%. Foreign withholding tax on them is not creditable, since no Croatian tax is due.",
+        "exemptions_thresholds": "No minimum holding or percentage stated in Art. 6(1) item 1; the payer must be subject to profit tax, comparable in legal form to a capital company, and not have deducted the payment.",
+        "eligibility_conditions": "Croatian-resident d.o.o.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zakon o porezu na dobit (Profit Tax Act), Art. 6(1) item 1, Art. 28",
+            "url": "https://www.zakon.hr/z/99/Zakon-o-porezu-na-dobit",
+            "publisher": "zakon.hr",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Croatia - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/croatia/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Croatia - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/croatia/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Dividends from ETFs and investment funds were not researched; if they are not dividends of capital companies they would be taxable at 18%."
+        ],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Dividends are deducted from the tax base (Art. 6(1) item 1 Profit Tax Act): 0%. Foreign withholding is a final cost.",
+        "withholding_outbound": "The d.o.o. withholds 12% on dividends paid to the family (see structure payout terms).",
+        "treaty_network": "A Croatian d.o.o. is a treaty resident (about 70 treaties per PwC).",
+        "holding_company_notes": "This regime is the company itself."
+      }
     }
   ],
   "residency": {
@@ -219,7 +371,7 @@
   },
   "corporate": {
     "cit_rate": 0.18,
-    "summary": "CIT 18%; 10% for companies with revenue below EUR 1m. Dividends paid to individuals then bear 12%.",
+    "summary": "Profit tax (Art. 28): 18%, or 10% when the period's revenue is below EUR 1,000,000. Dividends and profit shares received from payers subject to profit tax or a similar tax are deducted from the base (Art. 6(1) item 1), with no percentage or holding period stated; gains on shares are taxable profit (PwC). Dividends paid to individuals then bear 12%.",
     "sources": [
       {
         "title": "Croatia – Corporate – Taxes on corporate income",
@@ -227,6 +379,20 @@
         "publisher": "PwC Worldwide Tax Summaries",
         "kind": "professional",
         "accessed": "2026-10-15"
+      },
+      {
+        "title": "Zakon o porezu na dobit (Profit Tax Act), Art. 6(1) item 1, Art. 28",
+        "url": "https://www.zakon.hr/z/99/Zakon-o-porezu-na-dobit",
+        "publisher": "zakon.hr",
+        "kind": "legislation",
+        "accessed": "2026-10-16"
+      },
+      {
+        "title": "Croatia - Corporate - Income determination",
+        "url": "https://taxsummaries.pwc.com/croatia/corporate/income-determination",
+        "publisher": "PwC Worldwide Tax Summaries",
+        "kind": "professional",
+        "accessed": "2026-10-16"
       }
     ]
   },

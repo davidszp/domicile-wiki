@@ -1,0 +1,117 @@
+{
+  "id": "HRV",
+  "name": "Croatia",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Dividends bear a 12% final tax (Art. 70 Income Tax Act); foreign tax is credited per item, so a 15% foreign withholding leaves no Croatian tax on foreign dividends. Gains on financial assets sold after 2 years are untaxed (Art. 67 para. 8). Direct-line heirs and the spouse are exempt from inheritance tax; there is no wealth tax."
+    },
+    {
+      "id": "holding_doo",
+      "name": "Family holding d.o.o.",
+      "regime": "holding_doo",
+      "estate": "portfolio",
+      "note": "A Croatian d.o.o. owned by the parents holds the portfolio. Dividends it receives are deducted from its base (Art. 6(1) item 1 Profit Tax Act); realised gains bear profit tax at 18% (10% below EUR 1m revenue). Payouts bear 12%. The parents' estate holds the d.o.o. shares; direct-line heirs are exempt. Worse than personal holding: gains untaxed after 2 years personally, but taxed at 18% inside the company."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "Foreign dividends 20,000 are taxed at 12% (Art. 70 Income Tax Act; Tax Administration: final tax at 12%) = 2,400. Foreign tax is credited against it item by item (Art. 80 paras 2-3, proof by certificate of the foreign tax authority): the 15% withholding of 3,000 exceeds 2,400, so the credit takes the tax to 0; the excess 600 is not refunded or used against other income. Gains 15,000 on financial assets sold after more than two years from acquisition are not income (Art. 67 para. 8). Total 0."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 100000,
+      "realised_gains": 50000,
+      "wealth": 0,
+      "foreign_share": 0.9,
+      "expected": 1200,
+      "working": "Dividends 100,000, 90% foreign (90,000) and 10% Croatian (10,000). Foreign part: 12% (Art. 70) = 10,800; the 15% withholding of 13,500 is credited for each foreign income separately (Art. 80 para. 2), so the credit is limited to 10,800 and the excess 2,700 cannot reduce the tax on the Croatian dividends: tax 0. Croatian dividends 10,000: 12% withheld by the payer (Art. 70 para. 19) = 1,200. Gains 50,000 from financial assets held over two years: not taxed (Art. 67 para. 8). Total 1,200."
+    },
+    {
+      "path": "holding_doo",
+      "kind": "annual",
+      "dividends": 1000000,
+      "realised_gains": 200000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 36000,
+      "working": "Profit tax (Profit Tax Act Art. 28): 18% where the period's revenue is EUR 1,000,000 or more (revenue here 1,200,000 counting the exempt dividends, so the 10% rate is not available). Dividends 1,000,000 from foreign capital companies subject to profit tax are deducted from the base (Art. 6(1) item 1, no minimum holding); the 15% foreign withholding of 150,000 is not creditable because no Croatian tax is due on them. Realised gains 200,000 on shares are taxable profit (PwC: capital gains are inside the profit tax regime) = 200,000 x 18% = 36,000. Total 36,000. Company running costs are not in the tax file. Payout tax (12%) excluded."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Each child receives 3,333,333.33. The 4% inheritance and gift tax on cash, securities and movables (Local Taxes Act) does not apply to the spouse or to heirs in the direct line (Tax Administration, 'Inheritance and gifts tax'); children are exempt. Inheritance is not a disposal under Art. 67 Income Tax Act. Tax 0."
+    },
+    {
+      "path": "holding_doo",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The d.o.o. shares (worth about 10,000,000) pass to the three children, who as direct-line descendants are exempt from the 4% inheritance and gift tax (Tax Administration); no 3% real-estate transfer tax is involved. Death is not a disposal for income tax. Tax 0."
+    }
+  ],
+  "assumptions": [
+    "Positions are held for more than two years, as the tax file assumes, so gains on financial assets are untaxed personally. A family that sells within two years pays 12%.",
+    "The company check uses the 18% rate (revenue of EUR 1m or more a year), as the real family's income is far above that; the 10% rate for revenue below EUR 1m is left out.",
+    "Foreign dividends carry 15% withholding, above the 12% Croatian rate, so foreign dividends bear no Croatian tax personally.",
+    "No allowances apply to capital income."
+  ],
+  "open_questions": [
+    "Foundation and trust were considered and not added: no family-wealth foundation or trust in common use was found (not researched against a statute).",
+    "Whether exempt dividends count as revenue for the EUR 1m threshold of Art. 28 was not confirmed; accounting revenue is assumed. If they do not, the company check's 18% could be 10% for a smaller portfolio.",
+    "The Profit Tax Act was read in part (Art. 6, 7, 28, 30); Art. 80 para. 1 (the cap of the foreign tax credit at the Croatian tax) was not seen in the extract, so the credit cap in the personal checks rests on the item-by-item rule (para. 2) and on the Tax Administration practice.",
+    "The Local Taxes Act article for the inheritance exemption was not read; the exemption rests on the Tax Administration pages."
+  ],
+  "sources": [
+    {
+      "title": "Zakon o porezu na dohodak (Income Tax Act), Arts 67, 70, 80",
+      "url": "https://www.zakon.hr/z/85/zakon-o-porezu-na-dohodak",
+      "publisher": "zakon.hr",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Zakon o porezu na dobit (Profit Tax Act), Art. 6(1) item 1, Art. 28",
+      "url": "https://www.zakon.hr/z/99/Zakon-o-porezu-na-dobit",
+      "publisher": "zakon.hr",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Oporezivanje kapitala",
+      "url": "https://porezna-uprava.gov.hr/hr/oporezivanje-kapitala/4745",
+      "publisher": "Porezna uprava",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance and gifts tax: general rules, rates and taxpayer",
+      "url": "https://porezna-uprava.gov.hr/en/inheritanc-e-and-gifts-tax-information-on-the-general-rules-rates-and-taxpayer/7315",
+      "publisher": "Porezna uprava",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Croatia - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/croatia/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

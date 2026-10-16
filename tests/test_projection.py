@@ -164,3 +164,15 @@ def test_indexed_thresholds_rise_with_prices_and_fixed_ones_do_not():
     assert us.inh["indexed"] and not de.inh["indexed"]
     assert P.indexed(us, 2.0).inh["exemption"] == 2 * us.inh["exemption"]
     assert P.indexed(de, 2.0).inh["exemption"] == de.inh["exemption"]
+
+
+def test_income_surtax_applies_per_spouse_above_the_threshold():
+    """Latvia's 3% on each spouse's investment income above EUR 200,000 (exempt dividends included)."""
+    from domicile.taxcalc import Profile, annual_taxes
+    rules, _, _, _ = P.path_rules(J["LVA"], "standard", {"rates": {"EUR": {"per_eur": 1.0}}})
+    base = dict(portfolio=0, net_wealth=0, estate=0, real_estate_local=0, foreign_share=1.0, source_wht=0.15, annual_payout=0)
+    below = annual_taxes(rules, Profile(dividends=200_000, realized_gains=150_000, **base))
+    above = annual_taxes(rules, Profile(dividends=600_000, realized_gains=200_000, **base))
+    assert below["capital_gains"] + below["dividends"] == pytest.approx(150_000 * 0.255)
+    # 400,000 each: 3% on 200,000 each = 12,000 on top of 25.5% on the gains
+    assert above["capital_gains"] + above["dividends"] == pytest.approx(200_000 * 0.255 + 12_000)

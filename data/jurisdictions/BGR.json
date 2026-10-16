@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Eastern Europe",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Bulgaria adopted the euro on 1 January 2026. It taxes residents' dividends at 5% and other income at a 10% flat rate. Gains on shares sold on EU/EEA regulated markets are exempt; gains realised on US exchanges are taxed at about 9% effective. There is no wealth tax, and transfers to children by gift or inheritance are tax-free.",
   "regimes": [
     {
@@ -21,8 +21,8 @@
       "duration_years": null,
       "capital_gains": {
         "tax_year": "2026",
-        "verified_on": "2026-10-15",
-        "summary": "Gains on shares (and ETFs) disposed of on a regulated market in the EU/EEA are exempt (Personal Income Taxes Act, art. 13(1)(3)). Other gains on financial assets, including shares sold on US exchanges, are taxed at the 10% flat rate on the annual net result, with a 10% statutory deduction, so about 9% effective. Unlisted company shares: 10%. Real estate: one home held over 3 years plus up to two other properties held over 5 years per year are exempt; otherwise 10% on the gain less a 10% deduction.",
+        "verified_on": "2026-10-16",
+        "summary": "Gains on shares (and ETFs) disposed of on a regulated market in the EU/EEA are exempt (Personal Income Taxes Act, art. 13(1)(3)). Other gains on financial assets, including shares sold on US exchanges, are taxed at the 10% flat rate on the annual net result, with a 10% normative expense deduction (ZDDFL art. 33(5), text read 2026-10-16), so 9% effective. Unlisted company shares: 10%. Real estate: one home held over 3 years plus up to two other properties held over 5 years per year are exempt; otherwise 10% on the gain less a 10% deduction.",
         "exemptions_thresholds": "EU/EEA regulated-market disposals: exempt. Real estate exemptions per year: one residential property held >3 years and up to two other properties held >5 years (for Bulgarian and EU/EEA residents).",
         "important_exceptions": "The test is the trading venue, not the issuer: SAP sold on Xetra is exempt, sold on NYSE taxable. US exchanges and, since Brexit, the LSE do not qualify per secondary sources; PwC states the exemption was extended from 2021 to 'equivalent third-country' markets, but which markets count was not verified. Losses on financial assets offset only gains of the same year. From 1 Jan 2026 (State Gazette 113/2025) §1 item 11(a) of the PITA additional provisions covers disposals of shares, fund units, rights and government securities 'on a regulated market and/or a growth market', and new items 65-66 define these by reference to the CITA (§1 items 70-70a), which points to the Markets in Financial Instruments Act art. 152 (regulated markets) and to EU MiFID II growth markets. US exchanges are not MiFID regulated markets, so gains on US-listed shares sold there stay taxable (assumed).",
         "sources": [
@@ -69,14 +69,14 @@
           "real_estate_local": 0.0,
           "real_estate_foreign": null
         },
-        "rate_basis": "Domestic listed (Bulgarian Stock Exchange regulated market): 0%. Foreign listed: 0.09 assumes a non-EU venue such as NYSE/Nasdaq (10% x 90% of gain); EU/EEA-venue holdings are 0%. Private business sale: 10% on the gain. Real estate local: 0 assumes a property held more than 5 years and within the two-property annual exemption; otherwise about 9%.",
+        "rate_basis": "Domestic listed (Bulgarian Stock Exchange regulated market): 0%. Foreign listed: 0.09 (annual net gain of all deals is taxed at 10% after a 10% normative expense deduction, ZDDFL art. 33(5), art. 48(1)) assumes a non-EU venue such as NYSE/Nasdaq (10% x 90% of gain); EU/EEA-venue holdings are 0%. Private business sale: 10% on the gain. Real estate local: 0 assumes a property held more than 5 years and within the two-property annual exemption; otherwise about 9%.",
         "professional_trader": "Individuals pay 10% on financial-asset gains regardless of frequency; trading organised as a sole-trader business would be taxed as business income at 10% plus social contributions (not verified).",
         "holding_period_rules": "No holding period for securities. Real estate: 3 years for one home, 5 years for up to two other properties.",
         "foreign_assets": "Residents are taxed on worldwide gains, reported in the annual return."
       },
       "dividends": {
         "tax_year": "2026",
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "summary": "Dividends from Bulgarian and foreign companies are taxed at 5% (final). Foreign withholding tax is credited up to the Bulgarian tax, so foreign dividends that already bore 5% or more at source (e.g. 15% US treaty rate) normally owe no further Bulgarian tax.",
         "sources": [
           {
@@ -99,18 +99,23 @@
             "publisher": "PwC Worldwide Tax Summaries",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Закон за данъците върху доходите на физическите лица (consolidated, lex.bg; text read to SG 30/2026)",
+            "url": "https://lex.bg/laws/ldoc/2135538631",
+            "publisher": "Lex.bg (private legal database)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
           }
         ],
         "confidence": "high",
-        "verification": "partially_verified",
-        "open_questions": [
-          "Exact credit limitation formula for foreign dividends not read in the statute."
-        ],
+        "verification": "verified",
+        "open_questions": [],
         "headline_rate": 0.05,
         "domestic_rate": 0.05,
         "foreign_gross_rate": 0.05,
         "foreign_tax_credit": "credit",
-        "rate_basis": "5% final tax on dividends and liquidation proceeds; foreign dividends self-assessed at 5% with a per-country credit for foreign tax.",
+        "rate_basis": "5% final tax on dividends and liquidation shares of a local individual from a foreign source (ZDDFL art. 38(1) item 2(b), art. 46(3)), on the gross amount (art. 38(2)). Foreign tax is credited per country and per type of income, up to the Bulgarian tax that the same income would bear if Bulgarian (art. 76(2)-(3)); a 15% foreign withholding therefore wipes out the 5% completely.",
         "withholding_outbound": "5% WHT on dividends to non-residents (treaty reductions); exempt for EU/EEA resident companies except hidden profit distributions.",
         "treaty_network": "71 double tax treaties, including the US.",
         "holding_company_notes": "10% CIT and 5% dividend WHT (0% to EU/EEA companies) make Bulgaria a low-tax holding location; Pillar Two QDMTT applies to large groups."
@@ -136,8 +141,8 @@
       },
       "inheritance": {
         "tax_year": "2026",
-        "verified_on": "2026-10-15",
-        "summary": "Inheritance tax is a municipal tax under the Local Taxes and Fees Act, but the surviving spouse and lineal heirs (children, grandchildren, parents) do not pay it (art. 31(2)). Gifts between lineal relatives and between spouses are also not taxed (art. 44(6)). Transfers from parents to children are therefore tax-free, both during life and on death.",
+        "verified_on": "2026-10-16",
+        "summary": "Inheritance tax is a municipal tax under the Local Taxes and Fees Act, but the surviving spouse and lineal heirs (children, grandchildren, parents) do not pay it (art. 31). Gifts between lineal relatives and between spouses are also not taxed (art. 44(6)). Transfers from parents to children are therefore tax-free, both during life and on death.",
         "exemptions_thresholds": "Children: full exemption. For other heirs: BGN 250,000 (about EUR 127,800) per heir non-taxable, then 0.4%-0.8% for siblings and their children and 3.3%-6.6% for others, set by municipality.",
         "important_exceptions": "Notary and registration fees apply to real estate transfers; not quantified. An inheritance declaration may still have to be filed with the municipality.",
         "sources": [
@@ -175,7 +180,7 @@
         "foreign_assets": "Exemption for lineal heirs applies to all assets.",
         "domicile_rules": "Scope: Bulgarian citizens on worldwide estate; foreign citizens on property in Bulgaria (ZMDT art. 29). Children exempt in any case.",
         "spouse_treatment": "fully_exempt",
-        "spouse_note": "The surviving spouse does not pay inheritance tax, without limit of value (Local Taxes and Fees Act, art. 31(2)); gifts between spouses are also untaxed (art. 44(6))."
+        "spouse_note": "The surviving spouse does not pay inheritance tax, without limit of value (Local Taxes and Fees Act, art. 31); gifts between spouses are also untaxed (art. 44(6))."
       },
       "sources": [
         {
@@ -184,6 +189,162 @@
           "publisher": "PwC Worldwide Tax Summaries",
           "kind": "professional",
           "accessed": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "eood_holding",
+      "name": "Bulgarian family holding company (EOOD)",
+      "type": "structure",
+      "description": "The family holds its listed shares through a Bulgarian single-member limited company (EOOD) paying corporate income tax at 10% (ZKPO art. 20). Gains on shares traded on EU/EEA regulated markets, and on third-country markets the European Commission has found equivalent (the United States, Australia and Hong Kong), are taken out of the tax base (ZKPO art. 44). Dividends from EU/EEA companies are excluded (art. 27(1) item 1); dividends from other countries bear 10% with a credit for the foreign withholding, which at 15% leaves nothing to pay. Payouts to the resident owner bear a 5% final tax. No inheritance tax for children, so the estate result is the same as for direct holding.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any Bulgarian-resident individual can form an EOOD (minimum capital EUR 1) and contribute cash or shares. Contributing existing shares at market value is a disposal for the individual (ZDDFL art. 33), so it suits cash or newly bought assets.",
+      "duration_years": null,
+      "duration_note": "A holding company has no statutory time limit; it lasts as long as the family keeps it, subject to changes in the law.",
+      "structure": {
+        "entity": "EOOD (single-member limited company, 'ednolichno druzhestvo s ogranichena otgovornost')",
+        "kind": "company",
+        "payout_tax_rate": 0.05,
+        "payout_notes": "Dividends and liquidation shares paid to a Bulgarian-resident individual bear a 5% final tax on the gross amount (ZDDFL art. 38(1) item 2(a), art. 46(3)), withheld by the company when it pays (art. 46(5)). No social or health contributions are charged on dividends. Capital can be returned to the owner without tax up to the contributed amount, and a shareholder loan can be repaid free of tax.",
+        "annual_running_cost": {
+          "amount": 3000,
+          "currency": "EUR"
+        },
+        "substance_and_anti_avoidance": "No minimum substance test for an EOOD, but it needs a registered office, an accountant, annual financial statements and a tax return. Dividends from EU/EEA companies are excluded from the base only when the payer did not deduct them (ZKPO art. 27(2) item 3), and not when they are hidden profit distributions or paid by special-purpose investment companies. Hidden profit distribution to the owner (expenses not in the company's interest) is taxed at 10% (ZKPO, provisions on hidden profit distribution; not opened). The art. 44 relief covers shares, fund units, rights and government securities traded on a regulated or equivalent third-country market, not derivatives or CFDs; shares sold on a venue that is neither (for example London, Zurich, Tokyo, Toronto) are taxed at 10%. Controlled-foreign-company rules (ZKPO, not opened) apply to the company's own foreign subsidiaries, not to listed portfolio holdings. The accounting costs are estimates from a Bulgarian law firm's price guide.",
+        "exit_and_liquidation": "On liquidation the company pays no tax on unrealised gains in qualifying shares (art. 44); the owner pays 5% on the liquidation share above his documented acquisition cost (ZDDFL art. 38(4), 46(3)). Bulgaria has no exit tax on an individual who leaves.",
+        "sources": [
+          {
+            "title": "Zakon za korporativnoto podohodno oblagane (ZKPO), consolidated text: arts. 14, 20, 27, 44",
+            "url": "https://kik-info.com/normativna-baza/zakoni/zkpo/",
+            "publisher": "kik-info.com (consolidated legislation)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Fish II.IV.1 - Financial instruments admitted to trading on a regulated market (art. 44 ZKPO), CITA handbook 2025",
+            "url": "https://kik-info.com/danatsi/naruchnik-zkpo/v/2025/FISH-II.IV.1.php",
+            "publisher": "kik-info.com (NAP-based CITA handbook)",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Bulgaria - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/bulgaria/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "The real cost of running a company in Bulgaria / annual cost of running an EOOD (accounting EUR 100-250 a month)",
+            "url": "https://innovires.com/tax-residency/blog/annual-cost-running-eood-bulgaria.html",
+            "publisher": "Innovires (Bulgarian law firm)",
+            "kind": "other",
+            "accessed": "2026-10-16"
+          }
+        ]
+      },
+      "capital_gains": {
+        "summary": "A company excludes from its tax base the profit on disposing of shares, fund units, rights and government securities traded on an EU/EEA regulated market (ZKPO art. 44(1)); since 1 January 2021 the same applies to third-country markets that the Commission has found equivalent, which the NAP handbook lists as Australia, Hong Kong and the United States. Losses on those instruments are added back (art. 44(2)). Gains on shares sold on other venues, and on unlisted shares, are taxed at 10% (art. 20).",
+        "exemptions_thresholds": "No holding period and no minimum stake. The equivalence list was read from a 2025 handbook, not from the Commission decisions.",
+        "eligibility_conditions": "Bulgarian-resident company; shares bought and sold on a regulated or equivalent market; not a derivative or CFD.",
+        "important_exceptions": "Venues outside the EU/EEA and outside the equivalence list (London, Zurich, Tokyo, Toronto and similar) give taxable gains at 10%. A treaty that exempts with progression disapplies art. 44 for foreign-source profit.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zakon za korporativnoto podohodno oblagane (ZKPO), consolidated text: arts. 14, 20, 27, 44",
+            "url": "https://kik-info.com/normativna-baza/zakoni/zkpo/",
+            "publisher": "kik-info.com (consolidated legislation)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Fish II.IV.1 - Financial instruments admitted to trading on a regulated market (art. 44 ZKPO), CITA handbook 2025",
+            "url": "https://kik-info.com/danatsi/naruchnik-zkpo/v/2025/FISH-II.IV.1.php",
+            "publisher": "kik-info.com (NAP-based CITA handbook)",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Bulgaria - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/bulgaria/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The list of equivalent third-country markets (US, Australia, Hong Kong) comes from the NAP handbook fiche, not from the Commission decisions or the CITA supplementary provisions.",
+          "Whether art. 44 relief survives a portfolio traded very actively (no case law found)."
+        ],
+        "headline_rate": 0.1,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.1,
+          "real_estate_local": 0.1,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Listed shares: 0% under art. 44 for sales on EU/EEA and equivalent US/Australian/Hong Kong venues, which is where a global portfolio of large listed companies is traded. Sales on other venues would bear 10%. Unlisted shares and real estate: 10% CIT on the gain.",
+        "professional_trader": "The company is taxed on its accounting result whatever the trading frequency; art. 44 does not depend on the holding period.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Same treatment for foreign shares if traded on a qualifying market."
+      },
+      "dividends": {
+        "summary": "Dividends from Bulgarian companies and from EU/EEA tax residents are excluded from the company's tax base (ZKPO art. 27(1) item 1; exceptions in art. 27(2)). Dividends from other countries are taxable at 10% (art. 20), with a credit for the foreign withholding per country and per type of income, limited to the Bulgarian tax on that income (art. 14(2)-(4)); a 15% withholding exceeds 10%, so US and other non-EU dividends bear no Bulgarian tax in the company. Payouts to the owner bear 5% (in the structure terms).",
+        "exemptions_thresholds": "No minimum stake or holding period for the EU/EEA exclusion.",
+        "eligibility_conditions": "EU/EEA payer must be a tax resident of that state and must not have deducted the distribution.",
+        "important_exceptions": "Special-purpose investment companies' dividends and hidden profit distributions are not excluded. The foreign withholding above 10% is lost (no refund).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Zakon za korporativnoto podohodno oblagane (ZKPO), consolidated text: arts. 14, 20, 27, 44",
+            "url": "https://kik-info.com/normativna-baza/zakoni/zkpo/",
+            "publisher": "kik-info.com (consolidated legislation)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Bulgaria - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/bulgaria/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Dividends from EU/EEA ETFs or funds (as opposed to companies) were not checked against art. 27."
+        ],
+        "headline_rate": 0.1,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.1,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Foreign dividends are scored at the 10% rate for non-EU payers (conservative: EU/EEA payers are excluded entirely), with a credit for the foreign tax capped at the Bulgarian tax (art. 14(4)). Domestic dividends 0% (art. 27(1) item 1).",
+        "holding_company_notes": "This is the holding-company structure itself; the 5% personal payout tax is in the structure terms."
+      },
+      "sources": [
+        {
+          "title": "Zakon za korporativnoto podohodno oblagane (ZKPO), consolidated text: arts. 14, 20, 27, 44",
+          "url": "https://kik-info.com/normativna-baza/zakoni/zkpo/",
+          "publisher": "kik-info.com (consolidated legislation)",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Fish II.IV.1 - Financial instruments admitted to trading on a regulated market (art. 44 ZKPO), CITA handbook 2025",
+          "url": "https://kik-info.com/danatsi/naruchnik-zkpo/v/2025/FISH-II.IV.1.php",
+          "publisher": "kik-info.com (NAP-based CITA handbook)",
+          "kind": "professional",
+          "accessed": "2026-10-16"
         }
       ]
     }
@@ -290,6 +451,7 @@
   ],
   "us_citizen_notes": "US citizens remain US-taxed. A Bulgaria-US income tax treaty is in force (per PwC treaty list). Bulgaria's 5% dividend and 0%/9% capital gains rates are below US rates, so the US layer dominates.",
   "open_questions": [
-    "Euro adoption confirmed by PwC and BTA; amounts in older sources are in BGN at 1.95583 per EUR."
+    "Euro adoption confirmed by PwC and BTA; amounts in older sources are in BGN at 1.95583 per EUR.",
+    "EOOD holding: running cost (EUR 3,000 a year) is an estimate from one Bulgarian law firm's price guide; confirm with accountant quotes."
   ]
 }

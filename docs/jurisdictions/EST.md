@@ -1,6 +1,6 @@
 # Estonia — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -33,7 +33,8 @@ Flat 22% income tax in 2026 (planned rise to 24% cancelled in Dec 2025); capital
 - JSON: headline 22%, domestic 0%, foreign gross 0%, relief method 'exemption'. Basis: domestic_rate 0: tax borne by the company at 22/78 (=28.2% of net dividend). foreign_gross_rate 0: exempt where source WHT was withheld or underlying profit taxed, which covers ordinary listed foreign shares; 22% with credit otherwise.
 - Outbound withholding: Dividends paid by Estonian companies carry company-level CIT 22/78 on distribution; no additional WHT on dividends to non-residents in the standard case (7% WHT only for redistributed pre-2025 14/86 profits).
 - Treaties: Broad treaty network with EU/OECD states and the US (exact count not verified); foreign tax credit is limited to the Estonian tax per country.
-- Holding companies: Distribution-based CIT: retained and reinvested profits of an Estonian company, including portfolio gains, are untaxed until distribution.
+- Holding companies: Modelled as the structure regime 'oue_holding' (see Holding structures): an Estonian OÜ pays no tax on dividends and gains it keeps; 22/78 of the net amount is due when it distributes (Income Tax Act § 50(1)), with no further personal tax on a resident shareholder.
+- Conflict (2026-10-16): PwC says foreign dividends are exempt for a resident individual when the profit was taxed abroad or tax was withheld on the dividend (what the JSON models). EMTA's English investment-account page says that in the ordinary system foreign dividends are declared and the foreign tax is credited against Estonian tax, with any shortfall payable (22% less 15% leaves 7%). Statute text not opened; see Open questions.
 
 ## Inheritance and gifts to children
 - Rule in force: No inheritance tax and no gift tax. Inherited assets are not income for the heir. A later sale is taxed as a capital gain using the deceased's acquisition cost.
@@ -56,6 +57,15 @@ None. No special tax regime for newly arriving wealthy individuals was found; on
 ## Company taxation (kept separate from personal tax)
 - Headline CIT 22%. Distribution-based CIT: 22/78 (22% of gross distribution) only when profits are distributed; retained earnings untaxed. The 14/86 reduced rate for regular dividends was abolished from 2025. A 2% corporate profit tax (part of the security tax) was abolished in 2025 before it applied; a planned rise of the distribution rate to 24/76 from 2026 was reported cancelled in December 2025 (EMTA lists 22/78).
 
+## Holding structures
+
+**Modelled: Estonian holding company (`oue_holding`, type `structure`).** An osaühing (OÜ) owned by the parents holds the portfolio.
+- **Company tax:** only on distribution, 22/78 of the net amount (Income Tax Act § 50(1), rate in § 4(1),(11); EMTA 'Taxation of dividends'), i.e. 22% of the cash the company uses. Retained dividends and gains are untaxed (PwC: all undistributed profits are tax exempt). JSON: gains rates 0, dividend rates 0, credit 'none', payout_tax_rate 0.22.
+- **Personal tax on payout:** none for a resident individual from 1 January 2025 (14/86 and the 7% withholding abolished).
+- **Wealth tax and inheritance:** not given in the structure regime, so they inherit the standard values (none; no inheritance or gift tax). Shares in the OÜ pass free of tax; Estonia has no deemed disposal at death.
+- **Funding:** an in-kind contribution of an existing portfolio may be a disposal taxed at 22% on the gain (not verified); cash or newly bought positions avoid it.
+- **Not modelled:** the investment account (needs an engine change, see Open questions), a private foundation or trust (not researched), annual running cost of the OÜ (not sourced).
+
 ## Cost of living notes
 
 City: Tallinn.
@@ -72,6 +82,9 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - Gifts from a company (rather than an individual) may be taxed as fringe benefit/distribution; not researched.
 - Reports of a '2% surcharge' in 2026 (e.g. Remote Work Europe) refer to the abolished security tax; EMTA's 2026 rate page shows none. Resolved as: no surcharge in 2026.
 
+- Conflict on foreign dividends of a resident individual: PwC (exempt when tax was withheld abroad or profit taxed abroad) versus EMTA's English page (credit of foreign tax, shortfall payable). The Income Tax Act text (Riigi Teataja, JS-rendered) was not opened. If EMTA's reading is right, foreign_gross_rate becomes 0.22 with foreign_tax_credit 'credit'.
+- Holding structures: an OÜ is modelled; a private family foundation or trust was not researched and is not modelled.
+
 ## Sources
 - [Tax rates (private client)](https://emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates)
 - [Securities and investment account](https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/securities-and-investment-account)
@@ -82,6 +95,10 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - [Estonia - Individual - Other taxes](https://taxsummaries.pwc.com/estonia/individual/other-taxes)
 - [Successions in Europe - Estonia](https://www.notariesofeurope.eu/en/faq3/successions-in-europe/estonia/)
 - [Estonia - Individual - Residence](https://taxsummaries.pwc.com/estonia/individual/residence)
+- [Taxation of dividends (EMTA, business client)](https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/taxation-dividends)
+- [Estonia - Corporate - Taxes on corporate income](https://taxsummaries.pwc.com/estonia/corporate/taxes-on-corporate-income)
+- [Estonia - Corporate - Income determination](https://taxsummaries.pwc.com/estonia/corporate/income-determination)
+- [Taxes in Estonia (Ministry of Finance, updated 22.04.2026)](https://fin.ee/en/taxes)
 - [Estonia abolishes planned temporary defense tax (EY Global Tax News, 9 July 2025)](https://globaltaxnews.ey.com/news/2025-1409)
 - [Security Tax Abolished, but VAT and Income Tax to Rise to 24%](https://www.koda.ee/en/news/security-tax-abolished-vat-and-income-tax-rise-24)
 - [Estonia Country Update (2% surcharge unwinding)](https://remoteworkeurope.eu/news/2026/estonia-two-percent-tax-surcharge-unwinding)
@@ -93,3 +110,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: initial research.
 - 2026-10-15: resolved the reported 2026 '2% surcharge' (security tax scrapped May 2025; EMTA lists none for 2026); added Tallinn cost of living (City24 rent sample, ISE 2026-27 fee).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added the holding structure regime `oue_holding` (Estonian OÜ: no tax on retained dividends and gains, 22/78 on distribution, payout rate 0.22); recorded the conflict between PwC and EMTA on foreign dividends of resident individuals (not changed in the JSON); wrote the projection recipe `data/recipes/EST.json`.

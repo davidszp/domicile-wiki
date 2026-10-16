@@ -1,6 +1,6 @@
 # Romania — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -41,7 +41,7 @@ Dividends are taxed at 16% from 1 January 2026 (10% in 2025, 8% in 2023-24), fin
 
 **Exceptions:** Dividends from interim 2025 financial statements keep the 10% rate (Law 141/2025 art. VII(2)).
 
-**JSON numbers:** headline 0.16, domestic 0.16, foreign gross 0.16, relief: credit. Law 141/2025 amends Fiscal Code art. 97(7) to 16% for dividends distributed from 1 January 2026. Same rate assumed for foreign dividends, with a credit up to the Romanian tax.
+**JSON numbers:** headline 0.16, domestic 0.16, foreign gross 0.16, relief: credit. Law 141/2025 amends Fiscal Code art. 97(7) to 16% for dividends distributed from 1 January 2026. Residents are taxed on income from any source; foreign dividends go into the single return (D212) at the same rate. Foreign tax is credited only where a double tax treaty applies, with proof of payment, per country and per source of income, up to the Romanian tax on that income (Fiscal Code art. 131 and its methodological norms point 46; ANAF guidance), so a treaty-rate 15% withholding leaves 1% to pay.
 
 **Outbound withholding:** 16% on dividends paid to non-residents (treaty reductions available). Exempt for EU/EEA parent companies holding at least 10% for at least one year.
 
@@ -97,7 +97,8 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - Confirm that foreign-listed securities held through a Romanian broker get the 3% final withholding, and whether 16%-regime losses can be carried forward.
 - Tax treatment of a Romanian resident's gain on foreign real estate not verified (real_estate_foreign left null).
 - Notary/registration costs on Romanian real estate sales not quantified.
-- Exact foreign tax credit mechanics for foreign dividends (per-country limit) not read in primary law.
+- Foreign tax credit read through ANAF guidance (art. 131, per country and source of income, treaty required), not the consolidated Code; the 16% rate on foreign-source dividends rests on Fiscalitatea.ro and PwC (art. 97(7) not opened).
+- Scope of the 1% charge on a succession not finalised within 2 years (art. 111(3)): real estate only, or the whole estate? Sources disagree. A one-off derogation (Law 170/2026) was reported by one source only.
 - Whether the RON 2.5M threshold applies per building or per owner's total, and the primary statute (Fiscal Code local-tax title) not read.
 - Classified as a 'limited' wealth tax because it is a recurring surcharge on high-value property above a threshold, separate from the ordinary building tax.
 - Notary succession fees as a share of estate value not verified.
@@ -118,6 +119,8 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - [Romania - Corporate - Taxes on corporate income](https://taxsummaries.pwc.com/romania/corporate/taxes-on-corporate-income)
 - Case de închiriat: Bucuresti (200-400 m²): https://www.storia.ro/ro/rezultate/inchiriere/casa/bucuresti?areaMin=200&areaMax=400&limit=72
 - Tuition & Fees - American International School of Bucharest: https://www.aisb.ro/future-families/admissions/fees/
+- [Obtii dividende din strainatate? Ce taxe trebuie sa platesti (Fiscalitatea.ro, 23 Feb 2026)](https://www.fiscalitatea.ro/obtii-dividende-din-strainatate-ce-taxe-trebuie-sa-platesti-24711/)
+- [ANAF guidance: pensions from abroad, declaration and double-taxation method (arts. 130-131 Fiscal Code)](https://static.anaf.ro/static/10/Brasov/Brasov/pensii_strainatate.pdf)
 - [Fiscalitatea.ro: Art. 111 Fiscal Code, transfer of real estate (1% on successions not finalised within 2 years)](https://www.fiscalitatea.ro/venituri-din-transferul-proprietatilor-imobiliare-din-patrimoniul-personal-partea-a-3-a-1838/)
 
 ## Change log
@@ -126,3 +129,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: added Bucharest cost of living (Storia.ro rent sample, AISB 2026-27 fees).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: 60-year recipe pass. Dividends: added the foreign tax credit rule (art. 131: treaty required, per country and source, capped at the Romanian tax) and the CASS base detail (6/12/24 salaries, dividends count net of tax); inheritance: recorded the dispute over the scope of the 1% late-succession charge. No rate changed. No holding-company regime added (an SRL would bear 16% corporate tax plus 16% on payouts).

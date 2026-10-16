@@ -1,6 +1,6 @@
 # Lithuania — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -72,6 +72,10 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - PIT exemption for gifts from close relatives not confirmed in a source opened during this research.
 - Notary fees for the certificate of inheritance not verified (assumed small).
 
+- Holding structures (2026-10-16): a Lithuanian UAB holding company was considered and not added as a regime. Its profit is taxed every year at 17%, not on distribution; gains on shares are exempt only for a stake above 10% held at least two years (PwC), so a diversified portfolio's gains and non-EEA dividends would be taxed at 17% inside the company, then dividends again at 15% on payout. It is never better than direct holding, and no source shows advisers recommending it for a listed portfolio. A private foundation or trust was not researched.
+- Health insurance (PSD, 6.98%) on dividends and gains of an individual was searched for and not found in any source read; the file assumes none applies to these items.
+- Needs an engine change (see data/recipes/LTU.json): the investment account (withdrawals above contributions taxed at 15%).
+
 ## Sources
 - [Lithuania - Individual - Income determination](https://taxsummaries.pwc.com/lithuania/individual/income-determination)
 - [Lithuania - Individual - Taxes on personal income](https://taxsummaries.pwc.com/lithuania/individual/taxes-on-personal-income)
@@ -91,3 +95,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: confirmed conditions of the 15% rate on shares held over 5 years (KPMG LT / VMI, March 2026); added Vilnius cost of living (Baltic Sotheby's rent sample, AISV 2026-27 fees).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: no change to rates; recorded why a UAB holding company is not modelled, the unchecked PSD question, and the investment account engine gap; wrote the projection recipe `data/recipes/LTU.json`.

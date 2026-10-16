@@ -1,6 +1,6 @@
 # Slovenia — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -58,9 +58,20 @@ property tax proposal not verified.
 
 None relevant. INR is a small retail account, not a regime.
 
+Structure regime `holding_doo` (family d.o.o.), added 2026-10-16 for the 60-year projection: gains 22%, dividends 1.1% effective
+(22% x 5%), payout to the family 25% (Art. 132 ZDoh-2), wealth tax and inheritance inherited from the standard regime. Not
+a special regime for arrivals: any resident can found a d.o.o. Private foundation and trust were considered and not added: Slovenian
+law reportedly allows private foundations only for public-benefit purposes and does not regulate a family foundation (University of Ljubljana
+thesis abstract, 2018; not checked against the Ustanove Act).
+
 ## Company taxation (kept separate from personal tax)
 
-CIT 22% for 2024–2028 (temporarily raised from 19%) (PwC). Participation-exemption details not verified.
+CIT 22% for 2024-2028 (Art. 64 ZORZFS; general rate 19%) (FURS). Dividends received are excluded from the tax base
+(Art. 24 ZDDPO-2) but 5% of them counts as a non-deductible expense, so the effective rate is 1.1%; there is no minimum
+holding, the payer must be subject to a comparable profit tax, and non-EU payers resident in countries with a profit tax
+below 12.5% on the Ministry of Finance list are excluded (PwC). Gains on shares: 50% exempt only for stakes of at least 8%
+held 6 months where the company employs at least one person (FURS guide, section 5.1). A portfolio company with listed minority
+stakes therefore pays 22% on every realised gain. Foreign withholding on an excluded dividend is not credited (FURS 0920-13147/2022-3).
 
 ## Cost of living notes
 
@@ -83,6 +94,7 @@ Ljubljana.
 - No exit tax confirmed against the full ZDoh-2 text.
 - Real property tax proposals: status not verified.
 - Rent rests on 3-5 listings; BISL 2026-27 fees not found.
+- Structure `holding_doo`: ZDDPO-2 statute text could not be read (PisRS); article numbers rest on the FURS guide and PwC. Treatment of foreign withholding on excluded dividends, ETF dividends, contributions in kind and liquidation proceeds not researched.
 
 ## Sources
 
@@ -103,6 +115,11 @@ Ljubljana.
 - Slovenia – Corporate – Taxes on corporate income: https://taxsummaries.pwc.com/slovenia/corporate/taxes-on-corporate-income
 - Bolha.com, oddaja hiš Osrednjeslovenska: https://www.bolha.com/oddaja-hise/osrednjeslovenska
 - BISL, Schedule of Fees and Charges AY 2025-26: https://dazzling-seal.files.svdcdn.com/production/images/Schedule-of-Fees-and-Charges-AY25-26-FIN.pdf?dm=1747424681
+- Splosno o DDPO (FURS guide to corporate income tax: rate, sections 4.0 and 5.1): https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Splosno_o_DDPO.doc
+- Davek od dohodkov pravnih oseb (DDPO) (22% for 2024-2028, Art. 64 ZORZFS): https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/davek_od_dohodkov_pravnih_oseb_ddpo
+- Pojasnilo FURS 0920-13147/2022-3: Izvzem dividend po 24. clenu ZDDPO-2, ki so bile obdavcene na viru: https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Poslovanje_z_nami/Novodila_in_pojasnila/2022/0920-13147_2022-3_Izvzem_dividend_po_24_clenu_ZDDPO-2_ki_so_bile_obdavcene_na_viru.docx
+- Slovenia - Corporate - Income determination: https://taxsummaries.pwc.com/slovenia/corporate/income-determination
+- Private foundations in Slovenia (University of Ljubljana repository, thesis abstract): https://repozitorij.uni-lj.si/IzpisGradiva.php?id=100205
 
 ## Change log
 
@@ -110,3 +127,4 @@ Ljubljana.
 - 2026-10-15 (data-quality pass): added BISL fee (EUR 19,300, 2025-26, school's own schedule) and prime rent (Bolha.com, EUR 3,750/month, thin sample).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (EUR 3,750).
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: added structure regime `holding_doo` (family d.o.o.) with sourced capital gains (22%), dividends (1.1% effective) and payout (25%) terms; corporate summary now states the dividend exclusion, the 5% add-back and the gains-exemption conditions (FURS guide, PwC). Recipe `data/recipes/SVN.json` added.

@@ -1,6 +1,6 @@
 # Georgia — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -12,7 +12,7 @@ Georgia is close to territorial for individuals. Income of a resident that does 
 
 Resident for the tax year if physically present 183+ days in any continuous 12-month period ending in that year (Art. 34(2)). Art. 34(6): residency may also be granted to a high net worth individual (as defined in the Law on Securities Market) under rules of the Minister of Finance; Art. 34(6^2) allows other foreigners to be granted residency by the Minister's rules.
 
-- **High net worth individual tax residency (Art. 34(6))** (EU, US, OTHER): Status granted on application to a high net worth individual as defined in the Law on Securities Market; commonly reported thresholds (assets over GEL 3 million or income over GEL 200,000 a year for three years) were not verified.
+- **High net worth individual tax residency (Art. 34(6))** (EU, US, OTHER): Status granted on application to a high net worth individual (Art. 34(6) Tax Code; Minister of Finance Order No. 60 of 1 March 2023). Secondary sources (Revera, Eurofast/Mondaq, Expathub; the order itself was not opened) report property above GEL 3 million or income above GEL 200,000 a year for the last three calendar years, plus a link to Georgia (for example Georgian-source income of at least GEL 25,000 or real estate worth USD 500,000), renewed annually. It is a residence status, not a lower tax rate: a family that actually lives in Georgia is resident through the 183-day test and gets the same exemption of foreign-source income.
 - **Visa-free stay / residence permit** (EU, US, OTHER): EU and US citizens can stay visa-free for long periods (commonly reported as one year; not verified); residence permits on investment in real estate are available (amount not verified).
 
 Standard regime eligibility: 183+ days in Georgia in any continuous 12-month period ending in the tax year (Art. 34(2)), or residency granted as a high net worth individual (Art. 34(6)).
@@ -94,6 +94,8 @@ QSI International School of Tbilisi, BIST and the European School still do not p
 
 US citizens: US citizens remain US-taxed; Georgia's near-zero tax on foreign income leaves nothing to credit. US–Georgia treaty status (1973 US–USSR treaty) not verified.
 
+- Property tax on individuals above GEL 40,000 family income: secondary sources (Expathub, IBCCS, Revera) give 0.8%-1% of market value above GEL 100,000 of family income and 0.05%-0.2% between GEL 40,000 and 100,000; the Tax Code chapter on property tax was not opened and the thresholds differ between sources. On a EUR 5m home this could be EUR 40,000-50,000 a year; not modelled.
+
 ## Sources
 
 - [Tax Code of Georgia (Law No. 3591, consolidated version 30/09/2026)](https://matsne.gov.ge/en/document/view/1043717) — Legislative Herald of Georgia (Matsne) (legislation)
@@ -102,6 +104,7 @@ US citizens: US citizens remain US-taxed; Georgia's near-zero tax on foreign inc
 - [Georgia – Corporate – Withholding taxes](https://taxsummaries.pwc.com/georgia/corporate/withholding-taxes) — PwC Worldwide Tax Summaries (professional)
 - [Georgia – Individual – Other taxes](https://taxsummaries.pwc.com/georgia/individual/other-taxes) — PwC Worldwide Tax Summaries (professional)
 - [Georgia – Individual – Residence](https://taxsummaries.pwc.com/georgia/individual/residence) — PwC Worldwide Tax Summaries (professional)
+- [Clarifications from the Georgian Tax Service on the procedure for obtaining a tax resident certificate based on wealth](https://revera.legal/en/info-centr/news-and-analytical-materials/1841-razyasneniya-o-poryadke-polucheniya-sertifikata-nalogovogo-rezidenta-po-sostoyatelnosti/) — Revera Legal (professional)
 - [Private houses for rent in Tbilisi](https://www.myhome.ge/en/s/House-for-rent-Tbilisi/?deal_types=2&real_estate_types=2&cities=1) — Myhome.ge (TNET) (other)
 - GZAAT — Tuition Fee, 2026-2027 (The Guivy Zaldastanishvili American Academy in Tbilisi, other): https://gzaat.org/admission/tuition-and-financial-assistance
 - International Schools Database — Tbilisi (International Schools Database, other): https://www.international-schools-database.com/in/tbilisi
@@ -114,3 +117,4 @@ US citizens: US citizens remain US-taxed; Georgia's near-zero tax on foreign inc
 - 2026-10-15 (household cost pass): added the GZAAT Grades 9–12 tuition (GEL 31,000, 2026–27, school's own page) as the school fee; with rent already sourced the metric can now be scored.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: 60-year recipe pass. Re-read Tax Code Art. 82(1)(u), (g), (f.a)-(f.c) and Art. 130(1) on Matsne: foreign-source income exempt, first/second-line heirs exempt, 2-year gains exemption, 5% dividend withholding all confirmed, no rate changed. Residency route for high net worth individuals updated from secondary sources (Order No. 60 of 2023); recorded the unverified property tax on homes. No special regime or holding structure added (the HNWI status changes residence, not tax).

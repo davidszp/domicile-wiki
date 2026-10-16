@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Northern Europe",
   "currency": "ISK",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Moderate, simple regime: a flat 22% on capital gains and dividends, no wealth tax, and a flat 10% inheritance tax above a small per-estate allowance (ISK 6.79m in 2026). Advance inheritance during life is also 10% with no allowance. EEA member, so EU citizens can move freely; no investor visa.",
   "regimes": [
     {
@@ -99,6 +99,13 @@
             "publisher": "Government of Iceland (Ministry of Finance and Economic Affairs)",
             "kind": "government",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Icelandic Tax Facts 2026",
+            "url": "https://assets.kpmg.com/content/dam/kpmgsites/is/pdf/2026/Icelandic%20Tax%20Facts%202026.pdf.coredownload.pdf",
+            "publisher": "KPMG Iceland",
+            "kind": "professional",
+            "accessed": "2026-10-16"
           }
         ],
         "verified_on": "2026-10-15",
@@ -112,7 +119,7 @@
         "foreign_gross_rate": 0.22,
         "foreign_tax_credit": "credit",
         "rate_basis": "Flat 22% on gross dividends; foreign WHT credited up to the Icelandic tax.",
-        "withholding_outbound": "20% WHT on dividends to non-resident individuals and companies (PwC), reduced by treaty.",
+        "withholding_outbound": "Resident companies withhold 22% on dividends to all recipients except non-resident legal entities (20%) and resident companies (0%) (KPMG Icelandic Tax Facts 2026, s. 8.1.1); reduced by treaty. The 22% is final for individuals.",
         "treaty_network": "Moderate: about 45 treaties in force (PwC table lists 47 entries, apparently counting Czechia twice); includes the US and all major EU states.",
         "holding_company_notes": "CIT 20%; company-level participation relief exists but was not verified here; company tax kept separate."
       },
@@ -136,7 +143,7 @@
       },
       "inheritance": {
         "summary": "Inheritance tax of 10% on the estate's taxable base above ISK 6,789,790 (2026, per estate, shared among heirs by inheritance share). Advance inheritance (lifetime transfers to heirs) is taxed at 10% on the full value with no allowance.",
-        "exemptions_thresholds": "ISK 6,789,790 per estate (deaths in 2026; 2025: ISK 6,498,129), indexed to CPI. Surviving spouse exempt.",
+        "exemptions_thresholds": "ISK 6,789,790 per estate (deaths in 2026; 2025: ISK 6,498,129). The statutory base amount is ISK 5,000,000 and is raised at the start of each year in proportion to the consumer price index (Act 14/2004 art. 2(2)), so it is indexed by law. Surviving spouse exempt (art. 2(3)).",
         "important_exceptions": "Parliamentary resolutions to abolish the tax have been tabled but not passed.",
         "tax_year": "2026",
         "sources": [
@@ -174,6 +181,13 @@
             "publisher": "PwC Worldwide Tax Summaries",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Lög um erfðafjárskatt nr. 14/2004",
+            "url": "https://lagasafn.hi.is/2004014.html",
+            "publisher": "Althingi / Lagasafn",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
           }
         ],
         "verified_on": "2026-10-15",
@@ -198,10 +212,11 @@
         "lifetime_gift_tax_free_after_years": null,
         "business_relief": "None found.",
         "business_relief_covers_public_shares": false,
-        "foreign_assets": "Heirs are taxed on all valuables received when an estate is settled in Iceland; Icelandic real estate is taxed regardless of the deceased's residence.",
+        "foreign_assets": "Tax is charged on all assets passing to heirs when the estate of the deceased is divided (Act 14/2004 art. 1(1)), so a portfolio held abroad is in scope when the estate is settled in Iceland; Icelandic real estate is taxed whatever the deceased's residence (art. 1(2)).",
         "domicile_rules": "Estates are settled where the deceased was domiciled; no citizenship-based tail found.",
         "spouse_treatment": "fully_exempt",
-        "spouse_note": "If assets pass to a surviving spouse or cohabitant, no inheritance tax is levied (Act 14/2004 on inheritance tax; PwC)."
+        "spouse_note": "If assets pass to a surviving spouse or cohabitant, no inheritance tax is levied (Act 14/2004 on inheritance tax; PwC).",
+        "thresholds_indexed": true
       },
       "sources": [
         {
@@ -210,6 +225,180 @@
           "publisher": "PwC Worldwide Tax Summaries",
           "kind": "professional",
           "accessed": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "ehf_holding",
+      "name": "Investment holding company (einkahlutafélag, ehf.)",
+      "type": "structure",
+      "description": "The family holds the portfolio through an Icelandic private limited company (ehf.) owned by the parents. The company is taxed at 20% but dividends from, and gains on shares of, qualifying companies are deductible, so a listed-share portfolio is taxed at company level at about 0%. Tax comes when profits are paid out to the shareholders at 22%.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any resident individuals may set up an ehf.. Dividend and share-gain deductions need the foreign company's profits to be taxed under rules not substantially different from Iceland's, at a rate not below the general rate in any OECD, EEA or EFTA state.",
+      "duration_years": null,
+      "duration_note": "A company has no statutory time limit; it stays as long as the family keeps it.",
+      "structure": {
+        "entity": "Einkahlutafélag (ehf.), private limited company",
+        "kind": "company",
+        "payout_tax_rate": 0.22,
+        "payout_notes": "Dividends paid to resident individuals bear 22% withholding, final, the same 22% capital income tax as on dividends held personally (KPMG Icelandic Tax Facts 2026, s. 8.1.1 and 15.4.1). Distributions on a liquidation in excess of the purchase price of the shares are also treated as dividends.",
+        "annual_running_cost": null,
+        "setup_cost": null,
+        "running_cost_deductible_at": null,
+        "substance_and_anti_avoidance": "Dividends received from foreign companies and gains on foreign shares are deductible only if the foreign company's profits were taxed abroad under rules not substantially different from Iceland's and at a rate not lower than the general rate in any OECD, EEA or EFTA state, UK or the Faroe Islands (KPMG s. 3.5.1, 3.7.2). Shares in low-tax jurisdictions (CIT below two-thirds of Iceland's 20%) fall under the CFC rules, taxing the profits in proportion to the shareholding (KPMG s. 3.7.7; PwC). Losses on shares are not tax-deductible, only usable against share gains in the same year (KPMG s. 3.5.1). The Supreme Court allows transactions to be disregarded when their only purpose is tax avoidance (KPMG s. 3.7.3). Whether fund units (ETFs) qualify for the deductions was not verified: the portfolio is assumed to be listed shares of OECD-resident companies. Foreign withholding tax on dividends cannot be credited, as no Icelandic tax is due on them.",
+        "exit_and_liquidation": "On liquidation without a merger, distributions above the shares' purchase price are dividends taxed at 22% (KPMG s. 8.1.1). There is no exit tax on emigrating shareholders found in the sources read; former residents remain liable for 3 years (see standard regime).",
+        "sources": [
+          {
+            "title": "Icelandic Tax Facts 2026",
+            "url": "https://assets.kpmg.com/content/dam/kpmgsites/is/pdf/2026/Icelandic%20Tax%20Facts%202026.pdf.coredownload.pdf",
+            "publisher": "KPMG Iceland",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Iceland - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/iceland/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ]
+      },
+      "capital_gains": {
+        "summary": "A company's gains on shares are deductible in full, with 0% tax effect, when the shares are in Icelandic companies or in foreign companies taxed abroad at a rate not lower than the general rate in any OECD, EEA or EFTA state. Gains on other assets (real estate) are taxed at the 20% CIT rate.",
+        "exemptions_thresholds": "No allowance. Losses on shares are not deductible except against share gains in the same year.",
+        "sources": [
+          {
+            "title": "Icelandic Tax Facts 2026",
+            "url": "https://assets.kpmg.com/content/dam/kpmgsites/is/pdf/2026/Icelandic%20Tax%20Facts%202026.pdf.coredownload.pdf",
+            "publisher": "KPMG Iceland",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Iceland - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/iceland/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Iceland - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/iceland/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "open_questions": [
+          "The article of the Income Tax Act No. 90/2003 for the deduction (art. 31) was not opened; the rule was read in KPMG Icelandic Tax Facts 2026 s. 3.5.1 and PwC.",
+          "Whether fund units and shares of emerging-market companies qualify was not verified."
+        ],
+        "headline_rate": 0.2,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.2,
+          "real_estate_foreign": null
+        },
+        "rate_basis": "Share gains are fully deductible (0%) for an ehf. (KPMG s. 3.5.1), assuming foreign shares meet the OECD-rate condition. Local real estate at the 20% CIT rate. Foreign real estate not researched.",
+        "holding_period_rules": "No holding period.",
+        "foreign_assets": "Worldwide income of a resident company is taxed.",
+        "tax_year": "2026",
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "verified"
+      },
+      "dividends": {
+        "summary": "Dividends received by an ehf. from Icelandic companies are deductible; foreign dividends are deductible when the foreign company's profits were taxed at a rate not lower than the general rate in any OECD, EEA or EFTA state. Foreign withholding tax is therefore a final cost.",
+        "sources": [
+          {
+            "title": "Icelandic Tax Facts 2026",
+            "url": "https://assets.kpmg.com/content/dam/kpmgsites/is/pdf/2026/Icelandic%20Tax%20Facts%202026.pdf.coredownload.pdf",
+            "publisher": "KPMG Iceland",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Iceland - Corporate - Income determination",
+            "url": "https://taxsummaries.pwc.com/iceland/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Iceland - Corporate - Withholding taxes",
+            "url": "https://taxsummaries.pwc.com/iceland/corporate/withholding-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "open_questions": [
+          "The article of the Income Tax Act (art. 31) was not opened."
+        ],
+        "headline_rate": 0.2,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Dividends deductible from the company's taxable income (KPMG s. 3.7.2), so 0% for qualifying foreign companies. The 15% foreign withholding on US-type dividends is lost.",
+        "withholding_outbound": "Dividends between resident limited companies carry 0% withholding; to resident individuals 22% (KPMG s. 8.1.1).",
+        "holding_company_notes": "This regime is the holding company.",
+        "tax_year": "2026",
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "verified"
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax in Iceland; the company pays none.",
+        "sources": [
+          {
+            "title": "Iceland - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/iceland/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "type": "none",
+        "tax_year": "2026",
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "verified"
+      },
+      "sources": [
+        {
+          "title": "Icelandic Tax Facts 2026",
+          "url": "https://assets.kpmg.com/content/dam/kpmgsites/is/pdf/2026/Icelandic%20Tax%20Facts%202026.pdf.coredownload.pdf",
+          "publisher": "KPMG Iceland",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Iceland - Corporate - Income determination",
+          "url": "https://taxsummaries.pwc.com/iceland/corporate/income-determination",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Iceland - Corporate - Taxes on corporate income",
+          "url": "https://taxsummaries.pwc.com/iceland/corporate/taxes-on-corporate-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Iceland - Corporate - Withholding taxes",
+          "url": "https://taxsummaries.pwc.com/iceland/corporate/withholding-taxes",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
         }
       ]
     }

@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Central Europe",
   "currency": "PLN",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Poland taxes capital gains and dividends at a flat 19%, with a 4% solidarity levy on income above PLN 1m that hits large capital gains (23%) but not dividends. Gifts and inheritances to children are exempt if reported within 6 months. No wealth tax. New arrivals can opt for a PLN 200,000 a year lump sum on all foreign income for 10 years (PLN 100,000 per family member, plus PLN 100,000 a year of required qualifying spending).",
   "regimes": [
     {
@@ -22,7 +22,7 @@
       "capital_gains": {
         "summary": "Gains on shares, bonds, fund units and company stakes are taxed at a flat 19% ('Belka' tax, art. 30b PIT Act), with no holding-period exemption. These gains count toward the 4% solidarity levy on combined income above PLN 1,000,000 a year (art. 30h), so the marginal rate on a large gain is 23%. Real estate sold more than 5 years after the end of the year of purchase is exempt; otherwise 19% (not subject to the levy).",
         "exemptions_thresholds": "Solidarity levy threshold: PLN 1,000,000 of combined income taxed under art. 27 (scale), 30b (capital gains), 30c (flat business) and 30f (CFC). Real estate: 5-year rule (counted from the end of the calendar year of acquisition).",
-        "important_exceptions": "Exit tax applies to unrealised gains when moving assets or residence abroad (PwC). Gains on Polish real estate companies and Polish shares are Polish-source even for non-residents.",
+        "important_exceptions": "Exit tax on unrealised gains when leaving after 5 years' residence in 10 (19%, assets above PLN 4m; art. 30da-30db PIT Act). Gains on Polish real estate companies and Polish shares are Polish-source even for non-residents.",
         "tax_year": "2026",
         "sources": [
           {
@@ -47,24 +47,34 @@
             "accessed": "2026-10-15"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "high",
         "verification": "verified",
         "open_questions": [
-          "Exit tax threshold and rates for individuals were not checked in the law text."
+          "Exit tax read in the statute (art. 30da-30db PIT Act): 19% on unrealised gains on shares and securities when a person resident in Poland for at least 5 of the previous 10 years moves residence abroad, only above PLN 4,000,000 of assets moved. Not relevant to the arrival, only to a later departure."
         ],
-        "headline_rate": 0.23,
+        "headline_rate": 0.19,
         "rates": {
-          "listed_securities_domestic": 0.23,
-          "listed_securities_foreign": 0.23,
-          "private_business_sale": 0.23,
+          "listed_securities_domestic": 0.19,
+          "listed_securities_foreign": 0.19,
+          "private_business_sale": 0.19,
           "real_estate_local": 0.0,
           "real_estate_foreign": 0.0
         },
-        "rate_basis": "19% under art. 30b plus 4% solidarity levy on the part of total income above PLN 1m (art. 30h covers art. 30b income) = 23% marginal on a large gain. Real estate held 5+ years: exempt (art. 10(1)(8)); real estate gains are under art. 30e, not subject to the levy.",
+        "rate_basis": "19% under art. 30b plus 4% solidarity levy on the part of total income above PLN 1m (art. 30h covers art. 30b income) = 23% marginal on a large gain. Real estate held 5+ years: exempt (art. 10(1)(8)); real estate gains are under art. 30e, not subject to the levy. Rates are the 19% flat tax (art. 30b); the 4% solidarity levy above PLN 1M per person is in income_surtax.",
         "professional_trader": "Trading as a registered business activity is business income (scale or flat 19% + health contribution); private trading through a broker stays under art. 30b.",
         "holding_period_rules": "None for securities. Real estate: 5 years from end of acquisition year.",
-        "foreign_assets": "Worldwide taxation; foreign tax credited up to the Polish tax."
+        "foreign_assets": "Worldwide taxation; foreign tax credited up to the Polish tax.",
+        "income_surtax": {
+          "rate": 0.04,
+          "threshold_per_person": {
+            "amount": 1000000,
+            "currency": "PLN"
+          },
+          "counts_dividends": false,
+          "counts_gains": true,
+          "notes": "Solidarity levy (art. 30h PIT Act): 4% on the part of a person's income above PLN 1,000,000 a year, counting income under arts. 27, 30b (gains on securities), 30c and 30f but not art. 30a dividends; per person, no joint filing for art. 30b income. Not indexed."
+        }
       },
       "dividends": {
         "summary": "Dividends are taxed at a flat 19% (art. 30a), withheld for Polish companies and self-assessed for foreign dividends with a credit for foreign tax up to 19%. Dividends are NOT in the base of the 4% solidarity levy.",
@@ -197,7 +207,11 @@
           "foreign_dividends",
           "foreign_income_all"
         ],
-        "notes": "PLN 200,000 for the main taxpayer (pro rata in the arrival year) plus PLN 100,000 per electing family member (spouse, child) with no spending duty for them; plus the main taxpayer's PLN 100,000 minimum annual qualifying spending. Family of five electing: PLN 600,000 + PLN 100,000 spending. Polish-source income taxed normally."
+        "notes": "PLN 200,000 for the main taxpayer a year (art. 30l(1); pro rata in the arrival year, art. 30l(3)), paid by 30 April of the next year. A spouse or a child (art. 27f(1)) who elects pays PLN 100,000 a year and has no spending duty (art. 30p(1)); the spouse supplement carries that amount for the reference couple, who hold the portfolio jointly. The children have no foreign income and are assumed not to elect, so the couple pays PLN 300,000 a year. The main taxpayer must also spend at least PLN 100,000 a year from the year after the move on economic growth, science and education, cultural heritage or physical culture (art. 30m(1)); this spending is not a tax, is not in the amount above and cannot be deducted (art. 30k(3)). Polish-source income is taxed normally. After the main taxpayer's death or when the spouse stops being a family member, the spouse pays PLN 200,000 and takes on the spending duty (art. 30p(1) pt 4).",
+        "spouse_supplement": {
+          "amount": 100000,
+          "currency": "PLN"
+        }
       },
       "capital_gains": {
         "summary": "Under the lump-sum regime, foreign-source income including gains on foreign securities and foreign real estate is covered by the fixed annual PLN 200,000 and not taxed further. Polish-source gains stay under the normal 19% (+4%) rules.",
@@ -263,7 +277,7 @@
       "id": "family_foundation",
       "name": "Family foundation (fundacja rodzinna)",
       "type": "structure",
-      "description": "Since 22 May 2023 a Polish family foundation can hold the family's portfolio. Its income from permitted activity, which includes holding and trading shares and financial instruments, is exempt from CIT, so gains and dividends are untaxed while they stay inside. Benefits paid to beneficiaries are taxed at 15% CIT payable by the foundation; the founder's spouse, children and other close relatives are exempt from PIT on them. No inheritance event arises when the parents die (children already inherit tax-free in Poland if the transfer is reported). A Ministry of Finance project of August 2026 would raise the 15% to 19%, add a 36-month holding period and CFC rules from 2027 at the earliest; not law, a similar 2025 bill was vetoed.",
+      "description": "Since 22 May 2023 a Polish family foundation can hold the family's portfolio. Its income from permitted activity, which includes acquiring and selling securities and holding interests in companies and funds at home or abroad, is exempt from CIT (art. 6(1)(25) and (7) CIT Act; art. 5 Foundation Act), so gains and dividends are untaxed while they stay inside. Benefits paid to beneficiaries bear 15% CIT payable by the foundation (art. 24q(1) CIT Act); the founder's spouse, descendants and other zero-group relatives are exempt from PIT on them (art. 21(1)(157) PIT Act). No inheritance event arises when the parents die: the foundation is a separate legal person. A government bill (draft UD447, August 2026) would from 2027 raise the 15% to 19%, add a holding period for contributed assets, CFC rules and a tax on unrealised gains; it is not law. Sources disagree on the holding period (36 months in the August 2026 alerts, two years in a 1-2 October 2026 report) and on its stage (Pitax says the Council of Ministers adopted it; no Sejm print was found). A similar 2025 bill was vetoed.",
       "eligible_citizenships": [
         "EU",
         "OTHER"
@@ -275,7 +289,7 @@
         "entity": "Fundacja rodzinna (family foundation, Act of 26 January 2023)",
         "kind": "foundation",
         "payout_tax_rate": 0.15,
-        "payout_notes": "The foundation pays 15% CIT on the value of benefits (świadczenia) transferred to beneficiaries, on assets distributed at dissolution (base reduced by the tax value of what the founder contributed) and on hidden profits (art. 24q CIT Act). Beneficiaries who are the founder's spouse, descendants, ascendants, stepchildren, siblings or step-parents are exempt from PIT on benefits; tax groups I-II pay 10% PIT and others 15% (Grant Thornton). For this family the payout tax is therefore 15%, borne by the foundation. Proposed (not law): 19% from 2027 at the earliest.",
+        "payout_notes": "The foundation pays 15% CIT on the value of benefits (swiadczenia, art. 2(2) Foundation Act) given to beneficiaries or the founder, on property distributed at dissolution (base reduced by the tax value of what the founder contributed, art. 24q(3)-(4)) and on hidden profits (art. 24q(1)-(1a) CIT Act); due by the 20th of the next month (art. 24q(6)). The exemption of art. 6(1)(25) does not cover this tax (art. 6(6)). Beneficiaries who are the founder's spouse, descendants, ascendants, stepchildren, siblings or step-parents (the relatives of art. 4a(1) of the inheritance tax act) are exempt from PIT on benefits and on dissolution proceeds (art. 21(1)(157) PIT Act); other beneficiaries pay PIT (Grant Thornton: groups I-II 10%, others 15%). For this family the payout tax is therefore 15%, borne by the foundation. Proposed, not law: 19% from 2027 at the earliest.",
         "annual_running_cost": {
           "amount": 40000,
           "currency": "PLN"
@@ -284,7 +298,7 @@
           "amount": 20000,
           "currency": "PLN"
         },
-        "substance_and_anti_avoidance": "The CIT exemption covers only the permitted activities of the foundation act (holding shares and financial instruments, trading them, selling assets not bought solely for resale, renting to unrelated parties, lending to beneficiaries/companies it holds); any other activity is taxed at 25%. Renting property to a related party for its business is taxed at 19% (creditable against the 15%). Hidden profits (e.g. non-arm's-length deals with beneficiaries) taxed at 15%. Minimum tax on buildings applies. General anti-abuse clause. Not currently subject to CFC rules and no minimum holding period before selling contributed assets (Grant Thornton, August 2026). Foreign withholding tax is not creditable because the foundation pays no CIT on the income. Running and setup costs are estimates (board, accounting and financial statements, notary and registry fees); no official figure was found.",
+        "substance_and_anti_avoidance": "The CIT exemption covers only the permitted activities of the foundation act (holding shares and financial instruments, trading them, selling assets not bought solely for resale, renting to unrelated parties, lending to beneficiaries/companies it holds); any other activity is taxed at 25%. Renting property to a related party for its business is taxed at 19% (creditable against the 15%). Hidden profits (e.g. non-arm's-length deals with beneficiaries) taxed at 15%. Minimum tax on buildings applies. General anti-abuse clause. Not currently subject to CFC rules and no minimum holding period before selling contributed assets (Grant Thornton, August 2026). Art. 6(8) CIT Act removes the exemption for rent of a business or assets used by the founder or a beneficiary (or a related party with 5% or more), and art. 6(9) removes it from a foundation in organisation that is not registered within six months. Foreign withholding tax is not creditable because the foundation pays no CIT on the income. Running and setup costs are estimates (board, full accounts, notary and registry fees); no official tariff exists. Freenance (2026, commercial) gives PLN 20,000-45,000 a year for accounting and administration of an investment foundation, so PLN 40,000 sits at the upper end.",
         "exit_and_liquidation": "The foundation is a separate legal person: beneficiaries who emigrate do not take its assets with them, and the individual exit tax (on personal assets above PLN 4m) does not reach foundation assets (not verified). On dissolution, distributed property bears 15% CIT, with the base reduced by the founder's contributed value.",
         "sources": [
           {
@@ -314,13 +328,41 @@
             "publisher": "MDDP",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ustawa o podatku dochodowym od osób prawnych - tekst jednolity Dz.U. 2026 poz. 554 (art. 6 ust. 1 pkt 25, art. 24q, art. 24r)",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/554/text.pdf",
+            "publisher": "Sejm RP (Dziennik Ustaw)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Ustawa z dnia 26 stycznia 2023 r. o fundacji rodzinnej, Dz.U. 2023 poz. 326 (art. 2, art. 5)",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/326/text.pdf",
+            "publisher": "Sejm RP (Dziennik Ustaw)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Fundacja rodzinna 2026 - koszt zalozenia i oplaty roczne",
+            "url": "https://freenance.io/dziedziczenie/fundacja-rodzinna-koszt-zalozenia-2026-notariusz-oplaty-roczne-minimalny-majatek/",
+            "publisher": "Freenance",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Fundacja rodzinna na nowych zasadach opodatkowania od 2027 roku (1-2 October 2026)",
+            "url": "https://www.pitax.pl/wiedza/aktualnosci/fundacja-rodzinna-na-nowych-zasadach-opodatkowania-od-2027-roku/",
+            "publisher": "Pitax",
+            "kind": "professional",
+            "accessed": "2026-10-16"
           }
         ]
       },
       "capital_gains": {
-        "summary": "A family foundation is exempt from CIT on income from permitted activity, which includes trading shares and financial instruments and holding interests in companies (PwC). Gains on listed securities, on selling a private business it holds and on selling real estate not acquired for resale are therefore untaxed while kept inside. Income from non-permitted activity: 25%.",
+        "summary": "A family foundation is exempt from CIT on income from its permitted activity (art. 6(1)(25) CIT Act), which covers acquiring and selling securities and derivatives, holding interests in companies and funds in Poland or abroad, and selling assets not bought solely for resale (art. 5(1) Foundation Act). Gains on listed securities and on selling a private business it holds are therefore untaxed while they stay inside. Income from non-permitted business activity: 25% (art. 24r).",
         "exemptions_thresholds": "No threshold.",
-        "important_exceptions": "MF project (August 2026, planned for adoption in Q3 2026, effective 2027 at the earliest): preferential treatment only for assets held at least 36 months, CFC rules, taxation of income via transparent entities, rate on benefits 15% -> 19%. Not law; the 2025 bill with similar changes was vetoed by the President.",
+        "important_exceptions": "Government bill UD447 (August 2026, not law): from 2027 a holding period for contributed assets (36 months in the August alerts, two years in the October report), CFC rules, a tax on unrealised gains and exclusion of income from transparent entities, with the rate on benefits 15% to 19%. A 2025 bill with similar changes was vetoed.",
         "headline_rate": 0.0,
         "rates": {
           "listed_securities_domestic": 0.0,
@@ -329,7 +371,7 @@
           "real_estate_local": 0.0,
           "real_estate_foreign": 0.0
         },
-        "rate_basis": "0% CIT on permitted-activity income (art. 6 CIT Act exemption for family foundations); tax is paid only on distribution (structure payout rate).",
+        "rate_basis": "0% CIT on permitted-activity income (art. 6(1)(25) CIT Act); tax is paid only on benefits and dissolution (art. 24q, structure payout rate).",
         "professional_trader": "Trading in financial instruments is a permitted activity; buying assets solely for resale (other than financial instruments) is not.",
         "holding_period_rules": "None in force; 36 months proposed from 2027.",
         "foreign_assets": "Foreign securities treated the same; foreign source taxes are a final cost.",
@@ -362,14 +404,20 @@
             "publisher": "MDDP",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ustawa o podatku dochodowym od osób prawnych - tekst jednolity Dz.U. 2026 poz. 554",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/554/text.pdf",
+            "publisher": "Sejm RP (Dziennik Ustaw)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
           }
         ],
-        "verified_on": "2026-10-15",
-        "confidence": "medium",
-        "verification": "partially_verified",
+        "verified_on": "2026-10-16",
+        "confidence": "high",
+        "verification": "verified",
         "open_questions": [
-          "Statutory text (art. 6 ust. 1 pkt 25 and art. 24q CIT Act, art. 5 foundation act) not read; based on PwC and Grant Thornton.",
-          "Watch the 2026 MF project (19%, 36 months, CFC)."
+          "Treatment of the founder's contribution of listed shares on the founder's side (no PIT on contribution) was not read in the PIT Act text. Watch the 2027 bill (UD447)."
         ]
       },
       "dividends": {
@@ -378,7 +426,7 @@
         "domestic_rate": 0.0,
         "foreign_gross_rate": 0.0,
         "foreign_tax_credit": "none",
-        "rate_basis": "0% at foundation level; no Polish tax for foreign withholding to be credited against.",
+        "rate_basis": "0% at foundation level (art. 6(1)(25) CIT Act); no Polish tax for foreign withholding to be credited against.",
         "holding_company_notes": "This is the foundation structure itself; the 15% tax on distributions is in the structure terms.",
         "tax_year": "2026",
         "sources": [
@@ -395,13 +443,20 @@
             "publisher": "Grant Thornton Poland",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ustawa o podatku dochodowym od osób prawnych - tekst jednolity Dz.U. 2026 poz. 554",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/554/text.pdf",
+            "publisher": "Sejm RP (Dziennik Ustaw)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "medium",
         "verification": "partially_verified",
         "open_questions": [
-          "Whether foreign source states grant treaty rates to a tax-exempt Polish family foundation (treaty residence) not researched."
+          "Whether source states grant treaty rates to a CIT-exempt Polish family foundation (treaty residence) was not researched; if not, statutory withholding (e.g. 30% in the US) would apply, whereas the engine charges the 15% treaty rate."
         ]
       },
       "sources": [
@@ -490,7 +545,7 @@
   "us_citizen_notes": "A Poland-US income tax treaty is in force (PwC). A US citizen can use the lump-sum regime, but US tax on foreign gains/dividends is unaffected and the lump sum is unlikely to be creditable as an income tax in the US (unverified).",
   "open_questions": [
     "The brief referred to the lump sum as art. 30h; in the consolidated PIT Act (Dz.U. 2026 poz. 592) art. 30h is the solidarity levy and the lump sum is art. 30j-30p.",
-    "Polish family foundation (fundacja rodzinna) taxation of distributions not researched; it may be a realistic succession structure."
+    "A 2026 government bill (UD447) would raise the family foundation's payout tax from 15% to 19% and add a holding period and CFC rules from 2027; the law in force is scored."
   ],
   "cost_of_living": {
     "city": "Warsaw",

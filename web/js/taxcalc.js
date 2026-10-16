@@ -62,6 +62,17 @@ export function annualTaxes(rules, p, std = null) {
     else foreign = divF * d.foreign_gross;
     out.dividends = foreign + divD * d.domestic;
   }
+  const st = rules.surtax;
+  if (st && !rules.structure && !rules.lump_sum && out.capital_gains != null && out.dividends != null) {
+    // Each spouse of the 50/50 couple pays the surtax on their half above the threshold.
+    const divPart = st.div ? p.dividends : 0, gainPart = st.gains ? p.realized_gains : 0;
+    const base = divPart + gainPart;
+    const extra = 2 * st.rate * Math.max(0, base / 2 - st.threshold);
+    if (extra > 0) {
+      out.dividends += (extra * divPart) / base;
+      out.capital_gains += (extra * gainPart) / base;
+    }
+  }
 
   if (rules.wealth == null) out.wealth_tax = null;
   else {

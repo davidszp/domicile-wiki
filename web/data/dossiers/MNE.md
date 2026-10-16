@@ -1,6 +1,6 @@
 # Montenegro — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -71,9 +71,16 @@ Property tax (not a wealth tax): Annual real estate tax at municipal rates of 0.
 
 None. No special tax regime for newly arriving wealthy individuals was found; only the standard regime is recorded.
 
+Structure regime `holding_doo` (family d.o.o.), added 2026-10-16 for the 60-year projection: gains and foreign dividends at the 15% top rate (progressive bands below EUR 1.5m),
+domestic dividends excluded, payout to the family 17.25% (15% + Podgorica surtax assumed), wealth tax and inheritance inherited from the standard regime.
+Foundation and trust were not added: no family-wealth foundation or trust vehicle in common use was found (not researched against a statute).
+
 ## Company taxation (kept separate from personal tax)
 
-CIT rate in JSON: 0.15. Progressive CIT: 9% up to EUR 100,000 profit, 12% to EUR 1.5m, 15% above. No municipal CIT. 15% WHT on dividends (30% to tax havens).
+CIT rate in JSON: 0.15 (top rate). Progressive (Art. 28 of the profit tax law, consolidated text to Sl. list CG 28/23): 9% up to EUR 100,000, EUR 9,000 + 12%
+to EUR 1.5m, EUR 177,000 + 15% above. No municipal CIT. Dividends are excluded from the base only when the payer is a taxpayer under the same law (Art. 9; PwC), so
+foreign dividends are taxable. Gains on shares are taxable profit (Arts 21-22); the older 2-year exemption and reinvestment relief for securities are not in the current text.
+Foreign profit tax is credited up to the Montenegrin tax on that profit (Art. 33). 15% WHT on dividends paid out (30% to tax havens).
 
 ## Cost of living notes
 
@@ -96,6 +103,7 @@ Rent is for Podgorica, the capital. The international school fee is for Tivat (P
 - Montenegrin real estate held by a foreign estate and probate/court fees were not quantified.
 - Residence permit routes for 2026 not verified.
 - Surtax rates in Tivat/Budva not checked.
+- Structure `holding_doo`: the profit tax text read is the consolidated version to Sl. list CG 28/23 (via a law-catalogue PDF); later amendments not checked. Whether the municipal surtax applies to a passive shareholder (Art. 8(1) local finance law refers to persons carrying on an activity) and whether treaty withholding is creditable under Art. 33 are open.
 
 ## Sources
 
@@ -116,6 +124,9 @@ Rent is for Podgorica, the capital. The international school fee is for Tivat (P
 - Zakon o finansiranju lokalne samouprave (Sl. list CG 3/2019), Art. 8: https://www.paragraf.me/propisi-crnegore/zakon-o-finansiranju-lokalne-samouprave.html
 - Realitica: long-term house rentals, Montenegro (search 'Podgorica'): https://www.realitica.com/?cur_page=0&for=DuziNajam&pZpa=Crna+Gora&pState=Crna+Gora&type%5B%5D=Home&qry=Podgorica&lng=en
 - KSI Montenegro tuition fees: https://ksi-montenegro.com/tuition-fees/
+- Zakon o porezu na dobit pravnih lica, prociscen tekst (Sl. list CG 65/01 ... 152/22, 28/23), Arts 9, 21-24, 28, 33: https://www.investinkotor.me/files/documents/1706539733-Zakon%20o%20porezu%20na%20dobit%20pravnih%20lica.pdf
+- Montenegro - Corporate - Income determination: https://taxsummaries.pwc.com/montenegro/corporate/income-determination
+- Zakon o finansiranju lokalne samouprave (Sl. list CG 3/2019), Art. 8: https://zakoni.skupstina.me/zakoni/web/dokumenta/zakoni-i-drugi-akti/608/1899-11557-00-39-18-1-14.pdf
 
 ## Change log
 
@@ -123,3 +134,4 @@ Rent is for Podgorica, the capital. The international school fee is for Tivat (P
 - 2026-10-15: phase 2 data-quality pass: municipal surtax resolved from the Law on Financing Local Self-Government (Sl. list CG 3/2019, Art. 8): it applies to the tax on capital income (dividends now 17.25% in Podgorica) but not to capital gains (stay 15%). Added Tivat cost of living (prime 4-5 bedroom house rent EUR 4,500/month median from Realitica; KSI Montenegro IB Diploma EUR 22,320).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 4,500 (Tivat, Porto Montenegro) to EUR 2,200 (Podgorica, 177 listings).
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: added structure regime `holding_doo` (family d.o.o.) with sourced capital gains, dividends and payout terms; corporate summary and the standard regime's `holding_company_notes` now state that foreign dividends are taxable (Art. 9) and gains have no relief, replacing 'not researched in depth'. Recipe `data/recipes/MNE.json` added.

@@ -1,0 +1,114 @@
+{
+  "id": "SVN",
+  "name": "Slovenia",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Dividends bear a 25% final tax with a credit for foreign withholding (ZDoh-2 Art. 132). Gains bear 25%, 20% after 5 years, 15% after 10 years and 0% after 15 years of holding per lot; the tax file scores the long-held 0%. Children and spouse are exempt from inheritance tax (ZDDD Art. 9); there is no wealth tax."
+    },
+    {
+      "id": "holding_doo",
+      "name": "Family holding d.o.o.",
+      "regime": "holding_doo",
+      "estate": "portfolio",
+      "note": "A Slovenian d.o.o. owned by the parents holds the portfolio. It pays 22% corporate income tax (2024-2028) on every realised gain (the 50% gains exemption needs an 8% stake and an employee) and about 1.1% on dividends (excluded from the base, with 5% added back). Payouts bear 25% again. The parents' estate holds the d.o.o. shares; children are exempt from inheritance tax. Rarely better than personal holding: gains inside the company are taxed at 22% where a long-held personal position pays 0%."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 2000,
+      "working": "Foreign dividends 20,000: 25% final tax (Art. 132 ZDoh-2; FURS guide of 4 Aug 2026, section 3.3) = 5,000. Foreign tax paid is deducted from the Slovenian tax in proportion, up to that tax (FURS guide, question 12): the 15% withholding of 3,000 is below 5,000, so the tax is 5,000 - 3,000 = 2,000. Gains 15,000 are taken from lots held over 15 years: not taxed ('po 15 letih imetnistva', FURS guide, list 'Oprostitev placila dobicka iz financnega kapitala'; 15 years since 1 Jan 2022, 20 before). Total 2,000. The EUR 1,000 allowance applies only to bank interest, not dividends."
+    },
+    {
+      "path": "holding_doo",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 3520,
+      "working": "Corporate income tax 22% for 2024-2028 (Art. 64 ZORZFS; FURS 'Davek od dohodkov pravnih oseb'). Dividends 20,000 are excluded from the base (Art. 24 ZDDPO-2) but 5% of the dividends received, 1,000, counts as a non-deductible expense (FURS guide 'Splosno o DDPO', section 5.1). The foreign withholding of 3,000 is booked as tax outside the profit and the exclusion is taken on the gross dividend (FURS 0920-13147/2022-3), so no credit is claimed. Gains 15,000 on listed minority holdings get no exemption (50% only for a stake of at least 8% held 6 months with an employee): fully taxable. Taxable profit 1,000 + 15,000 = 16,000 x 22% = 3,520. The company's own running costs are not in the tax file. Payout tax (25% on distributions) excluded."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The inheritance and gift tax (ZDDD) is charged on the recipient; children, adopted children and their descendants, the spouse and the partner of the deceased are in the first inheritance order and are exempt (Art. 9 ZDDD; FURS 'Dedoval sem'). Each child receives 3,333,333.33, tax 0. Inheritance is not a disposal for income tax, so no capital gains tax arises at death."
+    },
+    {
+      "path": "holding_doo",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The d.o.o. shares (worth about 10,000,000) pass to the three children as first-order heirs, exempt from inheritance tax (Art. 9 ZDDD). Death is not a disposal for income tax, and the company's own tax position does not change. Tax 0."
+    }
+  ],
+  "assumptions": [
+    "Checks use the top rates for a family with about EUR 600,000 of dividends a year: dividends at the flat 25% (no progressive scale applies to capital income), the company at the flat 22%.",
+    "Personal gains are taken from lots held over 15 years, as the tax file does. A rebalanced portfolio would realise part of its gains at 25%, 20% or 15%; the engine cannot vary the rate by holding period, so the projection scores the long-held 0%.",
+    "The holding period of positions bought before the move is assumed to run from their original purchase date (not from the date of arrival).",
+    "Small allowances are left out (EUR 1,000 on bank interest does not touch dividends). Foreign dividends carry 15% withholding, within the treaty rate."
+  ],
+  "open_questions": [
+    "Needs an engine change: personal gains tax falls with holding period (25% to 5 years, 20% to 10, 15% to 15, 0% after 15 years, ZDoh-2 as in the FURS guide); the tax file holds one rate per asset class, so the 60-year projection cannot show a family that rebalances and pays 25% on part of its realised gains.",
+    "Private foundation and trust were considered and not added: a thesis abstract (University of Ljubljana, 2018) says Slovenian law allows private foundations only for public-benefit purposes; not checked against the statute.",
+    "ZDDPO-2 article numbers (24, 25) and the 5% add-back come from the FURS guides and PwC; the statute text at PisRS could not be read. Whether foreign withholding is creditable on an excluded dividend (Art. 75) is assumed not.",
+    "The 22% corporate rate is temporary (2024-2028; 19% after): the tax file uses 22% for all years of the projection."
+  ],
+  "sources": [
+    {
+      "title": "Obresti, dividende, dobicek iz kapitala in dohodek z INR (detailed guide, version of 4 Aug 2026)",
+      "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Dohodek_iz_kapitala/Opis/Obresti_dividende_in_dobicek_iz_kapitala.doc",
+      "publisher": "FURS",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Splosno o DDPO (FURS guide to corporate income tax)",
+      "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Splosno_o_DDPO.doc",
+      "publisher": "FURS",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Davek od dohodkov pravnih oseb (DDPO) (22% for 2024-2028, Art. 64 ZORZFS)",
+      "url": "https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/davek_od_dohodkov_pravnih_oseb_ddpo",
+      "publisher": "FURS",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Pojasnilo FURS 0920-13147/2022-3: Izvzem dividend po 24. clenu ZDDPO-2",
+      "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Poslovanje_z_nami/Novodila_in_pojasnila/2022/0920-13147_2022-3_Izvzem_dividend_po_24_clenu_ZDDPO-2_ki_so_bile_obdavcene_na_viru.docx",
+      "publisher": "FURS",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Slovenia - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/slovenia/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Zivljenjski dogodki: Dedoval sem (I have inherited)",
+      "url": "https://www.fu.gov.si/zivljenjski_dogodki_prebivalci/dedoval_sem/",
+      "publisher": "FURS",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

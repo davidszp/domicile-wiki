@@ -1,0 +1,128 @@
+{
+  "id": "MNE",
+  "name": "Montenegro",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Dividends bear 15% personal income tax plus the municipal surtax (17.25% in Podgorica) with a credit for foreign tax up to the Montenegrin tax; capital gains bear a flat 15% with no holding-period exemption. No inheritance or gift tax on movables, no wealth tax."
+    },
+    {
+      "id": "holding_doo",
+      "name": "Family holding d.o.o.",
+      "regime": "holding_doo",
+      "estate": "portfolio",
+      "note": "A Montenegrin d.o.o. owned by the parents holds the portfolio. Foreign dividends and all gains are taxable profit at the progressive 9%/12%/15% rates (the dividend exclusion in Art. 9 covers only Montenegrin payers). Payouts bear 15% plus surtax again. The parents' estate holds the d.o.o. shares; no inheritance tax on movables. Never cheaper than personal holding at the top band: the same 15% on gains, plus a second layer on payouts."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 100000,
+      "wealth": 0,
+      "foreign_share": 0.0,
+      "expected": 18450,
+      "working": "Dividends 20,000 of Montenegrin companies (foreign_share 0): personal income tax on capital income 15% (PwC, 'Income determination'; rate raised from 9% by Sl. list CG 152/22) = 3,000, withheld by the payer. Municipal surtax: the municipality may levy up to 15% of the tax in Podgorica (Art. 8(2) Law on Financing Local Self-Government), payable on the tax on capital income (Art. 8(3)); assumed at that cap: 15% x 3,000 = 450. Dividend tax 3,450. Gains 100,000: capital gains tax 15% (PwC; Art. 50a of the personal income tax law, 9% in the 2019 text, raised to 15% by CG 152/22) = 15,000; no holding-period exemption (the exemptions of Art. 37g are the main residence and gifts to first-order relatives, among others; none depends on a holding period) and no surtax, because Art. 8(3) names the tax on capital income, not the separate tax on capital gains. Total 3,450 + 15,000 = 18,450."
+    },
+    {
+      "path": "holding_doo",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 0,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "Dividends of foreign companies are not excluded (Art. 9 excludes only dividends whose payer is a taxpayer under the Montenegrin profit tax law): 20,000 of taxable profit, in the first band, 9% (Art. 28 para. 2 item 1) = 1,800. Credit for tax paid abroad (Art. 33): the 15% withholding of 3,000 is credited up to the Montenegrin tax on that profit, 1,800, so tax 1,800 - 1,800 = 0; the excess 1,200 is lost. Total 0. Company running costs are not in the tax file. Payout tax excluded."
+    },
+    {
+      "path": "holding_doo",
+      "kind": "annual",
+      "dividends": 0,
+      "realised_gains": 1600000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 192000,
+      "working": "Gains of 1,600,000 on shares are taxable profit in the year realised (Arts 21-22; no exemption in the consolidated text). Progressive rate (Art. 28 para. 2): EUR 9,000 on the first 100,000 + 12% of the next 1,400,000 (to 1,500,000) = 168,000, giving 177,000 at 1,500,000, + 15% of the 100,000 above = 15,000. Tax 192,000.",
+      "model_difference": 48000,
+      "model_note": "The tax file records one rate per metric (CapitalGains.rates is a single number per asset class), so the engine applies the 15% top rate to the whole gain: 15% x 1,600,000 = 240,000 against 192,000 by the progressive bands."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Montenegro levies no inheritance or gift tax on money, securities or other movables; the Law on Real Estate Transfer Tax taxes only transfers of real estate, and the first-order heir and the spouse are exempt even then (Art. 14(1)(1), as recorded in the tax file). The estate is a portfolio of listed shares. Each child receives 3,333,333.33, tax 0. Gifts of capital to first-order relatives are also outside capital gains tax (Art. 37g)."
+    },
+    {
+      "path": "holding_doo",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The d.o.o. shares are movable property passing to the three children, as first-order heirs: no inheritance tax on movables, and the first-order exemption would apply to any real estate (Art. 14(1)(1) Law on Real Estate Transfer Tax, as recorded in the tax file). Tax 0."
+    }
+  ],
+  "assumptions": [
+    "The municipal surtax is taken at the 15% cap for Podgorica, as the tax file does; the municipality sets the actual rate (Art. 9) and the surtax may not reach a shareholder who carries on no activity in the municipality (Art. 8(1)).",
+    "Personal gains are taxed at a flat 15% with no holding-period exemption, per the consolidated personal income tax law text read (up to CG 67/19) and PwC for the 15% rate.",
+    "The company's 15% foreign-tax credit treats the 15% source withholding as foreign tax on profit (Art. 33).",
+    "Checks use top rates for the personal path; for the company the progressive bands are worked as the law gives them."
+  ],
+  "open_questions": [
+    "Needs an engine change: the corporate profit tax is progressive (9% to EUR 100,000, EUR 9,000 + 12% to EUR 1.5m, EUR 177,000 + 15% above, Art. 28 of the profit tax law); the tax file holds one rate per metric, so the engine takes 15% for all profit.",
+    "Whether the surtax is due after a foreign-tax credit has reduced the personal income tax on a foreign dividend to zero, and whether it applies to a passive shareholder at all (Art. 8(1)), is not settled: the personal check therefore uses domestic dividends only (foreign_share 0).",
+    "Whether treaty-limited withholding on a portfolio dividend counts as tax on profit paid abroad under Art. 33 of the profit tax law is assumed, not confirmed.",
+    "The profit tax text read is the consolidated version up to Sl. list CG 28/23 (law catalogue PDF); amendments of 2024-2026 were not checked in the Gazette. The personal income tax text read ends at CG 67/19; the 15% rates rest on PwC (reviewed 7 Aug 2026).",
+    "Foundation and trust were considered and not added: no family-wealth foundation or trust in common use was found (not researched against a statute).",
+    "The real estate transfer tax exemption (Art. 14(1)(1)) and the absence of inheritance tax on movables rest on the tax file's earlier research; the law text was not opened in this pass."
+  ],
+  "sources": [
+    {
+      "title": "Zakon o porezu na dobit pravnih lica, prociscen tekst (Sl. list CG 65/01 ... 28/23), Arts 9, 21-22, 28, 33",
+      "url": "https://www.investinkotor.me/files/documents/1706539733-Zakon%20o%20porezu%20na%20dobit%20pravnih%20lica.pdf",
+      "publisher": "Pravni ekspert doo (Katalog propisa 2023), via investinkotor.me",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Zakon o porezu na dohodak fizickih lica (consolidated to Sl. list CG 67/19), Arts 37g, 44, 50a",
+      "url": "https://www.paragraf.me/propisi-crnegore/zakon-o-porezu-na-dohodak-fizickih-lica.html",
+      "publisher": "Paragraf (law database)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Zakon o finansiranju lokalne samouprave (Sl. list CG 3/2019), Arts 8-9",
+      "url": "https://zakoni.skupstina.me/zakoni/web/dokumenta/zakoni-i-drugi-akti/608/1899-11557-00-39-18-1-14.pdf",
+      "publisher": "Skupstina Crne Gore",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Montenegro - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/montenegro/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Montenegro - Corporate - Taxes on corporate income",
+      "url": "https://taxsummaries.pwc.com/montenegro/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Montenegro - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/montenegro/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

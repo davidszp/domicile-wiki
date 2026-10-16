@@ -1,6 +1,6 @@
 # Latvia — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -33,7 +33,7 @@ Verified 2026-10-15 in the PIT Law (likumi.lv): Section 15(5) 25.5% on capital i
 - JSON: headline 28.5%, domestic 3%, foreign gross 3%, relief method 'exemption'. Basis: 0% PIT on dividends from taxed profits/with foreign WHT, plus the 3% additional rate for a family whose income exceeds EUR 200k = 3%. Headline 28.5% = 25.5% + 3% for dividends not meeting the condition (e.g. tax havens).
 - Outbound withholding: Latvian companies pay 20% CIT on gross distributions (20/80); no WHT on dividends to non-resident companies except tax-haven residents (20%).
 - Treaties: 64 effective double tax treaties (PwC).
-- Holding companies: Distribution-based CIT: retained profits including portfolio gains untaxed until distributed.
+- Holding companies: Modelled as the structure regime 'sia_holding' (see Holding structures): a Latvian SIA pays no tax on dividends or gains it keeps; 20% of the grossed-up distribution (25% of the net amount) is due when it distributes, and the shareholder's dividend is PIT-exempt but counts toward the 3% additional rate above EUR 200,000 a year.
 
 Verified 2026-10-15: Section 9(1)(2.1)(b) exempts dividends where CIT was paid abroad or tax was withheld abroad, so foreign portfolio dividends are exempt (not 25.5% with credit); only the 3% additional rate applies above EUR 200,000. Confidence raised to high.
 
@@ -60,6 +60,16 @@ None. No special tax regime for newly arriving wealthy individuals was found; on
 ## Company taxation (kept separate from personal tax)
 - Headline CIT 20%. 20% CIT on distributed profits, applied to the gross-up (net/0.8), i.e. 25% of net distribution; retained profits untaxed. From 2026 an optional regime for companies owned only by individuals: 15% CIT on net/0.85 plus 6% PIT withheld.
 
+## Holding structures
+
+**Modelled: Latvian holding company (`sia_holding`, type `structure`).** A sabiedrība ar ierobežotu atbildību (SIA) owned by the parents holds the portfolio.
+- **Company tax:** only on distributed or deemed-distributed profit, 20% of the grossed-up amount (net / 0.8), i.e. 25% of the net amount (PwC, reviewed 30 June 2026). Retained dividends and gains are untaxed. JSON: gains rates 0, dividend rates 0, credit 'none'.
+- **Personal side:** a dividend from profit on which Latvian company tax was paid is PIT-exempt (PIT Law Section 9(1)(2.1)(a)), but it counts toward the additional 3% on a person's total annual income above EUR 200,000 (Section 15.1(1),(2)(2)). JSON payout_tax_rate 0.224 = 0.20 company tax + 0.03 x 0.80 on the net dividend, at the top marginal rate; a couple sharing a EUR 400,000 net payout sits at the threshold per person, and the threshold is not indexed.
+- **Wealth tax and inheritance:** not given in the structure regime, so they inherit the standard values (none; inheritance exempt under PIT Law Section 9(1)(9)). Shares in the SIA pass without tax; Latvia has no deemed disposal at death.
+- **Alternative not modelled:** since 1 January 2026 an SIA owned only by individuals may opt for 15% company tax on net/0.85 plus 6% PIT withheld (PIT Law Section 15(5.1); Corporate Income Tax Law Article 4.2). Per EUR 100 received it costs about 28.3 against 28.0 for the standard route if the 3% rate also applies; the Corporate Income Tax Law text and the SRS explanation were not opened.
+- **Investment account:** not modelled (engine cannot express it): PIT Law Sections 11.9(12.2) and 11.13 tax only withdrawals above deposits, deposits in cash only (Section 11.13(4)).
+- **Funding:** contributing an existing portfolio in kind is a disposal for the individual; cash or newly bought positions avoid it. Running cost of the SIA not sourced. A private foundation or trust was not researched.
+
 ## Cost of living notes
 
 City: Riga.
@@ -73,6 +83,9 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - Exact conditions for an account to qualify as an investment account (e.g. foreign brokers) not summarised here.
 - Whether the SRS demands proof of foreign CIT/WHT for every portfolio dividend in practice.
 - Notary fees for the inheritance case not verified.
+
+- Holding structures: SIA modelled; the optional 15%/6% regime and a private foundation or trust are not modelled (see Holding structures).
+- Needs an engine change: the investment account (see Holding structures); the tax file models gains as taxed when realised.
 
 ## Sources
 - [Latvia - Individual - Income determination](https://taxsummaries.pwc.com/latvia/individual/income-determination)
@@ -94,3 +107,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: initial research.
 - 2026-10-15: confirmed from the PIT Law the foreign-dividend exemption (Section 9(1)(2.1)) and the scope of the 3% additional rate (Section 15.1: includes capital gains and exempt dividends); capital_gains and dividends now high/verified; added Riga cost of living (SS.LV rent sample, ISR 2026/27 fee).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added the holding structure regime `sia_holding` (Latvian SIA: no tax on retained dividends and gains, 20/80 on distribution, payout rate 0.224 incl. the 3% additional rate on the exempt dividend); re-read PIT Law Sections 9(1)(2.1),(2.2),(9), 11.9, 11.13, 15(5), 15(5.1), 15.1 on likumi.lv (no change to the standard regime); wrote the projection recipe `data/recipes/LVA.json`.

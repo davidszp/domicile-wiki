@@ -1,6 +1,6 @@
 # Turkey — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -54,7 +54,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `taxed`, exe
 - **Domicile / residence rules:** Citizenship and situs based; residence alone does not bring foreign assets into scope.
 - **Exemptions and thresholds:** 2026: TRY 2,907,136 per child/spouse share (TRY 5,817,845 for a spouse with no descendants); TRY 66,935 for gifts. Household goods and personal effects exempt. Foreign inheritance tax paid on the same assets is deductible.
 - **Eligibility conditions:** Scope depends on citizenship and situs, not residence: Turkish-situs assets are always in scope; foreign-situs assets only when the deceased/donor or heir is a Turkish citizen. Art. 1(3): a foreign heir not domiciled in Turkey who acquires a Turkish citizen's foreign assets is not taxed.
-- **Important exceptions / announced changes:** Band limits and exemptions are revalued every year by the VUK revaluation rate (25.49% for 2026). Tax can be paid in six instalments over three years (May and November). Under Law 7582, inheritances from a person holding the Mük. 20/D exemption are taxed at a flat 1% during the 20-year period (see special regime).
+- **Important exceptions / announced changes:** Band limits and exemptions are revalued every year by the VUK revaluation rate (25.49% for 2026): the statute itself requires it (Law 7338 art. 4 last paragraph for the exemptions, art. 16 for the bands), so `thresholds_indexed` is true in the structured data. Tax can be paid in six instalments over three years (May and November). Under Law 7582, inheritances from a person holding the Mük. 20/D exemption are taxed at a flat 1% during the 20-year period (see special regime).
 - **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
 - **Sources:** [Veraset ve İntikal Vergisi Kanunu (Law 7338), consolidated text with 2026 amounts](https://www.mevzuat.gov.tr/mevzuatmetin/1.3.7338.pdf); [Veraset ve İntikal Vergisi Kanunu Genel Tebliği (Seri No: 57), Resmî Gazete 33124 (5. Mük.), 31 Dec 2025](https://www.resmigazete.gov.tr/eskiler/2025/12/20251231M5-22.pdf); [2026 yılında uygulanacak veraset ve intikal vergisi maktu istisna tutarları ile matrah dilim tutarları yayımlandı](https://kpmgvergi.com/yayinlar/mali-bultenler/vergi/2026-yilinda-uygulanacak-veraset-ve-intikal-vergisi-maktu-istisna-tutarlari-ile-matrah-dilim-tutarlari-yayimlandi/3355)
 
@@ -150,6 +150,7 @@ Rent is in TRY at 2026-10 prices; Turkish inflation erodes TRY figures quickly. 
 US citizens: US–Turkey income tax treaty in force (saving clause). Under the Law 7582 exemption Turkish tax on foreign income is zero, so US tax applies in full.
 
 ## Sources
+- Law 7338 consolidated text (with Law 7582 art. 2), Mevzuat Bilgi Sistemi: https://www.mevzuat.gov.tr/mevzuatmetin/1.3.7338.pdf
 
 - [Gelir Vergisi Kanunu (Law 193), consolidated text incl. Mük. 20/D, Mük. 80, Mük. 81, Geçici 67](https://www.mevzuat.gov.tr/mevzuatmetin/1.4.193.pdf) — Mevzuat Bilgi Sistemi (Presidency of Türkiye) (legislation)
 - [Turkey – Individual – Income determination](https://taxsummaries.pwc.com/turkey/individual/income-determination) — PwC Worldwide Tax Summaries (professional)
@@ -175,3 +176,4 @@ US citizens: US–Turkey income tax treaty in force (saving clause). Under the L
 - 2026-10-15: inheritance scope set to local assets only for standard, law_7582_new_resident in the structured data (Law 7338 Art. 1: foreign assets of non-Turkish citizens passing to non-Turkish heirs are outside the tax (all citizenship profiles in this tool are non-Turkish)); previously the scoring applied the rates to the worldwide estate, which overstated the tax.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (TRY 165,000).
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: set inheritance `thresholds_indexed` true for `standard` and `law_7582_new_resident` (Law 7338 art. 4 last paragraph and art. 16 require annual revaluation); re-read the consolidated Law 7338 text (Mevzuat Bilgi Sistemi, incl. the 1% paragraph added by Law 7582 art. 2) and confirmed art. 1 scope, art. 4(b) TRY 2,907,136 and the art. 16 bands; no figures changed. Holding A.S. considered and not added as a structure (see recipe).

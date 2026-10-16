@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Eastern Europe",
   "currency": "RON",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Romania taxes residents' dividends at 16% from 2026 and capital gains at 16% (foreign broker) or 3% final via a Romanian broker for holdings over a year, plus a small capped health contribution. There is no inheritance or gift tax for children (succession must be completed within 2 years to avoid 1% on real estate) and no general wealth tax, only a 0.9% surcharge on residential buildings worth over RON 2.5M. Rates rose sharply in 2025-2026 under the fiscal consolidation packages.",
   "regimes": [
     {
@@ -71,9 +71,9 @@
       },
       "dividends": {
         "tax_year": "2026",
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "summary": "Dividends are taxed at 16% from 1 January 2026 (10% in 2025, 8% in 2023-24), final. Foreign dividends are declared at the same rate with credit for foreign withholding tax. A 10% health contribution (CASS) also applies, capped at a base of 24 minimum gross salaries (RON 97,200 for 2026).",
-        "exemptions_thresholds": "CASS threshold RON 24,300 for 2026; cap RON 97,200 base (max RON 9,720 CASS).",
+        "exemptions_thresholds": "CASS threshold RON 24,300 for 2026; CASS base is 6, 12 or 24 minimum gross salaries according to the band the cumulated non-salary income reaches, so at most RON 97,200 and RON 9,720 of CASS (art. 155(1)(c)-(h), art. 170(4)(d): dividends count net of the tax withheld). The 60/72-salary cap applies to independent-activity income, not to dividends.",
         "important_exceptions": "Dividends from interim 2025 financial statements keep the 10% rate (Law 141/2025 art. VII(2)).",
         "sources": [
           {
@@ -103,18 +103,32 @@
             "publisher": "PwC Worldwide Tax Summaries",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Obtii dividende din strainatate? Ce taxe trebuie sa platesti (Fiscalitatea.ro, 23 Feb 2026)",
+            "url": "https://www.fiscalitatea.ro/obtii-dividende-din-strainatate-ce-taxe-trebuie-sa-platesti-24711/",
+            "publisher": "Fiscalitatea.ro",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "ANAF guidance: pensions from abroad, declaration and double-taxation method (arts. 130-131 Fiscal Code, norms points 45-46)",
+            "url": "https://static.anaf.ro/static/10/Brasov/Brasov/pensii_strainatate.pdf",
+            "publisher": "ANAF (Romanian National Agency for Fiscal Administration)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
           }
         ],
         "confidence": "high",
         "verification": "verified",
         "open_questions": [
-          "Exact foreign tax credit mechanics for foreign dividends (per-country limit) not read in primary law."
+          "Fiscal Code art. 131 credit mechanics read through ANAF guidance (pensions leaflet) and Fiscalitatea.ro, not the consolidated Code; the 16% rate on foreign-source dividends rests on Fiscalitatea.ro (Feb 2026) and PwC, art. 97(7) not opened."
         ],
         "headline_rate": 0.16,
         "domestic_rate": 0.16,
         "foreign_gross_rate": 0.16,
         "foreign_tax_credit": "credit",
-        "rate_basis": "Law 141/2025 amends Fiscal Code art. 97(7) to 16% for dividends distributed from 1 January 2026. Same rate assumed for foreign dividends, with a credit up to the Romanian tax.",
+        "rate_basis": "Law 141/2025 amends Fiscal Code art. 97(7) to 16% for dividends distributed from 1 January 2026. Residents are taxed on income from any source; foreign dividends go into the single return (D212) at the same rate. Foreign tax is credited only where a double tax treaty applies, with proof of payment, per country and per source of income, up to the Romanian tax on that income (Fiscal Code art. 131 and its methodological norms point 46; ANAF guidance), so a treaty-rate 15% withholding leaves 1% to pay.",
         "withholding_outbound": "16% on dividends paid to non-residents (treaty reductions available). Exempt for EU/EEA parent companies holding at least 10% for at least one year.",
         "treaty_network": "About 89 tax treaties (count of PwC treaty table), including the US (an old 1973 treaty) and all major EU states.",
         "holding_company_notes": "CIT 16%; micro-companies pay 1% of revenue up to EUR 100,000 from 2026. Not a typical holding jurisdiction for a family office."
@@ -173,7 +187,7 @@
       },
       "inheritance": {
         "tax_year": "2026",
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "summary": "Romania has no inheritance or gift tax. The only charge is on real estate: if the succession is not completed before a notary within 2 years of death, a 1% tax applies to the value of the inherited real estate. Gifts of money or securities are untaxed; donations of real estate between relatives up to the third degree and spouses are exempt from the property-transfer tax.",
         "exemptions_thresholds": "Succession finalised within 2 years: no tax. Gifts: no gift tax.",
         "important_exceptions": "Notary fees for the succession procedure apply but were not quantified (other_transfer_cost_rate set to 0 pending verification).",
@@ -197,7 +211,8 @@
         "verification": "partially_verified",
         "open_questions": [
           "Notary succession fees as a share of estate value not verified.",
-          "Whether a Romanian succession procedure is needed (and taxed) for foreign assets of a resident decedent not verified."
+          "Whether a Romanian succession procedure is needed (and taxed) for foreign assets of a resident decedent not verified.",
+          "Scope of the 1% charge when a succession is not finalised within 2 years (Fiscal Code art. 111(3)): notary guidance says real estate only, other press says the whole estate including money; not settled. It does not arise when the succession is finalised within 2 years. A one-off derogation (Law 170/2026, successions whose 2-year term expired 14 Jul-30 Sep 2026) was reported by one source only."
         ],
         "basis": "beneficiary",
         "children_treatment": "exempt_with_conditions",

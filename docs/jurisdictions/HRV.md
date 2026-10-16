@@ -1,6 +1,6 @@
 # Croatia — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -54,9 +54,18 @@ used for permanent living or long-term rental. It replaced the holiday-home tax 
 None for wealthy arrivals. The 2025 repatriation incentive (5-year salary exemption for returning emigrants)
 covers only employment income.
 
+Structure regime `holding_doo` (family d.o.o.), added 2026-10-16 for the 60-year projection: gains 18% (10% below EUR 1m revenue), dividends
+0% (deducted from the base), payout to the family 12%, wealth tax and inheritance inherited from the standard regime. Personal holding is cheaper
+for a Croatian resident (gains untaxed after 2 years, Art. 67 para. 8; dividends 12%). Foundation and trust were not added: no family-wealth
+foundation or trust vehicle in common use was found (not researched against a statute).
+
 ## Company taxation (kept separate from personal tax)
 
-CIT 18%, or 10% below EUR 1m revenue (PwC). Distributions to individuals then bear 12%.
+Profit tax (Art. 28 Profit Tax Act): 18%, or 10% when the period's revenue is below EUR 1,000,000. Dividends and profit shares received
+are deducted from the tax base (Art. 6(1) item 1) when the payer is subject to profit tax or a similar tax, is a legal form comparable
+to a capital company and did not deduct the payment; the article states no percentage or holding period. Realised gains on shares
+are taxable profit (PwC); unrealised revaluation gains are left out of the base (Art. 6(1) item 2). Distributions to individuals bear 12%
+(Art. 70 para. 19 Income Tax Act).
 
 ## Cost of living notes
 
@@ -76,6 +85,7 @@ Zagreb.
   previous rates was unavailable.
 - US–Croatia treaty status.
 - Exempt-relative list is from Tax Administration guidance. The Local Taxes Act article was not read directly.
+- Structure `holding_doo`: the Profit Tax Act page was read in part (Art. 6, 7, 28, 30); a specific participation rule for gains, fund dividends, the revenue test for the EUR 1m threshold and the company's cost basis after a contribution in kind not researched.
 
 ## Sources
 
@@ -92,6 +102,8 @@ Zagreb.
 - Croatia – Corporate – Taxes on corporate income: https://taxsummaries.pwc.com/croatia/corporate/taxes-on-corporate-income
 - AISZ Tuition & Fees 2026–2027: https://aisz.hr/admissions/tuition-fees
 - Nekretnine.hr, najam samostojećih kuća Zagreb: https://www.nekretnine.hr/najam-samostojeca-kuce/zagreb/
+- Zakon o porezu na dobit (Profit Tax Act), Art. 6(1) item 1, Art. 28: https://www.zakon.hr/z/99/Zakon-o-porezu-na-dobit
+- Croatia - Corporate - Income determination: https://taxsummaries.pwc.com/croatia/corporate/income-determination
 
 ## Change log
 
@@ -99,3 +111,4 @@ Zagreb.
 - 2026-10-15 (data-quality pass): added prime rent (Nekretnine.hr sample, EUR 3,500/month).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: added structure regime `holding_doo` (family d.o.o.) with sourced capital gains (18%), dividends (0%, Art. 6(1) item 1 Profit Tax Act) and payout (12%) terms; corporate summary now states the dividend deduction. Recipe `data/recipes/HRV.json` added.

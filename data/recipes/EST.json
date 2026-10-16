@@ -1,0 +1,130 @@
+{
+  "id": "EST",
+  "name": "Estonia",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Flat 22% income tax on realised gains (no holding-period relief); dividends from foreign companies are taken as exempt when tax was withheld abroad (PwC; EMTA's English page reads this differently, see the open questions). No wealth, inheritance or gift tax. The investment account (investeerimiskonto) would defer the gains tax until withdrawals exceed contributions, but the engine cannot express that, so it is not a path."
+    },
+    {
+      "id": "oue_holding",
+      "name": "Estonian holding company (OÜ)",
+      "regime": "oue_holding",
+      "estate": "portfolio",
+      "note": "The OÜ pays no tax on dividends and gains it retains; 22/78 of the net amount is due only when it distributes (Income Tax Act § 50(1)), with no further personal tax on a resident shareholder. The parents' estate holds the OÜ shares at about the portfolio's value; Estonia has no inheritance or gift tax, so there is no business-relief question."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 33000,
+      "working": "Gains: income from the transfer of property is taxed as ordinary income at the flat 22% rate of 2026 (Income Tax Act §§ 15 and 37 as described by EMTA; rate: EMTA tax-rates page): 150,000 x 22% = 33,000. Dividends of 200,000 from foreign companies with 15% tax withheld abroad: taken as exempt (PwC Estonia Individual - Income determination: foreign dividends are exempt when the profit was taxed abroad or tax was withheld from the dividend), so 0. No wealth tax. Basic exemption of EUR 8,400 ignored. Top marginal rate assumed: 22% is flat. Total 33,000. If EMTA's English page is right that foreign tax is only credited, the dividends would add 200,000 x (22% - 15%) = 14,000; see the open questions."
+    },
+    {
+      "path": "oue_holding",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "Estonian corporate income tax is charged only on distributed profit, at 22/78 of the net distribution (Income Tax Act § 50(1); EMTA 'Taxation of dividends'); retained profit is untaxed, including dividends and gains on shares (PwC Estonia Corporate - Taxes on corporate income: all undistributed profits are tax exempt). The check assumes the OÜ distributes nothing that year, so the tax is 0. The 15% foreign withholding is not credited anywhere in Estonia here. No wealth tax. No annual running cost is recorded in the tax file. Payout tax excluded (22% of the gross outlay, i.e. 22/78 of the net amount paid)."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Estonia levies no inheritance tax and no gift tax; inherited property is not income for the heir (EMTA / Ministry of Finance 'Taxes in Estonia': inheritances and gifts received are not taxable income; PwC Estonia Individual - Other taxes). Each child receives 3,333,333.33 and pays 0. The heirs take over the deceased's acquisition cost for a later sale (not verified), which is outside this check."
+    },
+    {
+      "path": "oue_holding",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The OÜ shares (about 10,000,000) pass to the three children as inherited property: no inheritance tax and not income for the heirs (Ministry of Finance 'Taxes in Estonia'; PwC Individual - Other taxes). The death does not distribute company profit, so the 22/78 distribution tax is not triggered, and Estonia has no deemed disposal at death. Total 0."
+    }
+  ],
+  "assumptions": [
+    "The family are Estonian tax residents from arrival (permanent home in Estonia; Income Tax Act residence test) and EU citizens needing no permit.",
+    "Personal path: the standard (ordinary) system, with gains taxed when realised. The investment account is not modelled (see open questions).",
+    "OÜ path: funded with cash or newly bought positions; the OÜ distributes only what the family spends (EUR 400,000 a year net) and keeps and compounds the rest untaxed.",
+    "Foreign dividends carry 15% withholding in the checks; it is lost inside the OÜ and, for the personal path, is taken as the reason the dividend is exempt.",
+    "The 2026 rates are 22% income tax and 22/78 company tax: the rise to 24% was cancelled and the 2% defence tax was scrapped in 2025 (EMTA tax-rates page, Ministry of Finance page updated 22.04.2026)."
+  ],
+  "open_questions": [
+    "Needs an engine change: the investment account (Income Tax Act § 17^1 and § 17^2, EMTA 'Securities and investment account'): gains, dividends and interest earned inside the account are not taxed; income arises only when payments out of the account exceed the sum of earlier contributions (cumulative, date by date, § 17^2). With a EUR 30m contribution and EUR 400,000 withdrawn a year, withdrawals would not pass the contributions for decades, so the gains tax could be deferred for the whole projection; the engine taxes realised gains each year and has no contribution ledger. The account is for residents only and, in general, assets must be bought with money inside it (EMTA names inherited, gifted and liquidation securities as exceptions), so an existing portfolio would have to be sold and the cash contributed.",
+    "Foreign dividends of a resident individual: PwC says exempt when tax was withheld abroad or the profit was taxed abroad; EMTA's English page for securities says foreign tax is credited against the Estonian tax and any shortfall is payable (22% less 15% leaves 7%, EUR 14,000 on a EUR 200,000 dividend). The Income Tax Act text was not opened (Riigi Teataja is JS-rendered). The personal check takes the PwC reading; if the other reading is right, expected becomes 47,000 and the tax file changes to credit method at 22%.",
+    "Whether the 15% foreign withholding on the OÜ's portfolio dividends can be credited against the 22/78 distribution charge (PwC says certain foreign taxes can) was not found in a source; the OÜ check ignores it.",
+    "The OÜ's running costs (accountant, annual report) are not in the tax file, so the OÜ check carries none.",
+    "Structures considered and not modelled: a private family foundation or trust (not researched, not known to be commonly used in Estonia). Funding the OÜ with an existing portfolio in kind may be a disposal taxed at 22% (not verified)."
+  ],
+  "sources": [
+    {
+      "title": "Securities and investment account",
+      "url": "https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/securities-and-investment-account",
+      "publisher": "Estonian Tax and Customs Board (EMTA)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tax rates (private client)",
+      "url": "https://emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates",
+      "publisher": "Estonian Tax and Customs Board (EMTA)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Taxation of dividends",
+      "url": "https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/taxation-dividends",
+      "publisher": "Estonian Tax and Customs Board (EMTA)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Taxes in Estonia (Ministry of Finance)",
+      "url": "https://fin.ee/en/taxes",
+      "publisher": "Estonian Ministry of Finance",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Estonia - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/estonia/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Estonia - Individual - Other taxes",
+      "url": "https://taxsummaries.pwc.com/estonia/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Estonia - Corporate - Taxes on corporate income",
+      "url": "https://taxsummaries.pwc.com/estonia/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Estonia - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/estonia/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

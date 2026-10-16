@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Central Europe",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Slovakia exempts gains on listed shares held over one year (foreign exchanges included), taxes dividends at 7%, and has no inheritance, gift or wealth tax. The catch is a private business sale or short-term trading, which is taxed at up to 35% from 2026 plus 15% uncapped health insurance (about 50% at the top).",
   "regimes": [
     {
@@ -116,20 +116,20 @@
             "accessed": "2026-10-15"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "high",
         "verification": "verified",
         "open_questions": [
-          "Whether a 15% foreign WHT fully extinguishes the 7% Slovak tax under the credit method for every treaty (expected yes)."
+          "The foreign tax credit is read in the law text (§45(1) ZDP, 2026-10-16): where a treaty uses the credit method, the foreign tax is credited up to the rate the treaty allows the source state to levy and up to the Slovak tax on that income. With a 15% foreign withholding and a 7% Slovak tax, the Slovak tax on the foreign dividend is therefore 0."
         ],
         "headline_rate": 0.07,
         "domestic_rate": 0.07,
         "foreign_gross_rate": 0.07,
         "foreign_tax_credit": "credit",
-        "rate_basis": "§15(a)(5) ZDP: 7% on the separate dividend base (§51e(3)(a)); 35% for dividends from non-cooperative states (§15(a)(6)). Foreign WHT credited under treaties, so typical 15% WHT leaves no Slovak tax.",
+        "rate_basis": "§15(a)(5) ZDP: 7% on the separate dividend base (§51e(3)(a)); 35% for dividends from non-cooperative states (§15(a)(6)). Foreign WHT credited under treaties, so typical 15% WHT leaves no Slovak tax. Foreign dividends of resident individuals go into the separate base of §51e(1)(a), (3)(a) ZDP at 7% (§15(a)(5)); the credit is §45(1) ZDP.",
         "withholding_outbound": "7% WHT on dividends to individuals; 35% to recipients in non-cooperative jurisdictions or with unidentified beneficial owners.",
         "treaty_network": "Broad network covering the EU, the US and most OECD states.",
-        "holding_company_notes": "Slovak CIT is 10%/21%/24% by taxable income; distribution to an individual then bears 7%."
+        "holding_company_notes": "Slovak CIT is 10%/21%/24% by taxable income; distribution to an individual then bears 7%. A Slovak holding s.r.o. was considered (2026-10-16): the company would pay 21% on gains from portfolio shares (not read in the statute; PwC) while an individual holding listed shares for more than a year pays nothing, and a payout to the individual bears 7% again, so it is not better than holding personally. Slovakia has no private foundation or family trust for private wealth (a nadácia is a public-benefit vehicle)."
       },
       "wealth_tax": {
         "summary": "No wealth tax or net worth tax.",
@@ -170,7 +170,7 @@
             "accessed": "2026-10-15"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "high",
         "verification": "verified",
         "open_questions": [
@@ -181,7 +181,7 @@
         "exemption": 0,
         "brackets": [],
         "other_transfer_cost_rate": 0,
-        "gift_tax": "None; gifts and inheritances are not subject to income tax (§3(2)(b) ZDP).",
+        "gift_tax": "None; gifts and inheritances are not subject to income tax (§12(7)(b) ZDP: income acquired by gift or inheritance is not an object of the tax).",
         "gifts_same_as_inheritance": true,
         "business_relief": "Not needed.",
         "business_relief_covers_public_shares": false,

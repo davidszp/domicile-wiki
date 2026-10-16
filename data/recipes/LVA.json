@@ -1,0 +1,95 @@
+{
+  "id": "LVA",
+  "name": "Latvia",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "25.5% on capital gains and a 3% additional rate on total income above EUR 200,000 a year (PIT Law Sections 15(5), 15.1). Dividends from foreign companies are PIT-exempt where tax was withheld abroad (Section 9(1)(2.1)(b)) but still count toward the 3% rate. No wealth, inheritance or gift tax. The investment account (ieguldījumu konts) would defer the gains tax, but the engine cannot express it, so it is not a path."
+    },
+    {
+      "id": "sia_holding",
+      "name": "Latvian holding company (SIA)",
+      "regime": "sia_holding",
+      "estate": "portfolio",
+      "note": "The SIA pays no tax on dividends and gains it retains; company income tax of 20% on the grossed-up amount (25% of the net) is due only when it distributes. The shareholder's dividend is PIT-exempt (Section 9(1)(2.1)(a)) but counts toward the 3% additional rate above EUR 200,000. The parents' estate holds the SIA shares at about the portfolio's value; Latvia has no inheritance tax, so there is no business-relief question. The optional 15%/6% regime for individually owned companies is not modelled (about the same cost, see the tax file)."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 38250,
+      "working": "One taxpayer holds the portfolio. Foreign dividends EUR 200,000 are PIT-exempt because tax was withheld abroad (PIT Law §9(1)(2.1)(b)). Gains EUR 150,000 x 25.5% (§15(5)) = 38,250. Additional rate (§15.1(1)-(2), from 1 Jan 2026): 3% on the excess of total income over EUR 200,000 per taxpayer, where total income includes the exempt dividends: (200,000 + 150,000 - 200,000) x 3% = 4,500. Total 42,750. (Split equally between spouses, nobody passes EUR 200,000: 38,250.) The couple holds the portfolio 50/50: EUR 175,000 of income each, below the EUR 200,000 threshold, so no additional rate: 38,250."
+    },
+    {
+      "path": "sia_holding",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "Latvian company income tax is charged only on distributed or deemed-distributed profit, at 20% of the grossed-up amount (net / 0.8, i.e. 25% of the net distribution); undistributed profits are exempt, whether dividends or gains on shares (PwC Latvia Corporate - Taxes on corporate income, reviewed 30 June 2026). The check assumes the SIA distributes nothing that year, so the tax is 0 and the 15% foreign withholding is not credited anywhere in Latvia. No wealth tax. No annual running cost is recorded in the tax file. Payout tax excluded (the tax file uses 0.20 company tax plus 0.03 x 0.80 = 0.024 of additional rate on the exempt dividend, 0.224 of the gross outlay)."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Latvia has no inheritance tax or gift tax on the estate of a parent passing to children; income gained through inheritance is exempt from personal income tax (PIT Law Section 9(1)(9)), and the only charge, a Land Register state fee, applies to inherited Latvian real estate (as recorded in the tax file's inheritance entry), not to a portfolio of securities. Each child receives 3,333,333.33 and pays 0. A later sale by the heir would be a gain taxed at 25.5%, outside this check."
+    },
+    {
+      "path": "sia_holding",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The SIA shares (about 10,000,000) pass to the three children by inheritance: exempt from PIT (Section 9(1)(9)), no inheritance tax in Latvia. The death does not distribute company profit, so the 20/80 distribution tax is not triggered, and Latvia has no deemed disposal at death. Total 0."
+    }
+  ],
+  "assumptions": [
+    "The family are Latvian tax residents from arrival (declared residence or 183 days) and EU citizens needing no permit.",
+    "Top marginal case for the personal and payout figures: every euro of income is above the EUR 200,000 threshold of the 3% additional rate, which applies per taxpayer. With a EUR 400,000 net payout shared by two spouses the SIA payout is at the threshold; the threshold is not indexed, so over 60 years it is crossed in nominal terms.",
+    "Personal path: gains taxed when realised at 25.5%. The investment account is not modelled (see open questions).",
+    "SIA path: funded with cash or newly bought positions; the SIA distributes only what the family spends and keeps and compounds the rest untaxed.",
+    "Foreign dividends carry 15% withholding in the checks; they are PIT-exempt for the individual and the withholding is lost inside the SIA."
+  ],
+  "open_questions": [
+    "Needs an engine change: the investment account (PIT Law Sections 11.9(11)(6), 11.9(12.2), 11.13): income from the account arises only when money paid out exceeds the money paid in, less taxed or exempt dividends and interest earned in it; purchases and sales inside it are not taxable events. Only cash (or securities moved from another investment account, or acquired inside the account) may be paid in (Section 11.13(4)), through a provider in Latvia, the EU, EEA, OECD or a treaty state (Section 11.13(3)). With a EUR 30m cash contribution and EUR 400,000 withdrawn a year, withdrawals would not pass contributions for decades, so the 25.5% (28.5%) gains tax could be deferred for the whole projection; the engine taxes realised gains each year and has no contribution ledger.",
+    "Dividends of the SIA paid to a resident individual: whether the 3% additional rate really applies to a dividend exempt under Section 9(1)(2.1) is as read in Section 15.1(2)(2); the SRS explanation was not opened.",
+    "Optional regime for individually owned companies (PIT Law Section 15(5.1), Corporate Income Tax Law Article 4.2): 15% company tax on net/0.85 plus 6% PIT withheld. Worked from PwC's description, per EUR 100 received it costs about 28.3 against 28.0 for the standard route, if the 3% rate also applies to such dividends (taxable income counts under Section 15.1(2)(1)); if it did not, the option would be cheaper by about 2.8. The Corporate Income Tax Law text and the SRS explanation of 27 July 2026 were not opened, and a Finance Ministry note seen in a search result gave 2028 as the start; not modelled.",
+    "The SIA's running costs are not in the tax file, so the SIA check carries none. The Corporate Income Tax Law text (rate, deemed distributions) was not opened; PwC (reviewed 30 June 2026) was used.",
+    "Structures considered and not modelled: a private family foundation or trust (not researched). Funding the SIA with an existing portfolio in kind is a disposal for the individual (not verified for contributions to capital)."
+  ],
+  "sources": [
+    {
+      "title": "Likums 'Par iedzīvotāju ienākuma nodokli' (consolidated, likumi.lv)",
+      "url": "https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli",
+      "publisher": "likumi.lv (Latvijas Vēstnesis)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Latvia - Corporate - Taxes on corporate income",
+      "url": "https://taxsummaries.pwc.com/latvia/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Latvia - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/latvia/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

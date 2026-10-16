@@ -1,0 +1,74 @@
+{
+  "id": "SVK",
+  "name": "Slovakia",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Gains on listed securities held more than one year are exempt (§9(1)(k) ZDP); dividends bear 7% (§15(a)(5), §51e), which a 15% foreign withholding extinguishes through the treaty credit (§45(1)). No wealth tax; gifts and inheritances are outside the income tax (§12(7)(b)), so nothing is due at either death. No structure is scored: Slovakia has no private foundation or family trust, and a holding company would add 21% on gains and 7% on payouts."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 400000,
+      "wealth": 0,
+      "foreign_share": 0.9,
+      "expected": 4200,
+      "working": "Resident taxpayer; 90% of the portfolio income is foreign. DIVIDENDS 600,000: the 10% from Slovak companies, 60,000, are taxed at 7% (§15(a)(5) ZDP), withheld by the payer (§43 and §51e) = 4,200. The foreign 90%, 540,000, go into the separate tax base of §51e(1)(a), (3)(a) and bear 7% = 37,800. The 15% foreign withholding, 81,000, is credited under the treaty's credit method up to the rate the treaty lets the source state levy and up to the Slovak tax on that income (§45(1)), so the credit is 37,800 and the Slovak tax on the foreign dividends is 0. No health insurance on dividends from profits of 2017 onward. GAINS 400,000 on listed securities held more than one year on an EU or comparable foreign regulated market: exempt (§9(1)(k)); no rate applies and no health insurance is due. No wealth tax. Total 4,200 + 0 + 0 = 4,200. Ignored: the EUR 500 exemption of §9(1)(i)."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "An estate of EUR 10,000,000 passes at the second death to three children. Slovakia has no inheritance or gift tax, and income acquired by gift or inheritance is not an object of the income tax (§12(7)(b) ZDP), whoever the heir and wherever the assets are. Unrealised gains are not taxed at death. Tax 0."
+    }
+  ],
+  "assumptions": [
+    "Positions are listed on an EU regulated market or a comparable foreign regulated market and held more than one year (§9(1)(k)); shares sold within a year, unlisted shares and stakes in an s.r.o. are 'other income' taxed at 19%-35% plus 15% health insurance and are not modelled.",
+    "Foreign dividends come from treaty states whose treaty caps the withholding at 15% or more, so the credit extinguishes the 7%; dividends from non-cooperative states would bear 35% (§15(a)(6)).",
+    "The family are EU citizens, registered residents, with no Slovak employment; Slovakia has no special regime for new arrivals. The family home is left out of every check.",
+    "A Slovak holding s.r.o. was considered and not scored: it would pay 21% on gains from portfolio shares (PwC) and 7% on the payout, while an individual holding listed shares for a year pays nothing on gains. Slovakia has no private foundation or family trust."
+  ],
+  "open_questions": [
+    "Health insurance of a non-working resident: a person resident in Slovakia without an employer is normally insured in the public scheme and pays a monthly contribution (amount not researched); dividends and exempt gains bear none. Not modelled.",
+    "The treatment of the 21% company tax on gains inside a holding s.r.o. was taken from PwC, not read in the statute.",
+    "The dividend rate of 7% rests on profits of 2025 onward (10% for profits of 2024, Finančná správa guidance); dividends paid in 2026 from older profits may carry another rate, which the check does not model."
+  ],
+  "sources": [
+    {
+      "title": "Zákon č. 595/2003 Z. z. o dani z príjmov (time version effective 1.1.2026 - 30.12.2026, PDF)",
+      "url": "https://www.slov-lex.sk/static/pdf/2003/595/ZZ_2003_595_20260101.pdf",
+      "publisher": "Slov-Lex (Ministry of Justice of the Slovak Republic)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Príjem charakteru dividend (podielov na zisku) zo zahraničia",
+      "url": "https://podpora.financnasprava.sk/830591-Pr%C3%ADjem-charakteru-dividend-podielov-na-zisku-zo-zahrani%C4%8Dia",
+      "publisher": "Finančná správa SR",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Oslobodenie príjmov z predaja cenných papierov",
+      "url": "https://podpora.financnasprava.sk/798719-Oslobodenie-pr%C3%ADjmov-z-predaja-cenn%C3%BDch-papierov",
+      "publisher": "Finančná správa SR",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Slovak Republic - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/slovak-republic/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

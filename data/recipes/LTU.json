@@ -1,0 +1,97 @@
+{
+  "id": "LTU",
+  "name": "Lithuania",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Dividends are taxed at a flat 15% with the foreign withholding credited (up to the treaty rate and the Lithuanian tax); gains on shares, units and interests held more than five years and bought outside an investment account are taxed at a separate flat 15% (GPMĮ art. 6(6)(3)). No wealth tax; children inherit free of tax. A Lithuanian holding company (UAB) is not a path: it would be taxed at 17% a year on a portfolio's gains and most dividends and then again at 15% on payout."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 22500,
+      "working": "Assumes the shares were bought outside an investment account more than five years ago. Gains 150,000 on shares held more than five years: flat 15%, separate from other income (Law on Personal Income Tax art. 6(6)(3); PwC Lithuania Individual - Taxes on personal income) = 22,500. The EUR 500 exemption on financial-instrument gains is ignored. Dividends 200,000: flat 15% (PwC Individual - Income determination) = 30,000; the 15% tax withheld abroad (200,000 x 15% = 30,000) is credited, limited to the Lithuanian PIT on that income and to the treaty rate (PwC Individual - Foreign tax relief and tax treaties), so 30,000 - 30,000 = 0. No wealth tax (PwC Individual - Other taxes). Total 22,500."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Inheritance tax in Lithuania is 5% on a taxable value up to EUR 150,000 and 10% above, but property inherited by a child is not taxed, whatever its value (PwC Lithuania Individual - Other taxes; Law on Inheritance Tax). Each child receives 3,333,333.33 and pays 0. There is no gift tax. A later sale of inherited shares is outside this check."
+    }
+  ],
+  "assumptions": [
+    "The family are Lithuanian tax residents from arrival (permanent home, or 183 days) and EU citizens needing no permit.",
+    "All portfolio shares have been held more than five years before they are sold, so gains bear the flat 15% rather than the progressive 20/25/32% rates. Positions held five years or less, and bonds, are taxed at the progressive rates and would cost more.",
+    "Foreign dividends carry 15% withholding, credited in full (treaty rate 15%, same as the Lithuanian rate).",
+    "The portfolio is held outside an investment account, because the five-year 15% rule is for shares acquired outside one."
+  ],
+  "open_questions": [
+    "Needs an engine change: the investment account (since 2025; PwC: withdrawals above the contributed amount are taxed at a flat 15%; returns reinvested inside are not taxed). Tax arises only on cumulative withdrawals exceeding contributions, so with a EUR 30m contribution and EUR 400,000 withdrawn a year the tax could be deferred for decades; the engine taxes realised gains each year and has no contribution ledger. Conditions (cash-only deposits, a cap on contributions, provider country, single owner) were not verified from the statute.",
+    "Whether foreign UCITS ETF units count as 'units' (pajai) for the five-year 15% rule is assumed, not confirmed (see the tax file).",
+    "Law on Personal Income Tax and Law on Inheritance Tax texts (e-tar.lt) were not opened; the check relies on PwC (reviewed 1 October 2026) and the KPMG March 2026 newsletter for art. 6(6)(3).",
+    "Structures considered and not modelled: a Lithuanian UAB holding company (17% annual company tax; share-gain exemption only for stakes above 10% held two years; dividends then 15% again), never better than direct holding for a diversified portfolio; a private foundation or trust (not researched).",
+    "Health insurance (PSD): no contribution on dividends or gains found; a resident with no other insurance basis pays a fixed EUR 80.48 a month (about EUR 966 a year per adult), not modelled."
+  ],
+  "sources": [
+    {
+      "title": "Lithuania - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/lithuania/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Lithuania - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/lithuania/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Lithuania - Individual - Foreign tax relief and tax treaties",
+      "url": "https://taxsummaries.pwc.com/lithuania/individual/foreign-tax-relief-and-tax-treaties",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Lithuania - Individual - Other taxes",
+      "url": "https://taxsummaries.pwc.com/lithuania/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Lithuania - Corporate - Taxes on corporate income",
+      "url": "https://taxsummaries.pwc.com/lithuania/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Lithuania - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/lithuania/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Mokesčių ir teisės naujienlaiškis, 2026 kovas (VMI clarification on GPMĮ art. 6(6)(3))",
+      "url": "https://kpmg.com/lt/lt/izvalgos/mokesciu-ir-teises-naujienlaiskiai/2026-kovas.html",
+      "publisher": "KPMG Lithuania",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

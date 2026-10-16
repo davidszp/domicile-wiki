@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Caucasus",
   "currency": "GEL",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Georgia is close to territorial for individuals. Income of a resident that does not have a Georgian source is exempt (Tax Code Art. 82(1)(u)), so foreign dividends and gains on foreign securities are untaxed. Georgian dividends bear a final 5% withholding. Gains on assets held more than two years (not used in business) are exempt; otherwise the rate is 20% (5% for a home or car). Property received as a gift or inheritance by first- and second-line heirs (children included) is exempt. No wealth tax. Residence comes from 183 days in a 12-month period, or by application as a 'high net worth individual'.",
   "regimes": [
     {
@@ -117,10 +117,12 @@
             "accessed": "2026-10-15"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "high",
         "verification": "partially_verified",
-        "open_questions": [],
+        "open_questions": [
+          "Property tax on individuals whose family income exceeds GEL 40,000: secondary sources (Expathub, IBCCS, Revera) give 0.8%-1% of market value above GEL 100,000 of family income and 0.05%-0.2% between GEL 40,000 and 100,000, but the Tax Code chapter on property tax was not opened and the thresholds differ between sources. On a home worth EUR 5m this could be about EUR 40,000-50,000 a year; it is not modelled."
+        ],
         "type": "none",
         "components": [],
         "property_tax_note": "Property tax for families with annual income above GEL 40,000 (rates not stated by PwC; up to about 1% of market value, unverified); separate land tax."
@@ -173,7 +175,7 @@
           "US",
           "OTHER"
         ],
-        "requirements": "Status granted on application to a high net worth individual as defined in the Law on Securities Market; commonly reported thresholds (assets over GEL 3 million or income over GEL 200,000 a year for three years) were not verified."
+        "requirements": "Status granted on application to a high net worth individual (Art. 34(6) Tax Code; Minister of Finance Order No. 60 of 1 March 2023). Secondary sources (Revera, Eurofast/Mondaq, Expathub; the order itself was not opened) report property above GEL 3 million or income above GEL 200,000 a year for the last three calendar years, plus a link to Georgia (for example Georgian-source income of at least GEL 25,000 or real estate worth USD 500,000), renewed annually. It is a residence status, not a lower tax rate: a family that actually lives in Georgia is resident through the 183-day test and gets the same exemption of foreign-source income."
       },
       {
         "name": "Visa-free stay / residence permit",
@@ -199,6 +201,13 @@
         "publisher": "PwC Worldwide Tax Summaries",
         "kind": "professional",
         "accessed": "2026-10-15"
+      },
+      {
+        "title": "Clarifications from the Georgian Tax Service on the procedure for obtaining a tax resident certificate based on wealth",
+        "url": "https://revera.legal/en/info-centr/news-and-analytical-materials/1841-razyasneniya-o-poryadke-polucheniya-sertifikata-nalogovogo-rezidenta-po-sostoyatelnosti/",
+        "publisher": "Revera Legal",
+        "kind": "professional",
+        "accessed": "2026-10-16"
       }
     ]
   },

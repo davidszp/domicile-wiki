@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Central Europe",
   "currency": "CZK",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Czechia exempts gains on securities held more than 3 years, and from 2026 without any annual cap, has no inheritance tax and exempts gifts from relatives, and has no wealth tax. Dividends cost a flat 15%. For a long-term buy-and-hold investor it is one of the most favourable regimes in the EU.",
   "regimes": [
     {
@@ -48,7 +48,7 @@
             "accessed": "2026-10-15"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "high",
         "verification": "verified",
         "open_questions": [
@@ -64,7 +64,7 @@
         },
         "rate_basis": "Assumes holdings longer than the time tests (3 years securities, 5 years s.r.o. stake, 10 years real estate): exempt, 0. Short-term gains: 23% marginal for a large gain (15% up to CZK 1,762,812). No social or health insurance on these 'other income' gains.",
         "professional_trader": "Securities held in business assets or trading as a business fall outside the time test and are taxed as business income (with social and health insurance).",
-        "holding_period_rules": "3 years for securities, 5 years for unlisted company stakes, 10 years for real estate (from 2021 acquisitions), 2 years main residence.",
+        "holding_period_rules": "3 years for securities, 5 years for unlisted company stakes, 10 years for real estate (from 2021 acquisitions), 2 years main residence. The 3-year (or 5-year) clock is shortened by the time the deceased held the security when the heir is a direct-line relative or spouse who inherited it (§4(1)(u) ZDP), so children who inherit a long-held portfolio can sell it tax-free at once.",
         "foreign_assets": "Time test applies to foreign securities and foreign real estate alike; worldwide taxation for residents."
       },
       "dividends": {
@@ -101,7 +101,7 @@
             "accessed": "2026-10-15"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "high",
         "verification": "verified",
         "headline_rate": 0.15,
@@ -111,7 +111,7 @@
         "rate_basis": "Czech dividends: 15% final WHT. Foreign dividends: flat 15% separate base (§16a), foreign WHT credited up to the treaty rate.",
         "withholding_outbound": "15% on dividends to residents of EU/EEA and treaty/information-exchange countries, 35% to others; reduced by treaty or EU Parent-Subsidiary Directive.",
         "treaty_network": "Wide network covering the EU, the US and most OECD states.",
-        "holding_company_notes": "A Czech company pays 21% CIT; dividends from qualifying subsidiaries are exempt under the participation exemption; distribution to an individual then bears 15%. No holding structure is scored for Czechia: listed securities held personally for more than 3 years are tax-exempt (uncapped from 2026), whereas a Czech company pays 21% on portfolio gains and a 15% special rate on portfolio dividends (the participation exemption needs at least 10% held 12 months) and distributions bear another 15%, so a holding company is worse on every line."
+        "holding_company_notes": "A Czech company pays 21% CIT; dividends from qualifying subsidiaries are exempt under the participation exemption; distribution to an individual then bears 15%. No holding structure is scored for Czechia: listed securities held personally for more than 3 years are tax-exempt (uncapped from 2026), whereas a Czech company pays 21% on portfolio gains and a 15% special rate on portfolio dividends (the participation exemption needs at least 10% held 12 months) and distributions bear another 15%, so a holding company is worse on every line. Czech private structures were also checked in the law text (2026-10-16): a trust fund (svěřenský fond, §17(1)(f)) and a family foundation (rodinná fundace, defined in §17a(2)(f) as a nadace or nadační fond serving the founder) are corporate income taxpayers at 21% (§21(1)); the family foundation is excluded from the public-benefit taxpayer status; and distributions of their profit to an individual are capital income taxed at 15% (§8(1)(i), §36(2)(a)). Neither gets the 3-year exemption of §4(1)(u), which is for individuals, so with inheritance already tax-free (§4a(a)) neither can beat holding personally; they serve asset protection and control, not tax. Contributing property to them is neutral for the founder (§10(3)(c)(4) excludes income from property put into a family foundation, and §10(3)(c)(3) the equivalent for trust funds)."
       },
       "wealth_tax": {
         "summary": "No wealth tax or net worth tax.",

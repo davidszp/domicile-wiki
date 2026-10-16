@@ -54,10 +54,11 @@ class Rules:
     structure: dict | None = None
     wealth_cap: dict | None = None
     wealth_from_year: int | None = None  # wealth tax applies only after this many years of residence
+    surtax: dict | None = None  # extra rate on each spouse's investment income above a threshold
 
     def to_json(self) -> dict:
         return {"cgt": self.cgt, "div": self.div, "wealth": self.wealth, "inh": self.inh, "lump_sum": self.lump_sum,
-                "structure": self.structure, "wealth_cap": self.wealth_cap}
+                "structure": self.structure, "wealth_cap": self.wealth_cap, "surtax": self.surtax}
 
 
 def _brackets(bs: list[Bracket], currency: str, fx: dict) -> list[list[float]]:
@@ -103,6 +104,10 @@ def compile_regime(regime: Regime, standard: Regime, currency: str, fx: dict) ->
             "listed_domestic": r.listed_securities_domestic, "listed_foreign": r.listed_securities_foreign,
             "business": r.private_business_sale, "real_estate": r.real_estate_local,
         }
+        if cg.income_surtax:
+            s = cg.income_surtax
+            rules.surtax = {"rate": s.rate, "threshold": round(to_eur(s.threshold_per_person.amount, s.threshold_per_person.currency, fx), 2),
+                            "div": s.counts_dividends, "gains": s.counts_gains}
     if dv is not None:
         rules.div = {"domestic": dv.domestic_rate, "foreign_gross": dv.foreign_gross_rate, "ftc": dv.foreign_tax_credit,
                      "credit_cap": dv.credit_cap}
@@ -204,6 +209,16 @@ def annual_taxes(rules: Rules, p: Profile, std: Rules | None = None) -> dict[str
         else:
             foreign = div_f * d["foreign_gross"]
         out["dividends"] = foreign + div_d * d["domestic"]
+
+    st = rules.surtax
+    if st and not rules.structure and not rules.lump_sum and out["capital_gains"] is not None and out["dividends"] is not None:
+        # Each spouse of the 50/50 couple pays the surtax on their half above the threshold.
+        div_part, gain_part = (p.dividends if st["div"] else 0.0), (p.realized_gains if st["gains"] else 0.0)
+        base = div_part + gain_part
+        extra = 2 * st["rate"] * max(0.0, base / 2 - st["threshold"])
+        if extra > 0:
+            out["dividends"] += extra * div_part / base
+            out["capital_gains"] += extra * gain_part / base
 
     if rules.wealth is None:
         out["wealth_tax"] = None

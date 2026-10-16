@@ -1,6 +1,6 @@
 # Slovakia — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -35,11 +35,11 @@ Re-verified 2026-10-15 from the law text: §8(1)(e)-(f) gains are part of the ge
 - §15(a)(5): 7% on dividends from 2025+ profits (10% for 2024 profits; 7% for 2017-2023; 2004-2016 profits
   untaxed); withheld by Slovak payers, separate base for foreign dividends (§51e). 35% from non-cooperative
   states (§15(a)(6)). No health insurance on dividends from 2017+ profits.
-- JSON: domestic and foreign 0.07, `credit`.
+- JSON: domestic and foreign 0.07, `credit`. Foreign dividends: separate base §51e(1)(a), (3)(a), 7% (§15(a)(5)); credit §45(1). Holding structures: a Slovak holding s.r.o. would pay 21% on gains from portfolio shares (PwC; not read in the statute) and 7% again on the payout; there is no private foundation or family trust, so no structure is scored.
 
 ## Inheritance and gifts to children
 
-No inheritance or gift tax (PwC). Income from gifts and inheritance is outside the income tax (§3(2)(b)).
+No inheritance or gift tax (PwC). Income from gifts and inheritance is outside the income tax (§12(7)(b) ZDP; the previous text cited §3(2)(b), which is not the provision).
 JSON: `basis = none`, `fully_exempt`.
 
 ## Wealth tax
@@ -66,7 +66,7 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 
 - PwC describes capital gains as falling in a separate 19% base; the law (§8(1)(e)-(f), §4(1)(a), §15(a)(1)-(4) ZDP, version effective 1 Jan 2026) puts gains on securities and company stakes in the general progressive base and reserves the separate 19% base for §7 capital income. We follow the law text.
 - Euro amounts of the 2026 bracket thresholds (multiples of the subsistence minimum valid on 1 Jan 2026) not computed here.
-- Whether a 15% foreign WHT fully extinguishes the 7% Slovak tax under the credit method for every treaty (expected yes).
+- The credit method (§45(1) ZDP) credits the foreign tax up to the treaty rate and up to the Slovak tax on that income, so a 15% foreign withholding extinguishes the 7%; confirmed for treaties with a 15% cap (US, most EU states); a treaty capping at less than 7% would leave a residual.
 - Notary probate fees not quantified; treated as negligible.
 
 ## Sources
@@ -85,3 +85,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: initial research.
 - 2026-10-15: resolved capital-gains base from the law text (general progressive base, not the separate 19% base) and added 15% uncapped health insurance to private_business_sale (0.35 -> 0.50); capital_gains now high/verified; added Bratislava cost of living (Nehnutelnosti.sk rent sample, BISB 2026/27 fee).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: corrected the citation for gifts and inheritances to §12(7)(b) ZDP; read §15(a)(5), §51e(1)(a) and (3)(a) (7% separate base on foreign dividends), §45(1) (foreign tax credit up to the treaty rate and the Slovak tax) and §9(1)(k) (securities held more than one year on a regulated market) in the 2026 text and the Finančná správa guidance on foreign dividends; resolved the credit open question; noted why a holding s.r.o. is not scored. No rate changed.

@@ -59,6 +59,8 @@ Set these in the **tax file** (never in the recipe); each needs the statute:
 - `wealth_tax.starts_after_years`: the wealth tax applies only after that many years of residence (San Marino).
 - `income_cap.counted_income_tax_rate`, `min_income_yield`, `min_wealth_tax_rate`: caps that count only part of
   the income tax, assume a minimum yield on wealth, or keep a minimum wealth tax (Swiss cantonal caps).
+- `capital_gains.income_surtax`: an extra rate on each spouse's investment income above a threshold (Poland 4%,
+  Latvia 3%).
 - `structure.running_cost_deductible_at`: the structure's running costs reduce its own tax at this rate.
 - A path may not use a regime with `requires_qualifying_activity`: the family has no job or business, as in
   the scores.

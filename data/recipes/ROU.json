@@ -1,0 +1,107 @@
+{
+  "id": "ROU",
+  "name": "Romania",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Dividends and gains on shares sold through a foreign broker both bear 16% from 2026; the foreign withholding is credited up to the Romanian tax, so a treaty-rate 15% leaves 1% on foreign dividends. A Romanian broker would withhold 3% on gains from holdings over a year, but the model scores the foreign-broker case. A health contribution (CASS) of at most RON 9,720 a year is not counted. No wealth tax on securities; children inherit free of inheritance tax if the succession is finalised within 2 years."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 1000000,
+      "realised_gains": 500000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 90000,
+      "working": "Top marginal rates; the family is tax resident, taxed on income from any source (Fiscal Code art. 59, art. 130). Dividends of 1,000,000, all foreign, with 15% withheld at source (150,000). Dividends distributed from 1 January 2026 bear 16% (art. 97(7) as amended by Law 141/2025): 16% x 1,000,000 = 160,000, declared in the single return. The foreign tax is credited where a double tax treaty applies, per country and per source of income, up to the Romanian tax on that income (art. 131; norms point 46): 150,000 is below 160,000, so the credit is 150,000 and the Romanian tax on dividends is 10,000. Gains of 500,000 on shares sold through a foreign broker: no Romanian intermediary withholds (the 3%/6% final tax applies only to Romanian intermediaries and permanent establishments), so the net annual gain is declared in the single return and taxed at 16% from 1 January 2026 (Law 239/2025): 16% x 500,000 = 80,000. Wealth tax: none on securities. Total 10,000 + 80,000 = 90,000. The health contribution CASS (10% of a base capped at 24 minimum gross salaries = RON 97,200, i.e. RON 9,720; art. 155(1) and art. 170) is a social contribution and is left out, as in the tax file. Assumes a treaty with the source country applies and that the family has no losses to net."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 50000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Romania levies no inheritance or gift tax on money or securities, and none on real estate when the succession is debated and finalised before a notary (certificate of heir) within 2 years of death (Fiscal Code art. 111 para. (3)); the 1% charge applies only if the term is missed. The family is assumed to finalise within 2 years. Each of the three children inherits 16,666,666.67 and pays no tax: total 0. Notary fees for the succession procedure are not a tax and are left out."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens who move in and become Romanian tax residents (more than 183 days or centre of vital interests in Romania); they register their residence with the immigration office.",
+    "Gains on foreign shares are scored at 16%, which assumes a foreign broker. Through a Romanian broker the final withholding is 3% on holdings over 365 days (6% under); whether foreign-listed shares held through a Romanian broker qualify was not confirmed, so the lower rate is not used.",
+    "Foreign withholding of 15% is creditable because a double tax treaty exists with the source country (Romania has about 89); where it does not, nothing is credited (art. 131).",
+    "The health contribution CASS (10%, base capped at RON 97,200, at most RON 9,720 a year) is not included in the annual checks, as in the tax file.",
+    "The family home (EUR 5m) bears the 0.9% special tax on the tax value above RON 2.5m (tax file); the annual checks use securities only and do not test it.",
+    "Succession is finalised within 2 years of each death, so the 1% charge does not arise.",
+    "No Romanian holding company is projected: dividends and gains in an SRL bear 16% corporate tax (the participation exemption needs a 10% stake held for a year, which a diversified portfolio lacks), and the owner then pays 16% on every payout, so the SRL is never better than holding personally. Romania has no trust, and a Romanian foundation cannot distribute to its founder."
+  ],
+  "open_questions": [
+    "The 16% rate on foreign-source dividends and the 16% rate on gains via a foreign broker rest on PwC, Kinstellar and Fiscalitatea.ro; art. 97(7), art. 131 and the Law 239/2025 text were not opened in the consolidated Fiscal Code.",
+    "Whether foreign-listed shares sold through a Romanian broker bear the 3% final tax (art. 96^1 Fiscal Code) was not confirmed, and so the cheaper Romanian-broker route is not scored.",
+    "The family home's special tax (0.9% above RON 2.5m of tax value) is in the tax file, but the checks cannot test it; whether the threshold is per building or per owner is not settled.",
+    "Scope of the 1% charge on late successions (real estate only, or the whole estate) is disputed in the sources; it does not affect the checks.",
+    "Health contribution (CASS): 10% of investment income, capped at 24 minimum wages (RON 97,200 for 2026, so at most RON 9,720 a year per person; RON 19,440 if both spouses reach the cap). It is a real annual cost not in the tax file or the projection (about EUR 2,000-4,000 a year); the engine has no capped contribution."
+  ],
+  "sources": [
+    {
+      "title": "Romania - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/romania/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Major Tax And Procedural Changes In Romania (Law 239/2025)",
+      "url": "https://webiis08.mondaq.com/tax-authorities/1722226/major-tax-and-procedural-changes-in-romania",
+      "publisher": "Kinstellar via Mondaq",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Legea nr. 141/2025 privind unele masuri fiscal-bugetare (text published by ANAF)",
+      "url": "https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf",
+      "publisher": "ANAF (Romanian National Agency for Fiscal Administration)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "ANAF guidance: pensions from abroad, declaration and double-taxation method (arts. 130-131 Fiscal Code, norms points 45-46)",
+      "url": "https://static.anaf.ro/static/10/Brasov/Brasov/pensii_strainatate.pdf",
+      "publisher": "ANAF (Romanian National Agency for Fiscal Administration)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Obtii dividende din strainatate? Ce taxe trebuie sa platesti (Fiscalitatea.ro, 23 Feb 2026)",
+      "url": "https://www.fiscalitatea.ro/obtii-dividende-din-strainatate-ce-taxe-trebuie-sa-platesti-24711/",
+      "publisher": "Fiscalitatea.ro",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "CASS pentru dividende in 2026 (Fiscalitatea.ro)",
+      "url": "https://www.fiscalitatea.ro/cass-pentru-dividende-creste-sau-va-fi-mentinut-la-12-salarii-minime-din-2026-24586/",
+      "publisher": "Fiscalitatea.ro",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Romania - Individual - Other taxes",
+      "url": "https://taxsummaries.pwc.com/romania/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Romania - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/romania/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

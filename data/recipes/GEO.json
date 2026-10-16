@@ -1,0 +1,86 @@
+{
+  "id": "GEO",
+  "name": "Georgia",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Georgia exempts a resident individual's income that has no Georgian source, including gains (Tax Code Art. 82(1)(u)), so foreign dividends and gains on foreign shares bear no tax. Only dividends paid by Georgian companies bear a final 5% at source; gains on Georgian shares held over 2 years are exempt. Children inherit free of tax as first-line heirs. The home may bear a property tax (not modelled)."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 1000000,
+      "realised_gains": 500000,
+      "wealth": 90000000,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "The family is resident (183 days in a 12-month period, Art. 34(2)). All dividends (1,000,000) and gains (500,000) come from foreign companies and exchanges, so none has a Georgian source. Income, including gains, received by a resident individual that does not belong to Georgian-source income is exempt from income tax (Art. 82(1)(u)). Georgia's 5% tax on dividends applies only to dividends paid by a resident enterprise (Art. 130(1)), and the 15% withheld abroad is not credited since there is nothing to credit against. No net wealth tax. Total 0."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 1000000,
+      "realised_gains": 500000,
+      "wealth": 90000000,
+      "foreign_share": 0.9,
+      "expected": 5000,
+      "working": "The portfolio is 90% foreign, 10% in Georgian companies. Foreign dividends (900,000) and gains: exempt as non-Georgian-source income (Art. 82(1)(u)). Dividends of 100,000 paid by Georgian companies are taxed at source at 5% (Art. 130(1)), final: 5,000. Gains on the Georgian shares (50,000), held more than two years and not used in an economic activity, are exempt (Art. 82(1)(f.c)); the 20% rate (Art. 81) applies only within two years. No wealth tax. Total 5,000."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 30000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Georgia has no separate inheritance or gift tax. The value of property received by gift or inheritance by first- and second-line heirs during the year is exempt from income tax (Art. 82(1)(g)); children are first-line heirs. Each of the three children receives 10,000,000 and pays nothing: total 0. Notary and registration fees are not taxes and are left out."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens who move in and spend 183 days or more a year in Georgia, so they are tax resident under Art. 34(2); EU citizens can stay visa-free for long periods (not verified). The high net worth individual status (Art. 34(6)) is a residence route, not a different tax, and the family does not need it.",
+    "Foreign dividends and gains have no Georgian source (issuer and exchange abroad), even when the shares are held through a Georgian bank or broker; how the source rules treat a Georgian custodian was not checked.",
+    "Georgian shares are held more than two years and not in an economic activity; the second annual check uses 10% Georgian holdings as the family's real portfolio (90% foreign) would.",
+    "No Georgian holding company, foundation or trust is projected: a Georgian company is taxed at 15% on distributed profit and then 5% withholding on the dividend (Art. 97, 98, 130), against nothing for the family personally on foreign income, so it can only cost more. No common local foundation or trust vehicle exists for this purpose.",
+    "The property tax on the EUR 5m home (families with income above GEL 40,000) and land tax are not in the checks or the tax file's wealth tax; see the open questions."
+  ],
+  "open_questions": [
+    "Property tax on the family home: secondary sources give 0.8%-1% of market value for families with income above GEL 100,000 (0.05%-0.2% between GEL 40,000 and 100,000), which could be EUR 40,000-50,000 a year on a EUR 5m home. The Tax Code property tax chapter was not opened; the tax file records wealth tax as 'none' and the amount is not modelled. Whether foreign-source income counts as family income for the threshold is not settled.",
+    "Whether a Georgian-resident individual's gain on foreign shares held through a Georgian broker or custodian keeps its non-Georgian source was not checked.",
+    "Art. 130(1) was confirmed on Matsne; Art. 81 (the 20% rate) and Art. 34 were read from the previous research and PwC, not re-opened on 2026-10-16.",
+    "The 183-day residency test applies to a family that moves in; the HNWI status thresholds come from secondary sources (Order No. 60 of 2023 not opened)."
+  ],
+  "sources": [
+    {
+      "title": "Tax Code of Georgia (Law No. 3591, consolidated version 30/09/2026): Art. 82(1)(f.a)-(f.c), (g), (u); Art. 130",
+      "url": "https://matsne.gov.ge/en/document/view/1043717",
+      "publisher": "Legislative Herald of Georgia (Matsne)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Georgia – Individual – Income determination",
+      "url": "https://taxsummaries.pwc.com/georgia/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Georgia – Individual – Other taxes",
+      "url": "https://taxsummaries.pwc.com/georgia/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Clarifications from the Georgian Tax Service on the procedure for obtaining a tax resident certificate based on wealth",
+      "url": "https://revera.legal/en/info-centr/news-and-analytical-materials/1841-razyasneniya-o-poryadke-polucheniya-sertifikata-nalogovogo-rezidenta-po-sostoyatelnosti/",
+      "publisher": "Revera Legal",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

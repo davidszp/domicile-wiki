@@ -1,0 +1,124 @@
+{
+  "id": "BGR",
+  "name": "Bulgaria",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Dividends bear 5% (final), with the foreign withholding credited, so dividends from the US and most other countries cost nothing extra. Gains on shares sold on an EU/EEA regulated market are exempt; gains on shares sold on other venues (NYSE, Nasdaq, London) bear 10% after a 10% normative expense deduction, 9% effective, and the model scores that case. No wealth tax. Children inherit tax-free."
+    },
+    {
+      "id": "eood_holding",
+      "name": "Bulgarian family holding company (EOOD)",
+      "regime": "eood_holding",
+      "estate": "portfolio",
+      "note": "An EOOD pays 10% corporate tax, but takes out of its base the gains on shares traded on EU/EEA and equivalent US, Australian and Hong Kong markets (ZKPO art. 44) and the dividends of EU/EEA companies (art. 27); dividends from other countries bear 10% less the foreign withholding, which at 15% covers it. So the company pays almost no tax, against 9% on US-venue gains personally, and the cost is the 5% payout tax on what the family takes out, which is excluded from the annual figure. The shares are in the estate at value; children are exempt from inheritance tax, so there is no estate-tax difference, and no tax on gains at death."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 1000000,
+      "realised_gains": 500000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 45000,
+      "working": "All dividends are foreign, with 15% withheld at source (150,000). Dividends: a local individual's dividends from a foreign source bear a final tax on the gross amount (ZDDFL art. 38(1) item 2(b), art. 38(2)) at 5% (art. 46(3)): 5% x 1,000,000 = 50,000. Credit for the foreign tax per country and per type of income, limited to the Bulgarian tax that the same income would bear (art. 76(2)-(3)): 150,000 is limited to 50,000, so the Bulgarian tax on dividends is 0. Gains: all shares are sold on a venue that is not an EU/EEA regulated market (for example NYSE or Nasdaq), so the art. 13(1) item 3 exemption (with para. 1 item 11(a) of the additional provisions as amended by SG 113/2025: regulated market and/or growth market) does not apply. The taxable income is the year's net realised gains reduced by 10% normative expenses (art. 33(5)): 500,000 x 0.9 = 450,000, taxed at 10% (art. 48(1)) = 45,000. Wealth tax: none. Total 0 + 45,000 = 45,000. Assumes the family has no losses to net and does not choose EU venues (selling the same shares on an EU/EEA regulated market would make the gains exempt)."
+    },
+    {
+      "path": "eood_holding",
+      "kind": "annual",
+      "dividends": 1000000,
+      "realised_gains": 500000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 3000,
+      "working": "Corporate income tax is 10% (ZKPO art. 20). Dividends: if from EU/EEA tax residents, excluded from the base (art. 27(1) item 1); if from other countries (the worst case, all 1,000,000), taxable at 10% = 100,000, with the foreign tax credited per country and income type up to the Bulgarian tax (art. 14(2)-(4)): the 15% withholding of 150,000 is limited to 100,000, so tax is 0. Gains of 500,000: the accounting result is reduced by the profit on shares traded on an EU/EEA regulated market or on a third-country market recognised as equivalent, which includes the US (art. 44(1); equivalence list from the NAP handbook fiche II.IV.1, valid from 1 January 2021), so tax is 0. Running costs: accounting and filing of about EUR 3,000 a year, as recorded in the tax file (innovires price guide, EUR 100-250 a month). They save no tax because the company's taxable profit is nil. Wealth tax: none. Total 3,000. The 5% payout tax is excluded. Assumes the portfolio's dividends are taxed at the level of the company only (no hidden profit distribution) and that the shares are traded on EU, US, Australian or Hong Kong venues."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Inheritance tax is a municipal tax under the Local Taxes and Fees Act, but the surviving spouse and lineal relatives, ascendants and descendants, are exempt without limit (ZMDT art. 31). In addition, foreign citizens are taxed only on property situated in Bulgaria (art. 29), and these EU citizens are not Bulgarian citizens. Each of the three children inherits 3,333,333.33 and pays nothing: total 0. Notary fees apply to transfers of real estate only and are not a tax; none arise on a securities portfolio."
+    },
+    {
+      "path": "eood_holding",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The estate is the EOOD shares, worth about EUR 10,000,000. The children are lineal heirs and are exempt from inheritance tax without limit (ZMDT art. 31); foreign citizens are taxed only on property in Bulgaria (art. 29). Bulgaria has no deemed disposal of gains at death, so the unrealised gains in the company are not taxed either: total 0."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens who move in and become Bulgarian tax residents (more than 183 days or centre of vital interests); EU citizens need only register their residence.",
+    "Realised gains on the personal path are scored at 9% (10% after the 10% normative deduction, ZDDFL art. 33(5)), which assumes the shares are sold on venues outside the EU/EEA such as NYSE or Nasdaq. A family that sells on EU/EEA regulated markets pays 0. This is the model's choice for a portfolio that is 90% non-EU.",
+    "Foreign dividends carry 15% withholding at source, creditable per country and income type up to the Bulgarian rate (ZDDFL art. 76; ZKPO art. 14), so the Bulgarian dividend tax on foreign dividends is nil. Dividends paid by a company with little or no source tax (for example UK or Irish payers) would bear 5% personally and 10% in the EOOD.",
+    "The EOOD is funded with cash or newly bought shares at today's value. Contributing existing low-cost shares would be a disposal by the individual taxed under ZDDFL art. 33 (the portfolio is assumed to enter at market value).",
+    "The EOOD's art. 44 relief rests on trading on EU/EEA or recognised third-country (US, Australia, Hong Kong) venues; shares sold elsewhere would bear 10%.",
+    "The family home is held personally; Bulgarian municipal property tax (0.01% to 0.45% of the tax value) and the notary fees on the home are outside the checks.",
+    "Inheritance is shown for the second death, with an estate of EUR 10m passing to three children; the surviving spouse is also exempt (ZMDT art. 31)."
+  ],
+  "open_questions": [
+    "The EOOD's art. 44 relief for third-country markets rests on the NAP handbook fiche (valid for 2025), which lists the US, Australia and Hong Kong as equivalent; the Commission decisions and the CITA supplementary provisions were not opened.",
+    "The EOOD running cost of EUR 3,000 a year is a single law firm's price guide (innovires); confirm with accountant quotes.",
+    "ZKPO art. 27(2) item 3: EU/EEA dividends are excluded only if the payer did not deduct them; this cannot arise for a listed company's ordinary dividends but was not tested for ETF or fund distributions.",
+    "ZKPO provisions on hidden profit distribution and the controlled-foreign-company rules, and ZMDT art. 38, were not opened."
+  ],
+  "sources": [
+    {
+      "title": "Закон за данъците върху доходите на физическите лица (consolidated, lex.bg; text read to SG 30/2026)",
+      "url": "https://lex.bg/laws/ldoc/2135538631",
+      "publisher": "Lex.bg (private legal database)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Zakon za korporativnoto podohodno oblagane (ZKPO), consolidated text: arts. 14, 20, 27, 44",
+      "url": "https://kik-info.com/normativna-baza/zakoni/zkpo/",
+      "publisher": "kik-info.com (consolidated legislation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Zakon za mestnite danatsi i taksite (ZMDT), arts. 29, 31, 44(6) (consolidated)",
+      "url": "https://kik-info.com/normativna-baza/zakoni/zmdt/",
+      "publisher": "kik-info.com (consolidated legislation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Fish II.IV.1 - Financial instruments admitted to trading on a regulated market (art. 44 ZKPO), CITA handbook 2025",
+      "url": "https://kik-info.com/danatsi/naruchnik-zkpo/v/2025/FISH-II.IV.1.php",
+      "publisher": "kik-info.com (NAP-based CITA handbook)",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Bulgaria - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/bulgaria/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Capital Gains from Shares and ETFs - Reporting by Bulgarian Individuals (2026)",
+      "url": "https://www.innovires.com/en/blog/kapitalovi-pechalbi-akcii-etf-fizicheski-lica.html",
+      "publisher": "Innovires",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Annual cost of running an EOOD in Bulgaria",
+      "url": "https://innovires.com/tax-residency/blog/annual-cost-running-eood-bulgaria.html",
+      "publisher": "Innovires (Bulgarian law firm)",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}
