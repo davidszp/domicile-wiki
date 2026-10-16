@@ -80,6 +80,7 @@ def _inheritance(i: Inheritance, currency: str, fx: dict) -> dict:
         "other_cost": i.other_transfer_cost_rate,
         "deemed_disposal": i.deemed_disposal_rate,
         "book_value": i.company_shares_at_book_value,
+        "indexed": i.thresholds_indexed,
         "scope": i.scope,
         "gift_free_after": i.lifetime_gift_tax_free_after_years,
     }
@@ -101,7 +102,7 @@ def compile_regime(regime: Regime, standard: Regime, currency: str, fx: dict) ->
     if dv is not None:
         rules.div = {"domestic": dv.domestic_rate, "foreign_gross": dv.foreign_gross_rate, "ftc": dv.foreign_tax_credit}
     if wt is not None:
-        rules.wealth = [_wealth_component(c, currency, fx) for c in wt.components]
+        rules.wealth = [_wealth_component(c, currency, fx) | {"indexed": wt.thresholds_indexed} for c in wt.components]
     if ih is not None:
         rules.inh = _inheritance(ih, currency, fx)
     if regime.structure is not None:
@@ -113,7 +114,9 @@ def compile_regime(regime: Regime, standard: Regime, currency: str, fx: dict) ->
         }
     if regime.lump_sum is not None:
         ls = regime.lump_sum
-        rules.lump_sum = {"annual": round(to_eur(ls.annual.amount, ls.annual.currency, fx), 2), "covers": list(ls.covers)}
+        spouse = to_eur(ls.spouse_supplement.amount, ls.spouse_supplement.currency, fx) if ls.spouse_supplement else 0.0
+        rules.lump_sum = {"annual": round(to_eur(ls.annual.amount, ls.annual.currency, fx) + spouse, 2), "covers": list(ls.covers),
+                          "indexed": ls.indexed_to_inflation}
     return rules
 
 

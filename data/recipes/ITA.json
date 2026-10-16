@@ -38,8 +38,8 @@
       "dividends": 20000,
       "realised_gains": 15000,
       "wealth": 10000000,
-      "expected": 300000,
-      "working": "The elector pays a fixed substitute tax of EUR 300,000 a year on ALL foreign-source income, for options exercised for a transfer of residence from 1 January 2026 (art. 24-bis para. 2 TUIR as amended by L. 199/2025, art. 1 para. 25). It covers the foreign dividends and the gains on foreign non-qualified shares, and the elector owes no IVAFE or IVIE on the covered assets (Agenzia delle Entrate circular 17/E of 2017, read through secondary sources). Nothing else is due on these inputs: 300,000. This is the elector alone; each family member to whom the option is extended pays EUR 50,000 (art. 24-bis paras. 2 and 6), not included here (see open questions)."
+      "expected": 350000,
+      "working": "Art. 24-bis TUIR as amended by L. 199/2025 (transfers of residence from 1 January 2026): EUR 300,000 a year for the opting taxpayer, replacing tax on all foreign income, gains and IVAFE; the spouse, who co-owns the portfolio, is included at EUR 50,000 (art. 24-bis c. 6). The children have no foreign income and are not included. 300,000 + 50,000 = 350,000, whatever the foreign dividends and gains."
     },
     {
       "path": "flat_tax_24bis",

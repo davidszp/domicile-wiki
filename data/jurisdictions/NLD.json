@@ -162,7 +162,8 @@
             "notes": "Effective annual rate 6.00% deemed return x 36% = 2.16% on investments above the allowance of EUR 118,714 for a couple (EUR 59,357 each). Bank deposits: 1.28% x 36% = 0.46%; debts reduce the base at 2.70%. Main home excluded (Box 1). Foreign real estate usually exempt under treaties."
           }
         ],
-        "property_tax_note": "Municipal property tax (OZB) on the WOZ value, usually around 0.1% a year for owners of homes; the main home is also taxed in Box 1 through a notional rental value (eigenwoningforfait)."
+        "property_tax_note": "Municipal property tax (OZB) on the WOZ value, usually around 0.1% a year for owners of homes; the main home is also taxed in Box 1 through a notional rental value (eigenwoningforfait).",
+        "thresholds_indexed": true
       },
       "inheritance": {
         "summary": "Inheritance tax is charged on each heir. In 2026 a child has an exemption of EUR 26,230; the rest is taxed at 10% up to EUR 158,669 and 20% above. A spouse or partner has an exemption of EUR 828,035. The tax applies if the deceased lived in the Netherlands; Dutch nationals remain treated as resident for 10 years after emigrating, and for gift tax anyone remains resident for one year after leaving.",
@@ -224,7 +225,8 @@
         "foreign_assets": "Worldwide estate if the deceased was resident or deemed resident; credit or exemption for foreign tax under the unilateral decree and the few estate tax treaties.",
         "domicile_rules": "Dutch nationals who die within 10 years of leaving the Netherlands are treated as resident; anyone who makes a gift within one year of leaving is treated as resident for gift tax. The heir's residence does not matter.",
         "spouse_treatment": "taxed",
-        "spouse_note": "A partner (spouse, registered or cohabiting partner) has an exemption of EUR 828,035 in 2026; the rest is taxed at 10% up to EUR 158,669 and 20% above (Successiewet 1956), about 20% effective on a EUR 35M estate."
+        "spouse_note": "A partner (spouse, registered or cohabiting partner) has an exemption of EUR 828,035 in 2026; the rest is taxed at 10% up to EUR 158,669 and 20% above (Successiewet 1956), about 20% effective on a EUR 35M estate.",
+        "thresholds_indexed": true
       }
     },
     {
@@ -481,7 +483,8 @@
         "domicile_rules": "Dutch nationals who die within 10 years of leaving the Netherlands are treated as resident; anyone who makes a gift within one year of leaving is treated as resident for gift tax. The heir's residence does not matter.",
         "spouse_treatment": "taxed",
         "spouse_note": "A partner (spouse, registered or cohabiting partner) has an exemption of EUR 828,035 in 2026; the rest is taxed at 10% up to EUR 158,669 and 20% above (Successiewet 1956), about 20% effective on a EUR 35M estate.",
-        "deemed_disposal_rate": 0.31
+        "deemed_disposal_rate": 0.31,
+        "thresholds_indexed": true
       }
     }
   ],

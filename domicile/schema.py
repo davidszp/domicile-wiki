@@ -118,6 +118,8 @@ class WealthComponent(Strict):
 class WealthTax(MetricBase):
     type: Literal["none", "limited", "broad"]
     components: list[WealthComponent] = []
+    thresholds_indexed: bool = Field(False, description="Allowances and bracket limits rise with prices by law each year "
+                                                       "(e.g. Netherlands art. 10.1 Wet IB 2001); False when they change only by amendment")
     property_tax_note: str = Field("", description="Ordinary municipal/property taxes, kept separate from wealth tax")
 
     @model_validator(mode="after")
@@ -131,6 +133,8 @@ class WealthTax(MetricBase):
 
 class Inheritance(MetricBase):
     basis: Literal["none", "beneficiary", "estate"]
+    thresholds_indexed: bool = Field(False, description="Exemptions and bracket limits rise with prices by law each year "
+                                                       "(e.g. US IRC 2010(c)(3)); False when they change only by amendment")
     children_treatment: Literal["fully_exempt", "exempt_with_conditions", "taxed_low", "taxed"]
     spouse_treatment: Literal["fully_exempt", "exempt_with_conditions", "taxed_low", "taxed"] | None = Field(
         None, description="Surviving spouse inheriting; null = not researched (derived as fully_exempt when basis is 'none' "
@@ -173,6 +177,10 @@ class Inheritance(MetricBase):
 
 class LumpSum(Strict):
     annual: Money
+    spouse_supplement: Money | None = Field(
+        None, description="Added to ``annual`` when the spouse is covered too (e.g. Italy art. 24-bis: EUR 50,000 per family member); "
+                          "the reference family is a couple holding the portfolio jointly")
+    indexed_to_inflation: bool = Field(False, description="The amount rises with prices by law (not merely by occasional amendment)")
     covers: list[Literal["foreign_capital_gains", "foreign_dividends", "foreign_income_all", "wealth_tax_foreign", "domestic_income"]]
     notes: str = ""
 

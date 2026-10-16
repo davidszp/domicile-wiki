@@ -35,6 +35,32 @@ never put the rate in the recipe.
 - `assumptions`: simplifications particular to this country.
 - `open_questions`, `sources`: as in the other guides.
 
+## What the engine already understands
+
+Set these in the **tax file** (never in the recipe); each needs the statute:
+
+- `thresholds_indexed` on `wealth_tax` and `inheritance`, `indexed_to_inflation` on `lump_sum`: true only when the
+  law itself raises the amounts with prices each year (US IRC 2010(c)(3), Netherlands art. 10.1 Wet IB 2001).
+  Amounts changed only by occasional amendment, or frozen (UK nil-rate band), stay false: over 60 years they
+  shrink in real terms.
+- `lump_sum.spouse_supplement`: a fixed extra amount when the spouse is covered too (Italy EUR 50,000).
+- `inheritance.deemed_disposal_rate`: income tax on gains at death. For a structure path it taxes the growth of
+  the company's shares since the family put the portfolio in (Netherlands Box 2, Canada).
+- `inheritance.company_shares_at_book_value`: a structure's shares are valued at book equity at death, so the
+  portfolio's unrealised gains are not taxed (Italy art. 16 TUS).
+- `wealth_tax.components[].credits_withholding`: foreign dividend withholding is credited against a wealth or
+  deemed-return tax (Netherlands Box 3).
+- A path may not use a regime with `requires_qualifying_activity`: the family has no job or business, as in
+  the scores.
+
+## Adding a structure
+
+If wealthy families in the country commonly hold a portfolio through a structure that the tax file lacks
+(a private foundation, a holding company, a family trust), add it to the tax file as a `structure` regime
+with every metric researched and sourced, following `data/RESEARCH_GUIDE.md`, then add the path. Only real,
+commonly used structures; a structure that is never better than direct holding is still worth a path if
+advisers commonly recommend it, so the page can show why.
+
 ## Which countries
 
 Major industrialised countries and the expat and wealth hubs (about 35). Others keep the single annual

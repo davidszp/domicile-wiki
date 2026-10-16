@@ -195,7 +195,8 @@
         "business_relief": "No exemption for business assets; IRC 6166 allows deferral of estate tax on closely held business interests over up to 14 years, and IRC 2032A special-use valuation for farms/businesses.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "US citizens and US-domiciled non-citizens: worldwide estate. Non-domiciled non-citizens: US-situs assets only (US real estate, shares of US companies, tangible property in the US).",
-        "domicile_rules": "Estate tax uses domicile (living in the US with intent to remain), not the income tax residence test. Green card holders are usually domiciled. Expatriates who are covered expatriates trigger the IRC 2801 recipient tax on later gifts/bequests to US persons."
+        "domicile_rules": "Estate tax uses domicile (living in the US with intent to remain), not the income tax residence test. Green card holders are usually domiciled. Expatriates who are covered expatriates trigger the IRC 2801 recipient tax on later gifts/bequests to US persons.",
+        "thresholds_indexed": true
       }
     },
     {
@@ -408,7 +409,8 @@
         ],
         "verified_on": "2026-10-15",
         "confidence": "medium",
-        "verification": "partially_verified"
+        "verification": "partially_verified",
+        "thresholds_indexed": true
       },
       "sources": [
         {

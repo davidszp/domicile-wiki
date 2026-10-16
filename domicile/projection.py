@@ -124,6 +124,24 @@ def path_rules(jur, regime_id: str, fx: dict) -> tuple[Rules, Rules, float | Non
             reg.duration_years, reg.name)
 
 
+def indexed(rules: Rules, factor: float) -> Rules:
+    """``rules`` with every threshold the law indexes to prices scaled by ``factor`` (prices now against today);
+    thresholds the law leaves fixed keep their amount and so shrink in real terms."""
+    if factor == 1.0:
+        return rules
+    up = lambda bs: [[f * factor, rate] for f, rate in bs]  # noqa: E731
+    wealth = None if rules.wealth is None else [
+        {**c, "exempt": c["exempt"] * factor, "entry": c["entry"] * factor, "brackets": up(c["brackets"])} if c.get("indexed") else c
+        for c in rules.wealth]
+    inh = rules.inh
+    if inh and inh.get("indexed"):
+        inh = {**inh, "exemption": inh["exemption"] * factor, "brackets": up(inh["brackets"])}
+    lump = rules.lump_sum
+    if lump and lump.get("indexed"):
+        lump = {**lump, "annual": lump["annual"] * factor}
+    return replace(rules, wealth=wealth, inh=inh, lump_sum=lump)
+
+
 def project_path(rules: Rules, after: Rules, duration: float | None, a: Assumptions, *, us_treaty: bool,
                  cfg_wht: dict, estate: str = "portfolio") -> tuple[list[Year], str | None]:
     """The yearly loop for one path. Returns the years, or a reason when the data cannot price a year."""
@@ -132,8 +150,9 @@ def project_path(rules: Rules, after: Rules, duration: float | None, a: Assumpti
     growth = a.inflation if a.spending_growth is None else a.spending_growth
     out: list[Year] = []
     for t in range(1, a.years + 1):
-        r = rules if duration is None or t <= duration else after
         infl = (1 + a.inflation) ** t
+        base_r = rules if duration is None or t <= duration else after
+        r = indexed(base_r, infl)
         home = a.home * infl
         div, price = v * a.dividend_yield, v * a.price_growth
         gains = price * a.realisation
@@ -146,7 +165,7 @@ def project_path(rules: Rules, after: Rules, duration: float | None, a: Assumpti
         p = Profile(portfolio=v, foreign_share=a.foreign_share, realized_gains=gains, dividends=div,
                     real_estate_local=home, net_wealth=v + home, estate=v + home, children=a.children,
                     source_wht=a.source_wht, citizenship=a.citizenship, us_share=a.us_share, annual_payout=gross)
-        tx = annual_taxes(r, p, after)
+        tx = annual_taxes(r, p, indexed(after, infl))
         if None in (tx["capital_gains"], tx["dividends"], tx["wealth_tax"]):
             gap = next(k for k in ("capital_gains", "dividends", "wealth_tax") if tx[k] is None)
             return out, f"{gap.replace('_', ' ')} is not researched for this regime"
@@ -173,7 +192,7 @@ def project_path(rules: Rules, after: Rules, duration: float | None, a: Assumpti
             v -= inh
             if r.inh and r.inh.get("deemed_disposal"):
                 unrealised, basis = 0.0, v  # the deemed sale resets the base
-        out.append(Year(t, v / infl, taxes / infl, inh / infl, "regime" if r is rules else "standard"))
+        out.append(Year(t, v / infl, taxes / infl, inh / infl, "regime" if base_r is rules else "standard"))
         if v <= 0:
             return out, "the portfolio runs out"
     return out, None

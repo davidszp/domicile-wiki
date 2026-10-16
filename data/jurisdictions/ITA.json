@@ -214,7 +214,11 @@
           "foreign_dividends",
           "wealth_tax_foreign"
         ],
-        "notes": "For residence transfers from 1 Jan 2026 (Budget Law 2026). Family members: EUR 50,000 each. Family of five = EUR 300,000 + 4 x EUR 50,000 = EUR 500,000 a year. Not covered: gains on qualified participations sold in the first 5 tax years (26%)."
+        "notes": "For residence transfers from 1 Jan 2026 (Budget Law 2026). Family members: EUR 50,000 each. Family of five = EUR 300,000 + 4 x EUR 50,000 = EUR 500,000 a year. Not covered: gains on qualified participations sold in the first 5 tax years (26%).",
+        "spouse_supplement": {
+          "amount": 50000,
+          "currency": "EUR"
+        }
       },
       "capital_gains": {
         "summary": "Foreign gains covered by the lump sum, except gains on qualified (substantial) participations realised in the first 5 years, which are taxed at 26%. Italian gains taxed at 26%.",

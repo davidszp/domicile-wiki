@@ -155,3 +155,12 @@ def test_company_shares_at_book_value_leave_unrealised_gains_untaxed():
     market = replace(rules, inh={**rules.inh, "book_value": False})
     mkt, _ = P.project_path(market, after, duration, a, us_treaty=True, cfg_wht=cfg["us_dividend_withholding"])
     assert 0 < book[-1].inheritance < mkt[-1].inheritance
+
+
+def test_indexed_thresholds_rise_with_prices_and_fixed_ones_do_not():
+    """A threshold the law indexes keeps its real value over 60 years; a fixed one shrinks (US estate exclusion vs Germany)."""
+    us, _, _, _ = P.path_rules(J["USA"], "standard", fx.load())
+    de, _, _, _ = P.path_rules(J["DEU"], "standard", fx.load())
+    assert us.inh["indexed"] and not de.inh["indexed"]
+    assert P.indexed(us, 2.0).inh["exemption"] == 2 * us.inh["exemption"]
+    assert P.indexed(de, 2.0).inh["exemption"] == de.inh["exemption"]

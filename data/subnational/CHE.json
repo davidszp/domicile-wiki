@@ -2199,7 +2199,8 @@
                 "notes": "Brackets are combined cantonal + communal marginal rates on TAXABLE wealth (after the social deductions in exempt_amount, here for a married couple with 3 children), derived from the ESTV tax calculator for tax year 2026 by evaluating the tax at each tariff breakpoint; the piecewise-linear schedule reproduces the official totals at the breakpoints. Church tax excluded. Foreign real estate and foreign permanent establishments are excluded from the base but count for the rate (progression). No general burden cap listed for this canton by ESTV."
               }
             ],
-            "property_tax_note": "Some cantons/communes levy a separate annual real-property tax (Liegenschaftssteuer) on gross real estate value; it is not part of the wealth tax."
+            "property_tax_note": "Some cantons/communes levy a separate annual real-property tax (Liegenschaftssteuer) on gross real estate value; it is not part of the wealth tax.",
+            "thresholds_indexed": true
           },
           "inheritance": {
             "status": "researched",
@@ -2264,7 +2265,8 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 257,239 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 143,028 in Zug). At the cantonal minimum income base CHF 500,000 (federal minimum CHF 435,000 for 2026): about CHF 110,569. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 257,239 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 143,028 in Zug). At the cantonal minimum income base CHF 500,000 (federal minimum CHF 435,000 for 2026): about CHF 110,569. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Indexed: the base follows rent and living costs, and the federal and cantonal minimum bases are adjusted for inflation (DBG art. 14(3), art. 39; StG ZG §45).",
+            "indexed_to_inflation": true
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 500,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
