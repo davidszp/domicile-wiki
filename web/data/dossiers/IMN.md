@@ -1,6 +1,6 @@
 # Isle of Man — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026/27
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -33,7 +33,7 @@ The Isle of Man has no capital gains tax. Gains by a resident private investor o
 
 Dividends are taxed as ordinary income: 10% on the first £6,500 of taxable income (single), 21% above. A large dividend income is therefore taxed at 21% (personal allowance £17,000 is withdrawn above £100,000). Residents can elect a tax cap of £220,000 a year (see special regime).
 
-- **rate basis**: Top marginal income tax rate 21% for 2026/27 (gov.im rates table). Manx companies are mostly taxed at 0%, so there is no imputation credit on domestic dividends.
+- **rate basis**: Top marginal income tax rate 21% for 2026/27 (gov.im rates table). Foreign tax relief with no agreement: restricted to the lower of the overseas tax suffered and the Manx income tax due on the income, if reasonable steps were taken to minimise the overseas tax (Income Tax Division); so a 15% withholding is credited in full against 21%. Manx companies are mostly taxed at 0%, so there is no imputation credit on domestic dividends.
 - **exemptions thresholds**: Personal allowance £17,000 single / £34,000 jointly assessed, reduced by £1 per £2 of income above £100,000 / £200,000. 10% band £6,500 / £13,000.
 - **withholding outbound**: No withholding tax on dividends paid by Isle of Man companies (PwC).
 - **treaty network**: Small network of double tax agreements (UK, Guernsey, Jersey and a handful of others); no income tax treaty with the United States, so US-source dividends suffer 30% US withholding. Relief for foreign withholding tax is by credit against Manx tax.
@@ -70,7 +70,7 @@ A resident individual may elect to cap total Isle of Man income tax at £220,000
 - **Eligibility**: Must be, or be about to become, Isle of Man tax resident. Election in writing with details of wealth and income, approved by the Assessor; new residents must elect within 60 days of starting residence. Fixed period of 5 or 10 consecutive tax years, renewable.
 - **Duration (years)**: indefinite
 - **Why it does not expire**: Each election fixes the cap for 5 or 10 consecutive tax years (Income Tax Division guidance note GN51) and can be renewed by a further election, with no limit on renewals, so the cap is available for as long as the person stays resident. It ends if the person leaves or does not renew; the cap amount is fixed at the first-year figure for each election period.
-- **Lump sum / cap in JSON**: 220,000 GBP a year, covers foreign_dividends, foreign_capital_gains, foreign_income_all, domestic_income. £220,000 single / £440,000 jointly assessed couple (2026/27). Payable each year of the 5- or 10-year election regardless of actual income (GN51 s3.2). Capital gains are untaxed anyway. Renewable, so treated as indefinite.
+- **Lump sum / cap in JSON**: 220,000 GBP a year, covers foreign_dividends, foreign_capital_gains, foreign_income_all, domestic_income. £220,000 single / £440,000 jointly assessed couple (2026/27). Elected by the individual who holds the income: spouses are taxed independently by default (joint taxation is an option), so a couple with the portfolio in one name pays one cap (GBP 220,000) and a jointly assessed couple pays GBP 440,000. Not indexed: fixed per election period at the first-year figure; changes only by Budget. Payable each year of the 5- or 10-year election regardless of actual income (GN51 s3.2). Capital gains are untaxed anyway. Renewable, so treated as indefinite.
 
 **Dividends under this regime:** Under the cap, the whole income tax bill is fixed at £220,000 (single) or £440,000 (couple) a year, so additional dividends carry no extra Manx tax once ordinary tax at 21% would exceed the cap (roughly £1.05m of taxable income for a single person).
 
@@ -79,6 +79,17 @@ A resident individual may elect to cap total Isle of Man income tax at £220,000
 - **treaty network**: As standard regime; foreign withholding tax is a final cost once the cap binds.
 - **JSON values**: `{"headline_rate": 0.0, "domestic_rate": 0.0, "foreign_gross_rate": 0.0, "foreign_tax_credit": "not_applicable"}`
 - **Confidence / verification**: high / verified (tax year 2026/27)
+
+## Holding structures
+
+**Structure modelled: Manx investment holding company, regime id `holding_company`.**
+
+- **Company tax:** the standard rate for all resident and non-resident companies is 0% (Income Tax Division); banking and retail profits above GBP 500,000 pay 10%, land and property 20%. There is no capital gains tax. Dividends and gains in the company are untaxed (JSON dividends 0, `exemption`; gains 0); foreign withholding tax is a final cost.
+- **Payout:** dividends to a resident individual are income taxed at 21% at the top (`payout_tax_rate` 0.21).
+- **Retained profits:** not taxed on the shareholder. The Distributable Profits Charge was repealed for accounting periods from 6 April 2008, and the Attribution Regime for Individuals that replaced it was abolished for periods after 6 April 2012 (Income Tax Division).
+- **Inheritance:** the shares of a Manx company are Manx assets, so a grant of probate attracts the Manx court fee (GBP 9,422.50 above GBP 1,000,000, as at November 2024), whereas foreign shares held directly pay none. The structure metric is the standard regime's (no fee modelled).
+- **Running costs:** not sourced (omitted). US citizens are excluded (CFC/PFIC rules).
+- **Considered, not added:** Manx trusts and foundations (no income tax saving for a resident family; not sourced).
 
 ## Company taxation (kept separate from personal tax)
 
@@ -104,6 +115,7 @@ US citizens: No US-Isle of Man income tax treaty, so no treaty relief and no sav
 - Immigration routes and thresholds for non-British nationals not researched in detail.
 - Whether the Isle of Man Income Tax Division publishes a day-count residence test (PwC says there is no general definition).
 - Cost-of-living items not sourced (no reliable published 2026 figures found; King William's College fee schedule year unclear).
+- Tax cap and spouses: the Income Tax Division publishes GBP 220,000 for a single person and GBP 440,000 for a jointly assessed couple; the recipe assumes independent taxation with the portfolio in the name of one spouse, so one cap of GBP 220,000. If both spouses hold income and both elect, the total would be GBP 440,000.
 
 ## Sources
 
@@ -118,9 +130,14 @@ US citizens: No US-Isle of Man income tax treaty, so no treaty relief and no sav
 - Isle of Man Constabulary Annual Report 2025-26: <https://www.iompolice.im/media/mkobljkr/20252026-annual-report-updated-230726.pdf>
 - King William's College - Admissions, fees: <https://kwc.im/admissions/>
 - Rightmove - 4-5 bedroom property to rent in the Isle of Man: <https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E706&minBedrooms=4&maxBedrooms=5&sortType=6>
+- International agreements and double taxation relief (Income Tax Division): <https://gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/international-agreements-and-double-taxation-relief/>
+- Corporate Tax Rates (Income Tax Division): <https://gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/corporate-tax-rates>
+- Attribution Regime for Individuals (Income Tax Division): <https://gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/attribution-regime-for-individuals>
+- Distributable Profits Charge (Income Tax Division): <https://gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/distributable-profits-charge>
 
 ## Change log
 
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added rent (Rightmove, Isle of Man 4-5 bedrooms, £3,000/month) and King William's College fee (£33,900, Years 12-13, 2026-27); added duration_note to the tax cap; added a homicide-rate indicator override (1.18 per 100,000, Isle of Man Constabulary 2025-26).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: recipe pass (`data/recipes/IMN.json`). Added the `holding_company` structure regime (0% company, 21% payout; Income Tax Division, repeal of the DPC and the attribution regime). Added the foreign tax relief rule (lower of foreign tax and Manx tax) and the spouse/independent-taxation note on the cap. No change to the cap amount: GBP 220,000 is for one individual, not indexed.

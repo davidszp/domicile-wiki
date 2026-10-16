@@ -1,0 +1,98 @@
+{
+  "id": "GIB",
+  "name": "Gibraltar",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "An ordinarily resident individual is taxed on foreign 'other income' (Income Tax Act 2010 s. 11(2)), but dividends from listed companies or out of profits Gibraltar did not tax are excluded (Sch. 1 Table C Class 1(a)(iii)-(iv)); no tax on interest or capital gains, no wealth or inheritance tax. A foreign portfolio therefore bears no Gibraltar tax."
+    },
+    {
+      "id": "category_2",
+      "name": "Category 2 high-net-worth individual",
+      "regime": "category_2",
+      "note": "Certificate under the Qualifying (Category 2) Individuals Rules 2004: foreign dividends are outside assessable income (Rule 10(1)), assessable income is capped at GBP 118,000, and the minimum tax is GBP 37,000 a year (Rule 9(4)(b)), which is the whole tax for a passive foreign portfolio. A spouse and children can be covered by election (Rule 11). It costs GBP 37,000 more than ordinary residence; it is relevant as a residence route and for certainty. Net assets GBP 5 million for new applicants from June 2026."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 0,
+      "working": "Tax year 2025/26 and 2026/27 rules. Inputs in GBP (GIP at par): dividends 600,000 (90% foreign, from companies listed on recognised exchanges or paid out of profits Gibraltar did not tax), gains 300,000, portfolio 30,000,000; a married couple with 3 children, ordinarily resident, no Gibraltar-source income or employment, no Gibraltar rents. DIVIDENDS 600,000: s. 11(2) of the Income Tax Act 2010 charges an ordinarily resident individual on Table B and Table C income arising or received outside Gibraltar; Table C Class 1(a) of Schedule 1 charges dividends except those paid by a company whose shares are listed on a Recognised Stock Exchange (para (iii)) and those paid out of profits or gains on which no tax has been charged under the Act (para (iv)); the dividends are of that kind, so nothing is charged. Interest is not a head of charge. GAINS 300,000: no charge to tax on capital gains on shares (none in Schedule 1; the property-disposal charge in Part 2 applies only to residential property). WEALTH 30,000,000: no wealth tax. Total 0."
+    },
+    {
+      "path": "category_2",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 37000,
+      "working": "Qualifying (Category 2) Individuals Rules 2004, tax year 2026/27, for a certificate holder past the first year. Inputs in GBP (GIP at par): dividends 600,000 (90% foreign, from companies listed on recognised exchanges or paid out of profits Gibraltar did not tax), gains 300,000, portfolio 30,000,000; a married couple with 3 children, ordinarily resident, no Gibraltar-source income or employment, no Gibraltar rents. The Allowances Based System applies to the first GBP 118,000 of assessable income only (Rule 9(3), 9(4)(a), 9(5)). Assessable income: dividends, pensions and emoluments from outside Gibraltar are not taken into account (Rule 10(1)); capital gains are not taxed; no Gibraltar rent or work (Rule 10(3)-(4)); so assessable income is nil and the computed tax is nil. The minimum amount of tax payable for any year after the year of application is GBP 37,000 (Rule 9(4)(b)), so tax payable is 37,000. The spouse's and children's income is deemed to be the holder's by an election (Rule 11(1)); no further minimum arises. The one-off advance payment (maximum tax, Rule 8) is refundable and the application fee is one-off; neither is counted."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Gibraltar has no inheritance tax, no estate duty and no gift tax (PwC Gibraltar, Other taxes; estate duty was repealed in 1997 by the Estate Duties (Repeal and Consequential Provisions) Act, a source that could not be opened). The Income Tax Act 2010 does not charge gifts or inheritances: Schedule 1 has no such head. Stamp duty falls on transfers of Gibraltar real estate, not on the estate here (a portfolio of foreign shares). Tax 0 on an estate of GBP 10,000,000."
+    }
+  ],
+  "assumptions": [
+    "The family is ordinarily resident (183 days in the year or 300 days over three years) and, for Category 2, was not present over 183 days in any of the previous five years and has no Gibraltar business or employment.",
+    "The portfolio is of shares listed on exchanges the Commissioner has designated as Recognised Stock Exchanges, or of companies whose profits Gibraltar did not tax; the designating Gazette notice was not found.",
+    "No structure is modelled: a resident individual already pays no tax on foreign listed dividends, interest or gains, so a Gibraltar company, trust or foundation could not lower the tax; Gibraltar companies are taxed on Gibraltar-source income only and would add running costs.",
+    "Ordinary residence also needs a right to reside (a Gibraltar residence permit or a Category 2 certificate); post-Brexit rules for EU nationals were not researched, so the standard path is shown as if open.",
+    "Category 2: one certificate and one minimum for the family by the Rule 11 election; the GBP 5 million net-assets requirement (announced 18 June 2026) is met by a GBP 30 million portfolio.",
+    "Stamp duty on buying the EUR 5 million home (up to 4.5% on the part above GBP 800,000, PwC) is a one-off cost and is not modelled."
+  ],
+  "open_questions": [
+    "The Gazette notice designating Recognised Stock Exchanges was not found; para (iv) of Table C Class 1(a) would exempt foreign dividends out of untaxed profits in any case.",
+    "The Estate Duties (Repeal and Consequential Provisions) Act 1997 could not be opened (404); the no-estate-duty statement rests on PwC.",
+    "The Category 2 net-assets figure (GBP 5 million) is announced policy; the Rules contain no figure (press release 469/2026).",
+    "Rule 11 lets the holder elect that the spouse's and children's income be deemed his; whether a separate certificate (Rule 11(5)) would cost a second GBP 37,000 minimum is not stated in the Rules and was not verified."
+  ],
+  "sources": [
+    {
+      "title": "Income Tax Act 2010 (Act 2010-21), consolidated to 23 March 2026 (PDF, 297 pages)",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/income-tax-act-2010-2627/download",
+      "publisher": "Government of Gibraltar (gibraltarlaws.gov.gi)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Qualifying (Category 2) Individuals Rules 2004 (LN 2004/070), consolidated version 1 August 2024",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(01-08-24).pdf",
+      "publisher": "Government of Gibraltar (gibraltarlaws.gov.gi)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Qualifying Individuals - Questions & Answers (HNWI, Category 2, HEPSS)",
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/qualifying-individuals",
+      "publisher": "HM Government of Gibraltar, Income Tax Office",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Gibraltar - Individual - Other taxes",
+      "url": "https://taxsummaries.pwc.com/gibraltar/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Government announces changes to Category 2 regime (press release 469/2026, 18 June 2026)",
+      "url": "https://www.gibraltar.gov.gi/press-releases/government-announces-changes-to-category-2-regime-4692026-12107",
+      "publisher": "HM Government of Gibraltar",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

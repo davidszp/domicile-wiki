@@ -13,7 +13,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from domicile.taxcalc import METRICS as TAX_METRICS
-from domicile.taxcalc import Profile, Rules, annual_taxes, transfer_taxes, unrelieved_us_wht
+from domicile.taxcalc import Profile, Rules, annual_taxes, local_share, transfer_taxes, unrelieved_us_wht
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "data" / "scoring_config.json"
@@ -133,7 +133,8 @@ def tax_metric_scores(rules: Rules, profile: Profile, cfg: dict, country_id: str
         if us_applies and "inheritance" not in us_exempt:
             exemption_eur = us["estate_exemption_usd"] / usd_per_eur
             us_tax = us["estate_rate"] * max(0.0, profile.estate - exemption_eur)
-            other = profile.estate * rules.inh["other_cost"]
+            reach = profile.estate * local_share(profile) if rules.inh.get("scope") == "local_assets_only" else profile.estate
+            other = reach * rules.inh["other_cost"]
             inh = max(inh - other, us_tax) + other
         rate = inh / profile.estate
         score = 100.0 - ti["max_penalty"] * min(1.0, rate / ti["zero_score_rate"])

@@ -1,8 +1,8 @@
 {
   "parent": "CHE",
   "unit_type": "canton",
-  "researched_on": "2026-10-15",
-  "notes": "All 26 cantons. Tax figures are for the cantonal capital (plus notes for Wollerau/Freienbach SZ, Lugano TI and Baar ZG), married couple with 3 children, no church membership, tax year 2026, computed with the official ESTV tax calculator. The national file represents the City of Zurich, so the ZH unit only overrides the lump-sum regime. Private capital gains on securities are exempt everywhere; capital_gains is overridden per canton only because real estate gains tax differs.",
+  "researched_on": "2026-10-16",
+  "notes": "All 26 cantons. Tax figures are for the cantonal capital (plus notes for Wollerau/Freienbach SZ, Lugano TI and Baar ZG), married couple with 3 children, no church membership, tax year 2026, computed with the official ESTV tax calculator. The national file represents the City of Zurich, so the ZH unit only overrides the lump-sum regime. Private capital gains on securities are exempt everywhere; capital_gains is overridden per canton only because real estate gains tax differs. Cantons CH-GE, CH-VD, CH-TI and CH-SZ were re-derived from the statutes on 2026-10-16 (see the recipes CH-GE, CH-VD, CH-TI and CH-SZ).",
   "units": [
     {
       "code": "CH-ZH",
@@ -285,7 +285,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 387200.0,
+              "amount": 387989.0,
               "currency": "CHF"
             },
             "covers": [
@@ -294,7 +294,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 387,184 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 272,973 in Bern). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 138,916. Wealth tax only on real estate in the canton. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 387,184 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 272,973 in Bern). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 138,916. Wealth tax only on real estate in the canton. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 400,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth tax only on real estate in the canton. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -582,7 +582,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 317600.0,
+              "amount": 318389.0,
               "currency": "CHF"
             },
             "covers": [
@@ -591,7 +591,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 317,643 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 203,432 in Luzern). At the cantonal minimum income base CHF 646,700 (federal minimum CHF 435,000 for 2026): about CHF 170,279. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 317,643 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 203,432 in Luzern). At the cantonal minimum income base CHF 646,700 (federal minimum CHF 435,000 for 2026): about CHF 170,279. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 646,700 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -900,7 +900,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 291700.0,
+              "amount": 292489.0,
               "currency": "CHF"
             },
             "covers": [
@@ -909,7 +909,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 291,661 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 177,450 in Altdorf UR). At the cantonal minimum income base CHF 434,700 (federal minimum CHF 435,000 for 2026): about CHF 118,779. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 291,661 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 177,450 in Altdorf UR). At the cantonal minimum income base CHF 434,700 (federal minimum CHF 435,000 for 2026): about CHF 118,779. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 434,700 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -942,7 +942,7 @@
     {
       "code": "CH-SZ",
       "name": "Schwyz",
-      "summary": "Schwyz, figures for Schwyz. Dividends/income top marginal 23.4% (incl. 11.5% federal, no church tax). Wealth tax top marginal 0.17% (CHF 17,100 on CHF 10M taxable). No inheritance or gift tax at all. Lump-sum taxation available (estimate about CHF 267,285/yr on a CHF 1M base). Wollerau/Freienbach: 19.3% top rate, 0.10% wealth tax.",
+      "summary": "Schwyz, figures for the village of Schwyz (canton 110% + district 35% + commune 140% = 285% of the simple tax; Wollerau 174%). Dividends/income top marginal 23.39% (11.5% federal + canton 5.0% x 110% + district and commune 3.65% x 175%; no church tax). Wealth tax top marginal 0.171% (0.6 per mille x 285%; CHF 17,100 on CHF 10M taxable). No inheritance or gift tax at all. Lump-sum taxation available (CHF 268,075 a year on a CHF 1M base, statutory minimum base CHF 600,000).",
       "regime_overrides": {
         "standard": {
           "capital_gains": {
@@ -1004,10 +1004,10 @@
           },
           "dividends": {
             "status": "researched",
-            "summary": "Dividends are ordinary income. Top combined marginal rate in Schwyz: 23.39% (federal 11.5% + cantonal/communal 11.89%, married tariff, church tax excluded). Only for holdings of at least 10% is the dividend partially taxed (federal 70%, cantonal 50%), giving about 14.0%. Portfolio dividends are taxed in full.",
+            "summary": "Dividends are ordinary income. Top combined marginal rate in Schwyz (village): 23.39% = federal 11.5% + canton 5.0% x 110% (StG SZ para. 36a, canton tariff) + district and commune 3.65% x (35% + 140%) (para. 36), married tariff, church tax excluded. Only for holdings of at least 10% is the dividend partially taxed (federal 70%, cantonal 50%), giving about 14.0%. Portfolio dividends are taxed in full.",
             "exemptions_thresholds": "Partial taxation needs a stake of at least 10% of share capital: federal 70% taxable (DBG art. 20 para. 1bis), cantonal 50% taxable (StHG art. 7 para. 1, minimum 50%).",
             "eligibility_conditions": "Swiss tax residents (unlimited liability).",
-            "regional_differences": "Communal multipliers vary strongly: Wollerau and Freienbach (Höfe district, on Lake Zurich) have a top income/dividend rate of 19.33% and wealth tax of CHF 10,440 on CHF 10M (0.10%), the lowest in Switzerland.",
+            "regional_differences": "Communal multipliers vary: Wollerau (district Hoefe 14% + commune 50% + canton 110% = 174%) pays a top rate of 11.5% + 5.0% x 110% + 3.65% x 64% = 19.34%.",
             "important_exceptions": "Church tax (if a member of a recognised church) adds roughly 1-3 points and is excluded here.",
             "tax_year": "2026",
             "sources": [
@@ -1038,28 +1038,49 @@
                 "publisher": "PwC",
                 "kind": "professional",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Steuergesetz des Kantons Schwyz (SRSZ 172.200), Stand 1. Februar 2026",
+                "url": "https://www.sz.ch/public/upload/assets/29694/172_200.pdf?fp=13",
+                "publisher": "Kanton Schwyz",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Kantonsblatt Schwyz (Stand Februar 2026): Steuertarife, Sozialabzüge, Aufwandbesteuerung",
+                "url": "https://www.estv2.admin.ch/stp/kb/sz-de.pdf",
+                "publisher": "Swiss Federal Tax Administration (ESTV)",
+                "kind": "tax_authority",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Steuerfusstabelle 2026 (Steuerfüsse in Prozenten der einfachen Steuer)",
+                "url": "https://www.sz.ch/public/upload/assets/90947/Steuerfusstabelle_2026.pdf?fp=4",
+                "publisher": "Steuerverwaltung Kanton Schwyz",
+                "kind": "government",
+                "accessed": "2026-10-16"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
-            "headline_rate": 0.2339,
-            "domestic_rate": 0.2339,
-            "foreign_gross_rate": 0.2339,
+            "headline_rate": 0.233875,
+            "domestic_rate": 0.233875,
+            "foreign_gross_rate": 0.233875,
             "foreign_tax_credit": "credit",
-            "rate_basis": "Marginal rate from the ESTV calculator (2026) on taxable income of CHF 5M for a married couple with 3 children in Schwyz, no church membership: (tax at 5.01M - tax at 5.00M)/10,000. Swiss 35% withholding tax is refunded to residents who declare the dividend.",
+            "rate_basis": "Statutory marginal rate on income above CHF 433,500 of taxable income for a married couple (rate fixed at income / 1.9, para. 36 para. 2): the canton tariff is 5% of the whole income (para. 36a), the district/commune tariff 3.65% of the whole income above CHF 258,800 (para. 36); simple tax x Steuerfuss 2026 (canton 110%, district 35%, commune 140%, Steuerfusstabelle 2026); federal 11.5% (DBG art. 36 para. 2). The earlier ESTV-calculator figure (23.39%) agrees. Swiss 35% withholding tax is refunded to residents who declare the dividend.",
             "withholding_outbound": "Swiss companies withhold 35% Verrechnungssteuer on dividends; refundable to Swiss residents, reduced by treaty for non-residents (residual 0-20%).",
             "treaty_network": "About 100 income tax treaties (PwC: 99 in force at 1 December 2025). Non-recoverable treaty-rate foreign WHT is credited (flat-rate credit) against Swiss tax.",
             "holding_company_notes": "Company-level participation reduction for holdings of 10% or CHF 1M (DBG art. 69); see corporate."
           },
           "wealth_tax": {
             "status": "researched",
-            "summary": "Annual cantonal and communal net wealth tax on worldwide net assets (no federal wealth tax). In Schwyz the top combined marginal rate is 0.171% (church tax excluded). Tax on CHF 10M taxable wealth: CHF 17,100; on CHF 50M: CHF 85,500 (0.17% average), before any burden cap.",
-            "exemptions_thresholds": "Social deductions for a married couple with 3 children: CHF 340,000. Household effects are exempt; debts are deductible. Listed securities are taxed at year-end market value (31 December).",
+            "summary": "Annual cantonal, district and communal net wealth tax on worldwide net assets (no federal wealth tax). Flat 0.6 per mille simple tax on taxable wealth rounded down to CHF 1,000 (StG SZ para. 48) x 285% in the village of Schwyz = 0.171% (CHF 17,100 on CHF 10M taxable; CHF 85,500 on CHF 50M). No burden cap.",
+            "exemptions_thresholds": "Social deductions from net wealth for a married couple with 3 minor children: CHF 250,000 + 3 x CHF 30,000 = CHF 340,000 (para. 47). Not indexed: the cold-progression adjustment of para. 49 covers income-tax tariff and deductions (paras. 25, 28, 33, 35) and the lump-sum minimum, not para. 47. Household effects are exempt; debts are deductible.",
             "eligibility_conditions": "Applies to all persons with unlimited tax liability in the canton (domicile or 30/90-day stay rules).",
-            "regional_differences": "Communal multipliers vary strongly: Wollerau and Freienbach (Höfe district, on Lake Zurich) have a top income/dividend rate of 19.33% and wealth tax of CHF 10,440 on CHF 10M (0.10%), the lowest in Switzerland.",
-            "important_exceptions": "No ESTV-listed burden cap for this canton.",
+            "regional_differences": "Wollerau: 0.6 per mille x 174% = 0.1044%.",
+            "important_exceptions": "No burden cap (Belastungsobergrenze) in Schwyz.",
             "tax_year": "2026",
             "sources": [
               {
@@ -1082,9 +1103,30 @@
                 "publisher": "Swiss Federal Tax Administration (ESTV)",
                 "kind": "tax_authority",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Steuergesetz des Kantons Schwyz (SRSZ 172.200), Stand 1. Februar 2026",
+                "url": "https://www.sz.ch/public/upload/assets/29694/172_200.pdf?fp=13",
+                "publisher": "Kanton Schwyz",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Kantonsblatt Schwyz (Stand Februar 2026): Steuertarife, Sozialabzüge, Aufwandbesteuerung",
+                "url": "https://www.estv2.admin.ch/stp/kb/sz-de.pdf",
+                "publisher": "Swiss Federal Tax Administration (ESTV)",
+                "kind": "tax_authority",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Steuerfusstabelle 2026 (Steuerfüsse in Prozenten der einfachen Steuer)",
+                "url": "https://www.sz.ch/public/upload/assets/90947/Steuerfusstabelle_2026.pdf?fp=4",
+                "publisher": "Steuerverwaltung Kanton Schwyz",
+                "kind": "government",
+                "accessed": "2026-10-16"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
@@ -1101,15 +1143,16 @@
                     "rate": 0.00171
                   }
                 ],
-                "notes": "Brackets are combined cantonal + communal marginal rates on TAXABLE wealth (after the social deductions in exempt_amount, here for a married couple with 3 children), derived from the ESTV tax calculator for tax year 2026 by evaluating the tax at each tariff breakpoint; the piecewise-linear schedule reproduces the official totals at the breakpoints. Church tax excluded. Foreign real estate and foreign permanent establishments are excluded from the base but count for the rate (progression). No general burden cap listed for this canton by ESTV."
+                "notes": "Taxable wealth = net wealth less CHF 340,000 (couple with 3 minor children, para. 47). Rate = 0.6 per mille (para. 48) x 285% (canton 110% + district 35% + commune 140%, Steuerfusstabelle 2026) = 0.171%, constant at every level. Church tax excluded. Foreign real estate is excluded from the base but counts for the rate. No burden cap in Schwyz."
               }
             ],
-            "property_tax_note": "Some cantons/communes levy a separate annual real-property tax (Liegenschaftssteuer) on gross real estate value; it is not part of the wealth tax."
+            "property_tax_note": "Some cantons/communes levy a separate annual real-property tax (Liegenschaftssteuer) on gross real estate value; it is not part of the wealth tax.",
+            "thresholds_indexed": false
           },
           "inheritance": {
             "status": "researched",
             "tax_year": "2026",
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "verification": "verified",
             "eligibility_conditions": "Applies when the deceased/donor was domiciled in the canton (movable assets); Swiss real estate is taxed in the canton where it lies.",
             "regional_differences": "",
@@ -1121,7 +1164,7 @@
             "business_relief_covers_public_shares": false,
             "other_transfer_cost_rate": 0,
             "lifetime_gift_tax_free_after_years": null,
-            "summary": "Schwyz levies neither inheritance nor gift tax, for any recipient.",
+            "summary": "Schwyz levies neither inheritance nor gift tax, for any recipient (StG SZ para. 2 para. 3: 'Es wird weder eine Erbschafts- noch eine Schenkungssteuer erhoben').",
             "exemptions_thresholds": "No inheritance or gift tax at all.",
             "sources": [
               {
@@ -1144,6 +1187,13 @@
                 "publisher": "Swiss Federal Tax Administration (ESTV/AFC)",
                 "kind": "tax_authority",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Steuergesetz des Kantons Schwyz (SRSZ 172.200), Stand 1. Februar 2026",
+                "url": "https://www.sz.ch/public/upload/assets/29694/172_200.pdf?fp=13",
+                "publisher": "Kanton Schwyz",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
               }
             ],
             "confidence": "high",
@@ -1160,7 +1210,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 267300.0,
+              "amount": 268075.0,
               "currency": "CHF"
             },
             "covers": [
@@ -1169,9 +1219,10 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 267,285 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 153,074 in Schwyz). At the cantonal minimum income base CHF 600,000 (federal minimum CHF 435,000 for 2026): about CHF 128,560. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (assumed to be 7x the rent of a family home; a prime-rent sample of CHF 5,890 a month would give 7 x 70,680 = CHF 494,760, so the statutory minimum base CHF 600,000 would then apply): federal CHF 115,000 (DBG art. 14 para. 4: ordinary tariff, without the CHF 263 child reduction of art. 36 para. 2bis) + canton CHF 55,000 (5% x CHF 1M x 110%) + district and commune CHF 63,875 (3.65% x CHF 1M x 175%) + wealth tax on a deemed CHF 20,000,000 (20 x the base, StG SZ para. 15a para. 3) at 0.6 per mille x 285% = CHF 34,200: CHF 268,075. Minimum base: the highest of CHF 600,000, 7x the rent or rental value, and the worldwide living costs (para. 15a para. 1). The minimum base is adjusted to the consumer price index every three years (para. 49; first adjustment under the new law on 1 January 2029), so the amount is flagged as indexed. The real base is the higher of these and a control calculation on Swiss-source income and treaty-relieved foreign income (para. 15a paras. 4-5).",
+            "indexed_to_inflation": true
           },
-          "eligibility": "Available in 2026. Cantonal minimum income base CHF 600,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
+          "eligibility": "Available in 2026. Cantonal minimum income base CHF 600,000 (StG SZ para. 15a para. 1 a); federal minimum CHF 435,000 (DBG art. 14 para. 3 a, indexed); deemed wealth at least 20 times the income base (para. 15a para. 3). Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland (para. 15).",
           "sources": [
             {
               "title": "ESTV Steuermäppchen 2025: Besteuerung nach dem Aufwand (lump-sum taxation bases by canton)",
@@ -1193,11 +1244,28 @@
               "publisher": "Swiss Confederation (Fedlex)",
               "kind": "legislation",
               "accessed": "2026-10-15"
+            },
+            {
+              "title": "Steuergesetz des Kantons Schwyz (SRSZ 172.200), Stand 1. Februar 2026",
+              "url": "https://www.sz.ch/public/upload/assets/29694/172_200.pdf?fp=13",
+              "publisher": "Kanton Schwyz",
+              "kind": "legislation",
+              "accessed": "2026-10-16"
+            },
+            {
+              "title": "Kantonsblatt Schwyz (Stand Februar 2026): Steuertarife, Sozialabzüge, Aufwandbesteuerung",
+              "url": "https://www.estv2.admin.ch/stp/kb/sz-de.pdf",
+              "publisher": "Swiss Federal Tax Administration (ESTV)",
+              "kind": "tax_authority",
+              "accessed": "2026-10-16"
             }
           ]
         }
       },
-      "open_questions": [],
+      "open_questions": [
+        "Schwyz tariff note: the cantonal tariff (para. 36a) tops out at 5% but the district/commune tariff (para. 36) at 3.65%, so the combined rate is not the 'cantonal tariff x multiplier' of other cantons; the engine uses one flat top marginal rate, exact above CHF 433,500 (income / 1.9).",
+        "Burden of the lump-sum control calculation and the modified lump sum (treaty relief on dividends) is not modelled; see the recipe CH-SZ."
+      ],
       "cost_of_living": {
         "city": "Wollerau / Freienbach (Höfe district)",
         "intl_school_annual_fee": {
@@ -1463,7 +1531,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 256400.0,
+              "amount": 257189.0,
               "currency": "CHF"
             },
             "covers": [
@@ -1472,7 +1540,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 256,411 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 142,200 in Sarnen). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 98,521. Wealth base at least 10x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 256,411 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 142,200 in Sarnen). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 98,521. Wealth base at least 10x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 400,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 10x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -1723,7 +1791,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 275400.0,
+              "amount": 276189.0,
               "currency": "CHF"
             },
             "covers": [
@@ -1732,7 +1800,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 275,375 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 161,164 in Stans). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 106,085. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 275,375 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 161,164 in Stans). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 106,085. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 400,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -1983,7 +2051,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 391800.0,
+              "amount": 392589.0,
               "currency": "CHF"
             },
             "covers": [
@@ -1992,7 +2060,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 391,827 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 277,616 in Glarus). At the cantonal minimum income base CHF 434,700 (federal minimum CHF 435,000 for 2026): about CHF 151,718. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 391,827 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 277,616 in Glarus). At the cantonal minimum income base CHF 434,700 (federal minimum CHF 435,000 for 2026): about CHF 151,718. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 434,700 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -2256,7 +2324,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 257200.0,
+              "amount": 258028.69,
               "currency": "CHF"
             },
             "covers": [
@@ -2265,7 +2333,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 257,239 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 143,028 in Zug). At the cantonal minimum income base CHF 500,000 (federal minimum CHF 435,000 for 2026): about CHF 110,569. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Indexed: the base follows rent and living costs, and the federal and cantonal minimum bases are adjusted for inflation (DBG art. 14(3), art. 39; StG ZG §45).",
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 258,029 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff, without the per-child reduction, DBG art. 14 para. 4 + cantonal/communal CHF 143,028 in Zug). At the cantonal minimum income base CHF 500,000 (federal minimum CHF 435,000 for 2026): about CHF 110,569. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Indexed: the base follows rent and living costs, and the federal and cantonal minimum bases are adjusted for inflation (DBG art. 14(3), art. 39; StG ZG §45).",
             "indexed_to_inflation": true
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 500,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
@@ -2603,7 +2671,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 372700.0,
+              "amount": 373489.0,
               "currency": "CHF"
             },
             "covers": [
@@ -2612,7 +2680,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 372,691 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 258,480 in Fribourg). At the cantonal minimum income base CHF 250,000 (federal minimum CHF 435,000 for 2026): about CHF 97,608. Wealth base at least 4x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 372,691 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 258,480 in Fribourg). At the cantonal minimum income base CHF 250,000 (federal minimum CHF 435,000 for 2026): about CHF 97,608. Wealth base at least 4x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 250,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 4x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -2908,7 +2976,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 397200.0,
+              "amount": 397989.0,
               "currency": "CHF"
             },
             "covers": [
@@ -2917,7 +2985,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 397,175 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 282,964 in Solothurn). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 150,341. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 397,175 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 282,964 in Solothurn). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 150,341. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 400,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -4205,7 +4273,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 281400.0,
+              "amount": 282189.0,
               "currency": "CHF"
             },
             "covers": [
@@ -4214,7 +4282,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 281,411 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 167,200 in Appenzell). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 108,521. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 281,411 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 167,200 in Appenzell). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 108,521. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 400,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -4465,7 +4533,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 403400.0,
+              "amount": 404189.0,
               "currency": "CHF"
             },
             "covers": [
@@ -4474,7 +4542,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 403,401 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 289,190 in St. Gallen). At the cantonal minimum income base CHF 600,000 (federal minimum CHF 435,000 for 2026): about CHF 215,163. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 403,401 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 289,190 in St. Gallen). At the cantonal minimum income base CHF 600,000 (federal minimum CHF 435,000 for 2026): about CHF 215,163. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 600,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -4753,7 +4821,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 307000.0,
+              "amount": 307789.0,
               "currency": "CHF"
             },
             "covers": [
@@ -4762,7 +4830,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 306,989 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 192,778 in Chur). At the cantonal minimum income base CHF 434,700 (federal minimum CHF 435,000 for 2026): about CHF 118,143. Wealth base = capitalised income base (multiple not stated by ESTV; estimate excludes wealth tax). Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 306,989 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 192,778 in Chur). At the cantonal minimum income base CHF 434,700 (federal minimum CHF 435,000 for 2026): about CHF 118,143. Wealth base = capitalised income base (multiple not stated by ESTV; estimate excludes wealth tax). Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 434,700 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base = capitalised income base (multiple not stated by ESTV; estimate excludes wealth tax). Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -5031,7 +5099,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 373400.0,
+              "amount": 374189.0,
               "currency": "CHF"
             },
             "covers": [
@@ -5040,7 +5108,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 373,428 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 259,217 in Aarau). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 134,348. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 373,428 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 259,217 in Aarau). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 134,348. Wealth base at least 20x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 400,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 20x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -5291,7 +5359,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 302300.0,
+              "amount": 303089.0,
               "currency": "CHF"
             },
             "covers": [
@@ -5300,7 +5368,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 302,265 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 188,054 in Frauenfeld). At the no fixed cantonal minimum (10x rent / 4x pension), minimum tax CHF 150,000 (federal minimum CHF 435,000 for 2026): about CHF 191,641. No separate wealth base; cantonal + communal income and wealth tax must be at least CHF 150,000 a year. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 302,265 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 188,054 in Frauenfeld). At the no fixed cantonal minimum (10x rent / 4x pension), minimum tax CHF 150,000 (federal minimum CHF 435,000 for 2026): about CHF 191,641. No separate wealth base; cantonal + communal income and wealth tax must be at least CHF 150,000 a year. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Base: 10x rent or 4x pension cost; minimum cantonal+communal tax CHF 150,000.; federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). No separate wealth base; cantonal + communal income and wealth tax must be at least CHF 150,000 a year. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -5333,7 +5401,7 @@
     {
       "code": "CH-TI",
       "name": "Ticino",
-      "summary": "Ticino, figures for Bellinzona. Dividends/income top marginal 38.5% (incl. 11.5% federal, no church tax). Wealth tax top marginal 0.48% (CHF 48,250 on CHF 10M taxable). Children exempt from inheritance and gift tax. Lump-sum taxation available (estimate about CHF 397,907/yr on a CHF 1M base).",
+      "summary": "Ticino, figures for Bellinzona (cantonal coefficient 100% + communal multiplier 93%; Lugano 2026 multiplier about 80-81%, not confirmed). Dividends/income top marginal 38.52% (11.5% federal + 14.0% top category rate for 2026 x 193%, married scale, no church tax). Wealth tax top marginal 0.4825% (2.5 per mille x 193%; CHF 48,250 on CHF 10M taxable). Children (and spouse and ascendants) exempt from inheritance and gift tax. Lump-sum taxation available (CHF 398,723 a year on a CHF 1M base; minimum base CHF 434,700, deemed wealth 5x the base).",
       "regime_overrides": {
         "standard": {
           "capital_gains": {
@@ -5395,10 +5463,10 @@
           },
           "dividends": {
             "status": "researched",
-            "summary": "Dividends are ordinary income. Top combined marginal rate in Bellinzona: 38.52% (federal 11.5% + cantonal/communal 27.02%, married tariff, church tax excluded). Only for holdings of at least 10% is the dividend partially taxed (federal 70%, cantonal 70%), giving about 27.0%. Portfolio dividends are taxed in full.",
+            "summary": "Dividends are ordinary income. Top combined marginal rate in Bellinzona: 38.52% = federal 11.5% + 14.0% x (100% cantonal coefficient + 93% communal multiplier) on income above CHF 761,400 (married scale, LT art. 35 para. 2 with the 2026 top category rate of 14% under art. 309h para. 2), church tax excluded. Only for holdings of at least 10% is the dividend partially taxed (federal 70%, cantonal 70%), giving about 27.0%. Portfolio dividends are taxed in full.",
             "exemptions_thresholds": "Partial taxation needs a stake of at least 10% of share capital: federal 70% taxable (DBG art. 20 para. 1bis), cantonal 70% taxable (StHG art. 7 para. 1, minimum 50%).",
             "eligibility_conditions": "Swiss tax residents (unlimited liability).",
-            "regional_differences": "Lugano: top income/dividend rate 36.28%, wealth tax CHF 44,250 on CHF 10M.",
+            "regional_differences": "Communal multipliers vary within the canton; figures are for Bellinzona (93%). Lugano's 2026 multiplier is about 80% (coordinated multiplier 81%; the council's final vote was not confirmed), giving a top rate of about 36.8%.",
             "important_exceptions": "Church tax (if a member of a recognised church) adds roughly 1-3 points and is excluded here.",
             "tax_year": "2026",
             "sources": [
@@ -5429,9 +5497,30 @@
                 "publisher": "PwC",
                 "kind": "professional",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Legge tributaria del Cantone Ticino (LT, 640.100), stato 1° gennaio 2026 (art. 13, 35, 49, 49a, 154, 309g-h)",
+                "url": "https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/12885",
+                "publisher": "Repubblica e Cantone Ticino",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Foglio cantonale Ticino (Stand 2026): aliquote, deduzioni, freno, imposizione secondo il dispendio",
+                "url": "https://www.estv2.admin.ch/stp/kb/ti-it.pdf",
+                "publisher": "Swiss Federal Tax Administration (ESTV)",
+                "kind": "tax_authority",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Moltiplicatore comunale coordinato 2026 (Foglio ufficiale, KABTI 08.07.2026)",
+                "url": "https://www4.ti.ch/fileadmin/DI/DI_DI/SEL/Comuni/Perequazione/FU-MCC2026.pdf",
+                "publisher": "Sezione degli enti locali, Repubblica e Cantone Ticino",
+                "kind": "government",
+                "accessed": "2026-10-16"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
@@ -5439,18 +5528,18 @@
             "domestic_rate": 0.3852,
             "foreign_gross_rate": 0.3852,
             "foreign_tax_credit": "credit",
-            "rate_basis": "Marginal rate from the ESTV calculator (2026) on taxable income of CHF 5M for a married couple with 3 children in Bellinzona, no church membership: (tax at 5.01M - tax at 5.00M)/10,000. Swiss 35% withholding tax is refunded to residents who declare the dividend.",
+            "rate_basis": "Statutory marginal rate for a married couple on income above CHF 761,400: 14.0% (LT art. 35 para. 2, top category rate for 2026 fixed by art. 309h para. 2) x 193% (cantonal coefficient 100%, art. 1b; Bellinzona communal multiplier 93%, FU coordinated multiplier 2026) + 11.5% federal. Agrees with the ESTV calculator figure (38.52%). The top category rate falls by 0.5 point a year to 13.5% in 2027 and 13.0% in 2028 (art. 309h); from 2030 the maximum effective rate is 12%. Swiss 35% withholding tax is refunded to residents who declare the dividend.",
             "withholding_outbound": "Swiss companies withhold 35% Verrechnungssteuer on dividends; refundable to Swiss residents, reduced by treaty for non-residents (residual 0-20%).",
             "treaty_network": "About 100 income tax treaties (PwC: 99 in force at 1 December 2025). Non-recoverable treaty-rate foreign WHT is credited (flat-rate credit) against Swiss tax.",
             "holding_company_notes": "Company-level participation reduction for holdings of 10% or CHF 1M (DBG art. 69); see corporate."
           },
           "wealth_tax": {
             "status": "researched",
-            "summary": "Annual cantonal and communal net wealth tax on worldwide net assets (no federal wealth tax). In Bellinzona the top combined marginal rate is 0.483% (church tax excluded). Tax on CHF 10M taxable wealth: CHF 48,250; on CHF 50M: CHF 241,250 (0.48% average), before any burden cap.",
-            "exemptions_thresholds": "Social deductions for a married couple with 3 children: CHF 150,000. Household effects are exempt; debts are deductible. Listed securities are taxed at year-end market value (31 December).",
+            "summary": "Annual cantonal and communal net wealth tax on worldwide net assets (no federal wealth tax). In Bellinzona the top combined marginal rate is 0.4825% (2.5 per mille x 193%, LT art. 49). Tax on CHF 10M taxable wealth: CHF 48,250; on CHF 50M: CHF 241,250 (0.48% average), before the 60% burden cap.",
+            "exemptions_thresholds": "Social deductions for a married couple with 3 minor children: CHF 60,000 + 3 x CHF 30,000 = CHF 150,000 (art. 48). Taxable wealth below CHF 200,000 is not taxed (art. 49 para. 2). The wealth deductions are not indexed (art. 39 compensates cold progression on income tax only). Household effects are exempt; debts are deductible.",
             "eligibility_conditions": "Applies to all persons with unlimited tax liability in the canton (domicile or 30/90-day stay rules).",
             "regional_differences": "Lugano: top income/dividend rate 36.28%, wealth tax CHF 44,250 on CHF 10M.",
-            "important_exceptions": "No ESTV-listed burden cap for this canton.",
+            "important_exceptions": "Burden cap (freno, art. 49a LT): on request, cantonal and communal income and wealth taxes are reduced to 60% of total taxable income; the net wealth yield counts at least 1% of net wealth; total taxable income may not be less than 1% of net wealth; the relief is taken off the wealth tax. It binds for a CHF 600,000 income with about CHF 50M of wealth (modelled with income_cap).",
             "tax_year": "2026",
             "sources": [
               {
@@ -5473,9 +5562,30 @@
                 "publisher": "Swiss Federal Tax Administration (ESTV)",
                 "kind": "tax_authority",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Legge tributaria del Cantone Ticino (LT, 640.100), stato 1° gennaio 2026 (art. 13, 35, 49, 49a, 154, 309g-h)",
+                "url": "https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/12885",
+                "publisher": "Repubblica e Cantone Ticino",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Foglio cantonale Ticino (Stand 2026): aliquote, deduzioni, freno, imposizione secondo il dispendio",
+                "url": "https://www.estv2.admin.ch/stp/kb/ti-it.pdf",
+                "publisher": "Swiss Federal Tax Administration (ESTV)",
+                "kind": "tax_authority",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Moltiplicatore comunale coordinato 2026 (Foglio ufficiale, KABTI 08.07.2026)",
+                "url": "https://www4.ti.ch/fileadmin/DI/DI_DI/SEL/Comuni/Perequazione/FU-MCC2026.pdf",
+                "publisher": "Sezione degli enti locali, Repubblica e Cantone Ticino",
+                "kind": "government",
+                "accessed": "2026-10-16"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
@@ -5485,7 +5595,7 @@
                 "name": "Cantonal + communal net wealth tax (Bellinzona, 2026)",
                 "base": "net_wealth_worldwide",
                 "exempt_amount": 150000.0,
-                "entry_threshold": 0,
+                "entry_threshold": 350000.0,
                 "brackets": [
                   {
                     "from_amount": 0.0,
@@ -5497,7 +5607,7 @@
                   },
                   {
                     "from_amount": 280000.0,
-                    "rate": 0.00482
+                    "rate": 0.004825
                   },
                   {
                     "from_amount": 700000.0,
@@ -5505,26 +5615,31 @@
                   },
                   {
                     "from_amount": 1380000.0,
-                    "rate": 0.00482
-                  },
-                  {
-                    "from_amount": 100000000.0,
-                    "rate": 0.00483
+                    "rate": 0.004825
                   }
                 ],
-                "notes": "Brackets are combined cantonal + communal marginal rates on TAXABLE wealth (after the social deductions in exempt_amount, here for a married couple with 3 children), derived from the ESTV tax calculator for tax year 2026 by evaluating the tax at each tariff breakpoint; the piecewise-linear schedule reproduces the official totals at the breakpoints. Church tax excluded. Foreign real estate and foreign permanent establishments are excluded from the base but count for the rate (progression). No general burden cap listed for this canton by ESTV."
+                "notes": "Brackets are combined cantonal + communal marginal rates on TAXABLE wealth (after the CHF 150,000 social deductions in exempt_amount): LT art. 49 rates 1.0 / 2.0 / 2.5 / 3.0 / 2.5 per mille on bands up to CHF 200,000 / 280,000 / 700,000 / 1,380,000 / above, x 193% (coefficient 100% + Bellinzona 93%). entry_threshold 350,000 = 150,000 deductions + the CHF 200,000 below which no tax is due (art. 49 para. 2; a cliff). Church tax excluded. Burden cap (art. 49a): see income_cap."
               }
             ],
-            "property_tax_note": "Some cantons/communes levy a separate annual real-property tax (Liegenschaftssteuer) on gross real estate value; it is not part of the wealth tax."
+            "property_tax_note": "Some cantons/communes levy a separate annual real-property tax (Liegenschaftssteuer) on gross real estate value; it is not part of the wealth tax.",
+            "thresholds_indexed": false,
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 1.0,
+              "counts_long_term_gains": false,
+              "counted_income_tax_rate": 0.2702,
+              "min_income_yield": 0.01,
+              "notes": "LT art. 49a paras. 1, 2bis, 3 (Ticino, freno): on request, cantonal and communal income and wealth tax are reduced to 60% of total taxable income, the net wealth yield counted at least 1% of net wealth and total taxable income at least 1% of net wealth; the relief comes off the wealth tax with no floor. counted_income_tax_rate 0.2702 = 14% x 193%, the top marginal rate used for dividends; the true average rate at CHF 600,000 of income is 24.9%."
+            }
           },
           "inheritance": {
             "status": "researched",
             "tax_year": "2026",
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "verification": "verified",
             "eligibility_conditions": "Applies when the deceased/donor was domiciled in the canton (movable assets); Swiss real estate is taxed in the canton where it lies.",
             "regional_differences": "",
-            "important_exceptions": "Spouse also exempt. Other relatives and unrelated heirs are taxed.",
+            "important_exceptions": "Ascendants are exempt too. Other relatives and unrelated heirs are taxed.",
             "open_questions": [],
             "foreign_assets": "The canton of last domicile taxes worldwide movable assets; foreign real estate is not taxed. Switzerland has only a few inheritance tax treaties; gift tax is not covered by treaties.",
             "domicile_rules": "Taxing right follows the last domicile of the deceased or the domicile of the donor. No tail after leaving Switzerland (except on Swiss real estate).",
@@ -5532,7 +5647,7 @@
             "business_relief_covers_public_shares": false,
             "other_transfer_cost_rate": 0,
             "lifetime_gift_tax_free_after_years": null,
-            "summary": "Inheritances and gifts to children are exempt in Bellinzona. Descendants exempt.",
+            "summary": "Inheritances and gifts to the spouse, registered partner, descendants and ascendants are exempt in Ticino (LT art. 154 para. 1 f).",
             "exemptions_thresholds": "Full exemption for descendants, any amount.",
             "sources": [
               {
@@ -5555,13 +5670,20 @@
                 "publisher": "Swiss Federal Tax Administration (ESTV/AFC)",
                 "kind": "tax_authority",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Legge tributaria del Cantone Ticino (LT, 640.100), stato 1° gennaio 2026 (art. 13, 35, 49, 49a, 154, 309g-h)",
+                "url": "https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/12885",
+                "publisher": "Repubblica e Cantone Ticino",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
               }
             ],
             "confidence": "high",
             "basis": "beneficiary",
             "children_treatment": "fully_exempt",
             "spouse_treatment": "fully_exempt",
-            "spouse_note": "Surviving spouse (and registered partner) is exempt from cantonal inheritance and gift tax (Legge tributaria, 21 Jun 1994, art. 154; ESTV Steuermäppchen 2025).",
+            "spouse_note": "Surviving spouse and registered partner are exempt from cantonal inheritance and gift tax (Legge tributaria art. 154 para. 1 f).",
             "exemption": 0,
             "brackets": [],
             "gift_tax": "Gifts to children are exempt as well.",
@@ -5571,7 +5693,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 397900.0,
+              "amount": 398722.55,
               "currency": "CHF"
             },
             "covers": [
@@ -5580,9 +5702,10 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 397,907 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 283,696 in Bellinzona). At the cantonal minimum income base CHF 434,700 (federal minimum CHF 435,000 for 2026): about CHF 154,856. Wealth base at least 5x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (assumed 7x the rent of a family home; a prime-rent sample of CHF 4,300 a month would give CHF 361,200, so the minimum base CHF 434,700 would then apply): federal CHF 115,000 (DBG art. 14 para. 4: no child reduction) + cantonal and communal income tax CHF 259,597.55 (married scale, LT art. 35 para. 2 with the 14% top category rate for 2026: 101,102.50 + 14% x (1,000,000 - 761,400) = CHF 134,506.50, x 193%) + wealth tax CHF 24,125.00 on a deemed CHF 5,000,000 (5 x the base, art. 13 para. 5; CHF 12,500 x 193%) = CHF 398,722.55. Minimum base: the highest of CHF 434,700, 7x the rent or rental value, and the worldwide living costs (art. 13 para. 3); the Council of State adjusts the minimum to consumer prices (art. 13 para. 8), so the amount is flagged as indexed. The real base is the higher of these and a control calculation (art. 13 para. 6).",
+            "indexed_to_inflation": true
           },
-          "eligibility": "Available in 2026. Cantonal minimum income base CHF 434,700 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 5x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
+          "eligibility": "Available in 2026. Cantonal minimum income base CHF 434,700 (LT art. 13 para. 3 a, indexed from 2025); federal minimum CHF 435,000 (DBG art. 14 para. 3 a, indexed). Deemed wealth is 5 times the income base (art. 13 para. 5). Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
             {
               "title": "ESTV Steuermäppchen 2025: Besteuerung nach dem Aufwand (lump-sum taxation bases by canton)",
@@ -5604,11 +5727,28 @@
               "publisher": "Swiss Confederation (Fedlex)",
               "kind": "legislation",
               "accessed": "2026-10-15"
+            },
+            {
+              "title": "Legge tributaria del Cantone Ticino (LT, 640.100), stato 1° gennaio 2026 (art. 13, 35, 49, 49a, 154, 309g-h)",
+              "url": "https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/12885",
+              "publisher": "Repubblica e Cantone Ticino",
+              "kind": "legislation",
+              "accessed": "2026-10-16"
+            },
+            {
+              "title": "Foglio cantonale Ticino (Stand 2026): aliquote, deduzioni, freno, imposizione secondo il dispendio",
+              "url": "https://www.estv2.admin.ch/stp/kb/ti-it.pdf",
+              "publisher": "Swiss Federal Tax Administration (ESTV)",
+              "kind": "tax_authority",
+              "accessed": "2026-10-16"
             }
           ]
         }
       },
-      "open_questions": [],
+      "open_questions": [
+        "Needs an engine change: Ticino's top category rate falls by 0.5 point a year (14.0% 2026, 13.5% 2027, 13.0% 2028, 12.5% 2029, maximum effective rate 12% from 2030; LT art. 309g-309h); the tax file holds the 2026 rate only.",
+        "Lugano (the usual family choice) has a lower 2026 multiplier than Bellinzona (about 80%; coordinated multiplier 81%); the final council vote on the 2026 budget multiplier was not confirmed, so Bellinzona's 93% is kept."
+      ],
       "cost_of_living": {
         "city": "Lugano",
         "prime_price_per_m2": {
@@ -5671,7 +5811,7 @@
     {
       "code": "CH-VD",
       "name": "Vaud",
-      "summary": "Vaud, figures for Lausanne. Dividends/income top marginal 41.5% (incl. 11.5% federal, no church tax). Wealth tax top marginal 0.79% (CHF 77,632 on CHF 10M taxable). Children taxed (see inheritance). Lump-sum taxation available (estimate about CHF 459,211/yr on a CHF 1M base).",
+      "summary": "Vaud, figures for Lausanne (cantonal coefficient 155% + communal 78.5%; cantonal income tax reduced by 5% in 2026). Dividends/income top marginal 41.5% (11.5% federal + 30% cantonal and communal ceiling, LICom art. 8). Wealth tax top marginal 0.792% (3.39 per mille x 233.5%; CHF 77,632 on CHF 10M). Children are taxed on inheritance (progressive to 3.5% cantonal, doubled by Lausanne), but the tax is halved for foreigners who never worked in Switzerland (LMSD art. 36): about 3.5% above CHF 1.3M per child. Lump-sum taxation available (CHF 445,000 a year on a CHF 1M base). Note: the '12%' initiative accepted on 27 September 2026 cuts the cantonal coefficient from the 2027 tax year.",
       "regime_overrides": {
         "standard": {
           "capital_gains": {
@@ -5733,11 +5873,11 @@
           },
           "dividends": {
             "status": "researched",
-            "summary": "Dividends are ordinary income. Top combined marginal rate in Lausanne: 41.50% (federal 11.5% + cantonal/communal 30.00%, married tariff, church tax excluded). Only for holdings of at least 10% is the dividend partially taxed (federal 70%, cantonal 70%), giving about 29.0%. Portfolio dividends are taxed in full.",
+            "summary": "Dividends are ordinary income. Cantonal and communal income tax on large incomes hits the 30% ceiling of LICom art. 8 para. 1 (the barème alone would give about 32.9% for a CHF 2M income at Lausanne multipliers), so the top combined marginal rate in Lausanne is 41.5% (federal 11.5% + 30%), church tax excluded. Only for holdings of at least 10% is the dividend partially taxed (federal 70%, cantonal 70%), giving about 29.0%. Portfolio dividends are taxed in full.",
             "exemptions_thresholds": "Partial taxation needs a stake of at least 10% of share capital: federal 70% taxable (DBG art. 20 para. 1bis), cantonal 70% taxable (StHG art. 7 para. 1, minimum 50%).",
             "eligibility_conditions": "Swiss tax residents (unlimited liability).",
             "regional_differences": "Communal multipliers vary within the canton; figures are for the cantonal capital.",
-            "important_exceptions": "Church tax (if a member of a recognised church) adds roughly 1-3 points and is excluded here.",
+            "important_exceptions": "Church tax (if a member of a recognised church) adds roughly 1-3 points and is excluded here. The '12%' initiative accepted on 27 September 2026 cuts the cantonal coefficient by 12% (from 2027); at 30% ceiling income this changes nothing for the largest incomes while the ceiling binds.",
             "tax_year": "2026",
             "sources": [
               {
@@ -5767,9 +5907,44 @@
                 "publisher": "PwC",
                 "kind": "professional",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Feuille cantonale Vaud (Stand 2026): barèmes, quotient familial, dépense, maximum d'imposition",
+                "url": "https://www.estv2.admin.ch/stp/kb/vd-fr.pdf",
+                "publisher": "Swiss Federal Tax Administration (ESTV)",
+                "kind": "tax_authority",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Tableau des déductions 2026 (barèmes sommaires de l'impôt cantonal de base 2026)",
+                "url": "https://www.vd.ch/fileadmin/user_upload/organisation/dfin/aci/fichiers_pdf/Tableau_des_d%C3%A9ductions_2026.pdf",
+                "publisher": "Administration cantonale des impôts du canton de Vaud",
+                "kind": "government",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Arrêté d'imposition de la Commune de Lausanne pour les années 2025-2029",
+                "url": "https://www.lausanne.ch/apps/actualites/Next/serve.php?id=14899",
+                "publisher": "Commune de Lausanne",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "RTS: Bouclier fiscal vaudois, la réforme divise droite et gauche (initiative 12% acceptée le 27 septembre 2026)",
+                "url": "https://www.rts.ch/info/regions/vaud/2026/article/bouclier-fiscal-vaudois-la-reforme-divise-droite-et-gauche-29377018.html",
+                "publisher": "RTS",
+                "kind": "other",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Berney Associés, Tax News août 2026: initiative populaire « 12% » et bouclier fiscal vaudois",
+                "url": "https://berneyassocies.com/wp-content/uploads/2026/09/Initiative-populaire_12.pdf",
+                "publisher": "Berney Associés",
+                "kind": "professional",
+                "accessed": "2026-10-16"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
@@ -5777,18 +5952,18 @@
             "domestic_rate": 0.415,
             "foreign_gross_rate": 0.415,
             "foreign_tax_credit": "credit",
-            "rate_basis": "Marginal rate from the ESTV calculator (2026) on taxable income of CHF 5M for a married couple with 3 children in Lausanne, no church membership: (tax at 5.01M - tax at 5.00M)/10,000. Swiss 35% withholding tax is refunded to residents who declare the dividend.",
+            "rate_basis": "Statutory: federal 11.5% (DBG art. 36 para. 2) + the Vaud maximum of 30% of income for cantonal plus communal income tax (LICom art. 8 para. 1, Feuille cantonale 2026). Without the ceiling the tax would be 15.5% top category (art. 47 LI) x (155% x 0.95 [5% cut, LRIPP art. 4] + 78.5% communal) = 35.0% at the margin, so the ceiling binds above about CHF 600,000 of income. Agrees with the ESTV-calculator figure (41.5%). Swiss 35% withholding tax is refunded to residents who declare the dividend.",
             "withholding_outbound": "Swiss companies withhold 35% Verrechnungssteuer on dividends; refundable to Swiss residents, reduced by treaty for non-residents (residual 0-20%).",
             "treaty_network": "About 100 income tax treaties (PwC: 99 in force at 1 December 2025). Non-recoverable treaty-rate foreign WHT is credited (flat-rate credit) against Swiss tax.",
             "holding_company_notes": "Company-level participation reduction for holdings of 10% or CHF 1M (DBG art. 69); see corporate."
           },
           "wealth_tax": {
             "status": "researched",
-            "summary": "Annual cantonal and communal net wealth tax on worldwide net assets (no federal wealth tax). In Lausanne the top combined marginal rate is 0.792% (church tax excluded). Tax on CHF 10M taxable wealth: CHF 77,632; on CHF 50M: CHF 394,258 (0.79% average), before any burden cap.",
-            "exemptions_thresholds": "Social deductions for a married couple with 3 children: CHF 0 (the tax-free amount is built into the tariff instead). Household effects are exempt; debts are deductible. Listed securities are taxed at year-end market value (31 December).",
+            "summary": "Annual cantonal and communal net wealth tax on worldwide net assets (no federal wealth tax). In Lausanne the top combined marginal rate is 0.792% (3.39 per mille x 233.5%). Tax on CHF 10M taxable wealth: CHF 77,632; on CHF 50M: CHF 394,258 (0.79% average), before the burden cap.",
+            "exemptions_thresholds": "No social deductions: a couple whose net wealth is below CHF 120,000 pays no wealth tax (LI art. 58, 2026 amount; a cliff: above it the whole wealth is taxed from the first franc). Fractions below CHF 1,000 are dropped. The tariff and the CHF 60,000 / 120,000 amounts are fully adjusted to prices every year (LI art. 60). Household effects are exempt; debts are deductible.",
             "eligibility_conditions": "Applies to all persons with unlimited tax liability in the canton (domicile or 30/90-day stay rules).",
             "regional_differences": "Communal multipliers vary within the canton; figures are for the cantonal capital.",
-            "important_exceptions": "Caps (bouclier fiscal): cantonal+communal income tax max 30% of taxable income and wealth tax max 10 per mille; income+wealth tax together max 60% of net income, with wealth deemed to yield at least 1%; wealth tax never below 3 per mille (0.3%). For a large low-yield portfolio the 60% cap can reduce the wealth tax towards the 0.3% floor.",
+            "important_exceptions": "Burden caps (LICom art. 8): cantonal and communal income tax at most 30% of income, wealth tax at most 10 per mille, income plus wealth tax at most 60% of net income with the net wealth yield counted at least 1% (LA 2026 art. 7), and the wealth tax after the cap never below 3 per mille. On 27 September 2026 voters accepted the '12%' initiative, so the 2022 version of the bouclier fiscal stays (the 2024 revision was subject to a 'clause guillotine'); on 6 October 2026 the Grand Conseil majority asked the government to revive the 2024 changes (a referendum is announced). The 60% cap and the 3 per mille floor are in income_cap; the 30% income ceiling is inside the dividend rate.",
             "tax_year": "2026",
             "sources": [
               {
@@ -5811,9 +5986,44 @@
                 "publisher": "Swiss Federal Tax Administration (ESTV)",
                 "kind": "tax_authority",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Feuille cantonale Vaud (Stand 2026): barèmes, quotient familial, dépense, maximum d'imposition",
+                "url": "https://www.estv2.admin.ch/stp/kb/vd-fr.pdf",
+                "publisher": "Swiss Federal Tax Administration (ESTV)",
+                "kind": "tax_authority",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Tableau des déductions 2026 (barèmes sommaires de l'impôt cantonal de base 2026)",
+                "url": "https://www.vd.ch/fileadmin/user_upload/organisation/dfin/aci/fichiers_pdf/Tableau_des_d%C3%A9ductions_2026.pdf",
+                "publisher": "Administration cantonale des impôts du canton de Vaud",
+                "kind": "government",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Arrêté d'imposition de la Commune de Lausanne pour les années 2025-2029",
+                "url": "https://www.lausanne.ch/apps/actualites/Next/serve.php?id=14899",
+                "publisher": "Commune de Lausanne",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "RTS: Bouclier fiscal vaudois, la réforme divise droite et gauche (initiative 12% acceptée le 27 septembre 2026)",
+                "url": "https://www.rts.ch/info/regions/vaud/2026/article/bouclier-fiscal-vaudois-la-reforme-divise-droite-et-gauche-29377018.html",
+                "publisher": "RTS",
+                "kind": "other",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Berney Associés, Tax News août 2026: initiative populaire « 12% » et bouclier fiscal vaudois",
+                "url": "https://berneyassocies.com/wp-content/uploads/2026/09/Initiative-populaire_12.pdf",
+                "publisher": "Berney Associés",
+                "kind": "professional",
+                "accessed": "2026-10-16"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "medium",
             "verification": "verified",
             "open_questions": [
@@ -5825,44 +6035,59 @@
                 "name": "Cantonal + communal net wealth tax (Lausanne, 2026)",
                 "base": "net_wealth_worldwide",
                 "exempt_amount": 0.0,
-                "entry_threshold": 0,
+                "entry_threshold": 120000.0,
                 "brackets": [
                   {
                     "from_amount": 0.0,
-                    "rate": 0.0
+                    "rate": 0.001271018
                   },
                   {
-                    "from_amount": 119999.0,
-                    "rate": 0.0084
+                    "from_amount": 60000.0,
+                    "rate": 0.00226495
+                  },
+                  {
+                    "from_amount": 95000.0,
+                    "rate": 0.00394615
                   },
                   {
                     "from_amount": 177000.0,
-                    "rate": 0.00565
+                    "rate": 0.0056507
                   },
                   {
                     "from_amount": 355000.0,
-                    "rate": 0.00736
+                    "rate": 0.00735525
                   },
                   {
                     "from_amount": 711000.0,
-                    "rate": 0.00792
+                    "rate": 0.00791565
                   }
                 ],
-                "notes": "Brackets are combined cantonal + communal marginal rates on TAXABLE wealth (after the social deductions in exempt_amount, here for a married couple with 3 children), derived from the ESTV tax calculator for tax year 2026 by evaluating the tax at each tariff breakpoint; the piecewise-linear schedule reproduces the official totals at the breakpoints. Church tax excluded. Foreign real estate and foreign permanent establishments are excluded from the base but count for the rate (progression). Caps (bouclier fiscal): cantonal+communal income tax max 30% of taxable income and wealth tax max 10 per mille; income+wealth tax together max 60% of net income, with wealth deemed to yield at least 1%; wealth tax never below 3 per mille (0.3%). For a large low-yield portfolio the 60% cap can reduce the wealth tax towards the 0.3% floor."
+                "notes": "Combined cantonal + communal marginal rates on net wealth: the 2026 base tariff of LI art. 59 (0.97 / 1.69 / 2.42 / 3.15 / 3.39 per mille above CHF 60,000 / 95,000 / 177,000 / 355,000 / 711,000; the first band is set so the base tax at CHF 711,000 equals the CHF 1,757.35 of the ACI's 2026 summary table, the statute text printing only the 2025 first band) x (cantonal coefficient 155% + Lausanne 78.5% = 233.5%). entry_threshold 120,000 = the couple's tax-free net wealth (a cliff). Church tax excluded. Burden caps: see income_cap."
               }
             ],
-            "property_tax_note": "Some cantons/communes levy a separate annual real-property tax (Liegenschaftssteuer) on gross real estate value; it is not part of the wealth tax."
+            "property_tax_note": "Some cantons/communes levy a separate annual real-property tax (Liegenschaftssteuer) on gross real estate value; it is not part of the wealth tax.",
+            "thresholds_indexed": true,
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 1.0,
+              "counts_long_term_gains": false,
+              "counted_income_tax_rate": 0.3,
+              "min_income_yield": 0.01,
+              "min_wealth_tax_rate": 0.003,
+              "notes": "LICom art. 8 paras. 3, 3bis, 3ter and LA 2026 art. 7 (Vaud, version in force since 2022, kept by the 27 September 2026 vote): cantonal and communal income plus wealth tax at most 60% of net income, the net wealth yield counted at least 1% of net wealth, and the wealth tax after the cap never below 3 per mille of wealth (min_wealth_tax_rate; max_reduction 1 because no other limit applies). counted_income_tax_rate 0.30 = the 30% income-tax ceiling of art. 8 para. 1, the flat rate the tax file uses; the true rate at CHF 600,000 of income is 24%-27% depending on the family quotient. The wealth tax maximum of 10 per mille (art. 8 para. 1) is not modelled; it does not bind below a 7.9 per mille tariff. The 2024 revision, revived by a Grand Conseil motion of 6 October 2026, is not in force."
+            }
           },
           "inheritance": {
             "status": "researched",
             "tax_year": "2026",
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "verification": "verified",
             "eligibility_conditions": "Applies when the deceased/donor was domiciled in the canton (movable assets); Swiss real estate is taxed in the canton where it lies.",
             "regional_differences": "Communes may levy up to 100% additional centimes; Lausanne levies 100%. Other communes may levy less.",
-            "important_exceptions": "ESTV notes a halved tax for estates of foreigners resident in Vaud who never worked in Switzerland, for the part taxable only in Vaud (verify applicability to descendants).",
+            "important_exceptions": "LMSD art. 36: the tax on the estate of a foreigner (domiciled in Vaud, never gainfully active in Switzerland) is reduced by half, for the part wholly taxable in Vaud without a foreign share under a double tax treaty; dual nationals do not qualify. A motion (25_MOT_65) would remove the cut for lump-sum taxpayers. The brackets below already include the halving.",
             "open_questions": [
-              "Whether the halved rate for non-working foreigners (e.g. lump-sum taxpayers) applies to transfers to descendants could not be verified from the cantonal law."
+              "The transition zone between CHF 1,000,000 and 1,100,000 per stirp (the bracket slice) follows the ESTV calculator; only shares above CHF 1.3M (3.5% after the halving) were hand-checked against the barème.",
+              "A motion (25_MOT_65, Grand Conseil, 6 October 2026) asks to remove the 50% reduction for lump-sum taxpayers; its outcome was not found."
             ],
             "foreign_assets": "The canton of last domicile taxes worldwide movable assets; foreign real estate is not taxed. Switzerland has only a few inheritance tax treaties; gift tax is not covered by treaties.",
             "domicile_rules": "Taxing right follows the last domicile of the deceased or the domicile of the donor. No tail after leaving Switzerland (except on Swiss real estate).",
@@ -5870,8 +6095,8 @@
             "business_relief_covers_public_shares": false,
             "other_transfer_cost_rate": 0,
             "lifetime_gift_tax_free_after_years": null,
-            "summary": "Vaud taxes inheritances to children. Since 2025 each stirp deducts CHF 1,000,000 if its share is below CHF 1,001,000; above that the deduction falls by 1/100 per CHF 1,000, disappearing at about CHF 1.1M. The cantonal rate for the direct line is progressive up to 3.5% on the whole share, and Lausanne doubles it with communal centimes (100%), so a child inheriting more than about CHF 1.35M pays about 7% of the whole share.",
-            "exemptions_thresholds": "CHF 1,000,000 deduction per stirp (child), phased out between CHF 1,001,000 and about CHF 1,100,000. Gifts: exempt up to CHF 300,000 per child per calendar year (threshold).",
+            "summary": "Vaud taxes inheritances to children, but halves the tax for foreigners who never worked in Switzerland and whose estate is wholly taxable in Vaud (LMSD art. 36). Each stirp deducts CHF 1,000,000 from 2025, falling by 1/100 per CHF 1,000 above it to zero at CHF 1.1M; the cantonal rate for the direct line is the general barème (3.43% at CHF 1.1M, 3.5% from CHF 1,302,000, applied to the whole share), Lausanne adds 100 centimes (arrêté d'imposition 2025-2029, chiffre VI), so 7% in all, 3.5% after the halving.",
+            "exemptions_thresholds": "CHF 1,000,000 deduction per stirp (child), phased out between CHF 1,000,000 and CHF 1,100,000. Gifts: exempt up to CHF 300,000 per child per calendar year.",
             "sources": [
               {
                 "title": "ESTV Steuermäppchen 2025: Erbschafts- und Schenkungssteuer (cantonal tariffs and exemptions)",
@@ -5893,13 +6118,41 @@
                 "publisher": "Swiss Federal Tax Administration (ESTV/AFC)",
                 "kind": "tax_authority",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "LMSD: barème général de l'impôt sur les successions et donations (art. 34), ligne directe descendante",
+                "url": "https://www.vd.ch/fileadmin/user_upload/organisation/dfin/aci/fichiers_pdf/Bareme_general_2005.pdf",
+                "publisher": "Administration cantonale des impôts du canton de Vaud",
+                "kind": "government",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Article 36 LMSD commenté: réduction de moitié pour les étrangers n'ayant jamais exercé d'activité lucrative en Suisse",
+                "url": "https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/les-impots-les-differents-types-dimpots/autres-impots/successions-et-donations/la-loi/articles-de-la-loi-commentes/article-36-lmsd",
+                "publisher": "Etat de Vaud",
+                "kind": "government",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Etat de Vaud: successions et donations (exonération par souche dès le 1er janvier 2025)",
+                "url": "https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/les-impots-les-differents-types-dimpots/autres-impots/successions-et-donations/la-loi/articles-de-la-loi-commentes/article-34-lmsd",
+                "publisher": "Etat de Vaud",
+                "kind": "government",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Arrêté d'imposition de la Commune de Lausanne pour les années 2025-2029",
+                "url": "https://www.lausanne.ch/apps/actualites/Next/serve.php?id=14899",
+                "publisher": "Commune de Lausanne",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
               }
             ],
             "confidence": "medium",
             "basis": "beneficiary",
             "children_treatment": "taxed",
             "spouse_treatment": "fully_exempt",
-            "spouse_note": "Surviving spouse (and registered partner) is exempt from cantonal inheritance and gift tax (LMSD, 27 Feb 1963; ESTV Steuermäppchen 2025). Unlike descendants, who pay up to 3.5% (plus communal centimes) above the stirp deduction, the spouse pays nothing.",
+            "spouse_note": "Surviving spouse (and registered partner) is exempt from cantonal inheritance and gift tax (LMSD art. 20 let. e). Unlike descendants, who pay up to 3.5% (7% with Lausanne centimes, halved for foreign non-workers), the spouse pays nothing.",
             "exemption": 0,
             "brackets": [
               {
@@ -5908,25 +6161,25 @@
               },
               {
                 "from_amount": 1000000,
-                "rate": 0.7537
+                "rate": 0.37686
               },
               {
                 "from_amount": 1100000,
-                "rate": 0.0765
+                "rate": 0.0390297
               },
               {
-                "from_amount": 1350000,
-                "rate": 0.07
+                "from_amount": 1302000,
+                "rate": 0.035
               }
             ],
-            "gift_tax": "Gifts to a child are exempt up to CHF 300,000 per calendar year; above that the whole gift is taxed at the progressive rate (Lausanne: about 4.9% at CHF 300,000, 6.8% at CHF 1M, 7% from about CHF 1.35M).",
+            "gift_tax": "Gifts to a child are exempt up to CHF 300,000 per calendar year; above that the whole gift is taxed at the same barème (halved for a foreign donor under art. 36 LMSD).",
             "gifts_same_as_inheritance": false
           }
         },
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 459200.0,
+              "amount": 445000.0,
               "currency": "CHF"
             },
             "covers": [
@@ -5935,9 +6188,10 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 459,211 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 345,000 in Lausanne). At the cantonal minimum income base CHF 415,000 (federal minimum CHF 435,000 for 2026): about CHF 138,380. No separate wealth tax: the income base is increased by 15% (minimum 415,000 includes it; 7x rent +10%). Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an expenditure base of CHF 1,000,000 (assumed 7x the rent of a family home; a prime-rent sample of CHF 9,800 a month would give CHF 823,200): federal CHF 115,000 (DBG art. 14 para. 4, no child reduction) + cantonal and communal CHF 330,000 = the 30% ceiling (LICom art. 8 para. 1) on the cantonal base of CHF 1,100,000 (7x the rent plus 10%, LI art. 15 para. 3 b; the barème at 155% x 0.95 + 78.5%, with the quotient reduction capped by art. 43 para. 3, would give about 31%). No separate wealth tax. Lausanne levies the special tax on foreigners at 0.785 of the cantonal base tax (arrêté d'imposition, chiffre V), the same coefficient as for ordinary taxpayers. Minimum base: the highest of CHF 415,000 (including 15% for the wealth tax), 7x the rent or rental value plus 10%, and the worldwide living costs (LI art. 15 para. 3); the CHF 415,000 is adjusted to prices every year (art. 60). The real base is the higher of these and a control calculation (art. 15 para. 4). The ESTV-calculator estimate used before (CHF 459,200) took a base of CHF 1.15M.",
+            "indexed_to_inflation": true
           },
-          "eligibility": "Available in 2026. Cantonal minimum income base CHF 415,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). No separate wealth tax: the income base is increased by 15% (minimum 415,000 includes it; 7x rent +10%). Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
+          "eligibility": "Available in 2026. Cantonal minimum base CHF 415,000, which includes a 15% surcharge for the wealth tax (LI art. 15 para. 3 a); 7x the rent or rental value, increased by 10%, if higher (para. 3 b); federal minimum CHF 435,000 (DBG art. 14 para. 3 a, indexed). Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
             {
               "title": "ESTV Steuermäppchen 2025: Besteuerung nach dem Aufwand (lump-sum taxation bases by canton)",
@@ -5959,11 +6213,28 @@
               "publisher": "Swiss Confederation (Fedlex)",
               "kind": "legislation",
               "accessed": "2026-10-15"
+            },
+            {
+              "title": "Feuille cantonale Vaud (Stand 2026): barèmes, quotient familial, dépense, maximum d'imposition",
+              "url": "https://www.estv2.admin.ch/stp/kb/vd-fr.pdf",
+              "publisher": "Swiss Federal Tax Administration (ESTV)",
+              "kind": "tax_authority",
+              "accessed": "2026-10-16"
+            },
+            {
+              "title": "Arrêté d'imposition de la Commune de Lausanne pour les années 2025-2029",
+              "url": "https://www.lausanne.ch/apps/actualites/Next/serve.php?id=14899",
+              "publisher": "Commune de Lausanne",
+              "kind": "legislation",
+              "accessed": "2026-10-16"
             }
           ]
         }
       },
-      "open_questions": [],
+      "open_questions": [
+        "Needs an engine change: the '12%' initiative accepted on 27 September 2026 cuts the cantonal coefficient (155%) by 12% from the 2027 tax year (initiative text and start date not read; per Berney Associes and press). The tax file holds the 2026 coefficient; a dated rate schedule is needed.",
+        "Whether the 30% ceiling applies to lump-sum taxation, and whether the communal coefficient is applied before or after the cantonal 5% cut (LRIPP art. 4), was not settled from the statute; the ESTV calculator shows 30% of the base. With a full 3.3-part family quotient (no cap on the child reduction) the barème would give only about 28% of a CHF 1.1M base."
+      ],
       "cost_of_living": {
         "city": "Lausanne",
         "prime_price_per_m2": {
@@ -6334,7 +6605,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 378700.0,
+              "amount": 379489.0,
               "currency": "CHF"
             },
             "covers": [
@@ -6343,7 +6614,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 378,741 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 264,530 in Sion). At the cantonal minimum income base CHF 250,000 (federal minimum CHF 435,000 for 2026): about CHF 95,881. Wealth base at least 4x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 378,741 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 264,530 in Sion). At the cantonal minimum income base CHF 250,000 (federal minimum CHF 435,000 for 2026): about CHF 95,881. Wealth base at least 4x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 250,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 4x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -6619,7 +6890,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 395300.0,
+              "amount": 396089.0,
               "currency": "CHF"
             },
             "covers": [
@@ -6628,7 +6899,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 395,326 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 281,115 in Neuchâtel). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 151,996. Wealth base = Swiss movable and immovable assets, at least 4x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 395,326 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 281,115 in Neuchâtel). At the cantonal minimum income base CHF 400,000 (federal minimum CHF 435,000 for 2026): about CHF 151,996. Wealth base = Swiss movable and immovable assets, at least 4x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 400,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base = Swiss movable and immovable assets, at least 4x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
@@ -6661,7 +6932,7 @@
     {
       "code": "CH-GE",
       "name": "Geneva",
-      "summary": "Geneva, figures for Genève. Dividends/income top marginal 43.2% (incl. 11.5% federal, no church tax). Wealth tax top marginal 0.86% (CHF 81,000 on CHF 10M taxable). Children exempt from inheritance and gift tax. Lump-sum taxation available (estimate about CHF 410,742/yr on a CHF 1M base).",
+      "summary": "Geneva, figures for the city of Geneva (cantonal centimes 47.5 + 1 = 48.5, communal 45.49, cantonal income tax reduced by 12%). Dividends/income top marginal 43.21% (11.5% federal + 18% top barème rate x [1.485 x 0.88 + 0.4549]; no church tax). Wealth tax top marginal 0.858% (CHF 81,000 on CHF 10M taxable). Children exempt from inheritance and gift tax, except for a lump-sum taxed deceased or donor (2%-6%). Lump-sum taxation available (CHF 411,329 a year on a CHF 1M base).",
       "regime_overrides": {
         "standard": {
           "capital_gains": {
@@ -6723,10 +6994,10 @@
           },
           "dividends": {
             "status": "researched",
-            "summary": "Dividends are ordinary income. Top combined marginal rate in Genève: 43.23% (federal 11.5% + cantonal/communal 31.73%, married tariff, church tax excluded). Only for holdings of at least 10% is the dividend partially taxed (federal 70%, cantonal 70%), giving about 30.3%. Portfolio dividends are taxed in full.",
+            "summary": "Dividends are ordinary income. Top combined marginal rate in Geneva city: 43.21% = federal 11.5% + 18% x (1.485 x 0.88 + 0.4549) = 31.71%, married splitting (the rate is that of 50% of the income, LIPP art. 41 para. 2), church tax excluded. Only for holdings of at least 10% is the dividend partially taxed (federal 70%, cantonal 70%), giving about 30.3%. Portfolio dividends are taxed in full.",
             "exemptions_thresholds": "Partial taxation needs a stake of at least 10% of share capital: federal 70% taxable (DBG art. 20 para. 1bis), cantonal 70% taxable (StHG art. 7 para. 1, minimum 50%).",
             "eligibility_conditions": "Swiss tax residents (unlimited liability).",
-            "regional_differences": "Communal multipliers vary within the canton; figures are for the cantonal capital.",
+            "regional_differences": "Communal centimes vary from 25 (Cologny) to 51 (Avully); the figures are for the city of Geneva (45.49).",
             "important_exceptions": "Church tax (if a member of a recognised church) adds roughly 1-3 points and is excluded here.",
             "tax_year": "2026",
             "sources": [
@@ -6757,28 +7028,49 @@
                 "publisher": "PwC",
                 "kind": "professional",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Loi sur l'imposition des personnes physiques (LIPP, D 3 08), art. 14, 41, 59, 60",
+                "url": "https://silgeneve.ch/legis/data/rsg_D3_08.htm",
+                "publisher": "République et canton de Genève (SILGeneve)",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Feuille cantonale Genève (Stand 2026): barèmes 2026, déductions, charge maximale, imposition d'après la dépense",
+                "url": "https://www.estv2.admin.ch/stp/kb/ge-fr.pdf",
+                "publisher": "Swiss Federal Tax Administration (ESTV)",
+                "kind": "tax_authority",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Arrêté approuvant le nombre des centimes additionnels 2026 des communes genevoises (ArCA-2026, D 3 05.30)",
+                "url": "https://silgeneve.ch/legis/data/rsg_D3_05p30.htm",
+                "publisher": "République et canton de Genève (SILGeneve)",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
-            "headline_rate": 0.4323,
-            "domestic_rate": 0.4323,
-            "foreign_gross_rate": 0.4323,
+            "headline_rate": 0.432106,
+            "domestic_rate": 0.432106,
+            "foreign_gross_rate": 0.432106,
             "foreign_tax_credit": "credit",
-            "rate_basis": "Marginal rate from the ESTV calculator (2026) on taxable income of CHF 5M for a married couple with 3 children in Genève, no church membership: (tax at 5.01M - tax at 5.00M)/10,000. Swiss 35% withholding tax is refunded to residents who declare the dividend.",
+            "rate_basis": "Statutory marginal rate for taxable income above CHF 1,302,262 (half of it above the top barème band of CHF 651,131, art. 17 RCEPF 2026: 18%): the tax is income x the average rate of the barème on half the income, so the marginal rate is the band rate 18% (income above CHF 1.3M). Cantonal tax = base tax x (1 + 0.475 + 0.01 centimes, LCACant art. 2) x (1 - 12%, LDIRPP art. 1); communal tax = base tax x 0.4549 (Ville de Geneve 2026, ArCA-2026; not reduced by the 12%); federal 11.5% (DBG art. 36 para. 2). The ESTV-calculator figure used before was 43.23%. Swiss 35% withholding tax is refunded to residents who declare the dividend.",
             "withholding_outbound": "Swiss companies withhold 35% Verrechnungssteuer on dividends; refundable to Swiss residents, reduced by treaty for non-residents (residual 0-20%).",
             "treaty_network": "About 100 income tax treaties (PwC: 99 in force at 1 December 2025). Non-recoverable treaty-rate foreign WHT is credited (flat-rate credit) against Swiss tax.",
             "holding_company_notes": "Company-level participation reduction for holdings of 10% or CHF 1M (DBG art. 69); see corporate."
           },
           "wealth_tax": {
             "status": "researched",
-            "summary": "Annual cantonal and communal net wealth tax on worldwide net assets (no federal wealth tax). In Genève the top combined marginal rate is 0.858% (church tax excluded). Tax on CHF 10M taxable wealth: CHF 81,000; on CHF 50M: CHF 424,093 (0.85% average), before any burden cap.",
-            "exemptions_thresholds": "Social deductions for a married couple with 3 children: CHF 307,551. Household effects are exempt; debts are deductible. Listed securities are taxed at year-end market value (31 December).",
+            "summary": "Annual cantonal and communal net wealth tax on worldwide net assets (no federal wealth tax). In Geneva the top combined marginal rate is 0.858% (3.83 per mille x [1 + 0.485 + 0.4549] plus the 1.1475 per mille supplementary tax without centimes). Tax on CHF 10M taxable wealth: CHF 81,000; on CHF 50M: CHF 424,093 (0.85% average), before the burden cap.",
+            "exemptions_thresholds": "Social deductions for a married couple with 3 children: CHF 175,743 + 3 x CHF 43,936 = CHF 307,551 (LIPP art. 58 para. 1, RCEPF art. 16, 2026). The barème and the deductions are adjusted to prices every year (LIPP art. 67 paras. 1-2). Household effects are exempt; debts are deductible.",
             "eligibility_conditions": "Applies to all persons with unlimited tax liability in the canton (domicile or 30/90-day stay rules).",
             "regional_differences": "Communal multipliers vary within the canton; figures are for the cantonal capital.",
-            "important_exceptions": "Cap (bouclier fiscal): income + wealth taxes (cantonal and communal, including additional centimes) may not exceed 60% of net taxable income; the net wealth yield is deemed to be at least 1% of net wealth; any reduction is applied to wealth tax only. For a large portfolio yielding ~1-2% this cap typically binds and cuts the effective wealth tax well below the 0.86% top rate.",
+            "important_exceptions": "Burden cap (bouclier fiscal, LIPP art. 60): cantonal and communal income and wealth taxes (centimes included, federal tax excluded) may not exceed 60% of net taxable income; the net wealth yield counts at least 1% of net wealth; any reduction comes off the wealth tax (art. 60 para. 4 has no floor). For a portfolio yielding 1-2% the cap typically binds (about CHF 1.0M of cantonal and communal tax on CHF 2M of dividends and CHF 50M of wealth is just under it). Modelled with income_cap (counted rate = cantonal and communal tax only, 1% minimum yield).",
             "tax_year": "2026",
             "sources": [
               {
@@ -6801,9 +7093,30 @@
                 "publisher": "Swiss Federal Tax Administration (ESTV)",
                 "kind": "tax_authority",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Loi sur l'imposition des personnes physiques (LIPP, D 3 08), art. 14, 41, 59, 60",
+                "url": "https://silgeneve.ch/legis/data/rsg_D3_08.htm",
+                "publisher": "République et canton de Genève (SILGeneve)",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Feuille cantonale Genève (Stand 2026): barèmes 2026, déductions, charge maximale, imposition d'après la dépense",
+                "url": "https://www.estv2.admin.ch/stp/kb/ge-fr.pdf",
+                "publisher": "Swiss Federal Tax Administration (ESTV)",
+                "kind": "tax_authority",
+                "accessed": "2026-10-16"
+              },
+              {
+                "title": "Arrêté approuvant le nombre des centimes additionnels 2026 des communes genevoises (ArCA-2026, D 3 05.30)",
+                "url": "https://silgeneve.ch/legis/data/rsg_D3_05p30.htm",
+                "publisher": "République et canton de Genève (SILGeneve)",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "medium",
             "verification": "verified",
             "open_questions": [
@@ -6819,58 +7132,67 @@
                 "brackets": [
                   {
                     "from_amount": 0.0,
-                    "rate": 0.00289
+                    "rate": 0.002890451
                   },
                   {
-                    "from_amount": 118723.0,
-                    "rate": 0.00381
+                    "from_amount": 118722.0,
+                    "rate": 0.003800809
                   },
                   {
-                    "from_amount": 237444.0,
-                    "rate": 0.00465
+                    "from_amount": 237443.0,
+                    "rate": 0.004656266
                   },
                   {
-                    "from_amount": 356166.0,
-                    "rate": 0.00521
+                    "from_amount": 356165.0,
+                    "rate": 0.005201745
                   },
                   {
-                    "from_amount": 474887.0,
-                    "rate": 0.00563
+                    "from_amount": 474886.0,
+                    "rate": 0.005630424
                   },
                   {
-                    "from_amount": 712331.0,
-                    "rate": 0.00623
+                    "from_amount": 712330.0,
+                    "rate": 0.006227202
                   },
                   {
-                    "from_amount": 949773.0,
-                    "rate": 0.00666
+                    "from_amount": 949772.0,
+                    "rate": 0.006666381
                   },
                   {
-                    "from_amount": 1187216.0,
-                    "rate": 0.00728
+                    "from_amount": 1187215.0,
+                    "rate": 0.00727566
                   },
                   {
-                    "from_amount": 1424659.0,
-                    "rate": 0.00772
+                    "from_amount": 1424658.0,
+                    "rate": 0.007725539
                   },
                   {
-                    "from_amount": 1780824.0,
-                    "rate": 0.00857
+                    "from_amount": 1780823.0,
+                    "rate": 0.008386117
                   },
                   {
-                    "from_amount": 100000000.0,
-                    "rate": 0.00858
+                    "from_amount": 3561646.0,
+                    "rate": 0.008577317
                   }
                 ],
-                "notes": "Brackets are combined cantonal + communal marginal rates on TAXABLE wealth (after the social deductions in exempt_amount, here for a married couple with 3 children), derived from the ESTV tax calculator for tax year 2026 by evaluating the tax at each tariff breakpoint; the piecewise-linear schedule reproduces the official totals at the breakpoints. Church tax excluded. Foreign real estate and foreign permanent establishments are excluded from the base but count for the rate (progression). Cap (bouclier fiscal): income + wealth taxes (cantonal and communal, including additional centimes) may not exceed 60% of net taxable income; the net wealth yield is deemed to be at least 1% of net wealth; any reduction is applied to wealth tax only. For a large portfolio yielding ~1-2% this cap typically binds and cuts the effective wealth tax well below the 0.86% top rate."
+                "notes": "Brackets are combined cantonal + communal marginal rates on TAXABLE wealth (after the CHF 307,551 deductions): the 2026 barème of LIPP art. 59 para. 1 (RCEPF art. 18 para. 1: 1.49 / 1.91 / 2.34 / 2.55 / 2.76 / 2.98 / 3.19 / 3.40 / 3.61 / 3.83 per mille on bands ending at CHF 118,722 / 237,443 / 356,165 / 474,886 / 712,330 / 949,772 / 1,187,215 / 1,424,658 / 1,780,823) x (1 + 0.485 + 0.4549 communal) plus the supplementary tax of art. 59 para. 2 (RCEPF art. 18 para. 2: 0 / 0.0956 / 0.1169 / 0.2550 / 0.2763 / 0.4463 / 0.4781 / 0.6800 / 0.7225 / 0.9563 / 1.1475 per mille, bands to CHF 3,561,646), on which no centimes are levied. Church tax excluded. The burden cap (art. 60) is in income_cap."
               }
             ],
-            "property_tax_note": "Some cantons/communes levy a separate annual real-property tax (Liegenschaftssteuer) on gross real estate value; it is not part of the wealth tax."
+            "property_tax_note": "Some cantons/communes levy a separate annual real-property tax (Liegenschaftssteuer) on gross real estate value; it is not part of the wealth tax.",
+            "thresholds_indexed": true,
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 1.0,
+              "counts_long_term_gains": false,
+              "counted_income_tax_rate": 0.317106,
+              "min_income_yield": 0.01,
+              "notes": "LIPP art. 60 paras. 1, 3, 4 (Geneva): cantonal and communal income plus wealth tax (centimes included, federal tax excluded) may not exceed 60% of net taxable income, the net wealth yield counted at least 1% of net wealth; the reduction comes off the wealth tax (cantonal and communal) and the text sets no floor, so max_reduction is 1. Private capital gains are not income (art. 27 let. j). counted_income_tax_rate 0.317106 = the top marginal cantonal and communal rate (18% x [1.485 x 0.88 + 0.4549]), the flat rate the tax file uses; the true average rate at CHF 600,000 of income is lower (24.1%)."
+            }
           },
           "inheritance": {
             "status": "researched",
             "tax_year": "2026",
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "verification": "verified",
             "eligibility_conditions": "Applies when the deceased/donor was domiciled in the canton (movable assets); Swiss real estate is taxed in the canton where it lies.",
             "regional_differences": "",
@@ -6882,7 +7204,7 @@
             "business_relief_covers_public_shares": false,
             "other_transfer_cost_rate": 0,
             "lifetime_gift_tax_free_after_years": null,
-            "summary": "Inheritances and gifts to children are exempt in Genève. Descendants exempt (no additional centimes on direct line). Exception: the exemption does NOT apply if the deceased/donor was taxed on the lump-sum basis in any of the last three final assessments (see lump-sum regime).",
+            "summary": "Inheritances and gifts to children and to the spouse are exempt in Geneva (LDS art. 6A para. 1), unless the deceased or donor was lump-sum taxed in one of the last three final assessments (art. 6A para. 2; see the lump-sum regime).",
             "exemptions_thresholds": "Full exemption for descendants, any amount.",
             "sources": [
               {
@@ -6905,6 +7227,13 @@
                 "publisher": "Swiss Federal Tax Administration (ESTV/AFC)",
                 "kind": "tax_authority",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Loi sur les droits de succession (LDS, D 3 25), art. 6A, 7, 17, 22, 23",
+                "url": "https://silgeneve.ch/legis/data/rsg_D3_25.htm",
+                "publisher": "République et canton de Genève (SILGeneve)",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
               }
             ],
             "confidence": "high",
@@ -6921,7 +7250,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 410700.0,
+              "amount": 411329.19,
               "currency": "CHF"
             },
             "covers": [
@@ -6930,9 +7259,10 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 410,742 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 296,531 in Genève). At the cantonal minimum income base CHF 425,194 (federal minimum CHF 435,000 for 2026): about CHF 149,155. No separate wealth tax: the income base is increased by 10%. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an expenditure base of CHF 1,000,000 (assumed 7x the rent of a family home; a prime-rent sample of CHF 7,200 a month would give 7 x 86,400 = CHF 604,800): federal CHF 115,000 (DBG art. 14 para. 4, no child reduction) + cantonal and communal CHF 296,329.19 on a cantonal base of CHF 1,100,000 (the expenditure plus 10% for the wealth tax, LIPP art. 14 para. 4): the barème of art. 17 RCEPF at half the base (CHF 550,000: tax CHF 84,103.19, average rate 15.29%) applied to CHF 1,100,000 gives CHF 168,206.39; x 1.3068 (centimes 48.5, less 12%) + x 0.4549 communal = CHF 296,329.19. There is no separate wealth tax. Minimum base: the highest of CHF 426,357 (RCEPF art. 4, 2026; indexed every year, LIPP art. 67 para. 2), 7x the rent or rental value, and the worldwide living costs (art. 14 para. 3). The real base is the higher of these and a control calculation on Swiss-source income and treaty-relieved foreign income (art. 14 paras. 6-7).",
+            "indexed_to_inflation": true
           },
-          "eligibility": "Available in 2026. Cantonal minimum income base CHF 425,194 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). No separate wealth tax: the income base is increased by 10%. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
+          "eligibility": "Available in 2026. Cantonal minimum expenditure base CHF 426,357 (RCEPF art. 4, 2026; LIPP art. 14 para. 3 a: 400,000 as indexed), plus 10% for the wealth tax (para. 4); federal minimum CHF 435,000 (DBG art. 14 para. 3 a, indexed). Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [
             {
               "title": "ESTV Steuermäppchen 2025: Besteuerung nach dem Aufwand (lump-sum taxation bases by canton)",
@@ -6954,15 +7284,36 @@
               "publisher": "Swiss Confederation (Fedlex)",
               "kind": "legislation",
               "accessed": "2026-10-15"
+            },
+            {
+              "title": "Loi sur l'imposition des personnes physiques (LIPP, D 3 08), art. 14, 41, 59, 60",
+              "url": "https://silgeneve.ch/legis/data/rsg_D3_08.htm",
+              "publisher": "République et canton de Genève (SILGeneve)",
+              "kind": "legislation",
+              "accessed": "2026-10-16"
+            },
+            {
+              "title": "Feuille cantonale Genève (Stand 2026): barèmes 2026, déductions, charge maximale, imposition d'après la dépense",
+              "url": "https://www.estv2.admin.ch/stp/kb/ge-fr.pdf",
+              "publisher": "Swiss Federal Tax Administration (ESTV)",
+              "kind": "tax_authority",
+              "accessed": "2026-10-16"
+            },
+            {
+              "title": "Arrêté approuvant le nombre des centimes additionnels 2026 des communes genevoises (ArCA-2026, D 3 05.30)",
+              "url": "https://silgeneve.ch/legis/data/rsg_D3_05p30.htm",
+              "publisher": "République et canton de Genève (SILGeneve)",
+              "kind": "legislation",
+              "accessed": "2026-10-16"
             }
           ],
           "inheritance": {
             "status": "researched",
-            "summary": "If the deceased or donor was taxed on the lump-sum basis in any of the last three final assessments, Geneva does NOT exempt children: inheritances and gifts are taxed progressively from 2% (above CHF 5,000) to 6% on the part above CHF 500,000 (no additional centimes on the direct line).",
+            "summary": "If the deceased or donor was taxed on the lump-sum basis in any of the 3 last final assessments, Geneva does NOT exempt children (LDS art. 6A para. 2): inheritances and gifts are taxed by tranches from 2% (CHF 5,001 to 10,000) to 6% above CHF 500,000 (art. 17 para. 2), with no centimes additionnels (art. 22). The 50% reduction of art. 5 applies only to foreigners settled before 1 July 1979.",
             "exemptions_thresholds": "First CHF 5,000 (inheritance) / CHF 10,000 (gift) untaxed.",
             "eligibility_conditions": "Deceased/donor domiciled in Geneva and lump-sum taxed in any of the last three final assessments.",
             "regional_differences": "",
-            "important_exceptions": "Only direct-line rates shown; grandchildren pay 20% more.",
+            "important_exceptions": "Only direct-line rates shown; grandchildren pay 20% more (art. 17 para. 4).",
             "tax_year": "2026",
             "sources": [
               {
@@ -6978,9 +7329,16 @@
                 "publisher": "Swiss Federal Tax Administration (ESTV)",
                 "kind": "tax_authority",
                 "accessed": "2026-10-15"
+              },
+              {
+                "title": "Loi sur les droits de succession (LDS, D 3 25), art. 6A, 7, 17, 22, 23",
+                "url": "https://silgeneve.ch/legis/data/rsg_D3_25.htm",
+                "publisher": "République et canton de Genève (SILGeneve)",
+                "kind": "legislation",
+                "accessed": "2026-10-16"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
@@ -7034,7 +7392,9 @@
           }
         }
       },
-      "open_questions": [],
+      "open_questions": [
+        "Needs an engine change: Geneva's income tax is progressive (average rate of the barème at half the income), the engine applies the top marginal rate to every franc of dividends."
+      ],
       "cost_of_living": {
         "city": "Geneva",
         "prime_price_per_m2": {
@@ -7335,7 +7695,7 @@
         "lump_sum": {
           "lump_sum": {
             "annual": {
-              "amount": 391300.0,
+              "amount": 392089.0,
               "currency": "CHF"
             },
             "covers": [
@@ -7344,7 +7704,7 @@
               "foreign_income_all",
               "wealth_tax_foreign"
             ],
-            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 391,302 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 277,091 in Delémont). At the cantonal minimum income base CHF 200,000 (federal minimum CHF 435,000 for 2026): about CHF 82,134. Wealth base at least 4x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+            "notes": "Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 391,302 a year (federal CHF 115,000 on CHF 1M at the ordinary tariff + cantonal/communal CHF 277,091 in Delémont). At the cantonal minimum income base CHF 200,000 (federal minimum CHF 435,000 for 2026): about CHF 82,134. Wealth base at least 4x the income base. Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income. Federal part without the CHF 263 per-child reduction, which lump-sum taxpayers do not get (DBG art. 14 para. 4): +CHF 789."
           },
           "eligibility": "Available in 2026. Cantonal minimum income base CHF 200,000 (ESTV Steuermäppchen 2025); federal minimum CHF 435,000 (DBG art. 14, as indexed for 2026). Wealth base at least 4x the income base. Both spouses must be non-Swiss, newly resident (or back after 10+ years) and not gainfully active in Switzerland.",
           "sources": [

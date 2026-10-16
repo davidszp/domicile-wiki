@@ -1,0 +1,121 @@
+{
+  "id": "CH-GE",
+  "name": "Switzerland, canton of Geneva",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary taxation)",
+      "regime": "standard",
+      "note": "Dividends are ordinary income at the federal tariff and the Geneva barème with the splitting rate of married couples (a portfolio holding under 10% gets no partial taxation); gains on listed shares are tax-free for a private investor (DBG art. 16 para. 3); annual cantonal and communal wealth tax on worldwide net assets, with a supplementary tax that bears no centimes; children and spouse are exempt from inheritance tax (LDS art. 6A para. 1). The 60% bouclier fiscal (LIPP art. 60) is modelled with income_cap."
+    },
+    {
+      "id": "lump_sum",
+      "name": "Lump-sum taxation (imposition d'après la dépense)",
+      "regime": "lump_sum",
+      "note": "Income and wealth tax are replaced by the ordinary barème applied to a deemed expenditure of at least the highest of CHF 426,357 (2026), 7 times the rent of the home and the living costs, increased by 10% for the wealth tax (LIPP art. 14, DBG art. 14). No time limit in law while both spouses stay non-Swiss and do not work in Switzerland. Foreign dividends and gains are covered. Unlike the ordinary regime, Geneva then taxes inheritances to children and spouse at 2%-6%, because the deceased was lump-sum taxed in the last three assessments (LDS art. 6A para. 2)."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 1000000,
+      "wealth": 50000000,
+      "expected": 931754.27,
+      "working": "Inputs: a married couple with 3 minor children, no church tax, tax year 2026; taxable income far above every tariff break so the top marginal rates apply; allowances and deductions ignored as in the other recipes. City of Geneva, 2026: cantonal centimes 47.5 + 1 = 48.5 (LCACant art. 2) with the 12% reduction on the cantonal income tax (LDIRPP art. 1), communal centimes 45.49 (ArCA-2026), neither reduced; wealth 50M chosen so that the bouclier fiscal does not bind (shown below). DIVIDENDS 2,000,000 taxed in full (DBG art. 20 para. 1bis not met; LIPP art. 22). Federal (DBG art. 36 para. 2, tariff in force since 1 Jan 2026): tax at 941,400 is 108,261.00, plus 11.50 per 100 above = 11.5% of the whole amount; 2,000,000 x 11.5% = 230,000.00 (the CHF 263 per-child reduction of art. 36 para. 2bis, 789 in all, is ignored, as are social deductions and the dividend-free parts). Geneva (LIPP art. 41 para. 2: the rate is that of 50% of the income, here 1,000,000; barème of art. 17 RCEPF 2026, by tranche: 0% to 18,700, 7.3% to 22,530, 8.2% to 24,784, 9.1% to 27,036, 10% to 29,290, 10.9% to 34,922, 11.3% to 39,428, 12.3% to 43,935, 12.8% to 48,441, 13.2% to 77,730, 14.2% to 127,297, 15% to 171,231, 15.6% to 193,762, 15.8% to 277,125, 16% to 295,150, 16.8% to 415,688, 17.6% to 651,131, 18% above): tax on 651,131 is 101,902.25, plus 18% x 348,869 = 62,796.42, so 164,698.67 on 1,000,000, a rate of 16.4698669%. Base tax on 2,000,000 = 2,000,000 x 16.4698669% = 329,397.34. Cantonal tax = base x (1 + 0.485) x (1 - 0.12) = base x 1.3068 = 430,456.44; communal tax = base x 0.4549 = 149,842.85; together 580,299.29. Income tax before credit 230,000.00 + 580,299.29 = 810,299.29. Flat-rate credit for the 15% treaty withholding on foreign dividends (SR 672.201): 15% x 2,000,000 = 300,000.00, below the Swiss tax on those dividends. Dividend tax after credit 510,299.29. GAINS 1,000,000: nil (private capital gains on movable assets are exempt: DBG art. 16 para. 3; LIPP art. 27 let. j). WEALTH 50,000,000: deductions 175,743 for the couple + 3 x 43,936 (LIPP art. 58, RCEPF art. 16 para. 1) = 307,551; taxable 49,692,449. Barème of art. 59 para. 1 (RCEPF art. 18 para. 1), tax at the end of the band ending 1,780,823 is 5,197.63 (tranches at 1.49, 1.91, 2.34, 2.55, 2.76, 2.98, 3.19, 3.40, 3.61 per mille; the printed running total is 5,197.65), plus 3.83 per mille x (49,692,449 - 1,780,823) = 183,501.53 = 188,699.16; x (1 + 0.485 + 0.4549) = x 1.9399 = 366,057.49. Supplementary tax of art. 59 para. 2 (RCEPF art. 18 para. 2; no centimes): tax at the end of the band ending 3,561,646 is 2,462.39 (bands 0 / 0.0956 / 0.1169 / 0.2550 / 0.2763 / 0.4463 / 0.4781 / 0.6800 / 0.7225 / 0.9563 per mille; the printed total is 2,462.35), plus 1.1475 per mille x (49,692,449 - 3,561,646) = 52,935.10, so 55,397.49. Wealth tax 421,454.98. Burden cap (LIPP art. 60): cantonal and communal income tax 580,299.29 + wealth tax 421,454.98 = 1,001,754.27, below 60% x 2,000,000 = 1,200,000 (the 1% minimum wealth yield, 496,924, is below the dividends), so no relief. Total 510,299.29 + 421,454.98 = 931,754.27.",
+      "model_difference": 53912.71,
+      "model_note": "The engine applies one flat marginal rate of 43.21% (11.5% federal + 18% x 1.7617) to every franc of dividends, whereas Geneva taxes income at the average rate of the barème on half the income: the law's cantonal and communal tax on CHF 2M is 580,299.29 instead of 2,000,000 x 31.7106% = 634,212, i.e. 53,912.71 lower."
+    },
+    {
+      "path": "lump_sum",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 411329.19,
+      "working": "The tax does not depend on the actual dividends, gains or wealth (foreign income and assets are covered), only on the deemed expenditure, which this check ASSUMES to be 7 times a rent of about CHF 12,000 a month = CHF 1,000,000 (LIPP art. 14 para. 3 b, DBG art. 14 para. 3 b); the real base depends on rent and living costs, see open questions. Married couple with 3 children, no church tax, 2026, city of Geneva. Federal (DBG art. 14 para. 4: ordinary tariff art. 36 para. 2, but without the per-child reduction of art. 36 para. 2bis, second sentence): 108,261.00 + 11.50 x 586 (the 58,600 above 941,400, in hundreds) = 115,000.00. Cantonal base: the expenditure plus 10% for the wealth tax (LIPP art. 14 para. 4) = 1,100,000, taxed at the ordinary barème (para. 5) with splitting: rate of 550,000 = tax by tranche 84,103.19 / 550,000 = 15.2914896%; base tax 1,100,000 x 15.2914896% = 168,206.39; cantonal x 1.3068 = 219,812.11; communal x 0.4549 = 76,517.08; together 296,329.19. No separate wealth tax. Total 115,000.00 + 296,329.19 = 411,329.19."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 333880.0,
+      "working": "The family's real case: CHF 600,000 of dividends, CHF 30M of wealth; the bouclier fiscal binds. City of Geneva 2026 (cantonal centimes 48.5 less 12%, communal 45.49), couple with 3 children, no church tax. Federal (DBG art. 36 para. 2): 5,692.00 at 152,400 plus 13.00 per 100 above, so 5,692.00 + 0.13 x (600,000 - 152,400) = 63,880.00 (per-child reduction of CHF 789 ignored). Cantonal and communal income tax (LIPP art. 41 para. 2, rate of half the income, 300,000, by tranche of art. 17 RCEPF): tax on 300,000 is 41,028.70 (rate 13.67623%); base tax 600,000 x 13.67623% = 82,057.39; cantonal x 1.3068 = 107,232.60; communal x 0.4549 = 37,327.91; together 144,560.51. WEALTH: taxable 30,000,000 - 307,551 = 29,692,449; base tax 112,099.16 (5,197.63 at the end of the band ending 1,780,823, plus 3.83 per mille x 27,911,626 = 106,901.53) x 1.9399 = 217,461.15, plus the supplementary tax without centimes 32,447.49 (2,462.39 + 1.1475 per mille x 26,130,803) = 249,908.64 before the cap. Bouclier fiscal (LIPP art. 60): 144,560.51 + 249,908.64 = 394,469.15 exceeds 60% x 600,000 = 360,000 (the 1% minimum yield, 300,000, is below the dividends), so the wealth tax is cut to 360,000 - 144,560.51 = 215,439.49 (no floor). Federal 63,880.00 + cantonal and communal income tax 144,560.51 + capped wealth tax 215,439.49 = 423,880.00, less flat-rate credit for the 15% treaty withholding on foreign dividends: 15% x 600,000 = 90,000.00, below the Swiss tax on those dividends. Total 333,880.00 (= 63,880 - 90,000 + 60% x 600,000).",
+      "model_difference": 5120.0,
+      "model_note": "The engine applies a flat 11.5% federal rate to dividends, whereas the federal tariff at CHF 600,000 gives 63,880 (10.65%): the cap equalises the cantonal parts, so the engine total is 339,000 = 360,000 - 21,000 and the law's is 333,880; difference 5,120.00 = 69,000 - 63,880."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 9000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Children and the surviving spouse are exempt from inheritance and gift tax in Geneva whatever the amount (LDS art. 6A para. 1 a-b), unless the deceased was lump-sum taxed in one of the last three final assessments (para. 2; see the lump-sum path). There is no federal inheritance tax. Estate 9,000,000 to 3 children: tax 0."
+    },
+    {
+      "path": "lump_sum",
+      "kind": "inheritance",
+      "estate": 9000000,
+      "children": 3,
+      "expected": 514650.0,
+      "working": "The deceased was lump-sum taxed, so the exemption of LDS art. 6A para. 1 does not apply (para. 2) and the children pay the first-category tariff of art. 17 para. 2 by tranches (art. 23 para. 2; no centimes additionnels on the first category, art. 22; the 50% reduction of art. 5 is only for foreigners settled before 1 July 1979). Estate 9,000,000 / 3 = 3,000,000 per child: nil to 5,000; 2% x 5,000 (5,001-10,000) = 100.00; 3% x 40,000 (10,001-50,000) = 1,200.00; 3.5% x 50,000 (50,001-100,000) = 1,750.00; 4% x 100,000 (100,001-200,000) = 4,000.00; 4.5% x 100,000 (200,001-300,000) = 4,500.00; 5% x 200,000 (300,001-500,000) = 10,000.00; 6% x 2,500,000 (above 500,000) = 150,000.00. Per child 171,550.00; for 3 children 514,650.00."
+    }
+  ],
+  "assumptions": [
+    "The family is two non-Swiss spouses who have not been Swiss tax residents for 10 years and do not work in Switzerland, so lump-sum taxation is open to them (LIPP art. 14 paras. 1-2; DBG art. 14). Both must qualify.",
+    "City of Geneva, tax year 2026, no church tax: cantonal centimes 48.5, communal 45.49. Communal centimes elsewhere in the canton range from 25 (Cologny) to 51 (Avully).",
+    "The lump-sum base is shown at CHF 1,000,000 (cantonal base CHF 1,100,000 with the 10% wealth surcharge), the representative used for every canton. The family's actual base is the highest of CHF 426,357, 7 times the rent or rental value of the home and the living costs; with the prime-rent sample of CHF 7,200 a month (7 x 86,400 = CHF 604,800, +10%) the lump sum would be about CHF 255,000.",
+    "The lump-sum path taxes the children's inheritance at 2%-6% (LDS art. 6A para. 2), the personal path does not: this is Geneva's price for lump-sum taxation. The model applies it at both deaths (years 30 and 60), as the lump sum has no time limit.",
+    "The bouclier fiscal is modelled with income_cap (60% of income, counted tax = cantonal and communal at the flat top rate 31.71%); the first annual check keeps it from binding, the second shows it binding for the family's real case.",
+    "A Swiss family foundation (ZGB art. 335) is not offered as a path: it is taxed as a legal entity, its distributions are taxable for the beneficiaries, and it brings no advantage over holding personally.",
+    "Treaty relief on foreign dividends is assumed to be claimed only if the control calculation stays below the lump sum; the 15% withholding is then a final cost."
+  ],
+  "open_questions": [
+    "Needs an engine change: the lump sum is a fixed amount per regime, but by law it is the tax on a base of at least the highest of CHF 426,357 (indexed each year), 7 times the rent and the family's worldwide living costs, plus 10% (LIPP art. 14 paras. 3-5; DBG art. 14 para. 3). The engine would need the base as a function of the family's spending and housing cost.",
+    "Needs an engine change: modified lump sum. Claiming treaty-reduced withholding on foreign dividends puts that income into the control calculation at the ordinary barème (LIPP art. 14 paras. 6-7, DBG art. 14 para. 3 d); the tax is the higher of the two. The engine charges 15% on every foreign dividend and ignores it.",
+    "Needs an engine change: the Geneva barème is progressive with splitting (rate at half the income); the engine applies the top marginal rate to every franc of dividends (CHF 53,900 too high on a CHF 2M income).",
+    "The tax-file dividend rate (43.2106%) differs from the ESTV-calculator figure used before (43.23%) by 0.02 point; the statutory derivation is used.",
+    "Order of the foreign-tax credit and the bouclier (LIPP art. 60): if the 60% cap is measured after the flat-rate foreign-tax credit instead of before, the cap stops binding at the family's income and the tax is about CHF 368,000 instead of 334,000 on the capped check. The law text read does not settle the order."
+  ],
+  "sources": [
+    {
+      "title": "Loi sur l'imposition des personnes physiques (LIPP, D 3 08), art. 14, 41, 59, 60",
+      "url": "https://silgeneve.ch/legis/data/rsg_D3_08.htm",
+      "publisher": "République et canton de Genève (SILGeneve)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Feuille cantonale Genève (Stand 2026): barèmes 2026, déductions, charge maximale, imposition d'après la dépense",
+      "url": "https://www.estv2.admin.ch/stp/kb/ge-fr.pdf",
+      "publisher": "Swiss Federal Tax Administration (ESTV)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Arrêté approuvant le nombre des centimes additionnels 2026 des communes genevoises (ArCA-2026, D 3 05.30)",
+      "url": "https://silgeneve.ch/legis/data/rsg_D3_05p30.htm",
+      "publisher": "République et canton de Genève (SILGeneve)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Loi sur les droits de succession (LDS, D 3 25), art. 6A, 7, 17, 22, 23",
+      "url": "https://silgeneve.ch/legis/data/rsg_D3_25.htm",
+      "publisher": "République et canton de Genève (SILGeneve)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Bundesgesetz über die direkte Bundessteuer (DBG), SR 642.11, Stand 1. Januar 2026 (Art. 14, 36)",
+      "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260101/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260101-de-html.html",
+      "publisher": "Swiss Confederation (Fedlex)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

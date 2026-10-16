@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Southern Europe, EU member",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Ordinary residents pay 5% on dividends (final), 15% on gains from unlisted shares and from listed shares where they hold 0.5% or more, and nothing on listed shares below 0.5% or EU/EEA UCITS funds. Real estate CGT is suspended until 31 Dec 2026. Inheritance to children: first EUR 150,000 per child free, then 1% / 5% / 10%; lifetime parental gifts free up to a one-time EUR 800,000, then 10%. No wealth tax (ENFIA property tax only). New residents can instead pay a flat EUR 100,000 a year on all foreign income (Art. 5A Income Tax Code), plus EUR 20,000 per included family member, for up to 15 years, against a EUR 500,000 Greek investment.",
   "regimes": [
     {
@@ -20,7 +20,7 @@
       "eligibility": "Greek tax residence (physical presence over 183 days in any 12-month period, or centre of vital interests in Greece).",
       "duration_years": null,
       "capital_gains": {
-        "summary": "Gains on listed shares are exempt if the seller holds less than 0.5% of the share capital; gains on non-listed shares, and on listed shares with a holding of 0.5% or more, are taxed at 15%. Gains on Greek and EU/EEA UCITS units are exempt. Greek-listed share sales bear a 0.1% sales tax. Real estate capital gains tax (15%) is suspended until 31 Dec 2026 (Art. 90 Law 5162/2024).",
+        "summary": "Gains on listed shares are exempt if the seller holds less than 0.5% of the share capital; gains on non-listed shares, and on listed shares with a holding of 0.5% or more, are taxed at 15%. Gains on Greek and EU/EEA UCITS units are exempt. Greek-listed share sales bear a 0.1% sales tax. Real estate capital gains tax (15%) is suspended until 31 Dec 2026 (Art. 90 Law 5162/2024). Art. 42(1)(β) Law 4172/2013 taxes gains on listed shares only for holdings of 0.5% or more and names no particular exchange, so foreign-listed holdings below 0.5% are outside the charge (statute read on Taxheaven, 2026-10-16).",
         "exemptions_thresholds": "Below 0.5% holding in a listed company: exempt. EU/EEA UCITS: exempt.",
         "important_exceptions": "Non-UCITS funds (e.g. US-domiciled ETFs) and bonds are not covered by the stated exemptions; treatment not verified. Real estate CGT suspension expires 31 Dec 2026; whether it is extended is unknown.",
         "tax_year": "2026",
@@ -37,9 +37,9 @@
         "confidence": "medium",
         "verification": "partially_verified",
         "open_questions": [
-          "Does the <0.5% listed-share exemption cover shares listed on foreign (non-EU) exchanges? Assumed yes (0 for foreign listed); not verified in the statute (Art. 42 Law 4172/2013).",
           "Taxation of gains on non-UCITS ETFs and on bonds not verified.",
-          "Will the real estate CGT suspension be extended beyond 31 Dec 2026?"
+          "Will the real estate CGT suspension be extended beyond 31 Dec 2026?",
+          "A 0.1% sales tax (Law 2579/1998) is reported to apply also to sales of shares listed on foreign regulated markets by sellers domiciled in Greece (Euronext Athens tax page, not opened); the projection has no tax on sale proceeds."
         ],
         "headline_rate": 0.15,
         "rates": {
@@ -188,7 +188,11 @@
           "foreign_capital_gains",
           "foreign_dividends"
         ],
-        "notes": "Plus EUR 20,000 a year per relative to whom the regime is extended (Art. 5A(2)); family of five = EUR 100,000 + 4 x EUR 20,000 = EUR 180,000 a year if all four are included. Paid in one instalment by the last working day of December; not offsettable. Greek-source income taxed separately. Non-payment ends the regime; if the EUR 500,000 investment is not completed within 3 years the regime is revoked from the start (Art. 5A(5))."
+        "notes": "Plus EUR 20,000 a year per relative to whom the regime is extended (Art. 5A(2)). Reference couple: EUR 100,000 + 1 x EUR 20,000 (spouse) = EUR 120,000 a year; the children have no foreign income and need not be included (their inheritance from the beneficiary is exempt under Art. 5A(8) as 'third parties'). A family of five with all four relatives included would pay EUR 100,000 + 4 x EUR 20,000 = EUR 180,000. Not indexed: the amounts change only by amendment. Paid in one instalment by the last working day of December; not offsettable. Greek-source income taxed separately. Non-payment ends the regime; if the EUR 500,000 investment is not completed within 3 years the regime is revoked from the start (Art. 5A(5)). The EUR 500,000 investment can be met by the Greek family home (real estate, personally or through a relative).",
+        "spouse_supplement": {
+          "amount": 20000,
+          "currency": "EUR"
+        }
       },
       "capital_gains": {
         "summary": "Foreign capital gains are covered by the EUR 100,000 lump sum: payment of the lump sum exhausts every Greek tax liability on foreign-source income (Art. 5A(8)). Greek-source gains taxed as standard.",

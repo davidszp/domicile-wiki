@@ -1,0 +1,149 @@
+{
+  "id": "GRC",
+  "name": "Greece",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Dividends 5% (Law 4172/2013 art. 40(1)), with the 15% foreign withholding credited up to the Greek tax (art. 9), so foreign dividends bear no extra Greek tax; gains on listed shares are outside tax below a 0.5% holding (art. 42(1)(b)); no wealth tax. A foreign portfolio of a Greek-resident deceased passes under the Category A scale (EUR 150,000 free per child, then 1% / 5% / 10%)."
+    },
+    {
+      "id": "art5a_lump_sum",
+      "name": "Art. 5A flat tax (EUR 100,000 + EUR 20,000 for the spouse, 15 years)",
+      "regime": "art5a_lump_sum",
+      "note": "EUR 100,000 a year on all foreign income plus EUR 20,000 for the spouse (art. 5A(2)), for 15 tax years, then the standard rules. Needs EUR 500,000 invested in Greece within 3 years (art. 5A(1)); the family's EUR 5M Greek home meets it. Foreign movable property passing to the children is exempt from inheritance and gift tax (art. 5A(8)), but the 15-year limit means the deaths in years 30 and 60 fall under the standard rules."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "All dividends are foreign. Dividends 20,000 x 5% = 1,000 (Law 4172/2013 art. 40(1)). Foreign tax credit (art. 9(1)-(2)): 15% withholding = 3,000, but the credit cannot exceed the Greek tax on that income, so it cancels the 1,000: Greek tax 0. Gains 15,000 on listed shares: the family holds far below 0.5% of any company, so the gain is outside the tax (art. 42(1)(b); the 15% of art. 43 applies only from 0.5%). No wealth tax. Total 0. Assumes the exchanges abroad count as listed for art. 42 (not confirmed in the text) and ignores ENFIA."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 0,
+      "wealth": 10000000,
+      "foreign_share": 0.0,
+      "expected": 1000,
+      "working": "All dividends from Greek companies, no foreign withholding and no credit: 20,000 x 5% = 1,000 (art. 40(1)); the 5% withheld at source is final. No gains. Total 1,000."
+    },
+    {
+      "path": "art5a_lump_sum",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 120000,
+      "working": "Art. 5A(2) Law 4172/2013: EUR 100,000 for the beneficiary on all foreign-source income whatever the amount, plus EUR 20,000 for the spouse, to whom the regime is extended because she co-owns the portfolio: 120,000. The children have no foreign income and are not included. Foreign dividends and gains add nothing (art. 5A(8)); foreign withholding is not credited (art. 5A(2)). Greek-source income would be taxed separately and is nil here."
+    },
+    {
+      "path": "art5a_lump_sum",
+      "phase": "after",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "The regime ends after 15 tax years and cannot be extended (art. 5A(4)); from then on the standard rules apply, as worked for the personal path: dividends 20,000 x 5% = 1,000 less the foreign tax credit (3,000, capped at the Greek tax, art. 9) = 0; gains on listed shares below 0.5% are outside the tax (art. 42(1)(b)). Total 0."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 869500,
+      "working": "A Greek-resident deceased's foreign movable assets are taxable (Law 2961/2001 art. 1, as in the tax file; foreign immovables are not). Each child receives 3,333,333.33 and is in Category A. Scale: up to 150,000 exempt; 150,000-300,000 at 1% = 1,500; 300,000-600,000 at 5% = 15,000; above 600,000 at 10%: 2,733,333.33 x 10% = 273,333.33. Per child 289,833.33; three children 869,500."
+    },
+    {
+      "path": "art5a_lump_sum",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "While the regime lasts, movable property abroad that a beneficiary leaves to third parties (the children) is exempt from Greek inheritance tax (art. 5A(8), deaths from 1 January 2020). The estate here is a foreign securities portfolio, so no tax: 0. Hypothetical: the regime lasts 15 years, so the model's deaths in years 30 and 60 fall under the standard rules (869,500 for this estate, see the personal path)."
+    }
+  ],
+  "assumptions": [
+    "The family are not Greek tax residents in 7 of the 8 years before the move and invest EUR 500,000 or more in Greece (the EUR 5M home qualifies) within 3 years (art. 5A(1)).",
+    "The spouse is included in Art. 5A for EUR 20,000 a year, because she co-owns the portfolio; the three children have no foreign income and are not included.",
+    "Dividends carry 15% foreign withholding. The credit under art. 9 is capped at the Greek tax, so foreign dividends bear no Greek tax on top of the withholding.",
+    "The portfolio is in positions far below 0.5% of any listed company, so gains on listed shares are outside Greek tax (art. 42(1)(b)).",
+    "Greek inheritance tax is shown for one parent's estate of EUR 10m passing to three children; the surviving spouse's own scale and gifts in life (EUR 800,000 parental grant allowance, then 10%) are not modelled.",
+    "Structures considered and rejected: a Greek holding company taxes portfolio dividends and share gains as business income at the corporate rate (the participation exemption needs a 10% stake held 24 months), which is worse than 5% and 0; Greece has not ratified the Hague Trusts Convention and taxes trusts and foundations by look-through (circular POL 1114/2017), so no family trust or foundation path is offered."
+  ],
+  "open_questions": [
+    "Whether the 0.5% test for gains on listed shares (art. 42(1)(b)) is meant to cover shares listed on foreign (non-EU) exchanges: the article speaks of a stock market without naming Greek ones, and no guidance was found. Assumed yes, as in the tax file.",
+    "Whether the tax authority takes the EUR 20,000 relative supplement for a spouse who holds half the portfolio, or whether the spouse is also taxed on her own foreign income if she is not included: assumed she is included.",
+    "Greek corporate tax rate (22%) and the details of circular POL 1114/2017 were not opened in the primary text; the structure rejection rests on PwC Worldwide Tax Summaries and secondary summaries."
+  ],
+  "sources": [
+    {
+      "title": "Law 4172/2013 (Income Tax Code), Article 5A",
+      "url": "https://www.taxheaven.gr/law/4172/2013/arthro/5%CE%91",
+      "publisher": "Taxheaven (consolidated Greek legislation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Law 4172/2013, Article 9 (elimination of double taxation)",
+      "url": "https://www.taxheaven.gr/law/4172/2013/arthro/9",
+      "publisher": "Taxheaven (consolidated Greek legislation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Law 4172/2013, Article 40 (dividends and interest)",
+      "url": "https://www.taxheaven.gr/law/4172/2013/arthro/40",
+      "publisher": "Taxheaven (consolidated Greek legislation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Law 4172/2013, Article 42 (capital gains from transfer of securities)",
+      "url": "https://www.taxheaven.gr/law/4172/2013/arthro/42",
+      "publisher": "Taxheaven (consolidated Greek legislation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Law 4172/2013, Article 43 (rate on capital gains)",
+      "url": "https://www.taxheaven.gr/law/4172/2013/arthro/43",
+      "publisher": "Taxheaven (consolidated Greek legislation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Greece - Individual - Other taxes (inheritance, gift and parental grant tax)",
+      "url": "https://taxsummaries.pwc.com/greece/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Greece - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/greece/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Greece: Clarifications on the tax treatment of foreign trusts and foundations",
+      "url": "https://internationaltaxreview.com/article/2a68raha94goaj1qeqb7h/greece-clarifications-on-the-tax-treatment-of-foreign-trusts-and-foundations",
+      "publisher": "International Tax Review",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "MCO",
+  "name": "Monaco",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence, non-French nationals)",
+      "regime": "standard",
+      "note": "Monaco levies no personal income tax on residents who are not French nationals, so dividends, interest and gains are untaxed, and there is no wealth tax or annual property tax (MonServicePublic, Tax in Monaco). Inheritance and gift duty reaches only property situated in Monaco and is 0% between parents and children and between spouses (MonServicePublic, Inheritance tax). The family is EU but not French, so the 1963 France-Monaco convention that taxes French nationals does not apply."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 0,
+      "working": "Monaco has no personal income tax for residents who are not French nationals: 'Monegasque nationals and residents are not liable for income tax', the exemption covering persons genuinely established in Monaco, and French nationals are carved out by the 1963 Bilateral Convention (MonServicePublic, Tax in Monaco). The family is EU but not French. Dividends 600,000 (foreign, 15% withheld at source, a final cost not counted in the residence tax) x 0 = 0; realised gains 300,000 x 0 = 0 (no income tax, hence no tax on gains of private investors; the page does not mention capital gains separately, so this is inferred from the absence of any income tax). Wealth 30,000,000: 'There is no wealth tax, annual property tax or council tax' (same page) = 0. The Business Profit Tax (ISB) applies only to industrial or commercial businesses and does not reach a private portfolio. Total 0."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Transfer duty on death applies only to property situated in Monaco, whatever the domicile, residence or nationality of the deceased, and the rate between parent and child, and between spouses, is 0% (MonServicePublic, Inheritance tax; subject to the 1950 France-Monaco convention). An estate of 10,000,000 passing to 3 children therefore bears 3,333,333.33 x 0% = 0 per child, whether it is the home (Monaco-situs, direct line 0%) or the foreign portfolio (outside the scope of Monaco duty). Total 0."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens who are not French nationals; French nationals resident in Monaco are taxed by France as if resident there under the 1963 France-Monaco convention (MonServicePublic, Tax in Monaco) and would need a separate recipe.",
+    "Monaco has no income tax treaty network of note, so the 15% withholding the model charges on foreign dividends is a final cost with no residence-country relief; the checks count residence-country tax only.",
+    "Only one path is modelled. Monaco taxes nothing at the personal level, so a holding company, foundation or trust cannot reduce Monaco tax; at best it adds cost. A Monegasque company that carried on a commercial business could be subject to the Business Profit Tax (ISB) (MonServicePublic, Tax in Monaco); a passive portfolio vehicle was not researched further because it brings nothing for this family.",
+    "A Monegasque patrimonial foundation is not offered: it exists only as a National Council bill (Proposition 268, reported 20 May 2026), not yet law, with a EUR 10 million cash minimum endowment (City Wealth). The older Monegasque foundations can serve only public-benefit or philanthropic aims (same source).",
+    "Inheritance is shown for an estate passing to three children. Any tax that the children's own country of residence, or a country where assets or heirs are located (for instance France on French-situs assets under the 1950 convention), may charge is outside this recipe."
+  ],
+  "open_questions": [
+    "The government pages do not mention capital gains or gift duty separately; both are inferred (no income tax; same situs rule and 0% direct-line rate). Confirm with the Direction des Services Fiscaux or the Sovereign Ordinances on registration duties.",
+    "Whether a passive Monaco company or societe civile holding a securities portfolio would fall under the Business Profit Tax or be transparent was not researched; the pages opened do not address societes civiles.",
+    "Revisit the patrimonial foundation if the National Council bill (Proposition 268) is enacted: the report says the foundation would pay no income or capital gains tax if it runs no commercial business, but its assets would remain in the founder's estate for succession duty (0% in direct line) and the founder must be domiciled in Monaco."
+  ],
+  "sources": [
+    {
+      "title": "Tax in Monaco",
+      "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+      "publisher": "Government of Monaco (MonServicePublic)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance tax",
+      "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/inheritance-tax",
+      "publisher": "Government of Monaco (MonServicePublic)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "The Monegasque Patrimonial Foundation - A bill for a new wealth management tool (20 May 2026)",
+      "url": "https://www.citywealthmag.com/?p=75844",
+      "publisher": "City Wealth",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

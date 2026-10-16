@@ -153,6 +153,8 @@ def project_path(rules: Rules, after: Rules, duration: float | None, a: Assumpti
         infl = (1 + a.inflation) ** t
         base_r = rules if duration is None or t <= duration else after
         r = indexed(base_r, infl)
+        if r.wealth_from_year and t <= r.wealth_from_year:
+            r = replace(r, wealth=[])  # not yet resident long enough for the wealth tax
         home = a.home * infl
         div, price = v * a.dividend_yield, v * a.price_growth
         gains = price * a.realisation

@@ -1,0 +1,133 @@
+{
+  "id": "SMR",
+  "name": "San Marino",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "From 2026 foreign dividends can be taxed at 3% of the amount net of the foreign withholding (art. 13 Law 166/2013 as replaced by Law 141/2025) and gains on shares at a flat 10%. After ten continuous years of residence IRAFE adds 0.2% a year on foreign financial assets above EUR 20,000 (art. 4 Law 207/2021, art. 17 Law 94/2022). Assets abroad are outside San Marino succession tax (art. 4 no. 1 Law 84/1981)."
+    },
+    {
+      "id": "atypical_residence",
+      "name": "Atypical residence (7% substitute tax on foreign income, 15 years, then ordinary rules)",
+      "regime": "atypical_residence",
+      "note": "Art. 16-ter Law 118/2010 (art. 69 Law 223/2020): a 7% substitute tax on income produced abroad net of foreign tax, between EUR 10,000 and EUR 100,000 a year, replaces the IGR on foreign dividends and gains, and the holder is not liable to IRAFE. It ends 15 years after the first tax period; the standard regime, with IRAFE (more than ten years resident), then applies, so both deaths (years 30 and 60) fall under the ordinary rules. Granted by the Congress of State at its discretion, at most 100 a year."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 105260,
+      "working": "Top-rate case for the family: about 600,000 of foreign dividends and 300,000 of realised gains a year on a EUR 30m portfolio; personal tax allowances are ignored (the EUR 250 per-dependant credits of art. 16 Law 166/2013 are negligible); the whole portfolio is in the name of one taxpayer; all income and all assets are foreign; resident for more than ten continuous years and not under a special regime, so IRAFE is due. DIVIDENDS 600,000: the foreign dividend taxpayer opts for separate taxation under art. 13(1)(g) and (2)(e) Law 166/2013 as replaced by art. 4 Law 141/2025: 3% of the 'netto frontiera', the income as received net of tax paid at source (art. 13 para. 3). Foreign withholding 15% x 600,000 = 90,000; net 510,000; 3% x 510,000 = 15,300. There is no credit for the 90,000 (it only reduces the base). GAINS 300,000 on foreign shares: 'plusvalenze patrimoniali di cui all'articolo 41' (disposals of shares and financial instruments) are taxed separately at 10% (art. 13(1)(b) and (2)(b)): 10% x 300,000 = 30,000. IRAFE (art. 4 Law 207/2021 as amended by art. 17 Law 94/2022): 0.2% of the market value at 31 December of financial assets held abroad, the first EUR 20,000 being excluded (circular Prot. 61702/2022: tax on the excess): 0.2% x (30,000,000 - 20,000) = 59,960. Total 15,300 + 30,000 + 59,960 = 105,260. This is the long-run case, after more than 10 years' residence, when IRAFE applies (art. 4(2) Law 207/2021 as read by the Ufficio Tributario circulars); for the first 10 years it is 15,300 + 30,000 = 45,300, which the projection applies through the wealth tax's starts_after_years."
+    },
+    {
+      "path": "atypical_residence",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 56700,
+      "working": "Same family and income as the personal check; the holder of the atypical residence is the owner of the portfolio and his or her spouse and children have no foreign income of their own. Art. 16-ter para. 2 Law 118/2010 (art. 69 Law 223/2020): for income produced abroad a substitute tax of 7% of the 'netto frontiera' (art. 13 para. 3 Law 166/2013: income net of tax paid at source), with a minimum of EUR 10,000 and a maximum of EUR 100,000 per fiscal year. Net foreign dividends: 600,000 - 15% x 600,000 = 510,000. Foreign gains: 300,000 (no tax at source). Base 510,000 + 300,000 = 810,000; 7% x 810,000 = 56,700, which lies between 10,000 and 100,000 so the band does not bind. Wealth: the holder is under a special regime on foreign income and is not liable to IRAFE (art. 4 para. 2 Law 207/2021): 0. San Marino-source income would stay under ordinary rules but there is none. Total 56,700."
+    },
+    {
+      "path": "atypical_residence",
+      "phase": "after",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 105260,
+      "working": "The atypical regime ceases to have effect 15 years after the first tax period of validity (art. 16-ter para. 8 Law 118/2010). From then on the ordinary rules apply, and the family has been resident for more than ten continuous years and is no longer under a special regime, so IRAFE is due: the same working as the personal check. Dividends 3% x (600,000 - 90,000) = 15,300 (art. 13(1)(g), (2)(e), (3) Law 166/2013 as replaced by Law 141/2025); gains 10% x 300,000 = 30,000 (art. 13(1)(b), (2)(b)); IRAFE 0.2% x (30,000,000 - 20,000) = 59,960 (art. 4 Law 207/2021 as amended by art. 17 Law 94/2022). Total 105,260."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The estate is a portfolio of foreign securities held abroad, passing to 3 children. San Marino succession tax (Law 29 October 1981 n.84) taxes assets in San Marino (art. 3: immovables in the Republic, whatever the domicile or nationality of the deceased), and art. 4 no. 1 expressly excludes 'i beni immobili e mobili posti fuori del territorio della Repubblica'. Tax 0, whether or not the direct-line rate is the EUR 100 per heir a 2015 article reports for San Marino assets. The family home in San Marino (EUR 5m) would be taxed and is left out of this case."
+    },
+    {
+      "path": "atypical_residence",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Same succession law as the personal path: foreign securities are outside San Marino succession tax (art. 4 no. 1 Law 84/1981); the atypical regime concerns income tax and does not change it. Tax 0."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens with no previous San Marino residence, so they can apply for the atypical residence (art. 16-ter para. 1 Law 118/2010) and, failing that, for another permit; San Marino is not in the EU and every permit needs a decision of the Congress of State. The ordinary residence route (elective residence) was not researched against the statute.",
+    "The portfolio is in one name for the checks. The atypical substitute tax is charged for each person on that person's foreign income within the band, so a couple splitting the portfolio equally pays the same 7% in total as long as neither reaches the EUR 100,000 cap; whether the EUR 10,000 minimum also falls on an extended spouse or child with no foreign income was not settled (see open questions).",
+    "Ordinary regime: the family elects separate taxation of foreign dividends (3% on the net amount); the alternative is progressive IGR (9% to 35%) with a credit for foreign tax, which a 600,000 dividend income would not choose.",
+    "IRAFE is scored as a wealth tax on all foreign financial assets above EUR 20,000. The portfolio is held at foreign brokers (not repatriated), so no part is excluded. Italian-held or San Marino-held assets would not be 'abroad'.",
+    "Deaths in years 30 and 60 fall after both the 15-year atypical regime and the ten-year IRAFE waiting period, so the ordinary rules always apply at death. The inheritance checks assume a foreign securities portfolio; San Marino-situs assets (the home) were left out.",
+    "Not offered as paths: a San Marino holding company (IGR 17%, 18% for 2026-2030, with a 95% exclusion for qualifying foreign dividends that was not verified for 2026), a San Marino trust and a foundation. The family already pays 3% on dividends and 10% on gains personally, and the portfolio is already outside succession tax, so a company brings no estate advantage and adds a layer of 17-18% tax; trusts and foundations are not commonly used for a listed portfolio in San Marino as far as could be found."
+  ],
+  "open_questions": [
+    "Needs an engine change: the atypical substitute tax is 7% of net foreign income but never less than EUR 10,000 and never more than EUR 100,000 for each taxpayer and fiscal year (art. 16-ter para. 2 Law 118/2010). The tax file can hold only the 7% rate on foreign dividends and gains. For a portfolio with more than about EUR 1.43m of net foreign income a year, the cap makes further income tax-free; and a family member with little foreign income may owe the minimum. The engine needs a floor and a ceiling on a substitute tax, per taxpayer.",
+    "The 'o' in art. 4 para. 2 as amended ('residente ... da oltre dieci anni continuativi o non assoggettata a regimi speciali') can be read as an alternative, which would make IRAFE apply to every resident outside a special regime from year 1. The circular written before the amendment reads the two conditions together (five years then). A ruling on the ten-year text should be sought.",
+    "IRAFE in 2026: the payment deadline for tax year 2023 is in the circular of 27 May 2024; no repeal in Law 141/2025 was seen in the parts read, but the 2025 and 2026 budget laws were not searched.",
+    "Whether the EUR 20,000 exclusion of IRAFE applies once per taxpayer or once per spouse; the checks use one taxpayer.",
+    "Succession: the EUR 100 fixed tax for a spouse and children on San Marino assets rests on a 2015 article; the 1981 tariff (1% to 20% in lire for the direct line) and the 5% 'imposta di cinquina' on immovables passing to foreigners (art. 1) may still apply to the EUR 5m home, which the check excludes.",
+    "Trust: a San Marino trust is a taxpayer on 80% of the income received, or 10% if the trustee reinvests for 24 months and elects (Toccaceli Bronzetti, Trust Taxation in San Marino); the rate was not stated in the page and a 15% withholding applies to attributions to non-resident beneficiaries. If that rate is the 17-18% corporate rate, an accumulating trust would pay about 1.7% on income, a possible reason to add a path. Not researched further.",
+    "Whether Law 141/2025 changed art. 16-ter Law 118/2010 or its band, and whether an atypical resident may elect the 3% dividend option instead of the 7% regime, were not found."
+  ],
+  "sources": [
+    {
+      "title": "Legge 12 novembre 2025 n.141, art. 4 (art. 13 Legge n.166/2013 as replaced: separate taxation, 10% on gains, 3% on net foreign dividends)",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html",
+      "publisher": "Consiglio Grande e Generale, Repubblica di San Marino",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Legge 22 dicembre 2021 n.207, art. 4 (IRAFE), text of the law",
+      "url": "https://www.hlbsanmarino.com/wp-content/uploads/2022/01/Legge-nr-207-22-12-21.pdf",
+      "publisher": "HLB San Marino (copy of the law)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Legge 24 giugno 2022 n.94, art. 17 (amends art. 4 Law 207/2021: ten years)",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17133084.html",
+      "publisher": "Consiglio Grande e Generale, Repubblica di San Marino",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Raccolta delle principali circolari in materia di imposta generale sui redditi (Circ. prot. n.53134, 27 May 2024)",
+      "url": "https://gov.sm/pub2/GovSM/dam/jcr:f3a4343c-3454-498c-805d-d000eac2412d/Raccolta%20delle%20principali%20circolari%20in%20materia%20di%20imposta%20IGRprot.pdf",
+      "publisher": "Ufficio Tributario, Repubblica di San Marino",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Legge 22 dicembre 2020 n.223, art. 69 (art. 16-ter Legge n.118/2010, residenza atipica)",
+      "url": "https://www.osla.sm/sites/default/files/field_files/L223-2020.pdf",
+      "publisher": "OSLA San Marino (copy of the law)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Legge 29 ottobre 1981 n.84 - imposte di successione (arts. 1, 3, 4)",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17019790.html",
+      "publisher": "Consiglio Grande e Generale, Repubblica di San Marino",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Trust Taxation in San Marino",
+      "url": "https://toccacelibronzetti.sm/en/trust-taxation-in-san-marino/",
+      "publisher": "Studio Toccaceli Bronzetti",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

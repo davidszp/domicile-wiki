@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Western Europe",
   "currency": "CHF",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "No tax on private capital gains from securities (federal law, all cantons), but dividends are taxed as ordinary income (up to about 39% in the City of Zurich, 22% in Zug, 43% in Geneva) and every canton levies an annual net wealth tax (top marginal 0.10%-0.86% depending on commune). Children are exempt from inheritance and gift tax in most cantons (not VD, NE, AI, partly LU and SO). National figures represent the City of Zurich; lump-sum taxation is available to non-Swiss newcomers without Swiss work in 21 cantons, not in Zurich.",
   "regimes": [
     {
@@ -292,7 +292,7 @@
       "duration_years": null,
       "lump_sum": {
         "annual": {
-          "amount": 459200.0,
+          "amount": 445000.0,
           "currency": "CHF"
         },
         "covers": [
@@ -301,7 +301,7 @@
           "foreign_income_all",
           "wealth_tax_foreign"
         ],
-        "notes": "National representative: Vaud (Lausanne), the canton with the most lump-sum taxpayers historically. Estimate for a family on an income base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): about CHF 459,211 a year (federal CHF 114,211 on CHF 1M at the ordinary tariff + cantonal/communal CHF 345,000 in Lausanne). At the cantonal minimum income base CHF 415,000 (federal minimum CHF 435,000 for 2026): about CHF 138,380. No separate wealth tax: the income base is increased by 15% (minimum 415,000 includes it; 7x rent +10%). Computed with the ESTV 2026 calculator (married couple, ordinary tariffs on the base). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value, and the control calculation on Swiss-source income and treaty-relieved foreign income."
+        "notes": "National representative: Vaud (Lausanne), the canton with the most lump-sum taxpayers historically. Estimate for a family on an expenditure base of CHF 1,000,000 (about 7x the rent of a CHF 12,000/month home): CHF 445,000 a year = federal CHF 115,000 (DBG art. 14 para. 4: ordinary tariff without the per-child reduction of art. 36 para. 2bis) + cantonal and communal CHF 330,000, the 30% ceiling of LICom art. 8 para. 1 on a cantonal base of CHF 1,100,000 (7x the rent plus 10%, LI art. 15 para. 3 b; the barème at 155% x 0.95 + 78.5% would give about 31%). No separate wealth tax. At the cantonal minimum base CHF 415,000 (which already includes a 15% wealth surcharge; federal minimum CHF 435,000 for 2026): about CHF 138,380 (ESTV calculator, not re-derived). The real base is the higher of actual worldwide living costs, 7x annual rent/rental value plus 10%, and the control calculation on Swiss-source income and treaty-relieved foreign income. See recipe CH-VD and the regions dossier."
       },
       "dividends": {
         "status": "researched",

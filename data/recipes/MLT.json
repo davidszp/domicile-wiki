@@ -1,0 +1,132 @@
+{
+  "id": "MLT",
+  "name": "Malta",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally, Malta-domiciled (worldwide basis)",
+      "regime": "standard",
+      "note": "The standard regime is the domiciled-resident rule: worldwide income at up to 35%, foreign dividends with credit for withholding, gains on listed shares exempt. An arriving foreign family is normally not domiciled and uses the non_dom path, so this one shows the position if Maltese domicile were acquired."
+    },
+    {
+      "id": "non_dom",
+      "name": "Resident non-domiciled (remittance basis)",
+      "regime": "non_dom",
+      "note": "Foreign dividends untaxed unless received in Malta, foreign gains never taxed, EUR 5,000 minimum tax where unremitted foreign income reaches EUR 35,000. Assumes the EUR 400,000 a year of living costs is paid from capital and gains, not from income received in Malta."
+    },
+    {
+      "id": "grp",
+      "name": "Individual Tax Programme / Residence Programme (15% on income received in Malta)",
+      "regime": "grp",
+      "note": "For EU nationals: 15% on foreign income received in Malta with relief for foreign tax, minimum EUR 35,000 a year for the family (L.N. 195/2026 rule 5(1); EUR 15,000 under the old terms until 2031). Needs a Maltese home of EUR 700,000 or more or rent of EUR 14,000 a year; the EUR 5M home qualifies. Renewable in 5-year periods, so no end date is modelled."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 120000,
+      "working": "Domiciled resident, taxed on worldwide income. Foreign dividends 600,000 at the top rate of 35% (above EUR 60,000, Income Tax Act art. 56) = 210,000; credit for the 15% foreign withholding, 90,000 (relief under art. 74, below the Maltese tax) = 120,000. Gains 300,000 on shares listed on recognised exchanges are exempt (shares listed on a recognised foreign stock exchange, capital gain, as reported by PwC and KPMG Malta). No wealth tax. Total 120,000. Small allowances ignored."
+    },
+    {
+      "path": "non_dom",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 5000,
+      "working": "Resident but not domiciled: foreign dividends are taxable only if received in Malta (Income Tax Act art. 4(1), as cited in the tax file), and the case assumes none are; the EUR 400,000 spent in Malta comes from capital and gains. Foreign capital gains are not taxable even if received in Malta. Because the couple's foreign income in the previous year (600,000) was at least EUR 35,000 and not fully received in Malta, they owe the minimum tax of EUR 5,000 for the couple (as summarised by PwC; computed before double tax relief). No other Maltese tax. Total 5,000."
+    },
+    {
+      "path": "grp",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 35000,
+      "working": "Individual Tax Programme Rules 2026 (L.N. 195/2026) rule 5(1): 15% on foreign income received in Malta by the beneficiary and spouse, with relief for double tax under art. 74(a),(b) ITA. Whatever part r of the 600,000 dividends is received in Malta, 15% x r x 600,000 is matched by the 15% foreign withholding on it, so the Maltese tax after relief is 0. The minimum tax of EUR 35,000 a year for the global-resident and EU/EEA/Swiss-resident categories applies (rule 5(1) proviso), covering the spouse and the dependent children. Foreign gains are not taxed (non-domiciled). Total 35,000. Under the old terms (status applied for by 31 Dec 2026) the minimum is EUR 15,000 until 31 Dec 2031."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Malta has no inheritance, estate or gift tax (PwC). The Duty on Documents and Transfers Act charges duty only on Maltese situs assets (immovable property, shares in Maltese companies); the estate here is a foreign listed securities portfolio, so no duty. Total 0."
+    },
+    {
+      "path": "non_dom",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "No inheritance or gift tax in Malta; duty on documents applies only to Maltese property and Maltese company shares, and the estate is a foreign securities portfolio: 0. The remittance-basis status does not change this."
+    },
+    {
+      "path": "grp",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "No inheritance or gift tax in Malta; duty on documents applies only to Maltese property and Maltese company shares, and the estate is a foreign securities portfolio: 0."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens, not Maltese nationals or permanent residents, and not domiciled in Malta, so non_dom and the Residence Programme are open to them; they stay under 183 days in any other country.",
+    "Non_dom: foreign dividends are kept outside Malta and the EUR 400,000 a year is paid from capital and capital gains, which are not income received in Malta. Mixed accounts would be treated as income first, so the family needs segregated capital and income accounts.",
+    "The Residence Programme check uses the EUR 35,000 minimum of the Individual Tax Programme (from 2027), the long-run figure; statuses applied for by 31 Dec 2026 pay EUR 15,000 until 31 Dec 2031. With 15% foreign withholding the Maltese 15% is fully relieved, so the minimum is the whole tax, whether or not the dividends are received in Malta.",
+    "Inheritance: the checks use a foreign securities portfolio; the Maltese home would bear duty on documents (the tax file records the reliefs for descendants) and is not in the estate figure.",
+    "Structures considered and rejected: a Maltese holding company pays 35% and the 6/7 shareholder refund (about 5% net) only arises when profits are distributed; for a non-domiciled family foreign dividends kept abroad and foreign gains are already untaxed personally, so a company or a trust adds tax or cost without a saving. The structure analysis comes from the tax file and its dossier; it was not re-researched."
+  ],
+  "open_questions": [
+    "Needs an engine change: the Residence Programme pays 15% only on foreign income received in Malta, with a minimum, and the non-dom regime taxes only remitted dividends; the engine has no notion of remitted income. The checks are chosen so the answer does not depend on it (15% foreign withholding fully relieves the 15%, leaving the minimum), but for dividends with withholding below 15% (for example treaty rates of 0-10%) the tax would be 15% of the amount received in Malta less relief, above the minimum when more than about EUR 233,000 (35,000 / 15%) of such income is received there; the projection cannot show it.",
+    "Needs an engine change: the minimum tax of the Residence Programme is EUR 15,000 for statuses applied for by 31 Dec 2026 until 31 Dec 2031 and EUR 35,000 afterwards (L.N. 195/2026 rule 3(3), 5(1)); the engine takes one lump-sum amount for the whole period.",
+    "The old Residence Programme (EU nationals) minimum of EUR 15,000 was taken from the tax file and the GRP summary at PwC; the old rules (S.L. 123.79 and related) were not opened.",
+    "The non-dom minimum tax of EUR 5,000, the foreign-listed shares exemption and the 35% top bracket from EUR 60,000 for married couples are taken from PwC Worldwide Tax Summaries and KPMG Malta; the Income Tax Act (Cap. 123) itself was not opened.",
+    "Whether the exemption for gains on foreign-listed shares covers ETFs and funds held by the family: units in some collective investment schemes are excluded."
+  ],
+  "sources": [
+    {
+      "title": "Malta - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/malta/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Malta - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/malta/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Malta - Individual - Other taxes",
+      "url": "https://taxsummaries.pwc.com/malta/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Individual Tax Programme Rules, 2026 (L.N. 195 of 2026)",
+      "url": "https://legislation.mt/eli/ln/2026/195/eng/pdf",
+      "publisher": "legislation.mt",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Recognised stock exchanges",
+      "url": "https://kpmg.com/mt/en/insights/2023/02/recognised-stock-exchanges.html",
+      "publisher": "KPMG Malta",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

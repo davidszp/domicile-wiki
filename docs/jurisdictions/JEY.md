@@ -1,6 +1,6 @@
 # Jersey — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -33,19 +33,19 @@ Jersey has no capital gains tax. Gains by a resident private investor on securit
 
 Dividends are taxed as income at a flat 20% (the alternative marginal calculation at 26% only helps low incomes). For 2026 the income tax exemption threshold is £21,250; all married couples are taxed independently from 2026. High Value Residents pay 1% on non-Jersey-property income above £1.25m (see special regime).
 
-- **rate basis**: Flat 20% standard rate on net income after allowances (PwC). Most Jersey companies pay 0% corporate tax, so no imputation credit arises on typical domestic dividends.
+- **rate basis**: Flat 20% standard rate on net income after allowances (PwC). Foreign dividend withholding is relieved by a double tax credit only where Jersey has a double taxation agreement covering that income; otherwise the taxpayer may ask for the income to be taxed net of the foreign tax (Revenue Jersey). Jersey has no treaty with the United States and few others, so the foreign tax is modelled as a deduction: 20% x (dividend - 15% withholding). Most Jersey companies pay 0% corporate tax, so no imputation credit arises on typical domestic dividends.
 - **exemptions thresholds**: Exemption threshold £21,250 (2026); relevant only at low income.
 - **withholding outbound**: No withholding tax on dividends, interest or royalties paid by Jersey companies to non-residents (PwC).
-- **treaty network**: Small set of double tax agreements (UK, Guernsey, Isle of Man and a few others); no US income tax treaty, so US dividends suffer 30% US withholding. Foreign tax is relieved by credit.
-- **JSON values**: `{"headline_rate": 0.2, "domestic_rate": 0.2, "foreign_gross_rate": 0.2, "foreign_tax_credit": "credit"}`
+- **treaty network**: Small set of double tax agreements (UK, Guernsey, Isle of Man and a few others); no US income tax treaty, so US dividends suffer 30% US withholding. Where there is no agreement covering the income, foreign tax is relieved only by taxing the income net of that tax (Revenue Jersey); where there is one, by credit (Income Tax (Jersey) Law 1961, Art. 111-112).
+- **JSON values**: `{"headline_rate": 0.2, "domestic_rate": 0.2, "foreign_gross_rate": 0.2, "foreign_tax_credit": "deduction"}`
 - **Confidence / verification**: high / verified (tax year 2026)
-- **Open question**: Exact treaty count and unilateral credit mechanics not verified from an official list.
+- **Open question**: Exact treaty count not verified from an official list. Partner countries with a Jersey treaty covering dividends would give a credit instead of a deduction; the model treats all foreign dividends as from non-treaty countries.
 
 ## Inheritance and gifts to children
 
 No inheritance tax and no gift tax. A probate stamp duty applies to the personal (movable) estate: 0.5% up to £100,000, then £500 plus £75 per £10,000 (0.75%), capped at £100,000 for estates above £13.36m. For a Jersey-domiciled person it applies to worldwide movable estate.
 
-- **exemptions thresholds**: Probate duty (Stamp Duties and Fees (Jersey) Law 1998, Schedule 3 item 9): no fee up to £10,000 net; £50 per £10,000 to £100,000; £500 + £75 per £10,000 up to £13,360,000; flat £100,000 above. other_transfer_cost_rate 0.0075 is the marginal rate up to the cap; for a £30m movable estate the effective cost is about 0.33%.
+- **exemptions thresholds**: Probate duty (Stamp Duties and Fees (Jersey) Law 1998, Schedule 3 item 9): no fee up to £10,000 net; £50 per £10,000 to £100,000; £500 + £75 per £10,000 up to £13,360,000; flat £100,000 above. Item 9(2) adds a fixed GBP 107 (professional application) or GBP 268 (other). other_transfer_cost_rate 0.0075 is the marginal rate up to the cap; for a £30m movable estate the effective cost is about 0.33%.
 - **important exceptions**: Lifetime gifts of shares and portfolios attract no duty, so the probate duty can be avoided by lifetime transfers or holding structures. Jersey succession law gives spouse and children rights over part of movable estate (not a tax; not verified here).
 - **foreign assets**: Probate duty covers worldwide personal estate of a Jersey-domiciled deceased; only Jersey-situs estate for others (Art. 5).
 - **gift tax**: No gift tax. Stamp duty applies to gifts of Jersey immovable property (land) as for transfers.
@@ -78,8 +78,20 @@ Discretionary residency for wealthy newcomers. Jersey property income is taxed a
 - **rate basis**: Marginal rate 1% on non-Jersey-property income above £1.25m; the £250,000 minimum is modelled as the lump sum.
 - **withholding outbound**: No withholding tax on dividends paid by Jersey companies to non-residents.
 - **treaty network**: As standard regime.
-- **JSON values**: `{"headline_rate": 0.01, "domestic_rate": 0.01, "foreign_gross_rate": 0.01, "foreign_tax_credit": "credit"}`
+- **JSON values**: `{"headline_rate": 0.01, "domestic_rate": 0.01, "foreign_gross_rate": 0.01, "foreign_tax_credit": "deduction"}`
 - **Confidence / verification**: high / verified (tax year 2026)
+
+## Holding structures
+
+**Structure modelled: Jersey investment holding company, regime id `holding_company`.**
+
+- **Company tax:** the general corporate rate is 0% (PwC); Jersey has no capital gains tax. Dividends and gains in the company are untaxed (JSON dividends 0, `exemption`; gains 0). Foreign withholding tax on the company's dividends is a final cost. Financial services (10%), utilities, Jersey property and large retail (20%) differ; a passive portfolio company is none of these.
+- **Payout:** a distribution to a Jersey-resident individual (cash dividend, buy-back, liquidation payment, repayment of a member's loan, benefit in kind; Income Tax (Jersey) Law 1961, Art. 3AE) is taxed under Schedule DIX at 20% up to the individual's allocated share of 'specified profits', in full under the 'simplified basis'; the excess falls under Schedule DIII and can be exempt (capital profits, return of share capital, loan principal; Art. 78(1A)). `payout_tax_rate` 0.20 is therefore the ceiling (Comptroller's Distribution Rules guide, draft of 11 February 2013).
+- **Retained profits:** not taxed on the shareholder; the deemed distribution and attribution rules were repealed for profits accruing from 1 January 2012 (Revenue Jersey). Trusts: the Taxes Office watches their use (Art. 134A).
+- **Inheritance:** the shares are movable estate, so probate stamp duty applies as for personal holding; the metric is the standard regime's.
+- **Residence:** a Jersey-incorporated company is resident in Jersey (Art. 123(1)(a)).
+- **Running costs:** not sourced (omitted). US citizens are excluded (CFC/PFIC rules).
+- **Considered, not added:** Jersey private foundations and family trusts (a resident trustee is strictly taxable on all trust income, and the usual concession follows the beneficiaries; Chambers Private Wealth 2024), because they save no income tax for a resident family and were not sourced further.
 
 ## Company taxation (kept separate from personal tax)
 
@@ -112,6 +124,8 @@ US citizens: No US-Jersey income tax treaty; US tax applies on worldwide income 
 - P.51/2026: the States Assembly site (statesassembly.je) blocks automated access, so its text could not be read. The only mention found is a commercial guide (Global Law Experts) saying it 'sharpened the minimum tax and housing expectations', with no figures. A separate proposition, P.19/2026 (Deputy Renouf), to cap the number of 2(1)(e) grants was scheduled for debate on 25 February 2026 and opposed by the Council of Ministers; its outcome was not verified. Revenue Jersey's HVR guidance (checked 2026-10-15) shows no 2026 change except independent taxation of spouses. HVR terms are recorded as on gov.je.
 - Whether the 2023 proposals (£3.5m property minimum, £10m net worth expectation) were applied exactly as proposed.
 - Non-employed residents' social security / long-term care charge on unearned income not modelled.
+- Spouses and the High Value Resident minimum: Revenue Jersey says the GBP 250,000 minimum is 'on the applicant's own taxable income' and that independent taxation applies to HVRs from 2026, but does not say whether a spouse who holds part of the portfolio is a second applicant with a second minimum. The recipe assumes the consent holder owns the portfolio.
+- Needs an engine change: High Value Residents pay 20% on the first GBP 1.25m of other income and 1% above, with a GBP 250,000 floor. The model charges a fixed GBP 250,000, which understates tax by 1% of income above GBP 1.25m.
 
 ## Sources
 
@@ -133,9 +147,15 @@ US citizens: No US-Jersey income tax treaty; US tax applies on worldwide income 
 - Worldwide Governance Indicators, Regulatory Quality estimate, Jersey: <https://api.worldbank.org/v2/country/JEY/indicator/GOV_WGI_RQ.EST?format=json&mrnev=1>
 - Worldwide Governance Indicators, Rule of Law estimate, Jersey: <https://api.worldbank.org/v2/country/JEY/indicator/GOV_WGI_RL.EST?format=json&mrnev=1>
 - Worldwide Governance Indicators, Voice and Accountability estimate, Jersey: <https://api.worldbank.org/v2/country/JEY/indicator/GOV_WGI_VA.EST?format=json&mrnev=1>
+- Savings, investment income and foreign distributions (Revenue Jersey): <https://www.gov.je/TaxesMoney/IncomeTax/Individuals/TypesTaxableIncome/Pages/InvestmentIncome.aspx>
+- Income Tax (Jersey) Law 1961 (Articles 3AE, 62, 111-112, 123): <https://www.jerseylaw.je/laws/enacted/Pages/L-29-1961.aspx>
+- Stamp Duties and Fees (Jersey) Law 1998, consolidated from 1 January 2026: <https://www.jerseylaw.je/laws/current/PDFs/L_8_1998.pdf>
+- Distribution Rules: Taxes Office Guidance Notes (draft 2, 11 February 2013): <https://www.gov.je/SiteCollectionDocuments/Tax%20and%20your%20money/TD%20Comptroller%27s%20guide%20to%20the%20taxation%20of%20company%20distributions%20-%20version%202%2020130212%20JG.pdf>
+- Repeal of deemed distribution and attribution rules (Zero/Ten): <https://gov.je/TaxesMoney/IncomeTax/Companies/ZeroTen/Pages/RepealDeemedDistributionAttribution.aspx>
 
 ## Change log
 
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added rent (Livingroom, Jersey 4-5 bedroom lettings, £4,800/month); added duration_note to the HVR regime; P.51/2026 still unread (site blocks access), open question rewritten; added indicator overrides: WGI 2025 (six estimates from the World Bank API), life expectancy 83.2 and homicide rate 0.0 (Statistics Jersey Better Life Index 2025).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: recipe pass (`data/recipes/JEY.json`). Corrected foreign dividend relief from 'credit' to 'deduction' in the standard and High Value Resident regimes (Revenue Jersey: a credit needs a treaty covering the income; otherwise the income is taxed net of the foreign tax). Added the `holding_company` structure regime (0% company, 20% payout; Comptroller's Distribution Rules guide). Probate duty text: added the fixed GBP 107/GBP 268 fee (Sch. 3 item 9(2)) and the statute reference. Added open questions on the HVR spouse and on income above GBP 1.25m.

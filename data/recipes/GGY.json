@@ -1,0 +1,146 @@
+{
+  "id": "GGY",
+  "name": "Guernsey",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Flat 20% income tax on worldwide dividends with unilateral relief for foreign withholding tax; no capital gains, wealth or inheritance tax. Probate registry fee on the gross personal estate at about 0.5% on the margin."
+    },
+    {
+      "id": "holding_company",
+      "name": "Guernsey investment holding company",
+      "regime": "holding_company",
+      "note": "A Guernsey company owns the portfolio and pays 0% tax on dividends and gains; it deducts 20% tax from distributions to Guernsey-resident members because its income bore less than 20%. The estate holds the shares, which are personal estate for the probate fee, so inheritance is as for personal holding."
+    },
+    {
+      "id": "tax_cap",
+      "name": "Tax cap on non-Guernsey income (GBP 160,000)",
+      "regime": "tax_cap",
+      "note": "A resident may elect to cap the tax on non-Guernsey income at GBP 160,000 a year (Revenue Service, tax caps). It is a maximum: below it the ordinary 20% applies, so it only helps once foreign income is large (about GBP 3.2M of dividends after the 15% withholding credit)."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 1000,
+      "working": "All income foreign, 2026, top rate: 20% on income (Income Tax (Guernsey) Law, 1975; PwC, Revenue Service), allowances withdrawn at this income level and ignored. Dividends 20,000 x 20% = 4,000. Foreign withholding at 15% = 3,000 on a country with no double taxation agreement, so unilateral relief applies: three-quarters of the effective Guernsey rate (20% x 3/4 = 15%), or the overseas rate if lower; the overseas rate is 15%, not less than 15%, so relief is at 15% of the gross dividend (the net 17,000 grossed up at 15% is 20,000, credit 20,000 x 15%) = 3,000 (Revenue Service, 'Guernsey Income Tax', section C). Tax on dividends 4,000 - 3,000 = 1,000. Gains of 15,000 are not taxed (no capital gains tax). Total 1,000."
+    },
+    {
+      "path": "holding_company",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 0,
+      "working": "Company-level tax only; payout tax excluded. A Guernsey company with only investment income pays income tax at the standard rate of 0% (Revenue Service, tax information for companies; PwC Guernsey corporate); 10% and 20% rates apply only to listed activities (banking, fiduciary, Guernsey property, large retail). The foreign dividends of 20,000 are taxed at 0%; the 15% withholding of 3,000 is lost. Gains of 15,000 are not taxed (no capital gains tax; 0% in any case). The tax file records no running cost, so none is counted. Total 0."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "model_difference": 175,
+      "model_note": "The tax file records the fee as a flat 0.5% of the estate (50,000); the scale charges GBP 225 for the first GBP 80,000 and GBP 50 per GBP 10,000 above, which is GBP 175 less than 0.5% of the whole estate (50,000 - 49,825).",
+      "expected": 49825,
+      "working": "Second death. Probate Registry fee on the gross value of the personal estate (no deduction for debts), calculated on worldwide assets when no grant has been taken elsewhere (Mourant, Guernsey probate, 27 February 2026): for an estate above GBP 80,000, GBP 225 plus GBP 50 for each additional GBP 10,000. The 10,000,000 is listed shares (personal estate); the Guernsey home is real property and outside the grant. (10,000,000 - 80,000) / 10,000 = 992 x 50 = 49,600; 225 + 49,600 = 49,825. The small extra amounts for additional documents are not quantified in the guide and are ignored. No inheritance or gift tax."
+    },
+    {
+      "path": "holding_company",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "model_difference": 175,
+      "model_note": "Flat 0.5% rate in the tax file (50,000) against the fee scale, as for the personal path.",
+      "expected": 49825,
+      "working": "As for the personal path: the shares of a Guernsey company, valued at 10,000,000, are personal estate of the deceased, so the Probate Registry fee is GBP 225 + GBP 50 x 992 = 49,825 (Mourant, 27 February 2026). Guernsey has no inheritance tax and no business relief question arises."
+    },
+    {
+      "path": "tax_cap",
+      "kind": "annual",
+      "dividends": 5000000,
+      "realised_gains": 0,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 160000,
+      "working": "Ordinary tax: 20% x 5,000,000 = 1,000,000, less unilateral relief for the 15% foreign withholding (750,000) = 250,000. The cap on tax on non-Guernsey income is GBP 160,000 (Revenue Service, 'Tax caps', 2026), so 160,000 is due. No capital gains tax or wealth tax in Guernsey."
+    },
+    {
+      "path": "tax_cap",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 0,
+      "foreign_share": 1.0,
+      "expected": 1000,
+      "working": "Below the cap the ordinary rules apply: 20% x 20,000 = 4,000 less 3,000 relief = 1,000; no capital gains tax. The cap (GBP 160,000) does not bind."
+    }
+  ],
+  "assumptions": [
+    "The family arrives as new residents; the top rate of 20% applies (a Guernsey resident with about GBP 520,000 of dividends is above the GBP 85,000 level at which allowances are withdrawn). Allowances are ignored.",
+    "Foreign dividends carry a 15% withholding from a country without a Guernsey treaty. Unilateral relief equals the withholding exactly at that rate (15% = three-quarters of 20%); a higher withholding (30% on US dividends, for instance) would be credited only up to 15% and the excess lost, which the model does not show. The relief guide read is from 2017 and the related Statement of Practice M8 was withdrawn in August 2024.",
+    "The holding company is funded with cash or shares at today's value and pays distributions equal to the family's spending; the 20% deducted from distributions to resident members is the payout rate in the tax file. Loan funding is not modelled: repayments of non-commercial shareholder loans from personal investment companies are treated as dividends from 2026.",
+    "The probate fee is shown for a single estate of GBP 10m of personal property passing to three children; the Guernsey home is real property outside the grant, and a first death with transfer to the spouse is not modelled."
+  ],
+  "open_questions": [
+    "Lifetime gifts attract no probate fee (tax file), so a family would pass assets to children while alive; the engine has taxable events only at the two deaths.",
+    "Guernsey foundations and trusts were considered but not added: they save no income tax for a resident family and their treatment and running costs were not sourced.",
+    "Holding company: annual running cost not sourced and the tax file records none; the check counts none. Treatment of liquidation distributions to a resident member was not researched.",
+    "The official Probate Registry fee order was not found; the scale is from the Mourant guide dated 27 February 2026."
+  ],
+  "sources": [
+    {
+      "title": "Guernsey Income Tax (Revenue Service guide, section C: relief for tax paid in other countries)",
+      "url": "https://www.gov.gg/CHttpHandler.ashx?id=101375&p=0",
+      "publisher": "States of Guernsey, Revenue Service",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tax cap (Revenue Service guidance)",
+      "url": "https://www.gov.gg/taxcap",
+      "publisher": "States of Guernsey, Revenue Service",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tax information for companies",
+      "url": "https://gov.gg/companytax",
+      "publisher": "States of Guernsey, Revenue Service",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Guernsey - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/guernsey/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Guernsey - Corporate - Taxes on corporate income",
+      "url": "https://taxsummaries.pwc.com/guernsey/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Guernsey Budget 2026",
+      "url": "https://www.grantthorntonci.com/News-Centre/budget-responses/guernsey-budget-2026/",
+      "publisher": "Grant Thornton Channel Islands",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Guernsey probate (Mourant guide, 27 February 2026)",
+      "url": "https://www.mourant.com/guides/guernsey-probate/",
+      "publisher": "Mourant",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

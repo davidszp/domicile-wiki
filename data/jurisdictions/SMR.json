@@ -4,8 +4,8 @@
   "continent": "Europe",
   "region": "Southern Europe",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
-  "summary": "From 2026: securities gains taxed at a flat 10%, domestic dividends 5% final, foreign dividends optionally 3% of the net amount. Succession tax only reaches San Marino-situs assets and is a fixed EUR 100 per child (low-confidence source). No wealth tax. Not in the EU: everyone needs a residence permit; an 'atypical residence' regime taxes foreign income at 7% capped at EUR 100,000 a year for up to 15 years.",
+  "researched_on": "2026-10-16",
+  "summary": "From 2026: securities gains taxed at a flat 10%, domestic dividends 5% final, foreign dividends optionally 3% of the net amount. Residents of more than ten continuous years who are not under a special regime also pay IRAFE, 0.2% a year on listed securities and deposits held abroad above EUR 20,000. Succession tax only reaches San Marino-situs assets (assets abroad are outside it by art. 4 of Law 84/1981); for a spouse and children on San Marino assets it is reported as a fixed EUR 100 per heir (low-confidence source). No other wealth tax. Not in the EU: everyone needs a residence permit; an 'atypical residence' regime (art. 16-ter Law 118/2010) taxes foreign income at 7%, with a EUR 10,000 minimum and EUR 100,000 maximum a year, for up to 15 years, and exempts it from IRAFE.",
   "regimes": [
     {
       "id": "standard",
@@ -69,13 +69,13 @@
       },
       "dividends": {
         "tax_year": "2026",
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "summary": "Dividends from San Marino companies: 5% final withholding for individuals (art. 103(6) Law 166/2013). Foreign dividends: by option, separate taxation at 3% of the amount received after foreign withholding ('netto frontiera'); otherwise they enter progressive IGR (9%-35%) with a foreign tax credit.",
         "headline_rate": 0.05,
         "domestic_rate": 0.05,
         "foreign_gross_rate": 0.03,
-        "foreign_tax_credit": "none",
-        "rate_basis": "Domestic: 5% final WHT. Foreign: 3% on the net-of-source-tax amount (art. 13(1)(g), 13(2)(e), 13(3) as replaced by Law 141/2025, in force 2026). No credit under the 3% option; source WHT is deducted from the base instead. Example: US dividend 100, US WHT 30 (no treaty) -> San Marino tax 2.1, total 32.1%.",
+        "foreign_tax_credit": "deduction",
+        "rate_basis": "Domestic: 5% final WHT. Foreign: 3% on the 'netto frontiera', the foreign income as received net of tax paid in the source state (art. 13(1)(g), 13(2)(e) and 13(3) of Law 166/2013 as replaced by art. 4 of Law 141/2025, read 2026-10-16). There is no credit: the source tax is deducted from the base (foreign_tax_credit 'deduction'). Example: US dividend 100, US WHT 30 (no treaty) -> San Marino tax 3% x 70 = 2.1, total 32.1%.",
         "exemptions_thresholds": "Collected as a final withholding when received through a San Marino intermediary; the taxpayer may treat it as an advance and opt into progressive taxation.",
         "important_exceptions": "Under the progressive option, foreign tax is credited up to the IGR attributable to that income. Interest on foreign bonds: 10% of net amount by option; interest on foreign bank accounts: 13%.",
         "withholding_outbound": "5% WHT on dividends paid by San Marino companies to individuals, resident or not; no WHT when the recipient declares it is not acting for an individual (art. 103(6)). Treaties may reduce it.",
@@ -112,35 +112,73 @@
       },
       "wealth_tax": {
         "tax_year": "2026",
-        "verified_on": "2026-10-15",
-        "type": "none",
-        "summary": "No annual wealth tax on property or financial assets.",
-        "property_tax_note": "Not verified whether a recurring municipal property tax exists. Residents must declare financial assets and company holdings annually (reporting only).",
+        "verified_on": "2026-10-16",
+        "type": "limited",
+        "summary": "IRAFE (imposta per il riequilibrio delle attivita finanziarie estere): 0.2% a year on the market value at 31 December of financial assets held abroad, directly or indirectly, by an individual resident for more than ten continuous years and not under a special regime on foreign income. The first EUR 20,000 is excluded (the Ufficio Tributario computes the tax on the excess). Shares of foreign non-listed companies, shareholder loans, precious metals, foreign banknotes, life and health insurance policies, pension funds and non-financial assets are excluded. No other annual tax on wealth. A new arrival pays nothing for ten years; atypical residents never pay it.",
+        "property_tax_note": "Not verified whether a recurring municipal property tax exists. Residents must also declare their financial assets and company holdings held abroad each year (DAPEF; reporting).",
         "sources": [
+          {
+            "title": "Legge 22 dicembre 2021 n.207, art. 4 (Imposta per il Riequilibrio delle Attivita Finanziarie Estere - IRAFE), text of the law as published",
+            "url": "https://www.hlbsanmarino.com/wp-content/uploads/2022/01/Legge-nr-207-22-12-21.pdf",
+            "publisher": "HLB San Marino (copy of the law)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Legge 24 giugno 2022 n.94, art. 17 (Modifica all'articolo 4 della Legge n.207/2021 - Imposta IRAFE)",
+            "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17133084.html",
+            "publisher": "Consiglio Grande e Generale, Repubblica di San Marino",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Raccolta delle principali circolari in materia di imposta generale sui redditi (Circ. prot. n.53134, 27 May 2024): IRAFE circulars and section 3.6",
+            "url": "https://gov.sm/pub2/GovSM/dam/jcr:f3a4343c-3454-498c-805d-d000eac2412d/Raccolta%20delle%20principali%20circolari%20in%20materia%20di%20imposta%20IGRprot.pdf",
+            "publisher": "Ufficio Tributario, Repubblica di San Marino",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
           {
             "title": "Fiscalità a San Marino: come funziona davvero?",
             "url": "https://www.studioallievi.com/fiscalita-a-san-marino/",
             "publisher": "Studio Allievi",
             "kind": "professional",
             "accessed": "2026-10-15"
-          },
-          {
-            "title": "Raccolta delle principali circolari in materia di imposta generale sui redditi (Circ. prot. n.53134, 27 May 2024)",
-            "url": "https://gov.sm/pub2/GovSM/dam/jcr:f3a4343c-3454-498c-805d-d000eac2412d/Raccolta%20delle%20principali%20circolari%20in%20materia%20di%20imposta%20IGRprot.pdf",
-            "publisher": "Ufficio Tributario, Repubblica di San Marino",
-            "kind": "tax_authority",
-            "accessed": "2026-10-15"
           }
         ],
         "confidence": "medium",
         "verification": "partially_verified",
         "open_questions": [
-          "Existence and level of any recurring real estate levy."
-        ]
+          "IRAFE in force in 2026? Law 207/2021 art. 4 and the 2024 circular were read; no repeal found in Law 141/2025, but neither the 2024-2026 budget laws nor the delegated decrees were searched line by line.",
+          "Art. 4 para. 2 as amended reads 'residente ... da oltre dieci anni continuativi o non assoggettata a regimi speciali' (or). The circular of March 2022 (before the amendment) reads 'da 5 anni continuativi e non assoggettati'; a firm summary (HLB) reads the amendment as ten years. Cumulative ten years is assumed.",
+          "Whether the EUR 20,000 exclusion is per taxpayer (spouses holding jointly each get it) was not stated.",
+          "Existence and level of any recurring real estate levy.",
+          "IRAFE trigger: art. 4(2) Law 207/2021 as amended by art. 17 Law 94/2022 reads 'da oltre dieci anni continuativi o non assoggettata a regimi speciali' (literally 'or'); the Ufficio Tributario circulars read it cumulatively (over 10 years of registered residence and no special regime), which is what is modelled. On the literal reading a new resident outside a special regime would pay it from the start."
+        ],
+        "exemptions_thresholds": "EUR 20,000 of foreign financial assets excluded (art. 4 para. 3 Law 207/2021; circular Prot. 61702/2022: tax on the excess). Tax of EUR 10 or less is not due (art. 4 para. 5-bis, added by art. 17 Law 94/2022). The rate may be changed by delegated decree (art. 4 para. 4).",
+        "eligibility_conditions": "Individuals resident in San Marino for more than ten continuous years (art. 17 Law 94/2022, replacing the original five) who are not under a special regime on foreign income such as the atypical residence (art. 4 para. 2 Law 207/2021). The text says 'o' (or) between the two conditions, but the Ufficio Tributario circular reads them cumulatively ('e').",
+        "important_exceptions": "Assets repatriated to San Marino before the 2021 DAPEF deadline were excluded for 2021 only. Self-assessed in the DAPEF declaration; payment deadline for tax year 2023 was 2 October 2024 (circular of 27 May 2024), so the tax was still being collected in 2024. Not found: any repeal in Law 141/2025 or the 2026 budget (not searched line by line).",
+        "thresholds_indexed": false,
+        "components": [
+          {
+            "name": "IRAFE on financial assets held abroad",
+            "base": "financial_assets_foreign",
+            "exempt_amount": 20000,
+            "entry_threshold": 0,
+            "brackets": [
+              {
+                "from_amount": 0,
+                "rate": 0.002
+              }
+            ],
+            "notes": "0.2% of the market value at 31 December above EUR 20,000 (art. 4 paras. 3-4 Law 207/2021). Applies only after ten continuous years of residence and never to atypical residents: the model's wealth tax runs from year 1 and so overcharges years 1-10 (see open questions)."
+          }
+        ],
+        "starts_after_years": 10
       },
       "inheritance": {
         "tax_year": "2026",
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "summary": "Succession tax (Law 84/1981) applies only to assets located in San Marino: art. 4 exempts all assets located abroad. For a spouse and descendants it is reported to be a symbolic fixed EUR 100 per heir regardless of value, plus 0.10% stamp duty on the net estate and, for San Marino real estate, 1% transcription and 0.40% cadastral transfer tax. Foreign assets of a resident are outside its scope.",
         "basis": "beneficiary",
         "children_treatment": "taxed_low",
@@ -155,7 +193,7 @@
         "lifetime_gift_tax_free_after_years": null,
         "business_relief": "Not needed for direct-line heirs given the fixed amount.",
         "business_relief_covers_public_shares": false,
-        "foreign_assets": "Situs principle: art. 3 of Law 84/1981 taxes San Marino immovables whatever the deceased's domicile or nationality, and art. 4 expressly exempts movable and immovable assets located outside San Marino and credits not enforceable there. A foreign securities portfolio passing to children is therefore outside the tax (statute read 2026-10-15).",
+        "foreign_assets": "Situs principle: art. 3 of Law 84/1981 taxes San Marino immovables whatever the deceased's domicile or nationality, and art. 4 expressly exempts movable and immovable assets located outside San Marino and credits not enforceable there. A foreign securities portfolio passing to children is therefore outside the tax (statute read 2026-10-15). Read again 2026-10-16: art. 4 no. 1 'Non sono soggetti a imposta di successione: i beni immobili e mobili posti fuori del territorio della Repubblica'; art. 3 taxes immovables in San Marino whatever the domicile or nationality. The tax file therefore scores the regime as local_assets_only.",
         "domicile_rules": "No residence-based scope. The heirs' country of residence may tax them.",
         "sources": [
           {
@@ -188,7 +226,8 @@
           "Current status of the 'imposta di cinquina' (5% direct line) on San Marino real estate inherited by foreigners (art. 1 Law 84/1981)."
         ],
         "spouse_treatment": "taxed_low",
-        "spouse_note": "Spouse shares bear a symbolic fixed EUR 100 per heir regardless of value, plus 0.10% stamp duty on the net estate and, on San Marino real estate, 1% transcription and 0.40% cadastral tax; only San Marino-situs assets are taxed (Law 84/1981, as described by the Registry Office in 2015)."
+        "spouse_note": "Spouse shares bear a symbolic fixed EUR 100 per heir regardless of value, plus 0.10% stamp duty on the net estate and, on San Marino real estate, 1% transcription and 0.40% cadastral tax; only San Marino-situs assets are taxed (Law 84/1981, as described by the Registry Office in 2015).",
+        "scope": "local_assets_only"
       },
       "sources": [
         {
@@ -211,28 +250,18 @@
       "id": "atypical_residence",
       "name": "Residenza atipica (reduced taxation on foreign income)",
       "type": "special",
-      "description": "Substitute tax of 7% on foreign-source income net of foreign tax, minimum EUR 10,000, maximum EUR 100,000 per year, for up to 15 tax years.",
+      "description": "Residenza atipica soggetta a regime fiscale agevolato (art. 16-ter Law 118/2010, introduced by art. 69 Law 223/2020): a substitute tax replacing IGR on income produced abroad, 7% of the 'netto frontiera' (income net of foreign tax), with a minimum of EUR 10,000 and a maximum of EUR 100,000 for each fiscal year, payable in one instalment with the IGR balance. It is not a fixed lump sum: below the cap the tax is 7% of the foreign income. It ends 15 years after the first tax period (revocable earlier, and lost on any missed or partial payment). Income from San Marino sources and the IRAFE position are outside it: atypical residents are not liable to IRAFE.",
       "eligible_citizenships": [
         "EU",
         "US",
         "OTHER"
       ],
-      "eligibility": "Granted by the Congress of State to persons who have not previously been San Marino tax residents and who earn income abroad; annual quotas set in the budget; can extend to spouse and dependent children. Revoked (and not renewable) if the substitute tax is not paid in full. Eligibility details from IMI Daily (Oct 2024), not verified against the statute.",
+      "eligibility": "Natural persons who have never been tax resident in San Marino (or whose residence was not yet consolidated when the article took effect), who produce income abroad and are not caught by art. 17 paras. 1-2 of the residence law. Application to the Department of Foreign Affairs with a EUR 1,000 fee, a passport copy, a purchase or lease contract for a dwelling, certificates from the previous country of residence, a declaration of nationalities and residences of the last 5 years and proof of sufficient resources; the Congress of State decides within 60 days and its decision cannot be challenged. At most 100 permits a year (not counting extended family members). Spouse and family members listed in art. 16 para. 3-bis can be included on request. Until residence is consolidated (ten years from registration) the holder cannot take public-sector employment, receives no public benefits tied to residence and must carry private or ISS health cover (art. 16-ter paras. 3-14 Law 118/2010 as in Law 223/2020 art. 69).",
       "duration_years": 15,
-      "lump_sum": {
-        "annual": {
-          "amount": 100000,
-          "currency": "EUR"
-        },
-        "covers": [
-          "foreign_income_all"
-        ],
-        "notes": "Cap per taxpayer; 7% of net foreign income with a EUR 10,000 floor. Whether each family member with income pays separately is not verified."
-      },
       "capital_gains": {
         "tax_year": "2026",
-        "verified_on": "2026-10-15",
-        "summary": "Foreign-source income of a holder of 'residenza atipica' (including gains on foreign securities) bears a 7% substitute tax on the net amount, with a minimum of EUR 10,000 and a maximum of EUR 100,000 a year. For a large portfolio the EUR 100,000 cap makes the marginal rate on further foreign gains zero.",
+        "verified_on": "2026-10-16",
+        "summary": "Gains on foreign securities of a holder of the atypical residence are covered by the 7% substitute tax on the net-of-foreign-tax income, within a EUR 10,000 minimum and EUR 100,000 maximum a year per taxpayer (art. 16-ter para. 2 Law 118/2010). Below the cap there is no cut-off: each further euro of foreign gain pays 7%; once the tax has reached EUR 100,000 further foreign gains pay nothing.",
         "headline_rate": 0.07,
         "rates": {
           "listed_securities_domestic": 0.1,
@@ -241,39 +270,54 @@
           "real_estate_local": 0.0,
           "real_estate_foreign": 0.07
         },
-        "rate_basis": "Art. 16-ter Law 118/2010 as introduced by art. 69 Law 223/2020 (Ufficio Tributario circular 2024): 7% of 'netto frontiera' foreign income, min EUR 10,000, max EUR 100,000 per tax year. Domestic (San Marino-source) gains stay under the ordinary 10%. Private business sale assumes a foreign company.",
+        "rate_basis": "Art. 16-ter para. 2 Law 118/2010 (art. 69 Law 223/2020, read 2026-10-16): 7% of 'netto frontiera' as defined by art. 13 para. 3 Law 166/2013, minimum EUR 10,000 and maximum EUR 100,000 per tax year. Domestic (San Marino-source) gains stay under the ordinary 10%. The cap and floor are not rates and are not modelled by this rate (see open questions).",
         "eligibility_conditions": "See regime eligibility.",
         "sources": [
           {
-            "title": "Raccolta delle principali circolari in materia di imposta generale sui redditi (Circ. prot. n.53134, 27 May 2024)",
+            "title": "Legge 22 dicembre 2020 n.223, art. 69 (introduces art. 16-ter Legge 28 giugno 2010 n.118, Residenza atipica soggetta a regime fiscale agevolato)",
+            "url": "https://www.osla.sm/sites/default/files/field_files/L223-2020.pdf",
+            "publisher": "OSLA San Marino (copy of the law)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Raccolta delle principali circolari in materia di imposta generale sui redditi (Circ. prot. n.53134, 27 May 2024): IRAFE circulars and section 3.6",
             "url": "https://gov.sm/pub2/GovSM/dam/jcr:f3a4343c-3454-498c-805d-d000eac2412d/Raccolta%20delle%20principali%20circolari%20in%20materia%20di%20imposta%20IGRprot.pdf",
             "publisher": "Ufficio Tributario, Repubblica di San Marino",
             "kind": "tax_authority",
-            "accessed": "2026-10-15"
+            "accessed": "2026-10-16"
           }
         ],
         "confidence": "medium",
         "verification": "partially_verified",
         "open_questions": [
-          "Whether Law 141/2025 changed art. 16-ter Law 118/2010 or its 7%/cap figures."
+          "Whether Law 141/2025 changed art. 16-ter Law 118/2010 or the 7% and band figures: not found in the Law 141/2025 text read for art. 13, but the full law was not searched for art. 16-ter.",
+          "Whether the EUR 10,000 minimum is charged on each extended family member who has no foreign income (art. 16-ter para. 8 speaks of the substitute tax 'loro riferita')."
         ]
       },
       "dividends": {
         "tax_year": "2026",
-        "verified_on": "2026-10-15",
-        "summary": "Foreign dividends of an atypical resident are covered by the 7% substitute tax on the net-of-source-tax amount, inside the EUR 10,000-100,000 annual band.",
+        "verified_on": "2026-10-16",
+        "summary": "Foreign dividends of an atypical resident are covered by the 7% substitute tax on the net-of-source-tax amount, inside the EUR 10,000 to EUR 100,000 annual band (art. 16-ter para. 2 Law 118/2010).",
         "headline_rate": 0.07,
         "domestic_rate": 0.05,
         "foreign_gross_rate": 0.07,
-        "foreign_tax_credit": "none",
-        "rate_basis": "7% of foreign income net of source tax; overall payment capped at EUR 100,000 per year. Whether an atypical resident can instead elect the ordinary 3% foreign-dividend option was not verified.",
+        "foreign_tax_credit": "deduction",
+        "rate_basis": "7% of the foreign dividend as received net of source tax (art. 16-ter para. 2 Law 118/2010 with art. 13 para. 3 Law 166/2013); no credit, the source tax comes off the base (deduction). Minimum EUR 10,000 and maximum EUR 100,000 per taxpayer and year are not modelled by the rate. Whether an atypical resident can instead elect the ordinary 3% foreign-dividend option was not verified; the substitute tax is by law the tax on foreign income.",
         "sources": [
           {
-            "title": "Raccolta delle principali circolari in materia di imposta generale sui redditi (Circ. prot. n.53134, 27 May 2024)",
+            "title": "Legge 22 dicembre 2020 n.223, art. 69 (introduces art. 16-ter Legge 28 giugno 2010 n.118, Residenza atipica soggetta a regime fiscale agevolato)",
+            "url": "https://www.osla.sm/sites/default/files/field_files/L223-2020.pdf",
+            "publisher": "OSLA San Marino (copy of the law)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Raccolta delle principali circolari in materia di imposta generale sui redditi (Circ. prot. n.53134, 27 May 2024): IRAFE circulars and section 3.6",
             "url": "https://gov.sm/pub2/GovSM/dam/jcr:f3a4343c-3454-498c-805d-d000eac2412d/Raccolta%20delle%20principali%20circolari%20in%20materia%20di%20imposta%20IGRprot.pdf",
             "publisher": "Ufficio Tributario, Repubblica di San Marino",
             "kind": "tax_authority",
-            "accessed": "2026-10-15"
+            "accessed": "2026-10-16"
           }
         ],
         "confidence": "medium",
@@ -281,11 +325,18 @@
       },
       "sources": [
         {
-          "title": "Raccolta delle principali circolari in materia di imposta generale sui redditi (Circ. prot. n.53134, 27 May 2024)",
+          "title": "Legge 22 dicembre 2020 n.223, art. 69 (introduces art. 16-ter Legge 28 giugno 2010 n.118, Residenza atipica soggetta a regime fiscale agevolato)",
+          "url": "https://www.osla.sm/sites/default/files/field_files/L223-2020.pdf",
+          "publisher": "OSLA San Marino (copy of the law)",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Raccolta delle principali circolari in materia di imposta generale sui redditi (Circ. prot. n.53134, 27 May 2024): IRAFE circulars and section 3.6",
           "url": "https://gov.sm/pub2/GovSM/dam/jcr:f3a4343c-3454-498c-805d-d000eac2412d/Raccolta%20delle%20principali%20circolari%20in%20materia%20di%20imposta%20IGRprot.pdf",
           "publisher": "Ufficio Tributario, Repubblica di San Marino",
           "kind": "tax_authority",
-          "accessed": "2026-10-15"
+          "accessed": "2026-10-16"
         },
         {
           "title": "4 Ways to Get Residency in San Marino: Single-Digit Tax in the World's Oldest Republic",
@@ -294,7 +345,42 @@
           "kind": "other",
           "accessed": "2026-10-15"
         }
-      ]
+      ],
+      "duration_note": "Ends 15 years after the first tax period of validity (art. 16-ter para. 8): the ordinary regime, including IRAFE after ten years of residence, then applies.",
+      "wealth_tax": {
+        "tax_year": "2026",
+        "verified_on": "2026-10-16",
+        "type": "none",
+        "summary": "Atypical residents are outside IRAFE, which applies only to individuals not under a special regime on foreign income (art. 4 para. 2 Law 207/2021 as amended by art. 17 Law 94/2022; circular Prot. 53134/2024). No other annual tax on wealth.",
+        "sources": [
+          {
+            "title": "Legge 22 dicembre 2021 n.207, art. 4 (Imposta per il Riequilibrio delle Attivita Finanziarie Estere - IRAFE), text of the law as published",
+            "url": "https://www.hlbsanmarino.com/wp-content/uploads/2022/01/Legge-nr-207-22-12-21.pdf",
+            "publisher": "HLB San Marino (copy of the law)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Legge 24 giugno 2022 n.94, art. 17 (Modifica all'articolo 4 della Legge n.207/2021 - Imposta IRAFE)",
+            "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17133084.html",
+            "publisher": "Consiglio Grande e Generale, Repubblica di San Marino",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Raccolta delle principali circolari in materia di imposta generale sui redditi (Circ. prot. n.53134, 27 May 2024): IRAFE circulars and section 3.6",
+            "url": "https://gov.sm/pub2/GovSM/dam/jcr:f3a4343c-3454-498c-805d-d000eac2412d/Raccolta%20delle%20principali%20circolari%20in%20materia%20di%20imposta%20IGRprot.pdf",
+            "publisher": "Ufficio Tributario, Repubblica di San Marino",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "The exclusion rests on the text 'non assoggettata a regimi speciali sui redditi esteri' and the circular's reading; no ruling on atypical residents specifically was found."
+        ]
+      }
     }
   ],
   "residency": {
@@ -383,7 +469,9 @@
     "Gift tax treatment.",
     "Residence-by-investment rules not verified against legislation.",
     "Direct-line EUR 100 succession tax on San Marino-situs assets: amending act not located (foreign assets are exempt by art. 4 of Law 84/1981).",
-    "Prime rent rests on two 3-bedroom villas on Mioaffitto.it (EUR 2,000 and 2,300, 2026-10-15); no 4-5 bedroom long-let was listed. A San Marino agency quote would firm it up."
+    "Prime rent rests on two 3-bedroom villas on Mioaffitto.it (EUR 2,000 and 2,300, 2026-10-15); no 4-5 bedroom long-let was listed. A San Marino agency quote would firm it up.",
+    "IRAFE: confirm it is still levied for 2026 and the ten-year condition ('o' vs 'e' in art. 4 para. 2 as amended).",
+    "Atypical residence: whether the EUR 10,000 minimum applies per extended family member; whether the EUR 100,000 cap is per person (the law says per tax year for the holder)."
   ],
   "cost_of_living": {
     "city": "San Marino (Città di San Marino / Borgo Maggiore)",

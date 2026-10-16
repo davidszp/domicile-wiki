@@ -1,6 +1,6 @@
 # Greece — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -81,7 +81,10 @@ Law 2961/2001 as amended by Law 5219/2025 (PwC).
 - **Art. 5A of Law 4172/2013**, added by Law 4646/2019. The brief called it "5C", but 5C is the 50% relief for
   workers and 5B the 7% regime for pensioners. Statute text read on Taxheaven (consolidated) on 2026-10-15.
   - Art. 5A(2): EUR 100,000 a year on all foreign-source income, whatever its amount. The regime can be extended to
-    relatives (art. 2(f)) for EUR 20,000 each. A family of five pays EUR 180,000 a year if all four are included.
+    relatives (art. 2(f)) for EUR 20,000 each. A family of five pays EUR 180,000 a year if all four are included. JSON: the
+    reference couple pays EUR 100,000 + EUR 20,000 (`spouse_supplement`) = EUR 120,000; the children need not be included, because the
+    beneficiary's foreign movables passing to third parties are exempt (art. 5A(8)). Amounts are not indexed. The EUR 500,000
+    investment can be met by the family's Greek home.
     Paid in one instalment by the last working day of December; foreign tax paid is not credited.
   - Art. 5A(4): starts with the first tax year applied for and ends after 15 tax years; cannot be extended.
   - Art. 5A(1): not Greek tax resident in 7 of the 8 years before the transfer; investment of at least EUR 500,000
@@ -142,3 +145,4 @@ Corporate income tax 22% (not re-verified in this research). Dividend withholdin
 - 2026-10-15: inheritance scope set to local assets only for art5a_lump_sum in the structured data (Art. 5A(8) exempts movable property abroad; foreign real estate is outside Greek inheritance tax anyway); previously the scoring applied the rates to the worldwide estate, which overstated the tax.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: added the EUR 20,000 spouse supplement to the art5a_lump_sum regime (reference couple EUR 120,000) so the recipe projection can use it; notes say the children are not included and the Greek home meets the EUR 500,000 investment. Source: Law 4172/2013 art. 5A(1),(2) on Taxheaven, read 2026-10-16. Dividend (art. 40, 5%), capital gains (art. 42, 43: 0.5% test, 15%), foreign tax credit cap (art. 9) and the inheritance scale (PwC) re-read for the recipe checks; no figure changed.

@@ -1,0 +1,125 @@
+{
+  "id": "IMN",
+  "name": "Isle of Man",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Income tax at 10% on the first GBP 6,500 and 21% above on worldwide dividends, with credit for foreign withholding tax; no capital gains, wealth or inheritance tax. The probate court fee falls only on Manx assets, so a foreign portfolio pays none."
+    },
+    {
+      "id": "tax_cap",
+      "name": "Income tax cap election (GBP 220,000 a year)",
+      "regime": "tax_cap",
+      "note": "The individual elects, within 60 days of becoming resident, to pay a fixed GBP 220,000 a year for 5 or 10 tax years, renewable (GN51). It is payable each year even if ordinary tax would be lower, and for this family ordinary tax is about GBP 109,000, so the cap costs more; it pays only above about GBP 1.05m of taxable income. The portfolio is assumed to be in one spouse's name, so one cap applies."
+    },
+    {
+      "id": "holding_company",
+      "name": "Manx investment holding company",
+      "regime": "holding_company",
+      "note": "A Manx company owns the portfolio and pays 0% tax on dividends and gains; the resident shareholders pay income tax at 21% on dividends they receive, and profits kept in the company are not taxed on them. The estate holds the shares, which are Manx assets, so probate would attract the Manx court fee (not modelled)."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 1200,
+      "working": "All income foreign, 2026/27, top rate 21% (Isle of Man Government, Rates and allowances 2026/27: standard rate 10% on the first GBP 6,500, higher rate 21% above; personal allowance withdrawn above GBP 100,000). Dividends 20,000 x 21% = 4,200 at the top marginal rate; allowances and the 10% band are ignored. Foreign withholding of 15% = 3,000 on a country without a double taxation agreement: relief is the lower of the overseas tax suffered (3,000) and the Manx tax due on the income (4,200) (Income Tax Division, International agreements and double taxation relief; PwC), so 3,000 is credited. Tax 4,200 - 3,000 = 1,200. Gains of 15,000 are not taxed (no capital gains tax in the Isle of Man). Total 1,200."
+    },
+    {
+      "path": "tax_cap",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 220000,
+      "working": "An approved election fixes the individual's Manx income tax at the cap in force in the first year of the election, GBP 220,000 for 2026/27 (single person; GBP 440,000 for a jointly assessed couple), for each of the 5 or 10 consecutive tax years, 'regardless of whether or not their actual income in a year is sufficient to attract a tax charge of that amount' (Income Tax Division, GN51 s.3.2; Rates and allowances 2026/27). The portfolio is held by one spouse, who elects; the other spouse has no income. Whatever the dividends and gains, the tax is 220,000."
+    },
+    {
+      "path": "holding_company",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 0,
+      "working": "Company-level tax only; payout tax excluded. The standard rate for resident and non-resident companies is 0%; 10% applies to banking and retail profits above GBP 500,000 and 20% to land and property income (Income Tax Division, Corporate tax rates). The foreign dividends of 20,000 are income taxed at 0%; the 15% withholding of 3,000 is lost, not credited. Gains of 15,000 are not taxed (no capital gains tax; 0% in any case). The tax file records no running cost, so none is counted. Total 0."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Second death. The Isle of Man has no inheritance, estate or gift tax. The only charge is the court fee for a grant of probate on the value of the estate in the Isle of Man (Courts and General Registry (Miscellaneous Fees) Order 2024; the top band, above GBP 1,000,000, is GBP 9,422.50). The 10,000,000 here is a portfolio of foreign listed shares held through a foreign custodian, which is not Manx estate, so no fee is due (the family home is outside this amount). Total 0."
+    }
+  ],
+  "assumptions": [
+    "The family arrives as new residents; the top rate of 21% applies to dividends of about GBP 520,000 a year (the personal allowance is withdrawn above GBP 100,000 and the 10% band is only GBP 6,500). Allowances are ignored.",
+    "Foreign dividends carry a 15% withholding from a country without a Manx treaty; relief is the lower of the foreign tax and the Manx tax on the income, so the 15% is credited in full against 21% (the Division requires reasonable steps to minimise the overseas tax).",
+    "Spouses are taxed independently by default, with joint taxation an option. The portfolio is assumed to be in one spouse's name, so one cap of GBP 220,000 applies (GBP 440,000 only for a jointly assessed couple, or if both spouses elected). The cap is fixed per election period and changed only by Budget (GBP 200,000 until 2024/25, GBP 220,000 since 2025/26), so it is not indexed.",
+    "The holding company is funded with cash or shares at today's value and pays distributions equal to the family's spending, taxed at 21% in the shareholders' hands (dividends are income). The estate probate fee on the company's shares, a fixed GBP 9,422.50 above GBP 1,000,000 of Manx estate, is not modelled; it is under 0.1% of GBP 10m.",
+    "The inheritance check is for foreign listed shares held directly; the Manx probate fee falls only on Manx assets."
+  ],
+  "open_questions": [
+    "Tax cap and ordinary tax: the cap is payable even when ordinary tax is lower; the Assessor will let a taxpayer be taxed on the normal basis during an election only if income projections proved over-optimistic through unforeseen change (GN51 s.8.1). The model charges the fixed cap for as long as the family stays.",
+    "Needs an engine change: after the 5- or 10-year election ends the family may renew or revert to ordinary tax, and may re-elect only 'before the start of the first tax year' of a period; the model keeps the cap for 60 years. The choice between the cap and ordinary tax each period (whichever is cheaper over the next 5 or 10 years, with a cap fixed at the first-year amount) cannot be expressed.",
+    "Lifetime gifts attract no tax (tax file), so a family would pass assets to children while alive; the engine has taxable events only at the two deaths.",
+    "Manx trusts and foundations were considered but not added: they save no income tax for a resident family and their treatment and running costs were not sourced.",
+    "Holding company: annual running cost not sourced and the tax file records none; the check counts none. Treatment of liquidation distributions to a resident shareholder was not researched.",
+    "The probate fee order was read through a law-firm guide (November 2024), not the Order itself."
+  ],
+  "sources": [
+    {
+      "title": "Rates and allowances (2026/27)",
+      "url": "https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/",
+      "publisher": "Isle of Man Government, Income Tax Division",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Guidance Note GN51: Income Tax Cap",
+      "url": "https://gov.im/media/1384454/gn51-income-tax-cap-uploaded-270624.pdf",
+      "publisher": "Isle of Man Government, Income Tax Division",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "International agreements and double taxation relief",
+      "url": "https://gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/international-agreements-and-double-taxation-relief/",
+      "publisher": "Isle of Man Government, Income Tax Division",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Corporate Tax Rates (Isle of Man Income Tax Division)",
+      "url": "https://gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/corporate-tax-rates",
+      "publisher": "Isle of Man Government, Income Tax Division",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Attribution Regime for Individuals (Income Tax Division)",
+      "url": "https://gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/attribution-regime-for-individuals",
+      "publisher": "Isle of Man Government, Income Tax Division",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Non-resident Isle of Man process guide (probate fees, November 2024)",
+      "url": "https://www.mplegal.im/info-centre/news/non-resident-isle-of-man-process-guide",
+      "publisher": "MP Legal",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Isle of Man - Individual - Foreign tax relief and tax treaties",
+      "url": "https://taxsummaries.pwc.com/isle-of-man/individual/foreign-tax-relief-and-tax-treaties",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Switzerland — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -58,7 +58,7 @@ church membership. All cantonal figures were computed with the official ESTV tax
 
 - No federal inheritance or gift tax. Zurich exempts children, grandchildren (and the spouse) from inheritance and
   gift tax without limit. JSON: basis `beneficiary`, `fully_exempt`, no brackets.
-- Cantonal exceptions (see regions dossier): Vaud ~7% above CHF 1M per child (Lausanne), Neuchâtel 3%, Appenzell
+- Cantonal exceptions (see regions dossier): Vaud ~7% above CHF 1M per child (Lausanne; halved to ~3.5% for foreigners who never worked in Switzerland, LMSD art. 36), Neuchâtel 3%, Appenzell
   Innerrhoden 1% above CHF 300,000, Lucerne communes up to 2% (inheritance only), Solothurn estate duty 0.8-1.2%;
   Schwyz and Obwalden have no inheritance or gift tax at all; Geneva withdraws the descendant exemption when the
   deceased was lump-sum taxed.
@@ -98,9 +98,9 @@ gainful activity; both spouses must qualify. Base = worldwide living costs, at l
 relieved foreign income. Ordinary tariffs apply to the base; cantons tax deemed wealth (4x-20x the base, or a surcharge).
 Not available in ZH, SH, AR, BS (abolished) and effectively not in BL.
 
-National JSON representative = Vaud (Lausanne): CHF 459,200/yr on a CHF 1M base
-(ESTV calculator: federal CHF 114,211 + cantonal/communal CHF 345,000
-on CHF 1.15M incl. the 15% wealth surcharge); about CHF 138,380 at the CHF 415,000 cantonal minimum.
+National JSON representative = Vaud (Lausanne): CHF 445,000/yr on a CHF 1M rent multiple
+(federal CHF 115,000, with no per-child reduction under DBG art. 14 para. 4, + cantonal/communal CHF 330,000
+= the 30% ceiling of LICom art. 8 on a CHF 1.1M base, 7x rent + 10% per LI art. 15 para. 3 b); about CHF 138,380 at the CHF 415,000 cantonal minimum.
 Foreign dividends: marginal 0 unless treaty relief is claimed (modified lump sum). Per-canton estimates are in
 `CHE-regions.md`.
 
@@ -168,3 +168,4 @@ Zurich.
 - 2026-10-15: Holding structures section: no structure modelled (private capital gains already untaxed).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: national lump-sum representative corrected from CHF 459,200 to CHF 445,000 (Vaud base is 7x rent + 10%, not +15%; federal part CHF 115,000, DBG art. 14 para. 4); Vaud inheritance note updated for the LMSD art. 36 halving.

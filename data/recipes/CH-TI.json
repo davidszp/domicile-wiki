@@ -1,0 +1,107 @@
+{
+  "id": "CH-TI",
+  "name": "Switzerland, canton of Ticino",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary taxation)",
+      "regime": "standard",
+      "note": "Dividends are ordinary income at the federal tariff and the Ticino married scale, times the cantonal coefficient (100%) and the communal multiplier (Bellinzona 93%); a portfolio holding under 10% gets no partial taxation; gains on listed shares are tax-free for a private investor (DBG art. 16 para. 3); annual cantonal and communal wealth tax on worldwide net assets; descendants, spouse and ascendants are exempt from inheritance and gift tax (LT art. 154 para. 1 f)."
+    },
+    {
+      "id": "lump_sum",
+      "name": "Lump-sum taxation (imposizione secondo il dispendio)",
+      "regime": "lump_sum",
+      "note": "Income and wealth tax are replaced by the ordinary scales applied to a deemed income of at least the highest of CHF 434,700, 7 times the rent of the home and the living costs, and to a deemed wealth of 5 times that base (LT art. 13, DBG art. 14). No time limit in law while both spouses stay non-Swiss and do not work in Switzerland. Foreign dividends and gains are covered; inheritance follows the ordinary Ticino rules (children exempt)."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 1000000,
+      "wealth": 100000000,
+      "expected": 941573.8,
+      "working": "Inputs: a married couple with 3 minor children, no church tax, tax year 2026; taxable income far above every tariff break so the top marginal rates apply; allowances and deductions ignored as in the other recipes. Bellinzona, 2026: cantonal coefficient 100% (LT art. 1b) + communal multiplier 93% (coordinated multiplier 2026, Foglio ufficiale 8 July 2026) = 193%. DIVIDENDS 2,000,000 taxed in full (DBG art. 20 para. 1bis not met; LT art. 19). Federal (DBG art. 36 para. 2, tariff in force since 1 Jan 2026): tax at 941,400 is 108,261.00, plus 11.50 per 100 above = 11.5% of the whole amount; 2,000,000 x 11.5% = 230,000.00 (the CHF 263 per-child reduction of art. 36 para. 2bis, 789 in all, is ignored, as are social deductions and the dividend-free parts). Ticino (LT art. 35 para. 2, married scale; top category rate for 2026 14.0% by art. 309h para. 2): tax at the end of the category ending at 761,400 is 101,102.50 (printed in art. 35 para. 2), plus 14.0% x (2,000,000 - 761,400) = 14.0% x 1,238,600 = 173,404.00, so base tax 274,506.50; x 193% = 529,797.55 (cantonal 274,506.50 + communal 255,291.05). Income tax before credit 230,000.00 + 529,797.55 = 759,797.55. Flat-rate credit for the 15% treaty withholding on foreign dividends (SR 672.201): 15% x 2,000,000 = 300,000.00, below the Swiss tax on those dividends. Dividend tax after credit 459,797.55. GAINS 1,000,000: nil (DBG art. 16 para. 3; LT art. 15 para. 3). WEALTH 100,000,000: deductions 60,000 for the couple + 3 x 30,000 for the minor children (art. 48) = 150,000, taxable 99,850,000; scale of art. 49 para. 1: tax at the end of the 700,001-1,380,000 band is 3,450.00, then 2.5 per mille above: 2.5 per mille x (99,850,000 - 1,380,000) = 246,175.00, base tax 249,625.00; x 193% = 481,776.25. Burden cap (art. 49a): cantonal and communal tax 529,797.55 + 481,776.25 = 1,011,573.80 is below 60% x 2,000,000 = 1,200,000 (and the 1% minimum yield, 1,000,000, is below the dividends), so no relief. Total 459,797.55 + 481,776.25 = 941,573.80.",
+      "model_difference": 10602.45,
+      "model_note": "The engine applies one flat marginal rate of 38.52% (11.5% federal + 14% x 193%) to every franc of dividends, whereas the Ticino scale is progressive below CHF 761,400: the law's cantonal and communal tax on CHF 2M is 529,797.55 instead of 2,000,000 x 27.02% = 540,400, i.e. 10,602.45 lower."
+    },
+    {
+      "path": "lump_sum",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 398722.55,
+      "working": "The tax does not depend on the actual dividends, gains or wealth (foreign income and assets are covered), only on the deemed base, which this check ASSUMES to be a round CHF 1,000,000 (7 times a rent of about CHF 12,000 a month; LT art. 13 para. 3 b, DBG art. 14 para. 3 b); the real base depends on rent and living costs, see open questions. Married couple with 3 children, no church tax, tax year 2026, Bellinzona (193%). Federal (DBG art. 14 para. 4: ordinary tariff art. 36 para. 2, but without the per-child reduction of art. 36 para. 2bis, second sentence): 108,261.00 + 11.50 x 586 (the 58,600 above 941,400, in hundreds) = 115,000.00. Income tax on the base (LT art. 13 para. 4, art. 35 para. 2, 14.0% top category rate for 2026): 101,102.50 + 14.0% x (1,000,000 - 761,400) = 101,102.50 + 33,404.00 = 134,506.50; x 193% = 259,597.55 (134,506.50 x 1.93 = 259,597.545). Deemed wealth tax: the taxable wealth is 5 times the base (art. 13 para. 5) = 5,000,000, with no deductions: 3,450.00 + 2.5 per mille x (5,000,000 - 1,380,000) = 3,450.00 + 9,050.00 = 12,500.00; x 193% = 24,125.00. Total 115,000.00 + 259,597.55 + 24,125.00 = 398,722.55."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 50000000,
+      "expected": 333880.0,
+      "working": "The family's real case with more wealth so that the cap binds: CHF 600,000 of dividends, CHF 50M of wealth. Bellinzona 2026 (coefficient 100% + 93%), couple with 3 children, no church tax. Federal (DBG art. 36 para. 2): 5,692.00 at 152,400 plus 13.00 per 100 above, so 5,692.00 + 0.13 x (600,000 - 152,400) = 63,880.00 (per-child reduction of CHF 789 ignored). Cantonal and communal income tax (LT art. 35 para. 2): tax at 303,900 is 34,080.35 (printed), plus 14.65% x (600,000 - 303,900) = 43,378.65, so 77,459.00; x 193% = 149,495.87. WEALTH: taxable 50,000,000 - 150,000 = 49,850,000; base tax 3,450.00 + 2.5 per mille x 48,470,000 = 124,625.00; x 193% = 240,526.25 before the cap. Burden cap (LT art. 49a): 149,495.87 + 240,526.25 = 390,022.12 exceeds 60% x 600,000 = 360,000 (the 1% minimum yield, 500,000, is below the dividends), so the wealth tax is cut to 360,000 - 149,495.87 = 210,504.13. Federal 63,880.00 + cantonal and communal 360,000.00 = 423,880.00, less the credit of 15% x 600,000 = 90,000.00. Total 333,880.00.",
+      "model_difference": 5120.0,
+      "model_note": "The engine applies a flat 11.5% federal rate to dividends, whereas the federal tariff at CHF 600,000 gives 63,880 (10.65%): the cap equalises the cantonal parts, so the engine total is 339,000 = 360,000 - 21,000 and the law's is 333,880; difference 5,120.00 = 69,000 - 63,880."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Descendants are exempt from inheritance and gift tax in Ticino whatever the amount: LT art. 154 para. 1 f ('il coniuge, il partner registrato, gli ascendenti e discendenti in linea diretta, compresi gli adottivi'). Art. 155 para. 2 (the first CHF 10,000 a year) is not needed. There is no federal inheritance tax. Estate 10,000,000 to 3 children: tax 0."
+    }
+  ],
+  "assumptions": [
+    "The family is two non-Swiss spouses who have not been Swiss tax residents for 10 years and do not work in Switzerland, so lump-sum taxation is open to them (LT art. 13 para. 1-2; DBG art. 14). Both must qualify.",
+    "Bellinzona, tax year 2026: cantonal coefficient 100% and communal multiplier 93%, no church tax. Lugano, where most families settle, has a lower multiplier (about 80%; the coordinated 2026 multiplier is 81%): its top rate would be about 36.8% and the wealth tax about 0.45%; the council's final decision on the 2026 multiplier was not confirmed, so the tax file keeps Bellinzona.",
+    "The top category rate of the married scale is the 2026 value, 14.0% (art. 309h para. 2); it falls to 13.5% in 2027, 13.0% in 2028, 12.5% in 2029 and a 12% maximum effective rate from 2030. The projection uses 2026 rates throughout.",
+    "The lump-sum base is shown at CHF 1,000,000, the representative used for every canton. The family's actual base is the highest of CHF 434,700 (federal minimum CHF 435,000), 7 times the rent or rental value of the home and the living costs; with the prime-rent sample of CHF 4,300 a month (CHF 361,200) the minimum would bind and the lump sum would be about CHF 150,000.",
+    "A Swiss family foundation (ZGB art. 335) is not offered as a path: it is taxed as a legal entity, its distributions are taxable for the beneficiaries, and in Ticino, where descendants inherit free of tax, it brings no advantage over holding personally.",
+    "Treaty relief on foreign dividends is assumed to be claimed only if the control calculation stays below the lump sum; the 15% withholding is then a final cost."
+  ],
+  "open_questions": [
+    "Needs an engine change: the lump sum is a fixed amount per regime, but by law it is the tax on a base of at least the highest of CHF 434,700, 7 times the rent and the family's worldwide living costs (LT art. 13 para. 3; DBG art. 14 para. 3), with deemed wealth 5 times the base (para. 5). The engine would need the base as a function of the family's spending and housing cost.",
+    "Needs an engine change: modified lump sum. Claiming treaty-reduced withholding on foreign dividends puts that income into the control calculation at the ordinary scales (LT art. 13 para. 6 f, DBG art. 14 para. 3 d); the tax is the higher of the two. The engine charges 15% on every foreign dividend and ignores it.",
+    "Needs an engine change: the Ticino income scale is progressive; the engine applies the top marginal rate to every franc of dividends (about CHF 10,600 too high on a CHF 2M income).",
+    "Needs an engine change: scheduled rate changes: the top category rate falls to 13.5% (2027), 13.0% (2028), 12.5% (2029) and a 12% effective maximum from 2030 (LT art. 309g-309h).",
+    "The tax-free CHF 200,000 and the CHF 60,000 / 30,000 wealth deductions are not indexed (art. 39 LT indexes income-tax scale and deductions only); the lump-sum minimum is (art. 13 para. 8).",
+    "2026 top rate: LT art. 309h para. 2 sets 14% for the top category; whether it also caps the 14.65% bracket (CHF 304,000-761,400) is unclear; if so, tax is about CHF 4-6k lower a year.",
+    "Bellinzona's own 2026 multiplier for individuals: 93 is the coordinated figure (ti.ch FU-MCC2026)."
+  ],
+  "sources": [
+    {
+      "title": "Legge tributaria del Cantone Ticino (LT, 640.100), stato 1° gennaio 2026 (art. 13, 35, 49, 49a, 154, 309g-h)",
+      "url": "https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/12885",
+      "publisher": "Repubblica e Cantone Ticino",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Foglio cantonale Ticino (Stand 2026): aliquote, deduzioni, freno, imposizione secondo il dispendio",
+      "url": "https://www.estv2.admin.ch/stp/kb/ti-it.pdf",
+      "publisher": "Swiss Federal Tax Administration (ESTV)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Moltiplicatore comunale coordinato 2026 (Foglio ufficiale, KABTI 08.07.2026)",
+      "url": "https://www4.ti.ch/fileadmin/DI/DI_DI/SEL/Comuni/Perequazione/FU-MCC2026.pdf",
+      "publisher": "Sezione degli enti locali, Repubblica e Cantone Ticino",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Bundesgesetz über die direkte Bundessteuer (DBG), SR 642.11, Stand 1. Januar 2026 (Art. 14, 36)",
+      "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260101/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260101-de-html.html",
+      "publisher": "Swiss Confederation (Fedlex)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

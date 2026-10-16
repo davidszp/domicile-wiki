@@ -53,6 +53,7 @@ class Rules:
     lump_sum: dict | None = None
     structure: dict | None = None
     wealth_cap: dict | None = None
+    wealth_from_year: int | None = None  # wealth tax applies only after this many years of residence
 
     def to_json(self) -> dict:
         return {"cgt": self.cgt, "div": self.div, "wealth": self.wealth, "inh": self.inh, "lump_sum": self.lump_sum,
@@ -107,9 +108,12 @@ def compile_regime(regime: Regime, standard: Regime, currency: str, fx: dict) ->
                      "credit_cap": dv.credit_cap}
     if wt is not None:
         rules.wealth = [_wealth_component(c, currency, fx) | {"indexed": wt.thresholds_indexed} for c in wt.components]
+        rules.wealth_from_year = wt.starts_after_years
         if wt.income_cap:
-            rules.wealth_cap = {"share": wt.income_cap.share_of_income, "max_reduction": wt.income_cap.max_reduction,
-                                "gains": wt.income_cap.counts_long_term_gains}
+            ic = wt.income_cap
+            rules.wealth_cap = {"share": ic.share_of_income, "max_reduction": ic.max_reduction, "gains": ic.counts_long_term_gains,
+                                "tax_rate": ic.counted_income_tax_rate, "min_yield": ic.min_income_yield,
+                                "min_wealth_rate": ic.min_wealth_tax_rate}
     if ih is not None:
         rules.inh = _inheritance(ih, currency, fx)
     if regime.structure is not None:
@@ -124,7 +128,7 @@ def compile_regime(regime: Regime, standard: Regime, currency: str, fx: dict) ->
         ls = regime.lump_sum
         spouse = to_eur(ls.spouse_supplement.amount, ls.spouse_supplement.currency, fx) if ls.spouse_supplement else 0.0
         rules.lump_sum = {"annual": round(to_eur(ls.annual.amount, ls.annual.currency, fx) + spouse, 2), "covers": list(ls.covers),
-                          "indexed": ls.indexed_to_inflation}
+                          "indexed": ls.indexed_to_inflation, "cap": ls.is_cap}
     return rules
 
 
@@ -230,7 +234,12 @@ def annual_taxes(rules: Rules, p: Profile, std: Rules | None = None) -> dict[str
                 income_tax = div_f * d["foreign_gross"] + div_d * d["domestic"]
                 if cap["gains"]:
                     income_tax += gains_f * c["listed_foreign"] + gains_d * c["listed_domestic"]
-            allowed = max(cap["share"] * income - income_tax, total * (1 - cap["max_reduction"]))
+            if cap.get("tax_rate") is not None:  # only part of the income tax counts (e.g. not the federal tax)
+                income_tax = income * cap["tax_rate"]
+            if cap.get("min_yield"):
+                income = max(income, p.net_wealth * cap["min_yield"])
+            floor = max(total * (1 - cap["max_reduction"]), p.net_wealth * (cap.get("min_wealth_rate") or 0.0))
+            allowed = max(cap["share"] * income - income_tax, min(total, floor))
             total = min(total, allowed)
         out["wealth_tax"] = total
 
@@ -244,9 +253,13 @@ def annual_taxes(rules: Rules, p: Profile, std: Rules | None = None) -> dict[str
         base = annual_taxes(std, p)
         cut = {k: max(0.0, base[k] - out[k]) for k in keys if base[k] is not None and out[k] is not None}
         total = sum(cut.values())
+        charge = min(lump, total) if rules.lump_sum.get("cap") else lump  # a cap never costs more than the ordinary tax
+        out["lump_sum"] = charge
         if total > 0:
             for k, v in cut.items():
-                out[k] += lump * v / total
+                out[k] += charge * v / total
+            return out
+        if rules.lump_sum.get("cap"):
             return out
     replaced = (gains_f if lump_cg else 0.0) + (div_f if lump_div else 0.0)
     if replaced > 0:
@@ -311,4 +324,4 @@ def transfer_taxes(rules: Rules, p: Profile) -> float | None:
     else:
         tax = 0.0
     deemed = p.estate * p.unrealized_gain_share * ih.get("deemed_disposal", 0.0)
-    return tax + deemed + p.estate * ih["other_cost"]
+    return tax + deemed + taxable * ih["other_cost"]  # transfer costs reach what the tax reaches

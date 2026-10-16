@@ -1,0 +1,83 @@
+{
+  "id": "AND",
+  "name": "Andorra",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary IRPF residence)",
+      "regime": "standard",
+      "note": "Foreign dividends are savings income taxed at the flat 10% IRPF (Llei 5/2014 art. 43) after a EUR 3,000 allowance (art. 37), but the 15% foreign withholding is deducted from the Andorran tax, up to that tax (art. 48), so no Andorran tax is left on them. Gains on shares are exempt when the holder with relatives up to the third degree never exceeded 25% of the company in the previous 12 months (art. 5 k), which a diversified portfolio meets. No wealth tax, no inheritance or gift tax."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 0,
+      "working": "Top-rate case: the real family receives about 600,000 of foreign dividends a year; personal allowances are ignored except the EUR 3,000 savings allowance, which does not change the result. All income is foreign. DIVIDENDS 600,000 from foreign companies: not exempt, because the exemption of art. 5 j Llei 5/2014 covers only dividends paid by Andorran-resident companies subject to Andorran corporate tax (Guia IRPF 2025, section 9.1: foreign-source dividends cannot use the exemption but get the deduction for international double taxation). They are capital income in the SAVINGS base (art. 22), gross of the foreign tax (art. 48(2)). Savings base 600,000, less the EUR 3,000 exempt minimum (art. 37) = 597,000. Tax at the flat 10% (art. 43-44) = 59,700 (no 24,000 personal minimum applies to the savings base). International double-taxation deduction (art. 48(1)): the smaller of (a) tax actually paid abroad, 15% x 600,000 = 90,000, and (b) the Andorran quota on that income, 10% x 600,000 = 60,000 (at most; 59,700 after the allowance). The deduction therefore covers the whole quota: 59,700 - 59,700 (or 60,000) = 0, floored at zero (art. 45(2)). GAINS 300,000 on listed shares: exempt, because the holder, with spouse, descendants, ascendants and collaterals to the third degree, held no more than 25% of any company in the 12 months before the sale (art. 5 k); positions of a EUR 30m diversified portfolio are far below 25%. Tax 0. WEALTH 30,000,000: Andorra has no net wealth tax (none among the taxes of the Principality; e-tràmits IRPF page lists none). Total 0 + 0 + 0 = 0."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Andorra has no inheritance or gift tax. Acquisitions by inheritance, bequest or gift are outside the scope of the IRPF (Llei 5/2014 art. 4(4)(b); e-tràmits IRPF page: 'income from free acquisitions (inheritances and donations) is outside the IRPF'), and capital gains revealed by a transfer at death are exempt (art. 5 l). An estate of 10,000,000 passing to 3 children (3,333,333.33 each) therefore bears 0. Transfer tax on Andorran real estate acquired by inheritance (the EUR 5m home) was not confirmed and is not included; see open questions."
+    }
+  ],
+  "assumptions": [
+    "The family becomes tax resident in Andorra (more than 183 days a year, or centre of economic interests; e-tràmits IRPF) and is entitled to a residence permit. The permit route is not a tax regime: a passive-residence permit does not change the IRPF, which is the same for every resident. Investment and deposit thresholds for the passive permit were reported to have been raised in 2026 (to EUR 1m under Llei 2/2026, from EUR 600,000) but were not confirmed on an official source.",
+    "Foreign dividends carry the model's 15% withholding. Andorra has few tax treaties and none with the US, so a higher non-treaty withholding (30% on US dividends) is also fully creditable up to the 10% Andorran tax and changes nothing. A foreign dividend with withholding below 10% (for example a UK dividend with no withholding) would leave Andorran tax of 10% less the withholding; the engine's flat 15% hides that case.",
+    "The deduction is computed per country (Guia IRPF; Llei 5/2014 art. 48(3) in the 2014 text took all foreign income together), and the check uses a single source country for simplicity; with several countries the deduction is capped country by country and a low-withholding country would leave some tax.",
+    "Realised gains are on listed shares and units of collective investment undertakings held in diversified positions under 25% of each company. Interest and gains on bonds are savings income taxed at 10% and are not covered by the checks, which model equity gains only.",
+    "The EUR 5m home: Andorran real estate sold within the transfer-tax rules bears the separate plusvalua tax (1%-15% by holding period), not IRPF; ongoing property taxes are communal and small and are not modelled. Purchase tax (ITP 4%) is a one-off cost outside the projection."
+  ],
+  "open_questions": [
+    "Structures considered and not modelled: (1) an Andorran holding company under the special regime for holding companies (Llei 95/2010 art. 38): dividends and gains on participations are exempt from corporate tax, distributions to an individual shareholder are exempt from IRPF when paid by an Andorran company subject to corporate tax, but the general exemption needs a 5% stake held for a year (art. 20) and art. 38 itself states no threshold; whether a portfolio of small listed positions qualifies was not settled, and interest and any non-qualifying income would bear 10% corporate tax (art. 41). Personally the family already pays no Andorran tax on dividends after the foreign-tax deduction and no tax on gains, so a company can only add running costs (about EUR 5,500 to 6,500 a year in a consultancy price list, minimum capital EUR 3,000) and needs real substance in Andorra to avoid being treated as resident elsewhere (Andorra Inc). (2) A private foundation under Llei 11/2008: the foundation law is for general-interest purposes and was not found to allow a family-benefit foundation; not opened. (3) A trust: no Andorran trust law was found.",
+    "Whether distributions of a holding-regime company are exempt from the shareholder's IRPF under art. 5 j (company 'subject to' corporate tax even though its income is exempt) was not confirmed.",
+    "Transfer tax (ITP) on Andorran real estate passing by inheritance: a secondary source says transfers on death are outside the transfer tax and exempt from the foreign-investment tax, but the statute was not opened. The existing tax-file question stays open.",
+    "Llei 5/2014 is read in its 2014 BOPA text (art. numbers) and the 2025 Govern guide; later amendments (including Llei 5/2023 on direct taxation) were not compared line by line, but the guide confirms the 10% rate, the EUR 3,000 minimum, the 25% and 10-year exemption and the deduction.",
+    "Passive residence: confirm the current investment and deposit amounts on govern.ad (reported change in 2026)."
+  ],
+  "sources": [
+    {
+      "title": "Llei 5/2014, del 24 d'abril, de l'impost sobre la renda de les persones fisiques (BOPA no. 30, 21.5.2014)",
+      "url": "https://www.consellgeneral.ad/ca/arxiu/arxiu-de-lleis-i-textos-aprovats-en-legislatures-anteriors/vi-legislatura-2011-2015/copy_of_lleis-aprovades/llei-5-2014-del-24-d2019abril-de-l2019impost-sobre-la-renda-de-les-persones-fisiques/at_download/PDF",
+      "publisher": "Consell General d'Andorra",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Guia pràctica de l'IRPF 2025",
+      "url": "https://www.govern.ad/documents/d/guest/guia_irpf",
+      "publisher": "Govern d'Andorra",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Impost sobre la renda de les persones físiques (IRPF) - e-tràmits",
+      "url": "https://www.e-tramits.ad/tramits/impostos/irpf",
+      "publisher": "Govern d'Andorra",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Llei 95/2010, del 29 de desembre, de l'impost sobre societats (text refós sense caràcter oficial)",
+      "url": "https://www.portaljuridicandorra.ad/L2010095",
+      "publisher": "Portal Jurídic d'Andorra",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "How to Create a Holding Company in Andorra in 2026",
+      "url": "https://www.andorrainc.com/en/holding-andorra/",
+      "publisher": "Andorra Inc",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

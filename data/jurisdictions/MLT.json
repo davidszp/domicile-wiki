@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Southern Europe (Central Mediterranean), EU member",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "For a foreign family Malta works on the remittance basis: residents who are not Malta-domiciled pay no Maltese tax on foreign capital gains even if brought to Malta, and on foreign dividends only if remitted, subject to a EUR 5,000 annual minimum tax when unremitted foreign income is EUR 35,000 or more. The Global Residence Programme (non-EU) taxes remitted foreign income at 15% with a EUR 15,000 minimum; from 1 Jan 2027 it is replaced by the Individual Tax Programme with a EUR 35,000 minimum (applications by 31 Dec 2026 keep the old terms until 2031). No inheritance, gift or wealth tax, but duty on documents of 5% on inherited Maltese real estate and about 2% on Maltese shares; foreign assets carry no duty.",
   "regimes": [
     {
@@ -20,8 +20,8 @@
       "eligibility": "Ordinary residence plus Maltese domicile (common-law concept; a domicile of choice requires intention to settle permanently).",
       "duration_years": null,
       "capital_gains": {
-        "summary": "Capital gains on shares and securities (excluding fixed-return securities), immovable property, business assets, IP and partnership/trust interests are taxed at marginal rates up to 35% for domiciled residents. Shares listed on the Malta Stock Exchange are exempt (and certain foreign-listed shares under conditions). Transfers of Maltese immovable property acquired after 2004 attract a final tax of 8% of the transfer value (10% if acquired before 2004).",
-        "exemptions_thresholds": "MSE-listed shares exempt. Bonds/fixed-return securities outside the CGT net. Exemption for a sole ordinary residence exists (conditions not verified).",
+        "summary": "Capital gains on shares and securities (excluding fixed-return securities), immovable property, business assets, IP and partnership/trust interests are taxed at marginal rates up to 35% for domiciled residents. Shares listed on the Malta Stock Exchange are exempt, and since 2018 so are shares listed on foreign stock exchanges recognised by the Commissioner (members of the World Federation of Exchanges, the NYSE, and EEA regulated markets on ESMA's register), where the gain is capital in nature. Transfers of Maltese immovable property acquired after 2004 attract a final tax of 8% of the transfer value (10% if acquired before 2004).",
+        "exemptions_thresholds": "MSE-listed shares exempt; shares listed on recognised foreign exchanges exempt if the gain is capital (not trading) in nature; collective investment scheme units may be excluded. Bonds/fixed-return securities outside the CGT net.",
         "important_exceptions": "First EUR 750,000 of certain old/vacant or Urban Conservation Area properties exempt until 31 Dec 2026.",
         "tax_year": "2026",
         "sources": [
@@ -38,24 +38,31 @@
             "publisher": "PwC Worldwide Tax Summaries",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Recognised stock exchanges (Commissioner for Revenue guidance, November 2022)",
+            "url": "https://kpmg.com/mt/en/insights/2023/02/recognised-stock-exchanges.html",
+            "publisher": "KPMG Malta",
+            "kind": "professional",
+            "accessed": "2026-10-16"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "medium",
         "verification": "partially_verified",
         "open_questions": [
-          "Conditions of the exemption for foreign-listed shares ('recognised exchanges') for domiciled residents not verified; 0.35 assumed for foreign listed shares.",
-          "Whether foreign real estate gains are taxed for domiciled residents at 35% assumed, not verified."
+          "Whether foreign real estate gains are taxed for domiciled residents at 35% assumed, not verified.",
+          "Statutory conditions of the foreign-listed share exemption (Income Tax Act art. 5(1)) were not read; the recognised-exchange list is from the Commissioner's November 2022 guidance as reported by KPMG Malta. Units in collective investment schemes may be excluded (PwC). Gains from a trading pattern would be taxed at up to 35%."
         ],
         "headline_rate": 0.35,
         "rates": {
           "listed_securities_domestic": 0.0,
-          "listed_securities_foreign": 0.35,
+          "listed_securities_foreign": 0.0,
           "private_business_sale": 0.35,
           "real_estate_local": 0.08,
           "real_estate_foreign": 0.35
         },
-        "rate_basis": "Top marginal income tax rate 35% applied to chargeable gains. real_estate_local 0.08 is the final tax on the transfer VALUE (not the gain), property acquired after 2004.",
+        "rate_basis": "Listed shares (Malta or recognised foreign exchange) exempt: 0. Private business: top marginal rate 35% applied to chargeable gains. real_estate_local 0.08 is the final tax on the transfer VALUE (not the gain), property acquired after 2004.",
         "professional_trader": "Habitual trading may be taxed as trading income at the same 35% top rate.",
         "holding_period_rules": "None for securities.",
         "foreign_assets": "Domiciled residents are taxed on worldwide gains."
@@ -247,13 +254,13 @@
       "duration_years": null,
       "lump_sum": {
         "annual": {
-          "amount": 15000,
+          "amount": 35000,
           "currency": "EUR"
         },
         "covers": [
           "foreign_income_all"
         ],
-        "notes": "Minimum tax, not a forfait: 15% on remitted foreign income, at least EUR 15,000 a year (status granted or applied for by 31 Dec 2026, until 31 Dec 2031). New ITP status from 2027: minimum EUR 35,000 (L.N. 195/2026 rule 5(1)), payable in full in the first and last year. The 15% and the minimum cover the beneficiary, spouse and dependent children (rule 5(1))."
+        "notes": "Minimum tax, not a forfait: 15% on foreign income received in Malta (relief for double tax under art. 74(a),(b) ITA), at least EUR 35,000 a year for the global-resident and EU/EEA/Swiss-resident categories (L.N. 195/2026 rule 5(1) proviso), payable in full in the first and last year. The 15% and the minimum cover the beneficiary, spouse and the dependent children in rule 2(b),(d); one minimum covers the family. Not indexed. A status granted or applied for by 31 Dec 2026 keeps the old GRP/TRP terms (minimum EUR 15,000, per this file's earlier research) until 31 Dec 2031 (rule 3(3)); renewals run for 5-year periods under the ITP terms, so the long-run minimum is EUR 35,000. The five years at EUR 15,000 are not modelled (one amount only)."
       },
       "dividends": {
         "summary": "Foreign dividends remitted to Malta taxed at 15% (foreign tax credit available); unremitted foreign dividends not taxed; minimum annual tax EUR 15,000 (EUR 35,000 under the 2027 ITP).",
@@ -306,7 +313,7 @@
         "foreign_gross_rate": 0.15,
         "foreign_tax_credit": "credit",
         "rate_basis": "Flat 15% on remitted foreign income; 0 if not remitted; minimum EUR 15,000 a year.",
-        "eligibility_conditions": "foreign_gross_rate 0.15 assumes foreign dividends ARE remitted to Malta; unremitted foreign dividends are not taxed, but the minimum tax (EUR 15,000; EUR 35,000 for new ITP status from 2027) is due regardless."
+        "eligibility_conditions": "foreign_gross_rate 0.15 assumes foreign dividends ARE remitted to Malta; with foreign withholding of 15% the Maltese 15% is fully relieved and only the minimum tax is due (EUR 35,000 under the ITP rules, EUR 15,000 under old GRP/TRP terms until 2031). Unremitted foreign dividends are not taxed, but the minimum is due regardless."
       },
       "sources": [
         {

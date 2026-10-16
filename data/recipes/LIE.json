@@ -1,0 +1,123 @@
+{
+  "id": "LIE",
+  "name": "Liechtenstein",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary taxation)",
+      "regime": "standard",
+      "note": "No tax on dividends or gains for a private investor (Art. 15(1)(a), 15(2)(m)-(o) SteG); instead net wealth is taxed through a 4% deemed return (Sollertrag, Art. 5) added to income at the progressive tariff (top 8%) plus the municipal surcharge (150% in Vaduz and Schaan), about 0.8% of wealth at the top. No inheritance or gift tax."
+    },
+    {
+      "id": "lump_sum",
+      "name": "Lump-sum taxation on expenditure (Besteuerung nach dem Aufwand)",
+      "regime": "lump_sum",
+      "note": "On application (Art. 30-34 SteG): 25% of worldwide living costs, at least the government minimum of CHF 300,000, replaces wealth and income tax. The family's spending (EUR 400,000) is below the CHF 1.2 million that 25% would need to reach the minimum, so CHF 300,000 applies; it is dearer than the ordinary tax at this wealth (break-even about CHF 38-40 million). Liechtenstein real estate stays under ordinary wealth tax."
+    },
+    {
+      "id": "stiftung_pvs",
+      "name": "Private foundation (Stiftung) with PVS status and proxy taxation",
+      "regime": "stiftung_pvs",
+      "estate": "outside_estate",
+      "note": "An irrevocable foundation is a separate owner (a revocable one is attributed to the founder, Art. 9(4) SteG), so nothing passes at death. It pays only the CHF 1,800 minimum tax as a private asset structure (Art. 64(8)) and, on application, the beneficiaries' wealth tax at the single-person tariff with no basic allowance (Art. 9(3), 19(2)); distributions are then tax-free (Art. 14(2)(k)). About the same tax as holding personally; used for succession and asset protection."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 207762.5,
+      "working": "Liechtenstein tax 2026. Inputs: dividends CHF 600,000 (90% foreign), gains CHF 300,000, portfolio CHF 30,000,000; a married couple with 3 minor children living in Vaduz or Schaan (municipal surcharge 150%, the 2025 rate; the 2026 rate was not found), no other income, top marginal rates throughout. Child deductions (Art. 16(3)(a): CHF 12,700 each), insurance deductions (Art. 16(3)(d)) and the household-goods exemption (Art. 10(a)) are small next to a CHF 1,200,000 base and are ignored. The family home is not in the CHF 30,000,000. DIVIDENDS 600,000: exempt, as returns on wealth that bears wealth tax (Art. 15(1)(a) SteG) and as profit shares from participations (Art. 15(2)(n)); the 15% foreign withholding is a cost abroad with no Liechtenstein credit and is not part of the residence tax. GAINS 300,000: exempt (Art. 15(2)(m) and (o)). WEALTH: Sollertrag = 4% x 30,000,000 = 1,200,000 (Art. 5 and Art. 14(2)(l)), taxed as income. State tax for jointly assessed spouses, above CHF 422,801 (Art. 19(1)(c)): 0.08 x 1,200,000 - 12,895 = 96,000 - 12,895 = 83,105. Municipal surcharge 150% of the state tax (Art. 75(1), (3)): 1.5 x 83,105 = 124,657.50. Total 83,105 + 124,657.50 = 207,762.50 (= 0.6925% of the wealth)."
+    },
+    {
+      "path": "lump_sum",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 300000,
+      "working": "Lump-sum tax on expenditure (Art. 30-34 SteG), tax year 2026. Inputs: dividends CHF 600,000 (90% foreign), gains CHF 300,000, portfolio CHF 30,000,000; a married couple with 3 minor children living in Vaduz or Schaan (municipal surcharge 150%, the 2025 rate; the 2026 rate was not found), no other income, top marginal rates throughout. Child deductions (Art. 16(3)(a): CHF 12,700 each), insurance deductions (Art. 16(3)(d)) and the household-goods exemption (Art. 10(a)) are small next to a CHF 1,200,000 base and are ignored. The family home is not in the CHF 30,000,000. The tax is 25% of the family's total worldwide expenditure (Art. 32-33), replaces wealth and income tax (Art. 30(1)) and so covers the dividends, gains and the CHF 30,000,000 portfolio; none of their amounts matters. Expenditure is assumed to be the stated EUR 400,000 a year, roughly CHF 370,000-400,000, so 25% is about CHF 90,000-100,000. The government has set a minimum tax of CHF 300,000 a year, equal to expenditure of CHF 1.2 million at 25% (WeTrust, updated 3 Aug 2026; the minimum is not in the SteG or SteV). The minimum exceeds 25% of the family's spending, so the tax is CHF 300,000. Liechtenstein real estate (the family home) stays under ordinary wealth tax (Art. 30(3)); the home is outside this check."
+    },
+    {
+      "path": "stiftung_pvs",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 226077.5,
+      "working": "Irrevocable family foundation with PVS status (Art. 64 SteG) and an application for proxy taxation (Art. 9(3)). Inputs: dividends CHF 600,000 (90% foreign), gains CHF 300,000, portfolio CHF 30,000,000; a married couple with 3 minor children living in Vaduz or Schaan (municipal surcharge 150%, the 2025 rate; the 2026 rate was not found), no other income, top marginal rates throughout. Child deductions (Art. 16(3)(a): CHF 12,700 each), insurance deductions (Art. 16(3)(d)) and the household-goods exemption (Art. 10(a)) are small next to a CHF 1,200,000 base and are ignored. The family home is not in the CHF 30,000,000. FOUNDATION PROFIT TAX: a PVS is subject only to the minimum tax (Art. 64(8)), CHF 1,800 (Art. 62(2)); dividends and gains are not assessed (Art. 64(8), 48(1)(e)-(f)). PROXY WEALTH TAX (Art. 9(3) and 19(2)): the foundation pays the beneficiaries' wealth tax on the deemed return 4% x 30,000,000 = 1,200,000 (Art. 5) at the single-person tariff of Art. 19(1)(a) with no basic allowance and the deduction amount reduced by CHF 159: for returns of CHF 211,401 or more the tax is 0.08 x 1,200,000 - (6,448 - 159) = 96,000 - 6,289 = 89,711. Municipal surcharge 150% (Art. 75(1), (3); assumed to apply to the foundation, see open questions): 1.5 x 89,711 = 134,566.50. Wealth tax 89,711 + 134,566.50 = 224,277.50. Total with the minimum tax 224,277.50 + 1,800 = 226,077.50. Distributions to the family are tax-free (Art. 14(2)(k)) and are excluded."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Liechtenstein levies no inheritance, estate or gift tax at all (Art. 1(1) SteG lists everything it levies: wealth and income tax, tax on expenditure, real estate gains tax, profit tax, formation duty and insurance premium duty; there is no inheritance or gift tax). Inheritances and gifts received are also exempt from the Erwerbssteuer (Art. 15(2)(c) SteG). The children simply include what they receive in their own wealth base afterwards. Tax 0 on an estate of CHF 10,000,000."
+    }
+  ],
+  "assumptions": [
+    "Municipal surcharge 150% (Vaduz and Schaan, tax year 2025 council protocols); the statutory range is 150%-250% (Art. 75(3) SteG). The 2026 surcharge was not found.",
+    "The family keeps no other income: the actual dividends and gains are exempt, so the deemed return of 4% on the portfolio is the whole taxable income. Earned or pension income would push the deemed return into higher bands sooner.",
+    "The portfolio is CHF 30,000,000 net of debt and the family home (EUR 5M, valued at the Steuerschaetzwert or Ertragswert, Art. 12(2) SteG) is left out of the checks.",
+    "Lump sum: the family's worldwide living costs are below CHF 1.2 million a year, so the government minimum of CHF 300,000 is the tax. If both spouses qualify (Art. 30 SteG) and no one works in Liechtenstein; the tax ends when one spouse dies (WeTrust).",
+    "Foundation: irrevocable, PVS status, application for proxy taxation filed by 31 December each year (Art. 7 SteV). The foundation council's fees, audit and formation duty are not counted (no sourced figure); the annual cost counted is the CHF 1,800 minimum tax.",
+    "The tariff and wealth-tax thresholds are not indexed automatically (Art. 20 SteG needs a Landtag decision after 3% inflation)."
+  ],
+  "open_questions": [
+    "Needs an engine change: under the lump sum the family home (Liechtenstein real estate) remains under ordinary wealth tax with no debt deduction (Art. 30(3) SteG), in addition to the CHF 300,000. The engine's lump sum is one fixed amount that replaces wealth tax in full.",
+    "Needs an engine change: the lump sum is 25% of the family's worldwide living costs, at least CHF 300,000 (Art. 32-33 SteG and the government minimum). The engine's lump sum is a fixed amount; it is exact for this family only because the minimum binds (spending below CHF 1.2 million).",
+    "Needs an engine change: a private asset structure pays only CHF 1,800 of Liechtenstein tax and treaty relief on foreign dividends for it was not verified; if it is refused, the statutory withholding of each source country applies, but the engine charges 15% on every foreign dividend in every path.",
+    "The CHF 300,000 minimum of the lump sum rests on advisers' statements (WeTrust) that the government set it; no official publication was found, and whether the surcharge is inside it is unknown.",
+    "Whether the municipal surcharge applies to the tax paid by a foundation under Art. 9(3) SteG and at which municipality's rate was not found; without it the foundation's wealth tax in the check would be 40% lower (89,711).",
+    "Residence is the real constraint: EEA permits for non-working persons are limited by quota and partly by lottery (Art. 10, 22 PFZG; numbers not verified), so none of the paths is open without a permit."
+  ],
+  "sources": [
+    {
+      "title": "Steuergesetz (SteG), LGBl. 2010.340, consolidated version 01.07.2026 (PDF)",
+      "url": "https://www.gesetze.li/konso/pdf/2010340000?version=38",
+      "publisher": "Liechtensteinische Landesverwaltung (gesetze.li)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Steuerverordnung (SteV), LGBl. 2010 Nr. 437, consolidated version 01.07.2026 (PDF)",
+      "url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "publisher": "Liechtensteinische Landesverwaltung (gesetze.li)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Die Pauschalbesteuerung in Liechtenstein - ein Ueberblick (WeTrust, updated 3 Aug 2026)",
+      "url": "https://a.storyblok.com/f/113585/x/6a3672e3bc/20241111_pauschalbesteuerung-in-liechtenstein-aktualisiert-20260703.pdf",
+      "publisher": "WeTrust (Liechtenstein trust and tax advisers)",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Uebersicht ueber die liechtensteinische Stiftung (2023)",
+      "url": "https://www.grantthornton.ch/globalassets/1.-member-firms/switzerland/insights/pdf/2023/2300-uebersicht-li-stiftung-de.pdf",
+      "publisher": "Grant Thornton Switzerland/Liechtenstein",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Gemeinde Vaduz: oeffentliches Protokoll der 27. Sitzung des Gemeinderates vom 5. November 2024 (Gemeindesteuerzuschlag 2025 bei 150 % belassen)",
+      "url": "https://vaduz.li/download_file/11001/481",
+      "publisher": "Gemeinde Vaduz",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Gemeinde Schaan: oeffentliches Protokoll, Sitzung vom 26. November 2025 (Gemeindesteuerzuschlag Steuerjahr 2025 definitiv 150 %)",
+      "url": "https://www.schaan.li/application/files/3817/6543/8304/pa_20251126.pdf",
+      "publisher": "Gemeinde Schaan",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

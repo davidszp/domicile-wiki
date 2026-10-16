@@ -55,6 +55,10 @@ Set these in the **tax file** (never in the recipe); each needs the statute:
 - `main_home_valued_at` / `securities_valued_at` on a wealth-tax component: valuation discounts (France IFI 70%,
   Norway shares 80%).
 - `wealth_tax.income_cap`: income plus wealth tax capped at a share of income (Spain art. 31 LIP).
+- `lump_sum.is_cap`: the amount is a maximum (Guernsey): the family pays the lower of it and the ordinary tax.
+- `wealth_tax.starts_after_years`: the wealth tax applies only after that many years of residence (San Marino).
+- `income_cap.counted_income_tax_rate`, `min_income_yield`, `min_wealth_tax_rate`: caps that count only part of
+  the income tax, assume a minimum yield on wealth, or keep a minimum wealth tax (Swiss cantonal caps).
 - `structure.running_cost_deductible_at`: the structure's running costs reduce its own tax at this rate.
 - A path may not use a regime with `requires_qualifying_activity`: the family has no job or business, as in
   the scores.

@@ -131,6 +131,14 @@ class IncomeCap(Strict):
     max_reduction: Rate = Field(description="The most the wealth tax can be cut by the cap (0.8 = at least 20% stays due)")
     counts_long_term_gains: bool = Field(description="Whether gains on long-held assets count in the income base "
                                                      "(Spain: no, art. 31.1 Ley 19/1991)")
+    counted_income_tax_rate: Rate | None = Field(
+        None, description="Rate of the income tax that counts against the cap, on the income that counts, when only part of "
+                          "the regime's income tax does (Swiss cantonal caps count cantonal and communal tax, not federal); "
+                          "null = the regime's own rates")
+    min_income_yield: Rate | None = Field(None, description="The income base is at least this share of net wealth "
+                                                            "(Geneva: 1%, art. 60 LIPP)")
+    min_wealth_tax_rate: Rate | None = Field(None, description="The capped wealth tax is at least this share of net wealth "
+                                                               "(Vaud: 3 per mille)")
     notes: str = ""
 
 
@@ -138,6 +146,8 @@ class WealthTax(MetricBase):
     type: Literal["none", "limited", "broad"]
     components: list[WealthComponent] = []
     income_cap: IncomeCap | None = None
+    starts_after_years: int | None = Field(None, ge=1, description="The tax applies only once the family has been resident "
+                                                                  "this many years (San Marino IRAFE: more than 10)")
     thresholds_indexed: bool = Field(False, description="Allowances and bracket limits rise with prices by law each year "
                                                        "(e.g. Netherlands art. 10.1 Wet IB 2001); False when they change only by amendment")
     property_tax_note: str = Field("", description="Ordinary municipal/property taxes, kept separate from wealth tax")
@@ -201,6 +211,8 @@ class LumpSum(Strict):
         None, description="Added to ``annual`` when the spouse is covered too (e.g. Italy art. 24-bis: EUR 50,000 per family member); "
                           "the reference family is a couple holding the portfolio jointly")
     indexed_to_inflation: bool = Field(False, description="The amount rises with prices by law (not merely by occasional amendment)")
+    is_cap: bool = Field(False, description="The amount is a maximum (Guernsey, Isle of Man tax caps): the family pays the lower of "
+                                            "it and the ordinary tax on the income it covers; false for a fixed charge")
     covers: list[Literal["foreign_capital_gains", "foreign_dividends", "foreign_income_all", "wealth_tax_foreign", "domestic_income"]]
     notes: str = ""
 

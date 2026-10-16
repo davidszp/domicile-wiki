@@ -1,6 +1,6 @@
 # Guernsey — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -32,19 +32,19 @@ Guernsey has no capital gains tax. Gains by a resident private investor on secur
 
 Dividends are taxed as income at a flat 20%. Guernsey companies paying dividends to resident individuals deduct tax at source up to 20% (20% if the company paid 0%). Residents can elect tax caps (see special regimes).
 
-- **rate basis**: Flat 20% income tax rate on net income after allowances (PwC). Personal allowance £15,200 for 2026, withdrawn above £85,000 of income.
+- **rate basis**: Flat 20% income tax rate on net income after allowances (PwC). Personal allowance £15,200 for 2026, withdrawn above £85,000 of income. Foreign tax relief where there is no treaty (unilateral relief) is the lower of the foreign tax and three-quarters of the effective Guernsey rate on the income (Revenue Service guide): at the 20% top rate that is 15% of the gross dividend, so a 15% withholding is credited in full.
 - **exemptions thresholds**: Personal allowance £15,200 (2026), withdrawn from £85,000 of income.
 - **withholding outbound**: 0% withholding on dividends to non-residents under domestic law; dividends to Guernsey-resident individuals carry a deduction making up tax to 20%.
 - **treaty network**: 14 comprehensive double tax agreements (incl. UK, Jersey, Isle of Man, Luxembourg, Malta, Cyprus, Singapore, Hong Kong); no US income tax treaty, so US dividends suffer 30% US withholding. Foreign tax relieved by credit.
 - **JSON values**: `{"headline_rate": 0.2, "domestic_rate": 0.2, "foreign_gross_rate": 0.2, "foreign_tax_credit": "credit"}`
 - **Confidence / verification**: high / verified (tax year 2026)
-- **Open question**: Credit relief mechanics for non-treaty source countries not verified from Revenue Service guidance.
+- **Open question**: The Revenue Service guide read for unilateral relief is a 2017 document; the related Statement of Practice M8 was withdrawn on 19 August 2024 and its replacement was not found.
 
 ## Inheritance and gifts to children
 
 No inheritance, estate or gift tax. A probate registry fee applies to personal (movable) estate: £225 up to £80,000 plus £50 per further £10,000 (0.5%), capped at £250,000 for estates above about £50m. Worldwide personal estate counts if no grant has been taken elsewhere.
 
-- **exemptions thresholds**: Probate fee 0.5% of gross personal estate (Mourant, Feb 2026), capped at £250,000. Guernsey real property is outside the grant. Older guides (Carey Olsen 2020) show £35 per £10,000 (0.35%), so the scale has risen.
+- **exemptions thresholds**: Probate Registry fee on the gross value of the personal estate (no deduction for debts): GBP 225 plus GBP 50 for each additional GBP 10,000 above GBP 80,000, plus small amounts for extra documents; capped at GBP 250,000 above GBP 50,030,000 (Mourant, 27 February 2026). Not indexed. Guernsey real property is outside the grant. Older guides (Carey Olsen 2020) show £35 per £10,000 (0.35%), so the scale has risen.
 - **important exceptions**: Lifetime gifts attract no fee, and assets already covered by a foreign grant are valued on the Guernsey estate only.
 - **foreign assets**: Worldwide movable estate counts for the probate fee unless probate has been obtained in another jurisdiction.
 - **gift tax**: No gift tax.
@@ -96,6 +96,17 @@ A newcomer who buys an Open Market (Part A) property with at least £50,000 of d
 - **JSON values**: `{"headline_rate": 0.0, "domestic_rate": 0.0, "foreign_gross_rate": 0.0, "foreign_tax_credit": "not_applicable"}`
 - **Confidence / verification**: high / verified (tax year 2026)
 
+## Holding structures
+
+**Structure modelled: Guernsey investment holding company, regime id `holding_company`.**
+
+- **Company tax:** the standard company rate is 0% (Revenue Service; PwC); there is no capital gains tax. Dividends and gains in the company are untaxed (JSON dividends 0, `exemption`; gains 0); foreign withholding tax is a final cost. 10% (banking, fiduciary and other regulated activities) and 20% (Guernsey property, large retail and similar) apply to listed activities only.
+- **Payout:** if a company's income is taxed at less than 20%, a tax charge arises when a distribution is paid to a Guernsey-resident beneficial member; the company deducts it and pays it to the Revenue Service. A 0%-taxed company therefore deducts the full 20% (`payout_tax_rate` 0.20). Distributions to non-residents carry no charge (Revenue Service, tax information for companies).
+- **Retained profits:** not taxed on the member in the sources read. Anti-avoidance: preferentially priced loans to participators are treated as income, and repayments of non-commercial shareholder loans from personal investment companies are treated as dividends from 2026.
+- **Inheritance:** the shares are personal estate, so the probate fee applies as for personal holding; the metric is the standard regime's.
+- **Running costs:** not sourced (omitted). US citizens are excluded (CFC/PFIC rules).
+- **Considered, not added:** Guernsey foundations and trusts (no income tax saving for a resident family; not sourced). The `tax_cap` regime has a path: the caps are maximums, and the engine charges the lower of the cap and the ordinary tax. `open_market_cap` has no path (it needs an Open Market property purchase and lasts four years).
+
 ## Company taxation (kept separate from personal tax)
 
 Headline CIT rate in JSON: 0.0.
@@ -121,6 +132,7 @@ US citizens: No US-Guernsey income tax treaty; US tax applies on worldwide incom
 - GST: on 2 October 2026 the States carried P.2026/49 (22-17) directing a GST package with income tax and social security mitigations (reported starting rate 3%, possibly rising to 5%; supporters target 2028). No law made, no start date; income tax effects for high earners unknown (source: lookuptax.com tracking summary, not an official record).
 - Non-employed residents pay social security contributions on income up to an upper limit; not modelled here.
 - Cost-of-living items not sourced (no official 2026 senior fee found for Elizabeth College).
+- Needs an engine change: the Guernsey tax caps (GBP 160,000 on non-Guernsey income, GBP 320,000 worldwide, GBP 60,000 for four years for Open Market buyers) are maximums on the income tax otherwise due, elected each year by each spouse; the tax is the lower of the cap and the normal tax. The engine charges the lump sum as a fixed amount. For the reference family (about GBP 520,000 of dividends, 15% withholding credited in full) the normal tax is about 5% of the dividends, below every cap, so the recipe has no cap paths: a fixed charge would overstate the tax by GBP 34,000 to GBP 134,000 a year.
 
 ## Sources
 
@@ -141,6 +153,10 @@ US citizens: No US-Guernsey income tax treaty; US tax applies on worldwide incom
 - Swoffers - Property search: rentals: <https://swoffers.co.uk/property-search?market=rentals>
 - Livingroom - Rent: <https://www.livingroomproperty.com/rent>
 - Savills - Properties to rent in Guernsey: <https://search.savills.com/gg/en/list/property-to-rent/channel-islands/guernsey>
+- Guernsey Income Tax (Revenue Service guide, section C): <https://www.gov.gg/CHttpHandler.ashx?id=101375&p=0>
+- Tax information for companies (Revenue Service): <https://gov.gg/companytax>
+- Guernsey - Corporate - Taxes on corporate income: <https://taxsummaries.pwc.com/guernsey/corporate/taxes-on-corporate-income>
+- Guernsey probate (Mourant guide, 27 February 2026): <https://www.mourant.com/guides/guernsey-probate/>
 
 ## Change log
 
@@ -148,3 +164,4 @@ US citizens: No US-Guernsey income tax treaty; US tax applies on worldwide incom
 - 2026-10-15: data-quality pass: added Elizabeth College fee (£16,995, 2026-27); rent still not sourced; added duration_note to the tax cap; added indicator overrides: life expectancy 83.6 (Facts and Figures 2025) and homicide rate 0.0 (Guernsey Police Annual Report 2025).
 - 2026-10-15 (household cost pass): added prime rent £4,875 a month, the median of the only 4 priced 4-5 bedroom long-lets on Swoffers and Livingroom (Savills had none); small sample, described as such.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: recipe pass (`data/recipes/GGY.json`). Added the `holding_company` structure regime (0% company, 20% deducted from distributions to resident members; Revenue Service). Dividend text: unilateral relief rule from the Revenue Service guide (the existing 'credit' flag stays correct at a 15% withholding). Probate text: fee scale restated with the base amount. Tax caps given no recipe path; open question on the lower-of rule recorded.

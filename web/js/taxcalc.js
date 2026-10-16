@@ -89,7 +89,10 @@ export function annualTaxes(rules, p, std = null) {
         incomeTax = divF * d.foreign_gross + divD * d.domestic;
         if (cap.gains) incomeTax += gainsF * c.listed_foreign + gainsD * c.listed_domestic;
       }
-      const allowed = Math.max(cap.share * income - incomeTax, total * (1 - cap.max_reduction));
+      if (cap.tax_rate != null) incomeTax = income * cap.tax_rate; // only part of the income tax counts (e.g. not the federal tax)
+      if (cap.min_yield) income = Math.max(income, p.net_wealth * cap.min_yield);
+      const floor = Math.max(total * (1 - cap.max_reduction), p.net_wealth * (cap.min_wealth_rate || 0));
+      const allowed = Math.max(cap.share * income - incomeTax, Math.min(total, floor));
       total = Math.min(total, allowed);
     }
     out.wealth_tax = total;
@@ -110,10 +113,13 @@ export function annualTaxes(rules, p, std = null) {
         total += cut[k];
       }
     }
+    const charge = rules.lump_sum.cap ? Math.min(lump, total) : lump; // a cap never costs more than the ordinary tax
+    out.lump_sum = charge;
     if (total > 0) {
-      for (const [k, v] of Object.entries(cut)) out[k] += (lump * v) / total;
+      for (const [k, v] of Object.entries(cut)) out[k] += (charge * v) / total;
       return out;
     }
+    if (rules.lump_sum.cap) return out;
   }
   const replaced = (lumpCg ? gainsF : 0) + (lumpDiv ? divF : 0);
   if (replaced > 0) {
@@ -172,7 +178,7 @@ export function transferTaxes(rules, p) {
     tax = applyBrackets(taxable - ih.exemption, ih.brackets, ih.mode);
   }
   const deemed = p.estate * (p.unrealized_gain_share ?? 0.4) * (ih.deemed_disposal || 0);
-  return tax + deemed + p.estate * ih.other_cost;
+  return tax + deemed + taxable * ih.other_cost; // transfer costs reach what the tax reaches
 }
 
 // US federal layer for US citizens (approximation documented in the methodology panel):
@@ -200,7 +206,8 @@ export function usEstateExtra(localTransfer, p, overlay, usdPerEur, rules) {
   if (localTransfer === null) return null;
   const exemptionEur = overlay.estate_exemption_usd / usdPerEur;
   const usTax = overlay.estate_rate * Math.max(0, p.estate - exemptionEur);
-  const other = rules.inh ? p.estate * rules.inh.other_cost : 0;
+  const ih = rules.inh;
+  const other = ih ? (ih.scope === "local_assets_only" ? p.estate * localShare(p) : p.estate) * ih.other_cost : 0;
   return Math.max(0, usTax - (localTransfer - other));
 }
 

@@ -1,0 +1,90 @@
+{
+  "id": "CH-SZ",
+  "name": "Switzerland, canton of Schwyz",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary taxation)",
+      "regime": "standard",
+      "note": "Dividends are ordinary income at the federal tariff and the Schwyz tariffs (a portfolio holding under 10% gets no partial taxation); gains on listed shares are tax-free for a private investor (DBG art. 16 para. 3; StG SZ para. 17 para. 3); annual wealth tax of 0.6 per mille x 285% on worldwide net assets after CHF 340,000 of deductions; the canton levies no inheritance or gift tax (StG SZ para. 2 para. 3)."
+    },
+    {
+      "id": "lump_sum",
+      "name": "Lump-sum taxation (Besteuerung nach dem Aufwand)",
+      "regime": "lump_sum",
+      "note": "Income and wealth tax are replaced by the ordinary tariffs applied to a deemed income of at least the highest of CHF 600,000, 7 times the rent of the home and the living costs, and to a deemed wealth of at least 20 times that base (StG SZ para. 15a, DBG art. 14). No time limit in law while both spouses stay non-Swiss and do not work in Switzerland. Foreign dividends and gains are covered; no inheritance tax in Schwyz either way."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 1000000,
+      "wealth": 100000000,
+      "expected": 338168.6,
+      "working": "Inputs: a married couple with 3 minor children, no church tax, tax year 2026; taxable income far above every tariff break so the top marginal rates apply; allowances and deductions ignored as in the other recipes. City of Schwyz: canton 110% + district 35% + commune 140% = 285% (Steuerfusstabelle 2026; Wollerau would be 110% + 14% + 50% = 174%). DIVIDENDS 2,000,000 taxed in full (portfolio holding under 10%: DBG art. 20 para. 1bis not met; StG SZ para. 21). Federal (DBG art. 36 para. 2, tariff in force since 1 Jan 2026): tax at 941,400 is 108,261.00, plus 11.50 per 100 above = 11.5% of the whole amount; 2,000,000 x 11.5% = 230,000.00 (the CHF 263 per-child reduction of art. 36 para. 2bis, 789 in all, is ignored, as are social deductions and the dividend-free parts). Canton (StG SZ para. 36a; rate fixed at income / 1.9 = 1,052,631 per para. 36 para. 2, above 433,500): simple tax 5% of the whole income = 100,000.00; x 110% = 110,000.00. District and commune (para. 36; 1,052,631 is above 258,800): simple tax 3.65% of the whole income = 73,000.00; x (35% + 140%) = 127,750.00. Income tax before credit 230,000.00 + 110,000.00 + 127,750.00 = 467,750.00. Flat-rate credit for the 15% treaty withholding on foreign dividends (SR 672.201): 15% x 2,000,000 = 300,000.00, below the Swiss tax on those dividends. Dividend tax after credit 167,750.00. GAINS 1,000,000: nil, private capital gains on movable assets are tax-free (DBG art. 16 para. 3; StG SZ para. 17 para. 3). WEALTH 100,000,000: deductions 250,000 for the couple + 3 x 30,000 for the children (para. 47) = 340,000; taxable 99,660,000 (already a whole thousand, para. 48 para. 2); simple tax 0.6 per mille = 59,796.00; x 285% = 170,418.60. Total 167,750.00 + 170,418.60 = 338,168.60."
+    },
+    {
+      "path": "lump_sum",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 268075.0,
+      "working": "The tax does not depend on the actual dividends, gains or wealth (foreign income and assets are covered), only on the deemed base, which this check ASSUMES to be a round CHF 1,000,000 (7 times a rent of about CHF 12,000 a month; StG SZ para. 15a para. 1 b, DBG art. 14 para. 3 b); the real base is a function of rent and living costs, see open questions. Ordinary tariffs on that base (para. 15a para. 2), married couple with 3 children, no church tax, tax year 2026. Federal (DBG art. 14 para. 4: ordinary tariff art. 36 para. 2, but without the per-child reduction of art. 36 para. 2bis, second sentence): 108,261.00 + 11.50 x 586 (the 58,600 above 941,400, in hundreds) = 115,000.00. Canton (para. 36a, 1,000,000 / 1.9 = 526,316 is above 433,500): 5% x 1,000,000 = 50,000.00; x 110% = 55,000.00. District and commune (para. 36): 3.65% x 1,000,000 = 36,500.00; x 175% = 63,875.00. Deemed wealth at least 20 times the base (para. 15a para. 3) = 20,000,000, taxed at 0.6 per mille (para. 48) with no deductions: 12,000.00; x 285% = 34,200.00. Total 115,000.00 + 55,000.00 + 63,875.00 + 34,200.00 = 268,075.00."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The canton of Schwyz levies neither an inheritance nor a gift tax, for any heir: StG SZ para. 2 para. 3 ('Es wird weder eine Erbschafts- noch eine Schenkungssteuer erhoben'). There is no federal inheritance tax. Estate 10,000,000 to 3 children: tax 0."
+    }
+  ],
+  "assumptions": [
+    "The family is two non-Swiss spouses who have not been Swiss tax residents for 10 years and do not work in Switzerland, so lump-sum taxation is open to them (StG SZ para. 15; DBG art. 14). Both must qualify.",
+    "Village of Schwyz, tax year 2026: canton 110% (the Kantonsrat cut it from 115%), district 35%, commune 140%, no church tax (Steuerfusstabelle 2026). The tax file's top rate is exact above CHF 433,500 of taxable income (income / 1.9). Wollerau (Hoefe) is cheaper: 174% in all, a top rate of 19.34% and a wealth tax of 0.1044%.",
+    "The lump-sum base is shown at CHF 1,000,000, the representative used for every canton. The family's actual base is the highest of CHF 600,000, 7 times the rent or rental value of the home and the living costs; with the prime-rent sample of CHF 5,890 a month (7 x 70,680 = CHF 494,760) the CHF 600,000 minimum would bind and the lump sum would be about CHF 127,000.",
+    "A Swiss family foundation (ZGB art. 335) is not offered as a path: it is taxed as a legal entity on income and capital, its distributions are taxable for the beneficiaries, and it brings no tax advantage over holding personally in a canton with no inheritance tax; a holding company for a listed portfolio does not either (participation relief needs 10% stakes).",
+    "Treaty relief on foreign dividends is assumed to be claimed only if the control calculation stays below the lump sum; the 15% withholding is then a final cost, as for all other paths."
+  ],
+  "open_questions": [
+    "Needs an engine change: the lump sum is a fixed amount per regime, but by law it is the tax on a base of at least the highest of CHF 600,000, 7 times the rent and the family's worldwide living costs (StG SZ para. 15a para. 1; DBG art. 14 para. 3), reassessed each year. The engine would need the base as a function of the family's spending and housing cost, with the ordinary tariffs applied to it.",
+    "Needs an engine change: modified lump sum. Claiming treaty-reduced withholding on foreign dividends puts that income into the control calculation, where it is taxed at the ordinary tariffs (StG SZ para. 15a paras. 4-6, DBG art. 14 para. 3 d). The tax is then the higher of the lump sum and the control calculation; the engine charges 15% on every foreign dividend and ignores the control calculation.",
+    "Needs an engine change: scheduled indexation. The Schwyz tariff, deductions and the CHF 600,000 minimum are adjusted to the consumer price index every three years (para. 49; first under the new law on 1 January 2029); the engine indexes annually, which is close.",
+    "The family quotient 'Entlastungsabzug' of para. 35 para. 1a (30% of the gap between CHF 70,000 plus CHF 25,000 per child and the income) is zero at this income; not relevant."
+  ],
+  "sources": [
+    {
+      "title": "Steuergesetz des Kantons Schwyz (SRSZ 172.200), Stand 1. Februar 2026",
+      "url": "https://www.sz.ch/public/upload/assets/29694/172_200.pdf?fp=13",
+      "publisher": "Kanton Schwyz",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Kantonsblatt Schwyz (Stand Februar 2026): Steuertarife, Sozialabzüge, Aufwandbesteuerung",
+      "url": "https://www.estv2.admin.ch/stp/kb/sz-de.pdf",
+      "publisher": "Swiss Federal Tax Administration (ESTV)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Steuerfusstabelle 2026 (Steuerfüsse in Prozenten der einfachen Steuer)",
+      "url": "https://www.sz.ch/public/upload/assets/90947/Steuerfusstabelle_2026.pdf?fp=4",
+      "publisher": "Steuerverwaltung Kanton Schwyz",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Bundesgesetz über die direkte Bundessteuer (DBG), SR 642.11, Stand 1. Januar 2026 (Art. 14, 36)",
+      "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260101/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260101-de-html.html",
+      "publisher": "Swiss Confederation (Fedlex)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

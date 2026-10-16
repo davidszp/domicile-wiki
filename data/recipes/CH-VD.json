@@ -1,0 +1,141 @@
+{
+  "id": "CH-VD",
+  "name": "Switzerland, canton of Vaud",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary taxation)",
+      "regime": "standard",
+      "note": "Dividends are ordinary income at the federal tariff and the Vaud barème with family quotient, capped at 30% of income for cantonal and communal tax (LICom art. 8 para. 1); a portfolio holding under 10% gets no partial taxation; gains on listed shares are tax-free for a private investor (DBG art. 16 para. 3); annual cantonal and communal wealth tax on worldwide net assets; children inherit with tax (LMSD), halved for foreigners who never worked in Switzerland (art. 36). The 60% bouclier fiscal is not modelled."
+    },
+    {
+      "id": "lump_sum",
+      "name": "Lump-sum taxation (imposition d'après la dépense)",
+      "regime": "lump_sum",
+      "note": "Income and wealth tax are replaced by the ordinary barème applied to a deemed expenditure of at least the highest of CHF 415,000 (which includes 15% for the wealth tax) and 7 times the rent of the home plus 10%, or the living costs (LI art. 15, DBG art. 14). No time limit in law while both spouses stay non-Swiss and do not work in Switzerland. Foreign dividends and gains are covered; inheritance follows the ordinary Vaud rules (children taxed, tax halved by LMSD art. 36)."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 1000000,
+      "wealth": 50000000,
+      "expected": 924257.89,
+      "working": "Inputs: a married couple with 3 minor children, no church tax, tax year 2026; taxable income far above every tariff break so the top marginal rates apply; allowances and deductions ignored as in the other recipes. Lausanne, 2026: cantonal coefficient 155% (LA 2026 art. 2), communal coefficient 78.5% (arrêté d'imposition 2025-2029), cantonal base income tax reduced by 5% (LRIPP art. 4, 2026); wealth 50M chosen so that the 60% cap does not bind (shown below). DIVIDENDS 2,000,000 taxed in full (DBG art. 20 para. 1bis not met; LI art. 23). Federal (DBG art. 36 para. 2, tariff in force since 1 Jan 2026): tax at 941,400 is 108,261.00, plus 11.50 per 100 above = 11.5% of the whole amount; 2,000,000 x 11.5% = 230,000.00 (the CHF 263 per-child reduction of art. 36 para. 2bis, 789 in all, is ignored, as are social deductions and the dividend-free parts). Vaud cantonal and communal income tax: the barème of LI art. 47 (2026 amounts, 15.5% above 291,700) with the family quotient of art. 43 (1.8 + 3 x 0.5 = 3.3 parts, the reduction capped by para. 3) gives an average rate of 13.8% (full quotient, taxable income 2,000,000 / 3.3 = 606,061) to 14.6% (capped quotient), i.e. 31.2% to 32.9% once multiplied by 0.95 x 155% + 78.5% = 225.75%; this exceeds the ceiling of LICom art. 8 para. 1 (cantonal plus communal income tax at most 30% of income), so the tax is 30% x 2,000,000 = 600,000.00. Income tax before credit 230,000.00 + 600,000.00 = 830,000.00. Flat-rate credit for the 15% treaty withholding on foreign dividends (SR 672.201): 15% x 2,000,000 = 300,000.00, below the Swiss tax on those dividends. Dividend tax after credit 530,000.00. GAINS 1,000,000: nil (DBG art. 16 para. 3; StHG art. 7 para. 4 let. b). WEALTH 50,000,000: no deductions (tax-free below 120,000 for a couple, LI art. 58); fractions below 1,000 dropped (art. 59 para. 3). Base tax of art. 59 (2026 amounts): 1,757.35 at 711,000 (ACI table 2026), plus 3.39 per mille x (50,000,000 - 711,000) = 3.39 per mille x 49,289,000 = 167,089.71, so 168,847.06; x (155% + 78.5%) = x 2.335 = 394,257.885. Burden caps (LICom art. 8): wealth tax at most 10 per mille of wealth (7.9 per mille, ok); income plus wealth tax 600,000.00 + 394,257.89 = 994,257.89 is below 60% x 2,000,000 = 1,200,000 (the 1% minimum yield, 500,000, is below the dividends), so no relief. Total 530,000.00 + 394,257.885 = 924,257.885, rounded to 924,257.89."
+    },
+    {
+      "path": "lump_sum",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 445000.0,
+      "working": "The tax does not depend on the actual dividends, gains or wealth (foreign income and assets are covered), only on the deemed expenditure, which this check ASSUMES to be 7 times a rent of about CHF 12,000 a month = CHF 1,000,000 (LI art. 15 para. 3 b, DBG art. 14 para. 3 b); the real base depends on rent and living costs, see open questions. Married couple with 3 children, no church tax, 2026, Lausanne. Federal (DBG art. 14 para. 4: ordinary tariff art. 36 para. 2, but without the per-child reduction of art. 36 para. 2bis, second sentence): 108,261.00 + 11.50 x 586 (the 58,600 above 941,400, in hundreds) = 115,000.00. Cantonal base: 7 times the rent 'majorés de 10%' (LI art. 15 para. 3 b) = 1,100,000 (the 10% stands for the wealth tax; no separate wealth tax), taxed at the ordinary barème (para. 3bis) times 155% x 0.95 + 78.5% (Lausanne special tax on foreigners at 0.785, arrêté chiffre V). The barème gives an average rate of 13.7% (child reduction capped, art. 43 para. 3: rate-setting income 1,100,000 / 1.8 less 31,413 = 579,698, average 13.75%) x 225.75% = 31.0%, above the 30% ceiling of LICom art. 8 para. 1, so the tax is 30% x 1,100,000 = 330,000.00. Total 115,000.00 + 330,000.00 = 445,000.00."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 333880.0,
+      "working": "The family's real case: CHF 600,000 of dividends, CHF 30M of wealth; the 60% cap binds. Lausanne 2026 (155% x 0.95 on income, 78.5% communal), couple with 3 children, no church tax. Federal (DBG art. 36 para. 2): 5,692.00 at 152,400 plus 13.00 per 100 above, so 5,692.00 + 0.13 x (600,000 - 152,400) = 63,880.00 (per-child reduction of CHF 789 ignored). Cantonal and communal income tax: barème of LI art. 47 (2026 amounts) with the family quotient of art. 43 (3.3 parts, child reduction capped by para. 3). Full quotient: rate-setting income 600,000 / 3.3 = 181,818, tax by tranche 19,196.95 (10.56%), x 2.2575 on the income 600,000 = 143,012.51. Child reduction capped (income 600,000 / 1.8 - 31,413 = 301,920): tax 36,633.15 (12.13%), x 2.2575 = 164,346.67. Both are below the 30% ceiling of LICom art. 8 para. 1 (180,000). WEALTH: base tax 1,757.35 + 3.39 per mille x (30,000,000 - 711,000 = 29,289,000; 99,289.71) = 101,047.06; x 2.335 = 235,944.89 before the cap. Burden cap (LICom art. 8 para. 3): income tax plus wealth tax is at least 143,012.51 + 235,944.89 = 378,957.40, above 60% x 600,000 = 360,000 (the 1% minimum yield, 300,000, is below the dividends), so the wealth tax is cut to 360,000 less the income tax, between 195,653.33 and 216,987.49, above the floor of 3 per mille x 30,000,000 = 90,000 (para. 3ter); the 10 per mille limit (300,000) does not bind. Federal 63,880.00 + cantonal and communal income and wealth tax 360,000.00 = 423,880.00, less the credit of 15% x 600,000 = 90,000.00 (below the Swiss tax on those dividends). Total 333,880.00, whichever way the quotient is read.",
+      "model_difference": 5120.0,
+      "model_note": "The engine applies a flat 11.5% federal rate to dividends, whereas the federal tariff at CHF 600,000 gives 63,880 (10.65%): the cap equalises the cantonal parts, so the engine total is 339,000 = 360,000 - 21,000 and the law's is 333,880; difference 5,120.00 = 69,000 - 63,880."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 9000000,
+      "children": 3,
+      "expected": 315000.0,
+      "working": "Estate 9,000,000 to 3 children: 3,000,000 each, each child forming a stirp. The CHF 1,000,000 deduction per stirp has vanished at 1,100,000 (LMSD, successions opened from 1 Jan 2025: reduced by 1/100 per CHF 1,000 above CHF 1,000,000). Cantonal tax: direct-line barème of art. 34 LMSD (general barème), rate 3.500% for any amount from 1,302,000 (rounded down to the thousand): 3.5% x 3,000,000 = 105,000.00. Lausanne centimes on successions: 'fr. 1.00 par franc de l'Etat' (arrêté d'imposition 2025-2029, chiffre VI), so 210,000.00 per child (7% in all). The deceased are foreigners who never worked in Switzerland and the estate is wholly taxable in Vaud (no foreign share under a treaty), so the tax is reduced by half (LMSD art. 36): 105,000.00 per child. For 3 children 315,000.00."
+    }
+  ],
+  "assumptions": [
+    "The family is two non-Swiss spouses who have not been Swiss tax residents for 10 years and do not work in Switzerland, so lump-sum taxation is open to them (LI art. 15 paras. 1-2; DBG art. 14). Both must qualify.",
+    "Lausanne, tax year 2026: cantonal coefficient 155%, communal 78.5%, the cantonal base income tax cut by 5% (communal coefficient taken on the base tax before that cut, which does not matter where the 30% ceiling binds), no church tax. The '12%' initiative accepted on 27 September 2026 would cut the cantonal coefficient by 12% from 2027; the projection keeps the 2026 coefficient.",
+    "The 30% ceiling on cantonal plus communal income tax (LICom art. 8 para. 1) is assumed to apply to the lump sum too, as in the ESTV calculator.",
+    "The lump-sum base is shown at CHF 1,000,000 (cantonal base CHF 1,100,000 with the 10% surcharge), the representative used for every canton. The family's actual base is the highest of CHF 415,000, 7 times the rent or rental value plus 10% and the living costs; with the prime-rent sample of CHF 9,800 a month (7 x 117,600 = CHF 823,200, +10% = CHF 905,520) the lump sum would be about CHF 390,000.",
+    "The 50% reduction of the inheritance tax (LMSD art. 36) requires that the deceased never exercised gainful activity in Switzerland and that no foreign state shares the right to tax the estate; it is applied at both deaths (years 30 and 60). A motion (25_MOT_65) asks to remove it for lump-sum taxpayers. The burden cap is modelled with income_cap in the 2022 version that the 27 September 2026 vote left in force.",
+    "A Swiss family foundation (ZGB art. 335) is not offered as a path: it is taxed as a legal entity, its distributions are taxable for the beneficiaries, and it brings no advantage over holding personally.",
+    "Treaty relief on foreign dividends is assumed to be claimed only if the control calculation stays below the lump sum; the 15% withholding is then a final cost."
+  ],
+  "open_questions": [
+    "Needs an engine change: the lump sum is a fixed amount per regime, but by law it is the tax on a base of at least the highest of CHF 415,000 (indexed each year), 7 times the rent plus 10% and the family's worldwide living costs (LI art. 15 para. 3; DBG art. 14 para. 3). The engine would need the base as a function of the family's spending and housing cost.",
+    "Needs an engine change: modified lump sum. Claiming treaty-reduced withholding on foreign dividends puts that income into the control calculation at the ordinary barème (LI art. 15 para. 4 f, DBG art. 14 para. 3 d); the tax is the higher of the two. The engine charges 15% on every foreign dividend and ignores it.",
+    "Needs an engine change: the '12%' initiative accepted on 27 September 2026 cuts the cantonal coefficient by 12% from 2027 (not read in the initiative text; per Berney Associes and the press), and the 2022 version of the bouclier fiscal stays unless the Grand Conseil motion of 6 October 2026 (revive the 2024 changes) is enacted, with a referendum announced. The tax file holds the 2026 rules.",
+    "The ESTV-calculator estimate used before for the lump sum (CHF 459,200) took a base of CHF 1.15M; the statute (LI art. 15 para. 3 b) adds 10% to 7 times the rent, giving CHF 445,000 on a CHF 1M rent multiple.",
+    "Whether the 30% ceiling applies to the dépense, and the 2026 amounts of the quotient cap of art. 43 para. 3 (stated for 2025: CHF 212,900 and CHF 23,600 a child), were not settled from the statute; with a full 3.3-part quotient the barème on CHF 1.1M would be about 28%, below the ceiling.",
+    "Inheritance halving (LMSD art. 36): whether the Lausanne communal surcharge is halved too (CHF 315,000 on the check) or only the cantonal part (CHF 472,500) is not confirmed.",
+    "Order of the foreign-tax credit and the 60% cap (LICom art. 8): not settled by the texts read."
+  ],
+  "sources": [
+    {
+      "title": "Feuille cantonale Vaud (Stand 2026): barèmes, quotient familial, dépense, maximum d'imposition",
+      "url": "https://www.estv2.admin.ch/stp/kb/vd-fr.pdf",
+      "publisher": "Swiss Federal Tax Administration (ESTV)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tableau des déductions 2026 (barèmes sommaires de l'impôt cantonal de base 2026)",
+      "url": "https://www.vd.ch/fileadmin/user_upload/organisation/dfin/aci/fichiers_pdf/Tableau_des_d%C3%A9ductions_2026.pdf",
+      "publisher": "Administration cantonale des impôts du canton de Vaud",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Arrêté d'imposition de la Commune de Lausanne pour les années 2025-2029",
+      "url": "https://www.lausanne.ch/apps/actualites/Next/serve.php?id=14899",
+      "publisher": "Commune de Lausanne",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "LMSD: barème général de l'impôt sur les successions et donations (art. 34), ligne directe descendante",
+      "url": "https://www.vd.ch/fileadmin/user_upload/organisation/dfin/aci/fichiers_pdf/Bareme_general_2005.pdf",
+      "publisher": "Administration cantonale des impôts du canton de Vaud",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Article 36 LMSD commenté: réduction de moitié pour les étrangers n'ayant jamais exercé d'activité lucrative en Suisse",
+      "url": "https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/les-impots-les-differents-types-dimpots/autres-impots/successions-et-donations/la-loi/articles-de-la-loi-commentes/article-36-lmsd",
+      "publisher": "Etat de Vaud",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Etat de Vaud: successions et donations (exonération par souche dès le 1er janvier 2025)",
+      "url": "https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/les-impots-les-differents-types-dimpots/autres-impots/successions-et-donations/la-loi/articles-de-la-loi-commentes/article-34-lmsd",
+      "publisher": "Etat de Vaud",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "RTS: Bouclier fiscal vaudois, la réforme divise droite et gauche (initiative 12% acceptée le 27 septembre 2026)",
+      "url": "https://www.rts.ch/info/regions/vaud/2026/article/bouclier-fiscal-vaudois-la-reforme-divise-droite-et-gauche-29377018.html",
+      "publisher": "RTS",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Berney Associés, Tax News août 2026: initiative populaire « 12% » et bouclier fiscal vaudois",
+      "url": "https://berneyassocies.com/wp-content/uploads/2026/09/Initiative-populaire_12.pdf",
+      "publisher": "Berney Associés",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Bundesgesetz über die direkte Bundessteuer (DBG), SR 642.11, Stand 1. Januar 2026 (Art. 14, 36)",
+      "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260101/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260101-de-html.html",
+      "publisher": "Swiss Confederation (Fedlex)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

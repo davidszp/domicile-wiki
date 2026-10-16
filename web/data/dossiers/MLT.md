@@ -1,6 +1,6 @@
 # Malta — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -34,10 +34,12 @@ shares (about 2%) on death or gift.
 
 - **Domiciled residents (standard):** chargeable gains on shares, property, business, IP and partnership interests
   are taxed at marginal rates up to 35%.
-  - Shares listed on the Malta Stock Exchange are exempt. Some foreign-listed shares are exempt under conditions
-    (not verified).
+  - Shares listed on the Malta Stock Exchange are exempt. Shares listed on foreign exchanges recognised by the
+    Commissioner are exempt too, where the gain is capital in nature (PwC income determination; KPMG Malta on the
+    Commissioner's November 2022 list: WFE members, NYSE, ESMA-registered EEA regulated markets). Units in some
+    collective investment schemes may be excluded. Statute (art. 5(1) ITA) not read.
   - Maltese property pays a final tax of 8% of the transfer value (10% if acquired before 2004).
-  - JSON: domestic listed 0, foreign listed 0.35, private business 0.35, local real estate 0.08 (on value),
+  - JSON: domestic listed 0, foreign listed 0 (was 0.35, corrected 2026-10-16), private business 0.35, local real estate 0.08 (on value),
     foreign real estate 0.35 (assumed).
 - **Non-dom:** foreign gains are not taxed, even if remitted (PwC). JSON foreign = 0.
 
@@ -91,6 +93,9 @@ None. There is also no annual property tax.
     retired pensioner; UN pensioner), rule 3(2) fee EUR 8,500, rule 5(1) 15% on foreign income received in Malta by
     the beneficiary, spouse and dependent children, minimum EUR 35,000 for the first two categories and EUR 15,000
     for retired pensioners, payable in full in the first and last year; rule 5(3) other income at 35%.
+  - Recipe modelling (2026-10-16): the JSON minimum is EUR 35,000, the long-run ITP figure (rule 5(1) proviso, one
+    minimum for the beneficiary, spouse and dependent children); the first five years under the old terms (EUR 15,000)
+    are not modelled. With 15% foreign withholding the Maltese 15% is relieved in full (art. 74), so only the minimum is due.
   - The 15% `foreign_gross_rate` assumes foreign dividends are remitted; unremitted dividends are untaxed but the
     minimum tax is due regardless.
   - For a family that does not remit income, the plain non-dom basis (EUR 5,000 minimum) is cheaper. GRP mainly
@@ -131,7 +136,7 @@ No holding structure is scored for Malta.
 
 - Legal Notice 195/2026 was read (PDF); Cap. 364 was not opened.
 - The current TRP minimum was not verified separately.
-- The conditions for the exemption on foreign-listed shares for domiciled residents are unverified.
+- The statutory conditions of the foreign-listed shares exemption (art. 5(1) ITA) were not read; the exchange list comes from KPMG's report of the Commissioner's 2022 guidance.
 - The MPRP amounts are unverified.
 - The refund rules and the treaty count are unverified.
 
@@ -155,3 +160,4 @@ No holding structure is scored for Malta.
 - 2026-10-15: added a Holding structures section and a holding_company_notes sentence explaining why no holding structure is scored (non-dom personal holding beats a company).
 - 2026-10-15: children_treatment set to exempt_with_conditions: there is no inheritance or gift tax; duty applies only to transfers of Maltese assets (family home to descendants exempt under conditions, Maltese shares 2%), which the structured model cannot express as a rate on the estate.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: standard capital gains on foreign listed securities corrected from 0.35 to 0 (shares on recognised foreign exchanges are exempt when the gain is capital; PwC income determination, KPMG Malta recognised stock exchanges). grp lump-sum minimum set to EUR 35,000, the ITP minimum from L.N. 195/2026 rule 5(1) that applies after the old terms end on 31 Dec 2031 (was EUR 15,000, which covers only the first five years).

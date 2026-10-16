@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Channel Islands (Crown Dependency)",
   "currency": "GBP",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Crown Dependency outside the UK and EU. No capital gains tax, no inheritance or gift tax, no wealth tax. Income including dividends is taxed at a flat 20%, with optional caps of £160,000 (foreign income) or £320,000 (worldwide), and a £60,000 cap for four years for newcomers buying Open Market property. A GST was approved in October 2026 (from about 2028).",
   "regimes": [
     {
@@ -79,6 +79,13 @@
             "publisher": "Grant Thornton Channel Islands",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Guernsey Income Tax (Revenue Service guide, section C: relief for tax paid in other countries)",
+            "url": "https://www.gov.gg/CHttpHandler.ashx?id=101375&p=0",
+            "publisher": "States of Guernsey, Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
           }
         ],
         "verified_on": "2026-10-15",
@@ -88,13 +95,15 @@
         "domestic_rate": 0.2,
         "foreign_gross_rate": 0.2,
         "foreign_tax_credit": "credit",
-        "rate_basis": "Flat 20% income tax rate on net income after allowances (PwC). Personal allowance £15,200 for 2026, withdrawn above £85,000 of income.",
+        "rate_basis": "Flat 20% income tax rate on net income after allowances (PwC). Personal allowance £15,200 for 2026, withdrawn above £85,000 of income. Foreign tax relief where there is no treaty (unilateral relief) is the lower of the foreign tax and three-quarters of the effective Guernsey rate of tax on the income (Revenue Service guide): at the 20% top rate that is 15% of the gross dividend, so a 15% withholding is credited in full.",
         "exemptions_thresholds": "Personal allowance £15,200 (2026), withdrawn from £85,000 of income.",
         "withholding_outbound": "0% withholding on dividends to non-residents under domestic law; dividends to Guernsey-resident individuals carry a deduction making up tax to 20%.",
         "treaty_network": "14 comprehensive double tax agreements (incl. UK, Jersey, Isle of Man, Luxembourg, Malta, Cyprus, Singapore, Hong Kong); no US income tax treaty, so US dividends suffer 30% US withholding. Foreign tax relieved by credit.",
         "open_questions": [
-          "Credit relief mechanics for non-treaty source countries not verified from Revenue Service guidance."
-        ]
+          "Credit relief mechanics for non-treaty source countries not verified from Revenue Service guidance.",
+          "The Revenue Service guide read for unilateral relief is a 2017 document; the related Statement of Practice M8 was withdrawn on 19 August 2024 and its replacement was not found."
+        ],
+        "holding_company_notes": "Modelled as the 'holding_company' structure regime: a Guernsey company pays 0% on investment income and gains; a distribution to a Guernsey-resident member bears a 20% charge deducted by the company when its income was taxed at less than 20% (Revenue Service)."
       },
       "wealth_tax": {
         "summary": "No wealth tax or net worth tax.",
@@ -138,6 +147,13 @@
             "publisher": "Carey Olsen",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Guernsey probate (Mourant guide, 27 February 2026)",
+            "url": "https://www.mourant.com/guides/guernsey-probate/",
+            "publisher": "Mourant",
+            "kind": "professional",
+            "accessed": "2026-10-16"
           }
         ],
         "verified_on": "2026-10-15",
@@ -151,7 +167,7 @@
         "gift_tax": "No gift tax.",
         "gifts_same_as_inheritance": false,
         "lifetime_gift_tax_free_after_years": null,
-        "exemptions_thresholds": "Probate fee 0.5% of gross personal estate (Mourant, Feb 2026), capped at £250,000. Guernsey real property is outside the grant. Older guides (Carey Olsen 2020) show £35 per £10,000 (0.35%), so the scale has risen.",
+        "exemptions_thresholds": "Probate Registry fee on the gross value of the personal estate (no deduction for debts): GBP 225 plus GBP 50 for each additional GBP 10,000 above GBP 80,000, plus small amounts for extra documents; capped at GBP 250,000 above GBP 50,030,000 (Mourant guide of 27 February 2026). Guernsey real property is outside the grant. Older guides (Carey Olsen 2020) show GBP 35 per GBP 10,000 (0.35%), so the scale has risen. Not indexed. The official fee order was not found.",
         "important_exceptions": "Lifetime gifts attract no fee, and assets already covered by a foreign grant are valued on the Guernsey estate only.",
         "foreign_assets": "Worldwide movable estate counts for the probate fee unless probate has been obtained in another jurisdiction.",
         "domicile_rules": "No tax, so no domicile test for tax. Families arriving from the UK remain within UK IHT under the residence-based test from 6 April 2025 for up to 10 years after leaving, depending on years of UK residence.",
@@ -198,7 +214,8 @@
           "foreign_capital_gains",
           "foreign_income_all"
         ],
-        "notes": "£160,000 is a maximum, not a fixed charge: tax is the lower of 20% of non-Guernsey income and the cap. The £320,000 cap covers worldwide income. Per individual since independent taxation in 2023 (couple: up to £320,000 on foreign income)."
+        "notes": "£160,000 is a maximum, not a fixed charge: tax is the lower of 20% of non-Guernsey income and the cap. The £320,000 cap covers worldwide income. Per individual since independent taxation in 2023 (couple: up to £320,000 on foreign income). Modelled as a maximum (is_cap): the family pays the lower of the cap and the ordinary tax on the income it covers; per individual since 2023 (Revenue Service, tax caps).",
+        "is_cap": true
       },
       "dividends": {
         "summary": "Once the £160,000 cap binds, further foreign dividends carry no Guernsey tax. Guernsey-source dividends stay at 20% unless the £320,000 worldwide cap is chosen.",
@@ -292,7 +309,8 @@
           "foreign_income_all",
           "domestic_income"
         ],
-        "notes": "Maximum, not a fixed charge. Guernsey land and property income excluded (taxed at 20%). Amount £60,000 since 2024, unchanged for 2026. A June 2026 proposal by Innovate Guernsey to raise it has not been adopted as far as found."
+        "notes": "Maximum, not a fixed charge. Guernsey land and property income excluded (taxed at 20%). Amount £60,000 since 2024, unchanged for 2026. A June 2026 proposal by Innovate Guernsey to raise it has not been adopted as far as found. Modelled as a maximum (is_cap): the family pays the lower of the cap and the ordinary tax on the income it covers; per individual since 2023 (Revenue Service, tax caps).",
+        "is_cap": true
       },
       "dividends": {
         "summary": "During the four capped years, dividends above about £300,000 of income carry no further Guernsey tax because total tax is capped at £60,000.",
@@ -340,6 +358,118 @@
           "accessed": "2026-10-15"
         }
       ]
+    },
+    {
+      "id": "holding_company",
+      "name": "Guernsey investment holding company (0% company)",
+      "type": "structure",
+      "description": "The family funds a Guernsey company that holds the listed portfolio. Guernsey companies pay 0% income tax on investment income and there is no capital gains tax, so the company pays nothing on dividends or gains. When it pays a distribution to a Guernsey-resident member, the company must deduct 20% tax because its income was taxed at less than 20%. Profits it keeps are not taxed on the member. Foreign withholding tax on the company's dividends is a final cost.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Any Guernsey resident can incorporate a company in Guernsey (Guernsey Registry); a Guernsey-incorporated company is tax resident in Guernsey. It must be a passive investment holder: banking, fiduciary, fund administration and other regulated activities are taxed at 10% and Guernsey property, large retail and similar at 20%; substance rules apply to some activities. US citizens are excluded (CFC/PFIC rules).",
+      "duration_years": null,
+      "duration_note": "Ordinary company rules with no time limit; the company lasts as long as the family keeps it.",
+      "capital_gains": {
+        "tax_year": "2026",
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "summary": "Guernsey has no capital gains tax, and companies pay income tax at a standard rate of 0% (PwC, Revenue Service), so gains realised by the holding company are not taxed.",
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Standard company rate 0% (PwC Guernsey corporate); no capital gains tax in Guernsey.",
+        "professional_trader": "A company trading in securities is taxed on trading profits at the same 0% general rate; only the higher-rate activities listed by the revenue authority differ.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Foreign gains are treated the same way.",
+        "sources": [
+          {
+            "title": "Guernsey - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/guernsey/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Tax information for companies (Revenue Service)",
+            "url": "https://gov.gg/companytax",
+            "publisher": "States of Guernsey, Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "open_questions": [
+          "Real estate in the island is taxed at 20% in a company; the family portfolio is listed securities, so the figure here is for those."
+        ]
+      },
+      "dividends": {
+        "tax_year": "2026",
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "summary": "Dividends received by a Guernsey company are income taxed at the standard 0% company rate. Foreign withholding tax suffered is not recoverable.",
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "exemption",
+        "rate_basis": "Standard company rate 0% (PwC Guernsey corporate; Revenue Service). Foreign withholding tax is lost.",
+        "withholding_outbound": "0% withholding on dividends to non-residents under domestic law; distributions to Guernsey-resident individuals carry the deduction above.",
+        "treaty_network": "As the standard regime; at a 0% rate any foreign withholding on the company's dividends cannot be credited and is a final cost.",
+        "holding_company_notes": "This regime models the company itself.",
+        "sources": [
+          {
+            "title": "Guernsey - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/guernsey/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Tax information for companies (Revenue Service)",
+            "url": "https://gov.gg/companytax",
+            "publisher": "States of Guernsey, Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "open_questions": [
+          "Annual running cost (registered office, accounts, directors) not sourced and left blank."
+        ]
+      },
+      "structure": {
+        "entity": "Private company limited by shares (Companies (Guernsey) Law, 2008), investment holding",
+        "kind": "company",
+        "payout_tax_rate": 0.2,
+        "payout_notes": "If a company's income is taxed at less than 20%, a tax charge arises when a distribution or dividend is paid to a Guernsey-resident beneficial member; the company deducts it and pays it to the Revenue Service (Revenue Service, tax information for companies). A company whose income bore 0% tax therefore deducts the full 20%. Distributions to non-residents carry no Guernsey charge. Profits kept in the company are not taxed on the member.",
+        "annual_running_cost": null,
+        "setup_cost": null,
+        "running_cost_deductible_at": null,
+        "substance_and_anti_avoidance": "Loans to Guernsey-resident participators are an anti-avoidance target: preferentially priced loans are treated as income (PwC), and from 2026 repayments of non-commercial shareholder loans from personal investment companies are treated as dividends. The company files a return and a quarterly distribution report, and must show that a member is non-resident before paying without deduction. Certificate 3 covers companies with no Guernsey-resident members only.",
+        "exit_and_liquidation": "Liquidation distributions to a Guernsey-resident member were not researched (treatment of capital profits not confirmed). Guernsey has no exit tax on individuals.",
+        "sources": [
+          {
+            "title": "Tax information for companies (Revenue Service)",
+            "url": "https://gov.gg/companytax",
+            "publisher": "States of Guernsey, Revenue Service",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Guernsey - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/guernsey/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ]
+      }
     }
   ],
   "residency": {
