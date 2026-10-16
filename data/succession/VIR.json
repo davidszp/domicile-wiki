@@ -1,0 +1,45 @@
+{
+  "id": "VIR",
+  "name": "U.S. Virgin Islands",
+  "researched_on": "2026-10-16",
+  "summary": "The U.S. Virgin Islands have no forced heirship for children in the sources found, and Title 15 follows Uniform Probate Code ideas. Common-law trusts apply. No private foundation law was found and the Hague Trusts Convention is not in force for the United States.",
+  "forced_heirship": "no",
+  "family_claims": "Title 15 of the Virgin Islands Code follows the Uniform Probate Code. Whether it gives a surviving spouse an elective share was not verified.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source read states the Virgin Islands' conflict rule for a foreign national's estate.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "unclear",
+  "trust_note": "HCCH shows the United States as signatory only, with no extension. Fiduciary relations sit in Title 15, chs. 51-65. No private foundation statute was found.",
+  "open_questions": [
+    "Elective share and family allowance rules not read.",
+    "Title 15 text was seen only as a table of contents.",
+    "Trust and foundation statutes not verified.",
+    "Private foundations: no source found either way; not finding a foundation law is not evidence that there is none."
+  ],
+  "sources": [
+    {
+      "title": "Virgin Islands Code, Title 15 (Decedents' Estates and Fiduciary Relations)",
+      "url": "https://law.justia.com/codes/virgin-islands/title-15/",
+      "publisher": "Justia",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Virgin Islands probate reforms",
+      "url": "https://lawblog.vilaw.com/?p=912",
+      "publisher": "Virgin Islands law firm blog",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "reserved_share": ""
+}

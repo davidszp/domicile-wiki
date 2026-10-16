@@ -1,0 +1,45 @@
+{
+  "id": "GRD",
+  "name": "Grenada",
+  "researched_on": "2026-10-16",
+  "summary": "Grenada follows English-derived common law and no forced heirship was found. The International Trusts Act (1996) was amended in 2018 to stop new international trusts after 31 December 2018. No private foundation law was found and the Hague Trusts Convention is not in force.",
+  "forced_heirship": "no",
+  "family_claims": "",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source read states Grenada's conflict rule for a foreign national's estate. Common-law rule: movables follow the law of the domicile, land follows local law. Not confirmed in local statute for this jurisdiction.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "unclear",
+  "trust_note": "Grenada is not in the HCCH status table. A news report says the International Trusts (Amendment) Act 2018 bars new international trusts from 31 December 2018; ordinary common-law trusts remain. No foundation statute found.",
+  "open_questions": [
+    "No source read confirms Grenada has no forced heirship or family provision law.",
+    "The 2018 amendment was read only via a news report.",
+    "Whether a foundation statute exists was not confirmed.",
+    "Private foundations: no source found either way; not finding a foundation law is not evidence that there is none."
+  ],
+  "sources": [
+    {
+      "title": "Grenada International Trusts Act 1996",
+      "url": "https://www.icnl.org/research/library/grenada_grenadainternationaltrustsact1996/",
+      "publisher": "ICNL",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Grenada news: International Trusts (Amendment) Act 2018",
+      "url": "https://nowgrenada.com/?p=127848",
+      "publisher": "NOW Grenada",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "reserved_share": ""
+}

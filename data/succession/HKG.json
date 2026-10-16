@@ -1,0 +1,42 @@
+{
+  "summary": "There is no forced heirship: you can leave your estate to anyone, but a spouse, child or dependant can apply to the court for provision under the Inheritance (Provision for Family and Dependants) Ordinance. The Hague Trusts Convention applies through China, and trusts are well developed. There is no private foundation law and no estate duty since 2006.",
+  "forced_heirship": "no",
+  "family_claims": "Spouse, children and dependants may apply to the court for reasonable financial provision from the estate (Inheritance (Provision for Family and Dependants) Ordinance, Cap. 481).",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Common-law conflict rules: movables follow the law of the deceased's domicile at death, land follows the law of its location. A foreign national domiciled in Hong Kong is under Hong Kong law, so there is no free choice of national law. The Wills Ordinance (Cap. 30) gives formal validity to foreign wills.",
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "no",
+  "trust_note": "HCCH: China's continuation covers Hong Kong and Macau, so the Convention is in force for Hong Kong. Trusts are governed by common law and the Trustee Ordinance (Cap. 29). Hong Kong has no foundation statute; families use trusts, private trust companies or companies limited by guarantee. Estate duty was abolished in 2006.",
+  "open_questions": [
+    "Confirm any recent amendments to the Perpetuities and Accumulations Ordinance (Cap. 257) affecting private trusts.",
+    "Statute chapters were given from knowledge and not re-read from the e-Legislation site."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Hong Kong e-Legislation: Cap. 481 Inheritance (Provision for Family and Dependants) Ordinance",
+      "url": "https://www.elegislation.gov.hk/hk/cap481",
+      "publisher": "Department of Justice, Hong Kong",
+      "kind": "legislation"
+    },
+    {
+      "title": "International Estate Planning in China (covers Hong Kong comparison)",
+      "url": "https://pbl.legal/?p=24213",
+      "publisher": "PBL Law Group",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "HKG",
+  "name": "Hong Kong SAR",
+  "researched_on": "2026-10-16",
+  "reserved_share": "",
+  "eu_succession_regulation": false
+}

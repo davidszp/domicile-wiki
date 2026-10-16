@@ -1,0 +1,58 @@
+{
+  "summary": "Macau follows the Portuguese model: children and other close family have a protected share that a will cannot override (about half the estate for one child, two thirds for two or more, per a secondary source). The Hague Trusts Convention applies through China, and Law 15/2022 gives an onshore trust law since December 2022. Foundations exist only for social-interest purposes.",
+  "forced_heirship": "yes",
+  "reserved_share": "Spouse, descendants and ascendants are forced heirs under the Civil Code (Book V). A law-firm source says one child is protected for half the estate and two or more for two thirds; I did not confirm the articles or the spouse and parent shares.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "Macau's private international law applies the deceased's personal law, believed to be nationality. A 2019 Court of Second Instance ruling (Proc. 66/2015) held that a foreign judgment excluding forced heirs was not contrary to Macau public order because Macau law did not govern the succession. I did not read the article text.",
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "HCCH: China's continuation covers Hong Kong and Macau, so the Convention is in force for Macau. Trust Law 15/2022 (in force 1 December 2022): only licensed entities such as banks, insurers and asset managers can be trustees; the law has no specific tax treatment. Civil Code foundations (fundacoes) are for social-interest purposes, not family benefit (not confirmed in text).",
+  "open_questions": [
+    "Confirm the Civil Code articles and fractions of the legitima (spouse, ascendants, one child, several children).",
+    "Confirm the conflict article for succession and whether nationality law governs a foreign resident.",
+    "Confirm foundation provisions in the Civil Code arts. 158-168 and any private use."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Key things to know about Macau's Trust Law",
+      "url": "https://macaubusiness.com/ten-things-to-know-about-macaus-trust-law/",
+      "publisher": "Macau Business",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "International Estate Planning in Macau",
+      "url": "https://pbl.legal/?p=26042",
+      "publisher": "PBL Law Group",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Macau Court of Second Instance, Proc. 66/2015",
+      "url": "https://www.court.gov.mo/sentence/pt-fcc76dfd0888a47b.pdf",
+      "publisher": "Macau Courts",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Macau Property Inheritance Regime",
+      "url": "https://mantonio.net/macau-property-inheritance-regime/",
+      "publisher": "Manuela Antonio",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "MAC",
+  "name": "Macau SAR",
+  "researched_on": "2026-10-16",
+  "family_claims": "",
+  "eu_succession_regulation": false
+}

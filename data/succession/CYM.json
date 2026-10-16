@@ -1,0 +1,57 @@
+{
+  "id": "CYM",
+  "name": "Cayman Islands",
+  "researched_on": "2026-10-16",
+  "summary": "The Cayman Islands have no forced heirship. Cayman trusts are protected by statute against foreign forced-heirship claims and a foundation company (2017) is available. The Hague Trusts Convention is not listed as extended to Cayman.",
+  "forced_heirship": "no",
+  "family_claims": "",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Immovable property in Cayman is governed by Cayman law; movable property follows the law of the deceased's domicile (Ogier, via search summary). There is no choice of nationality law.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "Cayman is not on the UK's HCCH extension list. Trusts Act (2021 Revision): courts will not recognise forced-heirship claims against a Cayman trust (foreign-element provisions, since 1987); s. 90 governing law. STAR trusts allow purpose trusts. Foundation Companies Act (2017) applies Trusts Act ss. 92-93 to contributed property.",
+  "open_questions": [
+    "Sources conflict on family provision: one guide says dependants may claim under the 1975-style Act, Ogier says Cayman courts cannot award dependants out of an estate. Succession Act 2021 Revision not read in full.",
+    "The firewall sections quoted from secondary summaries; primary text not read."
+  ],
+  "sources": [
+    {
+      "title": "Anti-Forced Heirship and Anti-Foreign Law Regimes: Time for a Re-Think?",
+      "url": "https://www.ifcreview.com/?p=972",
+      "publisher": "IFC Review",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Cayman Islands Foundation Companies (Conyers)",
+      "url": "https://www.conyers.com/wp-content/uploads/2025/08/Foundation_Companies-CAY.pdf",
+      "publisher": "Conyers",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Succession Act (2021 Revision)",
+      "url": "https://judicial.ky/wp-content/uploads/SuccessionAct_2021-Revision.pdf",
+      "publisher": "Cayman Islands Judicial Administration",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH extensions of the Trusts Convention: United Kingdom",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/extensions/?cid=59&mid=710",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "reserved_share": ""
+}

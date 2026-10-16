@@ -1,0 +1,44 @@
+{
+  "summary": "The general law lets a person leave an estate freely by will; Muslims can will at most one third, and Kandyan and Jaffna Tamil customary laws apply to some families. A foreigner's movables follow the law of domicile and Sri Lankan land follows Sri Lankan law. The Trusts Ordinance 1917 allows trusts, but there is no private foundation law and no Hague Trusts Convention.",
+  "forced_heirship": "no",
+  "family_claims": "No court-ordered family provision found under the general law. Muslim law caps bequests at one third; Kandyan and Thesawalamai laws have their own rules, not checked.",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Roman-Dutch conflict rules: movables follow the law of domicile at death, immovables follow Sri Lankan law (a foreigner's national law does not apply to Sri Lankan land). A foreigner domiciled in Sri Lanka falls under Sri Lankan law for movables. Muslim intestacy follows the sect's law.",
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "no",
+  "trust_note": "Not on the HCCH status table. Trusts are under the Trusts Ordinance 1917 and Roman-Dutch law. I found no private foundation statute; non-profits use the Companies Act guarantee company or trust incorporation. No estate duty applies (not verified in a primary source).",
+  "open_questions": [
+    "Confirm from a primary source that Roman-Dutch legitim does not apply and that the general law gives full testamentary freedom.",
+    "Confirm whether Kandyan law limits a will in favour of a spouse or children.",
+    "Confirm no estate duty and the trust ordinance's current text."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Dying without a will in Sri Lanka",
+      "url": "https://www.desaram.com/dying-without-a-will-in-sri-lanka/",
+      "publisher": "D. L. & F. De Saram",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "The importance of making a will in Sri Lanka",
+      "url": "https://neelakandan.lk/insights/the-importance-of-making-a-will-in-sri-lanka-legal-requirements-succession-rules-and-the-consequences-of-intestacy",
+      "publisher": "Neelakandan & Neelakandan",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "LKA",
+  "name": "Sri Lanka",
+  "researched_on": "2026-10-16",
+  "reserved_share": "",
+  "eu_succession_regulation": false
+}

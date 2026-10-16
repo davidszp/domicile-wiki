@@ -1,0 +1,44 @@
+{
+  "summary": "Which law applies depends on religion and community. Under the Civil Code, children and parents have a protected share; Muslims follow Islamic fixed shares and can will at most one third. A foreigner's movables follow their national law but a foreigner cannot hold Indonesian freehold land, and Indonesia has no trust law and has not joined the Hague Trusts Convention.",
+  "forced_heirship": "yes",
+  "reserved_share": "Civil Code (non-Muslims): children, legitime portie of one half of their intestate share with one child, two thirds with two, three quarters with three or more (art. 914); parents one half (art. 915). Muslims: Compilation of Islamic Law (Inpres 1/1991) fixed shares, with bequests limited to one third (art. 195).",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "The Algemene Bepalingen (AB) arts. 16-17 apply personal-status law by nationality to foreigners and the law of the place for immovables, so a foreigner's movables follow their national law. Foreigners cannot own land (hak milik) under the Agrarian Law and Indonesian courts may apply public policy. Customary (adat) law also applies to some groups.",
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "Not on the HCCH status table. Indonesia has no trust law; Law 42/1999 covers only fiduciary security. Foreign trusts are not clearly recognised and there is no special trust tax regime. Foundations (yayasan) are under Law 16/2001 as amended by Law 28/2004; they must pursue social, religious or humanitarian aims, and founders cannot take profit.",
+  "open_questions": [
+    "Confirm Civil Code arts. 913-915 fractions from the official text; I used the standard legitime portie figures and the source retrieved did not quote them.",
+    "Confirm art. 16-17 AB remain in force after any new private international law bill.",
+    "Confirm tax treatment of foreign trust distributions to Indonesian residents."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Legitieme portie dalam hukum waris Islam di Indonesia",
+      "url": "https://jurnal.hukumonline.com/a/5cb4a12e01fb73001038d34b/legitieme-portie-dalam-hukum-waris-islam-di-indonesia/",
+      "publisher": "Hukumonline",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Wasiat limit under the Compilation of Islamic Law (Jatiswara)",
+      "url": "https://jatiswara.unram.ac.id/index.php/js/article/download/283/238/912",
+      "publisher": "Universitas Mataram",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "IDN",
+  "name": "Indonesia",
+  "researched_on": "2026-10-16",
+  "family_claims": "",
+  "eu_succession_regulation": false
+}

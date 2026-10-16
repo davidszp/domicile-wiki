@@ -1,0 +1,50 @@
+{
+  "id": "KNA",
+  "name": "Saint Kitts and Nevis",
+  "researched_on": "2026-10-16",
+  "summary": "Saint Kitts and Nevis has no forced heirship in the sources read. Nevis offers international trusts that foreign heirship rules cannot attack, and a Multiform Foundation. The Hague Trusts Convention is not in force.",
+  "forced_heirship": "no",
+  "family_claims": "",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source read states the federation's conflict rule for a foreign national's estate. Common-law rule: movables follow the law of the domicile, land follows local law. Not confirmed in local statute for this jurisdiction.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "Not in the HCCH status table. The Nevis regulator says an international trust cannot be declared void because of forced heirship rules of the settlor's domicile. Foundations: Nevis Multiform Foundations Ordinance, Cap. 7.08(N) (Ordinance 2 of 2004, amended 2011), with the same protection. IFC Review also lists St Kitts as having foundation legislation (not named).",
+  "open_questions": [
+    "Succession law on St Kitts and Nevis themselves (wills, family provision) was not read.",
+    "Name of the Nevis trust ordinance and any St Kitts foundation act not confirmed."
+  ],
+  "sources": [
+    {
+      "title": "Multiform Foundations Ordinance, Cap. 7.08(N)",
+      "url": "https://www.nevisfsrc.com/wp-content/uploads/2023/06/Ch-07.08N-Multi-form-Foundations-Ord.pdf",
+      "publisher": "Nevis Financial Services Regulation and Supervision Department",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Nevis trusts",
+      "url": "https://www.nevisfsrc.com/services/trusts/",
+      "publisher": "Nevis FSRSD",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Private Foundations in the Common Law Caribbean: Variations on a Theme",
+      "url": "https://www.ifcreview.com/?p=2042",
+      "publisher": "IFC Review",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "reserved_share": ""
+}

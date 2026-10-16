@@ -1,0 +1,59 @@
+{
+  "id": "VGB",
+  "name": "British Virgin Islands",
+  "researched_on": "2026-10-16",
+  "summary": "The British Virgin Islands have no forced heirship, though English-style family provision claims exist. Foreign inheritance rights are disregarded against a BVI trust (Trustee Act s. 83A) and VISTA trusts are available. The Hague Trusts Convention is in force; no foundation law was found.",
+  "forced_heirship": "no",
+  "family_claims": "A law firm says BVI law, on the English model, lets spouses, children and dependants apply for reasonable provision from the estate. The statute was not named.",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "BVI land follows BVI law; movables, including shares in BVI companies, follow the law of the deceased's domicile, so a will cannot override forced heirship at the domicile. There is no choice of nationality law.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "unclear",
+  "trust_note": "BVI is on the UK's HCCH extension (in force 1 January 1992). Trustee Act (Cap. 303) s. 83A(14), amended 2021, disregards foreign heirship rights over a BVI trust; VISTA allows trusts holding BVI company shares. No foundation law was identified.",
+  "open_questions": [
+    "Family provision statute and eligibility not identified.",
+    "Foundation law not confirmed absent; the IFC Review list does not name BVI.",
+    "Wills Act text not read.",
+    "Private foundations: no source found either way; not finding a foundation law is not evidence that there is none."
+  ],
+  "sources": [
+    {
+      "title": "Firewall legislation in the BVI",
+      "url": "https://www.mondaq.com/wills-intestacy-estate-planning/1318236/firewall-legislation-in-the-bvi",
+      "publisher": "Mondaq",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "British Virgin Islands wills",
+      "url": "https://webiis08.mondaq.com/caymanislands/wills-intestacy-estate-planning/746056/british-virgin-islands-wills",
+      "publisher": "Mondaq",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "BVI inheritance disputes",
+      "url": "https://vlolawfirm.com/content-queries/bvi-inheritance-disputes",
+      "publisher": "VLO law firm",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH extensions of the Trusts Convention: United Kingdom",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/extensions/?cid=59&mid=710",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "reserved_share": ""
+}

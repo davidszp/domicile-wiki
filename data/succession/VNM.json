@@ -1,0 +1,43 @@
+{
+  "summary": "Minor children, adult children who cannot work, a spouse and parents are guaranteed two thirds of their intestate share whatever the will says (Civil Code art. 644). A foreigner's estate follows the law of their nationality, but Vietnamese property rules still apply to land and housing. Vietnam has no trust law and the Hague Trusts Convention is not in force.",
+  "forced_heirship": "yes",
+  "reserved_share": "Minor children, adult children unable to work, spouse and parents: at least two thirds of the share they would take on intestacy (Civil Code 2015 art. 644).",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "A law-firm source reports art. 680: inheritance follows the law of the country of which the deceased was a citizen at death, with Vietnamese law for immovables in Vietnam and for formalities. I did not read the article. A foreigner's ownership of land and housing in Vietnam is restricted by other laws.",
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "Not on the HCCH status table. Vietnam has no trust law; the Civil Code has agency and property management contracts only. Foreign trusts are not recognised in practice. Social and charity funds are under Decree 93/2019/ND-CP, for non-profit purposes only.",
+  "open_questions": [
+    "Read Civil Code art. 680-681 and the 2015 Code's text of art. 644 from an official source.",
+    "Confirm Decree 93/2019 is still the current fund regime and whether the 2023 Land Law limits foreign heirs."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "What are cases of heirs notwithstanding contents of wills in Vietnam?",
+      "url": "https://lawnet.vn/thong-tin-phap-luat/en/tu-van-luat/what-are-cases-of-heirs-notwithstanding-contents-of-wills-in-vietnam-127154.html",
+      "publisher": "LawNet (Vietnam)",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Defining the law applicable to inheritance relations involving foreign elements",
+      "url": "https://vjol.vista.gov.vn/tclh/en/article/view/40155",
+      "publisher": "Vietnam Journals Online",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "VNM",
+  "name": "Vietnam",
+  "researched_on": "2026-10-16",
+  "family_claims": "",
+  "eu_succession_regulation": false
+}

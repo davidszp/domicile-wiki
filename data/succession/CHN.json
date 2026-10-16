@@ -1,0 +1,50 @@
+{
+  "summary": "Mainland China has no general forced heirship, but a will must leave a necessary share to an heir who cannot work and has no income (Civil Code art. 1141). A foreign resident cannot choose their national law: the law of the deceased's habitual residence governs movables, and Chinese law governs Chinese real estate. China has a Trust Law (2001) but the Hague Trusts Convention covers only Hong Kong and Macau.",
+  "forced_heirship": "yes",
+  "reserved_share": "A will must keep a necessary share for an heir who has no capacity to work and no source of income (Civil Code art. 1141). The court sets the amount by need. It is a needs-based floor, not a fixed fraction.",
+  "foreign_law_choice": "no",
+  "foreign_law_note": "Under the 2010 Law on the Application of Law to Foreign-related Civil Relations, intestate succession to movables follows the law of the deceased's habitual residence at death and immovables follow the law of their location. A foreign resident therefore cannot choose their national law for Chinese assets, and foreign law is set aside if it harms the public interest. Wills may be valid under several laws as to form.",
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "HCCH: China's entry is a continuation covering Hong Kong and Macau only, so the Convention is not in force for the mainland. The Trust Law 2001 gives a full statutory trust; the Civil Code art. 1133 allows a testamentary trust. Family trusts are underdeveloped in practice. Foundations exist under the Regulations on Foundation Administration (2004) and the Charity Law (2016) but must serve public-benefit purposes.",
+  "open_questions": [
+    "Confirm the article numbers in the 2010 conflict law (art. 31 intestate, arts. 32-33 wills) against the official text.",
+    "Confirm how Chinese courts treat foreign trusts and whether any trust-specific tax rules exist."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "China's new Civil Code, Part 6: Succession",
+      "url": "https://roedl.com/insights/china-civil-code/part-6-succession",
+      "publisher": "Roedl & Partner",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Overview of Inheritance and Estate Planning under Chinese Laws",
+      "url": "https://www.sinoblawg.com/?p=2696",
+      "publisher": "Sinoblawg",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "International Estate Planning in China",
+      "url": "https://pbl.legal/?p=24213",
+      "publisher": "PBL Law Group",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "CHN",
+  "name": "China (mainland)",
+  "researched_on": "2026-10-16",
+  "family_claims": "",
+  "eu_succession_regulation": false
+}

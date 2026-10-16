@@ -1,0 +1,51 @@
+{
+  "summary": "Muslims, a majority of residents, follow faraid: fixed shares to heirs and at most one third by will. Non-Muslims can leave their estate freely and dependants may apply to court for provision. The Hague Trusts Convention is not in force, but Malaysia has trust law and Labuan offers a private foundation.",
+  "forced_heirship": "yes",
+  "reserved_share": "Muslims: faraid fixed shares; a wasiat (will) may dispose of at most one third to non-heirs unless the heirs consent (state Syariah enactments and the Administration of Islamic Law Acts).",
+  "family_claims": "Non-Muslims: freedom of testation under the Wills Act 1959, with family provision under the Inheritance (Family Provision) Act 1971; intestacy under the Distribution Act 1958.",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Non-Muslims: common-law rules, movables follow the law of domicile and land follows Malaysian law. Muslims cannot opt out of Islamic law. Sabah and Sarawak have their own native-custom rules. I did not source the conflict rule in a statute.",
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "Not on the HCCH status table. Trusts: Trustee Act 1949 and the Labuan Trusts Act 1996; Muslims often use waqf and hibah. Onshore there is no private foundation, only charitable bodies. The Labuan Foundations Act 2010 allows foundations in Labuan, including for non-charitable purposes. No inheritance tax applies.",
+  "open_questions": [
+    "Confirm the Inheritance (Family Provision) Act 1971 and the Labuan Foundations Act 2010 details; neither was retrieved.",
+    "Confirm the one-third limit in state enactments, which differ state to state.",
+    "Confirm Labuan trusts and foundations may hold Malaysian residents' assets."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Key considerations when drafting a will in Malaysia",
+      "url": "https://www.mondaq.com/wills-intestacy-estate-planning/1420158/key-considerations-when-drafting-a-will-in-malaysia",
+      "publisher": "Mondaq",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Why Faraid Matters: Strategic Legacy Planning for Malaysia's UHNWI",
+      "url": "https://conventuslaw.com/report/why-faraid-matters-strategic-legacy-planning-for-malaysias-uhnwi/",
+      "publisher": "Azmi & Associates (Conventus Law)",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Malaysia Wills & Estate Guide",
+      "url": "https://malaysia4u.com/wills-estate-guide",
+      "publisher": "Malaysia4U",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "MYS",
+  "name": "Malaysia",
+  "researched_on": "2026-10-16",
+  "eu_succession_regulation": false
+}

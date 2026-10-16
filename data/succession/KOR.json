@@ -1,0 +1,50 @@
+{
+  "summary": "Children, a spouse and parents have a reserved share of one half (children, spouse) or one third (parents) of their intestate share. Siblings lost theirs in 2024, and Parliament was ordered to revise the rest by the end of 2025. A foreigner's estate follows their national law unless they choose the law of their habitual residence. Korea has a Trust Act but is not in the Hague Trusts Convention, and foundations are public-interest only.",
+  "forced_heirship": "yes",
+  "reserved_share": "Descendants and spouse: one half of their statutory share; parents: one third of theirs (Civil Code art. 1112(1)-(3)). The sibling share (art. 1112(4)) was struck down by the Constitutional Court in April 2024.",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Act on Private International Law art. 77: succession is governed by the law of the deceased's nationality at death. The deceased may designate by will the law of their habitual residence at the time of designation, if they stay resident there until death, or the law of the place of immovable property for that property. A foreign national keeps their national law by default.",
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "Not on the HCCH status table. The Trust Act (2011) allows trusts, but trusteeship is mainly by licensed trust businesses, and the Inheritance and Gift Tax Act taxes trust benefits (art. 33). Incorporated foundations (Civil Code arts. 32-) need ministry permission and a public-interest purpose; family foundations are not available.",
+  "open_questions": [
+    "The Constitutional Court (April 2024) gave Parliament until 31 December 2025 to revise art. 1112(1)-(3) and art. 1118. One secondary source says amendments passed in January and February 2026; I could not confirm their content or entry into force. Check the current Civil Code.",
+    "Confirm whether art. 1112 now excludes heirs who abused or abandoned the deceased."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Act on Private International Law (Korea Legislation Research Institute)",
+      "url": "https://elaw.klri.re.kr/eng_service/lawViewTitle.do?hseq=37432",
+      "publisher": "Korea Legislation Research Institute",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Court rules unconditional inheritance of property to family members is unconstitutional",
+      "url": "https://www.khan.co.kr/en/article/202404261602257",
+      "publisher": "The Kyunghyang Shinmun",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Legal Reserve of Inheritance in Korea, Court overturns laws",
+      "url": "https://lawfirmleeandlee.com/legal-reserve-of-inheritance/",
+      "publisher": "Lee & Lee",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "KOR",
+  "name": "South Korea",
+  "researched_on": "2026-10-16",
+  "family_claims": "",
+  "eu_succession_regulation": false
+}

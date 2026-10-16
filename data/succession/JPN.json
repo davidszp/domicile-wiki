@@ -1,0 +1,35 @@
+{
+  "summary": "Children, a spouse and parents have a reserved share (iryubun) of one half of the estate, or one third if only parents survive; since 2019 it is a money claim. A foreign national's estate is governed by their national law. Japan has a Trust Act and the general incorporated foundation, but has not joined the Hague Trusts Convention.",
+  "forced_heirship": "yes",
+  "reserved_share": "Spouse, children and their descendants: one half of the estate; parents or other ascendants only: one third; multiplied by each heir's statutory share (Civil Code art. 1042). Siblings have none. Since 2019 the claim is for money (art. 1046).",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Act on General Rules of Application of Laws art. 36: succession is governed by the law of the deceased's nationality at death, so a foreign national resident in Japan keeps their national law (subject to renvoi and public policy). This is a default rule, not a free choice. Japanese real estate may still raise lex situs questions.",
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "Not on the HCCH status table. The Trust Act (Act 108 of 2006) allows ordinary, testamentary and family trusts; for tax a trust is generally looked through to the beneficiary, and the Inheritance Tax Act art. 9-2 treats the creation of a trust for a beneficiary as a gift or bequest. The General Incorporated Associations and Foundations Act (Act 48 of 2006) allows a general incorporated foundation with ¥3 million of assets for any lawful purpose, but Inheritance Tax Act art. 66(4) can tax it as an individual if it reduces family tax.",
+  "open_questions": [
+    "I did not retrieve the Japanese Law Translation text; confirm arts. 1042, 1046 and the article numbers of the two Acts there.",
+    "Confirm whether renvoi back to Japan applies to a foreigner whose home law refers to residence."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Japanese Law Translation database (Civil Code, Trust Act, Act on General Rules of Application of Laws)",
+      "url": "https://www.japaneselawtranslation.go.jp/en/",
+      "publisher": "Ministry of Justice, Japan",
+      "kind": "legislation"
+    }
+  ],
+  "id": "JPN",
+  "name": "Japan",
+  "researched_on": "2026-10-16",
+  "family_claims": "",
+  "eu_succession_regulation": false
+}

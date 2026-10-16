@@ -1,0 +1,58 @@
+{
+  "id": "BMU",
+  "name": "Bermuda",
+  "researched_on": "2026-10-16",
+  "summary": "Bermuda has no forced heirship and gives full freedom to leave the estate by will, though a spouse, child or grandchild can ask the court for provision. Trusts are central and protected against foreign forced-heirship claims. The Hague Trusts Convention is in force for Bermuda; a private foundation law was reported as absent.",
+  "forced_heirship": "no",
+  "family_claims": "Part III of the Succession Act 1974 allows an application for financial provision from the estate by a spouse, former spouse who has not remarried, and a child or grandchild maintained by the deceased (commentary also lists parents and grandparents). A spouse needs only show provision is reasonable; others must show maintenance is reasonable in the circumstances. Cohabitees are excluded.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source read states Bermuda's conflict rule for a foreign national's estate; estate tax is mentioned only for 'Bermudian property'. Common-law rule: movables follow the law of the domicile, land follows local law. Not confirmed in local statute for this jurisdiction.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "no",
+  "trust_note": "Bermuda is on the UK's HCCH extension list (in force 1 January 1992). Trusts (Special Provisions) Act 1989, s. 11 (restated in 2020) bars attacks on a trust under foreign heirship law. A 2019 Chambers guide says Bermuda has no foundations law and does not recognise foundations.",
+  "open_questions": [
+    "The foundations statement dates from 2019; later changes were not checked.",
+    "Section numbers and time limit for Part III claims not read.",
+    "Estate tax rules for Bermudian property were mentioned but not detailed."
+  ],
+  "sources": [
+    {
+      "title": "Succession Act 1974",
+      "url": "https://www.bermudalaws.bm/Laws/Consolidated%20Law/1974/Succession%20Act%201974",
+      "publisher": "Government of Bermuda",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Chambers Private Wealth 2019: Bermuda",
+      "url": "https://www.mondaq.com/wealth-asset-management/749112/chambers-private-wealth-2019-bermuda",
+      "publisher": "Mondaq (Chambers)",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Where there is a will there is a claim",
+      "url": "https://www.mondaq.com/wills-intestacy-estate-planning/1707808/where-there-is-a-will-there-is-a-claim",
+      "publisher": "Mondaq",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH extensions of the Trusts Convention: United Kingdom",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/extensions/?cid=59&mid=710",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "reserved_share": ""
+}

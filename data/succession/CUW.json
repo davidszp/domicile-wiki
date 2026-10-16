@@ -1,0 +1,65 @@
+{
+  "id": "CUW",
+  "name": "Curaçao",
+  "researched_on": "2026-10-16",
+  "summary": "Curaçao has no forced heirship, so a will can leave the estate to anyone, though children and a spouse have statutory lump-sum rights. Curaçao has its own trust (since 2012) and a private foundation (stichting particulier fonds). The Hague Trusts Convention has been in force for Curaçao since 1 February 2024.",
+  "forced_heirship": "no",
+  "family_claims": "The Caribbean Book 4 replaced the legitieme portie with mandatory statutory rights (a child's lump sum for upbringing and unpaid work, arts. 4:35-36 in the Sint Maarten text, and spousal rights). Curaçao's own text was not read.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source read states Curaçao's conflict rule for a foreign national's estate. A 2023 article says a conflict-of-laws ordinance for trusts was still intended.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "The HCCH extensions page lists Curaçao (extension 27 November 2023, in force 1 February 2024). Curaçao has a trust created by notarial deed since 1 January 2012 (secondary source). The stichting particulier fonds is a private foundation that may distribute to the founder's family and cannot run a business.",
+  "open_questions": [
+    "Date Curaçao's Book 4 entered into force was not confirmed; a 2021 Dutch parliamentary question says Curaçao has no legitieme portie.",
+    "Statute articles for the Curaçao trust were not read (source is a paywalled summary).",
+    "Conflict rule for succession of foreign nationals not sourced."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH extensions of the Trusts Convention: Kingdom of the Netherlands",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/extensions/?cid=59&mid=709",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Kamervragen 2021Z03742 (legitieme portie in the Kingdom)",
+      "url": "https://zoek.officielebekendmakingen.nl/kv-tk-2021Z03742.html",
+      "publisher": "Dutch House of Representatives",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Nuytinck, Het nieuwe erfrecht van Aruba, Curaçao en Sint Maarten (2010)",
+      "url": "https://repub.eur.nl/pub/21968/A.J.M.%20Nuytinck,%20Het%20nieuwe%20erfrecht%20van%20Aruba,%20Curacao%20en%20Sint%20Maarten.pdf",
+      "publisher": "Erasmus University Rotterdam",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Guide to Doing Business: the private foundation (SPF)",
+      "url": "https://www.doingbusinessdutchcaribbean.com/?p=748",
+      "publisher": "Doing Business Dutch Caribbean",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Speaking the same language, part II: Curaçao trust law (Ars Notariatus 181)",
+      "url": "https://www.inview.nl/document/id6a8ca0a96d14412cb4c2d694dbf37d51/speaking-the-same-language-de-invoering-van-de-anglo-amerikaanse-trust-in-het-nederlandse-recht-ars-notariatus-nr-181-deel-ii-het-cura-aose-trustrecht",
+      "publisher": "Ars Notariatus",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "reserved_share": ""
+}

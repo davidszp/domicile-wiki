@@ -1,0 +1,51 @@
+{
+  "summary": "Thailand has no forced heirship: a will can leave the estate to anyone (Civil and Commercial Code Book VI). Foreign nationals domiciled in Thailand come under Thai succession law, and Thai land follows Thai law. There is no general trust law and foundations are for public benefit, and the Hague Trusts Convention is not in force.",
+  "forced_heirship": "no",
+  "family_claims": "No court-ordered family provision found; the Code gives statutory heirs (including spouse and parents) shares only on intestacy.",
+  "foreign_law_choice": "no",
+  "foreign_law_note": "Act on Conflict of Laws B.E. 2481: movables follow the law of the deceased's domicile at death and immovables follow the law of their location. There is no right to choose a national law; a foreigner domiciled in Thailand falls under Thai law. A foreign will is usually valid in form. In Narathiwat, Pattani, Yala and Satun, Islamic law applies to Muslims on family and succession.",
+  "hague_trusts_convention": false,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "Not on the HCCH status table. Thailand has no general trust law; the Trust for Transactions in Capital Market Act B.E. 2550 allows business trusts only. A foreign trust is not clearly recognised. Foundations (Civil and Commercial Code ss. 110-136) serve charitable or public purposes and need registration; a family foundation is not available. Foreigners who inherit land must dispose of it (Land Code s. 93).",
+  "open_questions": [
+    "Sources disagree on the section numbers of the Conflict of Laws Act (s. 37 vs 38-42); check the official text.",
+    "Confirm Land Code s. 93 time limit and Islamic Law Act B.E. 2489 scope.",
+    "Confirm no forced-heirship rule in the Code from a primary text (my reading rests on the 'no' reputation of the system)."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Probate of a foreign will in Thailand",
+      "url": "https://www.thailawonline.com/probate-foreign-will-thailand/",
+      "publisher": "ThaiLawOnline",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Overview of Thai Succession Law",
+      "url": "https://terms.law/Thai/marriage/inheritance-planning.html",
+      "publisher": "terms.law",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Conflict of laws in Thai testamentary succession (Chulalongkorn)",
+      "url": "https://cuir.car.chula.ac.th/handle/123456789/812",
+      "publisher": "Chulalongkorn University",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "THA",
+  "name": "Thailand",
+  "researched_on": "2026-10-16",
+  "reserved_share": "",
+  "eu_succession_regulation": false
+}

@@ -1,0 +1,43 @@
+{
+  "summary": "Children are protected for one half of the estate and a spouse and parents also have legitimes that a will cannot override (Civil Code arts. 886-914). A foreigner's succession is governed by their national law (art. 16), so a foreign resident can avoid the Philippine legitime. Trusts are recognised in the Civil Code, but there is no Hague Trusts Convention and foundations are non-stock charitable corporations.",
+  "forced_heirship": "yes",
+  "reserved_share": "Legitimate children and descendants: one half of the estate (Civil Code art. 888); parents and ascendants: one half when there are no descendants (art. 889); the spouse shares the legitime (art. 892). Muslims in the Muslim areas follow the Code of Muslim Personal Laws (PD 1083).",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Civil Code art. 16: intestate and testamentary succession, including the order, amount of shares and the validity of will provisions, follow the national law of the deceased, whatever the nature or place of the property. Foreign law must be pleaded and proved. Land can be held only by citizens, with limited exceptions.",
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "Not on the HCCH status table. Express and implied trusts are in Civil Code arts. 1440-1457, and trust business is regulated by the central bank. Foundations are non-stock, non-profit corporations registered with the SEC under the Revised Corporation Code (RA 11232), for charitable and similar purposes.",
+  "open_questions": [
+    "Confirm the spouse's legitime fractions (art. 892, 893) and the position of illegitimate children after the Family Code.",
+    "Confirm a foreign settlor's trust is recognised by Philippine courts and how it is taxed."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Civil Code of the Philippines (Republic Act 386)",
+      "url": "https://www.lawphil.net/statutes/repacts/ra1949/ra_386_1949.html",
+      "publisher": "Lawphil (Arellano Law Foundation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "SEC Philippines: Foundations FAQ",
+      "url": "https://sec.gov.ph/foundations/frequently-asked-questions",
+      "publisher": "Securities and Exchange Commission, Philippines",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "PHL",
+  "name": "Philippines",
+  "researched_on": "2026-10-16",
+  "family_claims": "",
+  "eu_succession_regulation": false
+}

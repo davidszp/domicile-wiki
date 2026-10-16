@@ -1,0 +1,36 @@
+{
+  "summary": "Bhutan's Inheritance Act 1980 lets a person pass property by written or oral will, with shares for the family fixed by the Act when there is no will. Non-Bhutanese, including foreign spouses and children, cannot inherit land or houses and are shut out of any share of an inheritance. There is no trust or private foundation law.",
+  "forced_heirship": "no",
+  "family_claims": "No court-ordered provision for dependants found. Without a will the Act sets the shares of family members in the main house (Ga 4, 5).",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "The Inheritance Act extends to all citizens and persons residing in Bhutan (Ga 1-3). Non-Bhutanese are not entitled to any share of an inheritance (Ga 2-11), and a foreign spouse and children of a Bhutanese may inherit only movables (Ga 6-23). I found no rule letting a foreign resident choose another law.",
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "no",
+  "trust_note": "Bhutan is not on the HCCH status table. I found no trust or private foundation statute. Civil society organisations are registered under the Civil Society Organizations Act, which is for non-profit purposes (not retrieved).",
+  "open_questions": [
+    "The Act has not been checked for later amendments or for any protected share of children; a Bhutanese lawyer should confirm whether the will chapter (Ga 7) is subject to the family-share rules.",
+    "Confirm there is no trust statute and that no foundation law exists beyond the CSO Act."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance Act of Bhutan 1980 (English)",
+      "url": "https://www.judiciary.gov.bt/storage/files/1/Inheritance%20Act%20of%20Bhutan%201980%20(English).pdf",
+      "publisher": "Royal Court of Justice, Bhutan",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "BTN",
+  "name": "Bhutan",
+  "researched_on": "2026-10-16",
+  "reserved_share": "",
+  "eu_succession_regulation": false
+}

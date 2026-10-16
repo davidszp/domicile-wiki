@@ -1,0 +1,65 @@
+{
+  "id": "SXM",
+  "name": "Sint Maarten",
+  "researched_on": "2026-10-16",
+  "summary": "Sint Maarten's Book 4 (2014) abolished the legitieme portie, so there is no forced heirship; children and a spouse keep statutory lump-sum rights. Sint Maarten has its own trust (since 2014) and a private foundation. The Hague Trusts Convention is not in force for Sint Maarten.",
+  "forced_heirship": "no",
+  "family_claims": "Book 4 gives a child a mandatory lump sum for care (art. 4:35) and for unpaid work in the household or business (art. 4:36); the spouse's position is strengthened. Wills for the benefit of an outsider can be attacked for abuse of circumstances (art. 4:43).",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source read states Sint Maarten's conflict rule for the estate of a foreign national.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "Only Curaçao appears in the Netherlands' extension list on HCCH, so the Convention is not in force for Sint Maarten. A trust has existed under Sint Maarten law since 1 April 2014 (secondary source). The stichting particulier fonds is listed in art. 2:1 of Book 2 (AB 2019 no. 43) and is exempt from the distribution ban for ordinary foundations.",
+  "open_questions": [
+    "AB 2014 no. 6 takes effect on a date set by decree (art. XX); the commencement date was not found. The 2021 Dutch parliamentary question treats Sint Maarten as having no legitieme portie.",
+    "Trust statute articles not read.",
+    "Conflict rule for succession of foreign nationals not sourced."
+  ],
+  "sources": [
+    {
+      "title": "Landsverordening erfrecht en schenking, AB 2014 no. 6 (Sint Maarten Book 4)",
+      "url": "https://repository.officiele-overheidspublicaties.nl/CVDR/CVDR142362/2/xml/i250362.pdf",
+      "publisher": "Government of Sint Maarten",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Kamervragen 2021Z03742 (legitieme portie in the Kingdom)",
+      "url": "https://zoek.officielebekendmakingen.nl/kv-tk-2021Z03742.html",
+      "publisher": "Dutch House of Representatives",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH extensions of the Trusts Convention: Kingdom of the Netherlands",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/extensions/?cid=59&mid=709",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Sint Maarten AB 2019 no. 43, revision of Book 2 of the Civil Code",
+      "url": "https://www.sintmaartengov.org/Documents/Official%20Publications/AB%202019,%20no.%2043%20Herzieningslandsverordening%20Boek%202%20BW.pdf",
+      "publisher": "Government of Sint Maarten",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "The private foundation (SPF)",
+      "url": "https://www.curacao-law.com/tag/spf",
+      "publisher": "Curaçao-law.com",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "reserved_share": ""
+}

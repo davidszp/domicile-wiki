@@ -1,0 +1,45 @@
+{
+  "id": "TCA",
+  "name": "Turks and Caicos Islands",
+  "researched_on": "2026-10-16",
+  "summary": "The Turks and Caicos Islands follow English-derived common law and no forced heirship was found. The Hague Trusts Convention is in force for the islands, and the Trusts Ordinance shields trusts from foreign inheritance rules. No private foundation law was found.",
+  "forced_heirship": "no",
+  "family_claims": "",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source read states the territory's conflict rule for a foreign national's estate. Common-law rule: movables follow the law of the domicile, land follows local law. Not confirmed in local statute for this jurisdiction.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "unclear",
+  "trust_note": "The HCCH page lists TCI on the UK's extension (extended 28 April 1993, in force 1 July 1993). A commercial guide says the Trusts Ordinance keeps a trust valid despite foreign mandatory succession rules, but also says the Convention does not apply; the HCCH table is followed. No foundation statute found.",
+  "open_questions": [
+    "The commercial guide contradicts HCCH on the Convention; recheck at hcch.net.",
+    "No source read confirms absence of forced heirship or family provision law.",
+    "Foundation law not confirmed absent.",
+    "Private foundations: no source found either way; not finding a foundation law is not evidence that there is none."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH extensions of the Trusts Convention: United Kingdom",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/extensions/?cid=59&mid=710",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Turks and Caicos trusts",
+      "url": "https://incorporations.io/turks-and-caicos-islands/trust/tc2i",
+      "publisher": "incorporations.io",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "reserved_share": ""
+}
