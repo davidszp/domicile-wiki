@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-KINDS = {"tax": "jurisdictions", "income": "income", "immigration": "immigration", "regions": "subnational", "succession": "succession"}
+KINDS = {"tax": "jurisdictions", "income": "income", "immigration": "immigration", "regions": "subnational", "succession": "succession", "recipes": "recipes"}
 
 
 def _dates(obj) -> list[str]:
@@ -61,9 +61,10 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--immigration", type=int, default=6, help="immigration files (default 6: all 59 in about ten months)")
     ap.add_argument("--regions", type=int, default=1, help="regional files (default 1)")
     ap.add_argument("--succession", type=int, default=12, help="succession files (default 12: all 145 in about a year)")
+    ap.add_argument("--recipes", type=int, default=3, help="projection recipes (default 3: about 35 in a year)")
     ap.add_argument("--json", action="store_true", help="print JSON for the monthly workflow")
     a = ap.parse_args(argv)
-    rows = due({"tax": a.tax, "income": a.income, "immigration": a.immigration, "regions": a.regions, "succession": a.succession})
+    rows = due({"tax": a.tax, "income": a.income, "immigration": a.immigration, "regions": a.regions, "succession": a.succession, "recipes": a.recipes})
     if a.json:
         print(json.dumps(rows, indent=2))
     else:

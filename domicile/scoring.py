@@ -20,7 +20,16 @@ CONFIG_PATH = ROOT / "data" / "scoring_config.json"
 
 
 def load_config(path: Path = CONFIG_PATH) -> dict:
-    return json.loads(path.read_text())
+    cfg = json.loads(path.read_text())
+    ref, m = cfg["reference_family"], cfg["market"]
+    # The family's yearly income follows from the market assumptions, so they are defined once.
+    ref["dividends"], ref["realized_gains"] = market_income(ref["portfolio"], m)
+    return cfg
+
+
+def market_income(portfolio: float, market: dict) -> tuple[float, float]:
+    """(dividends, realised gains) a year on ``portfolio`` under the market assumptions."""
+    return portfolio * market["dividend_yield"], portfolio * market["price_growth"] * market["realisation"]
 
 
 def clamp(x: float, lo: float = 0.0, hi: float = 100.0) -> float:

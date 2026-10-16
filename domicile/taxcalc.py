@@ -24,8 +24,8 @@ class Profile:
 
     portfolio: float = 30_000_000
     foreign_share: float = 0.9  # of the portfolio and of dividends
-    realized_gains: float = 1_200_000  # per year, listed securities
-    dividends: float = 600_000  # per year
+    realized_gains: float = 450_000  # per year, listed securities (30M x 5% price return x 30% realised)
+    dividends: float = 600_000  # per year (30M x 2% yield)
     real_estate_local: float = 5_000_000
     real_estate_foreign: float = 0.0
     net_wealth: float = 35_000_000

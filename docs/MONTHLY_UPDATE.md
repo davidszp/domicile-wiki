@@ -18,8 +18,9 @@ In Claude Code, from the repository root:
 3. Read `docs/updates/<YYYY-MM>.md`: decisions for you first, then what changed and why.
 4. Decide. Ask Claude to undo anything you reject (`git diff` shows every edit), then `make build` and
    `make test` if anything changed.
-5. Commit, `make monthly-finish` (records today as the last run), push, and deploy
-   (`npx -y wrangler@4.151.0 deploy`).
+5. `make monthly-finish` (records today as the last run and writes the month's history snapshot,
+   `data/history/<YYYY-MM>.json`), then commit everything in one commit, tag it `data-<YYYY-MM>`, push, and
+   deploy (`npx -y wrangler@4.151.0 deploy`).
 
 ## The stages (`tools/monthly/monthly-update.workflow.js`)
 
@@ -45,9 +46,27 @@ recent check is oldest are re-verified in full (`python -m domicile.staleness` s
 | Income (`data/income/`) | 7 | about a year |
 | Immigration (`data/immigration/`) | 6 | about ten months (rules change fast) |
 | Regional (`data/subnational/`) | 1 | five months |
+| Projection recipes (`data/recipes/`) | 3 | about a year; rates are re-checked through the tax files, the recipe only for how each path works |
 | Succession (`data/succession/`) | 12 | about a year; each pass should read the statute and the live HCCH table, raising files from draft to verified |
 
 Change the numbers with flags: `uv run python -m domicile.monthly prepare --tax 20`.
+
+## History
+
+Two records are kept, both in git:
+
+- **The rules themselves.** Every data file is versioned; one commit per month, tagged `data-<YYYY-MM>`,
+  makes any month's law recoverable (`git show data-2026-10:data/jurisdictions/DEU.json`, or
+  `git log -p data/jurisdictions/DEU.json` for every change with its date). The month's report in
+  `docs/updates/` says why each change was made.
+- **What each persona saw.** `data/history/<YYYY-MM>.json` holds, per jurisdiction and persona (HNWI family,
+  expat, nomad): score, regime used, yearly tax in EUR, residence route, and for the family the tax-metric
+  scores and the 60-year projection, plus the exchange-rate date and market assumptions of that build.
+  - `uv run python -m domicile.history show DEU` shows one country month by month.
+  - `uv run python -m domicile.history changes 2026-10 2026-11` lists what changed for each persona; a change
+    of exchange rates or assumptions is flagged, so it is not mistaken for a change in the law.
+
+The series starts in October 2026. Never edit or delete a past snapshot; a correction goes in the next month.
 
 ## Rules the agents follow
 

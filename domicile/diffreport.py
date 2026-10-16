@@ -2,7 +2,8 @@
 
 Compares two builds of web/data/scores.json (AFTER defaults to the current one) and prints Markdown for the
 monthly report: countries whose default HNWI score moved, rank changes in the top 30, knock-outs and red
-flags added or removed, tax regimes that changed, and residence routes that changed per citizenship.
+flags added or removed, tax regimes that changed, residence routes that changed per citizenship, and 60-year
+projections that moved.
 The reviewer reads this next to the agents' change log; a large move with no matching research change is
 the thing to look into.
 """
@@ -17,6 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SCORE_MOVE = 1.0  # points
 COST_MOVE = 0.10  # share
+PROJECTION_MOVE = 0.02  # share of wealth after 60 years
 
 
 def _countries(scores: dict) -> dict:
@@ -85,7 +87,28 @@ def report(before: dict, after: dict) -> str:
             if (x0.get("id"), x0.get("investment_eur"), x0.get("income_eur")) != (x1.get("id"), x1.get("investment_eur"), x1.get("income_eur")):
                 res.append(f"- {name(k)} ({cz}): {x0.get('name') or x0.get('kind') or '—'} → {x1.get('name') or x1.get('kind') or '—'}")
     lines += ["### Cheapest residence route (HNWI)", ""] + (res or ["No change."]) + [""]
+
+    proj = []
+    for k in sorted(set(a) | set(b)):
+        p0, p1 = (a.get(k) or {}).get("projection") or {}, (b.get(k) or {}).get("projection") or {}
+        for path in sorted(set(p0) | set(p1)):
+            if path == "no_tax":
+                continue
+            v0, v1 = p0.get(path), p1.get(path)
+            if v0 is None or v1 is None:
+                if v0 != v1:
+                    proj.append(f"| {name(k)} | {path} | {_m(v0)} | {_m(v1)} | {'new' if v0 is None else 'removed'} |")
+            elif v0 and abs(v1 - v0) / v0 >= PROJECTION_MOVE:
+                proj.append(f"| {name(k)} | {path} | {_m(v0)} | {_m(v1)} | {100 * (v1 - v0) / v0:+.1f}% |")
+    lines += ["### 60-year projections that moved 2% or more", "",
+              "Wealth after 60 years for the reference family, in today's money. Every move needs a named, sourced change"
+              " and re-worked checks in the country's recipe.", ""]
+    lines += (["| Country | Path | Before | After | Change |", "|---|---|---|---|---|", *proj] if proj else ["No change."]) + [""]
     return "\n".join(lines)
+
+
+def _m(v) -> str:
+    return "—" if v is None else f"EUR {v / 1e6:,.1f}M"
 
 
 def main(argv: list[str]) -> int:

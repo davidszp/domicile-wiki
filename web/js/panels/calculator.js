@@ -7,9 +7,10 @@ import { annualTaxes, transferTaxes, usFederalExtra, usEstateExtra, unrelievedUs
 // Inputs persist for the session only (they describe the family's finances; never stored).
 // Defaults come from the scoring config's reference family on first render.
 let inputs = null;
-const initInputs = (ref) => ({
-  realized_gains: ref.realized_gains,
-  dividends: ref.dividends,
+const initInputs = (ref, market) => ({
+  dividend_yield: market.dividend_yield,
+  price_growth: market.price_growth,
+  realisation: market.realisation,
   portfolio: ref.portfolio,
   net_wealth: ref.net_wealth,
   estate: ref.estate,
@@ -26,8 +27,6 @@ const initInputs = (ref) => ({
 });
 
 const NUM_FIELDS = [
-  ["realized_gains", "Annual realised capital gains", 0, 1e10],
-  ["dividends", "Annual dividends", 0, 1e10],
   ["portfolio", "Investment portfolio value", 0, 1e11],
   ["net_wealth", "Annual net wealth", 0, 1e11],
   ["real_estate_local", "Real estate in the country of residence", 0, 1e11],
@@ -37,6 +36,16 @@ const NUM_FIELDS = [
   ["children", "Number of children", 1, 20],
 ];
 
+// Percentage sliders: key, label, maximum, step (all in percent).
+const PCT_FIELDS = [
+  ["dividend_yield", "Dividend yield a year", 6, 0.5],
+  ["price_growth", "Price return a year", 10, 0.5],
+  ["realisation", "Share of each year's price gain sold (and taxed)", 100, 5],
+  ["foreign_share", "Share invested abroad", 100, 5],
+  ["us_share", "US share of foreign dividends", 100, 5],
+  ["unrealized_gain_share", "Unrealised gains in the estate", 100, 5],
+];
+
 function clampNum(v, lo, hi) {
   const n = Number(v);
   return Number.isFinite(n) ? Math.min(hi, Math.max(lo, n)) : lo;
@@ -44,8 +53,10 @@ function clampNum(v, lo, hi) {
 
 function profileFor(citizenship) {
   return {
-    portfolio: inputs.portfolio, foreign_share: inputs.foreign_share, realized_gains: inputs.realized_gains,
-    dividends: inputs.dividends, real_estate_local: inputs.real_estate_local, real_estate_foreign: inputs.real_estate_foreign,
+    // Yearly income follows from the market assumptions, as in the build (scoring.market_income).
+    portfolio: inputs.portfolio, foreign_share: inputs.foreign_share,
+    realized_gains: inputs.portfolio * inputs.price_growth * inputs.realisation,
+    dividends: inputs.portfolio * inputs.dividend_yield, real_estate_local: inputs.real_estate_local, real_estate_foreign: inputs.real_estate_foreign,
     net_wealth: inputs.net_wealth, estate: inputs.estate, children: Math.round(inputs.children), source_wht: inputs.source_wht,
     citizenship, us_share: inputs.us_share, unrealized_gain_share: inputs.unrealized_gain_share,
     annual_payout: inputs.annual_payout,
@@ -129,7 +140,7 @@ async function compute(out) {
 
 export function renderCalculator(panel) {
   if (isIncomePersona()) return renderIncomeCalculator(panel);
-  inputs ??= initInputs(state.cfg.reference_family);
+  inputs ??= initInputs(state.cfg.reference_family, state.cfg.market);
   panel.append(h("h2", null, "Family tax scenario calculator"),
     h("p", { class: "small muted" }, "Illustrative, simplified top-end rates; not tax advice. Assumptions under Method."));
   const form = h("form", { class: "calc-form", onsubmit: (e) => e.preventDefault() });
@@ -148,21 +159,15 @@ export function renderCalculator(panel) {
     });
     form.append(h("label", { class: "ctl", for: `c-${k}` }, h("span", null, money ? `${label} (${displayCurrency()})` : label), inp));
   }
-  const fs = h("input", { type: "range", min: 0, max: 100, step: 5, value: inputs.foreign_share * 100, id: "c-fs" });
-  const fsOut = h("output", { for: "c-fs" }, `${Math.round(inputs.foreign_share * 100)}%`);
-  fs.addEventListener("input", () => { fsOut.textContent = `${fs.value}%`; });
-  fs.addEventListener("change", () => { inputs.foreign_share = Number(fs.value) / 100; run(); });
-  form.append(h("label", { class: "ctl", for: "c-fs" }, h("span", null, "Share invested abroad"), fs, fsOut));
-  const us = h("input", { type: "range", min: 0, max: 100, step: 5, value: inputs.us_share * 100, id: "c-us" });
-  const usOut = h("output", { for: "c-us" }, `${Math.round(inputs.us_share * 100)}%`);
-  us.addEventListener("input", () => { usOut.textContent = `${us.value}%`; });
-  us.addEventListener("change", () => { inputs.us_share = Number(us.value) / 100; run(); });
-  form.append(h("label", { class: "ctl", for: "c-us" }, h("span", null, "US share of foreign dividends"), us, usOut));
-  const ug = h("input", { type: "range", min: 0, max: 100, step: 5, value: inputs.unrealized_gain_share * 100, id: "c-ug" });
-  const ugOut = h("output", { for: "c-ug" }, `${Math.round(inputs.unrealized_gain_share * 100)}%`);
-  ug.addEventListener("input", () => { ugOut.textContent = `${ug.value}%`; });
-  ug.addEventListener("change", () => { inputs.unrealized_gain_share = Number(ug.value) / 100; run(); });
-  form.append(h("label", { class: "ctl", for: "c-ug" }, h("span", null, "Unrealised gains in the estate"), ug, ugOut));
+  for (const [k, label, max, step] of PCT_FIELDS) {
+    const id = `c-${k}`;
+    const pct = (v) => Math.round(v * 1000) / 10;
+    const r = h("input", { type: "range", min: 0, max, step, value: pct(inputs[k]), id });
+    const o = h("output", { for: id }, `${pct(inputs[k])}%`);
+    r.addEventListener("input", () => { o.textContent = `${r.value}%`; });
+    r.addEventListener("change", () => { inputs[k] = Number(r.value) / 100; run(); });
+    form.append(h("label", { class: "ctl", for: id }, h("span", null, label), r, o));
+  }
 
   if (!inputs.targets.length && state.selected && jur(state.selected)?.researched && !jur(state.selected).inherited) inputs.targets = [state.selected];
   const cur = jurisdictionOptions(inputs.current, "Current tax residence…");

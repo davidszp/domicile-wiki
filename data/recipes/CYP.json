@@ -1,0 +1,46 @@
+{
+  "id": "CYP",
+  "name": "Cyprus",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "non_dom",
+      "name": "New resident (non-dom for 17 years, then standard rules)",
+      "regime": "non_dom",
+      "note": "No special defence contribution on dividends while non-domiciled; afterwards 5% on dividends, which foreign withholding usually covers. No tax on gains from listed securities, no inheritance tax."
+    }
+  ],
+  "checks": [
+    {
+      "path": "non_dom",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 0,
+      "working": "Non-domiciled residents are exempt from special defence contribution on dividends (SDC Law, non-dom exemption); gains on listed securities are excluded from capital gains tax, which applies only to Cypriot real estate and shares holding it (CGT Law)."
+    },
+    {
+      "path": "non_dom",
+      "phase": "after",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 0,
+      "expected": 1000,
+      "working": "After the non-dom period: special defence contribution of 5% on dividends (rate as reduced for 2026) = 1,000 on 20,000 of Cypriot dividends; listed-security gains still outside capital gains tax. Total 1,000."
+    },
+    {
+      "path": "non_dom",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Cyprus abolished estate duty from 1 January 2000; there is no inheritance tax."
+    }
+  ],
+  "assumptions": [
+    "A family that has just moved: the non-dom period runs from year 1."
+  ],
+  "open_questions": [],
+  "sources": []
+}

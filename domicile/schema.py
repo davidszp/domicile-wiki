@@ -631,3 +631,72 @@ class SuccessionFile(Strict):
         "low", description="'high' only after the statute text and the live HCCH table were read; the site labels anything below as draft research")
     open_questions: list[str] = []
     sources: list[Source] = Field(min_length=1)
+
+
+class RecipePath(Strict):
+    """One way a family can hold its portfolio in a country: personally, or through a structure.
+
+    The tax rates come from the regime named here (``data/jurisdictions/<ISO3>.json``), so a rate is
+    fixed in one place only. The recipe adds what the rates alone cannot say: how the path behaves over
+    time and at death."""
+
+    id: str = Field(pattern=r"^[a-z0-9_]+$")
+    name: str
+    regime: str = Field(pattern=r"^[a-z0-9_]+$", description="Regime id in the country's tax file; a time-limited regime falls back to the standard rules when it ends")
+    estate: Literal["portfolio", "outside_estate"] = Field(
+        "portfolio", description="'portfolio' when the parents' estate holds the portfolio or the shares of the company holding it; "
+                                 "'outside_estate' when the structure (foundation, trust) owns it and nothing passes at death")
+    note: str = Field("", description="Why this path behaves as modelled, with the statute where it matters")
+
+
+class RecipeCheck(Strict):
+    """A case worked by hand from the statute, which the engine must reproduce. Amounts are in the
+    country's own currency, so exchange rates cannot move them. When the law changes, the worked case
+    changes with it; a projection that moves while its checks stay put is the signal to look into."""
+
+    path: str = Field(pattern=r"^[a-z0-9_]+$")
+    phase: Literal["regime", "after"] = Field("regime", description="'after' checks the standard rules a time-limited regime falls back to")
+    kind: Literal["annual", "inheritance"]
+    dividends: float = Field(0, ge=0, description="annual: dividends received")
+    realised_gains: float = Field(0, ge=0, description="annual: gains realised on listed shares")
+    wealth: float = Field(0, ge=0, description="annual: the portfolio's value, for wealth tax")
+    foreign_share: float = Field(1.0, ge=0, le=1, description="annual: share of dividends and gains from abroad (15% withholding on foreign dividends)")
+    estate: float = Field(0, ge=0, description="inheritance: the estate, passing to ``children`` equal heirs")
+    children: int = Field(3, ge=1)
+    expected: float = Field(ge=0, description="The tax by the law, worked by hand: residence-country tax (after any credit), payout tax excluded, running costs included")
+    working: str = Field(min_length=30, description="The hand calculation with the statute for each step")
+    model_difference: float = Field(0, description="Engine result minus ``expected``, when the engine simplifies the law; explained in model_note")
+    model_note: str = ""
+
+    @model_validator(mode="after")
+    def _explained(self) -> RecipeCheck:
+        if self.model_difference and len(self.model_note) < 20:
+            raise ValueError("a model_difference needs a model_note explaining it")
+        return self
+
+
+class RecipeFile(Strict):
+    """How a family's portfolio is projected over 60 years in one country: the paths to compare."""
+
+    id: str = Field(pattern=r"^[A-Z]{3}$")
+    name: str
+    researched_on: dt.date
+    paths: list[RecipePath] = Field(min_length=1)
+    checks: list[RecipeCheck] = Field(min_length=2, description="At least one annual case per path and one inheritance case")
+    assumptions: list[str] = Field([], description="Simplifications specific to this country, in plain words")
+    open_questions: list[str] = []
+    sources: list[Source] = []
+
+    @model_validator(mode="after")
+    def _unique_paths(self) -> RecipeFile:
+        ids = [p.id for p in self.paths]
+        if len(ids) != len(set(ids)):
+            raise ValueError("path ids must be unique")
+        if any(c.path not in ids for c in self.checks):
+            raise ValueError("every check must name a path of this recipe")
+        missing = [i for i in ids if not any(c.path == i and c.kind == "annual" for c in self.checks)]
+        if missing:
+            raise ValueError(f"no annual check for path(s) {', '.join(missing)}")
+        if not any(c.kind == "inheritance" for c in self.checks):
+            raise ValueError("at least one inheritance check is needed")
+        return self

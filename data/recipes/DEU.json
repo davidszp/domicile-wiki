@@ -1,0 +1,81 @@
+{
+  "id": "DEU",
+  "name": "Germany",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Flat tax on dividends and realised gains (Abgeltungsteuer 25% plus solidarity surcharge); unrealised gains are not taxed at death and the heirs keep the original cost."
+    },
+    {
+      "id": "vv_gmbh",
+      "name": "Asset-management GmbH",
+      "regime": "vv_gmbh",
+      "estate": "portfolio",
+      "note": "The parents' estate holds the GmbH shares, valued at about the portfolio. An asset-management GmbH is administrative assets, so the business relief of ErbStG §13a/13b does not apply."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 6066.25,
+      "working": "Foreign dividends 20,000: Abgeltungsteuer 25% = 5,000 (EStG §32d(1)), less the 15% foreign withholding credited, 3,000 (§32d(5)), = 2,000; solidarity surcharge 5.5% of 2,000 = 110 (SolzG §3(1) Nr. 5). Gains 15,000 x 25% = 3,750, plus 5.5% surcharge = 206.25. Total 2,110 + 3,956.25 = 6,066.25. Saver's allowance (EUR 1,000, §20(9)) ignored, as the engine has no allowances.",
+      "model_difference": 165,
+      "model_note": "The engine subtracts the 15% withholding from the combined 26.375% rate; by law the credit reduces the 25% tax and the surcharge is then charged on what is left, so the engine overstates by 5.5% of the credit (0.055 x 3,000 = 165)."
+    },
+    {
+      "path": "vv_gmbh",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 3677.31,
+      "working": "Portfolio dividends below 10% are fully taxable (KStG §8b(4)): corporate tax 15% of 20,000 = 3,000, less the 15% foreign withholding credited against corporate tax only (KStG §26), = 0, so no surcharge. Trade tax: dividends below 15% are added back (GewStG §8 Nr. 5): 3.5% base rate x 490% Munich multiplier = 17.15% of 20,000 = 3,430. Gains: 95% exempt (KStG §8b(2),(3)), 5% of 15,000 = 750 taxed at 15.825% + 17.15% = 32.975%, = 247.31. Total 3,677.31.",
+      "model_difference": 165,
+      "model_note": "The engine credits the withholding against the combined 32.975% rate; by law it reduces corporate tax only and the surcharge falls away with it, so the engine overstates by the surcharge on the credit (0.055 x 3,000 = 165)."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 1672000,
+      "working": "Each child receives 3,333,333.33, less the EUR 400,000 allowance (ErbStG §16(1) Nr. 2) = 2,933,333.33, taxed in class I at 19% (ErbStG §19(1), band up to 6,000,000) = 557,333.33; the hardship rule of §19(3) does not apply this far above 600,000. Three children: 1,672,000."
+    }
+  ],
+  "assumptions": [
+    "Church tax is left out (it adds 8-9% of the flat tax for members).",
+    "The GmbH's own rates (corporate tax, trade tax, 95% exemption of share gains) come from the vv_gmbh regime in the tax file."
+  ],
+  "open_questions": [],
+  "sources": [
+    {
+      "title": "Erbschaftsteuer- und Schenkungsteuergesetz §13b (begünstigtes Vermögen, Verwaltungsvermögen)",
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__13b.html",
+      "publisher": "Bundesministerium der Justiz",
+      "kind": "legislation"
+    },
+    {
+      "title": "Einkommensteuergesetz §32d (flat tax on capital income; credit for foreign tax)",
+      "url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "publisher": "Bundesministerium der Justiz",
+      "kind": "legislation"
+    },
+    {
+      "title": "Erbschaftsteuer- und Schenkungsteuergesetz §19 (rates)",
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__19.html",
+      "publisher": "Bundesministerium der Justiz",
+      "kind": "legislation"
+    },
+    {
+      "title": "Körperschaftsteuergesetz §26 (credit for foreign taxes)",
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__26.html",
+      "publisher": "Bundesministerium der Justiz",
+      "kind": "legislation"
+    }
+  ]
+}

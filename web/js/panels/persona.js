@@ -377,7 +377,7 @@ function moneyLines(pid) {
     const horizon = cfg.tax_transforms.time_limited_regimes;
     return [
       `${fmtEur(rf.portfolio)} portfolio, mostly invested abroad`,
-      `${fmtEur(rf.realized_gains)} of gains and ${fmtEur(rf.dividends)} of dividends a year`,
+      `${pct(cfg.market.dividend_yield)} dividends and ${pct(cfg.market.price_growth)} price return a year; ${pct(cfg.market.realisation)} of gains sold and taxed each year`,
       `Spends about ${fmtEur(rf.annual_payout)} a year`,
       `${fmtEur(rf.estate)} estate to ${rf.children} children · ${horizon.horizon_years}-year horizon`,
     ];

@@ -79,11 +79,9 @@
     }
   },
   "reference_family": {
-    "description": "Scores for tax metrics are effective burdens for this illustrative family, not headline rates. Amounts in EUR.",
+    "description": "Scores for tax metrics are effective burdens for this illustrative family, not headline rates. Amounts in EUR. Its yearly dividends and realised gains are derived from the market block.",
     "portfolio": 30000000,
     "foreign_share": 0.9,
-    "realized_gains": 1200000,
-    "dividends": 600000,
     "real_estate_local": 5000000,
     "real_estate_foreign": 0,
     "net_wealth": 35000000,
@@ -92,6 +90,17 @@
     "source_wht": 0.15,
     "unrealized_gain_share": 0.4,
     "annual_payout": 400000
+  },
+  "market": {
+    "description": "One set of market assumptions for the whole site: the reference family's yearly dividends and realised gains are derived from them (portfolio x dividend yield; portfolio x price return x share realised), and the 60-year projection uses the same rates. Nominal; the projection reports in today's money.",
+    "dividend_yield": 0.02,
+    "price_growth": 0.05,
+    "inflation": 0.025,
+    "realisation": 0.3
+  },
+  "projection": {
+    "description": "60-year projection of a family portfolio (domicile/projection.py, data/recipes), with the market assumptions above and one death per generation.",
+    "deaths": [30, 60]
   },
   "tax_transforms": {
     "capital_gains": {

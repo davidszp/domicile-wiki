@@ -10,13 +10,14 @@ Reads researched jurisdiction files, indicators, FX and the scoring config; writ
 from __future__ import annotations
 
 import copy
+import dataclasses
 import csv
 import datetime as dt
 import json
 import shutil
 from pathlib import Path
 
-from domicile import cola, earned, scene, scoring
+from domicile import cola, earned, projection, scene, scoring
 from domicile.fx import load as load_fx, to_eur
 from domicile.schema import CostOfLiving, ImmigrationFile, IncomeFile, Jurisdiction, RegionalIncomeFile, Regime, Subnational, SuccessionFile
 from domicile.taxcalc import compile_regime
@@ -451,6 +452,24 @@ def main() -> None:
             sources.extend({"jurisdiction": jid, "regime": "succession", "metric": "succession", "title": s.title, "url": str(s.url),
                             "publisher": s.publisher, "kind": s.kind, "tax_year": None, "verified_on": f.researched_on.isoformat(),
                             "confidence": f.confidence, "verification": None, "basis": "enacted"} for s in f.sources)
+
+    # 60-year projections for the countries with a recipe (data/recipes): yearly series on the profile for
+    # the chart, end values on the entry so the monthly diff report can show what moved.
+    assumptions = projection.Assumptions.reference(cfg)
+    for iso3 in sorted(p.stem for p in projection.RECIPES.glob("*.json")):
+        recipe = projection.load_recipe(iso3)
+        res = projection.project(iso3, assumptions, cfg=cfg, jurisdictions=jur, fx=fx)
+        out_j[iso3]["projection"] = {r.id: (round(r.end_wealth) if r.end_wealth is not None else None) for r in res}
+        notes = {p.id: p.note for p in recipe.paths}
+        profiles[iso3]["projection"] = {
+            "assumptions": {k: v for k, v in dataclasses.asdict(assumptions).items() if k != "citizenship"},
+            "recipe": {"researched_on": recipe.researched_on.isoformat(), "assumptions": recipe.assumptions,
+                       "open_questions": recipe.open_questions},
+            "paths": [{"id": r.id, "name": r.name, "regime": r.regime, "note": notes.get(r.id, ""), "missing": r.missing,
+                       # [wealth, taxes, inheritance] per year, EUR thousands in today's money
+                       "years": [[round(y.wealth / 1e3), round(y.taxes / 1e3), round(y.inheritance / 1e3)] for y in r.years]}
+                      for r in res],
+        }
 
     immigration = load_immigration()
     unknown = set(immigration) - {k for k, e in out_j.items() if e["level"] == "country"}

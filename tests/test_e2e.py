@@ -10,7 +10,7 @@ import threading
 
 import pytest
 
-from conftest import scores
+from conftest import ROOT, scores
 
 playwright = pytest.importorskip("playwright.sync_api")
 CHROMIUM = os.environ.get("WEALTHMAP_CHROMIUM") or shutil.which("chromium") or shutil.which("google-chrome-stable")
@@ -418,3 +418,30 @@ def test_old_map_links_open_the_table(browser, server):
     assert page.locator("#tab-map").count() == 0
     assert not problems, problems
     page.close()
+
+
+def test_calculator_starts_from_the_market_assumptions(browser, server):
+    """The calculator's yield, price return and realised share come from scoring_config.market."""
+    page, problems = open_page(browser, server, route="#/compare/calculator")
+    page.click("[data-persona='family_office']")
+    page.click("#cmp-tab-calculator")
+    page.wait_for_selector("#c-dividend_yield")
+    m = json.loads((ROOT / "data" / "scoring_config.json").read_text())["market"]
+    for k in ("dividend_yield", "price_growth", "realisation"):
+        assert float(page.input_value(f"#c-{k}")) == pytest.approx(m[k] * 100), k
+    assert not page.query_selector("#stage .error")
+    assert not problems, problems
+
+
+def test_hnwi_page_shows_the_60_year_projection(browser, server):
+    """Countries with a recipe show one line per way of holding the portfolio; others show no section."""
+    page, problems = open_page(browser, server, route="#/factbook/DEU")
+    page.click("[data-persona='family_office']")
+    page.wait_for_selector(".proj-chart")
+    paths = scores()["jurisdictions"]["DEU"]["projection"]
+    assert page.locator(".proj-chart .proj-line").count() == len([k for k in paths if k != "no_tax"])
+    assert "After 60 years" in page.inner_text("details:has(.proj-chart)")
+    page.goto(server + "#/factbook/FRA")
+    page.wait_for_selector(".facts")
+    assert page.locator(".proj-chart").count() == 0
+    assert not problems, problems

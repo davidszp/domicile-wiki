@@ -399,6 +399,15 @@ details.fold[open] { padding-bottom: 8px; }
 .chart-svg .dot circle.selected { stroke: var(--text); stroke-width: 2.5; }
 .chart-svg .dot text { font-size: 11px; fill: var(--text); paint-order: stroke; stroke: var(--label-halo); stroke-width: 3px; }
 .chart-svg .dot:hover circle { stroke: var(--text); }
+/* Wealth over 60 years (panels/projection.js) */
+.proj-chart .proj-line { fill: none; stroke-width: 2.2; }
+.proj-chart .proj-death { stroke: var(--border-strong); stroke-dasharray: 3 3; }
+.proj-s0 { stroke: var(--accent); background: var(--accent); }
+.proj-s1 { stroke: var(--spec-orange); background: var(--spec-orange); }
+.proj-s2 { stroke: var(--spec-blue); background: var(--spec-blue); }
+.proj-s3 { stroke: var(--spec-violet); background: var(--spec-violet); }
+.proj-legend { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 0; margin: 6px 0 10px; }
+.proj-key { display: inline-block; width: 18px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
 
 /* D · Compare */
 .compare-pick { align-items: flex-end; gap: 12px; }

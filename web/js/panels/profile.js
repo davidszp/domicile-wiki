@@ -8,6 +8,7 @@ import { INHERITANCE, field, sourceList } from "../labels.js";
 import { renderPersonaBody, personaCard, fact } from "./persona.js";
 import { immigrationSection, residenceFact } from "./immigration.js";
 import { successionSection, successionFact } from "./succession.js";
+import { projectionSection } from "./projection.js";
 
 const STATUS = {
   verified: ["Verified", "All four tax metrics verified against sources; at least 90% of weighted data present."],
@@ -286,6 +287,7 @@ export function renderProfile(panel, ctx) {
       residenceFact(e) ? fact("Residence for you", residenceFact(e)) : null,
       successionFact(e) ? fact("Leaving your estate", successionFact(e)) : null)]);
     body.append(h("p", null, d.summary));
+    append(body, [projectionSection(p)]);
     body.append(immigrationSection(p.immigration));
     body.append(successionSection(p.succession));
     if (state.citizenship === "US" && d.us_citizen_notes) fold(body, "US citizens", h("p", null, d.us_citizen_notes));

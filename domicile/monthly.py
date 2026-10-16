@@ -17,6 +17,7 @@ import shutil
 import sys
 from pathlib import Path
 
+from domicile import history
 from domicile.staleness import due
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -34,14 +35,18 @@ def prepare(today: dt.date, per_kind: dict[str, int]) -> dict:
     snapshot = BUILD / "scores_before.json"
     shutil.copyfile(SCORES, snapshot)
     args = {"month": today.strftime("%Y-%m"), "today": today.isoformat(), "since": last_run(),
-            "snapshot": str(snapshot.relative_to(ROOT)), "rotation": due(per_kind, today)}
+            "snapshot": str(snapshot.relative_to(ROOT)), "rotation": due(per_kind, today),
+            # Countries with a projection recipe: their hand-worked checks are re-done when the tax file changes.
+            "recipes": sorted(p.stem for p in (ROOT / "data" / "recipes").glob("*.json"))}
     (BUILD / "monthly-args.json").write_text(json.dumps(args, indent=2) + "\n")
     return args
 
 
 def finish(today: dt.date) -> None:
+    """Record today as the last run, and the month's figures per persona in data/history/."""
     STATE.parent.mkdir(parents=True, exist_ok=True)
     STATE.write_text(json.dumps({"date": today.isoformat()}, indent=2) + "\n")
+    history.write(today.strftime("%Y-%m"), SCORES)
 
 
 def main(argv: list[str]) -> int:
@@ -53,10 +58,11 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--immigration", type=int, default=6)
     ap.add_argument("--regions", type=int, default=1)
     ap.add_argument("--succession", type=int, default=12)
+    ap.add_argument("--recipes", type=int, default=3)
     a = ap.parse_args(argv)
     today = dt.date.fromisoformat(a.today) if a.today else dt.date.today()
     if a.step == "prepare":
-        args = prepare(today, {"tax": a.tax, "income": a.income, "immigration": a.immigration, "regions": a.regions, "succession": a.succession})
+        args = prepare(today, {"tax": a.tax, "income": a.income, "immigration": a.immigration, "regions": a.regions, "succession": a.succession, "recipes": a.recipes})
         print(f"Period {args['since']} to {args['today']}; {len(args['rotation'])} files to re-verify; "
               f"arguments in data/build/monthly-args.json")
     else:

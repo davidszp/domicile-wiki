@@ -1,7 +1,7 @@
 # Reproducible build. `make all` runs everything from raw downloads to a tested site in web/.
 PY := uv run python
 
-.PHONY: all setup data geo indicators fx build gaps test test-fast serve validate clean fuzz fuzz-monkey monthly-prepare monthly-finish
+.PHONY: all setup data geo indicators fx build gaps test test-fast serve validate clean fuzz fuzz-monkey monthly-prepare monthly-finish projection
 
 all: setup data build test
 
@@ -19,6 +19,9 @@ indicators:       ## refresh World Bank / UNDP / TI / EF indicators (network)
 
 fx:               ## refresh ECB reference rates (network)
 	$(PY) -m domicile.fx
+
+projection:       ## 60-year projection of every recipe (data/recipes)
+	$(PY) -m domicile.projection
 
 validate:         ## schema-check every researched data file
 	$(PY) -m domicile.validate

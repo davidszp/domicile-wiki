@@ -7,6 +7,7 @@ export const meta = {
     { title: 'Scout', detail: 'one agent per region: tax, immigration and risk changes since the last run' },
     { title: 'Verify', detail: 'a sceptic per candidate checks it against an official source' },
     { title: 'Update', detail: 'one agent per data file: confirmed changes and the re-verification rotation' },
+    { title: 'Recipes', detail: 'one agent per projection recipe whose tax file changed or that is due: re-work the hand-checked cases from the statute' },
     { title: 'Check', detail: 'build, tests, simulated visitors, diff report' },
     { title: 'Review', detail: 'cross-check changes against sources and the diff; write the report' },
   ],
@@ -14,10 +15,13 @@ export const meta = {
 
 // args (written by `make monthly-prepare`, see docs/MONTHLY_UPDATE.md):
 //   { month: "2026-11", today: "2026-11-16", since: "2026-10-16",
-//     snapshot: "data/build/scores_before.json", rotation: [{kind, id, path, last_checked}, ...] }
+//     snapshot: "data/build/scores_before.json", rotation: [{kind, id, path, last_checked}, ...], recipes: ["DEU", ...] }
 const A = args || {}
 if (!A.month || !A.today || !A.since || !A.snapshot) throw new Error('missing args: run `make monthly-prepare` and pass data/build/monthly-args.json')
-const ROTATION = A.rotation || []
+// Recipes are handled in their own stage, after the tax files they depend on have been updated.
+const ROTATION = (A.rotation || []).filter((r) => r.kind !== 'recipes')
+const RECIPE_ROTATION = (A.rotation || []).filter((r) => r.kind === 'recipes')
+const RECIPES = new Set(A.recipes || [])
 const SONNET = 'sonnet' // research agents run on Sonnet (CLAUDE.md); the review inherits the session model
 
 const REGIONS = [
@@ -92,6 +96,7 @@ const GUIDE = {
   'data/subnational': 'data/RESEARCH_GUIDE.md (dossier docs/jurisdictions/<COUNTRY>-regions.md)',
   'data/income': 'data/INCOME_GUIDE.md (dossier docs/income/<ID>.md)',
   'data/immigration': 'data/IMMIGRATION_GUIDE.md',
+  'data/recipes': 'data/RECIPE_GUIDE.md (rates belong in the tax file; a recipe changes only when how a path works changes)',
   'data/succession': 'data/SUCCESSION_GUIDE.md (raise confidence to high only after reading the statute text and the live HCCH table)',
   'data/scoring_config.json': 'the knock-out and red-flag blocks in data/scoring_config.json and docs/research/*.md',
 }
@@ -161,6 +166,30 @@ Then run \`uv run python -m domicile.validate ${job.file}\` until it prints 0 er
 const updated = (await parallel([...byFile.values()].map((job) => () =>
   agent(updatePrompt(job), { label: `update ${job.file.replace(/^data\//, '')}`, phase: 'Update', model: SONNET, schema: CHANGELOG })))).filter(Boolean)
 
+// ------------------------------------------------------------------ 4b Recipes: after the tax files, because their checks depend on them
+phase('Recipes')
+const taxChanged = new Map()
+for (const u of updated) {
+  const m = /^data\/jurisdictions\/([A-Z]{3})\.json$/.exec(u.file || '')
+  if (m && u.changed && RECIPES.has(m[1])) taxChanged.set(m[1], u.changes || [])
+}
+const recipeJobs = [...new Set([...taxChanged.keys(), ...RECIPE_ROTATION.map((r) => r.id)])]
+log(`${recipeJobs.length} projection recipes to re-check (${taxChanged.size} because their tax file changed, ${RECIPE_ROTATION.length} due in the rotation)`)
+
+const recipePrompt = (id) => {
+  const ch = taxChanged.get(id)
+  const due = RECIPE_ROTATION.find((r) => r.id === id)
+  return `You maintain one projection recipe of domicile.wiki for the monthly update ${A.month} (today ${A.today}): data/recipes/${id}.json. Follow data/RECIPE_GUIDE.md.
+${ch ? `\nThe country's tax file data/jurisdictions/${id}.json was changed this month:\n${JSON.stringify(ch)}\n` : ''}${due ? `\nThe recipe is due for its periodic re-check (last checked ${due.last_checked}): re-read the statutes behind every path and check.\n` : ''}
+1. Re-work every case in "checks" BY HAND from the statute: open the law (or the authority's page), apply it step by step, and write the result in "expected" and the steps in "working". Never copy a number from the engine or from the tax file: the point of a check is an independent calculation.
+2. Run \`uv run pytest -q tests/test_projection.py -k ${id}\`. If a check fails, find out whether the tax file or your calculation is wrong, and say which. Keep or set "model_difference" only when the engine knowingly simplifies the law, with a model_note naming the simplification; never set it just to make a test pass.
+3. If the law changed how a path works (a new or abolished structure, assets now inside or outside the estate, a regime's duration, a kind of tax the engine has no field for) and the recipe cannot express it with its existing fields: do NOT approximate. Add an open question starting "Needs an engine change:" and list it in "unresolved".
+4. Rates never go in the recipe; if the tax file is wrong, report it in "unresolved" instead of editing it.
+Run \`uv run python -m domicile.validate data/recipes/${id}.json\` until it prints 0 errors. Edit only this file. Report each change with before, after and source.`
+}
+const recipeUpdates = (await parallel(recipeJobs.map((id) => () =>
+  agent(recipePrompt(id), { label: `recipe ${id}`, phase: 'Recipes', model: SONNET, schema: CHANGELOG })))).filter(Boolean)
+
 // ------------------------------------------------------------------ 5 Check (after the dataset refresh has landed)
 phase('Check')
 const refreshed = await refresh
@@ -177,6 +206,7 @@ const review = await agent(
 Inputs (JSON):
 - refresh: ${JSON.stringify(refreshed)}
 - applied changes, per file: ${JSON.stringify(updated)}
+- projection recipes re-checked: ${JSON.stringify(recipeUpdates)}
 - confirmed but not yet in force (recorded as notes): ${JSON.stringify(notes.map((n) => ({ jurisdiction: n.jurisdiction, change: n.change, effective: n.effective_date, source: n.evidence_url || n.source_url })))}
 - refuted or unverifiable scout claims: ${JSON.stringify(verified.filter((v) => v.verdict !== 'confirmed').map((v) => ({ jurisdiction: v.jurisdiction, change: v.change, verdict: v.verdict, note: v.note })))}
 - build and tests: ${JSON.stringify({ build_ok: check?.build_ok, tests: check?.tests, failures: check?.failures, fuzz: check?.fuzz_findings })}
@@ -184,7 +214,7 @@ Inputs (JSON):
 ${check?.diff_markdown || '(not available)'}
 
 1. Run \`git diff --stat\` and read the diff of every changed data file. For each applied change, check that the edit matches its source and the guide (no invented figures; in-force vs announced handled correctly; dates and dossiers in step). Open the source when a figure looks off.
-2. Explain every large move in the diff report by an applied change or a dataset refresh; flag any you cannot explain.
+2. Explain every large move in the diff report by an applied change or a dataset refresh; flag any you cannot explain. This includes the "60-year projections" section: every path that moved by 2% or more must trace to a named, sourced change, and its recipe's hand-worked checks must have been re-done; any "Needs an engine change" is a decision for the maintainer.
 3. List what the maintainer must decide: new or removed knock-outs and red flags, contested facts, failing tests.
 4. Write the report to docs/updates/${A.month}.md: a one-paragraph summary; then sections Decisions for the maintainer, Changes applied (per jurisdiction, with sources), Not yet in force (watch list), Rejected claims, Datasets refreshed, Build and tests, and the diff report. Plain, short sentences.
 Do not commit, push or deploy.`,
@@ -197,5 +227,5 @@ return {
   ready_to_publish: review?.ready_to_publish,
   decisions: review?.decisions,
   problems: review?.problems,
-  counts: { candidates: verified.length, confirmed: confirmed.length, files_updated: updated.filter((u) => u.changed).length, rotation: ROTATION.length },
+  counts: { candidates: verified.length, confirmed: confirmed.length, files_updated: updated.filter((u) => u.changed).length, rotation: ROTATION.length, recipes: recipeUpdates.length },
 }

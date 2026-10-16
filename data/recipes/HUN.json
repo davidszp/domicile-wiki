@@ -1,0 +1,59 @@
+{
+  "id": "HUN",
+  "name": "Hungary",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "15% on dividends and realised gains; no inheritance tax between parents and children."
+    },
+    {
+      "id": "foundation",
+      "name": "Asset management foundation (vagyonkezelő alapítvány)",
+      "regime": "asset_management_foundation",
+      "estate": "outside_estate",
+      "note": "The foundation owns the portfolio, so nothing passes at the parents' death; the children are beneficiaries. Payouts to them are taxed at 15%."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000000,
+      "realised_gains": 150000000,
+      "wealth": 3000000000,
+      "expected": 33507136,
+      "working": "Foreign dividends HUF 200m: 15% personal income tax (Szja tv. §66), less the 15% foreign withholding credited = 0; social contribution tax 13% on dividends not listed on an EEA market, on a base capped at HUF 7,747,200 for 2026 = 1,007,136. Gains HUF 150m x 15% = 22,500,000. Draft wealth tax: 1% of HUF 3bn above the family's HUF 2bn allowance (HUF 1bn per spouse) = 10,000,000. Total 33,507,136.",
+      "model_difference": -1007136,
+      "model_note": "The engine leaves out the capped 13% social contribution tax on non-EEA dividends (at most about HUF 1m a year); the tax file mentions it in the dividend summary."
+    },
+    {
+      "path": "foundation",
+      "kind": "annual",
+      "dividends": 200000000,
+      "realised_gains": 150000000,
+      "wealth": 3000000000,
+      "expected": 26000000,
+      "working": "Dividends and gains received by an asset management foundation with individual founders and beneficiaries are not taxed. Draft wealth tax on the foundation as a separate taxpayer: 1% of HUF 3bn above its HUF 1bn allowance = 20,000,000. Running costs (audit, board, administration) as recorded in the tax file: HUF 6,000,000. Total 26,000,000."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Inheritance between parents and children (lineal relatives) is exempt from inheritance duty (Itv. §16(1) a)."
+    }
+  ],
+  "assumptions": [
+    "No US tax treaty since 1 January 2024 (the US terminated it): US dividends bear 30% withholding in every path, not 15%. A personal investor credits withholding only up to the 15% Hungarian tax; the foundation cannot credit it at all. The projection counts the full 30% on the US share of foreign dividends.",
+    "The wealth tax is the October 2026 draft bill as recorded in the tax file; it is not yet law."
+  ],
+  "open_questions": [
+    "The draft wealth tax's start date and whether it reaches foundations as separate taxpayers: follow the bill.",
+    "Szocho: confirm the 2026 cap (24 times the minimum wage) each January."
+  ],
+  "sources": []
+}
