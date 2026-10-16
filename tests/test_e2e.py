@@ -445,3 +445,17 @@ def test_hnwi_page_shows_the_60_year_projection(browser, server):
     page.wait_for_selector(".facts")
     assert page.locator(".proj-chart").count() == 0
     assert not problems, problems
+
+
+def test_compare_shows_projection_lines_for_places_with_a_recipe(browser, server):
+    """Compare draws one wealth line per place with a recipe (home dashed) and names the places without one."""
+    page, problems = open_page(browser, server, route="#/compare")
+    page.select_option("#cmp-home", "DEU")
+    for c in ("HUN", "FRA"):
+        page.select_option("#cmp-add", c)
+    page.wait_for_selector(".proj-compare .proj-chart")
+    assert page.locator(".proj-compare .proj-line").count() == 2
+    assert page.locator(".proj-compare .proj-line.proj-dashed").count() == 1
+    assert "No projection yet for France" in page.inner_text(".proj-compare")
+    assert "Wealth after 60 years" in page.inner_text("table.compare-home")
+    assert not problems, problems

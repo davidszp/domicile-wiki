@@ -1,0 +1,107 @@
+{
+  "id": "USA",
+  "name": "United States",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "standard",
+      "name": "Holding the portfolio personally (green-card holders)",
+      "regime": "standard",
+      "note": "Worldwide taxation at federal level: qualified dividends and long-term gains at 20% plus 3.8% net investment income tax, no wealth tax. Unrealised gains vanish at death (step-up in basis, IRC 1014), so heirs start from market value. Estate tax 40% above the exclusion."
+    }
+  ],
+  "checks": [
+    {
+      "path": "standard",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 1.0,
+      "expected": 5330,
+      "working": "Taxpayers in the top bracket (taxable income already above USD 613,700 for a married couple in 2026, Rev. Proc. 2025-32) and over the NIIT threshold (USD 250,000, IRC 1411(b)). Non-US dividends 20,000 assumed qualified (treaty-country or US-listed issuers, IRC 1(h)(11)(C)(i)): 20% = 4,000 (IRC 1(h)(1)(D)); foreign tax credit for the 15% withheld = 3,000 (IRC 901; limited by IRC 904 to US tax on that income, 4,000, so fully usable); the credit does not reduce the 3.8% net investment income tax, which is a chapter 2A tax outside IRC 901, so NIIT = 3.8% x 20,000 = 760 (IRC 1411(a)(1)). Dividend total 4,000 - 3,000 + 760 = 1,760. Long-term gains 15,000 x (20% + 3.8%) = 3,570. Total 5,330. Marginal top-bracket rates throughout: the 0%/15% bands, the standard deduction and the part of income under the NIIT threshold are ignored, as the engine has no allowances."
+    },
+    {
+      "path": "standard",
+      "kind": "inheritance",
+      "estate": 50000000,
+      "children": 3,
+      "expected": 8000000,
+      "working": "Second death of a married couple who are US-domiciled (green-card holders; domicile is a facts test, Treas. Reg. 20.0-1(b)(1)). Estate 50,000,000. Tentative tax under IRC 2001(c): 345,800 + 40% of the excess over 1,000,000 = 345,800 + 0.40 x 49,000,000 = 19,945,800. Unified credit on the applicable exclusion of 30,000,000 (basic exclusion 15,000,000 under IRC 2010(c)(3)(C) as amended in 2025 plus the same amount ported from the first spouse under IRC 2010(c)(2)(B) and (4), with a timely Form 706 election) = 345,800 + 0.40 x 29,000,000 = 11,945,800. Tax = 19,945,800 - 11,945,800 = 8,000,000, equal to 40% x (50,000,000 - 30,000,000). The tax does not depend on the number of children (IRC 2001 taxes the estate, not the heirs). Unrealised gains in the estate are not taxed: the heirs take market value as basis (IRC 1014). Exclusion fixed at the 2026 figure; see the open question on indexation and on non-citizen spouses."
+    }
+  ],
+  "assumptions": [
+    "The USA tax file is federal only: no state income tax, state estate tax or local tax is in any figure. The family is assumed to live in a state with none (for example Florida or Texas).",
+    "The family holds individual shares or US-style funds; non-US funds are PFICs (IRC 1291-1298) and would be taxed far worse.",
+    "Dividends are assumed qualified (treaty-country or US-listed issuers); non-qualified dividends would be ordinary income at up to 40.8%. The family is assumed to sit in the top bracket (taxable income above USD 613,700 for a couple) with income over the NIIT threshold, which is the convention of the engine and the tax file.",
+    "Foreign here means non-US. The 15% withholding by the source country is credited against the 20% income tax but not against the 3.8% NIIT, so the residual tax on a non-US dividend is 5% + 3.8% = 8.8%. US-source dividends bear no withholding for a US resident.",
+    "The married couple are non-citizens: the unlimited marital deduction only applies to a qualified domestic trust (IRC 2056(d)); the 30 million exclusion for the couple is assumed to be fully usable.",
+    "Both spouses are domiciled and so can use the USD 15 million lifetime exclusion and gift-split (IRC 2513 needs citizen or resident spouses)."
+  ],
+  "open_questions": [
+    "Needs an engine change: a dynasty trust holds only part of the portfolio. The parents can give at most their two exclusions (USD 30M in 2026, IRC 2010(c)) without 40% gift tax, cannot benefit from the trust afterwards (IRC 2036), so the family's spending must come from the part they keep, and the trust's assets get no step-up at death (Rev. Rul. 2023-2). The engine runs one portfolio per path and pays spending from it, so the dynasty_trust regime is left out until it can split the portfolio, charge gift tax at funding and carry the trust's cost basis. Also: the tax file's dynasty_trust inheritance keeps the full USD 30M exclusion for the remaining estate, although funding the trust used it up (IRC 2001(b)); fix the tax file at the same time.",
+    "Needs an engine change: the basic exclusion is indexed to inflation after 2026 (IRC 2010(c)(3)(B), as amended by Public Law 119-21, section 70106). The engine keeps the exemption fixed in nominal terms while the portfolio grows at about 7% a year, so deaths in years 30 and 60 are over-taxed; the exemption (and the 40% bracket start) would need to grow with inflation.",
+    "Needs an engine change: no basis step-up for the trust. Trust assets keep the parents' cost basis (Rev. Rul. 2023-2) and the heirs owe up to 23.8% when they sell the embedded gain, while personal holdings are stepped up to market value at death (IRC 1014). The engine never taxes unrealised gains at death except through a deemed-disposal rate, so the main cost of the dynasty trust is missing from the projection.",
+    "Needs an engine change: the dynasty trust cannot hold the whole portfolio and also pay the family's living costs. The parents may not benefit from an irrevocable trust (IRC 2036); a spousal lifetime access trust lets one spouse benefit but uses only one exclusion. With 30 million funding the trust, the family's USD 400,000 a year and the grantor's income-tax payments need assets kept outside it; the engine takes them from the trust portfolio. The recipe would need a retained part and a trust part.",
+    "Needs an engine change: a dynasty trust grows outside the estate but the exclusion is used up by the funding gift (IRC 2001(b), 2010(c)); the tax file's dynasty_trust regime (exemption USD 30 million on the remaining estate) double counts it, so the inheritance check on the dynasty trust is expected to fail until the tax file is corrected.",
+    "Needs an engine change: federal estate tax for a non-citizen spouse: the marital deduction requires a qualified domestic trust (IRC 2056(d)) and the deceased spousal unused exclusion is claimed at the QDOT's termination or the survivor's death; a first-death tax can arise if no QDOT is set up. The engine treats the couple as one estate with 30 million of shelter.",
+    "Needs an engine change: the 0%/15%/20% bands, the NIIT threshold and the standard deduction (IRC 1(h), 1411(b), 63) do not scale: the engine uses top-bracket rates on every dollar of income."
+  ],
+  "sources": [
+    {
+      "title": "Rev. Proc. 2025-32 (2026 inflation adjustments)",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "publisher": "Internal Revenue Service",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Net Investment Income Tax",
+      "url": "https://www.irs.gov/individuals/net-investment-income-tax",
+      "publisher": "Internal Revenue Service",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "26 U.S.C. 2001 - Imposition and rate of tax",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2001",
+      "publisher": "Legal Information Institute (Cornell)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "26 U.S.C. 2010 - Unified credit against estate tax",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2010",
+      "publisher": "Legal Information Institute (Cornell)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "26 U.S.C. 901 - Taxes of foreign countries and of possessions of United States",
+      "url": "https://www.law.cornell.edu/uscode/text/26/901",
+      "publisher": "Legal Information Institute (Cornell)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "26 U.S.C. 1411 - Imposition of tax (net investment income)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/1411",
+      "publisher": "Legal Information Institute (Cornell)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "26 U.S.C. 1014 - Basis of property acquired from a decedent",
+      "url": "https://www.law.cornell.edu/uscode/text/26/1014",
+      "publisher": "Legal Information Institute (Cornell)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Rev. Rul. 2023-2 (basis of assets in an irrevocable grantor trust not included in the gross estate)",
+      "url": "https://www.irs.gov/pub/irs-drop/rr-23-02.pdf",
+      "publisher": "Internal Revenue Service",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "PRT",
+  "name": "Portugal",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "standard",
+      "name": "Holding the portfolio personally (standard regime)",
+      "regime": "standard",
+      "note": "Flat 28% on dividends and on the net balance of gains, with foreign tax credited; gains on listed securities held 8 years or more are 30% excluded (19.6% effective). Children are exempt from the 10% stamp duty on inheritances."
+    }
+  ],
+  "checks": [
+    {
+      "path": "standard",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 1.0,
+      "expected": 5540,
+      "working": "Foreign dividends 20,000: special rate 28% (art. 72(1) CIRS) = 5,600; credit for foreign tax, the lower of the 15% withheld (3,000) and the Portuguese tax on that income, capped at the treaty rate (art. 81 CIRS) = 3,000; net 2,600. Gains 15,000 on listed securities held 8 years or more: 30% excluded (art. 43(5)(c) CIRS, as amended by Lei 31/2024), so 10,500 taxable x 28% = 2,940. Total 5,540. Assumes the shares were held 8 years or more (the holding period is counted from acquisition), the shares are not held less than 365 days, and no option to aggregate; the 2.5%/5% additional solidarity rate (art. 68-A CIRS) is not applied."
+    },
+    {
+      "path": "standard",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Gratuitous transfers bear 10% stamp duty (verba 1.2 of the Tabela Geral, Imposto do Selo), but transfers to the spouse, descendants and ascendants are exempt (art. 6(e) CIS), so each child pays 0 on 3,333,333.33. The 0.8% stamp duty (verba 1.1) applies to gifts of Portuguese real estate, not to inheritances, and there is no real estate in the estate here. Foreign-situs assets would in any case fall outside Portuguese stamp duty (art. 4 CIS)."
+    }
+  ],
+  "assumptions": [
+    "Standard regime: gains are on listed securities held 8 years or more, so 30% is excluded; shorter holdings would be taxed at 19.6% on 8 years, 22.4% on 5-8 years, 25.2% on 2-5 years and 28% under 2 years.",
+    "The solidarity surcharge (2.5% on taxable income of 80,000-250,000 and 5% above, art. 68-A CIRS) is not included; I could not confirm whether it applies to income taxed at the 28% special rate.",
+    "IFICI is modelled as if the family qualified. The regime needs an eligible activity in an eligible entity; the tax file notes a passive investor does not.",
+    "The blacklist (Portaria 150/2004) is assumed not to apply to the portfolio's sources.",
+    "IFICI (the successor of NHR) is left out: it requires an eligible job or activity in Portugal (art. 58-A EBF), which a family living on its portfolio does not have. The site's scores leave it out for the same reason.",
+    "Gains are taxed at 28% less the 30% exclusion for listed shares held 8 years or more (Lei 31/2024): 19.6%. A portfolio that turns over faster pays more (25.2% after 2-5 years, 28% under 2 years; gains on shares held under a year are taxed at progressive rates for a top-bracket family)."
+  ],
+  "open_questions": [
+    "Needs an engine change: IFICI exempts foreign-source income per source, with 35% on income from blacklisted jurisdictions (art. 58-A EBF; art. 72 CIRS); the engine has one foreign share and no blacklisted share.",
+    "Whether the 2.5%/5% additional solidarity rate (art. 68-A CIRS) applies on top of the 28% special rate for a family with income above EUR 80,000; if it does, the standard regime is 28% + up to 5% and the tax file's rates need updating.",
+    "IFICI eligibility: the family is a passive investor. Confirm with the AT whether any family member can hold an eligible role; if not, the ifici path is not available to them.",
+    "AIMI (art. 135-A CIMI) is not tested by the checks since they carry no real estate.",
+    "Inherited Portuguese real estate: does the 0.8% stamp duty (verba 1.1 of the Tabela Geral do Imposto do Selo) apply to children inheriting the family home, or only to gifts? The tax file mentions it for gifts only; the projection charges nothing."
+  ],
+  "sources": [
+    {
+      "title": "Código do IRS, artigo 43 (mais-valias)",
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx",
+      "publisher": "Autoridade Tributária e Aduaneira",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Código do IRS, artigo 68-A (taxa adicional de solidariedade)",
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs68a.aspx",
+      "publisher": "Autoridade Tributária e Aduaneira",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Sistema Fiscal Português: taxas aplicáveis 2026",
+      "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/SFP-Taxas-2026.pdf",
+      "publisher": "Autoridade Tributária e Aduaneira",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "FAQ IFICI: rendimentos de fonte estrangeira",
+      "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/pages/faqs-01018.aspx",
+      "publisher": "Autoridade Tributária e Aduaneira",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Informação vinculativa: isenção do artigo 6(e) do Código do Imposto do Selo",
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/patrimonio/selo/Documents/PIV_26029.pdf",
+      "publisher": "Autoridade Tributária e Aduaneira",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Portugal - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/portugal/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Portugal - Individual - Other tax credits and incentives",
+      "url": "https://taxsummaries.pwc.com/portugal/individual/other-tax-credits-and-incentives",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

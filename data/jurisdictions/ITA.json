@@ -668,7 +668,77 @@
           "kind": "professional",
           "accessed": "2026-10-15"
         }
-      ]
+      ],
+      "inheritance": {
+        "summary": "4% above EUR 1 million per child, as for direct holding, but on the S.r.l. quotas valued at the company's book net equity from its last balance sheet adjusted for later changes (art. 16 c. 1 lett. b TUS as amended by D.Lgs. 139/2024), not at the portfolio's market value: unrealised gains on the shares the company holds at cost are not taxed (Cass. 6915/2003, 5282/2003; Notariato study 94-2022/T). The business-succession exemption (art. 3 c. 4-ter TUS) is not applied: it needs the heirs to acquire control (accepted for co-owned quotas with a common representative, risposta 109/2026), and whether it covers a company holding only listed securities is unsettled since the 2025 rewrite (before it, ris. 552/E/2021 and Cass. 6082/2023 said no).",
+        "exemptions_thresholds": "EUR 1,000,000 per child (applies cumulatively to gifts and inheritance from the same donor).",
+        "important_exceptions": "Transfers of family businesses/controlling holdings to descendants exempt if control is held for 5 years. Italian government bonds exempt from inheritance tax.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Italy - Individual - Other taxes (inheritance and gift tax)",
+            "url": "https://taxsummaries.pwc.com/italy/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Art. 16 Testo unico successioni e donazioni (D.Lgs. 346/1990)",
+            "url": "https://www.brocardi.it/testo-unico-successioni-donazioni/titolo-ii/capo-ii/sezione-ii/art16.html",
+            "publisher": "Brocardi.it",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Risposta n. 109 del 26 maggio 2026",
+            "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9978560/Risposta+n.+109_2026/b8bf613a-7389-533b-f9ba-732b56e64f10",
+            "publisher": "Agenzia delle Entrate",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Circolare 3/E del 16 aprile 2025 (riforma successioni e donazioni)",
+            "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8410821/Circolare_decreto_delegato_Successioni_Donazioni.pdf",
+            "publisher": "Agenzia delle Entrate",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Studio n. 94-2022/T",
+            "url": "https://notariato.it/wp-content/uploads/Studio94-2022Tfr.pdf",
+            "publisher": "Consiglio Nazionale del Notariato",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Business-succession exemption (art. 3 c. 4-ter TUS) for a holding of listed securities: the 2025 text asks only for control held 5 years, but the Agenzia has not ruled on a passive holding since (risposta 109/2026 left the question open) and its earlier line (ris. 552/E/2021, Cass. 6082/2023) refused it. If it were accepted, with the quotas inherited in co-ownership, the S.r.l. would pass free of inheritance tax.",
+          "Book value: the Agenzia may depart from the balance sheet for 'mutamenti sopravvenuti' or an unreliable balance sheet (Cass. ord. 11467/2022); no case found where it asserted market value for a securities holding."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed_low",
+        "exemption": 1000000,
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.04
+          }
+        ],
+        "other_transfer_cost_rate": 0.0,
+        "gift_tax": "Same 4% above EUR 1 million per child; prior gifts count against the allowance.",
+        "gifts_same_as_inheritance": true,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "Art. 3 c. 4-ter TUS: transfers to descendants of S.r.l. quotas giving control (art. 2359 c.1 n.1 c.c.), held for 5 years, are exempt; co-owned quotas with a common representative qualify. Not applied here: unsettled for a company holding only listed securities.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Worldwide assets taxed if the deceased/donor was resident in Italy; only Italian assets otherwise.",
+        "domicile_rules": "Based on the deceased's residence at death (Italian civil-law residence).",
+        "spouse_treatment": "taxed_low",
+        "spouse_note": "The spouse pays the same 4% as children on the value above EUR 1 million per heir (D.Lgs. 346/1990 as amended; PwC), about 3.9% effective on EUR 35 million.",
+        "company_shares_at_book_value": true
+      }
     }
   ],
   "residency": {

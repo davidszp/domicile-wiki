@@ -10,11 +10,18 @@ import { residenceShort } from "../panels/immigration.js";
 import { renderCalculator } from "../panels/calculator.js";
 import { successionShort } from "../panels/succession.js";
 import { INHERITANCE, INHERITANCE_RANK, capitalise } from "../labels.js";
+import { loadProfile } from "../data.js";
+import { chart as projectionChart } from "../panels/projection.js";
 
 const MAX_PLACES = MAX_COMPARE - 1; // home takes one of the five columns
 const NEUTRAL_POINTS = 2; // score differences smaller than this are shown without colour
 const WEALTH = { none: "None", limited: "Limited", broad: "Yes" };
 
+/** Wealth after the projection's horizon under the place's best way of holding the portfolio (data/recipes). */
+const bestProjection = (id) => {
+  const ends = Object.entries(jur(id).projection || {}).filter(([k, v]) => k !== "no_tax" && v !== null).map(([, v]) => v);
+  return ends.length ? Math.max(...ends) : null;
+};
 const signed = (v, fmt) => (v > 0 ? "+" : v < 0 ? "−" : "±") + fmt(Math.abs(v));
 
 /** Row definitions: value(id) for display, num(id) for the delta, and which direction is better. */
@@ -28,6 +35,7 @@ function rowDefs() {
     { label: "Residence route for you", text: (id) => residenceShort(jur(id)), skipHome: true },
   ];
   if (!isIncomePersona()) {
+    rows.splice(2, 0, { label: "Wealth after 60 years", num: bestProjection, show: fmtEur, better: "higher" });
     rows.push(
       { label: "Forced heirship", text: (id) => successionShort(jur(id)).text, rank: (id) => successionShort(jur(id)).rank },
       { label: "Spouse inherits", text: (id) => (jur(id).flags?.inheritance_spouse ? capitalise(INHERITANCE[jur(id).flags.inheritance_spouse]) : "not researched"), rank: (id) => INHERITANCE_RANK[jur(id).flags?.inheritance_spouse] },
@@ -103,12 +111,16 @@ function renderSideBySide(stage, ctx) {
     h("h2", null, home ? `You live in ${jur(home).name}. What changes if you move?` : "What changes if you move?"),
     h("p", { class: "muted" }, "Every figure is shown next to where you live now. ", h("span", { class: "better" }, "Blue is better"), ", ", h("span", { class: "worse" }, "orange is worse"), ".")));
 
-  const add = placeSelect("+ Add a place…", "cmp-add", "", pool.filter(([id]) => id !== home && !places.includes(id)), (id) => toggleIn("compare", id, { max: MAX_COMPARE }));
-  add.disabled = places.length >= MAX_PLACES;
+  const full = places.length >= MAX_PLACES;
+  const add = placeSelect(full ? `${MAX_PLACES} places chosen: remove one to add another` : "+ Add a place…", "cmp-add", "", pool.filter(([id]) => id !== home && !places.includes(id)), (id) => toggleIn("compare", id, { max: MAX_COMPARE }));
+  add.disabled = full;
   const top = rankedRows().map((x) => x.id).filter((id) => id !== home && !places.includes(id)).slice(0, MAX_PLACES - places.length);
   stage.append(h("div", { class: "row-actions compare-pick" },
     h("label", { class: "ctl" }, h("span", null, "Where you live now"), placeSelect("Choose your home…", "cmp-home", home, homes, (id) => update({ home: id }, { persist: true }))),
-    h("label", { class: "ctl" }, h("span", null, `Places to compare (${places.length} of ${MAX_PLACES})`), add),
+    h("label", { class: "ctl" }, h("span", null, `Add a place to compare (up to ${MAX_PLACES})`), add),
+    places.length ? h("ul", { class: "cmp-places", "aria-label": "Places you are comparing" }, places.map((id) => h("li", null,
+      h("button", { class: "cmp-place", "aria-label": `Remove ${jur(id).name}`, title: "Remove from the comparison",
+        onclick: () => update({ compare: state.compare.filter((x) => x !== id) }) }, jur(id).name, h("span", { "aria-hidden": "true" }, " ×"))))) : null,
     top.length && places.length < MAX_PLACES ? h("button", { onclick: () => update({ compare: [...places, ...top] }) }, top.length === 1 ? "Add your best match" : `Add your ${top.length} best matches`) : null));
 
   if (!places.length) {
@@ -130,6 +142,7 @@ function renderSideBySide(stage, ctx) {
     })()))) : null;
   const body = h("tbody", null, netRow, rows.map((row) => h("tr", { class: row.group === "score" ? "score-row-c" : "" }, h("th", { scope: "row" }, row.label), cols.map((id) => cell(row, id, home)))),
     h("tr", null, h("th", { scope: "row" }, "Data status"), cols.map((id) => h("td", null, statusBadge(evalOf(id).status)))));
+  if (!isIncomePersona()) stage.append(projectionCompare(cols, home) || "");
   stage.append(h("div", { class: "table-wrap compare-wrap" }, h("table", { class: "grid compare-home" }, h("thead", null, head), body)));
 
   stage.append(h("div", { class: "row-actions" },
@@ -137,4 +150,31 @@ function renderSideBySide(stage, ctx) {
       rows.map((row) => [row.label, ...cols.map((id) => (row.text ? row.text(id) : row.num(id) ?? ""))])) }, "Download CSV"),
     places.length ? h("button", { onclick: () => update({ compare: [] }) }, "Clear places") : null),
     h("p", { class: "small muted" }, `Amounts in ${displayCurrency()} a year. Scores run from 0 to 100; differences under ${NEUTRAL_POINTS} points are left uncoloured. Missing data are shown as missing, never as zero tax. Tax is the expected amount for the person chosen on the left, under the cheapest regime counted.`));
+}
+
+/** "Wealth over 60 years" for the family: one line per place, each under its best way of holding the
+ * portfolio, home dashed. Only places with a projection recipe have a line; the others are named below. */
+function projectionCompare(cols, home) {
+  const have = cols.filter((id) => bestProjection(id) !== null);
+  if (!have.length) return null;
+  const without = cols.filter((id) => !have.includes(id));
+  const sec = h("details", { class: "fold proj-compare", open: "" }, h("summary", null, h("h3", null, "Wealth over 60 years")));
+  const slot = h("p", { class: "small muted" }, "Loading…");
+  sec.append(slot);
+  Promise.all(have.map((id) => loadProfile(id).then((p) => [id, p.projection]))).then((list) => {
+    const a = list[0][1].assumptions;
+    let n = 0;
+    const lines = list.map(([id, pr]) => {
+      const best = pr.paths.filter((x) => x.id !== "no_tax" && !x.missing).reduce((b, x) => (!b || x.years.at(-1)[0] > b.years.at(-1)[0] ? x : b), null);
+      const home_ = id === home;
+      return { ...best, name: `${jur(id).name}${home_ ? " (now)" : ""}: ${best.name}`, cls: home_ ? "proj-home" : `proj-s${n++ % 4}`, dashed: home_ };
+    });
+    slot.replaceWith(
+      h("p", null, `What the family's ${fmtEur(a.portfolio)} portfolio becomes over ${a.years} years, spending ${fmtEur(a.spending)} a year, in each place under its best way of holding it.`
+        + ` Inheritance tax is paid when the parents die (year ${a.deaths[0]}) and again a generation later.`),
+      ...projectionChart(lines, a, `Portfolio over ${a.years} years in each place compared; the row "Wealth after 60 years" in the table gives the figures`),
+      without.length ? h("p", { class: "small muted proj-missing" }, `No projection yet for ${without.map((id) => jur(id).name).join(", ")}: it is being added country by country.`) : "",
+      h("p", { class: "small muted" }, "Every way of holding the portfolio, with the assumptions, is on each country's page. An illustration under steady assumptions, not a forecast or tax advice."));
+  }).catch(() => slot.replaceWith(h("p", { class: "small muted" }, "The projection could not be loaded.")));
+  return sec;
 }

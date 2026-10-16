@@ -69,7 +69,9 @@ export function annualTaxes(rules, p, std = null) {
       if (comp.base.includes("foreign") && covers(rules, "wealth_tax_foreign")) continue;
       const base = wealthBase(comp.base, p);
       if (base <= comp.entry) continue;
-      total += applyBrackets(base - comp.exempt, comp.brackets, comp.mode);
+      let tax = applyBrackets(base - comp.exempt, comp.brackets, comp.mode);
+      if (comp.credits_wht) tax = Math.max(0, tax - divF * p.source_wht); // a tax on deemed income in place of dividend tax
+      total += tax;
     }
     out.wealth_tax = total;
   }

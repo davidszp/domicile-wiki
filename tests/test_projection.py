@@ -92,9 +92,10 @@ def test_paths_rank_below_the_no_tax_line():
 def test_recipe_validates_and_points_at_real_regimes(path):
     assert validate_file(path) == []
     f = json.loads(path.read_text())
-    regimes = {r.id: r for r in J[path.stem].regimes}
+    regimes = {r.id: r for r in P.unit_rules(path.stem, J).regimes}
     for p in f["paths"]:
         assert p["regime"] in regimes, f"{path.stem}: no regime {p['regime']}"
+        assert not regimes[p["regime"]].requires_qualifying_activity, f"{path.stem}/{p['id']}: the family has no job or business, as in the scores"
         if p.get("estate") == "outside_estate":
             assert regimes[p["regime"]].type == "structure", f"{path.stem}/{p['id']}: only a structure can hold assets outside the estate"
 
@@ -111,7 +112,7 @@ def test_engine_reproduces_the_hand_worked_case(iso3, check):
     apart from a model_difference the recipe states and explains."""
     from domicile.taxcalc import Profile, annual_taxes, transfer_taxes
 
-    jur = J[iso3]
+    jur = P.unit_rules(iso3, J)
     path = next(p for p in P.load_recipe(iso3).paths if p.id == check["path"])
     native = {"rates": {jur.currency: {"per_eur": 1.0}}}  # amounts stay in the country's currency
     rules, after, _, _ = P.path_rules(jur, path.regime, native)
@@ -141,3 +142,16 @@ def test_no_us_treaty_means_30_percent_on_us_dividends():
     us_dividends = 1e6 * 0.02 * 0.6
     assert without[0].taxes - with_treaty[0].taxes == pytest.approx(0.15 * us_dividends)
     assert without[0].taxes == pytest.approx(0.15 * 20e3 + 0.15 * us_dividends)  # 15% everywhere + 15 more on US = 30% on US
+
+
+def test_company_shares_at_book_value_leave_unrealised_gains_untaxed():
+    """Italy values S.r.l. quotas at book equity (art. 16 TUS): the inheritance base excludes the unrealised gains."""
+    jur = J["ITA"]
+    rules, after, duration, _ = P.path_rules(jur, "holding_srl", fx.load())
+    assert rules.inh["book_value"]
+    a = P.Assumptions(years=30, deaths=(30,))
+    cfg = scoring.load_config()
+    book, _ = P.project_path(rules, after, duration, a, us_treaty=True, cfg_wht=cfg["us_dividend_withholding"])
+    market = replace(rules, inh={**rules.inh, "book_value": False})
+    mkt, _ = P.project_path(market, after, duration, a, us_treaty=True, cfg_wht=cfg["us_dividend_withholding"])
+    assert 0 < book[-1].inheritance < mkt[-1].inheritance

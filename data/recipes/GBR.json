@@ -1,0 +1,150 @@
+{
+  "id": "GBR",
+  "name": "United Kingdom",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "Dividends at the additional rate of 39.35% with credit for foreign withholding, gains at 24%, no wealth tax. Inheritance tax on the worldwide estate at 40% above the GBP 325,000 nil-rate band once long-term resident."
+    },
+    {
+      "id": "fig_4_year",
+      "name": "4-year foreign income and gains regime, then ordinary residence",
+      "regime": "fig_4_year",
+      "note": "In the first 4 tax years of residence (after 10 consecutive years of non-residence) a claim leaves foreign dividends and foreign gains outside UK tax. From year 5 the ordinary rules apply. The family becomes long-term resident after 10 tax years, so at both deaths (years 30 and 60) inheritance tax covers the worldwide estate."
+    },
+    {
+      "id": "fic",
+      "name": "Family investment company",
+      "regime": "family_investment_company",
+      "note": "A UK company owns the portfolio: corporation tax at 25% on gains, foreign dividends exempt (CTA 2009 Part 9A). The parents' estate holds the company shares: a company that holds investments gets no business property relief (IHTA 1984 s.105(3)), so inheritance tax is the same as for personal holding."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 8470,
+      "working": "Additional-rate taxpayer (income above GBP 125,140), all income foreign, 2026/27. Dividends 20,000 at the dividend additional rate of 39.35% (ITA 2007 s.8) = 7,870; foreign tax credit for the 15% treaty withholding, 3,000, allowed up to the UK tax on that income (TIOPA 2010 s.18), so the UK tax is 7,870 - 3,000 = 4,870. Gains 15,000 at 24%, the higher rate on non-residential assets (TCGA 1992 s.1H) = 3,600. The GBP 500 dividend allowance (ITA 2007 s.13A) and the GBP 3,000 annual exempt amount (TCGA 1992 s.3) are ignored, as the engine has no allowances. Total 4,870 + 3,600 = 8,470."
+    },
+    {
+      "path": "fig_4_year",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 0.9,
+      "expected": 1147,
+      "working": "With a claim under the 4-year foreign income and gains regime, foreign dividends and foreign chargeable gains are not taxed and may be brought into the UK freely (FA 2025, new regime replacing the remittance basis from 6 April 2025). Foreign share 90%: 18,000 of dividends and 13,500 of gains are exempt. UK-source dividends 2,000 x 39.35% = 787 (ITA 2007 s.8); UK-source gains 1,500 x 24% = 360 (TCGA 1992 s.1H). Total 787 + 360 = 1,147. The claim also costs the personal allowance and the annual exempt amount; both are ignored here."
+    },
+    {
+      "path": "fig_4_year",
+      "phase": "after",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 8470,
+      "working": "From the fifth tax year of residence the regime cannot be claimed and the ordinary rules apply. Foreign dividends 20,000 at 39.35% = 7,870 less credit for the 15% withholding of 3,000 = 4,870 (ITA 2007 s.8; TIOPA 2010 s.18); gains 15,000 at 24% = 3,600 (TCGA 1992 s.1H). Total 8,470 (allowances ignored as above)."
+    },
+    {
+      "path": "fic",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "expected": 3750,
+      "working": "Company-level tax only; payout tax excluded. Foreign dividends received by a UK company are exempt (CTA 2009 Part 9A Chapter 3, e.g. the portfolio-holdings class of s.931G); the foreign withholding is not recoverable. Gains on the shares are chargeable gains taxed at the main corporation tax rate of 25% (CTA 2010 s.3; a close investment-holding company has no small profits rate, see the HMRC marginal relief guidance and CTA 2010 s.34): 15,000 x 25% = 3,750. Indexation allowance is frozen and ignored; the substantial shareholding exemption needs a 10% stake and does not apply to portfolio shares. Running costs: the tax file records none for this structure, so none are counted. Total 3,750."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 3740000,
+      "working": "Second death of a couple, long-term residents (IHTA 1984 s.6, s.48 as amended from 6 April 2025). Nil-rate band £325,000 (s.7, Sch. 1) plus the first spouse's unused band transferred (s.8A), as everything passed to the spouse at the first death (spouse exemption, s.18) = £650,000. Residence nil-rate band tapered to nil above £2.35M (s.8D). (10,000,000 - 650,000) x 40% = 3,740,000."
+    },
+    {
+      "path": "fic",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 3740000,
+      "working": "Second death of a couple, long-term residents (IHTA 1984 s.6, s.48 as amended from 6 April 2025). Nil-rate band £325,000 (s.7, Sch. 1) plus the first spouse's unused band transferred (s.8A), as everything passed to the spouse at the first death (spouse exemption, s.18) = £650,000. Residence nil-rate band tapered to nil above £2.35M (s.8D). (10,000,000 - 650,000) x 40% = 3,740,000. FIC shares: no business property relief for a company holding investments (s.105(3)), so the same."
+    }
+  ],
+  "assumptions": [
+    "The family has been non-UK resident for at least 10 consecutive tax years, so it can claim the 4-year foreign income and gains regime in years 1-4. It stays UK resident after that.",
+    "Dividends are taxed at the additional rate throughout: with EUR 600,000 a year of dividends, even if shared between the spouses, each is far above GBP 125,140. The dividend allowance and the CGT annual exempt amount are ignored.",
+    "Long-term residence (10 of the last 20 tax years) is reached in year 10, so at both deaths in the model the worldwide estate is within UK inheritance tax. During years 1-9 only UK-situs assets would be, which the fig_4_year regime records but no death falls in that period.",
+    "The family investment company is funded with cash, or with shares whose cost is today's value. Transferring existing low-cost shares is a disposal at market value (TCGA 1992 s.17): foreign gains would be tax-free in a FIG year but taxed at 24% afterwards.",
+    "Payout from the company is modelled at 39.35% in the tax file (additional-rate dividends). The usual interest-free loan repaid tax-free is not modelled."
+  ],
+  "open_questions": [
+    "Needs an engine change: a family investment company is normally funded by an interest-free loan from the parents; repaying that loan is not income, so withdrawals of GBP 400,000 a year are free of personal tax until the loan is repaid, and only then are dividends taxed at up to 39.35% (ITA 2007 s.8). The engine applies the 39.35% payout rate from year 1; it needs a payout path that starts tax-free up to the loan balance.",
+    "Needs an engine change: lifetime gifts. A gift to children is a potentially exempt transfer, free of inheritance tax if the donor survives 7 years, with taper relief between years 3 and 7 (IHTA 1984 s.3A, s.7(4)). The engine has taxable events only at the two deaths, so the standard UK planning (gifts and gift of FIC growth shares) cannot be shown.",
+    "Needs an engine change: contributing shares to the family investment company during the 4 FIG years is a disposal whose foreign gain is exempt under the claim (TCGA 1992 s.17 with the FIG exemption), giving the company a market-value base tax-free. The engine has no asset-transfer event.",
+    "Needs an engine change: the 40% inheritance-tax charge applies to the estate of each parent, and the nil-rate band and (tapered) residence band of the first parent to die transfer to the survivor (IHTA 1984 s.8A); the engine taxes a single estate at a death.",
+    "Tax file: the family_investment_company structure records no annual running cost (accounts, corporation tax return, administration), unlike the Italian holding S.r.l.; the check therefore counts none. Typical costs of a few thousand pounds a year would matter little at this size.",
+    "The legislation section for the FIG regime was not read in the Finance Act 2025 text; the check rests on HMRC's guidance on the 4-year regime."
+  ],
+  "sources": [
+    {
+      "title": "Tax on dividends (rates 2026/27)",
+      "url": "https://www.gov.uk/tax-on-dividends",
+      "publisher": "GOV.UK",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Capital Gains Tax: what you pay it on, rates and allowances",
+      "url": "https://www.gov.uk/capital-gains-tax/rates",
+      "publisher": "HM Revenue & Customs",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Check if you can claim the 4-year foreign income and gains regime",
+      "url": "https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime",
+      "publisher": "HM Revenue & Customs",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance Tax Act 1984, section 6A (long-term UK resident)",
+      "url": "https://www.legislation.gov.uk/ukpga/1984/51/section/6A",
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance Tax Act 1984, section 105 (relevant business property)",
+      "url": "https://www.legislation.gov.uk/ukpga/1984/51/section/105",
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Corporation Tax Act 2009, section 931G (exempt class: portfolio holdings)",
+      "url": "https://www.legislation.gov.uk/ukpga/2009/4/section/931G",
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Corporation Tax Act 2009, section 931F (exempt class: non-redeemable ordinary shares)",
+      "url": "https://www.legislation.gov.uk/ukpga/2009/4/section/931F",
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Marginal Relief for Corporation Tax",
+      "url": "https://www.gov.uk/guidance/corporation-tax-marginal-relief",
+      "publisher": "HM Revenue & Customs",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

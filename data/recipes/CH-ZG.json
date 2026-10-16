@@ -1,0 +1,109 @@
+{
+  "id": "CH-ZG",
+  "name": "Switzerland, canton of Zug",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary taxation)",
+      "regime": "standard",
+      "note": "Dividends are ordinary income at the federal and the Zug progressive tariff (a portfolio holding under 10% gets no partial taxation); gains on listed shares are tax-free for a private investor (DBG art. 16 para. 3); annual cantonal and communal wealth tax on worldwide net assets; children inherit free of tax (StG ZG para. 175)."
+    },
+    {
+      "id": "lump_sum",
+      "name": "Lump-sum taxation (Besteuerung nach dem Aufwand)",
+      "regime": "lump_sum",
+      "note": "Income and wealth tax are replaced by the ordinary tariffs applied to a deemed income of at least the cantonal minimum, 7 times the rent of the home or the living costs, and to a deemed wealth of at least 20 times that base (StG ZG para. 14, DBG art. 14). No time limit in law while both spouses stay non-Swiss and do not work in Switzerland. Foreign dividends and gains are covered; inheritance follows the ordinary Zug rules (children exempt)."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 1000000,
+      "wealth": 100000000,
+      "expected": 352249.75,
+      "working": "Inputs chosen so that taxable income is far above every tariff break; allowances, deductions (social deductions, child deductions) and the dividend-free part are ignored, as in the other recipes; a married couple with 3 children, no church tax, lives in the city of Zug, tax year 2026. DIVIDENDS 2,000,000, taxed in full (portfolio holding under 10%: DBG art. 20 para. 1 let. c, para. 1bis not met; StG ZG para. 19). Federal (DBG art. 36 para. 2, tariff in force since 1 Jan 2026): tax at 941,400 is 108,261.00, plus 11.50 per 100 above, = 11.5% of the whole amount: 2,000,000 x 11.5% = 230,000.00 (the CHF 263 per-child reduction of art. 36 para. 2bis, 789 in all, is ignored). Zug simple tax (StG ZG para. 35 para. 2, Mehrpersonentarif as indexed for 2025/26, 8.0% above 299,800): tax on the first 299,800 is 20,653.00 (sum of the 14 bands), so simple tax = 20,653.00 + 8% x (2,000,000 - 299,800) = 156,669.00. Multipliers 2026 (para. 2 para. 2b; Steuerfuesse 2023-2026): canton 78% + city of Zug 52% = 130%: 156,669.00 x 1.30 = 203,669.70. Total before credit 433,669.70. Flat-rate credit for the 15% treaty withholding on foreign dividends (Verordnung ueber die Anrechnung auslaendischer Quellensteuern, SR 672.201): 15% x 2,000,000 = 300,000.00, below the Swiss tax on those dividends. Dividend tax after credit 133,669.70. GAINS 1,000,000: nil, private capital gains on movable assets are tax-free (DBG art. 16 para. 3; StHG art. 7 para. 4 let. b). WEALTH 100,000,000 (para. 38, para. 44): exempt amounts 408,000 for the couple + 3 x 102,000 for the minor children = 714,000, taxable 99,286,000. Simple tax with the 2025/26 indexed bands (0.425 promille on the first 254,000, 0.85 on the next 254,000, 1.275 on the next 254,000, 1.7 above 762,000): 107.95 + 215.90 + 323.85 = 647.70, plus 1.7 promille x (99,286,000 - 762,000) = 167,490.80, = 168,138.50; x 1.30 = 218,580.05. Total 133,669.70 + 218,580.05 = 352,249.75.",
+      "model_difference": 4330.57,
+      "model_note": "The engine applies one flat marginal rate of 21.9% (11.5% federal + 10.4% Zug) to every franc of dividends, whereas the Zug tariff is progressive below CHF 299,800: the law's tax is 3,331 of simple tax lower (x 1.30 = 4,330.30). The engine's wealth-tax bracket rates are also rounded to 5 decimals (0.00055 for 0.5525 promille etc.), worth +0.27."
+    },
+    {
+      "path": "lump_sum",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 300000,
+      "wealth": 30000000,
+      "expected": 257239.69,
+      "working": "The tax does not depend on the actual dividends, gains or wealth (foreign income and foreign assets are covered), only on the deemed base, which this check ASSUMES to be a round CHF 1,000,000 (about 7 times a rent of CHF 12,000 a month; StG ZG para. 14 para. 3 let. b, and DBG art. 14 para. 3). The real base is a function of rent and living costs, see open questions. Ordinary tariffs on that base (StG ZG para. 14 para. 5; DBG art. 14 para. 5), married couple with 3 children, no church tax, tax year 2026. Federal (DBG art. 36 para. 2): 11.5% of 1,000,000 = 115,000.00 (108,261.00 at 941,400 + 11.50 per 100 on the 58,600 above), less the per-child reduction of art. 36 para. 2bis, 3 x 263 = 789, = 114,211.00. Zug income tax (para. 35 para. 2): simple tax 20,653.00 + 8% x (1,000,000 - 299,800) = 76,669.00; x (78% + 52%) = 99,669.70. Deemed wealth: at least 20 times the base (para. 14 para. 4) = 20,000,000, taxed as taxable wealth with no allowances: simple tax 647.70 + 1.7 promille x (20,000,000 - 762,000) = 33,352.30; x 1.30 = 43,358.99. Total 114,211.00 + 99,669.70 + 43,358.99 = 257,239.69."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Descendants are exempt from inheritance and gift tax in the canton of Zug whatever the amount (StG ZG para. 175 para. 1: the spouse, registered partner, direct descendants, step-children and parents of the deceased are exempt). There is no federal inheritance tax. Tax 0."
+    }
+  ],
+  "assumptions": [
+    "The family is two non-Swiss spouses who have not been Swiss tax residents for 10 years and do not work in Switzerland, so lump-sum taxation is open to them (StG ZG para. 14 para. 1-2; DBG art. 14). Both must qualify.",
+    "City of Zug, tax year 2026: canton 78% (para. 2 para. 2b, 2026-2029) and commune 52%, no church tax. The national file's figures for Zug rest on the same 130% total.",
+    "Wealth-tax exemptions (CHF 714,000 for a couple with 3 minor children) are the 2025 indexed amounts published by the ESTV; the 2026 amounts were not published separately in the sources read.",
+    "A Swiss family foundation (ZGB art. 335) is not offered as a path. It is taxed as a legal entity (DBG art. 49) on its income and capital, its distributions are taxable income for the beneficiaries, and it can only serve education, endowment and support of family members; it brings no tax advantage over holding personally, and a mere holding company for a listed portfolio does not either (participation relief needs 10% stakes).",
+    "The lump-sum base is shown at the national-file representative of CHF 1,000,000. The family's actual base is the highest of the cantonal minimum (CHF 500,000), 7 times the rent or rental value of the home and the living costs; at the stated spending of EUR 400,000 and a rent of CHF 6,500 a month the base would be lower than CHF 1,000,000 and the lump sum correspondingly lower.",
+    "Treaty relief on foreign dividends is assumed to be claimed only if the control calculation stays below the lump sum; the 15% withholding is then a final cost, as for all other paths."
+  ],
+  "open_questions": [
+    "Needs an engine change: the lump sum is a fixed amount per regime, but by law it is the tax on a base of at least the highest of the cantonal minimum, 7 times the rent and the family's worldwide living costs (StG ZG para. 14 para. 3; DBG art. 14 para. 3), which grows with rent and costs and is reassessed each year. The engine would need the base as a function of the family's spending and housing cost, with the ordinary tariffs applied to it.",
+    "Needs an engine change: modified lump sum. Claiming treaty-reduced withholding on foreign dividends puts that income into the control calculation, where it is taxed at the ordinary tariffs (StG ZG para. 14 para. 6 let. f, DBG art. 14 para. 4). The tax is then the higher of the lump sum and the control calculation, and a family with a large US-dominated portfolio that does not claim treaty relief bears 30% US withholding with no Swiss credit. The engine charges 15% on every foreign dividend and ignores the control calculation.",
+    "Needs an engine change: the Zug tariff is progressive, the engine uses a single marginal rate for dividends (about 4,300 too high on a CHF 2m income, and the federal marginal rate is 13% between CHF 152,400 and 941,300, not 11.5%). A progressive income tax per regime would remove the gap.",
+    "Tariff amounts indexed for 2026 should be confirmed against the Steuerverwaltung Zug's published 2026 Mehrpersonentarif and wealth-tax exemptions when they appear (the Grundtarif for 2026 is identical to 2025).",
+    "Lump sum for this family: the base is the highest of CHF 500,000 (Zug, Vo StG §4) / about CHF 435,000 (federal, DBG art. 14(3)), 7 times the rent or rental value of the home, and the family's world-wide living costs. For a CHF 5M home that is about CHF 1.2M; the tax file's representative CHF 1M base is close but not derived. An independent check on the legal minimum base gave about CHF 111,500 a year against CHF 257,000 here.",
+    "Tax file: the flat 11.5% federal rate overstates federal tax at the family's ~CHF 600,000 of dividends (average 10.5%, marginal 13%; ESTV tariff 2026)."
+  ],
+  "sources": [
+    {
+      "title": "Steuergesetz des Kantons Zug (BGS 632.1), Stand 1. Januar 2026",
+      "url": "https://zg.lexwork.naz.ch/de/dta/632.1.pdf",
+      "publisher": "Kanton Zug",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Kantonsblatt Zug (Stand Februar 2026): Steuertarife, Vermoegenssteuer, Aufwandbesteuerung",
+      "url": "https://www.estv2.admin.ch/stp/kb/zg-de.pdf",
+      "publisher": "Swiss Federal Tax Administration (ESTV)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Kantonssteuer Grundtarif gueltig Steuerperiode 2026 (Tarife 2001 bis 2026)",
+      "url": "https://cdn.zg.ch/dam/jcr:96c7eef4-eb2f-4f8a-a4c4-dad209249598/Grundtarif%202001%20bis%202026.pdf",
+      "publisher": "Steuerverwaltung Kanton Zug",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Steuerfuesse der Gemeinden des Kantons Zug fuer die Steuerjahre 2023-2026",
+      "url": "https://cdn.zg.ch/dam/jcr:24fb8832-3383-4718-9a48-9461bc7501fc/Steuerf%C3%BCsse%202026_effektiv%2021.1.26.pdf",
+      "publisher": "Steuerverwaltung Kanton Zug",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Bundesgesetz ueber die direkte Bundessteuer (DBG), SR 642.11, Stand 1. Januar 2026 (art. 14, 16, 20, 36)",
+      "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260101/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260101-de-html.html",
+      "publisher": "Swiss Confederation (Fedlex)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "ESTV Steuermaeppchen 2025: Besteuerung nach dem Aufwand",
+      "url": "https://www.estv2.admin.ch/stp/sm/aufwand-de-fr.pdf",
+      "publisher": "Swiss Federal Tax Administration (ESTV)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

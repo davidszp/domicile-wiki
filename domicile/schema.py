@@ -110,6 +110,8 @@ class WealthComponent(Strict):
     entry_threshold: float = Field(0, ge=0, description="Tax applies only if base exceeds this (cliff), native currency")
     brackets: list[Bracket] = Field(min_length=1)
     bracket_mode: Literal["marginal", "whole_amount"] = "marginal"
+    credits_withholding: bool = Field(False, description="Foreign withholding on dividends is credited against this tax "
+                                                         "(Netherlands Box 3), up to the tax itself")
     notes: str = ""
 
 
@@ -147,6 +149,9 @@ class Inheritance(MetricBase):
                     "(e.g. Greece Art. 5A foreign movables exempt, Bermuda situs-based estate duty)")
     deemed_disposal_rate: Rate = Field(
         0, description="Income/capital-gains tax charged on unrealised gains at death or gift (e.g. Canada), as a rate on the gain")
+    company_shares_at_book_value: bool = Field(
+        False, description="Structure regimes: the company's shares are valued at its book net equity, so the portfolio's "
+                           "unrealised gains are not taxed at death (Italy art. 16 TUS)")
     gift_tax: str = Field(min_length=3)
     gifts_same_as_inheritance: bool
     lifetime_gift_tax_free_after_years: float | None = None
@@ -678,7 +683,7 @@ class RecipeCheck(Strict):
 class RecipeFile(Strict):
     """How a family's portfolio is projected over 60 years in one country: the paths to compare."""
 
-    id: str = Field(pattern=r"^[A-Z]{3}$")
+    id: str = Field(pattern=r"^([A-Z]{3}|[A-Z]{2}-[A-Z0-9]{1,3})$", description="Country (DEU) or a region with its own tax rules (CH-ZG)")
     name: str
     researched_on: dt.date
     paths: list[RecipePath] = Field(min_length=1)

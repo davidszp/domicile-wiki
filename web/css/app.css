@@ -408,10 +408,16 @@ details.fold[open] { padding-bottom: 8px; }
 .proj-s3 { stroke: var(--spec-violet); background: var(--spec-violet); }
 .proj-legend { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 0; margin: 6px 0 10px; }
 .proj-key { display: inline-block; width: 18px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+.proj-home { stroke: var(--text); background: var(--text); }
+.proj-chart .proj-dashed { stroke-dasharray: 7 4; }
+.proj-key.proj-dashed { background: repeating-linear-gradient(90deg, currentColor 0 6px, transparent 6px 9px); color: var(--text); }
+.proj-missing { margin-top: 0; }
 
 /* D · Compare */
 .compare-pick { align-items: flex-end; gap: 12px; }
 .compare-pick select { min-width: 220px; }
+.cmp-places { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; align-self: flex-end; }
+.cmp-place { padding: 4px 10px; border-radius: 999px; font-size: 13px; }
 .compare-home th[scope="col"] { min-width: 150px; }
 .compare-home th[scope="col"] .linklike { white-space: normal; }
 .compare-home .col-remove { margin-left: 4px; padding: 0 6px; line-height: 1.4; vertical-align: 1px; }

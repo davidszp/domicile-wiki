@@ -1,0 +1,158 @@
+{
+  "id": "ITA",
+  "name": "Italy",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence)",
+      "regime": "standard",
+      "note": "26% substitute tax on foreign dividends and on gains (no foreign tax credit on dividends), plus IVAFE of 0.2% a year on foreign financial assets; inheritance tax of 4% on what each child receives above EUR 1m."
+    },
+    {
+      "id": "flat_tax_24bis",
+      "name": "Flat tax for new residents (art. 24-bis TUIR, 15 years, then ordinary rules)",
+      "regime": "flat_tax_24bis",
+      "note": "A fixed substitute tax replaces all tax on foreign income and gains and IVAFE for 15 years (art. 24-bis TUIR); foreign assets passing to children during the option are outside Italian inheritance tax (art. 1 para. 158 L. 232/2016). From year 16 the ordinary rules apply, including inheritance tax on worldwide assets, so both deaths (years 30 and 60) fall under the ordinary rules."
+    },
+    {
+      "id": "holding_srl",
+      "name": "Italian family holding S.r.l.",
+      "regime": "holding_srl",
+      "note": "The S.r.l. owns the portfolio, pays IRES 24% on 5% of dividends and 5% of gains on shares held 12 months (arts. 89 and 87 TUIR), and costs about EUR 10,000 a year to run. The estate holds the S.r.l. shares at about the portfolio's value; there is no business relief for a holding of listed shares. Not combinable with art. 24-bis. At death the quotas are valued at the S.r.l.'s book equity (art. 16 TUS), so the portfolio's unrealised gains escape the 4% inheritance tax; the business-succession exemption is not assumed."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "expected": 29100,
+      "working": "All income foreign, shares held with a foreign broker and declared in the tax return. Dividends 20,000: 26% substitute tax on the GROSS dividend when there is no Italian intermediary (art. 18 TUIR; Agenzia delle Entrate risposta 111/2020), with no credit for the 15% foreign withholding (credit under art. 165 TUIR is not allowed against a substitute tax) = 5,200. Gains 15,000 x 26% (arts. 67-68 TUIR; art. 5 D.Lgs. 461/1997; art. 3 D.L. 66/2014) = 3,900. IVAFE: 0.2% of the year-end value of financial assets held abroad (art. 19 paras. 18-22 D.L. 201/2011): 10,000,000 x 0.2% = 20,000. Total 5,200 + 3,900 + 20,000 = 29,100."
+    },
+    {
+      "path": "flat_tax_24bis",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "expected": 300000,
+      "working": "The elector pays a fixed substitute tax of EUR 300,000 a year on ALL foreign-source income, for options exercised for a transfer of residence from 1 January 2026 (art. 24-bis para. 2 TUIR as amended by L. 199/2025, art. 1 para. 25). It covers the foreign dividends and the gains on foreign non-qualified shares, and the elector owes no IVAFE or IVIE on the covered assets (Agenzia delle Entrate circular 17/E of 2017, read through secondary sources). Nothing else is due on these inputs: 300,000. This is the elector alone; each family member to whom the option is extended pays EUR 50,000 (art. 24-bis paras. 2 and 6), not included here (see open questions)."
+    },
+    {
+      "path": "flat_tax_24bis",
+      "phase": "after",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "expected": 29100,
+      "working": "The option ceases to have effect 15 years after its first tax period (art. 24-bis para. 4 TUIR) and from then on the ordinary rules of the standard regime apply, as worked for the personal path: 26% x 20,000 = 5,200 on foreign dividends (art. 18 TUIR, no credit), 26% x 15,000 = 3,900 on gains (arts. 67-68 TUIR), IVAFE 0.2% x 10,000,000 = 20,000 (art. 19 paras. 18-22 D.L. 201/2011). Total 29,100."
+    },
+    {
+      "path": "holding_srl",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 0,
+      "expected": 10270,
+      "working": "The S.r.l. is assumed to pass the non-operating company test (art. 30 L. 724/1994), to hold the shares as financial fixed assets for at least 12 months and to have no stake in a privileged-tax state. Foreign dividends: 95% excluded (art. 89 para. 2 TUIR), so 5% x 20,000 = 1,000 is taxable at IRES 24% (art. 77 TUIR) = 240. Foreign tax credit (art. 165 TUIR): only the part of the foreign tax that corresponds to the taxable 5% counts (art. 165 para. 10), 5% x 3,000 = 150 on the 15% withholding, and it is within the 240 Italian tax: dividend IRES = 240 - 150 = 90. Gains on shares: 95% exempt under the participation exemption (art. 87 TUIR), 5% x 15,000 = 750 x 24% = 180. IRAP: nil (dividends and share gains are outside the base). Running costs of the S.r.l. as recorded in the tax file (accounts, filing, administration): 10,000. Stamp duty on a foreign custodian's statements is not due, so wealth is set at 0. Total 90 + 180 + 10,000 = 10,270. Payout tax excluded.",
+      "model_difference": 150,
+      "model_note": "The engine takes the foreign-tax credit as 'none' for this regime, so it charges the full 1.2% (240) on the dividends; by art. 165 para. 10 TUIR the foreign withholding is creditable up to 5% of itself, i.e. 150 of the 240."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 280000,
+      "working": "Succession to children is taxed at 4% on the value of what each beneficiary receives above EUR 1,000,000 (art. 2 para. 48 let. a D.L. 262/2006, converted by L. 286/2006). A resident deceased is taxed on assets wherever they are (art. 2 para. 1 D.Lgs. 346/1990). Each child receives 3,333,333.33; above 1,000,000 that is 2,333,333.33 x 4% = 93,333.33. Three children: 280,000."
+    },
+    {
+      "path": "flat_tax_24bis",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "For successions opened while the option is valid, Italian inheritance tax is due only on assets and rights in Italy at the time of death (art. 1 para. 158 L. 232/2016). The estate here is entirely foreign assets, so no tax is due: 0. (Hypothetical: with the option lasting 15 years, the model's deaths in years 30 and 60 fall under the ordinary rules.)"
+    }
+  ],
+  "assumptions": [
+    "The family has been non-resident in Italy for at least 9 of the 10 previous tax years and files the interpello needed to elect art. 24-bis (art. 24-bis para. 1, 3 TUIR); EU citizens need no visa.",
+    "Foreign shares are held with a foreign broker and declared in the return: the 26% falls on the gross dividend (risposta 111/2020) and IVAFE applies. With an Italian intermediary the 26% would be on the dividend net of the foreign tax (art. 27 para. 4 DPR 600/1973) and Italian stamp duty of 0.2% would replace IVAFE.",
+    "The Italian holding S.r.l. is funded with shares bought (or cash invested) at today's value: contributing existing low-cost shares would be a disposal for the individual taxed at 26% (art. 9 TUIR). It stays an operating-test pass: a low-yield portfolio that fails the test pays IRES at 34.5% on at least 0.75% of the portfolio's value.",
+    "Church or regional income surcharges do not arise: dividends and gains are final substitute taxes.",
+    "Italian inheritance tax is shown for a single parent's estate of EUR 10m passing to three children; the surviving spouse's own allowance and the transfer between spouses (also at 4% above EUR 1m) are not modelled.",
+    "The Italian-source share of income taxed under the flat-tax regime (Italian dividends at 26%, Italian gains at 26%) is outside the lump sum; the checks use foreign income only.",
+    "Holding S.r.l.: the portfolio is held in positions of at least EUR 500,000 each, kept 12 months or more and booked as financial fixed assets, so dividends and gains get the 95% exclusion (art. 87 and 89 TUIR) even if the 5%-or-EUR-500,000 minimum of L. 199/2025 applies; shares sold within 12 months would be taxed at 24%. Dividends of about 2% a year keep the company above the 1% revenue test for non-operating companies (art. 30 L. 724/1994).",
+    "Inherited family home: inheritance tax is charged on the market value here; in practice Italian returns use the cadastral value (art. 34 c. 5 TUS safe harbour), usually much lower, and the 2% mortgage and 1% cadastral taxes fall to EUR 200 each when one heir qualifies for first-home relief. The two roughly offset and are left out."
+  ],
+  "open_questions": [
+    "Needs an engine change: each family member who joins the art. 24-bis option pays a further EUR 50,000 a year (art. 24-bis para. 6 TUIR as amended by L. 199/2025). The lump_sum regime holds one amount (EUR 300,000) while its note says a family of five would pay EUR 500,000; the engine needs a per-member add-on and the number of electing members.",
+    "Needs an engine change: the 15-year option can be revoked or lost earlier (art. 24-bis para. 4: revocable, and lost on non-payment of the substitute tax); the engine runs it for exactly 15 years.",
+    "Tax file: the rate basis of the standard dividend entry says the base is the foreign dividend NET of withholding (37.1% total burden), but the rate used (26% of the gross, no credit) matches the self-declared case worked here; the 'net' base only applies when an Italian intermediary pays the dividend (art. 27 para. 4 DPR 600/1973). Confirm which custody the model means.",
+    "Tax file: the holding_srl regime records foreign_tax_credit 'none'; art. 165 para. 10 TUIR gives a partial credit (5% of the foreign tax), 150 on the 20,000 dividend case here. See model_difference.",
+    "Tax file: the holding_srl entry has an imposta di bollo of 0.2% capped at EUR 14,000, which applies to Italian intermediaries' statements; a company holding abroad would not pay it, and would pay no IVAFE either.",
+    "The exemption from IVAFE and IVIE for art. 24-bis electors (circular 17/E of 2017) and art. 1 para. 158 L. 232/2016 were read through secondary sources, not on Normattiva; the new consolidated TUIR (D.Lgs. 117/2026) applies from 1 January 2027 with new article numbers."
+  ],
+  "sources": [
+    {
+      "title": "Art. 24-bis TUIR - Opzione per l'imposta sostitutiva sui redditi prodotti all'estero (text as amended by L. 199/2025)",
+      "url": "https://www.brocardi.it/testo-unico-imposte-redditi/titolo-i/capo-i/art24bis.html",
+      "publisher": "Brocardi.it (consolidated legislation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Art. 87 TUIR - Plusvalenze esenti (updated 26/09/2026)",
+      "url": "https://www.brocardi.it/testo-unico-imposte-redditi/titolo-ii/capo-ii/sezione-i/art87.html",
+      "publisher": "Brocardi.it (consolidated legislation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "D.L. 27 marzo 2026, n. 38, art. 11 (Ripristino regime esclusione dividendi e regime PEX), conv. L. 22 maggio 2026, n. 88",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-03-27;38~art11",
+      "publisher": "Normattiva",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "L. 23 dicembre 1994, n. 724, art. 30 (societa non operative)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1994-12-23;724~art30!vig=2026-10-15",
+      "publisher": "Normattiva",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Italy - Individual - Other taxes (IVAFE, IVIE, IMU; inheritance and gift tax)",
+      "url": "https://taxsummaries.pwc.com/italy/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Dividendi esteri: regime di tassazione (imposta sostitutiva 26% su base lorda, quadro RM)",
+      "url": "https://fiscomania.com/dividendi-esteri-regime-tassazione/",
+      "publisher": "Fiscomania",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Limiti al credito per imposte estere per redditi tassati solo in parte (art. 165 comma 10 TUIR)",
+      "url": "https://www.ecnews.it/fiscale/fisco-e-patrimonio/reddito-impresa-e-irap/limiti-credito-imposte-estere-redditi-tassati-solo-parte/",
+      "publisher": "Euroconference News",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Benefici tributari per i neo residenti con elevato patrimonio: studio del Notariato (art. 1 c. 158 L. 232/2016)",
+      "url": "https://edotto.com/articolo/benefici-tributari-per-i-neo-residenti-con-elevato-patrimonio-in-uno-studio-del-notariato",
+      "publisher": "Edotto",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

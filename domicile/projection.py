@@ -97,6 +97,23 @@ def load_recipe(iso3: str) -> RecipeFile:
     return RecipeFile.model_validate_json((RECIPES / f"{iso3}.json").read_text(encoding="utf-8"))
 
 
+def unit_rules(code: str, jurisdictions: dict):
+    """The tax file a recipe runs on: a country (``DEU``) or a region with its own rules (``CH-ZG``), whose
+    overrides in data/subnational are applied to its country's file as the build does."""
+    if code in jurisdictions:
+        return jurisdictions[code]
+    from domicile import build
+
+    country = country_of(code)
+    unit = next(u for u in build.load_subnational()[country].units if u.code == code)
+    return build.merge_unit(jurisdictions[country], unit)
+
+
+def country_of(code: str) -> str:
+    """ISO3 of the country a recipe belongs to (``CH-ZG`` -> ``CHE``)."""
+    return {"CH": "CHE", "ES": "ESP", "IT": "ITA", "US": "USA", "AE": "ARE"}.get(code.split("-")[0], code) if "-" in code else code
+
+
 def path_rules(jur, regime_id: str, fx: dict) -> tuple[Rules, Rules, float | None, str]:
     """(rules while the regime applies, rules afterwards, duration in years, regime name)."""
     std = next(r for r in jur.regimes if r.type == "standard")
@@ -111,6 +128,7 @@ def project_path(rules: Rules, after: Rules, duration: float | None, a: Assumpti
                  cfg_wht: dict, estate: str = "portfolio") -> tuple[list[Year], str | None]:
     """The yearly loop for one path. Returns the years, or a reason when the data cannot price a year."""
     v, unrealised = a.portfolio, 0.0
+    basis = a.portfolio  # the family's cost of the company's shares, for a deemed sale of them at death
     growth = a.inflation if a.spending_growth is None else a.spending_growth
     out: list[Year] = []
     for t in range(1, a.years + 1):
@@ -140,16 +158,21 @@ def project_path(rules: Rules, after: Rules, duration: float | None, a: Assumpti
         inh = 0.0
         if t in a.deaths:
             in_estate = v if estate == "portfolio" else 0.0
+            if in_estate and r.structure and r.inh.get("book_value"):
+                in_estate = max(0.0, v - unrealised)  # the company's books carry the shares it holds at cost
             total = in_estate + home
+            # Held personally, the gain is the portfolio's unrealised gain; through a company the parents hold
+            # shares, whose gain is everything the company grew by since they put the portfolio in.
+            gain = max(0.0, v - basis) if r.structure else unrealised
             heirs = replace(p, portfolio=v, net_wealth=total, estate=total,
-                            unrealized_gain_share=min(1.0, unrealised / total) if in_estate > 0 and total > 0 else 0.0)
+                            unrealized_gain_share=min(1.0, gain / total) if in_estate > 0 and total > 0 else 0.0)
             tax = transfer_taxes(r, heirs)
             if tax is None:
                 return out, "inheritance tax is not researched for this regime"
             inh = tax
             v -= inh
             if r.inh and r.inh.get("deemed_disposal"):
-                unrealised = 0.0  # the deemed sale resets the base
+                unrealised, basis = 0.0, v  # the deemed sale resets the base
         out.append(Year(t, v / infl, taxes / infl, inh / infl, "regime" if r is rules else "standard"))
         if v <= 0:
             return out, "the portfolio runs out"
@@ -165,8 +188,8 @@ def project(iso3: str, a: Assumptions | None = None, *, cfg: dict | None = None,
     jurisdictions = jurisdictions or build.load_jurisdictions()
     fx = fx or fxm.load()
     recipe = load_recipe(iso3)
-    jur = jurisdictions[iso3]
-    treaty = scoring.has_us_treaty(iso3, cfg)
+    jur = unit_rules(iso3, jurisdictions)
+    treaty = scoring.has_us_treaty(country_of(iso3), cfg)
     results = []
     for path in recipe.paths:
         rules, after, duration, name = path_rules(jur, path.regime, fx)

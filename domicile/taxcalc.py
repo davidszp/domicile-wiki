@@ -68,6 +68,7 @@ def _wealth_component(c: WealthComponent, currency: str, fx: dict) -> dict:
         "exempt": round(to_eur(c.exempt_amount, currency, fx), 2),
         "entry": round(to_eur(c.entry_threshold, currency, fx), 2),
         "brackets": _brackets(c.brackets, currency, fx),
+        "credits_wht": c.credits_withholding,
     }
 
 
@@ -78,6 +79,7 @@ def _inheritance(i: Inheritance, currency: str, fx: dict) -> dict:
         "brackets": _brackets(i.brackets, currency, fx),
         "other_cost": i.other_transfer_cost_rate,
         "deemed_disposal": i.deemed_disposal_rate,
+        "book_value": i.company_shares_at_book_value,
         "scope": i.scope,
         "gift_free_after": i.lifetime_gift_tax_free_after_years,
     }
@@ -195,7 +197,10 @@ def annual_taxes(rules: Rules, p: Profile, std: Rules | None = None) -> dict[str
             base = wealth_base(comp["base"], p)
             if base <= comp["entry"]:
                 continue
-            total += apply_brackets(base - comp["exempt"], comp["brackets"], comp["mode"])
+            tax = apply_brackets(base - comp["exempt"], comp["brackets"], comp["mode"])
+            if comp.get("credits_wht"):  # a tax on deemed income that takes the place of dividend tax
+                tax = max(0.0, tax - div_f * p.source_wht)
+            total += tax
         out["wealth_tax"] = total
 
     _add_structure_costs(rules, p, out)

@@ -148,7 +148,8 @@
         "components": [
           {
             "name": "Box 3 deemed return tax on investments (6.00% x 36%)",
-            "base": "net_wealth_worldwide",
+            "base": "financial_assets_all",
+            "credits_withholding": true,
             "exempt_amount": 118714,
             "entry_threshold": 0,
             "bracket_mode": "marginal",
@@ -244,7 +245,7 @@
         "payout_tax_rate": 0.31,
         "payout_notes": "Dividends to the parents are Box 2 income: 24.5% on the first EUR 68,843 per person and 31% above (2026, art. 2.12 Wet IB 2001); partners can split Box 2 income, so two parents use the lower band twice (on EUR 400,000 about 28.8% overall; the top rate 31% is used here). The BV withholds 15% Dutch dividend tax, credited against Box 2. Loans from the BV above EUR 500,000 per shareholder (with partner), other than qualifying home loans, are taxed as a deemed Box 2 dividend (excessive borrowing rule).",
         "substance_and_anti_avoidance": "Portfolio shares (stakes below 5%) do not qualify for the participation exemption, so dividends and gains are fully taxed at 19%/25.8%; foreign withholding tax is credited under treaties (or deducted as a cost). No exit or lock-in at company level, but the excessive-borrowing rule blocks tax-free access to the money through loans. The fiscal investment institution (FBI, 0% corporate tax with a distribution obligation) has shareholder restrictions that were not verified for a single family. Shares in the BV are Box 2 assets, not Box 3 assets, so they are outside the deemed-return tax.",
-        "exit_and_liquidation": "Emigration: the Netherlands issues a protective assessment on the Box 2 gain built up in the BV shares; payment can be deferred under conditions. Death: the shares are deemed disposed of (Box 2 tax at 31% on the gain), unless the heirs elect to roll the latent claim over under strict conditions (a 2026 district-court case allowed roll-over for a BV with no business, but the conditions were not verified here). Liquidation: distributions above paid-in capital are Box 2 income at 24.5%/31%.",
+        "exit_and_liquidation": "Emigration: the Netherlands issues a protective assessment on the Box 2 gain built up in the BV shares; payment can be deferred under conditions. Death: the shares are deemed disposed of (Box 2 tax at 31% on the gain), unless the heirs roll the latent claim over (art. 4.17a Wet IB 2001), which needs an enterprise in the company; district courts have refused it for BVs without one (see the regime's inheritance entry). Liquidation: distributions above paid-in capital are Box 2 income at 24.5%/31%.",
         "sources": [
           {
             "title": "Wet inkomstenbelasting 2001 (art. 2.12 Box 2 rates 2026)",
@@ -403,7 +404,85 @@
           "kind": "professional",
           "accessed": "2026-10-15"
         }
-      ]
+      ],
+      "inheritance": {
+        "summary": "Inheritance tax as for direct holding, on the value of the BV shares (10%/20% for children above EUR 26,230 each). In addition the death is a deemed disposal of the parents' substantial interest (art. 4.16 lid 1 letter e Wet IB 2001): Box 2 income tax at 31% (24.5% on the first EUR 68,843) on the shares' value above the parents' acquisition price. The roll-over (doorschuiving, art. 4.17a Wet IB 2001) needs an enterprise in the company; for a BV holding only a listed portfolio, district courts have refused it.",
+        "exemptions_thresholds": "Child EUR 26,230 (2026); disabled child EUR 78,671; partner EUR 828,035. Gift tax: annual exemption for gifts from parents to children and a one-off increased exemption (for a home, study or freely between ages 18 and 39), amounts not verified for 2026.",
+        "eligibility_conditions": "Deceased or donor resident (or deemed resident) in the Netherlands at the time of the transfer; non-resident donors/deceased are not taxed even on Dutch assets.",
+        "regional_differences": "None.",
+        "important_exceptions": "Business succession facility (BOR): large exemption for qualifying business assets, not for investment assets; the BOR has been tightened in recent budgets (2025/2026 details not verified).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Tarieven erfbelasting 2026",
+            "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/erfbelasting/content/tarieven-erfbelasting",
+            "publisher": "Belastingdienst",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Vrijstelling erfbelasting 2026",
+            "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/erfbelasting/content/vrijstelling-erfbelasting",
+            "publisher": "Belastingdienst",
+            "kind": "tax_authority",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Netherlands - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/netherlands/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-15"
+          },
+          {
+            "title": "Wet inkomstenbelasting 2001 (art. 4.16, 4.17a)",
+            "url": "https://wetten.overheid.nl/BWBR0011353/2026-01-01/",
+            "publisher": "Overheid.nl",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Doorschuifregeling niet van toepassing zonder verzoek en zonder materiële onderneming",
+            "url": "https://www.taxlive.nl/nl/documenten/vn-vandaag/doorschuifregeling-niet-van-toepassing-zonder-verzoek-en-zonder-materiele-onderneming/",
+            "publisher": "Taxlive (Vakstudie Nieuws)",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Roll-over refusal for a pure investment BV rests on district-court decisions reported by Taxlive (Rb. Noord-Nederland; Rb. Zeeland-West-Brabant 2026), not on reading art. 4.17a Wet IB 2001 itself: confirm from the statute.",
+          "The Box 2 tax due at death is a debt of the estate and lowers the inheritance tax; the engine charges both in full, which overstates the total a little.",
+          "The 24.5% first band (EUR 68,843) is ignored: 31% on the whole gain."
+        ],
+        "basis": "beneficiary",
+        "children_treatment": "taxed",
+        "exemption": 26230,
+        "bracket_mode": "marginal",
+        "brackets": [
+          {
+            "from_amount": 0,
+            "rate": 0.1
+          },
+          {
+            "from_amount": 158669,
+            "rate": 0.2
+          }
+        ],
+        "other_transfer_cost_rate": 0,
+        "gift_tax": "Gift tax uses the same rates (10% / 20% for children) with smaller exemptions: an annual exemption for gifts from parents to a child and a one-off higher exemption; gifts from the same donor in one calendar year are aggregated. Gifts made within 180 days before death are added to the estate.",
+        "gifts_same_as_inheritance": false,
+        "lifetime_gift_tax_free_after_years": null,
+        "business_relief": "BOR (bedrijfsopvolgingsregeling): 100% exemption up to a cap and 83% above for qualifying business assets with continuation conditions; investment assets and listed portfolios do not qualify.",
+        "business_relief_covers_public_shares": false,
+        "foreign_assets": "Worldwide estate if the deceased was resident or deemed resident; credit or exemption for foreign tax under the unilateral decree and the few estate tax treaties.",
+        "domicile_rules": "Dutch nationals who die within 10 years of leaving the Netherlands are treated as resident; anyone who makes a gift within one year of leaving is treated as resident for gift tax. The heir's residence does not matter.",
+        "spouse_treatment": "taxed",
+        "spouse_note": "A partner (spouse, registered or cohabiting partner) has an exemption of EUR 828,035 in 2026; the rest is taxed at 10% up to EUR 158,669 and 20% above (Successiewet 1956), about 20% effective on a EUR 35M estate.",
+        "deemed_disposal_rate": 0.31
+      }
     }
   ],
   "residency": {

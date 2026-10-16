@@ -1,0 +1,116 @@
+{
+  "id": "NLD",
+  "name": "Netherlands",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "standard",
+      "name": "Holding the portfolio personally (Box 3)",
+      "regime": "standard",
+      "note": "Box 3 taxes a deemed return of 6.00% on investments at 36% (2.16%) above the allowance, whatever the portfolio really earns; dividends and gains are not taxed as such. Inheritance tax is charged per child at 10%/20%; the portfolio is in the estate."
+    },
+    {
+      "id": "beleggings_bv",
+      "name": "Investment BV (beleggings-BV)",
+      "regime": "beleggings_bv",
+      "estate": "portfolio",
+      "note": "A Dutch BV owned by the parents takes the portfolio out of Box 3. The BV pays corporate income tax on actual dividends and gains (no participation exemption below 5%); the parents' Box 2 tax on payouts is not part of the annual figure. The shares are in the estate at value (no business relief for investment assets). At each death the parents' BV shares are deemed sold (art. 4.16 Wet IB 2001): 31% Box 2 tax on their growth since the portfolio went in, on top of inheritance tax; no roll-over for a BV without a business."
+    }
+  ],
+  "checks": [
+    {
+      "path": "standard",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 183435.78,
+      "working": "Gains and dividends are not taxed as such in Box 3 (art. 5.2 Wet IB 2001). Deemed return on investments 2026: 6.00% (art. 5.2 and the 2026 percentages, final). Allowance for fiscal partners 2 x 59,357 = 118,714 (art. 5.5). Return from savings and investments = 6.00% x (10,000,000 - 118,714) = 592,877.16, taxed at 36% (art. 2.13) = 213,435.78 (equal to 2.16% x 9,881,286). Credit for the 15% foreign withholding on 200,000 of non-Dutch dividends = 30,000 (Besluit voorkoming dubbele belasting 2001, art. 25 and the maximum-credit rule: credit limited to the Box 3 tax attributable to the foreign assets, here all of it). Tax 213,435.78 - 30,000 = 183,435.78. Assumes the family's actual return, including unrealised gains, is above the 6.00% deemed return, so the evidence rule of the Wet tegenbewijsregeling box 3 does not lower the tax."
+    },
+    {
+      "path": "beleggings_bv",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 46700,
+      "working": "The BV is taxed on actual realised profit, with no Box 3 on the shares (the parents' BV shares are a Box 2 asset, taxed only on payout). Taxable profit: dividends 200,000 (not exempt, participation exemption needs a 5% stake, art. 13 Wet Vpb 1969) + gains 150,000 = 350,000. Corporate income tax 2026 (art. 22 Wet Vpb 1969): 19% x 200,000 = 38,000 + 25.8% x 150,000 = 38,700 = 76,700. Credit of 15% foreign withholding on the 200,000 dividends = 30,000 (Besluit voorkoming dubbele belasting 2001; the credit cannot exceed the corporate tax attributable to that income, 200,000/350,000 x 76,700 = 43,828.57, so it is fully used). Tax 76,700 - 30,000 = 46,700. No running cost of the BV is added: the tax file records none. Payout tax (Box 2) excluded.",
+      "model_difference": 13600,
+      "model_note": "The engine applies the 25.8% top rate to all BV income; by law the first EUR 200,000 of profit is taxed at 19%, which is 6.8% x 200,000 = 13,600 less."
+    },
+    {
+      "path": "standard",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 1936661.3,
+      "working": "Each child inherits 10,000,000 / 3 = 3,333,333.33. Exemption for a child 26,230 (Successiewet 1956, art. 32 as indexed for 2026) leaves 3,307,103.33. Rates for the first tariff group (children), art. 24: 10% on the first 158,669 = 15,866.90; 20% on the rest, 3,148,434.33 x 0.20 = 629,686.87. Per child 645,553.77; three children 1,936,661.30 (rounded to the cent from 645,553.7667 x 3). The portfolio qualifies for no business relief (BOR covers business assets, not investments)."
+    },
+    {
+      "path": "beleggings_bv",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 1936661.3,
+      "working": "The shares in the BV are valued at market value (about the portfolio) and are inherited like any asset: same per-child calculation as for personal holding (3,333,333.33 less 26,230, 10% up to 158,669 and 20% above, Successiewet 1956 art. 24 and 32) = 645,553.77 per child, 1,936,661.30 in total. No business succession relief for an investment BV. Assumes the BV shares carry no latent gain over their cost (they were contributed at market value), so the deemed disposal at death in Box 2 (art. 4.16(1)(e) Wet IB 2001, 31%) is zero in this case; see the open question."
+    }
+  ],
+  "assumptions": [
+    "The family are fiscal partners (Box 3 allowance EUR 118,714) and have just arrived: the 30%-ruling and partial non-resident status are not relevant to a passive investor and are left out.",
+    "Box 3 is the 2026 system: 6.00% deemed return on investments, 36%. The planned actual-return system from 1 January 2028 is not law and not modelled.",
+    "The BV is assumed to hold the portfolio contributed at market value, so the parents' Box 2 acquisition price equals the portfolio at the start.",
+    "Foreign dividends carry 15% withholding in the checks. The family home is in Box 1 and not part of any figure here.",
+    "Box 3 taxes a deemed 6% return; a taxpayer may prove a lower actual return (Wet tegenbewijsregeling box 3). Under the steady 7% return assumed here the deemed return is the lower one, so the rebuttal never applies; in a real bad year it would."
+  ],
+  "open_questions": [
+    "Needs an engine change: the corporate rate has a 19% band on the first EUR 200,000 (art. 22 Wet Vpb 1969); the engine takes the 25.8% top rate for everything.",
+    "Check the 2026 Box 3 and inheritance figures against the Belastingdienst pages once more in January 2027 (the 2026 deposit and debt percentages are provisional but unused here).",
+    "The BV's running costs (accountant, filing) are not in the tax file; the BV check therefore carries none."
+  ],
+  "sources": [
+    {
+      "title": "Wet inkomstenbelasting 2001",
+      "url": "https://wetten.overheid.nl/BWBR0011353/2026-01-01/",
+      "publisher": "Overheid.nl",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Successiewet 1956",
+      "url": "https://wetten.overheid.nl/BWBR0002080/",
+      "publisher": "Overheid.nl",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Wet op de vennootschapsbelasting 1969",
+      "url": "https://wetten.overheid.nl/BWBR0002672/",
+      "publisher": "Overheid.nl",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tarieven erfbelasting 2026",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/erfbelasting/content/tarieven-erfbelasting",
+      "publisher": "Belastingdienst",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Box 3: percentages, vrijstellingen en bedragen 2026",
+      "url": "https://www.sra.nl/nieuws/259001/2026/01/box-3-percentages-vrijstellingen-en-bedragen-2026",
+      "publisher": "SRA",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Vennootschapsbelasting: tarieven",
+      "url": "https://www.kvk.nl/geldzaken/vennootschapsbelasting/",
+      "publisher": "Kamer van Koophandel",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -15,14 +15,15 @@ function series(path, start) {
   return [[0, start], ...path.years.flatMap(([w, , inh], i) => (inh ? [[i + 1, (w + inh) * 1e3], [i + 1, w * 1e3]] : [[i + 1, w * 1e3]]))];
 }
 
-function chart(paths, a) {
+/** Line chart of wealth per year. ``lines``: [{ name, years, cls?, dashed? }]; a line without ``cls`` gets the
+ * next series colour. Returns [chart, legend]. */
+export function chart(lines, a, label = `Portfolio over ${a.years} years for each way of holding it; the table below gives the figures`) {
   const W = 760, H = 360, m = { t: 16, r: 16, b: 40, l: 56 };
-  const lines = paths.map((p, i) => ({ ...p, cls: `proj-s${i % SERIES}`, pts: series(p, a.portfolio) }));
+  lines = lines.map((p, i) => ({ ...p, cls: p.cls || `proj-s${i % SERIES}`, pts: series(p, a.portfolio) }));
   const max = d3.max(lines, (l) => d3.max(l.pts, (d) => d[1])) || 1;
   const x = d3.scaleLinear().domain([0, a.years]).range([m.l, W - m.r]);
   const y = d3.scaleLinear().domain([0, max]).nice().range([H - m.b, m.t]);
-  const svg = d3.create("svg").attr("class", "chart-svg proj-chart").attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img")
-    .attr("aria-label", `Portfolio over ${a.years} years for each way of holding it; the table below gives the figures`);
+  const svg = d3.create("svg").attr("class", "chart-svg proj-chart").attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img").attr("aria-label", label);
   svg.append("g").attr("class", "axis").attr("transform", `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(6).tickFormat((t) => `${t}`));
   svg.append("g").attr("class", "axis").attr("transform", `translate(${m.l},0)`)
     .call(d3.axisLeft(y).tickValues(d3.ticks(0, toDisplay(y.domain()[1]), 5).map(fromDisplay)).tickFormat(compactMoney));
@@ -35,10 +36,11 @@ function chart(paths, a) {
   });
   const line = d3.line().x((d) => x(d[0])).y((d) => y(d[1]));
   for (const l of lines) {
-    svg.append("path").attr("class", `proj-line ${l.cls}`).attr("d", line(l.pts))
+    svg.append("path").attr("class", `proj-line ${l.cls}${l.dashed ? " proj-dashed" : ""}`).attr("d", line(l.pts))
       .append("title").text(`${l.name}: ${fmtEur(l.pts.at(-1)[1])} after ${a.years} years`);
   }
-  const legend = h("ul", { class: "proj-legend small" }, lines.map((l) => h("li", null, h("span", { class: `proj-key ${l.cls}`, "aria-hidden": "true" }), l.name)));
+  const legend = h("ul", { class: "proj-legend small" }, lines.map((l) => h("li", null,
+    h("span", { class: `proj-key ${l.cls}${l.dashed ? " proj-dashed" : ""}`, "aria-hidden": "true" }), l.name)));
   return [h("div", { class: "chart-wrap" }, svg.node()), legend];
 }
 

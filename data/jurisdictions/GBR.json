@@ -145,7 +145,7 @@
       },
       "inheritance": {
         "summary": "Inheritance tax (IHT) of 40% on the estate above a £325,000 nil-rate band (frozen to April 2031). Since 6 April 2025 scope depends on residence, not domicile: a 'long-term UK resident' (UK resident in at least 10 of the previous 20 tax years) is taxed on worldwide assets; others only on UK-situs assets. Children are not exempt.",
-        "exemptions_thresholds": "Nil-rate band £325,000 per person (transferable to spouse). Residence nil-rate band £175,000 for a home left to children, withdrawn by £1 per £2 above a £2m estate (so nil for a wealthy family). Spouse exemption unlimited between two long-term residents (capped at £325,000 to a non-long-term-resident spouse). Annual gift exemption £3,000; regular gifts from surplus income exempt without limit.",
+        "exemptions_thresholds": "Nil-rate band £325,000 per person; the first spouse's unused band passes to the survivor (IHTA 1984 s.8A), so £650,000 at the second death when everything went to the spouse first, the case modelled here (as both exclusions are counted for the US). Residence nil-rate band £175,000 for a home left to children, withdrawn by £1 per £2 above a £2m estate (so nil for a wealthy family). Spouse exemption unlimited between two long-term residents (capped at £325,000 to a non-long-term-resident spouse). Annual gift exemption £3,000; regular gifts from surplus income exempt without limit.",
         "eligibility_conditions": "Applies to deaths and transfers on or after 6 April 2025 under the long-term residence rules (IHTA 1984 ss.6A-6C).",
         "important_exceptions": "Business Property Relief / Agricultural Property Relief: from 6 April 2026 100% relief is capped at a combined £2.5m per person (raised from the £1m first announced; unused allowance transferable to a spouse, so up to £5m), 50% relief above it. Shares on non-'listed' markets such as AIM get only 50% relief (effective 20% IHT). Unused pension funds and most pension death benefits come into the estate from 6 April 2027 (Finance Act 2026). Excluded-property trusts largely lose protection under the new rules.",
         "tax_year": "2026/27",
@@ -224,7 +224,7 @@
         "children_treatment": "taxed",
         "spouse_treatment": "exempt_with_conditions",
         "spouse_note": "Transfers to a spouse or civil partner are exempt without limit (Inheritance Tax Act 1984 s. 18(1)), but where the transferor is a long-term UK resident and the spouse is not, the exemption is capped at the exemption limit, £325,000 (s. 18(2)); the gift must not be conditional beyond 12 months or take effect after an interest ends (s. 18(3)). It defers rather than removes the tax: the assets form part of the survivor's estate.",
-        "exemption": 325000,
+        "exemption": 650000,
         "brackets": [
           {
             "from_amount": 0,
@@ -333,7 +333,7 @@
       },
       "inheritance": {
         "summary": "The FIG regime itself does not change IHT, but a family that qualifies for it is by definition not a long-term UK resident: for roughly its first 10 tax years in the UK, only UK-situs assets are in the IHT net (40% above £325,000). Non-UK assets (e.g. a foreign custody portfolio of non-UK securities) are outside IHT until 10 of the previous 20 years are UK-resident years.",
-        "exemptions_thresholds": "Nil-rate band £325,000 per person (transferable to spouse). Residence nil-rate band £175,000 for a home left to children, withdrawn by £1 per £2 above a £2m estate (so nil for a wealthy family). Spouse exemption unlimited between two long-term residents (capped at £325,000 to a non-long-term-resident spouse). Annual gift exemption £3,000; regular gifts from surplus income exempt without limit.",
+        "exemptions_thresholds": "Nil-rate band £325,000 per person; the first spouse's unused band passes to the survivor (IHTA 1984 s.8A), so £650,000 at the second death when everything went to the spouse first, the case modelled here (as both exclusions are counted for the US). Residence nil-rate band £175,000 for a home left to children, withdrawn by £1 per £2 above a £2m estate (so nil for a wealthy family). Spouse exemption unlimited between two long-term residents (capped at £325,000 to a non-long-term-resident spouse). Annual gift exemption £3,000; regular gifts from surplus income exempt without limit.",
         "eligibility_conditions": "Not a long-term UK resident (fewer than 10 of the previous 20 tax years UK resident).",
         "important_exceptions": "Business Property Relief / Agricultural Property Relief: from 6 April 2026 100% relief is capped at a combined £2.5m per person (raised from the £1m first announced; unused allowance transferable to a spouse, so up to £5m), 50% relief above it. Shares on non-'listed' markets such as AIM get only 50% relief (effective 20% IHT). Unused pension funds and most pension death benefits come into the estate from 6 April 2027 (Finance Act 2026). Excluded-property trusts largely lose protection under the new rules.",
         "tax_year": "2026/27",
@@ -412,7 +412,7 @@
         "children_treatment": "taxed",
         "spouse_treatment": "exempt_with_conditions",
         "spouse_note": "Transfers to a spouse or civil partner are exempt without limit (Inheritance Tax Act 1984 s. 18(1)), but where the transferor is a long-term UK resident and the spouse is not, the exemption is capped at the exemption limit, £325,000 (s. 18(2)); the gift must not be conditional beyond 12 months or take effect after an interest ends (s. 18(3)). It defers rather than removes the tax: the assets form part of the survivor's estate.",
-        "exemption": 325000,
+        "exemption": 650000,
         "brackets": [
           {
             "from_amount": 0,
