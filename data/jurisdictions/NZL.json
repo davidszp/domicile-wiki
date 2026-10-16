@@ -4,7 +4,7 @@
   "continent": "Oceania",
   "region": "Australia and New Zealand",
   "currency": "NZD",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "New Zealand has no general capital gains tax, no inheritance, estate or gift tax and no net wealth tax, but a resident holding more than NZD 50,000 (cost) of foreign shares is taxed under the foreign investment fund (FIF) rules: normally 5% of the opening market value is deemed income (fair dividend rate), taxed at up to 39%, i.e. about 1.95% of the portfolio's value a year whatever the actual return (individuals may use the actual total return instead when it is lower, never below zero). Dividends and gains on those shares are not taxed separately. New residents get a once-only 4-year transitional-resident exemption on most foreign investment income, and since 2025 some new migrants can elect a realisation-based revenue account method (dividends plus 70% of gains), which US citizens can apply to all their foreign shares. Gains on residential property sold within 2 years (bright-line test) or on assets bought for resale are taxed.",
   "regimes": [
     {
@@ -47,6 +47,7 @@
         "tax_year": "2026/27",
         "sources": [
           {"title": "Tax for New Zealand tax residents", "url": "https://www.ird.govt.nz/international-tax/individuals/tax-for-new-zealand-tax-residents", "publisher": "Inland Revenue (NZ)", "kind": "tax_authority", "accessed": "2026-10-15"},
+          {"title": "Budget 2026: Foreign investment fund changes (information sheet, 28 May 2026)", "url": "https://www.taxpolicy.ird.govt.nz/-/media/project/ir/tp/publications/2026/is-foreign-investment-fund.pdf", "publisher": "Inland Revenue (NZ), Policy and Strategy", "kind": "tax_authority", "accessed": "2026-10-16"},
           {"title": "Guide to foreign investment funds (IR461, April 2026)", "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir400---ir499/ir461/ir461.pdf?modified=20260331214052", "publisher": "Inland Revenue (NZ)", "kind": "tax_authority", "accessed": "2026-10-15"},
           {"title": "New Zealand - Individual - Taxes on personal income", "url": "https://taxsummaries.pwc.com/new-zealand/individual/taxes-on-personal-income", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"},
           {"title": "New Zealand - Corporate - Withholding taxes", "url": "https://taxsummaries.pwc.com/new-zealand/corporate/withholding-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
@@ -66,7 +67,7 @@
       "wealth_tax": {
         "summary": "No net wealth tax. However, the FIF fair dividend rate method taxes 5% of the opening market value of foreign shares each year as income (39% top rate = about 1.95% of value), regardless of actual dividends or gains. It is recorded here as a limited levy on foreign financial assets because economically it works like one.",
         "exemptions_thresholds": "Applies only if the total cost of foreign attributing interests exceeds NZD 50,000 at any time in the year. Exempt: ASX-listed Australian-resident companies with franking accounts. Individuals and eligible family trusts may instead pay on the actual total return (comparative value) when it is lower than 5%, and the portfolio total cannot go below zero.",
-        "important_exceptions": "Statutory basis: Income Tax Act 2007 subpart EX (FIF rules), FDR method. Budget 2026 proposes extending the revenue account method (realisation basis) to all residents (per PwC, July 2026; not yet law).",
+        "important_exceptions": "Statutory basis: Income Tax Act 2007 subpart EX (FIF rules), FDR method. Budget 2026 proposals (IRD information sheet, 28 May 2026; not yet law, bill status not confirmed): all residents could use the revenue account method for unlisted foreign shares only, residents taxed twice because of citizenship or a right to work elsewhere (mainly US citizens) could use the extended RAM for all foreign shares, and the FIF de minimis would rise from NZD 50,000 to NZD 100,000 from 1 April 2026 if enacted. A listed portfolio held by an EU family stays under the FDR method.",
         "tax_year": "2026/27",
         "sources": [
           {"title": "Guide to foreign investment funds (IR461, April 2026)", "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir400---ir499/ir461/ir461.pdf?modified=20260331214052", "publisher": "Inland Revenue (NZ)", "kind": "tax_authority", "accessed": "2026-10-15"},
@@ -80,23 +81,25 @@
         "components": [
           {
             "name": "FIF fair dividend rate (5% deemed return taxed at 39%)",
-            "base": "financial_assets_foreign",
+            "base": "financial_assets_foreign", "credits_withholding": true,
             "exempt_amount": 0,
             "entry_threshold": 50000,
             "brackets": [
               {"from_amount": 0, "rate": 0.0195}
             ],
-            "notes": "Threshold is on total cost, not value. Rate = 5% x 39% top marginal rate. Foreign source dividend WHT is creditable against it. In loss or low-return years individuals can pay on the actual return (comparative value), floor zero."
+            "notes": "Threshold is on total cost, not value, and is not indexed (set in 2000; IRD's Budget 2026 information sheet proposes raising it from NZD 50,000 to NZD 100,000). Rate = 5% x 39% top marginal rate. Foreign source dividend WHT is creditable against it. In loss or low-return years individuals can pay on the actual return (comparative value), floor zero."
           }
         ],
         "property_tax_note": "Local council rates on land based on rateable value. No stamp duty on property. Residential land withholding tax applies to offshore sellers within the bright-line period."
       },
       "inheritance": {
-        "summary": "No inheritance, estate or gift tax. Estate duty was abolished in 1992 and gift duty in 2011 (gift-duty date from general knowledge, not verified from an opened source). Transfers to children are tax-free; for FIF shares the heirs simply continue under the FIF rules.",
+        "summary": "No inheritance, estate or gift tax. Estate duty was abolished in 1992 and gift duty for transfers made on or after 1 October 2011 (Inland Revenue's gift duty abolition note and gifting overview, found by search and not opened). Transfers to children are tax-free; for FIF shares the heirs simply continue under the FIF rules.",
         "exemptions_thresholds": "No tax of any amount.",
         "important_exceptions": "Inherited residential land is generally outside the bright-line test for the heir (general rule; not verified). Trusts: trustee income tax rate 39% from 2024/25 (not verified in this session).",
         "tax_year": "2026/27",
         "sources": [
+          {"title": "Gift duty abolition", "url": "https://taxpolicy.ird.govt.nz/publications/2011/2011-sr-gift-duty-abolition/gift-duty-abolition", "publisher": "Inland Revenue (NZ), Policy and Strategy", "kind": "tax_authority", "accessed": "2026-10-16"},
+          {"title": "Gifting overview", "url": "https://www.taxtechnical.ird.govt.nz/overviews/gifting", "publisher": "Inland Revenue (NZ), Technical Tax", "kind": "tax_authority", "accessed": "2026-10-16"},
           {"title": "Inheritance tax (country overview)", "url": "https://en.wikipedia.org/wiki/Inheritance_tax", "publisher": "Wikipedia", "kind": "other", "accessed": "2026-10-15"},
           {"title": "New Zealand - Individual - Other taxes", "url": "https://taxsummaries.pwc.com/new-zealand/individual/other-taxes", "publisher": "PwC Worldwide Tax Summaries", "kind": "professional", "accessed": "2026-10-15"}
         ],
@@ -113,7 +116,7 @@
         "lifetime_gift_tax_free_after_years": null,
         "foreign_assets": "No tax.",
         "domicile_rules": "Not applicable.",
-        "open_questions": ["Official confirmation of the estate duty (1992) and gift duty (2011) abolition dates was not obtained: the legislation site returned HTTP 403 and PwC's page does not mention them."]
+        "open_questions": ["The estate duty (1992) and gift duty (1 October 2011) abolition dates rest on search results of two Inland Revenue pages that were not opened."]
       }
     },
     {
@@ -174,7 +177,7 @@
       "id": "revenue_account_method",
       "name": "Revenue account method for new migrants (extended RAM for foreign citizens taxed abroad, e.g. US citizens)",
       "type": "special",
-      "description": "From 1 April 2025, eligible new residents may elect to tax qualifying FIF shares on a realisation basis: dividends at marginal rates plus 70% of realised gains. Under 'extended RAM' it applies to all foreign shares of a person who remains liable to tax on their disposal in another country by citizenship or right to live there (in practice US citizens). Leaving New Zealand triggers a deferred deemed disposal for 3 years.",
+      "description": "Introduced on 30 March 2026 (IRD, Budget 2026 information sheet), eligible new residents who became resident on or after 1 April 2024 after at least five years of non-residence may elect to tax qualifying FIF shares on a realisation basis: dividends at marginal rates plus 70% of realised gains. Under 'extended RAM' it applies to all foreign shares of a person who remains liable to tax on their disposal in another country by citizenship or right to live there (in practice US citizens). Leaving New Zealand triggers a deferred deemed disposal for 3 years.",
       "eligible_citizenships": ["US"],
       "eligibility": "Natural person (or family trust whose principal settlor qualifies) who became resident (not transitional) on or after 1 April 2024 after at least five years of non-residence. Without the extended rule RAM covers only unlisted foreign shares acquired before arrival, so for a listed portfolio it is relevant mainly to US citizens.",
       "duration_years": null,
@@ -355,7 +358,7 @@
         "components": [
           {
             "name": "FIF fair dividend rate in a company (5% deemed return taxed at 28%)",
-            "base": "financial_assets_foreign",
+            "base": "financial_assets_foreign", "credits_withholding": true,
             "exempt_amount": 0,
             "entry_threshold": 0,
             "brackets": [
@@ -470,11 +473,11 @@
     {"name": "Wellington", "lon": 174.77557, "lat": -41.28664, "kind": "capital", "coordinate_source": "GeoNames 2179537"},
     {"name": "Auckland", "lon": 174.76349, "lat": -36.84853, "kind": "financial_centre", "coordinate_source": "GeoNames 2193733"}
   ],
-  "us_citizen_notes": "US citizens are taxed by the US on worldwide gains and dividends; the FIF deemed income can create a timing mismatch with US realisation-based taxation and foreign tax credit problems. The extended revenue account method (from 2025) lets eligible US citizens who arrived on or after 1 April 2024 after 5 years abroad tax all foreign shares on realisation (dividends + 70% of gains), which aligns better with US timing. The transitional resident exemption also applies.",
+  "us_citizen_notes": "US citizens are taxed by the US on worldwide gains and dividends; the FIF deemed income can create a timing mismatch with US realisation-based taxation and foreign tax credit problems. The extended revenue account method (introduced 30 March 2026) lets eligible US citizens who arrived on or after 1 April 2024 after 5 years abroad tax all foreign shares on realisation (dividends + 70% of gains), which aligns better with US timing. The transitional resident exemption also applies.",
   "open_questions": [
     "The FIF FDR charge is modelled as a 'limited' wealth-tax component (1.95% of foreign share value above NZD 50,000 cost) because the schema has no deemed-income field; foreign dividends and gains are set to 0 to avoid double counting.",
-    "Budget 2026 proposal to extend RAM to all residents: status not verified (PwC, July 2026).",
-    "Gift duty abolition (2011) not confirmed from an opened official source.",
+    "Budget 2026 FIF proposals (RAM for unlisted shares for all residents, extended RAM for people taxed twice, de minimis NZD 100,000): IRD's information sheet of 28 May 2026 was read, but whether the bill is introduced or passed was not confirmed.",
+    "The gift duty (1 October 2011) and estate duty (1992) abolition dates come from search results of Inland Revenue pages, which were not opened.",
     "Cost of living: purchase prices, health insurance and housekeeper wages not sourced; the Active Investor Plus home-purchase exception was not re-verified in this pass."
   ]
 }

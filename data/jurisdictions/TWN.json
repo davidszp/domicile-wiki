@@ -4,7 +4,7 @@
   "continent": "Asia",
   "region": "East Asia",
   "currency": "TWD",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Taiwan taxes individuals on Taiwan-source income at up to 40%. Foreign income, including foreign capital gains and dividends, is reached only by the 20% alternative minimum tax (income basic tax), which applies when foreign income is TWD 1 million or more and basic income exceeds TWD 7.5 million; for a family of this size that is close to a flat 20%. Taiwan listed-share gains are exempt (0.3% transaction tax), and Taiwan dividends cost up to 28%. Estate and gift tax (10%-20%) reaches only Taiwan-situs property of foreign nationals. There is no wealth tax and no US tax treaty.",
   "regimes": [
     {
@@ -21,7 +21,7 @@
       "duration_years": null,
       "capital_gains": {
         "summary": "Taiwan taxes individuals' Taiwan-source income at 5%-40%. Gains on Taiwan securities are exempt from income tax (a 0.3% securities transaction tax applies to share sales). Foreign-source income, including gains on foreign securities and foreign property, is outside the regular income tax but enters the alternative minimum tax (income basic tax, IBT) at 20% once a resident's foreign income is TWD 1 million or more and basic income exceeds TWD 7.5 million, with a credit for foreign tax. Taiwan real estate acquired from 2016 is under the consolidated house and land income tax: 45% (2 years or less), 35% (2-5), 20% (5-10), 15% (over 10 years); a self-used home qualifies for TWD 4 million exemption and 10% above it.",
-        "exemptions_thresholds": "IBT: TWD 7.5 million deduction from basic income (2025 filing figure); foreign income under TWD 1 million is excluded entirely.",
+        "exemptions_thresholds": "IBT: the household deducts TWD 7.5 million once from its basic income and pays 20% of the rest (Income Basic Tax Act art. 13, whose text says TWD 6 million, raised to 7.5 million by the Ministry of Finance's CPI adjustment under art. 3(2); amount confirmed on the Ministry of Finance portal, updated 2026-04-15). A household's foreign income under TWD 1 million is left out entirely; at TWD 1 million or more all of it counts (art. 12). The art. 3(2) adjustment applies when the CPI has risen 10% or more since the last adjustment, in TWD 100,000 steps.",
         "important_exceptions": "IBT is payable only to the extent it exceeds regular income tax. For the family's scale (foreign income far above TWD 7.5 million) the effective rate approaches 20%. Gains on certain unlisted/privately placed securities are IBT add-back items.",
         "tax_year": "2026",
         "sources": [
@@ -45,14 +45,28 @@
             "publisher": "Lee and Li, Attorneys-at-Law",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income Basic Tax Act (所得基本稅額條例), arts. 3, 12, 12-1, 13",
+            "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=G0340115",
+            "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Chapter 11 Income basic tax (最低稅負制), Ministry of Finance Tax Portal (updated 2026-04-15)",
+            "url": "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/national/individual-income-tax/6xKrvGR",
+            "publisher": "Ministry of Finance, Taiwan (etax portal)",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "medium",
         "verification": "partially_verified",
         "open_questions": [
           "Treatment of gains on unlisted Taiwan shares under IBT not verified.",
-          "IBT deduction for 2026 income (TWD 7.5 million used) may be indexed."
+          "The 2026 IBT deduction of TWD 7.5 million was confirmed from the Ministry of Finance portal text (updated 2026-04-15), not from a 2026 announcement."
         ],
         "headline_rate": 0.45,
         "rates": {
@@ -69,7 +83,7 @@
       },
       "dividends": {
         "summary": "Taiwan dividends of resident individuals are either included in consolidated income (up to 40%) with an 8.5% credit capped at TWD 80,000, or taxed separately at 28%. Foreign dividends are foreign-source income, outside regular tax but included in IBT at 20% (same thresholds as above) with credit for foreign tax.",
-        "important_exceptions": "Dividend options from the 2018 integrated-system reform (general knowledge; PwC page opened does not list them).",
+        "important_exceptions": "Dividend options of Income Tax Act art. 15: an 8.5% credit capped at TWD 80,000 per return on consolidated income, or a separate flat 28% (English text of the Act opened 2026-10-16).",
         "tax_year": "2026",
         "sources": [
           {
@@ -85,14 +99,19 @@
             "publisher": "PwC Worldwide Tax Summaries",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Income Tax Act (English), arts. 3, 3-4, 4-1, 5, 15",
+            "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=G0340003",
+            "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "medium",
         "verification": "partially_verified",
-        "open_questions": [
-          "Dividend taxation options were not verified in an opened source."
-        ],
+        "open_questions": [],
         "headline_rate": 0.28,
         "domestic_rate": 0.28,
         "foreign_gross_rate": 0.2,
@@ -121,8 +140,8 @@
         "property_tax_note": "Land value tax 1%-5.5% of assessed land value (lower rate for owner-occupied residences, not verified) and house tax 1%-4.8% of assessed value for non-commercial buildings (PwC); luxury tax 10% on certain goods."
       },
       "inheritance": {
-        "summary": "Estate tax applies to the estate (estate basis) at 10% up to TWD 56.21 million, 15% to TWD 112.42 million and 20% above (inflation-indexed amounts from January 2025), after an exemption of TWD 13.33 million and deductions (e.g. TWD 560,000 per lineal descendant). For non-ROC nationals, and ROC nationals without habitual residence, only property located in Taiwan is taxed (Estate and Gift Tax Act Arts. 1 and 3). Gift tax: 10%-20% after a TWD 2.44 million annual exemption per donor, same scope rule.",
-        "exemptions_thresholds": "Estate exemption TWD 13.33 million per decedent; TWD 560,000 deduction per child (plus TWD 560,000 per year under 18); spouse deduction TWD 5.53 million; funeral TWD 1.38 million. Gift: TWD 2.44 million per donor per year.",
+        "summary": "Estate tax applies to the estate (estate basis) at 10% up to TWD 56.21 million, 15% to TWD 112.42 million and 20% above (CPI-adjusted amounts, unchanged for 2026), after an exemption of TWD 13.33 million (Estate and Gift Tax Act art. 13, 18). For non-ROC nationals, and ROC nationals without habitual residence, only property located in Taiwan is taxed (arts. 1 and 3), and the deductions for a spouse, children, parents and others do not apply to them (art. 17, last paragraph); only the exemption does. Gift tax: 10%-20% after a TWD 2.44 million annual exemption per donor, same scope rule.",
+        "exemptions_thresholds": "Estate exemption TWD 13.33 million per decedent, also for non-ROC nationals (art. 18). The family and other deductions (spouse TWD 5.53 million, TWD 560,000 per lineal descendant, parents, funeral) are for ROC nationals habitually resident in Taiwan only; art. 17 disapplies items 1-7 for non-ROC nationals and limits the funeral and debt deductions to Taiwan. Gift: TWD 2.44 million per donor per year.",
         "important_exceptions": "A foreign family pays estate tax only on Taiwan-situs assets (e.g. a Taiwan home and Taiwan shares). ROC nationals are taxed worldwide if domiciled in Taiwan within two years before death or resident more than 365 days in those two years (Art. 4).",
         "tax_year": "2026",
         "sources": [
@@ -139,15 +158,43 @@
             "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
             "kind": "legislation",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Estate and Gift Tax Act art. 12-1 (CPI adjustment of exemption, brackets and deductions)",
+            "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340072&flno=12-1",
+            "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Estate and Gift Tax Act art. 17 (deductions; items 1-7 not applicable to non-ROC nationals)",
+            "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340072&flno=17",
+            "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Estate and Gift Tax Act art. 18 (exemption, also for non-ROC nationals)",
+            "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340072&flno=18",
+            "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "115年遺產稅及贈與稅免稅額、扣除額及課稅級距 (2026 amounts, unchanged from 2025)",
+            "url": "https://uanalyze.com.tw/articles/8092840298",
+            "publisher": "UAnalyze (reporting the Ministry of Finance announcement of 27 Nov 2025)",
+            "kind": "other",
+            "accessed": "2026-10-16"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "high",
         "verification": "partially_verified",
         "basis": "estate",
         "children_treatment": "taxed",
         "spouse_treatment": "taxed",
-        "spouse_note": "A spouse deduction of TWD 5.53 million (Estate and Gift Tax Act art. 17; EY 2026) plus a deduction for the spouse's claim to the marital-property difference; the rest is taxed at 10%-20%, and the spouse deduction is not available where the decedent is a foreign national or a non-domiciled Taiwanese. Gifts between spouses are exempt, but gifts within two years of death are added back (art. 15).",
+        "spouse_note": "For a decedent who is a non-ROC national or an ROC national living abroad, the spouse deduction (TWD 5.53 million for ROC residents) and the other family deductions of art. 17 items 1-7 do not apply (art. 17, last paragraph); the spouse is taxed like any other heir on Taiwan-situs property. Gifts between spouses are exempt, but gifts within two years of death are added back (art. 15).",
         "exemption": 13330000,
         "brackets": [
           {
@@ -169,7 +216,8 @@
         "gifts_same_as_inheritance": false,
         "lifetime_gift_tax_free_after_years": null,
         "foreign_assets": "Not taxed for non-ROC nationals (Art. 1).",
-        "domicile_rules": "Nationality plus habitual residence (Art. 4): ROC nationals with a domicile in the two prior years or 365+ days of stay are taxed worldwide; non-nationals are always taxed on Taiwan property only."
+        "domicile_rules": "Nationality plus habitual residence (Art. 4): ROC nationals with a domicile in the two prior years or 365+ days of stay are taxed worldwide; non-nationals are always taxed on Taiwan property only. Amounts are indexed by law: art. 12-1 raises the exemption, bracket limits and deductions when the CPI has risen 10% or more since the last adjustment, from the following year, and the Ministry of Finance announces them each December (2026 amounts unchanged).",
+        "thresholds_indexed": true
       }
     }
   ],

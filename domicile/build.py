@@ -262,11 +262,17 @@ def summarize_persona(block: dict, persona: dict, cfg: dict, citizenship: str = 
 
 
 def best_regime(rows: list[dict], weights: dict[str, float], include_activity: bool = False,
-                include_structures: bool = True) -> dict | None:
+                include_structures: bool = True, order: list[str] | None = None) -> dict | None:
     """Best regime by weighted tax score. Regimes needing employment or a qualifying activity are
     skipped unless ``include_activity`` (the family is assumed to be passive investors); holding
-    structures are considered unless ``include_structures`` is False."""
+    structures are considered unless ``include_structures`` is False. ``order`` is the 60-year projection's
+    ranking (data/recipes, best first): where a country has one, the family takes the first allowed regime in
+    it, so the score and the projection agree; otherwise the cheapest regime a year."""
     rows = [r for r in rows if (include_activity or not r.get("activity")) and (include_structures or not r.get("structure"))]
+    for rid in order or []:
+        hit = next((r for r in rows if r["id"] == rid and all(r["scores"][m] is not None for m in scoring.TAX_METRICS)), None)
+        if hit:
+            return hit
     priced = [r for r in rows if r.get("cost") is not None and all(r["scores"][m] is not None for m in scoring.TAX_METRICS)]
     if priced:  # the family picks the cheapest regime; ties keep the earlier (standard) one
         return min(priced, key=lambda r: r["cost"])
@@ -283,7 +289,8 @@ def summarize(entry: dict, cfg: dict, citizenship: str = "EU", weights: dict | N
               include_activity: bool = False, include_structures: bool = True) -> dict:
     weights = weights or scoring.default_weights(cfg)
     rows = entry["tax"].get(citizenship, []) if entry.get("tax") else []
-    best = best_regime(rows, weights, include_activity, include_structures)
+    best = best_regime(rows, weights, include_activity, include_structures,
+                       entry.get("projection_order") if citizenship == "EU" else None)  # the projection models EU citizens
     metric_scores = {m: v.get("score") for m, v in entry["nontax"].items()}
     tax_computable = False
     if best:
@@ -329,6 +336,16 @@ def main() -> None:
     unknown = set(jur) - {f["properties"]["id"] for f in world}
     if unknown:
         raise SystemExit(f"jurisdiction files without a boundary feature: {sorted(unknown)}")
+
+    # 60-year projections for the countries with a recipe (data/recipes). Computed first: their ranking of the
+    # ways to hold the portfolio also decides which regime the family is scored under.
+    assumptions = projection.Assumptions.reference(cfg)
+    projected = {}
+    for iso3 in sorted(p.stem for p in projection.RECIPES.glob("*.json")):
+        recipe = projection.load_recipe(iso3)
+        res = projection.project(iso3, assumptions, cfg=cfg, jurisdictions=jur, fx=fx)
+        ranked = sorted(((r.end_wealth, p.regime) for p, r in zip(recipe.paths, res) if r.end_wealth is not None), reverse=True)
+        projected[iso3] = (recipe, res, [rid for _, rid in ranked])
 
     def add(jid: str, name: str, level: str, parent: str | None, continent: str, region: str,
             j: Jurisdiction | None, iso_for_indicators: str, inherited: bool = False, lx=None, ly=None) -> None:
@@ -389,7 +406,9 @@ def main() -> None:
         red = cfg.get("red_flags", {}).get("countries", {}).get(iso_for_indicators)
         if red:
             entry["red_flag"] = red
-        entry["default"] = summarize({**s, "nontax": s["nontax"], "ko": entry["ko"]}, cfg)
+        if jid in projected:
+            entry["projection_order"] = projected[jid][2]
+        entry["default"] = summarize({**s, "nontax": s["nontax"], "ko": entry["ko"], "projection_order": entry.get("projection_order")}, cfg)
         personas(s["indicators"], s["nontax"], entry["ko"])
         out_j[jid] = entry
         profiles[jid] = {
@@ -455,10 +474,7 @@ def main() -> None:
 
     # 60-year projections for the countries with a recipe (data/recipes): yearly series on the profile for
     # the chart, end values on the entry so the monthly diff report can show what moved.
-    assumptions = projection.Assumptions.reference(cfg)
-    for iso3 in sorted(p.stem for p in projection.RECIPES.glob("*.json")):
-        recipe = projection.load_recipe(iso3)
-        res = projection.project(iso3, assumptions, cfg=cfg, jurisdictions=jur, fx=fx)
+    for iso3, (recipe, res, _) in projected.items():
         out_j[iso3]["projection"] = {r.id: (round(r.end_wealth) if r.end_wealth is not None else None) for r in res}
         notes = {p.id: p.note for p in recipe.paths}
         profiles[iso3]["projection"] = {

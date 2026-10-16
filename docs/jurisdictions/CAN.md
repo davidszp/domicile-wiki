@@ -1,6 +1,6 @@
 # Canada — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -23,11 +23,11 @@ Factual residence based on residential ties (home, spouse/partner and dependants
 50% of a capital gain is included in income and taxed at ordinary rates. 2026 combined top rates on capital gains: Ontario 26.8%, British Columbia 26.8%, Quebec 26.7%, Alberta 24.0% (top federal bracket from CAD 258,482 at 33%). The proposed increase of the inclusion rate to two-thirds for gains above CAD 250,000 (Budget 2024) is not law: PwC's 2026 summary states half of a capital gain is taxable and its rate table is based on 50%.
 
 - **Exemptions and thresholds:** Principal residence exemption (one per family unit per year). Lifetime capital gains exemption for qualified small business corporation shares (amount not verified in this session).
-- **Important exceptions, statute references and announced changes:** Deemed disposition at fair market value on death (ITA s. 70(5)), on gifts to anyone other than a spouse (s. 69), and on emigration (s. 128.1; departure tax, deferrable with security above CAD 16,500 of federal tax). Assets owned when the person last became resident are excluded from departure tax if resident 60 months or less in the prior 10 years. Arrivals generally get a cost step-up to market value on immigration (s. 128.1(1); not verified from an opened source). Alternative minimum tax was reformed from 2024 (details not verified here).
+- **Important exceptions, statute references and announced changes:** Deemed disposition at fair market value on death (ITA s. 70(5)), on gifts to anyone other than a spouse (s. 69), and on emigration (s. 128.1; departure tax, deferrable with security above CAD 16,500 of federal tax). Assets owned when the person last became resident are excluded from departure tax if resident 60 months or less in the prior 10 years. On becoming resident an individual is deemed to dispose of and reacquire most property at fair market value (ITA s. 128.1(1)(b) and (c)), so the portfolio the family brings has a stepped-up cost; taxable Canadian property (e.g. Canadian real estate) and a few other items are excluded. Alternative minimum tax was reformed from 2024 (details not verified here).
 - **Regional differences:** Top combined capital gains rates 2026: Ontario 26.8%, BC 26.8%, Quebec 26.7%, Alberta 24.0% (other provinces not checked).
-- **Tax year / confidence / verification:** 2026 / high / partially_verified (checked 2026-10-15)
-- **JSON numbers:** headline 26.8% (0.268); listed domestic 26.8% (0.268); listed foreign 26.8% (0.268); private business sale 26.8% (0.268); local real estate 26.8% (0.268); foreign real estate 26.8% (0.268).
-- **How derived:** Ontario 2026 top combined marginal rate 53.5% x 50% inclusion = 26.8% (PwC table). Private business sale before any lifetime capital gains exemption; real estate other than the principal residence. Foreign tax on gains is creditable.
+- **Tax year / confidence / verification:** 2026 / high / partially_verified (checked 2026-10-16)
+- **JSON numbers:** headline 26.76% (0.2676); listed domestic 26.76% (0.2676); listed foreign 26.76% (0.2676); private business sale 26.76% (0.2676); local real estate 26.76% (0.2676); foreign real estate 26.76% (0.2676).
+- **How derived:** Ontario 2026 top combined marginal rate 53.53% (federal 33% above CAD 258,482; Ontario 20.53% including surtaxes) x 50% inclusion (ITA s. 38(a)) = 26.76% (Richter 2026 Ontario table; PwC rounds to 26.8%). Private business sale before any lifetime capital gains exemption; real estate other than the principal residence. Foreign tax on gains is creditable.
 - **Holding period:** No holding period; all capital gains are 50% included.
 - **Trader recharacterisation:** Frequent trading can make gains business income, 100% taxable at up to 53.5% in Ontario. Taxpayers can elect (s. 39(4)) to treat Canadian securities as capital property.
 - **Foreign assets:** Worldwide gains taxed; foreign property costing over CAD 100,000 must be reported (T1135; threshold not verified in this session).
@@ -42,11 +42,11 @@ Eligible dividends from Canadian public companies are grossed up 38% with a fede
 - **Important exceptions, statute references and announced changes:** Foreign non-business tax credit limited to 15% of property income; any withholding above 15% is only deductible. Offshore investment fund property and FAPI rules can attribute passive income of controlled foreign companies.
 - **Regional differences:** Top eligible dividend rates 2026: Ontario 39.3%, BC 36.5%, Alberta 34.3%, Quebec 40.1%; ordinary income (foreign dividends) Ontario/BC 53.5%, Quebec 53.3%, Alberta 48.0%.
 - **Tax year / confidence / verification:** 2026 / high / partially_verified (checked 2026-10-15)
-- **JSON numbers:** headline 53.5% (0.535); domestic 39.3% (0.393); foreign gross 53.5% (0.535); foreign tax relief: credit.
-- **How derived:** Ontario 2026 top combined rates (PwC): eligible dividends 39.3%; foreign dividends are ordinary income at 53.5%, with credit for source WHT up to 15%.
+- **JSON numbers:** headline 53.53% (0.5353); domestic 39.34% (0.3934); foreign gross 53.53% (0.5353); foreign tax relief: credit.
+- **How derived:** Ontario 2026 top combined rates on taxable income above CAD 258,482 (Richter 2026 Ontario table; PwC rounds): eligible dividends 39.34%; foreign dividends are ordinary income at 53.53%, with credit for source WHT up to 15% of the income (ITA s. 126(1)).
 - **Outbound withholding:** 25% WHT on dividends paid to non-residents, reduced to 5-20% by treaty.
 - **Treaty network:** 94 tax treaties (Russia suspended from 18 November 2024), including the US (15% on portfolio dividends).
-- **Holding companies:** Passive investment income of a Canadian-controlled private corporation is taxed at about 50% (federal 38 2/3% including 10 2/3% refundable tax, plus provincial), refundable on payment of dividends; integration largely removes any deferral advantage. No holding structure is modelled because none gives this family a material advantage: interest and foreign dividends bear about 50% in the corporation and gains about 25% (half taxable), with the refundable part returned only when taxable dividends are paid, so after payout the total is close to personal holding; an estate freeze can shift future growth to the children but the deemed disposal at death still applies to the frozen shares (and later to the children's), a family trust holding growth shares has its own 21-year deemed disposal, and the corporate attribution rule (ITA s. 74.4) and TOSI limit income splitting with a spouse or minor children for a pure investment company.
+- **Holding companies:** Passive investment income of a Canadian-controlled private corporation is taxed at about 50% (federal 38 2/3% including 10 2/3% refundable tax, plus provincial), refundable on payment of dividends; integration largely removes any deferral advantage. No holding structure is modelled (the recipe records why, including an engine gap for the refundable tax and for the trust 21-year rule) because none gives this family a material advantage: interest and foreign dividends bear about 50% in the corporation and gains about 25% (half taxable), with the refundable part returned only when taxable dividends are paid, so after payout the total is close to personal holding; an estate freeze can shift future growth to the children but the deemed disposal at death still applies to the frozen shares (and later to the children's), a family trust holding growth shares has its own 21-year deemed disposal (ITA s. 104(4)(b)), and the corporate attribution rule (ITA s. 74.4) and TOSI limit income splitting with a spouse or minor children for a pure investment company.
 
 ## Inheritance and gifts to children
 
@@ -54,14 +54,14 @@ Eligible dividends from Canadian public companies are grossed up 38% with a fede
 
 No inheritance, estate or gift tax federally or in any province. However, a deceased person is deemed to have sold all capital property at market value immediately before death, so accrued gains are taxed in the final return at the capital gains rate (Ontario top 26.8%), except where property passes to a spouse or spousal trust (rollover). Gifts to children likewise trigger a deemed sale at market value. Ontario charges estate administration tax of 1.5% on the value of a probated estate above CAD 50,000.
 
-- **Exemptions and thresholds:** No inheritance tax of any amount. Ontario EAT: 0 up to CAD 50,000, then CAD 15 per CAD 1,000 (1.5%). Spousal rollover defers the deemed disposition to the second death.
+- **Exemptions and thresholds:** No inheritance tax of any amount. Ontario EAT (certificates applied for from 1 January 2020): the first CAD 50,000 is exempt, then CAD 15 for every CAD 1,000 or part thereof above it (1.5%); the estate value is rounded up to the next thousand. The scored 1.5% (other_transfer_cost_rate) is applied to the whole estate, which overstates the law by 1.5% of CAD 50,000 = CAD 750. Spousal rollover defers the deemed disposition to the second death.
 - **Important exceptions, statute references and announced changes:** The deemed disposition at death is in substance a tax on the transfer to children (about 26.8% of the unrealised gain, not of the whole value). It is not captured in the inheritance brackets here; see open questions. Assets held outside the probated will (joint ownership, secondary wills for private shares in Ontario) can reduce EAT.
 - **Regional differences:** Probate fees vary: Ontario 1.5% above CAD 50,000; other provinces have lower or capped fees (Alberta, Quebec low; not verified in this session).
 - **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
 - **JSON numbers:** basis `none`, children `taxed`, exemption 0 CAD, brackets (marginal): none; other transfer costs 1.5% (0.015); deemed disposal at death/gift 26.76% (0.2676) of the unrealised gain.
 - **Gifts:** No gift tax, but a gift of appreciated property is a deemed disposition at fair market value, taxing the donor's accrued gain (Ontario top 26.8%). Attribution rules can attribute income on gifts to minor children back to the parent. (same as inheritance: True; tax-free after years: None)
 - **Business relief:** Lifetime capital gains exemption on qualified small business corporation shares reduces the deemed-disposition gain; estate freezes are common.
-- **Foreign assets:** Deemed disposition at death covers worldwide capital property of a Canadian resident.
+- **Foreign assets:** Deemed disposition at death covers worldwide capital property of a Canadian resident. Ontario estate administration tax counts investments and bank accounts wherever located (only real estate outside Ontario is excluded), unless a resealing or ancillary certificate limits it to Ontario assets (Government of Ontario).
 - **Residence/domicile rules:** Residence-based; no domicile concept. Departure tax on emigration (s. 128.1) means no tail of deemed-disposition exposure after leaving, but the gain is taxed on exit.
 - **Business relief covers listed shares:** False
 
@@ -85,7 +85,7 @@ None modelled; see Residence and eligibility.
 
 ## Holding structures
 
-No holding structure is modelled, because none gives this family a material advantage under 2026 law. A Canadian-controlled private corporation pays federal tax of 38 2/3% on investment income other than most dividends, of which 10 2/3% is refundable (PwC), plus provincial tax, about 50% in total; half of a capital gain is taxable, so gains bear about 25%, with the untaxed half paid out tax-free through the capital dividend account. The refundable part comes back only when taxable dividends are paid, so after payout the combined tax is close to personal holding (integration), with no deferral. An estate freeze (shares exchanged for fixed-value preferred shares, growth shares to the children or a family trust) moves future growth out of the parents' deemed disposal at death, but the frozen value is still deemed disposed of, the children face the same rule later, a family trust has a 21-year deemed disposal, and the corporate attribution rule (ITA s. 74.4) and TOSI restrict benefits for a spouse or minor children when the company is a pure investment company. See `holding_company_notes`.
+No holding structure is modelled, because none gives this family a material advantage under 2026 law. A Canadian-controlled private corporation pays federal tax of 38 2/3% on investment income other than most dividends, of which 10 2/3% is refundable (PwC), plus provincial tax, about 50% in total; half of a capital gain is taxable, so gains bear about 25%, with the untaxed half paid out tax-free through the capital dividend account. The refundable part comes back only when taxable dividends are paid, so after payout the combined tax is close to personal holding (integration), with no deferral. An estate freeze (shares exchanged for fixed-value preferred shares, growth shares to the children or a family trust) moves future growth out of the parents' deemed disposal at death, but the frozen value is still deemed disposed of, the children face the same rule later, a family trust has a 21-year deemed disposal (ITA s. 104(4)(b)), and the corporate attribution rule (ITA s. 74.4) and TOSI restrict benefits for a spouse or minor children when the company is a pure investment company. See `holding_company_notes`.
 
 ## Company taxation (kept separate from personal tax)
 
@@ -100,7 +100,7 @@ Prime rent not sourced: realtor.ca, Zillow, Zumper, Rentals.ca and Zoocasa refus
 ## Open questions
 
 - The official Department of Finance / Prime Minister notice of the March 2025 cancellation of the inclusion-rate increase could still not be opened: canada.ca returned 404 for the release URLs tried (department-finance/news/2025/03/... and pm.gc.ca/en/news/news-releases/2025/03/21/...) and the news search page needs JavaScript; the CRA 'What's new - capital gains' page opened but does not mention the cancellation. The 50% rate rests on PwC's 2026 summary.
-- The schema has no field for a deemed capital gains disposition at death; inheritance is coded as basis 'none' with the deemed disposition explained in text. A scoring model should treat death as a realisation event at the capital gains rate.
+- The deemed disposition at death (ITA s. 70(5)) is carried by inheritance.deemed_disposal_rate (26.76%, applied to the unrealised gain); basis stays 'none' because Canada has no inheritance tax.
 - AMT changes from 2024, lifetime capital gains exemption amount and T1135 threshold not verified in this session.
 - Probate fees outside Ontario not sourced. Prime rent for a 4-5 bedroom house in Toronto (Rosedale, Forest Hill, Lawrence Park) not sourced; listing portals refused automated access.
 
@@ -116,6 +116,8 @@ Prime rent not sourced: realtor.ca, Zillow, Zumper, Rentals.ca and Zoocasa refus
 - Newcomers to Canada (immigrants) (Canada Revenue Agency, tax_authority): https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/newcomers-canada-immigrants.html
 - Canada - Corporate - Taxes on corporate income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/canada/corporate/taxes-on-corporate-income
 - Tuition (Upper Canada College, other): https://www.ucc.on.ca/tuition
+- 2026 Ontario Income Tax Tables (Richter, professional): https://www.richter.ca/2026-ontario-income-tax-tables/
+- Income Tax Act, section 128.1 (Department of Justice Canada, legislation): https://laws-lois.justice.gc.ca/eng/acts/i-3.3/section-128.1.html
 - Income Tax Act (Canada), section 70: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-70.html
 
 ## Change log
@@ -126,3 +128,4 @@ Prime rent not sourced: realtor.ca, Zillow, Zumper, Rentals.ca and Zoocasa refus
 - 2026-10-15 (data-quality pass): added Upper Canada College day fee CAD 48,720 (Years 11-12, 2026-27). Prime Toronto rent still unsourced (portals blocked; Kijiji sample too thin). Retried the Department of Finance/PMO notice of the March 2025 cancellation of the capital-gains inclusion-rate increase: still not reachable, open question sharpened. Dossier regenerated from the JSON, which also brings in the deemed-disposition inheritance coding (children 'taxed', deemed disposal rate 26.76%) already in the JSON.
 - 2026-10-15: reviewed holding structures; none modelled (integration, deemed disposal still applies after an estate freeze); added a Holding structures section.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: recipe drafted. Rates made precise (capital gains 26.76%, foreign dividends 53.53%, eligible dividends 39.34%, Richter 2026 Ontario table; were rounded to 26.8%/53.5%/39.3%); immigration step-up now cited to ITA s. 128.1(1)(b); Ontario EAT exemption and scope detail added; stale open question about the deemed-disposal field replaced.

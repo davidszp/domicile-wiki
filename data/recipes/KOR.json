@@ -1,0 +1,140 @@
+{
+  "id": "KOR",
+  "name": "South Korea",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (resident taxed worldwide)",
+      "regime": "standard",
+      "note": "Foreign dividends go into global income at up to 45% plus 4.5% local tax (49.5%) with credit for foreign withholding; gains on foreign shares are taxed at 20% plus 2% local (22%). No wealth tax. Inheritance tax is estate-based at 10% to 50% after a KRW 500 million lump-sum deduction, on the worldwide estate of a resident."
+    },
+    {
+      "id": "family_holding_company",
+      "name": "Family investment company (Korean stock company)",
+      "regime": "family_holding_company",
+      "estate": "portfolio",
+      "note": "The parents' company holds the portfolio and pays corporate income tax (22% at the margin with local tax) on dividends and gains; payout to the parents is taxed at 43.45% (dividend gross-up and credit). The shares are in the estate (unlisted shares at net asset value; the 20% controlling-shareholder valuation premium may apply, see open questions). A family trust is tax-transparent and a public-interest foundation is not a family vehicle, so no path for either."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 1000000000,
+      "realised_gains": 500000000,
+      "expected": 455000000,
+      "working": "All foreign: KRW 1,000,000,000 of dividends with 15% foreign withholding (KRW 150,000,000) and KRW 500,000,000 of gains on foreign shares. Top rates assumed: each spouse's global income already fills the lower bands, so the dividends are taxed at the top bracket, 45% above KRW 1 billion (Income Tax Act art. 55; PwC table), on financial income above KRW 20 million that is added to global income (arts. 14(3), 17(1)(vi)); in reality the first KRW 1 billion of a person's income would be taxed at lower bands. National tax 45% x 1,000,000,000 = 450,000,000, less the foreign tax credit of 150,000,000 (art. 57; within the limit, which is the income tax multiplied by foreign income over total income and far above 15%) = 300,000,000. Local income tax is 10% of the national scale, 4.5% x 1,000,000,000 = 45,000,000 (Local Tax Act art. 92); the foreign tax is within the national limit, so it does not reduce it. Dividends 345,000,000. Gains on foreign shares: 20% national + 10% of that as local tax = 22% (Income Tax Act arts. 94(1)(iii)(c), 104; NTS overseas stocks guide) x 500,000,000 = 110,000,000; the KRW 2.5 million basic deduction is ignored. Total 455,000,000. The 10% gross-up and dividend credit apply only to Korean dividends. Health-insurance contributions on financial income are not taxes and are left out. Local Tax Special Measures Act (local credits) was not opened."
+    },
+    {
+      "path": "family_holding_company",
+      "kind": "annual",
+      "dividends": 1000000000,
+      "realised_gains": 500000000,
+      "expected": 155000000,
+      "working": "Company with taxable income of KRW 1,500,000,000 (dividends 1,000,000,000 from foreign portfolio shares with 15% withholding, gains 500,000,000), fiscal year from 1 January 2026; payout tax excluded; no running costs are recorded in the tax file. Corporate income tax: 10% x 200,000,000 + 20% x 1,300,000,000 = 20,000,000 + 260,000,000 = 280,000,000 (Corporation Tax Act art. 55; PwC; EY). Foreign tax credit of 150,000,000 (15% of the dividends), within the limit of tax x foreign income / total income (280,000,000 or at least 186,666,667), leaves 130,000,000 (art. 57; PwC). Local income tax: the base is the taxable income less the foreign tax credited, 1,500,000,000 - 150,000,000 = 1,350,000,000 (Local Tax Act art. 103-19(2)); rates 1% to 200,000,000 and 2% above (art. 103-20; PwC) = 2,000,000 + 23,000,000 = 25,000,000. No exclusion applies to foreign portfolio dividends below a 10% stake (PwC). Total 130,000,000 + 25,000,000 = 155,000,000. The minimum tax applies after special-law reductions only and is not triggered. The 20% additional tax on retained earnings applies to conglomerate companies only (PwC).",
+      "model_difference": 25000000,
+      "model_note": "The engine applies one flat rate of 22% to all income and subtracts the 15% withholding: 0.22 x 1,500,000,000 - 150,000,000 = 180,000,000. By law the first KRW 200 million bears 10% national and 1% local tax, 22,000,000 less, and the local base is reduced by the foreign tax credited, 2% x 150,000,000 = 3,000,000 less; the engine has no rate bands and no local-base reduction (compare the Dutch BV and German GmbH notes)."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000000,
+      "children": 3,
+      "expected": 4064300000,
+      "working": "Lump-sum deduction KRW 500M (art. 21; above the basic 200M + 3 x 50M). Financial-asset deduction: listed shares are financial assets, 20% capped at KRW 200M (art. 22). Taxable estate 10,000M - 500M - 200M = 9,300M. Scale (art. 26): 9,300M x 50% - 460M = 4,190M. Filing credit 3% (art. 69) = 125.7M. Tax 4,064.3M.",
+      "model_difference": 225700000,
+      "model_note": "The engine has no 3% filing credit (art. 69 Inheritance and Gift Tax Act) and no financial-asset deduction (art. 22: 20% of net financial assets, capped at KRW 200M), so it computes 4,290M on the 9.5bn base."
+    }
+  ],
+  "assumptions": [
+    "Top rates are assumed for personal income: dividends are taxed at the 45% bracket plus 4.5% local tax (49.5%), as if the couple's other taxable income fills the lower bands; in reality the first KRW 1 billion of each person's income is taxed at lower bands. The KRW 2.5 million basic deduction on share gains and health-insurance contributions are ignored.",
+    "Foreign dividends carry 15% withholding, creditable in full against the national income tax (the local tax is not reduced).",
+    "The 5-year path assumes the foreign dividends and the proceeds of foreign share sales stay abroad and nothing is paid in Korea; the family does not qualify unless it has a residence status (the F-2/F-5 investor schemes were not verified).",
+    "The company is funded at today's value; selling existing foreign shares to it would be a taxable disposal for the individual.",
+    "At the first death (year 30) the estate passes to the spouse under the spouse deduction; the checks are for the second death with three adult children and the KRW 500 million lump-sum deduction.",
+    "The 10-year aggregation of lifetime gifts and the gift-tax deductions are not modelled.",
+    "The 5-of-10-year foreign resident rule is left out: foreign-source income is taxed when paid in or remitted to Korea (Income Tax Act art. 3(1) proviso), and the family spends EUR 400,000 a year there, so most of it would be taxed; the engine cannot separate remitted capital from income. Same treatment as Ireland's remittance basis."
+  ],
+  "open_questions": [
+    "Needs an engine change: valuation of the family company's unlisted shares for inheritance tax: net asset value, plus a 20% premium for a controlling shareholder's shares unless the company is an SME or mid-sized company (Inheritance Tax and Gift Tax Act art. 63(3)). Whether a family investment company qualifies as an SME was not established; if not, the taxable value is 1.2 times the portfolio, which the engine cannot express. No inheritance check is given for the company path for this reason.",
+    "Needs an engine change: the 3% credit for filing on time (art. 69) and the financial-asset deduction (art. 22, up to KRW 200 million, if a foreign-custody portfolio counts) are not in the tax file; the 3% credit is in the check's model_difference.",
+    "The tax file's 5-year regime now codes foreign-share gains and foreign real estate at 0% on the remittance basis (statute art. 3(1) proviso, read in the Act text mirror; foreign real estate per PwC); the Enforcement Decree was not opened.",
+    "The Local Tax Special Measures Act (local dividend and foreign tax credits) was not opened: local tax is taken as 10% of the national scale, reduced by the dividend credit but not by the foreign tax credit within the national limit, as in the tax file.",
+    "The local corporate income tax rates (1%/2%/2.2%/2.5%) and the dividend exclusion percentages (30% below 20%) are from PwC; the Corporation Tax Act text was not available.",
+    "The tax file records no running cost for the family company; the check counts none.",
+    "Needs an engine change: remittance basis (spending in the country deemed to come from foreign income first) would let the special regime be projected honestly."
+  ],
+  "sources": [
+    {
+      "title": "Income Tax Act (소득세법), arts. 3, 17, 55-57, 94, 104 (text mirror)",
+      "url": "https://www.nepla.ai/law/%EC%86%8C%EB%93%9D%EC%84%B8%EB%B2%95",
+      "publisher": "Nepla (mirror of the Ministry of Government Legislation text)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance Tax and Gift Tax Act (상속세 및 증여세법), arts. 3, 18-22, 24-27, 63, 69, current to 2026-01-02 (text mirror)",
+      "url": "https://www.nepla.ai/law/%EC%83%81%EC%86%8D%EC%84%B8%EB%B0%8F%EC%A6%9D%EC%97%AC%EC%84%B8%EB%B2%95",
+      "publisher": "Nepla (mirror of the Ministry of Government Legislation text)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance Tax and Gift Tax Act art. 26 (rate table)",
+      "url": "https://korea.legal/wiki/%ec%83%81%ec%86%8d%ec%84%b8-%eb%b0%8f-%ec%a6%9d%ec%97%ac%ec%84%b8%eb%b2%95-%ec%a0%9c26%ec%a1%b0/",
+      "publisher": "Korea.legal wiki",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Local Tax Act (지방세법), arts. 92, 103-19, 103-20 (text mirror)",
+      "url": "https://www.nepla.ai/law/%EC%A7%80%EB%B0%A9%EC%84%B8%EB%B2%95",
+      "publisher": "Nepla (mirror of the Ministry of Government Legislation text)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "2025 Overseas stocks and tax (해외주식과 세금)",
+      "url": "https://taxlaw.nts.go.kr/downloadPDFFile.do?fleId=300000000001047678&fleSn=923559",
+      "publisher": "National Tax Service of Korea",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Korea, Republic of - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/republic-of-korea/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Korea, Republic of - Corporate - Taxes on corporate income",
+      "url": "https://taxsummaries.pwc.com/republic-of-korea/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Korea, Republic of - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/republic-of-korea/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Korea, Republic of - Corporate - Tax credits and incentives",
+      "url": "https://taxsummaries.pwc.com/republic-of-korea/corporate/tax-credits-and-incentives",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Korea enacts 2026 tax reform bill",
+      "url": "https://taxnews.ey.com/news/2026-0126-korea-enacts-2026-tax-reform-bill",
+      "publisher": "EY Tax News",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

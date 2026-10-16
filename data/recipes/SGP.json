@@ -1,0 +1,59 @@
+{
+  "id": "SGP",
+  "name": "Singapore",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Foreign-sourced income received in Singapore by an individual (not through a Singapore partnership) is not taxed, Singapore one-tier dividends are exempt, there is no capital gains tax and no estate duty since 15 February 2008. The personal path is already 0%, so no structure is modelled: a section 13O/13U single family office fund exempts specified investment income that is already untaxed in the family's hands, and would add a 17% company layer outside the exemption plus running costs."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "Top marginal rates assumed; no allowances. Foreign dividends of 20,000 received in Singapore by a resident individual who is not receiving them through a Singapore partnership are not taxable (IRAS, 'Income received from overseas'); the 15% source withholding is a final cost, not part of Singapore tax. Gains of 15,000 on listed shares held as a long-term investment are capital and not taxed (no capital gains tax; IRAS). Total 0."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 0.0,
+      "expected": 0,
+      "working": "Dividends of 20,000 from Singapore companies are paid under the one-tier system and are exempt in the shareholder's hands (Income Tax Act 1947, s.13(1)(za), one-tier exemption; PwC Singapore individual income determination). Gains of 15,000 are not taxed. Total 0."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Estate duty was abolished for deaths on or after 15 February 2008 (Estate Duty (Abolition) Act 2008 / IRAS); there is no inheritance or gift tax, so an estate of 10,000,000 passing to 3 children bears 0. Probate fees and stamp duty on transfers of Singapore property are not inheritance tax and are ignored."
+    }
+  ],
+  "assumptions": [
+    "The family has no job or business in Singapore and receives its investment income directly, not through a Singapore partnership.",
+    "Residence is assumed to be obtained through an employment pass or the Global Investor Programme; the residence route does not change the tax and is described in the tax file.",
+    "Property tax, ABSD and stamp duty on the home are not part of the projection."
+  ],
+  "open_questions": [
+    "Structures considered and not modelled: a section 13O/13U single family office fund. It exempts specified income that the family's personal path already leaves untaxed, requires minimum AUM (13O and 13U thresholds not verified in this pass), local investment professionals and local spending, so it cannot lower the tax. Its only use is as a route to residence (Global Investor Programme option C needs a SGD 200 million single family office, above this family's about EUR 30 million), which the residence section covers.",
+    "The statute section for the foreign-sourced income exemption (s.13(7A) Income Tax Act 1947) was not confirmed from an opened source; the IRAS page was used."
+  ],
+  "sources": [
+    {
+      "title": "Income received from overseas",
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/income-received-from-overseas",
+      "publisher": "IRAS",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

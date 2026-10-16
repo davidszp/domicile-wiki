@@ -1,6 +1,6 @@
 # United Arab Emirates — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -73,6 +73,15 @@ No net wealth tax and no recurring tax on financial assets.
 
 None. Every resident is taxed the same way; no special regime is needed because the standard position is already nil (see Open questions for announced changes).
 
+### Structure: DIFC family foundation (`difc_foundation`, added 2026-10-16)
+
+A foundation under the DIFC Foundations Law (DIFC Law No. 3 of 2018) is a body corporate separate from its founder (art. 10(1)); a founder has no interest in it merely by endowing it (art. 27(4)); heirship rights under foreign law are not recognised against it (art. 15). Its use is succession and continuity, not tax.
+
+- **Tax:** a foundation is a juridical person and so a taxable person by default (9% above AED 375,000). If it meets the five conditions of Corporate Tax Law art. 17(1) and the FTA approves its application (Ministerial Decision 261/2024; FTA Decision 5/2025), it is treated as a tax-transparent Unincorporated Partnership: its income is allocated to the beneficiaries, and a natural person's share is Personal Investment income outside Corporate Tax (FTA Family Foundations Guide CTGFF1, May 2025, sections 4.4, 7.1, 7.2). Distributions are disregarded (section 7.7). All rates in the JSON are therefore 0, the same as holding personally. The application must be made before the end of the tax period it is to apply from, and an annual confirmation is due within 9 months of each tax period (sections 8.2, 8.3).
+- **Without approval** the foundation would pay 9% on portfolio dividends and gains; the participation exemption needs a 5% holding (or AED 4 million cost), 12 months and an investee taxed at 9% or more (PwC), which a listed portfolio of positions around EUR 500,000 generally fails.
+- **Running cost:** not counted. The DIFC foundation licence fee is reported as nominal (USD 200-350; snippets of DIFC documents, not opened). Registered-agent and council fees were not found in an official source. The ADGM Foundations Regulations 2017 were not opened.
+- **Considered and not added:** a UAE holding company (mainland or free zone) would pay 9% above AED 375,000 on portfolio income and has no tax benefit for a portfolio; a Qualifying Free Zone Person's 0% rate does not cover portfolio income.
+
 ## Company taxation (kept separate from personal tax)
 
 Federal Decree-Law 47/2022, for periods from 1 June 2023: 0% on taxable income up to AED 375,000, 9% above. Qualifying Free Zone Persons pay 0% on qualifying income and 9% on other income. Domestic Minimum Top-up Tax of 15% for MNE groups with consolidated revenue of EUR 750m+ in two of the four preceding years, for periods starting on or after 1 January 2025 (Cabinet Decision 142/2024). Natural persons are taxed only on licensed business activity with turnover above AED 1m. No withholding tax on dividends paid out.
@@ -98,6 +107,7 @@ City: Dubai.
 - Official text of Federal Decree-Law 41/2022 (elaws.moj.gov.ae / uaelegislation.gov.ae) could not be opened (connection refused / 403); Article 11 intestacy shares taken from Trowers and Withers.
 - Whether the new Federal Personal Status Law for Muslims (reported as Federal Decree-Law 41/2024, in force 2025) changed the default for non-Muslims who do not elect civil law was not verified.
 - Land department fees on transfer of inherited property into heirs' names were not verified for any emirate.
+- DIFC foundation: registered-agent, council and audit costs not found in an official source; the structure's running cost is not counted. ADGM Foundations Regulations 2017 not opened.
 
 ## Sources
 
@@ -117,6 +127,10 @@ City: Dubai.
 - [Dubai College - School fees 2026-2027](https://www.dubaicollege.org/admissions/school-fees)
 - Golden Residence (Federal Authority for Identity, Citizenship, Customs & Port Security (ICP), government): https://icp.gov.ae/en/golden-residence/
 - Villa rental prices in Dubai (Property Monitor data, May 2026 YTD) (Engel & Völkers Dubai, professional): https://www.engelvoelkers.com/ae/en/resources/villa-rental-prices
+- [Taxation of Family Foundations, Corporate Tax Guide CTGFF1 (May 2025)](https://tax.gov.ae/Datafolder/Files/Pdf/2025/Family-Foundations-Guide-27-05-2025.pdf)
+- [Ministerial Decision No. 261 of 2024 on Unincorporated Partnership, Foreign Partnership and Family Foundation](https://mof.gov.ae/wp-content/uploads/2024/11/Ministerial-Decision-No-261-of-2024-on-Unincorporated-Partnership-Foreign-Partnership-and-Family-Foundation-for-the-Purposes-of-Federal-Decree.pdf)
+- [Foundations Law, DIFC Law No. 3 of 2018, Consolidated Version No. 3 (March 2024)](https://edge.sitecorecloud.io/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/documents/laws--regulations/foundations-law-difc-updated-law-no-3-of-2018_2024.pdf)
+- [United Arab Emirates - Corporate - Income determination (last reviewed 9 Sep 2026)](https://taxsummaries.pwc.com/united-arab-emirates/corporate/income-determination)
 
 ## Change log
 
@@ -124,3 +138,4 @@ City: Dubai.
 - 2026-10-15: data-quality pass: added Dubai prime villa rent (Dubai Hills Estate 4-bed, Property Monitor via Engel & Völkers); Golden Visa real-estate term checked on u.ae (5 years, updated 28 Jul 2026) and ICP (5-10 years), route text and open question rewritten; Abu Dhabi ~2% registration fee noted as unconfirmed; Dubai marker renamed (GeoNames city point, not DIFC).
 
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: recipe pass: added the `difc_foundation` structure regime (tax-transparent under Corporate Tax Law art. 17; all rates 0) with sources; no change to the standard regime. Emirate file unchanged: no emirate levies a tax that differs.

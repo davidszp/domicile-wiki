@@ -1,6 +1,6 @@
 # Hong Kong — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026/27
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -78,7 +78,7 @@ None modelled; see Residence and eligibility.
 ## Company taxation (kept separate from personal tax)
 
 Headline CIT rate: 16.5% (0.165). Profits tax 16.5% (8.25% on the first HKD 2 million under the two-tier regime; one entity per connected group). Territorial: offshore profits are untaxed, but under the FSIE regime (from 2023, extended 2024) foreign dividends, interest and disposal gains received in Hong Kong by MNE group entities are taxed unless economic substance or participation requirements are met. Pillar Two: IIR and the Hong Kong minimum top-up tax apply from fiscal years beginning 1 January 2025. No dividend WHT.
-Special zones/regimes: 0% for eligible family-owned investment holding vehicles (FIHV) managed by a Hong Kong single family office (from 1 April 2022); fund exemption for qualifying private funds (from 2019).
+Special zones/regimes: 0% for eligible family-owned investment holding vehicles (FIHV) managed by a Hong Kong single family office (from 1 April 2022); the office must manage specified assets of at least HKD 240 million for the family's FIHVs, with at least 2 full-time qualified employees and HKD 2 million of Hong Kong operating expenditure (IRD, FIHV concession); fund exemption for qualifying private funds (from 2019).
 
 ## Cost of living notes
 
@@ -104,6 +104,7 @@ Family health insurance and domestic helper costs were not sourced (the statutor
 - New Capital Investment Entrant Scheme (Invest Hong Kong, government): https://www.newcies.gov.hk/en/
 - Enhancement measures to New CIES (press release, 7 January 2025) (HKSAR Government, government): https://www.info.gov.hk/gia/general/202501/07/P2025010600305.htm
 - Hong Kong SAR - Corporate - Taxes on corporate income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/hong-kong-sar/corporate/taxes-on-corporate-income
+- Tax concession for family-owned investment holding vehicles (Inland Revenue Department, HKSAR, tax_authority): https://www.ird.gov.hk/eng/tax/bus_fihv.htm
 - Private Domestic - Average Rents by Class (from 1982), monthly series up to August 2026 (Rating and Valuation Department, HKSAR Government, government): https://www.rvd.gov.hk/doc/en/statistics/his_data_1.xls
 - Properties for rent in Mid-levels West (OKAY.com, other): https://www.okay.com/en/property-search/rent/mid-levels-west
 - Tuition and Fees (Hong Kong International School, other): https://www.hkis.edu.hk/admissions/tuition-fees
@@ -116,3 +117,4 @@ Family health insurance and domestic helper costs were not sourced (the statutor
 - 2026-10-15 (data-quality pass): added cost of living for Hong Kong: prime rent HKD 92,800 a month (RVD Class E Hong Kong Island average rent Jan-Aug 2026, HKD 464/m2, times an assumed 200 m2 flat), prime price HKD 253,460 per m2 (RVD Class E Hong Kong Island, Jan-Aug 2026 average) and HKIS Grades 9-12 fee HKD 297,100 (2026-27 tuition plus capital levy).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from HKD 92,800 to HKD 120,000 (Mid-Levels and Happy Valley 4-bedroom flats); price per m² cleared as ultra-prime.
 - 2026-10-15: family rent re-checked a second time: changed from HKD 120,000 (7 flats) to HKD 124,000 (18 four-bedroom flats in Tai Tam, Pokfulam, Mid-Levels and Happy Valley, trophy villas excluded).
+- 2026-10-16: FIHV concession detail added to company taxation: HKD 240 million of specified assets managed by the single family office, 2 full-time qualified employees, HKD 2 million local expenditure (IRD page, accessed 2026-10-16).

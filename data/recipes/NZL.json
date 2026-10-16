@@ -1,0 +1,146 @@
+{
+  "id": "NZL",
+  "name": "New Zealand",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (foreign investment fund rules)",
+      "regime": "standard",
+      "note": "There is no capital gains tax and no inheritance tax. A resident holding more than NZD 50,000 (cost) of foreign shares is taxed under the foreign investment fund rules on a deemed 5% of the opening market value (fair dividend rate), at the 39% top rate = 1.95% of the portfolio a year whatever it earns. Dividends and gains on those shares are not taxed separately; the foreign withholding tax is credited against the FIF tax (Income Tax Act 2007, subpart LJ)."
+    },
+    {
+      "id": "transitional_resident",
+      "name": "Transitional resident exemption (4 years), then personal holding",
+      "regime": "transitional_resident",
+      "note": "A new resident who was not tax resident in the previous 10 years is exempt on foreign-sourced income for 4 years and outside the FIF rules; only New Zealand-source dividends are taxed. From year 5 the personal FIF rules apply. The exemption is automatic and once in a lifetime. The family keeps the portfolio in its own name during these years: a New Zealand company would pay FIF tax from day one."
+    },
+    {
+      "id": "investment_company",
+      "name": "New Zealand investment holding company",
+      "regime": "investment_company",
+      "estate": "portfolio",
+      "note": "A New Zealand company owns the portfolio and pays the FIF tax at the 28% company rate (5% x 28% = 1.4% of value) instead of 1.95%. Companies cannot use the comparative value method or the NZD 50,000 de minimis, so the 1.4% is paid even in a loss year. Distributions carry imputation credits for the 28% already paid, leaving 11 points at the 39% rate. The shares are in the parents' estate, but there is no inheritance tax. Not useful during the transitional years, and not for US persons."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 165000,
+      "working": "Dividends and gains on foreign shares are not taxed on their own: under the fair dividend rate (FDR) method the FIF income is 5% of the opening market value of the foreign shares, and dividends and capital gains are not taxed separately (Income Tax Act 2007 subpart EX, FDR method s EX 46; IRD guide IR461). FIF income = 5% x 10,000,000 = 500,000. Tax at the top marginal rate of 39% on income above NZD 180,000 (Income Tax Act 2007 sch 1 pt A; both spouses are far above it) = 195,000. Foreign tax credit for the 15% treaty-rate withholding on the 200,000 of dividends = 30,000 (subpart LJ: credit limited to the lesser of the tax paid, here at most the treaty rate, and the New Zealand tax on the FIF segment, 195,000, so it is fully used; IR461 'Foreign tax credits'). Tax 195,000 - 30,000 = 165,000. No capital gains tax on the 150,000 of realised gains. Assumes the year's total return including unrealised gain is at least 5% of the opening value, so the comparative value option (a natural person may use the lower actual return) gives no saving; the FIF de minimis of NZD 50,000 of cost is far exceeded."
+    },
+    {
+      "path": "transitional_resident",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "foreign_share": 0.9,
+      "expected": 305.56,
+      "working": "During the 4-year transitional period foreign-sourced income is exempt and the FIF rules do not apply (Income Tax Act 2007 s CW 27 and subpart EX; IRD guide IR461: the FIF rules apply to residents 'who are not transitional residents'). Foreign dividends 18,000 (90% of 20,000) and the FIF charge on the foreign shares are nil. Gains on listed shares of any country are not taxed (no capital gains tax; shares held long term, not for resale). The 10% New Zealand-source part is 2,000 of dividends, assumed fully imputed at the 28% company rate: taxable 2,000 / 0.72 = 2,777.78, tax at 39% (sch 1 pt A) = 1,083.33, less the imputation credit 2,777.78 x 0.28 = 777.78, tax 305.56."
+    },
+    {
+      "path": "transitional_resident",
+      "phase": "after",
+      "kind": "annual",
+      "dividends": 100000,
+      "realised_gains": 0,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 180000,
+      "working": "After the 4 years the personal rules apply (same as the personal path). FIF income 5% x 10,000,000 = 500,000 under the FDR method (Income Tax Act 2007 subpart EX, s EX 46); tax at 39% = 195,000; the foreign tax credit for the 15% withheld on the 100,000 of dividends = 15,000 (subpart LJ), which is below the New Zealand tax on the FIF segment and so fully used. Tax 195,000 - 15,000 = 180,000. No tax on gains or dividends as such."
+    },
+    {
+      "path": "investment_company",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 120000,
+      "working": "A New Zealand resident company with a portfolio interest of under 10% in foreign companies is within the FIF rules and must use the FDR method (comparative value is limited to natural persons and eligible trustees, and the NZD 50,000 de minimis is for natural persons and eligible trusts: IR461). FIF income 5% x 10,000,000 = 500,000, taxed at the company rate of 28% (Income Tax Act 2007 sch 1 pt D) = 140,000. Foreign tax credit for 15% withholding on 200,000 of dividends = 30,000 (subpart LJ) -> 110,000. No tax on the realised gains of 150,000 (no capital gains tax; FIF income covers them). Annual running cost NZD 10,000 (the tax file's estimate) is counted in full: the check does not take a deduction for it (see the open question). Total 110,000 + 10,000 = 120,000. Payout tax excluded: a fully imputed dividend to a top-rate shareholder costs 15.3% of the cash."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "New Zealand has no inheritance or estate tax (estate duty was abolished in 1992) and no gift duty (abolished for gifts made on or after 1 October 2011), and no capital gains tax on death. The three children inherit 3,333,333 each tax-free and continue under the FIF rules as residents. Tax 0."
+    },
+    {
+      "path": "investment_company",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The parents' shares in the company pass to the children; there is no inheritance or estate tax in New Zealand (estate duty abolished 1992, gift duty abolished 1 October 2011) and no deemed disposal at death. Tax 0."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens with no job or business who become New Zealand tax residents with no residence in the previous 10 years, for example through the Active Investor Plus resident visa. They are therefore transitional residents for 4 years.",
+    "FIF income and tax are worked on the portfolio value at the start of the year. The year's total return is at least 5%, so a natural person's option to use the lower comparative value never applies. In a year of poor returns the personal paths would pay less, the company would not.",
+    "Both spouses are at the top rate of 39% (income above NZD 180,000); 5% of the portfolio is far above that for each. Allowances and lower brackets are ignored.",
+    "Foreign dividends carry 15% withholding, creditable in full: the treaty rate caps the credit at 15% and the New Zealand FIF tax on the same shares is higher. Source countries with a 30% or no-treaty withholding would not be credited above the treaty rate.",
+    "The revenue account method is not offered: it is limited to unlisted foreign shares, and its extended form (all listed shares) is for people taxed twice by citizenship or a right to work elsewhere, in practice US citizens. The EU family has a listed portfolio and no such double taxation.",
+    "A family trust is not a path: the trustee rate is 39%, so it offers no rate advantage over personal holding. A portfolio investment entity (PIE, investor tax capped at 28%) cannot normally be set up by a single family.",
+    "NZD 400,000 of annual spending is taken from the portfolio's own yield; the payout tax of the company is outside the annual figure."
+  ],
+  "open_questions": [
+    "Needs an engine change: after the 4 transitional years a family could move the portfolio into a New Zealand company (the best New Zealand route in the long run: 1.4% instead of 1.95%) without having paid FIF tax before. The engine can only run one regime per path, with a time-limited one falling back to the standard personal rules, so 'transitional resident, then company' cannot be projected.",
+    "The company's running cost (NZD 10,000 a year, an unsourced estimate in the tax file) may not be deductible against FIF income: whether Income Tax Act 2007 allows a deduction for expenditure incurred in deriving FDR income was not established from an opened source. The check counts the cost in full and takes no deduction.",
+    "The transitional-resident exemption section (s CW 27) and the company rate and individual rate schedules (sch 1) were cited from general knowledge of the Income Tax Act 2007; the statute text on legislation.govt.nz was not opened. The exemption itself, the 48-month term and the FIF carve-out for transitional residents rest on IRD's IR461 and an IRD technical article found through search.",
+    "Budget 2026 FIF proposals (RAM for unlisted shares for all residents, extended RAM, de minimis NZD 100,000, from 1 April 2026) are not law as far as could be confirmed. They do not change this family's listed-share portfolio.",
+    "Revenue account method: the Taxation (Annual Rates for 2026-27, FBT Simplification, Foreign Investment Funds, and Remedial Measures) Bill was introduced on 10 September 2026 (KPMG NZ, EY); the tax file's regime text calls it law from 30 March 2026 with high confidence. Re-check its status; it does not affect this EU family's paths.",
+    "Comparative value method: individuals may pay on the lower of the 5% FDR and the actual return (floor zero); in years when the portfolio's total return is below 5% the tax is lower than modelled. Under the steady 7% return assumed here FDR is the lower."
+  ],
+  "sources": [
+    {
+      "title": "Guide to foreign investment funds (IR461, April 2026)",
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir400---ir499/ir461/ir461.pdf?modified=20260331214052",
+      "publisher": "Inland Revenue (NZ)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Budget 2026: Foreign investment fund changes (information sheet, 28 May 2026)",
+      "url": "https://www.taxpolicy.ird.govt.nz/-/media/project/ir/tp/publications/2026/is-foreign-investment-fund.pdf",
+      "publisher": "Inland Revenue (NZ), Policy and Strategy",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "New Zealand - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/new-zealand/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "New Zealand - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/new-zealand/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "New Zealand - Individual - Foreign tax relief and tax treaties",
+      "url": "https://taxsummaries.pwc.com/new-zealand/individual/foreign-tax-relief-and-tax-treaties",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Gift duty abolition",
+      "url": "https://taxpolicy.ird.govt.nz/publications/2011/2011-sr-gift-duty-abolition/gift-duty-abolition",
+      "publisher": "Inland Revenue (NZ), Policy and Strategy",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

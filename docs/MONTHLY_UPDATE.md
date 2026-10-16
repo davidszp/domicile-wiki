@@ -46,7 +46,7 @@ recent check is oldest are re-verified in full (`python -m domicile.staleness` s
 | Income (`data/income/`) | 7 | about a year |
 | Immigration (`data/immigration/`) | 6 | about ten months (rules change fast) |
 | Regional (`data/subnational/`) | 1 | five months |
-| Projection recipes (`data/recipes/`) | 3 | about a year; rates are re-checked through the tax files, the recipe only for how each path works |
+| Projection recipes (`data/recipes/`) | 5 | about a year (60 recipes); rates are re-checked through the tax files, the recipe only for how each path works |
 | Succession (`data/succession/`) | 12 | about a year; each pass should read the statute and the live HCCH table, raising files from draft to verified |
 
 Change the numbers with flags: `uv run python -m domicile.monthly prepare --tax 20`.

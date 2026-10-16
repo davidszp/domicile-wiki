@@ -1,12 +1,12 @@
 # Australia — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026/27
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
 ## Summary
 
-Australian residents are taxed on worldwide income at up to 45% plus the 2% Medicare levy (47%) above AUD 190,000. Capital gains on assets held 12 months get a 50% discount, so the top effective rate is 23.5%; the May 2026 Budget announced that from 1 July 2027 the discount will be replaced by inflation indexation with a 30% minimum tax on post-July-2027 gains (announced, legislative status not verified). Franked Australian dividends carry a 30% imputation credit (net top rate about 24.3% of the cash dividend); foreign dividends are taxed at up to 47% with a foreign tax offset. There is no inheritance, gift or wealth tax; assets inherited by residents keep the deceased's cost base, but CGT can be triggered when assets pass to non-resident beneficiaries. Holders of temporary visas are exempt on most foreign income and gains.
+Australian residents are taxed on worldwide income at up to 45% plus the 2% Medicare levy (47%) above AUD 190,000. Capital gains on assets held 12 months get a 50% discount, so the top effective rate is 23.5%; the Treasury Laws Amendment (Tax Reform No. 1) Act 2026 (Royal Assent 26 June 2026) replaces the discount from 1 July 2027 with cost-base indexation and a 30% minimum tax on gains accruing after that date. Franked Australian dividends carry a 30% imputation credit (net top rate about 24.3% of the cash dividend); foreign dividends are taxed at up to 47% with a foreign tax offset. There is no inheritance, gift or wealth tax; assets inherited by residents keep the deceased's cost base, but CGT can be triggered when assets pass to non-resident beneficiaries. Holders of temporary visas are exempt on most foreign income and gains.
 
 US citizens: US citizens remain US-taxed; Australian superannuation, franking credits and Australian managed funds (PFICs) are poorly coordinated with US rules. The US-Australia treaty limits Australian dividend WHT to 15% for portfolio holdings.
 
@@ -23,10 +23,10 @@ Resident if domiciled in Australia (unless a permanent place of abode is abroad)
 Net capital gains are added to taxable income. Individuals who hold an asset at least 12 months get a 50% discount (for disposals up to 30 June 2027), so the top effective rate is 47% x 50% = 23.5%. Gains on assets held under 12 months are taxed at up to 47%.
 
 - **Exemptions and thresholds:** Main residence exemption; pre-CGT assets (acquired before 20 September 1985) exempt until 30 June 2027. Small business CGT concessions for active business assets (not modelled).
-- **Important exceptions, statute references and announced changes:** Budget 2026-27 (12 May 2026): from 1 July 2027 the 50% discount is replaced by cost-base indexation and a 30% minimum tax on capital gains arising after 1 July 2027; pre-CGT assets become taxable; investors in new builds may choose the old discount. Not yet in force; legislative status not verified. Ceasing residence is a CGT event (I1) on non-Australian assets (general rule, not verified from an opened source in this session).
+- **Important exceptions, statute references and announced changes:** CGT reform enacted: the Treasury Laws Amendment (Tax Reform No. 1) Act 2026 (No. 49 of 2026, Royal Assent 26 June 2026) and the Income Tax Rates Amendment (Tax Reform No. 1) Act 2026 (No. 50) replace the 50% discount, for individuals, trusts and partnerships, with cost-base indexation and a 30% minimum tax on capital gains accruing on or after 1 July 2027. Gains accrued to 30 June 2027 keep the 50% discount (assets are treated as sold and reacquired at market value on 30 June 2027, with the gain deferred); pre-CGT assets become taxable for later accrual; investors in new residential dwellings may choose the old discount. Companies, foreign residents and temporary residents are generally outside the new indexation regime. The rates below are the law for disposals up to 30 June 2027 (the 2026/27 year); the engine cannot yet express indexation. Ceasing residence is a CGT event (I1) on non-Australian assets (general rule, not verified from an opened source).
 - **Tax year / confidence / verification:** 2026/27 / medium / partially_verified (checked 2026-10-15)
 - **JSON numbers:** headline 47% (0.47); listed domestic 23.5% (0.235); listed foreign 23.5% (0.235); private business sale 23.5% (0.235); local real estate 23.5% (0.235); foreign real estate 23.5% (0.235).
-- **How derived:** Top marginal rate 45% + 2% Medicare levy = 47%; 50% CGT discount for assets held at least 12 months gives 23.5%. Law in force for disposals to 30 June 2027; from 1 July 2027 post-2027 gains are expected to bear indexation plus a 30% minimum tax (higher for most large gains). Private business before small business concessions.
+- **How derived:** Top marginal rate 45% + 2% Medicare levy = 47%; 50% CGT discount for assets held at least 12 months gives 23.5%. Law in force for disposals to 30 June 2027; gains accruing from 1 July 2027 bear indexation (real gain at marginal rates, so up to 47% of the real gain) with a 30% minimum tax, under the Act of 26 June 2026. Private business before small business concessions.
 - **Holding period:** At least 12 months for the 50% discount.
 - **Trader recharacterisation:** Share traders are taxed on revenue account (gains fully assessable at up to 47%, no discount); classification follows the facts (frequency, organisation, profit intention).
 - **Foreign assets:** Worldwide gains taxable; foreign income tax offset available. Temporary residents are exempt on assets that are not taxable Australian property.
@@ -114,7 +114,7 @@ No net wealth tax.
 
 **Inheritance and exit.** No inheritance tax (standard regime applies); the trust does not die, control passes through the appointor, and the trust ends on its vesting date (up to 80 years in most states). Leaving Australia: CGT event I1 for individuals, I2 if the trust ceases to be resident; winding up the company pays out franked dividends (exit rules not verified from an opened source).
 
-**Announced changes (not modelled).** Budget 2026-27 (12 May 2026): a 30% minimum tax on discretionary trusts from 1 July 2028, and the 50% CGT discount replaced by indexation with a 30% minimum tax for gains after 1 July 2027 (PwC calls the CGT change a recent law change; status not verified). Professional commentary says corporate beneficiaries would get no credit for the trust minimum tax, which would make the trust-to-bucket-company route double-taxed. If enacted, the advantage modelled here would largely disappear from 2028.
+**Changes (not modelled).** Enacted 26 June 2026 (Act No. 49 of 2026): from 1 July 2027 the 50% discount is replaced by indexation and a 30% minimum tax on gains accruing after that date (the discount keeps applying to gains accrued to 30 June 2027). Proposed, not law: a 30% minimum tax on discretionary trusts for income years starting on or after 1 July 2028 (Treasury exposure draft, 3 September 2026; consultation closed 18 September 2026), with a transitional roll-over for restructures between 1 July 2027 and 30 June 2030 and an election to nominate fixed beneficiaries. Non-corporate beneficiaries would get a non-refundable 30% offset; corporate beneficiaries none, so income streamed to a bucket company would be taxed at 30% in the trust and again at 30% in the company (BDO, Pitcher Partners). If enacted as drafted the advantage modelled here would largely disappear from 2028.
 
 ## Company taxation (kept separate from personal tax)
 
@@ -129,7 +129,8 @@ Foreign persons cannot buy established homes until 30 June 2029, so a newly arri
 
 ## Open questions
 
-- Legislative status and mechanics of the 1 July 2027 CGT reform (indexation + 30% minimum tax) are not verified; the JSON scores the law in force (50% discount).
+- The CGT reform is law (Act No. 49 of 2026, Royal Assent 26 June 2026): indexation plus a 30% minimum tax on gains accruing from 1 July 2027. The JSON scores disposals up to 30 June 2027 (50% discount); the Act's detailed text was not read, only the Federal Register listing, the Parliamentary Library digest of the Bill as introduced and a KPMG summary. Late amendments may differ. The projection engine cannot yet express indexation and the minimum tax, so 60-year results use the 23.5% rate.
+- The 30% minimum tax on discretionary trusts is only an exposure draft (3 September 2026, proposed from 1 July 2028). If enacted as drafted, the family_trust_bucket_company structure would be double-taxed on income streamed to the bucket company.
 - Division 296 is described by PwC as applying from 1 July 2026; enactment details not checked against legislation.
 - ATO and AustLII pages returned HTTP 403, so CGT event K3 and the temporary-resident CGT scope rest on PwC and general knowledge. The visa position is now verified from Home Affairs (BIIP closed 31 July 2024).
 - The temporary-resident regime is effectively unavailable to a non-working wealthy family: it is kept as a low-confidence placeholder restricted to OTHER (New Zealand citizens on subclass 444) with a 1-year duration matching the longest visitor-visa stay. A family member employed in Australia on a sponsored work visa would make it available for that visa's term (not modelled).
@@ -151,6 +152,11 @@ Foreign persons cannot buy established homes until 30 June 2029, so a newly arri
 - Schedule of Fees 2026 (Sydney Grammar School, other): https://www.sydgram.nsw.edu.au/admissions/fees/
 - Australia - Corporate - Income determination (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/australia/corporate/income-determination
 - High Court: UPEs are not Division 7A loans (Commissioner of Taxation v Bendel [2026] HCA 18) (RSM Australia, professional): https://www.rsm.global/australia/insights/high-court-upes-not-division-7a-loans-bendel
+- Treasury Laws Amendment (Tax Reform No. 1) Act 2026, No. 49 of 2026 (Federal Register of Legislation, legislation): https://www.legislation.gov.au/C2026A00049
+- Australia: Legislation amending capital gains tax receives Royal Assent (KPMG, professional): https://kpmg.com/us/en/taxnewsflash/news/2026/07/australia-cgt-amendments-fuel-excise-reduction.html
+- Treasury Laws Amendment (Tax Reform No.1) Bill 2026 - Bills Digest No. 67, 2025-26 (Parliament of Australia, government): https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd2526/26bd067
+- Minimum tax on discretionary trusts: what the exposure draft means for taxpayers (BDO Australia, professional): https://www.bdo.com.au/en-au/insights/tax/articles/minimum-tax-on-discretionary-trusts-what-the-exposure-draft-means-for-taxpayers
+- Minimum trust tax a step closer: Treasury releases draft legislation (Pitcher Partners, professional): https://www.pitcher.com.au/insights/minimum-trust-tax-a-step-closer-treasury-releases-draft-legislation/
 
 ## Change log
 
@@ -159,3 +165,4 @@ Foreign persons cannot buy established homes until 30 June 2029, so a newly arri
 - 2026-10-15 (data-quality pass): temporary_resident regime re-verified against Home Affairs: BIIP (subclass 188, incl. Significant Investor) closed as of 31 July 2024, National Innovation visa is permanent, Visitor visa 3/6/12 months. No visa fits a non-working wealthy family, so the regime is restricted to OTHER (NZ citizens on subclass 444) with a 1-year placeholder duration, confidence low. Added cost of living: Mosman 4+ bedroom house rent AUD 16,792 a month (NSW Rent and Sales Report, June quarter 2026) and Sydney Grammar School fee AUD 52,410 (2026).
 - 2026-10-15: added the `family_trust_bucket_company` structure regime and a Holding structures section (Bendel [2026] HCA 18, Budget 2026-27 trust and CGT announcements).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from 16,792 to 7,572 AUD (North Shore: Lane Cove, Chatswood, Roseville, Lindfield, Killara, St Leonards; was Mosman).
+- 2026-10-16: CGT reform status corrected from announced to enacted (Act No. 49 of 2026, Royal Assent 26 June 2026; indexation and 30% minimum tax for gains accruing from 1 July 2027), discretionary-trust minimum tax updated to Treasury's exposure draft of 3 September 2026 (not law). Rates unchanged (they score disposals to 30 June 2027). Added sources. Recipe AUS.json drafted.

@@ -1,6 +1,6 @@
 # New Zealand — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026/27
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -83,7 +83,7 @@ Dividends on RAM shares are taxed when received at marginal rates (39% top) with
 
 ### Standard regime
 
-No inheritance, estate or gift tax. Estate duty was abolished in 1992 and gift duty in 2011 (gift-duty date from general knowledge, not verified from an opened source). Transfers to children are tax-free; for FIF shares the heirs simply continue under the FIF rules.
+No inheritance, estate or gift tax. Estate duty was abolished in 1992 and gift duty for transfers made on or after 1 October 2011 (Inland Revenue's gift duty abolition note and gifting overview, found by search and not opened). Transfers to children are tax-free; for FIF shares the heirs simply continue under the FIF rules.
 
 - **Exemptions and thresholds:** No tax of any amount.
 - **Important exceptions, statute references and announced changes:** Inherited residential land is generally outside the bright-line test for the heir (general rule; not verified). Trusts: trustee income tax rate 39% from 2024/25 (not verified in this session).
@@ -94,7 +94,7 @@ No inheritance, estate or gift tax. Estate duty was abolished in 1992 and gift d
 - **Residence/domicile rules:** Not applicable.
 - **Business relief covers listed shares:** False
 
-Open points for this tax: Official confirmation of the estate duty (1992) and gift duty (2011) abolition dates was not obtained: the legislation site returned HTTP 403 and PwC's page does not mention them.
+Open points for this tax: The estate duty (1992) and gift duty (1 October 2011) abolition dates rest on search results of two Inland Revenue pages that were not opened.
 
 ## Wealth tax
 
@@ -103,7 +103,7 @@ Open points for this tax: Official confirmation of the estate duty (1992) and gi
 No net wealth tax. However, the FIF fair dividend rate method taxes 5% of the opening market value of foreign shares each year as income (39% top rate = about 1.95% of value), regardless of actual dividends or gains. It is recorded here as a limited levy on foreign financial assets because economically it works like one.
 
 - **Exemptions and thresholds:** Applies only if the total cost of foreign attributing interests exceeds NZD 50,000 at any time in the year. Exempt: ASX-listed Australian-resident companies with franking accounts. Individuals and eligible family trusts may instead pay on the actual total return (comparative value) when it is lower than 5%, and the portfolio total cannot go below zero.
-- **Important exceptions, statute references and announced changes:** Statutory basis: Income Tax Act 2007 subpart EX (FIF rules), FDR method. Budget 2026 proposes extending the revenue account method (realisation basis) to all residents (per PwC, July 2026; not yet law).
+- **Important exceptions, statute references and announced changes:** Statutory basis: Income Tax Act 2007 subpart EX (FIF rules), FDR method. Budget 2026 proposals (IRD information sheet, 28 May 2026; not yet law, bill status not confirmed): all residents could use the revenue account method for unlisted foreign shares only, residents taxed twice because of citizenship or a right to work elsewhere (mainly US citizens) could use the extended RAM for all foreign shares, and the FIF de minimis would rise from NZD 50,000 to NZD 100,000 from 1 April 2026 if enacted. A listed portfolio held by an EU family stays under the FDR method.
 - **Tax year / confidence / verification:** 2026/27 / high / verified (checked 2026-10-15)
 - **JSON type:** `limited`
 - **Component FIF fair dividend rate (5% deemed return taxed at 39%):** base `financial_assets_foreign`, allowance 0 NZD, entry threshold 50,000 NZD, brackets (marginal): from 0 NZD: 1.95% (0.0195). Threshold is on total cost, not value. Rate = 5% x 39% top marginal rate. Foreign source dividend WHT is creditable against it. In loss or low-return years individuals can pay on the actual return (comparative value), floor zero.
@@ -127,7 +127,7 @@ RAM shares are taken out of the FDR deemed-return charge.
 
 - **Transitional resident (4-year exemption)** (`transitional_resident`; EU, US, OTHER; duration 4 years): New migrants and New Zealanders returning after 10 years are exempt for about 4 years on most foreign income: foreign interest, dividends, FIF income, rent and gains. Foreign employment and personal-services income is not exempt. Eligibility: Became tax resident on or after 1 April 2006, not tax resident at any time in the previous 10 years, never transitional before. Ends 4 years after the end of the month of qualifying, or earlier on opting out (e.g. claiming Working for Families credits). Automatic; opting out is irrevocable.
   - Metrics that differ from standard: capital_gains, dividends, wealth_tax (details in the tax sections above).
-- **Revenue account method for new migrants (extended RAM for foreign citizens taxed abroad, e.g. US citizens)** (`revenue_account_method`; US; duration indefinite): From 1 April 2025, eligible new residents may elect to tax qualifying FIF shares on a realisation basis: dividends at marginal rates plus 70% of realised gains. Under 'extended RAM' it applies to all foreign shares of a person who remains liable to tax on their disposal in another country by citizenship or right to live there (in practice US citizens). Leaving New Zealand triggers a deferred deemed disposal for 3 years. Eligibility: Natural person (or family trust whose principal settlor qualifies) who became resident (not transitional) on or after 1 April 2024 after at least five years of non-residence. Without the extended rule RAM covers only unlisted foreign shares acquired before arrival, so for a listed portfolio it is relevant mainly to US citizens.
+- **Revenue account method for new migrants (extended RAM for foreign citizens taxed abroad, e.g. US citizens)** (`revenue_account_method`; US; duration indefinite): Introduced on 30 March 2026 (IRD, Budget 2026 information sheet), eligible new residents who became resident on or after 1 April 2024 after at least five years of non-residence may elect to tax qualifying FIF shares on a realisation basis: dividends at marginal rates plus 70% of realised gains. Under 'extended RAM' it applies to all foreign shares of a person who remains liable to tax on their disposal in another country by citizenship or right to live there (in practice US citizens). Leaving New Zealand triggers a deferred deemed disposal for 3 years. Eligibility: Natural person (or family trust whose principal settlor qualifies) who became resident (not transitional) on or after 1 April 2024 after at least five years of non-residence. Without the extended rule RAM covers only unlisted foreign shares acquired before arrival, so for a listed portfolio it is relevant mainly to US citizens.
   - Why no fixed duration: RAM is an election, not a time-limited concession: once a qualifying migrant elects it, it keeps applying to the elected FIF interests while the person remains resident; it ends only on leaving New Zealand (deemed disposal, deferred for 3 years).
   - Metrics that differ from standard: capital_gains, dividends, wealth_tax (details in the tax sections above).
 
@@ -145,7 +145,7 @@ RAM shares are taken out of the FDR deemed-return charge.
 
 **Inheritance.** No inheritance or gift tax (standard regime applies); company shares pass to the children without tax.
 
-**Other vehicles.** PIEs cap investor tax at 28% with tax-free distributions, but a family cannot normally form its own PIE; using public PIE funds is a product choice, not a family structure. Budget 2026 proposes extending the revenue account method to all residents (not law); if enacted, direct holding would be taxed on realisation (70% of gains at 39% = 27.3%) and the comparison would change.
+**Other vehicles.** PIEs cap investor tax at 28% with tax-free distributions, but a family cannot normally form its own PIE; using public PIE funds is a product choice, not a family structure. Budget 2026 proposes extending the revenue account method to all residents for unlisted foreign shares only (not law); a listed portfolio held by an EU family would stay under the FDR method, and only people taxed twice by citizenship (mainly US citizens) would get realisation-basis taxation for listed shares.
 
 ## Company taxation (kept separate from personal tax)
 
@@ -162,8 +162,8 @@ Purchase prices, health insurance and housekeeper costs not sourced. Foreign buy
 ## Open questions
 
 - The FIF FDR charge is modelled as a 'limited' wealth-tax component (1.95% of foreign share value above NZD 50,000 cost) because the schema has no deemed-income field; foreign dividends and gains are set to 0 to avoid double counting.
-- Budget 2026 proposal to extend RAM to all residents: status not verified (PwC, July 2026).
-- Gift duty abolition (2011) not confirmed from an opened official source.
+- Budget 2026 FIF proposals (RAM for unlisted shares for all residents, extended RAM for people taxed twice, de minimis NZD 100,000): IRD's information sheet of 28 May 2026 was read, but whether the bill is introduced or passed was not confirmed.
+- The gift duty (1 October 2011) and estate duty (1992) abolition dates come from search results of Inland Revenue pages, which were not opened.
 - Cost of living: purchase prices, health insurance and housekeeper wages not sourced; the Active Investor Plus home-purchase exception was not re-verified in this pass.
 
 ## Sources
@@ -185,6 +185,9 @@ Purchase prices, health insurance and housekeeper costs not sourced. Foreign buy
 - College Fees (King's College, other): https://www.kingscollege.school.nz/admissions/college-fees
 - New Zealand - Corporate - Income determination (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/new-zealand/corporate/income-determination
 - Public ruling BR Pub 14/09: liquidation and capital distributions (s CD 26) (Inland Revenue (NZ), tax_authority): https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/rulings/public/pu14009.pdf
+- Budget 2026: Foreign investment fund changes, information sheet of 28 May 2026 (Inland Revenue (NZ), tax_authority): https://www.taxpolicy.ird.govt.nz/-/media/project/ir/tp/publications/2026/is-foreign-investment-fund.pdf
+- Gift duty abolition (Inland Revenue (NZ), tax_authority): https://taxpolicy.ird.govt.nz/publications/2011/2011-sr-gift-duty-abolition/gift-duty-abolition
+- Gifting overview (Inland Revenue (NZ), tax_authority): https://www.taxtechnical.ird.govt.nz/overviews/gifting
 
 ## Change log
 
@@ -193,3 +196,4 @@ Purchase prices, health insurance and housekeeper costs not sourced. Foreign buy
 - 2026-10-15 (data-quality pass): added cost of living: Remuera 5+ bedroom house rent NZD 5,742 a month (MBIE market rent, bonds Mar-Aug 2026) and King's College Years 11-13 domestic day fee NZD 33,422 (2026).
 - 2026-10-15: added the `investment_company` structure regime (FIF at the 28% company rate) and a Holding structures section.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from 5,742 NZD to 4,550 NZD (Remuera 4-bedroom house).
+- 2026-10-16: Budget 2026 FIF proposals described from IRD's information sheet (RAM for all residents covers unlisted shares only; extended RAM for people taxed twice; de minimis NZD 100,000 proposed); RAM introduction date corrected from 1 April 2025 to 30 March 2026; FIF NZD 50,000 threshold noted as not indexed; estate and gift duty abolition dates sourced to Inland Revenue (search results). Rates unchanged. Recipe NZL.json drafted.

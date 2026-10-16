@@ -4,7 +4,7 @@
   "continent": "Asia",
   "region": "East Asia",
   "currency": "HKD",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Hong Kong taxes individuals only on Hong Kong-source employment, business and property income. Capital gains and dividends (Hong Kong or foreign) received by an individual investor are not taxed, estate duty was abolished for deaths from 11 February 2006, and there is no gift or wealth tax. The residual costs are stamp duty (0.2% on Hong Kong share transfers, up to 6.5% on property), progressive government rates on homes, and the absence of a tax treaty with the US (US dividends bear 30% US withholding). The New Capital Investment Entrant Scheme (HKD 30 million) is the main residence route for investors.",
   "regimes": [
     {
@@ -188,8 +188,15 @@
   "corporate": {
     "cit_rate": 0.165,
     "summary": "Profits tax 16.5% (8.25% on the first HKD 2 million under the two-tier regime; one entity per connected group). Territorial: offshore profits are untaxed, but under the FSIE regime (from 2023, extended 2024) foreign dividends, interest and disposal gains received in Hong Kong by MNE group entities are taxed unless economic substance or participation requirements are met. Pillar Two: IIR and the Hong Kong minimum top-up tax apply from fiscal years beginning 1 January 2025. No dividend WHT.",
-    "special_zones": "0% for eligible family-owned investment holding vehicles (FIHV) managed by a Hong Kong single family office (from 1 April 2022); fund exemption for qualifying private funds (from 2019).",
+    "special_zones": "0% for eligible family-owned investment holding vehicles (FIHV) managed by a Hong Kong single family office (from 1 April 2022); the office must manage specified assets of at least HKD 240 million for the family's FIHVs, with at least 2 full-time qualified employees and HKD 2 million of Hong Kong operating expenditure (IRD, FIHV concession); fund exemption for qualifying private funds (from 2019).",
     "sources": [
+      {
+        "title": "Tax concession for family-owned investment holding vehicles",
+        "url": "https://www.ird.gov.hk/eng/tax/bus_fihv.htm",
+        "publisher": "Inland Revenue Department, HKSAR",
+        "kind": "tax_authority",
+        "accessed": "2026-10-16"
+      },
       {
         "title": "Hong Kong SAR - Corporate - Taxes on corporate income",
         "url": "https://taxsummaries.pwc.com/hong-kong-sar/corporate/taxes-on-corporate-income",

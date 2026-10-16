@@ -1,0 +1,116 @@
+{
+  "id": "ARE",
+  "name": "United Arab Emirates",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "No personal income tax, no capital gains tax, no wealth tax and no inheritance or gift tax; Personal Investment income of a natural person is outside Corporate Tax (Cabinet Decision 49/2023 art. 2(2)(b)). Foreign dividend withholding is the only cost. Succession is governed by Sharia (Muslims) or Federal Decree-Law 41/2022 or a registered will (non-Muslims), which is a planning issue, not a tax."
+    },
+    {
+      "id": "difc_foundation",
+      "name": "DIFC family foundation (tax-transparent, Corporate Tax Law art. 17)",
+      "regime": "difc_foundation",
+      "estate": "outside_estate",
+      "note": "A DIFC foundation is a body corporate separate from its founder and the founder has no interest in it merely by endowing it (DIFC Foundations Law art. 10(1), 27(4)), so nothing passes at death. With FTA approval under Corporate Tax Law art. 17 it is tax-transparent and the beneficiaries' Personal Investment income is outside Corporate Tax: the tax is nil, as for personal holding. It is used for succession (it is not subject to foreign heirship rights, art. 15), not to save tax."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 1500000,
+      "wealth": 100000000,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "Reference couple, UAE tax resident, no business and no licence. Dividends AED 2,000,000 (all foreign) and gains AED 1,500,000 on a AED 100,000,000 portfolio. There is no federal or emirate personal income tax (PwC Worldwide Tax Summaries, UAE individual, taxes on personal income, reviewed 9 Sep 2026). Corporate Tax reaches a natural person only for a Business or Business Activity with turnover above AED 1,000,000; Personal Investment income, an investment activity on personal account that needs no licence, is not a Business (Cabinet Decision 49/2023 arts. 1, 2(1)-(2)(b); FTA Family Foundations Guide sections 4.1 and 4.3). Net wealth is not taxed (PwC, UAE individual, other taxes). Tax 0. The 15% foreign withholding (AED 300,000 on the dividends) is a cost at source, not UAE tax, and is outside this figure."
+    },
+    {
+      "path": "difc_foundation",
+      "kind": "annual",
+      "dividends": 2000000,
+      "realised_gains": 1500000,
+      "wealth": 100000000,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "Same inputs. The foundation is a juridical person, taxable at 9% above AED 375,000 by default, but if it meets Corporate Tax Law art. 17(1) and the FTA approves its application (Ministerial Decision 261/2024) it is treated as a tax-transparent Unincorporated Partnership: its income is allocated to each beneficiary (art. 16(2)), and a natural person's share is Personal Investment income outside Corporate Tax (FTA Family Foundations Guide sections 4.4, 7.1, 7.2). The family fits the conditions: natural-person beneficiaries, a principal activity of holding and investing, no Business Activity that a beneficiary could not do directly, no tax-avoidance purpose (the UAE has no personal tax to avoid). Tax at the foundation 0, at the beneficiaries 0. No running cost is counted: none was found in an official source. Total 0. Had transparency been refused, 9% x (3,500,000 - 375,000) = 281,250 less foreign tax would fall due, because a sub-5% listed holding does not qualify for the participation exemption (PwC UAE corporate, income determination)."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 36000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Estate AED 36,000,000 (about EUR 9-10 million) passing to three children. The UAE levies no inheritance, estate or gift tax on individuals (PwC Worldwide Tax Summaries, UAE individual, other taxes, reviewed 9 Sep 2026), and no emirate does. Tax 0. Who inherits (Sharia shares for Muslims, the civil personal status law or a registered will for non-Muslims) is not a tax and does not change the amount."
+    },
+    {
+      "path": "difc_foundation",
+      "kind": "inheritance",
+      "estate": 36000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The foundation owns the portfolio in its own name; the founder has no interest merely by endowing it (DIFC Foundations Law art. 10(1), 27(4)), so nothing passes at death, and in any case the UAE levies no inheritance, estate or gift tax (PwC UAE individual, other taxes). Tax 0."
+    }
+  ],
+  "assumptions": [
+    "The family are UAE residents with a residence visa (Golden Visa or investor/company route); no residence-linked tax exists, so the route does not enter the checks.",
+    "They run no licensed business and their investing needs no licence from a UAE licensing authority, so all their income is Personal Investment income outside Corporate Tax (Cabinet Decision 49/2023).",
+    "The home (EUR 5M) is not part of the checks: the UAE has no property tax on capital value; the Dubai municipality fee (5% of rental value) and land registration fees are not income, wealth or inheritance taxes.",
+    "The foundation is assumed to obtain Article 17 transparency from the FTA, with the annual confirmation filed. The running cost of the foundation (registered agent, council, audit) is not counted because no official figure was found.",
+    "Emirate files: no emirate (including Dubai, AE-DU) levies an income, gains, wealth or inheritance tax, so no subnational recipe is needed.",
+    "No treaty with the United States, so US dividends held directly bear 30% US withholding; the engine applies 15% on all foreign dividends."
+  ],
+  "open_questions": [
+    "Structures considered and rejected: a UAE holding company (mainland or free zone) pays 9% above AED 375,000 on portfolio dividends and gains, because the participation exemption needs a 5% stake (or AED 4 million cost) and a Qualifying Free Zone Person's 0% rate does not cover portfolio income; it is worse than personal holding. A family trust is transparent by default (FTA Guide section 4.4) and equals the personal path for tax, and an ADGM foundation follows the same Article 17 route as the DIFC foundation, so neither is a separate path.",
+    "Check the registered-agent and council costs of a DIFC foundation against DIFC's fee schedule; the recipe counts none.",
+    "The text of Ministerial Decision 261/2024 on mof.gov.ae was found but not opened; the conditions are taken from the FTA's May 2025 guide, which cites it.",
+    "DIFC foundation running costs: only a licence (about USD 200-650 a year, sources conflict) is documented; registered agent, council and audit fees are not, and the FTA transparency application must be confirmed yearly."
+  ],
+  "sources": [
+    {
+      "title": "United Arab Emirates - Individual - Taxes on personal income (last reviewed 9 Sep 2026)",
+      "url": "https://taxsummaries.pwc.com/united-arab-emirates/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "United Arab Emirates - Individual - Other taxes (last reviewed 9 Sep 2026)",
+      "url": "https://taxsummaries.pwc.com/united-arab-emirates/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "United Arab Emirates - Corporate - Income determination (last reviewed 9 Sep 2026)",
+      "url": "https://taxsummaries.pwc.com/united-arab-emirates/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Taxation of Family Foundations, Corporate Tax Guide CTGFF1 (May 2025)",
+      "url": "https://tax.gov.ae/Datafolder/Files/Pdf/2025/Family-Foundations-Guide-27-05-2025.pdf",
+      "publisher": "UAE Federal Tax Authority",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Foundations Law, DIFC Law No. 3 of 2018, Consolidated Version No. 3 (March 2024)",
+      "url": "https://edge.sitecorecloud.io/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/documents/laws--regulations/foundations-law-difc-updated-law-no-3-of-2018_2024.pdf",
+      "publisher": "DIFC",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Cabinet Decision No. 49 of 2023 on natural persons conducting business",
+      "url": "https://mof.gov.ae/wp-content/uploads/2023/05/Cabinet-Decision-No.-49-of-2023.pdf?fm=pdf",
+      "publisher": "UAE Ministry of Finance",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

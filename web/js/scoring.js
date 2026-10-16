@@ -43,6 +43,12 @@ export function bestRegime(rows, weights, opts = {}) {
   const { includeActivity = false, includeStructures = true, taxMetrics: TAX_METRICS = DEFAULT_TAX } = opts;
   rows = rows.filter((r) => (includeActivity || !r.activity) && (includeStructures || !r.structure));
   if (rows.length === 0) return null;
+  // Where the country has a 60-year projection (data/recipes), the family takes the first allowed regime in
+  // its ranking, so the score and the projection agree (mirrors best_regime in domicile/build.py).
+  for (const id of opts.order || []) {
+    const hit = rows.find((r) => r.id === id && TAX_METRICS.every((m) => r.scores[m] !== null && r.scores[m] !== undefined));
+    if (hit) return hit;
+  }
   // The family picks the cheapest regime (expected EUR cost a year, see domicile/scoring.py
   // regime_cost); ties keep the earlier (standard) one. Weights are only a fallback.
   const priced = rows.filter((r) => r.cost !== null && r.cost !== undefined && TAX_METRICS.every((m) => r.scores[m] !== null));
@@ -68,7 +74,8 @@ export function evaluate(entry, weights, citizenship, cfg, opts = {}) {
   const TAX_METRICS = opts.taxMetrics || DEFAULT_TAX;
   const w = normalizeWeights(weights);
   const rows = entry.tax ? entry.tax[citizenship] || [] : [];
-  const regime = bestRegime(rows, weights, opts);
+  // The projection models EU citizens; other passports keep the cheapest regime a year.
+  const regime = bestRegime(rows, weights, citizenship === "EU" && entry.projection_order ? { ...opts, order: entry.projection_order } : opts);
   const metrics = { ...entry.nontax };
   let taxComputable = false;
   for (const m of TAX_METRICS) metrics[m] = regime ? regime.scores[m] : null;

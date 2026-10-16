@@ -1,0 +1,66 @@
+{
+  "id": "HKG",
+  "name": "Hong Kong",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Territorial system: dividends and capital gains of an individual investor, Hong Kong or foreign, are outside the charge to tax, and estate duty was abolished from 11 February 2006. The personal path is already 0%, so the family investment holding vehicle (FIHV) is not modelled: it needs HKD 240 million of assets under a Hong Kong single family office, far above this family's portfolio, and could only reproduce a 0% result."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 1.0,
+      "expected": 0,
+      "working": "Top marginal rates assumed. Hong Kong taxes only Hong Kong-source salaries (Inland Revenue Ordinance s.8), profits of a trade, profession or business carried on in Hong Kong (s.14) and property income (s.5). Foreign dividends of 20,000 and gains of 15,000 on listed shares held as a long-term investment are neither: capital gains are outside the charge (IRD; PwC individual income determination), and dividends of an individual are not chargeable. The 15% source withholding is a final cost. Total 0."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 0.0,
+      "expected": 0,
+      "working": "Dividends from Hong Kong companies received by an individual are exempt (Inland Revenue Ordinance s.26(a), dividends from a corporation chargeable to profits tax; PwC) and Hong Kong has no capital gains tax. Stamp duty on share transfers is a transaction cost, not an income tax, and is excluded. Total 0."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Estate duty was abolished for deaths on or after 11 February 2006 (Revenue (Abolition of Estate Duty) Ordinance 2005; IRD, 'Estate Duty'); there is no inheritance tax, so an estate of 10,000,000 passing to 3 children bears 0."
+    }
+  ],
+  "assumptions": [
+    "The family has no job or business in Hong Kong and does not trade in securities (no profits tax).",
+    "Residence is assumed through the New Capital Investment Entrant Scheme; the route does not change the tax.",
+    "Government rates, stamp duty on the home and rent are not part of the projection."
+  ],
+  "open_questions": [
+    "Structure considered and not modelled: the FIHV concession (0% profits tax for qualifying transactions) needs a Hong Kong single family office managing at least HKD 240 million of specified assets, 2 full-time qualified employees and HKD 2 million of local spending, and cannot lower a personal tax that is already 0%.",
+    "Statute sections s.8, s.14, s.5, s.26(a) are cited from memory of the Inland Revenue Ordinance and were not re-opened in this pass."
+  ],
+  "sources": [
+    {
+      "title": "Tax concession for family-owned investment holding vehicles",
+      "url": "https://www.ird.gov.hk/eng/tax/bus_fihv.htm",
+      "publisher": "Inland Revenue Department, HKSAR",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Estate Duty",
+      "url": "https://www.ird.gov.hk/eng/tax/edu.htm",
+      "publisher": "Inland Revenue Department, HKSAR",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

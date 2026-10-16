@@ -45,7 +45,7 @@ export function chart(lines, a, label = `Portfolio over ${a.years} years for eac
 }
 
 function table(paths, ref, a) {
-  const at = (p, yr) => (p.years[yr - 1] ? p.years[yr - 1][0] * 1e3 : null);
+  const at = (p, yr) => (p.years[yr - 1] ? Math.max(0, p.years[yr - 1][0]) * 1e3 : 0); // a path that ran out stays at 0
   const sum = (p, k) => p.years.reduce((s, y) => s + y[k], 0) * 1e3;
   const mid = a.deaths[0];
   const row = (p, cls) => h("tr", { class: cls || "" }, h("td", null, p.name),
@@ -62,8 +62,9 @@ export function projectionSection(p) {
   const pr = p?.projection;
   if (!pr) return null;
   const a = pr.assumptions;
-  const ok = pr.paths.filter((x) => x.id !== "no_tax" && !x.missing);
-  const missing = pr.paths.filter((x) => x.missing);
+  const runsOut = (x) => x.missing === "the portfolio runs out" && x.years.length;
+  const ok = pr.paths.filter((x) => x.id !== "no_tax" && (!x.missing || runsOut(x)));
+  const missing = pr.paths.filter((x) => x.missing && !runsOut(x));
   const ref = pr.paths.find((x) => x.id === "no_tax");
   const sec = h("details", { class: "fold", open: "" }, h("summary", null, h("h3", null, `Wealth over ${a.years} years`)));
   append(sec, [
@@ -72,6 +73,7 @@ export function projectionSection(p) {
     ok.length ? chart(ok, a) : null,
     ok.length ? table(ok, ref, a) : null,
     missing.map((x) => h("p", { class: "small muted" }, `${x.name}: not computable (${x.missing}).`)),
+    ok.filter(runsOut).map((x) => h("p", { class: "small muted" }, `${x.name}: the money runs out in year ${x.years.length}: taxes and spending outgrow the portfolio.`)),
     h("ul", { class: "small" }, ok.filter((x) => x.note).map((x) => h("li", null, h("strong", null, `${x.name}. `), x.note))),
     h("details", { class: "small" }, h("summary", null, "Assumptions"),
       h("ul", null,

@@ -1,0 +1,107 @@
+{
+  "id": "TWN",
+  "name": "Taiwan",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "A resident household (183 days) is taxed on foreign dividends and gains only through the income basic tax: 20% of basic income above TWD 7.5 million, once foreign income reaches TWD 1 million, less the foreign tax paid (Income Basic Tax Act arts. 12-13). Taiwan estate tax reaches only Taiwan-situs property of a non-ROC national (Estate and Gift Tax Act arts. 1, 17-18), so the foreign portfolio is outside it; the Taiwan home is not."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000000,
+      "realised_gains": 15000000,
+      "wealth": 100000000,
+      "foreign_share": 1.0,
+      "expected": 2500000,
+      "working": "Reference household, Taiwan resident, no Taiwan-source income, top rates (the household's foreign income is far above the thresholds). Dividends TWD 20,000,000 and gains TWD 15,000,000, all foreign, so all overseas income. Regular income tax on them is 0: foreign-source income is outside the comprehensive income tax. Overseas income of a household is counted in basic income when it reaches TWD 1,000,000 a year, and then in full (Income Basic Tax Act art. 12; MOF portal): 35,000,000. Basic tax = 20% x (35,000,000 - 7,500,000) = 5,500,000 (art. 13, the TWD 6 million of the text raised to 7.5 million by the CPI adjustment under art. 3(2); MOF portal). Regular tax is 0, so the whole 5,500,000 is the excess. Foreign tax credit: 15% withholding on 20,000,000 = 3,000,000, allowed up to the increase in basic tax caused by the overseas income, which is the full 5,500,000, so all 3,000,000 is used (art. 13). Tax = 5,500,000 - 3,000,000 = 2,500,000. No wealth tax (the portfolio of TWD 100,000,000 is not taxed). Securities transaction tax does not apply to foreign shares.",
+      "model_difference": 1500000,
+      "model_note": "The engine has no allowances (RECIPE_GUIDE): it takes 20% of all 35,000,000 = 7,000,000 less the 3,000,000 credit = 4,000,000, which is 20% x 7,500,000 = 1,500,000 more than the law, because the household deduction is not modelled."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 350000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Estate TWD 350,000,000 (about EUR 10 million) of foreign securities left by a non-ROC national (an EU citizen) to three children. A non-ROC national's estate is taxed only on property within the R.O.C. (Estate and Gift Tax Act art. 1, with art. 4: habitual residence matters for ROC nationals only), so foreign securities are outside Taiwan estate tax. Taxable net estate 0, tax 0. The Taiwan-situs home is not in this estate: it would be taxed at 10% up to TWD 56,210,000, 15% to 112,420,000 and 20% above, after the TWD 13,330,000 exemption (arts. 13, 18; amounts under art. 12-1, 2026), with no spouse or child deductions for a non-national (art. 17, last paragraph)."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens, not ROC nationals, resident in Taiwan 183 days or more; they have no Taiwan-source income (the home is owner-occupied) and no job or business.",
+    "All dividends and gains are foreign-source, so they reach tax only through the income basic tax (household basic income above TWD 7.5 million, 20%). Top rate assumed, as the real dividends (about EUR 600,000) are far above the thresholds.",
+    "The EUR 5M home is in Taiwan and is taxed in the estate at 10%-20% above TWD 13.33 million at each death (no family deductions for non-nationals); the inheritance check covers the foreign portfolio only.",
+    "Foreign dividends carry 15% withholding in the checks; US dividends would bear 30% (no US treaty), which exceeds the Taiwan tax and is lost.",
+    "Structures considered and rejected: a Taiwan holding company pays 20% CIT on worldwide income (Income Tax Act art. 3; PwC) and the 5% undistributed-earnings tax, then the owners pay 28% or the consolidated rate on payouts (art. 15), which is worse than the 20% basic tax on direct holding; a family trust is passed through to the beneficiary for income tax (art. 3-4), so it changes no rate, and the foreign assets of a non-national are outside estate tax in any case; an offshore company would be reached by the controlled foreign company rules (Income Basic Tax Act art. 12-1) and is not a Taiwan structure.",
+    "No special regime exists for a passive foreign family; the foreign-professional income relief is tied to employment."
+  ],
+  "open_questions": [
+    "Needs an engine change: the income basic tax gives each household a TWD 7.5 million deduction before the 20% (Income Basic Tax Act art. 13); the engine has no allowance, so it overstates the tax by TWD 1.5 million a household a year (1,500,000 in the check).",
+    "Needs an engine change: the Taiwan-situs family home is in the estate at each death (10%-20% above the TWD 13.33 million exemption, no family deductions for a non-national); the inheritance check carries only the foreign portfolio.",
+    "Check the 2027 amounts (IBT deduction, estate tax exemption and brackets) after the Ministry of Finance announcement in December 2026.",
+    "Estate tax amounts are CPI-indexed when prices rise 10% since the last change (art. 12-1); CPI was 11.49% above it in July 2026, so the exemption is likely to rise to about TWD 14.86M for 2027 (MOF announcement expected around year end)."
+  ],
+  "sources": [
+    {
+      "title": "Income Basic Tax Act (所得基本稅額條例), arts. 3, 12, 12-1, 13",
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=G0340115",
+      "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Chapter 11 Income basic tax (最低稅負制), Ministry of Finance Tax Portal (updated 2026-04-15)",
+      "url": "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/national/individual-income-tax/6xKrvGR",
+      "publisher": "Ministry of Finance, Taiwan (etax portal)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Income Tax Act (English), arts. 3, 3-4, 4-1, 5, 15",
+      "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=G0340003",
+      "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Estate and Gift Tax Act (English translation)",
+      "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=G0340072",
+      "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Estate and Gift Tax Act art. 17 (deductions; not for non-ROC nationals)",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340072&flno=17",
+      "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Estate and Gift Tax Act art. 18 (exemption)",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340072&flno=18",
+      "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Estate and Gift Tax Act art. 12-1 (CPI adjustment)",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340072&flno=12-1",
+      "publisher": "Ministry of Justice, Laws & Regulations Database of the Republic of China (Taiwan)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Taiwan - Corporate - Taxes on corporate income (last reviewed 20 Aug 2026)",
+      "url": "https://taxsummaries.pwc.com/taiwan/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

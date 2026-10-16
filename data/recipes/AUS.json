@@ -1,0 +1,125 @@
+{
+  "id": "AUS",
+  "name": "Australia",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (Australian tax resident)",
+      "regime": "standard",
+      "note": "Foreign dividends are taxed at the top marginal rate of 47% (45% plus the 2% Medicare levy) with a foreign income tax offset for the 15% withheld at source; gains held 12 months or more get the 50% discount (23.5%) for disposals up to 30 June 2027. There is no wealth tax and no inheritance tax; the heirs take over the parents' cost base. The temporary-resident exemption of foreign income is not offered because it needs a temporary visa and no temporary visa is open to a non-working EU family (the investor retirement subclass 405 and the investor streams of subclass 188 are closed)."
+    },
+    {
+      "id": "family_trust",
+      "name": "Discretionary family trust with a corporate beneficiary (bucket company)",
+      "regime": "family_trust_bucket_company",
+      "estate": "outside_estate",
+      "note": "A trust with a corporate trustee owns the portfolio. Capital gains are streamed to the individual family members, who keep the 50% discount (23.5%); dividends are streamed to a family-owned bucket company at 30% with the foreign income tax offset. The trust's assets are not the parents' estate, and Australia has no inheritance tax in any case. The bucket company's tax is a deferral: profits paid out later are franked dividends taxed at 24.3% of the cash at the top rate. The 30% minimum tax on discretionary trusts proposed from 1 July 2028 (exposure draft only) is not law and not modelled. Not for US persons."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 99250,
+      "working": "Tax year 2026/27, top marginal rate for both spouses (each far above AUD 190,000): 45% above AUD 190,000 (Income Tax Rates Act 1986, Sch 7) plus the 2% Medicare levy (Medicare Levy Act 1986 s 6) = 47%. Foreign dividends 200,000 are assessable in full (ITAA 1997 s 4-10, s 6-5) = 94,000 before offset. Foreign income tax offset for the 15% withheld at source: 15% x 200,000 = 30,000 (ITAA 1997 Div 770, s 770-10; the offset is capped at the Australian tax on that income, 94,000, so it is fully used) -> 64,000. Gains 150,000 on shares held at least 12 months: net capital gain halved by the 50% discount (ITAA 1997 s 115-100, s 115-25) = 75,000, taxed at 47% = 35,250. No wealth tax. Total 64,000 + 35,250 = 99,250. The tax-free threshold and the lower brackets are ignored (top marginal rate throughout, as the real family has about EUR 600,000 of dividends a year). The 50% discount applies to disposals up to 30 June 2027 (Treasury Laws Amendment (Tax Reform No. 1) Act 2026); later gains fall under indexation and a 30% minimum tax, which this check does not cover."
+    },
+    {
+      "path": "family_trust",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 80250,
+      "working": "The trustee resolves, before 30 June, to make the bucket company presently entitled to the dividends and the individual beneficiaries to the capital gain (ITAA 1997 Subdivisions 115-C and 207-B require specific entitlement). Dividends 200,000 streamed to the company: company tax 30% (Income Tax Rates Act 1986 s 23; the 25% base rate entity rate is not available because passive income exceeds 80% of assessable income, Income Tax Rates Act 1986 s 23AA) = 60,000; foreign income tax offset for the 15% withholding = 30,000 (ITAA 1997 Div 770, flowing through the trust under Subdivision 770-F) -> 30,000. Gain 150,000 streamed to individuals, who get the 50% discount on a trust gain (ITAA 1997 s 115-215, s 115-100): 75,000 x 47% = 35,250. Running cost of the structure AUD 15,000 a year (the tax file's estimate for two sets of accounts and returns, resolutions and ASIC fees), counted in full because the check does not take a deduction for it (see the open question). Total 30,000 + 35,250 + 15,000 = 80,250. Payout tax excluded: profits drawn from the company later are franked dividends."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Australia has no inheritance, estate or gift tax. Death is not a CGT event for the deceased's assets: CGT event K3 does not apply to assets passing to an Australian-resident beneficiary and the asset passes to the heir with the deceased's cost base (ITAA 1997 s 128-10 and s 128-15), so the three resident children owe nothing now and are taxed only on a later sale. Assumes the children are Australian residents (K3 would apply to assets passing to a foreign-resident beneficiary). Tax 0."
+    },
+    {
+      "path": "family_trust",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "No inheritance, estate or gift tax in Australia. The trust assets are held by the trustee and not by the deceased parent, so nothing passes under the will; control (the appointor's power) passes by the deed or the will, which is not a CGT event for the trust. Even if the shares in the trustee company were counted as the parents' estate, death is no CGT event for resident heirs (ITAA 1997 s 128-10, s 128-15) and there is no estate tax. Tax 0."
+    }
+  ],
+  "assumptions": [
+    "The family are EU citizens with no job or business who have just arrived and become Australian tax residents under the ordinary tests (ITAA 1936 s 6(1)). No visa is open to them as a non-working family (the subclass 188 investor streams closed on 31 July 2024; the subclass 405 retirement visa is repealed and open only to existing holders), so the family is assumed to hold a permanent visa by some route not modelled; the temporary-resident exemption is therefore not offered.",
+    "Both spouses are at the top marginal rate (45% above AUD 190,000 plus the 2% Medicare levy); the real family's dividends of about EUR 600,000 a year exceed that for each spouse. Allowances and the lower brackets are ignored.",
+    "Foreign dividends carry 15% withholding in the checks, fully creditable under the foreign income tax offset.",
+    "The positions are held for more than 12 months, so the 50% CGT discount applies to disposals up to 30 June 2027. After that, gains accruing from 1 July 2027 fall under cost-base indexation and a 30% minimum tax (Act No. 49 of 2026), which the engine cannot express.",
+    "The children are Australian residents when they inherit, so there is no CGT event K3 at either death.",
+    "The family trust is set up with cash or with shares at today's market value; shares transferred in at a cost below market value would be a CGT disposal for the transferor. The family trust election and the 45-day holding rule for franking credits are assumed satisfied."
+  ],
+  "open_questions": [
+    "Needs an engine change: from 1 July 2027 the 50% CGT discount is replaced for individuals and trusts by cost-base indexation and a 30% minimum tax on capital gains accruing on or after that date (ITAA 1997 as amended by the Treasury Laws Amendment (Tax Reform No. 1) Act 2026, Schedule 1, new Division 119; Income Tax Rates Amendment (Tax Reform No. 1) Act 2026). The tax is on the real gain at marginal rates (up to 47%) with a 30% floor, and the 50% discount still applies to gains accrued to 30 June 2027 (deemed sale and reacquisition on 30 June 2027). The engine applies one flat 23.5% to every gain over 60 years; almost all gains in the projection accrue after 1 July 2027.",
+    "Needs an engine change: the 30% minimum tax on discretionary trusts proposed from income years starting on or after 1 July 2028 (Treasury exposure draft, 3 September 2026; not law) would tax the trust at 30% with a non-refundable offset for non-corporate beneficiaries only, so income streamed to a bucket company would be taxed twice. If enacted, the family_trust path needs a date from which its dividend rate changes; the engine's regimes have no start date.",
+    "The family trust's running cost (AUD 15,000 a year, an unsourced estimate in the tax file) is probably deductible in part under ITAA 1997 s 8-1 and s 25-5, which would reduce the net cost by up to 30%. The tax file sets no running_cost_deductible_at and the check counts the cost in full. The deductible share and its allocation between trust and company were not established.",
+    "Which visa a non-working EU family would actually hold is open: the subclass 405 Investor Retirement visa, the only temporary visa that fitted such a family, is repealed (open only to existing holders and to those whose last substantive visa was a 405), and the investor streams of subclass 188 closed on 31 July 2024. The Home Affairs pages for these visas returned HTTP 403 and were not opened; the closure of 405 rests on a search summary of the repealed-visas listing and the 2018 regulation.",
+    "Trust gains at 23.5% are realistic only for the two adult spouses: distributions to the minor children are taxed at penalty rates (Div 6AA ITAA 1936), and streaming gains needs a specific entitlement in the deed (s 100A, Part IVA risk).",
+    "Visa: the drafter found no temporary visa for a non-working family (investor streams closed July 2024); the Investor Retirement visa (subclass 405) may survive for existing holders only. Not confirmed on Home Affairs (403)."
+  ],
+  "sources": [
+    {
+      "title": "Australia - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/australia/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Australia - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/australia/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Australia - Individual - Foreign tax relief and tax treaties",
+      "url": "https://taxsummaries.pwc.com/australia/individual/foreign-tax-relief-and-tax-treaties",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Australia - Corporate - Taxes on corporate income",
+      "url": "https://taxsummaries.pwc.com/australia/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Treasury Laws Amendment (Tax Reform No. 1) Act 2026 (No. 49, 2026)",
+      "url": "https://www.legislation.gov.au/C2026A00049",
+      "publisher": "Federal Register of Legislation",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Treasury Laws Amendment (Tax Reform No.1) Bill 2026 - Bills Digest No. 67, 2025-26",
+      "url": "https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd2526/26bd067",
+      "publisher": "Parliament of Australia",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Minimum tax on discretionary trusts: what the exposure draft means for taxpayers",
+      "url": "https://www.bdo.com.au/en-au/insights/tax/articles/minimum-tax-on-discretionary-trusts-what-the-exposure-draft-means-for-taxpayers",
+      "publisher": "BDO Australia",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -4,8 +4,8 @@
   "continent": "Oceania",
   "region": "Australia and New Zealand",
   "currency": "AUD",
-  "researched_on": "2026-10-15",
-  "summary": "Australian residents are taxed on worldwide income at up to 45% plus the 2% Medicare levy (47%) above AUD 190,000. Capital gains on assets held 12 months get a 50% discount, so the top effective rate is 23.5%; the May 2026 Budget announced that from 1 July 2027 the discount will be replaced by inflation indexation with a 30% minimum tax on post-July-2027 gains (announced, legislative status not verified). Franked Australian dividends carry a 30% imputation credit (net top rate about 24.3% of the cash dividend); foreign dividends are taxed at up to 47% with a foreign tax offset. There is no inheritance, gift or wealth tax; assets inherited by residents keep the deceased's cost base, but CGT can be triggered when assets pass to non-resident beneficiaries. Holders of temporary visas are exempt on most foreign income and gains.",
+  "researched_on": "2026-10-16",
+  "summary": "Australian residents are taxed on worldwide income at up to 45% plus the 2% Medicare levy (47%) above AUD 190,000. Capital gains on assets held 12 months get a 50% discount, so the top effective rate is 23.5%; the Treasury Laws Amendment (Tax Reform No. 1) Act 2026 (Royal Assent 26 June 2026) replaces the discount from 1 July 2027 with cost-base indexation and a 30% minimum tax on gains accruing after that date. Franked Australian dividends carry a 30% imputation credit (net top rate about 24.3% of the cash dividend); foreign dividends are taxed at up to 47% with a foreign tax offset. There is no inheritance, gift or wealth tax; assets inherited by residents keep the deceased's cost base, but CGT can be triggered when assets pass to non-resident beneficiaries. Holders of temporary visas are exempt on most foreign income and gains.",
   "regimes": [
     {
       "id": "standard",
@@ -22,7 +22,7 @@
       "capital_gains": {
         "summary": "Net capital gains are added to taxable income. Individuals who hold an asset at least 12 months get a 50% discount (for disposals up to 30 June 2027), so the top effective rate is 47% x 50% = 23.5%. Gains on assets held under 12 months are taxed at up to 47%.",
         "exemptions_thresholds": "Main residence exemption; pre-CGT assets (acquired before 20 September 1985) exempt until 30 June 2027. Small business CGT concessions for active business assets (not modelled).",
-        "important_exceptions": "Budget 2026-27 (12 May 2026): from 1 July 2027 the 50% discount is replaced by cost-base indexation and a 30% minimum tax on capital gains arising after 1 July 2027; pre-CGT assets become taxable; investors in new builds may choose the old discount. Not yet in force; legislative status not verified. Ceasing residence is a CGT event (I1) on non-Australian assets (general rule, not verified from an opened source in this session).",
+        "important_exceptions": "CGT reform enacted: the Treasury Laws Amendment (Tax Reform No. 1) Act 2026 (No. 49 of 2026, Royal Assent 26 June 2026) and the Income Tax Rates Amendment (Tax Reform No. 1) Act 2026 (No. 50) replace the 50% discount, for individuals, trusts and partnerships, with cost-base indexation and a 30% minimum tax on capital gains accruing on or after 1 July 2027. Gains accrued to 30 June 2027 keep the 50% discount (assets are treated as sold and reacquired at market value on 30 June 2027, with the gain deferred); pre-CGT assets become taxable for later accrual; investors in new residential dwellings may choose the old discount. Companies, foreign residents and temporary residents are generally outside the new indexation regime. The rates below are the law for disposals up to 30 June 2027 (the 2026/27 year); the engine cannot yet express indexation. Ceasing residence is a CGT event (I1) on non-Australian assets (general rule, not verified from an opened source).",
         "tax_year": "2026/27",
         "sources": [
           {
@@ -52,6 +52,27 @@
             "publisher": "PwC Worldwide Tax Summaries",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Treasury Laws Amendment (Tax Reform No. 1) Act 2026 (No. 49, 2026)",
+            "url": "https://www.legislation.gov.au/C2026A00049",
+            "publisher": "Federal Register of Legislation",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Australia: Legislation amending capital gains tax receives Royal Assent",
+            "url": "https://kpmg.com/us/en/taxnewsflash/news/2026/07/australia-cgt-amendments-fuel-excise-reduction.html",
+            "publisher": "KPMG",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Treasury Laws Amendment (Tax Reform No.1) Bill 2026 - Bills Digest No. 67, 2025-26",
+            "url": "https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd2526/26bd067",
+            "publisher": "Parliament of Australia",
+            "kind": "government",
+            "accessed": "2026-10-16"
           }
         ],
         "verified_on": "2026-10-15",
@@ -65,7 +86,7 @@
           "real_estate_local": 0.235,
           "real_estate_foreign": 0.235
         },
-        "rate_basis": "Top marginal rate 45% + 2% Medicare levy = 47%; 50% CGT discount for assets held at least 12 months gives 23.5%. Law in force for disposals to 30 June 2027; from 1 July 2027 post-2027 gains are expected to bear indexation plus a 30% minimum tax (higher for most large gains). Private business before small business concessions.",
+        "rate_basis": "Top marginal rate 45% + 2% Medicare levy = 47%; 50% CGT discount for assets held at least 12 months gives 23.5%. Law in force for disposals to 30 June 2027; gains accruing from 1 July 2027 bear indexation (real gain at marginal rates, so up to 47% of the real gain) with a 30% minimum tax, under the Act of 26 June 2026. Private business before small business concessions.",
         "professional_trader": "Share traders are taxed on revenue account (gains fully assessable at up to 47%, no discount); classification follows the facts (frequency, organisation, profit intention).",
         "holding_period_rules": "At least 12 months for the 50% discount.",
         "foreign_assets": "Worldwide gains taxable; foreign income tax offset available. Temporary residents are exempt on assets that are not taxable Australian property."
@@ -261,14 +282,14 @@
       "id": "family_trust_bucket_company",
       "name": "Discretionary family trust with a corporate beneficiary ('bucket company')",
       "type": "structure",
-      "description": "The portfolio is held by a discretionary (family) trust with a company as trustee. Each year the trustee streams capital gains to individual family members, who keep the 50% CGT discount (23.5% at the top rate, less for adult children on lower incomes), and streams dividends and other income to a family-owned 'bucket' company taxed at a flat 30%. Foreign dividends therefore bear 30% instead of up to 47%, and franked Australian dividends bear no extra tax in the company. Tax on the bucket company's profits is deferred until it pays franked dividends to the family. Law in force for 2026; the May 2026 Budget announced a 30% minimum tax on discretionary trusts from 1 July 2028 and the end of the CGT discount for gains after 1 July 2027, which would largely remove the advantage.",
+      "description": "The portfolio is held by a discretionary (family) trust with a company as trustee. Each year the trustee streams capital gains to individual family members, who keep the 50% CGT discount (23.5% at the top rate, less for adult children on lower incomes), and streams dividends and other income to a family-owned 'bucket' company taxed at a flat 30%. Foreign dividends therefore bear 30% instead of up to 47%, and franked Australian dividends bear no extra tax in the company. Tax on the bucket company's profits is deferred until it pays franked dividends to the family. Law in force for 2026; the CGT discount is replaced by indexation and a 30% minimum tax for gains accruing after 1 July 2027 (enacted 26 June 2026), and Treasury's exposure draft of 3 September 2026 would impose a 30% minimum tax on discretionary trusts from income years starting on or after 1 July 2028, with no offset for corporate beneficiaries (not yet law); together these would largely remove the advantage.",
       "eligible_citizenships": [
         "EU",
         "OTHER"
       ],
       "eligibility": "Any Australian-resident family (the trust and company must be Australian resident). Not suitable for US persons: for US tax the trust is a foreign non-grantor trust and the company a PFIC/CFC, with punitive results. Temporary residents gain little, because their foreign income is already exempt.",
       "duration_years": null,
-      "duration_note": "No statutory limit on the structure; a discretionary trust lasts until its vesting date, normally up to 80 years under state perpetuity law (South Australia has no limit). The advantage depends on the 2026 law: the announced 30% minimum tax on discretionary trusts (from 1 July 2028) and CGT changes (from 1 July 2027) are not modelled.",
+      "duration_note": "No statutory limit on the structure; a discretionary trust lasts until its vesting date, normally up to 80 years under state perpetuity law (South Australia has no limit). The advantage depends on the 2026 law: the CGT changes for gains accruing from 1 July 2027 (enacted 26 June 2026) and the draft 30% minimum tax on discretionary trusts (exposure draft 3 September 2026, proposed from 1 July 2028, not yet law) are not modelled.",
       "structure": {
         "entity": "Discretionary family trust (corporate trustee) plus a private 'bucket' company as beneficiary",
         "kind": "trust",
@@ -329,7 +350,7 @@
           "real_estate_foreign": 0.235
         },
         "rate_basis": "Gains streamed to a top-rate individual: 45% + 2% Medicare levy = 47%, halved by the 50% discount for assets held at least 12 months = 23.5%, the same as direct holding. A company would pay 30% on the full gain (no discount). Law in force for disposals to 30 June 2027.",
-        "important_exceptions": "Budget 2026-27 (12 May 2026): from 1 July 2027 the 50% discount is replaced by cost-base indexation and a 30% minimum tax for individuals and trusts on gains accruing after that date, and from 1 July 2028 discretionary trusts pay a minimum 30% tax. PwC describes the CGT change as a recent law change; legislative status of both measures not verified here. Not modelled.",
+        "important_exceptions": "Enacted 26 June 2026 (Act No. 49 of 2026): from 1 July 2027 the 50% discount is replaced by cost-base indexation and a 30% minimum tax for individuals and trusts on gains accruing after that date; the 50% discount keeps applying to gains accrued to 30 June 2027. Proposed, not law: a 30% minimum tax on discretionary trusts for income years starting on or after 1 July 2028 (Treasury exposure draft, 3 September 2026; consultation closed 18 September 2026), with a transitional roll-over for restructures between 1 July 2027 and 30 June 2030 and an election to nominate fixed beneficiaries. The rates here are the law for disposals up to 30 June 2027; the later regimes are not modelled.",
         "professional_trader": "As standard: a trust that trades is taxed on revenue account, with no CGT discount.",
         "foreign_assets": "Worldwide gains, with a foreign income tax offset for any foreign tax.",
         "tax_year": "2026/27",
@@ -354,6 +375,20 @@
             "publisher": "Australian Government (Treasury)",
             "kind": "government",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Treasury Laws Amendment (Tax Reform No. 1) Act 2026 (No. 49, 2026)",
+            "url": "https://www.legislation.gov.au/C2026A00049",
+            "publisher": "Federal Register of Legislation",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Minimum tax on discretionary trusts: what the exposure draft means for taxpayers",
+            "url": "https://www.bdo.com.au/en-au/insights/tax/articles/minimum-tax-on-discretionary-trusts-what-the-exposure-draft-means-for-taxpayers",
+            "publisher": "BDO Australia",
+            "kind": "professional",
+            "accessed": "2026-10-16"
           }
         ],
         "verified_on": "2026-10-15",
@@ -367,7 +402,7 @@
         "foreign_gross_rate": 0.3,
         "foreign_tax_credit": "credit",
         "rate_basis": "Company tax rate 30% (a passive investment company is not a base rate entity). Franked dividend D: taxable D/0.7, tax 30% x D/0.7 = 0.429D, less franking credit 0.429D = 0. Foreign dividends: 30% before the foreign income tax offset (typically 15% treaty withholding credited). Compared with 24.3% (franked) and 47% (foreign) for a top-rate individual.",
-        "important_exceptions": "Tax is deferred, not removed: paying the company's profits out to the family later costs 24.3% of the cash at the top rate. The announced 30% minimum tax on discretionary trusts from 1 July 2028 would, according to professional commentary, give no credit to corporate beneficiaries, which would make streaming income to a bucket company through the trust double-taxed (not verified).",
+        "important_exceptions": "Tax is deferred, not removed: paying the company's profits out to the family later costs 24.3% of the cash at the top rate. The proposed 30% minimum tax on discretionary trusts (Treasury exposure draft of 3 September 2026, for income years starting on or after 1 July 2028; not law) gives non-corporate beneficiaries a non-refundable 30% offset but gives none to corporate beneficiaries, so income streamed to a bucket company would be taxed at 30% in the trust and again at 30% in the company (BDO, Pitcher Partners on the exposure draft).",
         "holding_company_notes": "Non-portfolio foreign dividends (10% or more of voting interests) are non-assessable non-exempt income for a company; portfolio dividends are not.",
         "tax_year": "2026/27",
         "sources": [
@@ -384,6 +419,20 @@
             "publisher": "PwC Worldwide Tax Summaries",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Minimum tax on discretionary trusts: what the exposure draft means for taxpayers",
+            "url": "https://www.bdo.com.au/en-au/insights/tax/articles/minimum-tax-on-discretionary-trusts-what-the-exposure-draft-means-for-taxpayers",
+            "publisher": "BDO Australia",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Minimum trust tax a step closer: Treasury releases draft legislation",
+            "url": "https://www.pitcher.com.au/insights/minimum-trust-tax-a-step-closer-treasury-releases-draft-legislation/",
+            "publisher": "Pitcher Partners",
+            "kind": "professional",
+            "accessed": "2026-10-16"
           }
         ],
         "verified_on": "2026-10-15",
@@ -538,9 +587,10 @@
   ],
   "us_citizen_notes": "US citizens remain US-taxed; Australian superannuation, franking credits and Australian managed funds (PFICs) are poorly coordinated with US rules. The US-Australia treaty limits Australian dividend WHT to 15% for portfolio holdings.",
   "open_questions": [
-    "Legislative status and mechanics of the 1 July 2027 CGT reform (indexation + 30% minimum tax) are not verified; the JSON scores the law in force (50% discount).",
+    "The CGT reform is law (Act No. 49 of 2026, Royal Assent 26 June 2026): indexation plus a 30% minimum tax on gains accruing from 1 July 2027. The JSON scores disposals up to 30 June 2027 (50% discount); the Act's detailed text was not read, only the Federal Register listing, the Parliamentary Library digest of the Bill as introduced and a KPMG summary. Late amendments may differ. The projection engine cannot yet express indexation and the minimum tax, so 60-year results use the 23.5% rate.",
     "Division 296 is described by PwC as applying from 1 July 2026; enactment details not checked against legislation.",
     "ATO and AustLII pages returned HTTP 403, so CGT event K3 and the temporary-resident CGT scope rest on PwC and general knowledge. The visa position is now verified from Home Affairs (BIIP closed 31 July 2024).",
-    "The temporary-resident regime is effectively unavailable to a non-working wealthy family: it is kept as a low-confidence placeholder restricted to OTHER (New Zealand citizens on subclass 444) with a 1-year duration matching the longest visitor-visa stay. A family member employed in Australia on a sponsored work visa would make it available for that visa's term (not modelled)."
+    "The temporary-resident regime is effectively unavailable to a non-working wealthy family: it is kept as a low-confidence placeholder restricted to OTHER (New Zealand citizens on subclass 444) with a 1-year duration matching the longest visitor-visa stay. A family member employed in Australia on a sponsored work visa would make it available for that visa's term (not modelled).",
+    "The 30% minimum tax on discretionary trusts is only an exposure draft (3 September 2026, proposed from 1 July 2028). If enacted as drafted, the family_trust_bucket_company structure would be double-taxed on income streamed to the bucket company."
   ]
 }

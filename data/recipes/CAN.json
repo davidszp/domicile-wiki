@@ -1,0 +1,108 @@
+{
+  "id": "CAN",
+  "name": "Canada",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (Ontario)",
+      "regime": "standard",
+      "estate": "portfolio",
+      "note": "The national file represents Ontario (Toronto). Foreign dividends are ordinary income at the top combined rate of 53.53% with a foreign tax credit of up to 15% of the dividend (ITA s. 126(1)); gains are 50% included (26.76%). The family's portfolio takes a stepped-up cost on arrival (ITA s. 128.1(1)(b)), so only growth after arrival is ever taxed. There is no inheritance tax, but death is a deemed disposition of all capital property at market value (ITA s. 70(5)), taxed at 26.76% on the accrued gain, plus Ontario estate administration tax of 1.5% above CAD 50,000. The spousal rollover (ITA s. 70(6)) defers this to the second death."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 117200,
+      "working": "Assumes each spouse's income is in the top bracket (taxable income above CAD 258,482), so the top combined Ontario rates apply to everything; lower brackets and personal credits ignored. Foreign dividends 200,000 are ordinary income with no gross-up or dividend tax credit (ITA s. 12(1)(j), s. 82 applies only to taxable Canadian corporations): combined top rate 33% federal + 20.53% Ontario (13.16% plus the 20% and 36% surtaxes) = 53.53%, so 200,000 x 0.5353 = 107,060. Foreign tax credit for the 15% treaty withholding = 30,000 (ITA s. 126(1), limited to 15% of the foreign property income and to the Canadian tax on that income, which is 107,060). Tax on dividends 107,060 - 30,000 = 77,060. Capital gains 150,000: half is a taxable capital gain (ITA s. 38(a)), so 75,000 x 0.5353 = 40,147.50 by the unrounded combined rate; the published combined rate on capital gains is 26.76%, giving 150,000 x 0.2676 = 40,140. Total 77,060 + 40,140 = 117,200. No wealth tax. Alternative minimum tax (ITA s. 127.5 ff.) would be lower than the regular tax at this income and is ignored."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 149250,
+      "working": "Canada levies no inheritance, estate or gift tax. The deemed disposition at death (ITA s. 70(5)) taxes only accrued gains; the check assumes the estate's cost already equals its market value (the portfolio was stepped up on arrival under s. 128.1(1)(b) and the check takes no later growth), so it adds nothing here. Ontario estate administration tax (Estate Administration Tax Act, 1998, as amended 2020): the first CAD 50,000 of the estate is exempt, then CAD 15 per CAD 1,000 or part thereof, on all assets wherever located except foreign real estate. (10,000,000 - 50,000) / 1,000 x 15 = 149,250. The estate passes to the three children equally, which does not change the tax.",
+      "model_difference": 750,
+      "model_note": "The tax file holds Ontario's estate administration tax as a single rate on the whole estate (other_transfer_cost_rate 1.5%) and has no field for the first CAD 50,000 that the law exempts, so the engine charges 1.5% x 10,000,000 = 150,000, which is 1.5% x 50,000 = 750 more than the law."
+    }
+  ],
+  "assumptions": [
+    "The national file represents Ontario (Toronto): federal 33% plus Ontario 20.53% (13.16% with surtaxes) gives 53.53% at the top; other provinces differ (Alberta 48.0%, Quebec 53.3% on ordinary income).",
+    "The checks use the top combined marginal rates on all income, as the real family (about EUR 600,000 of dividends a year, split between two spouses) is in the top bracket. Personal credits, the Ontario health premium and the alternative minimum tax are left out.",
+    "The family become resident with the portfolio at market value; under ITA s. 128.1(1)(b) it is deemed bought at that value on arrival, so no gain from before arrival is ever taxed in Canada. The EUR 5 million home is bought after arrival; its sale would qualify for the principal residence exemption and it is not part of the checks.",
+    "The portfolio is foreign (the 15% treaty withholding is credited), is held directly and is probated in Ontario as part of the estate. Wills drafted with a secondary will, joint ownership and similar planning can lower the estate administration tax, but are not modelled.",
+    "No special regime exists for new residents: Canada has no flat-tax, forfait or non-dom regime. Only the standard rules apply, so the family has the single personal path."
+  ],
+  "open_questions": [
+    "Needs an engine change: a Canadian holding company (CCPC, an investment corporation owned by the parents). Its investment income is taxed at 38 2/3% federal (28% plus 10 2/3% refundable, ITA s. 123.3) plus Ontario 11.5%, about 50.2%; the refundable part (and the refundable dividend tax on hand) is repaid at 38 1/3% of taxable dividends paid out (ITA s. 129(1), not opened). The annual tax is therefore partly a deposit that comes back only on payout, and the family must pay out about CAD 400,000 a year. The engine charges a structure's annual tax in full and taxes payouts separately, with no refund, so it would show the company as taxed twice. No path is added until the refundable tax is expressible.",
+    "Needs an engine change: a Canadian family trust holding the portfolio is deemed to dispose of all its property at market value every 21 years (ITA s. 104(4)(b), opened) and the gain is taxed in the trust at the top rate (26.76%). The engine's deemed disposal applies only at the parents' deaths, not at years 21 and 42 of a trust; the attribution rules (ITA s. 74.1 to 75(2)) also decide who pays tax on a trust funded by the parents. No trust path is added.",
+    "Both structures were considered because advisers recommend them for estate freezes and income splitting in family businesses. For a family with no business and a pure listed portfolio, neither is commonly used: the CCPC gives no deferral on investment income and the trust triggers a taxable deemed disposition every 21 years.",
+    "The 50% capital gains inclusion rate rests on the tax file's PwC and Richter sources; the official notice of the March 2025 cancellation of the two-thirds proposal could not be opened (see the tax file).",
+    "The federal foreign tax credit is limited to 15% of the foreign property income; withholding above 15% is only deductible (ITA s. 20(11)), which the checks do not need (US treaty rate 15%)."
+  ],
+  "sources": [
+    {
+      "title": "Income Tax Act, section 70 (deemed disposition at death, spousal rollover)",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/i-3.3/section-70.html",
+      "publisher": "Department of Justice Canada",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Income Tax Act, section 128.1 (immigration: deemed acquisition at market value)",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/i-3.3/section-128.1.html",
+      "publisher": "Department of Justice Canada",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Income Tax Act, section 104 (21-year deemed disposition of a trust)",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/i-3.3/section-104.html",
+      "publisher": "Department of Justice Canada",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Estate Administration Tax",
+      "url": "https://www.ontario.ca/page/estate-administration-tax",
+      "publisher": "Government of Ontario",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "2026 Ontario Income Tax Tables",
+      "url": "https://www.richter.ca/2026-ontario-income-tax-tables/",
+      "publisher": "Richter",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Canada - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/canada/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Canada - Individual - Foreign tax relief and tax treaties",
+      "url": "https://taxsummaries.pwc.com/canada/individual/foreign-tax-relief-and-tax-treaties",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Canada - Corporate - Taxes on corporate income",
+      "url": "https://taxsummaries.pwc.com/canada/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

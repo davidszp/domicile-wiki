@@ -4,7 +4,7 @@
   "continent": "Middle East",
   "region": "Gulf (GCC)",
   "currency": "AED",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Federal level: no personal income tax, so no tax on capital gains, dividends or interest for individual investors; no inheritance, gift or wealth tax. Corporate Tax is 9% above AED 375,000 (0% for Qualifying Free Zone Persons on qualifying income; 15% Domestic Minimum Top-up Tax for MNE groups with EUR 750m+ revenue from 2025); VAT 5%. Emirate level: property registration fees (Dubai 4%), municipality fees on rent, and the common-law financial free zones DIFC (Dubai) and ADGM (Abu Dhabi) with their own courts and will registries. Main planning issue: forced heirship (Sharia for Muslims; a statutory 50/50 spouse/children split for non-Muslims without a registered will). No US tax treaty, so US dividends held directly bear 30% US WHT.",
   "regimes": [
     {
@@ -179,6 +179,152 @@
         "foreign_assets": "No UAE tax on foreign assets inherited or gifted. Succession to foreign assets is governed by the law of where they are situated and by the will.",
         "domicile_rules": "Not relevant for tax. For succession, religion and (for non-Muslim foreigners) the choice of nationality law matter."
       }
+    },
+    {
+      "id": "difc_foundation",
+      "name": "DIFC family foundation, tax-transparent under Article 17 of the Corporate Tax Law",
+      "type": "structure",
+      "description": "The family endows a foundation under the DIFC Foundations Law (DIFC Law No. 3 of 2018) with the portfolio and applies to the Federal Tax Authority to be treated as a tax-transparent Unincorporated Partnership (Corporate Tax Law art. 17, Ministerial Decision 261/2024). If approved, the foundation pays no Corporate Tax and each natural-person beneficiary is treated as holding the assets and earning the income directly, which is Personal Investment income outside Corporate Tax. The tax result is the same as holding personally (nil); the reasons to use the foundation are succession (it keeps the assets out of Sharia or default-law forced heirship) and continuity. Without the Article 17 approval the foundation would be a taxable juridical person at 9% above AED 375,000.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any person can endow a DIFC foundation through a DIFC registered agent. For tax transparency the foundation must meet the five Article 17(1) conditions: identified or identifiable natural persons (or public benefit entities) as beneficiaries, a principal activity of holding and investing assets, no activity that would be a Business if a founder or beneficiary did it directly, no main purpose of avoiding Corporate Tax, and a distribution condition if public benefit entities are beneficiaries (FTA Family Foundations Guide, section 5).",
+      "duration_years": null,
+      "duration_note": "A foundation has no time limit; transparency lasts while the Article 17(1) conditions hold, confirmed each year to the FTA within 9 months of the end of the tax period (Guide, section 8.3).",
+      "structure": {
+        "entity": "DIFC Foundation (DIFC Law No. 3 of 2018), treated as a tax-transparent Unincorporated Partnership (Corporate Tax Law art. 17)",
+        "kind": "foundation",
+        "payout_tax_rate": 0.0,
+        "payout_notes": "A distribution by a transparent family foundation is disregarded for Corporate Tax once the underlying income is in the beneficiary's taxable income (Guide, section 7.7), and a natural-person beneficiary's share is Personal Investment income, outside Corporate Tax (Guide, section 7.2). The UAE has no personal income tax, so distributions to resident beneficiaries bear no UAE tax.",
+        "annual_running_cost": null,
+        "substance_and_anti_avoidance": "The foundation must meet Article 17(1) and file an application to the FTA before the end of the tax period it is to apply from, then an annual confirmation within 9 months after each tax period (Guide, sections 8.2-8.3). Any business activity breaks transparency, and in a multi-tier chain one entity that fails the conditions makes the whole chain below it taxable (law-firm commentary). A foundation that is not approved is taxable: 9% above AED 375,000 (PwC); its dividends and gains on listed shares escape only through the participation exemption, which needs a 5% holding (or an acquisition cost above AED 4 million), 12 months' holding and an investee taxed at 9% or more (PwC), which positions of EUR 500,000 or more in a listed portfolio generally do not meet. The running cost is not counted: the DIFC foundation licence fee is reported as nominal (USD 200-350 in search snippets of DIFC documents that were not opened), and registered-agent and council fees were not found in any official source.",
+        "exit_and_liquidation": "No UAE exit tax (no personal income or capital gains tax). Loss of Article 17 status turns the foundation into a taxable person for later periods. The founder's later departure from the UAE does not move the foundation's assets, but the home country's rules on foreign foundations then apply (not researched here).",
+        "sources": [
+          {
+            "title": "Taxation of Family Foundations, Corporate Tax Guide CTGFF1 (May 2025)",
+            "url": "https://tax.gov.ae/Datafolder/Files/Pdf/2025/Family-Foundations-Guide-27-05-2025.pdf",
+            "publisher": "UAE Federal Tax Authority",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Ministerial Decision No. 261 of 2024 on Unincorporated Partnership, Foreign Partnership and Family Foundation",
+            "url": "https://mof.gov.ae/wp-content/uploads/2024/11/Ministerial-Decision-No-261-of-2024-on-Unincorporated-Partnership-Foreign-Partnership-and-Family-Foundation-for-the-Purposes-of-Federal-Decree.pdf",
+            "publisher": "UAE Ministry of Finance",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Foundations Law, DIFC Law No. 3 of 2018, Consolidated Version No. 3 (March 2024)",
+            "url": "https://edge.sitecorecloud.io/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/documents/laws--regulations/foundations-law-difc-updated-law-no-3-of-2018_2024.pdf",
+            "publisher": "DIFC",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "United Arab Emirates - Corporate - Taxes on corporate income (last reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/united-arab-emirates/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "United Arab Emirates - Corporate - Income determination (last reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/united-arab-emirates/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ]
+      },
+      "capital_gains": {
+        "summary": "A foundation approved as tax-transparent under Article 17 pays no Corporate Tax; its gains are allocated to the beneficiaries, whose Personal Investment income is outside Corporate Tax (FTA Guide, sections 7.1-7.2). All gain rates are 0.",
+        "important_exceptions": "If the FTA has not approved transparency, the foundation is a taxable person: gains on shares are taxed at 9% above AED 375,000 unless the participation exemption applies (5% holding or AED 4 million cost, 12 months, investee taxed at 9% or more).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Taxation of Family Foundations, Corporate Tax Guide CTGFF1 (May 2025)",
+            "url": "https://tax.gov.ae/Datafolder/Files/Pdf/2025/Family-Foundations-Guide-27-05-2025.pdf",
+            "publisher": "UAE Federal Tax Authority",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Ministerial Decision No. 261 of 2024 on Unincorporated Partnership, Foreign Partnership and Family Foundation",
+            "url": "https://mof.gov.ae/wp-content/uploads/2024/11/Ministerial-Decision-No-261-of-2024-on-Unincorporated-Partnership-Foreign-Partnership-and-Family-Foundation-for-the-Purposes-of-Federal-Decree.pdf",
+            "publisher": "UAE Ministry of Finance",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "United Arab Emirates - Corporate - Income determination (last reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/united-arab-emirates/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Whether a DIFC foundation with natural-person beneficiaries and no other activity is routinely approved for Article 17 transparency was taken from the FTA guide, not from an approved case."
+        ],
+        "headline_rate": 0.0,
+        "rates": {
+          "listed_securities_domestic": 0.0,
+          "listed_securities_foreign": 0.0,
+          "private_business_sale": 0.0,
+          "real_estate_local": 0.0,
+          "real_estate_foreign": 0.0
+        },
+        "rate_basis": "Corporate Tax Law art. 17 and art. 16(2): a transparent family foundation's income is allocated to its beneficiaries, and a natural person's share of Personal Investment income is outside Corporate Tax (Cabinet Decision 49/2023 art. 2(2)(b); Guide, sections 4.3, 7.1, 7.2). Same 0 as holding personally.",
+        "foreign_assets": "Same treatment for foreign securities."
+      },
+      "dividends": {
+        "summary": "Dividends received by a tax-transparent foundation are allocated to the beneficiaries and are Personal Investment income outside Corporate Tax (FTA Guide, sections 7.1-7.2). Foreign withholding tax at source is a final cost, as for a personal holding.",
+        "important_exceptions": "If transparency is not approved, the foundation is a taxable person and portfolio dividends from foreign companies are taxed at 9% above AED 375,000 unless the participation exemption applies. A Tax Residency Certificate and treaty access for a foundation (rather than for the resident beneficiaries) was not researched.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Taxation of Family Foundations, Corporate Tax Guide CTGFF1 (May 2025)",
+            "url": "https://tax.gov.ae/Datafolder/Files/Pdf/2025/Family-Foundations-Guide-27-05-2025.pdf",
+            "publisher": "UAE Federal Tax Authority",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Ministerial Decision No. 261 of 2024 on Unincorporated Partnership, Foreign Partnership and Family Foundation",
+            "url": "https://mof.gov.ae/wp-content/uploads/2024/11/Ministerial-Decision-No-261-of-2024-on-Unincorporated-Partnership-Foreign-Partnership-and-Family-Foundation-for-the-Purposes-of-Federal-Decree.pdf",
+            "publisher": "UAE Ministry of Finance",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "United Arab Emirates - Corporate - Income determination (last reviewed 9 Sep 2026)",
+            "url": "https://taxsummaries.pwc.com/united-arab-emirates/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Treaty relief at source for dividends paid to a transparent foundation, as against its resident beneficiaries, was not researched."
+        ],
+        "headline_rate": 0.0,
+        "domestic_rate": 0.0,
+        "foreign_gross_rate": 0.0,
+        "foreign_tax_credit": "not_applicable",
+        "rate_basis": "Same as holding personally: no UAE tax on a natural person's Personal Investment income, and a transparent foundation adds none (FTA Guide, sections 7.1-7.2).",
+        "withholding_outbound": "0% on dividends paid by UAE companies (PwC); distributions by the foundation to beneficiaries are not taxed.",
+        "treaty_network": "As for the standard regime; treaty access for a transparent foundation not researched.",
+        "holding_company_notes": "See the structure terms: Article 17 transparency is what keeps the foundation at nil; the beneficiaries' Corporate Tax position (nil for Personal Investment income) is the same as for personal holding."
+      }
     }
   ],
   "residency": {
@@ -341,6 +487,7 @@
     "Official legislation sites (uaelegislation.gov.ae, elaws.moj.gov.ae) were unreachable; Decree-Law 41/2022 provisions rely on law-firm summaries.",
     "Golden Visa real-estate term: the federal portal u.ae (updated 28 Jul 2026, source ICP) says 5 years for real estate and 10 years for public investment; ICP itself says 5-10 years. The widely reported 10-year property visa could not be confirmed from an official page (Dubai Land Department page not found). Treated as 5 years.",
     "Abu Dhabi property registration fee (commonly 2%) not confirmed from an official ADREC/TAMM schedule.",
-    "Prime purchase prices per m2, health insurance and housekeeper costs for Dubai not sourced."
+    "Prime purchase prices per m2, health insurance and housekeeper costs for Dubai not sourced.",
+    "DIFC foundation: registered-agent, council and audit costs were not found in an official source, so the structure's running cost is not counted; the ADGM Foundations Regulations 2017 were not opened (the same Article 17 route applies to an ADGM foundation)."
   ]
 }

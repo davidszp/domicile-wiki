@@ -46,7 +46,8 @@ def test_overall_scores_match_python(js, scenario):
     for jid, e in data.items():
         prof = profiles[jid]
         tax = prof.get("tax_detail") if e["researched"] else None
-        entry = {"tax": tax, "nontax": prof["nontax_detail"], "verification": e.get("verification"), "ko": e.get("ko")}
+        entry = {"tax": tax, "nontax": prof["nontax_detail"], "verification": e.get("verification"), "ko": e.get("ko"),
+                 "projection_order": e.get("projection_order")}
         for cz in ("EU", "US", "OTHER"):
             py = summarize(entry, cfg, cz, weights, **flags)
             j = js["evals"][scenario][jid][cz]

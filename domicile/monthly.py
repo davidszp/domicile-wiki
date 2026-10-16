@@ -58,7 +58,7 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--immigration", type=int, default=6)
     ap.add_argument("--regions", type=int, default=1)
     ap.add_argument("--succession", type=int, default=12)
-    ap.add_argument("--recipes", type=int, default=3)
+    ap.add_argument("--recipes", type=int, default=5)
     a = ap.parse_args(argv)
     today = dt.date.fromisoformat(a.today) if a.today else dt.date.today()
     if a.step == "prepare":

@@ -1,6 +1,6 @@
 # Japan — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -55,7 +55,7 @@ Dividends are in principle aggregate income (top about 55.945%, with a small div
 - **How derived:** Listed portfolio dividends: separate taxation 20.315% (domestic and foreign listed). Headline = aggregate top rate 45% x 1.021 + 10% = 55.945% for non-listed/large holdings.
 - **Outbound withholding:** 20.42% on dividends to non-residents (15.315% for listed dividends to portfolio holders), reduced by treaty.
 - **Treaty network:** Broad network covering the US, EU and Asian partners (count not verified).
-- **Holding companies:** Large companies in Tokyo pay about 31.5% effective; a defense special corporate tax of 4% of national CIT applies from 2026. Small family companies face an additional tax on retained earnings (not verified). No holding structure is modelled: an asset-management company pays roughly 30% or more on portfolio gains and on foreign portfolio dividends (the 95% foreign-dividend exclusion needs a 25% stake, and only 20% of domestic dividends on stakes under 5% are excluded; PwC), against 20.315% for an individual, and its distributions are taxed to the family at progressive rates up to about 55% less the dividend credit. The inheritance-valuation rules for share-holding companies (net asset value less a deduction for unrealised gains, which reportedly excludes gains on assets contributed in kind; not verified) do not make up for this on a listed portfolio.
+- **Holding companies:** Modelled as the structure regime 'asset_management_kk' (a Japanese KK or GK holding the portfolio): about 35.43% effective on all income at the top (Tokyo, small company), no 95% exclusion for portfolio dividends, 20% exclusion for domestic dividends on stakes of 5% or less, foreign withholding creditable; profits paid out are taxed to the family at about 49.4% after the dividend credit. Against 20.315% for an individual this is worse at every step, but advisers still recommend it for inheritance planning and income splitting, so it is shown.
 
 ### Non-permanent resident + temporary foreigner (first 5 years) (special regime)
 
@@ -70,12 +70,12 @@ Foreign dividends paid and kept abroad are not taxed for a non-permanent residen
 
 ### Standard regime
 
-Inheritance tax is charged on heirs, but computed on the estate: the basic deduction (JPY 30 million + 6 million per statutory heir) is subtracted, the remainder is divided notionally by statutory shares, each share is taxed at progressive rates from 10% to 55% (above JPY 600 million), and the total is allocated to the actual recipients. Gifts are taxed at similar progressive rates (annual exemption JPY 1.1 million per recipient); gifts within 7 years before death are added back. Permanent residents (and foreigners who have lived in Japan more than 10 of the last 15 years) are taxed on worldwide property.
+Inheritance tax is charged on heirs, but computed on the estate: the basic deduction (JPY 30 million + 6 million per statutory heir) is subtracted, the remainder is divided notionally by statutory shares, each share is taxed at progressive rates from 10% to 55% (above JPY 600 million), and the total is allocated to the actual recipients. Gifts are taxed at similar progressive rates (annual exemption JPY 1.1 million per recipient); gifts within 7 years before death are added back. Heirs who are permanent residents, or foreigners with a residence status who have lived in Japan more than 10 of the last 15 years, are taxed on worldwide property (Inheritance Tax Act art. 1-3(1)(i)).
 
-- **Exemptions and thresholds:** Basic deduction JPY 30 million + JPY 6 million x number of statutory heirs (family of five with a surviving spouse: 4 heirs = JPY 54 million in total). Spouse credit (tax-free up to the larger of the statutory share or JPY 160 million; general knowledge, not verified). Coded exemption per child: JPY 13.5 million (= 54 million / 4 heirs).
+- **Exemptions and thresholds:** Basic deduction JPY 30 million + JPY 6 million x number of statutory heirs (Inheritance Tax Act art. 15; NTA No.4152). At the modelled second death (spouse already dead, three children) there are 3 statutory heirs: JPY 48 million in total, JPY 16 million per child; this is the coded exemption per child. (With a surviving spouse, 4 heirs, the total would be JPY 54 million.) Spouse credit (tax-free up to the larger of the statutory share or JPY 160 million; general knowledge, not verified).
 - **Important exceptions, statute references and announced changes:** Optional inheritance-time settlement gift regime: parents aged 60+ to children aged 18+, 20% flat gift tax above a JPY 25 million lifetime deduction, credited against later inheritance tax. 'Temporary resident' and 'foreign decedent' rules exempt foreign property for foreigners who have lived in Japan 10 years or less in the last 15 (see special regimes).
 - **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
-- **JSON numbers:** basis `beneficiary`, children `taxed`, exemption 13,500,000 JPY, brackets (marginal): from 0 JPY: 10% (0.1); from 10,000,000 JPY: 15% (0.15); from 30,000,000 JPY: 20% (0.2); from 50,000,000 JPY: 30% (0.3); from 100,000,000 JPY: 40% (0.4); from 200,000,000 JPY: 45% (0.45); from 300,000,000 JPY: 50% (0.5); from 600,000,000 JPY: 55% (0.55); other transfer costs 0% (0.0).
+- **JSON numbers:** basis `beneficiary`, children `taxed`, exemption 16,000,000 JPY, brackets (marginal): from 0 JPY: 10% (0.1); from 10,000,000 JPY: 15% (0.15); from 30,000,000 JPY: 20% (0.2); from 50,000,000 JPY: 30% (0.3); from 100,000,000 JPY: 40% (0.4); from 200,000,000 JPY: 45% (0.45); from 300,000,000 JPY: 50% (0.5); from 600,000,000 JPY: 55% (0.55); other transfer costs 0% (0.0).
 - **Gifts:** Progressive gift tax up to 55% above JPY 1.1 million a year per recipient (special lower scale for gifts from parents/grandparents to adult descendants; not detailed), or the elective 20% inheritance-time settlement regime. Gifts within 7 years before death are added to the estate. (same as inheritance: False; tax-free after years: 7)
 - **Business relief:** Business succession deferral for unlisted company shares exists (conditions not verified); listed portfolios get no relief.
 - **Foreign assets:** Worldwide for Japanese nationals domiciled in Japan within the last 10 years and for foreigners beyond the temporary thresholds; only Japan-situs property for temporary foreigners and their heirs.
@@ -86,9 +86,9 @@ Inheritance tax is charged on heirs, but computed on the estate: the basic deduc
 
 While the decedent is a 'foreign decedent' and the heirs are temporary residents, only Japan-situs property is subject to inheritance tax; foreign property (e.g. a portfolio held with a foreign custodian in foreign securities) is outside the charge. Japanese property is taxed on the standard scale.
 
-- **Conditions:** Decedent held a Table 1 residence status and lived in Japan 10 years or less in the last 15; heirs likewise temporary or non-resident foreigners.
+- **Conditions:** The decedent is a 'foreign decedent': holds a residence status (Table 1 of the Immigration Control Act) and has a Japanese address at death; since the 2021 reform no year count applies to the decedent (Inheritance Tax Act art. 1-3(3)(ii)). Each heir is a 'temporary resident': holds a Table 1 residence status and has lived in Japan 10 years or less in the 15 years before death (art. 1-3(3)(i)); an heir who has passed 10 of 15 years is taxed on worldwide property whoever the decedent was (art. 1-3(1)(i)(a)).
 - **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
-- **JSON numbers:** basis `beneficiary`, children `exempt_with_conditions`, exemption 13,500,000 JPY, brackets (marginal): from 0 JPY: 10% (0.1); from 10,000,000 JPY: 15% (0.15); from 30,000,000 JPY: 20% (0.2); from 50,000,000 JPY: 30% (0.3); from 100,000,000 JPY: 40% (0.4); from 200,000,000 JPY: 45% (0.45); from 300,000,000 JPY: 50% (0.5); from 600,000,000 JPY: 55% (0.55); other transfer costs 0% (0.0).
+- **JSON numbers:** basis `beneficiary`, children `exempt_with_conditions`, exemption 16,000,000 JPY, brackets (marginal): from 0 JPY: 10% (0.1); from 10,000,000 JPY: 15% (0.15); from 30,000,000 JPY: 20% (0.2); from 50,000,000 JPY: 30% (0.3); from 100,000,000 JPY: 40% (0.4); from 200,000,000 JPY: 45% (0.45); from 300,000,000 JPY: 50% (0.5); from 600,000,000 JPY: 55% (0.55); other transfer costs 0% (0.0).
 - **Gifts:** Gift tax likewise only on Japan-situs property for temporary foreigners. (same as inheritance: False; tax-free after years: 7)
 - **Foreign assets:** Foreign-situs property exempt (shares/bonds situs = issuer's head office; deposits = branch).
 - **Residence/domicile rules:** Brackets apply only to Japan-situs property.
@@ -100,7 +100,7 @@ Foreign property outside inheritance tax; Japanese property taxed on the standar
 
 - **Conditions:** 10 years or less of residence in the past 15 years; Table 1 residence status.
 - **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
-- **JSON numbers:** basis `beneficiary`, children `exempt_with_conditions`, exemption 13,500,000 JPY, brackets (marginal): from 0 JPY: 10% (0.1); from 10,000,000 JPY: 15% (0.15); from 30,000,000 JPY: 20% (0.2); from 50,000,000 JPY: 30% (0.3); from 100,000,000 JPY: 40% (0.4); from 200,000,000 JPY: 45% (0.45); from 300,000,000 JPY: 50% (0.5); from 600,000,000 JPY: 55% (0.55); other transfer costs 0% (0.0).
+- **JSON numbers:** basis `beneficiary`, children `exempt_with_conditions`, exemption 16,000,000 JPY, brackets (marginal): from 0 JPY: 10% (0.1); from 10,000,000 JPY: 15% (0.15); from 30,000,000 JPY: 20% (0.2); from 50,000,000 JPY: 30% (0.3); from 100,000,000 JPY: 40% (0.4); from 200,000,000 JPY: 45% (0.45); from 300,000,000 JPY: 50% (0.5); from 600,000,000 JPY: 55% (0.55); other transfer costs 0% (0.0).
 - **Gifts:** Only Japan-situs property. (same as inheritance: False; tax-free after years: 7)
 - **Foreign assets:** Foreign-situs property exempt.
 - **Residence/domicile rules:** Brackets apply only to Japan-situs property.
@@ -125,9 +125,22 @@ No net wealth tax.
 - **Temporary foreigner for inheritance tax (years 6 to 10)** (`temporary_foreigner_years_6_10`; EU, US, OTHER; duration 5 years): After 5 years the foreigner becomes a permanent-resident taxpayer for income tax (worldwide income at standard rates), but remains outside inheritance and gift tax on foreign property until more than 10 years of residence in the last 15, provided the residence status remains a Table 1 (work-type) status. Eligibility: As for the non-permanent resident regime, years 6 to 10 of residence; not available to holders of permanent residence or spouse-type visas.
   - Metrics that differ from standard: inheritance (details in the tax sections above).
 
+- **Asset-management company** (`asset_management_kk`; structure regime; EU, US, OTHER; no duration): see Holding structures below.
+
+Only the non-permanent resident regime changes income tax; `temporary_foreigner_years_6_10` changes only the inheritance scope, and since the model's deaths are in years 30 and 60 it is not used as a path.
+
 ## Holding structures
 
-No holding structure is modelled. An asset-management company (資産管理会社) is taxed at roughly 30% or more on gains and on foreign portfolio dividends: the 95% exclusion for foreign dividends needs a 25% stake, and only 20% of domestic dividends on stakes under 5% are excluded (PwC). An individual pays 20.315%. Profits paid out to the family are taxed at progressive rates up to about 55% less the dividend credit. The inheritance-tax valuation of share-holding companies (net asset value less a deduction for unrealised gains; reportedly not for gains on assets contributed in kind; not verified) does not offset this for a listed portfolio. See `holding_company_notes`.
+**Modelled: asset-management company (`asset_management_kk`, type `structure`).** The parents own a Japanese company (KK or GK) that holds the portfolio. It is the vehicle Japanese advisers recommend for inheritance planning and income splitting, so it is shown even though it costs more tax every year than direct holding.
+
+- **Company tax (JSON 0.3543):** national corporate tax 23.2% (Corporation Tax Act art. 66(1); 15% on the first JPY 8 million for capital of JPY 100 million or less, NTA No.5759), local corporate tax 10.3% of it (Local Corporation Tax Act art. 10), Tokyo corporate inhabitant tax 10.4% of the national tax (7.0% only if capital is JPY 100 million or less and the national tax is JPY 10 million a year or less), enterprise tax at the Tokyo excess rate 7.48% on income above JPY 8 million plus special corporate enterprise tax of 37% of the 7.0% standard-rate amount, defense special corporate tax 4% of the national tax above JPY 5 million (from fiscal years beginning 1 April 2026). Enterprise tax is deductible when paid, which gives the effective rate (0.232 x 1.207 + 0.1007) / 1.1007 + 0.04 x 0.232 / 1.1007 = 35.43%, equal to PwC's figure for a Tokyo company with capital of JPY 100 million or less.
+- **No relief for portfolio shares:** the 95% exclusion for foreign dividends needs a 25% stake (PwC); domestic dividends on stakes of 5% or less are 20% excluded and on stakes up to one third 50% (art. 23). JSON: foreign dividends 0.3543, domestic dividends 0.28344, gains 0.3543.
+- **Foreign tax credit:** withholding is credited against the national corporate tax (art. 69). The local corporate tax, the defense special corporate tax and the corporate inhabitant tax are all computed on the corporate tax before the credit (Local Corporation Tax Act art. 6(1)(i); Act No. 69 of 2023 art. 10; Local Tax Act art. 23(1)(iv)), so a 15% withholding offsets only the national tax.
+- **Payout (JSON 0.4944):** dividends are aggregate income: (45% - 5% dividend credit) x 1.021 + (10% - 1.4%) = 49.44% for taxable income above JPY 40 million and JPY 10 million respectively (NTA No.2260, No.1250; Chuo ward page for the 1.4%).
+- **Retained-earnings tax:** a special family company with capital of JPY 100 million or less is outside it (art. 67(1)); with larger capital the tax adds 10%-20% on retained profits above the allowance.
+- **Why not a foundation:** a general incorporated foundation (ippan zaidan hojin) with family directors is taxed as if it received the net assets on a director's death (Inheritance Tax Act art. 66-2), and art. 66(4) taxes a transfer to a non-share corporation that unduly reduces the family's inheritance tax. A family trust (kazoku shintaku) is tax-transparent: the beneficiary is treated as the owner, so it changes neither income nor inheritance tax; no path is modelled for it.
+- **Inheritance:** inherited from the standard regime. The shares of a company whose assets are mostly shares are valued at net asset value (listed shares at the market price) less 37% of the unrealised gains (Basic Valuation Circular, not opened); a company funded at today's value has no latent gain, so the value is the portfolio. Growth inside the company would earn the 37% reduction; the engine cannot express it (see open questions).
+- **Setup and costs:** contributing shares in kind is a sale at market value (gain taxed at 20.315%). Running costs (accounting, the per-capita inhabitant tax of at least JPY 70,000) were not sourced and are omitted. A foreigner needs a residence status that allows running the company (Business Manager in practice; requirements not verified).
 
 ## Company taxation (kept separate from personal tax)
 
@@ -142,10 +155,11 @@ Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in 
 
 ## Open questions
 
-- Minimum tax on ultra-high income (22.5% above JPY 330 million in 2025-2026; 30% above JPY 165 million from 2027 per PwC) is not reflected in the CGT rates; for a gain of several billion yen the effective rate exceeds 20.315%.
+- Minimum tax on ultra-high income (22.5% of income above JPY 330 million in 2025-2026; 30% above JPY 165 million from 2027, per PwC) is not reflected in the CGT rates. It is charged only to the extent it exceeds the regular tax, so with a 20.315% regular rate it bites only above roughly JPY 3.4 billion of income in 2026 and roughly JPY 511 million from 2027 (30% x (I - 165m) > 20.315% x I); the reference family (about JPY 100 million of dividends plus gains) is below both. The statute was not opened (PwC only).
 - Non-permanent residents' foreign securities gains now verified against Income Tax Act art. 7 and Order art. 17 (e-Gov); the treatment of reinvested funds bought before arrival is not confirmed.
-- Inheritance exemption per child is an approximation of Japan's estate-level basic deduction divided among four statutory heirs.
+- Inheritance exemption per child is coded as JPY 16 million: the basic deduction (JPY 30 million + 6 million x 3 statutory heirs = JPY 48 million, Inheritance Tax Act art. 15) at the modelled second death with three children and no surviving spouse. At a first death with a surviving spouse (4 heirs) the total would be JPY 54 million, but the spouse's tax credit then takes the spouse's share, so the children's share is what the engine taxes.
 - Business Manager visa requirements not verified; cost of living: purchase prices, health insurance and housekeeper wages not sourced.
+- Valuation of unlisted shares in a family asset-management company for inheritance tax (net asset value less 37% of unrealised gains, Basic Valuation Circular) is not modelled; see the asset_management_kk regime.
 
 ## Sources
 
@@ -165,6 +179,21 @@ Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in 
 - Tuition & Fees (2026-27 Schedule of Tuition & Fees) (The American School in Japan, other): https://www.asij.ac.jp/admissions/tuition-fees
 - Japan - Corporate - Income determination (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/japan/corporate/income-determination
 - NTA Tax Answer No.4158 Spouse's tax credit: https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4158.htm
+- Corporation Tax Act (Act No. 34 of 1960): arts. 23, 41, 66, 67, 69, 132 (e-Gov Japanese Law (Digital Agency), legislation): https://laws.e-gov.go.jp/law/340AC0000000034
+- Local Corporation Tax Act (Act No. 11 of 2014): arts. 6, 9, 10, 12 (e-Gov Japanese Law (Digital Agency), legislation): https://laws.e-gov.go.jp/law/426AC0000000011
+- Act on Special Measures for Securing Financial Resources for Strengthening Defense Capabilities (Act No. 69 of 2023), arts. 9-14 (e-Gov Japanese Law (Digital Agency), legislation): https://laws.e-gov.go.jp/law/505AC0000000069
+- Local Tax Act (Act No. 226 of 1950), art. 23(1)(iv) (e-Gov Japanese Law (Digital Agency), legislation): https://laws.e-gov.go.jp/law/325AC0000000226
+- Corporate enterprise tax and corporate metropolitan tax (Tokyo rates) (Tokyo Metropolitan Bureau of Taxation, government): https://www.tax.metro.tokyo.lg.jp/kazei/work/houjinji
+- No.5759 Corporate tax rates (法人税の税率) (National Tax Agency Japan, tax_authority): https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm
+- No.5800 Tax measures for SMEs: companies not eligible (National Tax Agency Japan, tax_authority): https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5800.htm
+- No.1250 Dividend credit (配当控除) (National Tax Agency Japan, tax_authority): https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm
+- No.2260 Income tax rates (所得税の税率) (National Tax Agency Japan, tax_authority): https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm
+- Dividend credit against resident tax (Chuo ward, Tokyo) (Chuo City Office, Tokyo, government): https://www.city.chuo.lg.jp/a0009/kurashi/zeikin/juuminzei/zeigakukoujo.html
+- No.1331 Separate taxation of listed-share dividends (National Tax Agency Japan, tax_authority): https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1331.htm
+- No.1463 Gains on sale of listed and general shares (National Tax Agency Japan, tax_authority): https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm
+- No.1240 Foreign tax credit (外国税額控除) (National Tax Agency Japan, tax_authority): https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1240.htm
+- No.4152 Basic deduction for inheritance tax (National Tax Agency Japan, tax_authority): https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4152.htm
+- Inheritance Tax Act (Act No. 73 of 1950): arts. 1-3, 15-17, 66, 66-2 (e-Gov Japanese Law (Digital Agency), legislation): https://laws.e-gov.go.jp/law/325AC0000000073
 
 ## Change log
 
@@ -175,3 +204,7 @@ Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in 
 - 2026-10-15: reviewed holding structures; none modelled (asset-management company taxed more heavily than direct holding); added a Holding structures section.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from JPY 1,650,000 (Minato) to JPY 438,000 (Setagaya/Meguro/Suginami, 205 listings of 100 m2 or more).
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16 (recipe pass): inheritance exemption per child changed from JPY 13.5 million to JPY 16 million in all three regimes: at the modelled second death there are three statutory heirs, so the basic deduction is JPY 30 million + 6 million x 3 = JPY 48 million (Inheritance Tax Act art. 15), JPY 16 million per child; JPY 13.5 million had assumed a surviving spouse (4 heirs).
+- 2026-10-16: corrected the non-permanent resident inheritance condition: the decedent needs only to be a 'foreign decedent' (residence status and Japanese address at death, no year count); the 10-of-15-year test applies to the heir (Inheritance Tax Act art. 1-3(1)(i), (3)).
+- 2026-10-16: minimum-tax open question clarified (it bites only above roughly JPY 3.4 billion of income in 2026 and JPY 511 million from 2027, because it counts only to the extent it exceeds the regular tax).
+- 2026-10-16: added the structure regime `asset_management_kk` (Japanese asset-management company: about 35.43% on all income, payout 49.44%) and the Holding structures section; the foundation and family-trust alternatives were considered and rejected.

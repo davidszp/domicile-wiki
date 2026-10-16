@@ -61,7 +61,7 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--immigration", type=int, default=6, help="immigration files (default 6: all 59 in about ten months)")
     ap.add_argument("--regions", type=int, default=1, help="regional files (default 1)")
     ap.add_argument("--succession", type=int, default=12, help="succession files (default 12: all 145 in about a year)")
-    ap.add_argument("--recipes", type=int, default=3, help="projection recipes (default 3: about 35 in a year)")
+    ap.add_argument("--recipes", type=int, default=5, help="projection recipes (default 5: all 60 in a year)")
     ap.add_argument("--json", action="store_true", help="print JSON for the monthly workflow")
     a = ap.parse_args(argv)
     rows = due({"tax": a.tax, "income": a.income, "immigration": a.immigration, "regions": a.regions, "succession": a.succession, "recipes": a.recipes})

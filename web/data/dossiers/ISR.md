@@ -1,6 +1,6 @@
 # Israel — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -36,10 +36,10 @@ Real (inflation-adjusted) gains on shares acquired from 2003 are taxed at 25%, o
 
 Gains on assets located abroad sold within the 10-year period are exempt; Israeli assets are taxed normally.
 
-- **Important exceptions, statute references and announced changes:** After 10 years, gains on foreign assets are taxed on a time-apportioned basis. New residents from 2026 must report the exempt income.
+- **Important exceptions, statute references and announced changes:** After 10 years, gains on foreign assets are split by time (ITO s. 97(b)(3)): the real gain multiplied by the days from acquisition to the end of the 10 years, divided by the days from acquisition to sale, stays exempt, and the rest is taxed at the s. 91(b) rate. New residents from 2026 must report the exempt income.
 - **Tax year / confidence / verification:** 2026 / high / partially_verified (checked 2026-10-15)
 - **JSON numbers:** headline 30% (0.3); listed domestic 30% (0.3); listed foreign 0% (0.0); private business sale 35% (0.35); local real estate 30% (0.3); foreign real estate 0% (0.0).
-- **How derived:** Foreign assets exempt for 10 years (Income Tax Ordinance s. 97(b2)/14, per PwC description); Israeli assets as standard.
+- **How derived:** Foreign assets exempt for 10 years (Income Tax Ordinance s. 14(a) and s. 97(b)(1)); Israeli assets as standard.
 
 **Land appreciation tax (Deloitte 2026):** real betterment accrued after 1 January 2012 is taxed at up to 25% (30% for a 10%+ holder of a real estate company); for residential apartments pre-2014 betterment is exempt and a sole apartment can be fully exempt. Purchase tax: 6% generally; 0-10% progressive for a sole residential apartment. This confirms the 0.30 real-estate rate (25% + 5% surtaxes above ILS 721,560), and capital_gains confidence was raised to high.
 
@@ -93,7 +93,7 @@ No net wealth tax.
 
 ## Special regimes
 
-- **New immigrant (oleh) / senior returning resident - 10-year exemption** (`new_immigrant`; EU, US, OTHER; duration 10 years): For 10 years from becoming resident, foreign passive income (dividends, interest, rent, pensions) and gains on foreign assets are exempt; gains on assets sold after the 10 years are apportioned. Residents from 1 January 2026 must report the exempt foreign income (the reporting exemption no longer applies). An optional first 'acclimation' year allows electing non-residence. Eligibility: New immigrant under the Law of Return (Jewish descent up to grandchildren, and spouses) or Israeli citizen returning after at least 10 consecutive years as a foreign resident (senior returning resident). Other foreigners cannot use it and generally cannot obtain residence.
+- **New immigrant (oleh) / senior returning resident - 10-year exemption** (`new_immigrant`; EU, US, OTHER; duration 10 years): For 10 years from becoming resident, foreign passive income (dividends, interest, rent, pensions) and gains on foreign assets are exempt; gains on assets sold after the 10 years are apportioned. Residents from 1 January 2026 must report the exempt foreign income (the reporting exemption no longer applies). An optional first 'acclimation' year allows electing non-residence. Eligibility: An individual who becomes an Israeli resident for the first time, or a veteran returning resident (an Israeli resident again after at least 10 consecutive years abroad), Income Tax Ordinance s. 14(a). The statute ties the exemption to first-time residence, not to Law of Return status or religion, so a non-Jewish EU citizen who becomes resident for the first time can qualify in tax terms; the practical barrier is obtaining residence at all (Israel has no investor-residence route, and non-Jewish foreigners generally need a work permit or a family link; not verified). Assets that reached the individual as a tax-exempt gift under s. 97(a)(5) are excluded from the asset exemption.
   - Metrics that differ from standard: capital_gains, dividends (details in the tax sections above).
 
 **Re-verified 2026-10-15 (Deloitte Israel Highlights 2026, April 2026, agreeing with PwC):** the exemption for foreign-source income of new residents and senior returning residents lasts 10 years from arrival. Arrivals before 1 January 2026 need not report the exempt foreign income for the benefit period; arrivals from 1 January 2026 must report it. The ITA may require a capital statement of Israeli assets in any case. A foreign company managed by the new resident is generally not Israeli-resident for 10 years, subject to permanent-establishment risk. Separately, arrivals between 5 November 2025 and 31 December 2026 get a 2026-2030 tax holiday on active income from personal activity in Israel up to ILS 600,000 (2026), ILS 1m (2027, 2028), ILS 350,000 (2029) and ILS 150,000 (2030), conditional on residence and 75+ days a year in 2028-2029; it does not cover investment income. The Israel Tax Authority's own pages on gov.il returned 403 to automated access, so no official page was opened.
@@ -119,7 +119,7 @@ City: Tel Aviv.
 - Whether any further curtailment of the 10-year exemption (beyond the 2026 reporting requirement) has been enacted was not verified.
 - Capital marker omitted because of the disputed status of Jerusalem; Tel Aviv is used as the financial centre.
 - Israel Tax Authority pages (gov.il) refused automated access (403); figures rest on PwC (June 2026) and Deloitte Israel Highlights 2026 (April 2026), which agree on rates, the surtaxes and the 10-year exemption with 2026 reporting change.
-- Israel Tax Authority pages on gov.il could not be opened (Cloudflare 403); the 10-year exemption and the 2026 reporting change rest on PwC and Deloitte (Israel Highlights 2026, April 2026), which agree. Statutory references (Income Tax Ordinance s. 14 and s. 97(b2); Amendment 168) not opened.
+- Israel Tax Authority pages on gov.il could not be opened (Cloudflare 403); the 10-year exemption and the 2026 reporting change rest on PwC and Deloitte (Israel Highlights 2026, April 2026), which agree. Income Tax Ordinance s. 14(a) and s. 97(b)(1) and (3) were opened in the ICNL unofficial English translation (its capital-gains and dividend rates predate 2012 and were not used); Amendment 272 (reporting) was not opened. The Tax Authority's practice for first-time residents who are not olim was not verified.
 
 ## Sources
 
@@ -131,6 +131,7 @@ City: Tel Aviv.
 - Israel - Individual - Other tax credits and incentives (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/israel/individual/other-tax-credits-and-incentives
 - Israel - Individual - Residence (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/israel/individual/residence
 - Israel - Corporate - Taxes on corporate income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/israel/corporate/taxes-on-corporate-income
+- Income Tax Ordinance [New Version] 5721-1961, unofficial English translation (ICNL, legislation): https://www.icnl.org/wp-content/uploads/Israel_Ordinance.pdf
 - Israel Highlights 2026 (updated April 2026) (Deloitte International Tax, professional): https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-israelhighlights-2026.pdf
 - Apartments for rent in Tel Aviv (homeless.co.il, other): https://www.homeless.co.il/rent/city=%d7%aa%d7%9c%20%d7%90%d7%91%d7%99%d7%91
 - WBAIS - Tuition and fees 2026-2027 (Walworth Barbour American International School, other): https://www.wbais.net/admissions/tuition-and-fees
@@ -142,3 +143,4 @@ City: Tel Aviv.
 - 2026-10-15: data-quality pass: added rent (north Tel Aviv 4.5-6-room apartments, homeless.co.il sample) and school fee (WBAIS 2026-27); added Deloitte Israel Highlights 2026 as a second source (gov.il ITA pages blocked automated access); land appreciation tax rates confirmed and standard capital_gains confidence raised to high; new-immigrant eligibility conditions, 2026 reporting rule and the separate 2026-2030 tax holiday for active income documented.
 - 2026-10-15: reviewed holding structures; none modelled; added a Holding structures section.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: recipe drafted. The 10-year exemption (`new_immigrant`) is tied by ITO s. 14(a) to becoming resident for the first time (or a veteran returning resident), not to the Law of Return: eligibility text corrected, s. 97(b)(3) apportionment formula added, statute references now opened (ICNL translation).

@@ -1,0 +1,119 @@
+{
+  "id": "ISR",
+  "name": "Israel",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (standard residence)",
+      "regime": "standard",
+      "estate": "portfolio",
+      "note": "Dividends and real gains on shares are taxed at 25%, plus the 3% surtax and, from 2025, a 2% surtax on capital income above ILS 721,560 (30% at the top), with a credit for foreign withholding. Israel has no inheritance, estate, gift or wealth tax, and heirs take over the deceased's cost, so unrealised gains are not taxed at death."
+    },
+    {
+      "id": "new_immigrant",
+      "name": "10-year exemption for first-time residents and new immigrants",
+      "regime": "new_immigrant",
+      "estate": "portfolio",
+      "note": "For 10 years from becoming resident, income from sources abroad or derived from assets abroad is exempt (ITO s. 14(a)), as is the gain on selling an asset abroad within the 10 years (s. 97(b)(1)); Israeli-source income is taxed normally. The statute says 'an individual who became an Israel resident for the first time', not an immigrant under the Law of Return, but a non-Jewish EU family still has to obtain residence, for which Israel has no investor route (see assumptions). After year 10 the standard rules apply."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 75000,
+      "working": "Assumes each spouse's capital income is above ILS 721,560, so every shekel is taxed in the top slice (the first ILS 721,560 of each spouse would bear 5 points less; ignored, as the brief asks for top marginal rates). Dividends of 200,000 from foreign companies: 25% (ITO s. 125B, 30% only for a 10%+ shareholder) + 3% surtax on income above ILS 721,560 (ITO s. 121B) + 2% surcharge on capital income above the same threshold (added from 2025; Deloitte Israel Highlights 2026) = 30% x 200,000 = 60,000. Credit for the 15% foreign withholding, 30,000 (foreign tax credit, limited to the Israeli tax on the same income, here 60,000; PwC), leaves 30,000. Real gains of 150,000 on shares bought after 2002: 25% (ITO s. 91(b)) + 3% + 2% = 30% x 150,000 = 45,000 (the inflationary part of a gain is exempt; the 150,000 is taken as the real gain, and no foreign tax is withheld on gains). Total 30,000 + 45,000 = 75,000. No wealth tax."
+    },
+    {
+      "path": "new_immigrant",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 0.9,
+      "expected": 10500,
+      "working": "Within the 10 years, income from sources abroad and from assets abroad is exempt (ITO s. 14(a)) and so is the gain on selling an asset abroad (ITO s. 97(b)(1)). 90% of the dividends (180,000) and 90% of the gains (135,000) are foreign and exempt; the foreign withholding on the exempt dividends is simply lost. The Israeli 10%: dividends 20,000 x 30% (25% + 3% + 2%, top slice, as in the standard check) = 6,000; gains 15,000 x 30% = 4,500. Total 10,500. Assumes the securities are held abroad (a foreign custodian), so that they are 'assets abroad' rather than assets in Israel."
+    },
+    {
+      "path": "new_immigrant",
+      "phase": "after",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 75000,
+      "working": "After the 10 years the exemption has ended and the standard rules apply: foreign dividends 200,000 x 30% (25% + 3% surtax + 2% capital-income surcharge) = 60,000 less the 15% foreign withholding credit 30,000 = 30,000; real gains 150,000 x 30% = 45,000; total 75,000. Same as the standard path (ITO s. 125B, s. 91(b), s. 121B). The gain on an asset sold after year 10 would be partly exempt by time (s. 97(b)(3)), which this check does not use (see the open question)."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Israel has no inheritance, estate or gift tax (the Inheritance Tax Law of 1949 was abolished in 1981; Deloitte Israel Highlights 2026: 'There is no inheritance tax or estate tax'). A gift or inheritance to a relative is not a sale and is exempt (ITO s. 97(a)(5)); the heirs take over the deceased's original cost and acquisition date (ITO s. 88, definitions of 'original cost' and 'day of acquisition'), so unrealised gains are taxed only when a child sells, and there is no deemed disposition at death. The estate of 10,000,000 passing to 3 children therefore bears 0, and there are no probate costs worth counting."
+    }
+  ],
+  "assumptions": [
+    "Israeli residence for a non-Jewish EU family is not straightforward: the Law of Return admits Jews, their children and grandchildren and their spouses, and there is no investor-residence route; other foreigners generally need a work permit or a family link (not verified). The paths describe the tax if the family does become resident. Whether a family without Law of Return status can claim the 10-year exemption in practice rests on the wording of ITO s. 14(a) ('became an Israel resident for the first time'); the Tax Authority's practice was not verified.",
+    "The checks use the top rates (30% on dividends and real gains, after the 3% and 2% surtaxes) on all income, assuming each spouse's capital income is above ILS 721,560. The first ILS 721,560 of each spouse would bear 25%, so the checks slightly overstate the tax for a smaller portfolio.",
+    "Gains are real gains in shekels or in the foreign currency; the inflationary part is exempt. The foreign securities are held abroad, so they count as assets abroad for the 10-year exemption.",
+    "A 10-year exemption starts when the family becomes resident. The optional first-year election not to be resident (ITO s. 14(b)) is not used. From 1 January 2026 the exempt income must still be reported.",
+    "The foreign tax credit covers the 15% withholding in full because the Israeli tax on the same income (30%) is higher."
+  ],
+  "open_questions": [
+    "Needs an engine change: after the 10 years, a gain on an asset sold later is split by time (ITO s. 97(b)(3)): the real gain multiplied by the days from acquisition to the end of the 10 years, divided by the days from acquisition to sale, is exempt, and only the rest is taxed at 30%. The engine's 'after' phase applies the standard rate to the whole gain, so it overstates tax on gains realised after year 10 on positions held since before that date. Positions bought before arrival count from the acquisition date, so a long-held position keeps a large exempt share.",
+    "Structures considered and not added: an Israeli holding company pays 23% corporate tax on foreign dividends and gains, and a payout to the family adds 30% dividend tax (about 46% in total against 30% personally); closely held 'family companies' also face income attribution and a 2% tax on accumulated profits from 2025 (Deloitte). A foreign company managed from Israel is not treated as Israeli-resident for 10 years (Deloitte) but carries permanent-establishment risk and an Israeli reporting duty; this is a planning niche, not a vehicle families commonly use for a listed portfolio, and not modelled. Israel has no private foundation and trusts are not a standard portfolio vehicle (not verified).",
+    "The 3% surtax and the 2% capital-income surcharge rest on Deloitte's and PwC's 2026 summaries and the section number 121B is quoted from memory; the Tax Authority's pages were not reachable. The surtax threshold of ILS 721,560 is frozen for 2025 to 2027 in the sources read, so it is not treated as statute-indexed.",
+    "Deloitte notes the 3% surtax does not apply to the inflationary component of a gain. Whether the foreign tax credit (ITO s. 200, not opened) can reduce the surtaxes as well as the 25% was not checked; the checks give the same 15% net rate either way."
+  ],
+  "sources": [
+    {
+      "title": "Income Tax Ordinance [New Version] 5721-1961 (unofficial English translation; rates in it are outdated, s. 14, s. 88 and s. 97 read)",
+      "url": "https://www.icnl.org/wp-content/uploads/Israel_Ordinance.pdf",
+      "publisher": "ICNL (translation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Israel Highlights 2026 (updated April 2026)",
+      "url": "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-tax-israelhighlights-2026.pdf",
+      "publisher": "Deloitte International Tax",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Israel - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/israel/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Israel - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/israel/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Israel - Individual - Other tax credits and incentives",
+      "url": "https://taxsummaries.pwc.com/israel/individual/other-tax-credits-and-incentives",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Israel - Individual - Foreign tax relief and tax treaties",
+      "url": "https://taxsummaries.pwc.com/israel/individual/foreign-tax-relief-and-tax-treaties",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

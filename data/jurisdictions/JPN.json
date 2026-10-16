@@ -4,7 +4,7 @@
   "continent": "Asia",
   "region": "East Asia",
   "currency": "JPY",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Japan taxes gains on listed shares and listed-company dividends separately at 20.315% (15.315% national including reconstruction surtax plus 5% local), but for 2025 and 2026 a minimum tax of 22.5% applies to aggregate income above JPY 330 million, and from 2027 the threshold is JPY 165 million at 30% (per PwC), so very large realised gains face more. There is no wealth tax. Inheritance and gift tax is among the world's highest: 10% to 55% on each heir's statutory share above a basic deduction of JPY 30 million plus 6 million per statutory heir. Foreigners on working-type visas who have lived in Japan 10 years or less in the last 15 are taxed only on Japanese assets at death, and for the first 5 years non-permanent residents are taxed on foreign income only if it is paid in or remitted to Japan. An exit tax applies to departing residents with JPY 100 million or more of securities.",
   "regimes": [
     {
@@ -101,7 +101,7 @@
         "rate_basis": "Listed portfolio dividends: separate taxation 20.315% (domestic and foreign listed). Headline = aggregate top rate 45% x 1.021 + 10% = 55.945% for non-listed/large holdings.",
         "withholding_outbound": "20.42% on dividends to non-residents (15.315% for listed dividends to portfolio holders), reduced by treaty.",
         "treaty_network": "Broad network covering the US, EU and Asian partners (count not verified).",
-        "holding_company_notes": "Large companies in Tokyo pay about 31.5% effective; a defense special corporate tax of 4% of national CIT applies from 2026. Small family companies face an additional tax on retained earnings (not verified). No holding structure is modelled: an asset-management company pays roughly 30% or more on portfolio gains and on foreign portfolio dividends (the 95% foreign-dividend exclusion needs a 25% stake, and only 20% of domestic dividends on stakes under 5% are excluded; PwC), against 20.315% for an individual, and its distributions are taxed to the family at progressive rates up to about 55% less the dividend credit. The inheritance-valuation rules for share-holding companies (net asset value less a deduction for unrealised gains, which reportedly excludes gains on assets contributed in kind; not verified) do not make up for this on a listed portfolio."
+        "holding_company_notes": "Modelled as the structure regime 'asset_management_kk' (a Japanese KK or GK holding the portfolio): about 35.43% effective on all income at the top (Tokyo, small company), no 95% exclusion for portfolio dividends, 20% exclusion for domestic dividends on stakes of 5% or less, foreign withholding creditable; profits paid out are taxed to the family at about 49.4% after the dividend credit. Against 20.315% for an individual this is worse at every step, but advisers still recommend it for inheritance planning and income splitting, so it is shown."
       },
       "wealth_tax": {
         "summary": "No net wealth tax.",
@@ -122,8 +122,8 @@
         "property_tax_note": "Fixed asset tax of 1.4% a year on the appraised value of real property (plus city planning tax in urban areas, not verified); registration and licence tax 0.1-2% on registration."
       },
       "inheritance": {
-        "summary": "Inheritance tax is charged on heirs, but computed on the estate: the basic deduction (JPY 30 million + 6 million per statutory heir) is subtracted, the remainder is divided notionally by statutory shares, each share is taxed at progressive rates from 10% to 55% (above JPY 600 million), and the total is allocated to the actual recipients. Gifts are taxed at similar progressive rates (annual exemption JPY 1.1 million per recipient); gifts within 7 years before death are added back. Permanent residents (and foreigners who have lived in Japan more than 10 of the last 15 years) are taxed on worldwide property.",
-        "exemptions_thresholds": "Basic deduction JPY 30 million + JPY 6 million x number of statutory heirs (family of five with a surviving spouse: 4 heirs = JPY 54 million in total). Spouse credit (tax-free up to the larger of the statutory share or JPY 160 million; general knowledge, not verified). Coded exemption per child: JPY 13.5 million (= 54 million / 4 heirs).",
+        "summary": "Inheritance tax is charged on heirs, but computed on the estate: the basic deduction (JPY 30 million + 6 million per statutory heir) is subtracted, the remainder is divided notionally by statutory shares, each share is taxed at progressive rates from 10% to 55% (above JPY 600 million), and the total is allocated to the actual recipients. Gifts are taxed at similar progressive rates (annual exemption JPY 1.1 million per recipient); gifts within 7 years before death are added back. Heirs who are permanent residents, or foreigners with a residence status who have lived in Japan more than 10 of the last 15 years, are taxed on worldwide property (Inheritance Tax Act art. 1-3(1)(i)).",
+        "exemptions_thresholds": "Basic deduction JPY 30 million + JPY 6 million x number of statutory heirs (Inheritance Tax Act art. 15; NTA No.4152). At the modelled second death (spouse already dead, three children) there are 3 statutory heirs: JPY 48 million in total, JPY 16 million per child; this is the coded exemption per child. (With a surviving spouse, 4 heirs, the total would be JPY 54 million.) Spouse credit (tax-free up to the larger of the statutory share or JPY 160 million; general knowledge, not verified).",
         "important_exceptions": "Optional inheritance-time settlement gift regime: parents aged 60+ to children aged 18+, 20% flat gift tax above a JPY 25 million lifetime deduction, credited against later inheritance tax. 'Temporary resident' and 'foreign decedent' rules exempt foreign property for foreigners who have lived in Japan 10 years or less in the last 15 (see special regimes).",
         "tax_year": "2026",
         "sources": [
@@ -147,16 +147,30 @@
             "publisher": "PwC Worldwide Tax Summaries",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance Tax Act (Act No. 73 of 1950): arts. 1-3, 15-17, 66, 66-2",
+            "url": "https://laws.e-gov.go.jp/law/325AC0000000073",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "No.4152 Basic deduction for inheritance tax (遺産に係る基礎控除)",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4152.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "high",
         "verification": "verified",
         "basis": "beneficiary",
         "children_treatment": "taxed",
         "spouse_treatment": "exempt_with_conditions",
         "spouse_note": "Spouse's tax credit: no tax on the net estate the spouse actually receives up to the greater of JPY 160 million or the spouse's statutory share (half the estate when there are children), provided a return is filed and the estate is divided, or a division-expected form is filed and division follows within 3 years (Inheritance Tax Act art. 19-2; NTA Tax Answer No. 4158). Anything above that is taxed on the normal scale.",
-        "exemption": 13500000,
+        "exemption": 16000000,
         "brackets": [
           {
             "from_amount": 0,
@@ -308,7 +322,7 @@
       },
       "inheritance": {
         "summary": "While the decedent is a 'foreign decedent' and the heirs are temporary residents, only Japan-situs property is subject to inheritance tax; foreign property (e.g. a portfolio held with a foreign custodian in foreign securities) is outside the charge. Japanese property is taxed on the standard scale.",
-        "eligibility_conditions": "Decedent held a Table 1 residence status and lived in Japan 10 years or less in the last 15; heirs likewise temporary or non-resident foreigners.",
+        "eligibility_conditions": "The decedent is a 'foreign decedent': holds a residence status (Table 1 of the Immigration Control Act) and has a Japanese address at death; since the 2021 reform no year count applies to the decedent (Inheritance Tax Act art. 1-3(3)(ii)). Each heir is a 'temporary resident': holds a Table 1 residence status and has lived in Japan 10 years or less in the 15 years before death (art. 1-3(3)(i)); an heir who has passed 10 of 15 years is taxed on worldwide property whoever the decedent was (art. 1-3(1)(i)(a)).",
         "tax_year": "2026",
         "sources": [
           {
@@ -324,16 +338,23 @@
             "publisher": "PwC Worldwide Tax Summaries",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance Tax Act (Act No. 73 of 1950): arts. 1-3, 15-17, 66, 66-2",
+            "url": "https://laws.e-gov.go.jp/law/325AC0000000073",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "medium",
         "verification": "partially_verified",
         "basis": "beneficiary",
         "children_treatment": "exempt_with_conditions",
         "spouse_treatment": "exempt_with_conditions",
         "spouse_note": "Spouse's tax credit: no tax on the net estate the spouse actually receives up to the greater of JPY 160 million or the spouse's statutory share (half the estate when there are children), provided a return is filed and the estate is divided, or a division-expected form is filed and division follows within 3 years (Inheritance Tax Act art. 19-2; NTA Tax Answer No. 4158). Anything above that is taxed on the normal scale.",
-        "exemption": 13500000,
+        "exemption": 16000000,
         "brackets": [
           {
             "from_amount": 0,
@@ -400,16 +421,23 @@
             "publisher": "National Tax Agency Japan",
             "kind": "tax_authority",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Inheritance Tax Act (Act No. 73 of 1950): arts. 1-3, 15-17, 66, 66-2",
+            "url": "https://laws.e-gov.go.jp/law/325AC0000000073",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "medium",
         "verification": "partially_verified",
         "basis": "beneficiary",
         "children_treatment": "exempt_with_conditions",
         "spouse_treatment": "exempt_with_conditions",
         "spouse_note": "Spouse's tax credit: no tax on the net estate the spouse actually receives up to the greater of JPY 160 million or the spouse's statutory share (half the estate when there are children), provided a return is filed and the estate is divided, or a division-expected form is filed and division follows within 3 years (Inheritance Tax Act art. 19-2; NTA Tax Answer No. 4158). Anything above that is taxed on the normal scale.",
-        "exemption": 13500000,
+        "exemption": 16000000,
         "brackets": [
           {
             "from_amount": 0,
@@ -452,6 +480,321 @@
         "domicile_rules": "Brackets apply only to Japan-situs property.",
         "scope": "local_assets_only"
       }
+    },
+    {
+      "id": "asset_management_kk",
+      "name": "Asset-management company (shisan kanri gaisha: Japanese KK or GK)",
+      "type": "structure",
+      "description": "The family holds the portfolio through a Japanese company (kabushiki kaisha or godo kaisha) that the parents own. The company is taxed on its worldwide income at the ordinary corporate rates, with no relief for portfolio shares: about 35.43% in total for a small Tokyo company with taxable income above JPY 25 million (national corporate tax 23.2%, local corporate tax 10.3% of it, Tokyo corporate inhabitant tax 10.4% of it, enterprise tax 7.48% plus special corporate enterprise tax of 37% of the 7.0% standard-rate amount, defense special corporate tax 4% of the national tax, enterprise tax deductible when paid). Foreign withholding tax is credited against the national corporate tax. Distributions to the parents are aggregate income, about 49.4% at the top after the dividend credit. Inheritance tax is as for direct holding (the shares are valued at net asset value), so that metric is inherited from the standard regime.",
+      "eligible_citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "eligibility": "Any resident can found a KK or GK (no minimum capital; notarial deed for a KK, registration). A foreigner needs a residence status that allows running the company (in practice the Business Manager status, with an office and capital or staff requirements that were reportedly tightened in 2025; not verified). Contributing existing shares in kind is a sale at market value for the individual (gain taxed at 20.315%), so the model assumes the company is funded with cash or shares at current cost.",
+      "duration_years": null,
+      "duration_note": "A company under ordinary law with no time limit. Its tax position changes only with the corporate rates and with the 2026 defense special corporate tax, which applies 'for the time being' (Act No. 69 of 2023, art. 9).",
+      "requires_qualifying_activity": false,
+      "structure": {
+        "entity": "Asset-management company (kabushiki kaisha or godo kaisha) held by the parents",
+        "kind": "company",
+        "payout_tax_rate": 0.4944,
+        "payout_notes": "Dividends from a Japanese company to a resident shareholder who holds 3% or more, or of an unlisted company, are aggregate income: national tax 45% on the top band (taxable income above JPY 40 million, NTA No.2260) less the dividend credit of 5% of the dividend for the part of taxable income above JPY 10 million (NTA No.1250) = 40%, times 1.021 for the reconstruction surtax = 40.84%; inhabitant tax 10% less the dividend credit of 1.4% (0.6% prefectural + 0.8% municipal for the part above JPY 10 million; Chuo ward page) = 8.6%; total 49.44%. The company withholds 20.42% on the dividend, credited against the shareholder's tax (not verified in the statute). Director's remuneration is deductible for the company but taxed to the director at up to 55.945% and needs real work, which this family does not do; no payout route is cheaper than a dividend.",
+        "annual_running_cost": null,
+        "setup_cost": null,
+        "running_cost_deductible_at": null,
+        "substance_and_anti_avoidance": "A company with capital of JPY 100 million or less is outside the retained-earnings tax on special family companies (Corporation Tax Act art. 67(1), which carves out companies with capital of JPY 100 million or less other than subsidiaries of large corporations); with a larger capital the tax adds 10%-20% on retained profits above the allowance and the larger enterprise-tax base applies. Art. 132 lets the tax office deny transactions of a family company that reduce tax abnormally. The corporate per-capita inhabitant tax (JPY 70,000 a year or more, PwC) and accounting costs were not sourced and are not counted. No change to the retained-earnings tax was found in the FY2026 reform searches; only art. 67 was read in the statute.",
+        "exit_and_liquidation": "Liquidation distributions above paid-in capital are deemed dividends (aggregate income). If the parents emigrate, the exit tax (Income Tax Act art. 60-2) covers securities of JPY 100 million or more including the company's shares. At death the shares form part of the estate (valued at net asset value; see the regime's inheritance note).",
+        "sources": [
+          {
+            "title": "Corporation Tax Act (Act No. 34 of 1960): arts. 23, 41, 66, 67, 69",
+            "url": "https://laws.e-gov.go.jp/law/340AC0000000034",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Local Corporation Tax Act (Act No. 11 of 2014): arts. 6, 9, 10, 12",
+            "url": "https://laws.e-gov.go.jp/law/426AC0000000011",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Act on Special Measures for Securing Financial Resources for Strengthening Defense Capabilities (Act No. 69 of 2023), arts. 9-14: defense special corporate tax",
+            "url": "https://laws.e-gov.go.jp/law/505AC0000000069",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Local Tax Act (Act No. 226 of 1950), art. 23(1)(iv): corporation tax amount on which the corporate inhabitant tax is levied",
+            "url": "https://laws.e-gov.go.jp/law/325AC0000000226",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Corporate enterprise tax and corporate metropolitan tax (Tokyo rates)",
+            "url": "https://www.tax.metro.tokyo.lg.jp/kazei/work/houjinji",
+            "publisher": "Tokyo Metropolitan Bureau of Taxation",
+            "kind": "government",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Japan - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/japan/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "No.5759 Corporate tax rates (法人税の税率)",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "No.1250 Dividend credit (配当控除)",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "No.2260 Income tax rates (所得税の税率)",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Dividend credit against resident tax (Chuo ward, Tokyo)",
+            "url": "https://www.city.chuo.lg.jp/a0009/kurashi/zeikin/juuminzei/zeigakukoujo.html",
+            "publisher": "Chuo City Office, Tokyo",
+            "kind": "government",
+            "accessed": "2026-10-16"
+          }
+        ]
+      },
+      "capital_gains": {
+        "summary": "The company pays corporate tax on realised gains on portfolio shares at the same rates as on any other income: about 35.43% in total at the top for a small Tokyo company (see description). Unrealised gains are not taxed, and there is no exemption for gains on portfolio holdings.",
+        "exemptions_thresholds": "National corporate tax 15% on the first JPY 8 million of income for a company with capital of JPY 100 million or less (income up to JPY 1 billion; NTA No.5759); lower Tokyo enterprise-tax bands on the first JPY 8 million. Both are small and the model uses the top rate.",
+        "eligibility_conditions": "Japanese-resident company. The Tokyo rates apply to an office in the 23 wards; the combined rate elsewhere differs by a point or two.",
+        "important_exceptions": "The rate is for a company with taxable income above JPY 25 million (Tokyo excess enterprise-tax rates) and national corporate tax above JPY 10 million (corporate inhabitant tax at 10.4%, not 7.0%).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Corporation Tax Act (Act No. 34 of 1960): arts. 23, 41, 66, 67, 69",
+            "url": "https://laws.e-gov.go.jp/law/340AC0000000034",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Local Corporation Tax Act (Act No. 11 of 2014): arts. 6, 9, 10, 12",
+            "url": "https://laws.e-gov.go.jp/law/426AC0000000011",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Act on Special Measures for Securing Financial Resources for Strengthening Defense Capabilities (Act No. 69 of 2023), arts. 9-14: defense special corporate tax",
+            "url": "https://laws.e-gov.go.jp/law/505AC0000000069",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Local Tax Act (Act No. 226 of 1950), art. 23(1)(iv): corporation tax amount on which the corporate inhabitant tax is levied",
+            "url": "https://laws.e-gov.go.jp/law/325AC0000000226",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Corporate enterprise tax and corporate metropolitan tax (Tokyo rates)",
+            "url": "https://www.tax.metro.tokyo.lg.jp/kazei/work/houjinji",
+            "publisher": "Tokyo Metropolitan Bureau of Taxation",
+            "kind": "government",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Japan - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/japan/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "No.5759 Corporate tax rates (法人税の税率)",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Tokyo enterprise-tax rates were read on the Tokyo bureau's page and PwC; the special corporate enterprise tax rate of 37% and the SME bands on the first JPY 8 million rest on PwC only."
+        ],
+        "headline_rate": 0.3543,
+        "rates": {
+          "listed_securities_domestic": 0.3543,
+          "listed_securities_foreign": 0.3543,
+          "private_business_sale": 0.3543,
+          "real_estate_local": 0.3543,
+          "real_estate_foreign": 0.3543
+        },
+        "rate_basis": "Effective statutory rate with enterprise tax deductible when paid: (0.232 x (1 + 0.103 + 0.104) + e) / (1 + e) + 0.04 x 0.232 / (1 + e), where e = 0.0748 + 0.37 x 0.07 = 0.1007 (enterprise tax at the Tokyo excess rate plus special corporate enterprise tax at 37% of the 7.0% standard-rate amount) = 0.3543. This equals the 35.43% 'effective statutory rate' PwC gives for a Tokyo company with capital of JPY 100 million or less. The top marginal rate is used for all income; the 15% national rate on the first JPY 8 million and the lower enterprise-tax bands are ignored.",
+        "professional_trader": "Not relevant: all company income is taxable profit.",
+        "holding_period_rules": "None.",
+        "foreign_assets": "Worldwide profits taxed; foreign withholding on dividends is credited against the national corporate tax up to the limit (Corporation Tax Act art. 69)."
+      },
+      "dividends": {
+        "summary": "Portfolio dividends received by the company are fully taxable at about 35.43% at the top. The 95% exclusion for foreign dividends needs a stake of 25% (PwC) and the exclusion for domestic dividends is 20% for stakes of 5% or less (Corporation Tax Act art. 23(1),(6)). Foreign withholding tax is credited against the national corporate tax (art. 69); the local corporate tax, the defense special corporate tax and the corporate inhabitant tax are computed on the corporate tax before the credit (Local Corporation Tax Act art. 6(1)(i); Act No. 69 of 2023 art. 10; Local Tax Act art. 23(1)(iv)), so the credit offsets only the national tax.",
+        "exemptions_thresholds": "Exclusion of 20% of domestic dividends on stakes of 5% or less; 50% for stakes above 5% and up to one third. None for foreign portfolio dividends.",
+        "eligibility_conditions": "Japanese-resident company.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Corporation Tax Act (Act No. 34 of 1960): arts. 23, 41, 66, 67, 69",
+            "url": "https://laws.e-gov.go.jp/law/340AC0000000034",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Local Corporation Tax Act (Act No. 11 of 2014): arts. 6, 9, 10, 12",
+            "url": "https://laws.e-gov.go.jp/law/426AC0000000011",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Act on Special Measures for Securing Financial Resources for Strengthening Defense Capabilities (Act No. 69 of 2023), arts. 9-14: defense special corporate tax",
+            "url": "https://laws.e-gov.go.jp/law/505AC0000000069",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Local Tax Act (Act No. 226 of 1950), art. 23(1)(iv): corporation tax amount on which the corporate inhabitant tax is levied",
+            "url": "https://laws.e-gov.go.jp/law/325AC0000000226",
+            "publisher": "e-Gov Japanese Law (Digital Agency)",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Corporate enterprise tax and corporate metropolitan tax (Tokyo rates)",
+            "url": "https://www.tax.metro.tokyo.lg.jp/kazei/work/houjinji",
+            "publisher": "Tokyo Metropolitan Bureau of Taxation",
+            "kind": "government",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Japan - Corporate - Taxes on corporate income",
+            "url": "https://taxsummaries.pwc.com/japan/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "No.5759 Corporate tax rates (法人税の税率)",
+            "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm",
+            "publisher": "National Tax Agency Japan",
+            "kind": "tax_authority",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "open_questions": [
+          "Foreign tax credit limit (art. 69 and its Order) was not read; the credit is assumed to fit within the national tax on the foreign income, which holds when withholding is 15% or less."
+        ],
+        "headline_rate": 0.3543,
+        "domestic_rate": 0.28344,
+        "foreign_gross_rate": 0.3543,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "Foreign dividends: 35.43% before credit, no exclusion. Domestic listed dividends on stakes of 5% or less: 80% x 35.43% = 28.344% (20% excluded, art. 23(1),(6)); the 15.315% withholding on them is credited (not modelled).",
+        "withholding_outbound": "The company withholds 20.42% on dividends it pays to residents, credited against their tax (not verified in the statute).",
+        "treaty_network": "A Japanese company is a treaty resident with access to Japan's treaty network.",
+        "holding_company_notes": "This regime is the company itself."
+      },
+      "wealth_tax": {
+        "summary": "No net wealth tax on the company or on the parents' shares in it. Fixed asset tax on real property owned by the company, as for individuals.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Japan - Individual - Other taxes",
+            "url": "https://taxsummaries.pwc.com/japan/individual/other-taxes",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "medium",
+        "verification": "partially_verified",
+        "type": "none",
+        "components": [],
+        "property_tax_note": "Fixed asset tax and city planning tax on any real property of the company, as in the standard regime; the corporate per-capita inhabitant tax is a fixed charge, not a wealth tax."
+      },
+      "sources": [
+        {
+          "title": "Corporation Tax Act (Act No. 34 of 1960): arts. 23, 41, 66, 67, 69",
+          "url": "https://laws.e-gov.go.jp/law/340AC0000000034",
+          "publisher": "e-Gov Japanese Law (Digital Agency)",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Local Corporation Tax Act (Act No. 11 of 2014): arts. 6, 9, 10, 12",
+          "url": "https://laws.e-gov.go.jp/law/426AC0000000011",
+          "publisher": "e-Gov Japanese Law (Digital Agency)",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Act on Special Measures for Securing Financial Resources for Strengthening Defense Capabilities (Act No. 69 of 2023), arts. 9-14: defense special corporate tax",
+          "url": "https://laws.e-gov.go.jp/law/505AC0000000069",
+          "publisher": "e-Gov Japanese Law (Digital Agency)",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Local Tax Act (Act No. 226 of 1950), art. 23(1)(iv): corporation tax amount on which the corporate inhabitant tax is levied",
+          "url": "https://laws.e-gov.go.jp/law/325AC0000000226",
+          "publisher": "e-Gov Japanese Law (Digital Agency)",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Corporate enterprise tax and corporate metropolitan tax (Tokyo rates)",
+          "url": "https://www.tax.metro.tokyo.lg.jp/kazei/work/houjinji",
+          "publisher": "Tokyo Metropolitan Bureau of Taxation",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Japan - Corporate - Taxes on corporate income",
+          "url": "https://taxsummaries.pwc.com/japan/corporate/taxes-on-corporate-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "No.5759 Corporate tax rates (法人税の税率)",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm",
+          "publisher": "National Tax Agency Japan",
+          "kind": "tax_authority",
+          "accessed": "2026-10-16"
+        }
+      ]
     }
   ],
   "residency": {
@@ -542,9 +885,10 @@
   ],
   "us_citizen_notes": "US citizens remain US-taxed; Japan's 20.315% on gains/dividends is creditable against US tax. The US-Japan estate and gift tax treaty coordinates the two inheritance taxes (details not verified). Japanese investment trusts are PFICs.",
   "open_questions": [
-    "Minimum tax on ultra-high income (22.5% above JPY 330 million in 2025-2026; 30% above JPY 165 million from 2027 per PwC) is not reflected in the CGT rates; for a gain of several billion yen the effective rate exceeds 20.315%.",
+    "Minimum tax on ultra-high income (22.5% of income above JPY 330 million in 2025-2026; 30% above JPY 165 million from 2027, per PwC) is not reflected in the CGT rates. It is charged only to the extent it exceeds the regular tax, so with a 20.315% regular rate it bites only above roughly JPY 3.4 billion of income in 2026 and roughly JPY 511 million from 2027 (30% x (I - 165m) > 20.315% x I); the reference family (about JPY 100 million of dividends plus gains) is below both. The statute was not opened (PwC only).",
     "Non-permanent residents' foreign securities gains now verified against Income Tax Act art. 7 and Order art. 17 (e-Gov); the treatment of reinvested funds bought before arrival is not confirmed.",
-    "Inheritance exemption per child is an approximation of Japan's estate-level basic deduction divided among four statutory heirs.",
-    "Business Manager visa requirements not verified; cost of living: purchase prices, health insurance and housekeeper wages not sourced."
+    "Inheritance exemption per child is coded as JPY 16 million: the basic deduction (JPY 30 million + 6 million x 3 statutory heirs = JPY 48 million, Inheritance Tax Act art. 15) at the modelled second death with three children and no surviving spouse. At a first death with a surviving spouse (4 heirs) the total would be JPY 54 million, but the spouse's tax credit then takes the spouse's share, so the children's share is what the engine taxes.",
+    "Business Manager visa requirements not verified; cost of living: purchase prices, health insurance and housekeeper wages not sourced.",
+    "Valuation of unlisted shares in a family asset-management company for inheritance tax (net asset value less 37% of unrealised gains, Basic Valuation Circular) is not modelled; see the asset_management_kk regime."
   ]
 }
