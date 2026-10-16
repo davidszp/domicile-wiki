@@ -1,0 +1,157 @@
+{
+  "id": "ES-MD",
+  "name": "Spain: Comunidad de Madrid",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence, Comunidad de Madrid)",
+      "regime": "standard",
+      "estate": "portfolio",
+      "note": "Dividends and gains go to the savings base at 19% to 30% (30% above EUR 300,000 per person), the foreign withholding being credited (art. 80 LIRPF). Madrid rebates the wealth tax, but while the ITSGF exists the rebate only cancels the part of the IP above the ITSGF, so each spouse pays nothing below EUR 4m of net wealth (EUR 8m for the couple) and the ITSGF scale above it (1.7% to 3.5%). Inheritance: children (Group II) pay the Madrid scale (up to 34%) less a 99% bonificación."
+    },
+    {
+      "id": "holding_sl",
+      "name": "Family holding company (S.L.) taxed at 25%",
+      "regime": "holding_sl",
+      "estate": "portfolio",
+      "note": "An S.L. owns the portfolio and pays 25% corporate tax on dividends (foreign withholding credited, so 10% net on foreign dividends) and on gains; the 95% participation exemption (art. 21 LIS) needs a stake of at least 5%, which a diversified portfolio lacks. The family's payouts are dividends taxed at up to 30%. As a securities-holding company (entidad patrimonial, art. 5.2 LIS) its shares get no wealth-tax or inheritance-tax business relief, so the wealth tax and the 99% bonificación work as for direct holding. Costs about EUR 3,300 a year."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 100000,
+      "wealth": 10000000,
+      "expected": 94000,
+      "working": "Case: a married couple who own the wealth 50/50 and are taxed separately (wealth tax and IRPF are individual); net wealth EUR 10,000,000 including their main home (worth well over EUR 600,000); all dividends and gains from abroad (15% withholding on dividends). Top marginal rates, as for the scores: both spouses' other savings income is assumed to be above EUR 300,000 already, so every euro of this case is taxed at the top savings rate of 30% (arts. 66 and 76 LIRPF) and the joint limit of art. 31 LIP (60% of the IRPF base) does not bind.Dividends 200,000 x 30% = 60,000; deduction for international double taxation (art. 80 LIRPF) is the lesser of the foreign tax paid, 15% x 200,000 = 30,000, and the Spanish average-rate tax on that income (above 21%, so higher): 30,000; net 30,000. Gains 100,000 x 30% = 30,000 (arts. 33, 66, 76 LIRPF; no foreign tax). Wealth tax, each spouse (5,000,000 each): base imponible 5,000,000 - main home 300,000 (art. 4.Nueve LIP) = 4,700,000; Madrid mínimo exento 700,000 (art. 19 D.Leg. 1/2010) gives a base liquidable of 4,000,000. IP on the state scale (art. 30.2 LIP): 25,904.35 + 1.7% x (4,000,000 - 2,673,999.01) = 48,446.37. While the ITSGF exists, Madrid's 100% bonificación is replaced by one equal to the excess of the IP over the ITSGF (DT 7ª D.Leg. 1/2010). ITSGF (art. 3 Ley 38/2022): base 4,700,000 - 700,000 = 4,000,000; 0% to 3,000,000, then 1.7% x 1,000,000 = 17,000. Bonificación 48,446.37 - 17,000 = 31,446.37, so IP payable 17,000, and the ITSGF of 17,000 is cancelled by the IP paid (art. 3.Quince). Per spouse 17,000; couple 34,000. Total 30,000 + 30,000 + 34,000 = 94,000."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 100000,
+      "realised_gains": 0,
+      "wealth": 6000000,
+      "expected": 15000,
+      "working": "Same couple, with net wealth EUR 6,000,000 including the main home and dividends of 100,000 from abroad, taxed at the top 30% (both spouses already above EUR 300,000 of savings income). Dividends 100,000 x 30% = 30,000 less the art. 80 LIRPF deduction of 15% x 100,000 = 15,000 gives 15,000. Wealth tax, each spouse (3,000,000 each): base imponible 3,000,000 - 300,000 = 2,700,000; base liquidable 2,000,000. IP on the state scale (art. 30.2 LIP): 8,523.36 + 1.3% x (2,000,000 - 1,336,999.51) = 17,142.37. ITSGF (art. 3 Ley 38/2022): base 2,700,000 - 700,000 = 2,000,000, below the EUR 3,000,000 at 0%, so 0. Madrid bonificación (DT 7ª D.Leg. 1/2010) = IP - ITSGF = 17,142.37, so IP payable 0. Wealth tax 0. Total 15,000."
+    },
+    {
+      "path": "holding_sl",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 100000,
+      "wealth": 10000000,
+      "expected": 54275,
+      "working": "Case: a married couple who own the wealth 50/50 and are taxed separately (wealth tax and IRPF are individual); net wealth EUR 10,000,000 including their main home (worth well over EUR 600,000); all dividends and gains from abroad (15% withholding on dividends). The family's S.L. owns the portfolio; the inputs are the company's income. Taxable base: dividends 200,000 + gains 100,000 - accounting costs 3,300 (the running cost recorded in the tax file; deductible under art. 10.3 LIS, the tax base starting from the accounting result) = 296,700; CIT 25% (art. 29.1 LIS; no reduced rate or participation exemption for an entidad patrimonial with stakes under 5%, arts. 5.2 and 21.1.a LIS) = 74,175. Deduction for international double taxation (art. 31 LIS): the lesser of the foreign tax paid, 15% x 200,000 = 30,000, and the Spanish tax on those dividends (about 49,000): 30,000. CIT payable 44,175. Add the running cost itself, 3,300: 47,475. Wealth tax is on the family's shares, valued at the theoretical value of the last approved balance sheet (art. 16 LIP), taken equal to the portfolio's value, so the same net wealth of 10,000,000 as for direct holding. Wealth tax, each spouse (5,000,000 each): base imponible 5,000,000 - main home 300,000 (art. 4.Nueve LIP) = 4,700,000; Madrid mínimo exento 700,000 (art. 19 D.Leg. 1/2010) gives a base liquidable of 4,000,000. IP on the state scale (art. 30.2 LIP): 25,904.35 + 1.7% x (4,000,000 - 2,673,999.01) = 48,446.37. While the ITSGF exists, Madrid's 100% bonificación is replaced by one equal to the excess of the IP over the ITSGF (DT 7ª D.Leg. 1/2010). ITSGF (art. 3 Ley 38/2022): base 4,700,000 - 700,000 = 4,000,000; 0% to 3,000,000, then 1.7% x 1,000,000 = 17,000. Bonificación 48,446.37 - 17,000 = 31,446.37, so IP payable 17,000, and the ITSGF of 17,000 is cancelled by the IP paid (art. 3.Quince). Per spouse 17,000; couple 34,000. Total 47,475 + 34,000 = 81,475. Payout tax excluded. Joint limit (art. 31 Ley 19/1991; art. 3.Doce Ley 38/2022 for the ITSGF), per spouse: IRPF cuota plus wealth tax at most 60% of the IRPF base, leaving out gains on assets held over a year; the wealth tax gives way, by at most 80%. The S.L. pays out nothing in this check, so the parents' IRPF base is 0 and the ITSGF is cut by the full 80%: 20% x 34,000 = 6,800. Total 47,475 + 6,800 = 54,275."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 9000000,
+      "children": 3,
+      "expected": 28276.99,
+      "working": "Resident deceased in Madrid (most days of the last 5 years, art. 28 Ley 22/2009); worldwide assets are taxed on each heir (Ley 29/1987). Each child receives 9,000,000 / 3 = 3,000,000 (base imponible, art. 9 LISD). Group II reduction in Madrid 16,000 (art. 21.Uno.1 D.Leg. 1/2010) leaves a base liquidable of 2,984,000. Madrid scale: 199,604.23 + 34% x (2,984,000 - 798,817.20 = 2,185,182.80) = 199,604.23 + 742,962.15 = 942,566.38. Coefficient for pre-existing wealth up to EUR 403,000: 1.0 (art. 24 D.Leg. 1/2010), so the cuota is 942,566.38. Bonificación of 99% for Group II (art. 25.1 D.Leg. 1/2010): 942,566.38 x 1% = 9,425.66 per child. Three children: 28,276.99."
+    },
+    {
+      "path": "holding_sl",
+      "kind": "inheritance",
+      "estate": 9000000,
+      "children": 3,
+      "expected": 28276.99,
+      "working": "The children inherit shares of the S.L. valued at the theoretical value of the last approved balance sheet (art. 16 LIP, used by the inheritance tax), assumed equal to the portfolio's 9,000,000. The 95% reduction for family-company shares (art. 20.2.c Ley 29/1987) needs the shares to be exempt from wealth tax, which an entidad patrimonial's are not (art. 4.Ocho.Dos.a LIP), so the Madrid rules apply as for direct holding: 3 x 9,425.66 = 28,276.99 (worked in the personal check: 3,000,000 per child, reduction 16,000, Madrid scale 942,566.38, coefficient 1.0, 99% bonificación)."
+    }
+  ],
+  "assumptions": [
+    "The family is an EU-citizen couple with no Spanish job or business, owning the wealth 50/50 and taxed separately (Spanish wealth tax and IRPF are individual taxes). The tax files encode the couple by doubling each spouse's allowance and bracket limits, which is exact for an equal split.",
+    "The Beckham regime (art. 93 LIRPF) needs a Spanish employment contract, a directorship or a qualifying entrepreneurial activity, so this family cannot use it and it has no path (the tax file marks it requires_qualifying_activity).",
+    "Savings income (dividends, gains, payouts) is taxed at the top rate of 30% (arts. 66 and 76 LIRPF), assuming both spouses are above EUR 300,000 of savings income. A smaller income would pay 19% to 27% on the lower slices, so the scores are slightly high for modest portfolios.",
+    "Each death passes the whole estate (portfolio and home) to the three children, who are adults (21 or over) with pre-existing wealth within the lowest coefficient band of the inheritance tax (coefficient 1.0).",
+    "Declarations are made on time, in a notarial deed where required, so regional rebates apply. Lifetime gifts to children are not modelled; they are taxed under a different regional scale (see the tax file).",
+    "The S.L. holding is funded with cash or newly bought assets (contributing existing shares is a taxable disposal for the contributor) and keeps its books at fair value, so the inherited shares are valued at about the portfolio's value; a deferred-tax liability on unrealised gains could lower the theoretical value used for wealth and inheritance tax, which is not assumed.",
+    "Madrid rebates the wealth tax only by the excess of the IP over the ITSGF while the ITSGF is in force (DT 7ª D.Leg. 1/2010); if the ITSGF were repealed, Madrid would return to a 100% rebate and zero wealth tax, for both paths.",
+    "A private foundation is not a path: Spanish foundations must pursue general-interest purposes and may not be formed mainly to benefit the founder or relatives to the fourth degree (arts. 2 and 3 Ley 50/2002). A family trust has no basis in Spanish law and is treated as transparent (the assets stay taxed as the settlor's), so it changes nothing. The SICAV's 1% rate needs 100 shareholders (art. 29.4 LIS with art. 9.4 Ley 35/2003). The ETVE regime (foreign participations of at least 5%) does not fit a diversified listed portfolio.",
+    "Checks assume a main home worth at least EUR 300,000 per spouse: its exemption (art. 4.Nueve LIP) is folded into the wealth-tax allowance, as for the family's EUR 5M home. The joint limit is applied at top marginal rates (the real family's dividends are about EUR 600,000); on small incomes the progressive IRPF scale would give a slightly different cut."
+  ],
+  "open_questions": [
+    "Needs an engine change: the inheritance-tax coefficient that depends on the heir's pre-existing wealth (art. 22 Ley 29/1987; Madrid art. 24 D.Leg. 1/2010: 1.05 above EUR 403,000, 1.10 above EUR 2,008,000, 1.20 above EUR 4,021,000). A child who already holds over EUR 403,000 pays 5% to 20% more on the cuota, and a child enriched by the first death will usually do so at the second; the engine has no per-heir wealth, so it applies the coefficient of 1.0, a floor.",
+    "In Madrid the bonificación is computed between the IP and the ITSGF each after its own joint limit (DT 7ª D.Leg. 1/2010 refers to art. 31 LIP and art. 3.Doce Ley 38/2022), so once the joint limit is modelled the result may differ from the plain ITSGF scale in the tax file; not worked out.",
+    "The standard S.L. holding was costed from one online gestoría price list and the Quipu start-up guide; a quote for a EUR 30m portfolio with hundreds of positions may be higher (see ESP.json).",
+    "The citations to Ley 22/2009 art. 28 (residence for the regional rule), art. 10.3 LIS, art. 20.2.c Ley 29/1987 (95% reduction needing wealth-tax exemption), art. 22 Ley 29/1987 and art. 24 D.Leg. 1/2010 were not opened as text; the Madrid scale, coefficients, reduction and bonificación were read in the Ministerio de Hacienda document 'Medidas 2026'.",
+    "ITSGF with a holding S.L.: whether the 80% maximum reduction of the joint limit (art. 3.Doce Ley 38/2022) is applied before or after deducting the regional wealth tax paid (art. 3.Quince) is not settled by any AEAT guidance found (modelo 718 instructions unavailable); applied after, the S.L. path's wealth tax would be about 20% higher. An independent check computed EUR 73,450 / 75,449 for the two S.L. annual checks under that reading.",
+    "Tax file: the Madrid inheritance brackets (from EUR 8,313.20 ... 34% from EUR 798,817.20) differ slightly from the state scale Madrid applies (from EUR 7,993.46 ... 34% from EUR 797,555.08, cuota 199,291.40 at that point, art. 21 Ley 29/1987); the effect is under 0.1% of the tax."
+  ],
+  "sources": [
+    {
+      "title": "Ley 35/2006 del IRPF (consolidated text: arts. 25, 33, 66, 76, 80)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ley 19/1991 del Impuesto sobre el Patrimonio (consolidated text: arts. 4, 16, 28, 30, 31)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ley 38/2022, art. 3: Impuesto Temporal de Solidaridad de las Grandes Fortunas (consolidated text)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ley 27/2014 del Impuesto sobre Sociedades (consolidated text: arts. 5, 21, 29, 31)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ley 29/1987 del Impuesto sobre Sucesiones y Donaciones (consolidated text)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-28141",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+      "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+      "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Spain - Corporate - Taxes on corporate income (last reviewed 30 June 2026)",
+      "url": "https://taxsummaries.pwc.com/spain/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Spain - Corporate - Income determination (last reviewed 30 June 2026)",
+      "url": "https://taxsummaries.pwc.com/spain/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Spain - Individual - Taxes on personal income (last reviewed 30 June 2026)",
+      "url": "https://taxsummaries.pwc.com/spain/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ley 50/2002 de Fundaciones, arts. 2 and 3 (consolidated text)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25180",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

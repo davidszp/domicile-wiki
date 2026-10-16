@@ -1,7 +1,7 @@
 {
   "parent": "ESP",
   "unit_type": "autonomous community / autonomous city",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "notes": "All 17 autonomous communities plus Ceuta and Melilla. Savings income (capital gains, dividends) is taxed on the national 19-30% scale in all common-regime regions; only Navarra and the Basque Country have their own IRPF. Wealth-tax brackets per region encode max(regional IP after rebates, state ITSGF) computed from the official 2026 scales (Ministerio de Hacienda, 'Tributación Autonómica. Medidas 2026', updated 23/09/2026). Inheritance brackets assume a child aged 21+ with pre-existing wealth below about EUR 400,000 (multiplier 1.0); richer heirs pay up to 20% more where state multipliers apply. Regions without an override for a metric use the national (state) rules.",
   "units": [
     {
@@ -11,10 +11,10 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "Madrid: the 100% IP rebate (since 2009) is replaced, while the ITSGF is in force, by a rebate equal to the excess of IP over ITSGF, so the IP paid equals the ITSGF amount and stays in Madrid. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
-            "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+            "summary": "Madrid: the 100% IP rebate (since 2009) does not apply while the ITSGF is in force (DT 7ª D.Leg. 1/2010, from Ley 12/2023); instead the rebate equals the excess of IP over ITSGF, so the IP paid equals the ITSGF amount and stays in Madrid. Result: no tax up to EUR 4m of net wealth per person (EUR 8m for a couple owning 50/50); above that the burden equals the ITSGF. Scored for the reference couple (each spouse taxed separately, with the EUR 700,000 allowance and EUR 300,000 main-home exemption), net wealth including the home: EUR 10m: EUR 34,000; EUR 20m: EUR 233,216; EUR 35m: EUR 710,728 before the joint IRPF limit.",
+            "exemptions_thresholds": "IP allowance EUR 700,000 and main home exempt up to EUR 300,000, each per person. The state ITSGF (Ley 38/2022) then applies per person: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid. Allowance and scales are fixed by law and not indexed.",
             "regional_differences": "",
-            "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
+            "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax). The joint limit (art. 31 LIP, art. 3.Doce Ley 38/2022: IRPF + IP + ITSGF at most 60% of the IRPF base, IP and ITSGF cut by at most 80%) can lower the tax a lot for a portfolio that yields little taxable income; the engine does not apply it.",
             "tax_year": "2026",
             "sources": [
               {
@@ -39,16 +39,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP rebated; ITSGF payable (Madrid)",
+                "name": "IP rebated; ITSGF payable (Madrid), married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 3700000,
+                "exempt_amount": 8000000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -56,18 +56,25 @@
                     "rate": 0.017
                   },
                   {
-                    "from_amount": 2347998.03,
+                    "from_amount": 4695996.06,
                     "rate": 0.021
                   },
                   {
-                    "from_amount": 7695996.06,
+                    "from_amount": 15391992.12,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP, ITSGF), which in Madrid is the ITSGF scale (Ley 38/2022 art. 3.Once: 0% to EUR 3,000,000 of base, 1.7% to 5,347,998.03, 2.1% to 10,695,996.06, 3.5% above). Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount of net wealth is 700,000 (allowance) + 300,000 (main home, art. 4.Nueve LIP) + 3,000,000 = 4,000,000, so 8,000,000 for the couple, and every bracket limit is doubled (single limits 2,347,998.03 and 7,695,996.06 above the tax-free amount). The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP and art. 3.Doce Ley 38/2022: 60% of the IRPF base, reduction at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "thresholds_indexed": false,
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            }
           },
           "inheritance": {
             "summary": "Madrid: 99% rebate for children on inheritances and gifts; about 0.33% of a EUR 10m inheritance.",
@@ -251,8 +258,8 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "Andalucía: the 100% IP rebate (since 2022) is replaced, while the ITSGF is in force, by a rebate equal to the excess of IP over ITSGF (choice removed by Ley 7/2024 from 31/12/2024); the regional scale is suspended. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
-            "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+            "summary": "Andalucía: the general 100% rebate does not apply while the ITSGF is in force; the taxpayer instead gets a rebate equal to the excess of the IP quota (after the art. 31 LIP limit) over the ITSGF quota (DT 5ª Ley 5/2021, as amended by DF 5ª.Cuatro Ley 7/2024); the regional scale is without effect. Result: no tax up to EUR 4m of net wealth per person (EUR 8m for a couple owning 50/50); above that the burden equals the ITSGF. Scored for the reference couple (each spouse taxed separately, with the EUR 700,000 allowance and EUR 300,000 main-home exemption), net wealth including the home: EUR 10m: EUR 34,000; EUR 20m: EUR 233,216; EUR 35m: EUR 710,728, before the joint IRPF limit.",
+            "exemptions_thresholds": "IP allowance EUR 700,000 and main home exempt up to EUR 300,000, each per person. The state ITSGF (Ley 38/2022) then applies per person: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid. Allowance and scales are fixed by law and not indexed.",
             "regional_differences": "",
             "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
             "tax_year": "2026",
@@ -279,16 +286,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP rebated; ITSGF payable (Andalucía)",
+                "name": "IP rebated; ITSGF payable (Andalucía), married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 3700000,
+                "exempt_amount": 8000000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -296,18 +303,25 @@
                     "rate": 0.017
                   },
                   {
-                    "from_amount": 2347998.03,
+                    "from_amount": 4695996.06,
                     "rate": 0.021
                   },
                   {
-                    "from_amount": 7695996.06,
+                    "from_amount": 15391992.12,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP, ITSGF), which here is the ITSGF scale (Ley 38/2022 art. 3.Once: 0% to EUR 3,000,000 of base, 1.7% to 5,347,998.03, 2.1% to 10,695,996.06, 3.5% above). Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount of net wealth is 700,000 (allowance) + 300,000 (main home, art. 4.Nueve LIP; no region changed it) + 3,000,000 (ITSGF 0% band) = 4,000,000, so 8,000,000 for the couple, and every bracket limit is doubled (single limits 2,347,998.03 and 7,695,996.06 above the tax-free amount). The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP and art. 3.Doce Ley 38/2022: 60% of the IRPF base, reduction at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            },
+            "thresholds_indexed": false
           },
           "inheritance": {
             "summary": "Andalucía: EUR 1m reduction per child and 99% rebate; about 0.23% of a EUR 10m inheritance.",
@@ -471,8 +485,8 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "La Rioja: the 100% IP rebate (from 2025, Ley 6/2024) is replaced, while the ITSGF is in force, by a rebate equal to the excess of IP over ITSGF. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
-            "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+            "summary": "La Rioja: the 100% general rebate (art. 33 bis Ley 10/2017) does not apply while the ITSGF is in force; instead a rebate equal to the excess of the IP quota over the ITSGF quota (DA 4ª Ley 10/2017, Ley 6/2024). Result: no tax up to EUR 4m of net wealth per person (EUR 8m for a couple owning 50/50); above that the burden equals the ITSGF. Scored for the reference couple (each spouse taxed separately, with the EUR 700,000 allowance and EUR 300,000 main-home exemption), net wealth including the home: EUR 10m: EUR 34,000; EUR 20m: EUR 233,216; EUR 35m: EUR 710,728, before the joint IRPF limit.",
+            "exemptions_thresholds": "IP allowance EUR 700,000 and main home exempt up to EUR 300,000, each per person. The state ITSGF (Ley 38/2022) then applies per person: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid. Allowance and scales are fixed by law and not indexed.",
             "regional_differences": "",
             "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
             "tax_year": "2026",
@@ -499,16 +513,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP rebated; ITSGF payable (La Rioja)",
+                "name": "IP rebated; ITSGF payable (La Rioja), married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 3700000,
+                "exempt_amount": 8000000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -516,18 +530,25 @@
                     "rate": 0.017
                   },
                   {
-                    "from_amount": 2347998.03,
+                    "from_amount": 4695996.06,
                     "rate": 0.021
                   },
                   {
-                    "from_amount": 7695996.06,
+                    "from_amount": 15391992.12,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP, ITSGF), which here is the ITSGF scale (Ley 38/2022 art. 3.Once: 0% to EUR 3,000,000 of base, 1.7% to 5,347,998.03, 2.1% to 10,695,996.06, 3.5% above). Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount of net wealth is 700,000 (allowance) + 300,000 (main home, art. 4.Nueve LIP; no region changed it) + 3,000,000 (ITSGF 0% band) = 4,000,000, so 8,000,000 for the couple, and every bracket limit is doubled (single limits 2,347,998.03 and 7,695,996.06 above the tax-free amount). The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP and art. 3.Doce Ley 38/2022: 60% of the IRPF base, reduction at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            },
+            "thresholds_indexed": false
           },
           "inheritance": {
             "summary": "La Rioja: 99% deduction for children on inheritances and gifts; about 0.33% of a EUR 10m inheritance.",
@@ -653,8 +674,8 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "Murcia: there is no general rebate, but since 25/7/2025 (Ley 3/2025) a rebate equal to the excess of IP over ITSGF applies; with no ITSGF due, the whole IP is rebated. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
-            "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+            "summary": "Murcia: no general rebate, but while the ITSGF is in force a rebate equal to the excess of the IP quota over the ITSGF quota applies (DT 2ª D.Leg. 1/2010, Ley 3/2025, from 25/7/2025); the regional allowance is the state EUR 700,000 for 2026 (the EUR 3.7m allowance was only for the 2023 and 2024 accruals). Result: no tax up to EUR 4m of net wealth per person (EUR 8m for a couple owning 50/50); above that the burden equals the ITSGF. Scored for the reference couple (each spouse taxed separately, with the EUR 700,000 allowance and EUR 300,000 main-home exemption), net wealth including the home: EUR 10m: EUR 34,000; EUR 20m: EUR 233,216; EUR 35m: EUR 710,728, before the joint IRPF limit.",
+            "exemptions_thresholds": "IP allowance EUR 700,000 and main home exempt up to EUR 300,000, each per person. The state ITSGF (Ley 38/2022) then applies per person: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid. Allowance and scales are fixed by law and not indexed.",
             "regional_differences": "",
             "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
             "tax_year": "2026",
@@ -681,16 +702,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP rebated; ITSGF payable (Murcia)",
+                "name": "IP rebated; ITSGF payable (Murcia), married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 3700000,
+                "exempt_amount": 8000000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -698,18 +719,25 @@
                     "rate": 0.017
                   },
                   {
-                    "from_amount": 2347998.03,
+                    "from_amount": 4695996.06,
                     "rate": 0.021
                   },
                   {
-                    "from_amount": 7695996.06,
+                    "from_amount": 15391992.12,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP, ITSGF), which here is the ITSGF scale (Ley 38/2022 art. 3.Once: 0% to EUR 3,000,000 of base, 1.7% to 5,347,998.03, 2.1% to 10,695,996.06, 3.5% above). Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount of net wealth is 700,000 (allowance) + 300,000 (main home, art. 4.Nueve LIP; no region changed it) + 3,000,000 (ITSGF 0% band) = 4,000,000, so 8,000,000 for the couple, and every bracket limit is doubled (single limits 2,347,998.03 and 7,695,996.06 above the tax-free amount). The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP and art. 3.Doce Ley 38/2022: 60% of the IRPF base, reduction at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            },
+            "thresholds_indexed": false
           },
           "inheritance": {
             "summary": "Murcia: 99% deduction for children; about 0.36% of a EUR 10m inheritance.",
@@ -837,8 +865,8 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "Cantabria: the 100% IP rebate (since 2024) does not apply when net wealth after the EUR 700,000 allowance exceeds EUR 3m while the ITSGF exists; a rebate equal to IP minus ITSGF applies instead. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
-            "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+            "summary": "Cantabria: the 100% general rebate (art. 4 bis D.Leg. 62/2008) does not apply when net wealth after the EUR 700,000 allowance exceeds EUR 3m while the ITSGF is in force; instead a rebate equal to the excess of the IP quota over the ITSGF quota (DA 3ª, Ley 3/2023 and Ley 3/2024). Below that, the IP is rebated in full and the ITSGF is nil. Result: no tax up to EUR 4m of net wealth per person (EUR 8m for a couple owning 50/50); above that the burden equals the ITSGF. Scored for the reference couple (each spouse taxed separately, with the EUR 700,000 allowance and EUR 300,000 main-home exemption), net wealth including the home: EUR 10m: EUR 34,000; EUR 20m: EUR 233,216; EUR 35m: EUR 710,728, before the joint IRPF limit.",
+            "exemptions_thresholds": "IP allowance EUR 700,000 and main home exempt up to EUR 300,000, each per person. The state ITSGF (Ley 38/2022) then applies per person: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid. Allowance and scales are fixed by law and not indexed.",
             "regional_differences": "",
             "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
             "tax_year": "2026",
@@ -865,16 +893,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP rebated; ITSGF payable (Cantabria)",
+                "name": "IP rebated; ITSGF payable (Cantabria), married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 3700000,
+                "exempt_amount": 8000000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -882,18 +910,25 @@
                     "rate": 0.017
                   },
                   {
-                    "from_amount": 2347998.03,
+                    "from_amount": 4695996.06,
                     "rate": 0.021
                   },
                   {
-                    "from_amount": 7695996.06,
+                    "from_amount": 15391992.12,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP, ITSGF), which here is the ITSGF scale (Ley 38/2022 art. 3.Once: 0% to EUR 3,000,000 of base, 1.7% to 5,347,998.03, 2.1% to 10,695,996.06, 3.5% above). Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount of net wealth is 700,000 (allowance) + 300,000 (main home, art. 4.Nueve LIP; no region changed it) + 3,000,000 (ITSGF 0% band) = 4,000,000, so 8,000,000 for the couple, and every bracket limit is doubled (single limits 2,347,998.03 and 7,695,996.06 above the tax-free amount). The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP and art. 3.Doce Ley 38/2022: 60% of the IRPF base, reduction at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            },
+            "thresholds_indexed": false
           },
           "inheritance": {
             "summary": "Cantabria: 100% rebate of the tax for children and spouses on inheritances and on gifts (since 2019/2024).",
@@ -954,8 +989,8 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "Extremadura: a general 100% IP rebate applies (since 2023); with no IP paid, the ITSGF is payable in full to the state. Result: no tax up to about EUR 3.7m of net wealth; above that the burden equals the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 22,100; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
-            "exemptions_thresholds": "IP allowance EUR 700,000; main home exempt up to EUR 300,000. The state ITSGF (Ley 38/2022) then applies: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid.",
+            "summary": "Extremadura: a general 100% rebate with no ITSGF clause (art. 15 bis D.Leg. 1/2018, Decreto-ley 4/2023), so the IP is rebated in full and the ITSGF is payable in full to the state (the regional EUR 500,000 allowance and own scale are irrelevant because the whole IP is rebated). Result: no tax up to EUR 4m of net wealth per person (EUR 8m for a couple owning 50/50); above that the burden equals the ITSGF. Scored for the reference couple (each spouse taxed separately, with the EUR 700,000 allowance and EUR 300,000 main-home exemption), net wealth including the home: EUR 10m: EUR 34,000; EUR 20m: EUR 233,216; EUR 35m: EUR 710,728, before the joint IRPF limit.",
+            "exemptions_thresholds": "IP allowance EUR 700,000 and main home exempt up to EUR 300,000, each per person. The state ITSGF (Ley 38/2022) then applies per person: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid. Allowance and scales are fixed by law and not indexed.",
             "regional_differences": "",
             "important_exceptions": "If the ITSGF were repealed, the 100% IP rebate would apply in full (zero wealth tax).",
             "tax_year": "2026",
@@ -982,16 +1017,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP rebated; ITSGF payable (Extremadura)",
+                "name": "IP rebated; ITSGF payable (Extremadura), married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 3700000,
+                "exempt_amount": 8000000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -999,18 +1034,25 @@
                     "rate": 0.017
                   },
                   {
-                    "from_amount": 2347998.03,
+                    "from_amount": 4695996.06,
                     "rate": 0.021
                   },
                   {
-                    "from_amount": 7695996.06,
+                    "from_amount": 15391992.12,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP, ITSGF), which here is the ITSGF scale (Ley 38/2022 art. 3.Once: 0% to EUR 3,000,000 of base, 1.7% to 5,347,998.03, 2.1% to 10,695,996.06, 3.5% above). Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount of net wealth is 700,000 (allowance) + 300,000 (main home, art. 4.Nueve LIP; no region changed it) + 3,000,000 (ITSGF 0% band) = 4,000,000, so 8,000,000 for the couple, and every bracket limit is doubled (single limits 2,347,998.03 and 7,695,996.06 above the tax-free amount). The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP and art. 3.Doce Ley 38/2022: 60% of the IRPF base, reduction at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            },
+            "thresholds_indexed": false
           },
           "inheritance": {
             "summary": "Extremadura: EUR 500,000 reduction and 99% rebate for children's inheritances; about 0.32% of a EUR 10m inheritance. Gifts above EUR 600,000 get no rebate on the excess.",
@@ -1136,8 +1178,8 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "Catalonia: IP payable with a EUR 500,000 allowance and a regional scale 0.21%-2.75%, plus a 3.48% band above EUR 20m base while the ITSGF exists (Decreto-ley 10/2024). The ITSGF tops up only where it exceeds IP (roughly above EUR 17.5m). Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 59,794; EUR 10m: EUR 166,482; EUR 20m: EUR 453,364.",
-            "exemptions_thresholds": "Allowance EUR 500,000; main home EUR 300,000 (state). Scale art. 621-2 and DT 1ª Libro sexto Código tributario (D.Leg. 1/2024).",
+            "summary": "Catalonia: IP payable with a EUR 500,000 allowance and a regional scale 0.21%-2.75%, plus a 3.48% band above EUR 20m base while the ITSGF exists (Decreto-ley 10/2024). The ITSGF tops up only where it exceeds IP (roughly above EUR 17.5m of base per person). Scored for the reference couple (each spouse taxed separately, with the EUR 500,000 allowance and EUR 300,000 main-home exemption), net wealth including the home: EUR 10m: EUR 108,877; EUR 20m: EUR 319,734; EUR 35m: EUR 715,928 before the joint IRPF limit.",
+            "exemptions_thresholds": "Allowance EUR 500,000 per person; main home EUR 300,000 per person (state). Scale art. 621-2 and DT 1ª Libro sexto Código tributario (D.Leg. 1/2024). Allowance and scale are fixed by law and not indexed.",
             "regional_differences": "",
             "important_exceptions": "Bonuses only for protected disability assets (99%) and managed forests (95%).",
             "tax_year": "2026",
@@ -1164,16 +1206,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP Cataluña + ITSGF top-up",
+                "name": "IP Cataluña + ITSGF top-up, married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 500000,
+                "exempt_amount": 1600000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -1181,45 +1223,52 @@
                     "rate": 0.0021
                   },
                   {
-                    "from_amount": 167129.45,
+                    "from_amount": 334258.9,
                     "rate": 0.00315
                   },
                   {
-                    "from_amount": 334252.88,
+                    "from_amount": 668505.76,
                     "rate": 0.00525
                   },
                   {
-                    "from_amount": 668499.75,
+                    "from_amount": 1336999.5,
                     "rate": 0.00945
                   },
                   {
-                    "from_amount": 1336999.75,
+                    "from_amount": 2673999.5,
                     "rate": 0.01365
                   },
                   {
-                    "from_amount": 2673999.01,
+                    "from_amount": 5347998.02,
                     "rate": 0.01785
                   },
                   {
-                    "from_amount": 5347998.03,
+                    "from_amount": 10695996.06,
                     "rate": 0.02205
                   },
                   {
-                    "from_amount": 10695996.06,
+                    "from_amount": 21391992.12,
                     "rate": 0.0275
                   },
                   {
-                    "from_amount": 17046647.47,
+                    "from_amount": 34093294.94,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales. Written for the reference couple owning the wealth 50/50 and taxed separately: per person the allowance is 500,000 (art. 621-1 Libro sexto Código tributario) plus 300,000 for the main home (art. 4.Nueve LIP), so 1,600,000 for the couple, and every bracket limit is doubled (single limits 167,129.45 ... 10,695,996.06 from art. 621-2; the ITSGF takes over above 17,046,647.47 of base). The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP: IRPF + IP at most 60% of the IRPF base, IP cut by at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "thresholds_indexed": false,
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            }
           },
           "inheritance": {
-            "summary": "Catalonia: children 21+ get EUR 100,000 reduction, scale 7%-32%, and a rebate that falls from 60% (first EUR 100,000 of base) to 0% (above EUR 3m) as a weighted average; about 27.99% of a EUR 10m inheritance.",
+            "summary": "Catalonia: children 21+ get EUR 100,000 reduction, scale 7%-32%, and a rebate that falls from 60% (first EUR 100,000 of base) to 0% (above EUR 3m) as a weighted average; about 19.6% of a EUR 9m estate split between three children (EUR 586,437 each), 20.7% of EUR 10m, and about 28% for a single heir inheriting EUR 10m.",
             "exemptions_thresholds": "Group II reduction EUR 100,000 per child (art. 631-2); scale 7/11/17/24/32% (art. 633-1); multipliers 1.0-1.2 (1.1 from EUR 500,000 of pre-existing wealth); rebate table art. 633-4.2.",
             "important_exceptions": "Brackets are a piecewise-linear fit of tax = scale x (1 - weighted-average rebate), exact at the rebate band edges, multiplier 1.0. Using family-business or other optional reductions forfeits the rebate.",
             "tax_year": "2026",
@@ -1246,7 +1295,7 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
@@ -1416,8 +1465,8 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "Galicia: IP at the state scale (top band raised to 3.5% while the ITSGF exists) with a 50% rebate that is reduced by any ITSGF due, so the burden is the higher of half the IP and the ITSGF. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 26,773; EUR 10m: EUR 122,908; EUR 20m: EUR 453,364.",
-            "exemptions_thresholds": "Allowance EUR 700,000; main home EUR 300,000.",
+            "summary": "Galicia: IP at the state scale (top band raised to 3.5% while the ITSGF exists) with a 50% rebate that is reduced by any ITSGF due, so the burden is the higher of half the IP and the ITSGF. Scored for the reference couple (each spouse taxed separately; tax-free amount EUR 1,000,000 per person, EUR 2,000,000 for the couple), net wealth including the home: EUR 10m: EUR 48,446; EUR 20m: EUR 233,216; EUR 35m: EUR 710,728, before the joint IRPF limit.",
+            "exemptions_thresholds": "Allowance EUR 700,000 and main home EUR 300,000, each per person (Galicia sets no allowance of its own). The state ITSGF (Ley 38/2022) applies per person on top: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid; the quota is the higher of regional IP and ITSGF.",
             "regional_differences": "",
             "important_exceptions": "Several 75-100% deductions for local business and farmland holdings.",
             "tax_year": "2026",
@@ -1444,16 +1493,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP Galicia (50% rebate) / ITSGF",
+                "name": "IP Galicia (50% rebate) / ITSGF, married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 700000,
+                "exempt_amount": 2000000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -1461,42 +1510,48 @@
                     "rate": 0.001
                   },
                   {
-                    "from_amount": 167129.45,
+                    "from_amount": 334258.9,
                     "rate": 0.0015
                   },
                   {
-                    "from_amount": 334252.88,
+                    "from_amount": 668505.76,
                     "rate": 0.0025
                   },
                   {
-                    "from_amount": 668499.75,
+                    "from_amount": 1336999.5,
                     "rate": 0.0045
                   },
                   {
-                    "from_amount": 1336999.51,
+                    "from_amount": 2673999.02,
                     "rate": 0.0065
                   },
                   {
-                    "from_amount": 2673999.01,
+                    "from_amount": 5347998.02,
                     "rate": 0.0085
                   },
                   {
-                    "from_amount": 4849786.57,
+                    "from_amount": 9699573.14,
                     "rate": 0.017
                   },
                   {
-                    "from_amount": 5347998.03,
+                    "from_amount": 10695996.06,
                     "rate": 0.021
                   },
                   {
-                    "from_amount": 10695996.06,
+                    "from_amount": 21391992.12,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP after rebates, state ITSGF) from the official 2026 scales. Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount of net wealth is 700,000 (allowance as the regional rule, ITSGF band where it governs) + 300,000 (main home, art. 4.Nueve LIP) = 1,000,000, so 2,000,000 for the couple, and every bracket limit is doubled. The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP and art. 3.Doce Ley 38/2022: 60% of the IRPF base, reduction at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            }
           },
           "inheritance": {
             "summary": "Galicia: EUR 1,000,000 reduction per child, then 5%-18%; no rebate for Group II; about 15.30% of a EUR 10m inheritance.",
@@ -1582,8 +1637,8 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "Asturias: IP payable, regional scale 0.22%-3.0%, state EUR 700,000 allowance; ITSGF tops up above about EUR 23.9m. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 61,429; EUR 10m: EUR 180,085; EUR 20m: EUR 472,826.",
-            "exemptions_thresholds": "Allowance EUR 700,000 (state); main home EUR 300,000.",
+            "summary": "Asturias: IP payable, regional scale 0.22%-3.0%, state EUR 700,000 allowance; ITSGF tops up only above about EUR 24.2m of net wealth per person (about EUR 48.4m for the couple). Scored for the reference couple (each spouse taxed separately; tax-free amount EUR 1,000,000 per person, EUR 2,000,000 for the couple), net wealth including the home: EUR 10m: EUR 111,039; EUR 20m: EUR 345,289; EUR 35m: EUR 777,651, before the joint IRPF limit.",
+            "exemptions_thresholds": "Allowance EUR 700,000 (state; Asturias has not set its own) and main home EUR 300,000, each per person. The state ITSGF (Ley 38/2022) applies per person on top: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid; the quota is the higher of regional IP and ITSGF.",
             "regional_differences": "",
             "important_exceptions": "",
             "tax_year": "2026",
@@ -1610,16 +1665,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP Asturias + ITSGF top-up",
+                "name": "IP Asturias + ITSGF top-up, married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 700000,
+                "exempt_amount": 2000000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -1627,42 +1682,48 @@
                     "rate": 0.0022
                   },
                   {
-                    "from_amount": 167129.45,
+                    "from_amount": 334258.9,
                     "rate": 0.0033
                   },
                   {
-                    "from_amount": 334252.88,
+                    "from_amount": 668505.76,
                     "rate": 0.0056
                   },
                   {
-                    "from_amount": 668499.75,
+                    "from_amount": 1336999.5,
                     "rate": 0.0102
                   },
                   {
-                    "from_amount": 1336999.51,
+                    "from_amount": 2673999.02,
                     "rate": 0.0148
                   },
                   {
-                    "from_amount": 2673999.01,
+                    "from_amount": 5347998.02,
                     "rate": 0.0197
                   },
                   {
-                    "from_amount": 5347998.03,
+                    "from_amount": 10695996.06,
                     "rate": 0.0248
                   },
                   {
-                    "from_amount": 10695996.06,
+                    "from_amount": 21391992.12,
                     "rate": 0.03
                   },
                   {
-                    "from_amount": 23192290.35,
+                    "from_amount": 46384580.7,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP after rebates, state ITSGF) from the official 2026 scales. Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount of net wealth is 700,000 (allowance as the regional rule, ITSGF band where it governs) + 300,000 (main home, art. 4.Nueve LIP) = 1,000,000, so 2,000,000 for the couple, and every bracket limit is doubled. The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP and art. 3.Doce Ley 38/2022: 60% of the IRPF base, reduction at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            }
           },
           "inheritance": {
             "summary": "Asturias: EUR 300,000 reduction per child, then a special Group I-II scale from 21.25% to 36.5% (above EUR 616,000); about 34.93% of a EUR 10m inheritance.",
@@ -1740,8 +1801,8 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "Comunitat Valenciana: IP allowance EUR 2,000,000 (Ley 5/2026, in force from 11/08/2026; EUR 1,000,000 from 31/12/2025), regional scale 0.25%-3.5%. The ITSGF (EUR 700,000 allowance) can exceed IP at some wealth levels; the brackets take the higher. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 39,166; EUR 10m: EUR 158,426; EUR 20m: EUR 484,702.",
-            "exemptions_thresholds": "Allowance EUR 2,000,000 for 2026; main home EUR 300,000.",
+            "summary": "Comunitat Valenciana: IP allowance EUR 2,000,000 (Ley 5/2026, in force from 11/08/2026; EUR 1,000,000 from 31/12/2025), regional scale 0.25%-3.5%. The regional IP exceeds the ITSGF at every wealth level, so the brackets are the regional IP scale (the ITSGF, credited against it, adds nothing). Scored for the reference couple (each spouse taxed separately; tax-free amount EUR 2,300,000 per person, EUR 4,600,000 for the couple), net wealth including the home: EUR 10m: EUR 65,613; EUR 20m: EUR 301,133; EUR 35m: EUR 773,403, before the joint IRPF limit.",
+            "exemptions_thresholds": "Allowance EUR 2,000,000 per person for 2026 (art. 8 Ley 13/1997, Ley 5/2026, in force from 11/08/2026) and main home EUR 300,000, each per person. The state ITSGF (Ley 38/2022) applies per person on top: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid; the quota is the higher of regional IP and ITSGF.",
             "regional_differences": "",
             "important_exceptions": "2025-2026 changes: allowance EUR 500,000 -> 1,000,000 (31/12/2025) -> 2,000,000 (11/08/2026).",
             "tax_year": "2026",
@@ -1768,16 +1829,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP Valencia / ITSGF",
+                "name": "IP Valencia / ITSGF, married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 2000000,
+                "exempt_amount": 4600000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -1785,38 +1846,44 @@
                     "rate": 0.0025
                   },
                   {
-                    "from_amount": 167129.45,
+                    "from_amount": 334258.9,
                     "rate": 0.0037
                   },
                   {
-                    "from_amount": 334252.88,
+                    "from_amount": 668505.76,
                     "rate": 0.0062
                   },
                   {
-                    "from_amount": 668499.75,
+                    "from_amount": 1336999.5,
                     "rate": 0.0112
                   },
                   {
-                    "from_amount": 1336999.51,
+                    "from_amount": 2673999.02,
                     "rate": 0.0162
                   },
                   {
-                    "from_amount": 2673999.01,
+                    "from_amount": 5347998.02,
                     "rate": 0.0212
                   },
                   {
-                    "from_amount": 5347998.03,
+                    "from_amount": 10695996.06,
                     "rate": 0.0262
                   },
                   {
-                    "from_amount": 10695996.06,
+                    "from_amount": 21391992.12,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP, state ITSGF) from the official 2026 scales; for Valencia the regional IP is the higher at every level (Ley 5/2026 allowance EUR 2m, scale 0.25%-3.5%). Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount of net wealth is 2,000,000 (allowance as the regional rule, ITSGF band where it governs) + 300,000 (main home, art. 4.Nueve LIP) = 2,300,000, so 4,600,000 for the couple, and every bracket limit is doubled. The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP and art. 3.Doce Ley 38/2022: 60% of the IRPF base, reduction at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            }
           },
           "inheritance": {
             "summary": "Valencia: EUR 100,000 reduction and 99% rebate for children on inheritances and gifts (since 28/5/2023); about 0.33% of a EUR 10m inheritance.",
@@ -2000,8 +2067,8 @@
       "regime_overrides": {
         "standard": {
           "wealth_tax": {
-            "summary": "Illes Balears: IP allowance EUR 3,000,000 (since 2024), regional scale 0.28%-3.45%. The ITSGF (EUR 700,000 allowance) exceeds the IP at many levels; the brackets take the higher of the two. Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 23,521; EUR 10m: EUR 145,445; EUR 20m: EUR 468,941.",
-            "exemptions_thresholds": "IP allowance EUR 3,000,000; main home EUR 300,000.",
+            "summary": "Illes Balears: IP allowance EUR 3,000,000 (since 2024), regional scale 0.28%-3.45%. The ITSGF (EUR 700,000 allowance) exceeds the IP at many levels; the brackets take the higher of the two. Scored for the reference couple (each spouse taxed separately; tax-free amount EUR 3,300,000 per person, EUR 6,600,000 for the couple), net wealth including the home: EUR 10m: EUR 36,303; EUR 20m: EUR 273,491; EUR 35m: EUR 744,681, before the joint IRPF limit.",
+            "exemptions_thresholds": "Allowance EUR 3,000,000 per person (art. 8 D.Leg. 1/2014, since 2024) and main home EUR 300,000, each per person. The state ITSGF (Ley 38/2022) applies per person on top: EUR 700,000 allowance, 0% on the next EUR 3m, 1.7% to EUR 5.35m, 2.1% to EUR 10.7m, 3.5% above, with credit for IP paid; the quota is the higher of regional IP and ITSGF.",
             "regional_differences": "",
             "important_exceptions": "",
             "tax_year": "2026",
@@ -2028,16 +2095,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "IP Illes Balears / ITSGF",
+                "name": "IP Illes Balears / ITSGF, married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 3000000,
+                "exempt_amount": 6600000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -2045,42 +2112,48 @@
                     "rate": 0.0028
                   },
                   {
-                    "from_amount": 170472.04,
+                    "from_amount": 340944.08,
                     "rate": 0.0041
                   },
                   {
-                    "from_amount": 340937.04,
+                    "from_amount": 681874.08,
                     "rate": 0.0069
                   },
                   {
-                    "from_amount": 681869.75,
+                    "from_amount": 1363739.5,
                     "rate": 0.0124
                   },
                   {
-                    "from_amount": 1336739.51,
+                    "from_amount": 2673479.02,
                     "rate": 0.0179
                   },
                   {
-                    "from_amount": 2727479.0,
+                    "from_amount": 5454958.0,
                     "rate": 0.0235
                   },
                   {
-                    "from_amount": 5454958.0,
+                    "from_amount": 10909916.0,
                     "rate": 0.029
                   },
                   {
-                    "from_amount": 10909915.99,
+                    "from_amount": 21819831.98,
                     "rate": 0.0345
                   },
                   {
-                    "from_amount": 48153318.64,
+                    "from_amount": 96306637.28,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Brackets encode the combined burden max(regional IP after rebates, state ITSGF) from the official 2026 scales. Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount of net wealth is 3,000,000 (allowance as the regional rule, ITSGF band where it governs) + 300,000 (main home, art. 4.Nueve LIP) = 3,300,000, so 6,600,000 for the couple, and every bracket limit is doubled. The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LIP and art. 3.Doce Ley 38/2022: 60% of the IRPF base, reduction at most 80%) is ignored."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.6,
+              "max_reduction": 0.8,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            }
           },
           "inheritance": {
             "summary": "Illes Balears: 100% rebate for children and spouses on inheritances (since 18/7/2023) and 100% deduction on gifts (since 25/7/2025).",
@@ -3052,8 +3125,8 @@
             "treaty_network": "Spanish treaties apply."
           },
           "wealth_tax": {
-            "summary": "Navarra: own wealth tax, EUR 550,000 allowance, 0.16%-2.0% and 3.5% above EUR 11.0m of base (in place of the ITSGF). Tax on EUR 5m: EUR 45,964; EUR 10m: EUR 128,280; EUR 20m: EUR 453,364.",
-            "exemptions_thresholds": "Allowance EUR 550,000 (art. 28.1 LF 13/1992); main home exempt up to EUR 250,000. Joint limit with IRPF: 65% of the IRPF base, but the IP reduction is capped at 55%.",
+            "summary": "Navarra: own wealth tax, EUR 550,000 allowance and main home exempt up to EUR 250,000 per person, 0.16%-2.0% and 3.5% above EUR 11.0m of base (in place of the ITSGF). Scored for the reference couple (each spouse taxed separately; tax-free amount EUR 800,000 per person, EUR 1,600,000 for the couple), net wealth including the home: EUR 10m: EUR 85,128; EUR 20m: EUR 248,159; EUR 35m: EUR 714,228, before the joint IRPF limit.",
+            "exemptions_thresholds": "Allowance EUR 550,000 per person (art. 28.1 LF 13/1992); main home exempt up to EUR 250,000 per person (art. 5.7). Joint limit with IRPF (art. 31): IRPF + IP at most 65% of the IRPF base (gains on assets held over a year in the savings base excluded), but the IP reduction is capped at 55%; limits are computed per person even for a family unit.",
             "regional_differences": "",
             "important_exceptions": "The 3.5% top band (above EUR 11,003,784.50 of base) is set year by year in DA 1ª LF 13/1992; Ley Foral 17/2025 (BON 31/12/2025) re-enacted the same scale for the 2026 tax period. It replaces the state ITSGF for Navarra residents and would need re-enacting for 2027.",
             "tax_year": "2026",
@@ -3087,16 +3160,16 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "high",
             "verification": "verified",
             "open_questions": [],
             "type": "broad",
             "components": [
               {
-                "name": "Impuesto sobre el Patrimonio de Navarra",
+                "name": "Impuesto sobre el Patrimonio de Navarra, married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 550000,
+                "exempt_amount": 1600000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -3104,42 +3177,48 @@
                     "rate": 0.0016
                   },
                   {
-                    "from_amount": 155511.88,
+                    "from_amount": 311023.76,
                     "rate": 0.0024
                   },
                   {
-                    "from_amount": 311023.76,
+                    "from_amount": 622047.52,
                     "rate": 0.004
                   },
                   {
-                    "from_amount": 622047.53,
+                    "from_amount": 1244095.06,
                     "rate": 0.0072
                   },
                   {
-                    "from_amount": 1244095.06,
+                    "from_amount": 2488190.12,
                     "rate": 0.0104
                   },
                   {
-                    "from_amount": 2488190.11,
+                    "from_amount": 4976380.22,
                     "rate": 0.0136
                   },
                   {
-                    "from_amount": 4976380.22,
+                    "from_amount": 9952760.44,
                     "rate": 0.0168
                   },
                   {
-                    "from_amount": 9952760.45,
+                    "from_amount": 19905520.9,
                     "rate": 0.02
                   },
                   {
-                    "from_amount": 11003784.5,
+                    "from_amount": 22007569.0,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Navarra's own scale (LF 13/1992 art. 30 and DA 1ª for 2026, re-enacted by Ley Foral 17/2025): 0.16% rising to 2.0%, and 3.5% above EUR 11,003,784.50 of taxable base. There is no ITSGF in Navarra (Convenio Económico) and no general rebate, so the scale is the whole tax. The tax is individual (art. 2, 6 and 7 LF 13/1992; assets common to both spouses are attributed half to each unless another share is shown). Written for the reference couple owning the wealth 50/50: per person the tax-free amount is 550,000 (mínimo exento, art. 28.1) + 250,000 (main home, art. 5.7) = 800,000, so 1,600,000 for the couple, and every bracket limit is doubled (single limits 155,511.88; 311,023.76; 622,047.53; 1,244,095.06; 2,488,190.11; 4,976,380.22; 9,952,760.45; 11,003,784.50). The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 31 LF 13/1992: 65%, reduction at most 55%) is modelled in income_cap."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.65,
+              "max_reduction": 0.55,
+              "counts_long_term_gains": false,
+              "notes": "Art. 31 LF 13/1992: IRPF cuota plus IP cuota may not exceed 65% of the IRPF taxable base (leaving out the savings-base balance of gains on assets held more than a year, and the part of the IP on assets that yield no taxable income); the IP is cut to fit, by at most 55% (at least 45% stays due). Computed per person even for a family unit (art. 31.3). Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            }
           },
           "inheritance": {
             "summary": "Navarra: children (any age) pay 0% on the first EUR 250,000 of taxable base and then 2%, 4%, 8%, 12% and 16% above EUR 3m; about 13.53% of a EUR 10m inheritance.",
@@ -3314,8 +3393,8 @@
             "treaty_network": "Spanish treaties apply."
           },
           "wealth_tax": {
-            "summary": "Basque Country (modelled on Bizkaia): own wealth tax, EUR 800,000 allowance, 0.2%-2.0%; the foral solidarity tax (NF 9/2023, 800,000 allowance, 1.5%-3.5%) tops it up only at the very top (about EUR 16.8m of net wealth and above). Combined IP+ITSGF on net wealth (after the main-home exemption) of EUR 5m: EUR 37,400; EUR 10m: EUR 119,400; EUR 20m: EUR 358,500.",
-            "exemptions_thresholds": "Bizkaia: allowance EUR 800,000; main home exempt up to EUR 400,000; joint limit with IRPF 65% of the IRPF base, IP reduction capped at 75%.",
+            "summary": "Basque Country (modelled on Bizkaia): own wealth tax, EUR 800,000 allowance and main home exempt up to EUR 400,000 per person, 0.2%-2.0%; the foral solidarity tax (NF 9/2023, 800,000 allowance, 1.5%-3.5%) tops it up only at the very top. Scored for the reference couple (each spouse taxed separately; tax-free amount EUR 1,200,000 per person, EUR 2,400,000 for the couple), net wealth including the home: EUR 10m: EUR 62,800; EUR 20m: EUR 224,800; EUR 35m: EUR 514,000, before the joint IRPF limit.",
+            "exemptions_thresholds": "Bizkaia, per person: allowance EUR 800,000; main home exempt up to EUR 400,000; joint limit with IRPF 65% of the general and savings bases, IP reduction capped at 75% (art. 33 NF 2/2013).",
             "regional_differences": "Bizkaia is modelled. Per Guía Fiscal (secondary source, updated 29/07/2026): Álava (NF 9/2013, revised by NF 3/2025) has the same EUR 800,000 allowance and EUR 400,000 main-home exemption but its own 8-band scale topping out at 2.5%; Gipuzkoa (NF 2/2018, revised by NF 1/2025) has a EUR 700,000 allowance, EUR 300,000 main-home exemption and a 2.5% top rate. Each territory has its own foral solidarity tax (Bizkaia NF 9/2023, Gipuzkoa NF 3/2023, Álava NF 23/2023) for net wealth above EUR 3m, credited against the foral IP. So Álava and Gipuzkoa are somewhat more expensive than the modelled Bizkaia figures at high wealth.",
             "important_exceptions": "The ITSGF is a concerted tax with foral rules (Concierto DA 5ª); each territory adopted its own norm (Bizkaia NF 9/2023).",
             "tax_year": "2026",
@@ -3349,19 +3428,20 @@
                 "accessed": "2026-10-15"
               }
             ],
-            "verified_on": "2026-10-15",
+            "verified_on": "2026-10-16",
             "confidence": "medium",
             "verification": "partially_verified",
             "open_questions": [
               "Álava and Gipuzkoa wealth-tax band limits were not verified from official texts: the Gipuzkoa Hacienda site returned HTTP 503 and araba.eus did not respond on 2026-10-15. Only their allowances and 2.5% top rates are known, from a secondary source.",
-              "Bizkaia IP consolidated text shows last change 01/01/2024; Guía Fiscal cites a revision by NF 2/2025 that was not checked for wealth-tax changes."
+              "Bizkaia IP consolidated text shows last change 01/01/2024; Guía Fiscal cites a revision by NF 2/2025 that was not checked for wealth-tax changes.",
+              "Basque cap: whether gains on assets held over a year are excluded from the 65% base was not confirmed (income_cap.counts_long_term_gains = false is assumed); the Gipuzkoa and Álava caps, the foral ITSGF's treatment of the main home, and the individual (not joint) taxation of spouses in the three territories were not checked against the foral texts."
             ],
             "type": "broad",
             "components": [
               {
-                "name": "Impuesto sobre el Patrimonio de Bizkaia / foral ITSGF",
+                "name": "Impuesto sobre el Patrimonio de Bizkaia / foral ITSGF, married couple owning 50/50",
                 "base": "net_wealth_worldwide",
-                "exempt_amount": 800000,
+                "exempt_amount": 2400000,
                 "entry_threshold": 0,
                 "brackets": [
                   {
@@ -3369,34 +3449,40 @@
                     "rate": 0.002
                   },
                   {
-                    "from_amount": 800000,
+                    "from_amount": 1600000,
                     "rate": 0.006
                   },
                   {
-                    "from_amount": 1600000,
+                    "from_amount": 3200000,
                     "rate": 0.01
                   },
                   {
-                    "from_amount": 3200000,
+                    "from_amount": 6400000,
                     "rate": 0.015
                   },
                   {
-                    "from_amount": 6400000,
+                    "from_amount": 12800000,
                     "rate": 0.0175
                   },
                   {
-                    "from_amount": 12800000,
+                    "from_amount": 25600000,
                     "rate": 0.02
                   },
                   {
-                    "from_amount": 15993333.33,
+                    "from_amount": 31986666.66,
                     "rate": 0.035
                   }
                 ],
-                "notes": "Brackets encode the combined burden max(regional IP, ITSGF) computed from the official scales, on net wealth after the main-home exemption; the joint IRPF limit (IP reduction up to 80%) is ignored."
+                "notes": "Modelled on Bizkaia (NF 2/2013): mínimo exento 800,000, scale 0.2% to 2.0%; the foral solidarity tax (NF 9/2023, net wealth above EUR 3m, credited against the foral IP) takes over only at the very top (3.5% band). The state ITSGF does not apply in the foral territories (Concierto Económico). Written for the reference couple owning the wealth 50/50 and taxed separately: per person the tax-free amount is 800,000 (mínimo exento) + 400,000 (main home exempt up to EUR 400,000, art. 5 NF 2/2013) = 1,200,000, so 2,400,000 for the couple, and every bracket limit is doubled (single limits 800,000; 1,600,000; 3,200,000; 6,400,000; 12,800,000; 15,993,333.33). The engine passes net wealth including the home, so the home exemption is folded into the allowance. The joint IRPF limit (art. 33 NF 2/2013: 65%, reduction at most 75%) is modelled in income_cap."
               }
             ],
-            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+            "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+            "income_cap": {
+              "share_of_income": 0.65,
+              "max_reduction": 0.75,
+              "counts_long_term_gains": false,
+              "notes": "Bizkaia, art. 33 NF 2/2013 ('escudo fiscal'): IRPF cuota plus IP cuota may not exceed 65% of the IRPF general and savings bases; the IP is cut to fit, by at most 75%. Whether gains on assets held over a year are left out of the base (as in the state and Navarra rules) was not confirmed, so false is an assumption. Gipuzkoa and Álava limits were not researched. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+            }
           },
           "inheritance": {
             "summary": "Basque Country: Group I (children of any age, spouse, parents) gets a EUR 400,000 reduction on inheritances and pays a flat 1.5% above it (Bizkaia NF 4/2015 arts. 43, 47; same in Gipuzkoa); about 1.44% of a EUR 10m inheritance.",

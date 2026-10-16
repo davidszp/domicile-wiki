@@ -1,0 +1,75 @@
+{
+  "id": "DNK",
+  "name": "Denmark",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Dividends and gains on directly held shares are share income: 27% up to DKK 158,800 for a couple, 42% above, with credit for foreign withholding up to the treaty rate. No wealth tax. Estate duty of 15% on the part of the estate passing to children above an allowance per estate; the portfolio is in the estate."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 117000,
+      "working": "Top marginal case: share income of 350,000 is above the couple's 27% band of DKK 158,800, so the 42% rate (Personskatteloven § 8a; skat.dk, 2026 share income) is applied to all of it and the 27% band is ignored. Foreign dividends 200,000 x 42% = 84,000, less the foreign withholding credited, at most the treaty rate of 15% x 200,000 = 30,000 (skat.dk: 'You can at most declare the dividend tax to which the given country is entitled'), = 54,000. Realised gains on directly held listed shares 150,000 x 42% = 63,000. No wealth tax (none since 1997, PwC). Total 54,000 + 63,000 = 117,000."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 50000000,
+      "children": 3,
+      "expected": 7441155,
+      "working": "Boafgift is 15% of the estate above the bundfradrag of DKK 392,300 for 2026 (Ældre Sagen; Skatteministeriet Faktaark 9: rate 15%, allowance adjusted yearly under personskatteloven § 20). It is charged on the estate, not per child, and the 25% additional duty applies only to heirs outside the close family, not to children. (50,000,000 - 392,300) x 15% = 49,607,700 x 15% = 7,441,155. The estate is taken as one estate with one allowance; in an undivided estate (uskiftet bo) a second allowance can apply, which would lower the tax by 58,845."
+    }
+  ],
+  "assumptions": [
+    "Top marginal case: about EUR 600k of dividends a year, far above the couple's DKK 158,800 band taxed at 27%, so 42% is applied to everything.",
+    "Directly held listed shares are taxed on realisation, not on the mark-to-market principle (that applies to investment funds and ETFs).",
+    "The government platform's 30% estate duty above DKK 10 million and the higher 27% band are announced, not law, and are not modelled.",
+    "The second death is a single estate with one allowance."
+  ],
+  "open_questions": [
+    "Needs an engine change: a Danish holding ApS or A/S pays 22% corporate tax on listed portfolio shares under the mark-to-market principle (lagerprincippet), i.e. on the whole yearly change in value and not only on gains realised, and the owners then pay 27%/42% on dividends (PwC Denmark Corporate income determination; tax.dk). The engine realises a fixed share of each year's gain, so it cannot price this and no ApS path is modelled.",
+    "Structure considered and rejected: a family foundation. New family foundations are restricted by § 7 of the Foundations Act (fondsloven) according to tax.dk, found only in a search snippet, not opened.",
+    "If the 30% estate duty above DKK 10 million is enacted the inheritance check and the tax file change materially.",
+    "The 27% band of the share income (progressionsgrænse) is indexed each year, but the tax file has no brackets for share income, so this is not modelled."
+  ],
+  "sources": [
+    {
+      "title": "Tax on shares (buying and selling shares and securities)",
+      "url": "https://skat.dk/en-us/individuals/shares-and-securities/buying-and-selling-shares-and-securities",
+      "publisher": "Skattestyrelsen",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Boafgift og bundfradrag",
+      "url": "https://www.aeldresagen.dk/viden-og-raadgivning/vaerd-at-vide/a/arv-testamente-doedsbo-gaver/boafgift/boafgift-og-bundfradrag",
+      "publisher": "Ældre Sagen",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Faktaark 9: Boafgift (Reform af personskat)",
+      "url": "https://svmn.dk/media/apqahpml/faktaark-9-boafgift.pdf",
+      "publisher": "Skatteministeriet",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Denmark - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/denmark/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

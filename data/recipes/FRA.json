@@ -1,0 +1,135 @@
+{
+  "id": "FRA",
+  "name": "France",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Dividends and gains bear the PFU: 12.8% income tax plus 18.6% social charges (from 1 January 2026). At the family's income the high-income contributions lift income tax to a 20% average (CEHR and CDHR, art. 223 sexies and 224 CGI), so 38.6% in all. IFI taxes the real estate only (not the portfolio). Inheritance tax is charged per child after a EUR 100,000 allowance, 5% to 45%; the portfolio is in the estate and unrealised gains are not taxed at death."
+    },
+    {
+      "id": "holding_is",
+      "name": "Holding company subject to corporate tax (holding a l'IS)",
+      "regime": "holding_is",
+      "estate": "portfolio",
+      "note": "A French SAS or SARL owned by the parents holds the portfolio. It pays 25% corporate tax on dividends and gains (no participation exemption below a 5% stake), with the treaty withholding credited, and a running cost; payouts to the parents bear the PFU. The shares are in the estate at market value (the Dutreil pact does not cover a passive holding), so inheritance tax is the same as for personal holding. The 2026 holding tax on sumptuary assets (art. 235 ter C CGI) does not reach listed securities, provided the home stays outside the company."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 0,
+      "expected": 13510,
+      "working": "Top marginal rates for a couple whose reference income is far above EUR 660,000 (the real family has about EUR 600,000 of dividends and EUR 450,000 of gains a year); the EUR 12,500 plus EUR 1,500 a child that the CDHR formula allows (EUR 17,000 once) is ignored. Income tax: flat 12.8% on dividends and securities gains (art. 200 A 1 and B 1 CGI). High-income contributions: the CDHR is 20% of reference income minus (income tax + CEHR + 12,500 + 1,500 per child) (art. 224 III CGI), so income tax + CEHR + CDHR = 20% of reference income less a fixed amount; the decote of art. 224 V stops at EUR 660,000. Each extra euro of income therefore bears 20% in total, not 12.8%. Social charges: 18.6% on dividends and on securities gains (CSG 10.6% after the 2026 social security financing law, CRDS 0.5%, solidarity levy 7.5%). Total rate 20% + 18.6% = 38.6%. French-source dividends 20,000 + gains 15,000 = 35,000 x 38.6% = 13,510. No foreign withholding in this case (foreign_share 0)."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 1.0,
+      "expected": 10950,
+      "working": "Same top marginal rate as above: 20% income-tax-type levies + 18.6% social charges = 38.6%. Foreign dividends 20,000 with 15% withheld abroad = 3,000. The tax withheld abroad is imputed on the flat-rate income tax only, within the treaty credit (art. 200 A 1 1°, third paragraph, CGI), so the credit absorbs 12.8% of the dividend = 2,560, not 3,000; the conventional credit is added back to income tax in the CDHR formula (art. 224 IV A 2°), so it does not reduce the CDHR. French tax on the dividends = 20,000 x 38.6% - 2,560 = 7,720 - 2,560 = 5,160 (25.8%). Gains on foreign securities 15,000 x 38.6% = 5,790 (no tax abroad). Total 5,160 + 5,790 = 10,950."
+    },
+    {
+      "path": "holding_is",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "foreign_share": 1.0,
+      "expected": 13250,
+      "working": "Corporate income tax at the normal 25% rate (art. 219 I CGI); the 15% rate on the first EUR 42,500 is ignored because the real profit is about EUR 1 million. Dividends 20,000 from stakes under 5% get no parent-subsidiary exemption: 25% = 5,000, less the 15% tax withheld abroad, 3,000, imputed on the corporate tax within the treaty credit and limited to the tax on that income (art. 220 1 b CGI) = 2,000. Gains on shares under 5% are not titres de participation, so the 88% exemption of art. 219 I a quinquies does not apply: 15,000 x 25% = 3,750. The 3.3% social contribution applies only above EUR 763,000 of tax. Running cost of the holding 10,000 a year (tax file). IFI: nil (no real estate in the company). Total 2,000 + 3,750 + 10,000 = 15,750. The PFU on payouts is excluded. Running costs are deductible from the holding's taxable profit (art. 39 CGI): IS 25% x (35,000 - 10,000) = 6,250 - 3,000 credit = 3,250, + 10,000 cost = 13,250."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 3652182.9,
+      "working": "Estate of the surviving parent, 10,000,000, passing to three children (the other parent's allowance is not used, the first estate having passed to the spouse tax-free). Each child receives 3,333,333.33, less the EUR 100,000 allowance (art. 779 I CGI) = 3,233,333.33. Direct-line scale (art. 777, table I): 5% of the first 8,072 = 403.60; 10% of 4,037 (to 12,109) = 403.70; 15% of 3,823 (to 15,932) = 573.45; 20% of 536,392 (to 552,324) = 107,278.40; 30% of 350,514 (to 902,838) = 105,154.20; 40% of 902,839 (to 1,805,677) = 361,135.60; 45% of 1,427,656.33 = 642,445.35. Per child 1,217,394.30; three children 3,652,182.90. The portfolio gets no relief (Dutreil, art. 787 B, covers operating businesses)."
+    },
+    {
+      "path": "holding_is",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 3652182.9,
+      "working": "The shares of the holding are movable assets taxed at their market value, about the portfolio, with no Dutreil relief for a passive holding (art. 787 B): same calculation as for personal holding. Each child 3,333,333.33 - 100,000 = 3,233,333.33; tax per child by the table I scale of art. 777 = 1,217,394.30 (see the personal check); three children 3,652,182.90."
+    }
+  ],
+  "assumptions": [
+    "Top marginal rates: the real family's reference income (about EUR 1 million a year in dividends and realised gains) is above the EUR 660,000 at which the CDHR decote ends, so 20% of income is taken as the income-tax-type burden. The EUR 12,500 plus EUR 1,500 a child that the CDHR formula allows, and the PFU's lack of any allowance, are ignored (about 1.6 points of income at this level).",
+    "The art. 155 B impatriate regime is not a path: it needs the person to be recruited from abroad as an employee or corporate officer of a French company, and someone whose only link with France is managing their own wealth is excluded (BOI-RSA-GEO-40-10-10), so a family with no job cannot use it.",
+    "The portfolio's tax cost equals its value on arrival and is contributed to the holding at that value, so the contribution gives rise to no taxed or deferred gain (art. 150-0 B ter CGI).",
+    "At each death the whole estate passes to the three children with one EUR 100,000 allowance each; the first parent's allowance and the spouse exemption (art. 796-0 bis) are not modelled.",
+    "The IFI applies only to the EUR 5 million home; the portfolio is outside it. The social charges are the 18.6% rate for people affiliated to the French social security; the 7.5% rate for people insured elsewhere in the EEA is not used.",
+    "No lifetime gifts are modelled (the engine has deaths only)."
+  ],
+  "open_questions": [
+    "Needs an engine change: the payout tax of the holding depends on the size of the payout against thresholds that are not indexed (CEHR from EUR 500,000, CDHR 20% from EUR 660,000 for a couple, arts. 223 sexies and 224 CGI). A EUR 400,000 net payout needs about EUR 583,000 gross and bears about 31.8% at today's amounts; as prices rise the burden tends to 38.6%. The engine uses a flat 31.4%.",
+    "Needs an engine change: a life-insurance or capitalisation contract (assurance-vie, often a Luxembourg contract holding the portfolio) was considered and not modelled. Gains are taxed only on withdrawal, and at death the beneficiaries pay a levy of 20% (31.25% above EUR 700,000) after a EUR 152,500 allowance each for premiums paid before age 70 (art. 990 I CGI), instead of 5%-45% scale rates. The engine taxes income yearly and has no tax at withdrawal on the gain share, nor a per-beneficiary cap.",
+    "Needs an engine change: gifts. The EUR 100,000 allowance per child and parent renews every 15 years and gifts of bare ownership are valued at a discount, so lifetime gifts are the main French planning tool; the engine only models deaths.",
+    "Needs an engine change: the cotisation subsidiaire maladie (CSM) of up to 6.5% on investment income above 50% of the social security ceiling (EUR 24,030 for 2026), the base capped at 8 ceilings (EUR 384,480), would cost up to EUR 23,429 per adult a year if the family is affiliated to the French health system without earned income. The figures come from third-party simulators for 2026 (Indy); art. L380-2 of the social security code was not opened.",
+    "A foreign or French family trust was rejected: French law taxes the transfer of trust assets at death at the top rate of table III of art. 777 CGI (60%) when the settlor was French-resident (art. 792-0 bis II 2). A French family foundation does not exist (fonds de dotation and fondations are for public-interest purposes).",
+    "The holding tax of art. 235 ter C CGI is read from Deloitte and other summaries (listed securities not in its base); the promulgated text was not opened. Contributing an appreciated portfolio to a controlled holding defers the gain (art. 150-0 B ter), but a sale within three years requires reinvesting 70% in an economic activity; a listed-portfolio holding that trades would end the deferral. The recipe avoids this by assuming no gain at arrival.",
+    "Citations not opened: BOI-RSA-GEO-40-10-10 (read through the tax file only); Legifrance pages (403), so the consolidated CGI text from codes.droit.org was read instead; art. 219 I a quinquies and the treaty credit at corporate level were taken from summaries; the Deloitte, Meilleurtaux and Indy pages were seen only as search results, not opened; the Notice 2047 was opened but its passage on the credit cap is ambiguous.",
+    "CDHR (art. 224 CGI): the checks assume the 20% minimum average rate binds (38.6% with social charges). At about EUR 600,000 of income its smoothing and family allowance may leave it nil (31.4%, plus CEHR); above that range it binds. BOI-IR-CDHR-10 was not read.",
+    "Cotisation subsidiaire maladie: 6.5% on capital income above 50% of PASS when earned income is under 20% of PASS, base capped at 8 PASS (up to about EUR 23,400 a year), sourced only to calculator sites; whether it is per adult and applies to new residents insured through residence is unconfirmed. Not in the tax file or the projection."
+  ],
+  "sources": [
+    {
+      "title": "Code general des impots (consolidated text of 2026-09-01): art. 200 A, 219, 220, 223 sexies, 224, 777, 779, 792-0 bis, 973, 977, 990 I",
+      "url": "https://codes.droit.org/payloads/Code%20g%C3%A9n%C3%A9ral%20des%20imp%C3%B4ts.xml",
+      "publisher": "codes.droit.org (Legifrance open data)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Guide usager: acompte de contribution differentielle sur les hauts revenus (CDHR)",
+      "url": "https://www.impots.gouv.fr/cdhr-guide",
+      "publisher": "Direction generale des Finances publiques",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Notice 2047: revenus de source etrangere (credits d'impot conventionnels)",
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/2047/2025/2047_5150.pdf",
+      "publisher": "Direction generale des Finances publiques",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Droits de succession : calcul",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "publisher": "Service-Public.fr (DILA)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Flat tax a 31,4%: ce qui change depuis janvier 2026",
+      "url": "https://placement.meilleurtaux.com/placement-financier/actualites/2026-avril/flat-tax-a-31-4-ce-qui-change-depuis-janvier-2026.html",
+      "publisher": "Meilleurtaux Placement",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Lois de finances pour 2026 (premiere partie) : analyse des mesures les plus significatives",
+      "url": "https://blog.avocats.deloitte.fr/lois-de-finances-pour-2026-premiere-partie-analyse-des-mesures-les-plus-significatives/",
+      "publisher": "Deloitte Societe d'Avocats",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Simulateur de taxe PUMa : calculez votre cotisation subsidiaire maladie en 2026",
+      "url": "https://www.indy.fr/guide/fiscalite/gestion-financiere/simulateur-taxe-puma/",
+      "publisher": "Indy",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "FIN",
+  "name": "Finland",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Gains are capital income at 34% above EUR 30,000; dividends from listed companies are 85% taxable at 34% (28.9%), with credit for foreign withholding; no wealth tax. Inheritance tax per child runs from 7% to 19%, 19% above EUR 1,000,000. Finland has no special regime for wealthy arrivals: the key-employee regime needs Finnish employment."
+    },
+    {
+      "id": "holding_oy",
+      "name": "Private investment company (Oy)",
+      "regime": "holding_oy",
+      "estate": "portfolio",
+      "note": "A Finnish Oy owned by the parents pays 20% on portfolio dividends (fully taxable below 10%) and on gains. Dividends to the parents from an unlisted company are taxed lightly: 25% of the first EUR 150,000 per shareholder within an 8% return is taxable capital income. The shares are in the estate at market value; generational business relief does not cover an investment company."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 150000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 134400,
+      "working": "Top rates assumed (capital income far above EUR 30,000, so 34% applies to all of it); the EUR 1,000 sales exemption and loss carry-forwards are ignored, and gains are taken with an actual cost basis, not the deemed cost. Foreign dividends from listed companies in the EU, the EEA or a dividend-treaty country are 85% taxable capital income (Vero, Foreign dividends and Dividends from a listed company): 600,000 x 85% x 34% = 173,400. Credit for the 15% foreign withholding, 90,000, which is within the treaty maximum and below the Finnish tax on the same income (Act on the Avoidance of Double Taxation; Vero relief guidance): 173,400 - 90,000 = 83,400. Gains 150,000 x 34% = 51,000 (capital income, Vero, Selling shares). No wealth tax. Total 134,400."
+    },
+    {
+      "path": "holding_oy",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 150000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 60000,
+      "working": "A company holding less than 10% of a listed company is taxed on the whole dividend, at the 20% corporate rate (PwC: dividends 100% taxable when the recipient is unlisted and holds below 10%; rate 20% on all taxable income; Vero, unlisted company receiving dividends from a listed company): 600,000 x 20% = 120,000. Credit for the 15% foreign withholding, 90,000, below the Finnish tax on the same income: 120,000 - 90,000 = 30,000. Gains 150,000 x 20% = 30,000 (no participation exemption below 10%). The tax file records no annual running cost. Payout tax excluded. Total 60,000."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 1777000,
+      "working": "Each child inherits 10,000,000 / 3 = 3,333,333.33, tax class I (Inheritance and Gift Tax Act, scale in force from 1 January 2026, Vero table I): EUR 149,000 plus 19% of the part above EUR 1,000,000 = 149,000 + 0.19 x 2,333,333.33 = 149,000 + 443,333.33 = 592,333.33 per child. Three children 1,777,000. The estate holds no Finnish real estate or business assets that get relief. The heirs' cost base for the shares is the taxable value in the inheritance tax assessment, so no income tax falls due at death.",
+      "model_difference": -300,
+      "model_note": "The scale gives a flat EUR 100 of tax at EUR 30,000 on top of the percentages (EUR 100 + 7% of the excess); the tax file stores the percentages only, so the engine is EUR 100 lower per child (3 x 100 = 300)."
+    },
+    {
+      "path": "holding_oy",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 1777000,
+      "working": "The Oy shares are valued at their probable selling price on the date of death (Vero, valuation of estate property), taken here as the portfolio's value (no discount for latent tax, no business relief for an investment company). The scale is then the same as for personal holding: 149,000 + 19% x (3,333,333.33 - 1,000,000) = 592,333.33 per child, 1,777,000 for three children. No income tax is due at death on the shares.",
+      "model_difference": -300,
+      "model_note": "Same simplification as for personal holding: the flat EUR 100 at the EUR 30,000 threshold is not in the stored scale, 3 x 100 = 300."
+    }
+  ],
+  "assumptions": [
+    "Top rates apply: 34% on capital income (the family's income is far above EUR 30,000) and 85% of listed dividends taxable. No allowances are modelled.",
+    "The Oy is funded with a portfolio that has no latent gain (cash, or assets at cost). It distributes dividends within the 8% return on net assets, and the two parents are the only shareholders (the EUR 150,000 band is per shareholder).",
+    "Corporate tax is 20% (2026). The proposed cut to 18% from 2027 (HE 151/2026) was still before Parliament's finance committee in September 2026 and is not law.",
+    "Foreign dividends come from EU, EEA or treaty-country companies, so the 85% rule and the foreign tax credit apply."
+  ],
+  "open_questions": [
+    "Needs an engine change: moving an existing personal portfolio into the Oy is a sale at market value for the individual, taxed as capital income at 30%/34% on the gain, and Finland gives no step-up on immigration (Income Tax Act, capital income; Vero, Selling shares). The engine has no asset-transfer event, so the Oy path assumes a portfolio with no latent gain; for a portfolio with large latent gains the path is overstated.",
+    "Needs an engine change: the EUR 150,000 band, the EUR 30,000 capital-income threshold and the 8% limit are fixed nominal amounts, so the Oy's payout tax rate rises in real terms over 60 years; the engine holds the payout rate constant.",
+    "Whether the Tax Administration applies a discount for deferred tax to the market value of the Oy's shares for inheritance tax (guide 'Yritysvarallisuuden arvostaminen perintö- ja lahjaverotuksessa', Finnish only) was not read; the check uses full portfolio value.",
+    "The Oy's annual running cost (bookkeeping, audit) is not in the tax file; the Oy check carries none.",
+    "Private family foundations were considered and not added: sources disagree whether Finnish foundations may serve private (family) purposes, permission from the Patent and Registration Office is needed (Foundations Act 487/2015), and none of the sources shows their use for a family portfolio. Finland has no trust law.",
+    "The Foundations, Double Taxation and Income Tax Acts and the Vero 'Relief for international double taxation' guidance were read only through search results or not at all; no statute section is cited for that reason. Vero's page on dividends of an unlisted company receiving listed dividends was seen only as a search excerpt."
+  ],
+  "sources": [
+    {
+      "title": "Inheritance tax calculator (2026 tax tables I and II)",
+      "url": "https://www.vero.fi/en/individuals/property/inheritance/inheritance-tax-calculator/",
+      "publisher": "Finnish Tax Administration (Vero)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Dividends from a listed company",
+      "url": "https://www.vero.fi/en/individuals/property/investments/dividends/dividends-from-a-listed-company/",
+      "publisher": "Finnish Tax Administration (Vero)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Foreign dividends",
+      "url": "https://www.vero.fi/en/individuals/property/investments/dividends/foreign-dividends/",
+      "publisher": "Finnish Tax Administration (Vero)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Dividend from an unlisted company",
+      "url": "https://www.vero.fi/en/individuals/property/investments/dividends/dividend-from-an-unlisted-company/",
+      "publisher": "Finnish Tax Administration (Vero)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Selling shares",
+      "url": "https://www.vero.fi/en/individuals/property/investments/selling-shares/",
+      "publisher": "Finnish Tax Administration (Vero)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "How must estate property be valuated for the estate inventory?",
+      "url": "https://www.vero.fi/en/individuals/property/inheritance/estate_inventory_meeting_and_estate_inv/how-must-estate-property-be-valuated/",
+      "publisher": "Finnish Tax Administration (Vero)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Key employees from other countries",
+      "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/arriving_in_finland/work_in_finland/specific-instructions-for-different-occupations/key_employees_from_other_countrie/",
+      "publisher": "Finnish Tax Administration (Vero)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Finland - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/finland/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

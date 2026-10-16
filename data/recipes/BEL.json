@@ -1,0 +1,188 @@
+{
+  "id": "BEL",
+  "name": "Belgium",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Dividends bear the 30% final withholding (on the amount net of any foreign withholding); gains realised on financial assets bear the new 10% tax (Law of 6 April 2026, from 1 January 2026); securities accounts above EUR 1 million pay 0.30% a year (Programme Law of 30 May 2026). Inheritance tax is the Flemish one (3% / 9% / 27% per heir) on the portfolio and the home; unrealised gains are not taxed at death."
+    },
+    {
+      "id": "holding_bv",
+      "name": "Family investment company (BV/SRL)",
+      "regime": "holding_bv",
+      "estate": "portfolio",
+      "note": "A Belgian BV owned by the parents holds the portfolio. It pays 25% corporate tax on portfolio dividends (net of foreign withholding, no credit) and on gains (no participation exemption below 10% or EUR 2.5 million), the same 0.30% securities-account tax and a running cost; payouts bear the 30% dividend withholding. The shares are in the estate at market value, so Flemish inheritance tax applies to them as to the portfolio. A foreign foundation or trust is not modelled because the Cayman tax (art. 5/1 CIR 92) taxes the founder on its income as if received directly, and a Belgian private foundation is not modelled (see the open questions)."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "foreign_share": 0,
+      "expected": 37500,
+      "working": "Top marginal rates; the real family has about EUR 600,000 of dividends a year, so the small allowances are ignored. Belgian-source dividends 20,000 at the 30% withholding (art. 269 section 1, 1 CIR 92) = 6,000; the EUR 859 dividend exemption is ignored. Gains 15,000 at 10% (new art. 90 al. 1, 9, c CIR 92; rate in art. 269 section 1, 5 and Circular 2026/C/74 points 118-119) = 1,500; the annual exemption of EUR 10,000 (art. 96/2, 2: EUR 4,855 indexed) is ignored because the real family realises about EUR 450,000. Securities-account tax: the portfolio of 10,000,000 is above the EUR 1 million threshold, so the whole value bears 0.30% (Programme Law of 30 May 2026) = 30,000; the 10% cap applies only up to EUR 1,030,927.84. Total 6,000 + 1,500 + 30,000 = 37,500."
+    },
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 36600,
+      "working": "Foreign dividends 20,000 with 15% withholding at source = 3,000. Belgium taxes the amount net of the foreign tax (administrative commentary on art. 22 CIR 92 and Circular 2020/C/96): 17,000 at 30% = 5,100; the foreign tax is not credited. Gains 15,000 at 10% = 1,500 (new art. 90 al. 1, 9, c CIR 92; exemption ignored as above). Securities-account tax 0.30% x 10,000,000 = 30,000. Total 5,100 + 1,500 + 30,000 = 36,600."
+    },
+    {
+      "path": "holding_bv",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "foreign_share": 0,
+      "expected": 42125,
+      "working": "Belgian company paying the 25% corporate tax rate (art. 215 CIR 92; the 20% SME rate on the first EUR 100,000 is ignored, the real profit is about EUR 1 million). Portfolio dividends below 10% and EUR 2.5 million get no dividends-received deduction: 20,000 x 25% = 5,000. Gains on such shares are not exempt (art. 192 CIR 92 follows the same participation conditions): 15,000 x 25% = 3,750. Securities-account tax on the company's account 0.30% x 10,000,000 = 30,000 (companies are liable; assumed not deductible). Running cost of the BV: accountant at the upper end of the EUR 2,500-4,500 a year quoted for a BV = 4,500. Total 5,000 + 3,750 + 30,000 + 4,500 = 43,250. The 30% payout withholding is excluded. Running costs are deductible from the BV's taxable profit (art. 49 CIR 92): 25% x (35,000 - 4,500) = 7,625 + 4,500 + 30,000 = 42,125."
+    },
+    {
+      "path": "holding_bv",
+      "kind": "annual",
+      "dividends": 20000,
+      "realised_gains": 15000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 41375,
+      "working": "Foreign dividends 20,000 with 15% withholding = 3,000. The company's taxable dividend is the amount net of the foreign withholding, 17,000, at 25% = 4,250; generally no foreign tax credit is available for foreign dividends (PwC). Gains 15,000 x 25% = 3,750. Securities-account tax 30,000. Running cost 4,500. Total 4,250 + 3,750 + 30,000 + 4,500 = 42,500. Running costs are deductible (art. 49 CIR 92): 25% x (17,000 + 15,000 - 4,500) = 6,875 + 4,500 + 30,000 = 41,375."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 2556000,
+      "working": "Flemish inheritance tax, direct line (Flemish Tax Authority tariff), calculated per heir with no allowance for an adult child. Each child receives 10,000,000 / 3 = 3,333,333.33, all movable (listed securities), so one scale applies: 3% of the first 50,000 = 1,500; 9% of the next 200,000 = 18,000; 27% of the remaining 3,083,333.33 = 832,500. Per child 852,000; three children 2,556,000."
+    },
+    {
+      "path": "holding_bv",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 2556000,
+      "working": "The BV shares are movable assets valued at market value, about the portfolio, with no business relief for a portfolio company: same Flemish calculation as for personal holding. Each child 3,333,333.33: 1,500 + 18,000 + 27% x 3,083,333.33 (= 832,500) = 852,000; three children 2,556,000."
+    }
+  ],
+  "assumptions": [
+    "The national file represents Flanders for inheritance tax (3% / 9% / 27%). Brussels-Capital and Wallonia have other scales and are not modelled, although the family's likely home (Uccle, Ixelles) is in Brussels.",
+    "The family has just arrived: the capital gains tax values assets at the first day of Belgian tax liability, so the portfolio starts with no gain; the portfolio is contributed to the BV at that value, with no tax on the contribution.",
+    "Top marginal rates; the EUR 10,000 capital gains exemption, the EUR 859 dividend exemption and the 20% SME corporate rate on the first EUR 100,000 are ignored because the real family's income is about EUR 1 million a year.",
+    "The securities-account tax is taken at 0.30% on the whole portfolio every year, with the 10% cap ignored (it matters only up to about EUR 1.03 million). The tax is assumed not deductible in the BV.",
+    "The BV's running cost is the upper end of an accountant's quote (EUR 4,500) and excludes directors, investment management and audit.",
+    "No lifetime gifts are modelled; the engine has deaths only."
+  ],
+  "open_questions": [
+    "Needs an engine change: gifts. A registered gift of movables to a child costs a flat 3% in Flanders and Brussels (against 27% at death above EUR 250,000), and an unregistered gift (bank transfer) is tax-free if the donor survives five years (Vlaamse Codex Fiscaliteit). The engine only models deaths, so the main Belgian planning tool is absent from the figures.",
+    "Needs an engine change: Flemish inheritance tax is calculated separately on the movable and on the immovable part of an estate, each from the bottom bracket (Flemish Tax Authority). The engine adds the EUR 5 million home to the portfolio and applies one scale, which slightly overstates the tax (the 3% and 9% bands apply twice by law).",
+    "A Belgian private foundation (private stichting) was considered and rejected: gifts to it cost 5.5% in Flanders (8.5% by bequest) and the assets leave the founder's estate, but since 2024 it pays an annual patrimony tax of 0.15% / 0.30% / 0.45% (the last above EUR 500,000, so about 0.45% of a EUR 30 million portfolio), is also liable for the securities-account tax and the 2026 capital gains tax, and the founder may not receive benefits from it, so it cannot fund the parents' EUR 400,000 a year. It is used for succession planning and asset protection, not as a portfolio vehicle. The tax on distributions to beneficiaries was not researched.",
+    "A foreign foundation or trust was rejected: the Cayman tax (art. 5/1 and 220/1 CIR 92) taxes the founder on the income of a foreign legal construction as if received directly (Circular 2024/C/79).",
+    "The payout from the BV is modelled at the flat 30% dividend withholding. A liquidation reserve released after a waiting period (9.8% after 3 years for reserves created after 30 December 2025) would lower it, but the engine has no timing for it.",
+    "The 0.30% securities-account rate rests on two bank notes (KBC, Bank van Breda) and Lexgo; the Programme Law text in the Moniteur belge was not opened, and PwC and Wikifin pages still show 0.15%.",
+    "Citations not opened or only partly read: art. 215, 192 and 22 CIR 92 and art. 269 section 1 (taken from the sources named, not read in the code); Flemish Codex Fiscaliteit article for the tariff (the Flemish Tax Authority page was used)."
+  ],
+  "sources": [
+    {
+      "title": "Loi du 6 avril 2026 introduisant un impot sur les plus-values sur les actifs financiers (Moniteur belge 21 avril 2026, numac 2026002780)",
+      "url": "https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=26-04-21&numac=2026002780",
+      "publisher": "Moniteur belge",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Circulaire 2026/C/74 concernant l'impot sur les plus-values sur les actifs financiers a l'impot des personnes physiques",
+      "url": "https://blog.forumforthefuture.be/fr/article/circulaire-2026c74-concernant-limpot-sur-les-plus-values-sur-les-actifs-financiers-a-limpot-des-personnes-physiques/31949",
+      "publisher": "FOD Financien / SPF Finances (circular reproduced by Forum for the Future)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "De jaarlijkse taks op de effectenrekeningen (JTER)",
+      "url": "https://www.kbc.be/particulieren/nl/juridische-info/documentatie-beleggen/taks-op-effectenrekeningen.html",
+      "publisher": "KBC Bank",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "FAQ: wat u moet weten over de jaarlijkse taks op de effectenrekeningen (2026), juli 2026",
+      "url": "https://www.bankvanbreda.be/hubfs/FAQ%20NL%202026.pdf",
+      "publisher": "Bank van Breda",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Belgian tax reform 2026: tax and social measures of the programme law",
+      "url": "https://www.lexgo.be/en/news-and-articles/14846-belgian-tax-reform-2026-tax-and-social-measures-of-the-programme-law",
+      "publisher": "Lexgo",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Berekening belastbare roerende inkomsten en aftrek buitenlandse bronheffingen (Delboo, 12 aug 2020)",
+      "url": "https://www.jubel.be/berekening-belastbare-roerende-inkomsten-en-aftrek-buitenlandse-bronheffingen-werkelijk-afgehouden-buitenlands-tarief-of-beperkt-tot-verdragstarief/",
+      "publisher": "Jubel",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Belgium - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/belgium/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Belgium - Corporate - Tax credits and incentives",
+      "url": "https://taxsummaries.pwc.com/belgium/corporate/tax-credits-and-incentives",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Algemeen tarief in de erfbelasting",
+      "url": "https://www.vlaanderen.be/belastingen-en-begroting/vlaamse-belastingen/erfbelasting/tarieven-in-de-erfbelasting/algemeen-tarief-in-de-erfbelasting",
+      "publisher": "Vlaamse overheid (Vlaamse Belastingdienst)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Patrimoniumtaks voor vzw's, ivzw's en private stichtingen: recente ontwikkelingen",
+      "url": "https://bakertilly.be/nl/news/patrimoniumtaks-voor-vzws-ivzws-en-private-stichtingen-recente-ontwikkelingen/",
+      "publisher": "Baker Tilly Belgium",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Vlaamse Belastingdienst bevestigt gunstige fiscale behandeling private stichting (ruling 17040)",
+      "url": "https://www.jubel.be/vlaamse-belastingdienst-bevestigt-gunstige-fiscale-behandeling-private-stichting/",
+      "publisher": "Jubel",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Circulaire 2024/C/79 concernant l'application de la taxe dite Caiman",
+      "url": "https://blog.forumforthefuture.be/fr/article/circulaire-2024c79-concernant-lapplication-de-la-taxe-dite-caiman-lorsque-la-construction-juridique-est-situee-dans-un-etat-avec-lequel-la-belgique-a-conclu-une-convention-preventive-de-la-double-imposition/25359",
+      "publisher": "FOD Financien / SPF Finances (circular reproduced by Forum for the Future)",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Boekhouder Brussel: prijzen",
+      "url": "https://www.bobex.be/nl-be/boekhouder/brussel/",
+      "publisher": "Bobex",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Norway — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -85,9 +85,11 @@ There is no special regime for wealthy arrivals.
     threshold from NOK 10 million.
   - Secondary residences: 0%.
   - Debt is reduced in proportion to the discounted assets.
-- **JSON:** `net_wealth_worldwide`, exempt_amount 1,900,000, brackets of 1.0% from 0 and 1.1% from
-  19,600,000. The second figure is NOK 21.5m minus the 1.9m allowance. The discounts sit in the notes;
-  the schema cannot apply them to the base.
+- **JSON:** `net_wealth_worldwide`, exempt_amount 3,800,000 (the couple's allowance: Skatteetaten doubles the
+  thresholds for spouses taxed jointly), brackets of 1.0% from 0 and 1.1% from 39,200,000. The second figure
+  is NOK 43m (2 x 21.5m) minus the 3.8m allowance. Not indexed by statute. The JSON sets
+  `securities_valued_at` 0.8, so listed shares and funds count at 80%; the primary-home discount is not modelled,
+  so the home counts in full and wealth tax is somewhat overstated.
 - **2027 proposal (Prop. 1 S 2026–2027), not adopted:** the allowance rises to NOK 1,990,000, and the
   rates and the share discount stay the same (Smarte Penger summary).
 - **NOU 2026:9:** the tax commission proposed removing the valuation discounts and lowering the rates. It
@@ -157,6 +159,9 @@ City: Oslo.
 - The 2026 shielding rate is not yet published.
 - The 2027 budget proposals are not yet adopted.
 - The UDI immigration routes were not verified.
+- The shielding deduction (cost basis x risk-free rate) is ignored in the JSON rates; on a cost basis of NOK 30 million it could exceed the whole annual dividend. The cost basis of the family's shares is unknown.
+- Moving an existing personal portfolio into an AS or an ASK is a realisation at 37.84% (no step-up on arrival); the share savings account (ASK) holds only EEA-domiciled shares and funds (Skatteetaten) and is not modelled.
+- The 2027 budget proposal (7 October 2026) keeps the 1.72 factor; not yet adopted by the Storting.
 - The main-home exemption and the taxation of foreign real estate were not re-verified.
 
 ## Sources
@@ -186,3 +191,4 @@ City: Oslo.
 - 2026-10-15: data-quality pass: added prime rent (finn.no, Oslo 4-5 bedroom detached houses, NOK 47,000/month).
 - 2026-10-15: added the holding AS structure regime (`holding_as`) and the Holding structures section; standard holding_company_notes now points to it.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: recipe pass: wealth-tax allowance set to the couple's NOK 3.8 million (upper bracket from NOK 43 million net wealth) because thresholds double for spouses taxed jointly (Skatteetaten); noted that the engine applies it without the valuation discounts; shielding-deduction and entry-realisation caveats added.

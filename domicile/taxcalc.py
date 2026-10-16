@@ -10,7 +10,7 @@ timing. It answers "roughly how much, under these researched rules", never "what
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 
 from domicile.fx import to_eur
 from domicile.schema import Bracket, Inheritance, Regime, WealthComponent
@@ -52,10 +52,11 @@ class Rules:
     inh: dict | None = None
     lump_sum: dict | None = None
     structure: dict | None = None
+    wealth_cap: dict | None = None
 
     def to_json(self) -> dict:
         return {"cgt": self.cgt, "div": self.div, "wealth": self.wealth, "inh": self.inh, "lump_sum": self.lump_sum,
-                "structure": self.structure}
+                "structure": self.structure, "wealth_cap": self.wealth_cap}
 
 
 def _brackets(bs: list[Bracket], currency: str, fx: dict) -> list[list[float]]:
@@ -69,6 +70,8 @@ def _wealth_component(c: WealthComponent, currency: str, fx: dict) -> dict:
         "entry": round(to_eur(c.entry_threshold, currency, fx), 2),
         "brackets": _brackets(c.brackets, currency, fx),
         "credits_wht": c.credits_withholding,
+        "securities_share": c.securities_valued_at,
+        "home_share": c.main_home_valued_at,
     }
 
 
@@ -100,9 +103,13 @@ def compile_regime(regime: Regime, standard: Regime, currency: str, fx: dict) ->
             "business": r.private_business_sale, "real_estate": r.real_estate_local,
         }
     if dv is not None:
-        rules.div = {"domestic": dv.domestic_rate, "foreign_gross": dv.foreign_gross_rate, "ftc": dv.foreign_tax_credit}
+        rules.div = {"domestic": dv.domestic_rate, "foreign_gross": dv.foreign_gross_rate, "ftc": dv.foreign_tax_credit,
+                     "credit_cap": dv.credit_cap}
     if wt is not None:
         rules.wealth = [_wealth_component(c, currency, fx) | {"indexed": wt.thresholds_indexed} for c in wt.components]
+        if wt.income_cap:
+            rules.wealth_cap = {"share": wt.income_cap.share_of_income, "max_reduction": wt.income_cap.max_reduction,
+                                "gains": wt.income_cap.counts_long_term_gains}
     if ih is not None:
         rules.inh = _inheritance(ih, currency, fx)
     if regime.structure is not None:
@@ -111,6 +118,7 @@ def compile_regime(regime: Regime, standard: Regime, currency: str, fx: dict) ->
             "payout_rate": st.payout_tax_rate,
             "running_cost": round(to_eur(st.annual_running_cost.amount, st.annual_running_cost.currency, fx), 2)
             if st.annual_running_cost else 0.0,
+            "cost_relief": st.running_cost_deductible_at or 0.0,
         }
     if regime.lump_sum is not None:
         ls = regime.lump_sum
@@ -185,7 +193,10 @@ def annual_taxes(rules: Rules, p: Profile, std: Rules | None = None) -> dict[str
         elif d["ftc"] == "exemption":
             foreign = 0.0
         elif d["ftc"] == "credit":
-            foreign = div_f * max(0.0, d["foreign_gross"] - p.source_wht)
+            credit = p.source_wht if d.get("credit_cap") is None else min(p.source_wht, d["credit_cap"])
+            foreign = div_f * max(0.0, d["foreign_gross"] - credit)
+        elif d["ftc"] == "deduction":
+            foreign = div_f * (1 - p.source_wht) * d["foreign_gross"]
         else:
             foreign = div_f * d["foreign_gross"]
         out["dividends"] = foreign + div_d * d["domestic"]
@@ -197,13 +208,30 @@ def annual_taxes(rules: Rules, p: Profile, std: Rules | None = None) -> dict[str
         for comp in rules.wealth:
             if "foreign" in comp["base"] and _covers(rules, "wealth_tax_foreign"):
                 continue
-            base = wealth_base(comp["base"], p)
+            s, hs = comp.get("securities_share", 1.0), comp.get("home_share", 1.0)
+            valued = p if s == hs == 1.0 else replace(
+                p, portfolio=p.portfolio * s, real_estate_local=p.real_estate_local * hs,
+                net_wealth=p.net_wealth - p.portfolio * (1 - s) - p.real_estate_local * (1 - hs))
+            base = wealth_base(comp["base"], valued)
             if base <= comp["entry"]:
                 continue
             tax = apply_brackets(base - comp["exempt"], comp["brackets"], comp["mode"])
             if comp.get("credits_wht"):  # a tax on deemed income that takes the place of dividend tax
                 tax = max(0.0, tax - div_f * p.source_wht)
             total += tax
+        cap = rules.wealth_cap
+        if cap and total > 0 and None not in (d.get("domestic"), d.get("foreign_gross"), c.get("listed_foreign"), c.get("listed_domestic")):
+            # Income tax before credits on the income that counts, against the cap on income plus wealth tax.
+            if rules.structure:  # the family's own income is what the structure pays out to it
+                income = p.annual_payout
+                income_tax = p.annual_payout * (rules.structure["payout_rate"] or 0.0)
+            else:
+                income = p.dividends + (p.realized_gains if cap["gains"] else 0.0)
+                income_tax = div_f * d["foreign_gross"] + div_d * d["domestic"]
+                if cap["gains"]:
+                    income_tax += gains_f * c["listed_foreign"] + gains_d * c["listed_domestic"]
+            allowed = max(cap["share"] * income - income_tax, total * (1 - cap["max_reduction"]))
+            total = min(total, allowed)
         out["wealth_tax"] = total
 
     _add_structure_costs(rules, p, out)
@@ -251,7 +279,9 @@ def _add_structure_costs(rules: Rules, p: Profile, out: dict) -> None:
     payout = min(p.annual_payout, income) if income > 0 else p.annual_payout
     out["payout_tax"] = payout * st["payout_rate"]
     out["running_cost"] = st["running_cost"]
-    extra = out["payout_tax"] + out["running_cost"]
+    # Deductible costs lower the structure's own tax, never below nothing.
+    relief = min(st["running_cost"] * st.get("cost_relief", 0.0), (out["capital_gains"] or 0.0) + (out["dividends"] or 0.0))
+    extra = out["payout_tax"] + out["running_cost"] - relief
     if income <= 0:
         return
     for key, amount in (("capital_gains", p.realized_gains), ("dividends", p.dividends)):

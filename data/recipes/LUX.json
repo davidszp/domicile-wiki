@@ -1,0 +1,159 @@
+{
+  "id": "LUX",
+  "name": "Luxembourg",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "standard",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "estate": "portfolio",
+      "note": "Gains on listed shares held over six months by a holder below 10% are not taxed (PwC). Qualifying dividends (fully taxable resident, EU parent-subsidiary or treaty-state companies) are 50% exempt (art. 115 no. 15a LIR), so the top rate is 22.89% on the gross dividend, with foreign withholding credited up to the Luxembourg tax on that income (circular L.I.R. 115/8). No wealth tax for individuals. Children inheriting their share of a Luxembourg resident's estate pay no inheritance tax. Luxembourg has no special regime for a passive new resident: the impatriate regime is for employees and is not modelled."
+    },
+    {
+      "id": "spf",
+      "name": "Family wealth management company (SPF)",
+      "regime": "spf",
+      "estate": "portfolio",
+      "note": "The SPF is exempt from income tax and net wealth tax and pays 0.25% subscription tax on the capital and premium endowed (EUR 75,000 on EUR 30 million, shown as the running cost and held at the same nominal amount over the years, as the base is the endowed amount). It has no treaty access, so foreign dividends keep the full source withholding, and the family's distributions are taxed in full at up to 45.78% without the 50% exemption. The shares are in the estate (children pay no inheritance tax in the direct line). Compared with direct holding the family gives up the 0% on gains already available to it and the 22.89% dividend rate, so this path rarely wins; it is shown because Luxembourg's SPF is the family-wealth vehicle the law was written for. The Soparfi was rejected, see the open questions."
+    }
+  ],
+  "checks": [
+    {
+      "path": "standard",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 15780,
+      "working": "Top marginal rate assumed (the family's ~EUR 600,000 of dividends a year): 42% from EUR 234,870 of taxable income per person on the 2025 scale (PwC) x 1.09 for the 9% solidarity surcharge (applies above EUR 150,000 in classes 1/1a and EUR 300,000 in class 2) = 45.78%. Dividends 200,000 from companies resident in treaty states: 50% exempt (art. 115 no. 15a LIR; circular L.I.R. 115/8), taxable 100,000 x 45.78% = 45,780 (22.89% of the gross). Foreign tax credit: the 15% withholding, 30,000, is credited up to the Luxembourg tax on that income (circular L.I.R. 115/8); 30,000 < 45,780, so fully credited. Net 15,780. Realised gains 150,000 on shares held over six months by a holder of at most 10%: not taxed (PwC), 0. No wealth tax for individuals (PwC). The EUR 1,500 (couple EUR 3,000) investment income deduction is ignored. Total 15,780."
+    },
+    {
+      "path": "spf",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 75000,
+      "working": "The SPF is exempt from income tax, municipal business tax and net wealth tax (loi du 11 mai 2007, art. 4(1)): dividends 200,000 and gains 150,000 bear no Luxembourg tax, and the foreign withholding tax is a final cost outside the residence-country tax. Subscription tax (art. 5): 0.25% of paid-up capital plus share premium, here the EUR 30,000,000 endowed as capital and premium = 75,000; within the EUR 1,000 minimum and EUR 125,000 maximum (2025 reform, DLA Piper). It is independent of the year's income. Distribution tax excluded. No accounting or domiciliation cost is included: no sourced amount. Total 75,000."
+    },
+    {
+      "path": "standard",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "A Luxembourg resident dies leaving 10,000,000 to three children in equal parts, which is their legal share. Direct-line heirs are exempt on the legal share (Paperjam; Chambre des Députés, projet de loi 5954: where the last domicile was in Luxembourg there is exemption in the direct line). Each child receives 3,333,333.33 with no tax. The rates that apply to any amount above the legal share (base 2.5%/5% with surcharges) are not involved. Tax 0."
+    },
+    {
+      "path": "spf",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The SPF shares worth 10,000,000 pass in equal thirds to three children, their legal share: exempt in the direct line (Paperjam; projet de loi 5954). Tax 0."
+    }
+  ],
+  "assumptions": [
+    "Positions are listed, held longer than six months and well below 10% of any company; none cost EUR 1.2 million or more, so no participation exemption would apply in a Soparfi.",
+    "The family's taxable income puts the marginal rate at the top 42% plus the 9% solidarity surcharge (45.78%). With joint taxation (class 2) the top bracket starts higher than for one person, so a lower rate can apply to part of the dividends; the checks follow the top-marginal rule.",
+    "The SPF is funded entirely with paid-up capital and share premium, EUR 30 million, so the subscription tax is EUR 75,000. Funding part of the SPF with a shareholder loan up to eight times the capital would lower the base (art. 5(2)); not modelled.",
+    "Children inherit equally, which is their legal share."
+  ],
+  "open_questions": [
+    "Needs an engine change: an SPF has no access to Luxembourg's tax treaties (loi du 11 mai 2007 regime; DLA Piper; fiduciaire-expert.lu), so foreign dividends bear the source country's domestic rate, for example the US statutory 30% instead of the 15% treaty rate on the US share of the dividends. The engine applies the 15% source withholding assumed for the reference family to every path and adds an extra US charge only for countries without a US treaty.",
+    "Rejected structure, Soparfi: a fully taxable company would pay 23.87% (Luxembourg City, 2025) on portfolio dividends and gains (the participation exemption needs at least 10% or EUR 1.2 million per holding, EUR 6 million for gains), 0.5% net wealth tax on net assets (about EUR 150,000 a year on EUR 30 million), and the family would pay tax again on distributions at up to 22.89% after the 50% exemption. It is always worse than holding directly, so it is not an option for a passive listed portfolio (PwC corporate pages).",
+    "The 2026 income tax scale was not found: PwC prints the 2025 scale (top 42% from EUR 234,870). A single tax class is planned from 2028 (not law).",
+    "Inheritance tax in the direct line was read from Paperjam and the 2008-era parliamentary summary of bill 5954; the statute (loi du 27 décembre 1817 and loi du 28 janvier 1948) and the current surcharge scale were not opened. Gifts by notarial deed bear 1.8% duty and are not modelled.",
+    "SPF accounting, domiciliation and annual-certificate costs have no sourced amount and are not in the tax file, so the SPF is slightly flattered.",
+    "The treatment of a sale of SPF shares by the family (material interest, 22.89% after six months) was not checked for SPF shares."
+  ],
+  "sources": [
+    {
+      "title": "Loi du 11 mai 2007 relative à la création d'une société de gestion de patrimoine familial (SPF)",
+      "url": "https://data.legilux.public.lu/file/eli-etat-leg-loi-2007-05-11-n1-jo-fr-html.html",
+      "publisher": "Legilux (Journal officiel)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Société de gestion de patrimoine familial (SPF) - A à Z",
+      "url": "https://impotsdirects.public.lu/fr/az/s/spf.html",
+      "publisher": "Administration des contributions directes",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Circulaire L.I.R. n° 115/8 du 15 décembre 2008",
+      "url": "https://impotsdirects.public.lu/dam-assets/fr/legislation/legi08/L_I_R__n___115-8_du_15_d__cembre_2008.pdf",
+      "publisher": "Administration des contributions directes",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "With every carrot comes a stick: Luxembourg tightens rules on its popular wealth management vehicle, the SPF",
+      "url": "https://www.dlapiper.com/en/insights/publications/2025/03/with-every-carrot-comes-a-stick-luxembourg-tightens-rules-on-spf",
+      "publisher": "DLA Piper",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "SPF Luxembourg: Family Wealth Company, Tax & Restrictions",
+      "url": "https://fiduciaire-expert.lu/en/articles/spf-luxembourg-family-wealth-company/",
+      "publisher": "Fiduciaire Expert",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Luxembourg - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/luxembourg/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Luxembourg - Individual - Taxes on personal income",
+      "url": "https://taxsummaries.pwc.com/luxembourg/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Luxembourg - Individual - Other taxes",
+      "url": "https://taxsummaries.pwc.com/luxembourg/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Luxembourg - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/luxembourg/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Luxembourg - Corporate - Other taxes",
+      "url": "https://taxsummaries.pwc.com/luxembourg/corporate/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Transmettre au Luxembourg lors d'un décès",
+      "url": "https://paperjam.lu/article/transmettre-au-luxembourg-lors",
+      "publisher": "Paperjam",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Projet de loi n° 5954 relatif aux droits de succession et de mutation par décès (résumé)",
+      "url": "https://wdocs-pub.chd.lu/docs/Dossiers_parlementaires/5954/20250514_Resume.docx",
+      "publisher": "Chambre des Députés",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

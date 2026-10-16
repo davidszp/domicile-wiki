@@ -1,6 +1,6 @@
 # France — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -46,7 +46,7 @@ Dividends and interest, French or foreign, are taxed at the PFU of 31.4% from 20
 
 JSON values: headline 38.6% (`0.386`); domestic 38.6% (`0.386`); foreign gross 38.6% (`0.386`); foreign tax relief: credit.
 
-- **How the JSON numbers were derived:** 12.8% + 18.6% = 31.4% PFU, plus CEHR/CDHR lifting income tax to an average of 20%: 20% + 18.6% = 38.6%. Foreign dividends: treaty withholding (typically 15%) is credited against French income tax, not against social charges.
+- **How the JSON numbers were derived:** 12.8% + 18.6% = 31.4% PFU, plus CEHR/CDHR lifting income tax to an average of 20%: 20% + 18.6% = 38.6%. Foreign dividends: treaty withholding (typically 15%) is credited against French income tax, not against social charges. JSON `credit_cap` 0.128. Treaty withholding on foreign dividends is imputed on the 12.8% flat income tax only (art. 200 A 1°, A: the tax withheld abroad is imputed on the flat-rate tax 'dans la limite du credit d'impot auquel il ouvre droit'), and conventional credits are added back to income tax in the CDHR formula (art. 224 IV A 2°), so with 15% withheld the credit absorbs 12.8 points, not 15: the French tax left on a foreign dividend is 20% + 18.6% - 12.8% = 25.8%, against 23.6% if the whole 15% were credited.
 - **Outbound withholding:** 12.8% on dividends paid to non-resident individuals (25% to non-resident companies, 75% to non-cooperative states), reduced by treaties; 0% to EU parent companies.
 - **Treaty network:** About 120 income tax treaties, one of the largest networks, including the US (count from general knowledge).
 - **Holding-company notes:** A French holding company pays 25% corporate tax; the participation exemption taxes only 5% (or 1% in a tax group) of dividends from holdings of at least 5%. A new tax on non-operating assets held in personal holding companies was debated in the 2026 budget; status not verified.
@@ -54,7 +54,7 @@ JSON values: headline 38.6% (`0.386`); domestic 38.6% (`0.386`); foreign gross 3
 - **Eligibility conditions:** Resident individual.
 - **Regional differences:** None.
 - **Important exceptions / announced changes:** The 2026 Social Security Financing Law raised CSG on investment income by 1.4 points (social charges 17.2% to 18.6%); real estate income and gains, life insurance and regulated savings stay at 17.2%.
-- **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
+- **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-16)
 - **Sources:** [France - Individual - Income determination](https://taxsummaries.pwc.com/france/individual/income-determination); [France - Individual - Taxes on personal income](https://taxsummaries.pwc.com/france/individual/taxes-on-personal-income); [France - Individual - Significant developments](https://taxsummaries.pwc.com/france/individual/significant-developments)
 
 Update 2026-10-15: PFU 12.8% income tax + 18.6% social charges from 1 January 2026 confirmed on Service-Public
@@ -84,7 +84,7 @@ IFI (impôt sur la fortune immobilière) is levied on net real estate wealth (di
 
 JSON type: `limited`.
 
-- **Component IFI - real estate wealth tax** (base `real_estate_all`, bracket mode `marginal`): allowance EUR 0, entry threshold EUR 1,300,000; brackets: 0% (`0.0`) from EUR 0, 0.5% (`0.005`) from EUR 800,000, 0.7% (`0.007`) from EUR 1,300,000, 1% (`0.01`) from EUR 2,570,000, 1.25% (`0.0125`) from EUR 5,000,000, 1.5% (`0.015`) from EUR 10,000,000. Marginal scale on net taxable real estate value (art. 977 CGI as reported by Service-Public). Entry threshold EUR 1.3 million with decote up to EUR 1.4 million. Base includes real estate held indirectly through companies and funds.
+- **Component IFI - real estate wealth tax** (base `real_estate_all`, bracket mode `marginal`): allowance EUR 0, entry threshold EUR 1,300,000; brackets: 0% (`0.0`) from EUR 0, 0.5% (`0.005`) from EUR 800,000, 0.7% (`0.007`) from EUR 1,300,000, 1% (`0.01`) from EUR 2,570,000, 1.25% (`0.0125`) from EUR 5,000,000, 1.5% (`0.015`) from EUR 10,000,000. Marginal scale on net taxable real estate value (art. 977 CGI as reported by Service-Public). Entry threshold EUR 1.3 million with decote up to EUR 1.4 million. Base includes real estate held indirectly through companies and funds. JSON `main_home_valued_at` 0.7: the main home counts at 70% of its value (the 30% allowance).
 - **Property tax (not a wealth tax):** Taxe foncière on all property owners and taxe d'habitation on second homes, set locally; separate from IFI.
 - **Exemptions and thresholds:** Entry threshold EUR 1.3 million; brackets from EUR 800,000; decote between EUR 1.3 million and 1.4 million (EUR 17,500 minus 1.25% of the net value). 30% allowance on the main home (from general knowledge). Real estate used in the taxpayer's own business is exempt.
 - **Eligibility conditions:** Residents: worldwide real estate (except during the newcomer period); non-residents: French real estate.
@@ -117,7 +117,7 @@ JSON values: headline rate 38.6% (`0.386`); listed securities domestic 38.6% (`0
 - **Foreign assets:** Foreign-source passive income only.
 - **Exemptions and thresholds:** 50% of qualifying foreign passive income and gains exempt from income tax, for the impatriate only (not the spouse's or children's holdings).
 - **Eligibility conditions:** As regime eligibility. The paying person (for gains: the custodian, or failing that the company whose shares are sold) must be established outside France in a state whose tax treaty with France has an administrative assistance clause (BOI-RSA-GEO-40-10-30-10 § 60). Income collected abroad still qualifies if later transferred to a French account (§ 100).
-- **Important exceptions / announced changes:** Social charges are due on the unreduced amount (BOI-RSA-GEO-40-10-30 § 10). How the exempt half is treated for CEHR and CDHR (whether it counts in the revenu fiscal de référence) was not verified; the JSON uses the lower bound of 28.6% (CDHR applied, exempt half excluded).
+- **Important exceptions / announced changes:** Social charges are due on the unreduced amount (BOI-RSA-GEO-40-10-30 § 10). The exempt half is deducted from the CDHR base (art. 224 II 3° CGI), so the JSON uses 28.6% (CDHR applied, exempt half excluded); the CEHR base was not checked for the same exclusion.
 - **Tax year / confidence / verification:** 2026 / low / partially_verified (checked 2026-10-15)
 - **Sources:** [BOFiP BOI-RSA-GEO-40-10-30 (21 June 2017): Impatriés - exonération partielle de certains revenus de source étrangère](https://bofip.impots.gouv.fr/bofip/5670-PGP.html/identifiant=BOI-RSA-GEO-40-10-30-20170621); [BOFiP BOI-RSA-GEO-40-10-30-10 (16 February 2023): Impatriés - revenus passifs, conditions communes](https://bofip.impots.gouv.fr/bofip/5690-PGP.html/identifiant=BOI-RSA-GEO-40-10-30-10-20230216); [BOFiP BOI-RSA-GEO-40-10-10 (11 August 2025): Régime des impatriés - champ d'application et durée](https://bofip.impots.gouv.fr/bofip/5680-PGP.html/identifiant=BOI-RSA-GEO-40-10-10-20250811)
 
@@ -152,8 +152,12 @@ rate plus deferral of the 18.6% social charges, not from an exemption.
   tax group) needs 5% held 2 years. Treaty withholding is credited against IS up to the French tax, so a 15% US
   withholding leaves 10%. JSON: domestic and foreign `0.25`, credit.
 - **Payout:** PFU 31.4% (12.8% + 18.6%, 2026). CEHR and the CDHR only apply above EUR 500,000 of reference income
-  for a couple, so a EUR 400,000 payout stays at 31.4% (`payout_tax_rate 0.314`). Repaying contributed capital or a
+  for a couple (art. 223 sexies and 224 CGI). Paying the family EUR 400,000 net needs a gross dividend of about EUR 583,000
+  (400,000 / (1 - 0.314)), EUR 83,000 over the threshold: the CEHR at 3% on that excess adds about 0.4 point and the CDHR is
+  nil (decote, art. 224 V). 31.4% is used as the rate at today's amounts (`payout_tax_rate 0.314`); the thresholds are not
+  indexed, so a payout growing with prices drifts up towards 38.6%, which the flat rate does not capture. Repaying contributed capital or a
   shareholder current account is tax-free; the app does not model this.
+- **Running costs:** the holding's annual running cost is deductible from the company's profit at the 25% IS rate (JSON `running_cost_deductible_at` 0.25).
 - **Wealth tax:** IFI unchanged (holding shares count only for any real estate inside). Inherits the standard regime.
 - **Inheritance:** the children inherit the shares at the standard 5%-45% rates on net asset value. Dutreil
   relief excludes passive holdings. Inherits the standard regime.
@@ -191,6 +195,7 @@ Paris (16th, 7th, 6th and 8th arrondissements).
 
 ## Open questions
 
+- (standard / dividends) Whether the treaty credit can also be imputed on the 18.6% social charges was not settled: art. 200 A imputes it on the flat-rate income tax, but the DGFiP notice 2047 describes the credit cap as income tax plus social charges. The 25.8% above assumes income tax only.
 - Finance Law 2026 measures on holding companies, Dutreil and IFI should be checked against the promulgated text.
 - The 2026 Finance Law was promulgated in February 2026 (PwC corporate page: measures applying from 19 February 2026); its personal-tax measures beyond the CSG increase were not reviewed.
 - (standard / capital_gains) Exit tax parameters (art. 167 bis) and real estate taper details were not re-read in the code.
@@ -198,15 +203,17 @@ Paris (16th, 7th, 6th and 8th arrondissements).
 - (standard / wealth_tax) Status of the 2026 budget proposals on unproductive wealth and holding companies should be re-checked against the promulgated Finance Law 2026.
 - (standard / inheritance) Life-insurance allowance (art. 990 I / 757 B) and Dutreil details were not re-read in the code; check for 2026 Finance Law changes to the Dutreil pact.
 - (standard / inheritance) Notary fees on a succession (regulated emoluments, mandatory where real estate is involved) were not sourced; other_transfer_cost_rate set to 0.
-- (impatriate_155b / capital_gains) Whether the 50%-exempt foreign passive income counts in the revenu fiscal de référence for CEHR/CDHR was not verified; if it does, the effective rate rises to about 38.6% and the regime brings almost no saving for a household above the CDHR threshold.
+- (impatriate_155b / capital_gains) Resolved 2026-10-16: art. 224 II 3° CGI deducts the income exempt under art. 155 B from the CDHR base, so the exempt half does not count and the 28.6% lower bound is the right figure. The CEHR base (art. 223 sexies, revenu fiscal de référence) was not checked for the same exclusion.
 - (impatriate_155b / capital_gains) The branch of art. 155 B for non-salaried persons (founders bringing an exceptional economic contribution) was not checked.
-- (impatriate_155b / dividends) Same CDHR/reference-income question as capital gains under this regime.
+- (impatriate_155b / dividends) Same CDHR point as capital gains under this regime: resolved by art. 224 II 3° CGI.
 
 US citizens: The US-France income tax treaty gives a special credit for US citizens resident in France on US-source income; CSG/CRDS on investment income have been treated as creditable by the US since the 2019 treaty-related changes (not re-verified). The 1978 US-France estate and gift tax treaty applies.
 - Family rent (EUR 5,839) is the median of only 5 flats (3 in Neuilly-sur-Seine, 1 in Ville-d'Avray, 1 in Paris 9e); OLAP per-m2 medians for the 15e/16e/17e suggest EUR 7,000-8,000 for 165 m2, so it may understate a Paris family flat.
 
 ## Sources
 
+- [Code general des impots (consolidated text of 2026-09-01): art. 200 A, 223 sexies, 224](https://codes.droit.org/payloads/Code%20g%C3%A9n%C3%A9ral%20des%20imp%C3%B4ts.xml) — codes.droit.org (Legifrance open data) (legislation)
+- [Guide usager: acompte de contribution differentielle sur les hauts revenus (CDHR)](https://www.impots.gouv.fr/cdhr-guide) — Direction generale des Finances publiques (tax_authority)
 - [France - Individual - Income determination](https://taxsummaries.pwc.com/france/individual/income-determination) — PwC Worldwide Tax Summaries (professional)
 - [France - Individual - Taxes on personal income](https://taxsummaries.pwc.com/france/individual/taxes-on-personal-income) — PwC Worldwide Tax Summaries (professional)
 - [France - Individual - Significant developments](https://taxsummaries.pwc.com/france/individual/significant-developments) — PwC Worldwide Tax Summaries (professional)
@@ -239,3 +246,4 @@ US citizens: The US-France income tax treaty gives a special credit for US citiz
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 13,400 to EUR 9,150 (Paris 9e and 8e).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 9,150 to EUR 5,839 (5 flats of 165-233 m2: Neuilly-sur-Seine, Ville-d'Avray, Paris 9e); still thin.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: foreign-dividend treaty credit clarified (imputed on the 12.8% flat tax only, art. 200 A; added back in the CDHR formula, art. 224 IV A 2°); foreign-dividend credit capped at 12.8 points (`credit_cap`; French tax left on a foreign dividend 25.8% instead of 23.6%); IFI main home counted at 70%; structure running costs deductible at 25%; art. 155 B CDHR question resolved (exempt half excluded, art. 224 II 3°); holding payout note corrected (a EUR 400,000 net payout needs about EUR 583,000 gross, above the EUR 500,000 CEHR/CDHR threshold).

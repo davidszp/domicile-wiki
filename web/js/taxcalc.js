@@ -57,7 +57,8 @@ export function annualTaxes(rules, p, std = null) {
   else {
     let foreign;
     if (lumpDiv || d.ftc === "exemption") foreign = 0;
-    else if (d.ftc === "credit") foreign = divF * Math.max(0, d.foreign_gross - p.source_wht);
+    else if (d.ftc === "credit") foreign = divF * Math.max(0, d.foreign_gross - (d.credit_cap == null ? p.source_wht : Math.min(p.source_wht, d.credit_cap)));
+    else if (d.ftc === "deduction") foreign = divF * (1 - p.source_wht) * d.foreign_gross;
     else foreign = divF * d.foreign_gross;
     out.dividends = foreign + divD * d.domestic;
   }
@@ -67,11 +68,29 @@ export function annualTaxes(rules, p, std = null) {
     let total = 0;
     for (const comp of rules.wealth) {
       if (comp.base.includes("foreign") && covers(rules, "wealth_tax_foreign")) continue;
-      const base = wealthBase(comp.base, p);
+      const s = comp.securities_share ?? 1, hs = comp.home_share ?? 1;
+      const valued = s === 1 && hs === 1 ? p : { ...p, portfolio: p.portfolio * s, real_estate_local: p.real_estate_local * hs,
+        net_wealth: p.net_wealth - p.portfolio * (1 - s) - p.real_estate_local * (1 - hs) };
+      const base = wealthBase(comp.base, valued);
       if (base <= comp.entry) continue;
       let tax = applyBrackets(base - comp.exempt, comp.brackets, comp.mode);
       if (comp.credits_wht) tax = Math.max(0, tax - divF * p.source_wht); // a tax on deemed income in place of dividend tax
       total += tax;
+    }
+    const cap = rules.wealth_cap;
+    if (cap && total > 0 && ![d.domestic, d.foreign_gross, c.listed_foreign, c.listed_domestic].some((v) => v == null)) {
+      // Income tax before credits on the income that counts, against the cap on income plus wealth tax.
+      let income, incomeTax;
+      if (rules.structure) { // the family's own income is what the structure pays out to it
+        income = p.annual_payout ?? 400000; // as in the structure costs below
+        incomeTax = income * (rules.structure.payout_rate ?? 0);
+      } else {
+        income = p.dividends + (cap.gains ? p.realized_gains : 0);
+        incomeTax = divF * d.foreign_gross + divD * d.domestic;
+        if (cap.gains) incomeTax += gainsF * c.listed_foreign + gainsD * c.listed_domestic;
+      }
+      const allowed = Math.max(cap.share * income - incomeTax, total * (1 - cap.max_reduction));
+      total = Math.min(total, allowed);
     }
     out.wealth_tax = total;
   }
@@ -125,7 +144,9 @@ function addStructureCosts(rules, p, out) {
   const payout = income > 0 ? Math.min(payoutAmount, income) : payoutAmount;
   out.payout_tax = payout * st.payout_rate;
   out.running_cost = st.running_cost;
-  const extra = out.payout_tax + out.running_cost;
+  // Deductible costs lower the structure's own tax, never below nothing.
+  const relief = Math.min(st.running_cost * (st.cost_relief ?? 0), (out.capital_gains ?? 0) + (out.dividends ?? 0));
+  const extra = out.payout_tax + out.running_cost - relief;
   if (income <= 0) return;
   for (const [key, amount] of [["capital_gains", p.realized_gains], ["dividends", p.dividends]]) {
     if (out[key] !== null) out[key] += (extra * amount) / income;

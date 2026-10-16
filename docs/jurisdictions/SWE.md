@@ -1,6 +1,6 @@
 # Sweden — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -56,8 +56,9 @@ years after leaving.
 - **Rule:** dividends from listed Swedish and foreign companies are taxed at **30%**. JSON: 0.30
   domestic, 0.30 foreign.
 - **Foreign withholding tax:** credited against Swedish tax.
-- **Unlisted non-qualified shares:** dividends are taxed at 25%. This is general knowledge and was not
-  confirmed on an opened official page.
+- **Unlisted non-qualified shares:** dividends, gains and losses are taken up at 5/6, an effective 25%
+  (Skatteverket, "Om aktier", which adds that in some cases the 5/6 reduction does not apply; the statute
+  chapter was not opened). Used for the payout from the holding AB.
 - **Outbound withholding (kupongskatt):** 30% on dividends to non-residents, reduced by treaty
   (Skatteverket). EU parent companies can be exempt. The Russia treaty has been suspended since 10 February
   2025.
@@ -90,17 +91,21 @@ An ISK is a statutory account wrapper, not a residence regime. Any Swedish resid
   - That yield is taxed at 30%, which is **1.065% of the capital base** a year.
   - The capital base is the average of the four quarter-start values plus all deposits during the year.
 - **Tax-free basic level:** **SEK 300,000** per person from 1 January 2026 (SEK 150,000 in 2025). It is
-  shared across ISK, endowment insurance (kapitalförsäkring) and PEPP.
+  shared across ISK, endowment insurance (kapitalförsäkring) and PEPP. It is set by amendment, not
+  indexed. The JSON uses **SEK 600,000** for the reference couple (one ISK each, portfolio split evenly).
 - **Permitted assets:**
   - Securities listed on a regulated market anywhere in the world.
   - Securities traded on an MTF within the EEA.
   - Fund units and cash.
   - Holdings of 10% or more, and qualified shares, are not allowed.
-- **Foreign withholding tax:** credited automatically against the ISK tax.
+- **Foreign withholding tax:** credited automatically against the ISK tax (Skatteverket, "Automatisk
+  avräkning av utländsk skatt"). Skatteverket assumes the foreign income was taxed at 15% (1,000 of tax
+  means 6,667 of income), caps that income at the account's schablonintäkt, and the credit cannot exceed
+  the Swedish tax; an unused part can be carried forward five years. JSON: `credits_withholding` true.
 - **JSON:**
   - Capital gains on listed shares 0.0.
   - Dividend rates 0.0.
-  - Wealth tax `limited`, base `securities_accounts`, exempt_amount 300,000, rate 0.01065.
+  - Wealth tax `limited`, base `securities_accounts`, exempt_amount 600,000 (couple), credits_withholding true, rate 0.01065.
   - Private business and real estate keep the standard rates, because those assets cannot be held in an
     ISK.
 - **Not verified:** moving existing holdings into an ISK counts as a sale at market value; this is
@@ -112,16 +117,28 @@ An ISK is a statutory account wrapper, not a residence regime. Any Swedish resid
 
 ## Holding structures
 
-**No structure modelled.** A Swedish AB holding listed portfolio shares gets no participation exemption: listed
-shares are business-related only with at least 10% of the votes held for a year, so portfolio gains and dividends are
-taxed at 20.6% in the company (PwC, Corporate income determination). Paying out to a passive owner then costs about
-25% (5/6 of a dividend on unlisted shares taxed at 30%; 3:12 rules if the shares are qualified), about 40% in total.
-The investment savings account (ISK, regime `isk`) is already better: for 2026 the standardised yield is 3.55% of
-the capital base (government bond rate of 2.55% on 30 November 2025 + 1 point), taxed at 30% = **1.065%** of the
-account value a year above a SEK 300,000 tax-free level, with no tax on gains, dividends or withdrawals
-(Skatteverket). On this family's EUR 30m portfolio that is about EUR 320k a year against roughly EUR 370k of company
-tax before any payout tax in an AB. Swedish investment companies (investmentföretag) need a broad shareholder base
-and are not available to a family. Recorded in `holding_company_notes`.
+**Holding company (aktiebolag, AB) — modelled as structure regime `holding_ab`.** A Swedish AB owned by the
+parents gets no participation exemption on a listed portfolio: listed shares are business-related only with at
+least 10% of the votes held for a year, so portfolio gains and dividends are taxed at 20.6% in the company
+(PwC, Corporate income determination), with credit for foreign withholding tax up to the Swedish tax on that
+income (PwC, Tax credits and incentives). Gains on unlisted shares are exempt (business-related). Paying out to
+a passive owner costs 25%: dividends on unlisted non-qualified shares are taken up at 5/6 and taxed at 30%
+(Skatteverket, "Om aktier"). If an owner is active in the AB to a significant extent the shares are
+qualified and the 3:12 rules (reformed 2026) apply instead. Case law reported by a lagen.nu summary (RÅ 2009
+not 68, ruling not opened) says that managing securities has not made shares qualified. No wealth tax and no
+inheritance tax apply, so the AB shares pass tax-free.
+
+- **JSON:** gains 0.206 (listed), 0.0 (unlisted business sale), dividends 0.206 with credit, payout 0.25;
+  running cost not researched (null). US citizens are excluded (CFC/PFIC).
+- **Compared with the ISK:** for 2026 the ISK costs 1.065% of the value above the tax-free level, with no tax
+  on gains, dividends or withdrawals. On this family's EUR 30m that is about EUR 320k a year against roughly
+  EUR 370k of company tax on 2% dividends and realised gains, before any payout tax in an AB. The AB defers
+  tax only on gains it does not realise and is never cheaper at these yields, but advisers commonly use it,
+  so it is kept as a path.
+- **Rejected:** Swedish investment companies (investmentföretag) need a broad shareholder base and are not
+  available to a family. Endowment insurance (kapitalförsäkring) has the same standardised tax as the ISK.
+- **Moving an existing portfolio** into an ISK or an AB is a sale at market value; the projection does not
+  model this entry tax.
 
 ## Company taxation (kept separate from personal tax)
 
@@ -143,8 +160,9 @@ City: Stockholm.
 - Changes to ISK and capital taxation in the 2027 budget or by the post-election government.
 - How the 3:12 reform taxes sale gains on qualified shares.
 - How gains on foreign real estate are taxed.
-- The 25% dividend rate on unlisted shares and the inherited cost basis, neither confirmed on an official
-  page.
+- The exceptions to the 5/6 rule on dividends (statute chapter not opened) and the inherited cost basis, not
+  confirmed on an official page.
+- The AB's running costs (not researched), and whether a passive family AB's shares always stay non-qualified.
 - The migration routes.
 
 ## Sources
@@ -156,6 +174,9 @@ City: Stockholm.
 - [Sweden - Individual - Income determination — PwC](https://taxsummaries.pwc.com/sweden/individual/income-determination)
 - [Sweden - Individual - Other taxes — PwC](https://taxsummaries.pwc.com/sweden/individual/other-taxes)
 - [Sweden - Individual - Residence — PwC](https://taxsummaries.pwc.com/sweden/individual/residence)
+- [Automatisk avräkning av utländsk skatt — Skatteverket](https://www.skatteverket.se/privat/internationellt/avrakningavutlandskskatt/automatiskavrakningavutlandskskatt.4.3684199413c956649b512df5.html)
+- [Om aktier — Skatteverket](https://www.skatteverket.se/privat/skatter/vardepapper/omaktier.4.50a6b4831275a0376d380001915.html)
+- [Sweden - Corporate - Tax credits and incentives — PwC](https://taxsummaries.pwc.com/sweden/corporate/tax-credits-and-incentives)
 - [Sweden - Corporate - Taxes on corporate income — PwC](https://taxsummaries.pwc.com/sweden/corporate/taxes-on-corporate-income)
 - [Qasa - houses for rent, Stockholm area](https://qasa.com/se/en/find-home?homeTypes=house&minRoomCount=5&searchAreas=Stockholm%7E%7Ese)
 - [Stockholm International School - School fees](https://stockholmis.se/admissions/school-fees/)
@@ -167,3 +188,4 @@ City: Stockholm.
 - 2026-10-15: data-quality pass: added prime rent (Qasa, Danderyd/Lidingö houses, SEK 55,000/month); school fee now from Stockholm International School's own page (SEK 191,500, Grades 11-12, 2026-27); added duration_note to the ISK regime.
 - 2026-10-15: holding-structure review: no structure added (AB vs ISK explained); holding_company_notes updated.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (SEK 55,000).
+- 2026-10-16: recipe pass: added the `holding_ab` structure regime (20.6% in the AB, 25% on payout); ISK allowance set to SEK 600,000 for the couple and the foreign-withholding credit switched on (Skatteverket automatic credit).

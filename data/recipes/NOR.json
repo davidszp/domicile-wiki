@@ -1,0 +1,110 @@
+{
+  "id": "NOR",
+  "name": "Norway",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Dividends and share gains are multiplied by 1.72 and taxed at 22% (37.84%), with credit for foreign withholding tax; net wealth tax of 1.0% (1.1% above NOK 43 million for a couple) on 80% of the value of shares. No inheritance or gift tax; the children take over the cost basis."
+    },
+    {
+      "id": "holding_as",
+      "name": "Holding company (AS)",
+      "regime": "holding_as",
+      "estate": "portfolio",
+      "note": "A Norwegian AS owned by the parents pays no tax on gains on qualifying (Norwegian and EEA) shares and funds and 0.66% on their dividends (fritaksmetoden); personal tax of 37.84% falls on payouts. The parents still pay wealth tax on the AS shares. The tax file assumes the foreign portfolio sits in EEA-domiciled funds or shares; direct US shares would be taxed at 22% in the AS. The AS shares are in the estate; there is no inheritance tax."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 144440,
+      "working": "Top marginal case; the shielding deduction (cost basis x risk-free rate) is ignored, i.e. the cost basis of the shares is taken as negligible. Dividends 200,000 x 1.72 = 344,000 taxed at 22% = 75,680 (Skatteloven § 10-11; Skatteetaten: factor 1.72, effective 37.84% for 2026), less the 15% foreign withholding credited (§ 16-20) = 30,000, = 45,680. Gains 150,000 x 1.72 x 22% = 56,760 (§ 10-31). Wealth tax 2026: shares count at 80% (20% valuation discount) = 8,000,000; allowance for spouses taxed jointly 2 x 1,900,000 = 3,800,000 (thresholds doubled; Skatteetaten, Formuesskatt); 4,200,000 x 1.0% (municipal 0.35% + state 0.65%) = 42,000. Total 45,680 + 56,760 + 42,000 = 144,440."
+    },
+    {
+      "path": "holding_as",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 43320,
+      "working": "Assumes the AS holds Norwegian or EEA shares and EEA-domiciled funds, which qualify for the participation exemption (Skatteloven § 2-38; PwC, Norway Corporate income determination); US shares held directly would be taxed at 22%. Gains of 150,000 are exempt (0). Dividends: 97% exempt, 3% taxed at 22% = 0.66% x 200,000 = 1,320; no credit for foreign withholding is used (tax file). The AS pays no wealth tax; the parents do on the AS shares, valued at the company's net value (10,000,000) less the 20% share discount = 8,000,000; less the couple's allowance 3,800,000 = 4,200,000 x 1.0% = 42,000. Total 1,320 + 42,000 = 43,320. The AS's running costs are not in the tax file; payout tax of 37.84% excluded."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 100000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Norway abolished inheritance and gift tax on 1 January 2014 (PwC, Norway Other taxes). NOK 100,000,000 passing to three children: tax 0. The children take over the cost basis, so tax on latent gains falls on their later sales."
+    },
+    {
+      "path": "holding_as",
+      "kind": "inheritance",
+      "estate": 100000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The AS shares pass like any asset and Norway has no inheritance or gift tax since 1 January 2014 (PwC, Norway Other taxes): tax 0 on NOK 100,000,000 for three children."
+    }
+  ],
+  "assumptions": [
+    "Top marginal case: about EUR 600k of dividends a year. The cost basis of the shares is taken as small, so the shielding deduction is ignored.",
+    "The reference couple is taxed jointly for wealth tax: allowance NOK 3.8 million and 1.1% from NOK 43 million of net wealth (tax file corrected from the single person's NOK 1.9 million).",
+    "The AS holds the foreign portfolio through EEA-domiciled funds or shares, so gains are exempt and dividends bear 0.66% (tax file assumption; BFU 5/2026 shows a US fund held by an AS is taxable).",
+    "The portfolio enters the AS with no Norwegian tax on its latent gains.",
+    "The 2027 budget proposals (allowance NOK 1,990,000) are not law and are not modelled."
+  ],
+  "open_questions": [
+    "Needs an engine change: the primary home counts at 25% of its value in the wealth-tax base (70% above NOK 14 million); the engine values shares at 80% but counts the home in full, overstating wealth tax a little.",
+    "Needs an engine change: the shielding deduction (skjermingsfradrag, skatteloven § 10-12) deducts cost basis x risk-free rate (3.6% for 2025) from dividends and gains before the 1.72 factor and carries the unused part forward; the family's cost basis is unknown and the engine has no cost basis, so a basis of NOK 30 million would shelter more than the whole annual dividend.",
+    "Needs an engine change: moving an existing portfolio into an AS is a realisation at 37.84% on the latent gain (Norway gives no step-up on arrival); the projection starts with the full portfolio inside the AS.",
+    "Structure considered and rejected: the share savings account (ASK) holds only EEA-domiciled shares and funds, defers tax until withdrawals above cost and taxes them at 37.84% (Skatteetaten); the engine cannot tax a payout in proportion to the gain, and most of this portfolio is not EEA-domiciled.",
+    "Skatteloven article numbers (§ 10-11, § 10-12, § 10-31, § 16-20) were given from memory and not opened on a statute page.",
+    "A foundation or trust is not a common Norwegian vehicle for a private portfolio and was not researched."
+  ],
+  "sources": [
+    {
+      "title": "Formuesskatt og verdsettingsrabatter (2026)",
+      "url": "https://www.skatteetaten.no/satser/formuesskatt/",
+      "publisher": "Skatteetaten",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Factor for upward adjustment of gain/loss or dividend on shares",
+      "url": "https://www.skatteetaten.no/en/rates/factor-for-upward-adjustment-of-gainloss-or-dividend-on-shares/",
+      "publisher": "Skatteetaten",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Share savings account (ASK)",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/share-savings-account-ask/",
+      "publisher": "Skatteetaten",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Norway - Individual - Other taxes",
+      "url": "https://taxsummaries.pwc.com/norway/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Norway - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/norway/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

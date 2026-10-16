@@ -1,0 +1,200 @@
+{
+  "id": "AUT",
+  "name": "Austria",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "standard",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "estate": "portfolio",
+      "note": "Dividends and realised gains are taxed at the flat 27.5% special rate (§ 27a(1) Z 2 EStG) whatever the holding period; foreign withholding tax is credited up to 15% (PwC). There is no wealth tax and no inheritance or gift tax, so the portfolio passes to the children untaxed. No special regime applies: the § 103 EStG immigration relief is for scientists, artists and athletes in the public interest and the family has no such activity."
+    },
+    {
+      "id": "privatstiftung",
+      "name": "Private foundation (Privatstiftung)",
+      "regime": "privatstiftung",
+      "estate": "outside_estate",
+      "note": "The Privatstiftung is its own legal person that owns the endowed assets (§ 1 PSG), so nothing of the portfolio passes at the founder's death (Austria has no inheritance tax in any case). It pays no tax on portfolio dividends (§ 13(2), § 10(1) KStG) and 27.5% interim tax on realised gains (§ 13(3), § 22(2) KStG, from 2026); beneficiaries pay 27.5% KESt on distributions (§ 27(5) Z 7 EStG), and the interim tax is credited when distributions exceed the year's separately taxed income (§ 24(5) KStG). The endowment bears 3.5% foundation entry tax. Running costs (three-member board, foundation auditor) are not in the tax file: no sourced euro figure was found."
+    },
+    {
+      "id": "vv_gmbh",
+      "name": "Asset-management GmbH",
+      "regime": "vv_gmbh",
+      "estate": "portfolio",
+      "note": "A GmbH owned by the parents pays 23% corporate tax on realised gains (no exemption below 10%) and nothing on portfolio dividends (§ 10 KStG); distributions bear 27.5% KESt. The shares are in the estate, where Austria levies no inheritance tax. Running costs are not in the tax file."
+    }
+  ],
+  "checks": [
+    {
+      "path": "standard",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 66250,
+      "working": "Dividends 200,000 are foreign with 15% withholding. Austrian tax: 27.5% special rate (§ 27a(1) Z 2 EStG) = 55,000. Credit of foreign tax up to 15% (PwC; applied by the custodian or in the return) = 30,000. Net 25,000 (= 200,000 x 12.5%). Realised gains 150,000 x 27.5% (§ 27a(1) Z 2 EStG) = 41,250. No wealth tax. Total 25,000 + 41,250 = 66,250. The rate is flat, so the top-marginal assumption makes no difference; the optional progressive taxation (§ 27a(5)) is ignored."
+    },
+    {
+      "path": "privatstiftung",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 41250,
+      "working": "The foundation distributes nothing in the year. Dividends from foreign corporations are exempt (§ 13(2) KStG with § 10(1) Z 5-7 KStG) and are not among the income of § 13(3) KStG, so the 15% foreign withholding (30,000) is a final cost and not part of the residence tax: 0. Realised gains 150,000 fall under § 13(3) Z 1 lit b KStG and bear the interim tax of 27.5% (§ 22(2) KStG, calendar years from 2026) = 41,250. No wealth tax. Running costs: none in the tax file (no sourced figure), so 0. Payout KESt excluded. Total 41,250."
+    },
+    {
+      "path": "vv_gmbh",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 150000,
+      "wealth": 10000000,
+      "foreign_share": 1.0,
+      "expected": 34500,
+      "working": "Foreign portfolio dividends are exempt (§ 10(1) Z 5-7 KStG): 0; the foreign withholding is a final cost. Realised gains 150,000 are taxed at the corporate rate of 23% (§ 22(1) KStG, calendar years from 2024; the 24% band above EUR 1,000,000 starts in 2028) = 34,500. The minimum corporate tax of EUR 500 a year (§ 24(4) KStG) is below this and is credited later. No wealth tax. Running costs: none in the tax file, so 0. Payout KESt excluded. Total 34,500."
+    },
+    {
+      "path": "standard",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "Austria levies no inheritance, estate or gift tax (PwC: Other taxes). Each child receives 3,333,333.33 of securities with no tax. The real estate transfer tax that applies to an inherited Austrian home is not part of a securities estate (see open questions)."
+    },
+    {
+      "path": "privatstiftung",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The assets belong to the foundation (§ 1 PSG), so nothing passes at death; and Austria has no inheritance tax in any case (PwC: Other taxes). Tax 0."
+    },
+    {
+      "path": "vv_gmbh",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 0,
+      "working": "The GmbH shares worth 10,000,000 pass to three children. Austria has no inheritance, estate or gift tax (PwC: Other taxes). Tax 0."
+    }
+  ],
+  "assumptions": [
+    "Austrian tax rates on investment income are flat (27.5%), so the 'top marginal rates' assumption has no effect on the checks.",
+    "Foreign dividends are assumed to come from companies resident in the EU/EEA or in states with comprehensive administrative assistance and comparable to an Austrian corporation (the § 10(1) Z 5-7 KStG exemption for the foundation and the GmbH); fund distributions are not covered.",
+    "The Privatstiftung and the GmbH hold the portfolio in positions below 10% of each company; the 1% and 10% rules of § 13(4) and § 10(2) KStG do not apply.",
+    "Running costs of the foundation and the GmbH are not in the tax file: no sourced euro amount for the board, auditor or accountant was found, so both structures are slightly flattered.",
+    "The family home is held personally under every path."
+  ],
+  "open_questions": [
+    "Needs an engine change: the Privatstiftung's interim tax is reduced or credited when it makes distributions. Its separately taxed base is cut by Zuwendungen on which KESt was withheld (§ 13(3) last sentence KStG) and the excess of Zuwendungen over the base earns a credit of 27.5% (§ 24(5) Z 3-4 KStG, years from 2026). The engine charges 27.5% on all realised gains and then 27.5% on the payout, so it overstates the foundation's tax whenever the family takes out at least the year's gains.",
+    "Needs an engine change: the endowment of a Privatstiftung bears a one-off 3.5% foundation entry tax (§ 2 StiftEG as amended by the Budgetbegleitgesetz 2025, from 1 January 2026), about EUR 1,050,000 on EUR 30,000,000. The engine has no one-off entry cost on moving the portfolio into a structure.",
+    "Needs an engine change: from 2028 the corporate tax rate is 23%, rising to 24% on income above EUR 1,000,000 a year (§ 22(1) KStG as amended by BGBl. I Nr. 62/2026). The engine takes one rate (23%), so the GmbH is undertaxed once its nominal income passes EUR 1,000,000 (roughly from year 30 if the realised gains, 1.5% of a portfolio that keeps its real value, grow with 2.5% inflation).",
+    "Needs an engine change: inherited Austrian real estate bears real estate transfer tax at 0.5% (first EUR 250,000), 2% (next EUR 150,000) and 3.5% (above) plus a 1.1% registration fee, per the tax file (PwC confirms the stepped rates for non-remunerated transfers). The engine's other_transfer_cost_rate is a share of the whole estate, so it cannot charge the home alone; it is left at 0 and the two deaths omit this cost.",
+    "Running costs of a Privatstiftung (at least three board members, foundation auditor, accounts) and of a GmbH are not in the tax file; law-firm pages say only 'five-figure range' a year. Find a sourced fee schedule (for example from a Wirtschaftstreuhänder or a foundation association) before relying on the comparison.",
+    "The foundation entry tax and the consolidated StiftEG text were not opened on RIS; the 3.5% rate rests on the government bill's explanatory note and two law-firm summaries.",
+    "A family trust is not an Austrian vehicle (no Austrian trust law was found; not researched further). § 27(5) Z 7 EStG treats distributions of comparable foreign foundations or asset pools like Privatstiftung Zuwendungen. Not modelled."
+  ],
+  "sources": [
+    {
+      "title": "EStG 1988 § 27a (special tax rate 27.5%)",
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27a",
+      "publisher": "RIS - Bundeskanzleramt",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "EStG 1988 § 27 (Abs 5 Z 7: Zuwendungen of a Privatstiftung)",
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27",
+      "publisher": "RIS - Bundeskanzleramt",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "KStG 1988 § 22 (rates; Privatstiftung 27.5% from 2026; 2028 version 24% above EUR 1m)",
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=22",
+      "publisher": "RIS - Bundeskanzleramt",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "KStG 1988 § 13 (Privatstiftung: Abs 2 foreign Beteiligungserträge, Abs 3 Zwischenbesteuerung)",
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=13",
+      "publisher": "RIS - Bundeskanzleramt",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "KStG 1988 § 10 (Beteiligungserträge, Abs 1 Z 1-7, Abs 2)",
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=10",
+      "publisher": "RIS - Bundeskanzleramt",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "KStG 1988 § 24 (Abs 4 Mindeststeuer, Abs 5 credit of Zwischensteuer)",
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=24",
+      "publisher": "RIS - Bundeskanzleramt",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Privatstiftungsgesetz (PSG) § 1, 4, 15, 20, 34",
+      "url": "https://www.jusline.at/gesetz/psg/gesamt",
+      "publisher": "Jusline (consolidated legislation)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regierungsvorlage Budgetbegleitgesetz 2025, 87 d.B. XXVIII. GP",
+      "url": "https://www.parlament.gv.at/dokument/XXVIII/I/87/fname_1685674.pdf",
+      "publisher": "Parlament Österreich",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Austria - Individual - Income determination",
+      "url": "https://taxsummaries.pwc.com/austria/individual/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Austria - Individual - Other taxes",
+      "url": "https://taxsummaries.pwc.com/austria/individual/other-taxes",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Austria - Corporate - Income determination",
+      "url": "https://taxsummaries.pwc.com/austria/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Austria - Corporate - Taxes on corporate income",
+      "url": "https://taxsummaries.pwc.com/austria/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Erhöhung der Stiftungseingangssteuer und der Zwischensteuer ab 2026",
+      "url": "https://www.forvismazars.com/at/en/insights/tax-news/newsletter-august-2025/erhoehung-stiftungseingangssteuer-zwischensteuer",
+      "publisher": "Forvis Mazars Austria",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Besteuerung der Privatstiftung in Österreich",
+      "url": "https://brandauer-rechtsanwaelte.at/2026/04/12/besteuerung-privatstiftung-oesterreich/",
+      "publisher": "Brandauer Rechtsanwälte",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

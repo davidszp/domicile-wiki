@@ -1,0 +1,162 @@
+{
+  "id": "IRL",
+  "name": "Ireland",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally",
+      "regime": "standard",
+      "note": "Dividends are income at the marginal rate (40% income tax, 11% USC above EUR 100,000 of non-PAYE income, 4.35% PRSI: 55.35%), with credit for foreign withholding; gains are taxed at 31% (disposals from 7 October 2026). No wealth tax. Capital Acquisitions Tax is 33% above EUR 420,000 per child. The family has no Irish domicile, but the remittance basis is not a path here because the family spends EUR 400,000 a year in Ireland (see the open questions)."
+    },
+    {
+      "id": "investment_company",
+      "name": "Irish private investment company",
+      "regime": "investment_company",
+      "estate": "portfolio",
+      "note": "An Irish close company owned by the parents pays 12.5% on foreign portfolio dividends from EU or treaty-country payers (s.21B TCA 1997, holdings of 5% or less), nothing on Irish dividends, and 33% on gains. Extracting money costs about 55.35% in personal tax on the dividend, so the structure only defers tax on income the family does not spend. The shares are in the parents' estate at value: business relief excludes companies that hold investments. The 20% close-company surcharge (s.440) is not charged while the company distributes at least its investment income each year, as the family's spending requires."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 150000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 288600,
+      "working": "Top marginal rates assumed (the family's dividends are about EUR 600,000 a year); the EUR 1,270 CGT exemption and personal allowances are ignored. Foreign dividends 600,000 are income: income tax 40% (higher rate), USC 8% plus the 3% surcharge on non-PAYE income above EUR 100,000 = 11% (Revenue USC pages), PRSI on unearned income 4.35% (from 1 October 2026): 55.35% x 600,000 = 332,100. Credit for the 15% foreign withholding, 90,000 (Schedule 24 TCA 1997; limited to the Irish tax on the same income, here fully used) leaves 242,100. Gains 150,000 x 31% (CGT, disposals on or after 7 October 2026, Revenue eBrief 142/26) = 46,500; no USC or PRSI on gains. No wealth tax. Total 242,100 + 46,500 = 288,600."
+    },
+    {
+      "path": "investment_company",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 150000,
+      "wealth": 30000000,
+      "foreign_share": 1.0,
+      "expected": 46500,
+      "working": "Foreign dividends 600,000 from EU or treaty-country listed companies, the company holding 5% or less of each: taxed under Case III at 12.5% as if paid out of trading profits (s.21B TCA 1997 and Revenue manual 02-02-03a, section 6, portfolio investors) = 75,000. Credit for the 15% foreign withholding, 90,000, is limited to the Irish tax on the same dividends (Schedule 24 TCA 1997), so credit 75,000 and tax 0 (the excess 15,000 is lost). Gains 150,000 at the effective 31% corporation tax rate on chargeable gains = 46,500. No annual running cost is recorded in the tax file. The 20% surcharge of s.440 is 0 on the assumption that the company distributes its investment income. Payout tax excluded. Total 46,500."
+    },
+    {
+      "path": "investment_company",
+      "kind": "annual",
+      "dividends": 600000,
+      "realised_gains": 150000,
+      "wealth": 30000000,
+      "foreign_share": 0.9,
+      "expected": 46500,
+      "working": "Foreign dividends 540,000 (90%) at 12.5% (s.21B TCA 1997, portfolio investor) = 67,500; the 15% foreign withholding, 81,000, is credited only up to the Irish tax on the same dividends (Schedule 24 TCA 1997): 67,500, so tax 0. Irish dividends 60,000 (10%) are franked investment income, exempt from corporation tax in the company's hands (s.129 TCA 1997; Revenue manual 02-02-03a section 5) = 0. Gains 150,000 x 31% = 46,500 (the same rate on foreign and Irish shares). Total 46,500. Payout tax and the s.440 surcharge (nil if investment income is distributed) excluded."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 2884200,
+      "working": "Each child receives 10,000,000 / 3 = 3,333,333.33. Group A tax-free threshold EUR 420,000 for gifts and inheritances on or after 7 October 2026 (CATCA 2003 Schedule 2 Part 1, Revenue CAT thresholds page), assuming no earlier benefit from the parents. Taxable 2,913,333.33 at 33% (CAT rate, taxes on gifts and inheritances on or after 6 December 2012) = 961,400 per child. Three children 2,884,200. Business relief excludes investments and does not apply."
+    },
+    {
+      "path": "investment_company",
+      "kind": "inheritance",
+      "estate": 10000000,
+      "children": 3,
+      "expected": 2884200,
+      "working": "The company shares are valued at market value, about the portfolio. Business relief (90%, s.90-101 CATCA 2003) is excluded for a business that consists wholly or mainly of making or holding investments (Revenue CAT manual Part 12, s.93), so the calculation is the same as for personal holding: 3,333,333.33 per child less 420,000, taxed at 33% = 961,400 per child, 2,884,200 in total. Ireland has no capital gains tax on death, so there is no deemed disposal of the shares."
+    }
+  ],
+  "assumptions": [
+    "Top marginal rates apply (the family's income is far above every threshold); the 3% USC surcharge on non-PAYE income applies only above EUR 100,000, but the first EUR 100,000 is ignored. Income tax bands, tax credits and the EUR 1,270 CGT exemption are ignored.",
+    "The 2026 rates are those in force on 2026-10-16: CGT 31% from 7 October 2026 (Budget 2027), PRSI 4.35% from 1 October 2026, Group A CAT threshold EUR 420,000 from 7 October 2026. The Finance Act enacting them was not read.",
+    "The investment company is funded by the portfolio at its market value with no latent gain, and distributes at least its investment income each year (dividends declared and paid within 18 months of the period end), so the s.440 surcharge is nil. The family's spending (EUR 400,000 net, about EUR 900,000 gross of 55.35% payout tax) exceeds the company's investment income.",
+    "Foreign dividends are assumed to come from companies resident in EU member states or treaty countries whose principal share class is regularly traded, and the company holds no more than 5% of each, so the 12.5% rate applies.",
+    "The CAT Group A threshold is a lifetime amount per child across both parents; the engine applies it once per death event to three children who have taken nothing before."
+  ],
+  "open_questions": [
+    "Needs an engine change: the remittance basis (TCA 1997 s.71(2)-(3) for foreign income and the corresponding rule for foreign chargeable gains, Revenue manual Part 05-01-21) taxes a non-domiciled resident on foreign income and gains only when they are brought into Ireland. The family spends EUR 400,000 a year in Ireland, so the tax depends on what funds that spending: capital the family held before arriving (not taxed on remittance) or remitted dividends and gains (taxed at 55.35% and 31%). The engine has one pot and no tracking of remitted income against clean capital, so the tax file's remittance_basis regime (foreign dividends and gains at 0, which assumes nothing is remitted) would understate the tax; no path is added. The regime also ends if the family acquires an Irish domicile of choice.",
+    "Needs an engine change: putting an existing personal portfolio into the investment company is a disposal at market value to a connected company (market-value rule for connected persons, TCA 1997 s.547, not opened), taxed at 31% on the latent gain. The engine has no asset-transfer event, so the path assumes a portfolio with no latent gain.",
+    "Needs an engine change: the Group A threshold is a lifetime amount shared by both parents' gifts and inheritances (CATCA 2003 Schedule 2), and the spouse's inheritance is exempt (s.71 CATCA 2003). Death in the model is one event for the whole family estate, so planning with lifetime gifts and the first death cannot be shown.",
+    "The investment company's annual running cost (accounts, annual return) is not in the tax file; the checks carry none.",
+    "Whether Revenue accepts the s.21B portfolio-investor rate (12.5%) for a pure investment company is not stated in its manual. At 25% the foreign dividends of the first investment-company check would bear 150,000 less the 90,000 credit = 60,000, and the annual figure would be 109,500 instead of 49,500. Re-check with an Irish adviser.",
+    "Citations I did not open as primary text: Schedule 24 TCA 1997 (foreign tax credit), s.129 and s.547 TCA 1997, CATCA 2003 Schedule 2 and s.71; the section numbers come from the Revenue manuals and secondary summaries."
+  ],
+  "sources": [
+    {
+      "title": "CAT group thresholds",
+      "url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx",
+      "publisher": "Revenue Commissioners",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "CAT rates",
+      "url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-rates.aspx",
+      "publisher": "Revenue Commissioners",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Revenue eBrief No. 142/26 (CGT rate 31% for disposals on or after 7 October 2026)",
+      "url": "https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx",
+      "publisher": "Revenue Commissioners",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Budget 2027: tax rates and credits",
+      "url": "https://kpmg.com/ie/en/insights/tax/budget-2027/tax-rates-and-credits.html",
+      "publisher": "KPMG Ireland",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Dividend income",
+      "url": "https://www.revenue.ie/en/additional-incomes/dividend-income/index.aspx",
+      "publisher": "Revenue Commissioners",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Other rates of USC (3% surcharge)",
+      "url": "https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx",
+      "publisher": "Revenue Commissioners",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tax and Duty Manual Part 02-02-03a: Tax treatment of certain dividends (section 21B TCA 1997)",
+      "url": "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-02-03a.pdf",
+      "publisher": "Revenue Commissioners",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tax and Duty Manual Part 13-02-05: Surcharge on certain undistributed income of close companies",
+      "url": "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-13/13-02-05.pdf",
+      "publisher": "Revenue Commissioners",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tax and Duty Manual CAT Part 12: Business relief",
+      "url": "https://www.revenue.ie/en/tax-professionals/tdm/capital-acquisitions-tax/historic-cat-documents/cat-part12.pdf",
+      "publisher": "Revenue Commissioners",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tax and Duty Manual Part 05-01-21: Remittance basis",
+      "url": "https://revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21.pdf",
+      "publisher": "Revenue Commissioners",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ireland - Corporate - Taxes on corporate income",
+      "url": "https://taxsummaries.pwc.com/ireland/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

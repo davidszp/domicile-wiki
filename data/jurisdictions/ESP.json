@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Southern Europe",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Spain taxes residents' capital gains and dividends at up to 30% and levies an annual wealth tax plus a solidarity tax on fortunes above EUR 3m. Inheritance and gift tax is paid by the heir; the regions control it, and most rebate 99-100% for children, while Catalonia, Asturias, Aragón, Galicia and Navarra tax large inheritances heavily. Region of residence decides much of the outcome (see subnational file). Newcomers taking a Spanish job or directorship can use the 6-year Beckham regime, which exempts foreign investment income.",
   "regimes": [
     {
@@ -91,9 +91,16 @@
             "publisher": "PwC Worldwide Tax Summaries",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Ley 50/2002 de Fundaciones, arts. 2 and 3 (consolidated text)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25180",
+            "publisher": "Boletín Oficial del Estado",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "high",
         "verification": "verified",
         "headline_rate": 0.3,
@@ -103,11 +110,11 @@
         "rate_basis": "Top marginal rate of the savings scale (art. 66/76 LIRPF) for a large portfolio; credit for foreign WHT limited to the treaty rate and to the Spanish tax on that income (art. 80 LIRPF).",
         "withholding_outbound": "19% domestic WHT on dividends to non-residents; 0% to qualifying EU parents (5% for 1 year); treaty rates usually 0-15%.",
         "treaty_network": "About 90-plus treaties in force (PwC lists 92 entries), including the US (15% portfolio dividends) and all EU states.",
-        "holding_company_notes": "Spanish companies get a 95% participation exemption on qualifying dividends and gains (stakes of at least 5% held 1 year); see corporate. No holding structure is scored for Spain: a company holding a diversified listed portfolio pays 25% on portfolio gains and dividends (the 95% exemption of art. 21 LIS needs a stake of at least 5% held one year), an asset-holding company (entidad patrimonial) cannot use the reduced SME rates and its shares get no wealth-tax business exemption, and distributions are taxed again at up to 30%, so with EUR 400,000 a year withdrawn it costs more than personal holding; a SICAV's 1% rate is out of reach for a single family since the 2022 minimum-shareholder rules."
+        "holding_company_notes": "A Spanish S.L. holding is scored as the regime 'holding_sl'. A company holding a diversified listed portfolio pays 25% on dividends (net of the foreign withholding credited, art. 31 LIS) and on gains, because the 95% exemption of art. 21 LIS needs a stake of at least 5% held one year (the EUR 20 million alternative was removed from 2021); it is an entidad patrimonial (art. 5.2 LIS), so it cannot use the reduced rates and its shares get no wealth-tax business exemption; distributions are then taxed again at up to 30%. A SICAV's 1% rate is out of reach for a single family (100 shareholders, art. 9.4 Ley 35/2003, referred to by art. 29.4 LIS). A private foundation cannot be used: Spanish foundations must serve general-interest purposes and may not be set up mainly to benefit the founder or relatives to the fourth degree (arts. 2 and 3 Ley 50/2002). Spain has no domestic trust law; a foreign trust is treated as transparent, its assets staying with the settlor (not opened)."
       },
       "wealth_tax": {
-        "summary": "Spain levies an annual wealth tax (Impuesto sobre el Patrimonio, IP) on residents' worldwide net wealth at 0.2% to 3.5% above a EUR 700,000 allowance (state rules), plus a state 'solidarity' tax on large fortunes (ITSGF) above EUR 3m that only bites where the regional IP is lower. The regions set allowances, scales and rebates, so the real burden depends on the region (see subnational file). This national entry uses the state rules, which apply as such in Castilla-La Mancha, Castilla y León, Ceuta and Melilla.",
-        "exemptions_thresholds": "State allowance EUR 700,000 per person (art. 28 LIP); main home exempt up to EUR 300,000 (art. 4.Nueve); qualifying family-business shares exempt (art. 4.Ocho). Joint limit (art. 31 LIP): IRPF + IP may not exceed 60% of the IRPF base (long-term gains excluded), but IP can be cut by at most 80%, so at least 20% of the IP is always payable. A spouse is taxed separately with their own allowance.",
+        "summary": "Spain levies an annual wealth tax (Impuesto sobre el Patrimonio, IP) on residents' worldwide net wealth at 0.2% to 3.5% above a EUR 700,000 allowance per person (state rules), plus a state 'solidarity' tax on large fortunes (ITSGF) above EUR 3m that only bites where the regional IP is lower. The regions set allowances, scales and rebates, so the real burden depends on the region (see subnational file). This national entry uses the state rules, which apply as such in Castilla-La Mancha, Castilla y León, Ceuta and Melilla. The scored component is for a married couple owning the wealth 50/50: each spouse is taxed separately with their own allowance, so the allowance (EUR 2,000,000 with the two EUR 300,000 main-home exemptions) and every bracket limit are doubled.",
+        "exemptions_thresholds": "State allowance EUR 700,000 per person (art. 28 LIP); main home exempt up to EUR 300,000 per person (art. 4.Nueve); qualifying family-business shares exempt (art. 4.Ocho), but not shares in a company that mainly holds securities (art. 4.Ocho.Dos.a). Joint limit (art. 31 LIP): IRPF + IP may not exceed 60% of the IRPF base (savings-base gains on assets held over one year excluded), but IP can be cut by at most 80%, so at least 20% of the IP is always payable. A spouse is taxed separately with their own allowance. The allowance and scale are fixed by statute and not indexed to prices (arts. 28 and 30 LIP), so thresholds_indexed is false.",
         "regional_differences": "Allowance, scale and rebates vary: e.g. Madrid, Andalucía, La Rioja, Murcia, Cantabria and Extremadura rebate IP but the ITSGF then applies above EUR 3.7m; Galicia rebates 50%; Comunitat Valenciana (EUR 2m allowance from 11 Aug 2026) and Illes Balears (EUR 3m) have high allowances; Navarra and the Basque Country have their own foral wealth taxes.",
         "important_exceptions": "ITSGF (art. 3 Ley 38/2022): 0% on the first EUR 3m of base above a EUR 700,000 allowance, then 1.7%, 2.1% and 3.5% above EUR 10.7m; regional IP actually paid is credited. Created for 2022-2023, extended indefinitely by RDL 8/2023 'until the review of wealth taxation in the regional financing reform'. Under the state scale the IP always exceeds the ITSGF, so the ITSGF adds nothing here.",
         "tax_year": "2026",
@@ -134,7 +141,7 @@
             "accessed": "2026-10-15"
           }
         ],
-        "verified_on": "2026-10-15",
+        "verified_on": "2026-10-16",
         "confidence": "high",
         "verification": "verified",
         "open_questions": [
@@ -143,9 +150,9 @@
         "type": "broad",
         "components": [
           {
-            "name": "Impuesto sobre el Patrimonio, state scale (ITSGF never exceeds it under the state scale)",
+            "name": "Impuesto sobre el Patrimonio, state scale, married couple owning 50/50 (ITSGF never exceeds it under the state scale)",
             "base": "net_wealth_worldwide",
-            "exempt_amount": 700000,
+            "exempt_amount": 2000000,
             "entry_threshold": 0,
             "brackets": [
               {
@@ -153,38 +160,45 @@
                 "rate": 0.002
               },
               {
-                "from_amount": 167129.45,
+                "from_amount": 334258.9,
                 "rate": 0.003
               },
               {
-                "from_amount": 334252.88,
+                "from_amount": 668505.76,
                 "rate": 0.005
               },
               {
-                "from_amount": 668499.75,
+                "from_amount": 1336999.5,
                 "rate": 0.009
               },
               {
-                "from_amount": 1336999.51,
+                "from_amount": 2673999.02,
                 "rate": 0.013
               },
               {
-                "from_amount": 2673999.01,
+                "from_amount": 5347998.02,
                 "rate": 0.017
               },
               {
-                "from_amount": 5347998.03,
+                "from_amount": 10695996.06,
                 "rate": 0.021
               },
               {
-                "from_amount": 10695996.06,
+                "from_amount": 21391992.12,
                 "rate": 0.035
               }
             ],
-            "notes": "Base is net wealth after the EUR 300,000 main-home exemption. Joint IRPF limit can reduce the tax by up to 80% for low-yield portfolios."
+            "notes": "Written for the reference couple, who own the wealth 50/50 and are taxed separately (each spouse files; art. 28 LIP gives each the EUR 700,000 allowance, art. 4.Nueve LIP exempts each spouse's main home up to EUR 300,000). Because the scale is progressive and the split is equal, the couple's tax is exactly 2 x the single-person tax on half the wealth: the allowance is 2 x (700,000 + 300,000) = 2,000,000 and every bracket limit is doubled (single limits 167,129.45; 334,252.88; 668,499.75; 1,336,999.51; 2,673,999.01; 5,347,998.03; 10,695,996.06 from art. 30.2 LIP). The engine passes the family's whole net wealth including the home, so the home exemption is folded into the allowance. Unequal ownership would cost more and is not modelled. The joint IRPF limit (art. 31 LIP: IRPF + IP at most 60% of the IRPF base, IP cut by at most 80%) can reduce the tax and is ignored."
           }
         ],
-        "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+        "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+        "thresholds_indexed": false,
+        "income_cap": {
+          "share_of_income": 0.6,
+          "max_reduction": 0.8,
+          "counts_long_term_gains": false,
+          "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+        }
       },
       "inheritance": {
         "summary": "Spain taxes the heir or donee (Impuesto sobre Sucesiones y Donaciones). Under the state rules a child aged 21+ gets a EUR 15,956.87 allowance and pays 7.65% to 34% (34% above EUR 797,555), so a EUR 10m inheritance costs about 33%. In practice the regional rules apply and most regions rebate 99-100% for children (see subnational file). The state scale itself is used (with regional reductions or rebates) in Aragón, Canarias, Castilla-La Mancha, Castilla y León, Extremadura, La Rioja, Ceuta and Melilla.",
@@ -474,7 +488,13 @@
             "notes": "Real obligation: only Spanish assets."
           }
         ],
-        "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax."
+        "property_tax_note": "Municipal real estate tax (IBI, roughly 0.4-1.1% of cadastral value) and the municipal land-value gain tax on sales (IIVTNU) are ordinary local taxes and are not modelled as wealth tax.",
+        "income_cap": {
+          "share_of_income": 0.6,
+          "max_reduction": 0.8,
+          "counts_long_term_gains": false,
+          "notes": "Art. 31 Ley 19/1991 (and art. 3.Doce Ley 38/2022 for the ITSGF): the IRPF cuota on the general and savings bases plus wealth tax may not exceed 60% of the IRPF taxable base, leaving out gains on assets held over a year; the wealth tax is cut to fit, by at most 80%. Applied per spouse; with a 50/50 split the couple's figures are twice one spouse's."
+        }
       },
       "sources": [
         {
@@ -493,6 +513,229 @@
         }
       ],
       "requires_qualifying_activity": true
+    },
+    {
+      "id": "holding_sl",
+      "name": "Family holding company (S.L., sociedad patrimonial) taxed at 25%",
+      "type": "structure",
+      "description": "The family holds its listed shares through a Spanish S.L. (corporate income tax 25%, art. 29.1 LIS). A company whose assets are mostly securities is an 'entidad patrimonial' (art. 5.2 LIS): it gets no reduced CIT rate (art. 29.1 LIS) and its shares get no wealth-tax or inheritance-tax business exemption (art. 4.Ocho.Dos.a LIP). The 95% participation exemption (art. 21 LIS) needs a stake of at least 5% held for a year, which a diversified listed portfolio never reaches (the old EUR 20 million cost alternative was removed from 1 January 2021 by art. 65 Ley 11/2020), so dividends and gains are taxed at 25%; foreign withholding on dividends is credited (art. 31 LIS). Distributions to the family are dividends in the savings base, taxed at up to 30% (arts. 25, 66, 76 LIRPF). Wealth tax and inheritance tax fall on the family's shares as for direct holding, so the regional rules apply.",
+      "eligible_citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "eligibility": "Any Spanish tax resident can form an S.L. (minimum share capital EUR 1). Contributing existing shares is a disposal taxed in the contributor's IRPF (savings scale), so it suits cash or newly bought assets.",
+      "duration_years": null,
+      "duration_note": "A holding company has no statutory time limit; it lasts as long as the family keeps it and stays resident, subject to changes in the law.",
+      "structure": {
+        "entity": "Sociedad de responsabilidad limitada (S.L.) family holding company (entidad patrimonial)",
+        "kind": "company",
+        "payout_tax_rate": 0.3,
+        "payout_notes": "Dividends to resident individuals are capital income from equity (art. 25.1.a LIRPF) in the savings base, taxed on the 19% to 30% scale (arts. 66 and 76 LIRPF; 27% from EUR 200,000 and 30% above EUR 300,000 of savings income per person). The 30% top rate is used, as for direct holding; on a payout of about EUR 515,000 gross shared by two spouses the average is lower for now but thresholds are fixed in euros, so spending that grows with prices reaches the 30% band. Spanish withholding on the payout (19%) is credited against the personal tax. No allowance or exemption for dividends.",
+        "annual_running_cost": {
+          "amount": 3300,
+          "currency": "EUR"
+        },
+        "setup_cost": {
+          "amount": 3000,
+          "currency": "EUR"
+        },
+        "substance_and_anti_avoidance": "Entidad patrimonial (art. 5.2 LIS): more than half of the assets are securities, so the company carries on no economic activity. Consequences: no reduced CIT rates (art. 29.1 LIS, last paragraph); the 95% exemption of art. 21 LIS needs a stake of at least 5% held a year (art. 21.1.a), and for foreign investees tax of at least 10% nominal (art. 21.1.b); the family's shares do not qualify for the wealth-tax exemption of art. 4.Ocho.Dos.a LIP (entity must not mainly manage a securities or property portfolio) nor, because that exemption is a condition, for the 95% inheritance-tax reduction of art. 20.2.c LISD. The 1% SICAV rate (art. 29.4 LIS) needs the minimum number of shareholders of art. 9.4 Ley 35/2003 (100), out of reach for one family. The company must keep real books and file annual accounts; Spain's general anti-abuse rule (art. 15 Ley General Tributaria) can recharacterise arrangements without a valid business purpose (not opened). Statutory audit is assumed not required: the company has no staff and low turnover (art. 263 Ley de Sociedades de Capital, not opened). Gains on shares held by the company are taxed on realisation at 25% with no holding-period relief.",
+        "exit_and_liquidation": "On liquidation the company is taxed at 25% on latent gains, then the shareholders are taxed in the savings base on the liquidation proceeds above the cost of their shares (arts. 25 and 33 LIRPF). On death the heirs' shares are valued by the inheritance tax and the heirs' acquisition value is stepped up (death transfers produce no gain, art. 33.3.b LIRPF), but the company keeps its own historic cost for the portfolio, so the latent gain inside the company is still taxed at 25% when realised.",
+        "sources": [
+          {
+            "title": "Ley 27/2014 del Impuesto sobre Sociedades (consolidated text: arts. 5, 21, 29, 31)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+            "publisher": "Boletín Oficial del Estado",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Spain - Corporate - Taxes on corporate income (last reviewed 30 June 2026)",
+            "url": "https://taxsummaries.pwc.com/spain/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Spain - Corporate - Income determination (last reviewed 30 June 2026)",
+            "url": "https://taxsummaries.pwc.com/spain/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Ley 35/2006 del IRPF (consolidated text: arts. 25, 33, 66, 76, 80)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+            "publisher": "Boletín Oficial del Estado",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Ley 19/1991 del Impuesto sobre el Patrimonio (consolidated text: arts. 4, 28, 30, 31)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
+            "publisher": "Boletín Oficial del Estado",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "¿Cuánto cuesta crear una Sociedad Limitada en España? (TeamSystem Quipu, updated 17 July 2026)",
+            "url": "https://getquipu.com/blog/cuanto-cuesta-crear-sl/",
+            "publisher": "TeamSystem Quipu",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Gestoría 247: tarifa 2026 para sociedades (Arranque plan, EUR 199/month + IVA)",
+            "url": "https://gestoria247.com/sociedades/precios",
+            "publisher": "Gestoria247",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "running_cost_deductible_at": 0.25
+      },
+      "capital_gains": {
+        "summary": "Gains on shares realised by the S.L. are taxed at the 25% general CIT rate (art. 29.1 LIS). The 95% exemption of art. 21.3 LIS requires a stake of at least 5% held for a year, which a diversified portfolio of listed shares does not reach; the alternative EUR 20 million acquisition-cost test no longer exists (removed from 2021 by art. 65.2 Ley 11/2020). The reduced rates for small companies are not available to an entidad patrimonial (art. 29.1 LIS).",
+        "exemptions_thresholds": "25% on the whole gain; losses offset gains of the year and carry forward. No holding-period relief. Exemption (95%) only for stakes of at least 5% held one year.",
+        "important_exceptions": "Funds and ETFs also 25% at realisation. A stake of at least 5% in an investee would be 95% exempt (effective 1.25%), but is not a portfolio case.",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ley 27/2014 del Impuesto sobre Sociedades (consolidated text: arts. 5, 21, 29, 31)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+            "publisher": "Boletín Oficial del Estado",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Spain - Corporate - Taxes on corporate income (last reviewed 30 June 2026)",
+            "url": "https://taxsummaries.pwc.com/spain/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Spain - Corporate - Income determination (last reviewed 30 June 2026)",
+            "url": "https://taxsummaries.pwc.com/spain/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [],
+        "headline_rate": 0.25,
+        "rates": {
+          "listed_securities_domestic": 0.25,
+          "listed_securities_foreign": 0.25,
+          "private_business_sale": 0.25,
+          "real_estate_local": 0.25,
+          "real_estate_foreign": 0.25
+        },
+        "rate_basis": "General CIT rate of 25% (art. 29.1 LIS) on the realised gain; the participation exemption is not available below a 5% stake. Municipal land-value tax (IIVTNU) on Spanish land comes on top and is not included.",
+        "professional_trader": "Not relevant: the company is taxed on all its income at 25% whatever the trading volume.",
+        "holding_period_rules": "None for stakes under 5%; the 5% stake must be held an uninterrupted year for the exemption (art. 21.1.a LIS).",
+        "foreign_assets": "Foreign gains are taxed in the same way; foreign tax on a gain, if any, is creditable under art. 31 LIS."
+      },
+      "dividends": {
+        "summary": "Dividends received by the S.L. are taxed at 25% (art. 29.1 LIS) because the holdings are under 5% (art. 21.1.a LIS). Foreign withholding tax is credited up to the lesser of the foreign tax paid and the Spanish tax on that income (art. 31 LIS), so a 15% treaty withholding leaves a net 10% Spanish cost on foreign dividends. Spanish dividends suffer a 19% withholding, which is credited against the 25%, so the cost is 25% in all.",
+        "exemptions_thresholds": "95% exemption only for stakes of at least 5% held a year (and, for foreign investees, tax of at least 10% nominal there).",
+        "tax_year": "2026",
+        "sources": [
+          {
+            "title": "Ley 27/2014 del Impuesto sobre Sociedades (consolidated text: arts. 5, 21, 29, 31)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+            "publisher": "Boletín Oficial del Estado",
+            "kind": "legislation",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Spain - Corporate - Taxes on corporate income (last reviewed 30 June 2026)",
+            "url": "https://taxsummaries.pwc.com/spain/corporate/taxes-on-corporate-income",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          },
+          {
+            "title": "Spain - Corporate - Income determination (last reviewed 30 June 2026)",
+            "url": "https://taxsummaries.pwc.com/spain/corporate/income-determination",
+            "publisher": "PwC Worldwide Tax Summaries",
+            "kind": "professional",
+            "accessed": "2026-10-16"
+          }
+        ],
+        "verified_on": "2026-10-16",
+        "confidence": "high",
+        "verification": "verified",
+        "open_questions": [],
+        "headline_rate": 0.25,
+        "domestic_rate": 0.25,
+        "foreign_gross_rate": 0.25,
+        "foreign_tax_credit": "credit",
+        "rate_basis": "25% CIT on the gross dividend; foreign tax credited (art. 31 LIS) up to the Spanish tax on it. Domestic: 25% with the 19% withholding creditable.",
+        "withholding_outbound": "19% domestic withholding on dividends to non-residents; 0% to qualifying EU parents; treaty rates usually 0-15%. Distributions to resident shareholders bear 19% withholding on account of the personal tax.",
+        "holding_company_notes": "This is the holding-company structure itself; the personal payout tax is in the structure terms."
+      },
+      "sources": [
+        {
+          "title": "Ley 27/2014 del Impuesto sobre Sociedades (consolidated text: arts. 5, 21, 29, 31)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+          "publisher": "Boletín Oficial del Estado",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Spain - Corporate - Taxes on corporate income (last reviewed 30 June 2026)",
+          "url": "https://taxsummaries.pwc.com/spain/corporate/taxes-on-corporate-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Spain - Corporate - Income determination (last reviewed 30 June 2026)",
+          "url": "https://taxsummaries.pwc.com/spain/corporate/income-determination",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Ley 35/2006 del IRPF (consolidated text: arts. 25, 33, 66, 76, 80)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+          "publisher": "Boletín Oficial del Estado",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Ley 19/1991 del Impuesto sobre el Patrimonio (consolidated text: arts. 4, 28, 30, 31)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
+          "publisher": "Boletín Oficial del Estado",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Ley 29/1987 del Impuesto sobre Sucesiones y Donaciones (consolidated text)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-28141",
+          "publisher": "Boletín Oficial del Estado",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "¿Cuánto cuesta crear una Sociedad Limitada en España? (TeamSystem Quipu, updated 17 July 2026)",
+          "url": "https://getquipu.com/blog/cuanto-cuesta-crear-sl/",
+          "publisher": "TeamSystem Quipu",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Gestoría 247: tarifa 2026 para sociedades (Arranque plan, EUR 199/month + IVA)",
+          "url": "https://gestoria247.com/sociedades/precios",
+          "publisher": "Gestoria247",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
     }
   ],
   "residency": {
@@ -556,7 +799,7 @@
   },
   "corporate": {
     "cit_rate": 0.25,
-    "summary": "CIT 25% (SMEs 23% in 2026, falling to 20% by 2029; start-ups 15%). Qualifying dividends and gains from stakes of at least 5% held 1 year are 95% exempt (participation exemption, art. 21 LIS - not re-verified for this file). Domestic WHT on outbound dividends 19%, 0% to EU parents. A holding company does not shelter a family's portfolio from the 30% personal savings rate on distribution.",
+    "summary": "CIT 25% (SMEs 23% in 2026, falling to 20% by 2029; start-ups 15%). Qualifying dividends and gains from stakes of at least 5% held 1 year are 95% exempt (participation exemption, art. 21 LIS; the EUR 20 million alternative to the 5% test was removed from 2021). Domestic WHT on outbound dividends 19%, 0% to EU parents. A holding company does not shelter a family's portfolio from the 30% personal savings rate on distribution.",
     "special_zones": "Canary Islands ZEC (4% CIT for qualifying substance), ETVE holding regime; SICAV 1% regime requires at least 100 investors with minimum stakes (since 2022).",
     "sources": [
       {
@@ -572,6 +815,13 @@
         "publisher": "PwC Worldwide Tax Summaries",
         "kind": "professional",
         "accessed": "2026-10-15"
+      },
+      {
+        "title": "Ley 27/2014 del Impuesto sobre Sociedades (consolidated text: arts. 5, 21, 29, 31)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+        "publisher": "Boletín Oficial del Estado",
+        "kind": "legislation",
+        "accessed": "2026-10-16"
       }
     ]
   },
@@ -651,7 +901,8 @@
   "open_questions": [
     "ITSGF has no end date; a reform of regional financing could replace it.",
     "For newly arrived families, regional inheritance benefits depend on the deceased having spent most days of the prior 5 years in that region (art. 28 Ley 22/2009); days abroad count for no region.",
-    "Participation exemption details (art. 21 LIS) were not re-verified in this pass.",
-    "Family rent (EUR 5,200) is derived from district asking rents per m2 times 215 m2, not from 4-bedroom listings; check against idealista or fotocasa listings in Chamberi/Chamartin."
+    "Family rent (EUR 5,200) is derived from district asking rents per m2 times 215 m2, not from 4-bedroom listings; check against idealista or fotocasa listings in Chamberi/Chamartin.",
+    "Spanish trusts and foundations: Spain has no domestic trust law and its foundation law excludes family-benefit foundations (arts. 2-3 Ley 50/2002); the tax treatment of a foreign trust set up by a resident settlor (DGT transparency doctrine) was taken from a secondary summary, not from the consultas themselves.",
+    "S.L. holding running cost (EUR 3,300 a year) is an estimate from one online gestoría price list plus the filing of annual accounts, not a quote for a EUR 30m portfolio; statutory audit exemption (art. 263 LSC) was not opened."
   ]
 }

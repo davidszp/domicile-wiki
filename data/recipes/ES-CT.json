@@ -1,0 +1,149 @@
+{
+  "id": "ES-CT",
+  "name": "Spain: Cataluña",
+  "researched_on": "2026-10-16",
+  "paths": [
+    {
+      "id": "personal",
+      "name": "Holding the portfolio personally (ordinary residence, Cataluña)",
+      "regime": "standard",
+      "estate": "portfolio",
+      "note": "Dividends and gains go to the savings base at 19% to 30% (30% above EUR 300,000 per person), the foreign withholding being credited (art. 80 LIRPF). Catalonia levies its own wealth tax: EUR 500,000 allowance per person and a scale of 0.21% to 2.75% (3.48% above EUR 20m while the ITSGF exists), so a EUR 10m couple pays about EUR 109,000 a year before the joint IRPF limit. Children inheriting pay the Catalan scale (7% to 32%) with a rebate that falls from 60% to 0% as the inheritance grows, so a large inheritance is taxed heavily."
+    },
+    {
+      "id": "holding_sl",
+      "name": "Family holding company (S.L.) taxed at 25%",
+      "regime": "holding_sl",
+      "estate": "portfolio",
+      "note": "An S.L. owns the portfolio and pays 25% corporate tax on dividends (foreign withholding credited, so 10% net on foreign dividends) and on gains; the 95% participation exemption (art. 21 LIS) needs a stake of at least 5%, which a diversified portfolio lacks. The family's payouts are dividends taxed at up to 30%. As a securities-holding company (entidad patrimonial, art. 5.2 LIS) its shares get no wealth-tax or inheritance-tax business relief (and in Catalonia the 95% reduction forfeits the rebate anyway), so the Catalan wealth and inheritance tax apply as for direct holding. Costs about EUR 3,300 a year."
+    }
+  ],
+  "checks": [
+    {
+      "path": "personal",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 100000,
+      "wealth": 10000000,
+      "expected": 120000,
+      "working": "Case: a married couple who own the wealth 50/50 and are taxed separately (wealth tax and IRPF are individual); net wealth EUR 10,000,000 including their main home (worth well over EUR 600,000); all dividends and gains from abroad (15% withholding on dividends). Top marginal rates, as for the scores: both spouses' other savings income is assumed to be above EUR 300,000 already, so every euro of this case is taxed at the top savings rate of 30% (arts. 66 and 76 LIRPF) and the joint limit of art. 31 LIP (60% of the IRPF base) does not bind.Dividends 200,000 x 30% = 60,000; deduction for international double taxation (art. 80 LIRPF) is the lesser of the foreign tax paid, 15% x 200,000 = 30,000, and the Spanish average-rate tax on that income (above 21%, so higher): 30,000; net 30,000. Gains 100,000 x 30% = 30,000 (arts. 33, 66, 76 LIRPF; no foreign tax). Wealth tax, each spouse (5,000,000 each): base imponible 5,000,000 - main home 300,000 (art. 4.Nueve LIP) = 4,700,000; Catalonia's mínimo exento 500,000 (art. 621-1 Libro sexto Código tributario) gives a base liquidable of 4,200,000. Catalan scale (art. 621-2): 27,199.58 on the first 2,673,999.01 + 1.785% x (4,200,000 - 2,673,999.01 = 1,526,000.99) = 27,239.12, total 54,438.70. The ITSGF (art. 3 Ley 38/2022) on 4,700,000 - 700,000 = 4,000,000 is 1.7% x 1,000,000 = 17,000, below the IP, and the IP paid is credited against it (art. 3.Quince), so it adds nothing. Per spouse 54,438.70; couple 108,877.40. Total 30,000 + 30,000 + 108,877.40 = 168,877.40. Joint limit (art. 31 Ley 19/1991; art. 3.Doce Ley 38/2022 for the ITSGF), per spouse: IRPF cuota plus wealth tax at most 60% of the IRPF base, leaving out gains on assets held over a year; the wealth tax gives way, by at most 80%. Per spouse: base 100,000 dividends (gains held long are left out), limit 60,000; dividend cuota before credit 30% x 100,000 = 30,000, so wealth tax at most 30,000 (floor 20% x 54,438.70 = 10,887.74). Couple: 60,000 instead of 108,877.40. Total 30,000 + 30,000 + 60,000 = 120,000."
+    },
+    {
+      "path": "holding_sl",
+      "kind": "annual",
+      "dividends": 200000,
+      "realised_gains": 100000,
+      "wealth": 10000000,
+      "expected": 69250.48,
+      "working": "Case: a married couple who own the wealth 50/50 and are taxed separately (wealth tax and IRPF are individual); net wealth EUR 10,000,000 including their main home (worth well over EUR 600,000); all dividends and gains from abroad (15% withholding on dividends). The family's S.L. owns the portfolio; the inputs are the company's income. Taxable base: dividends 200,000 + gains 100,000 - accounting costs 3,300 (the running cost recorded in the tax file; deductible under art. 10.3 LIS, the tax base starting from the accounting result) = 296,700; CIT 25% (art. 29.1 LIS; no reduced rate or participation exemption for an entidad patrimonial with stakes under 5%, arts. 5.2 and 21.1.a LIS) = 74,175. Deduction for international double taxation (art. 31 LIS): the lesser of the foreign tax paid, 15% x 200,000 = 30,000, and the Spanish tax on those dividends (about 49,000): 30,000. CIT payable 44,175. Add the running cost itself, 3,300: 47,475. Wealth tax is on the family's shares, valued at the theoretical value of the last approved balance sheet (art. 16 LIP), taken equal to the portfolio's value, so the same net wealth of 10,000,000 as for direct holding. Wealth tax, each spouse (5,000,000 each): base imponible 5,000,000 - main home 300,000 (art. 4.Nueve LIP) = 4,700,000; Catalonia's mínimo exento 500,000 (art. 621-1 Libro sexto Código tributario) gives a base liquidable of 4,200,000. Catalan scale (art. 621-2): 27,199.58 on the first 2,673,999.01 + 1.785% x (4,200,000 - 2,673,999.01 = 1,526,000.99) = 27,239.12, total 54,438.70. The ITSGF (art. 3 Ley 38/2022) on 4,700,000 - 700,000 = 4,000,000 is 1.7% x 1,000,000 = 17,000, below the IP, and the IP paid is credited against it (art. 3.Quince), so it adds nothing. Per spouse 54,438.70; couple 108,877.40. Total 47,475 + 108,877.40 = 156,352.40. Payout tax excluded. Joint limit (art. 31 Ley 19/1991; art. 3.Doce Ley 38/2022 for the ITSGF), per spouse: IRPF cuota plus wealth tax at most 60% of the IRPF base, leaving out gains on assets held over a year; the wealth tax gives way, by at most 80%. The S.L. pays out nothing in this check, so the parents' IRPF base is 0 and the limit cuts the wealth tax by the full 80%: 20% x 108,877.40 = 21,775.48. Total 47,475 + 21,775.48 = 69,250.48."
+    },
+    {
+      "path": "personal",
+      "kind": "inheritance",
+      "estate": 9000000,
+      "children": 3,
+      "expected": 1759312.5,
+      "working": "Resident deceased in Catalonia (most days of the last 5 years, art. 28 Ley 22/2009). Each child receives 9,000,000 / 3 = 3,000,000 (base imponible, art. 9 LISD). Catalan reduction for a child, Group II: 100,000 (art. 631-2 Libro sexto Código tributario), base liquidable 2,900,000. Scale (art. 633-1): 153,000 + 32% x (2,900,000 - 800,000) = 153,000 + 672,000 = 825,000. Coefficient for pre-existing wealth up to EUR 500,000: 1.0 (art. 633-3). Bonificación of the cuota for Group II excluding the spouse (art. 633-4.2), a weighted average of marginal rates applied to the base imponible of 3,000,000: 60% x 100,000 + 55% x 100,000 + 50% x 100,000 + 45% x 200,000 + 40% x 250,000 + 35% x 250,000 + 30% x 500,000 + 25% x 500,000 + 20% x 500,000 + 10% x 500,000 = 867,500, i.e. 28.9167% (the published table rounds it to 28.92%). Tax per child 825,000 x (1 - 0.289167) = 586,437.50. Three children: 1,759,312.50 (with the table's rounded 28.92% the tax would be 586,410 per child; the tax file's fitted brackets give about EUR 15 more in total, inside the check tolerance)."
+    },
+    {
+      "path": "holding_sl",
+      "kind": "inheritance",
+      "estate": 9000000,
+      "children": 3,
+      "expected": 1759312.5,
+      "working": "The children inherit shares of the S.L. valued at the theoretical value of the last approved balance sheet (art. 16 LIP), assumed equal to the portfolio's 9,000,000. The Catalan 95% reduction for company shares (arts. 631-10 ff.) needs a company that does not mainly manage a securities portfolio and, as the 95% state reduction (art. 20.2.c Ley 29/1987), wealth-tax exemption, which an entidad patrimonial's shares lack (art. 4.Ocho.Dos.a LIP); using it would in any case forfeit the rebate (art. 633-4.4). So the rules are those of direct holding: 3,000,000 per child, reduction 100,000, scale 825,000, rebate 28.9167%: 586,437.50 per child, 1,759,312.50 for three."
+    }
+  ],
+  "assumptions": [
+    "The family is an EU-citizen couple with no Spanish job or business, owning the wealth 50/50 and taxed separately (Spanish wealth tax and IRPF are individual taxes). The tax files encode the couple by doubling each spouse's allowance and bracket limits, which is exact for an equal split.",
+    "The Beckham regime (art. 93 LIRPF) needs a Spanish employment contract, a directorship or a qualifying entrepreneurial activity, so this family cannot use it and it has no path (the tax file marks it requires_qualifying_activity).",
+    "Savings income (dividends, gains, payouts) is taxed at the top rate of 30% (arts. 66 and 76 LIRPF), assuming both spouses are above EUR 300,000 of savings income. A smaller income would pay 19% to 27% on the lower slices, so the scores are slightly high for modest portfolios.",
+    "Each death passes the whole estate (portfolio and home) to the three children, who are adults (21 or over) with pre-existing wealth within the lowest coefficient band of the inheritance tax (coefficient 1.0).",
+    "Declarations are made on time, in a notarial deed where required, so regional rebates apply. Lifetime gifts to children are not modelled; they are taxed under a different regional scale (see the tax file).",
+    "The S.L. holding is funded with cash or newly bought assets (contributing existing shares is a taxable disposal for the contributor) and keeps its books at fair value, so the inherited shares are valued at about the portfolio's value; a deferred-tax liability on unrealised gains could lower the theoretical value used for wealth and inheritance tax, which is not assumed.",
+    "Catalonia's wealth tax scale has a 3.48% band above EUR 20m of base per person while the ITSGF exists (Decreto-ley 10/2024), and the ITSGF (3.5%) takes over from the IP above about EUR 17.05m of base per person; the tax file encodes the larger of the two.",
+    "Catalonia is the heavier of the two cases for inheritance: the child's rebate is a weighted average that is 60% on the first EUR 100,000 of base and falls to 0% marginal above EUR 3m. Lifetime gifts to children in a notarial deed pay only 5% to 9% (art. 633-2), so the real family might gift in life; the engine does not model gifts, which makes Catalonia look worse than it need be.",
+    "A private foundation is not a path: Spanish foundations must pursue general-interest purposes and may not be formed mainly to benefit the founder or relatives to the fourth degree (arts. 2 and 3 Ley 50/2002); Catalan foundations fall under Libro tercer of the Catalan Civil Code, which was not opened. A family trust has no basis in Spanish law and is treated as transparent (the assets stay taxed as the settlor's), so it changes nothing. The SICAV's 1% rate needs 100 shareholders (art. 29.4 LIS). The ETVE regime does not fit a diversified listed portfolio.",
+    "Checks assume a main home worth at least EUR 300,000 per spouse: its exemption (art. 4.Nueve LIP) is folded into the wealth-tax allowance, as for the family's EUR 5M home. The joint limit is applied at top marginal rates (the real family's dividends are about EUR 600,000); on small incomes the progressive IRPF scale would give a slightly different cut."
+  ],
+  "open_questions": [
+    "Needs an engine change: the inheritance-tax coefficient that depends on the heir's pre-existing wealth (art. 22 Ley 29/1987; Catalonia art. 633-3 Libro sexto Código tributario: 1.10 above EUR 500,000, 1.15 above EUR 2,000,000, 1.20 above EUR 4,000,000). A child who already holds over EUR 500,000 pays 10% to 20% more on the cuota, before the rebate, and a child enriched by the first death will usually do so at the second; the engine has no per-heir wealth, so it applies the coefficient of 1.0, a floor.",
+    "Needs an engine change: lifetime gifts. A notarial gift to a child is taxed at 5% to EUR 200,000, 7% to EUR 600,000 and 9% above (art. 633-2 Libro sexto Código tributario), far below the 20% to 30% on a large inheritance (Madrid: 99% bonificación for gifts too). The engine taxes transfers only at the two deaths, so a family that gifts in life is not shown.",
+    "Catalonia's own foundation law (Libro tercer del Código civil de Cataluña) was not opened; the general-interest requirement for foundations is cited from the state law, Ley 50/2002.",
+    "The citations to Ley 22/2009 art. 28, art. 10.3 LIS, art. 20.2.c Ley 29/1987 and art. 22 Ley 29/1987 were not opened as text; the Catalan wealth and inheritance scales, reductions, coefficients and rebate tables were read in the Ministerio de Hacienda document 'Medidas 2026'.",
+    "ITSGF with a holding S.L.: whether the 80% maximum reduction of the joint limit (art. 3.Doce Ley 38/2022) is applied before or after deducting the regional wealth tax paid (art. 3.Quince) is not settled by any AEAT guidance found (modelo 718 instructions unavailable); applied after, the S.L. path's wealth tax would be about 20% higher. An independent check computed EUR 73,450 / 75,449 for the two S.L. annual checks under that reading.",
+    "Catalan bonificación: art. 633-4.5 Codi tributari rounds the weighted average to two decimals (28.92%), about EUR 27 per child less than the unrounded rate in the check."
+  ],
+  "sources": [
+    {
+      "title": "Ley 35/2006 del IRPF (consolidated text: arts. 25, 33, 66, 76, 80)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ley 19/1991 del Impuesto sobre el Patrimonio (consolidated text: arts. 4, 16, 28, 30, 31)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ley 38/2022, art. 3: Impuesto Temporal de Solidaridad de las Grandes Fortunas (consolidated text)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ley 27/2014 del Impuesto sobre Sociedades (consolidated text: arts. 5, 21, 29, 31)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ley 29/1987 del Impuesto sobre Sucesiones y Donaciones (consolidated text)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-28141",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tributación Autonómica. Medidas 2026, Capítulo IV: resumen de medidas vigentes en tributos cedidos, ejercicio 2026",
+      "url": "https://www.hacienda.gob.es/sgfal/financiacionterritorial/autonomica/capitulo-iv-tributacion-autonomica-2026.pdf",
+      "publisher": "Ministerio de Hacienda, Secretaría General de Financiación Autonómica y Local",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Spain - Corporate - Taxes on corporate income (last reviewed 30 June 2026)",
+      "url": "https://taxsummaries.pwc.com/spain/corporate/taxes-on-corporate-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Spain - Corporate - Income determination (last reviewed 30 June 2026)",
+      "url": "https://taxsummaries.pwc.com/spain/corporate/income-determination",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Spain - Individual - Taxes on personal income (last reviewed 30 June 2026)",
+      "url": "https://taxsummaries.pwc.com/spain/individual/taxes-on-personal-income",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ley 50/2002 de Fundaciones, arts. 2 and 3 (consolidated text)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25180",
+      "publisher": "Boletín Oficial del Estado",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

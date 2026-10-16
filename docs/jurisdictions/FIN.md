@@ -1,6 +1,6 @@
 # Finland — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -43,9 +43,14 @@ None relevant. The 25% tax-at-source regime for key employees applies to earned 
   2026): within an 8% return on the shares' mathematical value (net assets per the previous year's balance sheet),
   25% is taxable capital income up to EUR 150,000 per shareholder a year (7.5% effective) and 85% above; above the
   8% return, 75% is taxable earned income. The limit is per shareholder across all unlisted companies.
-  `payout_tax_rate` **0.13** = EUR 400,000 split between two parents: each EUR 200,000 gives EUR 37,500 + 42,500 =
-  EUR 80,000 taxable, taxed 30% to EUR 30,000 and 34% above = EUR 26,000 each, EUR 52,000 in all. Adult children as
-  shareholders lower this further. The 8% limit needs book net assets of at least EUR 5m.
+  `payout_tax_rate` **0.1546** = tax as a share of the gross dividend when two parents each net EUR 200,000
+  (EUR 400,000 in total, which is what the projection needs after tax). Per shareholder with gross dividend G above
+  EUR 150,000: taxable capital income = 25% x 150,000 + 85% x (G - 150,000); tax = 30% x 30,000 + 34% x (taxable -
+  30,000). Net 200,000 needs G = EUR 236,568 and tax EUR 36,568 (15.46% of G); EUR 473,136 gross in total, tax
+  EUR 73,136. The earlier 0.13 was the tax on a EUR 400,000 gross payout (EUR 52,000), which leaves only EUR 348,000
+  net. Bands are the 2026 figures; no statutory indexation was found, so in real terms the rate would rise over time,
+  but the model keeps it fixed. Adult children as shareholders put more into the 25% band. The 8% limit needs book net
+  assets of at least EUR 1.9m per EUR 150,000 of dividend.
 - **Wealth tax:** none in Finland. **Inheritance:** the Oy shares are inherited at fair value under the ordinary
   rates (inherited from standard); generational business relief does not cover investment companies.
 - **Anti-avoidance and running:** general anti-avoidance rule (Act on Assessment Procedure § 28); hidden profit
@@ -78,6 +83,7 @@ City: Helsinki.
 - Whether the 3-year residence tail applies to inheritance and gift tax.
 - The equity savings account cap.
 - Cost-of-living items.
+- Foreign withholding credit against the Oy's corporate tax: the Vero relief-for-double-taxation guidance was read only through search results; the credit is limited to the Finnish tax on the same income.
 - Family rent (EUR 4,000) rests on 5 Vuokraovi listings in Lauttasaari, Nuottaniemi and Koukkuniemi; no 4+ room rentals were listed in Munkkiniemi, Kulosaari or Westend, and two of the five are 3-room flats of 113-146 m2.
 
 ## Sources
@@ -108,3 +114,4 @@ City: Helsinki.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (thin sample; open question added: may understate).
 - 2026-10-15: family rent re-checked a second time: changed from EUR 2,490 (Qasa) to EUR 4,000 (5 Vuokraovi listings, Lauttasaari/Nuottaniemi/Koukkuniemi); still thin.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: holding_oy payout_tax_rate corrected from 0.13 to 0.1546 (tax on the gross dividend needed to net EUR 400,000 after tax); open question on the foreign withholding credit added.

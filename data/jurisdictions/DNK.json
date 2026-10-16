@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Northern Europe",
   "currency": "DKK",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "High-tax option. Share gains and dividends are taxed at 42% above a small band (27% up to DKK 79,400), with annual mark-to-market on many funds and an exit tax on shares. No wealth tax. Children pay 15% estate duty above an allowance of DKK 392,300 per estate; the new government proposes 30% on estates above DKK 10 million (not yet law).",
   "regimes": [
     {
@@ -158,7 +158,7 @@
       },
       "inheritance": {
         "summary": "Estate duty (boafgift) of 15% is levied on the part of the estate passing to children after a basic allowance of DKK 392,300 per estate (2026). Lifetime gifts to children are tax-free up to DKK 80,600 per year per donor (2026); excess is taxed at 15%.",
-        "exemptions_thresholds": "Basic allowance DKK 392,300 per estate (2026), not per child. Spouses are exempt. Gift allowance DKK 80,600 per donor per child per year (2026).",
+        "exemptions_thresholds": "Basic allowance DKK 392,300 per estate (2026), not per child. Spouses are exempt. Gift allowance DKK 80,600 per donor per child per year (2026). The allowance is adjusted every year under personskatteloven § 20 (Skatteministeriet, Faktaark 9: 'Beløbsgrænsen reguleres årligt efter personskattelovens § 20'); a tax reform also raises it in steps up to 2029. The allowance is per estate: when the second spouse dies in an undivided estate (uskiftet bo) there can be two allowances (Ældre Sagen); the projection uses one.",
         "eligibility_conditions": "Children, stepchildren, their descendants, parents and cohabitants of 2+ years are in the 15% class; the 25% additional duty applies only to more distant heirs.",
         "important_exceptions": "Announced, NOT in force: the June 2026 government platform proposes raising the allowance to DKK 550,000 and adding 15 percentage points (30% total) on estates whose taxable base exceeds DKK 10 million; Deloitte understands estates with succession-qualifying (business) assets would be excluded; timing unknown, no bill tabled. Siblings move into the 15% class from 1 January 2027.",
         "tax_year": "2026",
@@ -190,6 +190,13 @@
             "publisher": "Deloitte Denmark",
             "kind": "professional",
             "accessed": "2026-10-15"
+          },
+          {
+            "title": "Faktaark 9: Boafgift (Reform af personskat)",
+            "url": "https://svmn.dk/media/apqahpml/faktaark-9-boafgift.pdf",
+            "publisher": "Skatteministeriet",
+            "kind": "government",
+            "accessed": "2026-10-16"
           }
         ],
         "verified_on": "2026-10-15",
@@ -218,7 +225,8 @@
         "foreign_assets": "Danish estate duty applies to the estate of a person domiciled in Denmark administered in Denmark, generally worldwide assets; foreign tax credit relief.",
         "domicile_rules": "Probate jurisdiction follows the deceased's last domicile (residence) in Denmark; no citizenship-based tail found.",
         "spouse_treatment": "fully_exempt",
-        "spouse_note": "Inheritance (and insurance) passing to the deceased's spouse who is not separated is exempt from boafgift (Boafgiftsloven § 3(1)(a)); a registered partner is treated the same, but a cohabitant (samlever) is not and pays the 15% class A rate."
+        "spouse_note": "Inheritance (and insurance) passing to the deceased's spouse who is not separated is exempt from boafgift (Boafgiftsloven § 3(1)(a)); a registered partner is treated the same, but a cohabitant (samlever) is not and pays the 15% class A rate.",
+        "thresholds_indexed": true
       },
       "sources": [
         {
@@ -340,6 +348,7 @@
   "us_citizen_notes": "US citizens remain US-taxed; the US-Denmark treaty has a saving clause. Danish mark-to-market on funds and US PFIC rules can interact badly for US persons holding non-US funds.",
   "open_questions": [
     "Announced but unenacted reforms (estate duty 30% above DKK 10m, higher share-income band, capital-tax reform, CIT cut) should be rechecked in 2027.",
-    "Cost-of-living items for Copenhagen not sourced."
+    "Cost-of-living items for Copenhagen not sourced.",
+    "Holding ApS: listed portfolio shares are taxed on the mark-to-market principle (lagerprincippet) at 22% and the payout is share income at 27/42%; the projection engine realises only a fixed share of each year's gain and cannot express this, so no ApS path is modelled."
   ]
 }

@@ -1,6 +1,6 @@
 # Denmark — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -27,6 +27,8 @@ Share income at 27/42%; JSON domestic and foreign gross rate 0.42; foreign WHT c
 - Gifts: tax-free up to DKK 80,600 per donor per child per year (2026); 15% above (PwC).
 - Announced, not in force: allowance to DKK 550,000 and +15 points (30%) on estates with a base above DKK 10 million; business-succession estates reportedly excluded; no bill and no date (Deloitte 3 and 24 June 2026). Siblings move to the 15% class from 1 January 2027.
 - Surviving spouse: exempt from boafgift if not separated (Boafgiftsloven § 3(1)(a)); a registered partner is exempt too, a cohabitant is not.
+
+- Indexation: the allowance is adjusted every year under personskatteloven § 20 and is being raised in steps by the 2025 tax reform (Skatteministeriet, Faktaark 9); JSON `thresholds_indexed` true. At the second death in an undivided estate (uskiftet bo) there can be two allowances (Ældre Sagen).
 
 ## Wealth tax
 None since 1997 (PwC). JSON type none. Property value tax 0.51% up to DKK 9,007,000 and 1.4% above, plus municipal land tax (not a wealth tax). A wealth tax was proposed by left-wing parties before the 2026 election but is not in the government platform as summarised by Deloitte.
@@ -77,6 +79,7 @@ City: Copenhagen.
 - Nyt regeringsudspil: skat og afgifter, Deloitte Denmark: https://www.deloitte.com/dk/en/services/tax/perspectives/nyt-regeringsudspil-skat-og-afgifter.html
 - [CIS General & Financial Conditions - Tuition and Fees 2026/2027](https://www.copenhageninternational.school/wp-content/uploads/2026/02/General-Financial-Conditions-School-Fees-26-27.pdf)
 - [Lejebolig.dk - Huse til leje i Hellerup](https://www.lejebolig.dk/huse/hellerup)
+- Faktaark 9: Boafgift (Reform af personskat), Skatteministeriet: https://svmn.dk/media/apqahpml/faktaark-9-boafgift.pdf
 - Denmark - Corporate - Income determination, PwC: https://taxsummaries.pwc.com/denmark/corporate/income-determination
 - Boafgiftsloven § 3 as quoted in bill L 153 (2023/1), Folketinget / retsinformation: https://www.retsinformation.dk/api/pdf/242633
 
@@ -86,3 +89,4 @@ City: Copenhagen.
 - 2026-10-15: holding-structure review: no structure added (ApS taxed 22% on listed portfolio shares, then 27/42% on payout); holding_company_notes updated.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: recipe pass: inheritance thresholds marked indexed (personskatteloven § 20); open question on the mark-to-market (lager) taxation of a holding ApS that the projection cannot express.

@@ -4,7 +4,7 @@
   "continent": "Europe",
   "region": "Northern Europe",
   "currency": "EUR",
-  "researched_on": "2026-10-15",
+  "researched_on": "2026-10-16",
   "summary": "Capital gains taxed at 34% at the top, listed dividends at an effective 28.9%. Inheritance tax per child: tax-free under EUR 30,000 (2026), then 7%-19%, about 18-19% on a large share. No wealth tax. EU member, no special regime for wealthy arrivals. A family investment Oy pays 20% on gains and dividends, and pays out lightly taxed unlisted-company dividends (7.5% on the first EUR 150,000 per shareholder within an 8% return).",
   "regimes": [
     {
@@ -317,7 +317,9 @@
         "verified_on": "2026-10-15",
         "confidence": "medium",
         "verification": "partially_verified",
-        "open_questions": [],
+        "open_questions": [
+          "Foreign withholding credit against the Oy's corporate tax: the Vero relief-for-double-taxation guidance was read only through search results; the credit is limited to the Finnish tax on the same income."
+        ],
         "headline_rate": 0.2,
         "domestic_rate": 0.2,
         "foreign_gross_rate": 0.2,
@@ -330,8 +332,8 @@
       "structure": {
         "entity": "Private limited company (osakeyhtiö, Oy) used as a family investment company",
         "kind": "company",
-        "payout_tax_rate": 0.13,
-        "payout_notes": "Dividends from an unlisted company to a resident individual: up to an 8% return on the shares' mathematical value (net assets per the previous year's balance sheet, i.e. largely book values), 25% of the dividend is taxable capital income up to EUR 150,000 per shareholder a year (30% tax = 7.5% effective) and 85% above that (25.5%-28.9%); dividends beyond the 8% return are 75% taxable earned income at progressive rates. The 0.13 used here = EUR 400,000 split between two parent shareholders (EUR 200,000 each: EUR 37,500 + 42,500 = 80,000 taxable, taxed 30% on the first 30,000 and 34% above = EUR 26,000 each, EUR 52,000 in total). With adult children as shareholders more falls into the 7.5% band; the 8% limit needs net assets of at least EUR 5m at book value. The company withholds 7.5% / 28%. Repayment of capital from the invested unrestricted equity fund (SVOP) is treated as a dividend for an unlisted company, not a tax-free return.",
+        "payout_tax_rate": 0.1546,
+        "payout_notes": "Dividends from an unlisted company to a resident individual: up to an 8% return on the shares' mathematical value (net assets per the previous year's balance sheet, i.e. largely book values), 25% of the dividend is taxable capital income up to EUR 150,000 per shareholder a year (30% tax = 7.5% effective) and 85% above that (25.5%-28.9%); dividends beyond the 8% return are 75% taxable earned income at progressive rates. The 0.1546 used here is the tax as a share of the gross dividend when two parent shareholders each net EUR 200,000 (EUR 400,000 in total, which is what the projection needs after tax). Per shareholder with gross dividend G above EUR 150,000: taxable capital income = 25% x 150,000 + 85% x (G - 150,000); tax = 30% x 30,000 + 34% x (taxable - 30,000). Net 200,000 needs G = EUR 236,568 and tax EUR 36,568 (15.46% of G); EUR 473,136 gross in total, tax EUR 73,136. (The earlier 0.13 was the tax on a EUR 400,000 gross payout, EUR 52,000, which leaves only EUR 348,000 net.) Bands are the 2026 figures; no statutory indexation was found, so in real terms the rate would rise over time, but the model keeps it fixed. With adult children as shareholders more falls into the 25% band; the 8% limit needs net assets of at least EUR 1.9m per EUR 150,000 of dividend at book values. The company withholds 7.5% / 28%. Repayment of capital from the invested unrestricted equity fund (SVOP) is treated as a dividend for an unlisted company, not a tax-free return.",
         "substance_and_anti_avoidance": "No CFC issue for a Finnish company. Passive investment companies are common and accepted, but the general anti-avoidance rule (Act on Assessment Procedure § 28) applies to artificial arrangements, and hidden profit distributions (private use of company assets, under-priced loans) are taxed as dividends or earned income. The Oy must keep double-entry accounts and file an annual return; audit is required above small-company thresholds (not verified for a passive company). Since 2020 a non-business holding company's income falls into the 'other activity' income source, whose losses cannot offset business income.",
         "exit_and_liquidation": "Finland has no exit tax for individuals (Finnish nationals remain resident for three years after leaving unless they show no essential ties). Liquidation proceeds are taxed for the shareholder as a capital gain at 30%/34% on the excess over the share acquisition cost. After emigration, dividends from the Oy bear Finnish withholding tax (reduced by treaty). The Oy shares are part of the estate for inheritance tax at their fair value; generational business relief does not extend to investment companies.",
         "sources": [

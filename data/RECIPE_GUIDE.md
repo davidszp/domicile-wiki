@@ -50,6 +50,12 @@ Set these in the **tax file** (never in the recipe); each needs the statute:
   portfolio's unrealised gains are not taxed (Italy art. 16 TUS).
 - `wealth_tax.components[].credits_withholding`: foreign dividend withholding is credited against a wealth or
   deemed-return tax (Netherlands Box 3).
+- `credit_cap` and `foreign_tax_credit: "deduction"` on dividends: a credit limited to part of the tax (France
+  12.8%), or the rate applied to the dividend net of foreign withholding (Belgium).
+- `main_home_valued_at` / `securities_valued_at` on a wealth-tax component: valuation discounts (France IFI 70%,
+  Norway shares 80%).
+- `wealth_tax.income_cap`: income plus wealth tax capped at a share of income (Spain art. 31 LIP).
+- `structure.running_cost_deductible_at`: the structure's running costs reduce its own tax at this rate.
 - A path may not use a regime with `requires_qualifying_activity`: the family has no job or business, as in
   the scores.
 

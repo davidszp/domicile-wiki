@@ -1,6 +1,6 @@
 # Austria — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
@@ -43,7 +43,7 @@ JSON values: headline 27.5% (`0.275`); domestic 27.5% (`0.275`); foreign gross 2
 - **How the JSON numbers were derived:** 27.5% special rate (§ 27a(1) Z 2 EStG); foreign dividends taxed at 27.5% of the gross amount with a credit for foreign withholding tax of at most 15%.
 - **Outbound withholding:** 27.5% KESt on dividends paid to individuals; 23% to corporations; reduced by treaties and to 0% under the EU Parent-Subsidiary Directive.
 - **Treaty network:** About 90 income tax treaties including the US and all EU states.
-- **Holding-company notes:** Dividends from Austrian and qualifying foreign participations held by an Austrian company are generally exempt; portfolio holdings in a GmbH are taxed at 23% and distributions again at 27.5%. No structure is modelled: from 2026 a Privatstiftung pays 27.5% interim tax on gains and interest (the same as a private investor; § 22(2) KStG), only defers tax on dividends until they are paid out at 27.5%, costs 3.5% entry tax on the endowment, and Austria has no inheritance tax to avoid; a GmbH (23% plus 27.5% on payout) is worse.
+- **Holding-company notes:** Dividends from Austrian and qualifying foreign participations held by an Austrian company are generally exempt; portfolio holdings in a GmbH are taxed at 23% and distributions again at 27.5%. Two structures are modelled as their own regimes (see Holding structures). Privatstiftung: from 2026 it pays 27.5% interim tax (Zwischensteuer, § 22(2) KStG) on realised gains, interest, derivatives and private real estate sales (§ 13(3) KStG), but domestic dividends and dividends from comparable foreign companies resident in a state with comprehensive administrative assistance are exempt (§ 13(2) with § 10(1) Z 1, 5-7 KStG); distributions (Zuwendungen) bear 27.5% KESt, and distributions in excess of the year's separately taxed income earn a credit of the interim tax (§ 24(5) KStG); the endowment bears 3.5% foundation entry tax from 1 January 2026. Asset-management GmbH: 23% corporate tax on realised gains (24% above EUR 1,000,000 of income from 2028), portfolio dividends exempt under § 10 KStG, and 27.5% KESt when it distributes. Austria has no inheritance tax to avoid, so neither structure saves tax at death.
 - **Exemptions and thresholds:** No allowance.
 - **Eligibility conditions:** Private shareholder; option for progressive taxation if lower.
 - **Regional differences:** None.
@@ -64,7 +64,7 @@ JSON values: basis `none`, bracket mode `marginal`, children `fully_exempt`, exe
 - **Exemptions and thresholds:** Gift notification duty (§ 121a BAO): gifts between relatives up to EUR 50,000 per donor and recipient in one year are exempt from notification; real estate is notified under the real estate transfer tax act instead.
 - **Eligibility conditions:** None; applies to all.
 - **Regional differences:** None.
-- **Important exceptions / announced changes:** Transfers to a private foundation bear 2.5% foundation entry tax (Stiftungseingangssteuer). Inherited real estate: real estate transfer tax (stepped, family rates, aggregated over 5 years) plus 1.1% registration fee on the property value (Grundstückswert). Political proposals to reintroduce inheritance tax are not enacted.
+- **Important exceptions / announced changes:** Transfers to a private foundation bear 3.5% foundation entry tax (Stiftungseingangssteuer; 2.5% until 31 December 2025, raised from 1 January 2026 by the Budgetbegleitgesetz 2025). Inherited real estate: real estate transfer tax (stepped, family rates, aggregated over 5 years) plus 1.1% registration fee on the property value (Grundstückswert). Political proposals to reintroduce inheritance tax are not enacted.
 - **Tax year / confidence / verification:** 2026 / high / partially_verified (checked 2026-10-15)
 - **Sources:** [Austria - Individual - Other taxes](https://taxsummaries.pwc.com/austria/individual/other-taxes); [Schenkungsmeldung](https://www.bmf.gv.at/themen/steuern/steuern-von-a-bis-z/schenkungsmeldung.html); [Grunderwerbsteuer Österreich 2026 - der vollständige Überblick](https://brandauer-rechtsanwaelte.at/2026/05/24/grunderwerbsteuer-oesterreich-2026-ueberblick/)
 
@@ -85,13 +85,26 @@ None modelled; see the summary and open questions for regimes considered and rej
 
 ## Holding structures
 
-**No structure modelled.** The Privatstiftung, the usual Austrian family vehicle, no longer gives a material advantage in 2026:
+Two structures are modelled as separate regimes of type `structure`. Austria has no inheritance or gift tax, so neither saves tax at death; their use is deferral of the personal 27.5% tax (and, for the foundation, control and succession planning).
 
-- Interim tax (Zwischensteuer) on interest, realised gains, derivatives, crypto and private real estate gains is **27.5% from calendar year 2026** (23% in 2024-2025; § 22(2) KStG), the same rate a private investor pays. It is credited when the foundation makes distributions that bear 27.5% KESt (§ 13(3), § 24(5) KStG), so gains end up taxed at 27.5% either way.
-- Domestic dividends and qualifying foreign portfolio dividends are exempt in the foundation (§ 10, § 13(2) KStG), so dividend tax is only deferred until payout at 27.5%, and foreign withholding is then lost as a credit.
-- Entry tax (Stiftungseingangssteuer) is **3.5% of assets endowed from 1 January 2026** (2.5% before; 25% if disclosure rules are breached), i.e. about EUR 1.05 million on EUR 30 million, plus board (three members) and auditor costs.
-- Austria has no inheritance or gift tax, so the foundation saves nothing on succession.
-- A GmbH pays 23% on portfolio gains (foreign portfolio dividends are generally exempt) and payouts bear another 27.5%: worse than direct holding.
+### Private foundation (Privatstiftung, `privatstiftung`)
+
+The family endows an Austrian Privatstiftung with the portfolio; the foundation is its own legal person (§ 1 PSG) and owns it.
+
+- **Gains:** 27.5% interim tax (Zwischensteuer) on realised gains on shares, bonds and derivatives, on interest and crypto income (§ 13(3) Z 1 KStG) and on private real estate sales (§ 13(3) Z 2), rate § 22(2) KStG from calendar year 2026 (23% in 2024 and 2025). Unrealised gains are not taxed. JSON: 0.275 for listed, private business sale and local real estate; foreign real estate null (not researched). Holdings of at least 1% in the last five years can be rolled over (§ 13(4) KStG), not relevant for a diversified portfolio.
+- **Dividends:** exempt at the foundation: domestic dividends under § 10(1) Z 1 KStG and foreign dividends under § 13(2) with § 10(1) Z 5-7 (comparable corporation in the EU/EEA or a state with comprehensive administrative assistance; denied where the payer can deduct the dividend, § 10(4)). Fund distributions are not covered. JSON: 0, foreign tax credit `exemption`, so foreign withholding is a final cost.
+- **Payout:** Zuwendungen are capital income of the beneficiary (§ 27(5) Z 7 EStG) taxed at 27.5% KESt (§ 27a(1) Z 2 EStG), withheld by the foundation (`payout_tax_rate` 0.275). The interim tax is credited when distributions exceed the year's separately taxed income (§ 24(5) KStG, from 2026); the engine charges it in full and then charges KESt on the payout.
+- **Entry and set-up:** 3.5% foundation entry tax on assets endowed from 1 January 2026 (2.5% before; 25% where the foundation is not comparable to a Privatstiftung or documents are not filed), about EUR 1.05 million on EUR 30 million. Minimum endowment EUR 70,000 (§ 4 PSG); board of at least three members, two habitually resident in the EU/EEA (§ 15 PSG); a court-appointed auditor (§ 20 PSG). Running and set-up costs are null in the JSON: no Austrian source with euro amounts was found.
+- **Exit:** on dissolution the remaining assets pass to the final beneficiary in the deed and are taxed as Zuwendungen at 27.5% (§ 34 PSG; treatment of the endowed capital not verified). The founder's death changes nothing.
+
+### Asset-management GmbH (`vv_gmbh`)
+
+The family holds the portfolio through an Austrian GmbH owned privately.
+
+- **Gains:** 23% corporate tax on realised gains on shares below the 10% international-participation threshold (§ 22(1) KStG); unrealised gains are not taxed. From 2028 the rate is 24% on income above EUR 1,000,000 a year (BGBl. I Nr. 62/2026); the engine takes 23% throughout. JSON: 0.23, foreign real estate null.
+- **Dividends:** exempt: domestic (§ 10(1) Z 1 KStG) and from comparable foreign corporations in qualifying states (§ 10(1) Z 5-7). JSON: 0, `exemption`; foreign withholding is a final cost.
+- **Payout:** 27.5% KESt withheld by the GmbH (`payout_tax_rate` 0.275). Repayments of contributed capital and shareholder loans are not modelled.
+- **Running:** minimum corporate tax of EUR 500 a year is due even in a loss year (EUR 125 per quarter, § 24(4) KStG), creditable against later tax. Running and set-up costs are null in the JSON. Liquidation proceeds were not researched; on a shareholder's death the shares pass without Austrian inheritance tax.
 
 ## Company taxation (kept separate from personal tax)
 
@@ -118,7 +131,12 @@ Vienna (districts 13, 18 and 19).
 - Treaty counts are from general knowledge.
 - (standard / capital_gains) Main-residence exemption conditions and the 2025 rezoning surcharge were taken from general knowledge and a Deloitte search summary; the § 30 EStG text was not opened.
 - (standard / wealth_tax) The 1994 date of abolition is from general knowledge; the source only says there is no wealth tax.
-- (standard / inheritance) The 2.5% foundation entry tax was not checked against the StiftEG text in this session.
+- (standard / inheritance) The foundation entry tax rate (3.5% from 1 January 2026, previously 2.5%) is taken from the government bill's explanatory note and two law-firm summaries; the consolidated StiftEG text on RIS could not be opened.
+- (privatstiftung / capital_gains) The interim tax is credited when distributions exceed the year's separately taxed income (§ 24(5) KStG); the engine charges it in full and then charges KESt on the payout.
+- (privatstiftung / dividends) Whether KESt is withheld on domestic dividends paid to a Privatstiftung was not checked; domestic dividends are only about 10% of the family's portfolio.
+- (vv_gmbh / capital_gains) Whether the 2028 band (24% above EUR 1,000,000) applies to the family's company is a modelling gap.
+- (vv_gmbh / dividends) The § 10(1) Z 6 exemption was read from the RIS text and PwC; the Z 6 comparability test for US and other large-cap issuers was not checked against the tax authority's guidelines.
+- Running costs of the Privatstiftung and the GmbH are null: no Austrian source with euro amounts for the foundation board, auditor or accounting was found (law-firm pages say only that the costs can reach the five-figure range).
 - (standard / inheritance) children_treatment is 'fully_exempt' for the portfolio; real estate transfer tax of up to 3.5% plus 1.1% fee applies to inherited Austrian real estate, which the schema cannot express separately.
 
 US citizens: The US-Austria income tax treaty and the 1982 US-Austria estate and gift tax treaty apply. Austria's 27.5% on gains and dividends is generally creditable against US tax on foreign-source income; non-US funds can be PFICs.
@@ -136,6 +154,9 @@ US citizens: The US-Austria income tax treaty and the 1982 US-Austria estate and
 - [Austria - Corporate - Taxes on corporate income](https://taxsummaries.pwc.com/austria/corporate/taxes-on-corporate-income) — PwC Worldwide Tax Summaries (professional)
 - [willhaben: Haus mieten in Wien (listing sample)](https://www.willhaben.at/iad/immobilien/haus-mieten/wien) — willhaben internet service GmbH (other)
 - [Vienna International School: 2026/27 Terms and Conditions (fee schedule)](https://www.vis.ac.at/fileadmin/user_upload/VIS/Admissions/26-27_VIS_Terms_and_Conditions.pdf) — Vienna International School (other)
+- [Regierungsvorlage Budgetbegleitgesetz 2025, 87 d.B. XXVIII. GP (explanatory note: Stiftungseingangssteuer 2.5% to 3.5% from 1 January 2026)](https://www.parlament.gv.at/dokument/XXVIII/I/87/fname_1685674.pdf) — Parlament Österreich (government)
+- [Erhöhung der Stiftungseingangssteuer und der Zwischensteuer ab 2026](https://www.forvismazars.com/at/en/insights/tax-news/newsletter-august-2025/erhoehung-stiftungseingangssteuer-zwischensteuer) — Forvis Mazars Austria (professional)
+- [Besteuerung der Privatstiftung in Österreich](https://brandauer-rechtsanwaelte.at/2026/04/12/besteuerung-privatstiftung-oesterreich/) — Brandauer Rechtsanwälte (professional)
 - [Körperschaftsteuergesetz 1988 § 13 (Privatstiftungen, Zwischenbesteuerung)](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=13) — RIS (Bundeskanzleramt) (legislation)
 - [Körperschaftsteuergesetz 1988 § 22 (rates; Zwischensteuer 27.5% from 2026)](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=22) — RIS (Bundeskanzleramt) (legislation)
 - [Körperschaftsteuergesetz 1988 § 24 (Abs. 5: credit of Zwischensteuer on distributions)](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=24) — RIS (Bundeskanzleramt) (legislation)
@@ -147,3 +168,4 @@ US citizens: The US-Austria income tax treaty and the 1982 US-Austria estate and
 - 2026-10-15: added prime rent (willhaben sample, EUR 5,950/month) and Vienna International School fee (EUR 29,160, 2026/27).
 - 2026-10-15: Holding structures section: no structure modelled; recorded the 2026 rise of the Privatstiftung interim tax to 27.5% and entry tax to 3.5%.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added the `privatstiftung` and `vv_gmbh` structure regimes and rewrote the Holding structures section; foundation entry tax stated as 3.5% from 1 January 2026 (2.5% before) in the inheritance notes; holding_company_notes updated.

@@ -1,12 +1,12 @@
 # Belgium — family-office tax dossier
 
-Last reviewed: 2026-10-15
+Last reviewed: 2026-10-16
 Tax year: 2026
 Reviewer: research agent (Claude), unreviewed by a tax adviser
 
 ## Summary
 
-Belgium introduced a 10% tax on capital gains on financial assets (shares, bonds, funds, crypto, some insurance) realised from 1 January 2026, with gains accrued before 2026 excluded and an annual exemption of EUR 10,000; substantial holdings of 20% or more have a EUR 1 million exemption and rates of 1.25%-10%. Dividends and interest bear a final 30% withholding tax, with no credit for foreign withholding tax. Securities accounts above EUR 1 million pay an annual 0.15% tax. Inheritance and gift tax is regional: in Flanders (used here) a child pays 3% up to EUR 50,000, 9% to EUR 250,000 and 27% above, separately on movable and immovable assets; registered gifts of movables cost a flat 3%, and unregistered gifts escape tax if the donor survives five years.
+Belgium introduced a 10% tax on capital gains on financial assets (shares, bonds, funds, crypto, some insurance) realised from 1 January 2026, with gains accrued before 2026 excluded and an annual exemption of EUR 10,000; substantial holdings of 20% or more have a EUR 1 million exemption and rates of 1.25%-10%. Dividends and interest bear a final 30% withholding tax; foreign dividends are taxed on the amount net of the foreign withholding, which is not credited. Securities accounts above EUR 1 million pay an annual tax of 0.30% (doubled from 0.15% by the Programme Law of 30 May 2026, for reference periods ending from 1 June 2026). Inheritance and gift tax is regional: in Flanders (used here) a child pays 3% up to EUR 50,000, 9% to EUR 250,000 and 27% above, separately on movable and immovable assets; registered gifts of movables cost a flat 3%, and unregistered gifts escape tax if the donor survives five years.
 
 ## Residence and eligibility
 
@@ -33,29 +33,29 @@ JSON values: headline rate 33% (`0.33`); listed securities domestic 10% (`0.1`),
 - **Holding periods:** None for financial assets. Real estate: 5 years for buildings, 8 years for land.
 - **Professional-trader risk:** Transactions outside the normal management of private wealth (speculation, leverage, short-term trading resembling a professional activity) are taxed as miscellaneous income at 33% plus communal tax, or as professional income at progressive rates up to 50%.
 - **Foreign assets:** Worldwide gains taxed the same way; foreign real estate gains generally exempt with progression under treaties.
-- **Exemptions and thresholds:** EUR 10,000 per taxpayer per year for ordinary financial assets (CIR art. 96/2, 2°: EUR 4,855 before indexation); carry-forward EUR 1,000 a year (base EUR 480), capped at EUR 5,000 a year (base EUR 2,426); EUR 1 million for substantial holdings (deducted from the exemptions used in the previous four years); exits from joint ownership within three years after a death or divorce exempt; real estate exempt after 5 years (buildings) or 8 years (land).
+- **Exemptions and thresholds:** EUR 10,000 per taxpayer per year for ordinary financial assets (CIR art. 96/2, 2°: EUR 4,855 base amount, indexed annually; EUR 10,000 is the indexed amount for assessment year 2027, i.e. income year 2026, per Circular 2026/C/74); carry-forward EUR 1,000 a year (base EUR 480), capped at EUR 5,000 a year (base EUR 2,426); EUR 1 million for substantial holdings (deducted from the exemptions used in the previous four years); exits from joint ownership within three years after a death or divorce exempt; real estate exempt after 5 years (buildings) or 8 years (land).
 - **Eligibility conditions:** Resident individual acting within normal management of private wealth.
 - **Regional differences:** None for income tax; communal surcharges (0%-9% of income tax, average 7%) apply to real estate gains.
-- **Important exceptions / announced changes:** Speculative transactions or operations outside normal private management are taxed at 33% plus communal tax. Withholding by Belgian intermediaries starts 1 June 2026 (Law of 6 April 2026, art. 35); the law takes effect on 1 January 2026. Foreign accounts and opted-out accounts are declared. The personal income tax reform Law of 15 July 2026 (published 29 July 2026) changes the tax-free allowance and other items but was not found to alter the capital gains rates.
+- **Important exceptions / announced changes:** Speculative transactions or operations outside normal private management are taxed at 33% plus communal tax. Withholding by Belgian intermediaries starts 1 June 2026 (Law of 6 April 2026, art. 35); the law takes effect on 1 January 2026. A person who becomes a Belgian resident is taxed only on value accrued since the first day of liability to Belgian personal income tax (new art. 102 section 3 CIR 92; Circular 2026/C/74 point 150), so a portfolio brought in at market value starts with no gain. The 10% carries no communal surcharge; the taxpayer can opt for the progressive scale if cheaper (Circular points 118-119). Foreign accounts and opted-out accounts are declared. The personal income tax reform Law of 15 July 2026 (published 29 July 2026) changes the tax-free allowance and other items but was not found to alter the capital gains rates.
 - **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
-- **Sources:** [Belgium - Individual - Significant developments](https://taxsummaries.pwc.com/belgium/individual/significant-developments); [Belgium - Individual - Income determination](https://taxsummaries.pwc.com/belgium/individual/income-determination); [Loi du 6 avril 2026 introduisant un impôt sur les plus-values sur les actifs financiers (Moniteur belge 21 avril 2026, numac 2026002780)](https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=26-04-21&numac=2026002780)
+- **Sources:** [Belgium - Individual - Significant developments](https://taxsummaries.pwc.com/belgium/individual/significant-developments); [Belgium - Individual - Income determination](https://taxsummaries.pwc.com/belgium/individual/income-determination); [Loi du 6 avril 2026 introduisant un impôt sur les plus-values sur les actifs financiers (Moniteur belge 21 avril 2026, numac 2026002780)](https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=26-04-21&numac=2026002780); [Circulaire 2026/C/74 (impot des personnes physiques)](https://blog.forumforthefuture.be/fr/article/circulaire-2026c74-concernant-limpot-sur-les-plus-values-sur-les-actifs-financiers-a-limpot-des-personnes-physiques/31949)
 
 ## Dividends
 
-Dividends are taxed at a flat 30% withholding tax, final when paid through a Belgian bank; foreign dividends received abroad are declared and taxed at 30%. The first EUR 859 of dividends (income year 2025) is exempt. Foreign withholding tax is not credited for individuals, so a 15% US withholding plus 30% Belgian tax on the net amount gives about 40.5% in total. Interest is also taxed at 30% (savings account interest above EUR 1,050 at 15%).
+Dividends are taxed at a flat 30% withholding tax, final when paid through a Belgian bank; foreign dividends received abroad are declared and taxed at 30%. The first EUR 859 of dividends (income year 2025) is exempt. Foreign withholding tax is not credited for individuals but is deducted before the 30% is applied, so a 15% US withholding plus 30% Belgian tax on the net amount gives about 40.5% in total. Interest is also taxed at 30% (savings account interest above EUR 1,050 at 15%).
 
 JSON values: headline 30% (`0.3`); domestic 30% (`0.3`); foreign gross 30% (`0.3`); foreign tax relief: none.
 
-- **How the JSON numbers were derived:** 30% flat rate on movable income. Foreign dividends: 30% Belgian rate; no credit for source-country withholding (the Belgian tax is levied on the net amount after foreign tax).
+- **How the JSON numbers were derived:** 30% flat rate on movable income. Foreign dividends: 30% Belgian rate on the amount net of foreign withholding (effective 25.5% of the gross dividend when 15% is withheld); no credit for source-country withholding. The JSON rate is the 30% statutory rate; the net-of-withholding base is not something the rate field can carry.
 - **Outbound withholding:** 30% on dividends paid by Belgian companies, reduced by treaties (often 15%) and to 0% for EU parent companies; reduced rates for some SME dividends.
 - **Treaty network:** About 95 income tax treaties including the US and all EU states (count from general knowledge).
-- **Holding-company notes:** A Belgian company pays 25% (20% on the first EUR 100,000 for SMEs); dividends received deduction and exemption of gains on qualifying shares (at least 10% or EUR 2.5 million); distributions to individuals bear 30% withholding. No structure is modelled: a company pays 25% on portfolio dividends and on gains from shares below 10% or EUR 2.5 million (versus 10% CGT for an individual), plus 30% withholding on payouts and the same securities-account tax, and a private foundation is caught by the 2026 capital gains tax through the legal-entities tax.
+- **Holding-company notes:** Modelled as the structure regime 'holding_bv' (Belgian BV holding the portfolio): 25% corporate tax on portfolio dividends (net of foreign withholding, no credit) and on gains from shares below the participation tests (10% or EUR 2.5 million), plus 30% withholding on payouts and the same securities-account tax. A private foundation is not modelled: since 2024 it pays an annual patrimony tax of up to 0.45% of its assets, is also caught by the 2026 capital gains tax and the securities-account tax, and the founder may not benefit from it.
 - **Exemptions and thresholds:** Dividend exemption EUR 859 per taxpayer (income year 2025; 2026 amount not verified).
 - **Eligibility conditions:** Resident individual.
 - **Regional differences:** None; no communal surcharge on movable income withheld at source.
-- **Important exceptions / announced changes:** Belgian tax on foreign dividends is computed on the amount net of foreign withholding when collected by a Belgian bank (from general knowledge).
+- **Important exceptions / announced changes:** Belgian tax on foreign dividends is computed on the amount net of foreign withholding: the withheld foreign tax is deducted from the gross dividend (administrative commentary on CIR 92 and the FOD Financien return guidance; Circular 2020/C/96 of 9 July 2020 withdrew a 2019 internal instruction limiting the deduction to the treaty rate); the foreign tax is not credited. A US dividend of 100 with 15% withholding leaves 85, taxed at 30% = 25.50, so 40.50 in total.
 - **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
-- **Sources:** [Belgium - Individual - Income determination](https://taxsummaries.pwc.com/belgium/individual/income-determination); [Belgium - Individual - Taxes on personal income](https://taxsummaries.pwc.com/belgium/individual/taxes-on-personal-income)
+- **Sources:** [Belgium - Individual - Income determination](https://taxsummaries.pwc.com/belgium/individual/income-determination); [Belgium - Individual - Taxes on personal income](https://taxsummaries.pwc.com/belgium/individual/taxes-on-personal-income); [De nieuwe meerwaardebelasting op financiële activa](https://kpmg.com/be/nl/home/insights/2025/09/ctx-de-nieuwe-meerwaardebelasting-op-financiele-activa.html); [Berekening belastbare roerende inkomsten en aftrek buitenlandse bronheffingen](https://www.jubel.be/berekening-belastbare-roerende-inkomsten-en-aftrek-buitenlandse-bronheffingen-werkelijk-afgehouden-buitenlands-tarief-of-beperkt-tot-verdragstarief/)
 
 ## Inheritance and gifts to children
 
@@ -70,25 +70,24 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `taxed`, exe
 - **Exemptions and thresholds:** No general allowance for adult children in Flanders; reductions for children under 21. Family home exempt for the surviving partner.
 - **Eligibility conditions:** Belgian inheritance tax applies to the worldwide estate of a deceased Belgian resident; the region is the one where the deceased lived longest in the last five years.
 - **Regional differences:** Brussels-Capital: direct-line rates rise from 3% to 30% (top rate above EUR 500,000, from general knowledge), with a small allowance for children; Wallonia has its own scale (reformed rates from 2028 announced; not verified). The Flemish government plans to reform and lower inheritance tax (2024-2029 coalition agreement) but no decision is in force. Regional files would be needed to score Brussels and Wallonia separately.
-- **Important exceptions / announced changes:** Reduced rate for family businesses (Flanders, new rules from 1 January 2026) does not cover listed portfolios. Flemish tax regularisation programme 2026-2029 for evaded inheritance tax.
+- **Important exceptions / announced changes:** Reduced rate for family businesses (Flanders, new rules from 1 January 2026) does not cover listed portfolios. Flemish tax regularisation programme 2026-2029 for evaded inheritance tax. The Flemish brackets (EUR 50,000 / 250,000) are not indexed (no indexation is mentioned on the Flemish Tax Authority page; a law-firm commentary says the brackets have been unchanged for years), so thresholds_indexed stays false.
 - **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
 - **Sources:** [Algemeen tarief in de erfbelasting](https://www.vlaanderen.be/belastingen-en-begroting/vlaamse-belastingen/erfbelasting/tarieven-in-de-erfbelasting/algemeen-tarief-in-de-erfbelasting); [Erfbelasting](https://www.vlaanderen.be/belastingen-en-begroting/vlaamse-belastingen/erfbelasting); [Belgium - Individual - Other taxes](https://taxsummaries.pwc.com/belgium/individual/other-taxes)
 - Surviving spouse: taxed on the same Flemish 3% / 9% / 27% scale as children (partners are married, legally cohabiting, or factually cohabiting for at least one year); the family home is exempt for the surviving partner.
 
 ## Wealth tax
 
-Belgium has no general wealth tax, but an annual tax on securities accounts of 0.15% applies when the average value of a securities account (shares, bonds, funds, certificates held in an account, in Belgium or abroad for residents) reaches EUR 1 million over the reference period. The tax cannot exceed 10% of the amount above EUR 1 million, which smooths the threshold.
+Belgium has no general wealth tax, but an annual tax on securities accounts applies when the average value of a securities account (shares, bonds, funds and other financial instruments held in an account, in Belgium or abroad for residents) exceeds EUR 1 million over the reference period (1 October to 30 September, average of four quarter-end values). The rate was 0.15% and was doubled to 0.30% by the Programme Law of 30 May 2026, for reference periods ending from 1 June 2026. The tax is charged on the whole value, not only the excess; for accounts just above the threshold it is limited to 10% of the excess over EUR 1 million (so the full rate applies from about EUR 1,030,928).
 
 JSON type: `limited`.
 
-- **Component Annual tax on securities accounts** (base `securities_accounts`, bracket mode `marginal`): allowance EUR 0, entry threshold EUR 1,000,000; brackets: 0.15% (`0.0015`) from EUR 0. 0.15% of the whole average account value once it reaches EUR 1 million, capped at 10% of the excess above EUR 1 million (smoothing up to about EUR 1.015 million).
+- **Component Annual tax on securities accounts** (base `securities_accounts`, bracket mode `marginal`): allowance EUR 0, entry threshold EUR 1,000,000; brackets: 0.30% (`0.003`) from EUR 0. 0.30% of the whole average account value once it exceeds EUR 1 million, from reference periods ending 1 June 2026 (Programme Law of 30 May 2026; 0.15% before), capped at 10% of the excess over EUR 1 million for accounts up to about EUR 1.031 million. Per account.
 - **Property tax (not a wealth tax):** Annual withholding tax on real estate (onroerende voorheffing / précompte immobilier) on the indexed cadastral income, set regionally and locally.
-- **Exemptions and thresholds:** Entry threshold EUR 1 million average value per account; above it the whole value is taxed at 0.15%, capped at 10% of the excess over EUR 1 million.
-- **Eligibility conditions:** Per account (all holders together); applies to residents' accounts worldwide.
-- **Regional differences:** None.
-- **Important exceptions / announced changes:** Directly registered shares (held in a company's share register rather than in a securities account) are outside the tax; an anti-abuse rule targets splitting or conversion into registered shares.
-- **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
-- **Sources:** [Belgium - Individual - Other taxes](https://taxsummaries.pwc.com/belgium/individual/other-taxes)
+- **Exemptions and thresholds:** Entry threshold EUR 1 million average value per account (the number of holders does not matter, per KBC); above it the whole value is taxed at 0.30%, capped at 10% of the excess over EUR 1 million for accounts up to EUR 1,030,927.84.
+- **Eligibility conditions:** Per account, all holders together. Liable: Belgian natural persons, Belgian companies and Belgian legal persons subject to the legal-entities tax (non-profit associations, foundations); residents' accounts worldwide, with foreign accounts declared by the holder.
+- **Important exceptions / announced changes:** Rate doubled from 0.15% to 0.30% by the Programme Law of 30 May 2026 (published 1 June 2026), for reference periods ending from 1 June 2026, so the period ending 30 September 2026 is taxed at 0.30%. Two anti-abuse rules (retroactive to 30 October 2020): splitting an account into several accounts at the same institution, and converting securities to registered shares, are never enforceable against the tax; a wider general anti-abuse rule allows rebuttal (Bank van Breda).
+- **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-16)
+- **Sources:** [KBC: De jaarlijkse taks op de effectenrekeningen (JTER)](https://www.kbc.be/particulieren/nl/juridische-info/documentatie-beleggen/taks-op-effectenrekeningen.html); [Bank van Breda FAQ 2026 (juli 2026)](https://www.bankvanbreda.be/hubfs/FAQ%20NL%202026.pdf); [Lexgo: Belgian tax reform 2026, programme law](https://www.lexgo.be/en/news-and-articles/14846-belgian-tax-reform-2026-tax-and-social-measures-of-the-programme-law); [Wikifin: De taks op de effectenrekeningen](https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/je-roerend-inkomen/de-taks-op-de-effectenrekeningen); [Belgium - Individual - Other taxes](https://taxsummaries.pwc.com/belgium/individual/other-taxes)
 
 ## Special regimes
 
@@ -96,11 +95,15 @@ None modelled; see the summary and open questions for regimes considered and rej
 
 ## Holding structures
 
-**No structure modelled.** The 2026 capital gains tax does not make a holding attractive:
+**Modelled: family investment company (`holding_bv`, type `structure`).** The parents hold the portfolio through a Belgian BV/SRL.
 
-- A Belgian company is outside the new 10% capital gains tax (KPMG), but pays 25% corporate tax on portfolio dividends and on gains from shares that fail the participation conditions (at least 10% or EUR 2.5 million acquisition value, one-year holding, subject-to-tax). A diversified portfolio fails them, so gains go from 10% (individual) to 25%, dividends stay taxed, and payouts bear 30% withholding. The securities-account tax also applies to accounts held by companies.
-- A private foundation (private stichting) is subject to the legal-entities tax, which the 2026 capital gains tax also covers (KPMG), so it offers no income-tax advantage; it is used for control and succession, not tax saving.
-- Gifts of movables to children are already cheap without a structure (see Inheritance).
+- **Company taxation:** 25% corporate tax on portfolio dividends and on gains from shares that fail the participation tests (at least 10% or EUR 2.5 million acquisition value, one-year holding, subject-to-tax; from 2026 the EUR 2.5 million route also needs a financial fixed asset). Positions of EUR 500,000 do not qualify. Foreign dividends enter the base net of the foreign withholding and generally carry no foreign tax credit (PwC). JSON: dividends and listed-share gains 0.25, foreign tax credit none; a qualifying 10%+ stake sold: 0; real estate 0.25.
+- **Payout:** 30% dividend withholding (`payout_tax_rate` 0.30). The VVPRbis rate (15%, 18% from 1 July 2026) covers only cash contributions made by 31 December 2025; a liquidation reserve created after 30 December 2025 can be released at 9.8% after three years (Lexgo), not modelled.
+- **Running cost:** EUR 4,500 a year, the upper end of the EUR 2,500-4,500 quoted by Belgian accountants for a BV's bookkeeping and tax return (Bobex); excludes directors, investment management and audit.
+- **Wealth tax and inheritance:** the securities-account tax applies to the company's accounts as to individuals; the shares are valued at market value for Flemish inheritance tax, with no business relief for a portfolio company. Both inherit the standard regime.
+- **Cayman tax:** art. 5/1 and 220/1 CIR 92 tax the founder on the income of a foreign legal construction as if received directly (Circular 2024/C/79). A Belgian BV is an ordinary taxpayer; a foreign foundation or trust would not help.
+
+**Not modelled: Belgian private foundation (private stichting).** Gifts to it cost 5.5% in Flanders (8.5% by bequest; Flemish Tax Authority ruling 17040) and take the assets out of the founder's estate, but since 2024 it pays a patrimony tax of 0.15% / 0.30% / 0.45% (the last above EUR 500,000; Baker Tilly), is also liable for the securities-account tax and the 2026 capital gains tax, and the founder and board may not receive benefits from it, so it cannot fund the parents' own spending. It is used for succession planning and asset protection, not as a portfolio vehicle. The tax on distributions to beneficiaries was not researched.
 
 ## Company taxation (kept separate from personal tax)
 
@@ -122,13 +125,15 @@ Brussels (Uccle, Ixelles, Woluwe).
 
 ## Open questions
 
+- A Belgian private foundation (private stichting) was considered and not modelled (see Holding structures).
 - Special expatriate regime (2022 regime for impatriate taxpayers and researchers) concerns employment income only (30% tax-free allowance) and does not change passive income taxation; not modelled.
 - National file uses Flanders for inheritance; Brussels and Wallonia need a subnational file.
-- (standard / capital_gains) The EUR 10,000 and EUR 1,000 figures are the indexed amounts of the statutory EUR 4,855 and EUR 480 as reported by PwC; the indexation coefficient for income year 2026 was not checked on an official page.
+- (standard / capital_gains) The EUR 480 / EUR 1,000 supplementary exemption and its carry-forward only start to work from assessment year 2028 (Circular 2026/C/74); not relevant to a family realising hundreds of thousands of euros a year.
 - (standard / capital_gains) Treatment of investment funds (new CIR art. 95/1 exemption for certain undertakings for collective investment) was not analysed.
-- (standard / capital_gains) Whether the EUR 10,000 exemption is indexed for 2026 was not verified.
-- (standard / dividends) The absence of a credit for foreign withholding tax on portfolio dividends and the 'net of foreign tax' base were not verified on an official page.
-- (standard / wealth_tax) The 10% smoothing cap and the anti-abuse rule are from general knowledge; PwC confirms only the 0.15% rate and EUR 1 million threshold. Proposals in the 2025 federal coalition agreement to change the tax were not checked.
+- (standard / dividends) The net-of-foreign-tax base rests on administrative commentary, the FOD Financien return guidance and Circular 2020/C/96, not on a statute article that was opened; the 2020 article notes further clarifications were promised.
+- (standard / dividends) Dividend exemption EUR 859 is the income-year 2025 figure; the 2026 amount was not checked.
+- (standard / wealth_tax) The 0.30% rate is confirmed by two bank notes (KBC, Bank van Breda, July 2026) and Lexgo; the text of the Programme Law of 30 May 2026 was not opened. PwC Belgium pages and Wikifin still show 0.15% and predate the law.
+- (standard / wealth_tax) The cap (10% of the excess over EUR 1 million) is taken from KBC and Wikifin; Wikifin states it for 0.15% (cap ends at EUR 1,015,228.42), KBC states EUR 1,030,927.84 for 0.30%.
 - (standard / inheritance) Brussels and Wallonia scales were not verified (Brussels Fiscalité site redirected); subnational file data/subnational/BEL.json not written.
 - (standard / inheritance) Flemish reduced rate for family businesses from 2026 not read in detail.
 
@@ -136,6 +141,18 @@ US citizens: US-Belgium income tax treaty applies; no estate tax treaty. Belgium
 
 ## Sources
 
+- [De jaarlijkse taks op de effectenrekeningen (JTER)](https://www.kbc.be/particulieren/nl/juridische-info/documentatie-beleggen/taks-op-effectenrekeningen.html) — KBC Bank (professional)
+- [FAQ: jaarlijkse taks op de effectenrekeningen (2026), juli 2026](https://www.bankvanbreda.be/hubfs/FAQ%20NL%202026.pdf) — Bank van Breda (professional)
+- [Belgian tax reform 2026: tax and social measures of the programme law](https://www.lexgo.be/en/news-and-articles/14846-belgian-tax-reform-2026-tax-and-social-measures-of-the-programme-law) — Lexgo (professional)
+- [De taks op de effectenrekeningen](https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/je-roerend-inkomen/de-taks-op-de-effectenrekeningen) — Wikifin (FSMA) (government)
+- [Berekening belastbare roerende inkomsten en aftrek buitenlandse bronheffingen](https://www.jubel.be/berekening-belastbare-roerende-inkomsten-en-aftrek-buitenlandse-bronheffingen-werkelijk-afgehouden-buitenlands-tarief-of-beperkt-tot-verdragstarief/) — Jubel (professional)
+- [Circulaire 2026/C/74](https://blog.forumforthefuture.be/fr/article/circulaire-2026c74-concernant-limpot-sur-les-plus-values-sur-les-actifs-financiers-a-limpot-des-personnes-physiques/31949) — FOD Financien (tax_authority)
+- [Belgium - Corporate - Income determination](https://taxsummaries.pwc.com/belgium/corporate/income-determination) — PwC Worldwide Tax Summaries (professional)
+- [Belgium - Corporate - Tax credits and incentives](https://taxsummaries.pwc.com/belgium/corporate/tax-credits-and-incentives) — PwC Worldwide Tax Summaries (professional)
+- [Boekhouder Brussel: prijzen](https://www.bobex.be/nl-be/boekhouder/brussel/) — Bobex (other)
+- [Circulaire 2024/C/79 (taxe Caiman)](https://blog.forumforthefuture.be/fr/article/circulaire-2024c79-concernant-lapplication-de-la-taxe-dite-caiman-lorsque-la-construction-juridique-est-situee-dans-un-etat-avec-lequel-la-belgique-a-conclu-une-convention-preventive-de-la-double-imposition/25359) — FOD Financien (tax_authority)
+- [Patrimoniumtaks voor vzw's, ivzw's en private stichtingen](https://bakertilly.be/nl/news/patrimoniumtaks-voor-vzws-ivzws-en-private-stichtingen-recente-ontwikkelingen/) — Baker Tilly Belgium (professional)
+- [Vlaamse Belastingdienst bevestigt gunstige fiscale behandeling private stichting](https://www.jubel.be/vlaamse-belastingdienst-bevestigt-gunstige-fiscale-behandeling-private-stichting/) — Jubel (professional)
 - [Belgium - Individual - Significant developments](https://taxsummaries.pwc.com/belgium/individual/significant-developments) — PwC Worldwide Tax Summaries (professional)
 - [Belgium - Individual - Income determination](https://taxsummaries.pwc.com/belgium/individual/income-determination) — PwC Worldwide Tax Summaries (professional)
 - [Belgium - Individual - Taxes on personal income](https://taxsummaries.pwc.com/belgium/individual/taxes-on-personal-income) — PwC Worldwide Tax Summaries (professional)
@@ -156,3 +173,4 @@ US citizens: US-Belgium income tax treaty applies; no estate tax treaty. Belgium
 - 2026-10-15: Holding structures section: no structure modelled (company 25% on portfolio income; private foundations covered by the 2026 capital gains tax).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
 - 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: securities-account tax corrected from 0.15% to 0.30% (Programme Law of 30 May 2026, reference periods ending from 1 June 2026); net-of-foreign-withholding base for foreign dividends sourced; capital gains exemption indexation and new-resident valuation sourced to Circular 2026/C/74; added structure regime `holding_bv` (Belgian BV, 25%, 30% payout, EUR 4,500 running cost) and rewrote the Holding structures section; private foundation considered and not modelled.

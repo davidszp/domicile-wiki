@@ -87,7 +87,11 @@ class Dividends(MetricBase):
     headline_rate: Rate | None
     domestic_rate: Rate | None = Field(description="Residence-country tax on dividends from domestic companies")
     foreign_gross_rate: Rate | None = Field(description="Residence-country rate on foreign dividends before any credit")
-    foreign_tax_credit: Literal["credit", "exemption", "none", "not_applicable"]
+    foreign_tax_credit: Literal["credit", "exemption", "none", "deduction", "not_applicable"] = Field(
+        description="'credit': foreign withholding comes off the tax; 'deduction': the rate applies to the dividend net of "
+                    "foreign withholding, with no credit (Belgium); 'none': the withholding is lost")
+    credit_cap: Rate | None = Field(None, description="With 'credit': the most the credit can be, as a rate on the dividend "
+                                                      "(France: 12.8%, art. 200 A CGI, the CDHR adds the credit back)")
     rate_basis: str = Field(min_length=10)
     withholding_outbound: str = Field("", description="WHT this country levies on dividends paid OUT by its companies")
     treaty_network: str = ""
@@ -110,14 +114,30 @@ class WealthComponent(Strict):
     entry_threshold: float = Field(0, ge=0, description="Tax applies only if base exceeds this (cliff), native currency")
     brackets: list[Bracket] = Field(min_length=1)
     bracket_mode: Literal["marginal", "whole_amount"] = "marginal"
+    main_home_valued_at: Rate = Field(1.0, description="Share of the main home's value that enters the base "
+                                                       "(France IFI: 70%, art. 973 CGI)")
+    securities_valued_at: Rate = Field(1.0, description="Share of the securities' market value that enters the base "
+                                                     "(Norway: shares at 80%, skatteloven § 4-12)")
     credits_withholding: bool = Field(False, description="Foreign withholding on dividends is credited against this tax "
                                                          "(Netherlands Box 3), up to the tax itself")
+    notes: str = ""
+
+
+class IncomeCap(Strict):
+    """Income tax plus wealth tax may not exceed a share of income; the wealth tax gives way, down to a floor
+    (Spain art. 31 Ley 19/1991: 60% of the income-tax base, wealth tax cut by at most 80%)."""
+
+    share_of_income: Rate = Field(description="Income tax plus wealth tax may not exceed this share of the income base")
+    max_reduction: Rate = Field(description="The most the wealth tax can be cut by the cap (0.8 = at least 20% stays due)")
+    counts_long_term_gains: bool = Field(description="Whether gains on long-held assets count in the income base "
+                                                     "(Spain: no, art. 31.1 Ley 19/1991)")
     notes: str = ""
 
 
 class WealthTax(MetricBase):
     type: Literal["none", "limited", "broad"]
     components: list[WealthComponent] = []
+    income_cap: IncomeCap | None = None
     thresholds_indexed: bool = Field(False, description="Allowances and bracket limits rise with prices by law each year "
                                                        "(e.g. Netherlands art. 10.1 Wet IB 2001); False when they change only by amendment")
     property_tax_note: str = Field("", description="Ordinary municipal/property taxes, kept separate from wealth tax")
@@ -195,6 +215,9 @@ class StructureTerms(Strict):
     payout_notes: str = Field(min_length=10, description="How distributions/withdrawals are taxed; loans, capital repayments, etc.")
     annual_running_cost: Money | None = Field(None, description="Typical annual cost (accounting, audit, directors, minimum taxes)")
     setup_cost: Money | None = None
+    running_cost_deductible_at: Rate | None = Field(
+        None, description="The structure's tax rate at which its running costs are deductible from its taxable profit "
+                          "(e.g. 0.25 for a French holding à l'IS); null when they save no tax")
     substance_and_anti_avoidance: str = Field(
         min_length=10, description="Substance needs, CFC/look-through/anti-abuse rules, trade-tax traps, passive-income rules")
     exit_and_liquidation: str = Field("", description="Tax on liquidation, emigration of shareholders, step-ups")
