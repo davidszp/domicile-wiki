@@ -76,6 +76,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `taxed`, exe
 - **Important exceptions / announced changes:** Dutreil pact: 75% exemption on qualifying operating businesses with collective and individual holding commitments; not for portfolios. Life insurance: 20%/31.25% after EUR 152,500 per beneficiary for premiums before 70 (art. 990 I CGI; from general knowledge).
 - **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
 - **Sources:** [Droits de succession : calcul](https://www.service-public.gouv.fr/particuliers/vosdroits/F14198); [Droits de donation](https://www.service-public.gouv.fr/particuliers/vosdroits/F14203); [France - Individual - Other taxes](https://taxsummaries.pwc.com/france/individual/other-taxes)
+- Surviving spouse or PACS partner: exempt from inheritance tax (service-public.fr, CGI art. 796-0 bis).
 
 ## Wealth tax
 
@@ -237,3 +238,4 @@ US citizens: The US-France income tax treaty gives a special credit for US citiz
 - 2026-10-15: added structure regime `holding_is` (holding company at IS: 25% on portfolio gains/dividends, PFU 31.4% on payouts; 2026 holding tax on sumptuary assets does not reach securities) and a Holding structures section.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 13,400 to EUR 9,150 (Paris 9e and 8e).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 9,150 to EUR 5,839 (5 flats of 165-233 m2: Neuilly-sur-Seine, Ville-d'Avray, Paris 9e); still thin.
+- 2026-10-16: added surviving-spouse treatment.

@@ -1,0 +1,150 @@
+{
+  "name": "Czech Republic",
+  "summary": "EU citizens register for stays over three months. Czechia has no investor visa. Non-EU nationals can use a trade-licence (zivno) long-term business visa as a freelancer, a digital nomad long-term visa limited to listed nationalities (including the US and UK) and to IT, STEM and marketing workers earning 1.5 times the average salary, or an EU Blue Card (at least CZK 73,823 a month from 1 May 2026).",
+  "naturalisation": "Not confirmed by an official source in this research. From general knowledge: five years of permanent residence, Czech at B1 and a civic test; a 2026 amendment tightening clean-record requirements was under debate.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Czechia has tolerated dual citizenship since the 2013 Act; Russian citizens were reported to face a renunciation requirement (December 2024 amendment, enactment unconfirmed). Not verified.",
+  "routes": [
+    {
+      "id": "eu_free_movement",
+      "name": "EU/EEA free movement",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "EU citizens register for stays over three months; no permit.",
+      "requirements": "Directive 2004/38/EC; registration with the Ministry of the Interior for stays over 3 months; permanent residence after 5 years.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Czech Republic - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/czech-republic/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 5
+    },
+    {
+      "id": "digital_nomad_programme",
+      "name": "Digital nomad long-term visa (listed nationalities)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Long-term visa for remote workers from listed countries, valid one year, followed by a two-year long-term residence permit.",
+      "requirements": "Open to citizens of Australia, Canada, Japan, New Zealand, South Korea, Taiwan, the UK, the US and, from February 2025, Brazil, Israel, Mexico and Singapore (so only the US and listed OTHER passports qualify; EU citizens need no visa). Must telework for a foreign company with at least 50 employees, or be a freelancer with a Czech trade licence working for Czech clients; three years of IT experience or a STEM degree, marketing specialists since February 2025. Income at least 1.5 times the average gross annual salary (CZK amount for 2026 not retrieved). Fee CZK 2,500, processing up to 45 days; no local employment.",
+      "physical_presence": "Live in the Czech Republic while on the visa",
+      "sources": [
+        {
+          "title": "Czech Republic digital nomad program introduced",
+          "url": "https://www.fragomen.com/insights/czech-republic-digital-nomad-program-introduced.html",
+          "publisher": "Fragomen",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 2500,
+        "currency": "CZK"
+      },
+      "fees_note": "Visa fee per Fragomen (February 2025).",
+      "processing_time": "Up to 45 days",
+      "family": "Dependants can apply for family visas but cannot work.",
+      "tax_note": "Czech tax residence if a permanent home or 183+ days.",
+      "only_some_nationalities": true
+    },
+    {
+      "id": "zivno_freelancer",
+      "name": "Zivno: long-term business visa on a trade licence",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Long-term visa (D/VC/06) to work as a freelancer or run a business on a Czech trade licence, with clients anywhere.",
+      "requirements": "Czech trade licence (zivnostensky list), accommodation, health insurance and proof of funds; sources conflict on the savings requirement (CZK 130,000 in one guide). Counts toward permanent residence. Lump-sum tax from about CZK 8,000 a month (secondary). Apply at an embassy. No official page retrieved.",
+      "physical_presence": "Live in the Czech Republic",
+      "sources": [
+        {
+          "title": "Czech Republic Zivno visa: step-by-step freelancer guide (2026)",
+          "url": "https://nomadtaxguide.com/blog/czech-republic-zivno-visa-freelancer/",
+          "publisher": "Nomad Tax Guide",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Czech Republic zivno visa guide for freelancers",
+          "url": "https://www.borderpilot.com/blog/czech-republic-zivno-visa-guide-for-freelancers",
+          "publisher": "BorderPilot",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": null,
+      "path_to_permanent_years": 5,
+      "processing_time": "Not sourced"
+    },
+    {
+      "id": "eu_blue_card",
+      "name": "EU Blue Card (work)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored permit for degree-level jobs.",
+      "requirements": "From 1 May 2026 to 30 April 2027, gross monthly wage at least CZK 73,823 (1.5 times the average wage of CZK 49,215 for 2025; an earlier forecast gave CZK 77,245), i.e. CZK 885,876 a year. Degree and a job offer.",
+      "physical_presence": "Work for the sponsoring employer",
+      "sources": [
+        {
+          "title": "Czech tax advisory alert on Blue Card threshold from 1 May 2026",
+          "url": "https://danovky.cz/en/news/detail/1833",
+          "publisher": "Danovky.cz",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Czech Republic to raise salary thresholds for Blue Card and ICT permits in 2026",
+          "url": "https://eiglaw.com/czech-republic-to-raise-salary-thresholds-for-blue-card-and-ict-permits-in-2026/",
+          "publisher": "EIG Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 885876,
+        "currency": "CZK"
+      },
+      "path_to_permanent_years": 5
+    }
+  ],
+  "open_questions": [
+    "No investor visa: absence not confirmed on an official page.",
+    "Digital nomad programme: 2026 CZK income figure, whether the Fragomen list is current, and official MVCR source.",
+    "Zivno: official funds requirement, fees and processing; only commercial guides found.",
+    "Naturalisation (5 years, B1) and dual citizenship: not verified; check Act 186/2013 and the 2026 amendment's status."
+  ],
+  "sources": [
+    {
+      "title": "Czech Republic digital nomad program introduced",
+      "url": "https://www.fragomen.com/insights/czech-republic-digital-nomad-program-introduced.html",
+      "publisher": "Fragomen",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "CZE",
+  "researched_on": "2026-10-16"
+}

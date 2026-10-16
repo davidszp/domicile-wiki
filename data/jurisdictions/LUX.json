@@ -182,7 +182,9 @@
         "business_relief": "Not needed for direct-line legal shares.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Worldwide estate of a resident decedent within scope; for non-residents only Luxembourg real estate.",
-        "domicile_rules": "Depends only on the deceased's residence (domicile and centre of activities in Luxembourg). The heir's residence is irrelevant for inheritance tax; for gift duty the parties' residence is irrelevant and duty arises when a deed is registered in Luxembourg."
+        "domicile_rules": "Depends only on the deceased's residence (domicile and centre of activities in Luxembourg). The heir's residence is irrelevant for inheritance tax; for gift duty the parties' residence is irrelevant and duty arises when a deed is registered in Luxembourg.",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "0% base rate on the whole share a surviving spouse inherits (legal and extra-legal share), so the surcharges also produce 0%; registered partners are exempt only if the partnership declaration is at least 3 years old (guichet.public.lu)."
       }
     }
   ],

@@ -61,6 +61,8 @@ Inheritance and gift tax is charged on the beneficiary at 5% for lineal descenda
 - **Residence/domicile rules:** Not researched.
 - **Business relief covers listed shares:** False
 
+**Surviving spouse:** 5% for lineal descendants, ascendants and the spouse alike, with no spousal exemption apart from a conditional deduction of 1,000 minimum monthly salaries whose conditions are unknown (EY 2026).
+
 ## Wealth tax
 
 ### Standard regime
@@ -102,3 +104,4 @@ Not researched in this pass: no cost item could be sourced quickly from an agenc
 ## Change log
 
 - 2026-10-15: initial research.
+- 2026-10-16: added surviving-spouse treatment.

@@ -182,7 +182,9 @@
         "domicile_rules": "Recipient-based; no tail rules found.",
         "open_questions": [
           "The exempt-relative list rests on Tax Administration guidance; the article of the Local Taxes Act was not read directly."
-        ]
+        ],
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "Spouses (including out-of-wedlock and life partners) are exempt from the 4% inheritance and gift tax on cash, securities and movables (Local Taxes Act); the Tax Administration says the 3% real estate transfer tax exemption covers direct-line relatives only, so Croatian real estate could still bear 3%."
       }
     }
   ],

@@ -1,0 +1,154 @@
+{
+  "id": "PAN",
+  "name": "Panama",
+  "researched_on": "2026-10-16",
+  "summary": "Panama offers permanent residence by investment (Qualified Investor: USD 300,000 for a new first-sale property, USD 500,000 for resale or securities, from 16 September 2026) and a Friendly Nations visa (USD 200,000, about 50 listed nationalities incl. the US and most EU states, 2 years provisional first). Retirees need a USD 1,000 monthly pension; remote workers USD 36,000 a year. US, EU and other passports are treated alike except for the Friendly Nations list.",
+  "naturalisation": "Five years of permanent residence (three for spouses of Panamanians), Spanish test and civics exam, solvency and clean record. Shorter periods for some nationalities by reciprocity.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Sources disagree: one says dual citizenship only with reciprocity countries, another that it is restricted on paper but rarely enforced. Check with a Panamanian lawyer.",
+  "routes": [
+    {
+      "id": "qualified_investor",
+      "name": "Qualified Investor visa (permanent residence)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for a property, securities or bank-deposit investment. From 16 September 2026 resale property needs USD 500,000; only a new first-sale property still qualifies at USD 300,000.",
+      "requirements": "Executive Decree 17 of 8 September 2026 (rules apply from 16 September 2026; earlier filings and binding contracts signed before then may use old thresholds if filed within 6 months). Options: new first-sale real estate USD 300,000; resale real estate USD 500,000; promise-of-sale USD 300,000 backed by an irrevocable bank instrument (max 3 cumulative years); securities USD 500,000 held 5 years; fixed deposit USD 750,000 in a private bank or USD 500,000 in Banco Nacional or Caja de Ahorros, held 5 years. Funds must be the applicant's own foreign-source funds, not a gift from an unrelated party. Annual evidence to MICI. A second source dates the rise to 15 October 2026 and describes the decree differently; treat the exact date as unconfirmed.",
+      "physical_presence": "One visit every two years is cited by secondary sources; not confirmed",
+      "sources": [
+        {
+          "title": "Qualified Investor Visa in Panama: Executive Decree No. 17 of 8 September 2026",
+          "url": "https://www.pacifica.legal/blog/new-update-qualified-investor-visa-in-panama",
+          "publisher": "Pacifica Legal",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Panama Residency for Investors: the October 2026 deadline",
+          "url": "https://symbolconsulting.ltd/en/panama-residency-for-investors/",
+          "publisher": "Symbol Consulting",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 300000,
+        "currency": "USD"
+      },
+      "investment_options": "First-sale real estate USD 300,000; resale real estate USD 500,000; securities USD 500,000; fixed deposit USD 750,000 (private bank) or USD 500,000 (state banks).",
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 5,
+      "processing_time": "30 to 90 days commonly cited (secondary sources)",
+      "tax_note": "Panama taxes only Panama-source income (territorial); permanent residence alone does not decide tax residence (183 days test)."
+    },
+    {
+      "id": "friendly_nations",
+      "name": "Friendly Nations visa",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Residence for nationals of about 50 'friendly' countries (including the US and most EU states) who buy USD 200,000 of property, lock a USD 200,000 deposit for 3 years, or hold a formal local job. Starts with 2 years of provisional residence.",
+      "requirements": "Nationals of about 50 countries (US, Canada, UK, Australia, Japan and 'most of the EU'; the list was not read). One economic tie: real estate of USD 200,000, a fixed deposit of USD 200,000 for 3 years in a general-licence bank, or formal employment with a Panamanian company with a MITRADEL work permit. After 2 years provisional, apply for permanent residence. The sources describe the 2026 changes only vaguely; a possible stricter economic-link test was reported but not confirmed. Not open to nationals outside the friendly list.",
+      "physical_presence": "Not stated in the sources reviewed",
+      "sources": [
+        {
+          "title": "Panama's Friendly Nations Visa: the 2026 guide",
+          "url": "https://www.borderpilot.com/blog/panama-friendly-nations-visa-2026-investment-residency-guide",
+          "publisher": "BorderPilot",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 200000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": 2,
+      "path_to_citizenship_years": 7,
+      "processing_time": "Provisional approval 3 to 6 months, permanent step 2 to 4 months (secondary source)",
+      "tax_note": "Territorial taxation: only Panama-source income is taxed.",
+      "only_some_nationalities": true
+    },
+    {
+      "id": "pensionado",
+      "name": "Pensionado (retiree) visa",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for retirees with a lifetime pension of at least USD 1,000 a month.",
+      "requirements": "Lifetime pension of at least USD 1,000 a month (USD 12,000 a year), plus USD 250 a month per dependant; USD 750 a month if the applicant owns Panamanian real estate worth over USD 100,000. Couples may combine pensions per one source. A visit every two years is cited to keep the status.",
+      "physical_presence": "A visit every two years (secondary source)",
+      "sources": [
+        {
+          "title": "Pensionado Visa Panama Guide 2026",
+          "url": "https://www.globalcitizensolutions.com/pensionado-visa-panama/",
+          "publisher": "Global Citizen Solutions",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 12000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 5,
+      "tax_note": "Pensionado holders also get discounts (not researched). Panama taxes only Panama-source income."
+    },
+    {
+      "id": "short_stay_remote_worker",
+      "name": "Short Stay Remote Worker visa",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A 9-month visa, renewable once, for remote workers earning at least USD 36,000 a year from outside Panama.",
+      "requirements": "Foreign-source income of at least USD 36,000 a year (USD 3,000 a month); contract with a foreign transnational company or self-employed teleworking; valid medical insurance covering Panama. Created by Executive Decree 198 of 7 May 2021. Valid 9 months, renewable once for the same period. Cancelled if the holder represents the foreign company in local activities.",
+      "physical_presence": "Up to 9 months per grant, renewable once",
+      "sources": [
+        {
+          "title": "A new short-stay visa for teleworkers",
+          "url": "https://www.mondaq.com:443/work-visas/1079592/a-new-shortstay-visa-for-teleworkers",
+          "publisher": "Mondaq",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 36000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": null,
+      "tax_note": "Foreign-source income is not taxable in Panama (per Mondaq)."
+    }
+  ],
+  "open_questions": [
+    "Qualified Investor: sources conflict on the legal instrument and date of the rise to USD 500,000 (Decree 17 of 8 September 2026, effective 16 September, vs 15 October 2026); check the Gaceta Oficial and the Servicio Nacional de Migracion.",
+    "Friendly Nations: the list of eligible countries (which EU states are included) and the 2026 changes were not read in an official source.",
+    "Government fees for all routes were not sourced from an official page; left null.",
+    "Pensionado and short-stay remote worker figures come from secondary sources.",
+    "Panama has no ordinary work-permit entry: not researched.",
+    "Naturalisation: the 5-year rule and the dual-citizenship position are from law-firm pages; the Constitution and Electoral Tribunal were not read."
+  ],
+  "sources": []
+}

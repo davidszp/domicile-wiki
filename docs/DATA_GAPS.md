@@ -1,12 +1,12 @@
 # Data gaps
 
-Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate with `python -m domicile.gaps` after `python -m domicile.build`.
+Generated from the build of 2026-10-16 (EU citizen, default weights). Regenerate with `python -m domicile.gaps` after `python -m domicile.build`.
 
 ## Coverage
 
-- Map units: 382 (258 countries/territories, 124 subnational units).
-- Countries/territories with researched tax rules: 145. The other 113 are grey (unscored) on the overall and tax layers; their non-tax indicators are available on the non-tax layer.
-- Status of researched countries: insufficient 20, knocked_out 14, provisional 96, verified 15.
+- Map units: 382 (242 countries/territories, 140 subnational units).
+- Countries/territories with researched tax rules: 145. The other 97 are grey (unscored) on the overall and tax layers; their non-tax indicators are available on the non-tax layer.
+- Status of researched countries: insufficient 20, knocked_out 13, provisional 97, verified 15.
 
 ## Systematic gaps
 
@@ -81,7 +81,7 @@ Generated from the build of 2026-10-15 (EU citizen, default weights). Regenerate
 | Guam | provisional | 80% | Corruption and government integrity, Cost of living and housing, Education quality, Human development and quality of life, Cultural fit and lifestyle | standard.inheritance | 7 |
 | Guernsey | insufficient | 54% | Political and institutional stability, Corruption and government integrity, Legal system and property rights, Education quality, Human development and quality of life, Business opportunities and economy, Infrastructure and connectivity | – | 5 |
 | Guyana | insufficient | 82% | Cost of living and housing | standard.capital_gains | 6 |
-| Hong Kong | knocked_out | 100% | – | – | 3 |
+| Hong Kong | provisional | 100% | – | – | 3 |
 | Hungary | provisional | 100% | – | asset_management_foundation.capital_gains, asset_management_foundation.dividends | 15 |
 | Iceland | verified | 98% | Cultural fit and lifestyle | – | 6 |
 | India | provisional | 96% | Cost of living and housing | – | 3 |

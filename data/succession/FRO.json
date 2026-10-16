@@ -1,0 +1,36 @@
+{
+  "summary": "Faroese succession law follows the Danish model, which protects children with a forced share, but the exact rules were not confirmed. The Faroes have no trust law and are outside the Hague Trusts Convention. Foundations exist under Faroese law.",
+  "forced_heirship": "yes",
+  "reserved_share": "Children are forced heirs under the Danish-based Faroese succession rules; the fraction (believed 1/4 of the estate in Denmark) was not confirmed for the Faroes.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "Nordic conflict rules look to the deceased's domicile; whether foreign law may be chosen in the Faroes was not confirmed.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "No trust law; Denmark is not party to the Hague Trusts Convention and it is not extended to the Faroes. Faroese law has its own foundation rules.",
+  "open_questions": [
+    "Which Faroese inheritance act applies and its forced share; no source was found.",
+    "Foreign-law choice under Faroese conflict rules.",
+    "Whether a family foundation is allowed and how it is taxed."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Faroese legislation portal",
+      "url": "https://logir.fo",
+      "publisher": "Government of the Faroe Islands",
+      "kind": "legislation"
+    }
+  ],
+  "family_claims": "",
+  "id": "FRO",
+  "name": "Faroe Islands",
+  "researched_on": "2026-10-16"
+}

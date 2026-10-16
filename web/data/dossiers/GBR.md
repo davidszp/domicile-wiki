@@ -31,6 +31,8 @@ Tax year 2026/27 (6 April 2026 - 5 April 2027). For a long-term resident wealthy
 - Pensions: unused pension funds and most death benefits enter the estate from 6 April 2027 (Finance Act 2026).
 - Probate fee £526 for estates over £5,000 (JSON other_transfer_cost_rate 0).
 
+**Surviving spouse:** Transfers to a spouse or civil partner are exempt without limit (Inheritance Tax Act 1984 s. 18(1)), but where the transferor is a long-term UK resident and the spouse is not, the exemption is capped at the exemption limit, £325,000 (s. 18(2)); the gift must not be conditional beyond 12 months or take effect after an interest ends (s. 18(3)). It defers rather than removes the tax: the assets form part of the survivor's estate.
+
 ## Wealth tax
 None (JSON type none). Council tax is a modest per-dwelling charge. Announced: High Value Council Tax Surcharge in England from April 2028 for homes valued at £2m+ in 2026: £2,500 / £3,500 / £5,000 / £7,500 by band (£2-2.5m, £2.5-3.5m, £3.5-5m, £5m+), CPI-indexed from 2029-30; not in force, final legislation not seen. Transaction taxes: SDLT up to 12% (17% second homes, +2% non-resident), 0.5% stamp duty/SDRT on UK share purchases.
 
@@ -125,6 +127,7 @@ City: London.
 - Inheritance Tax Act 1984, section 105: https://www.legislation.gov.uk/ukpga/1984/51/section/105
 - Why you should take care with family investment companies (ICAEW): https://www.icaew.com/technical/tax/tax-faculty/taxline/articles/2025/why-you-should-take-care-with-family-investment-companies
 - How Family Investment Companies use Growth and Freezer Shares (Geldards): https://www.geldards.com/insights/how-family-investment-companies-use-growth-and-freezer-shares-for-smarter-wealth-planning/
+- Inheritance Tax Act 1984, section 18 (legislation.gov.uk): https://www.legislation.gov.uk/ukpga/1984/51/section/18
 
 ## Change log
 - 2026-10-15: initial research.
@@ -132,3 +135,4 @@ City: London.
 - 2026-10-15: inheritance scope set to local assets only for fig_4_year in the structured data (a new arrival is not a long-term UK resident during the 4-year FIG period, so non-UK assets are outside inheritance tax); previously the scoring applied the rates to the worldwide estate, which overstated the tax.
 - 2026-10-15: added the family investment company structure regime (`family_investment_company`) and the Holding structures section; holding_company_notes updated.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from £12,500 to £6,000 (Fulham instead of Kensington and Chelsea).
+- 2026-10-16: added surviving-spouse treatment.

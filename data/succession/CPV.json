@@ -1,0 +1,38 @@
+{
+  "id": "CPV",
+  "name": "Cabo Verde",
+  "researched_on": "2026-10-16",
+  "summary": "The Civil Code protects a reserved share (legítima) for compulsory heirs, so a will cannot dispose of it. The fractions were not retrieved. Rules for foreigners, trusts and foundations were not sourced.",
+  "forced_heirship": "yes",
+  "reserved_share": "A legítima is reserved for compulsory heirs and the testator cannot dispose of it (Civil Code succession rules; Cabo Verde information sheet of the Portuguese-language justice network). The shares and heirs were not retrieved; the Portuguese Code's two-thirds should not be assumed.",
+  "family_claims": "",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source found on the conflict rule for foreigners' succession under the Cabo Verde Civil Code.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "no",
+  "trust_note": "No trust or private-foundation law was found. Answers are provisional.",
+  "open_questions": [
+    "Reserved fractions and who is protected (arts. 2156 ff. equivalent) not retrieved.",
+    "Conflict-of-laws rule for foreigners' estates not found.",
+    "Trusts, fiducia and foundations in Cabo Verde not sourced.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here."
+  ],
+  "sources": [
+    {
+      "title": "Ficha informativa: Cabo Verde (sucessões)",
+      "url": "https://atlascplp.csm.org.pt/assets/docs/Ficha_Informativa_CaboVerde.pdf",
+      "publisher": "Atlas CPLP / Conselho Superior da Magistratura",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

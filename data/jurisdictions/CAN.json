@@ -94,6 +94,8 @@
         "verification": "verified",
         "basis": "none",
         "children_treatment": "taxed",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "No inheritance tax, but death triggers a deemed disposition of capital property (Income Tax Act s. 70(5)). The spousal rollover in s. 70(6) defers it (property passes at cost) only if the deceased and the spouse or common-law partner were resident in Canada and the property vests indefeasibly in the spouse, or a qualifying spousal trust, within 36 months; it is a deferral, taxed when the spouse sells or dies, and the executor may elect out (s. 70(6.2)).",
         "exemption": 0,
         "brackets": [],
         "other_transfer_cost_rate": 0.015,

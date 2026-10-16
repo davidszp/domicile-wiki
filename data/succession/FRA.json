@@ -1,0 +1,57 @@
+{
+  "id": "FRA",
+  "name": "France",
+  "researched_on": "2026-10-16",
+  "summary": "Children are guaranteed half, two thirds or three quarters of the estate, depending on how many there are. A foreign national resident can choose their national law, but French children can claim a compensatory levy on French assets if that law protects no one. Trusts are not part of French law but are taxed heavily; there is no private family foundation.",
+  "forced_heirship": "yes",
+  "reserved_share": "Children: 1/2 with one child, 2/3 with two, 3/4 with three or more (Code civil art. 913). The spouse is protected at 1/4 only when there are no children (art. 914-1).",
+  "family_claims": "",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Reg. 650/2012 art. 22 allows a choice of nationality law. But art. 913 para. 3 (Law 2021-1109 of 24 August 2021, for estates opened from 1 November 2021) lets children take a compensatory levy on French assets when the foreign law gives them no reserve, if the deceased or a child is an EU national or resident.",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "The fiducie (Code civil art. 2011 ff.) exists but cannot be used for gifts (art. 2013). France signed the Hague Trusts Convention in 1991 but the HCCH table shows no ratification or entry into force, so it is not in force. Foreign trusts are taxed under CGI art. 792-0 bis (trust reporting, 60 % gift and estate rate on certain transfers) and art. 990 J (annual 1.5 % levy on trust assets). Foundations are public-interest only (fondation reconnue d'utilite publique, fondation d'entreprise, fonds de dotation).",
+  "open_questions": [
+    "Whether the Conseil constitutionnel or the Cour de cassation has ruled on the art. 913 compensatory levy was not found.",
+    "CGI article numbers for trust taxation are from memory and unchecked at legifrance."
+  ],
+  "sources": [
+    {
+      "title": "Code civil art. 912 ff. (Legifrance)",
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006150544/?lang=en",
+      "publisher": "Legifrance",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "European e-Justice: Successions, France",
+      "url": "https://e-justice.europa.eu/topics/family-matters-inheritance/inheritance/succession/fr_en",
+      "publisher": "European Commission",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Reserve hereditaire: une meilleure protection dans les successions internationales",
+      "url": "https://www.actu-juridique.fr/civil/successions-liberalites/reserve-hereditaire-une-meilleure-protection-dans-les-successions-internationales/",
+      "publisher": "Actu-Juridique",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

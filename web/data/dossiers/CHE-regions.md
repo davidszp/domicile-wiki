@@ -106,6 +106,8 @@ threshold). Solothurn's Nachlasstaxe is on the whole estate (`basis: estate`).
 Geneva lump-sum regime override: children are taxed 2%-6% if the deceased/donor was lump-sum taxed in any of the last
 three final assessments (LDS; ESTV Steuermäppchen).
 
+**Surviving spouse:** the spouse (and registered partner) is exempt from cantonal inheritance and gift tax in every canton with an inheritance override, and SZ and OW levy no such tax at all (ESTV Steuermäppchen 2025). Two exceptions: Solothurn's Nachlasstaxe falls on the whole estate whatever the heirs (StG §§ 217-222; about 1.2% for a large estate, so `taxed_low`), and Geneva's spouse exemption is lost, like the children's, when the deceased was lump-sum taxed in any of the last three assessments (2%-6%, `taxed_low` in the `lump_sum` override). Neuchâtel exempts a registered partner only after two years; Zürich carries no inheritance override.
+
 ## Wealth tax
 
 Each canton's `wealth_tax` component lists combined cantonal + communal marginal rates on taxable wealth in the capital,
@@ -230,6 +232,8 @@ small samples, see the JSON descriptions for the filters and ranges):
 - [ImmoStreet.ch: Wohnung & Haus mieten, Lugano (listing sample)](https://www.immostreet.ch/de/mieten/wohnung_und_haus/in-lugano) — ImmoStreet.ch (other)
 - [immobilier.ch: houses to rent, canton of Vaud (listing sample)](https://www.immobilier.ch/en/rent/house/vaud) — immobilier.ch (other)
 - [immobilier.ch: houses to rent, canton of Geneva (listing sample)](https://www.immobilier.ch/en/rent/house/geneva) — immobilier.ch (other)
+- [Solothurn Steuergesetz (BGS 614.11), Nachlasstaxe §§ 217-222](https://bgs.so.ch/app/de/texts_of_law/614.11)
+- [RSI: La giungla delle imposte sulle successioni (Ticino spouse exemption, Legge tributaria art. 154)](https://www.rsi.ch/info/dialogo/La-giungla-delle-imposte-sulle-successioni--3266972.html)
 
 ## Change log
 - 2026-10-15: initial research.
@@ -241,3 +245,4 @@ small samples, see the JSON descriptions for the filters and ranges):
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (CH-VD).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from CHF 9,500 to CHF 4,300 for CH-TI (Lugano villas of 300-600 m² to 5-7.5 room flats of 150-251 m²).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from CHF 9,000 to CHF 7,200 for CH-GE (Cologny and 350-600 m² estate houses excluded).
+- 2026-10-16: added surviving-spouse treatment.

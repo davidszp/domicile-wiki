@@ -1,0 +1,266 @@
+{
+  "id": "OMN",
+  "name": "Oman",
+  "summary": "No free movement for anyone; EU, US and other passports use the same routes. The Golden Residency programme (relaunched 31 August 2025, run through Invest Oman) gives 5 years for OMR 250,000 in an investment or property, or 10 years for OMR 500,000; retirees can qualify with OMR 4,000 a month. Foreign owners of qualifying property can also get an Owner Residence Permit. No remote-work visa was confirmed. Personal income tax starts in 2028.",
+  "naturalisation": "Not researched in this pass. The golden residency does not give a claim to citizenship (Gulf News: beneficiaries cannot claim Omani citizenship).",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "General rule, not verified in this pass: Oman does not generally allow dual nationality.",
+  "routes": [
+    {
+      "id": "golden_residency_10y",
+      "name": "Golden Residency - 10 years",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "A 10-year renewable residence for investing OMR 500,000, buying OMR 500,000 of property, or creating a company with 50 Omani employees.",
+      "requirements": "Any one of: OMR 500,000 in an Omani LLC, public joint-stock company or government bonds; property worth OMR 500,000; a company employing at least 50 Omanis. Age 21+, valid health insurance. Applications through the Invest Oman platform. Program relaunched 31 August 2025 (Deloitte). Observer reports describe a lower RO 200,000 entry; unconfirmed.",
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "OMR"
+      },
+      "investment_options": "Alternative with no capital minimum: company employing at least 50 Omanis.",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 551,
+        "currency": "OMR"
+      },
+      "fees_note": "Gulf News (Sep 2025): OMR 551. The 2021 programme fee for the principal investor was OMR 500 (Fragomen), so the current fee is unconfirmed.",
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Spouse, children and dependent parents (Deloitte).",
+      "tax_note": "No personal income tax until a 5% tax on income above OMR 42,000 starts in 2028 (Royal Decree 56/2025).",
+      "sources": [
+        {
+          "title": "Introduction of a golden visa program for investors",
+          "url": "https://www.deloitte.com/middle-east/en/services/tax/perspectives/introduction-of-a-golden-visa-program-for-investors.html",
+          "publisher": "Deloitte Middle East",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "How Indian, Pakistani expats can get Oman golden visa for 10 years (updated 6 Sep 2025)",
+          "url": "https://gulfnews.com/world/gulf/oman/how-indian-pakistani-expats-can-get-oman-golden-visa-for-10-years-1.500255220",
+          "publisher": "Gulf News",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Oman: additional details announced for long-term residence permit for investors (27 Oct 2021)",
+          "url": "https://www.fragomen.com/insights/oman-additional-details-announced-for-long-term-residence-permit-for-investors.html",
+          "publisher": "Fragomen",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "golden_residency_5y",
+      "name": "Golden Residency - 5 years",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "A 5-year residence for investing OMR 250,000 in a company or buying OMR 250,000 of property.",
+      "requirements": "Any one of: OMR 250,000 in an LLC or public joint-stock company; property worth OMR 250,000. Age 21+. The 2021 programme also allowed OMR 250,000 in government bonds (Fragomen). Applications through Invest Oman.",
+      "minimum_investment": {
+        "amount": 250000,
+        "currency": "OMR"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 326,
+        "currency": "OMR"
+      },
+      "fees_note": "Gulf News (Sep 2025): OMR 326; unconfirmed from an official page.",
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Spouse, children and dependent parents (Deloitte).",
+      "tax_note": "No personal income tax until 2028 (5% above OMR 42,000).",
+      "sources": [
+        {
+          "title": "Introduction of a golden visa program for investors",
+          "url": "https://www.deloitte.com/middle-east/en/services/tax/perspectives/introduction-of-a-golden-visa-program-for-investors.html",
+          "publisher": "Deloitte Middle East",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "How Indian, Pakistani expats can get Oman golden visa for 10 years (updated 6 Sep 2025)",
+          "url": "https://gulfnews.com/world/gulf/oman/how-indian-pakistani-expats-can-get-oman-golden-visa-for-10-years-1.500255220",
+          "publisher": "Gulf News",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Oman: Long-Term Residency Program for Foreign Investors Launched (2021)",
+          "url": "https://www.fragomen.com/insights/long-term-residency-program-foreign-investors-launched",
+          "publisher": "Fragomen",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "golden_residency_retiree",
+      "name": "Golden Residency - retirees (5 years)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Retirees showing a fixed income of OMR 4,000 a month can get a 5-year residence.",
+      "requirements": "OMR 4,000 a month (OMR 48,000 a year), fixed income. The 2021 rules (Fragomen) required retirement after at least two years of employment in Oman and a permanent home there; Gulf News says expat workers already living in Oman. Whether it is open to non-residents is unclear.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 48000,
+        "currency": "OMR"
+      },
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Permanent place of residence in Oman (2021 rules).",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "No personal income tax until 2028.",
+      "sources": [
+        {
+          "title": "Introduction of a golden visa program for investors",
+          "url": "https://www.deloitte.com/middle-east/en/services/tax/perspectives/introduction-of-a-golden-visa-program-for-investors.html",
+          "publisher": "Deloitte Middle East",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Oman: Long-Term Residency Program for Foreign Investors Launched (2021)",
+          "url": "https://www.fragomen.com/insights/long-term-residency-program-foreign-investors-launched",
+          "publisher": "Fragomen",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "How Indian, Pakistani expats can get Oman golden visa for 10 years (updated 6 Sep 2025)",
+          "url": "https://gulfnews.com/world/gulf/oman/how-indian-pakistani-expats-can-get-oman-golden-visa-for-10-years-1.500255220",
+          "publisher": "Gulf News",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "owner_residence_permit",
+      "name": "Owner Residence Permit (property owners)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Foreign buyers of qualifying property can apply for a sponsor-free permit valid while they own it.",
+      "requirements": "Savory & Partners (29 Jun 2026): valid 6 months to 1 year, renewable, no local sponsor, valid only while the qualifying property is owned, may cover first-degree family; no minimum investment specified. Executive regulations pending. Zawya also lists units in integrated tourism complexes, development bonds, listed shares and 5-year bank deposits under the Golden Residency.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "No personal income tax until 2028.",
+      "sources": [
+        {
+          "title": "Oman opens property ownership to foreign buyers (29 Jun 2026)",
+          "url": "https://www.savoryandpartners.com/news/oman-opens-property-ownership-foreign-buyers.md",
+          "publisher": "Savory & Partners",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Oman residency options in focus ahead of 2028 income tax",
+          "url": "https://www.zawya.com/en/economy/gcc/oman-residency-options-in-focus-ahead-of-2028-income-tax-dpaog0q6",
+          "publisher": "Zawya",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "work_permit",
+      "name": "Employer-sponsored work residence",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Most expatriates live in Oman on an employer-sponsored work visa and resident card.",
+      "requirements": "Employer applies through the Ministry of Labour and Royal Oman Police; Omanisation quotas apply. Not researched in detail.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Not researched.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "No personal income tax until 2028.",
+      "sources": [
+        {
+          "title": "Oman - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/oman/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "No official Invest Oman page was read; thresholds and fees come from Deloitte, Gulf News and Fragomen.",
+    "Gulf News and Oman Observer mention a RO 200,000 threshold and seven investment routes (company, bonds, listed shares, 5-year deposit, tourism-complex units); not reconciled with the OMR 250,000/500,000 tiers.",
+    "Government fees (OMR 326 and OMR 551) are from Gulf News only; Fragomen 2021 gave OMR 300 / OMR 500.",
+    "Oman digital nomad visa: Zawya mentions one with 'specific income requirements' but no amounts; other sources say none exists.",
+    "Naturalisation and dual-nationality rules not researched."
+  ],
+  "sources": [
+    {
+      "title": "Oman - Individual - Residence",
+      "url": "https://taxsummaries.pwc.com/oman/individual/residence",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

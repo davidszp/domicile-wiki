@@ -146,6 +146,8 @@
         "verification": "partially_verified",
         "basis": "estate",
         "children_treatment": "taxed",
+        "spouse_treatment": "taxed",
+        "spouse_note": "A spouse deduction of TWD 5.53 million (Estate and Gift Tax Act art. 17; EY 2026) plus a deduction for the spouse's claim to the marital-property difference; the rest is taxed at 10%-20%, and the spouse deduction is not available where the decedent is a foreign national or a non-domiciled Taiwanese. Gifts between spouses are exempt, but gifts within two years of death are added back (art. 15).",
         "exemption": 13330000,
         "brackets": [
           {

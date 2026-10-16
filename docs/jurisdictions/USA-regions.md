@@ -132,6 +132,8 @@ Federal estate tax: 40% above USD 15,000,000 per person (2026, OBBBA, indexed fr
 
 Connecticut estate tax: 12% flat on the Connecticut taxable estate above the exemption, which equals the federal basic exclusion (USD 15,000,000 for 2026); total Connecticut tax capped at USD 15 million. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 15.00 million gross). Illustrative combined tax for an unmarried decedent: 11.8% of a USD 20 million estate, 33.0% of USD 50 million.
 
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
+
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 47.2%
 
 Gifts: Connecticut is the only state with a gift tax: lifetime taxable gifts above the annual exclusion are taxed at 12% once cumulative gifts exceed the USD 15 million exemption (unified with the estate tax). Federal gift tax also applies.
@@ -139,6 +141,8 @@ Gifts: Connecticut is the only state with a gift tax: lifetime taxable gifts abo
 ### District of Columbia
 
 District of Columbia estate tax: exclusion USD 4,988,400 for 2026 (indexed); D.C. Code 47-3702 table taxes the estate above the zero-bracket (exclusion) amount at the band rate reached, i.e. 11.2% up to USD 5 million, then 12%, 12.8%, 13.6%, 14.4%, 15.2% and 16% above USD 10 million. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 16.76 million gross). Illustrative combined tax for an unmarried decedent: 16.8% of a USD 20 million estate, 36.5% of USD 50 million.
+
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
 
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 11.2%; USD 11,600 -> 12%; USD 1,011,600 -> 12.8%; USD 2,011,600 -> 13.6%; USD 3,011,600 -> 14.4%; USD 4,011,600 -> 15.2%; USD 5,011,600 -> 16%; USD 11,775,052 -> 49.6%
 
@@ -148,6 +152,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 
 Hawaii estate tax: exclusion USD 5,490,000 (not indexed); rates 10% to 20% (Tax Foundation). The bracket schedule used (10% first USD 1M above the exclusion, rising by 1 point per USD 1M to 14%, 15.7% from USD 5M, 20% above USD 10M) follows HRS 236E-8 as understood but could not be opened. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 16.61 million gross). Illustrative combined tax for an unmarried decedent: 16.9% of a USD 20 million estate, 37.9% of USD 50 million.
 
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
+
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 10%; USD 1,000,000 -> 11%; USD 2,000,000 -> 12%; USD 3,000,000 -> 13%; USD 4,000,000 -> 14%; USD 5,000,000 -> 15.7%; USD 10,000,000 -> 20%; USD 11,118,750 -> 52%
 
 Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to any add-back noted in the summary). Federal gift tax is unified with the federal estate tax (40% after the USD 15M lifetime exclusion).
@@ -155,6 +161,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 ### Illinois
 
 Illinois estate tax: USD 4,000,000 exclusion (not indexed), rates 0.8%-16% based on the old federal state-death-tax-credit table (Tax Foundation). Approximated here by the 2011(b) table rates above USD 4 million. The real Illinois computation is interrelated (the tax is deductible in its own base) and produces much higher marginal rates (reported around 28-29%) just above USD 4 million, so this understates tax for estates of USD 4-6 million. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 16.89 million gross). Illustrative combined tax for an unmarried decedent: 17.2% of a USD 20 million estate, 36.6% of USD 50 million.
+
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
 
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 10.4%; USD 100,000 -> 11.2%; USD 1,100,000 -> 12%; USD 2,100,000 -> 12.8%; USD 3,100,000 -> 13.6%; USD 4,100,000 -> 14.4%; USD 5,100,000 -> 15.2%; USD 6,100,000 -> 16%; USD 12,888,572 -> 49.6%
 
@@ -164,6 +172,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 
 Maine estate tax (36 M.R.S. 4103): 8% on the first USD 3 million above the Maine exclusion (USD 7,160,000 for 2026), 10% on the next USD 3 million, 12% above that. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 15.86 million gross). Illustrative combined tax for an unmarried decedent: 14.1% of a USD 20 million estate, 34.0% of USD 50 million.
 
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
+
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 8%; USD 3,000,000 -> 10%; USD 6,000,000 -> 12%; USD 8,704,546 -> 47.2%
 
 Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to any add-back noted in the summary). Federal gift tax is unified with the federal estate tax (40% after the USD 15M lifetime exclusion).
@@ -171,6 +181,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 ### Maryland
 
 Maryland estate tax: USD 5,000,000 exclusion (not indexed); the tax is the lesser of the 2011(b)-style credit and 16% of the excess over USD 5 million, which for large estates is effectively 16% of the excess. Maryland also has an inheritance tax (10%), but children, grandchildren, parents, spouses and siblings are exempt, so it does not reach a transfer to children. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 16.90 million gross). Illustrative combined tax for an unmarried decedent: 17.2% of a USD 20 million estate, 36.6% of USD 50 million.
+
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
 
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 16%; USD 11,904,762 -> 49.6%
 
@@ -180,6 +192,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 
 Massachusetts estate tax (M.G.L. c. 65C): taxable estates above USD 2,000,000 pay tax from the 2011(b) rate table (0.8%-16%) on the adjusted taxable estate (taxable estate minus USD 60,000) less a credit of USD 99,600 (the table tax on USD 2 million), so only the excess over USD 2 million is taxed (the former cliff was removed from 2023). Marginal rates just above USD 2 million are 7.2%, reaching 16% above USD 10.1 million. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 17.10 million gross). Illustrative combined tax for an unmarried decedent: 17.7% of a USD 20 million estate, 36.8% of USD 50 million.
 
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
+
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 7.2%; USD 100,000 -> 8%; USD 600,000 -> 8.8%; USD 1,100,000 -> 9.6%; USD 1,600,000 -> 10.4%; USD 2,100,000 -> 11.2%; USD 3,100,000 -> 12%; USD 4,100,000 -> 12.8%; USD 5,100,000 -> 13.6%; USD 6,100,000 -> 14.4%; USD 7,100,000 -> 15.2%; USD 8,100,000 -> 16%; USD 15,103,810 -> 49.6%
 
 Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to any add-back noted in the summary). Federal gift tax is unified with the federal estate tax (40% after the USD 15M lifetime exclusion).
@@ -187,6 +201,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 ### Minnesota
 
 Minnesota estate tax: the USD 3,000,000 exclusion is subtracted to reach the Minnesota taxable estate (Minn. Stat. 291.016 subd. 3), which is taxed at 13% up to USD 7.1 million, then 13.6%, 14.4%, 15.2% and 16% above USD 10.1 million (291.03). Taxable gifts within three years of death are added back. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 16.98 million gross). Illustrative combined tax for an unmarried decedent: 17.4% of a USD 20 million estate, 36.7% of USD 50 million.
+
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
 
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 13%; USD 7,100,000 -> 13.6%; USD 8,100,000 -> 14.4%; USD 9,100,000 -> 15.2%; USD 10,100,000 -> 16%; USD 13,975,000 -> 49.6%
 
@@ -196,6 +212,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 
 Nebraska county inheritance tax: children and other immediate relatives pay 1% on what each receives above USD 100,000 (other relatives 11%, others 15%). For three children the combined exemption is USD 300,000, used as the per-estate exemption here. Spouses are exempt. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 15.15 million gross). Illustrative combined tax for an unmarried decedent: 10.6% of a USD 20 million estate, 28.6% of USD 50 million.
 
+Surviving spouse: exempt from the county inheritance tax (Neb. Rev. Stat. 77-2004); the federal marital deduction needs a US-citizen spouse or a QDOT (IRC 2056(d), 2056A).
+
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 1%; USD 14,848,485 -> 40.6%
 
 Gifts: No state gift tax; lifetime gifts escape the state inheritance tax (subject to any add-back noted in the summary). Federal gift tax is unified with the federal estate tax (40% after the USD 15M lifetime exclusion).
@@ -203,6 +221,8 @@ Gifts: No state gift tax; lifetime gifts escape the state inheritance tax (subje
 ### New York
 
 New York estate tax: basic exclusion USD 7,350,000 for 2026 deaths, rates 3.06%-16% (Tax Law 952). Cliff: the credit phases out between 100% and 105% of the exclusion, so an estate above USD 7,717,500 is taxed on its WHOLE value from the first dollar. The JSON therefore uses exemption 0 and the full rate table, which is exact for taxable estates above USD 7,717,500; estates up to USD 7.35 million pay nothing. Gifts made within three years of death are added back. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 17.22 million gross). Illustrative combined tax for an unmarried decedent: 18.0% of a USD 20 million estate, 37.0% of USD 50 million.
+
+Surviving spouse: unlimited marital deduction; the federal deduction needs a US-citizen spouse or a QDOT (IRC 2056(d), 2056A), though New York does not itself require a QDOT for the state deduction.
 
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 3.06%; USD 500,000 -> 5%; USD 1,000,000 -> 5.5%; USD 1,500,000 -> 6.5%; USD 2,100,000 -> 8%; USD 2,600,000 -> 8.8%; USD 3,100,000 -> 9.6%; USD 3,600,000 -> 10.4%; USD 4,100,000 -> 11.2%; USD 5,100,000 -> 12%; USD 6,100,000 -> 12.8%; USD 7,100,000 -> 13.6%; USD 8,100,000 -> 14.4%; USD 9,100,000 -> 15.2%; USD 10,100,000 -> 16%; USD 17,222,381 -> 49.6%
 
@@ -212,6 +232,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 
 Oregon estate tax (ORS 118.010): USD 1,000,000 threshold (not indexed); 10% on the excess up to USD 1.5 million, rising through 10.25%, 10.5%, 11%, 11.5%, 12%, 13%, 14%, 15% to 16% above USD 9.5 million. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 17.26 million gross). Illustrative combined tax for an unmarried decedent: 18.1% of a USD 20 million estate, 37.0% of USD 50 million.
 
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
+
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 10%; USD 500,000 -> 10.25%; USD 1,500,000 -> 10.5%; USD 2,500,000 -> 11%; USD 3,500,000 -> 11.5%; USD 4,500,000 -> 12%; USD 5,500,000 -> 13%; USD 6,500,000 -> 14%; USD 7,500,000 -> 15%; USD 8,500,000 -> 16%; USD 16,264,881 -> 49.6%
 
 Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to any add-back noted in the summary). Federal gift tax is unified with the federal estate tax (40% after the USD 15M lifetime exclusion).
@@ -219,6 +241,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 ### Pennsylvania
 
 Pennsylvania inheritance tax: 4.5% on everything passing to lineal descendants (children, grandchildren), no exemption; 0% to a spouse; 12% to siblings, 15% to others. Paid by the estate/heirs; 5% discount if paid within three months of death. Applies to residents' worldwide intangibles and PA-situated real/tangible property (real estate abroad or in other states is not taxed). Gifts within one year of death (above USD 3,000 per donee) are pulled back. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 15.71 million gross). Illustrative combined tax for an unmarried decedent: 12.7% of a USD 20 million estate, 30.7% of USD 50 million.
+
+Surviving spouse: 0% inheritance tax (72 P.S. 9116); the federal marital deduction needs a US-citizen spouse or a QDOT (IRC 2056(d), 2056A).
 
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 4.5%; USD 15,706,806 -> 42.7%
 
@@ -228,6 +252,8 @@ Gifts: No state gift tax; lifetime gifts escape the state inheritance tax (subje
 
 Rhode Island estate tax: exemption USD 1,838,056 for 2026 (indexed), rates 0.8%-16% from the 2011(b) table less a credit equal to the tax on the exemption amount (no cliff). Marginal rates are 7.2% just above the exemption, 16% above about USD 10.1 million. Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 17.12 million gross). Illustrative combined tax for an unmarried decedent: 17.7% of a USD 20 million estate, 36.9% of USD 50 million.
 
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
+
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 7.2%; USD 261,944 -> 8%; USD 761,944 -> 8.8%; USD 1,261,944 -> 9.6%; USD 1,761,944 -> 10.4%; USD 2,261,944 -> 11.2%; USD 3,261,944 -> 12%; USD 4,261,944 -> 12.8%; USD 5,261,944 -> 13.6%; USD 6,261,944 -> 14.4%; USD 7,261,944 -> 15.2%; USD 8,261,944 -> 16%; USD 15,279,635 -> 49.6%
 
 Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to any add-back noted in the summary). Federal gift tax is unified with the federal estate tax (40% after the USD 15M lifetime exclusion).
@@ -236,6 +262,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 
 Vermont estate tax: flat 16% on the Vermont taxable estate above the USD 5,000,000 exclusion (not indexed). Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 16.90 million gross). Illustrative combined tax for an unmarried decedent: 17.2% of a USD 20 million estate, 36.6% of USD 50 million.
 
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A); treated as exempt with conditions.
+
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 16%; USD 11,904,762 -> 49.6%
 
 Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to any add-back noted in the summary). Federal gift tax is unified with the federal estate tax (40% after the USD 15M lifetime exclusion).
@@ -243,6 +271,8 @@ Gifts: No state gift tax; lifetime gifts escape the state estate tax (subject to
 ### Washington
 
 Washington estate tax for deaths on or after 1 July 2026 (ESB 6347, signed March 2026): USD 3,000,000 exclusion; rates on the Washington taxable estate after the exclusion of 10% (first USD 1M), 14%, 15%, 16%, 18% (USD 4-6M), 19%, 19.5% and 20% above USD 9 million. Deaths from 1 July 2025 to 30 June 2026 were under the 2025 schedule (up to 35%, exclusion USD 3,076,000 for early 2026). Combined with the federal estate tax (40% above USD 15,000,000; state death taxes are deductible federally under IRC 2058), the brackets are the combined marginal rates for an estate passing entirely to children: federal tax starts once the estate net of state tax exceeds USD 15 million (about USD 17.61 million gross). Illustrative combined tax for an unmarried decedent: 19.3% of a USD 20 million estate, 38.9% of USD 50 million.
+
+Surviving spouse: unlimited marital deduction for a US-citizen spouse, otherwise a QDOT (IRC 2056(d), 2056A; Washington accepts a state QDOT election).
 
 Combined marginal brackets (amount above the exemption -> rate): USD 0 -> 10%; USD 1,000,000 -> 14%; USD 2,000,000 -> 15%; USD 3,000,000 -> 16%; USD 4,000,000 -> 18%; USD 6,000,000 -> 19%; USD 7,000,000 -> 19.5%; USD 9,000,000 -> 20%; USD 14,612,500 -> 52%
 
@@ -361,6 +391,10 @@ State corporate income taxes (0% to about 11.5%) apply on top of federal 21% CIT
 
 ## Sources
 
+- [26 U.S. Code 2056 (marital deduction, non-citizen spouse rule)](https://www.law.cornell.edu/uscode/text/26/2056)
+- [Pennsylvania Department of Revenue, inheritance tax](https://www.pa.gov/en/agencies/revenue/resources/tax-types-and-information/inheritance-tax.html)
+- [Nolo, Nebraska inheritance tax](https://nolo.com/legal-encyclopedia/nebraska-inheritance-tax.html)
+- [Davis Wright Tremaine, Washington state QDOT](https://www.dwt.com/blogs/family-business-resource-center/2020/02/washington-state-qdot-estate)
 - [State Individual Income Tax Rates and Brackets, 2026](https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/)
 - [IRS releases tax inflation adjustments for tax year 2026, including amendments from the One Big Beautiful Bill](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill)
 - [Tuition and financial assistance](https://www.sacredsf.org/admissions/tuition-financial-assistance)
@@ -407,3 +441,4 @@ State corporate income taxes (0% to about 11.5%) apply on top of federal 21% CIT
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (US-WA West Bellevue).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (US-WY Teton County).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from USD 27,500 to USD 8,998 for US-NY (Manhattan Upper East Side apartments to Westchester family houses, Zillow).
+- 2026-10-16: added surviving-spouse treatment.

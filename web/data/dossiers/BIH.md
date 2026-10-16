@@ -54,6 +54,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `fully_exemp
 - **Regional differences:** FBiH: ten cantonal laws. Sarajevo: 8% inheritance / 10% gifts, first order exempt. Zenica-Doboj: 5% general, 3% second order, first order exempt. RS: no separate inheritance tax; transfers from direct-line relatives exempt from income tax. Brčko: not verified.
 - **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
 - **Sources:** [Zakon o porezu na promet nekretnina i porezu na naslijeđe i poklone Kantona Sarajevo (Sl. novine KS 28/2018), Arts. 17–23](https://www.paragraf.ba/propisi/kantona-sarajevo/zakon-o-porezu-na-promet-nekretnina-i-porezu-na-naslijedje-i-poklone.html); [Zakon o porezu na imovinu, naslijeđe i poklon Zeničko-dobojskog kantona (Sl. novine ZDK 24/2025)](https://www.paragraf.ba/propisi/zenicko-dobojskog-kantona/zakon-o-porezu-na-imovinu-naslijedje-i-poklon.html); [RS: oslobađanje nasljeđa i poklona od poreza na kapitalni dobitak](https://www.paragraf.ba/dnevne-vijesti/04122020/04122020-vijest6.html)
+- Surviving spouse: exempt in Sarajevo (Art. 22(1)) and Zenica-Doboj (Art. 18) cantons, as a first-order heir or as a second-order heir; Republika Srpska has no inheritance tax. JSON spouse_treatment: fully_exempt.
 
 ## Wealth tax
 
@@ -117,3 +118,4 @@ US citizens: The old US–Yugoslavia treaty (1880s/1950s) status for BiH was not
 - 2026-10-15: cost-of-living pass: added Sarajevo prime rent (BAM 5,250/month, median of 34 houses of 200 m² or more on OLX.ba). International school fees are not published (QSI, Richmond Park), so the metric stays unscored.
 - 2026-10-15 (household cost pass 2): re-tried the school fee with third-party listings (International Schools Database, doris.school, QSI Wayback snapshots); no dated upper-secondary fee found, so the metric stays unscored.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

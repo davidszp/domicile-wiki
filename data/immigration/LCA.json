@@ -1,0 +1,145 @@
+{
+  "name": "Saint Lucia",
+  "summary": "No free movement for anyone. Citizenship by investment starts at USD 240,000 (National Economic Fund), with bonds from USD 300,000 and real estate from USD 300,000. Saint Lucian passports lost UK visa-free access on 5 March 2026. Ordinary residence routes are not sourced from official pages.",
+  "naturalisation": "Ordinary naturalisation residence period not verified in this research; see open questions.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Dual citizenship is allowed for CBI citizens (not verified against the Citizenship Act this pass).",
+  "routes": [
+    {
+      "id": "cbi_nef",
+      "name": "Citizenship by Investment: National Economic Fund (NEF)",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "A USD 240,000 non-refundable contribution covers the applicant and up to three dependants.",
+      "requirements": "USD 240,000 main applicant plus up to 3 dependants; extra dependant under 18 USD 10,000, over 18 USD 20,000. Application processing USD 2,000 main applicant, USD 1,000 per dependant; due diligence USD 8,000 main applicant, USD 5,000 per dependant over 16; interview and identity verification fee for the main applicant. The page links to a July 2024 prices gazette that was not read; figures may be superseded. Banned nationalities not found.",
+      "minimum_investment": {
+        "amount": 240000,
+        "currency": "USD"
+      },
+      "investment_options": "NEF USD 240,000; National Action Bonds USD 300,000 (+ USD 50,000 fee, 5-year hold, no interest); real estate USD 300,000 (+ USD 30,000 admin fee for one applicant); enterprise project USD 3,500,000 single / USD 6,000,000 joint, or USD 250,000 under infrastructure option 3.",
+      "government_fees": {
+        "amount": 10000,
+        "currency": "USD"
+      },
+      "fees_note": "2,000 processing + 8,000 due diligence for a main applicant; interview fee amount not given.",
+      "physical_presence": "None stated on the CIP page.",
+      "path_to_citizenship_years": 0,
+      "tax_note": "Citizenship alone does not end tax residence elsewhere.",
+      "processing_time": "Statutory target 90 days; one commercial source reports about 18 months in practice.",
+      "sources": [
+        {
+          "title": "Saint Lucia CIP: Citizenship by Investment options",
+          "url": "https://www.cipsaintlucia.com/citizenship-by-investment",
+          "publisher": "Citizenship by Investment Programme, Saint Lucia",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "UK imposes visa requirement on Saint Lucian nationals (5 March 2026)",
+          "url": "https://outboundinvestment.com/uk-ends-visa-free-travel-for-saint-lucia-visa-requirement-takes-effect-march-5/",
+          "publisher": "Outbound Investment",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "cbi_bonds",
+      "name": "Citizenship by Investment: National Action Bonds (NAB)",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "Buy USD 300,000 of interest-free government bonds held for five years, plus a USD 50,000 non-refundable fee.",
+      "requirements": "USD 300,000 for the main applicant with any number of dependants; bonds registered in the applicant's name for 5 years from first issue; administration fee USD 50,000. Processing and due diligence fees as for the NEF.",
+      "minimum_investment": {
+        "amount": 300000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 60000,
+        "currency": "USD"
+      },
+      "fees_note": "50,000 admin + 2,000 processing + 8,000 due diligence.",
+      "physical_presence": "None stated on the CIP page.",
+      "path_to_citizenship_years": 0,
+      "sources": [
+        {
+          "title": "Saint Lucia CIP: Citizenship by Investment options",
+          "url": "https://www.cipsaintlucia.com/citizenship-by-investment",
+          "publisher": "Citizenship by Investment Programme, Saint Lucia",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "cbi_real_estate",
+      "name": "Citizenship by Investment: Approved real estate project",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "USD 300,000 in an approved high-end branded hotel or boutique property, plus administration fees.",
+      "requirements": "USD 300,000 plus non-refundable administration fee: USD 30,000 applicant alone, USD 45,000 with spouse, USD 5,000 per dependant under 18, USD 10,000 per dependant over 18. Processing and due diligence fees as for the NEF. Holding period not stated on the page reached.",
+      "minimum_investment": {
+        "amount": 300000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 40000,
+        "currency": "USD"
+      },
+      "fees_note": "30,000 admin + 2,000 processing + 8,000 due diligence, applicant alone.",
+      "physical_presence": "None stated on the CIP page.",
+      "path_to_citizenship_years": 0,
+      "sources": [
+        {
+          "title": "Saint Lucia CIP: Citizenship by Investment options",
+          "url": "https://www.cipsaintlucia.com/citizenship-by-investment",
+          "publisher": "Citizenship by Investment Programme, Saint Lucia",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    }
+  ],
+  "open_questions": [
+    "Real estate holding period, residence requirement, banned nationalities and processing time not found on official pages.",
+    "July 2024 prices gazette linked from the CIP page not read; a commercial source gives different administrative fees (from USD 15,000).",
+    "Interview fee amount not given.",
+    "Ordinary residence (temporary permit, 'Live It' extended stay) and permanent residence routes not found on official pages; sources conflict on whether a digital nomad visa exists.",
+    "UK visa requirement: reported effective 5 March 2026 with a grace period for ETA holders to 16 April 2026, from a commercial source; Home Office text not read.",
+    "Ordinary naturalisation residence period not found.",
+    "ECCIRA start date: sources conflict (April 2026, Q2 2026, September 2026, 'late 2026', or not yet operational as of 8 August 2026). Check eccira.org.",
+    "Reported European Commission letter of 25 June 2026 asking the Eastern Caribbean states to end citizenship programmes by 1 June 2028 comes from one professional source (Passport Legacy); not checked against a Commission document."
+  ],
+  "sources": [
+    {
+      "title": "ECCIRA: new Caribbean CBI regulator (status reports conflict)",
+      "url": "https://www.passportlegacy.com/publications/caribbean-citizenship-by-investment-in-2026-eccira-the-eus-2028-letter-and-the-us-proclamation-explained",
+      "publisher": "Passport Legacy",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "LCA",
+  "researched_on": "2026-10-16"
+}

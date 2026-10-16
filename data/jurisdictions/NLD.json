@@ -221,7 +221,9 @@
         "business_relief": "BOR (bedrijfsopvolgingsregeling): 100% exemption up to a cap and 83% above for qualifying business assets with continuation conditions; investment assets and listed portfolios do not qualify.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Worldwide estate if the deceased was resident or deemed resident; credit or exemption for foreign tax under the unilateral decree and the few estate tax treaties.",
-        "domicile_rules": "Dutch nationals who die within 10 years of leaving the Netherlands are treated as resident; anyone who makes a gift within one year of leaving is treated as resident for gift tax. The heir's residence does not matter."
+        "domicile_rules": "Dutch nationals who die within 10 years of leaving the Netherlands are treated as resident; anyone who makes a gift within one year of leaving is treated as resident for gift tax. The heir's residence does not matter.",
+        "spouse_treatment": "taxed",
+        "spouse_note": "A partner (spouse, registered or cohabiting partner) has an exemption of EUR 828,035 in 2026; the rest is taxed at 10% up to EUR 158,669 and 20% above (Successiewet 1956), about 20% effective on a EUR 35M estate."
       }
     },
     {

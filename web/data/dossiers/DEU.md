@@ -67,6 +67,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `taxed`, exe
 - **Important exceptions / announced changes:** The Federal Constitutional Court heard two cases on 12 October 2026 (1 BvF 1/23, Bavaria: real estate valuation, allowances and rates) and 13 October 2026 (1 BvR 804/22: business-asset relief vs. private assets such as securities). A ruling is expected within months; the Court has in past cases declared the law incompatible and let it apply until a reform deadline. The SPD has proposed replacing business relief with a EUR 5 million business allowance. None of this is in force.
 - **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
 - **Sources:** [Erbschaftsteuer- und Schenkungsteuergesetz § 16 (allowances)](https://www.gesetze-im-internet.de/erbstg_1974/__16.html); [Erbschaftsteuer- und Schenkungsteuergesetz § 19 (rates, hardship rule)](https://www.gesetze-im-internet.de/erbstg_1974/__19.html); [Erbschaftsteuer- und Schenkungsteuergesetz § 2 (scope, 5-year rule for Germans)](https://www.gesetze-im-internet.de/erbstg_1974/__2.html); [Erbschaftsteuer vor dem Bundesverfassungsgericht: Was Mandanten jetzt wissen sollten (05.10.2026)](https://www.heuking.de/de/news-events/newsletter-fachbeitraege/artikel/erbschaftsteuer-vor-dem-bundesverfassungsgericht-was-mandanten-jetzt-wissen-sollten.html); [Erbschaftsteuerreform voraus? Erste Reformüberlegungen im Praxischeck](https://www.ebnerstolz.de/de/themen/private-clients/erbschaftsteuerreform-2026-104369.html)
+- Surviving spouse and registered partner: tax class I, EUR 500,000 allowance plus pension allowance, then the same 7%-30% rates as children (about 30% on EUR 35 million). JSON spouse_treatment: taxed.
 
 ## Wealth tax
 
@@ -161,3 +162,4 @@ US citizens: The US-Germany income tax treaty and the separate US-Germany estate
 - 2026-10-15: added prime rent (immobilo.de listing sample, EUR 4,250/month cold rent).
 - 2026-10-15: added the holding structure regime `vv_gmbh` (asset-holding GmbH: share gains 1.649%, portfolio dividends 32.975% at the Munich multiplier, payout 26.375%); noted that the extended trade-tax reduction does not cover securities income; added § 13b ErbStG detail on GmbH shares; Holding structures section.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

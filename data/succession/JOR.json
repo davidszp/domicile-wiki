@@ -1,0 +1,45 @@
+{
+  "id": "JOR",
+  "name": "Jordan",
+  "researched_on": "2026-10-16",
+  "summary": "Muslim estates follow Sharia fixed shares, and a bequest cannot go beyond one third. Difference of religion bars inheritance (Personal Status Law 2019, art. 281/B). The sources found do not cover non-Muslim foreigners, trusts or foundations, so those answers are provisional.",
+  "forced_heirship": "yes",
+  "reserved_share": "Muslims: Sharia fixed shares under the Personal Status Law 2019; religion is a bar to inheriting (art. 281/B); bequests are capped at one third of the estate (stated by Jordan's Iftaa Department, not the statute text).",
+  "family_claims": "",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source found on how Jordanian courts treat the estate of a non-Muslim foreigner or whether the national law applies. Christian communities have their own personal-status courts in Jordan (not sourced here).",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "no",
+  "trust_note": "No trust statute and no private-foundation law were found; Islamic waqf and charities exist but were not researched. Both answers are provisional, 'no' because nothing was found.",
+  "open_questions": [
+    "Jordan's conflict rule for foreigners' estates (Civil Code) not found.",
+    "Whether Jordan has any trust or private-foundation law (and the status of family waqf) not found.",
+    "One-third cap is sourced to a fatwa, not the 2019 law.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here."
+  ],
+  "sources": [
+    {
+      "title": "Personal Status Law (2019) art. 281: difference of religion (Jordan Iftaa fatwa)",
+      "url": "https://aliftaa.jo/research-fatwa-english/3734/rss.aspx",
+      "publisher": "Jordan Department of Iftaa",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "A bequest to a non-Muslim is allowable (Darul Iftaa Jordan)",
+      "url": "https://islamqa.org/shafii/darul-iftaa-jordan/226611/a-bequest-to-a-non-muslim-is-allowable/",
+      "publisher": "Darul Iftaa Jordan via IslamQA",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

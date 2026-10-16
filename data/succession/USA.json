@@ -1,0 +1,38 @@
+{
+  "id": "USA",
+  "name": "United States",
+  "researched_on": "2026-10-16",
+  "summary": "Federal law does not regulate inheritance; each state does. Almost every state lets you disinherit children, though a surviving spouse usually has a statutory elective share. Louisiana is the exception: it has forced heirship for children under 24 or disabled (Civil Code art. 1493). Trusts are widely available, the Hague Trusts Convention is signed but not in force, and family foundations exist mainly as US charities.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "In most states a surviving spouse has an elective share or a community-property half (nine community-property states); children generally have no claim. Details differ by state. Exception: Louisiana only: forced heirs are children aged 23 or younger or permanently disabled; the forced portion is 25% of the estate with one forced heir and 50% with two or more (La. Civil Code art. 1493). Not read here.",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Succession conflict rules are state law: movables go by the law of the deceased's domicile, land by the law of its location. Some states let a testator choose the law of their domicile for a non-domiciliary estate (e.g. New York EPTL 3-5.1(h)); not verified here. Louisiana forced heirship also reaches property in Louisiana.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "HCCH table: the United States signed on 13 June 1988 but has not ratified; the Convention is not in force. Domestic trusts are state law (the Uniform Trust Code and asset-protection trust statutes in some states). Foreign trusts are taxed under the grantor-trust rules and subject to Forms 3520 and 3520-A (not read here). Foundations: private foundations are tax-exempt charities (IRC sections 501(c)(3), 509, 4940 ff.); a non-charitable family foundation is not a standard vehicle.",
+  "open_questions": [
+    "Elective share rules and the community-property states were stated from general knowledge; verify per state.",
+    "New York EPTL 3-5.1(h) and similar choice-of-law provisions were not read.",
+    "Whether any state (e.g. Wyoming) has a statutory non-charitable foundation law was not checked.",
+    "The federal estate tax and the 2026 exemption are out of scope."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention on the Law Applicable to Trusts and on their Recognition (1985)",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Louisiana Civil Code (forced heirship, art. 1493)",
+      "url": "https://legis.la.gov/legis/Laws_Toc.aspx?folder=67&level=Parent",
+      "publisher": "Louisiana Legislature",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

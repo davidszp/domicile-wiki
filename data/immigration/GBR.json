@@ -1,0 +1,302 @@
+{
+  "id": "GBR",
+  "name": "United Kingdom",
+  "summary": "EU free movement ended on 31 December 2020: EU citizens now need a visa like everyone else, except those who joined the EU Settlement Scheme (deadline 30 June 2021) and Irish citizens, who live in the UK freely under the Common Travel Area. There is no investor visa (Tier 1 Investor closed on 17 February 2022) and no digital nomad visa. The routes open to most people are Innovator Founder (an endorsed business, settlement after 3 years), Global Talent (endorsed leaders in research, arts and digital technology) and Skilled Worker (a sponsored job paying at least GBP 41,700).",
+  "naturalisation": "British citizenship usually after 5 years of residence, with indefinite leave to remain (ILR) held for 12 months first. A government plan to move the settlement baseline to 10 years ('earned settlement') was consulted on in late 2025 and was not in the Immigration Rules as of mid-2026; check before relying on 5 years. A higher English standard (B2) for several settlement routes is announced for 26 March 2027.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "The UK does not require renouncing another nationality (not stated on the GOV.UK page fetched; widely known, no official source cited here).",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Tax residence follows the Statutory Residence Test.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": 5,
+      "id": "common_travel_area",
+      "name": "Common Travel Area (Irish citizens)",
+      "kind": "other",
+      "citizenships": [
+        "EU"
+      ],
+      "grants": "permanent_residence",
+      "summary": "Irish citizens can live, work and study in the UK without a visa. Only Irish citizens benefit, not other EU citizens.",
+      "requirements": "Irish citizens 'can move freely and reside in' the UK under the Common Travel Area; no registration or minimum period is stated on the GOV.UK page. Other EU citizens are not covered.",
+      "physical_presence": "No minimum stated",
+      "sources": [
+        {
+          "title": "Common Travel Area guidance",
+          "url": "https://www.gov.uk/government/publications/common-travel-area-guidance",
+          "publisher": "GOV.UK (Home Office)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Becoming a British citizen",
+          "url": "https://www.gov.uk/becoming-a-british-citizen",
+          "publisher": "GOV.UK (Home Office)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "only_some_nationalities": true
+    },
+    {
+      "status": "closed_to_new",
+      "status_note": "Deadline for most people was 30 June 2021; only joining family members of those resident by 31 December 2020 and certain reapplicants can still apply (GOV.UK, accessed 16 October 2026).",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 6,
+      "id": "euss",
+      "name": "EU Settlement Scheme (settled / pre-settled status)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "grants": "permanent_residence",
+      "summary": "EU citizens who lived in the UK before the end of 2020 could apply for status; for almost everyone new the scheme is closed.",
+      "requirements": "Residence in the UK by 31 December 2020; settled status after 5 years in a row; applying is free. Pre-settled status is extended by 5 years before expiry. Not a route for someone arriving today.",
+      "physical_presence": "Continuous residence; status can lapse after long absence",
+      "sources": [
+        {
+          "title": "Settled and pre-settled status for EU citizens and their families",
+          "url": "https://www.gov.uk/settled-status-eu-citizens-families",
+          "publisher": "GOV.UK (Home Office)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Becoming a British citizen",
+          "url": "https://www.gov.uk/becoming-a-british-citizen",
+          "publisher": "GOV.UK (Home Office)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "GBP 1,357 applying from outside the UK (GBP 1,693 inside) plus GBP 1,000 endorsement and the immigration health surcharge.",
+      "processing_time": "",
+      "family": "Partner and children can apply as dependants.",
+      "tax_note": "Becoming tax resident depends on the Statutory Residence Test.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 1357,
+        "currency": "GBP"
+      },
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 5,
+      "id": "innovator_founder",
+      "name": "Innovator Founder visa",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "For people starting a new, innovative business endorsed by an approved body. No fixed investment amount is stated on GOV.UK; settlement is possible after 3 years.",
+      "requirements": "Business must be new, innovative, viable with growth potential and scalable, endorsed by an approved endorsing body; English language; endorsement fee GBP 1,000 and at least two meetings with the endorsing body at GBP 500 each (12 and 24 months). Reported personal funds GBP 1,270 held for 28 days and English B2 (secondary source, not on the GOV.UK page fetched). Initial stay up to 3 years, extendable by 3 years without limit. EU citizens (except Irish) need this visa like anyone else.",
+      "physical_presence": "Live in the UK; settlement requires limited absences (allowed days not sourced)",
+      "sources": [
+        {
+          "title": "Innovator Founder visa",
+          "url": "https://www.gov.uk/innovator-founder-visa",
+          "publisher": "GOV.UK (Home Office)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "GBP 766 in total (GBP 561 endorsement + GBP 205 visa, or GBP 766 on the prize route); immigration health surcharge about GBP 1,035 a year.",
+      "processing_time": "About 3 weeks outside the UK, 8 weeks inside",
+      "family": "Partner and children each pay GBP 766.",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 766,
+        "currency": "GBP"
+      },
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 4,
+      "id": "global_talent",
+      "name": "Global Talent visa",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "For recognised or potential leaders in academia and research, arts and culture, or digital technology; no job offer is needed. Up to 5 years at a time.",
+      "requirements": "Be 18 or over and a leader or potential leader in the field; either win an eligible prize or get endorsement from the designated body for the field. Stay up to 5 years, extendable in 1 to 5 year steps. Settlement after 3 or 5 years depending on field and route.",
+      "physical_presence": "Live in the UK; absence limits for settlement not sourced",
+      "sources": [
+        {
+          "title": "Global Talent visa",
+          "url": "https://www.gov.uk/global-talent",
+          "publisher": "GOV.UK (Home Office)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 41700,
+        "currency": "GBP"
+      },
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 6,
+      "id": "skilled_worker",
+      "name": "Skilled Worker visa",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A sponsored job on the eligible occupations list. The general salary floor is GBP 41,700 a year or the occupation's going rate, whichever is higher.",
+      "requirements": "Job offer from a licensed sponsor on the eligible list, minimum salary GBP 41,700 a year or the going rate (GBP 33,400 in some cases), English. Up to 5 years before extending; settlement after 5 years.",
+      "physical_presence": "Live and work in the UK",
+      "sources": [
+        {
+          "title": "Skilled Worker visa",
+          "url": "https://www.gov.uk/skilled-worker-visa",
+          "publisher": "GOV.UK (Home Office)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Skilled Worker visa - your job",
+          "url": "https://www.gov.uk/skilled-worker-visa/your-job",
+          "publisher": "GOV.UK (Home Office)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "closed_to_new",
+      "status_note": "Closed to new applications from 16:00 GMT on 17 February 2022; extensions for existing holders had to be made by 17 February 2026.",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "tier1_investor",
+      "name": "Tier 1 (Investor) visa",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "The GBP 2 million investor visa was closed without notice in 2022. A wealthy person without a job, business or talent has no passive investor route today.",
+      "requirements": "Closed. The pre-closure threshold was GBP 2,000,000 (threshold from earlier knowledge, not on the guidance page fetched). Existing holders could extend or settle until the stated dates.",
+      "physical_presence": "Not applicable (closed)",
+      "sources": [
+        {
+          "title": "Tier 1 (Investor) guidance",
+          "url": "https://www.gov.uk/government/publications/guidance-on-application-for-uk-visa-as-tier-1-investor/tier-1-investor-guidance-accessible-version",
+          "publisher": "GOV.UK (Home Office)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "High Potential Individual visa (2 or 3 years, capped, no settlement, recent top-university graduates; GOV.UK page read) is not recorded as a route.",
+    "Skilled Worker fee amounts not sourced (GOV.UK 'how much it costs' page not read).",
+    "Innovator Founder funds and English level (GBP 1,270; B2) are from secondary sources; the GOV.UK eligibility page returned 404.",
+    "Whether the 10-year earned-settlement baseline has been enacted since mid-2026 must be re-checked; routes' path_to_permanent_years use the rules published on GOV.UK.",
+    "Global Talent path_to_citizenship_years is an inference (3 years ILR + 12 months); not stated on the page.",
+    "Dual citizenship statement is not from a fetched source.",
+    "Tier 1 Investor pre-closure thresholds (GBP 2,000,000 / 5,000,000 / 10,000,000) not sourced from the fetched guidance.",
+    "No UK digital nomad visa; confirmed only by absence from GOV.UK route pages read."
+  ],
+  "sources": [
+    {
+      "title": "Innovator Founder visa",
+      "url": "https://www.gov.uk/innovator-founder-visa",
+      "publisher": "GOV.UK (Home Office)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Global Talent visa",
+      "url": "https://www.gov.uk/global-talent",
+      "publisher": "GOV.UK (Home Office)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Skilled Worker visa",
+      "url": "https://www.gov.uk/skilled-worker-visa",
+      "publisher": "GOV.UK (Home Office)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Settled and pre-settled status for EU citizens and their families",
+      "url": "https://www.gov.uk/settled-status-eu-citizens-families",
+      "publisher": "GOV.UK (Home Office)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Becoming a British citizen",
+      "url": "https://www.gov.uk/becoming-a-british-citizen",
+      "publisher": "GOV.UK (Home Office)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tier 1 (Investor) guidance",
+      "url": "https://www.gov.uk/government/publications/guidance-on-application-for-uk-visa-as-tier-1-investor/tier-1-investor-guidance-accessible-version",
+      "publisher": "GOV.UK (Home Office)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

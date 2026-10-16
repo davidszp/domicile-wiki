@@ -1,0 +1,140 @@
+{
+  "name": "France",
+  "summary": "EU citizens need no permit. Non-EU nationals have a talent passport for economic investors (at least EUR 300,000 in fixed assets and 30% of the capital of a company, creating or keeping jobs), a long-stay 'visiteur' permit for people living on their own means without working, and the usual employer-sponsored permits. There is no digital nomad visa and no citizenship by investment.",
+  "naturalisation": "Five years of regular residence (two with a French higher-education degree or services to France); French at B2 and a civic knowledge test since 1 January 2026; discretionary decision by the Ministry of the Interior.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "France does not require renunciation (general knowledge; the service-public pages retrieved did not state it).",
+  "routes": [
+    {
+      "id": "eu_free_movement",
+      "name": "EU/EEA/Swiss free movement",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "EU citizens need no permit and no registration.",
+      "requirements": "Directive 2004/38/EC; non-workers need sufficient means and health insurance. Permanent residence after 5 years.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "France - Individual - Taxes on personal income",
+          "url": "https://taxsummaries.pwc.com/france/individual/taxes-on-personal-income",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5
+    },
+    {
+      "id": "talent_passport_investor",
+      "name": "Talent passport: economic investor (L.313-20-7 CESEDA, former numbering)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Multi-year residence card for investing at least EUR 300,000 in a French company and holding at least 30% of its capital.",
+      "requirements": "Investment of at least EUR 300,000 in tangible or intangible fixed assets in France, directly or through a company; the applicant manages the company or holds at least 30% of its capital; plan to create or keep jobs within four years; no threat to public order. Permit up to four years, renewable (secondary source). Fee EUR 350 reported from 1 May 2026 (unverified).",
+      "physical_presence": "Reside in France; absences over 6 months in a year can affect renewal (not sourced)",
+      "sources": [
+        {
+          "title": "Passeport talent investissement economique (L.313-20-7)",
+          "url": "https://www.alpes-maritimes.gouv.fr/contenu/telechargement/34164/265260/file/7.Passeport%20talent%20investissement%20%C3%A9conomique%20(L.313-20-7%C2%B0).pdf",
+          "publisher": "Prefecture des Alpes-Maritimes",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 300000,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5,
+      "family": "Spouse and minor children receive a family permit tied to the principal's duration (secondary source).",
+      "tax_note": "Becoming a French tax resident follows Article 4 B CGI, not the permit.",
+      "government_fees": null
+    },
+    {
+      "id": "visiteur",
+      "name": "Long-stay visa / residence card 'visiteur'",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "One-year renewable permit for people who live in France on their own resources without working.",
+      "requirements": "Sufficient stable resources and health insurance; no professional activity. The exact resource level (the SMIC-linked figure) was not retrieved.",
+      "physical_presence": "Live in France; absences limited (not sourced)",
+      "sources": [
+        {
+          "title": "France-Visas portal (general entry point; visiteur details not retrieved)",
+          "url": "https://france-visas.gouv.fr/",
+          "publisher": "France-Visas, Ministry for Europe and Foreign Affairs",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null,
+      "path_to_permanent_years": 5,
+      "tax_note": "Living in France 183+ days or having your home or centre of interests there makes you tax resident."
+    },
+    {
+      "id": "talent_blue_card",
+      "name": "Talent passport (EU Blue Card) and other employee permits (work)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored multi-year cards for qualified employees.",
+      "requirements": "Threshold for the EU Blue Card talent passport in 2026 and other salary levels not retrieved.",
+      "physical_presence": "Work for the sponsoring employer",
+      "sources": [
+        {
+          "title": "Passeport Talent France 2026: categories, salaires minimum",
+          "url": "https://www.integrationfrance.fr/articles/passeport-talent-france-2026-categories-salaires",
+          "publisher": "Integration France",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null
+    }
+  ],
+  "open_questions": [
+    "Official service-public pages for the visiteur permit and talent passport (fees, resource level, renewal rules) not retrieved (404); the investor figures come from a prefecture checklist and secondary sources.",
+    "Years to permanent residence on the investor talent passport and Blue Card salary: not sourced.",
+    "Dual citizenship on naturalisation: not stated on a retrieved page.",
+    "Business-creator talent passport (reported EUR 30,000 minimum in one guide) not recorded.",
+    "Whether the investor category EUR 300,000 is still current in the 2026 CESEDA numbering: the prefecture checklist uses the old L.313-20-7."
+  ],
+  "sources": [
+    {
+      "title": "Passeport talent investissement economique (L.313-20-7)",
+      "url": "https://www.alpes-maritimes.gouv.fr/contenu/telechargement/34164/265260/file/7.Passeport%20talent%20investissement%20%C3%A9conomique%20(L.313-20-7%C2%B0).pdf",
+      "publisher": "Prefecture des Alpes-Maritimes",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "French naturalization by decree",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34708/1_0_1_0_1_1_0?lang=en",
+      "publisher": "service-public.gouv.fr",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "FRA",
+  "researched_on": "2026-10-16"
+}

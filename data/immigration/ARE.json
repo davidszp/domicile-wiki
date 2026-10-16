@@ -1,0 +1,367 @@
+{
+  "id": "ARE",
+  "name": "United Arab Emirates",
+  "summary": "No group has free movement. EU, US and other passports all use the same permits. The cheapest long-stay options are a Dubai 2-year property investor visa (any single-owner property, no minimum), the Dubai remote work visa (USD 3,500 a month) and the 10-year Golden Visa (AED 2,000,000 in property or public investment). Retirees aged 55+ need AED 1,000,000 in property or savings. Citizenship is by invitation only.",
+  "naturalisation": "Citizenship is not open by application. A 2021 amendment (announced 30 January 2021) lets the rulers' offices nominate investors, specialised talents and professionals; there is no ordinary residence-based route for investors or retirees.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Normally not allowed. Reported: people naturalised under the 2021 talent and investor nominations are not required to renounce their earlier citizenship (law-firm reports, not the decree text).",
+  "routes": [
+    {
+      "id": "golden_visa_investor_public",
+      "name": "Golden Visa - public investment (10 years)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "A 10-year renewable visa for putting at least AED 2,000,000 into public investments such as a fund or deposit.",
+      "requirements": "ICP Golden Visa investor category (public investments): minimum capital AED 2,000,000, 10-year validity per the federal portal (updated 28 Jul 2026). The portal gives no further conditions for this row; the approved instruments (fund, deposit, company) are set by ICP.",
+      "minimum_investment": {
+        "amount": 2000000,
+        "currency": "AED"
+      },
+      "investment_options": "Federal portal also lists a company stake paying at least AED 250,000 a year in taxes (row for real estate investors).",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "None. Golden Visa holders may stay outside the UAE for longer than 6 months without losing the visa (u.ae).",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Spouse and children can be sponsored (u.ae; details by emirate).",
+      "tax_note": "A residence visa does not make you UAE tax resident. UAE has no personal income tax; the 183-day / 90-day tests apply (see the jurisdiction file).",
+      "sources": [
+        {
+          "title": "Golden visa (UAE federal portal, updated 28 Jul 2026)",
+          "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/golden-visa",
+          "publisher": "UAE Government Portal (u.ae), citing ICP",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "golden_visa_property",
+      "name": "Golden Visa - real estate investor (AED 2,000,000)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Buy property worth at least AED 2,000,000 (one or several) and get a renewable Golden Visa without a sponsor.",
+      "requirements": "Dubai Land Department: property value at least AED 2,000,000 at purchase, fully owned by the applicant; a mortgaged property needs a bank no-objection letter showing the paid amount. Applicant must be in the UAE and attend in person. DLD page states a 10-year renewable permit; the federal u.ae portal (28 Jul 2026) lists real estate investors at 5 years and 10 years only for public investment. Conflict unresolved.",
+      "minimum_investment": {
+        "amount": 2000000,
+        "currency": "AED"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 9884.75,
+        "currency": "AED"
+      },
+      "fees_note": "DLD total for the 10-year permit: medical 700, Emirates ID 1,153, residency confirmation 2,856.75, DLD fee 4,020, administrative 1,155. The 5-year version costs AED 6,984.75 per the retiree page, so the ID and permit fee scale with term.",
+      "physical_presence": "None.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "DLD retiree page states 7 to 10 business days; no figure for investors.",
+      "family": "Spouse, children and parents can be sponsored (DLD). Each sponsored person adds AED 100; family permit AED 5,774.50 plus AED 318.75 file opening (10-year).",
+      "tax_note": "Property ownership and the visa do not make you tax resident.",
+      "sources": [
+        {
+          "title": "Golden Visa application - Investor",
+          "url": "https://dubailand.gov.ae/en/eservices/request-for-golden-visa-investor/",
+          "publisher": "Dubai Land Department",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Golden visa (UAE federal portal, updated 28 Jul 2026)",
+          "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/golden-visa",
+          "publisher": "UAE Government Portal (u.ae), citing ICP",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Dubai property visa guide 2026",
+          "url": "https://gulfnews.com/living-in-uae/visa-immigration/dubai-residency-by-investment-guide-1.500523250",
+          "publisher": "Gulf News",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "property_investor_visa_2yr",
+      "name": "Dubai property investor residence (2 years)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Dubai owners get a renewable 2-year residence with no minimum property value if they own it alone.",
+      "requirements": "DLD Taskeen service: an individual owner can apply regardless of property value; a co-owner needs a share worth at least AED 400,000. Sponsor must be the owner. Dubai only; DLD page dated 14 Oct 2026. Gulf News (29 Apr 2026) reports the earlier AED 750,000 minimum was scrapped for sole owners; no formal announcement was found.",
+      "minimum_investment": null,
+      "investment_options": "No minimum for a sole owner; co-owner share at least AED 400,000.",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 10212.5,
+        "currency": "AED"
+      },
+      "fees_note": "Investor visa for 2 years per DLD. Spouse 7,382.25; child under 18 6,482.25; parents (1 year) 8,882.25.",
+      "physical_presence": "Not stated on the DLD page.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Spouse, children and parents can be sponsored (DLD fee table).",
+      "tax_note": "Does not make you tax resident.",
+      "sources": [
+        {
+          "title": "Investor Residence Application (Taskeen)",
+          "url": "https://dubailand.gov.ae/en/eservices/request-for-investor-visa/",
+          "publisher": "Dubai Land Department",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Dubai property visa guide 2026",
+          "url": "https://gulfnews.com/living-in-uae/visa-immigration/dubai-residency-by-investment-guide-1.500523250",
+          "publisher": "Gulf News",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "golden_visa_retiree",
+      "name": "Retirement visa / Golden Visa for retirees (5 years)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "People aged 55+ with AED 1,000,000 in property or savings, or a fixed pension, can get a renewable 5-year visa.",
+      "requirements": "Dubai Land Department: age 55 or over; property bought for at least AED 1,000,000 (not off-plan, paid in full or bank letter for the amount paid). Secondary sources (Gulf News) add alternatives: AED 1,000,000 in a 3-year UAE fixed deposit, or fixed income of AED 20,000 a month federally / AED 240,000 a year in Dubai (figures conflict across sources), and 15 years of work history. Abu Dhabi terms differ.",
+      "minimum_investment": {
+        "amount": 1000000,
+        "currency": "AED"
+      },
+      "investment_options": "Savings route: AED 1,000,000 in a UAE bank deposit (secondary sources).",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 6984.75,
+        "currency": "AED"
+      },
+      "fees_note": "DLD total for the property route: medical 700, Emirates ID 653, permit 2,456.75, DLD fee 2,020, administrative 1,155.",
+      "physical_presence": "None stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "7 to 10 business days (DLD).",
+      "family": "Spouse, children and parents can be sponsored (DLD).",
+      "tax_note": "Does not make you tax resident.",
+      "sources": [
+        {
+          "title": "Golden Visa Application - Retiree",
+          "url": "https://dubailand.gov.ae/en/eservices/request-for-golden-visa-retired/",
+          "publisher": "Dubai Land Department",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "How to retire in Dubai and apply for a 5-year retirement visa",
+          "url": "https://gulfnews.com/living-in-uae/visa-immigration/how-to-retire-in-dubai-and-apply-for-a-5-year-expatriate-retirement-visa-1.500271258",
+          "publisher": "Gulf News",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "remote_work_visa",
+      "name": "Virtual Working Programme / Remote Work Visa (1 year)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "A 1-year renewable visa for employees or business owners working for a company outside the UAE.",
+      "requirements": "GDRFA Dubai: proof of remote work for an organisation outside the UAE and at least USD 3,500 a month (about USD 42,000 a year), salary certificate, health insurance valid in the UAE, medical test. Some 2026 secondary sources report 6 months of bank statements since 27 January 2026 and higher thresholds for business owners; the GDRFA page does not show this.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 42000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 240,
+        "currency": "AED"
+      },
+      "fees_note": "GDRFA: permit 200, Knowledge Dirham 10, Innovation Dirham 10, delivery 20 (AED 500 more for in-country processing; medical, Emirates ID and insurance extra).",
+      "physical_presence": "None stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "48 hours expected (GDRFA).",
+      "family": "Dependants possible; roughly AED 1,100-1,250 each (secondary source).",
+      "tax_note": "Does not make you tax resident; UAE has no personal income tax.",
+      "sources": [
+        {
+          "title": "Remote work visa (GDRFA Dubai service page)",
+          "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+          "publisher": "General Directorate of Residency and Foreigners Affairs, Dubai",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "golden_visa_entrepreneur",
+      "name": "Golden Visa - entrepreneurs (5 years)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "A 5-year Golden Visa for founders of an innovative project backed by an incubator or emirate authority.",
+      "requirements": "Federal portal: proof of an innovative or technical project, documents showing project value, and a letter from a business incubator or the emirate's authority. No numeric threshold published.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "None stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Does not make you tax resident.",
+      "sources": [
+        {
+          "title": "Golden visa (UAE federal portal, updated 28 Jul 2026)",
+          "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/golden-visa",
+          "publisher": "UAE Government Portal (u.ae), citing ICP",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "golden_visa_talent",
+      "name": "Golden Visa - exceptional talent, students, humanitarian (5-10 years)",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Golden Visas for doctors, scientists, creatives, executives, top students and humanitarian pioneers on nomination or documented excellence.",
+      "requirements": "Federal portal categories: exceptional talent or rare specialisations (10 years), outstanding students (5 or 10 years), humanitarian pioneers and frontline heroes (10 years). Requirements vary by subcategory (recommendation letters, degrees, experience). No money threshold.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "None stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Does not make you tax resident.",
+      "sources": [
+        {
+          "title": "Golden visa (UAE federal portal, updated 28 Jul 2026)",
+          "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/golden-visa",
+          "publisher": "UAE Government Portal (u.ae), citing ICP",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "work_permit",
+      "name": "Employer-sponsored work residence",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Most foreigners live in the UAE on an employer-sponsored work permit and residence visa.",
+      "requirements": "Employer applies for a work permit and residence visa through MoHRE/ICP or a free-zone authority; fees and salary requirements vary by emirate and zone. Not researched in detail.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Residence lapses after 6 months outside the UAE unless exempt.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "No personal income tax; see jurisdiction file.",
+      "sources": [
+        {
+          "title": "Golden visa (UAE federal portal, updated 28 Jul 2026)",
+          "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/golden-visa",
+          "publisher": "UAE Government Portal (u.ae), citing ICP",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Property Golden Visa validity: DLD says 10 years, federal u.ae (28 Jul 2026) says 5 years for real estate. Which applies to new Dubai applications?",
+    "Retirement visa income alternative: AED 20,000 a month (federal) vs AED 15,000 / AED 240,000 a year (Dubai) differ between secondary sources; no official page read.",
+    "Remote work visa: whether 6-month bank statements and a higher threshold for business owners have applied since 27 Jan 2026 (secondary sources only).",
+    "Government fees for the public-investment Golden Visa are not sourced.",
+    "Exact work-permit fees and salary rules were not researched.",
+    "Naturalisation: official conditions for nominated investors and talents were not read from the decree text."
+  ],
+  "sources": [
+    {
+      "title": "Golden visa (UAE federal portal, updated 28 Jul 2026)",
+      "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/golden-visa",
+      "publisher": "UAE Government Portal (u.ae), citing ICP",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Acquisition of UAE Nationality",
+      "url": "https://afridi-angell.com/acquisition-of-uae-nationality/",
+      "publisher": "Afridi & Angell",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

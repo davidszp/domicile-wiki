@@ -1,0 +1,51 @@
+{
+  "id": "EST",
+  "name": "Estonia",
+  "researched_on": "2026-10-16",
+  "summary": "Descendants, parents and a spouse who depended on the deceased for maintenance can claim half of their intestate share in money. A foreign resident can choose the law of their nationality (EU Succession Regulation art. 22). Estonia has no trust law; foundations exist, but private-benefit use is not confirmed.",
+  "forced_heirship": "yes",
+  "reserved_share": "Descendants, parents and spouse who would inherit on intestacy and to whom the testator owed maintenance at death: a money claim for half the value of their intestate share (Law of Succession Act, reserved share; e-Justice page cites no article).",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "EU Succession Regulation: the law of the last habitual residence applies by default (art. 21), but a resident foreign national may choose the law of their nationality (art. 22).",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "Estonia is not in the HCCH table for the 1985 Trusts Convention. The sources found do not say how foreign trusts are treated. Foundations (sihtasutus) are governed by the Foundations Act; whether purely private-benefit ones are allowed was not confirmed. A private foundation form has been discussed in commentary but enactment was not found.",
+  "open_questions": [
+    "Whether the Foundations Act allows foundations for private (family) benefit, and whether a separate private foundation form has been enacted (Ecovis commentary only), were not confirmed.",
+    "How foreign trusts are recognised and taxed in Estonia was not sourced.",
+    "Reserved share article number not captured."
+  ],
+  "sources": [
+    {
+      "title": "European e-Justice: Succession, Estonia",
+      "url": "https://e-justice.europa.eu/166/EN/succession?ESTONIA&member=1",
+      "publisher": "European e-Justice Portal",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) No 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Philea: Legal Environment for Philanthropy in Europe, Estonia",
+      "url": "https://philea.eu/wp-content/uploads/2025/07/Estonia-Philea-2024-Legal-Environment-for-Philanthropy-in-Europe.pdf",
+      "publisher": "Philea",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

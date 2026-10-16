@@ -1,0 +1,59 @@
+{
+  "id": "GHA",
+  "name": "Ghana",
+  "researched_on": "2026-10-16",
+  "summary": "There is no forced heirship: a will can dispose of the estate, but the court can interfere where reasonable provision is not made for a child under 18 (Wills Act 1971, s. 13). Without a will, the Intestate Succession Law of 1985 shares the estate among spouse, children and others. Trusts are recognised; no private foundation law was found.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "Wills Act 1971 (Act 360) s. 13: court may interfere where no reasonable provision for a child under 18. Intestacy is governed by PNDCL 111 of 1985 (uniform rules for spouse and children).",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source found on foreign law for resident foreigners' estates.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "no",
+  "trust_note": "Trusts are recognised in common law and equity; statutes named are the Trustees (Incorporation) Act 1962 (Act 106) and the Public Trustee Ordinance 1952, with land held in trust needing registration. Charitable trusts are recognised. No private-foundation law was found.",
+  "open_questions": [
+    "Whether the Wills Act gives adults or spouses any claim was not sourced.",
+    "Foundation law and Ghana's treatment of foreign trusts not found.",
+    "Customary-law estates are outside these rules in some cases; not sourced.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here."
+  ],
+  "sources": [
+    {
+      "title": "Intestate succession in Ghana: how PNDCL 111 shapes families after death",
+      "url": "https://dennislawgh.com/blog/intestate-succession-in-ghana-how-pndcl-111-shapes-families-after-death",
+      "publisher": "Dennis Law GH",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance law in Ghana",
+      "url": "https://bpaghana.com/inheritance-law-in-ghana-what-happens-to-children-when-parents-die/",
+      "publisher": "BPA Ghana",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Trust in Ghana",
+      "url": "https://www.mondaq.com/wills-intestacy-estate-planning/1735692/trust-in-ghana",
+      "publisher": "Mondaq",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Family trusts and asset protection",
+      "url": "https://bpaghana.com/family-trusts-and-asset-protection/",
+      "publisher": "BPA Ghana",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

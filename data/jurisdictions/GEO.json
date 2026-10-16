@@ -157,7 +157,9 @@
         "other_transfer_cost_rate": 0,
         "gift_tax": "Gifts follow the same exemption (first/second-line heirs fully exempt).",
         "gifts_same_as_inheritance": true,
-        "domicile_rules": "Income-tax based; applies to residents and to Georgian-source property for non-residents."
+        "domicile_rules": "Income-tax based; applies to residents and to Georgian-source property for non-residents.",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "First-line heirs, expressly including the spouse, are exempt from income tax on inherited or gifted property (Tax Code Art. 82(1)(g); first-line heirs defined in Art. 82); there is no separate inheritance tax."
       }
     }
   ],

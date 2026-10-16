@@ -20,6 +20,7 @@ For listed companies, 85% of the dividend is taxable at 30%/34%, so JSON 0.289 =
 Inheritance tax is charged per heir, and the 2026 tables apply to deaths from 1 January 2026 (Vero inheritance tax calculator). Children (bracket 1) pay nothing below EUR 30,000. Above it, tax starts at EUR 100 + 7% of the excess over 30,000. The base amount is EUR 800 at 40,000 (+10%), EUR 2,800 at 60,000 (+13%), EUR 21,000 at 200,000 (+16%) and EUR 149,000 at 1,000,000 (+19%). JSON: marginal brackets from 30,000, bracket_mode marginal (checked: 100 + 0.07 x 10,000 = 800, and so on), with the flat EUR 100 omitted.
 
 Gifts from one donor are added up over 3 years. They are exempt below EUR 7,500 (EUR 5,000 before 2026), and rates run from 8% to 17%. Gifts made within 3 years before death are added to the inheritance. The tax reaches worldwide assets if the deceased or the heir was resident; Finnish real estate is always taxable. Generational business relief exists but does not cover listed portfolios.
+- Surviving spouse: tax class I with the same 7%-19% scale as children plus a EUR 90,000 spouse deduction (PerVL 12 §); about 18.6% on a EUR 10 million share, so taxed.
 
 ## Wealth tax
 None (abolished 2006; PwC). Municipal real estate tax is 0.41%–2.00%. Transfer tax is 3% on real property and 1.5% on unlisted securities; listed securities are generally exempt.
@@ -98,6 +99,7 @@ City: Helsinki.
 - Dividend from an unlisted company, Vero: https://vero.fi/en/individuals/property/investments/dividends/dividend-from-an-unlisted-company/
 - [Vuokraovi - Vuokra-asunnot Lauttasaari, Helsinki](https://www.vuokraovi.com/vuokra-asunnot/helsinki/lauttasaari)
 - [Vuokraovi - Vuokra-asunnot omakotitalo, Espoo](https://www.vuokraovi.com/vuokra-asunnot/espoo/omakotitalo)
+- Puolisovähennys ja henkivakuutuskorvaus, Verohallinto: https://www.vero.fi/syventavat-vero-ohjeet/kannanotot/47718/puolisovahennys_ja_henkivakuutuskorvau/
 
 ## Change log
 - 2026-10-15: initial research.
@@ -105,3 +107,4 @@ City: Helsinki.
 - 2026-10-15: added the family investment Oy structure regime (`holding_oy`) and the Holding structures section; standard holding_company_notes updated.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (thin sample; open question added: may understate).
 - 2026-10-15: family rent re-checked a second time: changed from EUR 2,490 (Qasa) to EUR 4,000 (5 Vuokraovi listings, Lauttasaari/Nuottaniemi/Koukkuniemi); still thin.
+- 2026-10-16: added surviving-spouse treatment.

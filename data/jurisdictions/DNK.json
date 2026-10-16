@@ -216,7 +216,9 @@
         "business_relief": "Business assets can be transferred with succession (tax on latent gains deferred to the heir); gift/estate duty on business is assessed on value; portfolio holdings do not qualify (passive capital rules).",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Danish estate duty applies to the estate of a person domiciled in Denmark administered in Denmark, generally worldwide assets; foreign tax credit relief.",
-        "domicile_rules": "Probate jurisdiction follows the deceased's last domicile (residence) in Denmark; no citizenship-based tail found."
+        "domicile_rules": "Probate jurisdiction follows the deceased's last domicile (residence) in Denmark; no citizenship-based tail found.",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "Inheritance (and insurance) passing to the deceased's spouse who is not separated is exempt from boafgift (Boafgiftsloven § 3(1)(a)); a registered partner is treated the same, but a cohabitant (samlever) is not and pays the 15% class A rate."
       },
       "sources": [
         {

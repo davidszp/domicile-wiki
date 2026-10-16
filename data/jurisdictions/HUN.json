@@ -258,7 +258,9 @@
         "business_relief": "Not needed for children: the lineal exemption covers all assets.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Whatever the scope rules for foreign assets, transfers to children are exempt.",
-        "domicile_rules": "No domicile concept; scope follows location of property and residence/citizenship of the heir."
+        "domicile_rules": "No domicile concept; scope follows location of property and residence/citizenship of the heir.",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "Inheritance and gifts between spouses are exempt from inheritance and gift duty regardless of amount (Act XCIII of 1990, Itv.; PwC)."
       },
       "sources": [
         {

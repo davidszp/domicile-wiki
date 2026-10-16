@@ -1,0 +1,124 @@
+{
+  "name": "Grenada",
+  "summary": "No free movement for anyone. Grenada citizenship costs USD 235,000 (National Transformation Fund, single applicant up to a family of four) or USD 270,000-350,000 in approved real estate, plus about USD 9,000 of application, due diligence, processing and interview fees. Grenada citizens can reportedly apply for the US E-2 treaty investor visa, the programme's main selling point; the programme is under an independent review announced 22 September 2026. Ordinary residence routes could not be sourced.",
+  "naturalisation": "Ordinary naturalisation residence period not verified in this research; see open questions.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Dual citizenship is allowed for CBI citizens (not verified against the Citizenship Act this pass).",
+  "routes": [
+    {
+      "id": "cbi_ntf",
+      "name": "Citizenship by Investment: National Transformation Fund (NTF)",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "A USD 235,000 non-refundable contribution covers a single applicant, a couple or a family of four and gives citizenship.",
+      "requirements": "USD 235,000 for the main applicant plus up to three dependants (since 1 July 2024); extra dependants beyond three USD 25,000 or USD 50,000 each, siblings USD 75,000 each. Fees per person 17+: application USD 1,500, due diligence USD 5,000 (the enquiries page elsewhere says USD 6,000), processing USD 1,500, interview USD 1,000. Applications only through licensed agents. Applicants refused a visa by a visa-free partner may be refused. Banned nationalities not found.",
+      "minimum_investment": {
+        "amount": 235000,
+        "currency": "USD"
+      },
+      "investment_options": "NTF USD 235,000; approved real estate USD 270,000 or USD 350,000 (official page unlabeled; secondary sources say fractional share vs full ownership).",
+      "government_fees": {
+        "amount": 9000,
+        "currency": "USD"
+      },
+      "fees_note": "1,500 application + 5,000 due diligence + 1,500 processing + 1,000 interview. Passport and oath fees not sourced from IMA Grenada.",
+      "physical_presence": "None stated by IMA Grenada. One secondary source reports a 30-day-within-5-years rule announced for mid-2026; unverified.",
+      "path_to_citizenship_years": 0,
+      "processing_time": "IMA states approval within 60 business days of submission (subject to due diligence and receipt of funds).",
+      "tax_note": "Citizenship alone does not end tax residence elsewhere. Grenada citizens may use the US E-2 treaty visa (not verified against a US source).",
+      "sources": [
+        {
+          "title": "IMA Grenada: Becoming a citizen (investment options and fees)",
+          "url": "https://imagrenada.gd/application-guide/",
+          "publisher": "Investment Migration Agency Grenada",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "IMA Grenada home (press release 22 Sep 2026: independent review of the CBI programme)",
+          "url": "https://imagrenada.gd/",
+          "publisher": "Investment Migration Agency Grenada",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Grenada Citizenship by Investment (Amendment No. 2) Regulations, S.R.O. 15 of 2024",
+          "url": "https://imagrenada.gd/wp-content/uploads/2024/07/S.R.O.-15-of-2024-Grenada-Citizenship-by-Investment-Amendment-No.-2-Regulations.pdf",
+          "publisher": "Government of Grenada",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "cbi_real_estate",
+      "name": "Citizenship by Investment: Approved real estate",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "Invest in an approved Grenada project (hotel, resort, villa) from USD 270,000, plus a USD 50,000 government fee.",
+      "requirements": "Approved project minimum shown as USD 350,000 / USD 270,000 on the IMA page without labels; government fee USD 50,000; application, due diligence, processing and interview fees as for the NTF. Holding period not stated on the page reached.",
+      "minimum_investment": {
+        "amount": 270000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 59000,
+        "currency": "USD"
+      },
+      "fees_note": "50,000 government fee + 9,000 other fees, single applicant. Whether USD 270,000 is a fractional share (secondary sources) is unconfirmed.",
+      "physical_presence": "None stated by IMA Grenada.",
+      "path_to_citizenship_years": 0,
+      "sources": [
+        {
+          "title": "IMA Grenada: Becoming a citizen (investment options and fees)",
+          "url": "https://imagrenada.gd/application-guide/",
+          "publisher": "Investment Migration Agency Grenada",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "IMA Grenada home (press release 22 Sep 2026: independent review of the CBI programme)",
+          "url": "https://imagrenada.gd/",
+          "publisher": "Investment Migration Agency Grenada",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    }
+  ],
+  "open_questions": [
+    "Holding period for real estate, passport and oath fees, residence requirement and banned nationalities not found on IMA Grenada pages.",
+    "Due diligence fee: USD 5,000 (application guide) vs USD 6,000 (enquiries page); which is current is unresolved.",
+    "Meaning of 'USD 350,000 / 270,000' on the real estate table (fractional vs full ownership) needs confirming.",
+    "Content of the 22 September 2026 press release on the independent review and Circular No. 3 of 2026 not read.",
+    "Ordinary residence routes (retiree, permanent residence), a reported digital nomad scheme (Remote Employment Act: reported USD 1,500 fee, EC$100,000 income, 1 year; conflicting sources) and US E-2 treaty eligibility were not verified from official sources.",
+    "Ordinary naturalisation residence period not found.",
+    "ECCIRA start date: sources conflict (April 2026, Q2 2026, September 2026, 'late 2026', or not yet operational as of 8 August 2026). Check eccira.org.",
+    "Reported European Commission letter of 25 June 2026 asking the Eastern Caribbean states to end citizenship programmes by 1 June 2028 comes from one professional source (Passport Legacy); not checked against a Commission document."
+  ],
+  "sources": [
+    {
+      "title": "ECCIRA: new Caribbean CBI regulator (status reports conflict)",
+      "url": "https://www.passportlegacy.com/publications/caribbean-citizenship-by-investment-in-2026-eccira-the-eus-2028-letter-and-the-us-proclamation-explained",
+      "publisher": "Passport Legacy",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "GRD",
+  "researched_on": "2026-10-16"
+}

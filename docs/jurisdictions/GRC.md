@@ -67,6 +67,7 @@ Law 2961/2001 as amended by Law 5219/2025 (PwC).
 - Art. 5A beneficiaries: movable property abroad is exempt (Art. 5A(8) Law 4172/2013; see Special regimes).
 - Succession Law 5303/2026 (deaths from 16 Sep 2026) is civil law, not tax. It allows inheritance contracts, and it
   turns the forced share into a monetary claim.
+- Surviving spouse: Category A like children (EUR 150,000 free, then 1% / 5% / 10%, about 9.9% effective on EUR 35 million); under Art. 5A foreign movables are exempt.
 
 ## Wealth tax
 
@@ -140,3 +141,4 @@ Corporate income tax 22% (not re-verified in this research). Dividend withholdin
 - 2026-10-15 (data-quality pass): verified Art. 5A against the statute (amounts, 15 years, conditions, Art. 5A(8) inheritance/gift exemption for foreign movables); raised its capital_gains, dividends and inheritance to high/verified; added prime rent (EUR 6,000) and ACS Athens fee (EUR 16,348).
 - 2026-10-15: inheritance scope set to local assets only for art5a_lump_sum in the structured data (Art. 5A(8) exempts movable property abroad; foreign real estate is outside Greek inheritance tax anyway); previously the scoring applied the rates to the worldwide estate, which overstated the tax.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

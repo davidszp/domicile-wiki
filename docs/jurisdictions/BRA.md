@@ -64,6 +64,8 @@ ITCMD is a state tax on inheritances and gifts, levied on the recipient's acquis
 
 Open points for this tax: Whether Sao Paulo can already tax foreign-situs assets in 2026 (STF Tema 825 required a complementary law; LC 227/2026 now exists but state law and anteriority rules apply) is unclear; scope set to worldwide conservatively. | Sao Paulo small-estate exemptions not modelled; Rio de Janeiro and other states use progressive scales up to 8%.
 
+**Surviving spouse:** No spousal exemption in the Sao Paulo ITCMD law: a surviving spouse who inherits pays the same flat 4% (Lei 10.705/2000 arts. 6 and 16; the only exemptions are small residence and asset ones that do not name the spouse). Other states may differ.
+
 ## Wealth tax
 
 ### Standard regime
@@ -102,7 +104,9 @@ Not researched.
 - Planejamento patrimonial e sucessorio diante do ITCMD progressivo (Freitas Ferraz Advogados, Capital Aberto, Aug 2026) (Capital Aberto / Freitas Ferraz Advogados, professional): https://capitalaberto.com.br/insights/freitas-ferraz-advogados/2026/08/planejamento-patrimonial-e-sucessorio-diante-do-itcmd-progressivo
 - PwC Worldwide Tax Summaries: Brazil - Individual - Residence (PwC, professional): https://taxsummaries.pwc.com/brazil/individual/residence
 - PwC Worldwide Tax Summaries: Brazil - Corporate - Taxes on corporate income (PwC, professional): https://taxsummaries.pwc.com/brazil/corporate/taxes-on-corporate-income
+- Sao Paulo Lei 10.705/2000 (ITCMD): https://www.al.sp.gov.br/repositorio/legislacao/lei/2000/lei-10705-28.12.2000.html
 
 ## Change log
 
 - 2026-10-15: initial research.
+- 2026-10-16: added surviving-spouse treatment.

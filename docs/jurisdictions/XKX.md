@@ -49,6 +49,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `fully_exemp
 - **Business relief:** No business relief relevant (children exempt or not researched). Covers listed portfolios: no.
 - **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
 - **Sources:** [Kosovo – Individual – Other taxes](https://taxsummaries.pwc.com/kosovo/individual/other-taxes)
+- Surviving spouse (`spouse_treatment` `fully_exempt`): Spouse is exempt regardless of value (PwC).
 
 ## Wealth tax
 
@@ -103,3 +104,4 @@ US citizens: No US–Kosovo income tax treaty in the PwC list; US citizens rely 
 - 2026-10-15: initial research.
 - 2026-10-15: cost-of-living pass: added Prishtina prime rent (EUR 1,100/month, median of 75 houses of 200 m² or more on MerrJep.com) and Prishtina High School international high-school tuition (EUR 16,500, 2026–27).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (EUR 1,100).
+- 2026-10-16: added surviving-spouse treatment.

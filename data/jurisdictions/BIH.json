@@ -172,7 +172,9 @@
         "brackets": [],
         "other_transfer_cost_rate": 0,
         "gift_tax": "Sarajevo Canton: gifts taxed at 10%, but gifts to children, spouse and parents of the donor are exempt (Art. 22(2)); movables (cash, securities, claims) are in scope only above BAM 5,000 per item. Zenica-Doboj: first-order donees exempt. RS: gifts from direct-line relatives exempt; gifts between unrelated persons above BAM 10,000 a year taxed.",
-        "gifts_same_as_inheritance": true
+        "gifts_same_as_inheritance": true,
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "Sarajevo Canton: no inheritance tax for first-order heirs or for a spouse inheriting in the second order (Art. 22(1)), and no gift tax on gifts from a spouse (Art. 22(2)(c)); Zenica-Doboj Art. 18 is equivalent; Republika Srpska has no inheritance tax."
       }
     }
   ],

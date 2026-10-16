@@ -134,7 +134,9 @@
         "brackets": [],
         "other_transfer_cost_rate": 0,
         "gift_tax": "Gifts above EUR 5,000 a year are taxable income except between spouses and between parents and children, which are exempt regardless of amount.",
-        "gifts_same_as_inheritance": true
+        "gifts_same_as_inheritance": true,
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "Assets inherited by a spouse, child or parent are exempt regardless of value (PwC Kosovo, Other taxes)."
       }
     }
   ],

@@ -213,7 +213,9 @@
         "open_questions": [
           "Additional deduction for minor children inheriting from a parent (historically EUR 60,000) not verified for 2026.",
           "Whether the 3-year residence tail for Finnish nationals also applies to inheritance and gift tax was not verified."
-        ]
+        ],
+        "spouse_treatment": "taxed",
+        "spouse_note": "The spouse (and registered partner) is in tax class I and pays the same 7%-19% scale as children, with an extra EUR 90,000 spouse deduction from the taxable share (Inheritance and Gift Tax Act 12 §); on a EUR 10 million-plus share the effective rate is about 18.6%. Cohabitants without registration are not spouses."
       },
       "sources": [
         {

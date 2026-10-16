@@ -161,7 +161,9 @@
         "business_relief": "Not researched.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Foreign real estate excluded. Foreign movable assets (securities) of a Greek-resident deceased are taxable (see open question). Art. 5A regime beneficiaries: see that regime.",
-        "domicile_rules": "Greek situs assets taxed regardless of nationality; foreign movables taxed where the deceased was a Greek national or resident."
+        "domicile_rules": "Greek situs assets taxed regardless of nationality; foreign movables taxed where the deceased was a Greek national or resident.",
+        "spouse_treatment": "taxed",
+        "spouse_note": "The spouse (or cohabitation-agreement partner) is Category A like children: first EUR 150,000 free, then 1% / 5% / 10% (about 9.9% effective on EUR 35 million, 10% marginal; Law 2961/2001 as amended by Law 5219/2025)."
       }
     },
     {
@@ -303,7 +305,9 @@
         "gifts_same_as_inheritance": true,
         "foreign_assets": "Movable property abroad (e.g. a foreign securities portfolio) exempt under Art. 5A(8); foreign real estate is outside Greek inheritance tax anyway. Brackets apply to Greek-situs assets only.",
         "domicile_rules": "Exemption tied to the regime (maximum 15 tax years); after it ends, a Greek-resident's foreign movables fall back into the standard scope.",
-        "scope": "local_assets_only"
+        "scope": "local_assets_only",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "Under Art. 5A(8) Law 4172/2013 the regime beneficiary's movable assets abroad passing to a spouse by death are exempt from Greek inheritance tax (deaths from 1 Jan 2020); Greek-situs assets use the standard Category A scale (EUR 150,000 free, then 1% / 5% / 10%)."
       },
       "sources": [
         {

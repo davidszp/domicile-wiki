@@ -1,0 +1,150 @@
+{
+  "name": "Luxembourg",
+  "summary": "EU citizens declare their arrival and get a registration certificate after three months. Non-EU nationals can get an investor permit with EUR 500,000 in a business (existing company with a 5-year commitment, or a new one creating 5 jobs in 3 years) or EUR 3 million in a management structure; a 'private reasons' permit for people living on their own resources, tied to the social minimum wage; or a Blue Card at EUR 65,652 a year. There is no digital nomad visa.",
+  "naturalisation": "Five years of legal residence including the last year uninterrupted, a Luxembourgish language test (speaking A2, listening B1), a 'Living together in the Grand Duchy' course or exam, and a clean record.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Luxembourg does not require renunciation (secondary sources).",
+  "routes": [
+    {
+      "id": "eu_free_movement",
+      "name": "EU/EEA/Swiss free movement",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "EU citizens declare arrival at the commune and get a registration certificate after 3 months.",
+      "requirements": "Directive 2004/38/EC; sufficient resources and health insurance for non-workers. Permanent residence after 5 years.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Luxembourg - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/luxembourg/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5
+    },
+    {
+      "id": "investor_permit",
+      "name": "Residence permit for investors (third-country nationals)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Three-year permit for investing at least EUR 500,000 in a Luxembourg business, or EUR 3 million in a management structure.",
+      "requirements": "Two-step procedure: ministerial approval from abroad, then permit application after arrival with a medical check. Options: EUR 500,000 in an existing company with a 5-year commitment to keep the investment and employment; EUR 500,000 in a new business creating at least 5 jobs within 3 years; EUR 3,000,000 in a management and investment structure. Permit valid 3 years, renewable. Legal basis: Law of 29 August 2008 as amended in 2017.",
+      "physical_presence": "Live in Luxembourg; permit renewable if conditions are kept",
+      "sources": [
+        {
+          "title": "Conditions of residence for investors from third countries",
+          "url": "https://guichet.public.lu/en/citoyens/immigration/plus-3-mois/ressortissant-tiers/investisseur/investisseur-pays-tiers.html",
+          "publisher": "Guichet.lu, Government of Luxembourg",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "EUR"
+      },
+      "investment_options": "EUR 500,000 existing company (5-year commitment); EUR 500,000 new business with 5 jobs in 3 years; EUR 3,000,000 management and investment structure.",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5,
+      "family": "Not covered on the page retrieved.",
+      "tax_note": "A permit does not set tax residence."
+    },
+    {
+      "id": "private_reasons",
+      "name": "Residence for private reasons (own resources)",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Permit for people who can live on their own resources, such as a pension or income earned elsewhere in the EU/Schengen area, without working in Luxembourg.",
+      "requirements": "Resources must come from work in another EU/Schengen state or a pension, assessed against the monthly social minimum wage for unskilled workers (amount in 2026 not retrieved). Appropriate housing and health insurance. Case law and a 2022 bill tightened conditions; current text should be checked.",
+      "physical_presence": "Live in Luxembourg",
+      "sources": [
+        {
+          "title": "Conditions of residence in Luxembourg for private reasons for third-country nationals",
+          "url": "https://guichet.public.lu/en/citoyens/immigration/plus-3-mois/ressortissant-tiers/raisons-privees/sejour-raisons-privees.html",
+          "publisher": "Guichet.lu, Government of Luxembourg",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Stricter conditions for private reasons residence permits",
+          "url": "https://sstlaw.lu/stricter-conditions-for-private-reasons-residence-permits/",
+          "publisher": "SST Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null,
+      "tax_note": "Luxembourg tax residence follows the effective abode / six-month rule."
+    },
+    {
+      "id": "eu_blue_card",
+      "name": "EU Blue Card (work)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored permit for degree-level jobs.",
+      "requirements": "Gross annual salary at least EUR 65,652 for applications from 3 March 2026 (ministerial regulation of 23 February 2026; previously EUR 63,408), contract of at least 6 months, higher qualifications. Below the threshold a salaried-worker permit with labour-market test is needed.",
+      "physical_presence": "Work for the sponsoring employer",
+      "sources": [
+        {
+          "title": "EU Blue Card: increase of minimum salary threshold",
+          "url": "https://www.arendt.com/news-insights/news/eu-blue-card-increase-of-minimum-salary-threshold/",
+          "publisher": "Arendt & Medernach",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 65652,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5
+    }
+  ],
+  "open_questions": [
+    "Investor permit: government fees, processing time, permanent-residence path and third-option details not retrieved; the investor page text was seen only through a search summary.",
+    "Private reasons: 2026 social minimum wage amount and exact income requirement.",
+    "Self-employed / business-creation permit not researched.",
+    "Naturalisation: official guichet.lu page not retrieved (Wikipedia and a relocation site used)."
+  ],
+  "sources": [
+    {
+      "title": "Conditions of residence for investors from third countries",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/plus-3-mois/ressortissant-tiers/investisseur/investisseur-pays-tiers.html",
+      "publisher": "Guichet.lu, Government of Luxembourg",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Conditions of residence in Luxembourg for private reasons for third-country nationals",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/plus-3-mois/ressortissant-tiers/raisons-privees/sejour-raisons-privees.html",
+      "publisher": "Guichet.lu, Government of Luxembourg",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "LUX",
+  "researched_on": "2026-10-16"
+}

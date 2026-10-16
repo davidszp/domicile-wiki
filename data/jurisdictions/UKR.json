@@ -173,7 +173,9 @@
         "other_transfer_cost_rate": 0,
         "gift_tax": "Gifts follow the same rules as inheritances (0% from close family who are Ukrainian tax residents).",
         "gifts_same_as_inheritance": true,
-        "domicile_rules": "Residence of testator and heir decides between 0% and 18%."
+        "domicile_rules": "Residence of testator and heir decides between 0% and 18%.",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "0% personal income tax (and no military levy) when a spouse inherits from a Ukrainian tax-resident decedent (family member of the first or second degree, Tax Code Art. 174); an inheritance from a non-resident decedent is taxed at 18% regardless of relationship, and stamp duty applies to transfers of Ukrainian real estate and vehicles."
       }
     }
   ],

@@ -1,0 +1,42 @@
+{
+  "id": "AUS",
+  "name": "Australia",
+  "researched_on": "2026-10-16",
+  "summary": "A will can generally leave the estate to anyone, but each state and territory lets a court award provision to family and dependants who were left too little. Australia has trust law and the Hague Trusts Convention is in force. There is no private family foundation; only charitable structures exist.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "Each state and territory has a family provision regime, e.g. NSW Succession Act 2006 Ch 3; Vic Administration and Probate Act 1958 Pt IV; Qld Succession Act 1981 Pt 4; WA Family Provision Act 1972; SA Inheritance (Family Provision) Act 1972 (now consolidated in the Succession Act 2023 (SA)); Tas Testators Family Maintenance Act 1912; ACT Family Provision Act 1969; NT Family Provision Act 1970. Eligible persons and the court's powers differ by state; claims can reach assets in a trust only in NSW through 'notional estate' orders.",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "No choice of law by nationality. Succession to land follows the law of the place where it lies; succession to movables follows the deceased's last domicile (common-law conflict rules), so a foreign domiciliary's movables are governed by foreign law, but Australian land and family provision claims on Australian-domiciled estates are not avoided.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "Convention in force for Australia since 1 Jan 1992 (ratified 17 Oct 1991). Trusts are governed by state Trusts/Trustee Acts and general law; foreign trusts are recognised. Trust income is taxed under the trust regime (Div 6 ITAA 1936), with special rules for non-resident trusts and the Foreign Resident CGT regime. There is no private foundation law; 'private ancillary funds' are charitable only.",
+  "open_questions": [
+    "Confirm the 'notional estate' scope outside NSW and the exact family-provision statute section numbers per state.",
+    "Confirm whether the Convention covers external territories (Norfolk Island etc.); the HCCH table lists no extension."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table, Convention of 1 July 1985 on the Law Applicable to Trusts",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Succession Act 2006 (NSW)",
+      "url": "https://legislation.nsw.gov.au/view/html/inforce/current/act-2006-080",
+      "publisher": "NSW Government",
+      "kind": "legislation"
+    },
+    {
+      "title": "Succession Act 2023 (SA)",
+      "url": "https://www.legislation.sa.gov.au/_legislation-documents/lz/c/a/succession-act-2023/current/2023.30.un.rtf",
+      "publisher": "SA Government",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

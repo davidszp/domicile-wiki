@@ -210,7 +210,9 @@
         "business_relief": "Not needed: no inheritance tax on shares.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "No tax on inherited securities wherever held; the 1% late-succession charge concerns real estate.",
-        "domicile_rules": "Not relevant in practice since transfers to children are untaxed (subject to the 2-year rule for real estate)."
+        "domicile_rules": "Not relevant in practice since transfers to children are untaxed (subject to the 2-year rule for real estate).",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "No inheritance tax if the succession is finalised before a notary within 2 years of death; otherwise heirs owe 1% of the inherited real estate (Fiscal Code Art. 111(3)), and no spouse-specific relief was found."
       },
       "sources": [
         {

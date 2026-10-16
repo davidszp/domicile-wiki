@@ -161,6 +161,8 @@
         ],
         "basis": "beneficiary",
         "children_treatment": "taxed_low",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "Property disposed of by way of inheritance to a spouse on the death of the other spouse is exempt from capital transfer tax (Capital Transfer Tax Act, Cap. 53:02, s. 4 exemptions; listed by BURS).",
         "exemption": 0,
         "brackets": [
           {

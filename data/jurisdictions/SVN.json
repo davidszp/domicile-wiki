@@ -192,7 +192,9 @@
         "gift_tax": "Same tax as inheritance; gifts to children are exempt. Gifts must be declared within 15 days.",
         "gifts_same_as_inheritance": true,
         "foreign_assets": "Applies to property received by Slovenian residents, including foreign assets; children exempt regardless.",
-        "domicile_rules": "Liability attaches to the recipient's residence or the location of Slovenian property; no tail rules found."
+        "domicile_rules": "Liability attaches to the recipient's residence or the location of Slovenian property; no tail rules found.",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "Spouse and unmarried (extramarital) partner of the deceased are first-order heirs, fully exempt from inheritance and gift tax (ZDDD Art. 9; FURS)."
       },
       "sources": [
         {

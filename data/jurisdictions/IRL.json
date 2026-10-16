@@ -225,7 +225,9 @@
         "business_relief": "Business relief reduces the taxable value of relevant business property by 90% under conditions; it does not extend to portfolio investments in listed shares (not verified on an official page in this session).",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Worldwide assets in scope if disponer or beneficiary is resident or ordinarily resident (subject to the five-year rule for non-domiciled persons). Foreign inheritance tax can be credited.",
-        "domicile_rules": "Scope follows residence or ordinary residence of either party; a person stays ordinarily resident for three years after leaving. Non-domiciled persons are treated as in scope only after five consecutive years of residence."
+        "domicile_rules": "Scope follows residence or ordinary residence of either party; a person stays ordinarily resident for three years after leaving. Non-domiciled persons are treated as in scope only after five consecutive years of residence.",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "An inheritance taken by the spouse of the disponer at the date of the inheritance is exempt from CAT and is not aggregated (CATCA 2003 s.71; gifts s.70); civil partners are treated the same since 2011."
       }
     },
     {

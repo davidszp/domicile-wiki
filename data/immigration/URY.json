@@ -1,0 +1,133 @@
+{
+  "id": "URY",
+  "name": "Uruguay",
+  "researched_on": "2026-10-16",
+  "summary": "Uruguay gives legal residence without any investment: proof of lawful income, housing and a clean record is enough, and Mercosur-area nationals have an easier route. A separate tax regime from 1 January 2026 grants an 11-year foreign-income tax holiday for buying about USD 2.1 million of property or investing about USD 105,000 a year in innovation funds. Remote workers get a 6-month renewable visa with no income test.",
+  "naturalisation": "Five years of legal residence for single applicants, three years for married applicants living with their family; Spanish, clean record.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Uruguay does not require renunciation of another nationality (general position; not source-checked in this session).",
+  "routes": [
+    {
+      "id": "legal_residence",
+      "name": "Legal residence (temporary or permanent)",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Ordinary residence in Uruguay needs no investment: apply with proof of lawful income, housing, clean record and health certificate. Right to work comes with the residence card.",
+      "requirements": "Applications to the Direccion Nacional de Migracion. Chambers states there are no quotas or investment requirements for immigration; proof of income at least the national minimum wage (the page is inconsistent on the exact figure); criminal record, health card. Uruguay has no standalone work permit: the right to work comes from the residence card. Fees for residence not stated in the source.",
+      "physical_presence": "Not stated in the sources reviewed; residence is kept by living in Uruguay",
+      "sources": [
+        {
+          "title": "Corporate Immigration 2026: Uruguay",
+          "url": "https://practiceguides.chambers.com/practice-guides/corporate-immigration-2026/uruguay",
+          "publisher": "Chambers and Partners",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": 5,
+      "family": "Spouses and children may apply; married applicants living with family qualify for citizenship earlier.",
+      "tax_note": "Legal residence does not by itself decide tax residence (183 days, centre of interests or the investment presumptions apply)."
+    },
+    {
+      "id": "mercosur",
+      "name": "Mercosur residence agreement",
+      "kind": "other",
+      "citizenships": [
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Nationals of Mercosur members and associated states (almost all of South America) get residence on simpler terms, with fewer documents and no income proof.",
+      "requirements": "Nationality of a Mercosur member or associated state; reduced paperwork and faster processing per Chambers. Not available to EU or US citizens.",
+      "physical_presence": "Not stated in the sources reviewed",
+      "sources": [
+        {
+          "title": "Corporate Immigration 2026: Uruguay",
+          "url": "https://practiceguides.chambers.com/practice-guides/corporate-immigration-2026/uruguay",
+          "publisher": "Chambers and Partners",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_citizenship_years": 5,
+      "only_some_nationalities": true
+    },
+    {
+      "id": "tax_residence_investment",
+      "name": "Tax residence by investment (new regime from 1 January 2026)",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A 11-year tax holiday on foreign income for new tax residents who buy about USD 2.1 million of Uruguayan property or put about USD 105,000 a year into 'Uruguay Innova' funds. Presence of 183 days is the alternative.",
+      "requirements": "From 1 January 2026 (Law 20.446, Decree 188/026 per Andersen): for people without tax residence elsewhere, either urban real estate over UI 12,500,000 (about USD 2.1 million; the computable value rises 50% for interior property) or UI 625,000 a year (about USD 105,000) in 'Uruguay Innova' funds, or more than 183 days a year. Tax holiday for the year of application plus 10 years (11 total), then ordinary IRPF, or a 50% IRPF cut for 5 more years with a further USD 1.05 million of property, or a fixed annual fee of USD 200,000 to 315,000 for up to 20 years. People who opted into the previous regime (about UI 3.5 million property plus 60 days, or UI 15 million in a company with 15 jobs) before the end of 2025 keep their conditions. This is a tax-residence regime; immigration residence is a separate application.",
+      "physical_presence": "More than 183 days a year, or the investment test (check Decree 188/026 for any minimum days)",
+      "sources": [
+        {
+          "title": "Uruguay 2026: nueva hoja de ruta para residentes fiscales e inversores",
+          "url": "https://www.forvismazars.com/uy/en/insights/our-publications/tax/uruguay-2026-residencia-fiscal-e-inversores",
+          "publisher": "Forvis Mazars Uruguay",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Reglamentacion de inversiones para residencia fiscal y tax holiday",
+          "url": "https://uy.andersen.com/documents/REGLAMENTACI_N_DE_INVERSIONES_PARA_RESIDENCIA_FISCAL_Y_TAX_HOLIDAY_pdf_1788273355.pdf",
+          "publisher": "Andersen Uruguay",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 12500000,
+        "currency": "UYI"
+      },
+      "investment_options": "UI 12,500,000 (about USD 2.062 million) in property; or UI 625,000 a year in Uruguay Innova funds; or 183+ days a year with no investment.",
+      "tax_note": "New tax residents: exemption of foreign-source income for the year of application plus 10 years (IRNR exemption period).",
+      "fees_note": "The minimum is stated in unidades indexadas (UI); USD figures are the sources' approximations."
+    },
+    {
+      "id": "digital_nomad",
+      "name": "Digital nomad visa",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Six-month visa for unsponsored remote workers, renewable once for six months. No minimum income; a good-faith affidavit is used.",
+      "requirements": "Remote worker not employed in Uruguay; six months, renewable for six months; individual application (spouses may apply separately, children cannot be included); holders may move to temporary or permanent residency without leaving if they form local ties. Chambers states no minimum income; other sites cite USD 1,300 to 1,500 a month as a practical level.",
+      "physical_presence": "Up to 6 months per grant, renewable once",
+      "sources": [
+        {
+          "title": "Corporate Immigration 2026: Uruguay",
+          "url": "https://practiceguides.chambers.com/practice-guides/corporate-immigration-2026/uruguay",
+          "publisher": "Chambers and Partners",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "tax_note": "A digital nomad visa does not by itself change tax residence."
+    }
+  ],
+  "open_questions": [
+    "Residence fees and the exact income proof for legal residence were not stated; government_fees left null.",
+    "Decree 188/026 and Law 20.446 were not read directly; the new tax-residence figures come from Forvis Mazars and Andersen Uruguay.",
+    "Minimum presence days under the new tax-residence investment options are not stated in the sources reviewed.",
+    "UYI is used as the ISO currency code for the unidad indexada; USD equivalents are approximations from the sources."
+  ],
+  "sources": []
+}

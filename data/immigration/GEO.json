@@ -1,0 +1,245 @@
+{
+  "id": "GEO",
+  "name": "Georgia",
+  "summary": "Georgia is not in the EU. Citizens of the EU, the US and many other countries can enter without a visa and stay up to one year, so many people never need a permit. Longer-term options are a one-year renewable permit for owning property (now USD 150,000 from 1 March 2026), an investor permit from USD 300,000 giving 5 years, and a remote-worker status. Work permits tie to business turnover.",
+  "naturalisation": "Reported 10 years of continuous legal residence with language, history and law tests; the President can grant citizenship for special merit without residence. Secondary sources; statute article not read.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Organic Law: a Georgian citizen may not hold another citizenship except as provided in Article 17; in practice exceptions are granted by presidential decision.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "183 days in a 12-month period makes you tax resident in Georgia (Tax Code art. 34).",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "visa_free_stay",
+      "name": "Visa-free stay up to one year",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Citizens of the EU, US and about 94 other countries can enter on a passport and stay up to a year without a visa. It is not a residence permit and carries no path to permanent residence.",
+      "requirements": "Passport (EU citizens may use a national ID card); stay up to one year per entry according to travel and news sources. Stricter rules apply to some nationalities from 16 May 2025. Official Ministry of Foreign Affairs list not read.",
+      "physical_presence": "Up to one year per entry; no residence rights",
+      "sources": [
+        {
+          "title": "Georgia Restores One-Year Visa-Free Rules",
+          "url": "https://oldwp.civil.ge/?p=124665",
+          "publisher": "Civil.ge",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Tax Code of Georgia (consolidated 30/09/2026)",
+          "url": "https://matsne.gov.ge/en/document/view/1043717",
+          "publisher": "Legislative Herald of Georgia (Matsne)",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "Spouse and children under the same investment.",
+      "tax_note": "Permit does not make you tax resident; 183 days does.",
+      "minimum_investment": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "property_residence",
+      "name": "Temporary residence on real estate (USD 150,000 from 1 March 2026)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Owning Georgian real estate worth at least USD 150,000 gives a one-year renewable temporary residence permit. The limit rose from USD 100,000 on 1 March 2026.",
+      "requirements": "Property valued at market value of at least USD 150,000 (multiple properties may be combined; appraisal by an accredited appraiser). Applies to applications from 1 March 2026; existing holders renew on the old terms while they keep the property. Spouse and children included. Announced by government document linked on matsne.gov.ge; amendments to the Law on the Legal Status of Aliens passed on 25 June 2026 take effect 1 September 2026 (focus on students and spouses; investor changes not confirmed).",
+      "physical_presence": "No minimum stated in sources found",
+      "sources": [
+        {
+          "title": "Georgia to Increase Real Estate Investment Threshold for Residence Permits Effective March 1, 2026",
+          "url": "https://eiglaw.com/georgia-to-increase-real-estate-investment-threshold-for-residence-permits-effective-march-1-2026/",
+          "publisher": "EIG Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Georgia's immigration rules 2026",
+          "url": "https://expathub.ge/georgias-immigration-rules-2026/",
+          "publisher": "ExpatHub.ge",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "Spouse and children under 18.",
+      "tax_note": "",
+      "minimum_investment": {
+        "amount": 300000,
+        "currency": "USD"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "id": "investor_300k",
+      "name": "Investor residence permit (USD 300,000, 5 years)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Investing USD 300,000 in Georgian real estate or a Georgian business gives a five-year permit for the investor, spouse and children, with permanent residence later if conditions are met.",
+      "requirements": "Investment of at least USD 300,000 (law amendment of 2019 raised it from the earlier level and replaced immediate permanent residence by a 5-year initial permit). Reported turnover tests for the investment: USD 50,000 in year 1, USD 100,000 in year 2, USD 120,000 in years 3 to 5 (OCCRP); not confirmed against the current law. The permit is lost if the qualifying property is resold within the five years.",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Georgia: We Love You! We Hate You! Do We Need You?",
+          "url": "https://www.occrp.org/en/goldforvisas/we-love-you-we-hate-you-do-we-need-you",
+          "publisher": "OCCRP",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Georgia to Increase Real Estate Investment Threshold for Residence Permits Effective March 1, 2026",
+          "url": "https://eiglaw.com/georgia-to-increase-real-estate-investment-threshold-for-residence-permits-effective-march-1-2026/",
+          "publisher": "EIG Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Reported 0% Georgian tax on foreign-source income for the period (unverified).",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "remotely_from_georgia",
+      "name": "Remotely from Georgia status",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A programme for remote workers with foreign employers or clients, reported to give up to one year of stay. Sources disagree on the income test.",
+      "requirements": "Reported: remote work for foreign employers, income of USD 2,000 a month (two sources) or EUR 22,000 a year (one source), or savings of USD 24,000; foreign-source income. Not read from an official page, so the figures are unverified.",
+      "physical_presence": "Reported 183 days a year cap",
+      "sources": [
+        {
+          "title": "Remotely from Georgia (summary)",
+          "url": "https://lottalingo.com/research/visas/georgia-remotely-from-georgia",
+          "publisher": "Lottalingo",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "work_permit",
+      "name": "Work residence permit (summary)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Employed foreigners get a work residence permit; a business generally needs turnover of GEL 50,000 per foreign employee.",
+      "requirements": "Normally business turnover of GEL 50,000 per foreign employee (GEL 35,000 for educational or medical businesses); newly registered businesses can get a permit valid for 6 months only (ExpatHub.ge summary of the law taking effect 1 September 2026).",
+      "physical_presence": "Residence at place of work",
+      "sources": [
+        {
+          "title": "Georgia's immigration rules 2026",
+          "url": "https://expathub.ge/georgias-immigration-rules-2026/",
+          "publisher": "ExpatHub.ge",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Official PSDA / Ministry of Justice / MFA pages could not be opened; all residence-by-investment details come from law firm and news summaries.",
+    "Whether the USD 150,000 property threshold is enacted in law (versus government practice) and what the 1 September 2026 amendments change for investors.",
+    "Investor permit (USD 300,000) current turnover tests and conditions not confirmed from the law text.",
+    "Remotely from Georgia: official source, fee, and the income threshold (USD 2,000 a month versus EUR 22,000 a year) unconfirmed; minimum_income left empty.",
+    "Government fees not sourced for any route.",
+    "Visa-free list and one-year rule not checked against an official MFA page; stricter rules from 16 May 2025 for some nationalities.",
+    "Naturalisation period (10 years) from secondary sources; Article 17 dual-citizenship exceptions not read."
+  ],
+  "sources": [
+    {
+      "title": "Georgia to Increase Real Estate Investment Threshold for Residence Permits Effective March 1, 2026",
+      "url": "https://eiglaw.com/georgia-to-increase-real-estate-investment-threshold-for-residence-permits-effective-march-1-2026/",
+      "publisher": "EIG Law",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Organic Law of Georgia on Georgian Citizenship",
+      "url": "https://matsne.gov.ge/en/document/view/2342552",
+      "publisher": "Legislative Herald of Georgia (Matsne)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tax Code of Georgia (consolidated 30/09/2026)",
+      "url": "https://matsne.gov.ge/en/document/view/1043717",
+      "publisher": "Legislative Herald of Georgia (Matsne)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

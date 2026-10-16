@@ -67,6 +67,7 @@ church membership. All cantonal figures were computed with the official ESTV tax
 
 - Federal vote of 30 November 2025: the JUSO "Initiative für eine Zukunft" (50% federal inheritance and gift tax above
   CHF 50 million) was rejected with 21.7% yes and by all 26 cantons (official BFS result). No federal inheritance tax.
+- Surviving spouse (`spouse_treatment` `fully_exempt`): Spouse: exempt in the cantonal tariffs (ESTV Steuermäppchen 2025) and per PwC's inheritance and gift tax chart (cantonal and communal level), even in Vaud and Neuchâtel where children are taxed; registered partners too.
 
 ## Wealth tax
 
@@ -159,9 +160,11 @@ Zurich.
 - [Verordnung über den Normalarbeitsvertrag für Arbeitnehmer in der Hauswirtschaft (NAV Hauswirtschaft), SR 221.215.329.4, as of 1 January 2026](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2010/724/20260101/de/html/fedlex-data-admin-ch-eli-cc-2010-724-20260101-de-html.html)
 - [ImmoStreet.ch: Haus mieten, Zürich (listing sample)](https://www.immostreet.ch/de/mieten/haus/zuerich) — ImmoStreet.ch (other)
 - [Eidgenössische Volksabstimmung vom 30. November 2025: Resultate (OGD, Bundesamt für Statistik / opendata.swiss)](https://ogd-static.voteinfo-app.ch/v1/ogd/sd-t-17-02-20251130-eidgAbstimmung.json) — Swiss Federal Statistical Office (BFS) (government)
+- [PwC Worldwide Tax Summaries: Inheritance and gift tax rates (quick chart; Switzerland spouse exempt)](https://taxsummaries.pwc.com/quick-charts/inheritance-and-gift-tax-rates)
 
 ## Change log
 - 2026-10-15: initial research.
 - 2026-10-15: added duration_note to the lump-sum regime (no statutory limit; ends on naturalisation, Swiss gainful activity or cantonal abolition); recorded the official result of the 30 November 2025 vote on the JUSO inheritance-tax initiative (rejected, 21.7% yes, all cantons); added Zurich prime rent (ImmoStreet sample, CHF 6,435/month).
 - 2026-10-15: Holding structures section: no structure modelled (private capital gains already untaxed).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

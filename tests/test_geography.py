@@ -3,10 +3,10 @@
 import json
 
 import pytest
-from shapely.geometry import Point, box, shape
+from shapely.geometry import Point, shape
 from shapely.validation import explain_validity
 
-from conftest import ROOT, WEB, countries, decode_topojson, geom, regions, scores, views
+from conftest import ROOT, WEB, countries, decode_topojson, geom, regions, scores
 
 KM = 1 / 111.0  # degrees of latitude per km (good enough for small tolerances)
 
@@ -103,7 +103,7 @@ def test_all_source_geometries_valid_after_repair():
     assert not bad, bad
 
 
-@pytest.mark.parametrize("topo,obj", [("world.topo.json", "countries"), ("detail.topo.json", "countries"), ("regions.topo.json", "regions")])
+@pytest.mark.parametrize("topo,obj", [("world.topo.json", "countries"), ("detail.topo.json", "countries")])
 def test_web_topologies_are_valid_and_complete(topo, obj):
     feats = decode_topojson(WEB / topo, obj)
     ids = [f["properties"]["id"] for f in feats]
@@ -133,8 +133,7 @@ def test_label_points_lie_inside_their_feature():
     wrong = []
     for fid, f in countries().items():
         p = f["properties"]
-        important = data.get(fid, {}).get("researched") or fid in {i for v in views().values() for i in v.get("must_include", [])}
-        if important and not near(fid, p["lx"], p["ly"], 3):
+        if data.get(fid, {}).get("researched") and not near(fid, p["lx"], p["ly"], 3):
             wrong.append(fid)
     assert not wrong, f"label points outside their feature: {wrong}"
 
@@ -162,28 +161,30 @@ def test_every_researched_marker_is_inside_its_jurisdiction():
     assert not wrong, "markers outside their jurisdiction:\n" + "\n".join(wrong)
 
 
-def test_views_contain_what_they_promise():
-    vs = views()
-    for vid, v in vs.items():
-        for fid in v.get("must_include", []):
-            assert fid in countries(), f"{vid}: unknown id {fid}"
-            if v.get("bbox"):
-                p = countries()[fid]["properties"]
-                x0, y0, x1, y1 = v["bbox"]
-                assert x0 <= p["lx"] <= x1 and y0 <= p["ly"] <= y1, f"{fid} label point outside the {vid} view"
-        for rid in v.get("must_include_regions", []):
-            assert rid in regions() and regions()[rid]["properties"]["parent"] in v["regions"], f"{vid}: {rid}"
-        for ins in v.get("insets", []):
-            for fid in ins["must_include"]:
-                assert box(*ins["bbox"]).intersects(geom(fid)), f"inset {ins['id']} misses {fid}"
-                # Bermuda is far outside the main Caribbean frame, which is why it needs an inset.
-                assert not box(*v["bbox"]).intersects(geom(fid))
+@pytest.mark.parametrize("place,lonlat,owner", [
+    ("Simferopol, Crimea", (34.10, 44.95), "UKR"),  # UN General Assembly resolution 68/262
+    ("Sevastopol", (33.52, 44.60), "UKR"),
+    ("Katzrin, Golan Heights", (35.69, 32.99), "SYR"),  # UN Security Council resolution 497
+    ("Old City, East Jerusalem", (35.234, 31.777), "PSE"),  # UN Security Council resolutions 478, 2334
+    ("Tel Aviv", (34.78, 32.08), "ISR"),
+    ("Rostov-on-Don", (39.72, 47.23), "RUS"),
+])
+def test_borders_follow_the_un_not_de_facto_control(place, lonlat, owner):
+    from shapely.geometry import Point, shape
+    feats = json.loads((ROOT / "data" / "build" / "countries.geojson").read_text())["features"]
+    hits = [f["properties"]["id"] for f in feats if shape(f["geometry"]).buffer(0).contains(Point(*lonlat))]
+    assert hits == [owner], (place, hits)
 
 
-def test_world_hotspots_cover_their_jurisdictions():
-    vs = views()
-    eu = box(*vs["europe"]["bbox"])
-    for fid in ("CYP", "MLT", "ISL", "CHE", "PRT", "FIN"):
-        assert eu.intersects(geom(fid)), fid
-    assert box(*vs["uae"]["bbox"]).contains(geom("AE-DU").representative_point())
-    assert not box(*vs["uae"]["bbox"]).intersects(geom("CYP"))
+def test_non_member_states_are_territories_not_countries():
+    j = scores()["jurisdictions"]
+    for tid in ("CYN", "CNM", "SOL", "PSE", "ESH", "ATA"):
+        assert j[tid]["level"] == "territory" and j[tid]["territory"]["sources"], tid
+        assert not j[tid].get("eu"), tid
+    assert j["CYN"]["parent"] == "CYP" and j["SOL"]["parent"] == "SOM"
+
+
+def test_taiwan_and_kosovo_stay_ranked_with_a_note():
+    j = scores()["jurisdictions"]
+    for jid in ("TWN", "XKX"):
+        assert j[jid]["level"] == "country" and j[jid]["researched"] and j[jid]["non_member"]["sources"], jid

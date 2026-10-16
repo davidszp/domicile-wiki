@@ -1,0 +1,36 @@
+{
+  "summary": "Heirs unable to work are guaranteed at least half of what they would have inherited, whatever the will says. Moldova has no full trust law and is outside the Hague Trusts Convention. Foundations exist as non-commercial entities.",
+  "forced_heirship": "yes",
+  "reserved_share": "First-class heirs unable to work: at least 1/2 of their intestate share; Civil Code art. 1505 (per an academic article; to be confirmed).",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "The Civil Code (Book Five) contains conflict rules based on the law of the deceased's last domicile; a choice of national law was not confirmed.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "Only fiduciary administration of property exists, not a trust. Foundations are governed by the Law on Foundations (Law 581/1999) for non-profit purposes.",
+  "open_questions": [
+    "Confirm art. 1505 and the circle of reserved heirs.",
+    "Conflict rule and choice of law for succession.",
+    "Whether a family foundation is allowed."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Civil Code of Moldova",
+      "url": "https://www.legis.md",
+      "publisher": "Ministry of Justice of Moldova",
+      "kind": "legislation"
+    }
+  ],
+  "family_claims": "",
+  "id": "MDA",
+  "name": "Moldova",
+  "researched_on": "2026-10-16"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "LSO",
+  "name": "Lesotho",
+  "researched_on": "2026-10-16",
+  "summary": "The Administration of Estates and Inheritance Act 2024 (in force 2 April 2024) replaced the Wills Ordinance and Law of Inheritance Act, and is reported to let people draft wills freely. Customary law still has a place for customary estates. Trusts and foundations were not sourced.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "The 2024 Act expands spouse inheritance rights for customary marriages (ss. 71-72, reported); whether it gives a court-ordered family provision was not confirmed.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source found.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "unclear",
+  "private_foundations": "no",
+  "trust_note": "Trusts: not sourced; 'yes' assumes Roman-Dutch/common-law trusts; unverified. No private-foundation law found.",
+  "open_questions": [
+    "Text of the 2024 Act not read (site blocked); reported freedom of testation and family rights need checking.",
+    "Whether the 1935 Proclamation survives.",
+    "Trusts and foundations not sourced.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here.",
+    "Domestic trusts: likely available under the inherited common-law or Roman-Dutch tradition, but no statute or official source was read; confirm before marking yes."
+  ],
+  "sources": [
+    {
+      "title": "Administration of Estates and Inheritance Act 2024 (Act 2 of 2024)",
+      "url": "https://lesotholii.org/akn/ls/act/2024/2/eng@2024-04-02/source",
+      "publisher": "LesothoLII",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Lesotho 2024 Estates and Succession Law",
+      "url": "https://policyvault.africa/?p=88577",
+      "publisher": "Policy Vault Africa",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

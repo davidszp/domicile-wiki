@@ -18,3 +18,6 @@ CLAUDE.local.md
 !.dev.vars.example
 .env*
 !.env.example
+
+# Fuzzer screenshots and reports (tools/fuzz)
+.fuzz-out/

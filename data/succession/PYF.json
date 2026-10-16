@@ -1,0 +1,37 @@
+{
+  "id": "PYF",
+  "name": "French Polynesia",
+  "researched_on": "2026-10-16",
+  "summary": "French civil law applies, so children have a protected share (the réserve) that a will cannot cut. A foreign resident cannot choose their national law, and the EU Succession Regulation does not apply. The Hague Trusts Convention is not in force for France.",
+  "forced_heirship": "yes",
+  "reserved_share": "Children: 1/2 with one child, 2/3 with two, 3/4 with three or more (Code civil art 913); if no descendants, a surviving spouse 1/4 (art 914-1).",
+  "family_claims": "",
+  "foreign_law_choice": "no",
+  "foreign_law_note": "The EU Succession Regulation does not apply in French Polynesia (an overseas country and territory). Under French common-law conflict rules, land follows the law of its location and movables the last domicile, so a resident cannot select national law (not verified from a Polynesian source).",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "The fiducie (Code civil arts 2011 ff.) is a statutory trust with narrow uses; its extension to French Polynesia was not verified. France has signed but not ratified the Hague Trusts Convention. Foundations: only charitable forms known in France; local availability not verified.",
+  "open_questions": [
+    "Which civil law rules apply locally and how the réserve applies to land under local land-tenure rules.",
+    "Whether fiducie and fondation law extend to French Polynesia.",
+    "Local sources not found in this research.",
+    "The HCCH table as retrieved shows no entry for this jurisdiction (the retrieved copy was marked last updated 2017 and its territorial-extension notes could not be read); re-check the live table."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table, Convention of 1 July 1985 on the Law Applicable to Trusts",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Code civil",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/",
+      "publisher": "Legifrance",
+      "kind": "legislation"
+    }
+  ]
+}

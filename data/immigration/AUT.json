@@ -1,0 +1,162 @@
+{
+  "name": "Austria",
+  "summary": "EU citizens register and get an Anmeldebescheinigung after three months. Austria has no golden visa. Non-EU people of independent means can apply for a Niederlassungsbewilligung - ausgenommen Erwerbstaetigkeit (the 'Privatier' permit): it needs a free place in a small annual quota (385 in 2025) and monthly income of twice the pension compensation rate (twice EUR 1,308.39 in 2026). Citizenship for 'extraordinary merit' (Section 10(6)) is discretionary and not sold at a fixed price.",
+  "naturalisation": "Ordinarily 10 years of legal residence (reported, with at least 5 as a permanent resident), German at B2, secure income, no criminal record, and a citizenship test. A reform was announced for 2026; its content was not found. From secondary sources and background knowledge, not an official page.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Austria generally requires giving up the previous citizenship, with exceptions (for example descendants of Nazi-persecution victims, or citizenship granted for extraordinary merit in the state's interest). Not verified on an official page.",
+  "routes": [
+    {
+      "id": "eu_free_movement",
+      "name": "EU/EEA/Swiss free movement",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "EU citizens register and receive an Anmeldebescheinigung after three months; no permit.",
+      "requirements": "Directive 2004/38/EC, implemented in the NAG. Non-workers need sufficient funds and health insurance. Permanent residence after 5 years.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Austria - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/austria/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 5
+    },
+    {
+      "id": "privatier_permit",
+      "name": "Settlement permit except gainful employment (Privatier)",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Residence for people of independent means who will not work in Austria, subject to a small annual quota.",
+      "requirements": "Section 44 NAG: a free place in the annual quota (Privatiers: 385 places in the draft 2025 regulation; 2026 figure not found); fixed regular monthly income of at least twice the Ausgleichszulage Richtsatz of Section 293 ASVG (twice EUR 1,308.39 for a single person in 2026, so at least EUR 2,616.78 a month; the number of annual payments used was not confirmed); accommodation, health insurance, no public-funds burden; German language at A1 before the permit under the integration rules (not verified).",
+      "physical_presence": "Live in Austria; the permit does not allow gainful employment",
+      "sources": [
+        {
+          "title": "Section 44 NAG: Niederlassungsbewilligung - ausgenommen Erwerbstaetigkeit (RIS consolidated)",
+          "url": "https://www.ris.bka.gv.at/eli/bgbl/i/2005/100/P44/NOR40231593",
+          "publisher": "RIS, Austrian Federal Chancellery",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Section 44 NAG (jusline)",
+          "url": "https://www.jusline.at/paragraphs/history/61178",
+          "publisher": "Jusline",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Ausgleichszulage Richtsaetze 2026",
+          "url": "https://www.oesterreich.gv.at/themen/arbeit_beruf_und_pension/pension/Seite.270224.html",
+          "publisher": "oesterreich.gv.at, Austrian Government",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Explanatory notes to the Settlement Ordinance (BMI)",
+          "url": "https://www.bmi.gv.at/401/files/NLV/Erlaeuterungen.pdf",
+          "publisher": "Federal Ministry of the Interior",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null,
+      "path_to_permanent_years": 5,
+      "family": "Family reunification possible; quota rules not sourced.",
+      "tax_note": "Austrian unlimited tax liability follows domicile or habitual abode, not the permit."
+    },
+    {
+      "id": "merit_citizenship",
+      "name": "Citizenship for extraordinary merit (Section 10(6) StbG)",
+      "kind": "citizenship_by_investment",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "citizenship",
+      "summary": "Discretionary citizenship for exceptional achievements in art, science, economy or sport that serve the Republic's interest; large investment alone is not enough.",
+      "requirements": "Government decision (no appeal); achievements must clearly exceed the norm; the grant must be in Austria's interest. Commentators discuss figures from EUR 3 million to 10 million with no fixed price and no guarantee; none is official. Requires no prior residence and may allow keeping the old nationality.",
+      "physical_presence": "None specified",
+      "sources": [
+        {
+          "title": "Navigating Austria's merit-based citizenship",
+          "url": "https://investmentmigration.org/articles/navigating-austrias-merit-based-citizenship/",
+          "publisher": "Investment Migration Council",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "status_note": "",
+      "minimum_investment": null,
+      "investment_options": "No fixed amount; case-by-case.",
+      "path_to_citizenship_years": null,
+      "tax_note": "Citizenship does not set tax residence."
+    },
+    {
+      "id": "blue_card_rwr",
+      "name": "EU Blue Card and Red-White-Red Card (work)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored permits for skilled workers, key workers and graduates.",
+      "requirements": "EU Blue Card: reported gross annual salary EUR 55,678 for 2026 (14 payments), degree of at least three years, job offer of at least 6 months; valid up to 24 months, then Red-White-Red Card plus. Other key workers: EUR 3,465 gross a month in 2026. Secondary sources only.",
+      "physical_presence": "Work for the sponsoring employer",
+      "sources": [
+        {
+          "title": "The EU Blue Card: an overview",
+          "url": "https://www.workinaustria.com/en/about-us/the-eu-blue-card-an-overview",
+          "publisher": "Work in Austria, Austrian Government",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 55678,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": 5,
+      "tax_note": "Taxed as resident if domicile or habitual abode is in Austria."
+    }
+  ],
+  "open_questions": [
+    "Privatier permit: 2026 quota number, number of ASVG payments for the monthly threshold (12 or 14), language requirement and fees not found.",
+    "Blue Card EUR 55,678 and other key worker EUR 3,465: confirm on BMI / oesterreich.gv.at (secondary sources).",
+    "Naturalisation: official oesterreich.gv.at requirements and the announced 2026 reform; dual-citizenship exceptions.",
+    "Merit citizenship: no official criteria or amount; the process and any 2026 amendment unconfirmed.",
+    "No digital nomad or business-owner route recorded; Red-White-Red Card self-employed key workers not researched."
+  ],
+  "sources": [
+    {
+      "title": "Section 44 NAG: Niederlassungsbewilligung - ausgenommen Erwerbstaetigkeit (RIS consolidated)",
+      "url": "https://www.ris.bka.gv.at/eli/bgbl/i/2005/100/P44/NOR40231593",
+      "publisher": "RIS, Austrian Federal Chancellery",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ausgleichszulage Richtsaetze 2026",
+      "url": "https://www.oesterreich.gv.at/themen/arbeit_beruf_und_pension/pension/Seite.270224.html",
+      "publisher": "oesterreich.gv.at, Austrian Government",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "AUT",
+  "researched_on": "2026-10-16"
+}

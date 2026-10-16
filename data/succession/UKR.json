@@ -1,0 +1,36 @@
+{
+  "summary": "Minor or disabled children, a disabled spouse and parents are guaranteed half of their intestate share. Ukraine has no trust law and is outside the Hague Trusts Convention. Choice of foreign law is unconfirmed.",
+  "forced_heirship": "yes",
+  "reserved_share": "Minor or disabled children, disabled spouse and parents: not less than 1/2 of the intestate share; Civil Code art. 1241.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "The 2005 Law on Private International Law applies the law of the deceased's last domicile (law of location for immovables); a choice of national law was not confirmed.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "Only property management contracts exist, not trusts. Foundations exist mainly as charitable bodies under the Civil Code.",
+  "open_questions": [
+    "Art. 1241 text and the conflict articles of the 2005 law.",
+    "Wartime and martial-law effects on inheritance.",
+    "Any planned trust or foundation legislation."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Civil Code of Ukraine",
+      "url": "https://zakon.rada.gov.ua/laws/show/435-15",
+      "publisher": "Verkhovna Rada of Ukraine",
+      "kind": "legislation"
+    }
+  ],
+  "family_claims": "",
+  "id": "UKR",
+  "name": "Ukraine",
+  "researched_on": "2026-10-16"
+}

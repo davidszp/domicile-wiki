@@ -13,7 +13,7 @@ const DEFAULT_TAX = TAX_METRICS;
  */
 export function personaEntry(entry, persona, citizenship) {
   const p = entry.personas && entry.personas[persona];
-  const base = { name: entry.name, level: entry.level, parent: entry.parent, continent: entry.continent, region: entry.region,
+  const base = { name: entry.name, level: entry.level, parent: entry.parent, continent: entry.continent, region: entry.region, eu: entry.eu, non_member: entry.non_member, territory: entry.territory, succession: entry.succession, residence: persona === "nomad" ? entry.residence_nomad : persona === "expat" ? entry.residence_work : entry.residence,
     label: entry.label, inherited: entry.inherited, markers: [], persona, red_flag: entry.red_flag };
   if (!p) return { ...base, researched: false, tax: null, nontax: {}, ko: entry.ko || [], verification: null, household_cost: null };
   return {

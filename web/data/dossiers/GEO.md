@@ -54,6 +54,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `fully_exemp
 - **Exemptions and thresholds:** First/second-line heirs: fully exempt; third/fourth-line: GEL 150,000 a year; others: GEL 1,000 a year.
 - **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
 - **Sources:** [Tax Code of Georgia (Law No. 3591, consolidated version 30/09/2026)](https://matsne.gov.ge/en/document/view/1043717); [Georgia – Individual – Other taxes](https://taxsummaries.pwc.com/georgia/individual/other-taxes)
+- Surviving spouse (`spouse_treatment` `fully_exempt`): Spouse is a first-line heir under the Tax Code (Art. 82), so the inheritance is exempt without limit or conditions.
 
 ## Wealth tax
 
@@ -112,3 +113,4 @@ US citizens: US citizens remain US-taxed; Georgia's near-zero tax on foreign inc
 - 2026-10-15: cost-of-living pass: re-tried school fees (QSI Tbilisi, BIST incl. its policy PDFs, European School, New School); none published online. Rent unchanged; metric still unscored.
 - 2026-10-15 (household cost pass): added the GZAAT Grades 9–12 tuition (GEL 31,000, 2026–27, school's own page) as the school fee; with rent already sourced the metric can now be scored.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

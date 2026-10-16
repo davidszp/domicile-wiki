@@ -155,7 +155,9 @@
         "brackets": [],
         "other_transfer_cost_rate": 0,
         "gift_tax": "Gifts follow the same rules; first-order donees are exempt.",
-        "gifts_same_as_inheritance": true
+        "gifts_same_as_inheritance": true,
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "First-order heirs are exempt from inheritance and gift tax (PwC; Law on Property Taxes) and the first statutory order of succession comprises the children and the spouse (Law on Inheritance, Art. 13 as described in Mickovic and Ristov 2017); the PwC summary does not name the spouse itself."
       }
     }
   ],

@@ -20,8 +20,11 @@
       return saved;
     },
     set: function (choice) {
+      if (choice !== "light" && choice !== "dark") choice = "system";
       saved = choice;
       apply(choice);
+      // Every theme switch on the page (guide, Settings) re-marks itself on this event.
+      window.dispatchEvent(new CustomEvent("domicile:theme", { detail: choice }));
       try {
         window.localStorage.setItem(KEY, choice);
       } catch (e) {

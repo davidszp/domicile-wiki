@@ -199,7 +199,9 @@
         "business_relief": "None found.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Heirs are taxed on all valuables received when an estate is settled in Iceland; Icelandic real estate is taxed regardless of the deceased's residence.",
-        "domicile_rules": "Estates are settled where the deceased was domiciled; no citizenship-based tail found."
+        "domicile_rules": "Estates are settled where the deceased was domiciled; no citizenship-based tail found.",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "If assets pass to a surviving spouse or cohabitant, no inheritance tax is levied (Act 14/2004 on inheritance tax; PwC)."
       },
       "sources": [
         {

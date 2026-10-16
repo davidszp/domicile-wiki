@@ -3,7 +3,11 @@ import { state, entries, jur, toggleIn, MAX_COMPARE, metricsFor, isIncomePersona
 import { loadProfile, loadDossier } from "../data.js";
 import { bandFor, TAX_METRICS } from "../scoring.js";
 import { renderMarkdown } from "../markdown.js";
+import { scoreRgb, textOn } from "../colors.js";
+import { INHERITANCE, field, sourceList } from "../labels.js";
 import { renderPersonaBody, personaCard, fact } from "./persona.js";
+import { immigrationSection, residenceFact } from "./immigration.js";
+import { successionSection, successionFact } from "./succession.js";
 
 const STATUS = {
   verified: ["Verified", "All four tax metrics verified against sources; at least 90% of weighted data present."],
@@ -27,7 +31,25 @@ const WEALTH_TYPE = { none: "No general annual net wealth tax", limited: "Limite
 
 export function scoreChip(score, cfg, extraClass = "") {
   const b = bandFor(score, cfg);
-  return h("span", { class: `chip ${b ? `band-${b.color}` : "unscored"} ${extraClass}`, title: b ? b.label : "Unscored" }, fmtScore(score));
+  const rgb = scoreRgb(score);
+  const chip = h("span", { class: `chip ${rgb ? "" : "unscored"} ${extraClass}`, title: b ? b.label : "Unscored" }, fmtScore(score));
+  if (rgb) { // the CSP allows CSSOM styles, not style attributes
+    chip.style.background = `rgb(${rgb.join(", ")})`;
+    chip.style.color = textOn(rgb);
+  }
+  return chip;
+}
+
+/** "EU" tag for members of the European Union (and their regions and outermost regions). */
+export function euBadge(e) {
+  if (!e || !e.eu) return null;
+  return h("span", { class: "eu-badge", title: state.cfg.eu ? state.cfg.eu.explanation : "EU member" }, "EU");
+}
+
+/** "Red flag" tag for lists: a serious risk that does not rule the place out (data/scoring_config.json red_flags). */
+export function redFlagBadge(e) {
+  if (!e || !e.red_flag) return null;
+  return h("span", { class: "flag-badge", title: `${e.red_flag.label}. ${e.red_flag.explanation}` }, "Red flag");
 }
 
 export function statusBadge(st) {
@@ -35,15 +57,7 @@ export function statusBadge(st) {
   return h("span", { class: `badge status-${st}`, title: tip }, label);
 }
 
-function sourceList(sources) {
-  if (!sources || !sources.length) return null;
-  return h("ul", { class: "sources" }, sources.map((s) => h("li", null, extLink(s.url, s.title), ` — ${s.publisher} (${s.kind.replace("_", " ")})`)));
-}
 
-function field(label, value) {
-  if (value === null || value === undefined || value === "") return null;
-  return h("div", { class: "field" }, h("dt", null, label), h("dd", null, value));
-}
 
 function metricMeta(m) {
   return h("div", { class: "meta-line" },
@@ -73,6 +87,7 @@ function taxCard(metric, m, detail, regimeName, currency) {
     }
   } else if (metric === "inheritance") {
     head.push(field("Children", INH_TREATMENT[m.children_treatment]));
+    head.push(field("Spouse", m.spouse_treatment ? `${INHERITANCE[m.spouse_treatment]}${m.spouse_note ? `: ${m.spouse_note}` : ""}` : m.basis === "none" ? "tax-free" : "not researched yet"));
     head.push(field("Basis", { none: "No inheritance/gift tax", beneficiary: "Tax on each heir", estate: "Tax on the estate" }[m.basis]));
     if (m.scope === "local_assets_only") head.push(field("Scope", "Only assets situated in this jurisdiction are taxed (foreign assets outside the tax)"));
     if (m.exemption) head.push(field(m.basis === "estate" ? "Exemption per estate" : "Exemption per child", fmtMoney(m.exemption, currency)));
@@ -161,7 +176,7 @@ function fold(parent, title, ...children) {
 }
 
 function subRegions(id, ctx) {
-  const subs = entries().filter(([, e]) => e.parent === id);
+  const subs = entries().filter(([, e]) => e.parent === id && !e.territory);
   if (!subs.length) return null;
   const rows = subs.map(([sid, e]) => ({ sid, e })).sort((a, b) => a.e.name.localeCompare(b.e.name));
   return h("section", null, h("h3", null, "Regional drill-down"),
@@ -188,17 +203,19 @@ export function renderProfile(panel, ctx) {
   if (!id) {
     panel.append(h("div", { class: "intro" },
       h("h2", null, "Where should you make your home?"),
-      h("p", null, "Pick who is moving in the top bar, then click a country or search for one."),
+      h("p", null, "Pick who is moving on the left, then search for a country or click one on the globe."),
       personaCard(),
       h("p", { class: "disclaimer" }, "Research, not tax or legal advice.")));
     return;
   }
   const e = jur(id);
+  if (e.territory) return renderTerritory(panel, e, ctx);
   const r = ctx.evalOf(id);
   const inCompare = state.compare.includes(id);
   const head = h("header", { class: "profile-head" },
     h("h2", null, e.name, e.parent ? h("span", { class: "muted" }, `, ${jur(e.parent)?.name ?? e.parent}`) : null),
-    h("div", { class: "muted small" }, [e.continent, e.region, e.level === "region" ? "region" : null].filter(Boolean).join(" · ")),
+    h("div", { class: "muted small" }, [e.continent, e.region, e.level === "region" ? "region" : null].filter(Boolean).join(" · "), " ",
+      e.eu ? euBadge(e) : e.level === "country" && e.continent === "Europe" ? h("span", { class: "not-eu", title: "In Europe, but not a member of the European Union" }, "Not in the EU") : null),
     h("div", { class: "score-row" },
       h("div", { class: "big-score" }, scoreChip(r.score, state.cfg, "big"), h("span", null, "overall")),
       h("div", { class: "big-score" }, scoreChip(r.taxScore, state.cfg, "big"), h("span", null, "tax only")),
@@ -210,7 +227,7 @@ export function renderProfile(panel, ctx) {
       h("button", { onclick: (e) => { toggleIn("shortlist", id, { persist: true }); e.currentTarget.textContent = shortlistLabel(id); } }, shortlistLabel(id)),
       h("button", { disabled: !inCompare && state.compare.length >= MAX_COMPARE,
         onclick: (e) => { toggleIn("compare", id, { max: MAX_COMPARE }); e.currentTarget.textContent = compareLabel(id); } }, compareLabel(id)),
-      h("button", { onclick: () => ctx.select(id) }, "Show on map")));
+    ));
   panel.append(head);
   panel.append(h("details", { class: "persona-fold" }, h("summary", null, `Who is this scored for? (${personaCfg().label})`), personaCard()));
   if (e.ko && e.ko.length) {
@@ -219,8 +236,22 @@ export function renderProfile(panel, ctx) {
         h("span", { title: e.ko.filter((k) => k.label === label).map((k) => `${k.value !== null ? `${k.value} (threshold ${k.threshold}). ` : ""}${k.explanation}`).join(" ") }, label.toLowerCase())]),
       ". Hover for the evidence; criteria under Method."));
   }
+  if (e.koWaived && e.koWaived.length) {
+    panel.append(h("div", { class: "ko-waived", role: "note" },
+      h("strong", null, "Kept in by your settings. "),
+      `By default it is ruled out for: ${[...new Set(e.koWaived.map((k) => k.label))].join("; ").toLowerCase()}. `,
+      h("button", { class: "linklike", onclick: () => ctx.go?.({ mode: "settings" }) }, "Change in Settings")));
+  }
+  if (e.non_member) {
+    panel.append(h("details", { class: "persona-fold" }, h("summary", null, e.non_member.label),
+      h("p", { class: "small" }, e.non_member.explanation),
+      h("ul", { class: "sources" }, e.non_member.sources.map((s) => h("li", null, extLink(s.url, s.title), ` — ${s.publisher}`)))));
+  }
   if (e.red_flag) {
-    panel.append(h("div", { class: "ko-box", role: "note", title: e.red_flag.explanation }, h("strong", null, "Red flag: "), `${e.red_flag.label} (not scored; see Method).`));
+    panel.append(h("div", { class: "ko-box red-flag", role: "note" },
+      h("strong", null, `Red flag: ${e.red_flag.label}. `), e.red_flag.explanation,
+      h("p", { class: "small muted" }, "Ranked, because the rest of the evidence is strong, but this weighs on any decision. It does not change the score."),
+      e.red_flag.sources ? h("ul", { class: "sources" }, e.red_flag.sources.map((s) => h("li", null, extLink(s.url, s.title)))) : null));
   }
   if (e.inherited && !isIncomePersona()) panel.append(h("p", { class: "small muted" }, `Uses ${jur(e.parent)?.name}'s national rules.`));
   const body = h("div", null, h("p", { class: "muted" }, "Loading details…"));
@@ -235,6 +266,7 @@ export function renderProfile(panel, ctx) {
     }
     if (!e.researched) {
       body.append(h("p", { class: "notice" }, "Tax rules not researched yet, so it is unscored (grey)."));
+      if (p.immigration) body.append(immigrationSection(p.immigration));
       fold(body, "Other indicators", nontaxTable(p), indicatorTable(p));
       return;
     }
@@ -248,9 +280,14 @@ export function renderProfile(panel, ctx) {
       bestRow && bestRow.cost !== null ? fact("Tax on the investments", `${fmtEur(bestRow.cost)} a year`,
         h("span", { class: "muted", title: "Capital gains, dividends and wealth tax, plus inheritance tax spread over the horizon" }, bestRow.type !== "standard" ? ` · ${bestRow.name}` : "")) : null,
       fact("Wealth tax", { none: "none", limited: "limited", broad: "yes" }[d.regimes[0].wealth_tax.type] || "–"),
-      fact("Children inherit", { fully_exempt: "tax-free", exempt_with_conditions: "tax-free, with conditions", taxed_low: "low tax", taxed: "taxed" }[d.regimes[0].inheritance.children_treatment] || "–"),
-      fact("Living costs", hc ? `${fmtEur(hc.total_eur)} a year` : "not sourced"))]);
+      fact("Spouse inherits", e.flags?.inheritance_spouse ? INHERITANCE[e.flags.inheritance_spouse] : "not researched yet"),
+      fact("Children inherit", INHERITANCE[d.regimes[0].inheritance.children_treatment] || "–"),
+      fact("Living costs", hc ? `${fmtEur(hc.total_eur)} a year` : "not sourced"),
+      residenceFact(e) ? fact("Residence for you", residenceFact(e)) : null,
+      successionFact(e) ? fact("Leaving your estate", successionFact(e)) : null)]);
     body.append(h("p", null, d.summary));
+    body.append(immigrationSection(p.immigration));
+    body.append(successionSection(p.succession));
     if (state.citizenship === "US" && d.us_citizen_notes) fold(body, "US citizens", h("p", null, d.us_citizen_notes));
 
     // Regimes
@@ -294,8 +331,10 @@ export function renderProfile(panel, ctx) {
       taxSec.append(taxCard(m, own || std[m], det[m], own && regData.type !== "standard" ? regData.name : null, d.currency));
     }
 
-    fold(body, "Residency and eligibility", h("p", null, d.residency.tax_residency_test),
-      d.residency.routes.length ? h("ul", null, d.residency.routes.map((rt) => h("li", null, h("strong", null, rt.name), ` (${rt.citizenships.join(", ")}): ${rt.requirements}`,
+    // When does a mover become tax resident? The routes to residence are under "Immigration paths";
+    // the older route list is shown only where those are not researched yet.
+    fold(body, p.immigration ? "Becoming tax resident" : "Residency and eligibility", h("p", null, d.residency.tax_residency_test),
+      !p.immigration && d.residency.routes.length ? h("ul", null, d.residency.routes.map((rt) => h("li", null, h("strong", null, rt.name), ` (${rt.citizenships.join(", ")}): ${rt.requirements}`,
         rt.minimum_investment ? ` Minimum ${fmtMoney(rt.minimum_investment.amount, rt.minimum_investment.currency)}.` : ""))) : null,
       sourceList(d.residency.sources));
     fold(body, "Company taxation", h("p", { class: "small muted" }, "Shown separately: company tax does not enter the personal tax scores."),
@@ -314,6 +353,15 @@ export function renderProfile(panel, ctx) {
     if (state.selected !== id) return;
     clear(body).append(h("p", { class: "error" }, `Details could not be loaded: ${err.message}`));
   });
+}
+
+/** An occupied area or buffer zone: not a state, so no score, only what it is and whose it is. */
+function renderTerritory(panel, e, ctx) {
+  const t = e.territory;
+  append(panel, [h("header", { class: "profile-head" }, h("h2", null, e.name), h("div", { class: "muted small" }, t.label)),
+    h("div", { class: "ko-box", role: "note" }, h("p", null, t.explanation),
+      h("ul", { class: "sources" }, t.sources.map((s) => h("li", null, extLink(s.url, s.title), ` — ${s.publisher}`)))),
+    h("p", null, "For tax, residence and everything else, see ", h("button", { class: "linklike", onclick: () => ctx.select(e.parent) }, jur(e.parent)?.name ?? e.parent), ".")]);
 }
 
 const shortlistLabel = (id) => (state.shortlist.includes(id) ? "★ On shortlist" : "☆ Add to shortlist");

@@ -1,0 +1,51 @@
+{
+  "id": "LVA",
+  "name": "Latvia",
+  "researched_on": "2026-10-16",
+  "summary": "Latvian law guarantees close relatives a reserved share, paid in money. A foreign resident can choose the law of their nationality (EU Succession Regulation art. 22). Latvia has no trusts, and foundations exist, but private-benefit use is not confirmed.",
+  "forced_heirship": "yes",
+  "reserved_share": "Persons entitled to a reserved share (Civil Law, Art. 423 as amended 2014) can claim its value in money. The page does not give who or what fraction, and it was not found elsewhere.",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "EU Succession Regulation: the law of the last habitual residence applies by default (art. 21), but a resident foreign national may choose the law of their nationality (art. 22).",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "Latvia is not in the HCCH table for the 1985 Trusts Convention. Trusts have not been introduced in Latvian law. Foundations are governed by the Law on Associations and Foundations; no profit may be distributed, and private-benefit use was not confirmed.",
+  "open_questions": [
+    "Beneficiaries and the fraction of the reserved share (Civil Law Art. 423 ff) were not sourced.",
+    "Whether Latvian foundations may pursue private-benefit purposes was not confirmed.",
+    "Foreign trust tax and recognition treatment not sourced."
+  ],
+  "sources": [
+    {
+      "title": "European e-Justice: Succession, Latvia",
+      "url": "https://e-justice.europa.eu/166/EN/succession?LATVIA&member=1",
+      "publisher": "European e-Justice Portal",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) No 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Philea: Legal Environment for Philanthropy in Europe, Latvia",
+      "url": "https://philea.eu/wp-content/uploads/2025/11/Latvia-Philea-2020-Legal-Environment-for-Philanthropy-in-Europe.pdf",
+      "publisher": "Philea",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

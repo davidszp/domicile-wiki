@@ -1,0 +1,111 @@
+{
+  "id": "ISR",
+  "name": "Israel",
+  "summary": "Israel has no investor or retirement residence and no digital nomad visa. People eligible under the Law of Return (Jews, their children, grandchildren and spouses) can immigrate and get citizenship on arrival, whatever their passport. Everyone else needs a sponsored work visa (B/1 for experts) or a family tie. EU, US and other passports are treated alike.",
+  "naturalisation": "Permanent residents can apply after living in Israel 3 of the previous 5 years, with a settled life in Israel, some Hebrew, and renouncing other citizenship unless exempt (gov.il service page; minister's discretion). Law of Return immigrants get citizenship at once.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Israel allows its citizens to hold other citizenships. Naturalising foreigners are asked to renounce prior citizenship unless an exemption applies (gov.il).",
+  "routes": [
+    {
+      "id": "law_of_return",
+      "name": "Aliyah under the Law of Return",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "citizenship",
+      "summary": "Jews, their children and grandchildren and their spouses can immigrate to Israel and receive citizenship on arrival. No investment is needed.",
+      "requirements": "Law of Return 5710-1950 and its 1970 amendment (section 4A extends rights to a child and grandchild of a Jew and to their spouses). Persons born Jewish who converted to another religion are not eligible (secondary source); other exclusions in section 2(b) not read. The Ministry of Interior or Jewish Agency decides on proof of eligibility. Open to any passport; EU, US and OTHER all possible.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Moving to Israel; Israeli tax residence follows the centre of life.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": 0,
+      "processing_time": "",
+      "family": "Eligible spouse and descendants.",
+      "tax_note": "New immigrants have a tax acclimation period (see jurisdiction file); exit tax applies on leaving.",
+      "sources": [
+        {
+          "title": "Apply for Israeli citizenship according to section 4A of the Law of Return",
+          "url": "https://www.gov.il/en/service/declaration_of_intent_to_receive_rights_according_to_the_law_of_return",
+          "publisher": "Government of Israel (gov.il)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Israel - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/israel/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "b1_expert_work_visa",
+      "name": "B/1 expert work visa",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored work visa for foreign experts; there is no route without an Israeli employer.",
+      "requirements": "The Israeli employer first obtains a permit from the Population and Immigration Authority, then the worker obtains the B/1 visa; employer must pay the statutory minimum salary and provide private medical insurance. From 1 January 2026 the minimum salary rose for applicants staying over three months or sponsored by Innovation Authority-recognised companies, and processing fees rose for all applicants (EY; amounts not in the sources read). Initial visa usually one year, extendable to about 63 months.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Work and live in Israel for the employer.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Israeli residents are taxed on worldwide income; see jurisdiction file.",
+      "sources": [
+        {
+          "title": "Israel introduces increased salary requirements for certain B-1 visa applications",
+          "url": "https://www.ey.com/en_gl/technical/tax-alerts/increased-salary-requirements-for-certain-b1-visa-applications-and-higher-processing-fees-for-all-b1-visa-applications",
+          "publisher": "EY",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Israeli work visa - B1 Israeli Expert Visa",
+          "url": "https://lawoffice.org.il/en/?p=14544",
+          "publisher": "Decker, Pex, Levi Law Firm",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "No digital nomad visa found: secondary sources say remote workers enter on a B/2 tourist visa (up to 90 days) and may not work; no official page confirms this. ETA-IL is required from 1 January 2025.",
+    "B/1 minimum salary after 1 January 2026 and the new government fees are not in the sources read; EY points to a PDF.",
+    "gov.il service pages returned 403 to the fetch tool; naturalisation and Law of Return points rely on search-result excerpts and secondary sources.",
+    "Marriage-based status (A/5 permits, gradual process) and other family routes were not researched.",
+    "Section 2(b) exclusions of the Law of Return and eligibility proof were not read from the statute."
+  ],
+  "sources": [
+    {
+      "title": "Israel - Individual - Residence",
+      "url": "https://taxsummaries.pwc.com/israel/individual/residence",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

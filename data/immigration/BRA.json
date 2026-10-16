@@ -1,0 +1,126 @@
+{
+  "id": "BRA",
+  "name": "Brazil",
+  "researched_on": "2026-10-16",
+  "summary": "Brazil offers residence for a R$ 1 million property purchase (R$ 700,000 in the North and Northeast; four years, then indefinite) or R$ 500,000 (R$ 150,000 in priority sectors) into a Brazilian company. Remote workers can use a one-year digital nomad visa (USD 1,500 a month or USD 18,000 in the bank). All passports use the same routes; nationals of Portuguese-speaking countries naturalise faster.",
+  "naturalisation": "Four years of residence (Lei 13.445/2017, art. 65), Portuguese communication and a clean record; one year for nationals of Portuguese-speaking countries under the Constitution; extraordinary naturalisation after 15 years.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Brazil does not require a naturalising foreigner to renounce (general position; not source-checked in this session).",
+  "routes": [
+    {
+      "id": "investor_real_estate",
+      "name": "Residence by real estate investment (RN CNIg 36/2018)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Four-year residence for buying at least R$ 1,000,000 of urban property (R$ 700,000 in the North and Northeast), convertible to indefinite residence.",
+      "requirements": "Minimum R$ 1,000,000, reducible by up to 30% for properties in the North and Northeast; several properties can be added; each co-owner must reach the minimum; financing above the minimum is allowed; funds must come from abroad. Initial authorisation 4 years, then indefinite term on showing the investment is maintained. A law-firm page (25 July 2026) cites RN 36/2018 and no successor; the Ministry of Justice and Labour norms were not read.",
+      "physical_presence": "At least 14 days (consecutive or split) in every two-year period",
+      "sources": [
+        {
+          "title": "Residencia por Investimento Imobiliario no Brasil (RN 36/2018)",
+          "url": "https://sidvaloliveira.adv.br/residencia-investimento-imobiliario-rn-36-2018/",
+          "publisher": "Sidval Oliveira Advogados",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Residencia por investimento no Brasil: valores em 2026",
+          "url": "https://www.ribeirocavalcante.com.br/residencia-por-investimento-brasil-2026/",
+          "publisher": "Ribeiro Cavalcante",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 1000000,
+        "currency": "BRL"
+      },
+      "investment_options": "R$ 700,000 minimum in the North and Northeast regions.",
+      "path_to_permanent_years": 4,
+      "path_to_citizenship_years": 4,
+      "tax_note": "Temporary residents without local employment become tax resident after 183 days in a 12-month period (PwC); a permanent visa makes tax residence from arrival."
+    },
+    {
+      "id": "investor_company",
+      "name": "Residence by investment in a Brazilian company",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Residence for putting at least R$ 500,000 (or R$ 150,000 for innovation or priority sectors) of foreign capital into a Brazilian company with a job or income plan.",
+      "requirements": "Share capital of at least R$ 500,000 in a Brazilian company, reducible to R$ 150,000 for innovation and technology, priority sectors or less-developed regions; business plan with job or income potential. Citing Portaria MJSP 65/2023, per a law-firm page; the portaria itself and the status of the 'VIPER' branding were not read. Initial authorisation 2 years per the same page.",
+      "physical_presence": "Not stated in the sources reviewed",
+      "sources": [
+        {
+          "title": "Residencia por investimento no Brasil: valores em 2026",
+          "url": "https://www.ribeirocavalcante.com.br/residencia-por-investimento-brasil-2026/",
+          "publisher": "Ribeiro Cavalcante",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "BRL"
+      },
+      "investment_options": "R$ 150,000 for innovation, technology, priority sectors or less-developed regions.",
+      "path_to_citizenship_years": 4,
+      "processing_time": "Not stated"
+    },
+    {
+      "id": "digital_nomad",
+      "name": "Digital nomad visa (VITEM XIV)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A one-year visa, renewable once, for remote workers earning USD 1,500 a month or holding USD 18,000. It does not convert to residence.",
+      "requirements": "Created by CNIg/MJSP Normative Resolution 45 of 2021 (per secondary sources): foreign-source income of USD 1,500 a month (USD 18,000 a year), or USD 18,000 in a bank balance; health insurance. One year, renewable once for a two-year maximum. Dependants file separately. Staying 183 days in 12 months can make the holder tax resident.",
+      "physical_presence": "Up to 1 year per grant, renewable once",
+      "sources": [
+        {
+          "title": "Brazil's Digital Nomad Visa in 2026",
+          "url": "https://nomada.tools/blog/brazil-digital-nomad-visa-2026",
+          "publisher": "Nomada Tools",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Brazil Digital Nomad Visa 2026",
+          "url": "https://getwherenext.com/digital-nomad-visas/br",
+          "publisher": "WhereNext",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 18000,
+        "currency": "USD"
+      },
+      "tax_note": "Tax residence after 183 days in any 12 months (one source says 184); worldwide income then taxable."
+    }
+  ],
+  "open_questions": [
+    "Brazilian immigration norms (RN 36/2018, Portaria MJSP 65/2023, any 'VIPER' scheme) were not read in the Diario Oficial; investor routes rest on law-firm pages. The brief's 'VIPER' term was not found in any source.",
+    "Retiree (aposentado) residence: one unverified source mentions a USD 2,000 monthly pension; not recorded.",
+    "Government fees (Federal Police GRU, CRNM) amounts not found.",
+    "Digital nomad: legal instrument and income wording rest on secondary sources.",
+    "Work-permit route (employer-sponsored) not researched.",
+    "Dual citizenship for naturalised foreigners: Brazil's position (no renunciation required) is not source-checked; only Art. 12 para. 4 on Brazilians was found."
+  ],
+  "sources": []
+}

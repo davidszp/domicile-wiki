@@ -1,0 +1,308 @@
+{
+  "id": "GRC",
+  "name": "Greece",
+  "researched_on": "2026-10-16",
+  "summary": "EU citizens only register. Non-EU citizens (US and others) can buy property from EUR 250,000 to EUR 800,000 depending on type and area for a 5-year Golden Visa, invest EUR 250,000 in a start-up, or qualify as financially independent (EUR 42,000 a year, 183 days of presence) or as digital nomads (EUR 42,000 a year of remote income).",
+  "naturalisation": "7 years of lawful residence, Greek language (B1 or higher) and civics tests; shorter paths (3 years) for some categories such as EU citizens and spouses of Greek citizens. A search result described an EU long-term residence permit becoming a precondition after 7 years, with transitional rules, but its date could not be confirmed (open question). The Golden Visa does not shorten the 7 years.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Greece permits multiple citizenship.",
+  "routes": [
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 7,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Tax residence follows the 183-day or centre-of-vital-interests test.",
+      "status_note": "",
+      "id": "eu_free_movement",
+      "name": "EU free movement (registration certificate)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "EU citizens may live in Greece and register after 3 months.",
+      "requirements": "Valid ID or passport. Beyond 3 months, register as worker, self-employed, student or economically inactive with resources and health cover. Permanent right of residence after 5 years (Directive 2004/38).",
+      "physical_presence": "No fixed minimum",
+      "sources": [
+        {
+          "title": "Your Europe: Residence rights in another EU country",
+          "url": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+          "publisher": "European Union",
+          "kind": "intergovernmental",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 250000,
+        "currency": "EUR"
+      },
+      "investment_options": "EUR 250,000 conversion/restoration; EUR 400,000 standard; EUR 800,000 in high-demand areas. See golden_visa_financial for non-property options.",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 7,
+      "processing_time": "Usually a few months; a submission certificate lets you stay while pending.",
+      "family": "Spouse, children up to 21 and parents of both spouses.",
+      "tax_note": "The permit does not make you tax resident unless you spend more than 183 days a year in Greece.",
+      "status_note": "",
+      "id": "golden_visa_real_estate",
+      "name": "Golden Visa: real estate",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A 5-year renewable permit for buying one property of at least 120 m2: EUR 800,000 in Attica, Thessaloniki, Mykonos, Santorini and large islands, EUR 400,000 elsewhere.",
+      "requirements": "Single property of at least 120 m2 (smaller units can no longer be combined). EUR 800,000 in Attica, Thessaloniki, Mykonos, Santorini and islands with more than 3,100 residents (one source says 3,000); EUR 400,000 elsewhere; EUR 250,000 for converting commercial property to residential or restoring listed buildings (no minimum area). Short-term letting of the property is restricted. Higher thresholds took effect in 2024 (exact date not sourced).",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Golden Visa Greece 2026: guide to the new investment thresholds",
+          "url": "https://rewize.com/en/blog/golden-visa/golden-visa-greece-guide-2026",
+          "publisher": "Rewize",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "A guide to the changes to the Greek golden visa",
+          "url": "https://webiis08.mondaq.com/uk/investment-immigration/1432288/a-guide-to-the-changes-to-the-greek-golden-visa",
+          "publisher": "Mondaq",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 350000,
+        "currency": "EUR"
+      },
+      "investment_options": "Hotel or timeshare lease EUR 400,000; deposit, company shares or government bonds EUR 500,000; listed securities EUR 800,000.",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 7,
+      "processing_time": "",
+      "family": "Spouse, children up to 21 and parents of both spouses.",
+      "tax_note": "The permit does not make you tax resident unless you spend more than 183 days a year in Greece.",
+      "status_note": "",
+      "id": "golden_visa_financial",
+      "name": "Golden Visa: financial and business investments",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Alternatives to property: EUR 350,000 in a Greek mutual fund up to EUR 800,000 in listed securities, with a EUR 500,000 deposit, bonds or company shares in between.",
+      "requirements": "Per Immigrant Invest: mutual or alternative funds from EUR 350,000; Greek bank term deposit, Greek company share capital, or Greek government bonds EUR 500,000; hotel or timeshare lease (10 years) EUR 400,000; exchange-traded securities EUR 800,000. Mondaq and other pages quote slightly different figures (EUR 400,000 for funds or bonds), so verify with the Ministry of Migration and Asylum.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Greece FIP vs Golden Visa",
+          "url": "https://immigrantinvest.com/blog/greece-fip-vs-golden-visa/",
+          "publisher": "Immigrant Invest",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "A guide to the changes to the Greek golden visa",
+          "url": "https://webiis08.mondaq.com/uk/investment-immigration/1432288/a-guide-to-the-changes-to-the-greek-golden-visa",
+          "publisher": "Mondaq",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 250000,
+        "currency": "EUR"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 7,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "",
+      "id": "startup_investor",
+      "name": "Start-up investor residence permit",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "EUR 250,000 into a start-up registered in the Elevate Greece national registry, with a cap on your stake.",
+      "requirements": "Share-capital increase or bonds worth at least EUR 250,000; holding at most 33% of capital or votes; the start-up must create at least 2 full-time jobs in year one and keep staffing for 5 years. Permit duration is reported both as 1 year then 2-year renewals and as 5 years. Start date reported as 1 January 2025 (not confirmed against the statute).",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Greece Now Offers EUR 250K Startup Visa",
+          "url": "https://www.imidaily.com/program-updates/greece-now-offers-e250k-startup-visa-with-burdensome-ownership-restriction/",
+          "publisher": "Investment Migration Insider",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 42000,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 1196,
+        "currency": "EUR"
+      },
+      "fees_note": "Visa EUR 180 + permit application EUR 1,000 + card EUR 16, per Immigrant Invest; the source also lists a EUR 150 administrative fee.",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "processing_time": "At least 4 months",
+      "family": "Spouse and children via the income uplift.",
+      "tax_note": "Living in Greece 183+ days makes you tax resident. The source says this permit does not lead directly to permanent residence or citizenship unless converted; treat years as unclear.",
+      "status_note": "",
+      "id": "fip_passive_income",
+      "name": "Financially Independent Person (FIP) permit",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For retirees and others living on stable income from abroad of at least EUR 3,500 a month; no work in Greece.",
+      "requirements": "Stable passive income (pensions, rent, dividends) from outside Greece of EUR 3,500 a month, i.e. EUR 42,000 a year; +20% for a spouse, +15% per child. Alternative reported: EUR 126,000 savings. Health insurance. 3-year permit, renewable. At least 183 days a year in Greece, checked at renewal. Legal basis reported as Law 5038/2023 (not verified).",
+      "physical_presence": "At least 183 days a year; no absence over 6 consecutive months",
+      "sources": [
+        {
+          "title": "Greece FIP vs Golden Visa",
+          "url": "https://immigrantinvest.com/blog/greece-fip-vs-golden-visa/",
+          "publisher": "Immigrant Invest",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 42000,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 1075,
+        "currency": "EUR"
+      },
+      "fees_note": "Visa about EUR 75 and residence permit EUR 1,000, per Remote Work Europe; another source quotes different figures.",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 7,
+      "processing_time": "",
+      "family": "Family members get permits of the same validity and need their own insurance.",
+      "tax_note": "50% income tax exemption for up to 7 years if you move tax residence to Greece and were not resident in 5 of the previous 6 years.",
+      "status_note": "",
+      "id": "digital_nomad",
+      "name": "Digital nomad visa and residence permit",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For remote workers earning EUR 3,500 a month from non-Greek clients or employers.",
+      "requirements": "Income EUR 3,500 a month (gross or net unclear, sources differ), +20% spouse, +15% per child. Health insurance, clean record, accommodation. Since 5 February 2026 (Law 5275/2026) apply at a Greek consulate before travel. D visa 12 months, then a 2-year permit, renewable in 2-year periods.",
+      "physical_presence": "No minimum sourced; 183+ days makes you tax resident",
+      "sources": [
+        {
+          "title": "Greece digital nomad visa 2026",
+          "url": "https://remoteworkeurope.eu/insights/greece-digital-nomad-visa-2026/",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 7,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "",
+      "id": "work_permit",
+      "name": "Work permits (employment, seasonal, highly qualified)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Non-EU workers need an employer, a work visa and a residence permit; the EU Blue Card covers highly qualified staff.",
+      "requirements": "Employer-led process under the migration code; details and quotas not researched in depth.",
+      "physical_presence": "Live in Greece; no fixed day count sourced",
+      "sources": [
+        {
+          "title": "Greece FIP vs Golden Visa",
+          "url": "https://immigrantinvest.com/blog/greece-fip-vs-golden-visa/",
+          "publisher": "Immigrant Invest",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "No official Greek ministry or law text retrieved; thresholds come from professional and agency pages, which differ in places (island population cutoff, fund and bond amounts).",
+    "Date the higher real estate thresholds took effect (2024) and a 2025 start-up route start date not confirmed from the statute.",
+    "FIP legal basis and whether income is gross are unverified.",
+    "Digital nomad income gross vs net unclear.",
+    "Minimum presence for digital nomad, start-up and work routes not sourced.",
+    "Work-permit rules not researched in depth.",
+    "Whether an EU long-term residence permit is now required before naturalisation (a source on a Greek citizenship reform was undated) is unverified."
+  ],
+  "sources": [
+    {
+      "title": "Golden Visa Greece 2026: guide to the new investment thresholds",
+      "url": "https://rewize.com/en/blog/golden-visa/golden-visa-greece-guide-2026",
+      "publisher": "Rewize",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Greece FIP vs Golden Visa",
+      "url": "https://immigrantinvest.com/blog/greece-fip-vs-golden-visa/",
+      "publisher": "Immigrant Invest",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

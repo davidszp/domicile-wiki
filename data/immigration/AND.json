@@ -1,0 +1,173 @@
+{
+  "id": "AND",
+  "name": "Andorra",
+  "summary": "Andorra is outside the EU and EU citizens have no free movement there: everyone needs a permit. The main route for people who do not work is passive residence, which since Law 2/2026 requires an investment of EUR 1,000,000 in Andorran assets (or EUR 800,000 in a home) plus a non-refundable EUR 50,000 payment, and 90 days a year in Andorra. Working and self-employed permits are quota-limited.",
+  "naturalisation": "Reported 20 years of continuous residence for ordinary naturalisation (earlier research, not re-verified this session).",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "Andorran nationality generally requires renouncing the previous nationality (not re-verified this session).",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "EUR 1,000,000 in Andorran assets; or EUR 800,000 in one residential property; reported alternative of EUR 400,000 to the Housing Fund (not confirmed from the law text).",
+      "fees_note": "Non-refundable AFA payment, EUR 12,000 per dependent. An immigration fee of EUR 2,500 (EUR 500 per dependent) is reported by one source only.",
+      "processing_time": "",
+      "family": "Spouse and dependents included for EUR 12,000 each.",
+      "tax_note": "Passive residents can become tax resident after 183 days; Andorra income tax is 0% to 10%. A permit alone does not make you tax resident.",
+      "minimum_investment": {
+        "amount": 1000000,
+        "currency": "EUR"
+      },
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 50000,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "passive_residence",
+      "name": "Passive residence (residència sense activitat lucrativa)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A residence permit without the right to work, for people who invest EUR 1,000,000 in Andorran assets or buy a home, pay a non-refundable EUR 50,000 and spend at least 90 days a year in Andorra.",
+      "requirements": "As reported for Law 2/2026 (in force 13 February 2026 per Andorra Insiders; approved by the Consell General on 22 January 2026): invest at least EUR 1,000,000 in Andorran assets (financial instruments, debt, funds, stakes in local companies; raised from EUR 600,000), or buy one residential property worth at least EUR 800,000 (raised from EUR 600,000), or, as reported, contribute EUR 400,000 to the state Housing Fund; non-refundable payment to the Andorran Financial Authority (AFA) of EUR 50,000 for the main applicant and EUR 12,000 per dependent (previously a refundable deposit); health insurance; clean record; no work in Andorra. Applications filed before the law took effect are processed under the old rules.",
+      "physical_presence": "At least 90 days a year in Andorra",
+      "sources": [
+        {
+          "title": "New Law 2/2026 introduces major changes in immigration, foreign investment and taxation",
+          "url": "https://www.bdo.es/en-gb/microsites/andorra-actualitat/publicaciones/nova-llei-2-2026-canvis-clau-en-materia-d%E2%80%99immigracio,-inversio-estrangera-i-fiscalitat",
+          "publisher": "BDO Andorra",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Andorra Raises Passive Residency Investment to EUR 1M in Omnibus Law",
+          "url": "https://www.alto.ad/business/2026/01/andorra-raises-passive-residency-investment",
+          "publisher": "Alto.ad",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Does Andorra have a Golden Visa? Passive residency and real estate investment 2026",
+          "url": "https://andorrainsiders.com/en/?p=10204",
+          "publisher": "Andorra Insiders",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Impost sobre la renda de les persones físiques (IRPF)",
+          "url": "https://www.e-tramits.ad/tramits/impostos/irpf",
+          "publisher": "Govern d'Andorra",
+          "kind": "tax_authority",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "employment_residence",
+      "name": "Active residence: employment or self-employment",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Foreigners can live and work in Andorra with an employment or self-employment permit; the number of permits is limited by quota.",
+      "requirements": "Quota system applies to employed and self-employed permits; self-employed applicants must meet business and financial conditions (non-refundable payment exemptions exist for digital economy, entrepreneurship and innovation projects, per BDO). Thresholds not sourced.",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "New Law 2/2026 introduces major changes in immigration, foreign investment and taxation",
+          "url": "https://www.bdo.es/en-gb/microsites/andorra-actualitat/publicaciones/nova-llei-2-2026-canvis-clau-en-materia-d%E2%80%99immigracio,-inversio-estrangera-i-fiscalitat",
+          "publisher": "BDO Andorra",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "digital_nomad",
+      "name": "Digital nomad residence permit",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A special residence permit for remote workers employed by a foreign company, reported to be available since 2023 under Law 42/2022.",
+      "requirements": "As reported by a consultancy, not an official page: sufficient financial means for the applicant and dependants, comprehensive health insurance, commitment to make Andorra the main and effective residence for 90 days a year or more. Initial permit 2 years, then 2, 3 and 10-year renewals. Income threshold not sourced.",
+      "physical_presence": "Reported 90 days a year",
+      "sources": [
+        {
+          "title": "Andorra digital nomad residence permit (summary of Law 42/2022)",
+          "url": "https://www.andorra-solutions.com/?p=17872",
+          "publisher": "Andorra Solutions",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Govern d'Andorra / BOPA text of Law 2/2026 could not be opened; figures come from BDO Andorra and press. Entry-into-force date of 13 February 2026 comes from one non-official source.",
+    "Whether the EUR 400,000 Housing Fund contribution is a valid alternative to the EUR 1,000,000 investment (reported by two non-official sources) is not confirmed; minimum_investment is set to the higher, better-sourced figure.",
+    "Digital nomad permit: income threshold, fees and the law reference not sourced from a government page.",
+    "Work and self-employed permit thresholds and quota numbers not researched.",
+    "Naturalisation period (20 years) and renunciation rule not re-verified this session."
+  ],
+  "sources": [
+    {
+      "title": "New Law 2/2026 introduces major changes in immigration, foreign investment and taxation",
+      "url": "https://www.bdo.es/en-gb/microsites/andorra-actualitat/publicaciones/nova-llei-2-2026-canvis-clau-en-materia-d%E2%80%99immigracio,-inversio-estrangera-i-fiscalitat",
+      "publisher": "BDO Andorra",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Andorra Raises Passive Residency Investment to EUR 1M in Omnibus Law",
+      "url": "https://www.alto.ad/business/2026/01/andorra-raises-passive-residency-investment",
+      "publisher": "Alto.ad",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Impost sobre la renda de les persones físiques (IRPF)",
+      "url": "https://www.e-tramits.ad/tramits/impostos/irpf",
+      "publisher": "Govern d'Andorra",
+      "kind": "tax_authority",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

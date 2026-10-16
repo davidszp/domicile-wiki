@@ -60,6 +60,7 @@ Inheritance tax is a municipal tax under the Local Taxes and Fees Act, but the s
 **Scope/domicile:** Scope: Bulgarian citizens on worldwide estate; foreign citizens on property in Bulgaria (ZMDT art. 29). Children exempt in any case.
 
 **JSON numbers:** basis `beneficiary`, children `fully_exempt`, exemption 0, brackets [], other transfer cost 0, gifts same as inheritance: True.
+- Surviving spouse: exempt from inheritance tax without limit (art. 31(2) Local Taxes and Fees Act).
 
 ## Wealth tax
 
@@ -115,3 +116,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: initial research.
 - 2026-10-15: added Sofia cost of living (imot.bg rent sample, AAS 2026-27 fees); read the 2026 PITA definition of regulated/growth market for the share-gain exemption.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

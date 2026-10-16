@@ -1,0 +1,275 @@
+{
+  "id": "ESP",
+  "name": "Spain",
+  "researched_on": "2026-10-16",
+  "summary": "EU citizens only register. Non-EU citizens (US and others) can use the non-lucrative visa (EUR 28,800 a year of passive income, no work), the digital nomad visa (about EUR 34,000 a year of foreign remote income), or an entrepreneur or work permit. The golden visa ended on 3 April 2025.",
+  "naturalisation": "General rule: 10 years of legal, continuous residence immediately before applying, a Spanish A2 language certificate (DELE) and the CCSE civics test; shorter periods for refugees (5 years) and, per general knowledge not re-sourced, 2 years for Ibero-American nationals, Andorra, Philippines, Equatorial Guinea, Portugal and Sephardic descendants.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Applicants normally must renounce their previous nationality, except nationals of Ibero-American countries, Andorra, the Philippines, Equatorial Guinea and Portugal (Civil Code art. 23; from general knowledge, not re-sourced).",
+  "routes": [
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "Spouse, partner and dependants have derived rights.",
+      "tax_note": "Registration does not decide tax residence; the 183-day test and centre of economic interests do.",
+      "status_note": "",
+      "id": "eu_free_movement",
+      "name": "EU/EEA free movement (certificado de registro)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "EU citizens enter freely and register in Spain after 3 months.",
+      "requirements": "Valid ID or passport. Beyond 3 months register as a worker, self-employed person, student or economically inactive person with sufficient resources and health cover. Permanent right of residence after 5 years of continuous legal residence (Directive 2004/38).",
+      "physical_presence": "No fixed minimum; continuity of residence counts",
+      "sources": [
+        {
+          "title": "Your Europe: Residence rights in another EU country",
+          "url": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+          "publisher": "European Union",
+          "kind": "intergovernmental",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 28800,
+        "currency": "EUR"
+      },
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "Each family member adds EUR 7,200 a year to the income test.",
+      "tax_note": "Living in Spain more than 183 days makes you tax resident on worldwide income; Beckham regime is not available on this visa.",
+      "status_note": "",
+      "id": "nlv",
+      "name": "Non-lucrative residence visa",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Residence for people who live on savings or passive income and do not work in Spain. Income of 400% of IPREM, EUR 28,800 a year in 2026.",
+      "requirements": "Income of 400% of the monthly IPREM (IPREM EUR 600 a month in 2026), i.e. EUR 2,400 a month or EUR 28,800 a year for the main applicant, plus 100% of IPREM (EUR 7,200 a year) per family member. Private health insurance with no co-pay; clean record. No work allowed in Spain. Consulates assess case by case.",
+      "physical_presence": "Not sourced (open question)",
+      "sources": [
+        {
+          "title": "Non-Lucrative Visa Spain 2026: income requirement",
+          "url": "https://www.costaluzlawyers.com/non-lucrative-visa-spain-income-requirement-2026/",
+          "publisher": "CostaLuz Lawyers",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 34188,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "fees_note": "Application fee EUR 80 to 100 plus about EUR 15 to 20 for the TIE card, per Remote Work Europe; upper bound used.",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "Dependants can be added with higher income.",
+      "tax_note": "Holders may elect the Beckham regime (24% on Spanish-source income up to EUR 600,000, 6 years); self-employed nomads generally do not qualify, per source.",
+      "status_note": "",
+      "id": "digital_nomad",
+      "name": "Digital nomad visa (teleworker, Ley 28/2022)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For remote workers employed by or serving clients outside Spain; income of EUR 2,849 a month (about EUR 34,188 a year) in 2026 per one source.",
+      "requirements": "Income of at least 200% of the minimum wage as stated by the source: EUR 2,849 a month for a single applicant in 2026 (the source's arithmetic does not reconcile with the EUR 1,221 SMI, so verify); dependants add 75% of SMI for the first and 25% for each further. At least 80% of income from outside Spain. Consulate application gives 1 year, in-Spain application 3 years; renewals in 2-year steps up to 5 years.",
+      "physical_presence": "At least 6 months a year to renew; absences over 6 consecutive months can block renewal",
+      "sources": [
+        {
+          "title": "Spain Digital Nomad Visa 2026",
+          "url": "https://remoteworkeurope.eu/insights/spain-digital-nomad-visa-2026/",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "",
+      "id": "entrepreneur",
+      "name": "Entrepreneur visa (Ley 14/2013, arts. 70-75)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For founders of a business activity of innovative character and special economic interest, approved by ENISA.",
+      "requirements": "Business plan assessed by ENISA and the Spanish authorities; no statutory investment figure sourced here. Opens access to the Beckham regime.",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Ley 14/2013 de apoyo a los emprendedores (consolidated)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074",
+          "publisher": "BOE",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "Abolished for new applications from 3 April 2025 by Ley Organica 1/2025 (final provision 21); arts. 63 to 67 left without content. Applications filed earlier are processed under the old rules and renewals are accepted.",
+      "id": "golden_visa",
+      "name": "Investor visa / golden visa (Ley 14/2013, art. 63)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "temporary_residence",
+      "summary": "The EUR 500,000 property route (and other investment routes) no longer exists for new applicants.",
+      "requirements": "Closed. Previously: EUR 500,000 in real estate, EUR 1 million in shares or deposits, or EUR 2 million in public debt. These past figures come from general knowledge, not the sources below; family-reunification applications based on investor permits are also no longer accepted.",
+      "physical_presence": "None for existing holders (not re-sourced)",
+      "sources": [
+        {
+          "title": "End of the golden visa in Spain: new criteria for investors",
+          "url": "https://www.arc-legal.es/en/end-of-the-golden-visa-in-spain-new-criteria-for-investors/",
+          "publisher": "ARC Legal",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Spain to stop granting golden visas to foreigners from 3 April",
+          "url": "https://barcelona.cat/internationalwelcome/en/news/spain-to-stop-granting-golden-visas-to-foreigners-from-3-april-1490680",
+          "publisher": "Barcelona City Council",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "",
+      "id": "work_permit",
+      "name": "Work permits (employee, highly qualified professional)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Non-EU workers generally need a job offer and an employer-filed permit; highly qualified professionals have a faster route under Ley 14/2013.",
+      "requirements": "Employer sponsorship; shortage-occupation lists and salary thresholds apply. Details not researched in depth.",
+      "physical_presence": "Live in Spain; no fixed day count sourced",
+      "sources": [
+        {
+          "title": "Ley 14/2013 de apoyo a los emprendedores (consolidated)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074",
+          "publisher": "BOE",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Official BOE text of Ley 14/2013 and Ley Organica 1/2025 not read directly; figures from law-firm pages.",
+    "Digital nomad threshold: source says EUR 2,849 a month but arithmetic vs SMI does not reconcile; confirm with UGE-CE/consulate.",
+    "Physical presence for the non-lucrative visa and entrepreneur visa not sourced.",
+    "Entrepreneur and work-permit thresholds not sourced.",
+    "Past golden-visa thresholds, naturalisation exemptions and dual-citizenship rule not re-sourced.",
+    "Government fees for NLV not sourced."
+  ],
+  "sources": [
+    {
+      "title": "Non-Lucrative Visa Spain 2026: income requirement",
+      "url": "https://www.costaluzlawyers.com/non-lucrative-visa-spain-income-requirement-2026/",
+      "publisher": "CostaLuz Lawyers",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Spain Digital Nomad Visa 2026",
+      "url": "https://remoteworkeurope.eu/insights/spain-digital-nomad-visa-2026/",
+      "publisher": "Remote Work Europe",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "End of the golden visa in Spain: new criteria for investors",
+      "url": "https://www.arc-legal.es/en/end-of-the-golden-visa-in-spain-new-criteria-for-investors/",
+      "publisher": "ARC Legal",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Your Europe: Residence rights in another EU country",
+      "url": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+      "publisher": "European Union",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Application for Spanish nationality by residence",
+      "url": "https://entretramites.com/en/immigration/spanish-nationality-by-residence",
+      "publisher": "Entre Tramites",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

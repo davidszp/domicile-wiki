@@ -1,0 +1,397 @@
+{
+  "id": "PRT",
+  "name": "Portugal",
+  "researched_on": "2026-10-16",
+  "summary": "EU citizens only register after 3 months. Non-EU citizens (US and others) can use the D7 (passive income of about EUR 11,040 a year), the D8 (remote income of EUR 44,160 a year), or the Golden Visa from EUR 250,000 (donation) or EUR 500,000 (fund). Property no longer qualifies.",
+  "naturalisation": "Lei Organica 1/2026 (in force 19 May 2026): 10 years of legal residence for most nationalities, 7 years for EU and Portuguese-speaking-country citizens; Portuguese language (A2 level reported) and civic knowledge. Applications filed on or before 18 May 2026 stay under the old 5-year rule. Counted from permit issue, per one law firm.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Portugal does not require renouncing another nationality (from general knowledge; not re-sourced).",
+  "routes": [
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 7,
+      "processing_time": "",
+      "family": "Spouse or partner and dependants have derived rights.",
+      "tax_note": "Registration does not itself decide tax residence; Portugal's 183-day / habitual-home test applies.",
+      "status_note": "",
+      "id": "eu_free_movement",
+      "name": "EU free movement (registration certificate)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "EU citizens may live in Portugal without a visa and register with the municipality after 3 months.",
+      "requirements": "Valid ID or passport. Beyond 3 months, workers, self-employed people, students and the economically inactive (sufficient resources and health cover) register. Permanent right of residence after 5 years of continuous legal residence (EU law, Directive 2004/38).",
+      "physical_presence": "No minimum beyond living in Portugal; absence over 6 months a year can break continuity",
+      "sources": [
+        {
+          "title": "Your Europe: Residence rights in another EU country",
+          "url": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+          "publisher": "European Union",
+          "kind": "intergovernmental",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "O que muda com a Lei da Nacionalidade?",
+          "url": "https://eco.sapo.pt/descodificador/o-que-muda-com-a-lei-da-nacionalidade/01-o-que-e-a-a-nova-lei-da-nacionalidade/",
+          "publisher": "ECO (Sapo)",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "EUR"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "Sources quote 18 to 36 months to the first card; not confirmed by AIMA.",
+      "family": "Spouse or partner, dependent children and dependent parents can be included.",
+      "tax_note": "A permit does not make you tax resident. NHR closed to new entrants after 2023; the IFICI regime covers certain professions.",
+      "status_note": "",
+      "id": "golden_visa_fund",
+      "name": "Golden Visa (ARI): regulated investment fund",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A residence permit for investing at least EUR 500,000 in a regulated fund that invests mainly in Portuguese companies. Real estate no longer qualifies.",
+      "requirements": "CMVM-regulated fund, maturity of at least 5 years, at least 60% invested in Portuguese companies, no real estate exposure. Investment must be kept for at least 5 years. Real estate, property funds and the EUR 1.5 million capital-transfer option were removed in October 2023. Lei 23/2007 art. 90-A (statute text not retrieved directly; amounts from Connaught Law, a law firm). Not open to EU/EEA/Swiss citizens (they use free movement). Permit 2 years, renewable in 2-year periods.",
+      "physical_presence": "Average 7 days in the first year and 14 days in each later 2-year period",
+      "sources": [
+        {
+          "title": "Portugal Golden Visa 2026: requirements, investment routes, stay, citizenship",
+          "url": "https://connaughtlaw.com/portugal-golden-visa-program-guide/",
+          "publisher": "Connaught Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Lei n.º 23/2007 (foreigners' law), consolidated",
+          "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-34563975",
+          "publisher": "Diário da República",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 250000,
+        "currency": "EUR"
+      },
+      "investment_options": "Other ARI routes: scientific research EUR 500,000; company creation EUR 500,000 with 5 jobs; job creation with 10 full-time jobs (8 in low-density areas), no minimum sum.",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "Spouse or partner, dependent children and dependent parents can be included.",
+      "tax_note": "A permit does not make you tax resident.",
+      "status_note": "",
+      "id": "golden_visa_culture",
+      "name": "Golden Visa (ARI): cultural or heritage donation",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A non-refundable donation of at least EUR 250,000 to an approved arts or heritage project gives a residence permit.",
+      "requirements": "Donation to a pre-approved project. EUR 200,000 in low-density areas (per Connaught Law; a 20% reduction). Investment must be kept for at least 5 years. Real estate, property funds and the EUR 1.5 million capital-transfer option were removed in October 2023. Lei 23/2007 art. 90-A (statute text not retrieved directly; amounts from Connaught Law, a law firm).",
+      "physical_presence": "Average 7 days in the first year and 14 days in each later 2-year period",
+      "sources": [
+        {
+          "title": "Portugal Golden Visa 2026: requirements, investment routes, stay, citizenship",
+          "url": "https://connaughtlaw.com/portugal-golden-visa-program-guide/",
+          "publisher": "Connaught Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Lei n.º 23/2007 (foreigners' law), consolidated",
+          "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-34563975",
+          "publisher": "Diário da República",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "EUR"
+      },
+      "investment_options": "Job creation has no minimum sum (10 jobs).",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "Spouse or partner, dependent children and dependent parents can be included.",
+      "tax_note": "A permit does not make you tax resident.",
+      "status_note": "",
+      "id": "golden_visa_business",
+      "name": "Golden Visa (ARI): research, company creation or job creation",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Permits for EUR 500,000 into accredited research, EUR 500,000 into a Portuguese company that creates 5 jobs, or creating 10 jobs.",
+      "requirements": "Investment must be kept for at least 5 years. Real estate, property funds and the EUR 1.5 million capital-transfer option were removed in October 2023. Lei 23/2007 art. 90-A (statute text not retrieved directly; amounts from Connaught Law, a law firm). Company route: create or reinforce a company and create or keep at least 5 jobs. Job route: at least 10 full-time jobs (8 in low-density areas).",
+      "physical_presence": "Average 7 days in the first year and 14 days in each later 2-year period",
+      "sources": [
+        {
+          "title": "Portugal Golden Visa 2026: requirements, investment routes, stay, citizenship",
+          "url": "https://connaughtlaw.com/portugal-golden-visa-program-guide/",
+          "publisher": "Connaught Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Lei n.º 23/2007 (foreigners' law), consolidated",
+          "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-34563975",
+          "publisher": "Diário da República",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "Removed for new applications in October 2023 under the Mais Habitacao package; applications filed earlier continue under the old rules (per Connaught Law).",
+      "id": "golden_visa_real_estate",
+      "name": "Golden Visa (ARI): real estate and capital transfer",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "temporary_residence",
+      "summary": "Property purchase (EUR 500,000 and up), property funds and a EUR 1.5 million capital transfer no longer give a permit.",
+      "requirements": "Closed. Pre-October 2023 applications are still being processed and renewed. See the open ARI routes.",
+      "physical_presence": "Average 7 days in the first year and 14 days in each later 2-year period",
+      "sources": [
+        {
+          "title": "Portugal Golden Visa 2026: requirements, investment routes, stay, citizenship",
+          "url": "https://connaughtlaw.com/portugal-golden-visa-program-guide/",
+          "publisher": "Connaught Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 11040,
+        "currency": "EUR"
+      },
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "Spouse, children and dependent parents can join; each adds to the income and savings test.",
+      "tax_note": "A permit does not make you tax resident; 183 days or a habitual home in Portugal does.",
+      "status_note": "",
+      "id": "d7_passive_income",
+      "name": "D7 residence visa (passive income / retirees)",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For people living on pensions, rent or dividends: show regular passive income of at least the minimum wage (EUR 920 a month in 2026) and a home in Portugal.",
+      "requirements": "Passive income of about EUR 920 a month (2026 minimum wage), i.e. EUR 11,040 a year; spouse adds 50%, each child 30%. Savings about 12 months of income (EUR 11,040) in a Portuguese account. Accommodation, typically a 12-month lease. Pensions, rent, dividends count; salary or freelance does not. The threshold is a consular practice tied to the minimum wage, not a fixed statutory figure.",
+      "physical_presence": "Up to 6 consecutive months and 8 months in total abroad per permit period",
+      "sources": [
+        {
+          "title": "Portugal D7 visa requirements 2026",
+          "url": "https://www.portugalist.com/d7-changes-2026",
+          "publisher": "Portugalist",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 44160,
+        "currency": "EUR"
+      },
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Working from Portugal can create tax residence after 183 days.",
+      "status_note": "",
+      "id": "d8_digital_nomad",
+      "name": "D8 digital nomad visa",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For remote workers earning four times the Portuguese minimum wage (EUR 3,680 a month in 2026) from clients or an employer outside Portugal.",
+      "requirements": "Income of at least EUR 3,680 a month (4x EUR 920), from outside Portugal; savings of about EUR 11,040; accommodation; clean record. Temporary-stay visa (12 months) or residence visa (4 months, then a 2-year permit).",
+      "physical_presence": "Residence permit: no fixed day count stated in sources; absences should stay short (open question)",
+      "sources": [
+        {
+          "title": "Portugal D8 visa threshold increase 2026",
+          "url": "https://remoteworkeurope.eu/news/2026/portugal-d8-visa-threshold-increase",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Portugal D7 visa requirements 2026",
+          "url": "https://www.portugalist.com/d7-changes-2026",
+          "publisher": "Portugalist",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "",
+      "id": "d2_entrepreneur",
+      "name": "D2 entrepreneur / independent professional visa",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For people starting a business or working independently in Portugal; needs a business plan and proof of means.",
+      "requirements": "Business plan or service contracts and means of subsistence. Thresholds not sourced here (Lei 23/2007 arts. 88 and 89).",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Lei n.º 23/2007 (foreigners' law), consolidated",
+          "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-34563975",
+          "publisher": "Diário da República",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "",
+      "id": "work_permit",
+      "name": "Work permits (D1 employee, D3 highly qualified, job-seeker)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Non-EU workers need a job offer or contract and a work visa; highly qualified workers have a fast track.",
+      "requirements": "Employment contract or promise of one and a work visa from a consulate, then an AIMA residence permit. Details not researched in depth.",
+      "physical_presence": "Live in Portugal; no fixed day count sourced",
+      "sources": [
+        {
+          "title": "Lei n.º 23/2007 (foreigners' law), consolidated",
+          "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-34563975",
+          "publisher": "Diário da República",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Official AIMA/Diario da Republica text of Lei 23/2007 art. 90-A and Lei Organica 1/2026 not retrieved directly; figures come from law-firm and press pages.",
+    "Government fees (visa, AIMA permit, ARI application) not sourced.",
+    "D7 threshold is consular practice (EUR 920 a month in 2026); official consulate figure not confirmed.",
+    "Minimum physical presence for D8 and D2/D3 not sourced.",
+    "Whether the 10-year naturalisation clock counts from first permit or application: sources differ.",
+    "Dual citizenship statement not re-sourced."
+  ],
+  "sources": [
+    {
+      "title": "Portugal Golden Visa 2026: requirements, investment routes, stay, citizenship",
+      "url": "https://connaughtlaw.com/portugal-golden-visa-program-guide/",
+      "publisher": "Connaught Law",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "O que muda com a Lei da Nacionalidade?",
+      "url": "https://eco.sapo.pt/descodificador/o-que-muda-com-a-lei-da-nacionalidade/01-o-que-e-a-a-nova-lei-da-nacionalidade/",
+      "publisher": "ECO (Sapo)",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Your Europe: Residence rights in another EU country",
+      "url": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+      "publisher": "European Union",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

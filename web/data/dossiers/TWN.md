@@ -60,6 +60,8 @@ Estate tax applies to the estate (estate basis) at 10% up to TWD 56.21 million, 
 - **Residence/domicile rules:** Nationality plus habitual residence (Art. 4): ROC nationals with a domicile in the two prior years or 365+ days of stay are taxed worldwide; non-nationals are always taxed on Taiwan property only.
 - **Business relief covers listed shares:** False
 
+**Surviving spouse:** A spouse deduction of TWD 5.53 million (Estate and Gift Tax Act art. 17; EY 2026) plus a deduction for the spouse's claim to the marital-property difference; the rest is taxed at 10%-20%, and the spouse deduction is not available where the decedent is a foreign national or a non-domiciled Taiwanese. Gifts between spouses are exempt, but gifts within two years of death are added back (art. 15).
+
 ## Wealth tax
 
 ### Taiwan resident (`standard`)
@@ -119,7 +121,9 @@ Not researched in this pass (no quickly verifiable sources).
 - Worldwide Governance Indicators, Control of Corruption estimate, Taiwan, China (World Bank, intergovernmental): https://api.worldbank.org/v2/country/TWN/indicator/GOV_WGI_CC.EST?format=json&mrnev=1
 - 113年國人平均壽命80.77歲，較上年增加0.54歲 (2024 abridged life table press release, 23 August 2025) (Ministry of the Interior, Department of Statistics, government): https://www.moi.gov.tw/News_Content.aspx?n=4&s=330934
 - Statistical Tables (Yearbook): Table 4 Criminal cases known to the police by classification; Table 1 crime rate per 100,000 (National Police Agency, Ministry of the Interior, government): https://www.npa.gov.tw/en/app/data/view?module=wg055&id=8026&serno=6f85cc4f-cd02-40d9-b4ea-2c0cc066c17b
+- EY Worldwide Personal Tax and Immigration Guide 2025-26 (March 2026 edition): https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/tax-guides/documents/ey-gl-worldwide-personal-immigration-tax-guide-03-2026.pdf
 
 ## Change log
 
 - 2026-10-15: initial research.
+- 2026-10-16: added surviving-spouse treatment.

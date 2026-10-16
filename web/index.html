@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>domicile.wiki</title>
-  <meta name="description" content="Interactive, source-linked map ranking countries and regions for relocation: a high-net-worth individual (HNWI) and family (capital gains, dividend, inheritance and wealth taxes), an expat employee or a digital nomad (income tax, social security, rent and visas), plus safety, stability, rule of law and quality of life.">
+  <meta name="description" content="Interactive, source-linked guide ranking countries and regions for relocation: a high-net-worth individual (HNWI) and family (capital gains, dividend, inheritance and wealth taxes), an expat employee or a digital nomad (income tax, social security, rent and visas), plus safety, stability, rule of law and quality of life.">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="color-scheme" content="light dark">
@@ -13,70 +13,110 @@
   <script src="vendor/d3-7.9.0.min.js" defer></script>
   <script src="vendor/topojson-client-3.1.0.min.js" defer></script>
   <script type="module" src="js/main.js"></script>
+  <!-- Fetch everything the first screen needs at once instead of discovering it import by import
+       (tests/test_data.py checks that every module is listed). -->
+  <link rel="preload" href="data/scores.json" as="fetch" crossorigin>
+  <link rel="preload" href="data/world.topo.json" as="fetch" crossorigin>
+  <link rel="preload" href="vendor/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="vendor/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="modulepreload" href="js/colors.js">
+  <link rel="modulepreload" href="js/data.js">
+  <link rel="modulepreload" href="js/dom.js">
+  <link rel="modulepreload" href="js/earned.js">
+  <link rel="modulepreload" href="js/globe.js">
+  <link rel="modulepreload" href="js/guide.js">
+  <link rel="modulepreload" href="js/labels.js">
+  <link rel="modulepreload" href="js/layers.js">
+  <link rel="modulepreload" href="js/markdown.js">
+  <link rel="modulepreload" href="js/modes/compare.js">
+  <link rel="modulepreload" href="js/modes/explorer.js">
+  <link rel="modulepreload" href="js/modes/factbook.js">
+  <link rel="modulepreload" href="js/modes/guided.js">
+  <link rel="modulepreload" href="js/modes/settings.js">
+  <link rel="modulepreload" href="js/panels/calculator.js">
+  <link rel="modulepreload" href="js/panels/immigration.js">
+  <link rel="modulepreload" href="js/panels/methodology.js">
+  <link rel="modulepreload" href="js/panels/persona.js">
+  <link rel="modulepreload" href="js/panels/profile.js">
+  <link rel="modulepreload" href="js/panels/rankings.js">
+  <link rel="modulepreload" href="js/panels/sources.js">
+  <link rel="modulepreload" href="js/panels/succession.js">
+  <link rel="modulepreload" href="js/panels/weights.js">
+  <link rel="modulepreload" href="js/results.js">
+  <link rel="modulepreload" href="js/router.js">
+  <link rel="modulepreload" href="js/scoring.js">
+  <link rel="modulepreload" href="js/state.js">
+  <link rel="modulepreload" href="js/taxcalc.js">
 </head>
 <body>
-  <a class="skip" href="#panel">Skip to details panel</a>
-  <header class="topbar">
-    <div class="brand">
-      <h1 class="wordmark" aria-label="domicile.wiki">d<svg class="globe-o" viewBox="0 0 44 44" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="22" cy="22" r="18" stroke-width="3.6"/><ellipse cx="22" cy="22" rx="7.5" ry="18" stroke-width="3.6"/><line x1="4" y1="22" x2="40" y2="22" stroke-width="3.6"/><path d="M8 11.5Q22 8 36 11.5M8 32.5Q22 36 36 32.5" stroke-width="2.4"/></g></svg>micile<span class="tld">.wiki</span></h1>
-      <span id="built" class="muted small"></span>
-    </div>
-    <div class="persona-wrap">
-      <div class="persona-switch" id="persona" role="group" aria-label="Who is moving"></div>
-      <span id="persona-summary" class="sr-only"></span>
-    </div>
-    <nav class="views" id="views" aria-label="Map views"></nav>
-    <div class="controls">
-      <label class="ctl-inline"><span>Layer</span><select id="layer"></select></label>
-      <label class="ctl-inline"><span>Citizenship</span>
-        <select id="citizenship">
-          <option value="EU">EU citizen</option>
-          <option value="US">US citizen</option>
-          <option value="OTHER">Other nationality</option>
-        </select>
-      </label>
-      <label class="ctl-inline" id="activity-wrap" title="Some special regimes (e.g. Spain's Beckham law, Portugal's IFICI) need employment or a qualifying business activity. A passive investor family cannot use them.">
-        <input type="checkbox" id="activity"> <span>Family will work locally</span>
-      </label>
-      <label class="ctl-inline" id="structures-wrap" title="Holding structures such as a German asset-management GmbH or an Austrian private foundation can cut tax on gains while money stays invested. Payouts to the family are taxed.">
-        <input type="checkbox" id="structures" checked> <span>Consider holding structures</span>
-      </label>
+  <a class="skip" href="#stage">Skip to content</a>
+  <div class="app">
+    <aside class="guide" aria-label="Guide">
+      <div class="brand">
+        <h1 class="wordmark" aria-label="domicile.wiki">d<svg class="globe-o" viewBox="0 0 44 44" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="22" cy="22" r="18" stroke-width="3.6"/><ellipse cx="22" cy="22" rx="7.5" ry="18" stroke-width="3.6"/><line x1="4" y1="22" x2="40" y2="22" stroke-width="3.6"/><path d="M8 11.5Q22 8 36 11.5M8 32.5Q22 36 36 32.5" stroke-width="2.4"/></g></svg>micile<span class="tld">.wiki</span></h1>
+        <p class="tagline small muted">Where to live: taxes, safety and daily life, with sources.</p>
+      </div>
+
+      <nav class="modes" id="modes" aria-label="Ways to explore"></nav>
+
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Find a country or region…" autocomplete="off" role="combobox"
+               aria-expanded="false" aria-controls="search-results" aria-autocomplete="list" aria-label="Find a country or region">
+        <ul id="search-results" role="listbox" hidden></ul>
+      </div>
+
+      <section class="globe-box" aria-label="Globe">
+        <div id="globe" class="globe"></div>
+        <p id="globe-caption" class="small globe-caption"></p>
+        <div class="globe-legend small muted">
+          <span class="spectrum"><span>Best</span><i class="spectrum-bar" aria-hidden="true"></i><span>Weak</span></span>
+          <span class="legend-item"><i class="swatch band-red"></i>Ruled out</span>
+          <span class="legend-item"><i class="swatch unscored"></i>No data</span>
+          <span class="legend-item"><i class="swatch eu-swatch"></i>EU</span>
+          <span class="legend-item" title="Occupied territory or UN buffer zone: part of a state, not ranked"><i class="swatch hatch-swatch"></i>Occupied</span>
+        </div>
+      </section>
+
+      <section class="situation" aria-labelledby="situation-h">
+        <div class="situation-head">
+          <h2 id="situation-h" class="guide-h">Your situation</h2>
+          <button type="button" id="open-settings" class="settings-link" title="Weights, knock-out rules, saved settings">⚙ Settings</button>
+        </div>
+        <div class="persona-switch" id="persona" role="group" aria-label="Who is moving"></div>
+        <span id="persona-summary" class="sr-only"></span>
+        <label class="ctl"><span>Passport</span>
+          <select id="citizenship">
+            <option value="EU">EU citizen</option>
+            <option value="US">US citizen</option>
+            <option value="OTHER">Other nationality</option>
+          </select>
+        </label>
+        <label class="chk" id="structures-wrap" title="Holding structures such as a German asset-management GmbH or an Austrian private foundation can cut tax on gains while money stays invested. Payouts to the family are taxed.">
+          <input type="checkbox" id="structures" checked> <span>Consider holding structures</span>
+        </label>
+        <p class="weights-line small" id="weights-line"></p>
+      </section>
       <div class="theme-switch" role="group" aria-label="Colour theme">
         <button type="button" data-theme-choice="system" title="Follow the system setting" aria-label="Follow system theme">Auto</button>
         <button type="button" data-theme-choice="light" title="Light theme" aria-label="Light theme">Light</button>
         <button type="button" data-theme-choice="dark" title="Dark theme" aria-label="Dark theme">Dark</button>
       </div>
-      <div class="search-wrap">
-        <input id="search" type="search" placeholder="Find a jurisdiction…" autocomplete="off" role="combobox"
-               aria-expanded="false" aria-controls="search-results" aria-autocomplete="list" aria-label="Find a jurisdiction">
-        <ul id="search-results" role="listbox" hidden></ul>
-      </div>
-    </div>
-  </header>
-  <main class="layout">
-    <section class="map-wrap" aria-label="Map">
-      <div id="map" class="map"></div>
-      <div class="map-tools">
-        <button id="zoom-in" aria-label="Zoom in">+</button>
-        <button id="zoom-out" aria-label="Zoom out">−</button>
-        <button id="zoom-reset" aria-label="Reset zoom">⟲</button>
-      </div>
-      <label id="regions-toggle-wrap" class="regions-toggle" hidden>
-        <input type="checkbox" id="regions-toggle"> Show Swiss cantons, Spanish and Italian regions
-      </label>
-      <div id="legend" class="legend" aria-label="Legend"></div>
-      <p id="views-note" class="small muted views-note"></p>
-      <div id="loading" class="loading">Loading map data…</div>
-      <div id="fatal" class="fatal" role="alert" hidden></div>
-      <noscript><p class="fatal">This interactive map needs JavaScript.</p></noscript>
-    </section>
-    <aside class="side">
-      <div id="tabs" class="tabs" role="tablist"></div>
-      <div id="panel" class="panel" role="tabpanel" tabindex="-1"></div>
+
+      <footer class="guide-foot small muted">
+        <a class="repo-link" href="https://github.com/davidszp/domicile-wiki" rel="noopener" aria-label="Source code on GitHub" title="Source code on GitHub">
+          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <p>All four views use the same data and your settings. <span id="built"></span></p>
+        <p>Research, not tax or legal advice. Code AGPL-3.0, data CC BY-SA 4.0.</p>
+      </footer>
     </aside>
-  </main>
-  <footer class="footer small">
-    Boundaries: Natural Earth. Indicators: World Bank WGI/WDI, UNDP, Transparency International, EF EPI. Not tax or legal advice.
-  </footer>
+
+    <main id="stage" class="stage" tabindex="-1">
+      <div id="loading" class="loading">Loading data…</div>
+      <div id="fatal" class="fatal" role="alert" hidden></div>
+      <noscript><p class="fatal">This site needs JavaScript.</p></noscript>
+    </main>
+  </div>
+
 </body>
 </html>

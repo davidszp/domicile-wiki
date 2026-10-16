@@ -279,7 +279,9 @@
         "business_relief": "Dutreil pact (art. 787 B CGI): 75% of the value of shares in an operating company exempt with collective (2 years) and individual (4 years) holding commitments and a management role; does not apply to holding companies of listed portfolios.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Worldwide if the deceased/donor is resident, or the heir has been resident 6 of the last 10 years. Foreign inheritance tax on foreign assets credited (art. 784 A); estate tax treaties with about 35 countries including the US.",
-        "domicile_rules": "French domicile (art. 4 B) of the deceased/donor at the time of transfer makes worldwide assets taxable; there is no post-departure tail for the donor, but an heir resident 6 of the last 10 years pays French tax on foreign assets from a non-resident parent."
+        "domicile_rules": "French domicile (art. 4 B) of the deceased/donor at the time of transfer makes worldwide assets taxable; there is no post-departure tail for the donor, but an heir resident 6 of the last 10 years pays French tax on foreign assets from a non-resident parent.",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "A surviving spouse or PACS partner is exempt from inheritance tax (CGI art. 796-0 bis; service-public.fr)."
       }
     },
     {

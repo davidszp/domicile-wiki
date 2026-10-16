@@ -53,6 +53,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `fully_exemp
 - **Exemptions and thresholds:** Cash, securities and movables are taxed only above the prior year's average annual salary (relevant only to non-exempt heirs).
 - **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
 - **Sources:** [North Macedonia – Individual – Other taxes](https://taxsummaries.pwc.com/north-macedonia/individual/other-taxes)
+- Surviving spouse (`spouse_treatment` `fully_exempt`): Spouse is in the first inheritance order, which is exempt (PwC); confidence medium because no tax-authority text naming the spouse was found.
 
 ## Wealth tax
 
@@ -105,9 +106,11 @@ US citizens: No US treaty confirmed; US citizens rely on the US foreign tax cred
 - [North Macedonia – Corporate – Taxes on corporate income](https://taxsummaries.pwc.com/north-macedonia/corporate/taxes-on-corporate-income) — PwC Worldwide Tax Summaries (professional)
 - [Куќи/Вили – Издавање – Скопје (houses/villas for rent, Skopje)](https://www.pazar3.mk/oglasi/zivealista/kukji-vili/izdavanje/skopje) — Pazar3.mk (other)
 - [Tuition and Fees 2026–2027](https://www.nova.edu.mk/admissions/tuition-and-fees) — NOVA International School Skopje (other)
+- [Mickovic and Ristov (2017): Inheritance position of the spouse, incl. North Macedonia, first order of succession (Law on Inheritance Art. 13)](https://www.pravni.ues.rs.ba/Download/Zbornik-Dvadeset_godina_Dejtonskog_mirovnog_sporazuma/32_Dejan_Mickovic.pdf)
 
 ## Change log
 
 - 2026-10-15: initial research.
 - 2026-10-15: cost-of-living pass: added Skopje prime rent (EUR 2,400/month, median of 49 houses of 200 m² or more in Centar/Karpoš on Pazar3.mk) and NOVA International School Grades 11–12 fee (EUR 15,600, 2026–27).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

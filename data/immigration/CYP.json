@@ -1,0 +1,281 @@
+{
+  "id": "CYP",
+  "name": "Cyprus",
+  "researched_on": "2026-10-16",
+  "summary": "EU citizens only register. Non-EU citizens (US and others) can get permanent residence by investing EUR 300,000 and showing EUR 50,000 of income, or through the no-investment Category F with EUR 9,568 of foreign income (but a multi-year queue), or a digital nomad visa at EUR 42,000 a year. Citizenship by investment ended in 2020.",
+  "naturalisation": "Under Law 149(I)/2023 (from 19 December 2023): 12 months of lawful residence immediately before applying plus 7 years of lawful residence in the preceding 10, so about 8 years; Greek B1 and a civics test (60%). A faster 4 to 5 year path exists for highly skilled workers who pass Greek and civics exams.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "One source says Cyprus allows dual citizenship without restriction; not confirmed from an official text.",
+  "routes": [
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 8,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Tax residence follows the 183-day rule or the 60-day rule, separate from immigration status.",
+      "status_note": "",
+      "id": "eu_free_movement",
+      "name": "EU free movement (MEU1 registration)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "EU citizens register with the Migration Department after 3 months and get permanent residence after 5 years.",
+      "requirements": "Valid ID or passport; workers, self-employed or economically inactive with resources and health cover. Registration certificate MEU1; permanent residence on form MEU3 after 5 years of continuous legal residence.",
+      "physical_presence": "No fixed minimum",
+      "sources": [
+        {
+          "title": "Your Europe: Residence rights in another EU country",
+          "url": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+          "publisher": "European Union",
+          "kind": "intergovernmental",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Cyprus permanent residency (updated 13 October 2026)",
+          "url": "https://gk-lawfirm.com/cn/practice-areas/immigration-law/cyprus-permanent-residency",
+          "publisher": "GK Law Firm",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 300000,
+        "currency": "EUR"
+      },
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 50000,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 500,
+        "currency": "EUR"
+      },
+      "fees_note": "EUR 500 for the main application covering spouse and minor children, plus EUR 70 per person for the Aliens Registration Certificate; adult children EUR 500 each.",
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 8,
+      "processing_time": "About 2 months officially, about 6 months in practice",
+      "family": "Spouse and minor children included; adult children apply separately.",
+      "tax_note": "A permit does not make you tax resident; Cyprus non-dom rules apply once you are resident.",
+      "status_note": "",
+      "id": "pr_fast_track",
+      "name": "Fast-track permanent residence by investment (Regulation 6(2))",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for a EUR 300,000 property or business investment plus EUR 50,000 a year of income from abroad.",
+      "requirements": "Investment of at least EUR 300,000 plus VAT in new property, Cyprus company share capital or a CySEC-supervised fund; secured annual income from abroad of at least EUR 50,000, plus EUR 15,000 for a spouse and EUR 10,000 per child under 18. Investor and spouse cannot work in Cyprus except as directors of the invested company. Annual proof of investment and health insurance; criminal record every 3 years. Permit ends after 2 years of absence. Tighter rules were signalled but not published (per GK Law, 13 October 2026).",
+      "physical_presence": "Visit at least once every 2 years (permit ends after 2 years' absence)",
+      "sources": [
+        {
+          "title": "Cyprus permanent residency (updated 13 October 2026)",
+          "url": "https://gk-lawfirm.com/cn/practice-areas/immigration-law/cyprus-permanent-residency",
+          "publisher": "GK Law Firm",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 9568,
+        "currency": "EUR"
+      },
+      "government_fees": null,
+      "fees_note": "Not sourced for Category F separately.",
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 8,
+      "processing_time": "Several years in 2026; the Department is still examining applications filed years earlier",
+      "family": "Dependants add EUR 4,613 a year each to the income test.",
+      "tax_note": "",
+      "status_note": "",
+      "id": "category_f",
+      "name": "Category F permanent residence (secured foreign income)",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for people with secured income from abroad of at least EUR 9,568 a year; no investment, but decisions take years.",
+      "requirements": "Secured income from abroad of at least EUR 9,568 a year plus EUR 4,613 per dependant; Cyprus bank account; owned or rented accommodation; from 1 September 2026 listed medical test results. No work in Cyprus. Regulation 5(f).",
+      "physical_presence": "Visit at least once every 2 years",
+      "sources": [
+        {
+          "title": "Amendments to the Cyprus permanent residence programme (Category F)",
+          "url": "https://www.dixcart.com/news/amendments-to-the-cyprus-permanent-residence-programme/",
+          "publisher": "Dixcart",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Cyprus permanent residency (updated 13 October 2026)",
+          "url": "https://gk-lawfirm.com/cn/practice-areas/immigration-law/cyprus-permanent-residency",
+          "publisher": "GK Law Firm",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 42000,
+        "currency": "EUR"
+      },
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Spouse and children via the income uplift.",
+      "tax_note": "Tax residence follows the 183-day or 60-day rule. The non-dom regime can exempt dividends and some interest for up to 17 years.",
+      "status_note": "",
+      "id": "digital_nomad",
+      "name": "Digital nomad visa",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For remote workers earning at least EUR 3,500 net a month from employers or clients outside Cyprus; capped at 500 permits.",
+      "requirements": "Stable net income of at least EUR 3,500 a month (EUR 42,000 a year), +20% for a spouse and +15% per child (per one guide). Work only for non-Cypriot employers or clients. Scheme capped at 500 permits (another source says 1,000). First permit 1 year, renewable up to 2 more years.",
+      "physical_presence": "No minimum sourced",
+      "sources": [
+        {
+          "title": "Cyprus digital nomad visa 2026",
+          "url": "https://remoteworkeurope.eu/guides/cyprus",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "Abolished effective 1 November 2020; no replacement investor-citizenship scheme exists. Investors now take residence then naturalise.",
+      "id": "cip_citizenship",
+      "name": "Citizenship by investment (Cyprus Investment Programme)",
+      "kind": "citizenship_by_investment",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "citizenship",
+      "summary": "The programme that gave a passport for a EUR 2 million investment no longer exists.",
+      "requirements": "Closed. Sources agree it ended on 1 November 2020; the former EUR 2 million figure is from general knowledge, not the sources cited.",
+      "physical_presence": "Not applicable",
+      "sources": [
+        {
+          "title": "How to get Cyprus citizenship",
+          "url": "https://gk-lawfirm.com/publications/cyprus-citizenship-new-law/",
+          "publisher": "GK Law Firm",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "",
+      "id": "work_permit",
+      "name": "Work permits (employment)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Non-EU workers need an employer to apply for an employment permit for a specific job; quotas and sector rules apply.",
+      "requirements": "Employer-led process; details not researched.",
+      "physical_presence": "Live in Cyprus; no fixed day count sourced",
+      "sources": [
+        {
+          "title": "Cyprus permanent residency (updated 13 October 2026)",
+          "url": "https://gk-lawfirm.com/cn/practice-areas/immigration-law/cyprus-permanent-residency",
+          "publisher": "GK Law Firm",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Official Civil Registry and Migration Department pages not retrieved; figures come from law-firm and agency pages.",
+    "Category F government fee not sourced separately.",
+    "Digital nomad: quota (500 vs 1,000), fees and presence rule not confirmed.",
+    "Work permit rules not researched in depth.",
+    "Dual citizenship not confirmed from an official text.",
+    "Former EUR 2 million CIP threshold not sourced."
+  ],
+  "sources": [
+    {
+      "title": "Cyprus permanent residency (updated 13 October 2026)",
+      "url": "https://gk-lawfirm.com/cn/practice-areas/immigration-law/cyprus-permanent-residency",
+      "publisher": "GK Law Firm",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Amendments to the Cyprus permanent residence programme (Category F)",
+      "url": "https://www.dixcart.com/news/amendments-to-the-cyprus-permanent-residence-programme/",
+      "publisher": "Dixcart",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Cypriot citizenship by years of residence: new legal requirements",
+      "url": "https://www.kyprianou.com/?p=14829",
+      "publisher": "Kyprianou & Co",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Revisions to Cypriot citizenship by years of residence",
+      "url": "https://www.agplaw.com/?p=26573",
+      "publisher": "AGP Law",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

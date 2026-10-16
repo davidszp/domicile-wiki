@@ -1,0 +1,50 @@
+{
+  "id": "BEL",
+  "name": "Belgium",
+  "researched_on": "2026-10-16",
+  "summary": "Children are guaranteed half of the estate between them, and a will cannot reduce it. A foreign national resident in Belgium can choose the law of their nationality under the EU Succession Regulation. There is no domestic trust law, and a private foundation is possible only for a disinterested purpose.",
+  "forced_heirship": "yes",
+  "reserved_share": "Children together: one half of the estate, whatever their number (Civil Code art. 913, as amended by the Law of 31 July 2017, in force 1 September 2018). Parents are no longer protected. The surviving spouse keeps a protected usufruct of the family home and contents. The Civil Code was recast as Book 4 in 2022, so article numbers may have changed.",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Reg. 650/2012 art. 22 allows a choice of nationality law for the whole estate, which removes the Belgian reserve. Belgian courts apply the Regulation, with a public-policy exception (art. 35).",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "Belgium has no trust law and is not party to the Hague Trusts Convention (The HCCH status table lists no signature or ratification for this state; the Convention is not in force here.), but the Private International Law Code (art. 122) recognises foreign trusts by reference to the Convention rules. Foreign trusts and similar vehicles are taxed on a look-through basis (the so-called Cayman tax rules in the income tax code). Private foundations (fondation privee / private stichting) exist under the Companies and Associations Code (Book 10), but must pursue a disinterested purpose, so pure family benefit is not allowed.",
+  "open_questions": [
+    "Article numbers of the reserve and the 4.x numbering after the 2022 Book 4 recast were not verified.",
+    "Whether a private foundation may pay benefits to family members as a secondary purpose was not confirmed."
+  ],
+  "sources": [
+    {
+      "title": "Belgian Civil Code on Justel / Moniteur belge",
+      "url": "https://www.ejustice.just.fgov.be",
+      "publisher": "FPS Justice, Belgium",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "European e-Justice: Successions, Belgium",
+      "url": "https://e-justice.europa.eu/topics/family-matters-inheritance/inheritance/succession/be_en",
+      "publisher": "European Commission",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "LIE",
+  "name": "Liechtenstein",
+  "researched_on": "2026-10-16",
+  "summary": "Children and the spouse are guaranteed half of their intestate share, and a will cannot remove it, though a foundation or trust is a common planning route. Liechtenstein has its own trust and foundation law, and the Hague Trusts Convention is in force. A reform to the Pflichtteil is before parliament.",
+  "forced_heirship": "yes",
+  "reserved_share": "Pflichtteil under the ABGB (about art. 762 ff.): descendants and spouse are protected; ascendants are also protected today. The government proposed in 2023 (BuA 123/2023) to abolish the Pflichtteil of ascendants. Exact fractions not confirmed.",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Not under the EU Regulation. The Private International Law Act (IPRG) art. 29 generally ties succession to the deceased's nationality, so a foreign national normally keeps home-country law. Art. 29 para. 5 adds a double filter on claims against foundations or trusts that received assets in life.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "The Hague Trusts Convention is in force since 1 April 2006 (HCCH table: accession). Liechtenstein has its own trust law (Persons and Companies Act, PGR, Treuhänderschaft) and foundation law (PGR art. 552 ff.), and family foundations are allowed. Art. 29(5) IPRG limits the use of foundations or trusts to defeat forced heirs.",
+  "open_questions": [
+    "Status of the 2023 inheritance reform (BuA 123/2023) after first reading in December 2023 was not found.",
+    "Pflichtteil fractions, PGR article numbers and the text of IPRG art. 29 para. 1 were not verified.",
+    "Whether foreigners may make a formal choice of law (Rechtswahl) beyond the nationality default was not confirmed."
+  ],
+  "sources": [
+    {
+      "title": "Liechtenstein Government: Reform Erbrecht (BuA 123/2023)",
+      "url": "https://www.llv.li/serviceportal2/amtsstellen/stabstelle-regierungskanzlei/bua_123_2023_reform-erbrecht.pdf",
+      "publisher": "Government of Liechtenstein",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Liechtenstein legislation database",
+      "url": "https://www.gesetze.li",
+      "publisher": "Government of Liechtenstein",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

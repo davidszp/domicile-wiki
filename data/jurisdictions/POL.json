@@ -161,7 +161,9 @@
         "business_relief": "Not needed for children under the zero group exemption.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Polish-situs assets are always in scope (except movables and rights where neither party is Polish citizen or resident); foreign assets are in scope if the heir/donee is a Polish citizen or has permanent residence in Poland (art. 2).",
-        "domicile_rules": "Scope follows the recipient's Polish citizenship or permanent residence at the time of acquisition."
+        "domicile_rules": "Scope follows the recipient's Polish citizenship or permanent residence at the time of acquisition.",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "Spouse is in the zero group and exempt (Act on Inheritance and Gift Tax, Art. 4a) only if the acquisition is reported to the tax office within 6 months of the final court ruling or notarial certificate (late filing can be restored, Art. 4c), and the acquirer is a Polish/EU/EEA citizen or resident (Art. 4(4)); otherwise Group I rates of 3-7% apply."
       },
       "sources": [
         {

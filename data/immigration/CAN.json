@@ -1,0 +1,159 @@
+{
+  "id": "CAN",
+  "name": "Canada",
+  "researched_on": "2026-10-16",
+  "summary": "No one can buy Canadian residence at federal level in 2026: the federal investor programme ended in 2014 and the Start-up Visa has taken no new applications since 31 December 2025. Quebec's investor programme (CAD 1.2 million, mostly refundable) is the only passive route. Everyone else uses points-based Express Entry or a provincial nomination. EU, US and other passports are treated alike.",
+  "naturalisation": "Permanent residents need 1,095 days (3 years) in Canada in the 5 years before applying (730 days as a PR), tax filing for 3 of 5 years, language CLB 4 and a knowledge test for ages 18 to 54.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Canada allows dual citizenship, but the applicant's other country may not.",
+  "routes": [
+    {
+      "id": "start_up_visa",
+      "name": "Start-up Visa (permanent residence)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "suspended",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for founders backed by a designated Canadian investor group, incubator or accelerator. Paused: new applications stopped on 31 December 2025.",
+      "requirements": "A commitment certificate from a designated organisation, a qualifying business, language CLB 5 and settlement funds. IRCC stopped accepting new permanent residence applications at 11:59 pm on 31 December 2025 (Start-up Visa work permits ended 19 December 2025); applicants with a valid 2025 commitment certificate could apply until 30 June 2026. IRCC's 2026-27 departmental plan mentions a new 'high impact' start-up visa pilot with no dates announced.",
+      "physical_presence": "PR holders must be in Canada 730 days in any 5 years to keep status",
+      "sources": [
+        {
+          "title": "Start-up Visa program",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/start-visa.html",
+          "publisher": "IRCC",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Canada Suspends Start-Up Visa, Hints at New Replacement in 2026",
+          "url": "https://www.imidaily.com/north-america/canada-suspends-start-up-visa-hints-at-new-replacement-in-2026/",
+          "publisher": "IMI Daily",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "status_note": "Paused to new applications from 31 December 2025; grace for 2025 commitment-certificate holders ended 30 June 2026; replacement pilot announced without details.",
+      "path_to_citizenship_years": 3,
+      "family": "Spouse and dependent children included.",
+      "tax_note": "Becoming a Canadian resident makes worldwide income taxable in Canada."
+    },
+    {
+      "id": "federal_investor",
+      "name": "Federal Immigrant Investor Program and IIVC pilot",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "permanent_residence",
+      "summary": "Canada's passive-investor immigration programmes are closed: the federal Immigrant Investor Program ended in 2014 and its venture-capital replacement is no longer open.",
+      "requirements": "The Immigrant Investor Program (a CAD 800,000 five-year interest-free loan to a province) was terminated in February 2014. The 2015 Immigrant Investor Venture Capital pilot (net worth CAD 10 million, CAD 2 million non-guaranteed investment over 15 years, 60 visas) is no longer open. No federal passive-investor route exists in 2026.",
+      "physical_presence": "not applicable",
+      "sources": [
+        {
+          "title": "Investor Immigration Canada 2026: What Still Works",
+          "url": "https://bridgepointlaw.ca/investor-immigration-canada-2026-guide/",
+          "publisher": "Bridgepoint Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "New investor visa program to offer permanent residency to 60 millionaires",
+          "url": "https://immigration.ca/new-investor-visa-program-to-offer-permanent-residency-to-60-millionaires/",
+          "publisher": "immigration.ca",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "status_note": "Federal Immigrant Investor Program terminated February 2014; IIVC pilot (2015) no longer open per Bridgepoint Law 2026 guide; no official termination notice for the pilot was read."
+    },
+    {
+      "id": "quebec_investor",
+      "name": "Quebec Immigrant Investor Program (QIIP)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Quebec selects investors who place CAD 1,000,000 with a government-listed intermediary for 5 years (returned without interest) and donate CAD 200,000. Federal permanent residence follows. Relaunched 1 January 2024 with intake caps.",
+      "requirements": "Net worth at least CAD 2,000,000; CAD 1,200,000 total (CAD 1,000,000 refundable after 5 years, CAD 200,000 non-refundable); 2 years of management experience in the last 5; oral French at level 7 (B2); secondary diploma; age 18+. Intake cap 1,900 applications per period (1,330 China/Hong Kong/Macao, 570 others); periods are announced when open. All figures from one law-firm guide dated June 2026, not the MIFI page.",
+      "physical_presence": "Intent to settle in Quebec; PR holders need 730 days in any 5 years",
+      "sources": [
+        {
+          "title": "Quebec investor and start-up immigration 2026",
+          "url": "https://silaws.com/quebec-investor-startup-immigration-2026-en/",
+          "publisher": "SiLaw",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 1200000,
+        "currency": "CAD"
+      },
+      "investment_options": "CAD 1,000,000 is refundable after 5 years; the net cost is the CAD 200,000 donation plus lost returns.",
+      "government_fees": {
+        "amount": 1272,
+        "currency": "CAD"
+      },
+      "fees_note": "MIFI application fee per SiLaw; federal PR fees not included.",
+      "processing_time": "About 2.5 to 3.5 years in total per SiLaw (12 to 18 months MIFI, 18 to 24 months IRCC)",
+      "path_to_citizenship_years": 3,
+      "family": "Spouse and dependent children included in the application.",
+      "tax_note": "Quebec residents pay Canadian federal and Quebec income tax on worldwide income."
+    },
+    {
+      "id": "canada_skilled_worker",
+      "name": "Express Entry skilled worker programmes",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Points-based permanent residence for skilled workers (Canadian Experience Class, Federal Skilled Worker, Federal Skilled Trades), with a provincial nominee option. No investment is needed.",
+      "requirements": "Language CLB 7 (CLB 5 for some trades and TEER 2/3 jobs); one year of skilled work experience (in Canada for the Canadian Experience Class); secondary education for Federal Skilled Worker; a job offer only for Skilled Trades. Candidates are ranked and invited. US citizens have no special access beyond temporary CUSMA work categories (not researched).",
+      "physical_presence": "PR holders need 730 days in any 5 years",
+      "sources": [
+        {
+          "title": "How Express Entry works",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/works.html",
+          "publisher": "IRCC",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_citizenship_years": 3,
+      "fees_note": "Express Entry fees were not read on an IRCC page; left null."
+    }
+  ],
+  "open_questions": [
+    "Canada has no digital nomad visa; IRCC's rules on remote work by visitors were not researched.",
+    "Quebec investor programme figures come from one law-firm guide; confirm on the MIFI site (the MIFI page returned 404).",
+    "IIVC pilot closure: no official IRCC notice read; 'closed' rests on a 2026 law-firm guide.",
+    "Express Entry fees and current processing times were not read.",
+    "Temporary CUSMA/NAFTA work categories for US citizens and Canadian study/work permits were not researched.",
+    "Start-up Visa replacement pilot: check IRCC for details and dates."
+  ],
+  "sources": [
+    {
+      "title": "Citizenship eligibility",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/eligibility.html",
+      "publisher": "IRCC",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

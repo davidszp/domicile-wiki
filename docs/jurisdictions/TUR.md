@@ -58,6 +58,8 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `taxed`, exe
 - **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
 - **Sources:** [Veraset ve İntikal Vergisi Kanunu (Law 7338), consolidated text with 2026 amounts](https://www.mevzuat.gov.tr/mevzuatmetin/1.3.7338.pdf); [Veraset ve İntikal Vergisi Kanunu Genel Tebliği (Seri No: 57), Resmî Gazete 33124 (5. Mük.), 31 Dec 2025](https://www.resmigazete.gov.tr/eskiler/2025/12/20251231M5-22.pdf); [2026 yılında uygulanacak veraset ve intikal vergisi maktu istisna tutarları ile matrah dilim tutarları yayımlandı](https://kpmgvergi.com/yayinlar/mali-bultenler/vergi/2026-yilinda-uygulanacak-veraset-ve-intikal-vergisi-maktu-istisna-tutarlari-ile-matrah-dilim-tutarlari-yayimlandi/3355)
 
+**Surviving spouse:** The spouse has the same exemption as each child, TRY 2,907,136 (TRY 5,817,845 if the deceased left no descendants), and the same 1%-10% scale (Law 7338 arts. 4(b) and 16).
+
 ## Wealth tax
 
 No national net wealth tax. Ordinary property tax (0.1% residential, doubled in metropolitan areas) and a 'valuable housing tax' (0.3%–1.0% on the value above TRY 17,711,000 for 2026) apply to Turkish homes.
@@ -172,3 +174,4 @@ US citizens: US–Turkey income tax treaty in force (saving clause). Under the L
 - 2026-10-15: phase 2 data-quality pass. Inheritance: replaced the flagged single 10% whole-amount rate with the 2026 Law 7338 bands (1/3/5/7/10% at TRY 3m/10m/25m/55m) and the TRY 2,907,136 per-child exemption (Communiqué 57); documented the citizenship/situs scope (Art. 1) and half-rate parent-to-child gifts. Capital gains: foreign securities and private company stakes 40% (GVK Mük. 80), real estate 0% after five years, Turkish A.Ş. shares 0% after two years. Law 7582 regime: eligibility, certificate, no remittance condition, flat 1% inheritance rate (VİVK Art. 16 as amended) verified from the Resmî Gazete text. Added Istanbul rent and IICS school fee.
 - 2026-10-15: inheritance scope set to local assets only for standard, law_7582_new_resident in the structured data (Law 7338 Art. 1: foreign assets of non-Turkish citizens passing to non-Turkish heirs are outside the tax (all citizenship profiles in this tool are non-Turkish)); previously the scoring applied the rates to the worldwide estate, which overstated the tax.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (TRY 165,000).
+- 2026-10-16: added surviving-spouse treatment.

@@ -1,0 +1,45 @@
+{
+  "id": "GUY",
+  "name": "Guyana",
+  "researched_on": "2026-10-16",
+  "summary": "A will is largely free, but a court can order provision for a spouse, children and other dependants from the estate under the Family and Dependants Provision Act. Succession follows the common-law domicile rules and no choice of foreign law is given. Guyana has common-law trusts but is not in the Hague Trusts Convention, and no private-foundation law was found.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "The Family and Dependants Provision Act (Act 22 of 1990, as amended by Act 10 of 2012) lets a court order maintenance or provision for qualifying family and dependants out of the net estate, including where a will omits them.",
+  "foreign_law_choice": "no",
+  "foreign_law_note": "Common-law rule (not confirmed in a Guyanese statute here): movables pass under the law of the deceased's domicile and land under the law of its location. No right to choose the law of nationality was found.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "no",
+  "trust_note": "Common-law trusts are available (Guyana is a common-law country). Guyana is not a party to the Hague Trusts Convention. No private foundation law was found; charities are handled through other statutes. The family-provision Act has anti-avoidance rules that may reach assets moved out of the estate.",
+  "open_questions": [
+    "Chapter number of the Family and Dependants Provision Act is cited as 12:22 by the Ministry of Legal Affairs file and as 12:24 elsewhere; confirm.",
+    "Who qualifies as an applicant, the time limit, and whether trust assets fall in the net estate were not read.",
+    "Whether Guyana has a trust statute (beyond the common law and the Trustees Act) and whether foundations exist was not verified.",
+    "Domicile and conflict rules for succession were not sourced in a Guyanese statute or case."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention on the Law Applicable to Trusts and on their Recognition (1985)",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Family and Dependants Provision Bill 6 of 1990",
+      "url": "https://www.parliament.gov.gy/new2/documents/bills/8420-bill_6_of__1990_family_and_dependants_provision_2.pdf",
+      "publisher": "Parliament of Guyana",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Spousal Family Provision (Barbados, Guyana, Jamaica, the Bahamas, Trinidad and Tobago)",
+      "url": "https://caribbean.vlex.com/vid/spousal-family-provision-barbados-1067805392",
+      "publisher": "vLex",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

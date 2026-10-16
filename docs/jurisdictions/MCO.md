@@ -42,6 +42,7 @@ Government page "Inheritance tax" (updated 30/07/2026):
 - JSON: beneficiary basis, fully_exempt, brackets [].
 
 Re-checked 2026-10-15 on the government page: 0% in direct line (parents/children) and between spouses; 8% siblings, 10% uncles/aunts/nephews/nieces, 13% other relatives, 16% unrelated; tax only on Monaco-situs property whatever the deceased's domicile or nationality.
+- Surviving spouse (`spouse_treatment` `fully_exempt`): Spouse rate is 0% (MonServicePublic); only Monaco-situs property is in scope.
 
 ## Wealth tax
 
@@ -94,3 +95,4 @@ Monaco.
 - 2026-10-15: initial research.
 - 2026-10-15: re-checked direct-line 0% inheritance rate on the government page; recorded that WGI does cover Monaco while homicide/HDI/CPI have no official same-definition source (no override added); added prime rent (LuxuryEstate sample, EUR 110,000/month) and ISM fee (EUR 34,400, 2025/26).
 - 2026-10-15: prime rent corrected from EUR 110,000 to EUR 28,500 a month: the earlier median was dominated by 400-700 m² penthouses; now a 200-300 m² 4-bedroom flat, cross-checked against EUR 114.50/m².
+- 2026-10-16: added surviving-spouse treatment.

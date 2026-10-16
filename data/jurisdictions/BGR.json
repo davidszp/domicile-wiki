@@ -173,7 +173,9 @@
         "business_relief": "Not needed: children exempt.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Exemption for lineal heirs applies to all assets.",
-        "domicile_rules": "Scope: Bulgarian citizens on worldwide estate; foreign citizens on property in Bulgaria (ZMDT art. 29). Children exempt in any case."
+        "domicile_rules": "Scope: Bulgarian citizens on worldwide estate; foreign citizens on property in Bulgaria (ZMDT art. 29). Children exempt in any case.",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "The surviving spouse does not pay inheritance tax, without limit of value (Local Taxes and Fees Act, art. 31(2)); gifts between spouses are also untaxed (art. 44(6))."
       },
       "sources": [
         {

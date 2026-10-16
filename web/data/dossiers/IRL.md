@@ -67,6 +67,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `taxed`, exe
 - **Important exceptions / announced changes:** A foreign-domiciled disponer or beneficiary counts as resident/ordinarily resident for CAT only after five consecutive tax years of Irish residence (and still resident at the date of the gift or inheritance); until then foreign assets passing between non-domiciled persons are outside CAT (rule from general knowledge, s. 6 CATCA 2003; statute page blocked).
 - **Tax year / confidence / verification:** 2026 / high / partially_verified (checked 2026-10-15)
 - **Sources:** [CAT group thresholds](https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx); [CAT thresholds, rates and aggregation rules](https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/index.aspx); [Gift and Inheritance Tax (CAT)](https://www.revenue.ie/en/gains-gifts-and-inheritance/gift-and-inheritance-tax-cat/index.aspx); [What do you not pay CAT on?](https://www.revenue.ie/en/gains-gifts-and-inheritance/gift-and-inheritance-tax-cat/what-do-you-not-pay-cat-on.aspx); [Ireland - Individual - Other taxes](https://taxsummaries.pwc.com/ireland/individual/other-taxes)
+- Surviving spouse and civil partner: inheritance is fully exempt from CAT (CATCA 2003 s.71) and does not use the Group A threshold.
 
 ## Wealth tax
 
@@ -186,6 +187,7 @@ US citizens: US-Ireland income tax treaty applies; there is no estate tax treaty
 - [Tax and Duty Manual Part 18C-00-01: Domicile Levy (last reviewed August 2026)](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf) — Revenue Commissioners (Ireland) (tax_authority)
 - [Tax and Duty Manual Part 13-02-05: Surcharge on certain undistributed income of close companies — Revenue](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-13/13-02-05.pdf)
 - [Ireland - Corporate - Income determination — PwC](https://taxsummaries.pwc.com/ireland/corporate/income-determination)
+- Capital Acquisitions Tax Consolidation Act 2003, section 71 (exemption for spouses, inheritances): https://www.irishstatutebook.ie/eli/2003/act/1/section/71/enacted/en/html
 
 ## Change log
 
@@ -193,3 +195,4 @@ US citizens: US-Ireland income tax treaty applies; there is no estate tax treaty
 - 2026-10-15: added prime rent (MyHome.ie sample, EUR 6,198/month) and NAIS Dublin fee (EUR 25,296, 2026-27); remittance-basis eligibility conditions now state that the 0% rates assume no remittance; domicile levy conditions re-checked against Revenue's Tax and Duty Manual Part 18C (August 2026).
 - 2026-10-15: holding-structure review: no structure added (33% gains, 25% passive income, 20% close-company surcharge, ~55% payout); holding_company_notes updated.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

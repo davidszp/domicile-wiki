@@ -186,7 +186,9 @@
           "The EUR 100 fixed tax for spouse and direct-line heirs on San Marino-situs assets comes from a 2015 article by the head of the Registry Office; the 1981 statute's tariff (lire) has evidently been superseded, but the amending act was not located. It only affects San Marino-situs assets; foreign assets are exempt by statute (art. 4).",
           "Gift tax / registration tax on gifts to children.",
           "Current status of the 'imposta di cinquina' (5% direct line) on San Marino real estate inherited by foreigners (art. 1 Law 84/1981)."
-        ]
+        ],
+        "spouse_treatment": "taxed_low",
+        "spouse_note": "Spouse shares bear a symbolic fixed EUR 100 per heir regardless of value, plus 0.10% stamp duty on the net estate and, on San Marino real estate, 1% transcription and 0.40% cadastral tax; only San Marino-situs assets are taxed (Law 84/1981, as described by the Registry Office in 2015)."
       },
       "sources": [
         {

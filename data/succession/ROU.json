@@ -1,0 +1,43 @@
+{
+  "id": "ROU",
+  "name": "Romania",
+  "researched_on": "2026-10-16",
+  "summary": "The spouse, children and parents are guaranteed half of their intestate share. A foreign resident can choose the law of their nationality (EU Succession Regulation art. 22). Romania has a statutory fiducia in place of trusts; foundations are mainly for public interest.",
+  "forced_heirship": "yes",
+  "reserved_share": "Spouse, descendants and privileged ascendants (parents): half of their intestate share (Civil Code arts. 1086 ff). Gifts that infringe the reserved portion can be reduced at the request of forced heirs.",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "EU Succession Regulation: the law of the last habitual residence applies by default (art. 21), but a resident foreign national may choose the law of their nationality (art. 22).",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "Romania is not in the HCCH table for the 1985 Trusts Convention. The Civil Code has a statutory 'fiducia' (a contract in which assets are held by a manager for a beneficiary), not a common-law trust; its articles were not confirmed. Foundations are governed by Government Ordinance 26/2000 and serve a general-interest or community purpose (not confirmed).",
+  "open_questions": [
+    "Fiducia article numbers and OG 26/2000 purpose rules were not confirmed from the statutes.",
+    "Tax treatment of foreign trusts not sourced."
+  ],
+  "sources": [
+    {
+      "title": "European e-Justice: Succession, Romania",
+      "url": "https://e-justice.europa.eu/166/EN/succession?ROMANIA&member=1",
+      "publisher": "European e-Justice Portal",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) No 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

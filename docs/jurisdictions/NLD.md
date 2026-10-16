@@ -67,6 +67,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `taxed`, exe
 - **Important exceptions / announced changes:** Business succession facility (BOR): large exemption for qualifying business assets, not for investment assets; the BOR has been tightened in recent budgets (2025/2026 details not verified).
 - **Tax year / confidence / verification:** 2026 / high / partially_verified (checked 2026-10-15)
 - **Sources:** [Tarieven erfbelasting 2026](https://www.belastingdienst.nl/wps/wcm/connect/nl/erfbelasting/content/tarieven-erfbelasting); [Vrijstelling erfbelasting 2026](https://www.belastingdienst.nl/wps/wcm/connect/nl/erfbelasting/content/vrijstelling-erfbelasting); [Netherlands - Individual - Other taxes](https://taxsummaries.pwc.com/netherlands/individual/other-taxes)
+- Surviving spouse (`spouse_treatment` `taxed`): Spouse is taxed at 10%/20% after a EUR 828,035 exemption (Belastingdienst 2026), roughly 20% effective on this estate.
 
 ## Wealth tax
 
@@ -156,3 +157,4 @@ US citizens: US-Netherlands income tax treaty and the 1969 US-Netherlands estate
 - 2026-10-15: added prime rent (Huurstunt sample, EUR 4,500/month) and International School of Amsterdam fee (EUR 32,755, 2026-27).
 - 2026-10-15: added the holding structure regime `beleggings_bv` (BV: 25.8% on realised gains and dividends, no Box 3, Box 2 payout 31%); Holding structures section.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

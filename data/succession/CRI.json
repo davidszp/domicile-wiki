@@ -1,0 +1,37 @@
+{
+  "id": "CRI",
+  "name": "Costa Rica",
+  "researched_on": "2026-10-16",
+  "summary": "Costa Rica has freedom of testation. A will must, however, secure maintenance (alimentos) for young or disabled children, the spouse and parents who need it (Civil Code art. 595); the legítima of the pre-1888 code no longer exists. Trusts exist by statute (fideicomiso), foundations are non-profit, and Costa Rica is not in the Hague Trusts Convention.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "The testator must secure maintenance for children until adulthood (for life if disabled), and for parents and a spouse while they need it (Código Civil art. 595); if the will does not, heirs take only what is left after that maintenance. Family Code (Ley 5476) gives the surviving spouse further rights.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "Not sourced. No Costa Rican conflict rule for succession and no choice of law was found.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "The fideicomiso is regulated in the Código de Comercio (arts. 633 ff.), which I did not read here; common-law trusts are not part of the law and foreign trusts' treatment was not sourced. Foundations: Ley de Fundaciones (Ley 5338 of 1973) allows foundations for non-profit purposes; whether a family foundation is possible was not verified. Not in the Hague Trusts Convention.",
+  "open_questions": [
+    "Code of Commerce trust articles and Ley 5338 (foundations) were not read; both entries are 'limited' pending checks.",
+    "Whether art. 595 should be read as a compulsory share is debated in the literature (see source); treated here as a maintenance duty.",
+    "Conflict rule for succession and treatment of foreign heirs were not sourced."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention on the Law Applicable to Trusts and on their Recognition (1985)",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Arroyo Álvarez, legítima y obligación alimentaria, Revista de Ciencias Jurídicas (UCR)",
+      "url": "https://revistas.ucr.ac.cr/index.php/juridicas/article/download/13397/12660/22595",
+      "publisher": "Universidad de Costa Rica",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

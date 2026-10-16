@@ -1,0 +1,239 @@
+{
+  "id": "PHL",
+  "name": "Philippines",
+  "researched_on": "2026-10-16",
+  "summary": "No free movement. EU, US and other passports can use the retiree route (SRRV: refundable deposit from USD 15,000 for pensioners aged 50+, USD 50,000 for non-pensioners aged 40-49), the SIRV (USD 75,000 invested), or a work visa. A digital nomad visa was announced in 2025 but no rules were found. Permanent residence comes with the SRRV and SIRV; citizenship is slow and rare.",
+  "naturalisation": "Naturalisation under Commonwealth Act 473 is understood to need 10 years of residence (5 in special cases), good character and Filipino language knowledge, with a court process; not verified in this run.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Natural-born Filipinos may keep both nationalities under Republic Act 9225; foreign applicants for naturalisation normally must renounce their allegiance. Not verified from an official page.",
+  "routes": [
+    {
+      "id": "srrv_classic_pensioner",
+      "name": "Special Resident Retiree's Visa (SRRV) - Classic, pensioner",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Indefinite resident visa for people 40+ with a lifetime pension, who place a refundable deposit of USD 15,000 (age 50+) or USD 25,000 (age 40-49).",
+      "requirements": "Age 40+; medical certificate and police clearance within 6 months; NBI clearance if stayed over 90 days; apostilled documents; tourist visa valid during processing. Spouse and unmarried children under 21 may be included; a deposit of USD 15,000 for each dependant beyond two (except former Filipinos). Annual fee USD 360 for the principal plus two dependants (USD 100 for each extra dependant). The deposit may be used for approved investments (e.g. condominium, shares). Pensioner: proof of lifetime pension of at least USD 800 a month (single) or USD 1,000 with dependants; deposit USD 15,000 at 50+, USD 25,000 at 40-49.",
+      "investment_options": "USD 25,000 at age 40-49; USD 15,000 at 50+. Refundable on surrender of the visa.",
+      "fees_note": "Principal processing fee USD 1,500 plus annual fee USD 360 (principal and two dependants).",
+      "processing_time": "",
+      "family": "Legally married spouse and unmarried children under 21; USD 300 application fee per dependant.",
+      "tax_note": "Philippine tax residence turns on intent and 180-day tests; resident aliens are taxed on Philippine-source income only.",
+      "physical_presence": "No minimum stay stated on PRA page",
+      "sources": [
+        {
+          "title": "SRRV - Special Resident Retiree's Visa",
+          "url": "https://www.pra.gov.ph/srrvisa",
+          "publisher": "Philippine Retirement Authority",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 15000,
+        "currency": "USD"
+      },
+      "minimum_income": {
+        "amount": 9600,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 1500,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "srrv_classic_non_pensioner",
+      "name": "Special Resident Retiree's Visa (SRRV) - Classic, non-pensioner",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Indefinite resident visa for people 40+ without a pension, with a deposit of USD 30,000 (age 50+) or USD 50,000 (age 40-49).",
+      "requirements": "Age 40+; medical certificate and police clearance within 6 months; NBI clearance if stayed over 90 days; apostilled documents; tourist visa valid during processing. Spouse and unmarried children under 21 may be included; a deposit of USD 15,000 for each dependant beyond two (except former Filipinos). Annual fee USD 360 for the principal plus two dependants (USD 100 for each extra dependant). The deposit may be used for approved investments (e.g. condominium, shares). Non-pensioner: deposit USD 30,000 at 50+, USD 50,000 at 40-49; no pension proof.",
+      "investment_options": "USD 50,000 at age 40-49; USD 30,000 at 50+. Refundable on surrender.",
+      "fees_note": "Principal processing fee USD 1,500 plus annual USD 360.",
+      "processing_time": "",
+      "family": "Legally married spouse and unmarried children under 21; USD 300 application fee per dependant.",
+      "tax_note": "Resident aliens are taxed on Philippine-source income only.",
+      "physical_presence": "No minimum stay stated on PRA page",
+      "sources": [
+        {
+          "title": "SRRV - Special Resident Retiree's Visa",
+          "url": "https://www.pra.gov.ph/srrvisa",
+          "publisher": "Philippine Retirement Authority",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 30000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 1500,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "srrv_courtesy",
+      "name": "SRRV Courtesy (retired diplomats, military, international officers, high achievers, former Filipinos)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Low-deposit version of the retiree visa for special groups such as retired diplomats, retired military from partner countries, and former Filipinos.",
+      "requirements": "Eligible groups only (retired diplomats, certain international organisation officers, retired military of countries with bilateral relations, PRA-recognised high achievers; former Filipinos who have not reacquired citizenship). Deposits USD 1,500 to USD 6,000 depending on age and category (page layout unclear). Annual fee USD 100 (foreign) or USD 50 (former Filipino).",
+      "investment_options": "Deposit USD 1,500 (age 50+) rising to USD 3,000-6,000 (age 40-49); exact table not parsed for foreign courtesy.",
+      "fees_note": "Processing fee USD 1,500 for the principal; annual USD 100 / 50.",
+      "processing_time": "",
+      "family": "Legally married spouse and unmarried children under 21; USD 300 application fee per dependant.",
+      "tax_note": "",
+      "physical_presence": "No minimum stay stated",
+      "sources": [
+        {
+          "title": "SRRV - Special Resident Retiree's Visa",
+          "url": "https://www.pra.gov.ph/srrvisa",
+          "publisher": "Philippine Retirement Authority",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 1500,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 1500,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "sirv",
+      "name": "Special Investor's Resident Visa (SIRV)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Residence visa for investing at least USD 75,000 in a Philippine business, with a six-month probationary period first.",
+      "requirements": "Minimum investment USD 75,000: first placed in a 30-180 day peso time deposit with Land Bank or DBP, then (within 180 days of the probationary visa) invested in an eligible domestic enterprise registered with the Board of Investments (listed shares or corporations; condominium units, wholesale trading and partnerships excluded per a consultancy). Age 21+; clean record; medical certificate. Probationary SIRV 6 months, then an indefinite SIRV while the investment is kept. Spouse and unmarried children under 21 may be included. Amounts per DFA page and consultancy; BOI rules not opened.",
+      "investment_options": "",
+      "fees_note": "Fees not found.",
+      "processing_time": "",
+      "family": "Spouse and unmarried children under 21.",
+      "tax_note": "Resident aliens taxed on Philippine-source income only.",
+      "physical_presence": "Not stated",
+      "sources": [
+        {
+          "title": "Special Investor's Resident Visa",
+          "url": "https://ankarape.dfa.gov.ph/consular-services/visa/non-immigrant-visa/special-investor-s-resident-visa.html",
+          "publisher": "Philippine Embassy Ankara (Department of Foreign Affairs)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "SIRV, SRRV, or Nomad Visa? Philippines Residency Options",
+          "url": "https://www.tripleiconsulting.com/sirv-srrv-nomad-visa-philippines-residency-options/",
+          "publisher": "Triple i Consulting",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 75000,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "digital_nomad",
+      "name": "Digital Nomad Visa",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "announced",
+      "status_note": "Announced in 2025; no official Bureau of Immigration implementing rules were found as of 16 October 2026, so it is not recorded as usable.",
+      "grants": "temporary_residence",
+      "summary": "Philippines announced a one-year digital nomad visa for 2025, but no implementing rules were found.",
+      "requirements": "Proposed (Senate Bill 2991, 2025): age 18+, income from outside the Philippines (about USD 24,000 a year expected), valid health insurance, clean record, one year renewable once; no local employment. No Bureau of Immigration rules found.",
+      "investment_options": "",
+      "fees_note": "Not found.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "physical_presence": "Not stated",
+      "sources": [
+        {
+          "title": "Philippines Announces Digital Nomad Visa Launch for June 2025",
+          "url": "https://www.aseanbriefing.com/news/philippines-announces-digital-nomad-visa-launch-for-june-2025/",
+          "publisher": "ASEAN Briefing",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null
+    },
+    {
+      "id": "work_9g",
+      "name": "9(g) pre-arranged employment visa with Alien Employment Permit",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Standard employer-sponsored work visa; needs a DOLE Alien Employment Permit first.",
+      "requirements": "Sponsoring employer, DOLE Alien Employment Permit and Bureau of Immigration 9(g) visa, subject to labour-market test. Not researched in detail. Marriage-based 13(a) visas also exist.",
+      "investment_options": "",
+      "fees_note": "Not researched.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "physical_presence": "Live and work in the Philippines",
+      "sources": [
+        {
+          "title": "Philippines - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/philippines/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Digital nomad visa: no implementing rules found; status uncertain.",
+    "SRRV courtesy deposit table layout unclear on PRA page.",
+    "SIRV amounts from DFA embassy page and consultancy; BOI/BI rules not opened.",
+    "Work-visa and naturalisation rules not researched from official sources.",
+    "SRRV validity period and minimum-stay rules not stated on PRA page."
+  ],
+  "sources": []
+}

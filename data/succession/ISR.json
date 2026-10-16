@@ -1,0 +1,67 @@
+{
+  "id": "ISR",
+  "name": "Israel",
+  "researched_on": "2026-10-16",
+  "summary": "There is no forced heirship: freedom of testation is a cornerstone of the Succession Law 1965. The court can, however, order maintenance from the estate for certain dependent relatives despite a will. Israel has a Trust Law 1979 and trusts are used, but private family foundations are not part of Israeli law.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "Succession Law 5725-1965 s. 56 allows maintenance from the estate for certain relatives even where a valid will exists; s. 57 sets the scope, and s. 63 lets the court count certain pre-death transfers if the estate cannot meet the claims. Intestacy (no will): spouse gets household goods and half; the rest goes to the children.",
+  "foreign_law_choice": "no",
+  "foreign_law_note": "The law of the deceased's place of residence at death governs succession (Succession Law s. 138, with exceptions in ss. 139-140); a resident foreigner is therefore under Israeli law and a will cannot choose another law. Foreign probate orders are not recognised; an Israeli probate order is needed. Religious courts may apply community law on consent in some cases.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "Trust Law 5739-1979 governs trusts; Israeli family trusts are mostly discretionary and irrevocable, often for minors. Foreign trusts are not covered by the Hague Convention here. Charitable bodies (amutot, public trusts) exist, but no statute for private family foundations was found, so 'limited'. Tax treatment of trusts (Income Tax Ordinance, Chapter on trusts) was not researched.",
+  "open_questions": [
+    "Section 56 beneficiaries (which relatives qualify) were not retrieved; confirm against the statute text.",
+    "Whether a will can name foreign law for a foreign national domiciled in Israel (s. 138-140) is not confirmed.",
+    "No source on private foundations; charitable-only status is from general knowledge of amutot and needs a source.",
+    "Israeli trust tax rules (Income Tax Ordinance ss. 75B ff.) not researched.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here."
+  ],
+  "sources": [
+    {
+      "title": "Inheritance Law in Israel - an Overview",
+      "url": "https://lawoffice.org.il/en/?p=82001",
+      "publisher": "lawoffice.org.il",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "General Provisions in the Inheritance Law: Inheritance by Legal Ruling and by Will",
+      "url": "https://lawoffice.org.il/en/?p=30646",
+      "publisher": "lawoffice.org.il",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Israel: certificates of succession (Swiss Federal Office of Justice)",
+      "url": "https://www.ejpd.admin.ch/dam/bj/fr/data/wirtschaft/grundbuch/erbfolgezeugnisse/israel-f.pdf.download.pdf/israel-f.pdf",
+      "publisher": "Swiss Federal Office of Justice",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Private Wealth 2025: Israel",
+      "url": "https://gpg-pdf.chambers.com/Private-Wealth-2025/278/",
+      "publisher": "Chambers and Partners",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Private client comparative guide (Israel)",
+      "url": "https://www.mondaq.com/family-and-matrimonial/1731196/private-client-comparative-guide",
+      "publisher": "Mondaq",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

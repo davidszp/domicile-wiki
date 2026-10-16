@@ -132,7 +132,9 @@
         "brackets": [],
         "other_transfer_cost_rate": 0,
         "gift_tax": "Gifts from family members/close relatives (Family Code definition) are exempt; gifts of real estate, vehicles, shares from others are taxable at PIT rates.",
-        "gifts_same_as_inheritance": false
+        "gifts_same_as_inheritance": false,
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "No inheritance tax: income received by inheritance is exempt from personal income tax, and gifts between spouses are exempt (Tax Code Art. 217 item 18; Federal Tax Service)."
       }
     }
   ],

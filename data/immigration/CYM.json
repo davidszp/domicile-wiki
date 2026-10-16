@@ -1,0 +1,124 @@
+{
+  "id": "CYM",
+  "name": "Cayman Islands",
+  "researched_on": "2026-10-16",
+  "summary": "The Cayman Islands offer a 25-year renewable residency certificate (CI$1 million invested plus CI$120,000 income, CI$50,000 fee, no right to work) and a certificate of permanent residence for CI$2 million of property (CI$200,000 fee, work allowed), both revised on 1 May 2026. The remote-worker programme (Global Citizen Concierge) is closed. No direct taxes. EU, US and other passports use the same routes.",
+  "naturalisation": "Not recorded: no verified current rule. A CPR holder may later qualify for a path to Cayman and British citizenship after indefinite renewal, under separate residence requirements (Bedell Cristin).",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Not source-checked; British Overseas Territories citizenship generally allows dual nationality.",
+  "routes": [
+    {
+      "id": "cer",
+      "name": "Residency Certificate for Persons of Independent Means (CER)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A 25-year, renewable residence certificate for CI$1,000,000 invested (half in Grand Cayman real estate) plus CI$120,000 a year of income. No right to work. Amended on 1 May 2026.",
+      "requirements": "Grand Cayman: invest at least CI$1,000,000 (half in developed Grand Cayman real estate) and show annual income of at least CI$120,000 or CI$400,000 in qualifying assets with a Cayman-regulated institution. Cayman Brac and Little Cayman: CI$500,000 (half in local developed real estate) and CI$75,000 income or CI$400,000 assets. Age 18+, no serious convictions, good health and adequate insurance. One-time approval fee CI$50,000; CI$3,000 a year per dependant. Valid 25 years, renewable; holder and spouse may not work; no direct path to Cayman or British citizenship. No requirement to give up other residencies.",
+      "physical_presence": "At least 30 days each year",
+      "sources": [
+        {
+          "title": "Residency Certificate for Persons of Independent Means (CERs)",
+          "url": "https://www.bedellcristin.com/media/cqllnncn/bc-spotlight-residency-certificate-for-persons-of-independent-means.pdf",
+          "publisher": "Bedell Cristin",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 1000000,
+        "currency": "KYD"
+      },
+      "minimum_income": {
+        "amount": 120000,
+        "currency": "KYD"
+      },
+      "investment_options": "CI$500,000 (CI$250,000 in real estate) for Cayman Brac and Little Cayman with CI$75,000 income.",
+      "government_fees": {
+        "amount": 50000,
+        "currency": "KYD"
+      },
+      "fees_note": "One-time approval fee; CI$3,000 a year per dependant. The CI$500 application fee reported elsewhere was not reconfirmed.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "tax_note": "The Cayman Islands levy no direct taxes on individuals."
+    },
+    {
+      "id": "cpr",
+      "name": "Certificate of Permanent Residence for Persons of Independent Means (CPR)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "A residence certificate for investing CI$2 million (US$2.44 million) in one developed Cayman property. Ten-year initial term, then indefinite renewal; the holder may work. Rules changed on 1 May 2026.",
+      "requirements": "Equity investment of at least CI$2m (US$2.44m) in a single qualifying developed real estate asset in the Cayman Islands; sufficient prescribed financial resources; good health and insurance; no serious convictions. Initial 10 years; after 9 years the holder may apply to renew indefinitely. One-time approval fee CI$200,000; CI$3,000 a year per dependant. Permits holder and spouse to reside and work. After indefinite renewal it may support a pathway to Cayman and British citizenship under separate requirements.",
+      "physical_presence": "At least one day each year",
+      "sources": [
+        {
+          "title": "Certificate of Permanent Residence for Persons of Independent Means",
+          "url": "https://www.bedellcristin.com/media/uglb0wce/bc-spotlight-certificate-of-permanent-residence.pdf",
+          "publisher": "Bedell Cristin",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 2000000,
+        "currency": "KYD"
+      },
+      "government_fees": {
+        "amount": 200000,
+        "currency": "KYD"
+      },
+      "fees_note": "One-time approval fee; CI$3,000 a year per dependant.",
+      "path_to_permanent_years": 10,
+      "tax_note": "The Cayman Islands levy no direct taxes on individuals."
+    },
+    {
+      "id": "gccp",
+      "name": "Global Citizen Concierge Program (remote workers)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "temporary_residence",
+      "summary": "A certificate for remote workers earning USD 100,000 a year. It stopped accepting applications on 31 October 2022 and its regulations expired on 30 November 2024.",
+      "requirements": "Income of at least USD 100,000 a year for the main applicant (USD 150,000 with a spouse; higher with dependants); annual fee about CI$1,230 for an applicant and one dependant under the 2020 regulations. Immigration (Transition) (Global Citizen Exemption) Regulations 2020 (SL 131 of 2020) and 2021 amendment. No replacement remote work visa has been introduced, per one site.",
+      "physical_presence": "Remote work from Cayman for the certificate period",
+      "sources": [
+        {
+          "title": "Cayman Digital Nomad Visa 2026: Global Citizen Concierge",
+          "url": "https://www.stampednomad.com/visas/cayman-islands-cayman-global-citizen-concierge-program",
+          "publisher": "Stamped Nomad",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 100000,
+        "currency": "USD"
+      },
+      "status_note": "Applications closed 31 October 2022; regulations expired 30 November 2024; some other guides still show it as available (outdated)."
+    }
+  ],
+  "open_questions": [
+    "Caymanian status and British Overseas Territories citizenship timelines (Carey Olsen 2023 mentions 5 years' residence then 5 as BOTC) are outdated and were not verified; no route recorded as leading to citizenship.",
+    "Cayman Department of Immigration (WORC) pages were unreachable; figures come from Bedell Cristin summaries of the 1 May 2026 amendments (which do not state the CER application fee or CPR quota).",
+    "Work permit route not researched.",
+    "Dual citizenship position not source-checked; Bedell notes holders need not give up existing citizenships (for residence, not naturalisation).",
+    "CI$ to US$ rate implied by Bedell is 1.22 (CI$2m = US$2.44m)."
+  ],
+  "sources": []
+}

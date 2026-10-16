@@ -1,0 +1,51 @@
+{
+  "id": "NCL",
+  "name": "New Caledonia",
+  "researched_on": "2026-10-16",
+  "summary": "French civil law applies, so children have a protected share (the réserve) that a will cannot cut. People with Kanak customary status follow custom on customary land. A foreign resident cannot choose their national law, and the EU Succession Regulation does not apply. The Hague Trusts Convention is not in force for France.",
+  "forced_heirship": "yes",
+  "reserved_share": "Children: 1/2 with one child, 2/3 with two, 3/4 with three or more (Code civil art 913); if no descendants, a surviving spouse 1/4 (art 914-1). Applies outside customary land and to persons under common-law civil status.",
+  "family_claims": "",
+  "foreign_law_choice": "no",
+  "foreign_law_note": "The EU Succession Regulation does not apply in New Caledonia (an overseas country and territory). Under French common-law conflict rules, land follows the law of its location and movables the last domicile, so a resident cannot select national law (not verified from a New Caledonia source).",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "The fiducie (Code civil arts 2011 ff.) is a statutory trust with narrow uses; its extension to New Caledonia was not verified. Foreign trusts: France has signed but not ratified the Convention. Foundations: only charitable forms (fondations, fonds de dotation) are known in France; local availability not verified.",
+  "open_questions": [
+    "Whether fiducie and fondation law extend to New Caledonia (civil law was transferred to the territory in 2013).",
+    "Whether Code civil arts 912-914 apply unchanged locally.",
+    "The 2021 compensatory-levy rule (art 913) in this territory.",
+    "The HCCH table as retrieved shows no entry for this jurisdiction (the retrieved copy was marked last updated 2017 and its territorial-extension notes could not be read); re-check the live table."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table, Convention of 1 July 1985 on the Law Applicable to Trusts",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Communique: succession for persons of Kanak civil status (2016)",
+      "url": "https://gouv.nc/sites/default/files/atoms/files/2016.10.25_cp_succession_statut_civil_coutumier.pdf",
+      "publisher": "Government of New Caledonia",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Loi du pays 2018-4 on customary succession",
+      "url": "https://juridoc.gouv.nc/juridoc/jdtextes.nsf/(web-All)/CDF5A6ED282195A64B2582A5001E4903/$File/Loi_du_pays_2018-4_du_28-05-2018_ChG.pdf",
+      "publisher": "Government of New Caledonia",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Code civil",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/",
+      "publisher": "Legifrance",
+      "kind": "legislation"
+    }
+  ]
+}

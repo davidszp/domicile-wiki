@@ -186,7 +186,9 @@
         "business_relief": "Exemption for transfers to descendants of family businesses or controlling stakes, if control is kept for 5 years.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Worldwide assets taxed if the deceased/donor was resident in Italy; only Italian assets otherwise.",
-        "domicile_rules": "Based on the deceased's residence at death (Italian civil-law residence)."
+        "domicile_rules": "Based on the deceased's residence at death (Italian civil-law residence).",
+        "spouse_treatment": "taxed_low",
+        "spouse_note": "The spouse pays the same 4% as children on the value above EUR 1 million per heir (D.Lgs. 346/1990 as amended; PwC), about 3.9% effective on EUR 35 million."
       }
     },
     {
@@ -328,7 +330,9 @@
         "foreign_assets": "Not taxed for transfers made while the option is valid. Brackets apply to Italian assets only.",
         "domicile_rules": "Protection ends when the option ends (15 years after its first tax period) or is revoked, or if the substitute tax is not paid.",
         "important_exceptions": "Announced, not yet applicable: D.Lgs. 19 June 2026 n. 117 (new Testo unico delle imposte sui redditi, 377 articles; G.U. n. 132 of 3 July 2026, S.O. 26) applies from 1 Jan 2027 and repeals arts. 1-191 of the current TUIR (DPR 917/1986). It is a consolidation: commentators say the old provisions were carried over without changing their wording or rates except for coordination. The new article numbers (e.g. for art. 24-bis), and whether the 26% substitute tax (D.Lgs. 461/1997) and IVAFE/IVIE (DL 201/2011) are moved into it, were not confirmed. 2026 law is scored.",
-        "scope": "local_assets_only"
+        "scope": "local_assets_only",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "While the art. 24-bis option is valid, foreign assets of the opting person (or an included family member) passing to the spouse are untaxed; Italian assets bear 4% above EUR 1 million per heir."
       },
       "sources": [
         {

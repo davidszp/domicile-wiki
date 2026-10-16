@@ -1,0 +1,57 @@
+{
+  "id": "NLD",
+  "name": "Netherlands",
+  "researched_on": "2026-10-16",
+  "summary": "Children have a money claim for half of what they would inherit without a will; the spouse has none. A foreign national resident can choose their national law under the EU Succession Regulation. The Netherlands has no trust law, but foreign trusts are recognised, and private foundations are common.",
+  "forced_heirship": "yes",
+  "reserved_share": "Legitieme portie: each child (or descendant) has a money claim of half its intestate share (Civil Code art. 4:63-4:64). The base includes some lifetime gifts (art. 4:65-4:67). The spouse has no legitimate portion but separate statutory rights, such as usufruct of the home.",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Reg. 650/2012 art. 22 allows a choice of nationality law, which removes the legitieme portie; the public-policy exception (art. 35) applies.",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "no",
+  "private_foundations": "yes",
+  "trust_note": "The Hague Trusts Convention is in force since 1 February 1996 (HCCH table: ratified 28 November 1995). The table flags a territorial extension but its details were not read, so treat the Convention as in force for the European Netherlands only. There is no Dutch trust statute. Private foundations (stichting, Civil Code Book 2) can be used, including as family funds.",
+  "open_questions": [
+    "Territorial extensions of the Dutch ratification (not read in the table) were not identified.",
+    "Dutch tax treatment of trusts and the planned reform of the legitimate portion were not examined."
+  ],
+  "sources": [
+    {
+      "title": "Civil Code Book 4 (legitieme portie)",
+      "url": "https://wetten.overheid.nl/BWBR0002761",
+      "publisher": "Government of the Netherlands",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance law in the Netherlands: the statutory division and the legitimate portion",
+      "url": "https://lawandmore.eu/inheritance-law-netherlands/",
+      "publisher": "Law & More",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "European e-Justice: Successions, Netherlands",
+      "url": "https://e-justice.europa.eu/topics/family-matters-inheritance/inheritance/succession/nl_en",
+      "publisher": "European Commission",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

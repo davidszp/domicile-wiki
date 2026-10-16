@@ -177,7 +177,9 @@
         "foreign_assets": "Taxpayers are residents and non-residents; non-residents for property in Serbia. Scope for foreign assets of residents not material for children (exempt).",
         "domicile_rules": "Not relevant for children (exempt).",
         "tax_year": "2026",
-        "verified_on": "2026-10-15"
+        "verified_on": "2026-10-15",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "The spouse of the deceased is exempt from inheritance and gift tax (Law on Property Taxes, Art. 21(1)(1)); shares and securities are outside the tax anyway (Art. 14(4))."
       }
     }
   ],

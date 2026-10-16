@@ -256,7 +256,9 @@
         "foreign_assets": "Transfer tax applies only to real estate located in Montenegro.",
         "domicile_rules": "Situs-based (Montenegrin real estate only).",
         "tax_year": "2026",
-        "verified_on": "2026-10-15"
+        "verified_on": "2026-10-15",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "No tax on movables; the spouse of the deceased is exempt from real estate transfer tax on inherited real estate (Law on Real Estate Transfer Tax, Art. 14(1)(1))."
       }
     }
   ],

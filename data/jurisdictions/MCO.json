@@ -130,7 +130,9 @@
         "business_relief": "Not needed for children.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Only Monaco-situs assets are within scope; foreign assets are not taxed by Monaco (the deceased's nationality country may tax them, e.g. France for French nationals).",
-        "domicile_rules": "Situs-based. Declarations of inheritance must be registered within strict deadlines."
+        "domicile_rules": "Situs-based. Declarations of inheritance must be registered within strict deadlines.",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "0% between spouses and in the direct line, on property situated in Monaco (the only property taxed); the government page does not mention registered partners."
       }
     }
   ],

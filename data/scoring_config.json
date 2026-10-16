@@ -450,10 +450,10 @@
       "label": "Capital controls on personal wealth",
       "explanation": "The IMF reports exchange controls on most capital transactions, and a foreign resident cannot freely move personal savings, investment or property-sale proceeds abroad (annual quota, central-bank approval or case-by-case authorisation). Applies to foreign families; a country's own nationals are not modelled as a citizenship option.",
       "countries": {
-        "CHN": "IMF Country Report 26/44 (Feb 2026): exchange controls continue to apply to most capital transactions; individuals' foreign-exchange purchases are capped at USD 50,000 a year and a foreigner's property-sale and investment proceeds need documented approval to leave. Also: legal powers to freeze listed foreigners' deposits, securities and real estate (Anti-Foreign Sanctions Law regulations, March 2025) and exit bans (State Council Order 841, September 2026). See docs/research/china_hong_kong_foreign_wealth.md.",
-        "LKA": "IMF lists CFMs on \"suspension/limitation of outward remittances on capital transactions made by residents\" and on emigrants' outward transfers (eased since 2024); CBSL Direction 16 of 2021 lets a Non-National resident or non-resident remit only \"USD 30,000 per annum\" out of the capital proceeds (investment/property) credited to a Capital Transactions Rupee Account (superannuation is uncapped). Direction is 2021; amendments after that not checked. See docs/research/capital_controls_screen.md.",
-        "FJI": "IMF 2025 Article IV lists capital flow measures with thresholds or RBF approval (offshore investment by individuals \"remains suspended\"); RBF Exchange Control Guidelines (1 Jan 2026) give foreign-passport holders quotas: sale of shares/assets up to FJD 250,000 a year, non-resident transfers to own account up to FJD 250,000 per family a year, family transfers FJD 2,000 per applicant, tax clearance above FJD 20,000. See docs/research/capital_controls_screen.md.",
-        "WSM": "IMF CR 25/32: \"a closed capital account\"; CBS Exchange Control Booklet 2026: a resident (including a non-Samoan with a permit over one year on assured income) remitting property or business sale proceeds abroad needs \"CBS Approval\"; emigration allowance delegated limit SAT 50,000. See docs/research/capital_controls_screen.md."
+        "CHN": "IMF Country Report 26/44 (Feb 2026): exchange controls continue to apply to most capital transactions; individuals' foreign-exchange purchases are capped at USD 50,000 a year and a foreigner's property-sale and investment proceeds need documented approval to leave. Also: legal powers to freeze listed foreigners' deposits, securities and real estate (Anti-Foreign Sanctions Law regulations, March 2025) and exit bans (State Council Order 841, September 2026).",
+        "LKA": "IMF lists CFMs on \"suspension/limitation of outward remittances on capital transactions made by residents\" and on emigrants' outward transfers (eased since 2024); CBSL Direction 16 of 2021 lets a Non-National resident or non-resident remit only \"USD 30,000 per annum\" out of the capital proceeds (investment/property) credited to a Capital Transactions Rupee Account (superannuation is uncapped). Direction is 2021; amendments after that not checked.",
+        "FJI": "IMF 2025 Article IV lists capital flow measures with thresholds or RBF approval (offshore investment by individuals \"remains suspended\"); RBF Exchange Control Guidelines (1 Jan 2026) give foreign-passport holders quotas: sale of shares/assets up to FJD 250,000 a year, non-resident transfers to own account up to FJD 250,000 per family a year, family transfers FJD 2,000 per applicant, tax clearance above FJD 20,000.",
+        "WSM": "IMF CR 25/32: \"a closed capital account\"; CBS Exchange Control Booklet 2026: a resident (including a non-Samoan with a permit over one year on assured income) remitting property or business sale proceeds abroad needs \"CBS Approval\"; emigration allowance delegated limit SAT 50,000."
       },
       "sources": [
         {
@@ -500,10 +500,9 @@
     },
     "security_state_courts": {
       "label": "Rule of law: courts subordinate to state security",
-      "explanation": "A national-security regime that can override ordinary judicial protections, freeze assets without time limit and reach any nationality, documented by government advisories. Courts may still decide ordinary commercial cases, but property and liberty are not reliably protected against the state. A researched list, because the World Bank rule-of-law score does not capture it (China -0.43, Hong Kong +0.94).",
+      "explanation": "A national-security regime that can override ordinary judicial protections, freeze assets without time limit and reach any nationality, documented by government advisories. Courts may still decide ordinary commercial cases, but property and liberty are not reliably protected against the state. A researched list, because the World Bank rule-of-law score does not capture it (China -0.43). Hong Kong and Macau are shown with a red flag instead.",
       "countries": {
-        "CHN": "No independent judiciary (WJP Rule of Law Index 2025: 92nd of 143; Freedom House 2026: 9/100, Not Free); exit bans used in commercial disputes (UK FCDO) and formalised by State Council Order 841 (September 2026); powers to freeze listed foreigners' deposits, securities and real estate (Anti-Foreign Sanctions Law regulations, March 2025). See docs/research/china_hong_kong_foreign_wealth.md.",
-        "HKG": "2020 National Security Law and 2024 Article 23 ordinance: broadly drawn offences applying to any nationality, assets of suspects frozen with no time limit (US Hong Kong Business Advisory, September 2024); overseas judges including Lord Sumption resigned from the Court of Final Appeal in 2024; Freedom House 2026: 41/100, Partly Free. Commercial courts still function (WJP 2025: 24th of 143) and capital moves freely. See docs/research/china_hong_kong_foreign_wealth.md."
+        "CHN": "No independent judiciary (WJP Rule of Law Index 2025: 92nd of 143; Freedom House 2026: 9/100, Not Free); exit bans used in commercial disputes (UK FCDO) and formalised by State Council Order 841 (September 2026); powers to freeze listed foreigners' deposits, securities and real estate (Anti-Foreign Sanctions Law regulations, March 2025)."
       },
       "sources": [
         {
@@ -897,7 +896,406 @@
     "zero_score_rate": 0.5
   },
   "red_flags": {
-    "description": "Serious risks that do not trigger a knock-out but should weigh on any decision. Shown on the profile and map tooltip; they do not change the score.",
-    "countries": {}
+    "description": "Serious risks that do not rule a place out but should weigh on any decision. Shown on the country page, in lists and in the map tooltip; they do not change the score. Hong Kong and Macau are flagged rather than knocked out because the wealth industry still uses them as hubs (e.g. 3,384 single-family offices in Hong Kong at the end of 2025), while the national-security regime means property and liberty are not reliably protected against the state.",
+    "countries": {
+      "HKG": {
+        "label": "Courts subordinate to state security",
+        "explanation": "2020 National Security Law and 2024 Article 23 ordinance: broadly drawn offences applying to any nationality, assets of suspects frozen with no time limit (US Hong Kong Business Advisory, September 2024); overseas judges including Lord Sumption resigned from the Court of Final Appeal in 2024; Freedom House 2026: 41/100, Partly Free. Commercial courts still function (WJP 2025: 24th of 143) and capital moves freely.",
+        "sources": [
+          {
+            "title": "US Updated Hong Kong Business Advisory (Sept 2024)",
+            "url": "https://ofac.treasury.gov/media/933161/download?inline="
+          },
+          {
+            "title": "Freedom House, Freedom in the World 2026: Hong Kong",
+            "url": "https://freedomhouse.org/country/hong-kong/freedom-world/2026"
+          },
+          {
+            "title": "Radio Free Asia: two more British judges resign from Hong Kong's top court (June 2024)",
+            "url": "https://www.rfa.org/english/news/china/hong-kong-british-judges-06072024171639.html"
+          },
+          {
+            "title": "World Justice Project Rule of Law Index 2025",
+            "url": "https://worldjusticeproject.org/rule-of-law-index/downloads/WJPIndex2025.pdf"
+          },
+          {
+            "title": "Hong Kong's single-family offices total surpasses 3,380 (Deloitte study for InvestHK, Feb 2026)",
+            "url": "https://www.investhk.gov.hk/en/news/hong-kongs-single-family-offices-total-surpasses-3-380-injecting-over-10-billion-annually-into-local-economy/"
+          }
+        ]
+      },
+      "MAC": {
+        "label": "Courts subordinate to state security",
+        "explanation": "A national-security regime that can override ordinary judicial protections and reach any nationality: the 2023 amendment extends offences committed outside Macau to any individual, and the national security committee chaired by the Chief Executive decides closed-door hearings, vets defence lawyers and issues binding opinions; a Portuguese-national former lawmaker has been held since July 2025, denied his chosen lawyer and consular access. Unlike Hong Kong, no asset-freeze power or US business advisory has been found, and it is the only national-security prosecution so far; capital moves freely.",
+        "sources": [
+          {
+            "title": "AP (via WTOP): Macao's first national security case raises concerns over fairness a year after arrest (July 2026)",
+            "url": "https://wtop.com/world/2026/07/macaos-first-national-security-case-raises-concerns-over-fairness-a-year-after-arrest/"
+          },
+          {
+            "title": "Macau Business: new national security legislation comes into effect",
+            "url": "https://macaubusiness.com/new-national-security-legislation-comes-into-effect/"
+          },
+          {
+            "title": "Human Rights Watch: Macao ex-lawmaker held on national security charge (Aug 2025)",
+            "url": "https://www.hrw.org/news/2025/08/06/macao-ex-lawmaker-held-on-national-security-charge"
+          },
+          {
+            "title": "UK FCDO travel advice: Macao, safety and security",
+            "url": "https://www.gov.uk/foreign-travel-advice/macao/safety-and-security"
+          }
+        ]
+      }
+    }
+  },
+  "eu": {
+    "label": "EU member",
+    "explanation": "Member state of the European Union (27 since the United Kingdom left on 31 January 2020). EU citizens can live and work in any member state without a visa. Shown because membership is not obvious from a map: Norway, Switzerland and the United Kingdom are in Europe but not in the EU.",
+    "members": [
+      "AUT",
+      "BEL",
+      "BGR",
+      "HRV",
+      "CYP",
+      "CZE",
+      "DNK",
+      "EST",
+      "FIN",
+      "FRA",
+      "DEU",
+      "GRC",
+      "HUN",
+      "IRL",
+      "ITA",
+      "LVA",
+      "LTU",
+      "LUX",
+      "MLT",
+      "NLD",
+      "POL",
+      "PRT",
+      "ROU",
+      "SVK",
+      "SVN",
+      "ESP",
+      "SWE"
+    ],
+    "territories": {
+      "ALA": "Part of Finland and of the EU, outside the EU VAT and excise area.",
+      "MAF": "French outermost region, part of the EU."
+    },
+    "sources": [
+      {
+        "title": "EU countries",
+        "publisher": "European Union",
+        "url": "https://european-union.europa.eu/principles-countries-history/eu-countries_en"
+      },
+      {
+        "title": "Outermost regions",
+        "publisher": "European Commission",
+        "url": "https://ec.europa.eu/regional_policy/policy/themes/outermost-regions_en"
+      }
+    ],
+    "territories_note": "Guadeloupe, French Guiana, Martinique, Mayotte and Réunion are EU outermost regions too; the boundary data draws them as part of France, so they are marked through France."
+  },
+  "territories": {
+    "description": "Areas the boundary data (Natural Earth) lists as countries but that are not member states of the United Nations: occupied, unrecognised, disputed, leased or treaty areas. They are shown on the map, marked, and never ranked. Dependencies of member states (e.g. Jersey, Gibraltar) are separate tax jurisdictions and stay on the map as they are.",
+    "units": {
+      "CYN": {
+        "name": "Northern Cyprus (occupied)",
+        "part_of": "CYP",
+        "status": "occupied",
+        "label": "Occupied territory",
+        "explanation": "Part of the Republic of Cyprus under international law, under Turkish military control since 1974. The 'Turkish Republic of Northern Cyprus' declared in 1983 is recognised only by Turkey; UN Security Council resolutions 541 (1983) and 550 (1984) consider the declaration legally invalid. EU law is suspended in the area (Protocol No 10 to the 2003 Act of Accession). Not ranked: the Republic of Cyprus's rules cannot be applied there in practice.",
+        "sources": [
+          {
+            "title": "UN Security Council resolution 541 (1983)",
+            "publisher": "United Nations",
+            "url": "https://undocs.org/S/RES/541(1983)"
+          },
+          {
+            "title": "UN Security Council resolution 550 (1984)",
+            "publisher": "United Nations",
+            "url": "https://undocs.org/S/RES/550(1984)"
+          }
+        ]
+      },
+      "CNM": {
+        "name": "UN buffer zone in Cyprus",
+        "part_of": "CYP",
+        "status": "buffer_zone",
+        "label": "UN buffer zone",
+        "explanation": "The demilitarised zone between the Republic of Cyprus's controlled area and the occupied north, patrolled by the UN Peacekeeping Force in Cyprus (UNFICYP) since 1974. Part of the Republic of Cyprus. Not ranked.",
+        "sources": [
+          {
+            "title": "The buffer zone",
+            "publisher": "United Nations Peacekeeping Force in Cyprus",
+            "url": "https://unficyp.unmissions.org/about-buffer-zone"
+          }
+        ]
+      },
+      "SOL": {
+        "name": "Somaliland",
+        "part_of": "SOM",
+        "status": "unrecognised",
+        "label": "Unrecognised breakaway region",
+        "explanation": "Declared independence from Somalia in 1991 and governs itself, but is not a member of the United Nations and is not recognised as a state by the UN; internationally it is part of Somalia. Not ranked.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "PSE": {
+        "name": "Palestinian territories (occupied)",
+        "status": "occupied",
+        "label": "Occupied Palestinian territory",
+        "explanation": "The West Bank, including East Jerusalem, and the Gaza Strip, occupied by Israel since 1967 (UN Security Council resolution 2334 (2016)). Palestine is a non-member observer state of the United Nations (General Assembly resolution 67/19, 2012), not a member state. Not ranked.",
+        "sources": [
+          {
+            "title": "UN Security Council resolution 2334 (2016)",
+            "publisher": "United Nations",
+            "url": "https://undocs.org/S/RES/2334(2016)"
+          },
+          {
+            "title": "UN General Assembly resolution 67/19 (2012)",
+            "publisher": "United Nations",
+            "url": "https://undocs.org/A/RES/67/19"
+          },
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "ESH": {
+        "name": "Western Sahara",
+        "status": "non_self_governing",
+        "label": "Non-self-governing territory",
+        "explanation": "On the United Nations list of Non-Self-Governing Territories; its status is disputed between Morocco, which administers most of it, and the Polisario Front. Not a member state of the United Nations. Not ranked.",
+        "sources": [
+          {
+            "title": "Non-Self-Governing Territories",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/dppa/decolonization/en/nsgt"
+          }
+        ]
+      },
+      "KAB": {
+        "name": "Baikonur",
+        "part_of": "KAZ",
+        "status": "leased",
+        "label": "Leased area",
+        "explanation": "Part of Kazakhstan, leased to Russia for the Baikonur Cosmodrome. Not a state. Not ranked; see Kazakhstan.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "USG": {
+        "name": "Guantánamo Bay Naval Base",
+        "part_of": "CUB",
+        "status": "leased",
+        "label": "Leased area",
+        "explanation": "Part of Cuba, held by the United States under a 1903 lease that Cuba disputes. Not a state. Not ranked.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "ATA": {
+        "name": "Antarctica",
+        "status": "treaty_area",
+        "label": "Antarctic Treaty area",
+        "explanation": "Governed by the Antarctic Treaty (1959), which sets territorial claims aside and reserves the continent for peaceful and scientific use. No permanent population. Not ranked.",
+        "sources": [
+          {
+            "title": "The Antarctic Treaty",
+            "publisher": "Secretariat of the Antarctic Treaty",
+            "url": "https://www.ats.aq/e/antarctictreaty.html"
+          }
+        ]
+      },
+      "KAS": {
+        "name": "Siachen Glacier",
+        "status": "disputed",
+        "label": "Disputed area",
+        "explanation": "A glacier in Kashmir claimed by both India and Pakistan and held by India. Not a state and not a member of the United Nations. Not ranked.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "BRT": {
+        "name": "Bir Tawil",
+        "status": "disputed",
+        "label": "Disputed area",
+        "explanation": "A strip between Egypt and Sudan that neither state claims, a side effect of their border dispute over the Halaib Triangle. Not a state and not a member of the United Nations. Not ranked.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "SPI": {
+        "name": "Southern Patagonian Ice Field (disputed section)",
+        "status": "disputed",
+        "label": "Disputed area",
+        "explanation": "A section of the border between Argentina and Chile that is not yet demarcated. Not a state and not a member of the United Nations. Not ranked.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "BRI": {
+        "name": "Brazilian Island",
+        "status": "disputed",
+        "label": "Disputed area",
+        "explanation": "A river island at the border of Brazil and Uruguay claimed by both. Not a state and not a member of the United Nations. Not ranked.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "PGA": {
+        "name": "Spratly Islands",
+        "status": "disputed",
+        "label": "Disputed area",
+        "explanation": "Reefs and islands in the South China Sea claimed wholly or partly by China, Taiwan, Vietnam, the Philippines, Malaysia and Brunei. Not a state and not a member of the United Nations. Not ranked.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "SCR": {
+        "name": "Scarborough Shoal",
+        "status": "disputed",
+        "label": "Disputed area",
+        "explanation": "A shoal in the South China Sea claimed by China, Taiwan and the Philippines. Not a state and not a member of the United Nations. Not ranked.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "BJN": {
+        "name": "Bajo Nuevo Bank",
+        "status": "disputed",
+        "label": "Disputed area",
+        "explanation": "A reef in the Caribbean administered by Colombia and claimed by Jamaica, Nicaragua and the United States. Not a state and not a member of the United Nations. Not ranked.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      },
+      "SER": {
+        "name": "Serranilla Bank",
+        "status": "disputed",
+        "label": "Disputed area",
+        "explanation": "A reef in the Caribbean administered by Colombia and claimed by Honduras, Nicaragua and the United States. Not a state and not a member of the United Nations. Not ranked.",
+        "sources": [
+          {
+            "title": "Member States",
+            "publisher": "United Nations",
+            "url": "https://www.un.org/en/about-us/member-states"
+          }
+        ]
+      }
+    },
+    "non_members_ranked": {
+      "description": "Not UN member states, but with their own government, tax system and residence rules, so they are ranked like other jurisdictions; their pages say so.",
+      "units": {
+        "TWN": {
+          "label": "Not a UN member",
+          "explanation": "Taiwan is not a member of the United Nations: since General Assembly resolution 2758 (1971) China's seat is held by the People's Republic of China, and only a small number of states recognise Taiwan. It has its own government, tax system and residence rules, which is what this site compares.",
+          "sources": [
+            {
+              "title": "UN General Assembly resolution 2758 (XXVI) (1971)",
+              "publisher": "United Nations",
+              "url": "https://undocs.org/A/RES/2758(XXVI)"
+            },
+            {
+              "title": "Member States",
+              "publisher": "United Nations",
+              "url": "https://www.un.org/en/about-us/member-states"
+            }
+          ]
+        },
+        "XKX": {
+          "label": "Not a UN member",
+          "explanation": "Kosovo declared independence from Serbia in 2008. It is recognised by many UN member states but not by Serbia and others, including Russia and China, and is not a member of the United Nations; the International Court of Justice found in 2010 that the declaration did not violate international law. It has its own tax system and residence rules, which is what this site compares.",
+          "sources": [
+            {
+              "title": "Accordance with international law of the unilateral declaration of independence in respect of Kosovo (advisory opinion, 2010)",
+              "publisher": "International Court of Justice",
+              "url": "https://www.icj-cij.org/case/141"
+            },
+            {
+              "title": "Member States",
+              "publisher": "United Nations",
+              "url": "https://www.un.org/en/about-us/member-states"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "regions": {
+    "mediterranean": {
+      "label": "Country on the Mediterranean",
+      "explanation": "States with a Mediterranean coastline, plus Gibraltar; their inland regions are included.",
+      "members": [
+        "ESP",
+        "FRA",
+        "MCO",
+        "ITA",
+        "MLT",
+        "SVN",
+        "HRV",
+        "BIH",
+        "MNE",
+        "ALB",
+        "GRC",
+        "TUR",
+        "CYP",
+        "SYR",
+        "LBN",
+        "ISR",
+        "EGY",
+        "LBY",
+        "TUN",
+        "DZA",
+        "MAR",
+        "GIB"
+      ]
+    }
   }
 }

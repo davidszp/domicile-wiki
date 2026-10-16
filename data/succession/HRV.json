@@ -1,0 +1,43 @@
+{
+  "id": "HRV",
+  "name": "Croatia",
+  "researched_on": "2026-10-16",
+  "summary": "Children, a spouse and partners are guaranteed half of their intestate share, and dependent parents a third. A foreign resident can choose the law of their nationality (EU Succession Regulation art. 22). Croatia has no trusts, and foundations are for public benefit only.",
+  "forced_heirship": "yes",
+  "reserved_share": "Descendants, adopted children, spouse and registered or informal partners: half of their intestate share. Parents and other ancestors: one third of the intestate share, only if permanently unable to work and without means (Succession Act, Zakon o nasljeđivanju). A forced heir can be excluded only on grounds the will states.",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "EU Succession Regulation: the law of the last habitual residence applies by default (art. 21), but a resident foreign national may choose the law of their nationality (art. 22).",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "Croatia is not in the HCCH table for the 1985 Trusts Convention. Croatian law has no trust. Foundations (zaklade) are governed by the Foundations Act, NN 106/18, 98/19, 151/22, and serve a public-benefit or charitable purpose.",
+  "open_questions": [
+    "Succession Act article numbers not captured (e-Justice cites none).",
+    "Foundation purposes taken from search snippets, not the statute text."
+  ],
+  "sources": [
+    {
+      "title": "European e-Justice: Succession, Croatia",
+      "url": "https://e-justice.europa.eu/166/EN/succession?CROATIA&member=1",
+      "publisher": "European e-Justice Portal",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) No 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "OMN",
+  "name": "Oman",
+  "researched_on": "2026-10-16",
+  "summary": "Muslim estates follow Ibadi Sharia rules under the Personal Status Law, with fixed shares. Courts generally honour a non-Muslim expatriate's will made under their home law, but judges have wide discretion. No source on trusts or foundations was found.",
+  "forced_heirship": "yes",
+  "reserved_share": "Muslims: fixed shares under the Personal Status Law (Royal Decree 32/97, reported by secondary guide); Ibadi rules bar inheritance between Muslims and non-Muslims.",
+  "family_claims": "",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Practitioners report that Omani courts generally honour wills made under a non-Muslim expatriate's home law and do not usually apply Sharia to non-Muslims, but judges have wide discretion and may distribute otherwise. Bank accounts, including joint ones, are frozen until distribution.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "no",
+  "trust_note": "No trust or private-foundation statute was found for Oman; both answers are provisional.",
+  "open_questions": [
+    "Royal Decree 32/97 and the Civil Transactions Law conflict rule not retrieved.",
+    "Trusts and foundations in Oman not sourced.",
+    "Oman's own non-Muslim wills procedure (if any) not confirmed.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here."
+  ],
+  "sources": [
+    {
+      "title": "Wills and succession planning in Oman",
+      "url": "https://www.trowers.com/insights/2020/april/wills-and-succession-planning-in-oman",
+      "publisher": "Trowers & Hamlins",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance rules in Oman (2026 legal guide)",
+      "url": "https://commoner-law.com/oman/family-law/inheritance-rules",
+      "publisher": "Commoner Law",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

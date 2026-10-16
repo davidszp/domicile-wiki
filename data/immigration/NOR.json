@@ -1,0 +1,157 @@
+{
+  "id": "NOR",
+  "name": "Norway",
+  "summary": "EEA free movement applies: EU/EEA citizens register with the police within three months and may stay as workers, students or self-sufficient persons with funds and insurance. US and other citizens (UK citizens included since Brexit) have no investor or digital nomad route; they need a permit based on work, study or family, such as the skilled worker permit with a minimum pay.",
+  "naturalisation": "Eight years of residence in the last eleven (six of the last ten with sufficient income and a fixed tax settlement), plus Norwegian language proficiency and the citizenship test.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Since 1 January 2020 applicants need not give up their other citizenship; their home country may still withdraw it.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "Registration is free.",
+      "processing_time": "",
+      "family": "Family members get a residence card for family members of EU/EEA nationals.",
+      "tax_note": "Tax residence: 183 days in 12 months or 270 days in 36 months.",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 243759,
+        "currency": "NOK"
+      },
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 8,
+      "id": "eea_registration",
+      "name": "EU/EEA free movement: registration (worker, student or own funds)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "grants": "temporary_residence",
+      "summary": "EU/EEA citizens move freely and register once with the police within three months. Those without a job need own funds and health insurance.",
+      "requirements": "Register within three months of arrival (free). Self-sufficient persons: normally at least NOK 243,759 a year before tax for a single person (UDI page; confirm current figure), shown by bank statements or pension, and private health insurance covering the stay. The registration certificate itself does not prove the right to reside. Permanent right of residence after 5 years.",
+      "physical_presence": "Genuine residence; no fixed day count for registration",
+      "sources": [
+        {
+          "title": "EU/EEA national with own funds",
+          "url": "https://www.udi.no/en/want-to-apply/residence-under-the-eueeu-regulations/eueeu-national-who-has-their-own-funds/",
+          "publisher": "Norwegian Directorate of Immigration (UDI)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "The registration scheme for EU/EEA nationals",
+          "url": "https://www.udi.no/en/want-to-apply/the-registration-scheme-for-eueea-nationals/",
+          "publisher": "Norwegian Directorate of Immigration (UDI)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Permanent right of residence for EU/EEA nationals",
+          "url": "https://www.udi.no/en/want-to-apply/permanent-residence/permanent-right-of-residence-for-eueea-nationals/",
+          "publisher": "Norwegian Directorate of Immigration (UDI)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "The Norwegian Nationality Act",
+          "url": "https://www.regjeringen.no/en/topics/immigration-and-integration/asd/statsborgerloven/id2343481/",
+          "publisher": "Norwegian Government (regjeringen.no)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 545400,
+        "currency": "NOK"
+      },
+      "government_fees": null,
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 8,
+      "id": "skilled_worker",
+      "name": "Skilled worker residence permit",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Non-EEA citizens with a qualifying job offer get a permit, with minimum pay of about NOK 624,700 (master's-level jobs) or NOK 545,400 (bachelor's level) a year. Permanent residence can be applied for after 3 years.",
+      "requirements": "Concrete job offer; qualifications; pay at least NOK 624,700 a year pre-tax for jobs requiring a master's degree or NOK 545,400 for bachelor's level (lower pay allowed if normal for the occupation and place; date of UDI figures unclear); permit issued per year; permanent residence after 3 years, subject to income of at least NOK 341,373 in the past year and 3 or 5 years' continuous residence. Rules changed on 1 July 2025 (details not read).",
+      "physical_presence": "Residence in Norway; long absences affect permanent residence",
+      "sources": [
+        {
+          "title": "Skilled workers",
+          "url": "https://www.udi.no/en/want-to-apply/work-immigration/skilled-workers/",
+          "publisher": "Norwegian Directorate of Immigration (UDI)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Pay and working conditions in Norway",
+          "url": "https://www.udi.no/en/word-definitions/pay-and-working-conditions-in-norway/",
+          "publisher": "Norwegian Directorate of Immigration (UDI)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "The Norwegian Nationality Act",
+          "url": "https://www.regjeringen.no/en/topics/immigration-and-integration/asd/statsborgerloven/id2343481/",
+          "publisher": "Norwegian Government (regjeringen.no)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "UDI pages returned 403 when fetched directly; figures come from UDI pages as shown in search results, dates of the amounts (NOK 243,759; 624,700; 545,400; 341,373) not confirmed.",
+    "Government fees for the skilled worker permit not found.",
+    "Norway has no investor visa, no digital nomad visa and no citizenship by investment (UDI statement quoted on a forum); an official source for 'no investor route' not fetched.",
+    "UDI notice on 'changed requirements for length of residence time' for citizenship could not be read; confirm whether 8 of 11 years still applies.",
+    "Self-employed and job-seeker routes for non-EEA citizens not recorded.",
+    "EEA/EFTA family and Nordic-citizen rules (no registration need for Nordic citizens) not researched."
+  ],
+  "sources": [
+    {
+      "title": "EU/EEA national with own funds",
+      "url": "https://www.udi.no/en/want-to-apply/residence-under-the-eueeu-regulations/eueeu-national-who-has-their-own-funds/",
+      "publisher": "Norwegian Directorate of Immigration (UDI)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Skilled workers",
+      "url": "https://www.udi.no/en/want-to-apply/work-immigration/skilled-workers/",
+      "publisher": "Norwegian Directorate of Immigration (UDI)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "The Norwegian Nationality Act",
+      "url": "https://www.regjeringen.no/en/topics/immigration-and-integration/asd/statsborgerloven/id2343481/",
+      "publisher": "Norwegian Government (regjeringen.no)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "New Rules for Dual Citizenship",
+      "url": "https://www.norway.no/en/usa/norway-usa/news/new-rules-for-dual-citizenship/",
+      "publisher": "Norway.no",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

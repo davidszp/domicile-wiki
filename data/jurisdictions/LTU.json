@@ -190,7 +190,9 @@
         "foreign_assets": "Residents' worldwide inheritances are in scope for non-exempt heirs; foreigners only on Lithuanian-registered property.",
         "domicile_rules": "Liability depends on heir's residence; irrelevant for children (exempt).",
         "tax_year": "2026",
-        "verified_on": "2026-10-15"
+        "verified_on": "2026-10-15",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "Property inherited by the surviving spouse is exempt from inheritance tax regardless of value (Law on Inheritance Tax; PwC, CNUE)."
       },
       "sources": [
         {

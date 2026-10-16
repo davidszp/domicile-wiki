@@ -24,6 +24,8 @@ Income from movable assets at progressive rates 9.75%-46.5% (2026 brackets in XC
 
 Successiebelastingverordening 1908 (consolidated 1 Apr 2026): art. 1-2 tax on acquisitions from a resident deceased/donor; art. 60 exemptions (children XCG 80,000 on inheritance; XCG 20,000 per year on gifts); art. 61 table for descendants/spouse: 2% to 50,000, 4% to 250,000, 6% above; SPF/trust acquisitions 25%; art. 3/65: 8% overgangsbelasting on Curaçao real estate inherited from a non-resident. JSON: beneficiary, exemption 80000, brackets 2/4/6% marginal (art. 61 says 'progressief'; marginal assumed), children_treatment 'taxed' because the top rate is 6%. Political: PAR called for abolition on 7 Sep 2026; no bill.
 
+**Surviving spouse:** The surviving spouse (or life partner) has a deduction of XCG 240,000 against XCG 80,000 for a child, and pays the same 2%/4%/6% scale as children (Successiebelastingverordening 1908 arts. 1A, 60 and 61).
+
 ## Wealth tax
 
 None. Real estate tax 0.4-0.6%.
@@ -73,3 +75,4 @@ City: Willemstad.
 - 2026-10-15: initial research.
 - 2026-10-15: added cost of living (CENTURY 21 rental sample, ISC 2026-27 fees); added duration_note to the penshonado regime (no statutory time limit, art. 23D conditions).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

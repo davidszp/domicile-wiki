@@ -1,0 +1,178 @@
+{
+  "name": "Saint Kitts and Nevis",
+  "summary": "EU, US and other passport holders all need a permit or citizenship to live here; there is no free movement. The cheapest way to a passport is the Sustainable Island State Contribution from USD 250,000 (or USD 250,000 to a public benefit project; real estate from USD 325,000). Ordinary residence routes (homeowner, self-sufficient temporary residence) exist but could only be sourced from secondary guides.",
+  "naturalisation": "Ordinary naturalisation under the Citizenship Act is reported at 14 years of residence immediately before the application (government service can shorten it); good character required. Not read in full from the statute.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "The Citizenship Unit states that dual citizenship is allowed for CBI citizens.",
+  "routes": [
+    {
+      "id": "cbi_sisc",
+      "name": "Citizenship by Investment: Sustainable Island State Contribution (SISC)",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "A non-refundable contribution of USD 250,000 to the national fund gives citizenship with no residence requirement.",
+      "requirements": "Minimum USD 250,000 for the main applicant (earlier note: includes family of up to four, with USD 25,000 per extra dependant under 18 and USD 50,000 per extra dependant 18+; not re-verified this pass). Applicant must be 18+, pass due diligence and meet financial criteria. Disqualified if refused citizenship or a visa by any visa-free partner country (unless since obtained), criminal record or active investigation, or bankruptcy within 10 years. Applications from Afghanistan, Belarus, Iran, Iraq, North Korea and Russia are not accepted; nationality exclusions apply within the OTHER group. Applications go through an authorised agent.",
+      "minimum_investment": {
+        "amount": 250000,
+        "currency": "USD"
+      },
+      "investment_options": "SISC USD 250,000; Public Benefit Option USD 250,000 (approved projects); Developer real estate USD 325,000; private real estate USD 600,000.",
+      "government_fees": null,
+      "fees_note": "Due diligence and processing fees not re-verified on the Citizenship Unit pages reached this pass (earlier note: USD 10,000 main applicant, USD 7,500 per dependant 16+). See open questions.",
+      "physical_presence": "None. The Citizenship Unit states there is no residency requirement.",
+      "path_to_citizenship_years": 0,
+      "family": "Spouse, children under 18 (to 30 if in full-time study and supported), disabled adult children, and parents 55+ supported by and living with the applicant.",
+      "tax_note": "No personal income tax in St Kitts and Nevis, but CBI citizens must file a final return and obtain a clearance certificate on emigrating (earlier Deloitte note). Citizenship alone does not end tax residence elsewhere.",
+      "processing_time": "Not sourced this pass.",
+      "sources": [
+        {
+          "title": "St Kitts and Nevis Citizenship Unit: CBI options",
+          "url": "https://ciu.gov.kn/cbi-options/",
+          "publisher": "Citizenship Unit, St Kitts and Nevis",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "St Kitts and Nevis Citizenship Unit: Eligibility criteria",
+          "url": "https://ciu.gov.kn/eligibility-criteria/",
+          "publisher": "Citizenship Unit, St Kitts and Nevis",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "cbi_real_estate",
+      "name": "Citizenship by Investment: Real estate",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "Buy into an approved development from USD 325,000, or an exclusive private property from USD 600,000.",
+      "requirements": "Developer real estate in an approved development: minimum USD 325,000. Private real estate sale: at least USD 600,000. Reported holding period 7 years (earlier note and secondary sources; not stated on the pages read). Applicant must be 18+, pass due diligence and meet financial criteria. Disqualified if refused citizenship or a visa by any visa-free partner country (unless since obtained), criminal record or active investigation, or bankruptcy within 10 years. Applications from Afghanistan, Belarus, Iran, Iraq, North Korea and Russia are not accepted; nationality exclusions apply within the OTHER group.",
+      "minimum_investment": {
+        "amount": 325000,
+        "currency": "USD"
+      },
+      "investment_options": "Developer real estate USD 325,000; private property USD 600,000.",
+      "government_fees": null,
+      "fees_note": "Earlier note: post-approval fees USD 25,000 main applicant, USD 15,000 spouse, USD 10,000 per child under 18. Not re-verified.",
+      "physical_presence": "None stated by the Citizenship Unit (no residency requirement).",
+      "path_to_citizenship_years": 0,
+      "tax_note": "Citizenship alone does not make you tax resident anywhere.",
+      "sources": [
+        {
+          "title": "St Kitts and Nevis Citizenship Unit: CBI options",
+          "url": "https://ciu.gov.kn/cbi-options/",
+          "publisher": "Citizenship Unit, St Kitts and Nevis",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "St Kitts and Nevis Citizenship Unit: Eligibility criteria",
+          "url": "https://ciu.gov.kn/eligibility-criteria/",
+          "publisher": "Citizenship Unit, St Kitts and Nevis",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "cbi_public_benefit",
+      "name": "Citizenship by Investment: Public Benefit Option",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "USD 250,000 to an approved public benefit project (e.g. affordable housing, a school, a beach resort) instead of the national fund.",
+      "requirements": "Minimum USD 250,000 to approved public benefit projects listed by the Citizenship Unit. Applicant must be 18+, pass due diligence and meet financial criteria. Disqualified if refused citizenship or a visa by any visa-free partner country (unless since obtained), criminal record or active investigation, or bankruptcy within 10 years. Applications from Afghanistan, Belarus, Iran, Iraq, North Korea and Russia are not accepted; nationality exclusions apply within the OTHER group.",
+      "minimum_investment": {
+        "amount": 250000,
+        "currency": "USD"
+      },
+      "government_fees": null,
+      "physical_presence": "None stated by the Citizenship Unit (no residency requirement).",
+      "path_to_citizenship_years": 0,
+      "sources": [
+        {
+          "title": "St Kitts and Nevis Citizenship Unit: CBI options",
+          "url": "https://ciu.gov.kn/cbi-options/",
+          "publisher": "Citizenship Unit, St Kitts and Nevis",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "St Kitts and Nevis Citizenship Unit: Eligibility criteria",
+          "url": "https://ciu.gov.kn/eligibility-criteria/",
+          "publisher": "Citizenship Unit, St Kitts and Nevis",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "residence_homeowner_selfsufficient",
+      "name": "Homeowner / self-sufficient residence",
+      "kind": "passive_income",
+      "grants": "temporary_residence",
+      "summary": "People who own property or can show they support themselves and have health insurance can get annual residence permits; a permanent route is reported but unsourced.",
+      "requirements": "Per one advisory guide only: proof of self-sufficiency and health insurance, renewed yearly; a permanent track reportedly linked to property of about USD 350,000 held for 7 years. No official source found for thresholds, fees or permit names.",
+      "physical_presence": "Not sourced.",
+      "sources": [
+        {
+          "title": "Residency in St Kitts and Nevis: routes and costs (2026)",
+          "url": "https://www.libertymundo.com/residency-in-st-kitts-and-nevis/",
+          "publisher": "Liberty Mundo",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    }
+  ],
+  "open_questions": [
+    "Government and due diligence fees for each CBI option were not on the pages reached; earlier note says due diligence USD 10,000 main / USD 7,500 per dependant 16+. Verify on the Citizenship Unit fee pages.",
+    "Holding period for CBI real estate (7 years reported) not confirmed this pass.",
+    "Official thresholds and permit names for ordinary residence (homeowner, self-sufficient, permanent) not found; the USD 350,000 / 7 year permanent figure is unsourced.",
+    "Whether St Kitts and Nevis has a digital nomad visa: sources conflict (one describes a 'Remote Work in Paradise' resident visa, others say none).",
+    "Earlier note: from 14 April 2026 CBI citizens must enrol in a biometric passport programme (deadline 31 July 2027); not re-verified.",
+    "Ordinary naturalisation: 14 years read from a statute excerpt and secondary summaries; conflicting 7+7 year account in one guide.",
+    "Chairman's Update December 2025 and Citizenship Unit Act 2024 referenced on the CIU page but not read.",
+    "ECCIRA start date: sources conflict (April 2026, Q2 2026, September 2026, 'late 2026', or not yet operational as of 8 August 2026). Check eccira.org.",
+    "Reported European Commission letter of 25 June 2026 asking the Eastern Caribbean states to end citizenship programmes by 1 June 2028 comes from one professional source (Passport Legacy); not checked against a Commission document."
+  ],
+  "sources": [
+    {
+      "title": "ECCIRA: new Caribbean CBI regulator (status reports conflict)",
+      "url": "https://www.passportlegacy.com/publications/caribbean-citizenship-by-investment-in-2026-eccira-the-eus-2028-letter-and-the-us-proclamation-explained",
+      "publisher": "Passport Legacy",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "KNA",
+  "researched_on": "2026-10-16"
+}

@@ -61,6 +61,8 @@ Estate duty under the Estate Duty Act (Cap. 43:02) is levied on the principal va
 - **Residence/domicile rules:** Malawi-situated property is always dutiable; foreign movable property only for a Malawi-domiciled deceased. A family that settles permanently is likely to acquire a domicile of choice, so worldwide movables (the portfolio) are scored as in scope.
 - **Business relief covers listed shares:** False
 
+**Surviving spouse:** No spousal exemption: the whole estate is dutiable on the graduated scale whoever inherits; the Act's only spousal mention is a discretionary remission of up to half the duty where death was caused by war operations (Estate Duty Act Cap. 43:02, s. 7).
+
 ## Wealth tax
 
 ### Standard regime
@@ -108,3 +110,4 @@ Not researched in this pass: no cost item could be sourced quickly from an agenc
 ## Change log
 
 - 2026-10-15: initial research.
+- 2026-10-16: added surviving-spouse treatment.

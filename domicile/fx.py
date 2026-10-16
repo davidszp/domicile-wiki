@@ -127,5 +127,8 @@ def to_eur(amount: float, currency: str, fx: dict) -> float:
 
 
 if __name__ == "__main__":
+    import argparse
+
+    argparse.ArgumentParser(description="Refresh exchange rates from the ECB (network); writes data/fx.json.").parse_args()
     s = refresh()
     print(f"{len(s['rates'])} currencies, ECB date {s['date']}")

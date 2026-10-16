@@ -67,6 +67,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `exempt_with
 - **Important exceptions / announced changes:** Bequests to children above their legal share: 2.5% / 5% base rates multiplied by surcharges (up to 2.2x) for larger portions; the official page gives an example of a 140% increase. Foreign real estate and movables are taxed with reference to the deceased's citizenship rules (PwC).
 - **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
 - **Sources:** [How to calculate taxes on an inherited estate](https://guichet.public.lu/en/citoyens/fiscalite/heritage-donation/succession/droits-succession-heritage.html); [Making a gift or donation](https://guichet.public.lu/en/citoyens/fiscalite/heritage-donation/donation/faire-donation.html); [Luxembourg - Individual - Other taxes](https://taxsummaries.pwc.com/luxembourg/individual/other-taxes)
+- Surviving spouse (`spouse_treatment` `fully_exempt`): Surviving spouse pays 0% on the legal and extra-legal share (guichet.public.lu); a partner under a partnership declaration needs 3 years' registration.
 
 ## Wealth tax
 
@@ -143,3 +144,4 @@ US citizens: US-Luxembourg income tax treaty applies; there is no estate tax tre
 - 2026-10-15: added prime rent (athome.lu listing sample, EUR 5,300/month) and international school fee (ISL Grades 9-12, EUR 24,226, 2026-27) to cost of living.
 - 2026-10-15: Holding structures section: no structure modelled (SPF/Soparfi worse than direct holding); SPF subscription-tax minimum EUR 1,000 and maximum EUR 125,000 verified.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

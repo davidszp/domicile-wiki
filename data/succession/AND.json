@@ -1,0 +1,44 @@
+{
+  "id": "AND",
+  "name": "Andorra",
+  "researched_on": "2026-10-16",
+  "summary": "Andorran law protects children (or parents if there are none) with a reserved quarter of the estate. It is not in the EU. Trusts are not recognised, and only public-interest foundations are allowed. Several points rest on secondary sources only.",
+  "forced_heirship": "yes",
+  "reserved_share": "About 25 % of the estate, shared among the children or, with no children, the parents (Act 46/2014 on succession; per UINL summary, secondary source).",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Per a notarial summary, the testator's national law governs the succession, except where close ties to another state exist. Not under the EU Regulation. Not confirmed from the statute.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "Andorra is not on the HCCH Trusts Convention table, so it is not in force. Advisers report trusts are not recognised in Andorra. Foundations (Law 11/2008) must pursue general-interest or social purposes.",
+  "open_questions": [
+    "Forced share, applicable-law rule and the absence of a trust law come from secondary sources only.",
+    "A reported trust law of 2022 could not be confirmed or ruled out.",
+    "Andorra statutes were not read at the Official Gazette (bopa.ad)."
+  ],
+  "sources": [
+    {
+      "title": "Successions in Andorra (UINL)",
+      "url": "https://uinl.org/en_GB/sucesiones-en-europa/andorra",
+      "publisher": "International Union of Notaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Act 46/2014 on succession to the estates of the deceased",
+      "url": "https://morabanc.ad/en/?p=13458",
+      "publisher": "Morabanc",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

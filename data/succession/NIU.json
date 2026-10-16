@@ -1,0 +1,46 @@
+{
+  "id": "NIU",
+  "name": "Niue",
+  "researched_on": "2026-10-16",
+  "summary": "Niue's law comes largely from New Zealand statute (Niue Act 1966) and Niuean custom. No forced share was found, but succession law was not fully sourced. Niue has its own Trusts Act 1994. The Hague Trusts Convention is not in force.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "No family-provision statute found; the Niue Act 1966 s 692 applies only the NZ infants provisions to wills.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No conflict-of-law rule for succession was sourced. Customary land passes by custom (Niue Act 1966); this was not researched in detail.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "unclear",
+  "trust_note": "Niue Trusts Act 1994 covers validity of trusts, protective trusts and protectors; the Trustee Companies Act 1994 licenses trustee companies. No foundation law was found. Tax treatment of foreign trusts not sourced.",
+  "open_questions": [
+    "Wills and intestacy rules, and whether NZ's Family Protection Act applies in Niue.",
+    "Niue foundation law (none found).",
+    "Niue Trusts Act 1994 current text and tax treatment.",
+    "The HCCH table as retrieved shows no entry for this jurisdiction (the retrieved copy was marked last updated 2017 and its territorial-extension notes could not be read); re-check the live table.",
+    "Trust/foundation availability marked unclear: no statute was found, which does not show that none exists."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table, Convention of 1 July 1985 on the Law Applicable to Trusts",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Niue Act 1966",
+      "url": "https://legislation.govt.nz/act/public/1966/38/en/latest/",
+      "publisher": "NZ Parliamentary Counsel Office",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Niue Trusts Act 1994",
+      "url": "https://paclii.org/nu/legis/consol_act/ta1994132",
+      "publisher": "PacLII",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

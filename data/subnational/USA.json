@@ -1002,7 +1002,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -1128,7 +1130,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -1453,7 +1457,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -1610,7 +1616,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -2023,7 +2031,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -2175,7 +2185,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -2501,7 +2513,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -2655,7 +2669,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -3602,7 +3618,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -3741,7 +3759,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -3880,7 +3900,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -4011,7 +4033,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -4193,7 +4217,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -4367,7 +4393,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -4732,7 +4760,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -4886,7 +4916,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -5534,7 +5566,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Spouses pay no Nebraska county inheritance tax (Neb. Rev. Stat. 77-2004); the federal marital deduction still applies only for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A)."
           }
         },
         "dynasty_trust": {
@@ -5662,7 +5696,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Spouses pay no Nebraska county inheritance tax (Neb. Rev. Stat. 77-2004); the federal marital deduction still applies only for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A)."
           }
         }
       },
@@ -6256,7 +6292,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for the surviving spouse at federal and state level (IRC 2056); the federal deduction requires a US-citizen spouse or a QDOT (IRC 2056(d), 2056A), although New York does not itself require a QDOT for its state deduction."
           }
         },
         "dynasty_trust": {
@@ -6454,7 +6492,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for the surviving spouse at federal and state level (IRC 2056); the federal deduction requires a US-citizen spouse or a QDOT (IRC 2056(d), 2056A), although New York does not itself require a QDOT for its state deduction."
           }
         }
       },
@@ -7348,7 +7388,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -7535,7 +7577,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -7676,7 +7720,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Transfers to a surviving spouse are taxed at 0% for Pennsylvania inheritance tax (72 P.S. 9116); the federal marital deduction applies only for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A)."
           }
         },
         "dynasty_trust": {
@@ -7809,7 +7855,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Transfers to a surviving spouse are taxed at 0% for Pennsylvania inheritance tax (72 P.S. 9116); the federal marital deduction applies only for a US-citizen spouse, otherwise a QDOT is needed (IRC 2056(d), 2056A)."
           }
         }
       },
@@ -7987,7 +8035,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -8157,7 +8207,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -8720,7 +8772,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         },
         "dynasty_trust": {
@@ -8848,7 +8902,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used."
           }
         }
       },
@@ -9219,7 +9275,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used. Washington follows the federal rule and accepts a state QDOT election."
           }
         },
         "dynasty_trust": {
@@ -9422,7 +9480,9 @@
             "business_relief": "Federal: no exemption, IRC 6166 deferral. State-level relief for family farms and small businesses exists in several states (e.g. Minnesota qualified small business/farm deduction, Maryland family farm) but never covers a listed portfolio.",
             "business_relief_covers_public_shares": false,
             "foreign_assets": "Residents (domiciliaries) are taxed on worldwide intangibles; real and tangible property located in another state or abroad is generally excluded or apportioned at state level.",
-            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property."
+            "domicile_rules": "State death taxes follow domicile at death (intention to remain, home, voting, driver's licence, time spent). A move must be complete before death; states audit claimed changes of domicile. Non-domiciliaries pay only on in-state real and tangible property.",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Unlimited marital deduction for a US-citizen surviving spouse at federal and state level (IRC 2056); a non-citizen spouse needs a qualified domestic trust (QDOT) to defer the tax (IRC 2056(d), 2056A), so the family pays nothing at the first death only if the spouse is a citizen or a QDOT is used. Washington follows the federal rule and accepts a state QDOT election."
           }
         }
       },

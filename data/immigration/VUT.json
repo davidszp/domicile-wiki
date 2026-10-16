@@ -1,0 +1,163 @@
+{
+  "name": "Vanuatu",
+  "summary": "No free movement for anyone. The Development Support Program gives citizenship for USD 130,000 (single applicant) with no residence requirement, but the passport has no visa-free access to the EU (waiver suspended; reported as full from 2023 or December 2024) or the UK (visa required since 19 July 2023), and new acceptance is unconfirmed after 2025 programme pauses. Ordinary residence is by self-funded income of VUV 250,000 a month, a foreign investor certificate or employment.",
+  "naturalisation": "Naturalisation requires 10 years of continuous lawful residence immediately before applying, good character, an official language and a citizenship test (Immigration Department and secondary summaries).",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "The Citizenship Act text requires naturalising applicants to renounce other citizenship, but a 2013 amendment is reported to allow dual citizenship (including for investors). Unresolved; check the current Act.",
+  "routes": [
+    {
+      "id": "cbi_dsp",
+      "name": "Citizenship by Investment: Development Support Program (DSP)",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "A USD 130,000 non-returnable donation for a single applicant (USD 150,000 for a couple) gives Vanuatu citizenship without living there.",
+      "requirements": "Donation USD 130,000 single; USD 150,000 married couple; USD 165,000 couple plus one child; USD 180,000 couple plus two children; USD 10,000 per additional applicant. Due diligence (FIU) USD 5,000; application fee VUV 5,000. Legal basis: Citizenship Act CAP 112 s.13E and DSP Regulations, Order 33 of 2019. Agent and document costs extra (national ID and birth certificate rule from July 2025, reported). CBI citizens are reported permanently barred from voting. Status: the sister CIIP was paused in March 2025 and a review of the CIIP and DSP regulations was announced; a 2025 government-wide pause is reported with no confirmed reopening notice.",
+      "minimum_investment": {
+        "amount": 130000,
+        "currency": "USD"
+      },
+      "investment_options": "DSP only for new applicants; a Form D line of USD 260,000 (applicant, spouse and one child) also appears on the fees page.",
+      "government_fees": {
+        "amount": 5000,
+        "currency": "USD"
+      },
+      "fees_note": "Due diligence USD 5,000 plus VUV 5,000 application fee (not converted). Passport, certificate and agent fees extra.",
+      "physical_presence": "None. The aggregator lists a visit to Vanuatu as required with no duration; not confirmed.",
+      "path_to_citizenship_years": 0,
+      "processing_time": "Secondary sources vary from 30 to 90 days.",
+      "tax_note": "Vanuatu has no income tax, but citizenship does not end tax residence elsewhere. EU visa waiver suspended; UK visa required since 19 July 2023.",
+      "sources": [
+        {
+          "title": "Vanuatu Citizenship Office: Fees and charges",
+          "url": "https://vancitizenship.gov.vu/index.php/citizenship/fees-and-charges",
+          "publisher": "Vanuatu Citizenship Office",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Vanuatu DSP: official fees and status (aggregator, last verified 9 Oct 2026)",
+          "url": "https://nomad.watch/visas/citizenship/vanuatu-cbi-dsp",
+          "publisher": "Nomad Watch",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Vanuatu suspends Capital Investment Immigration Plan programme (20 March 2025)",
+          "url": "https://pina.com.fj/2025/03/20/vanuatu-capital-investment-immigration-plan-programme-suspended/",
+          "publisher": "Pacific Islands News Association",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "EU Council partially suspends visa waiver with Vanuatu (March 2022)",
+          "url": "https://investmentmigration.org/news/europe-eu-council-approves-partial-suspension-of-visa-waiver-agreement-with-vanuatu/",
+          "publisher": "Investment Migration Council",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "cbi_ciip",
+      "name": "Capital Investment Immigration Plan (CIIP)",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "status": "suspended",
+      "status_note": "Citizenship Commission paused all new CIIP applications until further notice in March 2025 while a new regulation is drafted; one source reports an indefinite suspension in April 2026.",
+      "summary": "An older investment-based citizenship route (real estate, business). New applications are paused.",
+      "requirements": "Amounts not sourced in this research. The Citizenship Commission paused new applications in March 2025 pending new regulations.",
+      "physical_presence": "Not sourced.",
+      "sources": [
+        {
+          "title": "Vanuatu suspends Capital Investment Immigration Plan programme (20 March 2025)",
+          "url": "https://pina.com.fj/2025/03/20/vanuatu-capital-investment-immigration-plan-programme-suspended/",
+          "publisher": "Pacific Islands News Association",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ]
+    },
+    {
+      "id": "self_funded_resident",
+      "name": "Self-funded resident visa (retiree / passive income)",
+      "kind": "passive_income",
+      "grants": "temporary_residence",
+      "summary": "Residence for people living on certified monthly income paid into a Vanuatu bank.",
+      "requirements": "Certified monthly income from a Vanuatu bank of VUV 250,000 for a single applicant, VUV 500,000 including a spouse or de facto partner (VUV 3,000,000 a year single). A guide adds minimum age 55, proof of retired status and police clearances; not verified officially. Different criteria for pre-7 February 2011 retiree permit holders.",
+      "minimum_income": {
+        "amount": 3000000,
+        "currency": "VUV"
+      },
+      "government_fees": null,
+      "fees_note": "'Applicable visa application charge in Vatu'; amount not stated.",
+      "physical_presence": "Not stated.",
+      "tax_note": "Vanuatu has no personal income tax; a permit does not end tax residence elsewhere.",
+      "family": "Spouse, unmarried children under 18, or 18-20 and dependent.",
+      "sources": [
+        {
+          "title": "Vanuatu Department of Immigration: residence visa",
+          "url": "https://immigration.gov.vu/?p=4881",
+          "publisher": "Vanuatu Department of Immigration and Passport Services",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "foreign_investor_residence",
+      "name": "Foreign investor residence visa",
+      "kind": "investor_residence",
+      "grants": "temporary_residence",
+      "summary": "Residence for people holding a VIPA foreign investor approval certificate and a business licence.",
+      "requirements": "VIPA foreign investor approval certificate and, if applicable, a business licence. A leasehold property of VUV 10,000,000 or more plus income criteria is a separate category. One guide cites a USD 50,000 minimum investment; not found officially.",
+      "physical_presence": "Not stated.",
+      "sources": [
+        {
+          "title": "Vanuatu Department of Immigration: residence visa",
+          "url": "https://immigration.gov.vu/?p=4881",
+          "publisher": "Vanuatu Department of Immigration and Passport Services",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    }
+  ],
+  "open_questions": [
+    "Whether the DSP currently accepts new applications: no official reopening notice found; one aggregator says a government-wide pause was announced in 2025.",
+    "EU visa waiver: Council partial suspension 2022 (passports since 25 May 2015) confirmed; a full suspension is dated 4 February 2023 by one source and December 2024 by others. Primary Council text not read.",
+    "Meaning of the Form D USD 260,000 line on the official fees page not clear (garbled table).",
+    "Physical presence on DSP (a visit is listed by the aggregator, no duration) not confirmed.",
+    "Residence visa fees and validity not stated by the Immigration Department; investor minimum not official.",
+    "CIIP contribution amounts not sourced.",
+    "Whether regulations changed after the 2025 review not known."
+  ],
+  "sources": [],
+  "id": "VUT",
+  "researched_on": "2026-10-16"
+}

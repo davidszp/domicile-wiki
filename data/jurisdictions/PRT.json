@@ -186,7 +186,9 @@
         "business_relief": "Not needed for children.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Foreign assets outside the scope of Portuguese stamp duty.",
-        "domicile_rules": "Situs-based; residence of deceased not decisive."
+        "domicile_rules": "Situs-based; residence of deceased not decisive.",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "Spouse or de facto partner is exempt from the 10% stamp duty on free transfers (verba 1.2) when the duty would fall on them (Stamp Duty Code Art. 6(1)(e)); only assets located in Portugal are in scope, and the exemption as verified covers verba 1.2 only, not the 0.8% real estate charge (verba 1.1)."
       }
     },
     {

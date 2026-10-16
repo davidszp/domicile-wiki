@@ -158,6 +158,8 @@
         "important_exceptions": "EY's 2026 guide still prints an older scale (0-11%, thresholds in thousands of kwacha) and confirms the duty exists; the statute consolidation of 31 December 2017 is used here. A 2015 news report said many MPs wanted the duty abolished; no repeal was found (search budget exhausted, not fully checked). Rates may have been amended after 2017.",
         "basis": "estate",
         "children_treatment": "taxed",
+        "spouse_treatment": "taxed",
+        "spouse_note": "No spousal exemption: the whole estate is dutiable on the graduated scale whoever inherits; the Act's only spousal mention is a discretionary remission of up to half the duty where death was caused by war operations (Estate Duty Act Cap. 43:02, s. 7).",
         "exemption": 0,
         "brackets": [
           {

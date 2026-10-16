@@ -47,6 +47,7 @@ exempt for both inheritances and gifts: children, adopted children and their des
 partner, plus sons/daughters-in-law and stepchildren (FURS; Uradni list 2016). Others (Art. 8) pay 5–14% (parents,
 siblings), 8–17% (grandparents) or 12–39%. Movables-only transfers below EUR 5,000 are not taxed. JSON:
 `fully_exempt`, no brackets, gifts same as inheritance.
+- Surviving spouse (`spouse_treatment` `fully_exempt`): Spouse and unmarried partner are exempt as first-order heirs (ZDDD Art. 9, FURS).
 
 ## Wealth tax
 
@@ -108,3 +109,4 @@ Ljubljana.
 - 2026-10-15: initial research.
 - 2026-10-15 (data-quality pass): added BISL fee (EUR 19,300, 2025-26, school's own schedule) and prime rent (Bolha.com, EUR 3,750/month, thin sample).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (EUR 3,750).
+- 2026-10-16: added surviving-spouse treatment.

@@ -1,0 +1,173 @@
+{
+  "id": "CRI",
+  "name": "Costa Rica",
+  "researched_on": "2026-10-16",
+  "summary": "Costa Rica grants renewable two-year residence for investment (USD 150,000), passive income (rentista, USD 2,500 a month) or a pension (USD 1,000 a month), with permanent residence after three years. A separate non-residency digital nomad visa needs USD 3,000 a month. All groups (EU, US, other) use the same routes.",
+  "naturalisation": "Seven years of legal residence, or five for nationals of Central American and Ibero-American countries and Spain; language and history tests (details not read officially).",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Costa Rica does not require renunciation of another nationality (general position; not source-checked in this session).",
+  "routes": [
+    {
+      "id": "inversionista",
+      "name": "Inversionista (investor) residence",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Two-year renewable residence for investing at least USD 150,000 (USD 100,000 for forestry) in Costa Rica; permanent residence after 3 years.",
+      "requirements": "Investment of at least USD 150,000 (lowered from USD 200,000 by Law 9996), or USD 100,000 for qualifying forestry; real estate must be held in the applicant's own name. Temporary residence is 2 years, renewable; permanent residence is available after 3 years of temporary residence. Contributions to the social security fund (CCSS) are required. Migration Law 8764.",
+      "physical_presence": "Not stated in the sources reviewed; see open questions",
+      "sources": [
+        {
+          "title": "Costa Rica Residency 2026: Requirements, Programs, Costs, and Timeline",
+          "url": "https://goldenharbors.com/articles/costa-rica-residency",
+          "publisher": "Golden Harbors",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Costa Rica Residency 2026: Pensionado, Rentista & Inversionista Guide",
+          "url": "https://pacificpropertiescr.com/blog/costa-rica-residency-2026-pensionado-rentista-and-inversionista-guide-or-pacific-properties",
+          "publisher": "Pacific Properties CR",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "investment_options": "USD 100,000 for qualifying forestry projects.",
+      "fees_note": "Filing and change-of-status fees are indicatively USD 250 to 500 in total per one guide; not read from the migration authority.",
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 7,
+      "processing_time": "Longer than 9 to 12 months for inversionista (guide)",
+      "tax_note": "Costa Rica taxes territorially; residence is not automatically tax residence."
+    },
+    {
+      "id": "rentista",
+      "name": "Rentista residence",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Two-year renewable residence for people with USD 2,500 a month of non-work income for two years, or a USD 60,000 deposit.",
+      "requirements": "USD 2,500 a month (USD 30,000 a year) of non-employment income certified for 24 months, or a USD 60,000 deposit in an approved Costa Rican bank that pays out the monthly amount; the income must be exchanged through the Costa Rican banking system.",
+      "physical_presence": "Not stated in the sources reviewed; see open questions",
+      "sources": [
+        {
+          "title": "Costa Rica Residency 2026: Requirements, Programs, Costs, and Timeline",
+          "url": "https://goldenharbors.com/articles/costa-rica-residency",
+          "publisher": "Golden Harbors",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Costa Rica Residency 2026: Pensionado, Rentista & Inversionista Guide",
+          "url": "https://pacificpropertiescr.com/blog/costa-rica-residency-2026-pensionado-rentista-and-inversionista-guide-or-pacific-properties",
+          "publisher": "Pacific Properties CR",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 30000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 7,
+      "processing_time": "9 to 12 months from complete submission (guide)",
+      "tax_note": "Costa Rica taxes territorially."
+    },
+    {
+      "id": "pensionado",
+      "name": "Pensionado residence",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Two-year renewable residence for retirees with a lifetime pension of at least USD 1,000 a month.",
+      "requirements": "Lifetime pension of at least USD 1,000 a month (USD 12,000 a year); a married couple can qualify on one pension; USD 1,000 a month must be exchanged through the Costa Rican banking system; one guide says only pensions count, not rental or dividends.",
+      "physical_presence": "Not stated in the sources reviewed; see open questions",
+      "sources": [
+        {
+          "title": "Costa Rica Residency 2026: Requirements, Programs, Costs, and Timeline",
+          "url": "https://goldenharbors.com/articles/costa-rica-residency",
+          "publisher": "Golden Harbors",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Costa Rica Residency 2026: Pensionado, Rentista & Inversionista Guide",
+          "url": "https://pacificpropertiescr.com/blog/costa-rica-residency-2026-pensionado-rentista-and-inversionista-guide-or-pacific-properties",
+          "publisher": "Pacific Properties CR",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 12000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 7,
+      "processing_time": "9 to 12 months from complete submission (guide)"
+    },
+    {
+      "id": "digital_nomad",
+      "name": "Digital nomad visa (Law 10008)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A one-year stay, renewable once, for remote workers earning USD 3,000 a month (USD 4,000 for a family). It is not a residency category.",
+      "requirements": "Income of USD 3,000 a month (USD 36,000 a year), or USD 4,000 for a family, from foreign sources; health insurance of at least USD 50,000 for the whole stay; bank statements for 12 months. Initial one year, renewable once. Time does not count towards residency. The tourism board's landing page reportedly lists USD 5,000 for families; the law and regulation say USD 4,000.",
+      "physical_presence": "Up to one year per grant, renewable once",
+      "sources": [
+        {
+          "title": "Costa Rica digital nomad visa: Complete guide (2026)",
+          "url": "https://www.taxesforexpats.com/country-guides/costa-rica/costa-rica-digital-nomad-visa.html",
+          "publisher": "Taxes for Expats",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Costa Rica Residency 2026: Requirements, Programs, Costs, and Timeline",
+          "url": "https://goldenharbors.com/articles/costa-rica-residency",
+          "publisher": "Golden Harbors",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 36000,
+        "currency": "USD"
+      },
+      "tax_note": "Foreign earnings of visa holders are not taxed in Costa Rica; US citizens stay taxable in the US."
+    }
+  ],
+  "open_questions": [
+    "No official Costa Rican source (Direccion General de Migracion y Extranjeria) could be read (HTTP 403); all amounts come from consultancy guides.",
+    "Physical presence requirements for temporary residents were not found.",
+    "Government fees are indicative only; left null.",
+    "Work permit route not researched (none recorded).",
+    "Naturalisation: the 7-year and 5-year periods come from one guide; dual-citizenship position and residence-day requirements were not read officially."
+  ],
+  "sources": []
+}

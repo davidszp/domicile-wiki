@@ -184,6 +184,8 @@
         "verification": "verified",
         "basis": "beneficiary",
         "children_treatment": "taxed",
+        "spouse_treatment": "taxed",
+        "spouse_note": "The surviving spouse sits in the same group as children: the first 50 UTA of the inheritance is exempt, then the same 1%-25% scale applies, with no marital relief beyond that (Ley 16.271 art. 2 and the table instructions, group I).",
         "exemption": 43290600,
         "brackets": [
           {

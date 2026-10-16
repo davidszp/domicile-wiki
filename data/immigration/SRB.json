@@ -1,0 +1,218 @@
+{
+  "id": "SRB",
+  "name": "Serbia",
+  "summary": "Serbia is not in the EU, so EU citizens need a residence permit too. There is no investor visa and no dedicated digital nomad visa. Permits are issued on grounds such as employment, owning a company, owning residential property (no minimum value), study or family, as a single permit for up to 36 months. Permanent residence comes after 3 years and citizenship 3 years after that.",
+  "naturalisation": "Three years of continuous permanent residence (itself after 3 years of temporary residence), plus release from the previous citizenship; Ministry of Interior has discretion.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "General route requires release from the previous citizenship (or an undertaking to renounce); dual citizenship is possible by marriage to a Serbian citizen or for persons of Serbian descent.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 6,
+      "id": "work_single_permit",
+      "name": "Single permit (residence and work) on employment",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A single permit covers residence and work together for up to 36 months, renewable, on the basis of an employment contract.",
+      "requirements": "Employment contract and employer registration; residence and work combined in one permit up to 36 months (Law on Foreigners as amended July 2023, in force 1 February 2024, per law-firm sources). Applications are online.",
+      "physical_presence": "Residence in Serbia; absences up to 10 months in total or 6 at once are tolerated for continuity",
+      "sources": [
+        {
+          "title": "Serbia Residence Permit",
+          "url": "https://wiki.private.law/en/serbia-residence",
+          "publisher": "private.law wiki",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Law on Foreigners Serbia: Key Changes in 2026",
+          "url": "https://zuniclaw.com/en/law-on-foreigners-serbia/",
+          "publisher": "Zunic Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 6,
+      "id": "own_company",
+      "name": "Residence as owner of a company or entrepreneur",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Foreigners can found a company (d.o.o.) or register as an entrepreneur and receive a single permit on that basis; the business must show real activity.",
+      "requirements": "Registration with the Serbian Business Registers Agency (APR) with actual activity; permit up to 36 months. Capital and income thresholds not published in the sources used.",
+      "physical_presence": "Same continuity rules as above",
+      "sources": [
+        {
+          "title": "Serbia Residence Permit",
+          "url": "https://wiki.private.law/en/serbia-residence",
+          "publisher": "private.law wiki",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Law on Foreigners Serbia: Key Changes in 2026",
+          "url": "https://zuniclaw.com/en/law-on-foreigners-serbia/",
+          "publisher": "Zunic Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "A permit does not decide tax residence; Serbia uses a 183-day and centre-of-interests test.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 6,
+      "id": "property_residence",
+      "name": "Temporary residence on property ownership",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Owning a residential building or flat in Serbia that the foreigner lives in is a recognised ground for a temporary residence permit. There is no minimum property value.",
+      "requirements": "Residential property in the applicant's name that the applicant lives in; 'no minimum property value applies' (private.law wiki). Official text not read. Income or means proof not sourced.",
+      "physical_presence": "Same continuity rules; visa-free days do not count",
+      "sources": [
+        {
+          "title": "Serbia Residence Permit",
+          "url": "https://wiki.private.law/en/serbia-residence",
+          "publisher": "private.law wiki",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Serbia - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/serbia/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "freelancer_remote",
+      "name": "Freelancer / remote worker (self-employment permit, no nomad visa)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Serbia has no dedicated digital nomad visa; remote workers register a sole proprietorship or company and apply for a single permit. Guides disagree on the income needed.",
+      "requirements": "Serbian preduzetnik or d.o.o. needed to work legally; Serbian bank account, health insurance; income figures in guides conflict (about EUR 3,500 a month in one, other figures elsewhere), so none is recorded.",
+      "physical_presence": "Same continuity rules",
+      "sources": [
+        {
+          "title": "Residency in Serbia 2026",
+          "url": "https://www.libertymundo.com/residency-in-serbia-2/",
+          "publisher": "Liberty Mundo",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Law on Foreigners Serbia: Key Changes in 2026",
+          "url": "https://zuniclaw.com/en/law-on-foreigners-serbia/",
+          "publisher": "Zunic Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Ministry of Interior (mup.gov.rs) and Welcome to Serbia portal were not opened; the details come from law-firm summaries.",
+    "Income thresholds for the freelancer / remote-worker route conflict between sources; minimum_income left empty.",
+    "Government fees not sourced for any route.",
+    "Property-ownership route: required means of support and any minimum area not sourced.",
+    "Whether 2026 amendments to the Law on Foreigners exist: none found; latest known amendments July 2023 (in force 1 February 2024).",
+    "Visa-free periods for EU, US and other citizens not researched (one source mentions 30 days for Russian citizens).",
+    "Dual-citizenship rules for naturalisation come from law-firm sources."
+  ],
+  "sources": [
+    {
+      "title": "Serbia Residence Permit",
+      "url": "https://wiki.private.law/en/serbia-residence",
+      "publisher": "private.law wiki",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Law on Foreigners Serbia: Key Changes in 2026",
+      "url": "https://zuniclaw.com/en/law-on-foreigners-serbia/",
+      "publisher": "Zunic Law",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "How to Get Serbian Citizenship in 2026?",
+      "url": "https://zuniclaw.com/en/how-to-get-serbian-citizenship/",
+      "publisher": "Zunic Law",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Serbia - Individual - Residence",
+      "url": "https://taxsummaries.pwc.com/serbia/individual/residence",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

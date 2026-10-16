@@ -1,0 +1,43 @@
+{
+  "id": "CYP",
+  "name": "Cyprus",
+  "researched_on": "2026-10-16",
+  "summary": "Children are protected: they can claim up to a quarter of the estate, and a spouse or parent up to half where there are no children. A foreign resident can choose the law of their nationality (EU Succession Regulation art. 22). Cyprus has trusts and has been a Hague Trusts Convention state since 2017; foundations exist but their use for private family wealth is not clearly settled.",
+  "forced_heirship": "yes",
+  "reserved_share": "Per e-Justice: children can claim up to 25% of the net estate; with no children, a surviving spouse or parent can claim up to 50% (Wills and Succession Law, Cap. 195, art. 41, see also art. 51).",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "EU Succession Regulation: the law of the last habitual residence applies by default (art. 21), but a resident foreign national may choose the law of their nationality (art. 22).",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "The 1985 Hague Trusts Convention entered into force for Cyprus on 1 June 2017 (ratified 15 March 2017). Domestic trusts exist under the Trustee Law (Cap. 193) and the International Trusts Law 69(I)/1992. Foundations are governed by the Associations and Foundations Law 104(I)/2017.",
+  "open_questions": [
+    "e-Justice gives the reserved shares as 'up to' 25% and 50%; the exact mechanism (art. 41 Cap. 195) was not checked against the statute text.",
+    "Whether Law 104(I)/2017 allows purely private-benefit (family) foundations was not confirmed: only law-firm pages say foundations can serve succession planning."
+  ],
+  "sources": [
+    {
+      "title": "European e-Justice: Succession, Cyprus",
+      "url": "https://e-justice.europa.eu/166/EN/succession?CYPRUS&member=1",
+      "publisher": "European e-Justice Portal",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) No 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

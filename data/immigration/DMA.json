@@ -1,0 +1,156 @@
+{
+  "name": "Dominica",
+  "summary": "No free movement for anyone. Dominica has the cheapest Caribbean citizenship route: USD 200,000 donation for a single applicant (Economic Diversification Fund) or USD 200,000 in approved real estate plus a USD 75,000 government fee. The Work in Nature extended stay visa is for remote workers. UK visa-free access ended in July 2023 and the US restricts entry at some level since December 2025.",
+  "naturalisation": "Ordinary naturalisation residence period not verified in this research; see open questions.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Dual citizenship is allowed for CBI citizens (not verified against the Citizenship Act this pass).",
+  "routes": [
+    {
+      "id": "cbi_edf",
+      "name": "Citizenship by Investment: Economic Diversification Fund (EDF)",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "A USD 200,000 non-refundable contribution for a single applicant (USD 250,000 for a family of up to four) gives citizenship.",
+      "requirements": "USD 200,000 single applicant; USD 250,000 main applicant plus up to 3 dependants; USD 25,000 per extra dependant under 18; USD 40,000 per extra dependant 18+. Fees: processing USD 1,000; due diligence USD 7,500 main, USD 4,000 per dependant 16+; naturalisation certificate USD 500; interview USD 1,000 (mandatory for 16+). Applications only through authorised agents (CBI Regulations 2024). Banned: Belarus, Russia, northern Iraq (Kurdistan region); Yemen suspended (circular 15 January 2024); North Korea, Sudan and Iran refused unless applicant has not lived there for 10 years, holds no substantial assets and has not done business there.",
+      "minimum_investment": {
+        "amount": 200000,
+        "currency": "USD"
+      },
+      "investment_options": "EDF USD 200,000 (single); approved real estate from USD 200,000 (held 3 years; 5 if resold to another CBI applicant).",
+      "government_fees": {
+        "amount": 10000,
+        "currency": "USD"
+      },
+      "fees_note": "Processing 1,000 + due diligence 7,500 + certificate 500 + interview 1,000. Enhanced due diligence may cost more.",
+      "physical_presence": "None stated on the CBIU pages; see open questions.",
+      "path_to_citizenship_years": 0,
+      "family": "Spouse, children, parents and grandparents who rely on the main applicant count as dependants.",
+      "tax_note": "Citizenship alone does not end tax residence elsewhere.",
+      "sources": [
+        {
+          "title": "Dominica CBIU: Economic Diversification Fund",
+          "url": "https://www.cbiu.gov.dm/investment-options/economic-diversification-fund/",
+          "publisher": "Commonwealth of Dominica CBIU",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Dominica CBIU: Banned nationalities",
+          "url": "https://www.cbiu.gov.dm/banned-nationalities/",
+          "publisher": "Commonwealth of Dominica CBIU",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "UK strips Saint Lucia of visa-free access (notes Dominica lost it July 2023)",
+          "url": "https://outboundinvestment.com/uk-ends-visa-free-travel-for-saint-lucia-visa-requirement-takes-effect-march-5/",
+          "publisher": "Outbound Investment",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "cbi_real_estate",
+      "name": "Citizenship by Investment: Approved real estate",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "USD 200,000 in an approved project, held 3 years, plus a USD 75,000 government fee for a single applicant.",
+      "requirements": "Minimum USD 200,000 in an approved project. Hold 3 years from the grant of citizenship (5 years if resold to another CBI applicant). Government fee USD 75,000 main applicant, USD 100,000 with up to 3 dependants; USD 25,000 per extra dependant under 18, USD 40,000 per extra dependant 18+. Plus processing 1,000, due diligence 7,500, certificate 500, interview 1,000. Banned: Belarus, Russia, northern Iraq (Kurdistan region); Yemen suspended (circular 15 January 2024); North Korea, Sudan and Iran refused unless applicant has not lived there for 10 years, holds no substantial assets and has not done business there.",
+      "minimum_investment": {
+        "amount": 200000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 85000,
+        "currency": "USD"
+      },
+      "fees_note": "75,000 + 1,000 + 7,500 + 500 + 1,000, single applicant.",
+      "physical_presence": "None stated on the CBIU pages.",
+      "path_to_citizenship_years": 0,
+      "sources": [
+        {
+          "title": "Dominica CBIU: Real estate investment",
+          "url": "https://www.cbiu.gov.dm/investment-options/real-estate/",
+          "publisher": "Commonwealth of Dominica CBIU",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Dominica CBIU: Banned nationalities",
+          "url": "https://www.cbiu.gov.dm/banned-nationalities/",
+          "publisher": "Commonwealth of Dominica CBIU",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "win_extended_stay",
+      "name": "Work in Nature (WIN) extended stay visa",
+      "kind": "digital_nomad",
+      "grants": "temporary_residence",
+      "summary": "An extended stay of up to 18 months for remote workers earning from outside Dominica.",
+      "requirements": "Reported by secondary guides: 18+, no criminal record, ability to work remotely for non-Dominican employer or own business, income about USD 50,000 a year or proof of means to support family, health insurance. Local employment prohibited. Reported not renewable. Official page not read.",
+      "minimum_income": {
+        "amount": 50000,
+        "currency": "USD"
+      },
+      "government_fees": null,
+      "fees_note": "Sources conflict: USD 100 application plus USD 800 individual or USD 1,200 family, or USD 900 total.",
+      "physical_presence": "Stay up to 18 months.",
+      "tax_note": "Reported exempt from local tax on foreign-source income; unverified.",
+      "sources": [
+        {
+          "title": "Dominica Digital Nomad Visa (WIN)",
+          "url": "https://smallbusiness.co.uk/digital-nomad-visas-caribbean-dominica-2572893/",
+          "publisher": "smallbusiness.co.uk",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    }
+  ],
+  "open_questions": [
+    "Residence/presence requirement after citizenship not stated on CBIU pages.",
+    "Official WIN extended stay fee and renewal rules not found.",
+    "Retiree/permanent residence routes for non-citizens not found.",
+    "Ordinary naturalisation residence period not found.",
+    "US restriction status for Dominica: one source says visa validity was cut from 10 years to 3 months in December 2025; Passport Legacy lists Antigua only.",
+    "CBIU pages show no 2025-2026 changes in amounts; the Regulations 2024 are the basis for fees.",
+    "ECCIRA start date: sources conflict (April 2026, Q2 2026, September 2026, 'late 2026', or not yet operational as of 8 August 2026). Check eccira.org.",
+    "Reported European Commission letter of 25 June 2026 asking the Eastern Caribbean states to end citizenship programmes by 1 June 2028 comes from one professional source (Passport Legacy); not checked against a Commission document."
+  ],
+  "sources": [
+    {
+      "title": "ECCIRA: new Caribbean CBI regulator (status reports conflict)",
+      "url": "https://www.passportlegacy.com/publications/caribbean-citizenship-by-investment-in-2026-eccira-the-eus-2028-letter-and-the-us-proclamation-explained",
+      "publisher": "Passport Legacy",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "DMA",
+  "researched_on": "2026-10-16"
+}

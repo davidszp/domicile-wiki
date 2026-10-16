@@ -130,6 +130,10 @@ class WealthTax(MetricBase):
 class Inheritance(MetricBase):
     basis: Literal["none", "beneficiary", "estate"]
     children_treatment: Literal["fully_exempt", "exempt_with_conditions", "taxed_low", "taxed"]
+    spouse_treatment: Literal["fully_exempt", "exempt_with_conditions", "taxed_low", "taxed"] | None = Field(
+        None, description="Surviving spouse inheriting; null = not researched (derived as fully_exempt when basis is 'none' "
+                          "and there is no deemed disposal or transfer cost)")
+    spouse_note: str = Field("", description="Conditions, e.g. US marital deduction only for a US-citizen spouse")
     exemption: float = Field(0, ge=0, description="Per child (beneficiary basis) or per estate (estate basis), native currency")
     brackets: list[Bracket] = Field(description="Applied to the taxable amount above the exemption; [] when untaxed")
     bracket_mode: Literal["marginal", "whole_amount"] = Field(
@@ -529,3 +533,101 @@ class RegionalIncomeFile(Strict):
         if len(codes) != len(set(codes)):
             raise ValueError("duplicate unit codes")
         return self
+
+
+# ---------------------------------------------------------------------------------------------
+# Immigration: routes to residence and citizenship per citizenship group,
+# data/immigration/<ISO3>.json (see data/IMMIGRATION_GUIDE.md)
+# ---------------------------------------------------------------------------------------------
+
+RouteKind = Literal[
+    "free_movement",  # EU/EEA/Swiss free movement, or a treaty right (e.g. Common Travel Area)
+    "investor_residence",  # residence for an investment ("golden visa")
+    "citizenship_by_investment",  # a passport for an investment or donation
+    "passive_income",  # financially independent / non-lucrative / retiree / passive-income permits
+    "digital_nomad",
+    "work",  # employer-sponsored or skilled-worker permits
+    "entrepreneur",  # starting or running a local business
+    "other",
+]
+
+
+class ImmigrationRoute(Strict):
+    id: str = Field(pattern=r"^[a-z0-9_]+$")
+    name: str = Field(description="Official or usual name, e.g. 'Golden Visa (ARI)'")
+    kind: RouteKind
+    citizenships: list[Citizenship] = Field(min_length=1, description="Groups that can use it: EU, US, OTHER (other non-EU)")
+    only_some_nationalities: bool = Field(False, description="True when only some nationalities in those groups qualify "
+                                          "(e.g. Irish citizens under the Common Travel Area, a treaty list); such routes "
+                                          "are never shown as the route for a whole group")
+    status: Literal["open", "closed_to_new", "suspended", "announced"]
+    status_note: str = Field("", description="Required unless open: when it closed or changed and what replaced it")
+    grants: Literal["temporary_residence", "permanent_residence", "citizenship"]
+    summary: str = Field(min_length=20, description="One or two plain sentences for a reader who is not a lawyer")
+    requirements: str = Field(min_length=20)
+    minimum_investment: Money | None = Field(None, description="Lowest qualifying investment or donation for the main applicant")
+    investment_options: str = ""
+    minimum_income: Money | None = Field(None, description="Income or funds required a year for the main applicant")
+    government_fees: Money | None = Field(None, description="Government fees for the main applicant, first permit; excludes lawyers")
+    fees_note: str = ""
+    physical_presence: str = Field(min_length=5, description="Days or visits required to keep the permit")
+    path_to_permanent_years: int | None = Field(None, ge=0)
+    path_to_citizenship_years: int | None = Field(None, ge=0)
+    processing_time: str = ""
+    family: str = ""
+    tax_note: str = Field("", description="E.g. the permit does not make you tax resident; special tax regimes linked to it")
+    sources: list[Source] = Field(min_length=1)
+
+    @model_validator(mode="after")
+    def _status_note(self):
+        if self.status != "open" and len(self.status_note) < 10:
+            raise ValueError("status_note is required when a route is not open")
+        return self
+
+
+class ImmigrationFile(Strict):
+    id: str = Field(pattern=r"^[A-Z]{3}$")
+    name: str
+    researched_on: dt.date
+    summary: str = Field(min_length=40, description="The gist per citizenship group, in plain words")
+    naturalisation: str = Field(min_length=20, description="Ordinary naturalisation: years of residence, language, other conditions")
+    dual_citizenship: Literal["allowed", "restricted", "not_allowed"] | None = Field(description="null when not verified from a source")
+    dual_citizenship_note: str = ""
+    routes: list[ImmigrationRoute] = Field(min_length=1)
+    open_questions: list[str] = []
+    sources: list[Source] = []
+
+    @model_validator(mode="after")
+    def _unique_route_ids(self):
+        ids = [r.id for r in self.routes]
+        if len(ids) != len(set(ids)):
+            raise ValueError("route ids must be unique")
+        return self
+
+
+# ---------------------------------------------------------------------------------------------
+# Succession: forced heirship and trusts/foundations, data/succession/<ISO3>.json
+# (see data/SUCCESSION_GUIDE.md)
+# ---------------------------------------------------------------------------------------------
+
+
+class SuccessionFile(Strict):
+    id: str = Field(pattern=r"^[A-Z]{3}$")
+    name: str
+    researched_on: dt.date
+    summary: str = Field(min_length=40, description="Plain words for a family: can you leave your estate as you wish, and can you use a trust or foundation?")
+    forced_heirship: Literal["yes", "no"] = Field(description="'yes' when children (or a spouse) are guaranteed a share the will cannot take away")
+    reserved_share: str = Field("", description="Who is protected and how much, with the statute (e.g. 'children: 1/2 with one child, 2/3 with two, 3/4 with three or more; Code civil art. 913')")
+    family_claims: str = Field("", description="Where there is no forced heirship: court-ordered provision for family (e.g. England's 1975 Act); empty if none")
+    foreign_law_choice: Literal["yes", "limited", "no", "unclear"] = Field(
+        description="Can a foreign national resident here have the estate governed by the law of their nationality (avoiding forced heirship)?")
+    foreign_law_note: str = Field(min_length=10, description="How: EU Succession Regulation art. 22, a national conflict rule, exceptions such as France's 2021 compensatory levy")
+    eu_succession_regulation: bool = Field(description="The EU Succession Regulation 650/2012 applies here (all EU states except Denmark and Ireland)")
+    hague_trusts_convention: bool = Field(description="The 1985 Hague Trusts Convention is in force for this jurisdiction (hcch.net status table)")
+    domestic_trusts: Literal["yes", "limited", "no", "unclear"] = Field(description="Own trust law (common-law trusts, or a statutory trust such as the fiducie); 'unclear' when no source settles it")
+    private_foundations: Literal["yes", "limited", "no", "unclear"] = Field(description="A private (family) foundation can be set up under local law; 'unclear' when no source settles it")
+    trust_note: str = Field(min_length=10, description="How foreign trusts are treated, any tax charges on trusts, the foundation law's name")
+    confidence: Literal["high", "medium", "low"] = Field(
+        "low", description="'high' only after the statute text and the live HCCH table were read; the site labels anything below as draft research")
+    open_questions: list[str] = []
+    sources: list[Source] = Field(min_length=1)

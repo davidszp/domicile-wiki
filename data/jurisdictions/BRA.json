@@ -177,6 +177,8 @@
         "verification": "partially_verified",
         "basis": "beneficiary",
         "children_treatment": "taxed_low",
+        "spouse_treatment": "taxed_low",
+        "spouse_note": "No spousal exemption in the Sao Paulo ITCMD law: a surviving spouse who inherits pays the same flat 4% (Lei 10.705/2000 arts. 6 and 16; the only exemptions are small residence and asset ones that do not name the spouse). Other states may differ.",
         "exemption": 0,
         "brackets": [
           {

@@ -65,6 +65,8 @@ Confidence: low; verification: partially_verified.
 
 JSON: basis 'beneficiary', children 'taxed', exemption 100,000 XPF, brackets [{"from_amount": 0, "rate": 0.2}].
 
+**Surviving spouse:** PwC states that no inheritance tax is due between spouses or PACS partners; its separate line giving a XPF 100,000 allowance and 5%-20% rates for 'direct dependants (spouse or partner)' is ambiguous, and the local Code des impots (arts. 248-417) could not be opened, so confidence is medium.
+
 ## Wealth tax
 
 No net wealth tax (PwC).
@@ -113,3 +115,4 @@ Not sourced in this pass (no cost_of_living block). Markers: Nouméa (-22.2763, 
 
 ## Change log
 - 2026-10-15: initial research.
+- 2026-10-16: added surviving-spouse treatment.

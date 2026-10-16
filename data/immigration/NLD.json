@@ -1,0 +1,176 @@
+{
+  "name": "Netherlands",
+  "summary": "EU citizens register with the municipality. The Dutch investor residence scheme (EUR 1.25 million) ended on 1 January 2024 and there is no passive-income or digital nomad permit. US citizens can use the Dutch-American Friendship Treaty (DAFT) to run a business with a EUR 4,500 investment. Others need an employer-sponsored permit such as the highly skilled migrant permit or the EU Blue Card (EUR 5,942 a month gross from age 30).",
+  "naturalisation": "Five years of uninterrupted lawful residence on a qualifying permit (3 years living with a Dutch partner), civic integration exam at A2 (a rise to B1 was reported as planned or postponed; unclear). Fee about EUR 1,139 in 2026 (sources differ).",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Applicants generally must renounce their other nationality, with exceptions (for example where renouncing causes serious financial loss, or the home country does not allow renunciation). Secondary sources.",
+  "routes": [
+    {
+      "id": "eu_free_movement",
+      "name": "EU/EEA/Swiss free movement",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "EU citizens register with the municipality (BRP) if staying over four months; no permit.",
+      "requirements": "Directive 2004/38/EC. Permanent residence after 5 years.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Netherlands - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/netherlands/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5
+    },
+    {
+      "id": "foreign_investor_scheme",
+      "name": "Residence permit for foreign investors",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "temporary_residence",
+      "summary": "Residence for investing EUR 1.25 million; ended on 1 January 2024.",
+      "requirements": "The scheme required at least EUR 1,250,000 invested in the Dutch economy (property excluded). Closed to new applications from 1 January 2024; existing permits stay valid but cannot be extended under this scheme.",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Admission scheme for foreign investors abolished",
+          "url": "https://ind.nl/en/news/pages/pilot-residence-permit-essential-start-up-personnel.aspx",
+          "publisher": "Immigration and Naturalisation Service (IND)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Netherlands to close residence permit for foreign investors",
+          "url": "https://eiglaw.com/netherlands-to-close-residence-permit-for-foreign-investors/",
+          "publisher": "EIG Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "status_note": "Abolished for new applications from 1 January 2024 (one trade site reported October 2023).",
+      "minimum_investment": {
+        "amount": 1250000,
+        "currency": "EUR"
+      }
+    },
+    {
+      "id": "daft_treaty",
+      "name": "Dutch-American Friendship Treaty (DAFT) self-employed permit",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "US"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "US citizens can get a two-year residence permit to run their own business with about EUR 4,500 invested.",
+      "requirements": "Only US nationals (a separate treaty exists for Japanese). Substantial capital investment in the business, usually EUR 4,500 (level depends on the business form), or a key position at a US company, or a free profession. Since 1 April 2024 the conditions must be met within six months after the permit is granted (Chamber of Commerce registration and investment). Initial permit 2 years, extension 5 years, with continuous genuine activity. Application fee EUR 423 in 2026; decision period 90 days. IND temporary procedure was due to be evaluated around 1 April 2026; status not confirmed.",
+      "physical_presence": "Live in the Netherlands and run the business actively",
+      "sources": [
+        {
+          "title": "Focus on the DAFT and DJFT: requirements and recent changes",
+          "url": "https://www.grantthornton.nl/en/insights-en/human-capital-services/focus-on-the-daft-and-djft-requirements-to-apply-and-recent-changes/",
+          "publisher": "Grant Thornton Netherlands",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Highly skilled migrant",
+          "url": "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+          "publisher": "Immigration and Naturalisation Service (IND)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 4500,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 423,
+        "currency": "EUR"
+      },
+      "fees_note": "2026 IND application fee per Grant Thornton and IND.",
+      "processing_time": "Up to 90 days (statutory)",
+      "path_to_permanent_years": null,
+      "family": "Family can join; not sourced in detail.",
+      "tax_note": "Becoming a Dutch tax resident follows facts and circumstances, not the permit."
+    },
+    {
+      "id": "highly_skilled_migrant",
+      "name": "Highly skilled migrant and EU Blue Card (work)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored permit for skilled workers, with a recognised sponsor.",
+      "requirements": "2026 gross monthly salary (excluding holiday allowance): EUR 5,942 aged 30 or over, EUR 4,357 under 30, EUR 3,122 for recent graduates; EU Blue Card EUR 5,942 (EUR 4,754 reduced). Annual equivalent for age 30+: EUR 71,304. IND fee EUR 423 paid by the employer.",
+      "physical_presence": "Work for the sponsoring employer",
+      "sources": [
+        {
+          "title": "Required amounts: income requirements",
+          "url": "https://ind.nl/en/required-amounts-income-requirements",
+          "publisher": "Immigration and Naturalisation Service (IND)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Highly skilled migrant",
+          "url": "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+          "publisher": "Immigration and Naturalisation Service (IND)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 71304,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 423,
+        "currency": "EUR"
+      },
+      "fees_note": "Employer pays the fee by direct debit.",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5,
+      "tax_note": "The 30% ruling (reduced) may apply; not researched here."
+    }
+  ],
+  "open_questions": [
+    "DAFT: whether the temporary procedure was extended after 1 April 2026, and years to permanent residence for DAFT holders.",
+    "No passive-income / financially independent or digital nomad permit was found on the IND site; search was not exhaustive. Also not covered: ordinary self-employed points system and start-up (mentor) permit.",
+    "Naturalisation: official IND page not retrieved; fee (EUR 1,139 vs EUR 1,091) and the B1 plan.",
+    "The previous investor scheme: fee and sub-options not sourced."
+  ],
+  "sources": [
+    {
+      "title": "Admission scheme for foreign investors abolished",
+      "url": "https://ind.nl/en/news/pages/pilot-residence-permit-essential-start-up-personnel.aspx",
+      "publisher": "Immigration and Naturalisation Service (IND)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Focus on the DAFT and DJFT: requirements and recent changes",
+      "url": "https://www.grantthornton.nl/en/insights-en/human-capital-services/focus-on-the-daft-and-djft-requirements-to-apply-and-recent-changes/",
+      "publisher": "Grant Thornton Netherlands",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "NLD",
+  "researched_on": "2026-10-16"
+}

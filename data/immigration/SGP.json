@@ -1,0 +1,254 @@
+{
+  "id": "SGP",
+  "name": "Singapore",
+  "researched_on": "2026-10-16",
+  "summary": "EU, US and other passports are treated alike. Singapore has no passive-income, retirement or digital-nomad residence. Wealthy investors can buy permanent residence through the Global Investor Programme (from SGD 10 million into a business, SGD 25 million into a select fund, or a family office of SGD 200 million with SGD 50 million deployed locally). Everyone else needs a work pass: the Employment Pass (from about SGD 5,600 a month), the ONE Pass (SGD 30,000 a month) or the EntrePass for start-up founders.",
+  "naturalisation": "Citizenship needs at least 2 years as a permanent resident and age 21 (ICA); in practice ICA weighs family ties, economic contribution and commitment, and applicants aged 16-60 must complete the Singapore Citizenship Journey. Approval is discretionary and often takes longer.",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "ICA's citizenship undertaking states dual citizenship is not allowed; new citizens must renounce other nationalities.",
+  "routes": [
+    {
+      "id": "gip_option_a",
+      "name": "Global Investor Programme - Option A (business investment)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for investing at least SGD 10 million in a new or expanded Singapore business, for already very large business owners.",
+      "requirements": "Applicant must be one of: established business owner (3+ years' track record, company turnover of at least SGD 200 million a year), next-generation owner (turnover SGD 500 million), founder of a fast-growth company (valuation SGD 500 million, VC/PE-backed) or family-office principal (net investible assets of SGD 200 million). Interview with EDB and due diligence. Approval-in-principle is valid 6 months; investment must be made in that window; PR must be formalised within 12 months of final approval. Re-entry permit valid 5 years, renewed if the investment and business conditions are kept. Spouse and unmarried children under 21 are included; sons gain National Service liability. Option A: at least SGD 10 million in a new or existing Singapore business in an approved industry (Annex B), 30%+ shareholding and a management role, 5-year business plan with local jobs. Renewal requires continued business activity (EDB's 2023 announcement cites a headcount expectation; current figures in the factsheet section 7 were not extracted).",
+      "investment_options": "",
+      "fees_note": "Fee not in the EDB factsheet; third-party sources cite SGD 20,000 (not verified).",
+      "processing_time": "About 12 months, per the factsheet",
+      "family": "Spouse and unmarried children under 21 as dependants. Parents and children 21+ can get a Long Term Visit Pass tied to the re-entry permit.",
+      "tax_note": "PR does not itself set tax residence; Singapore taxes residents on Singapore-source income and does not tax most foreign-sourced income received by individuals.",
+      "physical_presence": "Re-entry permit kept alive by meeting renewal criteria; no fixed day count in the factsheet",
+      "sources": [
+        {
+          "title": "Global Investor Programme factsheet (updated 5 May 2025)",
+          "url": "https://www.edb.gov.sg/content/dam/edb-en/how-we-help/global-investor-programme/GIP%20Factsheet.pdf",
+          "publisher": "Singapore Economic Development Board (Contact Singapore)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 10000000,
+        "currency": "SGD"
+      },
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 2,
+      "government_fees": null
+    },
+    {
+      "id": "gip_option_b",
+      "name": "Global Investor Programme - Option B (GIP-select fund)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for putting SGD 25 million into an EDB-approved fund that invests in Singapore companies.",
+      "requirements": "Applicant must be one of: established business owner (3+ years' track record, company turnover of at least SGD 200 million a year), next-generation owner (turnover SGD 500 million), founder of a fast-growth company (valuation SGD 500 million, VC/PE-backed) or family-office principal (net investible assets of SGD 200 million). Interview with EDB and due diligence. Approval-in-principle is valid 6 months; investment must be made in that window; PR must be formalised within 12 months of final approval. Re-entry permit valid 5 years, renewed if the investment and business conditions are kept. Spouse and unmarried children under 21 are included; sons gain National Service liability. Option B: SGD 25 million invested in a GIP-select fund from the applicant's own Singapore bank account; the investment must be maintained for the re-entry permit renewal.",
+      "investment_options": "",
+      "fees_note": "Application fee not in the EDB factsheet.",
+      "processing_time": "About 12 months, per the factsheet",
+      "family": "Spouse and unmarried children under 21 as dependants. Parents and children 21+ can get a Long Term Visit Pass tied to the re-entry permit.",
+      "tax_note": "PR does not itself set tax residence.",
+      "physical_presence": "Re-entry permit kept alive by meeting renewal criteria; no fixed day count in the factsheet",
+      "sources": [
+        {
+          "title": "Global Investor Programme factsheet (updated 5 May 2025)",
+          "url": "https://www.edb.gov.sg/content/dam/edb-en/how-we-help/global-investor-programme/GIP%20Factsheet.pdf",
+          "publisher": "Singapore Economic Development Board (Contact Singapore)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 25000000,
+        "currency": "SGD"
+      },
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 2
+    },
+    {
+      "id": "gip_option_c",
+      "name": "Global Investor Programme - Option C (single family office)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for setting up a Singapore single family office with SGD 200 million of assets, SGD 50 million of it deployed in Singapore.",
+      "requirements": "Applicant must be one of: established business owner (3+ years' track record, company turnover of at least SGD 200 million a year), next-generation owner (turnover SGD 500 million), founder of a fast-growth company (valuation SGD 500 million, VC/PE-backed) or family-office principal (net investible assets of SGD 200 million). Interview with EDB and due diligence. Approval-in-principle is valid 6 months; investment must be made in that window; PR must be formalised within 12 months of final approval. Re-entry permit valid 5 years, renewed if the investment and business conditions are kept. Spouse and unmarried children under 21 are included; sons gain National Service liability. Option C: single family office in Singapore with at least SGD 200 million AUM; at least SGD 50 million transferred to Singapore and, within 12 months of final approval, deployed in EDB-specified investments (e.g. Singapore-listed equities) and kept there for the re-entry permit's life. Applicant needs 5+ years' investment track record and SGD 200 million net investible assets.",
+      "investment_options": "Minimum SGD 200 million AUM in the family office; SGD 50 million of it must be in Singapore in EDB-specified investments.",
+      "fees_note": "Application fee not in the EDB factsheet.",
+      "processing_time": "About 12 months, per the factsheet",
+      "family": "Spouse and unmarried children under 21 as dependants. Parents and children 21+ can get a Long Term Visit Pass tied to the re-entry permit.",
+      "tax_note": "PR does not itself set tax residence; the family office may use Singapore's 13O/13U fund tax incentives separately.",
+      "physical_presence": "Re-entry permit kept alive by meeting renewal criteria; no fixed day count in the factsheet",
+      "sources": [
+        {
+          "title": "Global Investor Programme factsheet (updated 5 May 2025)",
+          "url": "https://www.edb.gov.sg/content/dam/edb-en/how-we-help/global-investor-programme/GIP%20Factsheet.pdf",
+          "publisher": "Singapore Economic Development Board (Contact Singapore)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 50000000,
+        "currency": "SGD"
+      },
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 2
+    },
+    {
+      "id": "employment_pass",
+      "name": "Employment Pass (EP) including COMPASS",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Work pass for professionals, managers and executives with a Singapore job offer at or above a minimum salary and enough points on the COMPASS test.",
+      "requirements": "Fixed monthly salary of at least SGD 5,600 (SGD 6,200 in financial services) for age 23 rising to SGD 10,700 (SGD 11,800) at 45+, for applications before 1 January 2027; SGD 6,000 (SGD 6,600) rising to SGD 11,500 (SGD 12,700) from 1 January 2027 for new applications and 1 January 2028 for renewals. Must also score 40 points on COMPASS unless exempt (e.g. salary of SGD 22,500 a month or more, intra-company transferee).",
+      "investment_options": "",
+      "fees_note": "Application and issuance fees not on the MOM pages fetched.",
+      "processing_time": "Not stated on fetched pages. Validity: up to 2 years first, up to 3 on renewal (5 for certain tech skills).",
+      "family": "Eligible family members can get Dependant's Passes or Long Term Visit Passes (separate MOM criteria).",
+      "tax_note": "",
+      "physical_presence": "Live and work in Singapore; pass lapses if employment ends",
+      "sources": [
+        {
+          "title": "Eligibility for Employment Pass",
+          "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
+          "publisher": "Ministry of Manpower",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Key facts on Employment Pass",
+          "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+          "publisher": "Ministry of Manpower",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null
+    },
+    {
+      "id": "one_pass",
+      "name": "Overseas Networks & Expertise (ONE) Pass",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Five-year pass letting top earners or achievers work for several Singapore companies or run their own, with no employer tie.",
+      "requirements": "Fixed monthly salary of at least SGD 30,000 for the 12 months before applying (or from a Singapore employer), from one employer; or annual income from other sources above SGD 360,000 per MOM FAQ; or outstanding achievements in listed sectors. A new AI and Tech track opens 28 January 2027. No levy or quota; exempt from COMPASS.",
+      "investment_options": "",
+      "fees_note": "Fees not on the MOM pages fetched.",
+      "processing_time": "Not stated.",
+      "family": "Passes for eligible family members; spouse may apply to work on a Letter of Consent.",
+      "tax_note": "Working in Singapore may make you liable to income tax.",
+      "physical_presence": "Not stated on fetched pages",
+      "sources": [
+        {
+          "title": "Eligibility for Overseas Networks & Expertise Pass",
+          "url": "https://www.mom.gov.sg/passes-and-permits/overseas-networks-expertise-pass/eligibility",
+          "publisher": "Ministry of Manpower",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Key facts on Overseas Networks & Expertise Pass",
+          "url": "https://www.mom.gov.sg/passes-and-permits/overseas-networks-expertise-pass/key-facts",
+          "publisher": "Ministry of Manpower",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 360000,
+        "currency": "SGD"
+      }
+    },
+    {
+      "id": "entrepass",
+      "name": "EntrePass",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Pass for founders of a venture-backed or innovative-technology start-up registered in Singapore.",
+      "requirements": "Hold at least 30% of an ACRA-registered private limited company that is venture-backed or owns innovative technology, and meet one criterion: raised at least SGD 100,000 in a single funding round, supported by a recognised incubator or accelerator, or founded and sold a tech business. Excluded businesses include food courts, bars, massage and TCM. The old SGD 50,000 paid-up capital rule was removed in 2017.",
+      "investment_options": "",
+      "fees_note": "Fees not on the MOM pages fetched.",
+      "processing_time": "Validity: up to 1 year for new pass and first renewal, up to 2 years after (per MOM search snippet).",
+      "family": "Passes for eligible family members (MOM 'Passes for family' page, not read).",
+      "tax_note": "",
+      "physical_presence": "Operate the business in Singapore; renewal tested on business performance",
+      "sources": [
+        {
+          "title": "Eligibility for EntrePass",
+          "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+          "publisher": "Ministry of Manpower",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Key facts for EntrePass",
+          "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/key-facts",
+          "publisher": "Ministry of Manpower",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": null,
+      "path_to_permanent_years": null
+    }
+  ],
+  "open_questions": [
+    "GIP and work-pass government fees were not found on the official pages fetched.",
+    "GIP renewal criteria detail (section 7 of the factsheet: headcount and spend thresholds) not extracted.",
+    "Exact dual-citizenship text is taken from an ICA form summary; confirm on ICA.",
+    "Tech.Pass and Personalised Employment Pass not recorded."
+  ],
+  "sources": [
+    {
+      "title": "Citizenship - ICA",
+      "url": "https://www.ica.gov.sg/reside/citizenship",
+      "publisher": "Immigration & Checkpoints Authority",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -173,6 +173,8 @@
         ],
         "basis": "estate",
         "children_treatment": "taxed",
+        "spouse_treatment": "taxed",
+        "spouse_note": "No exemption: a spouse allowance of at least KRW 500 million and at most KRW 3 billion is deducted (Inheritance and Gift Tax Act art. 19; EY 2026), and the rest of what the spouse inherits is taxed on the 10%-50% scale.",
         "exemption": 500000000,
         "brackets": [
           {

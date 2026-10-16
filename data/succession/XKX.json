@@ -1,0 +1,35 @@
+{
+  "summary": "Descendants, spouse and parents are guaranteed a share of the estate that a will cannot remove. Kosovo has no trust law and is outside the Hague Trusts Convention. Foundations are non-profit bodies.",
+  "forced_heirship": "yes",
+  "reserved_share": "Descendants, spouse and parents are compulsory heirs under Law No. 2004/26 on Inheritance; the fractions (believed 1/2 of the intestate share) were not confirmed.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "Kosovo has its own private international law act; whether a foreign national may choose their national law was not confirmed.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "No trust law. Foundations exist under the law on freedom of association in non-governmental organisations, for non-profit purposes.",
+  "open_questions": [
+    "Statute article numbers and exact fractions for forced heirs outside descendants and spouse were not read in the primary text; confirm in the official gazette.",
+    "Whether a foreign national resident may choose a law for their estate under the current private international law act was not confirmed."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Kosovo laws (Official Gazette)",
+      "url": "https://gzk.rks-gov.net",
+      "publisher": "Official Gazette of the Republic of Kosovo",
+      "kind": "legislation"
+    }
+  ],
+  "family_claims": "",
+  "id": "XKX",
+  "name": "Kosovo",
+  "researched_on": "2026-10-16"
+}

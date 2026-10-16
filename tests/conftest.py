@@ -36,11 +36,6 @@ def scores() -> dict:
     return json.loads((WEB / "scores.json").read_text())
 
 
-@cache
-def views() -> dict:
-    return json.loads((WEB / "views.json").read_text())
-
-
 def decode_topojson(path: Path, obj: str) -> list[dict]:
     """Minimal TopoJSON -> GeoJSON features (quantized, delta-encoded arcs)."""
     topo = json.loads(path.read_text())

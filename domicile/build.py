@@ -18,7 +18,7 @@ from pathlib import Path
 
 from domicile import cola, earned, scene, scoring
 from domicile.fx import load as load_fx, to_eur
-from domicile.schema import CostOfLiving, IncomeFile, Jurisdiction, RegionalIncomeFile, Regime, Subnational
+from domicile.schema import CostOfLiving, ImmigrationFile, IncomeFile, Jurisdiction, RegionalIncomeFile, Regime, Subnational, SuccessionFile
 from domicile.taxcalc import compile_regime
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -45,6 +45,51 @@ def load_jurisdictions() -> dict[str, Jurisdiction]:
 
 def load_income() -> dict[str, IncomeFile]:
     return {p.stem: IncomeFile.model_validate_json(p.read_text()) for p in sorted((DATA / "income").glob("*.json"))}
+
+
+def load_succession() -> dict[str, SuccessionFile]:
+    return {p.stem: SuccessionFile.model_validate_json(p.read_text()) for p in sorted((DATA / "succession").glob("*.json"))}
+
+
+def load_immigration() -> dict[str, ImmigrationFile]:
+    return {p.stem: ImmigrationFile.model_validate_json(p.read_text()) for p in sorted((DATA / "immigration").glob("*.json"))}
+
+
+# Routes that by themselves let a family with money live in a country. Work, business and "other"
+# routes (e.g. a tax regime on top of a permit) need more than money, so they are never the summary.
+MEANS_KINDS = {"free_movement", "investor_residence", "citizenship_by_investment", "passive_income"}
+
+
+def residence_summary(f: ImmigrationFile, fx: dict, kinds: set[str] = MEANS_KINDS) -> dict:
+    """Per citizenship group, the open route with the lowest investment (free movement counts as none).
+
+    A route without a minimum investment counts as zero, so a passive-income permit beats a golden visa:
+    for a family with money the cheapest entry is what matters, and the income needed is shown alongside.
+    Routes only some nationalities of a group can use are skipped. No eligible route gives
+    {"kind": "none"}: the country has only work, business or other routes for that group."""
+    def eur(m):
+        if m is None:
+            return None
+        if m.currency not in fx["rates"] and m.currency != "EUR":
+            raise SystemExit(f"{f.id}: no exchange rate for {m.currency}; quote a route used in the summary in a listed currency")
+        return round(to_eur(m.amount, m.currency, fx))
+
+    out = {}
+    for cz in CITIZENSHIPS:
+        if f.id == "USA" and cz == "US":  # the only group made of one country's own citizens
+            out[cz] = {"kind": "citizen"}
+            continue
+        best = None
+        for r in f.routes:
+            if r.status != "open" or cz not in r.citizenships or r.only_some_nationalities or r.kind not in kinds:
+                continue
+            inv, inc = eur(r.minimum_investment), eur(r.minimum_income)
+            # A work permit's income is its salary threshold: prefer one whose threshold is known.
+            key = (0 if r.kind == "free_movement" else 1, inv or 0, inc if inc is not None else (float("inf") if r.kind == "work" else 0))
+            if best is None or key < best[0]:
+                best = (key, {"id": r.id, "name": r.name, "kind": r.kind, "grants": r.grants, "investment_eur": inv, "income_eur": inc})
+        out[cz] = best[1] if best else {"kind": "none"}
+    return out
 
 
 def load_income_regions() -> dict[str, RegionalIncomeFile]:
@@ -290,6 +335,7 @@ def main() -> None:
                  "researched": j is not None, "inherited": inherited}
         if lx is not None:
             entry["label"] = [lx, ly]
+        tag_status(entry, jid, parent, cfg)
 
         def personas(indicators: dict, nontax: dict, ko: list[dict]) -> None:
             plr, _ = price_level(iso_for_indicators, indicators, cfg, ind)
@@ -389,6 +435,38 @@ def main() -> None:
     for k, f in income.items():
         sources.extend(income_source_rows(k, f))
 
+    succession = load_succession()
+    unknown = set(succession) - {k for k, e in out_j.items() if e["level"] == "country"}
+    if unknown:
+        raise SystemExit(f"succession files without a country: {sorted(unknown)}")
+    for jid, e in out_j.items():
+        f = succession.get(e["parent"] or jid)  # regions take their country's succession law
+        if f is None or e["level"] == "territory":
+            continue
+        e["succession"] = {"forced_heirship": f.forced_heirship, "foreign_law_choice": f.foreign_law_choice,
+                           "hague": f.hague_trusts_convention, "trusts": f.domestic_trusts,
+                           "foundations": f.private_foundations, "confidence": f.confidence}
+        profiles[jid]["succession"] = json.loads(f.model_dump_json())
+        if not e["parent"]:
+            sources.extend({"jurisdiction": jid, "regime": "succession", "metric": "succession", "title": s.title, "url": str(s.url),
+                            "publisher": s.publisher, "kind": s.kind, "tax_year": None, "verified_on": f.researched_on.isoformat(),
+                            "confidence": f.confidence, "verification": None, "basis": "enacted"} for s in f.sources)
+
+    immigration = load_immigration()
+    unknown = set(immigration) - {k for k, e in out_j.items() if e["level"] == "country"}
+    if unknown:
+        raise SystemExit(f"immigration files without a country: {sorted(unknown)}")
+    for jid, e in out_j.items():
+        f = immigration.get(e["parent"] or jid)  # regions take their country's immigration rules
+        if f is None:
+            continue
+        e["residence"] = residence_summary(f, fx)
+        e["residence_nomad"] = residence_summary(f, fx, MEANS_KINDS | {"digital_nomad"})
+        e["residence_work"] = residence_summary(f, fx, {"free_movement", "work"})  # an employee needs a work permit
+        profiles[jid]["immigration"] = json.loads(f.model_dump_json())
+        if not e["parent"]:
+            sources.extend(immigration_source_rows(jid, f))
+
     if subs:
         orphan = {u.code for s in subs.values() for u in s.units} - {f["properties"]["id"] for f in regions}
         if orphan:
@@ -397,12 +475,39 @@ def main() -> None:
     write(cfg, fx, out_j, profiles, sources)
 
 
+def spouse_treatment(inh) -> str | None:
+    """The surviving spouse's treatment; with no inheritance tax (and no tax on gains at death) nobody pays."""
+    if inh.spouse_treatment is not None:
+        return inh.spouse_treatment
+    if inh.basis == "none" and not inh.deemed_disposal_rate:
+        return "fully_exempt"
+    return None  # an inheritance tax whose spouse rule is not researched yet
+
+
+def tag_status(entry: dict, jid: str, parent: str | None, cfg: dict) -> None:
+    """Political status from data/scoring_config.json: territories (not states, never ranked), ranked
+    non-UN-members (a note on the page) and EU membership (members, their regions, listed territories)."""
+    territories = cfg.get("territories", {})
+    territory = territories.get("units", {}).get(jid)
+    if territory:  # a marked area of the state it belongs to (if any); EU law may not apply there
+        entry.update({"name": territory["name"], "level": "territory", "parent": territory.get("part_of"),
+                      "territory": {k: territory[k] for k in ("status", "label", "explanation", "sources")}})
+        return
+    non_member = territories.get("non_members_ranked", {}).get("units", {}).get(jid)
+    if non_member:
+        entry["non_member"] = non_member
+    eu = cfg.get("eu", {})
+    if jid in eu.get("members", ()) or jid in eu.get("territories", {}) or parent in eu.get("members", ()):
+        entry["eu"] = True
+
+
 def flags(j: Jurisdiction) -> dict:
     """Facts used by the ranking filters, taken from the standard regime."""
     std = j.regimes[0]
     return {
         "wealth_tax_type": std.wealth_tax.type,
         "inheritance_children": std.inheritance.children_treatment,
+        "inheritance_spouse": spouse_treatment(std.inheritance),
         "special_regimes": [r.id for r in j.regimes[1:] if r.type == "special"],
         "structures": [r.id for r in j.regimes if r.type == "structure"],
         "cit_rate": j.corporate.cit_rate,
@@ -436,6 +541,19 @@ def income_source_rows(jid: str, f: IncomeFile) -> list[dict]:
         rows += [{"jurisdiction": jid, "regime": r.id, "metric": "income_tax", "title": s.title, "url": str(s.url),
                   "publisher": s.publisher, "kind": s.kind, "tax_year": it.tax_year, "verified_on": f.researched_on.isoformat(),
                   "confidence": r.confidence, "verification": r.verification, "basis": "enacted"} for s in r.sources]
+    return rows
+
+
+def immigration_source_rows(jid: str, f: ImmigrationFile) -> list[dict]:
+    seen, rows = set(), []
+    for r in f.routes:
+        for src in [*r.sources, *f.sources]:
+            if (r.id, str(src.url)) in seen:
+                continue
+            seen.add((r.id, str(src.url)))
+            rows.append({"jurisdiction": jid, "regime": r.id, "metric": "immigration", "title": src.title, "url": str(src.url),
+                         "publisher": src.publisher, "kind": src.kind, "tax_year": None, "verified_on": f.researched_on.isoformat(),
+                         "confidence": None, "verification": None, "basis": "enacted"})
     return rows
 
 

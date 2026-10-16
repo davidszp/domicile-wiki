@@ -65,6 +65,8 @@ Capital transfer tax (Capital Transfer Tax Act, Cap. 53:02) is charged on the do
 
 Open points for this tax: CTT rate bands for individuals (PwC: progressive up to 5%) were not obtained from the Act or BURS. | Whether a disposal by a non-resident donor of foreign property to a resident child is chargeable.
 
+**Surviving spouse:** Property disposed of by way of inheritance to a spouse on the death of the other spouse is exempt from capital transfer tax (Capital Transfer Tax Act, Cap. 53:02, s. 4 exemptions; listed by BURS).
+
 ## Wealth tax
 
 ### Standard regime
@@ -108,3 +110,4 @@ Not researched.
 ## Change log
 
 - 2026-10-15: initial research.
+- 2026-10-16: added surviving-spouse treatment.

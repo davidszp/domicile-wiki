@@ -43,6 +43,7 @@ Conditions for the 15% rate re-checked 2026-10-15 (KPMG Lithuania, March 2026, s
 - Business relief: Not needed for children.
 - Domicile/scope: Liability depends on heir's residence; irrelevant for children (exempt).
 - JSON: basis 'beneficiary', children 'fully_exempt', exemption 0 EUR, brackets none, other transfer cost 0%.
+- Surviving spouse: exempt from inheritance tax regardless of value.
 
 ## Wealth tax
 - Rule in force: No net wealth tax and no recurring levy on financial assets. From 2026 real estate tax became progressive on residential property (see property note), which is a property tax, not a wealth tax.
@@ -89,3 +90,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: initial research.
 - 2026-10-15: confirmed conditions of the 15% rate on shares held over 5 years (KPMG LT / VMI, March 2026); added Vilnius cost of living (Baltic Sotheby's rent sample, AISV 2026-27 fees).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

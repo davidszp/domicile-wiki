@@ -1,7 +1,9 @@
 import { personaEntry, TAX_METRICS } from "./scoring.js";
 
-// Small observable store. Only per-viewer conveniences go to localStorage (weights, shortlist,
-// citizenship); every access is guarded because storage can be absent or throw.
+// Small observable store. The reader's settings (persona, passport, weights, saved weight sets,
+// knock-out rules, shortlist, home) are kept in this browser's localStorage, so there is no login;
+// every access is guarded because storage can be absent or throw. Settings can be exported to a file
+// and imported on another device (Settings page).
 
 const KEY = "domicile:v1";
 const OLD_KEY = "wealthmap:v1"; // before the rename to domicile.wiki; read once, then saved under KEY
@@ -17,15 +19,31 @@ function readStored() {
   }
 }
 
+/** Everything worth keeping, as a plain object (also the export file format). */
+export function settingsSnapshot(s = state) {
+  return { weights: s.weightsByPersona.family_office, personaWeights: s.weightsByPersona, persona: s.persona,
+    shortlist: s.shortlist, citizenship: s.citizenship, includeStructures: s.includeStructures,
+    mode: s.mode, home: s.home, priorities: s.prioritiesByPersona,
+    weightSets: s.weightSets, koOff: s.koOff, koExempt: s.koExempt,
+    theme: globalThis.window?.domicileTheme ? window.domicileTheme.get() : "system" }; // the theme itself is stored by theme.js
+}
+
 function writeStored(s) {
   try {
-    window.localStorage.setItem(
-      KEY,
-      JSON.stringify({ weights: s.weightsByPersona.family_office, personaWeights: s.weightsByPersona, persona: s.persona,
-        shortlist: s.shortlist, citizenship: s.citizenship, includeActivity: s.includeActivity, includeStructures: s.includeStructures }),
-    );
+    window.localStorage.setItem(KEY, JSON.stringify(settingsSnapshot(s)));
   } catch {
     /* storage unavailable: keep working in memory */
+  }
+}
+
+export function storageAvailable() {
+  try {
+    const k = "domicile:probe";
+    window.localStorage.setItem(k, "1");
+    window.localStorage.removeItem(k);
+    return true;
+  } catch {
+    return false;
   }
 }
 
@@ -37,16 +55,29 @@ export const state = {
   defaultWeights: null,
   weightsByPersona: {},
   citizenship: "EU",
-  includeActivity: false, // count regimes that need employment / a qualifying activity
+  includeActivity: false, // regimes that need local employment or business are not counted (no switch in the UI)
   includeStructures: true, // count holding structures (GmbH, foundation, ...)
-  view: "world",
-  layer: "overall",
-  showRegions: false, // cantons, Spanish and Italian regions: off until the user ticks the box
   selected: null,
   compare: [],
   shortlist: [],
-  tab: "profile",
+  // The four ways through the site. All of them read this one store, so a change made in one
+  // (persona, passport, weights, filters, selection) shows up in every other.
+  mode: "guided", // guided | factbook | explorer | compare | settings
+  explorerView: "table", // table | chart
+  compareView: "side", // side | calculator
+  factbookPage: "article", // article | index | method | sources
+  home: null, // where the user lives now (Compare)
+  prioritiesByPersona: {}, // Guided: indexes of the persona's priorities that count double
+  weightSets: [], // saved weight sets: { name, persona, weights }
+  koOff: {}, // knock-out rules switched off, per persona: { family_office: ["rule_of_law", ...] }
+  koExempt: [], // countries never ruled out, whatever the rules
+  filters: {
+    sort: "score", continent: "", level: "countries", minStatus: "provisional", euOnly: false, mediterranean: false, noWealthTax: false,
+    familyInheritsFree: false, lowCgt: false, goodDividends: false, shortlistOnly: false, lowIncomeTax: false,
+  },
 };
+
+export const MODES = ["guided", "factbook", "explorer", "compare", "settings"];
 
 export function defaultWeightsFor(persona) {
   return Object.fromEntries(Object.entries(metricsFor(persona)).map(([k, m]) => [k, m.weight]));
@@ -67,7 +98,19 @@ function storedWeights(defaults, stored) {
 export function initState(data) {
   state.data = data;
   state.cfg = data.meta.config;
-  const stored = readStored();
+  applySettings(readStored());
+}
+
+/** The knock-out rule ids a persona uses (data/scoring_config.json personas.<p>.knockout). */
+export const koRules = (persona = state.persona) => personaCfg(persona).knockout;
+
+/**
+ * Applies a stored or imported settings object to the state, keeping only valid values (it may come
+ * from an old version of the site or from a file someone edited). Unknown keys are ignored.
+ */
+export function applySettings(stored) {
+  const data = state.data;
+  if (!stored || typeof stored !== "object") stored = {};
   const pw = stored.personaWeights && typeof stored.personaWeights === "object" ? stored.personaWeights : {};
   for (const p of Object.keys(state.cfg.personas)) {
     state.weightsByPersona[p] = storedWeights(defaultWeightsFor(p), p === "family_office" ? pw[p] || stored.weights : pw[p]);
@@ -76,9 +119,32 @@ export function initState(data) {
   state.weights = state.weightsByPersona[state.persona];
   state.defaultWeights = defaultWeightsFor(state.persona);
   if (["EU", "US", "OTHER"].includes(stored.citizenship)) state.citizenship = stored.citizenship;
-  state.includeActivity = stored.includeActivity === true;
   state.includeStructures = stored.includeStructures !== false;
+  if (MODES.includes(stored.mode)) state.mode = stored.mode;
+  if (typeof stored.home === "string" && stored.home in data.jurisdictions) state.home = stored.home;
+  if (stored.priorities && typeof stored.priorities === "object") {
+    for (const [p, list] of Object.entries(stored.priorities)) {
+      if (p in state.cfg.personas && Array.isArray(list)) state.prioritiesByPersona[p] = list.filter((i) => Number.isInteger(i) && i >= 0 && i < state.cfg.personas[p].profile.priorities.length);
+    }
+  }
   if (Array.isArray(stored.shortlist)) state.shortlist = stored.shortlist.filter((id) => id in data.jurisdictions);
+  state.weightSets = Array.isArray(stored.weightSets)
+    ? stored.weightSets.filter((w) => w && typeof w.name === "string" && w.name.trim() && w.persona in state.cfg.personas)
+      .map((w) => ({ name: w.name.trim().slice(0, 60), persona: w.persona, weights: storedWeights(defaultWeightsFor(w.persona), w.weights) }))
+      .slice(0, 50)
+    : [];
+  state.koOff = {};
+  if (stored.koOff && typeof stored.koOff === "object") {
+    for (const [p, list] of Object.entries(stored.koOff)) {
+      if (p in state.cfg.personas && Array.isArray(list)) state.koOff[p] = [...new Set(list.filter((r) => koRules(p).includes(r)))];
+    }
+  }
+  state.koExempt = Array.isArray(stored.koExempt) ? [...new Set(stored.koExempt.filter((id) => id in data.jurisdictions))] : [];
+}
+
+/** Persist the current settings (e.g. after an import or a reset). */
+export function saveSettings() {
+  writeStored(state);
 }
 
 export function update(patch, { persist = false } = {}) {
@@ -130,18 +196,35 @@ export function taxMetrics(persona = state.persona) {
   return isIncomePersona(persona) ? personaCfg(persona).tax_metrics : TAX_METRICS;
 }
 
-// Entries as the active persona sees them (see personaEntry), cached per persona and citizenship.
+// Entries as the reader sees them: the active persona's view (see personaEntry), with knock-outs the
+// reader has switched off removed. Every mode, the globe and the map read entries through jur(), so a
+// knock-out setting applies everywhere at once. Cached per persona, citizenship and knock-out settings.
 let projected = { key: null, map: null };
 
 function projection() {
-  const key = `${state.persona}|${state.citizenship}`;
+  const key = `${state.persona}|${state.citizenship}|${(state.koOff[state.persona] || []).join(",")}|${state.koExempt.join(",")}`;
   if (projected.key !== key) projected = { key, map: new Map() };
   return projected.map;
 }
 
 export function entries() {
-  if (!isIncomePersona()) return Object.entries(state.data.jurisdictions);
   return Object.keys(state.data.jurisdictions).map((id) => [id, jur(id)]);
+}
+
+/** Knock-outs as the data has them for the active persona, before the reader's settings. */
+export function defaultKo(id) {
+  const e = state.data.jurisdictions[id];
+  if (!e) return [];
+  return (isIncomePersona() ? personaEntry(e, state.persona, state.citizenship).ko : e.ko) || [];
+}
+
+function applyKoSettings(e, id) {
+  if (!e.ko || !e.ko.length) return e;
+  const off = state.koOff[state.persona] || [];
+  const exempt = state.koExempt.includes(id) || (e.parent && state.koExempt.includes(e.parent));
+  const kept = exempt ? [] : e.ko.filter((k) => !off.includes(k.id));
+  if (kept.length === e.ko.length) return e;
+  return { ...e, ko: kept, koWaived: e.ko.filter((k) => !kept.includes(k)), koExempt: Boolean(exempt) };
 }
 
 export function regimeOpts() {
@@ -156,8 +239,8 @@ export function rawJur(id) {
 
 export function jur(id) {
   const e = state.data.jurisdictions[id];
-  if (!e || !isIncomePersona()) return e;
+  if (!e) return e;
   const m = projection();
-  if (!m.has(id)) m.set(id, personaEntry(e, state.persona, state.citizenship));
+  if (!m.has(id)) m.set(id, applyKoSettings(isIncomePersona() ? personaEntry(e, state.persona, state.citizenship) : e, id));
   return m.get(id);
 }

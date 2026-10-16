@@ -289,7 +289,9 @@
         "business_relief": "95% reduction for qualifying family businesses and shares exempt from wealth tax (art. 20.2.c and 20.6), 10-year holding; regions often raise it to 99%.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Resident heirs/donees are taxed on worldwide acquisitions (personal obligation) with a credit for foreign inheritance tax (art. 23).",
-        "domicile_rules": "Liability follows the heir's residence, not the deceased's: Spanish-resident heirs pay on everything they receive; non-resident heirs pay only on Spanish-situs assets and may apply the regional rules where the deceased resided (DA 2ª, after CJEU C-127/12). No tail after leaving Spain."
+        "domicile_rules": "Liability follows the heir's residence, not the deceased's: Spanish-resident heirs pay on everything they receive; non-resident heirs pay only on Spanish-situs assets and may apply the regional rules where the deceased resided (DA 2ª, after CJEU C-127/12). No tail after leaving Spain.",
+        "spouse_treatment": "taxed",
+        "spouse_note": "State rules: the spouse is in Group II (art. 20.2.a Ley 29/1987) with a EUR 15,956.87 reduction and the same 7.65% to 34% scale and wealth multiplier as adult children, so about 33% on a large estate. Regions that set their own rules (most grant 99-100% rebates to spouses) are covered in the subnational file."
       },
       "sources": [
         {

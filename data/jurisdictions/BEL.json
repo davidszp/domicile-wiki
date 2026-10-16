@@ -217,7 +217,9 @@
         "business_relief": "Regional reduced rates for family businesses and companies (Flanders: new rules from 1 January 2026) with continuation conditions; holding companies of listed portfolios do not qualify.",
         "business_relief_covers_public_shares": false,
         "foreign_assets": "Worldwide estate of a resident deceased; foreign real estate tax credited (Belgium has very few estate tax treaties).",
-        "domicile_rules": "Liability depends on the deceased's residence (domicile or seat of wealth) in Belgium at death; the region is where the deceased lived longest in the five years before death. Non-residents are taxed only on Belgian real estate (estate duty)."
+        "domicile_rules": "Liability depends on the deceased's residence (domicile or seat of wealth) in Belgium at death; the region is where the deceased lived longest in the five years before death. Non-residents are taxed only on Belgian real estate (estate duty).",
+        "spouse_treatment": "taxed",
+        "spouse_note": "Flanders taxes a surviving spouse (and a legal cohabitant, or a factual cohabitant of at least one year) on the same 3% / 9% / 27% scale as children (EUR 50,000 / 250,000 bands, per heir, movables and immovables separately), with no spouse exemption for a EUR 35 million portfolio; the family home passes free of tax to the surviving partner."
       }
     }
   ],

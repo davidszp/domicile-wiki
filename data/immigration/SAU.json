@@ -1,0 +1,370 @@
+{
+  "id": "SAU",
+  "name": "Saudi Arabia",
+  "summary": "No free movement for anyone; EU, US and other passports use the same Premium Residency products run by the Premium Residency Center. The cheapest is the Real Estate Owner residency (property of SAR 4,000,000), then the annual Limited Duration product (SAR 100,000 a year); permanent status costs SAR 800,000 once or SAR 7,000,000 invested with 10 jobs. No remote-work visa exists. Citizenship is by decree only.",
+  "naturalisation": "Not researched from the Saudi Citizenship System in this pass. Premium Residency does not lead to citizenship automatically.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "General rule, not verified in this pass: dual nationality needs government permission.",
+  "routes": [
+    {
+      "id": "premium_unlimited",
+      "name": "Premium Residency - Unlimited Duration",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "permanent_residence",
+      "summary": "A one-off payment of SAR 800,000 buys permanent residence without a sponsor.",
+      "requirements": "Premium Residency Center product: one-time fee SAR 800,000, permanent; age 21+, proof of financial capability, passport valid 6 months. The fee is paid, not invested. Terms are taken from consultancy guides because pr.gov.sa could not be read.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 800000,
+        "currency": "SAR"
+      },
+      "fees_note": "Product fee. A separate application processing fee of about USD 170 is reported (KSA Expats).",
+      "physical_presence": "Not stated; no sponsor needed.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Saudi has no personal income tax on individuals' earned or investment income; see jurisdiction file.",
+      "sources": [
+        {
+          "title": "Saudi Premium Residency: Your Route to Permanent Residency in 2026 (updated 3 Feb 2026)",
+          "url": "https://www.centuroglobal.com/articles/saudi-premium-residency/",
+          "publisher": "Centuro Global",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Premium Residency in Saudi Arabia: Complete Guide 2026 (Sep 2026)",
+          "url": "https://ksaexpats.com/eligibility-requirements-for-special-privilege-iqama/",
+          "publisher": "KSA Expats",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Premium Residency Center",
+          "url": "https://pr.gov.sa/en",
+          "publisher": "Premium Residency Center, Saudi Arabia",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "premium_limited",
+      "name": "Premium Residency - Limited Duration",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "A renewable residence of 1 to 5 years for SAR 100,000 a year, without a sponsor.",
+      "requirements": "Premium Residency Center product: SAR 100,000 per year, 1-5 years, renewable; age 21+, proof of financial capability, passport valid 6 months. Guide-based; pr.gov.sa unreadable.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 100000,
+        "currency": "SAR"
+      },
+      "fees_note": "Per year (first year). Processing fee about USD 170 reported separately.",
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "See jurisdiction file.",
+      "sources": [
+        {
+          "title": "Saudi Premium Residency: Your Route to Permanent Residency in 2026 (updated 3 Feb 2026)",
+          "url": "https://www.centuroglobal.com/articles/saudi-premium-residency/",
+          "publisher": "Centuro Global",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Premium Residency in Saudi Arabia: Complete Guide 2026 (Sep 2026)",
+          "url": "https://ksaexpats.com/eligibility-requirements-for-special-privilege-iqama/",
+          "publisher": "KSA Expats",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Premium Residency Center",
+          "url": "https://pr.gov.sa/en",
+          "publisher": "Premium Residency Center, Saudi Arabia",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "premium_real_estate",
+      "name": "Premium Residency - Real Estate Owner",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Owning residential property worth at least SAR 4,000,000 gives residency for as long as you hold it.",
+      "requirements": "Property worth at least SAR 4,000,000, completed, residential, unmortgaged, valued by a Taqeem-accredited valuer (off-plan from a RERA-approved developer allowed with a down payment of the higher of SAR 1,000,000 or 10%, no financing). Residency lasts while the property or usufruct is held; does not convert to permanent. A law letting foreigners buy in approved projects took effect 28 January 2026 (press report); approved areas and details were still pending.",
+      "minimum_investment": {
+        "amount": 4000000,
+        "currency": "SAR"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 4000,
+        "currency": "SAR"
+      },
+      "fees_note": "Product fee SAR 4,000; processing fee about USD 170 reported separately.",
+      "physical_presence": "Not required to live in the property (press).",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "See jurisdiction file.",
+      "sources": [
+        {
+          "title": "Saudi Premium Residency: Your Route to Permanent Residency in 2026 (updated 3 Feb 2026)",
+          "url": "https://www.centuroglobal.com/articles/saudi-premium-residency/",
+          "publisher": "Centuro Global",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Premium Residency in Saudi Arabia: Complete Guide 2026 (Sep 2026)",
+          "url": "https://ksaexpats.com/eligibility-requirements-for-special-privilege-iqama/",
+          "publisher": "KSA Expats",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Saudi Arabia gives foreigners lifetime residency rights when they buy real estate in approved projects",
+          "url": "https://amlak.net.sa/en/88096/",
+          "publisher": "Amlak News (citing AGBI)",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "premium_investor",
+      "name": "Premium Residency - Investor",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "permanent_residence",
+      "summary": "Invest SAR 7,000,000 in a Saudi business and create 10 jobs in two years for permanent residence.",
+      "requirements": "Product requirements: at least SAR 7,000,000 invested capital (owner share), 10 jobs within the first two years, Ministry of Investment licence and commercial registration. Direct permanent residence conditional on meeting the targets during the first two years.",
+      "minimum_investment": {
+        "amount": 7000000,
+        "currency": "SAR"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 4000,
+        "currency": "SAR"
+      },
+      "fees_note": "Product fee SAR 4,000.",
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "See jurisdiction file.",
+      "sources": [
+        {
+          "title": "Saudi Premium Residency: Your Route to Permanent Residency in 2026 (updated 3 Feb 2026)",
+          "url": "https://www.centuroglobal.com/articles/saudi-premium-residency/",
+          "publisher": "Centuro Global",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Premium Residency in Saudi Arabia: Complete Guide 2026 (Sep 2026)",
+          "url": "https://ksaexpats.com/eligibility-requirements-for-special-privilege-iqama/",
+          "publisher": "KSA Expats",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "premium_entrepreneur",
+      "name": "Premium Residency - Entrepreneur (two categories)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Start-up founders backed by an approved investor get 5 years, or permanent residence for a SAR 15,000,000 venture with 20 jobs.",
+      "requirements": "Category 1: entrepreneur licence from the Ministry of Investment, funding round of at least SAR 400,000 from an approved investor, at least 20% ownership, 5 years renewable (renewal needs 30 months of residence). Category 2: at least SAR 15,000,000 funding, at least 10% ownership, 10 jobs in year 1 and 10 more in year 2, permanent conditional.",
+      "minimum_investment": {
+        "amount": 400000,
+        "currency": "SAR"
+      },
+      "investment_options": "Category 2: SAR 15,000,000 and 20 jobs for permanent residence.",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 4000,
+        "currency": "SAR"
+      },
+      "fees_note": "Product fee SAR 4,000.",
+      "physical_presence": "30 months in the 5 years for renewal of Category 1.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "See jurisdiction file.",
+      "sources": [
+        {
+          "title": "Saudi Premium Residency: Your Route to Permanent Residency in 2026 (updated 3 Feb 2026)",
+          "url": "https://www.centuroglobal.com/articles/saudi-premium-residency/",
+          "publisher": "Centuro Global",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Premium Residency in Saudi Arabia: Complete Guide 2026 (Sep 2026)",
+          "url": "https://ksaexpats.com/eligibility-requirements-for-special-privilege-iqama/",
+          "publisher": "KSA Expats",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "premium_talent_gifted",
+      "name": "Premium Residency - Special Talent and Gifted",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Residence for employed specialists (researchers, doctors, executives) and for people with exceptional artistic or sporting achievements.",
+      "requirements": "Special Talent: employment with a listed entity, bachelor's degree, 3+ years of experience, monthly pay of at least SAR 14,000 (researchers), SAR 35,000 (health and science), SAR 80,000 (executives). Gifted: nomination or award and a recommendation from the Ministry of Culture or Sports. 5 years, renewable once; permanent after 30 months of residence within 5 years.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 4000,
+        "currency": "SAR"
+      },
+      "fees_note": "Product fee SAR 4,000.",
+      "physical_presence": "30 months of residence within the 5 years for permanent status.",
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "See jurisdiction file.",
+      "sources": [
+        {
+          "title": "Saudi Premium Residency: Your Route to Permanent Residency in 2026 (updated 3 Feb 2026)",
+          "url": "https://www.centuroglobal.com/articles/saudi-premium-residency/",
+          "publisher": "Centuro Global",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Premium Residency in Saudi Arabia: Complete Guide 2026 (Sep 2026)",
+          "url": "https://ksaexpats.com/eligibility-requirements-for-special-privilege-iqama/",
+          "publisher": "KSA Expats",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "work_permit",
+      "name": "Employer-sponsored iqama",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Most expatriates live in Saudi Arabia on an employer-sponsored work permit and iqama residence card.",
+      "requirements": "Employer sponsorship through the Ministry of Human Resources and Absher/Muqeem; Saudisation quotas apply. Not researched in detail.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Residence lapses after prolonged absence outside the Kingdom (not verified).",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "See jurisdiction file.",
+      "sources": [
+        {
+          "title": "Saudi Arabia - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/saudi-arabia/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "pr.gov.sa could not be read; every Premium Residency figure comes from consultancy guides (Centuro Global, KSA Expats). Verify on the official site.",
+    "Premium Residency path to citizenship and ordinary naturalisation rules were not researched.",
+    "Remote-work or digital nomad visa: none found.",
+    "A proposed USD 30 million entry tier was reported in January 2026; not confirmed as a product.",
+    "Real estate: approved areas, transfer fees and presence rules under the law effective 28 January 2026 were still pending in press reports.",
+    "Whether Premium Residency fees include the USD 170 processing fee separately in the official schedule."
+  ],
+  "sources": [
+    {
+      "title": "Premium Residency Center",
+      "url": "https://pr.gov.sa/en",
+      "publisher": "Premium Residency Center, Saudi Arabia",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Saudi Arabia - Individual - Residence",
+      "url": "https://taxsummaries.pwc.com/saudi-arabia/individual/residence",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

@@ -61,6 +61,8 @@ Inheritances from parents to children (ascendants and descendants) bear 2.5% reg
 
 Open points for this tax: Gift (donation) registration rates in direct line not found. | Territorial scope of inheritance registration duty for foreign assets of residents not verified.
 
+**Surviving spouse:** Registration duty is 2.5% between spouses, the same as between ascendants and descendants, with no allowance (EY 2026); donations of goods between spouses are registered at a fixed TND 30.
+
 ## Wealth tax
 
 ### Standard regime
@@ -99,7 +101,9 @@ Not researched.
 - Tunisia - Individual - Income determination (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/tunisia/individual/income-determination
 - Tunisia - Individual - Residence (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/tunisia/individual/residence
 - Tunisia - Corporate - Taxes on corporate income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/tunisia/corporate/taxes-on-corporate-income
+- EY Worldwide Personal Tax and Immigration Guide 2025-26 (March 2026 edition): https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/tax-guides/documents/ey-gl-worldwide-personal-immigration-tax-guide-03-2026.pdf
 
 ## Change log
 
 - 2026-10-15: initial research.
+- 2026-10-16: added surviving-spouse treatment.

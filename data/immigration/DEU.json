@@ -1,0 +1,159 @@
+{
+  "name": "Germany",
+  "summary": "EU citizens only register their address. Germany has no investor or digital nomad visa. Non-EU nationals can apply for a residence permit as a freelancer or business founder (Section 21 AufenthG; economic interest and funding needed), for the EU Blue Card at EUR 50,700 a year, or for the Chancenkarte (job-seeker card, proof of about EUR 13,092 of funds). Living off your own means is possible only as a discretionary permit with no published threshold.",
+  "naturalisation": "Five years of lawful residence (since the law in force from 27 June 2024; the 3-year fast track was reported abolished at the end of 2025 by one source only), German at B1, secure livelihood without social benefits, a naturalisation test and commitment to the free democratic order.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Since 27 June 2024 applicants no longer have to give up their previous citizenship; the other country's law must allow it.",
+  "routes": [
+    {
+      "id": "eu_free_movement",
+      "name": "EU/EEA/Swiss free movement",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "EU citizens register their address (Anmeldung) within two weeks of moving in; no permit.",
+      "requirements": "Freizuegigkeitsgesetz/EU; non-workers need sufficient means and health insurance. Permanent residence after 5 years.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Germany - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/germany/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5
+    },
+    {
+      "id": "independent_means_s7",
+      "name": "Residence permit for other purposes (independent means, Section 7(1) sentence 3 AufenthG)",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A discretionary residence permit for people who do not work and can pay their own way; no statutory income figure.",
+      "requirements": "Granted at the discretion of the immigration office for purposes not covered elsewhere; secure livelihood without public funds and health insurance. No published threshold or programme was found; US citizens can apply from inside Germany. Not verified on an official page.",
+      "physical_presence": "Live in Germany",
+      "sources": [
+        {
+          "title": "Germany - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/germany/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null,
+      "tax_note": "Unlimited tax liability follows domicile or habitual abode."
+    },
+    {
+      "id": "self_employed_s21",
+      "name": "Self-employment / freelancer permit (Section 21 AufenthG)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Residence for founders and freelancers whose business serves an economic interest or regional need.",
+      "requirements": "Economic interest or regional need, positive economic effect, and own capital or a financing commitment; applicants over 45 need adequate pension provision; exceptions for German graduates, researchers and Blue Card holders. US and some other nationals can apply in Germany. No fixed minimum investment.",
+      "physical_presence": "Live in Germany and run the business",
+      "sources": [
+        {
+          "title": "Self-employed or freelance work (Section 21 AufenthG)",
+          "url": "https://welcome.dresden.de/en/residence-permits/limited-residence-permit/self-employed-or-freelance-work.php",
+          "publisher": "City of Dresden, Welcome Center",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 3,
+      "tax_note": "Freelance income taxed in Germany if resident.",
+      "government_fees": null
+    },
+    {
+      "id": "chancenkarte",
+      "name": "Chancenkarte (Opportunity Card, job-seeker)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Points-based permit of up to 12 months to look for work in Germany, with part-time work allowed.",
+      "requirements": "At least 6 points (qualification, experience, language, age) or a recognised qualification; proof of funds about EUR 1,091 a month (EUR 13,092 for a year) via blocked account or sponsor; part-time work up to 20 hours a week. Secondary sources.",
+      "physical_presence": "Live in Germany while holding the card",
+      "sources": [
+        {
+          "title": "Germany Chancenkarte (Opportunity Card): 2026 requirements",
+          "url": "https://migaku.com/blog/language-fun/germany-chancenkarte-opportunity-card-2026-requirements",
+          "publisher": "Migaku",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 13092,
+        "currency": "EUR"
+      },
+      "processing_time": "Not sourced"
+    },
+    {
+      "id": "eu_blue_card",
+      "name": "EU Blue Card (work)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored permit for degree-level jobs.",
+      "requirements": "2026: gross annual salary EUR 50,700; EUR 45,934.20 for shortage occupations (STEM, health), recent graduates and some IT specialists. Degree recognised in Germany; job offer. Secondary source.",
+      "physical_presence": "Work for the sponsoring employer",
+      "sources": [
+        {
+          "title": "EU Blue Card Germany 2026: salary thresholds, shortage occupations and new rules",
+          "url": "https://aldaglegal.com/eu-blue-card-germany-2026/",
+          "publisher": "Alda Legal",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 50700,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 5
+    }
+  ],
+  "open_questions": [
+    "Official Federal Foreign Office / BAMF pages not retrieved; Blue Card, Chancenkarte and naturalisation details come from secondary sources.",
+    "Section 7 independent-means permit: no authoritative source on practice or amounts.",
+    "Section 21 self-employment: years to settlement permit (3 years shown from general knowledge, not sourced) and fees.",
+    "Whether the 3-year 'turbo' naturalisation has been abolished: single source.",
+    "No investor, digital nomad or passive-income programme exists; absence not proven by an official statement."
+  ],
+  "sources": [
+    {
+      "title": "EU Blue Card Germany 2026: salary thresholds, shortage occupations and new rules",
+      "url": "https://aldaglegal.com/eu-blue-card-germany-2026/",
+      "publisher": "Alda Legal",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "DEU",
+  "researched_on": "2026-10-16"
+}

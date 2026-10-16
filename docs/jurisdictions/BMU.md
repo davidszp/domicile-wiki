@@ -24,6 +24,8 @@ None; no withholding; no comprehensive treaties. JSON 0.
 
 Stamp Duties Act 1976 s.47 and Schedule Head 2 (as amended 1 April 2023): stamp duty on the affidavit of value of the deceased's estate, payable within 90 days of the grant/resealing. Bands (marginal): first BMD 100,000 nil; next 100,000 at 5.25%; next 800,000 at 10.5%; next 1,000,000 at 15.75%; above BMD 2 million 21%. (gov.bm's probate page still shows the pre-2023 5/10/15/20%; Deloitte 2026 and the consolidated Act show the 5.25-21% rates used here.) JSON: basis estate, exemption 100,000, brackets 5.25% from 0, 10.5% from 100,000, 15.75% from 900,000, 21% from 1,900,000 (relative to the amount above the exemption), children_treatment taxed. Scope: only property situated in Bermuda; s.47(3) excludes foreign-currency deposits, securities of exempted undertakings and foreign assets held through a qualifying Bermuda PIC. A foreign portfolio held abroad is therefore not charged. Deductions: surviving spouse, primary family homestead (Bermudian status only), debts. Gifts: Head 17 voluntary dispositions inter vivos, Bermuda property 2.1%-7.35% marginal, non-Bermuda property 1.05%.
 
+**Surviving spouse:** Stamp duty is not payable on the affidavit of value for assets passing on death to a surviving spouse (Stamp Duties Act 1976 estate provisions; Carey Olsen, Legal 500 Private Client Guide 2025: Bermuda). Registered partners were not checked separately.
+
 ## Wealth tax
 
 None. Annual land tax on annual rental value; foreign currency purchase tax 1.25%.
@@ -65,6 +67,7 @@ Purchase price per m2, health insurance and housekeeper not sourced.
 - PwC Worldwide Tax Summaries: Bermuda, Corporate - Other taxes (land tax, payroll tax): https://taxsummaries.pwc.com/bermuda/corporate/other-taxes
 - Saltus Grammar School: Tuition at Saltus (2026-27): https://www.saltus.bm/admissions/tuition-at-saltus
 - propertyskipper: Properties to rent in Bermuda (residential): https://www.propertyskipper.com/properties/all/tender_type/rental/property_type/residential
+- Carey Olsen: Private Client Guide 2025, Bermuda (Legal 500): https://www.careyolsen.com/sites/default/files/uploads/Private%20Client%20Guide%202025%20-%20Bermuda%20%28Legal%20500%29.pdf
 
 ## Change log
 
@@ -73,3 +76,4 @@ Purchase price per m2, health insurance and housekeeper not sourced.
 - 2026-10-15: inheritance scope set to local assets only for standard in the structured data (Bermuda estate duty reaches only property situated in Bermuda (Stamp Duties Act s.47(2)(b))); previously the scoring applied the rates to the worldwide estate, which overstated the tax.
 - 2026-10-15: added prime rent (BMD 16,750, median of four priced 4-5 bed long lets on propertyskipper).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

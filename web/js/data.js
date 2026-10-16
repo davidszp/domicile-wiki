@@ -35,9 +35,7 @@ const fetchJson = (url) => fetchCached(url, "json");
 export const loadScores = () => fetchJson("data/scores.json");
 export const loadWorld = () => fetchJson("data/world.topo.json");
 export const loadDetail = () => fetchJson("data/detail.topo.json");
-export const loadRegions = () => fetchJson("data/regions.topo.json");
 export const loadSources = () => fetchJson("data/sources.json");
-export const loadViews = () => fetchJson("data/views.json");
 
 export function loadProfile(id) {
   if (!ID_RE.test(id)) return Promise.reject(new DataError(`invalid jurisdiction id ${id}`));

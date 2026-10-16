@@ -125,6 +125,8 @@
         "verification": "verified",
         "basis": "beneficiary",
         "children_treatment": "taxed",
+        "spouse_treatment": "taxed",
+        "spouse_note": "The surviving spouse (or life partner) has a deduction of XCG 240,000 against XCG 80,000 for a child, and pays the same 2%/4%/6% scale as children (Successiebelastingverordening 1908 arts. 1A, 60 and 61).",
         "exemption": 80000,
         "brackets": [
           {

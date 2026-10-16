@@ -1,0 +1,44 @@
+{
+  "id": "CHL",
+  "name": "Chile",
+  "researched_on": "2026-10-16",
+  "summary": "Children, parents and a spouse are forced heirs: half the estate is reserved to them (Civil Code art. 1182), and a further quarter (the cuarta de mejoras) can go only to certain family members. Only about a quarter is free to give by will. Chilean heirs can also claim a share of Chilean assets when a foreign law would deny it. Chile has no trust law and allows only non-profit foundations.",
+  "forced_heirship": "yes",
+  "reserved_share": "Half the estate is the legítima rigorosa, shared by children (or, lacking children, ascendants and spouse) (Código Civil arts. 1182, 1183); a quarter is the cuarta de mejoras, left only to descendants, ascendants or spouse (art. 1184); a quarter is free to dispose of. Spouse's and ascendants' shares depend on who concurs.",
+  "family_claims": "",
+  "foreign_law_choice": "no",
+  "foreign_law_note": "Succession is governed by the law of the deceased's last domicile (Código Civil art. 955). Chilean heirs have a right to take their Chilean-law share from Chilean assets when a foreign succession law gives them less (arts. 15, 16 and 998; the 'derecho de prelación'). No general choice of the law of nationality was found.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "There is no trust law; the nearest devices are the fideicomiso (propiedad fiduciaria, Civil Code arts. 732 ff.) and the fiducia in the Ley de Bancos, both narrow. Chile is not a party to the Hague Trusts Convention. Foundations (Civil Code arts. 545 ff., Ley 20.500) must be non-profit and serve a defined purpose; a private family foundation was not found.",
+  "open_questions": [
+    "The text of arts. 1184 and 998 as currently in force was read only through secondary sources; confirm at bcn.cl.",
+    "A 2020 law-journal article argues for repealing the cuarta de mejoras; no repeal was found, and bills may be pending.",
+    "Treatment of foreign trusts by Chile's courts and the SII was not sourced."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention on the Law Applicable to Trusts and on their Recognition (1985)",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Código Civil de Chile",
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=172986",
+      "publisher": "Biblioteca del Congreso Nacional",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Rodríguez Pinto, La derogación de la cuarta de mejoras y otros correctivos a la legítima, Revista de Derecho Privado 39 (2020)",
+      "url": "https://www.redalyc.org/journal/4175/417564980013/417564980013.pdf",
+      "publisher": "Universidad Externado de Colombia",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

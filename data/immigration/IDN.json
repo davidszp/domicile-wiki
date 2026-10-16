@@ -1,0 +1,238 @@
+{
+  "id": "IDN",
+  "name": "Indonesia",
+  "researched_on": "2026-10-16",
+  "summary": "No free movement for EU citizens; EU, US and other passports use the same routes. Investors can buy a 5- or 10-year Golden Visa (USD 350,000 in government bonds, or a USD 2.5 million company), or take a Second Home Visa (IDR 2 billion, about USD 130,000, no work). Remote workers (E33G) need about USD 60,000 a year. Retirees need a pension of about USD 3,000 a month. Most official pages could not be opened; figures come from Fragomen, EY, ASEAN Briefing and consultancies.",
+  "naturalisation": "Citizenship by naturalisation under Law 12/2006 is understood to need age 18+, 5 consecutive years (or 10 non-consecutive) of legal residence, Indonesian language and presidential approval; not confirmed from an official page in this run.",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "Indonesia does not allow dual citizenship for adults (limited dual nationality for some children); not verified from an official page in this run.",
+  "routes": [
+    {
+      "id": "golden_visa_bonds",
+      "name": "Golden Visa (individual, passive investment route)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Five or ten years of residence for buying Indonesian government bonds worth USD 350,000 to USD 700,000 (secondary sources add listed shares and bank deposits).",
+      "requirements": "Golden Visa (launched 25 October 2023; first announced 7 September 2023) gives 5 or 10 years of residence with no extra stay or work permits. Individuals: USD 350,000 (5 years) or USD 700,000 (10 years) in Indonesian government bonds; secondary guides also list IDX-listed shares, mutual funds or state-bank deposits and a property route at USD 1 million for 10 years. Not confirmed against the Directorate General of Immigration regulation.",
+      "investment_options": "USD 350,000 for 5 years; USD 700,000 for 10 years (bonds). Other asset classes per secondary guides, unverified.",
+      "fees_note": "Fees not found.",
+      "processing_time": "",
+      "family": "Spouse and children on dependant stay permits (details not verified).",
+      "tax_note": "Tax residence follows the 183-day test; a stay permit longer than 183 days may be treated as intent to reside (per a 2026 tax guide, PER-23/PJ/2025, unverified).",
+      "physical_presence": "No minimum stated",
+      "sources": [
+        {
+          "title": "Indonesia: Golden Visa Program Introduced (updated 13 January 2026)",
+          "url": "https://www.fragomen.com/insights/indonesia-golden-visa-program-introduced.html",
+          "publisher": "Fragomen",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "EY: Indonesia introduces new golden visa route",
+          "url": "https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/tax/tax-alerts-pdf/ey-indonesia-introduces-new-golden-visa-route.pdf",
+          "publisher": "EY",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 350000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null
+    },
+    {
+      "id": "golden_visa_company",
+      "name": "Golden Visa (individual, own company route)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Five or ten years of residence for an investor who sets up an Indonesian company valued at USD 2.5 million or USD 5 million.",
+      "requirements": "Golden Visa (launched 25 October 2023; first announced 7 September 2023) gives 5 or 10 years of residence with no extra stay or work permits. Individual company route: establish an Indonesian company with USD 2.5 million (5 years) or USD 5 million (10 years). Corporate route for directors and commissioners: USD 25 million (5 years) or USD 50 million (10 years). Nusantara (IKN) track from 13 January 2026: USD 5 million (5 years) or USD 10 million (10 years), limited to investors linked to listed professional-services firms; Fragomen does not say whether these cut the 2023 figures.",
+      "investment_options": "USD 5 million for 10 years (individual company); corporate: USD 25 million / USD 50 million.",
+      "fees_note": "Fees not found.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "physical_presence": "No minimum stated",
+      "sources": [
+        {
+          "title": "Indonesia: Golden Visa Program Introduced (updated 13 January 2026)",
+          "url": "https://www.fragomen.com/insights/indonesia-golden-visa-program-introduced.html",
+          "publisher": "Fragomen",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 2500000,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "second_home_visa",
+      "name": "Second Home Visa (Rumah Kedua)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Five or ten years of residence without the right to work, for people who show IDR 2 billion (about USD 130,000) in an Indonesian state bank or own qualifying property.",
+      "requirements": "Show about IDR 2 billion (USD 130,000) in an individual account at an authorised Indonesian (state-owned per some sources) bank, or property: reports differ (USD 1 million apartment per EY, or Hak Pakai property of IDR 5 billion / apartment of IDR 2 billion per a Bali consultancy). Proof within 90 days or the stay permit is cancelled (secondary). No work allowed. After 3 years may move to a permanent permit (KITAP) per ASEAN Briefing.",
+      "investment_options": "IDR 2 billion bank balance; or property per conflicting figures.",
+      "fees_note": "Fees not found.",
+      "processing_time": "",
+      "family": "Dependants may be included (secondary).",
+      "tax_note": "A stay permit over 183 days may make you an Indonesian tax resident.",
+      "physical_presence": "No minimum stated",
+      "sources": [
+        {
+          "title": "Indonesia's Second Home Visa: What are the Requirements?",
+          "url": "https://www.aseanbriefing.com/news/indonesia-to-issue-second-home-visa-what-are-the-requirements/",
+          "publisher": "ASEAN Briefing (Dezan Shira & Associates)",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "EY: Indonesia introduces new golden visa route",
+          "url": "https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/tax/tax-alerts-pdf/ey-indonesia-introduces-new-golden-visa-route.pdf",
+          "publisher": "EY",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 2000000000,
+        "currency": "IDR"
+      },
+      "path_to_permanent_years": 3
+    },
+    {
+      "id": "remote_worker_e33g",
+      "name": "Remote Worker Visa (E33G KITAS)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "One-year renewable stay permit for people employed by a foreign company, earning about USD 60,000 a year.",
+      "requirements": "Contract with a company established outside Indonesia; income about USD 60,000 a year plus about USD 2,000 liquid funds; no work for or payment from Indonesian entities. Validity reported as 1 year renewable (once or more; sources differ). All from consultancy guides; official regulation not opened.",
+      "investment_options": "",
+      "fees_note": "Not found.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Permit over 183 days may count as intent to reside, making you tax resident.",
+      "physical_presence": "No minimum stated",
+      "sources": [
+        {
+          "title": "Remote work visa KITAS E33G",
+          "url": "https://www.letsmoveindonesia.com/remote-work-visa-kitas-e33g/",
+          "publisher": "Let's Move Indonesia",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 60000,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "retirement_kitas",
+      "name": "Retirement stay permit (E33E Silver Hair / E33F Retirement)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Stay permit for retirees with a pension, no work allowed; one of the few Indonesian long-stay options without an investment.",
+      "requirements": "Age 55 or 60 depending on the permit and nationality (sources conflict); monthly pension of at least USD 3,000 (undated source); some summaries add a USD 50,000 bank commitment within 90 days; health insurance and accommodation; no work. Permits up to 5 years; may lead to retirement KITAP. Secondary sources only.",
+      "investment_options": "",
+      "fees_note": "Not found.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "physical_presence": "No minimum stated",
+      "sources": [
+        {
+          "title": "Retirement visa Indonesia",
+          "url": "https://emerhub.com/indonesia/visas/retirement-visa/",
+          "publisher": "Emerhub",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 36000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": null
+    },
+    {
+      "id": "work_kitas",
+      "name": "Work KITAS (RPTKA-sponsored)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored stay permit (KITAS) for foreign employees; needs a manpower plan (RPTKA) approved for the employer.",
+      "requirements": "Indonesian sponsor must hold approved RPTKA; foreign worker needs relevant skills, a qualifying position, and an employer-paid skills development fund contribution (USD 100 a month in older rules; not verified). Not researched in detail.",
+      "investment_options": "",
+      "fees_note": "Not found.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "physical_presence": "Live and work in Indonesia",
+      "sources": [
+        {
+          "title": "Work Visa Indonesia: 2026 Guide to KITAS, RPTKA & E33G",
+          "url": "https://employsome.sda.company/?p=7991",
+          "publisher": "Employsome",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Directorate General of Immigration pages could not be fetched; all figures are secondary.",
+    "Golden Visa asset classes and whether the 2026 Nusantara cuts apply to the general route not confirmed.",
+    "Second Home Visa property threshold conflicts between sources.",
+    "Retirement permit age and deposit conflict between sources.",
+    "Fees for all routes not found.",
+    "Naturalisation and dual citizenship not verified from an official source."
+  ],
+  "sources": []
+}

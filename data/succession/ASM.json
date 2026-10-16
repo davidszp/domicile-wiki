@@ -1,0 +1,39 @@
+{
+  "id": "ASM",
+  "name": "American Samoa",
+  "researched_on": "2026-10-16",
+  "summary": "A surviving spouse has a dower right to one third of the estate that a will cannot override, except for communal land, which passes by Samoan custom. Children have no guaranteed share. The Hague Trusts Convention is not in force (the US signed but has not ratified).",
+  "forced_heirship": "yes",
+  "reserved_share": "Surviving spouse: one third in value of all real and personal property in fee simple, called dower (ASCA 40.0103); wills are subject to dower (40.0101). Does not apply to communal land.",
+  "family_claims": "",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Not sourced; US-style rules assumed, so 'limited' is recorded. Communal land cannot be devised to non-Samoans (land alienation laws, 37.0201 ff.).",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "unclear",
+  "private_foundations": "unclear",
+  "trust_note": "No trust statute was found in ASCA Title 40; trust matters appear to rest on common law, so 'limited' is recorded. US federal tax applies. No foundation law found.",
+  "open_questions": [
+    "Current text of 40.0103 and any amendment.",
+    "Trust statute.",
+    "Conflict-of-law rules for non-Samoan residents.",
+    "The HCCH table as retrieved shows no entry for this jurisdiction (the retrieved copy was marked last updated 2017 and its territorial-extension notes could not be read); re-check the live table.",
+    "Trust/foundation availability marked unclear: no statute was found, which does not show that none exists."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table, Convention of 1 July 1985 on the Law Applicable to Trusts",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "ASCA Title 40 Chapter 01 Wills",
+      "url": "https://asbar.org/section/title-40-estates-and-fiduciary-relations/chapter-01-wills/",
+      "publisher": "American Samoa Bar Association",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -154,6 +154,8 @@
         ],
         "basis": "beneficiary",
         "children_treatment": "taxed",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "PwC states that no inheritance tax is due between spouses or PACS partners; its separate line giving a XPF 100,000 allowance and 5%-20% rates for 'direct dependants (spouse or partner)' is ambiguous, and the local Code des impots (arts. 248-417) could not be opened, so confidence is medium.",
         "exemption": 100000,
         "brackets": [
           {

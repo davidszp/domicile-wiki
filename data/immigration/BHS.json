@@ -1,0 +1,70 @@
+{
+  "id": "BHS",
+  "name": "The Bahamas",
+  "researched_on": "2026-10-16",
+  "summary": "The Bahamas offers permanent residence for BSD 1 million (equal to USD 1 million) in real estate or Central Bank zero-coupon bonds held at least 10 years, up from USD 750,000 before 2025. The government processing fee is BSD 200. There is no personal income tax. EU, US and other passports use the same route.",
+  "naturalisation": "Ten years as a legal permanent resident, including the 12 months before applying, and at least 6 years of residence before that final year; discretionary.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Sources conflict; adults reportedly must renounce other nationalities, and the factbook lists dual citizenship as not recognised. No statute was read.",
+  "routes": [
+    {
+      "id": "economic_pr",
+      "name": "Permanent residence by investment (economic)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for BSD 1,000,000 (on a 1:1 peg with the US dollar) in Bahamian real estate or Central Bank zero-coupon bonds held for at least 10 years.",
+      "requirements": "Minimum investment of $1.0 million in real estate or zero-coupon bonds of the Central Bank of The Bahamas (or a mix), held at least 10 years; raised from USD 750,000 by the 2024-25 budget (effective 1 January 2025). Form IV (Permanent Residence Economic); medical certificate within 30 days; police certificate; two references; letter to the Director of Immigration.",
+      "physical_presence": "Not stated in the sources reviewed",
+      "sources": [
+        {
+          "title": "Bahamas Department of Immigration: Permanent Residence (Economic)",
+          "url": "https://immigration.gov.bs/?p=3786",
+          "publisher": "Government of The Bahamas, Department of Immigration",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Permanent residency reform labelled 'huge' (30 May 2024)",
+          "url": "https://www.tribune242.com/news/2024/may/30/permanent-residency-reform-labelled-huge/",
+          "publisher": "The Tribune (Nassau)",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 1000000,
+        "currency": "BSD"
+      },
+      "government_fees": {
+        "amount": 200,
+        "currency": "BSD"
+      },
+      "fees_note": "BSD 200 non-refundable processing fee per the Department. A certificate fee of BSD 25,000 appears in one secondary guide and is not included.",
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 10,
+      "tax_note": "The Bahamas has no personal income tax."
+    }
+  ],
+  "open_questions": [
+    "BEATS remote-worker permit: listed in guides at USD 1,000 for 12 months, but independent trackers report it halted in January 2022; status not confirmed from an official page, so not recorded.",
+    "Certificate fee for economic permanent residence (BSD 25,000 in one guide) not confirmed officially.",
+    "Work permit route not researched.",
+    "Naturalisation: 10 years as permanent resident (including the last 12 months) with 6 years' residence before that, per the Department; naturalisation is discretionary.",
+    "Dual citizenship: adults reportedly must renounce; sources conflict and no statute was read."
+  ],
+  "sources": [
+    {
+      "title": "Citizenship - Bahamas Immigration Department",
+      "url": "https://www.immigration.gov.bs/?p=3785",
+      "publisher": "Government of The Bahamas, Department of Immigration",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

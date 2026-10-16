@@ -42,6 +42,7 @@ Local Taxes Act (NN 115/16 … 152/24): 4% on cash, receivables, securities and 
 direct-line descendants and ancestors, and adoptive relations are exempt for inheritances and gifts (Tax
 Administration "Darovanja"). Real estate goes through the 3% real estate transfer tax, with direct-line
 descendants and ancestors exempt. JSON: `fully_exempt`, no brackets.
+- Surviving spouse (including out-of-wedlock and life partners): exempt from the 4% inheritance and gift tax; the 3% real estate transfer tax exemption covers direct-line relatives only.
 
 ## Wealth tax
 
@@ -97,3 +98,4 @@ Zagreb.
 - 2026-10-15: initial research.
 - 2026-10-15 (data-quality pass): added prime rent (Nekretnine.hr sample, EUR 3,500/month).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

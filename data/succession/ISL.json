@@ -1,0 +1,36 @@
+{
+  "summary": "Children are guaranteed a share of the estate that a will cannot remove. Iceland has no trust law and is outside the Hague Trusts Convention. Foundations exist as self-owned institutions.",
+  "forced_heirship": "yes",
+  "reserved_share": "Descendants are forced heirs under Inheritance Act 8/1962; a secondary source gives half of the intestate share. The article and fraction were not confirmed in the statute.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "Nordic conflict rules apply the law of the deceased's domicile; whether a foreigner may choose their national law was not confirmed.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "No trust law. Self-owned institutions under Act 33/1999 can serve as foundations, but family benefit is restricted.",
+  "open_questions": [
+    "Forced share fraction in Act 8/1962 (a secondary source conflicts with arithmetic from intestacy rules).",
+    "Whether a family foundation is allowed.",
+    "Tax treatment of foreign trusts."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance Act No. 8/1962 (English translation)",
+      "url": "https://www.stjornarradid.is/raduneyti/utanrikisraduneytid/utanrikisradherra/stok-raeda-utanrikirradherra/2017-12-21-Inheritance-Act-No.-8-14-March-1962",
+      "publisher": "Government of Iceland",
+      "kind": "legislation"
+    }
+  ],
+  "family_claims": "",
+  "id": "ISL",
+  "name": "Iceland",
+  "researched_on": "2026-10-16"
+}

@@ -1,4 +1,4 @@
-import { h, clear, fmtEur, fmtPct, displayCurrency, toDisplay, fromDisplay } from "../dom.js";
+import { h, clear, fmtEur, fmtPct, fmtInt, parseWhole, displayCurrency, toDisplay, fromDisplay } from "../dom.js";
 import { state, entries, jur, isIncomePersona } from "../state.js";
 import { renderIncomeCalculator } from "./persona.js";
 import { loadProfile } from "../data.js";
@@ -136,10 +136,13 @@ export function renderCalculator(panel) {
   for (const [k, label, lo, hi] of NUM_FIELDS) {
     // Money fields are shown and typed in the display currency; inputs stay in EUR.
     const money = k !== "children";
-    const shown = (v) => (money ? Math.round(toDisplay(v)) : v);
-    const inp = h("input", { type: "number", min: lo, max: hi, step: money ? 1000 : 1, value: shown(inputs[k]), inputmode: "numeric", id: `c-${k}` });
+    // Money is a text field so it can show thousands separators (1.200.000); any separators are accepted.
+    const shown = (v) => (money ? fmtInt(toDisplay(v)) : v);
+    const inp = money
+      ? h("input", { type: "text", value: shown(inputs[k]), inputmode: "numeric", autocomplete: "off", id: `c-${k}` })
+      : h("input", { type: "number", min: lo, max: hi, step: 1, value: shown(inputs[k]), inputmode: "numeric", id: `c-${k}` });
     inp.addEventListener("change", () => {
-      inputs[k] = money ? clampNum(fromDisplay(Number(inp.value)), lo, hi) : clampNum(inp.value, lo, hi);
+      inputs[k] = money ? clampNum(fromDisplay(parseWhole(inp.value)), lo, hi) : clampNum(inp.value, lo, hi);
       inp.value = shown(inputs[k]);
       run();
     });

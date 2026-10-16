@@ -1,0 +1,38 @@
+{
+  "id": "GUM",
+  "name": "Guam",
+  "researched_on": "2026-10-16",
+  "summary": "Guam is a US territory with a probate code based on California law. Children have no guaranteed share; a surviving spouse is protected by community property rules and a right to elect against the will. The Hague Trusts Convention is not in force (the US signed but has not ratified).",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "Surviving spouse: community property half and a right to elect against the will (15 GCA s 1103, 1105: not read in full). A child omitted unintentionally from a will can claim a share (15 GCA s 503).",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "US-style conflict rules: land by the law of its location, movables by domicile; no choice by nationality.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "Common-law trusts; whether Guam has adopted the Uniform Trust Code was not confirmed. US federal tax applies to trusts. No private foundation statute found; nonprofit corporations only.",
+  "open_questions": [
+    "Text of 15 GCA s 1103 (elective share size).",
+    "Guam trust statute.",
+    "Foundation law.",
+    "The HCCH table as retrieved shows no entry for this jurisdiction (the retrieved copy was marked last updated 2017 and its territorial-extension notes could not be read); re-check the live table."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table, Convention of 1 July 1985 on the Law Applicable to Trusts",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "15 GCA Probate Code",
+      "url": "https://guamcourts.gov/compileroflaws/GCA/15gca/15gc001.PDF",
+      "publisher": "Guam Compiler of Laws",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -115,6 +115,8 @@
         "verification": "unverified",
         "basis": "beneficiary",
         "children_treatment": "taxed",
+        "spouse_treatment": "taxed",
+        "spouse_note": "The Sint Maarten Successiebelastingverordening puts the surviving spouse in the same rate column as children, 2% rising to 6%, after a spouse allowance of NAf 12,000 (arts. 60 and 61; consolidated text CVDR448833). Low confidence: the text may predate later amendments.",
         "exemption": 0,
         "brackets": [
           {

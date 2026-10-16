@@ -1,0 +1,44 @@
+{
+  "id": "MCO",
+  "name": "Monaco",
+  "researched_on": "2026-10-16",
+  "summary": "Children are protected by a reserved share that a will cannot remove, but a person can choose their national law under the 2017 reform. Monaco has had the Hague Trusts Convention in force since 2008. Its own trust-like and foundation tools are narrow.",
+  "forced_heirship": "yes",
+  "reserved_share": "Children are protected by a reserve under the Civil Code and the 2017 reform kept it. The fractions were not confirmed from a primary source.",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Law 1.448 of 28 June 2017: one law, that of the deceased's domicile at death, applies to the whole estate; a person may choose their national law for the whole estate (professio juris). Not under the EU Regulation.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "The Hague Trusts Convention is in force since 1 September 2008 (HCCH table: accession 1 June 2007), and Law 1.448 clarifies recognition of foreign trusts. Domestic law offers a narrow fiducie (Law 214 of 1936) and foundations (Law 56 of 1922) for public-interest purposes; neither was read in detail.",
+  "open_questions": [
+    "Fractions of the Monegasque reserve were not sourced.",
+    "Law 214 (fiducie) and the foundation law were identified from secondary text only; their scope was not confirmed.",
+    "Whether a choice of national law defeats the reserve for children who are Monegasque residents was not confirmed."
+  ],
+  "sources": [
+    {
+      "title": "The impact of the reform of Monegasque private international law",
+      "url": "https://cms.law/en/MCO/Publication/The-impact-of-the-reform-of-Monegasque-private-international-law",
+      "publisher": "CMS",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Journal de Monaco, official legislation",
+      "url": "https://journaldemonaco.gouv.mc",
+      "publisher": "Government of Monaco",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

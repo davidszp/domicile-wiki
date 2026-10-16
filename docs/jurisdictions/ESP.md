@@ -41,6 +41,7 @@ Newcomers who take a Spanish job, a directorship or an approved entrepreneurial 
 - Business relief: 95% reduction for qualifying family businesses (art. 20.2.c, 20.6); not for listed portfolios.
 - Scope: Spanish-resident heirs are taxed on worldwide acquisitions with credit for foreign inheritance tax (art. 23). Non-resident heirs pay only on Spanish-situs assets and can apply the rules of the region where the deceased lived (DA 2ª, after CJEU C-127/12). No tail after leaving Spain.
 - Regional rules matter most here: 99-100% rebates in Madrid, Andalucía, Valencia, Murcia, La Rioja, Castilla y León, Extremadura, Canarias (99.9%), Cantabria and Baleares (100%); heavy tax for children in Catalonia, Asturias, Aragón, Galicia and Navarra; flat 1.5% in the Basque Country. Ceuta and Melilla: 99% rebate if the deceased lived there for 5 years (art. 23 bis).
+- Surviving spouse (national rules): Group II with the EUR 15,956.87 reduction and the same state scale as adult children (7.65%-34%, about 33% on a large estate); regional rebates are in the subnational file.
 
 ## Wealth tax
 
@@ -125,3 +126,4 @@ Regional cities (Barcelona, Marbella, Palma, Valencia, Tenerife, San Sebastián)
 - 2026-10-15: flagged `beckham_art93` as requiring employment or a qualifying activity (`requires_qualifying_activity`), so it is no longer used as the best regime for a passive investor family unless the user opts in.
 - 2026-10-15: added a Holding structures section and a holding_company_notes sentence explaining why no holding structure is scored.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 8,000 to EUR 5,200 (Chamartin, Chamberi, Retiro, Moncloa-Aravaca).
+- 2026-10-16: added surviving-spouse treatment.

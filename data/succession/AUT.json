@@ -1,0 +1,50 @@
+{
+  "id": "AUT",
+  "name": "Austria",
+  "researched_on": "2026-10-16",
+  "summary": "Children and the spouse are guaranteed half of their intestate share (Pflichtteil), and a will cannot remove it. A foreign national habitually resident in Austria can choose the law of their nationality under the EU Succession Regulation. Austria has no trust law, but a Privatstiftung (private foundation) can be set up under the PSG.",
+  "forced_heirship": "yes",
+  "reserved_share": "Descendants and spouse or registered partner: a Pflichtteil of half their statutory share, paid in money (ABGB sections 756-759; parents and other ascendants no longer protected since the 2017 reform).",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Reg. 650/2012 art. 22 lets a person choose the law of their nationality for the whole estate; without a choice, the law of last habitual residence applies (art. 21). A choice of foreign law removes the Austrian Pflichtteil, subject to the public-policy exception (art. 35).",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "yes",
+  "trust_note": "Austria has no domestic trust law and is not party to the Hague Trusts Convention. The HCCH status table lists no signature or ratification for this state; the Convention is not in force here. Foreign trusts are treated in practice as contractual or fiduciary arrangements. Transfers to a Privatstiftung (Privatstiftungsgesetz 1993) are taxed under the Stiftungseingangssteuergesetz, which also reaches comparable foreign foundations.",
+  "open_questions": [
+    "Austrian tax treatment of foreign trusts (Stiftungseingangssteuergesetz scope, income tax on distributions) was not examined in detail.",
+    "Exact ABGB section numbers for the 2017 Pflichtteil rules were taken from memory plus general guides and should be checked at ris.bka.gv.at."
+  ],
+  "sources": [
+    {
+      "title": "ABGB (Austrian Civil Code), Federal Law Gazette database RIS",
+      "url": "https://www.ris.bka.gv.at",
+      "publisher": "Republic of Austria, Federal Chancellery",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "European e-Justice: Successions, Austria",
+      "url": "https://e-justice.europa.eu/topics/family-matters-inheritance/inheritance/succession/at_en",
+      "publisher": "European Commission",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

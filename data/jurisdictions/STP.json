@@ -129,6 +129,8 @@
         "important_exceptions": "Territorial scope (whether foreign assets of a resident decedent or donor are taxed) was not stated by EY.",
         "basis": "beneficiary",
         "children_treatment": "taxed_low",
+        "spouse_treatment": "taxed_low",
+        "spouse_note": "5% for lineal descendants, ascendants and the spouse alike, with no spousal exemption apart from a conditional deduction of 1,000 minimum monthly salaries whose conditions are unknown (EY 2026).",
         "exemption": 0,
         "brackets": [
           {

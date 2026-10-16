@@ -149,6 +149,8 @@
         "verification": "partially_verified",
         "basis": "beneficiary",
         "children_treatment": "taxed_low",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "An inheritance received by the deceased's spouse is outside the Inheritance Tax Act B.E. 2558 whatever its size (Thai law-firm summaries; the statute section was not located). Other heirs pay 5% (descendants, ascendants) or 10% above THB 100 million.",
         "exemption": 100000000,
         "brackets": [
           {

@@ -24,16 +24,20 @@ It is a static site (no server code) and can be deployed as is to Cloudflare Pag
 
 | Area | Where |
 |---|---|
-| World, Europe, UAE and Gulf, Caribbean (with a Bermuda inset) and US-state map views | `web/js/map.js`, `web/data/views.json` |
+| Four ways through the same data: Guided (questions, then a shortlist), Factbook (one page per country), Explorer (filterable table and chart), Compare (changes from where you live, and a tax calculator) | `web/js/main.js`, `web/js/modes/` |
+| Guide on the left: your situation (persona, passport, weights), search, and a globe that turns to the place you last opened | `web/js/guide.js`, `web/js/globe.js` |
 | Swiss cantons, Spanish autonomous communities, Italian regions, UAE emirates, US states | `data/subnational/*.json` |
-| Country and regional profiles, rankings (overall and tax-only), sensitivity at 50–80% tax weight, comparison of up to five, shortlist, CSV export | `web/js/panels/` |
-| Adjustable weights, normalised to 100% | `web/js/panels/weights.js` |
+| Country pages: taxes, immigration paths per passport, spouse and children inheritance, red flags, sources | `web/js/panels/` |
+| Settings kept in the browser (no login): weights and saved weight sets, knock-out rules and exceptions, export and import | `web/js/modes/settings.js`, `web/js/state.js` |
 | Family tax-scenario calculator (EU, US or other citizenship) | `web/js/panels/calculator.js`, `web/js/taxcalc.js` |
-| Methodology and source-register panels | `web/js/panels/methodology.js`, `sources.js` |
+| Methodology and source-register pages | `web/js/panels/methodology.js`, `sources.js` |
 | Researched tax data, one structured file per jurisdiction | `data/jurisdictions/<ISO3>.json` |
 | Dated, human-readable legal dossier per jurisdiction | `docs/jurisdictions/<ISO3>.md` |
 | Scoring configuration (weights, transforms, reference family, bands) | `data/scoring_config.json` |
 | Indicator datasets (World Bank WGI/WDI, UNDP HDI, TI CPI, EF EPI) | `data/indicators/` |
+| Immigration routes per country and citizenship group | `data/immigration/<ISO3>.json`, `data/IMMIGRATION_GUIDE.md` |
+| Borders follow the UN; non-member territories are marked, not ranked | `domicile/geo.py` (`UN_BORDERS`), `data/scoring_config.json` (`territories`) |
+| Simulated visitors and a random-click fuzzer (`make fuzz`, `make fuzz-monkey`) | `tools/fuzz/` |
 | Data-gap report and source register | `docs/DATA_GAPS.md`, `docs/SOURCE_REGISTER.csv` |
 
 ## Setup

@@ -1,0 +1,38 @@
+{
+  "id": "CAN",
+  "name": "Canada",
+  "researched_on": "2026-10-16",
+  "summary": "Succession law is provincial. In the common-law provinces and in Quebec a person may leave an estate freely, but courts can order support for a spouse and dependants (e.g. Ontario Succession Law Reform Act Part V) and a surviving spouse has family-property claims. Trusts are widely used and the Hague Trusts Convention is in force for most provinces, not Quebec. Private foundations exist only as charities.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "Common-law provinces: courts may order support or a share for a spouse, children and dependants (e.g. Ontario SLRA Part V s. 58; British Columbia Wills, Estates and Succession Act s. 60; Alberta Wills and Succession Act Part 5), and a spouse may elect an equalisation under family law (e.g. Ontario Family Law Act s. 6). Quebec: freedom of testation, but spouse partition of the family patrimony on death and alimentary claims within 6 months (Civil Code arts. 684 ff.). Specific articles were not read here and are from general knowledge.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "Not sourced. The general conflict rule is the domicile for movables and the location for land; whether a testator may designate foreign law (Civil Code of Québec arts. 3098 ff.) was not verified.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "HCCH table: Canada ratified 20 Oct 1992, in force 1 Jan 1993, with declarations and reservations, and extension noted by footnote 9, so it applies only to the provinces that implemented it (Nova Scotia's International Trusts Act is one). Quebec and any other non-extended unit are outside it. Provinces have trust law (Quebec: Civil Code arts. 1260-1298). Foundations: Quebec Civil Code arts. 1256-1259 allow foundations for general-interest purposes; elsewhere private foundations are registered charities (Income Tax Act s. 149.1). Canada taxes trusts, including a 21-year deemed disposition (ITA s. 104(4)); not read here.",
+  "open_questions": [
+    "The HCCH footnote 9 listing which provinces and territories the Convention extends to was not retrievable from the page; confirm.",
+    "Quebec's rule on choosing the law applicable to a succession (Civil Code arts. 3098 ff.) was not read.",
+    "Provincial family-provision statutes and article numbers were cited from general knowledge; verify each.",
+    "Ontario and other provincial trust-registration or tax rules (T3 reporting, bare trust rules) not covered."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention on the Law Applicable to Trusts and on their Recognition (1985)",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Nova Scotia International Trusts Act (S.N.S. 2005, c. 41)",
+      "url": "https://nslegislature.ca/sites/default/files/legc/PDFs/annual statutes/2005 Fall/c041.pdf",
+      "publisher": "Nova Scotia Legislature",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

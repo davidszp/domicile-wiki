@@ -1,0 +1,241 @@
+{
+  "id": "MNE",
+  "name": "Montenegro",
+  "summary": "Montenegro is not in the EU: EU citizens, like everyone else, need a temporary residence permit for stays beyond the visa-free period. Common routes are owning property (a minimum assessed value of EUR 150,000 for non-EU citizens from 2026; EU citizens are exempt from the value test), a remote-work permit, running a company, or employment. The citizenship-by-investment programme ended on 31 December 2022 and has not reopened.",
+  "naturalisation": "Reported 10 years of continuous legal residence (5 years temporary, then 5 years permanent), with language and other tests; secondary sources.",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "Montenegro does not generally recognise dual nationality (IMI Daily); exceptions and treaty cases not checked.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "EUR 150,000 assessed value for non-EU citizens; no stated minimum for EU/EEA/Swiss citizens (property must still be owned).",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "A residence permit does not by itself make you tax resident; Montenegro uses a 183-day test and centre of interests.",
+      "minimum_investment": {
+        "amount": 150000,
+        "currency": "EUR"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "id": "property_residence",
+      "name": "Temporary residence on property ownership",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Owning real estate in Montenegro gives a renewable one-year residence permit, without the right to work. Since 17 January 2026 non-EU citizens need property assessed at EUR 150,000 or more.",
+      "requirements": "Amendments to the Law on Foreigners (in force 17 January 2026 per IMI Daily; adopted 31 December 2025): third-country nationals must own property with a tax-authority assessed value of at least EUR 150,000 (hold at least a half share; co-owners need EUR 150,000 per share-holder), prove actual use and pay property tax. Nationals of EU states, Iceland, Liechtenstein, Norway and Switzerland are excluded from the value test. The permit does not allow work or business. Permits issued before 17 January 2026 renew without the value test.",
+      "physical_presence": "Actual use of the property; day count not sourced",
+      "sources": [
+        {
+          "title": "Montenegro Sets EUR 150,000 Minimum for Property-Based Residency",
+          "url": "https://www.imidaily.com/europe/montenegro-sets-e150000-minimum-for-property-based-residency/",
+          "publisher": "Investment Migration Insider",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Montenegro adopts amendments to the Foreigners Act",
+          "url": "https://bdkadvokati.com/montenegro-adopts-amendments-to-the-foreigners-act",
+          "publisher": "BDK Advokati",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Residence Permit in Montenegro 2026",
+          "url": "https://mdrealty.me/en/blog/vnzh-v-chernogorii-2026-porog-v-200-000-evro-i-nalogi-vmesto-nayma-sotrudnikov",
+          "publisher": "MD Realty",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "Up to 40 days",
+      "family": "Spouse and children up to 18 can join.",
+      "tax_note": "Becoming tax resident after 183 days or centre of interests; permit alone does not decide tax residence.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "digital_nomad",
+      "name": "Temporary residence for digital nomads",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Remote workers employed by or working for a foreign company can get a residence permit of up to two years, extendable once by up to two years.",
+      "requirements": "Work electronically for a foreign company or your own company not registered in Montenegro; enter legally; proof of financial means of support (no fixed amount published), accommodation, health insurance, a valid passport (3 months beyond the permit), clean record, and an employment contract or proof of remote work. Applied for in person at the Ministry of Internal Affairs office. Decision within 40 days.",
+      "physical_presence": "Reside in Montenegro for the permit period",
+      "sources": [
+        {
+          "title": "Legal status for digital nomads",
+          "url": "https://digitalnomads.gov.me/article/legal-status-for-nomads",
+          "publisher": "Government of Montenegro (digitalnomads.gov.me)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "company_director",
+      "name": "Residence as company owner or director (integrated work and residence)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Foreigners who register a Montenegrin company or business can obtain a combined work and residence permit. From 1 January 2027 owners of more than 51% must show the company paid at least EUR 5,000 a year in taxes and contributions to renew.",
+      "requirements": "Executive directors and registered entrepreneurs who own over 51% of a Montenegrin company: renewal conditional on EUR 5,000 paid in taxes and social contributions in the previous year (applies from 1 January 2027, per MD Realty; IMI Daily describes it as part of the 2026 amendments). EU, Iceland, Norway, Liechtenstein and Swiss nationals, permanent residents and holders of other grounds are exempt. Set-up capital and registration costs not researched.",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Montenegro Sets EUR 150,000 Minimum for Property-Based Residency",
+          "url": "https://www.imidaily.com/europe/montenegro-sets-e150000-minimum-for-property-based-residency/",
+          "publisher": "Investment Migration Insider",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Residence Permit in Montenegro 2026",
+          "url": "https://mdrealty.me/en/blog/vnzh-v-chernogorii-2026-porog-v-200-000-evro-i-nalogi-vmesto-nayma-sotrudnikov",
+          "publisher": "MD Realty",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "work_summary",
+      "name": "Employment permit (summary)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Foreign employees get a combined work and residence permit tied to a job; IT specialists and doctors can qualify on a standard labour contract of 12 months or more.",
+      "requirements": "Standard labour contract of at least 12 months for IT specialists and doctors, with pay meeting the Labour Law minimum (EUR 600 medium-level or EUR 800 higher-level qualifications, per MD Realty). General quota and labour-market test rules not researched.",
+      "physical_presence": "Residence at place of work",
+      "sources": [
+        {
+          "title": "Residence Permit in Montenegro 2026",
+          "url": "https://mdrealty.me/en/blog/vnzh-v-chernogorii-2026-porog-v-200-000-evro-i-nalogi-vmesto-nayma-sotrudnikov",
+          "publisher": "MD Realty",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "closed_to_new",
+      "status_note": "Programme ended on 31 December 2022 under EU pressure; no reopening announced as of 16 October 2026 (secondary sources). Pending applications continued to be processed.",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "cbi_programme",
+      "name": "Citizenship by investment (Montenegro CIP)",
+      "kind": "citizenship_by_investment",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "citizenship",
+      "summary": "The investor passport scheme closed at the end of 2022. About 1,100 applications were received; none can be filed now.",
+      "requirements": "Closed. Original investment amounts not recorded because they were not sourced this session.",
+      "physical_presence": "Not applicable (closed)",
+      "sources": [
+        {
+          "title": "Montenegro Citizenship by Investment programme closure",
+          "url": "https://globallawexperts.com/citizenship-by-investment-montenegro/",
+          "publisher": "Global Law Experts",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Official Montenegrin sources for the Law on Foreigners amendments (Official Gazette) could not be opened; property route figures come from IMI Daily and law-firm summaries. Entry-into-force dates in sources vary (adopted 31 December 2025; in force 17 January 2026).",
+    "Digital nomad: no fixed income figure published; fees not sourced; one aggregator claims the programme is legislated only to 31 December 2026 (not found on the official page).",
+    "Government fees for each route not sourced.",
+    "Years to permanent residence and citizenship on each route taken from a secondary summary (5 + 5 years); whether property-ownership years count not confirmed.",
+    "Original CBI investment amounts and details of the old programme not sourced.",
+    "Visa-free duration for EU, US and other citizens not researched."
+  ],
+  "sources": [
+    {
+      "title": "Montenegro Sets EUR 150,000 Minimum for Property-Based Residency",
+      "url": "https://www.imidaily.com/europe/montenegro-sets-e150000-minimum-for-property-based-residency/",
+      "publisher": "Investment Migration Insider",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Montenegro adopts amendments to the Foreigners Act",
+      "url": "https://bdkadvokati.com/montenegro-adopts-amendments-to-the-foreigners-act",
+      "publisher": "BDK Advokati",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Legal status for digital nomads",
+      "url": "https://digitalnomads.gov.me/article/legal-status-for-nomads",
+      "publisher": "Government of Montenegro (digitalnomads.gov.me)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

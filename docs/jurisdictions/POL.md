@@ -46,6 +46,7 @@ year (art. 3(1a); PwC). EU: free movement. US/other: purpose-based permits; no i
 - Scope (art. 1-3): Polish-situs assets; foreign assets if the recipient is a Polish citizen or permanent
   resident.
 - JSON: `basis = beneficiary`, `children_treatment = exempt_with_conditions`, `brackets = []`.
+- Surviving spouse (`spouse_treatment` `exempt_with_conditions`): Spouse is exempt (zero group, Art. 4a) if reported within 6 months and the acquirer is a Polish/EU/EEA citizen or resident (Art. 4(4)); missed reports are taxed at Group I rates.
 
 ## Wealth tax
 
@@ -140,3 +141,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: added Warsaw cost of living (Otodom.pl rent sample, ASW 2026-27 fees converted at the NBP rate).
 - 2026-10-15: added structure regime `family_foundation` (fundacja rodzinna: 0% CIT on permitted activity, 15% on distributions, close family PIT-exempt; August 2026 project for 19% noted, not law) and a Holding structures section.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

@@ -1,0 +1,329 @@
+{
+  "id": "TUR",
+  "name": "Türkiye",
+  "summary": "Türkiye is not in the EU, so EU, US and other passports use the same routes. Citizenship by investment starts at USD 400,000 in real estate (held 3 years) or USD 500,000 in a bank deposit, bonds, funds or fixed capital. A short-term residence permit by property needs USD 200,000. A digital nomad visa exists (about USD 3,000 a month, unconfirmed). Ordinary naturalisation is the fallback.",
+  "naturalisation": "Ordinary naturalisation (Law No. 5901) is generally 5 years of residence plus language and conduct; not re-verified from the statute in this pass. Citizenship by investment by presidential decision needs no residence period.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Türkiye allows dual citizenship; the applicant's other country must allow it too (Global Citizen Solutions).",
+  "routes": [
+    {
+      "id": "cbi_real_estate",
+      "name": "Citizenship by investment - real estate (USD 400,000)",
+      "kind": "citizenship_by_investment",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "citizenship",
+      "summary": "Buy property worth at least USD 400,000, keep it 3 years, and get a Turkish passport for yourself, spouse and children under 18.",
+      "requirements": "Exceptional citizenship by presidential decision (Law No. 5901): property worth at least USD 400,000, attested by the Ministry of Environment, Urbanization and Climate Change; the title deed carries a no-sale restriction of at least 3 years and the buyer declares the purpose. Multiple properties can be combined. Applicant, spouse and children under 18 (or disabled children of any age) can be included; no residence or language requirement; clean record, no security concerns. Citizens of Armenia, Cuba, Nigeria, North Korea and Syria do not qualify (Global Citizen Solutions).",
+      "minimum_investment": {
+        "amount": 400000,
+        "currency": "USD"
+      },
+      "investment_options": "Other options start at USD 500,000 (see the following routes).",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "None required; the applicant must visit once for biometrics (Global Citizen Solutions).",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "About 12 months (secondary source).",
+      "family": "Spouse and children under 18; parents get a residence permit only after citizenship.",
+      "tax_note": "Citizenship does not by itself create tax residence; residence is by 6 months' stay or domicile. A 2026 tax reform for new residents was reported by one source and is not verified.",
+      "sources": [
+        {
+          "title": "Acquiring Property and Citizenship - Invest in Türkiye",
+          "url": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "publisher": "Investment Office of the Presidency of the Republic of Türkiye",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Turkey Citizenship by Investment Changes: 2026 Update",
+          "url": "https://www.globalcitizensolutions.com/turkey-citizenship-by-investment-changes",
+          "publisher": "Global Citizen Solutions",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "cbi_deposit",
+      "name": "Citizenship by investment - bank deposit (USD 500,000)",
+      "kind": "citizenship_by_investment",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "citizenship",
+      "summary": "Deposit at least USD 500,000 in a Turkish bank for 3 years and get citizenship.",
+      "requirements": "USD 500,000 deposit in a Turkish bank, held at least 3 years, attested by the Banking Regulation and Supervision Agency. Same conditions as the property route. Applicant, spouse and children under 18 (or disabled children of any age) can be included; no residence or language requirement; clean record, no security concerns. Citizens of Armenia, Cuba, Nigeria, North Korea and Syria do not qualify (Global Citizen Solutions).",
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "None required.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Spouse and children under 18.",
+      "tax_note": "See property route.",
+      "sources": [
+        {
+          "title": "Acquiring Property and Citizenship - Invest in Türkiye",
+          "url": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "publisher": "Investment Office of the Presidency of the Republic of Türkiye",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Turkey Citizenship by Investment Changes: 2026 Update",
+          "url": "https://www.globalcitizensolutions.com/turkey-citizenship-by-investment-changes",
+          "publisher": "Global Citizen Solutions",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "cbi_funds_bonds",
+      "name": "Citizenship by investment - bonds, funds, pension, fixed capital, jobs",
+      "kind": "citizenship_by_investment",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "citizenship",
+      "summary": "Other citizenship routes: USD 500,000 in government bonds, fund shares, a private pension or fixed capital, or creating 50 jobs.",
+      "requirements": "Each USD 500,000 option is held at least 3 years: government bonds (Ministry of Treasury and Finance), real estate or venture capital fund shares (Capital Markets Board), private pension funds (insurance and pension regulator), fixed capital investment (Ministry of Industry and Technology). Or create jobs for at least 50 people (Ministry of Labor and Social Security). Applicant, spouse and children under 18 (or disabled children of any age) can be included; no residence or language requirement; clean record, no security concerns. Citizens of Armenia, Cuba, Nigeria, North Korea and Syria do not qualify (Global Citizen Solutions).",
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "investment_options": "Government bonds, real estate or venture fund shares, private pension, fixed capital investment (each USD 500,000, 3 years); or 50 jobs with no capital minimum.",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "None required.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Spouse and children under 18.",
+      "tax_note": "See property route.",
+      "sources": [
+        {
+          "title": "Acquiring Property and Citizenship - Invest in Türkiye",
+          "url": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "publisher": "Investment Office of the Presidency of the Republic of Türkiye",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Obtaining a Residence Permit - Invest in Türkiye",
+          "url": "https://www.invest.gov.tr/en/investmentguide/pages/obtaining-a-residence-permit.aspx",
+          "publisher": "Investment Office of the Presidency of the Republic of Türkiye",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Turkey Citizenship by Investment Changes: 2026 Update",
+          "url": "https://www.globalcitizensolutions.com/turkey-citizenship-by-investment-changes",
+          "publisher": "Global Citizen Solutions",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "residence_by_property",
+      "name": "Short-term residence permit by property purchase (USD 200,000)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Own residential property worth at least USD 200,000 and get a renewable short-term residence permit.",
+      "requirements": "Law No. 6458: a short-term residence permit for property owners, issued up to 2 years (typically 1 year at a time), renewable while ownership continues. Law-firm reports say a Directorate General of Migration Management directive effective 16 October 2023 set one nationwide minimum of USD 200,000 (previously USD 75,000 in metropolitan areas, USD 50,000 elsewhere); earlier buyers keep the old rules. Residential use only; foreigners' holdings capped at 10% of a district and 30 hectares. The invest.gov.tr guide gives no property threshold. Enter legally before applying.",
+      "minimum_investment": {
+        "amount": 200000,
+        "currency": "USD"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "No minimum day count; personal attendance at the appointment.",
+      "path_to_permanent_years": 8,
+      "path_to_citizenship_years": null,
+      "processing_time": "Not sourced.",
+      "family": "Family not addressed by the source; family permits generally follow the main holder.",
+      "tax_note": "A residence permit does not make you tax resident; more than 6 months in a calendar year does.",
+      "sources": [
+        {
+          "title": "Residency by Property Purchase in Turkey",
+          "url": "https://www.pilc.law/residency-by-property-purchase-in-turkey/",
+          "publisher": "PILC law firm",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Obtaining a Residence Permit - Invest in Türkiye",
+          "url": "https://www.invest.gov.tr/en/investmentguide/pages/obtaining-a-residence-permit.aspx",
+          "publisher": "Investment Office of the Presidency of the Republic of Türkiye",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "long_term_residence",
+      "name": "Long-term residence permit (indefinite)",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "permanent_residence",
+      "summary": "After 8 years of continuous legal residence you can apply for an indefinite residence permit.",
+      "requirements": "Invest in Türkiye: at least 8 years of continuous residence, no social aid in the last 3 years, clean police record. Investors meeting the Council of Ministers' amounts (USD 400,000-500,000 options) may also get a 5-year permit and apply for long-term permit or citizenship.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Continuous residence for 8 years.",
+      "path_to_permanent_years": 8,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "See residence permit route.",
+      "sources": [
+        {
+          "title": "Obtaining a Residence Permit - Invest in Türkiye",
+          "url": "https://www.invest.gov.tr/en/investmentguide/pages/obtaining-a-residence-permit.aspx",
+          "publisher": "Investment Office of the Presidency of the Republic of Türkiye",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "digital_nomad_visa",
+      "name": "Digital Nomad Visa",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "A visa for remote workers employed or self-employed for clients abroad, reported at about USD 3,000 a month.",
+      "requirements": "Go Türkiye lists a Digital Nomad Identification Certificate and a pre-application, then a visa and short-term residence application at a Turkish mission. Secondary sources report income of about USD 3,000 a month (USD 36,000 a year), age 21-55 and a degree; eligible nationalities not confirmed (the consulate document lists countries including the US, UK, Germany). Official page did not show these figures.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 36000,
+        "currency": "USD"
+      },
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Not sourced.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "A 2026 reform reported by one source gives qualified remote workers a deduction; not verified.",
+      "sources": [
+        {
+          "title": "Digital Nomads - Go Türkiye",
+          "url": "https://goturkiye.com/digitalnomads",
+          "publisher": "Türkiye Ministry of Culture and Tourism (Go Türkiye)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "work_permit",
+      "name": "Employer-sponsored work permit",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Foreigners working in Türkiye need a work permit from the Ministry of Labor, applied for by the employer.",
+      "requirements": "Employer applies under the International Labour Force Law (No. 6735); quotas and salary floors apply. Residence is issued with the permit. Not researched in detail.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Not researched.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Resident taxpayers are taxed on worldwide income.",
+      "sources": [
+        {
+          "title": "Turkey - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/turkey/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Government fees for citizenship by investment: sourced figures come only from a consultancy (USD 400 application, USD 500 passport, USD 700 health cover); not given as fees here.",
+    "The invest.gov.tr guide is marked a test version; the Official Gazette text of the investment thresholds was not read.",
+    "Residence by property: USD 200,000 comes from law-firm reports of a migration directive (16 Oct 2023); the directive itself and the January 2025 appraisal change were not read.",
+    "Digital Nomad Visa: income, age, degree and eligible nationalities are not confirmed on an official page.",
+    "Ordinary naturalisation years and the 2026 tax reform for new residents were not verified."
+  ],
+  "sources": [
+    {
+      "title": "Acquiring Property and Citizenship - Invest in Türkiye",
+      "url": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+      "publisher": "Investment Office of the Presidency of the Republic of Türkiye",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Turkey - Individual - Residence",
+      "url": "https://taxsummaries.pwc.com/turkey/individual/residence",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

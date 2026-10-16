@@ -54,6 +54,7 @@ at 1% from the 31 December 2026 valuation date. The US-Hungary tax treaty ended 
 - JSON: `basis = beneficiary`, `children_treatment = fully_exempt`, `brackets = []`,
   `gifts_same_as_inheritance = true`, `other_transfer_cost_rate = 0` (notary probate fees small, not
   quantified).
+- Surviving spouse: exempt from inheritance and gift duty on the same terms as lineal relatives.
 
 ## Wealth tax
 
@@ -182,3 +183,4 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - 2026-10-15: added structure regime `asset_management_foundation` (0% on financial-instrument income, 15% on distributions under the rules in force from 31 Aug 2026, draft wealth tax pro forma with the foundation as a separate taxpayer) and a Holding structures section.
 - 2026-10-15: pro-forma wealth tax now applies both spouses' HUF 1bn allowances (HUF 2bn) for the married reference couple, consistent with the draft.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

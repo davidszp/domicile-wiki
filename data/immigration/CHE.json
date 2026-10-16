@@ -1,0 +1,233 @@
+{
+  "id": "CHE",
+  "name": "Switzerland",
+  "summary": "EU/EFTA citizens have free movement under the Agreement on the Free Movement of Persons: those who do not work get a B permit if they have sufficient means and health and accident insurance. US and other citizens have no investor route; the realistic options are a discretionary cantonal permit for wealthy people (usually paired with lump-sum taxation), a retiree permit, or a quota-limited work permit. Lump-sum taxation (tax on living costs, not on income) is available to non-working foreigners in most but not all cantons.",
+  "naturalisation": "Ordinary naturalisation after 10 years of residence with a C permit (at least 3 of the last 5 years before applying); cantons and communes add their own residence minimums (2 to 5 years locally), integration and language tests.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Swiss law does not require renouncing the previous citizenship; the applicant's home country may still withdraw its own.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "Spouse and relatives in the descending and ascending line can follow under the same agreement.",
+      "tax_note": "Residents are taxed on worldwide income and wealth. Non-working EU/EFTA citizens may apply for lump-sum taxation in cantons that still offer it.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": 10,
+      "id": "eu_efta_free_movement_inactive",
+      "name": "EU/EFTA free movement, non-working person (B permit)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "grants": "temporary_residence",
+      "summary": "EU and EFTA citizens who do not work can live in Switzerland with a five-year renewable B permit if they can support themselves and are insured.",
+      "requirements": "Entitlement under the Agreement on the Free Movement of Persons: sufficient financial means for the person and family, and health and accident insurance. SEM does not publish a fixed amount; cantons judge whether a Swiss citizen in the same position would need social assistance. Permit valid 5 years, renewable.",
+      "physical_presence": "Genuine residence in Switzerland (day count not sourced)",
+      "sources": [
+        {
+          "title": "Ausweis B EU/EFTA (Aufenthaltsbewilligung)",
+          "url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_b_eu_efta.html",
+          "publisher": "State Secretariat for Migration (SEM)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Lump-sum tax replaces ordinary income and wealth tax; Swiss-source income taxed normally. Federal base CHF 435,000 for 2026; cantonal bases differ (Geneva cantonal base CHF 406,651 indexed in 2021, so it is not directly comparable).",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "lump_sum_taxation",
+      "name": "Lump-sum taxation (Besteuerung nach dem Aufwand) with residence permit",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Foreigners who move to Switzerland and do not work there can be taxed on their living costs instead of their worldwide income and wealth. It is a tax status that sits on top of a residence permit, not a permit itself.",
+      "requirements": "Federal rules (DBG art. 14, StHG art. 6): not a Swiss citizen, first Swiss residence or return after at least 10 years abroad, no gainful activity in Switzerland. Taxable base is the highest of: the federal minimum (CHF 435,000 for the 2026 direct federal tax), 7 times the annual rent or rental value (3 times pension price for hotel residents), or the household's actual living costs; a control calculation on Swiss-source income applies. Cantons set their own minimums, some higher; several cantons have abolished the regime (cantonal decisions, e.g. Zurich, Basel-Stadt, Basel-Landschaft, Schaffhausen, Appenzell Ausserrhoden). A residence permit comes first: EU/EFTA citizens through free movement, others through the discretionary permit below.",
+      "physical_presence": "Swiss domicile required; no fixed day count in the federal rules (cantons may add)",
+      "sources": [
+        {
+          "title": "Merkblatt über die Besteuerung nach dem Aufwand (gültig ab 1. Januar 2026)",
+          "url": "https://www.ur.ch/_docn/439772/14_Merkblatt_Aufwandbesteuerung_01.01.2026_1.pdf",
+          "publisher": "Kanton Uri, Steuerverwaltung",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Calcul de l'imposition d'après la dépense",
+          "url": "https://www.ge.ch/imposition-depense/calcul-lie-imposition-depense",
+          "publisher": "République et canton de Genève",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": 10,
+      "id": "non_eu_public_interest_permit",
+      "name": "Non-EU permit in the important public (fiscal) interest",
+      "kind": "other",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Wealthy non-EU citizens without a job can sometimes get a discretionary cantonal residence permit because their tax payments are in the canton's interest. There is no fixed investment or income threshold.",
+      "requirements": "Discretionary permit under the Foreign Nationals and Integration Act (AIG) art. 30 para. 1 let. b, granted by the canton and approved by SEM. In practice tied to lump-sum taxation or a high tax contribution; cantons set their own expected tax amount. Not re-verified against the statute text in this session.",
+      "physical_presence": "Genuine domicile in Switzerland; long absences endanger renewal",
+      "sources": [
+        {
+          "title": "Merkblatt über die Besteuerung nach dem Aufwand (gültig ab 1. Januar 2026)",
+          "url": "https://www.ur.ch/_docn/439772/14_Merkblatt_Aufwandbesteuerung_01.01.2026_1.pdf",
+          "publisher": "Kanton Uri, Steuerverwaltung",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Becoming a Swiss citizen",
+          "url": "https://www.sem.admin.ch/sem/en/home/overview-einbuergerung.html",
+          "publisher": "State Secretariat for Migration (SEM)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": 10,
+      "id": "non_eu_retiree",
+      "name": "Non-EU retiree permit (age 55+)",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Retired non-EU citizens aged 55 or over can apply for a permit if they have close ties to Switzerland and enough money not to need social assistance.",
+      "requirements": "AIG art. 28 and the Ordinance on Admission (VZAE art. 25): minimum age 55, no gainful activity, special personal ties to Switzerland (e.g. earlier long residence, family), sufficient funds, health insurance. Cantonal and SEM approval. Statute references from earlier research, not re-verified against the text this session.",
+      "physical_presence": "Swiss domicile",
+      "sources": [
+        {
+          "title": "Becoming a Swiss citizen",
+          "url": "https://www.sem.admin.ch/sem/en/home/overview-einbuergerung.html",
+          "publisher": "State Secretariat for Migration (SEM)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": 10,
+      "id": "work_permit",
+      "name": "Work permits (summary)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "EU/EFTA citizens can take a job freely with an employment contract of at least 365 days (B permit, five years). Non-EU citizens need an employer, a permit under national quotas, and must be highly qualified.",
+      "requirements": "EU/EFTA: B permit on showing a contract of 365 days or more or an open-ended contract; valid 5 years, renewable. Non-EU/EFTA: AIG art. 18-21, national annual quotas, priority for Swiss and EU/EFTA workers, higher-qualified specialists only. Switzerland has no digital nomad visa.",
+      "physical_presence": "Residence at the place of work",
+      "sources": [
+        {
+          "title": "Ausweis B EU/EFTA (Aufenthaltsbewilligung)",
+          "url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_b_eu_efta.html",
+          "publisher": "State Secretariat for Migration (SEM)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Government fees for permits and cantonal lump-sum taxation rulings not sourced.",
+    "Years until the C (permanent) permit for EU/EFTA citizens and for non-EU citizens not verified this session.",
+    "Exact list of cantons that still offer lump-sum taxation in 2026 not verified from an official source; abolished cantons listed from earlier research.",
+    "AIG art. 28 and art. 30 requirements for non-EU retirees and public-interest permits not re-verified against the statute.",
+    "Whether the cantonal base of Geneva has since been re-indexed after 2021 not verified."
+  ],
+  "sources": [
+    {
+      "title": "Ausweis B EU/EFTA (Aufenthaltsbewilligung)",
+      "url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_b_eu_efta.html",
+      "publisher": "State Secretariat for Migration (SEM)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Merkblatt über die Besteuerung nach dem Aufwand (gültig ab 1. Januar 2026)",
+      "url": "https://www.ur.ch/_docn/439772/14_Merkblatt_Aufwandbesteuerung_01.01.2026_1.pdf",
+      "publisher": "Kanton Uri, Steuerverwaltung",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Calcul de l'imposition d'après la dépense",
+      "url": "https://www.ge.ch/imposition-depense/calcul-lie-imposition-depense",
+      "publisher": "République et canton de Genève",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Becoming a Swiss citizen",
+      "url": "https://www.sem.admin.ch/sem/en/home/overview-einbuergerung.html",
+      "publisher": "State Secretariat for Migration (SEM)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

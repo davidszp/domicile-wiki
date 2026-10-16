@@ -53,6 +53,7 @@ D.Lgs. 346/1990, as amended by D.Lgs. 139/2024 (PwC):
 - Italian real estate also pays a 2% mortgage tax and a 1% cadastral tax (general knowledge).
 - Family business exemption: control must be held for 5 years (general knowledge).
 - JSON: beneficiary basis, exemption 1,000,000, a single 4% bracket, children_treatment taxed_low.
+- Surviving spouse: the same 4% rate and EUR 1 million per-heir allowance as children (about 3.9% effective on EUR 35 million), so taxed_low; under the art. 24-bis option foreign assets pass untaxed.
 
 ## Wealth tax
 
@@ -205,3 +206,4 @@ Milan.
 - 2026-10-15: re-verified `holding_srl` against statute texts: art. 11 DL 38/2026 (conv. L. 88/2026) repeals the L. 199/2025 5%/EUR 500,000 thresholds from 1 Jan 2026 (read on Normattiva); art. 87 TUIR conditions read; added the non-operating company test (art. 30 L. 724/1994: 1% presumed revenue, 0.75% minimum income, IRES 34.5%; no exclusion for minority holders of listed shares) and IRAP for holdings (dividends and share gains outside the base). Rates unchanged at 1.2% but now explicitly conditional; verification raised to verified, confidence kept medium.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept at EUR 8,250 but flagged as possibly ultra-prime (LuxuryEstate); no usable non-luxury 4-bedroom listings could be opened, open question added.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 8,250 (LuxuryEstate) to EUR 3,275 (10 four-room flats, Porta Romana/Montenero, MioAffitto).
+- 2026-10-16: added surviving-spouse treatment.

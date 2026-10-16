@@ -1,0 +1,251 @@
+{
+  "id": "BHR",
+  "name": "Bahrain",
+  "summary": "No free movement for anyone; EU, US and other passports use the same Golden Residency categories (Resolution 20 of 2022): property (BHD 130,000 since the NPRA announcement of 26 November 2025, still BHD 200,000 on the portal page), employees with 5 years' residence and BHD 2,000 salary, retirees, and talented individuals. No remote-work visa was found. Citizenship is not realistically open.",
+  "naturalisation": "Not researched from the Bahraini Nationality Law in this pass. Golden Residency does not lead to citizenship.",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "General rule, not verified in this pass: Bahrain does not generally allow dual nationality for naturalised citizens.",
+  "routes": [
+    {
+      "id": "golden_residency_property",
+      "name": "Golden Residency - property owners",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Own Bahraini property worth at least BHD 130,000 and get a 10-year renewable residence without a sponsor.",
+      "requirements": "NPRA announced on 26 November 2025 a cut of the minimum from BHD 200,000 to BHD 130,000. The Bahrain National Portal page (undated) still says title deed value of at least BHD 200,000. Documents: valid health insurance in Bahrain, passport valid 6+ months, title deed, 6-month bank statement. Processing 5 working days.",
+      "minimum_investment": {
+        "amount": 130000,
+        "currency": "BHD"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 305,
+        "currency": "BHD"
+      },
+      "fees_note": "BHD 5 application (non-refundable) plus BHD 300 for the 10-year permit.",
+      "physical_presence": "Not stated on the portal; one source reports 90 days a year (unconfirmed).",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "5 working days.",
+      "family": "Spouse, children and parents can be included (secondary source).",
+      "tax_note": "Bahrain has no personal income tax.",
+      "sources": [
+        {
+          "title": "Golden Residency for Foreigners Owning Real Estate in Bahrain",
+          "url": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=3021",
+          "publisher": "Bahrain National Portal",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Bahrain lowers minimum real estate investment requirement for Golden Residency",
+          "url": "https://www.newsofbahrain.com/bahrain/122451.html",
+          "publisher": "News of Bahrain (NPRA announcement, 26 Nov 2025)",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Bahrain makes Golden Visa more affordable, slashes investment threshold",
+          "url": "https://gulfnews.com/world/gulf/bahrain-makes-golden-visa-more-affordable-slashes-investment-threshold-1.500364669",
+          "publisher": "Gulf News (30 Nov 2025)",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "golden_residency_employee",
+      "name": "Golden Residency - employees living in Bahrain",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Residents with 5 years in Bahrain and a salary of at least BHD 2,000 a month can switch to a 10-year Golden Residency.",
+      "requirements": "NPRA: 5 years of residence in Bahrain and average basic salary of at least BHD 2,000 over the last 5 years (portal wording; salary certificate shows minimum BHD 2,000). Documents: health insurance, 6-month bank statement. Processing 5 working days.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 24000,
+        "currency": "BHD"
+      },
+      "government_fees": {
+        "amount": 305,
+        "currency": "BHD"
+      },
+      "fees_note": "BHD 5 plus BHD 300 every 10 years. Income is BHD 2,000 a month x 12; the period is monthly per secondary sources, not stated on the NPRA page.",
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "5 working days.",
+      "family": "",
+      "tax_note": "Bahrain has no personal income tax.",
+      "sources": [
+        {
+          "title": "Golden Residency for Foreign Residents in Bahrain (Employees/Retirees)",
+          "url": "https://www.npra.gov.bh/en/services/visas-residence-permit/residence-permits-services/golden-residency/golden-residence-permit-employedretired-foreigner-residing-in-bahrain/",
+          "publisher": "Nationality, Passports and Residence Affairs (NPRA)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Bahrain - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/bahrain/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "golden_residency_retiree",
+      "name": "Golden Residency - retirees",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Retirees with a pension of BHD 2,000 a month (resident) or BHD 4,000 a month (living abroad) can get Golden Residency.",
+      "requirements": "Resident retirees: 15 years of work in Bahrain and a pension above BHD 2,000 a month (Gulf News). Non-resident retirees: pension above BHD 4,000 a month. Official criteria text not read; the NPRA page covers employees and retirees under one service.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 48000,
+        "currency": "BHD"
+      },
+      "government_fees": {
+        "amount": 305,
+        "currency": "BHD"
+      },
+      "fees_note": "BHD 5 plus BHD 300. Income shown is the non-resident figure, BHD 4,000 x 12; resident retirees BHD 24,000.",
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Bahrain has no personal income tax.",
+      "sources": [
+        {
+          "title": "Golden Residency for Foreign Residents in Bahrain (Employees/Retirees)",
+          "url": "https://www.npra.gov.bh/en/services/visas-residence-permit/residence-permits-services/golden-residency/golden-residence-permit-employedretired-foreigner-residing-in-bahrain/",
+          "publisher": "Nationality, Passports and Residence Affairs (NPRA)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Bahrain makes Golden Visa more affordable, slashes investment threshold",
+          "url": "https://gulfnews.com/world/gulf/bahrain-makes-golden-visa-more-affordable-slashes-investment-threshold-1.500364669",
+          "publisher": "Gulf News (30 Nov 2025)",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "golden_residency_talent",
+      "name": "Golden Residency - highly talented individuals",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "A 10-year residency for people with a recognised talent certificate in academic, sporting, entrepreneurial, artistic or literary fields.",
+      "requirements": "Talent certificate required; no numeric criteria on the portal. Processing 10 working days.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 305,
+        "currency": "BHD"
+      },
+      "fees_note": "BHD 5 plus BHD 300.",
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "10 working days.",
+      "family": "",
+      "tax_note": "Bahrain has no personal income tax.",
+      "sources": [
+        {
+          "title": "Golden Residency for Talented Individuals",
+          "url": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=3022",
+          "publisher": "Bahrain National Portal",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "work_permit",
+      "name": "Employer-sponsored work residence",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Most expatriates live in Bahrain on a work permit and residence permit through an employer (LMRA/NPRA); companies can be 100% foreign owned in most sectors.",
+      "requirements": "Employer applies for a work visa via LMRA and NPRA; residence tied to the job. Not researched in detail.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Not researched.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Bahrain has no personal income tax.",
+      "sources": [
+        {
+          "title": "Bahrain - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/bahrain/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Property threshold conflict: the Bahrain National Portal page (undated) still says BHD 200,000; NPRA announced BHD 130,000 on 26 November 2025. The effective date is not stated.",
+    "Retiree and salary criteria differ across secondary sources (one 2026 report says BHD 4,000 salary for professionals); the NPRA wording was only partly readable.",
+    "Annual minimum stay (90 days reported) is unconfirmed.",
+    "Bahrain remote-work or digital nomad visa: none found.",
+    "Naturalisation years and dual-nationality rule not researched."
+  ],
+  "sources": [
+    {
+      "title": "Bahrain - Individual - Residence",
+      "url": "https://taxsummaries.pwc.com/bahrain/individual/residence",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

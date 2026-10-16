@@ -1,0 +1,318 @@
+{
+  "id": "MYS",
+  "name": "Malaysia",
+  "researched_on": "2026-10-16",
+  "summary": "No free movement for EU citizens. Every passport can use MM2H: Silver (USD 150,000 deposit and a RM600,000 home), Gold (USD 500,000 and RM1 million), Platinum (USD 1 million and RM2 million, with the right to do business) or the SEZ/SFZ tier (USD 32,000-65,000 in Johor zones). Very wealthy or high-earning people can use the PVIP (RM1 million deposit, RM200,000 fee, no minimum stay). Remote workers can use the DE Rantau Nomad Pass. None of these leads to permanent residence.",
+  "naturalisation": "Citizenship by naturalisation (Federal Constitution Article 19) needs age 21+, about 10 of the last 12 years of residence, good character and Malay-language knowledge; it is discretionary and rare. The government portal says 12 years of residence.",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "Malaysia does not allow dual citizenship in principle; this run did not confirm the point from an official page.",
+  "routes": [
+    {
+      "id": "mm2h_silver",
+      "name": "Malaysia My Second Home (MM2H) - Silver",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Five-year renewable social visit pass for foreigners who place USD 150,000 on fixed deposit and buy a home of RM600,000 or more.",
+      "requirements": "Fixed deposit in a Malaysian licensed bank; up to 50% may be withdrawn after approval for housing, education, medical care and tourism. Offshore income requirement dropped. Compulsory purchase of a residence after approval, which may not be sold for 10 years (upgrades allowed). Stay at least 90 days a year for participants aged 25 to 49. Medical check-up compulsory. Age 25+. Pass renewal fee RM1,500/RM3,000/RM5,000 per person for Silver/Gold/Platinum (per MOTAC fee table; period not stated). MM2H does not lead to permanent residence. Silver: fixed deposit USD 150,000; residence at least RM600,000; one-off participation fee RM1,000; pass valid 5 years with multiple-entry visa; business, investing or career not allowed.",
+      "investment_options": "USD 150,000 fixed deposit (recoverable, half withdrawable) plus purchase of a residence of at least RM600,000 (about USD 130,000).",
+      "fees_note": "One-off participation fee RM1,000; plus 8% SST per third-party summaries (not verified on official page).",
+      "processing_time": "",
+      "family": "Spouse, children under 21 (and unmarried unemployed children 21-34), disabled children, parents and parents-in-law.",
+      "tax_note": "Pass does not make you tax resident (Malaysia: 182 days); foreign-sourced income received in Malaysia has special exemption rules not researched here.",
+      "physical_presence": "90 days a year for participants aged 25 to 49; none stated for 50+",
+      "sources": [
+        {
+          "title": "MM2H Guidelines (tier tables published as images)",
+          "url": "https://www.mm2h.gov.my/apply/guidelines",
+          "publisher": "Ministry of Tourism, Arts and Culture Malaysia (MOTAC)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Terms and Regulations for New Participants under MM2H (accurate as of 22 July 2024)",
+          "url": "https://www.motac.gov.my/wp-content/uploads/2026/01/Terms-And-Regulations-For-New-Participants-Under-The-Malaysia-My-Second-Home-MM2H-.pdf",
+          "publisher": "MOTAC",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 1000,
+        "currency": "MYR"
+      }
+    },
+    {
+      "id": "mm2h_gold",
+      "name": "Malaysia My Second Home (MM2H) - Gold",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Fifteen-year pass for foreigners with a USD 500,000 fixed deposit and a home of RM1 million or more.",
+      "requirements": "Fixed deposit in a Malaysian licensed bank; up to 50% may be withdrawn after approval for housing, education, medical care and tourism. Offshore income requirement dropped. Compulsory purchase of a residence after approval, which may not be sold for 10 years (upgrades allowed). Stay at least 90 days a year for participants aged 25 to 49. Medical check-up compulsory. Age 25+. Pass renewal fee RM1,500/RM3,000/RM5,000 per person for Silver/Gold/Platinum (per MOTAC fee table; period not stated). MM2H does not lead to permanent residence. Gold: fixed deposit USD 500,000; residence at least RM1,000,000; participation fee RM3,000; pass valid 15 years; business, investing or career not allowed.",
+      "investment_options": "USD 500,000 fixed deposit plus a residence of at least RM1,000,000.",
+      "fees_note": "One-off participation fee RM3,000.",
+      "processing_time": "",
+      "family": "Spouse, children under 21 (and unmarried unemployed children 21-34), disabled children, parents and parents-in-law.",
+      "tax_note": "Pass does not make you tax resident.",
+      "physical_presence": "90 days a year for participants aged 25 to 49",
+      "sources": [
+        {
+          "title": "MM2H Guidelines (tier tables published as images)",
+          "url": "https://www.mm2h.gov.my/apply/guidelines",
+          "publisher": "Ministry of Tourism, Arts and Culture Malaysia (MOTAC)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Terms and Regulations for New Participants under MM2H (accurate as of 22 July 2024)",
+          "url": "https://www.motac.gov.my/wp-content/uploads/2026/01/Terms-And-Regulations-For-New-Participants-Under-The-Malaysia-My-Second-Home-MM2H-.pdf",
+          "publisher": "MOTAC",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 3000,
+        "currency": "MYR"
+      }
+    },
+    {
+      "id": "mm2h_platinum",
+      "name": "Malaysia My Second Home (MM2H) - Platinum",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Twenty-year pass for a USD 1 million fixed deposit plus a home of RM2 million or more; the only tier allowing business and investment.",
+      "requirements": "Fixed deposit in a Malaysian licensed bank; up to 50% may be withdrawn after approval for housing, education, medical care and tourism. Offshore income requirement dropped. Compulsory purchase of a residence after approval, which may not be sold for 10 years (upgrades allowed). Stay at least 90 days a year for participants aged 25 to 49. Medical check-up compulsory. Age 25+. Pass renewal fee RM1,500/RM3,000/RM5,000 per person for Silver/Gold/Platinum (per MOTAC fee table; period not stated). MM2H does not lead to permanent residence. Platinum: fixed deposit USD 1,000,000; residence at least RM2,000,000; participation fee RM200,000 (no fee for dependants); pass valid 20 years; conducting business, investing or pursuing a career is permissible.",
+      "investment_options": "USD 1,000,000 fixed deposit plus a residence of at least RM2,000,000.",
+      "fees_note": "One-off participation fee RM200,000 per principal application; no fee for dependants.",
+      "processing_time": "",
+      "family": "Spouse, children under 21 (and unmarried unemployed children 21-34), disabled children, parents and parents-in-law.",
+      "tax_note": "Pass does not make you tax resident.",
+      "physical_presence": "90 days a year for participants aged 25 to 49",
+      "sources": [
+        {
+          "title": "MM2H Guidelines (tier tables published as images)",
+          "url": "https://www.mm2h.gov.my/apply/guidelines",
+          "publisher": "Ministry of Tourism, Arts and Culture Malaysia (MOTAC)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Terms and Regulations for New Participants under MM2H (accurate as of 22 July 2024)",
+          "url": "https://www.motac.gov.my/wp-content/uploads/2026/01/Terms-And-Regulations-For-New-Participants-Under-The-Malaysia-My-Second-Home-MM2H-.pdf",
+          "publisher": "MOTAC",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 1000000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 200000,
+        "currency": "MYR"
+      }
+    },
+    {
+      "id": "mm2h_sez_sfz",
+      "name": "Malaysia My Second Home (MM2H) - SEZ/SFZ (Special Economic and Financial Zones)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Ten-year pass with the lowest deposit (USD 32,000 to 65,000) for buyers of property in Johor's special zones such as Forest City.",
+      "requirements": "Fixed deposit USD 65,000 for ages 21 to 49, USD 32,000 for age 50 and over; property purchase 'subject to the relevant state property purchase policy' (no federal minimum stated); participation fee RM1,000; pass valid 10 years; business or career not allowed. Minimum age 21. Other terms (90-day stay, 10-year hold) as the main MM2H tiers per MOTAC; confirm SEZ specifics with OSC MM2H.",
+      "investment_options": "USD 65,000 deposit for ages 21-49; USD 32,000 for 50+. Property in the zone per state policy.",
+      "fees_note": "Participation fee RM1,000; renewal fee RM300 per person.",
+      "processing_time": "",
+      "family": "Spouse, children under 21 (and unmarried unemployed children 21-34), disabled children, parents and parents-in-law. (per main tiers; unverified for SEZ)",
+      "tax_note": "",
+      "physical_presence": "Not separately stated; assumed same 90-day rule for under-50s (unverified)",
+      "sources": [
+        {
+          "title": "MM2H Guidelines (tier tables published as images)",
+          "url": "https://www.mm2h.gov.my/apply/guidelines",
+          "publisher": "Ministry of Tourism, Arts and Culture Malaysia (MOTAC)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 32000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 1000,
+        "currency": "MYR"
+      }
+    },
+    {
+      "id": "pvip",
+      "name": "Malaysia Premium Visa Programme (PVIP)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Twenty-year visa for very high earners or wealthy people who deposit RM1 million and pay a RM200,000 participation fee, with no minimum stay and the right to work or run a business.",
+      "requirements": "Onshore plus offshore income of RM40,000 a month (RM480,000 a year) or total net worth of at least RM1 billion (as worded in the Immigration Department FAQ); fixed deposit of RM1,000,000 with a licensed Malaysian bank (50% withdrawable after 6 months for property, medical or education, with Immigration's letter); participation fee RM200,000 principal and RM100,000 per dependant (RM50,000 for the 10-year dependant option). Applications only via Immigration-authorised agencies. No age limit; no minimum-stay requirement; may work, study, buy real estate and run business.",
+      "investment_options": "RM1,000,000 fixed deposit (principal not withdrawable beyond 50% for stated purposes) plus RM200,000 participation fee.",
+      "fees_note": "Participation fee RM200,000 principal, RM100,000 per dependant; initial RM2,000 registration fee reported in a search snippet (unverified). Third-party sources report terms revised in March 2026; the FAQ read is undated.",
+      "processing_time": "",
+      "family": "Spouse, children, parents and foreign domestic helpers may accompany.",
+      "tax_note": "Visa does not set tax residence.",
+      "physical_presence": "Exempt from any minimum stay",
+      "sources": [
+        {
+          "title": "FAQ: Malaysia Premium Visa Programme (PVIP)",
+          "url": "https://imigresen-online.imi.gov.my/eservices/doc/FAQ_PVIP.pdf",
+          "publisher": "Immigration Department of Malaysia",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 1000000,
+        "currency": "MYR"
+      },
+      "minimum_income": {
+        "amount": 480000,
+        "currency": "MYR"
+      },
+      "government_fees": {
+        "amount": 200000,
+        "currency": "MYR"
+      }
+    },
+    {
+      "id": "de_rantau",
+      "name": "DE Rantau Nomad Pass (Professional Visit Pass)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "One-year renewable pass for remote employees and freelancers working for clients abroad.",
+      "requirements": "Remote employee of a foreign company, or freelancer with client contracts of 3+ months; minimum annual income USD 24,000 (tech) or USD 60,000 (non-tech) per a 2026 secondary report, while an older MDEC FAQ gives USD 24,000 for all; age 18+; open to all nationalities except Israel; initial 12 months, renewable once for 12 more. Official FAQ version could not be opened, so income thresholds are unverified.",
+      "investment_options": "",
+      "fees_note": "A third-party guide reports RM1,080 incl. 8% SST; not verified.",
+      "processing_time": "",
+      "family": "Spouse and children may be added (not verified).",
+      "tax_note": "Tax residence follows the 182-day test; staying 182+ days makes you resident.",
+      "physical_presence": "No minimum stated",
+      "sources": [
+        {
+          "title": "DE Rantau Nomad Pass",
+          "url": "https://mdec.my/derantau/",
+          "publisher": "Malaysia Digital Economy Corporation (MDEC)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "De Rantau Pass FAQ (older version reported via search)",
+          "url": "https://mdec.my/static/pdf/derantau/foreign/De%20Rantau_Pass_FAQ.pdf",
+          "publisher": "MDEC",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 24000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": null
+    },
+    {
+      "id": "employment_pass",
+      "name": "Employment Pass (EP, Categories I-III)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored work permit; the minimum salary was raised from 1 June 2026.",
+      "requirements": "Category I: basic salary at least RM20,000 a month (raised from RM10,000 effective 1 June 2026); Category II: RM10,000-19,999 (succession plan required); Category III: RM5,000-9,999 (RM7,000 for manufacturing). Figures are from law-firm summaries of the Expatriate Services Division decision; the official ESD notice was not opened. Dependant rights differ by category.",
+      "investment_options": "",
+      "fees_note": "Not read.",
+      "processing_time": "",
+      "family": "Dependant passes for most categories (details unverified).",
+      "tax_note": "",
+      "physical_presence": "Live and work in Malaysia for the sponsoring employer",
+      "sources": [
+        {
+          "title": "Malaysia Revises Minimum Salary for Employment Pass Applications Effective June 1, 2026",
+          "url": "https://eiglaw.com/malaysia-revises-minimum-salary-for-employment-pass-applications-effective-june-1-2026/",
+          "publisher": "EIG Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Malaysia increase in employment pass salary requirements",
+          "url": "https://www.bakermckenzie.com/en/insight/publications/2026/01/malaysia-increase-in-employment-pass-salary-requirements",
+          "publisher": "Baker McKenzie",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 240000,
+        "currency": "MYR"
+      }
+    }
+  ],
+  "open_questions": [
+    "PVIP FAQ text is undated; third-party sources say terms changed in March 2026.",
+    "DE Rantau official FAQ (version in force) could not be opened; thresholds unverified.",
+    "Official ESD notice for Employment Pass changes not opened; figures from law firms.",
+    "SEZ/SFZ property minimum and stay rule not stated federally.",
+    "Dual citizenship and naturalisation years not verified on a statute/official immigration page.",
+    "MM2H fee table 'category-fees' period (annual vs per renewal) not labelled in the image."
+  ],
+  "sources": []
+}

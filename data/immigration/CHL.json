@@ -1,0 +1,141 @@
+{
+  "id": "CHL",
+  "name": "Chile",
+  "researched_on": "2026-10-16",
+  "summary": "Chile gives two-year temporary residence (leading to permanent residence after about two years) for an investment of USD 500,000 in a productive activity, for rentistas living on passive income, for foreign pensioners and for people with a Chilean work contract. There is no digital nomad visa. EU, US and other passports use the same routes.",
+  "naturalisation": "Five years of residence under Law 21.325 and the Constitution (permanent residence first); Spanish and clean record (not read in a source this session).",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Chile does not require renunciation of another nationality (general position; not source-checked in this session).",
+  "routes": [
+    {
+      "id": "investor",
+      "name": "Temporary residence for investors and executives",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Two-year temporary residence for investing at least USD 500,000 in a productive activity in Chile, with a sponsorship letter from InvestChile.",
+      "requirements": "Investment of at least USD 500,000 (or equivalent) in producing goods or services in Chile; InvestChile sponsorship letter; description of the investment; criminal record. Also covers executives and specialised staff of companies in which a foreign investor holds at least 10%. Extension requires proof of progress on the investment. Law 21.325.",
+      "physical_presence": "Not stated in the sources reviewed",
+      "sources": [
+        {
+          "title": "Inversionistas en Chile",
+          "url": "https://serviciomigraciones.cl/en/residencia-temporal-permit/subcategories/investors/",
+          "publisher": "Servicio Nacional de Migraciones (SERMIG)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Residencia temporal Chile: todas las categorias 2026",
+          "url": "https://www.expat.cl/residency/temporary-residency-chile/",
+          "publisher": "Expat.cl",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": 2,
+      "processing_time": "6 to 8 months for temporary residence decisions in 2026 (guide)",
+      "tax_note": "More than 183 days in 12 months makes a person tax resident; domicile can make them taxable from day one."
+    },
+    {
+      "id": "rentista",
+      "name": "Temporary residence for rentistas",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Two-year residence for people living on recurring passive income such as rents and dividends. No income threshold is fixed in law.",
+      "requirements": "Recurring passive income from rents, dividends, interest or annuities; freelance or remote-work income does not count. No codified income threshold; guides mention USD 1,000 to 2,000 a month as a practical level. Applied for from abroad through the SERMIG portal. Valid 2 years, renewable; permanent residence generally after about 24 months. Law 21.325 and Decree 177/2022 per guides.",
+      "physical_presence": "Not stated in the sources reviewed",
+      "sources": [
+        {
+          "title": "Residencia temporal Chile: todas las categorias 2026",
+          "url": "https://www.expat.cl/residency/temporary-residency-chile/",
+          "publisher": "Expat.cl",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 2,
+      "processing_time": "6 to 8 months (guide)"
+    },
+    {
+      "id": "retiree",
+      "name": "Temporary residence for retirees (jubilado)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Two-year residence for retirees with a recurring foreign pension. No pension amount is fixed in the sources reviewed.",
+      "requirements": "Recurring pension from outside Chile; no amount stated in the sources reviewed; 2-year validity and a route to permanent residence.",
+      "physical_presence": "Not stated in the sources reviewed",
+      "sources": [
+        {
+          "title": "Residencia temporal Chile: todas las categorias 2026",
+          "url": "https://www.expat.cl/residency/temporary-residency-chile/",
+          "publisher": "Expat.cl",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 2
+    },
+    {
+      "id": "work_contract",
+      "name": "Temporary residence for work (employment contract)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Ordinary work residence with a Chilean employment contract. Remote pay from a foreign employer does not qualify.",
+      "requirements": "Employment contract with a Chilean employer; remote salaries from abroad do not qualify for the work visa (expat.cl). Chile has no dedicated digital nomad visa in 2026; remote workers use tourist status short-term or the rentista visa for passive income only.",
+      "physical_presence": "Not stated in the sources reviewed",
+      "sources": [
+        {
+          "title": "Residencia temporal Chile: todas las categorias 2026",
+          "url": "https://www.expat.cl/residency/temporary-residency-chile/",
+          "publisher": "Expat.cl",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Chile 2026 Visa Options for Digital Nomads and Remote Workers",
+          "url": "https://www.expat.cl/residency/chile-digital-nomad-remote-work/",
+          "publisher": "Expat.cl",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 2
+    }
+  ],
+  "open_questions": [
+    "SERMIG fee schedule not read; government_fees left null for all routes.",
+    "Rentista and retiree income thresholds are not codified per guides; check Decree 177/2022 and SERMIG.",
+    "Initial validity (2 years) rests on expat.cl; the SERMIG investor page does not state it.",
+    "Naturalisation: the 5-year rule and Chile's allowance of dual nationality are general knowledge, not read in a source in this session.",
+    "Start-Up Chile residency and any visa for start-up founders were not found.",
+    "Chile digital nomad visa: none exists per guides; confirm with SERMIG."
+  ],
+  "sources": []
+}

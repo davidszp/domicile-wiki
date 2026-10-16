@@ -52,6 +52,7 @@ Código do Imposto do Selo, read on the Portal das Finanças:
   Portuguese real estate to children. On its wording it does not cover inheritance.
 - Scope: Portuguese-situs assets only (general knowledge of art. 4, unverified).
 - JSON: beneficiary basis, children_treatment exempt_with_conditions, brackets [], other cost 0.
+- Surviving spouse (`spouse_treatment` `fully_exempt`): Spouse is exempt from the 10% stamp duty on free transfers (Código do Imposto do Selo Art. 6(1)(e)); the 0.8% charge on Portuguese real estate is not covered by the verified exemption.
 
 ## Wealth tax
 
@@ -128,3 +129,4 @@ Not researched in this pass.
 - 2026-10-15: fact check: corporate income tax rate filled in (19% mainland IRC for 2026, PwC), previously left blank.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
 - 2026-10-15: family rent re-checked a second time: changed from EUR 6,500 (Cascais houses) to EUR 3,100 (13 Lisbon T4 flats, Avenidas Novas/Areeiro/Alvalade/Estrela/Restelo/Benfica).
+- 2026-10-16: added surviving-spouse treatment.

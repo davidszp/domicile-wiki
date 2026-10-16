@@ -1,0 +1,44 @@
+{
+  "id": "PAN",
+  "name": "Panama",
+  "researched_on": "2026-10-16",
+  "summary": "There is no fixed share for children, but relatives have a right to maintenance that comes before the will's beneficiaries: children up to age 25, disabled children, parents and the spouse. Panama is the clearest trust-and-foundation jurisdiction here: it has a trust law (Law 1 of 1984), a private interest foundation law (Law 25 of 1995), and the Hague Trusts Convention is in force.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "Panamanian law gives certain relatives a right to maintenance (children up to 25, disabled children, parents, spouse) that takes precedence over beneficiaries named in a will (secondary source, no article cited).",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "Not sourced: Panama's private international law code (Law 61 of 2015) rule on the law applicable to succession was not read.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "Hague Trusts Convention: accession 30 Aug 2017, in force 1 Dec 2018 (HCCH table). Trust Law 1 of 1984, as amended by Law 21 of 2017, governs trusts; professional trustees need a licence from the Superintendency of Banks. Private Interest Foundations: Law 25 of 12 June 1995; art. 14 says heirship rules of the founder's or beneficiaries' domicile cannot be enforced against the foundation, but a foreign court applying its own law can still look through it.",
+  "open_questions": [
+    "Civil Code articles on maintenance and any compulsory share were not read; the no-heirship finding rests on two secondary sources.",
+    "Law 61 of 2015 (private international law) was not read; foreign_law_choice is unclear.",
+    "Whether Panamanian courts would apply art. 14 of Law 25 against a Panamanian-domiciled founder's heirs was not sourced."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention on the Law Applicable to Trusts and on their Recognition (1985)",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Panama Private Foundation (Law 25): structure, taxes, succession",
+      "url": "https://wiki.private.law/en/panama-foundation",
+      "publisher": "private.law wiki",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Guide to International Estate Planning in Panama",
+      "url": "https://pbl.legal/insights/a-comprehensive-guide-to-panama-trusts-and-foundations-for-international-estate-planning/",
+      "publisher": "PBL Legal",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

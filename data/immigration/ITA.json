@@ -1,0 +1,296 @@
+{
+  "id": "ITA",
+  "name": "Italy",
+  "researched_on": "2026-10-16",
+  "summary": "EU citizens only register. Non-EU citizens (US and others) can use the investor visa (from EUR 250,000 in a start-up), the elective residence visa (about EUR 31,000 a year of passive income, no work) or, since March 2026, a digital nomad visa (about EUR 28,000 a year).",
+  "naturalisation": "10 years of legal residence for most non-EU nationals (4 for EU citizens per general knowledge), with Italian language (B1, general knowledge) and integration requirements; the investor visa does not shorten it. Citizenship by descent was tightened by Decree-Law 36/2025 (converted into Law 74/2025).",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "A foreigner naturalising in Italy is not required to renounce their other nationality (Law 91/1992 art. 11), though their home country may require it.",
+  "routes": [
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 4,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Tax residence: more than 183 days or registration in the population register. EU citizens' naturalisation in 4 years is from general knowledge (Law 91/1992 art. 9), not re-sourced.",
+      "status_note": "",
+      "id": "eu_free_movement",
+      "name": "EU free movement (anagrafe registration)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "EU citizens register with the municipality after 3 months; permanent residence after 5 years.",
+      "requirements": "Valid ID or passport; worker, self-employed or economically inactive with resources and health cover. Permanent right after 5 years of continuous legal residence (Directive 2004/38).",
+      "physical_presence": "No fixed minimum",
+      "sources": [
+        {
+          "title": "Your Europe: Residence rights in another EU country",
+          "url": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+          "publisher": "European Union",
+          "kind": "intergovernmental",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 250000,
+        "currency": "EUR"
+      },
+      "investment_options": "Italian company equity EUR 500,000; philanthropic donation EUR 1,000,000 (non-refundable); government bonds EUR 2,000,000 (minimum 2 years).",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "Nulla Osta 90 to 120 days; whole process 6 to 9 months",
+      "family": "Spouse, dependent children and dependent parents, with no extra investment.",
+      "tax_note": "Over 183 days a year in Italy makes you tax resident.",
+      "status_note": "",
+      "id": "investor_startup",
+      "name": "Investor visa: innovative start-up",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A 2-year permit for investing EUR 250,000 in an innovative start-up; the cheapest of Italy's four investor routes.",
+      "requirements": "Equity in a registered innovative start-up (under 5 years old, unlisted). Art. 26-bis of D.Lgs. 286/1998 and MIMIT decree of 21 July 2017. Thresholds cannot be combined across routes. Investment completed within 3 months of entry (one source). Held for the duration of the visa. Permit 2 years, renewals of 3 years.",
+      "physical_presence": "None required to keep the visa",
+      "sources": [
+        {
+          "title": "Italy Golden Visa 2026: requirements, costs and how to apply",
+          "url": "https://grey.co/blog/italy-golden-visa",
+          "publisher": "Grey Group",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Italy's Investor Visa: legal framework and investment pathways 2026",
+          "url": "https://www.frankvest.it.com/en/news/italy-investor-visa-foreign-investors-guide/",
+          "publisher": "Frankvest",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "EUR"
+      },
+      "investment_options": "Donation EUR 1,000,000; government bonds EUR 2,000,000.",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "Spouse, dependent children and dependent parents, with no extra investment.",
+      "tax_note": "Over 183 days a year in Italy makes you tax resident.",
+      "status_note": "",
+      "id": "investor_company",
+      "name": "Investor visa: Italian company, donation or government bonds",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Other investor routes: EUR 500,000 in an Italian company, EUR 1 million philanthropic donation, or EUR 2 million in government bonds.",
+      "requirements": "Same permit terms as the start-up route (2 years, then 3-year renewals). Company equity EUR 500,000; donation EUR 1,000,000 to a public-interest project in culture, education, immigration management, science or heritage (not refundable); bonds EUR 2,000,000 held at least 2 years.",
+      "physical_presence": "None required to keep the visa",
+      "sources": [
+        {
+          "title": "Italy Golden Visa 2026: requirements, costs and how to apply",
+          "url": "https://grey.co/blog/italy-golden-visa",
+          "publisher": "Grey Group",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Italy's Investor Visa: legal framework and investment pathways 2026",
+          "url": "https://www.frankvest.it.com/en/news/italy-investor-visa-foreign-investors-guide/",
+          "publisher": "Frankvest",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 31000,
+        "currency": "EUR"
+      },
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "Each applicant may be asked to show funds; a couple is around EUR 37,000.",
+      "tax_note": "Over 183 days a year in Italy makes you tax resident on worldwide income; the EUR 200,000 new-resident flat tax is a separate election (not researched here).",
+      "status_note": "",
+      "id": "elective_residence",
+      "name": "Elective residence visa",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For people living on stable passive income who do not work in Italy; the income benchmark is set by consulates, about EUR 31,000 a year.",
+      "requirements": "No statutory figure. Sources quote EUR 31,000 to 32,000 a year for a single person and about EUR 37,000 to 38,000 for a couple (consular practice, varies by consulate). Pensions, rent, dividends and interest count; salary does not. Stable, documented income; Italian housing secured (not hotels or short lets); health insurance. No work, including remote work.",
+      "physical_presence": "Not sourced (open question)",
+      "sources": [
+        {
+          "title": "Elective residency visa Italy: eligibility, income rules 2026",
+          "url": "https://www.globalcitizensolutions.com/pt/elective-residency-visa-italy/",
+          "publisher": "Global Citizen Solutions",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Italy elective residence visa 2026 FAQ",
+          "url": "https://italiancitizenshipassistance.com/faq-obtaining-the-elective-residence-visa-in-2026/",
+          "publisher": "Italian Citizenship Assistance",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 28000,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 116,
+        "currency": "EUR"
+      },
+      "fees_note": "Visa application fee about EUR 116; permit-card fees not sourced.",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "Spouse and children under 18.",
+      "tax_note": "Choose either the impatriate regime (50% exemption for 5 years, with a 4-year residence commitment) or the 5% flat tax regime for up to EUR 85,000 of revenue.",
+      "status_note": "",
+      "id": "digital_nomad",
+      "name": "Digital nomad and remote worker visa",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For highly qualified remote workers earning about EUR 28,000 a year from non-Italian clients; consulates have accepted applications since March 2026.",
+      "requirements": "Non-EU/EEA/Swiss national doing 'highly qualified' remote work (Blue Card standard: degree or 5 years of experience, at least 6 months of experience). Income about EUR 28,000 a year gross (the figure is linked to a health-exemption threshold and varies by consulate); spouse +EUR 9,900, each child +EUR 4,950. Health insurance of at least EUR 30,000, a registered 12-month lease, and about EUR 30,000 savings expected (one source). Implementing decree reported published 2 March 2026 with consulates accepting applications from 18 March 2026. Permit 1 year, renewable annually up to 5 years.",
+      "physical_presence": "No visa-specific minimum sourced; 183 days is needed for the impatriate tax regime",
+      "sources": [
+        {
+          "title": "Italy digital nomad visa: complete guide 2026",
+          "url": "https://remoteworkeurope.eu/insights/italy-digital-nomad-visa-complete-guide-2026/",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 10,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "",
+      "id": "work_permit",
+      "name": "Work permits (Decreto Flussi, EU Blue Card)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Non-EU workers are admitted through annual quotas (Decreto Flussi) with an employer's nulla osta; the Blue Card covers highly qualified staff.",
+      "requirements": "Employer-led, quota-based; details not researched in depth.",
+      "physical_presence": "Live in Italy; no fixed day count sourced",
+      "sources": [
+        {
+          "title": "Italy digital nomad visa: complete guide 2026",
+          "url": "https://remoteworkeurope.eu/insights/italy-digital-nomad-visa-complete-guide-2026/",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "No official Italian source (Ministry of Foreign Affairs, MIMIT investor visa portal) retrieved; figures from consultancy pages.",
+    "Elective residence income has no statutory figure; consular practice varies.",
+    "Digital nomad income formula and savings expectation differ by source.",
+    "Physical presence for elective residence and digital nomad visas not sourced.",
+    "The 10-year naturalisation period was not confirmed to be unchanged in 2026; the 4-year EU period and B1 requirement are from general knowledge.",
+    "Investor visa government fees not sourced; work-permit rules not researched.",
+    "EUR 200,000 new-resident flat tax not researched here."
+  ],
+  "sources": [
+    {
+      "title": "Italy Golden Visa 2026: requirements, costs and how to apply",
+      "url": "https://grey.co/blog/italy-golden-visa",
+      "publisher": "Grey Group",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Italy digital nomad visa: complete guide 2026",
+      "url": "https://remoteworkeurope.eu/insights/italy-digital-nomad-visa-complete-guide-2026/",
+      "publisher": "Remote Work Europe",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Elective residency visa Italy: eligibility, income rules 2026",
+      "url": "https://www.globalcitizensolutions.com/pt/elective-residency-visa-italy/",
+      "publisher": "Global Citizen Solutions",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Italian citizenship changes take effect",
+      "url": "https://eiglaw.com/italian-citizenship-changes-take-effect/",
+      "publisher": "EIG Law",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Why do so many people think you can't have Italian dual citizenship",
+      "url": "https://www.thelocal.it/20260223/why-do-so-many-people-think-you-cant-have-italian-dual-citizenship",
+      "publisher": "The Local Italy",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

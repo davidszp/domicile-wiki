@@ -1,0 +1,332 @@
+{
+  "id": "THA",
+  "name": "Thailand",
+  "researched_on": "2026-10-16",
+  "summary": "No free movement for EU citizens. Every passport can use the Long-Term Resident visa: Wealthy Global Citizen (USD 1 million of assets with USD 500,000 invested in Thailand), Wealthy Pensioner (age 50+, USD 80,000 a year of passive income), Work-from-Thailand or Highly-Skilled (USD 80,000 a year). Cheaper options are the Destination Thailand Visa for remote workers (THB 500,000 in savings), the 10-year O-X retirement visa for 50+ (THB 3 million deposit, eligible-country list) and Thailand Privilege membership (from THB 650,000).",
+  "naturalisation": "Thai citizenship by naturalisation generally needs permanent residence first (after 3 consecutive years on annual extensions), then about 5 years, Thai language and an income test; PR quota is about 100 per nationality a year. Figures come from secondary guides.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Thailand generally allows dual nationality; not confirmed on an official source in this run.",
+  "routes": [
+    {
+      "id": "ltr_wealthy_global_citizen",
+      "name": "Long-Term Resident (LTR) visa - Wealthy Global Citizen",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Ten-year visa for people with USD 1 million of assets, USD 500,000 of which is invested in Thailand.",
+      "requirements": "At least USD 1 million in assets in the applicant's name (may include the Thai investment) and at least USD 500,000 already invested in Thai government bonds (5+ years remaining), Thai-registered companies or Thai property. Plus one of: health insurance of at least USD 50,000, Thai social security, or USD 100,000 in a bank account held 12+ months. Initial 5 years, extendable 5 more if qualifications are still met; investment must be maintained. 10-year multiple-entry visa; no work permit included.",
+      "investment_options": "USD 500,000 in Thai government bonds, direct investment in Thai companies, or Thai property.",
+      "fees_note": "THB 50,000 per person for the 10-year visa when collected in Thailand; no BOI fee for direct online applications; higher via embassies or VFS.",
+      "processing_time": "Not stated on the BOI page.",
+      "family": "Spouse and children under 20, maximum 4 dependants; each needs USD 50,000 insurance, Thai social security or USD 25,000 held 12+ months.",
+      "tax_note": "Thailand taxes foreign income remitted in the year earned from 2024; staying over 180 days makes you tax resident. The LTR carries a personal income tax exemption on foreign income for some categories (not verified here).",
+      "physical_presence": "No minimum stay stated by BOI; 90-day reporting applies; tax residence at 180 days",
+      "sources": [
+        {
+          "title": "Long-Term Resident Visa categories",
+          "url": "https://ltr.boi.go.th/",
+          "publisher": "Thailand Board of Investment",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 50000,
+        "currency": "THB"
+      },
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null
+    },
+    {
+      "id": "ltr_wealthy_pensioner",
+      "name": "Long-Term Resident (LTR) visa - Wealthy Pensioner",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Ten-year visa for people aged 50+ with USD 80,000 a year of passive income, or USD 40,000 plus a USD 250,000 Thai investment.",
+      "requirements": "Age 50 or over; unearned income of at least USD 80,000 a year (pension, rent, realised gains, dividends, interest; salary does not count). If income is USD 40,000-79,999, an existing USD 250,000 investment in Thai bonds, a Thai company or Thai property is also required. Plus one of: health insurance of at least USD 50,000, Thai social security, or USD 100,000 in a bank account held 12+ months. Initial 5 years plus 5.",
+      "investment_options": "Alternative: USD 40,000 minimum income plus USD 250,000 invested in Thailand.",
+      "fees_note": "THB 50,000 per person for the 10-year visa when collected in Thailand; no BOI fee for direct online applications; higher via embassies or VFS.",
+      "processing_time": "Not stated on the BOI page.",
+      "family": "Spouse and children under 20, maximum 4 dependants; each needs USD 50,000 insurance, Thai social security or USD 25,000 held 12+ months.",
+      "tax_note": "Staying over 180 days makes you tax resident.",
+      "physical_presence": "No minimum stay stated by BOI; 90-day reporting applies; tax residence at 180 days",
+      "sources": [
+        {
+          "title": "Long-Term Resident Visa categories",
+          "url": "https://ltr.boi.go.th/",
+          "publisher": "Thailand Board of Investment",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 80000,
+        "currency": "USD"
+      },
+      "minimum_investment": null,
+      "government_fees": {
+        "amount": 50000,
+        "currency": "THB"
+      },
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null
+    },
+    {
+      "id": "ltr_work_from_thailand",
+      "name": "Long-Term Resident (LTR) visa - Work-from-Thailand Professional",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Ten-year visa for remote workers earning USD 80,000 a year from a large foreign employer.",
+      "requirements": "Average personal income of at least USD 80,000 a year over the past two years (USD 40,000-79,999 with a master's degree or higher); contract with a listed company, a private company with 3+ years and USD 50 million combined revenue over 3 years, or its wholly owned subsidiary. Plus one of: health insurance of at least USD 50,000, Thai social security, or USD 100,000 in a bank account held 12+ months. No Thai work permit is granted.",
+      "investment_options": "",
+      "fees_note": "THB 50,000 per person for the 10-year visa when collected in Thailand; no BOI fee for direct online applications; higher via embassies or VFS.",
+      "processing_time": "Not stated on the BOI page.",
+      "family": "Spouse and children under 20, maximum 4 dependants; each needs USD 50,000 insurance, Thai social security or USD 25,000 held 12+ months.",
+      "tax_note": "Staying over 180 days makes you tax resident.",
+      "physical_presence": "No minimum stay stated by BOI; 90-day reporting applies; tax residence at 180 days",
+      "sources": [
+        {
+          "title": "Long-Term Resident Visa categories",
+          "url": "https://ltr.boi.go.th/",
+          "publisher": "Thailand Board of Investment",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 80000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 50000,
+        "currency": "THB"
+      },
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null
+    },
+    {
+      "id": "ltr_highly_skilled",
+      "name": "Long-Term Resident (LTR) visa - Highly-Skilled Professional",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Ten-year visa with a work permit for specialists in BOI target industries earning USD 80,000 a year.",
+      "requirements": "Average personal income of at least USD 80,000 a year over the past two years (USD 40,000-79,999 with a master's degree in science or technology); employment contract in a BOI-targeted industry or proven expertise in specified fields. Plus one of: health insurance of at least USD 50,000, Thai social security, or USD 100,000 in a bank account held 12+ months. Work permit fee THB 3,000 a year.",
+      "investment_options": "",
+      "fees_note": "THB 50,000 per person for the 10-year visa when collected in Thailand; no BOI fee for direct online applications; higher via embassies or VFS.",
+      "processing_time": "Not stated on the BOI page.",
+      "family": "Spouse and children under 20, maximum 4 dependants; each needs USD 50,000 insurance, Thai social security or USD 25,000 held 12+ months.",
+      "tax_note": "Staying over 180 days makes you tax resident.",
+      "physical_presence": "No minimum stay stated by BOI; 90-day reporting applies; tax residence at 180 days",
+      "sources": [
+        {
+          "title": "Long-Term Resident Visa categories",
+          "url": "https://ltr.boi.go.th/",
+          "publisher": "Thailand Board of Investment",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 80000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 50000,
+        "currency": "THB"
+      },
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null
+    },
+    {
+      "id": "dtv",
+      "name": "Destination Thailand Visa (DTV)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Five-year multiple-entry visa for remote workers and 'soft-power' participants, up to 180 days per entry.",
+      "requirements": "Remote workers (workcation) or soft-power activity participants (e.g. Thai boxing, cooking, courses, medical treatment); proof of THB 500,000 in funds held at least three months; 180 days per entry, one 180-day extension in Thailand for THB 1,900; fee THB 10,000 at some embassies but varies by embassy (e.g. USD 400 in Washington); apply from outside Thailand via thaievisa.go.th. Remote work for a Thai employer is not allowed. Details from embassy pages and secondary reports; the MFA checklist could not be opened.",
+      "investment_options": "",
+      "fees_note": "THB 10,000 baseline; embassy fees differ (USD 400 Washington, CHF 350 Bern). Funds of THB 500,000 are a balance, not income.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Staying over 180 days in a year makes you Thai tax resident.",
+      "physical_presence": "Leave or extend every 180 days; tax residence at 180 days",
+      "sources": [
+        {
+          "title": "Destination Thailand Visa (DTV)",
+          "url": "https://vientiane.thaiembassy.org/en/page/destination-thailand-visa-dtv",
+          "publisher": "Royal Thai Embassy, Vientiane",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Thailand DTV visa 2026",
+          "url": "https://thethaiger.com/visas/dtv/",
+          "publisher": "The Thaiger",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 10000,
+        "currency": "THB"
+      }
+    },
+    {
+      "id": "o_x_long_stay",
+      "name": "Non-Immigrant O-X Long-Stay (retirement) visa, 10 years",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Ten-year retirement visa for people aged 50+ from a list of eligible countries, with a Thai bank deposit.",
+      "requirements": "Age 50+, passport from an eligible country list (US, UK, Japan, Canada, Australia and most of Western Europe; list varies by embassy); either THB 3 million fixed deposit in a Thai bank, or THB 1.8 million deposit plus fixed annual income of THB 1.2 million (government page via search snippet); deposit held for the first year and at least THB 1.5 million kept thereafter; Thai health insurance of THB 400,000 inpatient and THB 40,000 outpatient. 5 years at a time, 10 in total; employment prohibited.",
+      "investment_options": "THB 3,000,000 fixed deposit; or THB 1,800,000 deposit plus THB 1,200,000 annual income.",
+      "fees_note": "Fee not read.",
+      "processing_time": "",
+      "family": "Spouse may be included (not verified).",
+      "tax_note": "Staying over 180 days makes you tax resident.",
+      "physical_presence": "Report every 90 days; not stated otherwise",
+      "sources": [
+        {
+          "title": "Criteria for applying for a retirement visa (Long-Stay O-X)",
+          "url": "https://www.thailand.go.th/event-detail/010_023",
+          "publisher": "Thailand government portal",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Non Immigrant (OX) Long Stay 10 year",
+          "url": "https://image.mfa.go.th/mfa/0/RzaiZWKBzF/consular/Visa/13.Non-Immigrant_(OX)_Long-Stay_10-year.pdf",
+          "publisher": "Ministry of Foreign Affairs of Thailand",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 3000000,
+        "currency": "THB"
+      }
+    },
+    {
+      "id": "thailand_privilege",
+      "name": "Thailand Privilege (Elite) membership",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Paid membership that gives a long-stay visa of 5 to 20 years with concierge services, bought as a one-off fee.",
+      "requirements": "Membership by one-off fee: Bronze THB 650,000 (5 years, no points), Gold THB 900,000 (5 years), Platinum THB 1,500,000 (10 years), Diamond THB 2,500,000 (15 years), Reserve THB 5,000,000 (20 years, invitation only). Official page lists Bronze as available, but secondary guides report Bronze ending on 30 September 2026 or 31 December 2025; unconfirmed. Application fee (reported THB 50,000) and family fees not shown on the official page. Holders get a Special Tourist Visa and must report; membership gives no work right and no investment qualification.",
+      "investment_options": "Gold THB 900,000; Platinum THB 1,500,000; Diamond THB 2,500,000; Reserve THB 5,000,000 (invitation).",
+      "fees_note": "Membership fee is paid to the programme company, not a government fee.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Membership does not change tax residence (180 days).",
+      "physical_presence": "No minimum stay; 90-day reporting",
+      "sources": [
+        {
+          "title": "Thailand Privilege membership",
+          "url": "https://www.thailandprivilege.co.th/membership",
+          "publisher": "Thailand Privilege Card Co., Ltd. (Tourism Authority of Thailand)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 650000,
+        "currency": "THB"
+      },
+      "government_fees": null
+    },
+    {
+      "id": "work_permit",
+      "name": "Non-Immigrant B visa and work permit (employment)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Standard employer-sponsored work route: Non-B visa plus a Thai work permit.",
+      "requirements": "Thai employer sponsorship with minimum paid-up capital and Thai-employee ratio; work permit under the Foreigners' Working Management Emergency Decree 2017; minimum salary depends on nationality (not researched). Permanent residence after 3 consecutive years of annual extensions, with quota of about 100 per nationality a year and monthly income around THB 80,000 per secondary guides.",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "Dependants on Non-O visas (not researched).",
+      "tax_note": "",
+      "physical_presence": "Live and work in Thailand",
+      "sources": [
+        {
+          "title": "Thai permanent residence guide",
+          "url": "https://lexbangkok.com/thailand-permanent-residence/",
+          "publisher": "Lex Bangkok",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 5
+    }
+  ],
+  "open_questions": [
+    "Official DTV checklist (MFA) could not be opened; terms come from embassy pages and the Thaiger.",
+    "Thailand Privilege: Bronze closure date conflicts; application fee and family fees not on official page.",
+    "Naturalisation, PR quota and income rules are from secondary guides; Nationality Act not read.",
+    "Tax exemption on foreign income for LTR holders not verified.",
+    "Work permit minimum salaries and capital requirements not researched.",
+    "O-X eligible-country list and current deposit rules should be confirmed with the Thai embassy."
+  ],
+  "sources": []
+}

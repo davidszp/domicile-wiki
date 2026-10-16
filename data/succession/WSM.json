@@ -1,0 +1,52 @@
+{
+  "id": "WSM",
+  "name": "Samoa",
+  "researched_on": "2026-10-16",
+  "summary": "Samoa has no fixed heirship share found in this research, but custom and communal (matai) titles and land sit outside ordinary wills. Samoa has trust law and a Foundations Act 2016. The Hague Trusts Convention is not in force.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "Not confirmed. The Wills Act 1975 text was not read for family-provision provisions.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No conflict-of-law rule was sourced. Customary land and matai titles do not pass by will.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "Trustee Act 2017, International Trusts Act 1987 (as described in a 1999 secondary source) and Foundations Act 2016 (foundation as a legal entity with a council and guardians). Tax treatment not sourced.",
+  "open_questions": [
+    "Whether the Wills Act 1975 or another law gives a family provision or heirship right.",
+    "Current status of the International Trusts Act 1987 and whether it survived the 2017 Trustee Act reform.",
+    "Rules for non-citizens holding freehold or leasehold land.",
+    "The HCCH table as retrieved shows no entry for this jurisdiction (the retrieved copy was marked last updated 2017 and its territorial-extension notes could not be read); re-check the live table."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table, Convention of 1 July 1985 on the Law Applicable to Trusts",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Foundations Act 2016 (consolidated 2022)",
+      "url": "https://paclii.org/ws/legis/consol_act_2022/fa2016148.pdf",
+      "publisher": "PacLII",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Wills Act 1975",
+      "url": "https://paclii.org/ws/legis/consol_act_2010/wa197591",
+      "publisher": "PacLII",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Trustee Act 2017",
+      "url": "https://rms.paclii.org/ws/legis/consol_act_2023/tca2017208.pdf",
+      "publisher": "PacLII",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

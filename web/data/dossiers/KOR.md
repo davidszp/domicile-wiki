@@ -77,6 +77,8 @@ Korea levies inheritance tax on the whole estate (estate basis) at 10%-50%: 10% 
 
 Same as the standard regime.
 
+**Surviving spouse:** No exemption: a spouse allowance of at least KRW 500 million and at most KRW 3 billion is deducted (Inheritance and Gift Tax Act art. 19; EY 2026), and the rest of what the spouse inherits is taxed on the 10%-50% scale.
+
 ## Wealth tax
 
 ### Korean resident (worldwide) (`standard`)
@@ -131,7 +133,9 @@ Not researched in this pass (no quickly verifiable sources).
 - 종합부동산세 (Comprehensive real estate holding tax) (Wikipedia (Korean), other): https://ko.wikipedia.org/wiki/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8
 - Korea, Republic of - Individual - Residence (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/republic-of-korea/individual/residence
 - Korea, Republic of - Corporate - Taxes on corporate income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/republic-of-korea/corporate/taxes-on-corporate-income
+- EY Worldwide Personal Tax and Immigration Guide 2025-26 (March 2026 edition): https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/tax-guides/documents/ey-gl-worldwide-personal-immigration-tax-guide-03-2026.pdf
 
 ## Change log
 
 - 2026-10-15: initial research.
+- 2026-10-16: added surviving-spouse treatment.

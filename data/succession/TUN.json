@@ -1,0 +1,52 @@
+{
+  "id": "TUN",
+  "name": "Tunisia",
+  "researched_on": "2026-10-16",
+  "summary": "Tunisia follows an Islamic fixed-share system under the Personal Status Code of 1956 for Muslims. A foreigner's estate is governed by the law of their nationality under Law 98-97 (private international law code). Equal inheritance has been proposed but not enacted per the sources. Trusts and foundations were not sourced.",
+  "forced_heirship": "yes",
+  "reserved_share": "Muslims: fixed Islamic shares under the Personal Status Code (Decree of 13 Aug 1956); women inherit half a man's share.",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Law 98-97 of 27 Nov 1998 (code de droit international privé) subjects inheritance to the deceased's nationality law; a renvoi exception if national law points to the place of the property. Heirs of a non-Muslim foreigner should obtain an embassy confirmation of that law.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "no",
+  "trust_note": "No trust (fiducie) or private-foundation law was found; answers provisional.",
+  "open_questions": [
+    "Equal-inheritance reform status after 2018 not verified.",
+    "Fiducie and foundations not sourced.",
+    "Law 98-97 article numbers not retrieved.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here."
+  ],
+  "sources": [
+    {
+      "title": "Inheritance tax and inheritance law in Tunisia",
+      "url": "https://www.globalpropertyguide.com/middle-east/tunisia/inheritance",
+      "publisher": "Global Property Guide",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tunisian inheritance tax",
+      "url": "https://www.giambronelaw.com/site/international/tunisian-solicitors/inheritance-tax-tunisia/",
+      "publisher": "Giambrone Law",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Tunisian family law (UK Home Office)",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/797548/Tunisian_Family_Law_-_Print_Version_Final_Document.pdf",
+      "publisher": "UK Home Office",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

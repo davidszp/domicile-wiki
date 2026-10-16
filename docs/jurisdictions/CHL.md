@@ -78,6 +78,8 @@ Ley 16.271: progressive tax on each heir's net share, 1% up to 80 UTA rising to 
 
 Open points for this tax: Ley 16.271 text on SII is updated to Law 21.210 (2020); later changes (Law 21.420 2022 gift rules) and the temporary 50% gift-tax cut in the 2026 reform are not reflected. | What counts as foreign assets 'acquired with resources from Chile' for a long-resident foreigner (e.g. reinvested gains) is not settled.
 
+**Surviving spouse:** The surviving spouse sits in the same group as children: the first 50 UTA of the inheritance is exempt, then the same 1%-25% scale applies, with no marital relief beyond that (Ley 16.271 art. 2 and the table instructions, group I).
+
 ## Wealth tax
 
 ### Standard regime
@@ -118,7 +120,9 @@ Not researched.
 - Ley No 16.271 sobre Impuesto a las Herencias, Asignaciones y Donaciones (texto refundido, actualizado a Ley 21.210) (Servicio de Impuestos Internos (SII), legislation): https://www.sii.cl/normativa_legislacion/ley16271.pdf
 - SII: UTM - UTA - IPC 2026 (Servicio de Impuestos Internos (SII), tax_authority): https://www.sii.cl/valores_y_fechas/utm/utm2026.htm
 - PwC Worldwide Tax Summaries: Chile - Individual - Residence (PwC, professional): https://taxsummaries.pwc.com/chile/individual/residence
+- SII: exenciones del impuesto a las herencias (Ley 21.210): https://www.sii.cl/preguntas_frecuentes/herencias/001_160_0334.htm
 
 ## Change log
 
 - 2026-10-15: initial research.
+- 2026-10-16: added surviving-spouse treatment.

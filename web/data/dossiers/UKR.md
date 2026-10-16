@@ -56,6 +56,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `exempt_with
 - **Important exceptions / announced changes:** Military levy (військовий збір) raised from 1.5% to 5% from 1 December 2024 (Law 4015-IX) while martial law lasts; it returns to 1.5% from 1 January of the year after martial law ends. Law 4113 (4 Dec 2024) applies the 5% levy to taxable inherited/gifted property.
 - **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
 - **Sources:** [Ukraine – Individual – Other taxes](https://taxsummaries.pwc.com/ukraine/individual/other-taxes); [Оподаткування подарунка та спадщини у 2026 році: правила для не родичів (22.05.2026)](https://news.dtkt.ua/taxation/pdfo/111281-opodatkuvannia-podarunka-ta-spadshhini-2026-pravila-dlia-ne-rodiciv); [Ukraine – Individual – Significant developments](https://taxsummaries.pwc.com/ukraine/individual/significant-developments)
+- Surviving spouse (`spouse_treatment` `exempt_with_conditions`): Spouse pays 0% only on inheritance from a resident decedent; from a non-resident the rate is 18% (PwC).
 
 ## Wealth tax
 
@@ -117,3 +118,4 @@ US citizens: US–Ukraine income tax treaty exists (listed by PwC); saving claus
 - 2026-10-15: initial research.
 - 2026-10-15 (household cost pass): added Kyiv prime rent USD 3,200 a month (DOM.RIA, Pechersk 4+ room flats of 120 m²+, n=224) and Kyiv International School fee USD 19,600 (2026-27).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (USD 3,200).
+- 2026-10-16: added surviving-spouse treatment.

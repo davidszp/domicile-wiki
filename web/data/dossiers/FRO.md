@@ -56,6 +56,7 @@ Inheritances are free of income tax, but arvaavgjald (inheritance duty) of 1%-12
 - **Business relief covers listed shares:** False
 
 Open points for this tax: Later amendments to Anordning 468/1921 not checked; the TAKS summary (1%-12%) matches the original table. | Scope for foreign assets of a Faroese-domiciled deceased and whether a spouse in undivided estate (óskift búgv) defers the duty for children not analysed.
+- Surviving spouse: pays the same 1%-3% duty as children (1908 act § 2 A); no tax while the estate is kept undivided, but tax falls due when it is divided.
 
 ## Wealth tax
 
@@ -106,3 +107,4 @@ City: Tórshavn (incl. Hoyvík and Argir).
 - 2026-10-15: initial research.
 - 2026-10-15 (household cost pass): added Tórshavn prime rent DKK 14,750/month (median of 4 Kitt.fo listings of 140 m²+, thin sample) and a school fee of DKK 0 (no international school; public Glasir upper secondary is free, taught in Faroese).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

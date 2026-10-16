@@ -67,6 +67,8 @@ Federal estate tax is levied on the estate at 40% on the taxable estate above th
 - **Residence/domicile rules:** Estate tax uses domicile (living in the US with intent to remain), not the income tax residence test. Green card holders are usually domiciled. Expatriates who are covered expatriates trigger the IRC 2801 recipient tax on later gifts/bequests to US persons.
 - **Business relief covers listed shares:** False
 
+**Surviving spouse:** Unlimited marital deduction for property passing to a surviving spouse (IRC 2056(a)), but only if the spouse is a US citizen or the property goes into a qualified domestic trust (2056(d)); it defers the tax, since the assets are in the survivor's estate (the unused exclusion is portable).
+
 ## Wealth tax
 
 ### Standard regime
@@ -143,6 +145,7 @@ Austin, TX (upper-middle-class benchmark, replacing New York). Prime price per m
 - 26 U.S.C. § 531 - Imposition of accumulated earnings tax (Legal Information Institute (Cornell), legislation): https://www.law.cornell.edu/uscode/text/26/531
 - Zumper - 4 bedroom houses for rent in Austin, TX (Zumper, other): https://www.zumper.com/houses-for-rent/austin-tx/4-beds
 - St. Stephen's Episcopal School - Tuition and fees 2026-27 (St. Stephen's Episcopal School, other): https://www.sstx.org/fs/pages/442
+- 26 U.S.C. 2056 (Cornell LII): https://www.law.cornell.edu/uscode/text/26/2056
 
 ## Change log
 
@@ -152,3 +155,4 @@ Austin, TX (upper-middle-class benchmark, replacing New York). Prime price per m
 - 2026-10-15: federal estate tax now scored with portability for the married reference couple (USD 30M combined exclusion instead of USD 15M); the US-citizen overlay uses the same figure. With portability the dynasty trust no longer shows an inheritance advantage in the static model; its real benefit (keeping post-gift growth and the GST-exempt amount out of future estates) is described in text.
 - 2026-10-15: added the cost_of_living block for Austin, TX (family home rent from 31 Zumper 4-bedroom listings, St. Stephen's upper-school tuition 2026-27).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from USD 4,300 to USD 4,550 (10 family-area Austin houses; student belt removed).
+- 2026-10-16: added surviving-spouse treatment.

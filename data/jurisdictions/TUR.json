@@ -166,6 +166,8 @@
         "exemptions_thresholds": "2026: TRY 2,907,136 per child/spouse share (TRY 5,817,845 for a spouse with no descendants); TRY 66,935 for gifts. Household goods and personal effects exempt. Foreign inheritance tax paid on the same assets is deductible.",
         "basis": "beneficiary",
         "children_treatment": "taxed",
+        "spouse_treatment": "taxed",
+        "spouse_note": "The spouse has the same exemption as each child, TRY 2,907,136 (TRY 5,817,845 if the deceased left no descendants), and the same 1%-10% scale (Law 7338 arts. 4(b) and 16).",
         "exemption": 2907136,
         "brackets": [
           {
@@ -380,6 +382,8 @@
         ],
         "basis": "beneficiary",
         "children_treatment": "taxed_low",
+        "spouse_treatment": "taxed_low",
+        "spouse_note": "The spouse has the same exemption as each child, TRY 2,907,136 (TRY 5,817,845 if there are no descendants), and the same flat 1% as children during the exemption period (Law 7338 arts. 4(b) and 16, as amended by Law 7582).",
         "exemption": 2907136,
         "brackets": [
           {

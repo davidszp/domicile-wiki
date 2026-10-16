@@ -65,7 +65,8 @@ def test_source_register_covers_every_researched_metric():
     for path in JUR:
         for m in METRICS:
             assert (path.stem, m) in covered, f"{path.stem}.{m} missing from the source register"
-    assert all(s["tax_year"] and s["verified_on"] for s in reg)
+    assert all(s["verified_on"] for s in reg)
+    assert all(s["tax_year"] for s in reg if s["metric"] not in ("immigration", "succession"))  # these carry a research date only
 
 
 def test_unresearched_jurisdictions_are_never_scored():
@@ -192,3 +193,81 @@ def test_regional_income_units_match_map_regions():
         for u in f.units:
             assert u.code in data and data[u.code]["parent"] == f.parent, u.code
             assert data[u.code]["personas"]["expat"]["researched"], u.code
+
+
+IMM = sorted((ROOT / "data" / "immigration").glob("*.json"))
+EEA_SWISS = {"NOR", "ISL", "LIE", "CHE"}  # free movement for EU citizens without EU membership
+
+
+@pytest.mark.parametrize("path", IMM, ids=lambda p: p.stem)
+def test_immigration_files_validate_and_are_dated(path):
+    assert validate_file(path) == []
+    f = json.loads(path.read_text())
+    assert dt.date.fromisoformat(f["researched_on"]) <= TODAY
+    for r in f["routes"]:
+        for s in [*r["sources"], *f["sources"]]:
+            assert not s.get("accessed") or dt.date.fromisoformat(s["accessed"]) <= TODAY, (r["id"], s["url"])
+
+
+@pytest.mark.parametrize("path", IMM, ids=lambda p: p.stem)
+def test_immigration_free_movement_matches_eu_membership(path):
+    e = scores()["jurisdictions"].get(path.stem)
+    assert e and e["level"] == "country", f"{path.stem} is not a country on the map"
+    f = json.loads(path.read_text())
+    eu_free = [r for r in f["routes"] if r["kind"] == "free_movement" and "EU" in r["citizenships"] and r["status"] == "open"]
+    if e.get("eu"):
+        assert eu_free, f"{path.stem} is in the EU but has no open free-movement route for EU citizens"
+        assert e["residence"]["EU"]["kind"] == "free_movement"
+    elif path.stem not in EEA_SWISS:
+        assert not eu_free, f"{path.stem} is not in the EU/EEA/Switzerland but gives EU citizens free movement"
+
+
+def test_scoring_config_references_real_map_units():
+    """Every country code in the hand-maintained lists of scoring_config.json must exist; a typo would fail silently."""
+    cfg = json.loads((ROOT / "data" / "scoring_config.json").read_text())
+    j = scores()["jurisdictions"]
+    countries = {k for k, e in j.items() if e["level"] == "country"}
+    checks = {
+        "knockout lists": [c for key in ("sanctions", "capital_controls", "security_state_courts") for c in cfg["knockout"][key]["countries"]],
+        "red flags": list(cfg["red_flags"]["countries"]),
+        "EU members": cfg["eu"]["members"],
+        "EU territories": list(cfg["eu"]["territories"]),
+        "Mediterranean": cfg["regions"]["mediterranean"]["members"],
+        "ranked non-members": list(cfg["territories"]["non_members_ranked"]["units"]),
+    }
+    for what, ids in checks.items():
+        missing = sorted(set(ids) - set(j))
+        assert not missing, f"{what}: unknown ids {missing}"
+    for tid, t in cfg["territories"]["units"].items():
+        assert tid in j and j[tid]["level"] == "territory", tid
+        assert "part_of" not in t or t["part_of"] in countries, f"{tid}: part_of {t.get('part_of')} is not a country"
+        assert t["sources"] and len(t["explanation"]) > 40, tid
+    for cid, flag in cfg["red_flags"]["countries"].items():
+        assert flag["sources"] and "docs/" not in flag["explanation"], f"{cid}: red flag needs sources and visitor-facing text"
+    # A country cannot be both ruled out and merely flagged.
+    ko = {c for key in ("sanctions", "capital_controls", "security_state_courts") for c in cfg["knockout"][key]["countries"]}
+    assert not ko & set(cfg["red_flags"]["countries"]), ko & set(cfg["red_flags"]["countries"])
+
+
+def test_every_module_is_preloaded():
+    """index.html lists every ES module with modulepreload so the browser fetches them in parallel."""
+    html = (WEB.parent / "index.html").read_text()
+    listed = set(re.findall(r'<link rel="modulepreload" href="([^"]+)"', html))
+    modules = {str(p.relative_to(WEB.parent)) for p in (WEB.parent / "js").rglob("*.js")} - {"js/theme.js", "js/main.js"}
+    assert listed == modules, f"missing: {sorted(modules - listed)}; stale: {sorted(listed - modules)}"
+
+
+SUCC = sorted((ROOT / "data" / "succession").glob("*.json"))
+
+
+@pytest.mark.parametrize("path", SUCC, ids=lambda p: p.stem)
+def test_succession_files_validate_and_match_a_country(path):
+    assert validate_file(path) == []
+    f = json.loads(path.read_text())
+    e = scores()["jurisdictions"].get(path.stem)
+    assert e and e["level"] == "country", path.stem
+    assert dt.date.fromisoformat(f["researched_on"]) <= TODAY
+    # The EU Succession Regulation applies in EU members except Denmark and Ireland, and nowhere else.
+    assert f["eu_succession_regulation"] == (bool(e.get("eu")) and path.stem not in ("DNK", "IRL")), path.stem
+    if f["forced_heirship"] == "no":
+        assert not f["reserved_share"], f"{path.stem}: a reserved share without forced heirship"

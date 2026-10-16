@@ -18,6 +18,7 @@ Capital income tax (fjármagnstekjuskattur) 22% on nominal gains (Skatturinn 202
 
 ## Inheritance and gifts to children
 Act no. 14/2004 on inheritance tax: 10% of the estate's taxable base above ISK 6,789,790 (deaths in 2026; 2025: ISK 6,498,129), CPI-indexed, shared among heirs by inheritance share; spouse exempt (Skatturinn, Government of Iceland, island.is). JSON: basis estate, exemption 6,789,790, 10% bracket. Prepaid (advance) inheritance: 10% of full value, no allowance, debts not deductible (island.is). Treatment of other gifts (possibly taxable income of recipient) unverified. Abolition proposals in Althingi not passed.
+- Surviving spouse or cohabitant: no inheritance tax is levied (PwC).
 
 ## Wealth tax
 None (PwC). Municipal property tax on real estate is separate.
@@ -58,3 +59,4 @@ City: Reykjavik.
 - 2026-10-15: initial research.
 - 2026-10-15: data-quality pass: added rent (Igloo, capital-area 4-5 bedroom listings, ISK 510,000/month) and the MH IB Diploma cost (ISK 110,000/year; public school, no tuition).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

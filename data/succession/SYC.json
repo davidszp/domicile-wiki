@@ -1,0 +1,59 @@
+{
+  "id": "SYC",
+  "name": "Seychelles",
+  "researched_on": "2026-10-16",
+  "summary": "Children are reserved heirs under the Civil Code (art. 913): reportedly one half with one child, two thirds with two, three quarters with three or more. The Constitutional Court upheld this in 2013. Seychelles has a Trusts Act 2021 and Foundations Act 2009 that offer anti-forced-heirship protection.",
+  "forced_heirship": "yes",
+  "reserved_share": "Children: reportedly 1/2 with one child, 2/3 with two, 3/4 with three or more (art. 913 Civil Code; secondary source). Upheld as proportionate by the Constitutional Court in Durup v Brassel (2013), endorsed by the Court of Appeal (2014).",
+  "family_claims": "",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Forced heirship applies to citizens and, reportedly, to foreigners owning property in Seychelles under its civil law. Foreign-law choice for movables not confirmed.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "Trusts Act 2021 (Act 34 of 2021, in force 6 Aug 2021, replacing the International Trusts Act 1994) covers Seychelles trusts and foreign trusts (Part IV, s. 81); commentary says foreign forced-heirship claims are not recognised, and no estate duty applies to international trust assets. Foundations Act 2009 has an anti-forced-heirship section (unofficial consolidation; verify). Domestic law still applies to a Seychellois's own estate.",
+  "open_questions": [
+    "Fractions come from a commercial guide; verify against the Civil Code.",
+    "Text of Trusts Act 2021 forced-heirship provision not read; official page blocked.",
+    "Foundations Act 2009 text not verified.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here."
+  ],
+  "sources": [
+    {
+      "title": "Trusts Act, 2021 (Act 34 of 2021)",
+      "url": "https://seylii.org/akn/sc/act/2021/34",
+      "publisher": "SeyLII",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Durup & Ors v Brassel & Anor [2013] SCCC 6",
+      "url": "https://old.seylii.org/sc/judgment/constitutional-court/2013/6-1",
+      "publisher": "SeyLII",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance tax and inheritance law in Seychelles",
+      "url": "https://www.globalpropertyguide.com/Africa/Seychelles/Inheritance",
+      "publisher": "Global Property Guide",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Seychelles inheritance and estate tax",
+      "url": "https://www.expanship.com/sc/blog/seychelles-inheritance-and-estate-tax",
+      "publisher": "Expanship",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "id": "QAT",
+  "name": "Qatar",
+  "summary": "No free movement for anyone. EU, US and other passports use the same routes: residence by buying property of at least QAR 730,000 (temporary, tied to the property), or at least QAR 3,650,000 for permanent-residency benefits. The statutory permanent residence card needs about 20 years of residence. No remote-work visa was found. Citizenship is practically closed.",
+  "naturalisation": "Not researched from the statute in this pass. Qatari nationality law is very restrictive; the permanent residence card (Law No. 10 of 2018) needs 20 years of legal residence (10 if born in Qatar), enough income, good conduct and Arabic.",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "General rule, not verified in this pass: Qatar does not allow dual nationality for naturalised citizens.",
+  "routes": [
+    {
+      "id": "property_permanent_benefits",
+      "name": "Real estate residency with permanent-residency benefits (QAR 3,650,000)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "permanent_residence",
+      "summary": "Buying property worth at least QAR 3,650,000 (about USD 1 million) gives permanent-residency benefits such as health care, education and investment rights.",
+      "requirements": "Aqarat: purchase of at least QAR 3,650,000 gives 'permanent residency benefits' (health, education, investment). Qualifying areas, whether a card is issued, renewal and presence rules are not published on the Aqarat page. Secondary sources mention an annual cap of 100 and a 90-day annual stay; they conflict and are unconfirmed. Gulf News (13 Oct 2025) reported the unified platform as to be launched.",
+      "minimum_investment": {
+        "amount": 3650000,
+        "currency": "QAR"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Not published; secondary sources say 90 days a year (unconfirmed).",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Qualifying investments can extend to eligible family members (event page, unconfirmed).",
+      "tax_note": "Qatar taxes individuals only on local business and employment income; a permit does not by itself create tax residence.",
+      "sources": [
+        {
+          "title": "Own real estate - Investor's journey",
+          "url": "https://www.aqarat.gov.qa/en/investors-journey/own-real-estate/",
+          "publisher": "Real Estate Regulatory Authority (Aqarat), Qatar",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Qatar to grant property title and residency visas within days for $200,000 real estate purchases",
+          "url": "https://gulfnews.com/business/property/qatar-to-grant-property-title-and-residency-visas-within-days-for-200000-real-estate-purchases-1.500305560",
+          "publisher": "Gulf News (13 Oct 2025)",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "property_residency",
+      "name": "Real estate residency (QAR 730,000)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Buying property worth at least QAR 730,000 (about USD 200,000) gives a residence permit tied to owning the property.",
+      "requirements": "Aqarat: purchase of at least QAR 730,000 gives residency tied to the property. Designated freehold and usufruct zones under Cabinet Resolution 28 of 2020 (secondary source). Gulf News (13 Oct 2025) said the one-stop scheme would be officially launched; validity, renewal and minimum stay are not published on Aqarat. Secondary sources say 1-year renewable while the property is held.",
+      "minimum_investment": {
+        "amount": 730000,
+        "currency": "QAR"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Not published; secondary sources say 90 days a year (unconfirmed).",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Spouse, children and parents reported (secondary, unconfirmed).",
+      "tax_note": "A permit does not by itself create tax residence.",
+      "sources": [
+        {
+          "title": "Own real estate - Investor's journey",
+          "url": "https://www.aqarat.gov.qa/en/investors-journey/own-real-estate/",
+          "publisher": "Real Estate Regulatory Authority (Aqarat), Qatar",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Qatar to grant property title and residency visas within days for $200,000 real estate purchases",
+          "url": "https://gulfnews.com/business/property/qatar-to-grant-property-title-and-residency-visas-within-days-for-200000-real-estate-purchases-1.500305560",
+          "publisher": "Gulf News (13 Oct 2025)",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "permanent_residence_card",
+      "name": "Permanent residence card (Law No. 10 of 2018)",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "permanent_residence",
+      "summary": "A card giving most citizen benefits to long-term residents; it takes about 20 years of residence.",
+      "requirements": "Law No. 10 of 2018 as described by the Ministry of Interior (9 April 2019): 20 years of legal residence if born abroad (10 if born in Qatar), income enough for the family, good conduct, sufficient Arabic. Fee QAR 3,000 at application and QAR 3,000 at collection. Not an investment route; investors generally use the property tiers above.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 6000,
+        "currency": "QAR"
+      },
+      "fees_note": "QAR 3,000 on document submission plus QAR 3,000 on collection (MoI, 2019).",
+      "physical_presence": "Continuous legal residence; details not researched.",
+      "path_to_permanent_years": 20,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Qatar has no tax on investment income for individuals.",
+      "sources": [
+        {
+          "title": "MOI highlights terms for permanent residency",
+          "url": "https://www.gulf-times.com/story/628239/moi-highlights-terms-for-permanent-residency/amp",
+          "publisher": "Gulf Times (reporting Ministry of Interior, 9 April 2019)",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "work_permit",
+      "name": "Employer-sponsored work residence",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Most expatriates live in Qatar on a work permit and residence permit sponsored by an employer or a Qatar Financial Centre entity.",
+      "requirements": "Employer applies for the work and residence permit through the Ministry of Interior and Ministry of Labour; exit permit rules were relaxed in recent years. Not researched in detail here.",
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "physical_presence": "Residence lapses after 6 months outside Qatar (general rule, not verified).",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "See jurisdiction file.",
+      "sources": [
+        {
+          "title": "Qatar - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/qatar/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Validity, renewal, annual minimum stay and family scope of the QAR 730,000 and QAR 3,650,000 property tiers are not published on the Aqarat page.",
+    "Whether the property residence is legally a permanent residence card or a renewable permit, and any annual cap, is unconfirmed.",
+    "Qatar remote-work or digital nomad visa: none found in this pass.",
+    "Naturalisation law (Law No. 38 of 2005) and dual-nationality rule were not read; years of residence not sourced.",
+    "Current Ministry of Interior pages could not be reached; the permanent residence card terms are from a 2019 report."
+  ],
+  "sources": [
+    {
+      "title": "Own real estate - Investor's journey",
+      "url": "https://www.aqarat.gov.qa/en/investors-journey/own-real-estate/",
+      "publisher": "Real Estate Regulatory Authority (Aqarat), Qatar",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Qatar - Individual - Residence",
+      "url": "https://taxsummaries.pwc.com/qatar/individual/residence",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

@@ -62,6 +62,7 @@ Romania has no inheritance or gift tax. The only charge is on real estate: if th
 **Scope/domicile:** Not relevant in practice since transfers to children are untaxed (subject to the 2-year rule for real estate).
 
 **JSON numbers:** basis `beneficiary`, children `exempt_with_conditions`, exemption 0, brackets [], other transfer cost 0, gifts same as inheritance: False.
+- Surviving spouse (`spouse_treatment` `exempt_with_conditions`): Same as children: nil if the succession is finalised within 2 years, otherwise 1% on real estate; no spouse exemption from the 1% was found.
 
 ## Wealth tax
 
@@ -117,9 +118,11 @@ Prime purchase price per m², family health insurance and housekeeper cost were 
 - [Romania - Corporate - Taxes on corporate income](https://taxsummaries.pwc.com/romania/corporate/taxes-on-corporate-income)
 - Case de închiriat: Bucuresti (200-400 m²): https://www.storia.ro/ro/rezultate/inchiriere/casa/bucuresti?areaMin=200&areaMax=400&limit=72
 - Tuition & Fees - American International School of Bucharest: https://www.aisb.ro/future-families/admissions/fees/
+- [Fiscalitatea.ro: Art. 111 Fiscal Code, transfer of real estate (1% on successions not finalised within 2 years)](https://www.fiscalitatea.ro/venituri-din-transferul-proprietatilor-imobiliare-din-patrimoniul-personal-partea-a-3-a-1838/)
 
 ## Change log
 
 - 2026-10-15: initial research.
 - 2026-10-15: added Bucharest cost of living (Storia.ro rent sample, AISB 2026-27 fees).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

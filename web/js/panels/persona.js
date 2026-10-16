@@ -2,16 +2,17 @@
 // income calculator and the methodology section. The HNWI persona uses profile.js and
 // calculator.js; main.js and those panels hand over here when an income persona is active.
 
-import { h, append, clear, extLink, fmtPct, fmtEur, fmtMoney, moneyText, displayCurrency, toDisplay, fromDisplay } from "../dom.js";
+import { h, append, clear, extLink, fmtPct, fmtEur, fmtInt, parseWhole, fmtMoney, moneyText, displayCurrency, toDisplay, fromDisplay } from "../dom.js";
 import { state, entries, jur, personaCfg, metricsFor, defaultWeightsFor } from "../state.js";
 import { loadProfile, loadDossier } from "../data.js";
 import { normalizeWeights } from "../scoring.js";
 import { personaRows } from "../earned.js";
 import { renderMarkdown } from "../markdown.js";
 import { scoreChip } from "./profile.js";
+import { immigrationSection, residenceFact } from "./immigration.js";
+import { GROUP, field, sourceList } from "../labels.js";
 
 const COLA_LABEL = { us_dssr: "US State Department", un_icsc: "UN post adjustment", eu_cc: "EU correction coefficient", de_kaufkraft: "German Kaufkraftausgleich", de_destatis: "German Destatis parity" };
-const CZ_LABEL = { EU: "EU citizens", US: "US citizens", OTHER: "other nationals" };
 const KIND_LABEL = { employment: "employee", self_employment: "self-employed contractor" };
 const TREATMENT = {
   exempt: "Qualifying income exempt from local income tax",
@@ -20,15 +21,7 @@ const TREATMENT = {
   standard: "No change to taxation (residence permit only)",
 };
 
-function sourceList(sources) {
-  if (!sources || !sources.length) return null;
-  return h("ul", { class: "sources" }, sources.map((s) => h("li", null, extLink(s.url, s.title), ` — ${s.publisher}`)));
-}
 
-function field(label, value) {
-  if (value === null || value === undefined || value === "") return null;
-  return h("div", { class: "field" }, h("dt", null, label), h("dd", null, value));
-}
 
 const openQuestions = (qs) => (qs && qs.length ? h("div", { class: "open-q" }, h("strong", null, "Open questions: "), h("ul", null, qs.map((q) => h("li", null, q)))) : null);
 
@@ -74,6 +67,38 @@ async function showDossier(container, iso) {
   }
 }
 
+/**
+ * "Becoming tax resident": the country's own residence test (from the tax research) and the traps that
+ * catch people who move for work or work remotely. The traps are general rules of the OECD Model Tax
+ * Convention (art. 4 residence, art. 5 permanent establishment), not country findings.
+ */
+function taxResidenceSection(p) {
+  const test = p.data?.residency?.tax_residency_test;
+  const nomad = state.persona === "nomad";
+  return foldSection("Becoming tax resident",
+    test ? h("p", null, test) : h("p", { class: "muted" }, "This country's residence test has not been researched yet."),
+    test ? sourceList(p.data.residency.sources) : null,
+    h("div", { class: "notice small trap-note" },
+      h("strong", null, "Common traps. "),
+      h("ul", null,
+        h("li", null, "Day counts are not the only test. A home available to you, your family or your main interests can make you resident with fewer days, or keep you resident where you came from."),
+        h("li", null, "If two countries both treat you as resident, a tax treaty between them decides who taxes you (permanent home first, then centre of vital interests, usual abode, nationality). Without a treaty you can be taxed twice."),
+        h("li", null, "Leaving can cost too: some countries tax unrealised gains when you go, or keep taxing former residents for some years."),
+        nomad ? h("li", null, "Working for clients from a country, or from a fixed office there, can create a taxable business presence or make the income local even if you are not resident.") : null,
+        nomad ? h("li", null, "A digital nomad visa gives the right to stay, not a tax status: whether you become tax resident, and how you are taxed, follows the rules above.") : null),
+      h("p", null, "Check both countries' rules before you move; this is research, not tax advice.")));
+}
+
+/** Best placing in the published nomad rankings, with every placing in the tooltip. */
+function nomadPlacings(ns) {
+  const placed = Object.values(ns.named_in);
+  const text = (n) => `${n.city}${n.rank ? `, ${ordinal(n.rank)}${n.length ? ` of ${n.length}` : ""}` : ""} in ${n.title}`;
+  const best = placed.reduce((a, b) => ((b.rank ?? 99) / (b.length ?? 99) < (a.rank ?? 99) / (a.length ?? 99) ? b : a));
+  return h("span", { class: "muted", title: placed.map(text).join("\n") }, ` · best: ${text(best)}${placed.length > 1 ? " (hover for all)" : ""}`);
+}
+
+const ordinal = (n) => `${n}${n % 100 >= 11 && n % 100 <= 13 ? "th" : ["th", "st", "nd", "rd"][n % 10] || "th"}`;
+
 /** One line of the key-facts block at the top of a profile. */
 export function fact(label, ...value) {
   return h("div", { class: "fact" }, h("dt", null, label), h("dd", null, ...value));
@@ -110,8 +135,12 @@ export function renderPersonaBody(body, p, id, r) {
       h("span", { class: "muted" }, ` · ${fmtEur(bestRow.cost)} a year${bestRow.type !== "standard" ? ` · ${bestRow.name}` : ""}`)) : null,
     fact("Living costs", block.household_cost ? `${fmtEur(block.household_cost)} a year` : "not sourced"),
     lo && lo.eur !== null && lo.eur !== undefined ? fact("Left over", `${fmtEur(lo.eur)} a year`) : null,
-    ns ? fact("Nomad scene", ns.lists_named ? `in ${ns.lists_named} of ${ns.lists_total} rankings${ns.hub ? ` · ${ns.hub}` : ""}` : "not in the rankings") : null)]);
+    ns ? fact("Nomad scene", ns.lists_named ? `named in ${ns.lists_named} of ${ns.lists_total} published nomad rankings` : `not named in any of ${ns.lists_total} published nomad rankings`,
+      ns.lists_named ? nomadPlacings(ns) : null) : null,
+    residenceFact(e) ? fact("Residence for you", residenceFact(e)) : null)]);
+  body.append(immigrationSection(p.immigration));
 
+  body.append(taxResidenceSection(p));
   body.append(foldSection("Tax regimes compared",
     h("div", { class: "table-wrap" }, h("table", { class: "grid" },
       h("thead", null, h("tr", null, h("th", null, "Regime"), h("th", { class: "num" }, "Rate"), h("th", { class: "num", title: "Average a year over the stay" }, "A year"), h("th", null, "Score"))),
@@ -128,7 +157,7 @@ export function renderPersonaBody(body, p, id, r) {
       const ok = reg.eligible_citizenships.includes(state.citizenship);
       regSec.append(h("details", { class: "regime" },
         h("summary", null, reg.kind === "digital_nomad_visa" ? "Nomad visa: " : reg.kind === "expat_regime" ? "Expat regime: " : "", reg.name,
-          reg.duration_years ? ` (${reg.duration_years} years)` : "", ok ? "" : ` — not open to ${CZ_LABEL[state.citizenship]}`),
+          reg.duration_years ? ` (${reg.duration_years} years)` : "", ok ? "" : ` — not open to ${GROUP[state.citizenship]}`),
         h("p", null, reg.description),
         h("dl", { class: "small" },
           field("Tax treatment", TREATMENT[reg.treatment] + (reg.flat_rate !== null ? `: ${fmtPct(reg.flat_rate)}` : "") + (reg.exempt_share !== null ? `: ${fmtPct(reg.exempt_share, 0)} exempt` : "")),
@@ -164,7 +193,8 @@ export function renderPersonaBody(body, p, id, r) {
 
   body.append(foldSection("All metrics", metricsTable(r)));
   body.append(costSection(block, inc));
-  body.append(foldSection("Residence and work rights", h("p", null, inc.residence_routes)));
+  // The researched immigration paths replace this older summary where they exist.
+  if (!p.immigration) body.append(foldSection("Residence and work rights", h("p", null, inc.residence_routes)));
   if (inc.open_questions.length) body.append(foldSection(`Open questions (${inc.open_questions.length})`, h("ul", null, inc.open_questions.map((q) => h("li", null, q)))));
   body.append(h("p", { class: "small muted" }, `Researched ${inc.researched_on} · ${displayCurrency()} at ECB rates of ${state.data.meta.fx_date}`));
   const dossier = h("div", { class: "dossier" });
@@ -252,10 +282,13 @@ export function renderIncomeCalculator(panel) {
   const run = () => computeIncome(out, inp);
   const num = (key, label, lo, hi, step, money = false) => {
     // Money is shown and typed in the display currency; inp keeps EUR.
-    const shown = (v) => (money ? Math.round(toDisplay(v)) : v);
-    const el = h("input", { type: "number", min: lo, max: hi, step, value: shown(inp[key]), inputmode: "numeric", id: `ic-${key}` });
+    // Money is a text field so it can show thousands separators; any separators are accepted.
+    const shown = (v) => (money ? fmtInt(toDisplay(v)) : v);
+    const el = money
+      ? h("input", { type: "text", value: shown(inp[key]), inputmode: "numeric", autocomplete: "off", id: `ic-${key}` })
+      : h("input", { type: "number", min: lo, max: hi, step, value: shown(inp[key]), inputmode: "numeric", id: `ic-${key}` });
     el.addEventListener("change", () => {
-      const n = money ? fromDisplay(Number(el.value)) : Number(el.value);
+      const n = money ? fromDisplay(parseWhole(el.value)) : Number(el.value);
       inp[key] = Number.isFinite(n) ? Math.min(hi, Math.max(lo, n)) : lo;
       el.value = shown(inp[key]);
       run();
@@ -326,7 +359,7 @@ export function personaMethodology() {
 // ------------------------------------------------------------------ "Who is this for?" card
 
 const pct = (x) => `${Math.round(x * 100)}%`;
-const usd = (x) => `USD ${Math.round(x).toLocaleString("en-GB")}`;
+const usd = (x) => `USD ${fmtInt(x)}`;
 
 function knockoutLabels(persona) {
   const ko = state.cfg.knockout;

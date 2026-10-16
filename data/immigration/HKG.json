@@ -1,0 +1,167 @@
+{
+  "id": "HKG",
+  "name": "Hong Kong",
+  "researched_on": "2026-10-16",
+  "summary": "No free movement for anyone. EU, US and other passports (except Afghan, Cuban and North Korean) can use the same routes: the New CIES (HKD 30 million of net assets and a HKD 30 million investment) for investors, the Top Talent Pass Scheme (HKD 2.5 million income, or a degree from a listed university) with no job offer, or standard employment, QMAS and entrepreneur visas. There is no retiree or digital-nomad visa. Permanent residence comes after 7 years of ordinary residence.",
+  "naturalisation": "Hong Kong permanent residence after 7 years of continuous ordinary residence. Citizenship means Chinese nationality, which foreigners can obtain only by naturalisation under the PRC Nationality Law (rare, discretionary); not researched in detail.",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "PRC nationality law does not recognise dual nationality for Chinese nationals; not verified on an official page in this run.",
+  "routes": [
+    {
+      "id": "new_cies",
+      "name": "New Capital Investment Entrant Scheme (New CIES)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Residence for people who hold HKD 30 million of net assets and invest HKD 30 million in Hong Kong financial assets, with an optional real-estate part.",
+      "requirements": "Age 18+; net assets of at least HKD 30 million held for the 6 months before the net asset assessment (jointly owned assets count pro rata); at least HKD 30 million net in permissible investment assets made on or after 1 March 2024 and held through the required window around Approval-in-Principle. Per the scheme rules and a March 2025 LegCo reply, the HKD 30 million includes HKD 3 million in the CIES Investment Portfolio and the rest in permissible financial assets and/or real estate (real-estate aggregate cap HKD 10 million per the LegCo reply; later changes to the cap and the single-residential-property threshold were seen in secondary summaries only). From 1 November 2026, only assets transacted through designated accounts count. Must show the ability to live in Hong Kong without relying on returns from the investments. Applicants of Afghan, Cuban and North Korean nationality are excluded. No minimum stay is imposed by the scheme.",
+      "investment_options": "HKD 30 million total: HKD 3 million into the CIES Investment Portfolio (managed by the Hong Kong Investment Corporation) plus permissible assets (equities, debt securities, certificates of deposit, eligible funds) and, capped, real estate.",
+      "fees_note": "Fees not found on the pages read.",
+      "processing_time": "Not stated on pages read.",
+      "family": "Spouse or civil partner and unmarried dependent children under 18 may join.",
+      "tax_note": "Hong Kong taxes on a territorial basis regardless of residence; there is no capital gains tax. Permanent residence needs 7 years of continuous ordinary residence, which means actually living in Hong Kong.",
+      "physical_presence": "No minimum days stated in the scheme rules",
+      "sources": [
+        {
+          "title": "New CIES - Eligibility Criteria",
+          "url": "https://www.newcies.gov.hk/en/eligibility-criteria/",
+          "publisher": "InvestHK / New CIES Office",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Rules for the New Capital Investment Entrant Scheme",
+          "url": "https://www.newcies.gov.hk/assets/pdf/scheme-rule-en.pdf",
+          "publisher": "InvestHK / New CIES Office",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "LCQ9: New Capital Investment Entrant Scheme (26 March 2025)",
+          "url": "https://www.info.gov.hk/gia/general/202503/26/P2025032500490.htm",
+          "publisher": "Hong Kong SAR Government",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 30000000,
+        "currency": "HKD"
+      },
+      "path_to_permanent_years": 7,
+      "path_to_citizenship_years": null,
+      "government_fees": null
+    },
+    {
+      "id": "ttps",
+      "name": "Top Talent Pass Scheme (TTPS)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "No job offer needed: earn HKD 2.5 million a year or graduate from a listed top university to get a Hong Kong visa.",
+      "requirements": "Category A: annual income of at least HKD 2.5 million in the preceding year (personal investment income does not count). Category B: degree from an eligible university plus 3 years' work experience in the last 5 years. Category C: eligible-university graduate within 5 years with under 3 years' experience, annual quota, first come first served. Eligible university list updated annually (200 universities from 1 January 2026). Nationals of Afghanistan, Cuba and North Korea are excluded. Initial stay 36 months (A) or 24 months (B, C), extension normally 3 years; 'top-tier' employment stream (HKD 2 million assessable income and 2 years on the scheme) normally gets 6 years. Extension applicants must complete a survey from 30 January 2026.",
+      "investment_options": "",
+      "fees_note": "Application and visa-issuance fees apply but amounts not listed on the page.",
+      "processing_time": "",
+      "family": "Spouse or registered partner and unmarried children under 18 as dependants; they may work or study.",
+      "tax_note": "Salaries tax applies on Hong Kong-sourced employment income; no tax on foreign-sourced income.",
+      "physical_presence": "No fixed minimum; permanent residence needs 7 years of continuous ordinary residence",
+      "sources": [
+        {
+          "title": "Top Talent Pass Scheme",
+          "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+          "publisher": "Hong Kong Immigration Department",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 2500000,
+        "currency": "HKD"
+      },
+      "path_to_permanent_years": 7
+    },
+    {
+      "id": "gep_qmas",
+      "name": "General Employment Policy, Quality Migrant Admission Scheme (QMAS) and Admission Scheme for Mainland Talents (ASMTP)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Standard Hong Kong work visas: a job offer (GEP), or a points test for talent without a job offer (QMAS).",
+      "requirements": "GEP: a job relevant to the applicant's qualifications that the local workforce cannot readily fill, market-rate pay, good education or professional experience, no sector restriction. QMAS: General Points Test (age, education, language, experience, income, business ownership) or Achievement-based test, no job offer required. Stay normally 3+3+2 years, or 3+5 for top-tier earners. Quotas and exact points thresholds were not read.",
+      "investment_options": "",
+      "fees_note": "Fee amounts not on the page read.",
+      "processing_time": "",
+      "family": "Spouse and unmarried children under 18; they may work or study; their stay is tied to the sponsor's.",
+      "tax_note": "Salaries tax on Hong Kong-sourced employment income.",
+      "physical_presence": "Live and work in Hong Kong; permanent residence needs 7 years of continuous ordinary residence",
+      "sources": [
+        {
+          "title": "Introduction of Admission Schemes for Talent, Professionals and Entrepreneurs",
+          "url": "https://www.immd.gov.hk/eng/useful_information/admission-schemes-talents-professionals-entrepreneurs.html",
+          "publisher": "Hong Kong Immigration Department",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 7
+    },
+    {
+      "id": "gep_entrepreneur",
+      "name": "General Employment Policy - Entrepreneurs (business in Hong Kong)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Visa for people who set up or join a business in Hong Kong that will make a substantial contribution to its economy.",
+      "requirements": "Overseas, Taiwan and Macao entrepreneurs establishing or joining a business in Hong Kong, with good education or proven professional experience and the ability to make a substantial economic contribution. No fixed capital amount is stated. Stay 3+3+2 years, or 3+5 for top-tier.",
+      "investment_options": "",
+      "fees_note": "Not listed on page read.",
+      "processing_time": "",
+      "family": "Spouse and unmarried children under 18 (ImmD dependant rules).",
+      "tax_note": "",
+      "physical_presence": "Run the business in Hong Kong; permanent residence needs 7 years ordinary residence",
+      "sources": [
+        {
+          "title": "Introduction of Admission Schemes for Talent, Professionals and Entrepreneurs",
+          "url": "https://www.immd.gov.hk/eng/useful_information/admission-schemes-talents-professionals-entrepreneurs.html",
+          "publisher": "Hong Kong Immigration Department",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 7
+    }
+  ],
+  "open_questions": [
+    "Digital nomad: no official statement saying 'none' was found; absence inferred from ImmD's list of schemes.",
+    "Real estate cap (HKD 10m vs 15m) and single-residential-property threshold (HKD 50m vs 30m) conflict between sources; confirm in the current Scheme Rules.",
+    "Government visa fees for New CIES, TTPS, GEP not found.",
+    "Naturalisation and dual-nationality rules not verified from an official source.",
+    "QMAS points thresholds and quota not read."
+  ],
+  "sources": []
+}

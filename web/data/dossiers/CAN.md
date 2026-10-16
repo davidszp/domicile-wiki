@@ -67,6 +67,8 @@ No inheritance, estate or gift tax federally or in any province. However, a dece
 
 Open points for this tax: Deemed-disposal rate set to the Ontario top capital gains rate (26.76% = 53.53% x 50% inclusion); the effective charge depends on the unrealised gain in the estate (the scoring model assumes 40% of the estate).
 
+**Surviving spouse:** No inheritance tax, but death triggers a deemed disposition of capital property (Income Tax Act s. 70(5)). The spousal rollover in s. 70(6) defers it (property passes at cost) only if the deceased and the spouse or common-law partner were resident in Canada and the property vests indefeasibly in the spouse, or a qualifying spousal trust, within 36 months; it is a deferral, taxed when the spouse sells or dies, and the executor may elect out (s. 70(6.2)).
+
 ## Wealth tax
 
 ### Standard regime
@@ -114,6 +116,7 @@ Prime rent not sourced: realtor.ca, Zillow, Zumper, Rentals.ca and Zoocasa refus
 - Newcomers to Canada (immigrants) (Canada Revenue Agency, tax_authority): https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/newcomers-canada-immigrants.html
 - Canada - Corporate - Taxes on corporate income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/canada/corporate/taxes-on-corporate-income
 - Tuition (Upper Canada College, other): https://www.ucc.on.ca/tuition
+- Income Tax Act (Canada), section 70: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-70.html
 
 ## Change log
 
@@ -122,3 +125,4 @@ Prime rent not sourced: realtor.ca, Zillow, Zumper, Rentals.ca and Zoocasa refus
 - 2026-10-15: modelled the deemed disposal at death in the structured data (`deemed_disposal_rate` 26.76%, Ontario top rate on the 50% inclusion) so that the tax on accrued gains at death counts in the inheritance score; children treatment changed from fully exempt to taxed.
 - 2026-10-15 (data-quality pass): added Upper Canada College day fee CAD 48,720 (Years 11-12, 2026-27). Prime Toronto rent still unsourced (portals blocked; Kijiji sample too thin). Retried the Department of Finance/PMO notice of the March 2025 cancellation of the capital-gains inclusion-rate increase: still not reachable, open question sharpened. Dossier regenerated from the JSON, which also brings in the deemed-disposition inheritance coding (children 'taxed', deemed disposal rate 26.76%) already in the JSON.
 - 2026-10-15: reviewed holding structures; none modelled (integration, deemed disposal still applies after an estate freeze); added a Holding structures section.
+- 2026-10-16: added surviving-spouse treatment.

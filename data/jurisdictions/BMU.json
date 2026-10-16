@@ -112,6 +112,8 @@
         "summary": "Stamp duty on the affidavit of value of a deceased's estate, charged only on property situated in Bermuda: first BMD 100,000 nil, next 100,000 at 5.25%, next 800,000 at 10.5%, next 1,000,000 at 15.75%, balance at 21% (marginal; rates from 1 April 2023). Foreign securities and foreign-currency bank deposits are outside the charge.",
         "basis": "estate",
         "children_treatment": "taxed",
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "Stamp duty is not payable on the affidavit of value for assets passing on death to a surviving spouse (Stamp Duties Act 1976 estate provisions; Carey Olsen, Legal 500 Private Client Guide 2025: Bermuda). Registered partners were not checked separately.",
         "exemption": 100000,
         "brackets": [
           {

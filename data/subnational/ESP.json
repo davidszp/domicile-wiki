@@ -103,6 +103,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse is Group II (Ley 29/1987 art. 20): EUR 16,000 reduction and a 99% bonificación of the tax for Groups I-II (art. 25.1 D.Leg. 1/2010), so about 0.34% of a large estate.",
             "exemption": 16000,
             "brackets": [
               {
@@ -341,6 +343,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse is Group II: EUR 1,000,000 reduction (art. 28 Ley 5/2021) and 99% bonificación of the tax for Groups I-II (art. 39 Ley 5/2021); about 0.25% of a EUR 35M estate.",
             "exemption": 1000000,
             "brackets": [
               {
@@ -559,6 +563,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse is Group II: state EUR 15,956.87 reduction and a 99% deduction of the tax for Groups I-II (art. 37.2 Ley 10/2017), single rate with no base cap since Ley 2/2024; about 0.34% of a large estate.",
             "exemption": 15956.87,
             "brackets": [
               {
@@ -739,6 +745,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse is Group II: state EUR 15,956.87 reduction and a 99% deduction of the tax (art. 3.Cinco D.Leg. 1/2010); about 0.36% of a large estate.",
             "exemption": 15956.87,
             "brackets": [
               {
@@ -921,6 +929,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "exempt_with_conditions",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Spouse is Group II: EUR 50,000 reduction and a 100% bonificación of the tax for Groups I-II (art. 8.1 D.Leg. 62/2008), so 0% in effect; it applies only under Cantabrian rules (deceased resident there most of the last 5 years) and a return must still be filed. Registered partners are equated to spouses.",
             "exemption": 0,
             "brackets": [],
             "bracket_mode": "marginal",
@@ -1036,6 +1046,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse is Group II: EUR 500,000 reduction (since 2024) and a 99% bonificación (art. 20.1 D.Leg. 1/2018) provided the return is filed on time; about 0.33% of a large estate.",
             "exemption": 500000,
             "brackets": [
               {
@@ -1240,6 +1252,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse gets EUR 100,000 reduction, then the 7%-32% scale, and a 99% bonificación of the tax reserved for the spouse (art. 633-4.1 Libro sexto Código tributario, D.Leg. 1/2024), with no base cap: about 0.3%-0.4% of a large estate, unlike children whose rebate falls to 0%. Stable partners are equated to spouses.",
             "exemption": 100000,
             "brackets": [
               {
@@ -1518,6 +1532,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed",
+            "spouse_treatment": "taxed",
+            "spouse_note": "Spouse is Group II: EUR 1,000,000 reduction (art. 6.Dos.b D.Leg. 1/2011), then 5%-18% (art. 9); the 99% deduction is for Group I (minor descendants) only, so a large estate pays about 17%.",
             "exemption": 1000000,
             "brackets": [
               {
@@ -1682,6 +1698,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed",
+            "spouse_treatment": "taxed",
+            "spouse_note": "Spouse is Group II: EUR 300,000 reduction (art. 17 D.Leg. 2/2014) and the special Group I-II scale of 21.25%-36.5% (art. 21.2); the former 100% bonus for Group II was abolished in 2017, so about 36% of a large estate.",
             "exemption": 300000,
             "brackets": [
               {
@@ -1834,6 +1852,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse is Group II: EUR 100,000 reduction (art. 10 Ley 13/1997) and a 99% bonificación (art. 12 bis Ley 13/1997, restored 28/5/2023); about 0.34% of a large estate.",
             "exemption": 100000,
             "brackets": [
               {
@@ -2096,6 +2116,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "exempt_with_conditions",
+            "spouse_treatment": "exempt_with_conditions",
+            "spouse_note": "Spouse is Group II: 100% bonificación of the tax for Groups I-II since 18/7/2023 (art. 36 D.Leg. 1/2014), so 0% in effect, but real estate in the deed must not exceed the reference value + 20%.",
             "exemption": 0,
             "brackets": [],
             "bracket_mode": "marginal",
@@ -2210,6 +2232,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed",
+            "spouse_treatment": "taxed",
+            "spouse_note": "Spouse is Group II: a 100% own reduction (art. 131-5 D.Leg. 1/2005) is capped so that total reductions do not exceed EUR 500,000 (+EUR 150,000 per minor child living with the spouse), then the state scale up to 34%; the 99% bonificación is for Group I only, so about 33% of a large estate. Stable partners registered 4+ years are equated to spouses.",
             "exemption": 500000,
             "brackets": [
               {
@@ -2331,6 +2355,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse is Group II: EUR 40,400 reduction (higher than the EUR 23,125 for children) and a 99.9% bonificación of the tax for Groups I-III (art. 24-ter D.Leg. 1/2009), so about 0.03% of a large estate.",
             "exemption": 23125,
             "brackets": [
               {
@@ -2487,6 +2513,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse is Group II: EUR 60,000 improvement plus a variable reduction up to EUR 400,000 in total (art. 13 D.Leg. 1/2013) and a 99% bonificación (art. 17 bis); about 0.33% of a large estate.",
             "exemption": 400000,
             "brackets": [
               {
@@ -2608,6 +2636,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed",
+            "spouse_treatment": "taxed",
+            "spouse_note": "Spouse is Group II: state EUR 15,956.87 reduction and the state scale with a bonificación of 100% under EUR 175,000 of base, falling to 80% from EUR 300,000 (art. 17 Ley 8/2013), so about 6.8% of a EUR 35M estate (up to about 8% with the state multiplier for a very wealthy heir).",
             "exemption": 15956.87,
             "brackets": [
               {
@@ -2729,6 +2759,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse is Group II: state reduction and scale, with a 99% bonificación for Groups I-II (art. 23 bis.1 Ley 29/1987) only if the deceased was habitually resident in Ceuta or Melilla on death and for the previous 5 years; about 0.34% of a large estate.",
             "exemption": 15956.87,
             "brackets": [
               {
@@ -2852,6 +2884,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse is Group II: state reduction and scale, with a 99% bonificación for Groups I-II (art. 23 bis.1 Ley 29/1987) only if the deceased was habitually resident in Ceuta or Melilla on death and for the previous 5 years; about 0.34% of a large estate.",
             "exemption": 15956.87,
             "brackets": [
               {
@@ -3134,6 +3168,8 @@
             "open_questions": [],
             "basis": "beneficiary",
             "children_treatment": "taxed",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouses and stable partners pay 0% on the first EUR 250,000 of taxable base and a flat 0.8% on the rest for inheritances (art. 34.1.a.1º DFL 250/2002), about 0.8% of a large estate, against up to 16% for children.",
             "exemption": 250000,
             "brackets": [
               {
@@ -3405,6 +3441,8 @@
             ],
             "basis": "beneficiary",
             "children_treatment": "taxed_low",
+            "spouse_treatment": "taxed_low",
+            "spouse_note": "Spouse and registered partner are in Group I: EUR 400,000 reduction and a flat 1.5% above it (Bizkaia NF 4/2015 arts. 43, 47; Gipuzkoa the same), about 1.5% of a large estate. Álava was not checked.",
             "exemption": 400000,
             "brackets": [
               {

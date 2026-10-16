@@ -1,0 +1,267 @@
+{
+  "name": "Mauritius",
+  "summary": "No free movement for anyone. The simplest routes are the Premium Visa for remote workers (USD 1,500 a month, 1 year renewable), the retired non-citizen permit for those 50+ (USD 2,000 a month or USD 24,000 a year, 10 years), a residence permit through a property purchase from USD 375,000, or an investor occupation permit from USD 100,000. There is no citizenship by investment programme; naturalisation is by long residence.",
+  "naturalisation": "Ordinary naturalisation reported at 5 years of residence (within the last 7, with 12 months continuous before applying; Commonwealth citizens 5 continuous years), good character and English or French; ministerial discretion. From a 2026 practitioner guide, not read from the Citizenship Act.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Sources conflict: the Act text requires non-Commonwealth naturalising applicants to renounce other citizenship, while some practitioner sources say investors need not. Check the current Act.",
+  "routes": [
+    {
+      "id": "premium_visa",
+      "name": "Premium Visa",
+      "kind": "digital_nomad",
+      "grants": "temporary_residence",
+      "summary": "One-year renewable visa to live in Mauritius while working remotely or retiring, without entering the local job market.",
+      "requirements": "Main place of business and income source outside Mauritius; no local employment. Income reported as USD 1,500 a month per adult (USD 18,000 a year) and USD 500 a month per dependent child; health insurance and return ticket commonly cited. EDB page confirms only validity of one year, renewable. Figures from secondary sources (EDB FAQ not readable).",
+      "minimum_income": {
+        "amount": 18000,
+        "currency": "USD"
+      },
+      "government_fees": null,
+      "fees_note": "Reported free; not confirmed.",
+      "physical_presence": "No minimum stay found; a Premium Visa holder may later apply for the retired non-citizen permit.",
+      "tax_note": "Mauritius tax residence follows 183-day or 270-day tests; a visa does not itself create tax residence.",
+      "sources": [
+        {
+          "title": "EDB Mauritius: Premium Visa",
+          "url": "https://www.edbmauritius.org/premium-visa",
+          "publisher": "Economic Development Board Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Mauritius Premium Visa",
+          "url": "https://wheretoemigrate.io/pathways/mauritius-premium-visa",
+          "publisher": "Where to Emigrate",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "retired_non_citizen",
+      "name": "Retired Non-Citizen Residence Permit (50+)",
+      "kind": "passive_income",
+      "grants": "temporary_residence",
+      "summary": "A 10-year renewable residence permit for people 50 or older with a pension or other income of USD 2,000 a month.",
+      "requirements": "Age 50+. Certified bank statement showing USD 24,000 or guaranteed income of USD 2,000 a month; transfers into a Mauritian bank thereafter (renewal evidence USD 24,000 a year). Police clearance for the last 10 years. May invest in a business but not be employed in it. Another official page gives USD 1,500 a month / USD 18,000 a year (older); the residency.mu figure is used.",
+      "minimum_income": {
+        "amount": 24000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 1050,
+        "currency": "USD"
+      },
+      "fees_note": "Permit fee USD 1,000 (revised 11 July 2022) plus USD 50 application fee from 1 December 2025; confirm current schedule.",
+      "physical_presence": "Not stated on the pages read.",
+      "path_to_permanent_years": 3,
+      "processing_time": "Not sourced.",
+      "family": "Spouse, parents and unmarried non-working children (official guidelines: children under 24).",
+      "tax_note": "Mauritius taxes residents; check 183-day and 270-day tests before assuming a tax benefit.",
+      "sources": [
+        {
+          "title": "Residency in Mauritius: Retired Non-Citizen +50",
+          "url": "https://residency.mu/retire/retired-non-citizen-50-years/",
+          "publisher": "Economic Development Board Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Passport and Immigration Office: Occupation permit",
+          "url": "https://passport.govmu.org/passport/?page_id=626",
+          "publisher": "Passport and Immigration Office, Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "res_property_permit",
+      "name": "Residence permit through property purchase (IRS / RES / PDS / Smart City)",
+      "kind": "investor_residence",
+      "grants": "temporary_residence",
+      "summary": "Buying a residential property of at least USD 375,000 in an approved scheme gives you and your family a residence permit for as long as you hold it.",
+      "requirements": "Residential property of at least USD 375,000 in an approved IRS, RES or PDS scheme. Since 13 December 2024: 85% of the price paid in rupees, 15% in hard currency; a local loan is possible only above USD 750,000. Spouse and children under 24 included. Holders may rent the property and are exempt from an occupation permit to invest and work (RES).",
+      "minimum_investment": {
+        "amount": 375000,
+        "currency": "USD"
+      },
+      "government_fees": null,
+      "physical_presence": "No minimum stay stated.",
+      "family": "Spouse and children under 24.",
+      "tax_note": "Owners may become tax residents in Mauritius; see jurisdiction file.",
+      "sources": [
+        {
+          "title": "EDB: Real estate and hospitality (IRS, RES, PDS USD 375,000)",
+          "url": "https://edbmauritius.org/real-estate-hospitality",
+          "publisher": "Economic Development Board Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Residency in Mauritius: Real Estate Scheme",
+          "url": "https://residency.mu/acquire/real-estate-scheme/",
+          "publisher": "Economic Development Board Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "investor_occupation_permit",
+      "name": "Occupation Permit: Investor",
+      "kind": "entrepreneur",
+      "grants": "temporary_residence",
+      "summary": "Combined work and residence permit for people who invest in a Mauritian business: USD 100,000 minimum.",
+      "requirements": "Minimum initial investment USD 100,000 (EDB, August 2026 page). Business turnover at least MUR 5 million from year 3 and MUR 8 million from year 5 for renewal. Valid up to 10 years. Earlier guidelines listed USD 50,000; effective date of changes not stated. USD 50 application fee from 1 December 2025.",
+      "minimum_investment": {
+        "amount": 100000,
+        "currency": "USD"
+      },
+      "government_fees": null,
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": 3,
+      "family": "Spouse, children, parents as dependants.",
+      "sources": [
+        {
+          "title": "EDB: What's new in occupation and residence permits (August 2026)",
+          "url": "https://edbmauritius.org/newsletter-august-2026-op",
+          "publisher": "Economic Development Board Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Passport and Immigration Office: Occupation permit",
+          "url": "https://passport.govmu.org/passport/?page_id=626",
+          "publisher": "Passport and Immigration Office, Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "selfemployed_occupation_permit",
+      "name": "Occupation Permit: Self-Employed",
+      "kind": "entrepreneur",
+      "grants": "temporary_residence",
+      "summary": "Work and residence permit for self-employed professionals, valid up to 10 years.",
+      "requirements": "Annual business income of at least MUR 2 million from the third year (MUR 3 million for renewal from year 5), per EDB 2026 page. Initial capital requirement not confirmed (USD 50,000 in older guidelines).",
+      "minimum_income": {
+        "amount": 2000000,
+        "currency": "MUR"
+      },
+      "government_fees": null,
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": 3,
+      "sources": [
+        {
+          "title": "EDB: What's new in occupation and residence permits (August 2026)",
+          "url": "https://edbmauritius.org/newsletter-august-2026-op",
+          "publisher": "Economic Development Board Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Passport and Immigration Office: Occupation permit",
+          "url": "https://passport.govmu.org/passport/?page_id=626",
+          "publisher": "Passport and Immigration Office, Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "professional_occupation_permit",
+      "name": "Occupation Permit: Professional",
+      "kind": "work",
+      "grants": "temporary_residence",
+      "summary": "Employment permit for foreign employees, up to 3 years, with a MUR 50,000 monthly basic salary floor.",
+      "requirements": "Single minimum basic monthly salary of MUR 50,000 across all sectors (MUR 600,000 a year). Valid up to 3 years or the contract length. Permanent residence after 3 years at MUR 150,000 a month for 3 consecutive years.",
+      "minimum_income": {
+        "amount": 600000,
+        "currency": "MUR"
+      },
+      "government_fees": null,
+      "physical_presence": "Not stated.",
+      "path_to_permanent_years": 3,
+      "sources": [
+        {
+          "title": "EDB: What's new in occupation and residence permits (August 2026)",
+          "url": "https://edbmauritius.org/newsletter-august-2026-op",
+          "publisher": "Economic Development Board Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Passport and Immigration Office: Occupation permit",
+          "url": "https://passport.govmu.org/passport/?page_id=626",
+          "publisher": "Passport and Immigration Office, Mauritius",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    }
+  ],
+  "open_questions": [
+    "Premium Visa: official income figure, currency (USD 1,500 vs EUR 1,308 in one source), dependants and fee not confirmed; EDB FAQ unreadable and EDB page gives only validity.",
+    "Retired permit: conflicting income thresholds (USD 2,000 a month vs USD 1,500); permanent residence after 3 years (Passport Office, with transfers of USD 54,000) vs 5 consecutive years (residency.mu).",
+    "Property route: permit fees, validity and presence requirements not stated; 2026-27 budget to review duties on EDB-scheme transfers.",
+    "Effective dates of the 2026 investor/self-employed/professional occupation permit changes not stated.",
+    "Ordinary naturalisation rules taken from a practitioner guide, not the Citizenship Act; the dual citizenship position is unresolved.",
+    "Smart City scheme current terms not found.",
+    "No citizenship by investment: a discretionary shortened period for investors (USD 500,000, two years) is reported by a practitioner guide only."
+  ],
+  "sources": [
+    {
+      "title": "Residency in Mauritius",
+      "url": "https://www.residency.mu",
+      "publisher": "Economic Development Board Mauritius",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "MUS",
+  "researched_on": "2026-10-16"
+}

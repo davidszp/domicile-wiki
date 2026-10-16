@@ -35,6 +35,7 @@ Law 84/1981 taxes transfers on death of assets located in San Marino (locus rei 
 Statute read on 2026-10-15: art. 3 of Law 84/1981 taxes San Marino real estate whatever the domicile or nationality of the deceased, and art. 4 exempts movable and immovable assets located outside San Marino and credits not enforceable there. A foreign portfolio passing to the children is therefore outside the tax by statute; only the EUR 100 figure for San Marino assets still rests on the 2015 article (confidence raised from low to medium).
 
 JSON: beneficiary basis, taxed_low, no brackets, other_transfer_cost_rate 0.001, bracket_mode marginal (unused). A foreign portfolio is outside the scope. The "imposta di cinquina" on real estate left to foreigners (5% in the direct line) has unknown current status. Gift tax is unverified; Studio Allievi (Oct 2025) states there is no gift or inheritance tax.
+- Surviving spouse (`spouse_treatment` `taxed_low`): Spouse pays a fixed EUR 100 per heir (Law 84/1981 as reported in 2015) plus small stamp and transfer duties, and foreign assets are outside scope.
 
 ## Wealth tax
 None (Studio Allievi). Residents must declare their financial assets and company holdings for reporting only (Ufficio Tributario circular 2024). Whether there is any recurring property levy was not verified.
@@ -86,3 +87,4 @@ School fee is for the International School of Bologna (Italy), because San Marin
 - 2026-10-15 (cost-of-living pass): added the International School of Bologna Grades 11–12 fee (EUR 21,870, 2026–27) as the nearest international school; prime rent still not sourced, so the metric stays unscored.
 - 2026-10-15 (household cost pass): added prime rent EUR 2,150/month (median of two 3-bedroom villas on Mioaffitto.it; no 4–5 bedroom long-let listed, thin sample); with the Bologna school fee the metric can now be scored.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

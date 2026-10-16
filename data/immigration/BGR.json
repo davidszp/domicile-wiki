@@ -1,0 +1,382 @@
+{
+  "id": "BGR",
+  "name": "Bulgaria",
+  "researched_on": "2026-10-16",
+  "summary": "EU citizens only register. Non-EU citizens (US and others) can get permanent residence by investing about EUR 255,646 in a company that creates 10 jobs, or about EUR 511,000 in funds; digital nomads need about EUR 31,000 a year of foreign income. Citizenship by investment ended in 2022.",
+  "naturalisation": "Typically a long-term or permanent residence permit held for at least 5 years, income or occupation, and Bulgarian language; 3 years in some cases (marriage to a Bulgarian citizen, a Bulgarian child per one source).",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "One source says Bulgaria allows it; another says naturalised citizens outside the EU/EEA/Switzerland must renounce. Treated as allowed pending confirmation.",
+  "routes": [
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Tax residence follows the 183-day or centre-of-vital-interests test.",
+      "status_note": "",
+      "id": "eu_free_movement",
+      "name": "EU/EEA/Swiss free movement (registration)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "EU, EEA and Swiss citizens may live in Bulgaria and register with the Migration Directorate after 3 months; permanent residence after 5 years.",
+      "requirements": "Valid ID or passport; worker, self-employed or economically inactive with resources and health cover. Permanent right after 5 years of continuous legal residence (Directive 2004/38). The Bulgarian 3-month registration procedure itself was not separately sourced.",
+      "physical_presence": "No fixed minimum",
+      "sources": [
+        {
+          "title": "Your Europe: Residence rights in another EU country",
+          "url": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+          "publisher": "European Union",
+          "kind": "intergovernmental",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Bulgaria - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/bulgaria/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 255646,
+        "currency": "EUR"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 5,
+      "processing_time": "Reported 3 to 8 months (sources vary)",
+      "family": "Spouse and children; one source adds dependent parents.",
+      "tax_note": "A permit does not make you tax resident.",
+      "status_note": "",
+      "id": "invest_corporate",
+      "name": "Residence by investment: Bulgarian company with 10 jobs",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for investing about EUR 255,646 (BGN 500,000) in a Bulgarian company that creates and keeps 10 full-time jobs.",
+      "requirements": "Direct equity in an active Bulgarian company creating and maintaining at least 10 full-time jobs for Bulgarian citizens. Article 25 of the Foreigners in the Republic of Bulgaria Act with the Investment Promotion Act. Amount converted at the fixed rate 1.95583 BGN per EUR since euro adoption on 1 January 2026. Sources are secondary and one page marks the whole route 'in flux'.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Global Residency Programs Report: Bulgaria 2026",
+          "url": "https://www.globalcitizensolutions.com/global-rbi-report/bulgaria-2026/",
+          "publisher": "Global Citizen Solutions",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Bulgaria: permanent residence through company investment and ten jobs",
+          "url": "https://wheretoemigrate.io/pathways/bulgaria-permanent-residence-through-eur-255-645-94-company-investment-and-ten-jobs",
+          "publisher": "WhereToEmigrate",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Bulgaria investor residence (reviewed 10 July 2026)",
+          "url": "https://visaatlas.org/visas/bulgaria/investor-residence",
+          "publisher": "Visa Atlas",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 511292,
+        "currency": "EUR"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 5,
+      "processing_time": "",
+      "family": "Spouse and children.",
+      "tax_note": "A permit does not make you tax resident.",
+      "status_note": "",
+      "id": "invest_fund",
+      "name": "Residence by investment: regulated Bulgarian funds",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for about EUR 511,000 (BGN 1,000,000) in licensed Bulgarian funds held for five years.",
+      "requirements": "Placement in government-licensed Bulgarian alternative investment funds or ETFs focused on domestic assets, held for 5 years. Sources quote BGN 1,000,000 (about EUR 511,292) or 'about EUR 512,000'. Article 25 of the Foreigners Act.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Global Residency Programs Report: Bulgaria 2026",
+          "url": "https://www.globalcitizensolutions.com/global-rbi-report/bulgaria-2026/",
+          "publisher": "Global Citizen Solutions",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Bulgaria investor residence (reviewed 10 July 2026)",
+          "url": "https://visaatlas.org/visas/bulgaria/investor-residence",
+          "publisher": "Visa Atlas",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 306775,
+        "currency": "EUR"
+      },
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "One 2026 guide says the direct real estate route closed in January 2025; another 2026 page still lists it at BGN 600,000. Treated as closed pending official confirmation.",
+      "id": "invest_real_estate",
+      "name": "Residence by investment: real estate",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "permanent_residence",
+      "summary": "A property purchase of BGN 600,000 (about EUR 307,000) was reported as a route, but is probably closed.",
+      "requirements": "Reported minimum BGN 600,000 with at least 75% own funds from abroad (one guide). Not confirmed.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Global Residency Programs Report: Bulgaria 2026",
+          "url": "https://www.globalcitizensolutions.com/global-rbi-report/bulgaria-2026/",
+          "publisher": "Global Citizen Solutions",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 31000,
+        "currency": "EUR"
+      },
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5,
+      "processing_time": "Not sourced",
+      "family": "",
+      "tax_note": "Bulgaria has a 10% flat tax on residents; 183 days makes you tax resident.",
+      "status_note": "",
+      "id": "digital_nomad",
+      "name": "Digital nomad visa (type D) and residence permit",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For remote workers earning about EUR 31,000 a year (50 monthly minimum wages) from outside Bulgaria; opened in December 2025.",
+      "requirements": "Income of 50 times the monthly minimum wage (about EUR 620 a month in January 2026, so about EUR 31,000 a year; adjusts with the wage; one source says about EUR 27,500). Remote work for a foreign employer or clients or own foreign company; freelancers need a year of foreign clients (one source). No work for Bulgarian employers or clients. Health insurance (EUR 30,000 or EUR 60,000 cover, sources differ). Type D visa abroad, then apply for a permit within 14 days of arrival. 1 year, extendable once for a year.",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Bulgaria's digital nomad visa (2026): the EUR 31K income rule",
+          "url": "https://ulysse.com/news/en/travel/bulgarias-digital-nomad-visa-2026-the-e31k-income-rule-1336",
+          "publisher": "Ulysse",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Europe's new remote-work destination: Bulgaria introduces digital nomad visa",
+          "url": "https://www.businesstoday.in/amp/nri/visa/story/europes-new-remote-work-destination-bulgaria-introduces-digital-nomad-visa-how-to-apply-510340-2026-01-11",
+          "publisher": "Business Today",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Permit renewed annually per one guide.",
+      "status_note": "",
+      "id": "retiree_passive_income",
+      "name": "Long-term residence for retirees / passive income (type D visa)",
+      "kind": "passive_income",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Retirees and others with stable foreign income can get a type D visa and annual long-term permit; the required income is not fixed in sources.",
+      "requirements": "Pension or passive income from abroad, Bulgarian health insurance (cover at least EUR 30,000), three months of pension statements, accommodation. Guides give conflicting income benchmarks (about USD 800 a month, or about BGN 5,000 a month), none from an official source.",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Retiring in Bulgaria: residency permit through visa type D",
+          "url": "https://lawoffice.org.il/en/retiring-in-bulgaria/",
+          "publisher": "Decker, Pex, Levi Law Firm",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "",
+      "id": "work_permit",
+      "name": "Work permits (single permit, EU Blue Card)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Non-EU workers need an employer, a work permit and a type D visa; the Blue Card applies to highly qualified roles.",
+      "requirements": "Employer-led; labour-market tests and quotas not researched in depth.",
+      "physical_presence": "Live in Bulgaria; no fixed day count sourced",
+      "sources": [
+        {
+          "title": "Bulgaria - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/bulgaria/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "Discontinued in 2022 (reported March 2022); only residence by investment remains.",
+      "id": "cbi",
+      "name": "Citizenship by investment",
+      "kind": "citizenship_by_investment",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "citizenship",
+      "summary": "Bulgaria's fast-track citizenship for investors no longer exists.",
+      "requirements": "Closed. Sources agree it was abolished in 2022; details of the former terms were not researched.",
+      "physical_presence": "Not applicable",
+      "sources": [
+        {
+          "title": "Global Residency Programs Report: Bulgaria 2026",
+          "url": "https://www.globalcitizensolutions.com/global-rbi-report/bulgaria-2026/",
+          "publisher": "Global Citizen Solutions",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Bulgaria investor residence (reviewed 10 July 2026)",
+          "url": "https://visaatlas.org/visas/bulgaria/investor-residence",
+          "publisher": "Visa Atlas",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "No official Bulgarian source (Migration Directorate, Foreigners Act text) retrieved; all figures come from secondary guides that conflict in places.",
+    "Whether the real estate route is closed (January 2025) is unresolved; investor amounts after euro adoption need official confirmation.",
+    "Exact investor-permit type (long-term vs permanent) and government fees not sourced.",
+    "Retiree income benchmark not sourced; digital nomad insurance cover and presence unknown.",
+    "Dual citizenship rules conflict between sources.",
+    "EU citizen registration procedure not sourced; work-permit rules not researched.",
+    "Former CBI terms not researched."
+  ],
+  "sources": [
+    {
+      "title": "Global Residency Programs Report: Bulgaria 2026",
+      "url": "https://www.globalcitizensolutions.com/global-rbi-report/bulgaria-2026/",
+      "publisher": "Global Citizen Solutions",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Bulgaria investor residence (reviewed 10 July 2026)",
+      "url": "https://visaatlas.org/visas/bulgaria/investor-residence",
+      "publisher": "Visa Atlas",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Bulgaria's digital nomad visa (2026): the EUR 31K income rule",
+      "url": "https://ulysse.com/news/en/travel/bulgarias-digital-nomad-visa-2026-the-e31k-income-rule-1336",
+      "publisher": "Ulysse",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Bulgarian nationality law",
+      "url": "https://en.wikipedia.org/wiki/Bulgarian_nationality_law",
+      "publisher": "Wikipedia",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Bulgarian citizenship for foreign nationals",
+      "url": "https://ruskov-law.eu/sofia/article/bulgarian-citizenship-foreign-national.html",
+      "publisher": "Ruskov Law",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

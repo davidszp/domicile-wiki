@@ -179,6 +179,8 @@
         "verification": "verified",
         "basis": "estate",
         "children_treatment": "taxed",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "Unlimited marital deduction for property passing to a surviving spouse (IRC 2056(a)), but only if the spouse is a US citizen or the property goes into a qualified domestic trust (2056(d)); it defers the tax, since the assets are in the survivor's estate (the unused exclusion is portable).",
         "exemption": 30000000,
         "brackets": [
           {
@@ -354,6 +356,8 @@
         "summary": "Assets given to the trust (up to the donors' USD 15 million exclusion each in 2026, USD 30 million for a couple) and all their later growth are outside the parents' taxable estates and, with GST exemption allocated, outside the children's and grandchildren's estates as well. Only assets kept outside the trust bear the 40% estate tax at death. Modelled as an estate-basis tax with a USD 30 million exemption: both parents fund the trust during life with their full exclusions; the remaining estate is taxed at 40%.",
         "basis": "estate",
         "children_treatment": "taxed",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "Unlimited marital deduction for property passing to a surviving spouse (IRC 2056(a)), but only if the spouse is a US citizen or the property goes into a qualified domestic trust (2056(d)); it defers the tax, since the assets are in the survivor's estate (the unused exclusion is portable).",
         "exemption": 30000000,
         "brackets": [
           {

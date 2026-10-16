@@ -1,0 +1,43 @@
+{
+  "id": "CHE",
+  "name": "Switzerland",
+  "researched_on": "2026-10-16",
+  "summary": "Children and the spouse are each guaranteed half of their intestate share, and a will cannot remove it. A foreigner domiciled in Switzerland can choose the law of one of their nationalities. Switzerland has no trust law but has recognised foreign trusts since 2007, and family foundations are allowed only for narrow purposes.",
+  "forced_heirship": "yes",
+  "reserved_share": "Descendants and spouse or registered partner: half of their statutory share each; parents are no longer protected. The free portion is therefore 1/2 to 3/4 depending on the heirs (Civil Code art. 470-471, since the reform in force 1 January 2023).",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Federal Act on Private International Law art. 90 para. 2: a foreigner may choose by will or inheritance contract the law of one of their home states; the choice lapses if they later lose that nationality or become Swiss. Swiss courts at the last domicile stay competent and Swiss real estate is subject to Swiss jurisdiction. Not under the EU Regulation.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "The Hague Trusts Convention is in force for Switzerland since 1 July 2007 (HCCH table: signed 3 April 2007, ratified 26 April 2007), so foreign trusts are recognised. Switzerland has no domestic trust law. Foundations (Civil Code art. 80 ff.) are common, but family foundations may only serve education, endowment, support of family members in need or similar purposes (art. 335), so a general family-wealth foundation is not possible.",
+  "open_questions": [
+    "Cantonal tax treatment of foreign trusts was not examined.",
+    "Article numbers and the PILA wording were given from general knowledge and secondary guides; confirm at fedlex.admin.ch."
+  ],
+  "sources": [
+    {
+      "title": "Swiss Civil Code (ZGB)",
+      "url": "https://www.fedlex.admin.ch/eli/cc/24/233_245_233/en",
+      "publisher": "Swiss Federal Chancellery (Fedlex)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Federal Act on Private International Law (PILA)",
+      "url": "https://www.fedlex.admin.ch/eli/cc/1988/1776_1776_1776/en",
+      "publisher": "Swiss Federal Chancellery (Fedlex)",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

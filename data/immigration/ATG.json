@@ -1,0 +1,155 @@
+{
+  "name": "Antigua and Barbuda",
+  "summary": "No free movement for anyone. Citizenship by investment starts at USD 230,000 (National Development Fund) or USD 300,000 in approved real estate, plus about USD 18,800 in processing, due diligence and passport fees for a single applicant. The Nomad Digital Residence visa (USD 1,500, income USD 50,000 a year, up to 2 years) suits remote workers. US restrictions on Antiguan passport holders since 1 January 2026 reduce the passport's value for US-bound travel.",
+  "naturalisation": "Ordinary naturalisation residence period not verified in this research; see open questions.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Dual citizenship is generally allowed for CBI citizens (not verified against the Citizenship Act this pass).",
+  "routes": [
+    {
+      "id": "cbi_ndf",
+      "name": "Citizenship by Investment: National Development Fund (NDF)",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "A USD 230,000 non-refundable contribution to the National Development Fund, the same for any family size, gives citizenship.",
+      "requirements": "USD 230,000 one-time contribution per application. Single applicant fees: processing USD 10,000, due diligence USD 8,500, passport USD 300. Family of up to four: processing USD 20,000; USD 10,000 per extra dependant. Dependants: spouse due diligence USD 5,000; child 12-17 USD 2,000; 18-30 and parents 55+ USD 4,000. 10% government fee due and non-refundable at submission. Interview required. Banned or restricted nationalities not confirmed (see open questions). US Proclamation 10998 (effective 1 January 2026) reportedly suspends new tourist, student, exchange and immigrant visas for Antiguan citizens, citing the programme; commercial sources only.",
+      "minimum_investment": {
+        "amount": 230000,
+        "currency": "USD"
+      },
+      "investment_options": "NDF USD 230,000; real estate USD 300,000; UWI Fund USD 260,000 (page ambiguous on whether it includes processing fees); business USD 1,500,000 single or USD 5,000,000 joint (min 2 investors, USD 400,000 each).",
+      "government_fees": {
+        "amount": 18800,
+        "currency": "USD"
+      },
+      "fees_note": "Single applicant: processing 10,000 + due diligence 8,500 + passport 300. Excludes agent and legal fees.",
+      "physical_presence": "5 days in Antigua and Barbuda within the first 5 years after citizenship. A bill presented 14 July 2026 would raise this to 30 days; per the Prime Minister it already applies administratively under the regional framework. Not enacted as of the source.",
+      "path_to_citizenship_years": 0,
+      "family": "Extra dependants: child 0-5 USD 10,000; 6-17 USD 25,000; 18+ USD 50,000 (plus fees).",
+      "tax_note": "No personal income tax; citizenship alone does not change tax residence elsewhere.",
+      "processing_time": "Not sourced from the CIU this pass.",
+      "sources": [
+        {
+          "title": "Antigua and Barbuda CIU: Schedule of fees",
+          "url": "https://cip.gov.ag/schedule-of-fees/",
+          "publisher": "Citizenship by Investment Unit, Antigua and Barbuda",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Antigua and Barbuda proposes 30-day residency requirement for CBI applicants (18 July 2026)",
+          "url": "https://outboundinvestment.com/antigua-and-barbuda-proposes-30-day-residency-requirement-for-citizenship-by-investment-applicants/",
+          "publisher": "Outbound Investment",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "cbi_real_estate",
+      "name": "Citizenship by Investment: Approved real estate",
+      "kind": "citizenship_by_investment",
+      "grants": "citizenship",
+      "summary": "Buy approved property worth at least USD 300,000 for citizenship.",
+      "requirements": "Approved property of at least USD 300,000, same for all family sizes. Reported 5-year minimum hold before resale (earlier note; not re-verified). Same processing (USD 10,000 single), due diligence (USD 8,500) and passport (USD 300) fees as the NDF.",
+      "minimum_investment": {
+        "amount": 300000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 18800,
+        "currency": "USD"
+      },
+      "fees_note": "As NDF: processing 10,000 + due diligence 8,500 + passport 300.",
+      "physical_presence": "5 days in the first 5 years (30 days proposed; see NDF route).",
+      "path_to_citizenship_years": 0,
+      "sources": [
+        {
+          "title": "Antigua and Barbuda CIU: Schedule of fees",
+          "url": "https://cip.gov.ag/schedule-of-fees/",
+          "publisher": "Citizenship by Investment Unit, Antigua and Barbuda",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Antigua and Barbuda proposes 30-day residency requirement for CBI applicants (18 July 2026)",
+          "url": "https://outboundinvestment.com/antigua-and-barbuda-proposes-30-day-residency-requirement-for-citizenship-by-investment-applicants/",
+          "publisher": "Outbound Investment",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    },
+    {
+      "id": "nomad_digital_residence",
+      "name": "Nomad Digital Residence (NDR) visa",
+      "kind": "digital_nomad",
+      "grants": "temporary_residence",
+      "summary": "A two-year residence visa for remote workers earning USD 50,000 a year from outside Antigua.",
+      "requirements": "Income of at least USD 50,000 a year; employed by or owning a business outside Antigua and Barbuda; police clearance, health insurance. Local employment not allowed. Individual fee USD 1,500; couple and family fees conflict between sources (USD 2,000 / USD 3,000 reported). Official portal antiguanomadresidence.com could not be read; figures come from secondary guides.",
+      "minimum_income": {
+        "amount": 50000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 1500,
+        "currency": "USD"
+      },
+      "fees_note": "Individual rate; family rates unconfirmed.",
+      "physical_presence": "No minimum stay found. Valid up to 2 years initially.",
+      "tax_note": "Reported to be free of local tax on foreign-source income; unverified.",
+      "sources": [
+        {
+          "title": "Nomad Digital Residence visa programme",
+          "url": "https://antigua-barbuda.com/ova_sev/nomad-digital-residence-visa-programme/",
+          "publisher": "High Commission for Antigua and Barbuda in the UK",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": ""
+    }
+  ],
+  "open_questions": [
+    "Banned/restricted nationalities for the Antigua programme not found.",
+    "Real estate hold period (5 years) not re-verified.",
+    "Whether the 30-day residence rule has been enacted; sources disagree (bill pending vs administratively applied).",
+    "Ordinary naturalisation residence period not found.",
+    "Permanent residence and ordinary residence permit routes not researched from official sources.",
+    "NDR visa: official fee schedule, renewal terms and tax treatment need checking on the official portal.",
+    "Passport Legacy lists Antigua alone in the US proclamation; Outbound Investment says Dominica was also hit by reduced visa validity. Check the Proclamation text.",
+    "The UK visa status of Antiguan nationals was not confirmed; no source found.",
+    "ECCIRA start date: sources conflict (April 2026, Q2 2026, September 2026, 'late 2026', or not yet operational as of 8 August 2026). Check eccira.org.",
+    "Reported European Commission letter of 25 June 2026 asking the Eastern Caribbean states to end citizenship programmes by 1 June 2028 comes from one professional source (Passport Legacy); not checked against a Commission document."
+  ],
+  "sources": [
+    {
+      "title": "ECCIRA: new Caribbean CBI regulator (status reports conflict)",
+      "url": "https://www.passportlegacy.com/publications/caribbean-citizenship-by-investment-in-2026-eccira-the-eus-2028-letter-and-the-us-proclamation-explained",
+      "publisher": "Passport Legacy",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "ATG",
+  "researched_on": "2026-10-16"
+}

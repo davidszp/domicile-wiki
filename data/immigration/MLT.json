@@ -1,0 +1,276 @@
+{
+  "id": "MLT",
+  "name": "Malta",
+  "researched_on": "2026-10-16",
+  "summary": "EU citizens only register. Non-EU citizens (US and others) can get permanent residence through the MPRP (EUR 99,000 in government payments plus a EUR 375,000 property or EUR 14,000 rent) or a Nomad permit at EUR 42,000 a year. Citizenship by investment ended in 2025. The Global Residence Programme (tax status) is replaced on 1 January 2027 by the Individual Tax Programme with much higher thresholds.",
+  "naturalisation": "Not sourced from an official text (open question). Malta's ordinary naturalisation is generally reported as around 5 years of residence, but this was not verified for 2026.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Malta generally allows dual citizenship (general knowledge; not re-sourced).",
+  "routes": [
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Tax status depends on residence and domicile; EU citizens can also apply for the Global Residence Programme.",
+      "status_note": "",
+      "id": "eu_free_movement",
+      "name": "EU free movement (registration)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "EU citizens may live in Malta and register as EU residents after 3 months; permanent residence after 5 years.",
+      "requirements": "Valid ID or passport; worker, self-employed or economically inactive with resources and health cover. Permanent right after 5 years of continuous legal residence (Directive 2004/38).",
+      "physical_presence": "No fixed minimum",
+      "sources": [
+        {
+          "title": "Your Europe: Residence rights in another EU country",
+          "url": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+          "publisher": "European Union",
+          "kind": "intergovernmental",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 375000,
+        "currency": "EUR"
+      },
+      "investment_options": "Lease alternative: EUR 14,000 a year rent instead of buying.",
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 99000,
+        "currency": "EUR"
+      },
+      "fees_note": "EUR 37,000 contribution + EUR 60,000 administration + EUR 2,000 donation, excluding property; EUR 7,500 per extra adult dependant. Property is held for the programme period (reported as at least 5 years).",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "Due diligence about 3 to 7 months",
+      "family": "Spouse and dependent minors included; extra adult dependants EUR 7,500 each.",
+      "tax_note": "A permit does not make you tax resident. Combine with the Global Residence Programme for the 15% remittance rate.",
+      "status_note": "",
+      "id": "mprp",
+      "name": "Malta Permanent Residence Programme (MPRP)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "Permanent residence for non-EU nationals: EUR 99,000 of government payments plus a EUR 375,000 property or EUR 14,000 a year rent, and proof of capital.",
+      "requirements": "Government contribution EUR 37,000; administration fee EUR 60,000 (EUR 15,000 on submission, EUR 45,000 at approval in principle); donation EUR 2,000. Residential property bought for at least EUR 375,000 or leased for at least EUR 14,000 a year (registered with the Housing Authority), secured within 8 months of approval. Capital: EUR 500,000 with EUR 150,000 liquid, or EUR 650,000 with EUR 75,000 liquid. Legal Notice 146 of 2025 (applications from 1 January 2025; another firm says 22 July 2025).",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Malta Permanent Residence Programme (MPRP) 2026: requirements, costs, timeline",
+          "url": "https://ccmalta.com/publications/malta-permanent-residence-programme-mprp-2026-requirements-costs-timeline",
+          "publisher": "Chetcuti Cauchi Advocates",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": {
+        "amount": 275000,
+        "currency": "EUR"
+      },
+      "investment_options": "Rent from EUR 9,600 a year instead.",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "This is a tax status as well as a residence right: 15% on remitted foreign income, EUR 15,000 minimum annual tax. Sources differ on the 2027 minimum tax (EUR 35,000 per several firms).",
+      "status_note": "",
+      "id": "grp",
+      "name": "Global Residence Programme (to 31 December 2026), then Individual Tax Programme",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A special tax status (15% on foreign income remitted to Malta, EUR 15,000 minimum tax) tied to a Maltese home; replaced for new applicants from 1 January 2027.",
+      "requirements": "Buy a property for at least EUR 275,000 (EUR 220,000 in Gozo or the south) or rent for at least EUR 9,600 a year (EUR 8,750 in Gozo or the south); minimum tax EUR 15,000 a year; health insurance. From 1 January 2027 (Legal Notice 195 of 2026) the Individual Tax Programme replaces four programmes: property from EUR 700,000, rent about EUR 14,000 a year (one source), minimum tax EUR 35,000 per several firms, 5-year status. Applications filed by 31 December 2026 stay on current terms until 31 December 2031.",
+      "physical_presence": "Not sourced (open question)",
+      "sources": [
+        {
+          "title": "New Individual Tax Programme rules (what's changing)",
+          "url": "https://www.pwc.com/mt/en/publications/tax-legal/new-individual-tax-programme-rules.html",
+          "publisher": "PwC Malta",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Malta's tax residence and retirement programmes: significant changes effective 1 January 2027",
+          "url": "https://www.mondaq.com/property-taxes/1818920/maltas-tax-residence-and-retirement-programmes-significant-changes-effective-1-january-2027",
+          "publisher": "Mondaq",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": {
+        "amount": 42000,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 300,
+        "currency": "EUR"
+      },
+      "fees_note": "About EUR 300 per person plus residence card fee, per one guide; unconfirmed.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "About 30 to 60 days",
+      "family": "",
+      "tax_note": "Guides report 0% tax in the first 12 months on qualifying remote income then 10%; not confirmed from an official source.",
+      "status_note": "",
+      "id": "nomad",
+      "name": "Nomad Residence Permit",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "For remote workers with active income of EUR 42,000 a year (about EUR 3,500 a month) from outside Malta.",
+      "requirements": "Gross income of at least EUR 42,000 a year from a foreign employer or clients (passive income does not count). Valid 1 year, renewable up to 3 times (4 years in total); renewal needs about 5 months' presence in Malta over the preceding 12. Non-EU/EEA/Swiss only. Sources from before 1 April 2024 quote EUR 32,400.",
+      "physical_presence": "About 5 months in Malta in the previous 12 to renew",
+      "sources": [
+        {
+          "title": "The Malta digital nomad visa: 2026 guide",
+          "url": "https://www.taxesforexpats.com/country-guides/mt/malta-digital-nomad-visa.html",
+          "publisher": "Taxes for Expats",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "Court of Justice ruled on 29 April 2025 (Commission v Malta, C-181/23) that the scheme breaches EU law; Act XXI of 2025 (gazetted 24 July 2025) ended the framework. A discretionary 'citizenship by merit' route with no price replaced it.",
+      "id": "cbi",
+      "name": "Citizenship by Naturalisation for Exceptional Services by Direct Investment (MEIN)",
+      "kind": "citizenship_by_investment",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "citizenship",
+      "summary": "The programme that gave a Maltese passport for a EUR 600,000 to 750,000 contribution plus property is closed.",
+      "requirements": "Closed. Former terms: government contribution EUR 600,000 (36-month track) or EUR 750,000 (12-month track), property of EUR 700,000 to buy or EUR 16,000 a year to rent (held 5 years), donation of EUR 10,000. Existing certificate holders' position is unsettled.",
+      "physical_presence": "Not applicable",
+      "sources": [
+        {
+          "title": "Malta citizenship by investment 2026",
+          "url": "https://ancova-associates.com/insights/malta-citizenship-by-investment-2026",
+          "publisher": "Ancova Associates",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "EU Court declares Malta's investor citizenship scheme illegal",
+          "url": "https://www.agplaw.com/eu-court-declares-maltas-investor-citizenship-scheme-illegal/",
+          "publisher": "AGP Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "minimum_investment": null,
+      "investment_options": "",
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "status_note": "",
+      "id": "work_permit",
+      "name": "Work permits (Single Permit, Key Employee Initiative)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Non-EU workers need an employer to apply for a single permit; senior or specialist roles have faster initiatives.",
+      "requirements": "Employer-led; thresholds not researched in depth.",
+      "physical_presence": "Live in Malta; no fixed day count sourced",
+      "sources": [
+        {
+          "title": "The Malta digital nomad visa: 2026 guide",
+          "url": "https://www.taxesforexpats.com/country-guides/mt/malta-digital-nomad-visa.html",
+          "publisher": "Taxes for Expats",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Ordinary naturalisation period and dual citizenship not sourced from official text.",
+    "No Residency Malta Agency or Laws of Malta text retrieved; figures from law-firm pages and PwC.",
+    "MPRP effective date of Legal Notice 146 of 2025 differs by source (1 January vs 22 July 2025).",
+    "Individual Tax Programme 2027 figures (property, rent, minimum tax) differ across sources.",
+    "Physical presence for GRP not sourced; Nomad permit fee unconfirmed.",
+    "Work-permit rules not researched.",
+    "Whether the MPRP requires keeping the property for 5 years is from one source."
+  ],
+  "sources": [
+    {
+      "title": "Malta Permanent Residence Programme (MPRP) 2026: requirements, costs, timeline",
+      "url": "https://ccmalta.com/publications/malta-permanent-residence-programme-mprp-2026-requirements-costs-timeline",
+      "publisher": "Chetcuti Cauchi Advocates",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Malta citizenship by investment 2026",
+      "url": "https://ancova-associates.com/insights/malta-citizenship-by-investment-2026",
+      "publisher": "Ancova Associates",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "New Individual Tax Programme rules (what's changing)",
+      "url": "https://www.pwc.com/mt/en/publications/tax-legal/new-individual-tax-programme-rules.html",
+      "publisher": "PwC Malta",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

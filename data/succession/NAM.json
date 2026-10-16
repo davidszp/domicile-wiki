@@ -1,0 +1,53 @@
+{
+  "id": "NAM",
+  "name": "Namibia",
+  "researched_on": "2026-10-16",
+  "summary": "There is no forced heirship: freedom of testation is the first principle of Namibian wills law and is tied to Article 16 of the Constitution. Customary law governs many Black Namibians' estates. A 2018 review aims to unify succession law. Trusts and foundations were not sourced.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "Not sourced. Succession law reform is under way (2018 ministerial statement).",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source found.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "unclear",
+  "private_foundations": "no",
+  "trust_note": "Trusts: not sourced; 'yes' assumes Roman-Dutch trusts; unverified. No private-foundation law found.",
+  "open_questions": [
+    "Maintenance claim of surviving spouse/dependants not sourced.",
+    "Trust law and foundations not sourced.",
+    "Whether the 2018 reform has passed.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here.",
+    "Domestic trusts: likely available under the inherited common-law or Roman-Dutch tradition, but no statute or official source was read; confirm before marking yes."
+  ],
+  "sources": [
+    {
+      "title": "Wills Act 7 of 1953",
+      "url": "https://namiblii.org/akn/na/act/1953/7",
+      "publisher": "NamibLII",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Mwoombola v Master of the High Court [2018] NAHCMD 103",
+      "url": "https://namiblii.org/akn/na/judgment/nahcmd/2018/103",
+      "publisher": "NamibLII",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Ministerial statement on succession reform, 25 April 2018",
+      "url": "https://www.parliament.na/wp-content/uploads/2021/08/Ministerial-Statement-by-Hon-Minister-of-Justice-Sakeus-Shanghala-on-the-charges-to-succession-on-Namibia-25-April-2018.pdf",
+      "publisher": "Parliament of Namibia",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

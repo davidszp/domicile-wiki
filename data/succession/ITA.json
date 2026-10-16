@@ -1,0 +1,44 @@
+{
+  "id": "ITA",
+  "name": "Italy",
+  "researched_on": "2026-10-16",
+  "summary": "Children, a spouse and parents are protected by fixed shares (for example half of the estate for one child). A foreign resident can choose the law of their nationality (EU Succession Regulation art. 22), though Italy's reserved heirs may use a clawback in some cases. Italy recognises trusts under the Hague Convention but has no trust law of its own; private foundations are limited.",
+  "forced_heirship": "yes",
+  "reserved_share": "One child: 1/2; two or more children: 2/3 (Civil Code art. 537). Spouse: 1/2 with no children, 1/3 with one child, 1/4 with two or more (arts. 540-542). Parents: 1/3 if no children (art. 538). Figures from the Civil Code, not from the e-Justice page, which gives none.",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "EU Succession Regulation: the law of the last habitual residence applies by default (art. 21), but a resident foreign national may choose the law of their nationality (art. 22).",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "The 1985 Hague Trusts Convention entered into force for Italy on 1 January 1992 (signed 1 July 1985, ratified 21 February 1990). Italy has no trust statute, but foreign trusts and domestic 'trust interno' governed by foreign law are recognised through the Convention. Foundations (fondazioni, Civil Code art. 14 ff) serve a defined purpose; family foundations are not a settled form.",
+  "open_questions": [
+    "Share fractions are from the Civil Code as known; e-Justice cites none. Verify arts. 536-548.",
+    "The Italian rule allowing reserved heirs to claim from the Italian assets of an estate governed by foreign law (Law 218/1995 art. 46 and 'clawback' arguments) is not covered here.",
+    "Whether a Fondazione di famiglia can serve private family purposes was not sourced."
+  ],
+  "sources": [
+    {
+      "title": "European e-Justice: Succession, Italy",
+      "url": "https://e-justice.europa.eu/166/EN/succession?ITALY&member=1",
+      "publisher": "European e-Justice Portal",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) No 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

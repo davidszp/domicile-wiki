@@ -3,8 +3,8 @@
 Outputs
 - ``web/data/world.topo.json``: one object ``countries`` with every Natural Earth admin-0 unit,
   keyed by ``id`` (ISO 3166-1 alpha-3 where one exists, see ``ID_FIXES``).
-- ``web/data/regions.topo.json``: subnational units for the jurisdictions where regional tax rules
-  matter, keyed by ISO 3166-2 ``id`` with ``parent``.
+- ``data/build/regions.geojson``: subnational units for the jurisdictions where regional tax rules
+  matter, keyed by ISO 3166-2 ``id`` with ``parent`` (read by the build; the site draws countries only).
 - ``data/build/*.geojson``: unsimplified copies used by the geographic tests.
 
 Geometry processing is done by mapshaper (pinned in package.json), which simplifies with shared
@@ -25,7 +25,16 @@ BUILD = ROOT / "data" / "build"
 WEB_DATA = ROOT / "web" / "data"
 
 NE_BASE = "https://naturalearth.s3.amazonaws.com/10m_cultural/"
-NE_LAYERS = ["ne_10m_admin_0_countries", "ne_10m_admin_1_states_provinces"]
+NE_LAYERS = ["ne_10m_admin_0_countries", "ne_10m_admin_1_states_provinces", "ne_10m_admin_0_disputed_areas"]
+
+# Natural Earth draws de facto control. Where the United Nations has ruled on an area, the map follows
+# the UN instead: the area (from Natural Earth's disputed-areas layer, by BRK_NAME) is cut from the
+# country that controls it and joined to the one the UN recognises. Each line cites its resolution.
+UN_BORDERS = {
+    "Crimea": "UKR",  # UN General Assembly resolution 68/262 (2014): territorial integrity of Ukraine
+    "Golan Heights": "SYR",  # UN Security Council resolution 497 (1981): annexation "null and void"
+    "East Jerusalem": "PSE",  # UN Security Council resolutions 478 (1980) and 2334 (2016): occupied Palestinian territory
+}
 
 # Natural Earth ADM0_A3 codes that differ from ISO 3166-1 alpha-3 (or the code used in our data).
 ID_FIXES = {"SDS": "SSD", "PSX": "PSE", "SAH": "ESH", "KOS": "XKX", "ALD": "ALA"}
@@ -92,16 +101,40 @@ def build_countries() -> None:
     BUILD.mkdir(parents=True, exist_ok=True)
     mapshaper(src.as_posix(), "-each", each, "-filter-fields", fields,
               "-o", (BUILD / "countries.geojson").as_posix(), "precision=0.000001", "force")
+    apply_un_borders(BUILD / "countries.geojson", fields)
     WEB_DATA.mkdir(parents=True, exist_ok=True)
-    # Coarse file for the world view, finer one (lazy-loaded) for the regional close-ups.
+    # Coarse file for the globe (230 px wide: every point is drawn each frame while it turns), finer one
+    # (lazy-loaded) for "My location".
     # Units under 3,000 km² (Monaco, Andorra, Malta, small islands) keep much more detail, so
     # they keep their true shape and area; the test suite checks this.
     fix_label_points(BUILD / "countries.geojson")
     # The detail file needs a ~130 m grid (quantization 3e5) or the Vatican collapses to nothing.
-    for out, pct, small, q in (("world.topo.json", 0.06, 0.5, 100_000), ("detail.topo.json", 0.25, 1, 300_000)):
+    for out, pct, small, q in (("world.topo.json", 0.015, 0.2, 100_000), ("detail.topo.json", 0.25, 1, 300_000)):
         mapshaper((BUILD / "countries.geojson").as_posix(), "-rename-layers", "countries",
                   "-simplify", "variable", f"percentage=this.area < 3e9 ? {small} : {pct}", "keep-shapes", "-clean",
                   "-o", (WEB_DATA / out).as_posix(), "format=topojson", f"quantization={q}", "force")
+
+
+def apply_un_borders(path: Path, fields: str) -> None:
+    """Move each area in UN_BORDERS from the country that controls it to the one the UN recognises."""
+    src = RAW / "ne_10m_admin_0_disputed_areas" / "ne_10m_admin_0_disputed_areas.shp"
+    pieces = BUILD / "un_borders.geojson"
+    erased = BUILD / "countries_erased.geojson"
+    names = _js_map(UN_BORDERS)
+    # BRK_NAME can carry a byte-order mark in this layer; strip it before matching.
+    mapshaper(src.as_posix(), "-each", f"var U={names}; name = String(BRK_NAME).replace(/^\\ufeff/, ''); id = U[name] || ''",
+              "-filter", "id !== ''", "-filter-fields", "id,name",
+              "-o", pieces.as_posix(), "precision=0.000001", "force")
+    found = {f["properties"]["name"] for f in json.loads(pieces.read_text())["features"]}
+    missing = set(UN_BORDERS) - found
+    if missing:
+        raise SystemExit(f"UN_BORDERS areas not found in the disputed-areas layer: {sorted(missing)}")
+    mapshaper(path.as_posix(), "-erase", pieces.as_posix(), "-o", erased.as_posix(), "precision=0.000001", "force")
+    # Countries come first in the merged layer, so the dissolve keeps their attributes.
+    mapshaper("-i", erased.as_posix(), pieces.as_posix(), "combine-files", "-merge-layers", "force",
+              "-dissolve2", "id", f"copy-fields={fields.replace('id,', '')}",
+              "-o", path.as_posix(), "precision=0.000001", "force")
+    print(f"UN borders applied: {', '.join(f'{k} -> {v}' for k, v in UN_BORDERS.items())}")
 
 
 def fix_label_points(path: Path) -> None:
@@ -145,9 +178,6 @@ def build_regions() -> None:
               "-dissolve2", "rid", "copy-fields=parent,rname",
               "-each", "id = rid; name = rname; delete rid; delete rname",
               "-o", (BUILD / "regions.geojson").as_posix(), "precision=0.000001", "force")
-    mapshaper((BUILD / "regions.geojson").as_posix(), "-rename-layers", "regions",
-              "-simplify", "30%", "weighted", "keep-shapes", "-clean",
-              "-o", (WEB_DATA / "regions.topo.json").as_posix(), "format=topojson", "quantization=100000", "force")
 
 
 def main() -> None:

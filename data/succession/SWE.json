@@ -1,0 +1,50 @@
+{
+  "id": "SWE",
+  "name": "Sweden",
+  "researched_on": "2026-10-16",
+  "summary": "Children are guaranteed half of their intestate share, and a spouse a minimum of four price base amounts. A foreign resident can choose the law of their nationality (EU Succession Regulation art. 22). Sweden has no trusts; private foundations are allowed but taxed.",
+  "forced_heirship": "yes",
+  "reserved_share": "Children and grandchildren: half of their intestate share (laglott), claim within six months of receiving the will. A surviving spouse can claim four price base amounts (Social Insurance Code ch. 2 ss. 6-7), as far as the estate allows.",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "EU Succession Regulation: the law of the last habitual residence applies by default (art. 21), but a resident foreign national may choose the law of their nationality (art. 22).",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "yes",
+  "trust_note": "Sweden is not in the HCCH table for the 1985 Trusts Convention. There is no Swedish trust; the tax agency taxes foreign trusts and foundations. Foundations (stiftelser, Foundations Act 1994:1220) may pursue any lawful purpose, including family ones, but only public-benefit ones are tax-exempt.",
+  "open_questions": [
+    "The Swedish tax treatment of private foundations and foreign trusts was not sourced (a Bloomberg Tax headline only).",
+    "The ability to set up purely family foundations rests on a Philea summary and general commentary, not on the Act."
+  ],
+  "sources": [
+    {
+      "title": "European e-Justice: Succession, Sweden",
+      "url": "https://e-justice.europa.eu/166/EN/succession?SWEDEN&member=1",
+      "publisher": "European e-Justice Portal",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) No 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Philea: Legal Environment for Philanthropy in Europe, Sweden",
+      "url": "https://philea.eu/wp-content/uploads/2024/11/Sweden-Philea-2024-Legal-Environment-for-Philanthropy-in-Europe.pdf",
+      "publisher": "Philea",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

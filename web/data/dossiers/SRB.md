@@ -55,6 +55,7 @@ Exceptions: Since 2022 local governments administer inheritance and gift tax. In
 Gifts: Same rules as inheritance: first-order donees exempt; others 1.5%/2.5%. Gifts of shares/securities are outside the tax.
 
 JSON: basis beneficiary, children fully_exempt, exemption 0, brackets none (children untaxed), other transfer cost 0.
+- Surviving spouse (`spouse_treatment` `fully_exempt`): Spouse is exempt (Art. 21(1)(1)); securities are outside scope.
 
 ## Wealth tax
 
@@ -106,3 +107,4 @@ Health insurance and housekeeper costs not sourced.
 - 2026-10-15: initial research.
 - 2026-10-15: phase 2 data-quality pass: added Belgrade cost of living (Dedinje/Senjak prime house rent EUR 4,000/month median from 4zida.rs; International School of Belgrade Grades 9-12 USD 28,945 for 2026/27).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

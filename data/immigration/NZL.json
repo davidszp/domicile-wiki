@@ -1,0 +1,182 @@
+{
+  "id": "NZL",
+  "name": "New Zealand",
+  "researched_on": "2026-10-16",
+  "summary": "No free movement for EU citizens; EU, US and other passports use the same routes. Investors can get residence through Active Investor Plus: Growth (NZD 5 million for 3 years, 21 days in New Zealand) or Balanced (NZD 10 million for 5 years, 105 days). Workers use the Accredited Employer Work Visa. There is no digital nomad or retirement visa; visitors may work remotely for overseas employers for short stays.",
+  "naturalisation": "Citizenship by grant needs a resident visa, 1,350 days in New Zealand in the 5 years before applying with at least 240 days in each year, plus language and character requirements (DIA). Residence by AIP counts only as time spent as a resident.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "New Zealand generally allows dual citizenship; not confirmed on a page read in this run.",
+  "routes": [
+    {
+      "id": "aip_growth",
+      "name": "Active Investor Plus (AIP) resident visa - Growth",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Residence for investing at least NZD 5 million for 3 years in New Zealand growth assets, with only 21 days in the country.",
+      "requirements": "Invest at least NZD 5 million for 36 months in direct investments, managed funds (and philanthropy up to 20%). At least 21 days in New Zealand as a resident over the 36 months. Permanent residence can be applied for after 3 years. Good health and character; police certificate under 6 months old; funds lawfully acquired; approval in principle within about 11 weeks for 80% of applications, then 6 months to transfer and invest; questionnaires at 24 months and at the end. Changes: philanthropy up to 20% of the Growth amount (May 2026); funding-source evidence rules changed 12 August 2026; from 28 September 2026 managed funds must provide deployment plans and a declined applicant waits 6 months to reapply (secondary summary). ",
+      "investment_options": "Direct investments (including private equity and unlisted), managed funds, philanthropy up to 20% of the total.",
+      "fees_note": "Immigration New Zealand lists 'from NZD 27,470' (breakdown not read).",
+      "processing_time": "Approval in principle within 11 weeks for 80% of applications",
+      "family": "Partner (12 months' cohabitation) and dependent children aged 24 or younger; partner gets a visitor visa, children can apply for student visas.",
+      "tax_note": "Residents are taxed on worldwide income, but new migrants and returning residents may qualify for a 15-year foreign-income exemption (transitional resident rule; not verified here).",
+      "physical_presence": "21 days over the 36-month investment period",
+      "sources": [
+        {
+          "title": "Active Investor Plus Visa",
+          "url": "https://www.immigration.govt.nz/visas/active-investor-plus-visa/",
+          "publisher": "Immigration New Zealand",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "New Zealand Updates Active Investor Plus Visa Rules (12 August 2026 changes)",
+          "url": "https://eiglaw.com/new-zealand-updates-active-investor-plus-visa-rules/",
+          "publisher": "EIG Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 5000000,
+        "currency": "NZD"
+      },
+      "government_fees": {
+        "amount": 27470,
+        "currency": "NZD"
+      },
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 5
+    },
+    {
+      "id": "aip_balanced",
+      "name": "Active Investor Plus (AIP) resident visa - Balanced",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Residence for investing at least NZD 10 million for 5 years in a wider set of assets, including bonds and listed shares.",
+      "requirements": "Invest at least NZD 10 million for 60 months in direct investments, managed funds, listed equities, bonds, property developments and philanthropy. At least 105 days in New Zealand over 60 months; extra Growth funds reduce this (NZD 11 million 91 days, NZD 12 million 77, NZD 13 million 63; maximum cut 42 days). Permanent residence after 5 years. Good health and character; police certificate under 6 months old; funds lawfully acquired; approval in principle within about 11 weeks for 80% of applications, then 6 months to transfer and invest; questionnaires at 24 months and at the end. Changes: philanthropy up to 20% of the Growth amount (May 2026); funding-source evidence rules changed 12 August 2026; from 28 September 2026 managed funds must provide deployment plans and a declined applicant waits 6 months to reapply (secondary summary). ",
+      "investment_options": "Direct investments, managed funds, listed equities, bonds, property developments, philanthropy.",
+      "fees_note": "Immigration New Zealand lists 'from NZD 27,470'; breakdown not read.",
+      "processing_time": "Approval in principle within 11 weeks for 80% of applications",
+      "family": "Partner (12 months' cohabitation) and dependent children aged 24 or younger; partner gets a visitor visa, children can apply for student visas.",
+      "tax_note": "Residents are taxed on worldwide income, subject to the transitional-resident exemption (not verified).",
+      "physical_presence": "105 days over the 60-month period (reducible to 63 with NZD 13 million)",
+      "sources": [
+        {
+          "title": "Active Investor Plus Visa",
+          "url": "https://www.immigration.govt.nz/visas/active-investor-plus-visa/",
+          "publisher": "Immigration New Zealand",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "New Zealand Updates Active Investor Plus Visa Rules (12 August 2026 changes)",
+          "url": "https://eiglaw.com/new-zealand-updates-active-investor-plus-visa-rules/",
+          "publisher": "EIG Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 10000000,
+        "currency": "NZD"
+      },
+      "government_fees": {
+        "amount": 27470,
+        "currency": "NZD"
+      },
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": 5
+    },
+    {
+      "id": "aewv",
+      "name": "Accredited Employer Work Visa (AEWV)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored work visa for up to 5 years; the standard route for skilled workers.",
+      "requirements": "Full-time job (30+ hours) from an accredited employer with an approved job check; 2+ years' experience or a level 4 qualification unless paid at least NZD 67.12 an hour; English needed for skill levels 3-5; stay up to 5 years (3 years for skill level 4-5 jobs); no partner or children included in the application. Fee from NZD 1,540; 80% processed in 5 weeks. Can lead to residence through the Skilled Migrant Category.",
+      "investment_options": "",
+      "fees_note": "Immigration New Zealand lists 'from NZD 1,540'.",
+      "processing_time": "80% within 5 weeks",
+      "family": "Partner and children apply separately (not read in detail).",
+      "tax_note": "",
+      "physical_presence": "Live and work in NZ for the accredited employer",
+      "sources": [
+        {
+          "title": "Accredited Employer Work Visa",
+          "url": "https://www.immigration.govt.nz/visas/accredited-employer-work-visa/",
+          "publisher": "Immigration New Zealand",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 1540,
+        "currency": "NZD"
+      },
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": 5
+    },
+    {
+      "id": "visitor_remote_work",
+      "name": "Visitor visa / NZeTA with incidental remote work (no digital nomad visa)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "New Zealand has no digital nomad visa, but visitor visas and NZeTA entries applied for from 27 January 2025 allow remote work for an overseas employer or clients.",
+      "requirements": "Work for a New Zealand employer, sales to New Zealand customers and jobs needing a physical workplace in NZ remain barred. Stay up to 3 months per visit on an NZeTA (6 months for UK passports), or up to 9 months in an 18-month period on a visitor visa. Tax: Taxation Act 2025 from 1 April 2026 may exempt short non-resident visits; 183-day rule still sets tax residence. Details from secondary sources.",
+      "investment_options": "",
+      "fees_note": "NZeTA and visitor visa fees not recorded.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Staying over 183 days in any 12 months makes you a New Zealand tax resident.",
+      "physical_presence": "Maximum 3 months per visit (NZeTA) or 9 months in 18 (visitor visa)",
+      "sources": [
+        {
+          "title": "New Zealand digital nomad visa: how NZeTA and visitor visas work for remote workers",
+          "url": "https://www.taxesforexpats.com/country-guides/nz/new-zealand-digital-nomad-visa.html",
+          "publisher": "Taxes for Expats",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null
+    }
+  ],
+  "open_questions": [
+    "INZ fee breakdown for AIP (NZD 27,470 'from') not read.",
+    "AIP changes from 28 September 2026 come from one law-firm summary; check INZ for the final rules.",
+    "English and age requirements for AIP main applicants not stated on the INZ page.",
+    "Skilled Migrant Category and Entrepreneur Work Visa not recorded.",
+    "Transitional-resident tax exemption not verified.",
+    "Dual citizenship not confirmed from a fetched official page."
+  ],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "LUX",
+  "name": "Luxembourg",
+  "researched_on": "2026-10-16",
+  "summary": "Children are guaranteed half, two thirds or three quarters of the estate, depending on how many there are. A foreign national resident can choose their national law under the EU Succession Regulation. The Hague Trusts Convention is in force and fiduciary contracts exist, but there is no private family foundation.",
+  "forced_heirship": "yes",
+  "reserved_share": "Descendants only: 1/2 with one child, 2/3 with two, 3/4 with three or more (Code civil art. 913). The reserve can be waived by a declaration in a special register at the court registry (e-Justice).",
+  "family_claims": "",
+  "foreign_law_choice": "yes",
+  "foreign_law_note": "Reg. 650/2012 art. 22 allows a choice of nationality law, which removes the Luxembourg reserve; the public-policy exception (art. 35) applies.",
+  "eu_succession_regulation": true,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "limited",
+  "private_foundations": "limited",
+  "trust_note": "The Hague Trusts Convention is in force since 1 January 2004 (HCCH table: ratified 16 October 2003). The Law of 27 July 2003 approved it and created fiduciary contracts for professional use; it is not a full common-law trust statute. Foundations (Law of 21 June 2012) serve public-interest purposes only.",
+  "open_questions": [
+    "The surviving spouse's reserve and any reform after 2018 were not confirmed; sources disagreed.",
+    "Exact scope of the 2003 fiduciary and 2012 foundation laws was not read in the statute text.",
+    "Luxembourg inheritance tax and the SPF vehicle were not examined."
+  ],
+  "sources": [
+    {
+      "title": "European e-Justice: Successions, Luxembourg",
+      "url": "https://e-justice.europa.eu/topics/family-matters-inheritance/inheritance/succession/lu_en",
+      "publisher": "European Commission",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Legilux (official legislation of Luxembourg)",
+      "url": "https://legilux.public.lu",
+      "publisher": "Government of Luxembourg",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Regulation (EU) 650/2012 on succession",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
+      "publisher": "European Union",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

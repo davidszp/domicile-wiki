@@ -73,6 +73,7 @@ JSON values: basis `beneficiary`, bracket mode `marginal`, children `taxed`, exe
 - **Important exceptions / announced changes:** Reduced rate for family businesses (Flanders, new rules from 1 January 2026) does not cover listed portfolios. Flemish tax regularisation programme 2026-2029 for evaded inheritance tax.
 - **Tax year / confidence / verification:** 2026 / medium / partially_verified (checked 2026-10-15)
 - **Sources:** [Algemeen tarief in de erfbelasting](https://www.vlaanderen.be/belastingen-en-begroting/vlaamse-belastingen/erfbelasting/tarieven-in-de-erfbelasting/algemeen-tarief-in-de-erfbelasting); [Erfbelasting](https://www.vlaanderen.be/belastingen-en-begroting/vlaamse-belastingen/erfbelasting); [Belgium - Individual - Other taxes](https://taxsummaries.pwc.com/belgium/individual/other-taxes)
+- Surviving spouse: taxed on the same Flemish 3% / 9% / 27% scale as children (partners are married, legally cohabiting, or factually cohabiting for at least one year); the family home is exempt for the surviving partner.
 
 ## Wealth tax
 
@@ -154,3 +155,4 @@ US citizens: US-Belgium income tax treaty applies; no estate tax treaty. Belgium
 - 2026-10-15: capital gains re-verified against the Law of 6 April 2026 (Moniteur belge 21 April 2026): 10% rate, EUR 10,000 indexed exemption (base EUR 4,855), effect 1 January 2026, withholding from 1 June 2026, 31 December 2025 step-up, substantial-holding bands; confidence raised to high/verified. Added prime rent (LuxuryEstate sample, EUR 7,950/month) and ISB fee (EUR 51,105, 2026-27).
 - 2026-10-15: Holding structures section: no structure modelled (company 25% on portfolio income; private foundations covered by the 2026 capital gains tax).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept.
+- 2026-10-16: added surviving-spouse treatment.

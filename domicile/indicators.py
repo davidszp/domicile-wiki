@@ -286,4 +286,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    import argparse
+
+    argparse.ArgumentParser(description="Refresh the indicator datasets (World Bank, UNDP, TI, EF; network); "
+                            "writes data/indicators/.").parse_args()
     main()

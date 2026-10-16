@@ -1,0 +1,142 @@
+{
+  "id": "ARG",
+  "name": "Argentina",
+  "researched_on": "2026-10-16",
+  "summary": "Argentina has no investor visa that was found in an official source. Retirees and rentistas qualify for renewable temporary residence on income of five monthly minimum wages; remote workers get a 180-day residence. A citizenship-by-investment programme (USD 350,000 contribution or USD 800,000 bond) was announced in October 2026 but is not yet open. EU, US and other passports use the same routes.",
+  "naturalisation": "Two years of legal, continuous residence under Law 346 as modified by DNU 366/2025 (processed by the migration authority, online since 6 October 2025); courts have declared parts of the decree unconstitutional.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Argentina does not require renunciation of another nationality (general position; not source-checked in this session).",
+  "routes": [
+    {
+      "id": "pensionado",
+      "name": "Temporary residence as pensionado (retiree)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "One-year renewable residence for people with a regular, permanent foreign pension of at least five monthly minimum wages.",
+      "requirements": "Certificate of a regular and permanent pension of at least five Salarios Minimo Vital y Movil (SMVM); criminal records (Argentine and countries lived in over a year in the last three); proof of address; apply inside Argentina via RADEX. Law 25.871 art. 23(c), Decree 616/2010, DNM Disposition 1.732/2023 as amended by 3446/2023. Valid 1 year, extendable. Current peso value of the SMVM not read (secondary guides: ARS 376,600 in August 2026).",
+      "physical_presence": "Not stated in the sources reviewed (DNU 366/2025 reportedly cancels temporary residence after 6 months abroad)",
+      "sources": [
+        {
+          "title": "Obtener una residencia temporaria como pensionado",
+          "url": "https://www.argentina.gob.ar/servicio/obtener-una-residencia-temporaria-como-pensionado",
+          "publisher": "Argentina.gob.ar (Direccion Nacional de Migraciones)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": 2,
+      "tax_note": "Foreign nationals become tax resident from the 13th month of presence (PwC); Argentina taxes worldwide income of residents."
+    },
+    {
+      "id": "rentista",
+      "name": "Temporary residence as rentista",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Renewable residence for people with stable passive income (rent, dividends, interest) of at least five monthly minimum wages. Earned income does not count.",
+      "requirements": "Income equal to at least five SMVM from assets, not personal work; each applicant proves it; foreign bank accounts can count if the lawful origin is shown (Disposition 1.732/2023, per El Cronista 2023). Peso value not read. Guides suggest showing about USD 2,000 a month for safe approval.",
+      "physical_presence": "Not stated in the sources reviewed",
+      "sources": [
+        {
+          "title": "Cambian las condiciones para residir en la Argentina (rentista, Disposicion 1732)",
+          "url": "https://www.cronista.com/economia-politica/cambian-las-condiciones-para-residir-en-la-argentina/",
+          "publisher": "El Cronista",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Digital nomad vs rentista visa Argentina 2026",
+          "url": "https://www.argentinavisalaw.com/blog/digital-nomad-vs-rentista-visa-argentina-2026",
+          "publisher": "Argentina Visa Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_citizenship_years": 2
+    },
+    {
+      "id": "citizenship_by_investment",
+      "name": "Citizenship by investment (Decree 524/2025, announced October 2026)",
+      "kind": "citizenship_by_investment",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "announced",
+      "grants": "citizenship",
+      "summary": "A planned route to Argentine citizenship for a USD 350,000 non-refundable contribution or an USD 800,000 zero-rate public bond. Announced in October 2026; applications expected in the fourth quarter of 2026.",
+      "requirements": "DNU 366/2025 changed Law 346 so a foreigner making a 'relevant investment' can obtain citizenship regardless of residence time; Decree 524/2025 created the Agency of Citizenship-by-Investment Programmes; the Ministry of Economy defines 'relevant'. Terms reported by Infobae (7 October 2026): USD 350,000 non-refundable or USD 800,000 zero-coupon bond; USD 100,000 extra for a spouse and unmarried children 18 to 25; USD 25,000 per minor. Rules for relevant investments, bond terms, tax treatment and residence requirements are not published; applications are expected from Q4 2026. A bill to repeal the DNU is before the Chamber of Deputies, and federal courts have declared parts of DNU 366/2025 unconstitutional (naturalisation articles). Law 27.802 (cited by PwC for tax residence) was not read.",
+      "physical_presence": "Not specified",
+      "sources": [
+        {
+          "title": "Ciudadania por inversion: las dudas que abre el nuevo plan del Gobierno",
+          "url": "https://www.infobae.com/economia/2026/10/07/ciudadania-por-inversion-las-dudas-que-abre-el-nuevo-plan-del-gobierno-segun-especialistas/",
+          "publisher": "Infobae",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Declaran inconstitucional el DNU que modifico los requisitos para obtener la ciudadania argentina",
+          "url": "https://www.palabrasdelderecho.com.ar/articulo/6940/Declaran-inconstitucional-el-DNU-que-modifico-los-requisitos-para-obtener-la-ciudadania-argentina",
+          "publisher": "Palabras del Derecho",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 350000,
+        "currency": "USD"
+      },
+      "investment_options": "USD 800,000 zero-rate public bond instead of the contribution; extra USD 100,000 per spouse or child 18 to 25 and USD 25,000 per minor.",
+      "status_note": "Announced in Paris on about 2 October 2026; implementing rules and an application channel not yet confirmed (Infobae, 7 October 2026).",
+      "tax_note": "Per PwC (existing file), naturalisation for relevant investments does not by itself make the person tax resident (Law 27.802)."
+    },
+    {
+      "id": "digital_nomad",
+      "name": "Digital nomad temporary residence",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A 180-day temporary residence for remote workers, extendable once for 180 days. No official income minimum is published.",
+      "requirements": "Proof of active remote work for foreign employers or clients (contracts, invoices); health insurance and a clean record; nationals who are visa-exempt for Argentine tourism only; created by DNM Disposition 758/2022 per most sources (some cite other instruments). Government fees reported at about USD 200; income expectations of USD 1,500 to 2,500 a month in commercial guides.",
+      "physical_presence": "180 days, extendable once for 180 days",
+      "sources": [
+        {
+          "title": "Digital nomad vs rentista visa Argentina 2026",
+          "url": "https://www.argentinavisalaw.com/blog/digital-nomad-vs-rentista-visa-argentina-2026",
+          "publisher": "Argentina Visa Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "tax_note": "Non-residents are taxed on Argentine-source income only."
+    }
+  ],
+  "open_questions": [
+    "Citizenship by investment: check the Boletin Oficial for the Ministry of Economy resolution defining a relevant investment and for the application channel before opening the status.",
+    "Peso value of five SMVM not read from an official page; minimum_income left null (secondary guides: SMVM ARS 376,600 in August 2026).",
+    "Investor (inversionista) temporary residence and Mercosur residence were not found in an official source; not recorded.",
+    "Naturalisation: the 2-year rule is from secondary sources; courts have declared parts of DNU 366/2025 unconstitutional, so the rule in force is uncertain.",
+    "Work-permit route not researched.",
+    "Government fees not read (migration fee table at argentina.gob.ar/cuadro-tasas-migratorias)."
+  ],
+  "sources": []
+}

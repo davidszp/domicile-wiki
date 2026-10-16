@@ -59,6 +59,7 @@ Exceptions: Other heirs pay real estate transfer tax: 3% up to EUR 150,000, 5% E
 Gifts: No gift tax on movables; real estate gifts follow real estate transfer tax with the same first-order exemption.
 
 JSON: basis beneficiary, children fully_exempt, exemption 0, brackets none (children untaxed), other transfer cost 0.
+- Surviving spouse (`spouse_treatment` `fully_exempt`): Spouse is exempt (Art. 14(1)(1)), and movables such as securities are outside the tax.
 
 ## Wealth tax
 
@@ -121,3 +122,4 @@ Rent is for Podgorica, the capital. The international school fee is for Tivat (P
 - 2026-10-15: initial research.
 - 2026-10-15: phase 2 data-quality pass: municipal surtax resolved from the Law on Financing Local Self-Government (Sl. list CG 3/2019, Art. 8): it applies to the tax on capital income (dividends now 17.25% in Podgorica) but not to capital gains (stay 15%). Added Tivat cost of living (prime 4-5 bedroom house rent EUR 4,500/month median from Realitica; KSI Montenegro IB Diploma EUR 22,320).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from EUR 4,500 (Tivat, Porto Montenegro) to EUR 2,200 (Podgorica, 177 listings).
+- 2026-10-16: added surviving-spouse treatment.

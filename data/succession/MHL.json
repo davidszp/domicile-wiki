@@ -1,0 +1,39 @@
+{
+  "id": "MHL",
+  "name": "Marshall Islands",
+  "researched_on": "2026-10-16",
+  "summary": "The Marshall Islands follows a US-style approach and no forced heirship rule was found. Customary land (with its own inheritance rules) is outside ordinary wills. Trust and foundation law and the Hague Trusts Convention (not in force) were not fully sourced.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "Not confirmed. Spousal or family protections in the Marshall Islands Revised Code Title 25 were not read.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No conflict-of-law rule sourced.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "unclear",
+  "private_foundations": "unclear",
+  "trust_note": "Non-Profit Entities Act 2020 (in force 14 May 2021) governs non-profit entities, so only charitable-type entities are confirmed. A trust statute and any private foundation law were not found.",
+  "open_questions": [
+    "Probate and spousal rights under the Marshall Islands Revised Code.",
+    "Whether any foundation or trust statute exists (reports of one were not verified).",
+    "Customary land inheritance.",
+    "The HCCH table as retrieved shows no entry for this jurisdiction (the retrieved copy was marked last updated 2017 and its territorial-extension notes could not be read); re-check the live table.",
+    "Trust/foundation availability marked unclear: no statute was found, which does not show that none exists."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table, Convention of 1 July 1985 on the Law Applicable to Trusts",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Non-Profit Entities Act 2020",
+      "url": "https://pacliirms.austlii.edu.au/mh/legis/consol_act/nea2020232.pdf",
+      "publisher": "PacLII",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

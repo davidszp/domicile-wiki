@@ -148,6 +148,8 @@
         "verification": "partially_verified",
         "basis": "estate",
         "children_treatment": "taxed",
+        "spouse_treatment": "taxed",
+        "spouse_note": "No marital deduction: what the spouse inherits is taxed at the flat 6% of the net estate; only the spouse's own net share of the conjugal or community property is deducted, and that is not an inheritance (NIRC Sec. 86(C), as amended by RA 10963).",
         "exemption": 5000000,
         "brackets": [
           {

@@ -1,0 +1,36 @@
+{
+  "summary": "Descendants and the spouse are guaranteed half of their intestate share, with a smaller share for other close relatives. There is no trust law, and the Hague Trusts Convention is not in force. Foundations are limited to public-benefit use.",
+  "forced_heirship": "yes",
+  "reserved_share": "Descendants, adoptees and spouse: 1/2 of the intestate share; parents and other heirs a smaller share (1/3); Law on Inheritance (OG 47/96). Article numbers not confirmed.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "The 2007 Law on Private International Law governs succession; whether a foreign national may choose their national law was not confirmed.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "limited",
+  "trust_note": "No trust law. Foundations exist under the Law on Associations and Foundations (2010), mainly for public benefit.",
+  "open_questions": [
+    "Statute article numbers and exact fractions for forced heirs outside descendants and spouse were not read in the primary text; confirm in the official gazette.",
+    "Whether a foreign national resident may choose a law for their estate under the current private international law act was not confirmed.",
+    "A draft civil code may change forced heirship."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Forced heirs in the former Yugoslavia (comparative study)",
+      "url": "https://asistent.ceon.rs/index.php/zrpfns/en/article/view/7540",
+      "publisher": "Zbornik radova Pravnog fakulteta Novi Sad",
+      "kind": "other"
+    }
+  ],
+  "family_claims": "",
+  "id": "MKD",
+  "name": "North Macedonia",
+  "researched_on": "2026-10-16"
+}

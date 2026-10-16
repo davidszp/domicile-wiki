@@ -257,7 +257,9 @@
         "exemption": 0,
         "brackets": [],
         "gift_tax": "Gifts to children are exempt as well.",
-        "gifts_same_as_inheritance": true
+        "gifts_same_as_inheritance": true,
+        "spouse_treatment": "fully_exempt",
+        "spouse_note": "No federal inheritance tax. Surviving spouses (and registered partners) are exempt at cantonal and communal level, including in the cantons that tax children (Vaud, Neuchâtel); see the ESTV cantonal tariffs and PwC."
       },
       "sources": [
         {

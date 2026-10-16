@@ -1,0 +1,179 @@
+{
+  "id": "AUS",
+  "name": "Australia",
+  "researched_on": "2026-10-16",
+  "summary": "No free movement. EU, US and other passports face the same rules (some countries get visa-free or e-visa travel). Australia no longer sells residence: the Significant Investor Visa (AUD 5 million) closed to new applicants on 31 July 2024 and the retirement visa is repealed. The only elite route is the invitation-only National Innovation visa (subclass 858) for exceptional achievers. Everyone else needs an employer-sponsored visa such as the Skills in Demand 482. Australia has no digital nomad visa.",
+  "naturalisation": "Citizenship by conferral needs 4 years of lawful residence in the 4 years before applying, the last 12 months as a permanent resident, good character, an English-language citizenship test; applicants aged 18 to 59 sit a citizenship test (pass mark 15 out of 20) (Home Affairs guidance).",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Australia allows dual citizenship; this was not confirmed on a page read in this run.",
+  "routes": [
+    {
+      "id": "siv_188c",
+      "name": "Significant Investor Visa (subclass 188C, Business Innovation and Investment programme)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "status_note": "Closed to new applications on 31 July 2024 (Home Affairs notice on the subclass 188 page); no direct replacement announced as of the sources read.",
+      "grants": "temporary_residence",
+      "summary": "Provisional visa for investing AUD 5 million in Australian assets, leading to permanent residence; closed to new applicants on 31 July 2024.",
+      "requirements": "Was: AUD 5 million in complying investments (venture capital and growth private equity, balanced funds, emerging companies) for at least 4 years, then permanent visa subclass 888. Home Affairs states the BIIP (188 and 888) closed on 31 July 2024; applications lodged before then are still processed; existing holders keep the extension and 888 pathways.",
+      "investment_options": "",
+      "fees_note": "Historic fees not recorded because closed.",
+      "processing_time": "",
+      "family": "Spouse and dependent children could be included.",
+      "tax_note": "Australian tax residence follows the domicile and 183-day tests, not the visa.",
+      "physical_presence": "40 days a year in Australia over the visa life (historic rule; not verified)",
+      "sources": [
+        {
+          "title": "Business Innovation and Investment (Provisional) visa (subclass 188) - closure notice",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188",
+          "publisher": "Department of Home Affairs (Australia)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Significant Investor Visa - Subclass 188C",
+          "url": "https://visaplan.au/significant-investor-visa/",
+          "publisher": "Visaplan",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 5000000,
+        "currency": "AUD"
+      },
+      "path_to_permanent_years": 4,
+      "path_to_citizenship_years": null
+    },
+    {
+      "id": "investor_retirement_405",
+      "name": "Investor Retirement visa (subclass 405) and Retirement visa (410)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "status_note": "Listed under 'repealed visas' on the Home Affairs website as of 16 October 2026; no open retirement visa exists. Closure date not confirmed.",
+      "grants": "temporary_residence",
+      "summary": "Temporary retirement visa for self-funded retirees with an Australian investment; now listed by Home Affairs as repealed.",
+      "requirements": "Historically needed an Australian investment of about AUD 750,000 for the first term (a Victorian government page) or net assets of about AUD 530,000 (SA page), plus an annual income of AUD 65,000; no work rights. Home Affairs lists the 405 under 'repealed visas'; only existing holders can renew; sources disagree on figures and none confirm a closure date.",
+      "investment_options": "",
+      "fees_note": "Not recorded.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "physical_presence": "Not applicable",
+      "sources": [
+        {
+          "title": "Investor Retirement visa (subclass 405), listed under repealed visas",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/repealed-visas/investor-retirement-visa-subclass-405",
+          "publisher": "Department of Home Affairs (Australia)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": null
+    },
+    {
+      "id": "national_innovation_858",
+      "name": "National Innovation visa (subclass 858)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "permanent_residence",
+      "summary": "Invitation-only permanent visa for people with an internationally recognised record of exceptional achievement; it replaced Global Talent in December 2024.",
+      "requirements": "Invitation-only; cannot be lodged without an invitation (lodge within 60 days of invitation, per a migration firm). Exceptional and outstanding achievement in a profession, sport, the arts, academia or research; a nominator of national standing may be needed; no income test and no points test on the Home Affairs eligibility text per one firm. Age over 55 needs a showing of exceptional benefit. Permanent visa. Visa application charge: AUD 4,985 as of 1 July 2025 (single secondary source); 2026 charge not confirmed; a lower fee applies to Pacific Island and Timor-Leste citizens from 1 July 2026.",
+      "investment_options": "",
+      "fees_note": "AUD 4,985 as of 1 July 2025 (secondary); the 2026 amount was not confirmed.",
+      "processing_time": "",
+      "family": "Partner and dependent children can be included.",
+      "tax_note": "Australian tax residence follows the domicile and 183-day tests.",
+      "physical_presence": "Permanent visa; travel facility lapses after 5 years unless residence is maintained (general rule, not verified)",
+      "sources": [
+        {
+          "title": "National Innovation visa (subclass 858)",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/national-innovation-visa-858",
+          "publisher": "Department of Home Affairs (Australia)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "The National Innovation Visa (Subclass 858) in 2026",
+          "url": "https://oneplanetmigrationlaw.com.au/immigration-blog/national-innovation-visa-858-2026/",
+          "publisher": "One Planet Migration Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 4,
+      "government_fees": {
+        "amount": 4985,
+        "currency": "AUD"
+      }
+    },
+    {
+      "id": "skills_in_demand_482",
+      "name": "Skills in Demand visa (subclass 482)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored temporary skilled work visa, with a Specialist Skills salary floor of AUD 146,717 and a Core Skills floor of AUD 79,499 from 1 July 2026.",
+      "requirements": "Employer sponsorship and a nominated occupation; Core Skills Income Threshold AUD 79,499 and Specialist Skills Income Threshold AUD 146,717 for applications from 1 July 2026 (AUD 76,515 and AUD 141,210 in 2025-26); one July 2026 alert reports slightly different figures (AUD 79,423 and AUD 146,576), so confirm with Home Affairs. Stay up to 4 years; permanent residence via the employer-sponsored 186 visa.",
+      "investment_options": "",
+      "fees_note": "Visa charges not recorded.",
+      "processing_time": "",
+      "family": "Partner and dependants can be included.",
+      "tax_note": "",
+      "physical_presence": "Live and work in Australia for the sponsor",
+      "sources": [
+        {
+          "title": "Annual Indexation of the CSIT and SSIT - Effective 1 July 2026",
+          "url": "https://www.ahclawyers.com/news-articles/26/02/27/annual-indexation-of-the-csit-and-ssit-effective-1-july-2026",
+          "publisher": "AHC Lawyers",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Australia Announces Indexed Increases to Salary Thresholds for Subclass 482 and 186 Visas Effective July 2026",
+          "url": "https://eiglaw.com/australia-announces-indexed-increases-to-salary-thresholds-for-subclass-482-and-186-visas-effective-july-2026/",
+          "publisher": "EIG Law",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 79499,
+        "currency": "AUD"
+      },
+      "path_to_permanent_years": 2,
+      "path_to_citizenship_years": 4
+    }
+  ],
+  "open_questions": [
+    "Subclass 405 closure date and current thresholds not confirmed.",
+    "Subclass 858 visa application charge for 2026 not confirmed.",
+    "CSIT/SSIT July 2026 figures differ between two sources (79,499/146,717 vs 79,423/146,576).",
+    "No Australian digital nomad visa found; absence inferred, not stated by an official source.",
+    "Dual citizenship and naturalisation details not confirmed from a fetched official page."
+  ],
+  "sources": []
+}

@@ -75,6 +75,8 @@ Deloitte 2026 confirms that inheritance tax and gift tax apply in Sint Maarten. 
 
 Open points for this tax: Sint Maarten's own successiebelasting rates, exemptions for children and scope (resident deceased, worldwide) are not verified; the Curacao table and amendments since 2010 may differ.
 
+**Surviving spouse:** The Sint Maarten Successiebelastingverordening puts the surviving spouse in the same rate column as children, 2% rising to 6%, after a spouse allowance of NAf 12,000 (arts. 60 and 61; consolidated text CVDR448833). Low confidence: the text may predate later amendments.
+
 ## Wealth tax
 
 ### Standard regime
@@ -115,6 +117,7 @@ City: Dutch Sint Maarten (Point Blanche / Oyster Pond / Cole Bay / Madame Estate
 - Successiebelastingverordening 1908 (Curacao consolidated text 2026; shared Netherlands Antilles origin, used only as a comparison) (Government of Curacao, legislation): https://gobiernu.cw/wp-content/uploads/2026/05/85-GT.-Successiebelastingverordening-1908.pdf
 - Century 21 St. Maarten: long-term rentals (Century 21 St. Maarten, other): https://www.century21-stmaarten.com/property_contract/long-term-rentals/
 - Learning Unlimited Preparatory School: Tuition Enrollment Agreement 2026-2027 (Learning Unlimited Preparatory School, other): https://luprepschool.com/wp-content/uploads/2026/08/Tuition-Agreement-2026-2027-Pre-School-to-Grade-12.pdf
+- Sint Maarten: Successiebelastingverordening (consolidated, CVDR448833): https://lokaleregelgeving.overheid.nl/CVDR448833
 
 ## Change log
 
@@ -122,3 +125,4 @@ City: Dutch Sint Maarten (Point Blanche / Oyster Pond / Cole Bay / Madame Estate
 - 2026-10-15: inheritance marked not_researched: Placeholder: Sint Maarten's own rates were not found; the Curaçao table is shown for reference only and the metric is treated as missing.
 - 2026-10-15: cost of living added: prime rent USD 4,500 (median of four 4-5 bed long lets, Century 21, thin) and Learning Unlimited Preparatory School Grades 6-12 tuition USD 15,500 (2026-27).
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: kept (USD 4,500).
+- 2026-10-16: added surviving-spouse treatment.

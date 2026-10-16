@@ -1,0 +1,66 @@
+{
+  "id": "QAT",
+  "name": "Qatar",
+  "researched_on": "2026-10-16",
+  "summary": "Muslims are subject to Sharia fixed shares under the Family Law (Law 22 of 2006). Non-Muslims are reported to be governed by their own law, though courts may take jurisdiction and registering a will is advised. Trusts and foundations exist only inside the Qatar Financial Centre.",
+  "forced_heirship": "yes",
+  "reserved_share": "Muslims: Sharia fixed shares under Law 22 of 2006 (Family Law); share rules not retrieved.",
+  "family_claims": "",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Practitioners report that the Family Law leaves non-Muslims to their own laws and the Civil Code's conflict rule points to the deceased's nationality law. Qatari courts can still take jurisdiction (for example where documents are incomplete or assets are in Qatar), and a guide advises registering a will naming the applicable law. Assets may be frozen until a court certificate is presented.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "Only in the QFC: QFC Trust Regulations 2007 (amended December 2017: registration, licensed professional trustee, no charitable trusts) and QFC Foundations Regulations (foundation with Council and Enforcer, constitution kept confidential). Onshore Qatari law has no trust law. How onshore courts treat QFC structures over Qatari Muslim estates is not settled in the sources.",
+  "open_questions": [
+    "Article of Law 22/2006 on non-Muslims (art. 286 suggested) not retrieved.",
+    "QFC Foundations Regulations year not confirmed.",
+    "Onshore treatment of QFC trusts/foundations not sourced.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here."
+  ],
+  "sources": [
+    {
+      "title": "Estate issues for foreigners in Qatar",
+      "url": "https://www.mondaq.com/Tax/117614/Estate-Issues-For-Foreigners-In-Qatar",
+      "publisher": "Mondaq",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Provisions of Family Law",
+      "url": "https://www.gulf-times.com/story/336800/Provisions-of-Family-Law",
+      "publisher": "Gulf Times",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Law 22 of 2006 (Family Law), English text",
+      "url": "https://uzh.ch/cmsssl/ius/dam/jcr:00000000-74d3-1f02-ffff-ffff87068da3/Law_22_2006_2558.pdf",
+      "publisher": "University of Zurich CIMELS",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "QFC Trusts: a modern approach to wealth and asset management",
+      "url": "https://www.mondaq.com/wealth-asset-management/1741146/qfc-trusts-a-modern-approach-to-wealth-and-asset-management",
+      "publisher": "Mondaq (Crowell)",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "QFC Foundations",
+      "url": "https://www.qfc.qa/en/setup/foundations/",
+      "publisher": "Qatar Financial Centre",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

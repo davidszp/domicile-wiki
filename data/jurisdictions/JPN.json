@@ -154,6 +154,8 @@
         "verification": "verified",
         "basis": "beneficiary",
         "children_treatment": "taxed",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "Spouse's tax credit: no tax on the net estate the spouse actually receives up to the greater of JPY 160 million or the spouse's statutory share (half the estate when there are children), provided a return is filed and the estate is divided, or a division-expected form is filed and division follows within 3 years (Inheritance Tax Act art. 19-2; NTA Tax Answer No. 4158). Anything above that is taxed on the normal scale.",
         "exemption": 13500000,
         "brackets": [
           {
@@ -329,6 +331,8 @@
         "verification": "partially_verified",
         "basis": "beneficiary",
         "children_treatment": "exempt_with_conditions",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "Spouse's tax credit: no tax on the net estate the spouse actually receives up to the greater of JPY 160 million or the spouse's statutory share (half the estate when there are children), provided a return is filed and the estate is divided, or a division-expected form is filed and division follows within 3 years (Inheritance Tax Act art. 19-2; NTA Tax Answer No. 4158). Anything above that is taxed on the normal scale.",
         "exemption": 13500000,
         "brackets": [
           {
@@ -403,6 +407,8 @@
         "verification": "partially_verified",
         "basis": "beneficiary",
         "children_treatment": "exempt_with_conditions",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "Spouse's tax credit: no tax on the net estate the spouse actually receives up to the greater of JPY 160 million or the spouse's statutory share (half the estate when there are children), provided a return is filed and the estate is divided, or a division-expected form is filed and division follows within 3 years (Inheritance Tax Act art. 19-2; NTA Tax Answer No. 4158). Anything above that is taxed on the normal scale.",
         "exemption": 13500000,
         "brackets": [
           {

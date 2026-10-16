@@ -56,19 +56,35 @@ export const fmtPct = (x, digits = 1) => (x === null || x === undefined ? "n/a" 
 export const fmtScore = (x) => (x === null || x === undefined ? "–" : x.toFixed(1));
 // Display currency. Every amount is computed in EUR; US citizens see USD, converted at the build's
 // ECB reference rate (main.js sets it from the citizenship). fmtEur takes EUR and shows the
-// display currency.
-let display = { currency: "EUR", perEur: 1 };
-const formatter = (currency) => new Intl.NumberFormat(currency === "USD" ? "en-US" : "en-GB", { style: "currency", currency, maximumFractionDigits: 0 });
-let moneyFmt = formatter("EUR");
+// display currency. Thousands are grouped the way the reader writes them: 1.200.000 for EUR readers
+// (European style), 1,200,000 for USD readers. Amounts are whole, so there is no decimal mark to clash.
+let display = { currency: "EUR", perEur: 1, group: "." };
+const SYMBOL = { EUR: "€", USD: "$" };
+const whole = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
 
 export function setDisplayCurrency(currency, perEur) {
-  display = { currency, perEur: currency === "EUR" ? 1 : perEur };
-  moneyFmt = formatter(currency);
+  display = { currency, perEur: currency === "EUR" ? 1 : perEur, group: currency === "USD" ? "," : "." };
 }
 export const displayCurrency = () => display.currency;
 export const toDisplay = (eur) => eur * display.perEur; // EUR -> display currency
 export const fromDisplay = (x) => x / display.perEur; // display currency -> EUR
-export const fmtEur = (x) => (x === null || x === undefined ? "n/a" : moneyFmt.format(x * display.perEur));
+
+/** A whole number with the reader's thousands separator. */
+export function fmtInt(n) {
+  return whole.formatToParts(Math.round(n)).map((p) => (p.type === "group" ? display.group : p.value)).join("");
+}
+
+/** Reads a number typed with any separators ("1.200.000", "1,200,000", "1 200 000"); NaN if there is none. */
+export function parseWhole(text) {
+  const digits = String(text).replace(/[^\d-]/g, "");
+  return digits === "" || digits === "-" ? NaN : Number(digits);
+}
+
+export const fmtEur = (x) => {
+  if (x === null || x === undefined) return "n/a";
+  const v = Math.round(x * display.perEur);
+  return `${v < 0 ? "-" : ""}${SYMBOL[display.currency]}${fmtInt(Math.abs(v))}`;
+};
 
 /** Converts EUR amounts written in prose ("EUR 24,000", "€1.2M", "EUR 30M") to the display currency. */
 export function moneyText(text) {
@@ -83,8 +99,9 @@ export function fmtMoney(amount, currency) {
   // Euro amounts follow the display currency; other currencies are quoted as the law states them.
   if (currency === "EUR") return fmtEur(amount);
   try {
-    return new Intl.NumberFormat("en-GB", { style: "currency", currency, maximumFractionDigits: 0 }).format(amount);
+    return new Intl.NumberFormat("en-GB", { style: "currency", currency, maximumFractionDigits: 0 }).formatToParts(amount)
+      .map((p) => (p.type === "group" ? display.group : p.value)).join("");
   } catch {
-    return `${Math.round(amount).toLocaleString("en-GB")} ${currency}`;
+    return `${fmtInt(amount)} ${currency}`;
   }
 }

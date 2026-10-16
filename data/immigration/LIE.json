@@ -1,0 +1,198 @@
+{
+  "id": "LIE",
+  "name": "Liechtenstein",
+  "summary": "Liechtenstein is in the EEA but keeps a quota on residence permits. EU/EEA citizens who work get permits from an annual quota (at least 56, half by lottery), and a separate small quota of 16 a year covers EEA citizens who live on their own capital. US and other citizens can only get a permit if they have a job or real economic significance for the country; residence cannot be bought. A lump-sum tax (25% of living costs) exists for new residents who do not work.",
+  "naturalisation": "Not researched this session. Earlier practice: long residence (reported about 10 years) plus a municipal vote; not verified.",
+  "dual_citizenship": null,
+  "dual_citizenship_note": "Not verified this session; Liechtenstein has generally required renunciation of other nationalities, with exceptions. See open questions.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "eea_quota_gainful",
+      "name": "EEA nationals: residence permit within the annual quota (employed)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "grants": "temporary_residence",
+      "summary": "EEA citizens with a job in Liechtenstein get residence from a yearly quota; the EEA agreement allows Liechtenstein to cap numbers, so there is no free right to move.",
+      "requirements": "Quota of at least 56 new residence permits a year for EEA nationals working in Liechtenstein, plus around 300 short-term permits (up to 12 months); half the long-term permits are allocated by the government on application and half by lottery (28 a year in the employed lottery). Swiss and UK nationals are not eligible for the EEA lottery; Swiss have their own channel of about 17 places.",
+      "physical_presence": "Residence in Liechtenstein for the permit",
+      "sources": [
+        {
+          "title": "Liechtenstein Sectoral Adaptations - Review (COM(2023)458)",
+          "url": "https://eumonitor.eu/9353000/1/j4nvirkkkr58fyw_j9vvik7m1c3gyxp/vm54h3dgz5ur",
+          "publisher": "European Commission via EUMonitor",
+          "kind": "intergovernmental",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Liechtenstein: Residence and Taxes",
+          "url": "https://wiki.private.law/en/liechtenstein-residence",
+          "publisher": "private.law wiki",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "eea_quota_non_gainful",
+      "name": "EEA nationals: quota permit without gainful activity",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A small separate quota of 16 permits a year is open to EEA citizens who do not work and live on their own funds.",
+      "requirements": "Supplementary quota of 16 new permits a year for EEA nationals not exercising an economic activity (another source says about 20); sufficient own means. No numeric financial threshold published in the sources found. Applications compete for few places.",
+      "physical_presence": "Residence in Liechtenstein",
+      "sources": [
+        {
+          "title": "Liechtenstein Sectoral Adaptations - Review (COM(2023)458)",
+          "url": "https://eumonitor.eu/9353000/1/j4nvirkkkr58fyw_j9vvik7m1c3gyxp/vm54h3dgz5ur",
+          "publisher": "European Commission via EUMonitor",
+          "kind": "intergovernmental",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Liechtenstein: Residence and Taxes",
+          "url": "https://wiki.private.law/en/liechtenstein-residence",
+          "publisher": "private.law wiki",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "third_country_economic_interest",
+      "name": "Non-EEA nationals: permit for employment or economic significance",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "US and other citizens are admitted only in small numbers: with a job offer from a Liechtenstein employer or because they are of real economic significance to the country.",
+      "requirements": "Employment contract or real economic significance; limited annual permits. 'There is no direct purchase of residence through an investment' (private.law wiki). Exact quota numbers (one source claims about 89 a year) not confirmed.",
+      "physical_presence": "Residence in Liechtenstein",
+      "sources": [
+        {
+          "title": "Liechtenstein: Residence and Taxes",
+          "url": "https://wiki.private.law/en/liechtenstein-residence",
+          "publisher": "private.law wiki",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Liechtenstein - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/liechtenstein/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Replaces ordinary income and wealth tax on a living-cost base; not an immigration permit.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "lump_sum_tax",
+      "name": "Lump-sum taxation for new residents",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "New residents who do not work in Liechtenstein can agree a tax of 25% of their worldwide living costs. It still needs a residence permit first.",
+      "requirements": "Tax Act arts. 30-33 as summarised by private.law wiki: not a Liechtenstein citizen, new to the country or back after at least 10 years away, no local gainful activity, living on foreign income or wealth. Amount agreed with the Fiscal Authority; no fixed minimum in the current Act.",
+      "physical_presence": "Liechtenstein domicile",
+      "sources": [
+        {
+          "title": "Liechtenstein: Residence and Taxes",
+          "url": "https://wiki.private.law/en/liechtenstein-residence",
+          "publisher": "private.law wiki",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Official llv.li (Migration and Passport Office) pages returned 403; quota numbers come from an EU Commission review and secondary sources.",
+    "Government fees for permits not sourced.",
+    "Financial thresholds for the non-gainful EEA quota not published in sources found.",
+    "Years until permanent residence, naturalisation period and dual-citizenship rules not verified.",
+    "Lottery dates and exact split between lottery and government allocation are unconfirmed.",
+    "Lump-sum tax summary comes from a secondary wiki; statute not checked."
+  ],
+  "sources": [
+    {
+      "title": "Liechtenstein Sectoral Adaptations - Review (COM(2023)458)",
+      "url": "https://eumonitor.eu/9353000/1/j4nvirkkkr58fyw_j9vvik7m1c3gyxp/vm54h3dgz5ur",
+      "publisher": "European Commission via EUMonitor",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Liechtenstein: Residence and Taxes",
+      "url": "https://wiki.private.law/en/liechtenstein-residence",
+      "publisher": "private.law wiki",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Liechtenstein - Individual - Residence",
+      "url": "https://taxsummaries.pwc.com/liechtenstein/individual/residence",
+      "publisher": "PwC Worldwide Tax Summaries",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

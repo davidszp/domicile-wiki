@@ -70,5 +70,6 @@ def scores(data: dict, countries: list[str]) -> dict[str, dict]:
                   "list_score": round(list_score, 2), "coworking_score": None if cw_score is None else round(cw_score, 2),
                   "hub": max(named.values(), key=lambda v: v["points"])["city"] if named else None,
                   "coworking_osm": {"city": cw["city"], "spaces": int(float(cw["spaces"]))} if cw else None,
-                  "named_in": {lid: {"city": v["city"], "rank": v["rank"]} for lid, v in named.items()}}
+                  "named_in": {lid: {"city": v["city"], "rank": v["rank"], "title": lists[lid].get("title", lid),
+                                     "length": lists[lid].get("length")} for lid, v in named.items()}}
     return out

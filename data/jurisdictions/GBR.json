@@ -222,6 +222,8 @@
         ],
         "basis": "estate",
         "children_treatment": "taxed",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "Transfers to a spouse or civil partner are exempt without limit (Inheritance Tax Act 1984 s. 18(1)), but where the transferor is a long-term UK resident and the spouse is not, the exemption is capped at the exemption limit, £325,000 (s. 18(2)); the gift must not be conditional beyond 12 months or take effect after an interest ends (s. 18(3)). It defers rather than removes the tax: the assets form part of the survivor's estate.",
         "exemption": 325000,
         "brackets": [
           {
@@ -408,6 +410,8 @@
         ],
         "basis": "estate",
         "children_treatment": "taxed",
+        "spouse_treatment": "exempt_with_conditions",
+        "spouse_note": "Transfers to a spouse or civil partner are exempt without limit (Inheritance Tax Act 1984 s. 18(1)), but where the transferor is a long-term UK resident and the spouse is not, the exemption is capped at the exemption limit, £325,000 (s. 18(2)); the gift must not be conditional beyond 12 months or take effect after an interest ends (s. 18(3)). It defers rather than removes the tax: the assets form part of the survivor's estate.",
         "exemption": 325000,
         "brackets": [
           {

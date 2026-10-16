@@ -25,7 +25,7 @@ export function renderMethodology(panel) {
 function renderMethodologyContent(panel) {
   if (isIncomePersona()) {
     panel.append(h("h2", null, "Methodology"), personaCard(), ...personaMethodology(),
-      h("p", { class: "small muted" }, "Switch to HNWI in the top bar for the investment-tax methodology, the indicator datasets, colour bands and missing-data rules, which apply to every persona."));
+      h("p", { class: "small muted" }, "Switch to HNWI on the left for the investment-tax methodology, the indicator datasets, colour bands and missing-data rules, which apply to every persona."));
     return;
   }
   const cfg = state.cfg;
@@ -38,6 +38,7 @@ function renderMethodologyContent(panel) {
     h("h3", null, "1. Maps"),
     h("ul", null,
       h("li", null, "Boundaries: ", extLink("https://www.naturalearthdata.com/", "Natural Earth"), " 1:10m admin-0 countries and admin-1 states/provinces (public domain), simplified with shared topology by mapshaper so neighbouring borders stay gap-free."),
+      h("li", null, "Borders follow the United Nations, not who controls an area: Crimea is shown as part of Ukraine (UN General Assembly resolution 68/262), the Golan Heights as part of Syria (Security Council resolution 497), and East Jerusalem as occupied Palestinian territory (resolutions 478 and 2334). Only UN member states are countries: Natural Earth's other units (Northern Cyprus, the UN buffer zone in Cyprus, Somaliland, the occupied Palestinian territory, Western Sahara, leased and disputed areas, Antarctica) are shown striped as territories and never ranked. Dependencies of member states, such as Jersey or Gibraltar, keep their own tax rules and are ranked, and so do Taiwan and Kosovo, which are not UN members but have their own tax systems; their pages say so."),
       h("li", null, "Projections: Natural Earth for the world, Lambert conformal conic for Europe, Mercator for the UAE and Caribbean close-ups (with a separate Bermuda inset), Albers USA for US states."),
       h("li", null, "Small jurisdictions (Monaco, Andorra, Liechtenstein, Malta, Caribbean islands…) get a clickable circle at Natural Earth's official label point when their outline is too small to click. Labels use collision avoidance and leader lines."),
       h("li", null, "Automated tests check that every marker lies inside its jurisdiction, that labels reference the right feature, that each scored jurisdiction exists in the boundary data, and that the close-ups contain the jurisdictions they promise.")),
@@ -68,6 +69,11 @@ function renderMethodologyContent(panel) {
         cfg.knockout[k].sources.map((s, i) => [i ? ", " : "", extLink(s.url, s.title)])))),
     ...(cfg.red_flags && Object.keys(cfg.red_flags.countries).length ? [h("h3", null, "Red flags"), h("p", null, cfg.red_flags.description),
       h("ul", null, Object.entries(cfg.red_flags.countries).map(([id, f]) => h("li", null, h("strong", null, `${state.data.jurisdictions[id]?.name ?? id} — ${f.label}: `), f.explanation)))] : []),
+    h("h3", null, "Spouses"),
+    h("p", null, "The score models the estate passing to the children. What a surviving spouse pays is recorded separately for every country with an inheritance or estate tax (where there is none, nobody pays), shown on each country page and in Compare, and usable as a filter (“No inheritance tax for spouse or children”). It does not change the score. “Tax-free, with conditions” covers exemptions such as the US marital deduction, which applies in full only to a US-citizen spouse."),
+    h("h3", null, "Residence routes"),
+    h("p", null, "Each researched country lists its ways to get the right to live there: EU free movement, residence by investment (golden visas), citizenship by investment, passive-income and retiree permits, digital nomad visas, entrepreneur and work permits, with closed programmes kept and marked. Each route records who can use it (EU, US or other passports), the minimum investment and income, government fees, the stay required, and the years to permanent residence and citizenship, with sources."),
+    h("p", null, "“Residence for you” is the open route with the lowest investment for the passport chosen on the left; a route with no investment (free movement, a passive-income permit) comes first, and the income it needs is shown. Residence routes do not change any score: they are information, because the right route depends on the family."),
     h("h3", null, "5. Missing data"),
     h("p", null, cfg.status_rules.description),
     h("p", null, cfg.missing_data_policy),

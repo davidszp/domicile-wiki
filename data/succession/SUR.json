@@ -1,0 +1,37 @@
+{
+  "id": "SUR",
+  "name": "Suriname",
+  "researched_on": "2026-10-16",
+  "summary": "Under the new Civil Code (in force May 2025 according to a summary), the legitimate portion is abolished and a surviving spouse takes control of the estate, so children have no guaranteed share but only claims limited to money. Rules on foreign law, trusts and foundations could not be sourced.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "Children keep only a limited money claim once a testamentary right has been invoked; a cohabitant of at least 10 years may get a usufruct for maintenance over the home (per the Informea summary of Book 4). Details not read in the Code.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No source on Suriname's conflict-of-laws rule for succession or on a choice of foreign law was found.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "no",
+  "private_foundations": "no",
+  "trust_note": "No trust law was found. Suriname is not a party to the Hague Trusts Convention. Foundations (stichtingen) exist in Dutch-derived law, but whether a private-benefit foundation is allowed was not sourced.",
+  "open_questions": [
+    "The new Civil Code was read only via an Informea summary; verify the entry-into-force date, the abolition of the legitieme portie, and the transitional rules in the Staatsblad text.",
+    "Whether stichtingen can serve family-benefit purposes and whether any trust-like device exists was not sourced; domestic_trusts and private_foundations are 'no' because nothing was found, not because it is confirmed.",
+    "Conflict rules for succession were not found."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention on the Law Applicable to Trusts and on their Recognition (1985)",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "New Civil Code of Suriname (summary)",
+      "url": "https://www.informea.org/en/content/legislation/new-civil-code-suriname",
+      "publisher": "InforMEA / UNEP",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

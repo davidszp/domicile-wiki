@@ -1,0 +1,197 @@
+{
+  "name": "Estonia",
+  "summary": "EU citizens register their residence. Non-EU nationals can get a large-investor permit with EUR 1 million in an Estonian company or fund, a business permit with EUR 65,000 in a company you hold shares in, a startup visa, or a digital nomad D visa for remote workers earning about EUR 4,500 a month gross (sources conflict). There is no passive-income or retiree permit found.",
+  "naturalisation": "Eight years of residence, the last five on a permanent basis, Estonian at B1, and an exam on the Constitution and Citizenship Act. Time on the digital nomad visa gives no residence credit.",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "Naturalised citizens generally must renounce their former citizenship (Citizenship Act); exceptions and ancestry claims not verified (secondary sources).",
+  "routes": [
+    {
+      "id": "eu_free_movement",
+      "name": "EU/EEA free movement",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "EU citizens register their residence with the local government; no permit.",
+      "requirements": "Directive 2004/38/EC; registration for stays over 3 months; permanent residence after 5 years.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Estonia - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/estonia/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 5
+    },
+    {
+      "id": "large_investor",
+      "name": "Residence permit for large investors",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Permit for investing at least EUR 1 million in an Estonian company or fund.",
+      "requirements": "Direct, permanent investment of at least EUR 1,000,000 in an Estonian company investing in the Estonian economy, or in a fund investing mainly in Estonian companies; the value must not fall except through market moves; income of six times the subsistence level (set in the State Budget Act); health insurance. Permit up to 5 years, then extendable for up to 10 years at a time. Decision within 90 days.",
+      "physical_presence": "No residence requirement stated on the page (a secondary source says none)",
+      "sources": [
+        {
+          "title": "Residence permit for large investors",
+          "url": "https://www.politsei.ee/en/instructions/residence-permit-for-business/for-large-investors",
+          "publisher": "Police and Border Guard Board (PPA)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 1000000,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": 5,
+      "processing_time": "Decision within 90 days, card within 30 days after",
+      "tax_note": "Becoming an Estonian tax resident follows the 183-day / permanent home test.",
+      "government_fees": null,
+      "fees_note": "State fee not on the PPA page retrieved."
+    },
+    {
+      "id": "business_shareholder",
+      "name": "Residence permit for business (shareholder)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Permit for owning shares in an Estonian company and investing EUR 65,000 in its activities.",
+      "requirements": "At least EUR 65,000 invested in the company's activities in Estonia; income of six times the subsistence level; sole-proprietor and start-up categories exist (amounts not retrieved; one secondary guide says about EUR 16,000 for sole proprietors). Subject to the immigration quota.",
+      "physical_presence": "Live in Estonia and run the business",
+      "sources": [
+        {
+          "title": "Residence permit for business",
+          "url": "https://www.politsei.ee/en/instructions/residence-permit-for-business",
+          "publisher": "Police and Border Guard Board (PPA)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 65000,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": 5,
+      "government_fees": null,
+      "fees_note": "State fee not stated on the page."
+    },
+    {
+      "id": "startup_visa",
+      "name": "Startup visa / start-up entrepreneur permit",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Residence for founders of innovative, scalable startups approved by the Startup Committee.",
+      "requirements": "Approval by the Startup Estonia evaluation committee; no fixed investment. Fees and duration conflict between sources.",
+      "physical_presence": "Live in Estonia while running the startup",
+      "sources": [
+        {
+          "title": "Your guide to navigating Estonia's startup visa program",
+          "url": "https://startupestonia.ee/?p=5252",
+          "publisher": "Startup Estonia",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": null,
+      "processing_time": "Not sourced"
+    },
+    {
+      "id": "digital_nomad_visa",
+      "name": "Digital nomad visa (D visa for remote work)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Long-stay visa up to one year for remote workers employed or self-employed outside Estonia.",
+      "requirements": "Reported gross income of EUR 4,500 a month over the previous six months, from foreign sources (EUR 54,000 a year); other sources give EUR 3,960 or EUR 3,504; health insurance, clean record. Up to one year, extendable (18 months in one source). Outside the immigration quota. No residence credit toward citizenship.",
+      "physical_presence": "Live in Estonia; stays of 183+ days make you tax resident",
+      "sources": [
+        {
+          "title": "Estonia digital nomad visa: income requirement and quota",
+          "url": "https://www.jobbatical.com/blog/estonia-digital-nomad-visa-income-requirement-immigration-quota",
+          "publisher": "Jobbatical",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 54000,
+        "currency": "EUR"
+      },
+      "tax_note": "Estonia taxes residents at a 22% flat rate on worldwide income (secondary source); a 2026 security tax change was mentioned but not checked."
+    },
+    {
+      "id": "eu_blue_card",
+      "name": "EU Blue Card (work)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored permit for qualified employees.",
+      "requirements": "Salary threshold is tied to the average wage; one aggregator gives about EUR 37,152 a year for 2026 but unverified. Contract of at least 6 months and relevant qualification.",
+      "physical_presence": "Work for the sponsoring employer",
+      "sources": [
+        {
+          "title": "Estonia Blue Card: requirements and benefits for skilled workers",
+          "url": "https://www.visaverge.com/visarequirements/estonia-blue-card-requirements-and-benefits-for-skilled-workers",
+          "publisher": "VisaVerge",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null,
+      "path_to_permanent_years": 5
+    }
+  ],
+  "open_questions": [
+    "State fees for the large-investor and business permits and family rules not on the pages retrieved.",
+    "Digital nomad income: official figure conflicts (EUR 4,500 / 3,960 / 3,504 a month); check Visit Estonia and PPA.",
+    "Blue Card 2026 salary threshold; startup visa fees and sole-proprietor investment.",
+    "Naturalisation and renunciation exceptions: Wikipedia and commercial guides used.",
+    "Whether any 2026 amendment to the Aliens Act changed investor conditions: none found."
+  ],
+  "sources": [
+    {
+      "title": "Residence permit for large investors",
+      "url": "https://www.politsei.ee/en/instructions/residence-permit-for-business/for-large-investors",
+      "publisher": "Police and Border Guard Board (PPA)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Residence permit for business",
+      "url": "https://www.politsei.ee/en/instructions/residence-permit-for-business",
+      "publisher": "Police and Border Guard Board (PPA)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "EST",
+  "researched_on": "2026-10-16"
+}

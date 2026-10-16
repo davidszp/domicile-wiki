@@ -106,6 +106,8 @@ Foreign property outside inheritance tax; Japanese property taxed on the standar
 - **Residence/domicile rules:** Brackets apply only to Japan-situs property.
 - **Business relief covers listed shares:** False
 
+**Surviving spouse:** Spouse's tax credit: no tax on the net estate the spouse actually receives up to the greater of JPY 160 million or the spouse's statutory share (half the estate when there are children), provided a return is filed and the estate is divided, or a division-expected form is filed and division follows within 3 years (Inheritance Tax Act art. 19-2; NTA Tax Answer No. 4158). Anything above that is taxed on the normal scale.
+
 ## Wealth tax
 
 ### Standard regime
@@ -162,6 +164,7 @@ Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in 
 - SUUMO rental search: Setagaya-ku, Meguro-ku and Suginami-ku, Tokyo, 4K-5K+ layouts (SUUMO (Recruit Co., Ltd.), other): https://suumo.jp/jj/chintai/ichiran/FR301FC001/?ar=030&bs=040&ta=13&sc=13112&md=11&md=12&md=13&md=14&pc=50
 - Tuition & Fees (2026-27 Schedule of Tuition & Fees) (The American School in Japan, other): https://www.asij.ac.jp/admissions/tuition-fees
 - Japan - Corporate - Income determination (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/japan/corporate/income-determination
+- NTA Tax Answer No.4158 Spouse's tax credit: https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4158.htm
 
 ## Change log
 
@@ -171,3 +174,4 @@ Purchase prices, health insurance and housekeeper costs not sourced. ASIJ is in 
 - 2026-10-15: inheritance scope set to local assets only for non_permanent_resident, temporary_foreigner_years_6_10 in the structured data (foreign-situs property of temporary foreigners and their heirs is exempt); previously the scoring applied the rates to the worldwide estate, which overstated the tax.
 - 2026-10-15: reviewed holding structures; none modelled (asset-management company taxed more heavily than direct holding); added a Holding structures section.
 - 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from JPY 1,650,000 (Minato) to JPY 438,000 (Setagaya/Meguro/Suginami, 205 listings of 100 m2 or more).
+- 2026-10-16: added surviving-spouse treatment.

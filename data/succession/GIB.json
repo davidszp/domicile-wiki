@@ -1,0 +1,41 @@
+{
+  "summary": "Gibraltar has no forced heirship and applies English-style rules. Trusts are fully recognised and the Hague Trusts Convention was extended to Gibraltar. Private foundations are available under a 2017 law.",
+  "forced_heirship": "no",
+  "family_claims": "Gibraltar has an English-style family provision claim; the statute was not identified.",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Movables follow the law of the deceased's domicile, immovables follow Gibraltar law. There is no choice of nationality law.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "Hague Convention extended to Gibraltar (1 January 1992 per a Dutch treaty record). Foundations are governed by the Gibraltar private foundations law of 2017; its exact title was not verified.",
+  "open_questions": [
+    "The HCCH status-table page could be read only in an older cached version that does not show territorial extensions; extension dates come from the UK Treaty Series 14 (1992) and a Dutch treaty record, and should be re-checked on hcch.net.",
+    "Name of the family provision statute and the foundations law, and trust tax rules."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "UK Treaty Series 14 (1992): Hague Trusts Convention, extensions",
+      "url": "https://treaties.fcdo.gov.uk/data/Library2/pdf/1992-TS0014.pdf",
+      "publisher": "UK FCDO",
+      "kind": "government"
+    },
+    {
+      "title": "Gibraltar laws",
+      "url": "https://www.gibraltarlaws.gov.gi",
+      "publisher": "Government of Gibraltar",
+      "kind": "legislation"
+    }
+  ],
+  "reserved_share": "",
+  "id": "GIB",
+  "name": "Gibraltar",
+  "researched_on": "2026-10-16"
+}

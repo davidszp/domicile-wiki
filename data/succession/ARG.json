@@ -1,0 +1,37 @@
+{
+  "id": "ARG",
+  "name": "Argentina",
+  "researched_on": "2026-10-16",
+  "summary": "Children, parents and a spouse are forced heirs: descendants are guaranteed two thirds, ascendants and a spouse one half (Civil and Commercial Code art. 2445). Argentine law applies to a person domiciled in Argentina, and to Argentine real estate whoever owns it, so a foreign resident cannot escape the reserved share by choosing another law. Argentina has a statutory trust (fideicomiso) but private-interest foundations are not allowed; foundations must pursue the common good.",
+  "forced_heirship": "yes",
+  "reserved_share": "Forced heirs (art. 2444): descendants, ascendants, spouse. Legítima: descendants 2/3, ascendants 1/2, spouse 1/2 of the estate (Código Civil y Comercial art. 2445). Lifetime gifts count toward the calculation and can be reduced (arts. 2386, 2453 ff.).",
+  "family_claims": "",
+  "foreign_law_choice": "no",
+  "foreign_law_note": "Succession is governed by the law of the deceased's last domicile (CCyC art. 2644); real estate located in Argentina is governed by Argentine law (art. 2643). No general right to choose the law of nationality was found. A resident foreigner is therefore under Argentine heirship rules for Argentine assets.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "limited",
+  "trust_note": "Fideicomiso is regulated in CCyC arts. 1666-1707 (a trustee holds the assets for beneficiaries; it cannot be used to damage the legítima, art. 1700). Argentina is not a party to the Hague Trusts Convention, so foreign trusts are not recognised by treaty; the treatment of a foreign common-law trust is not settled in the sources found. Foundations (fundaciones, CCyC arts. 193-224 and Ley 19.836) must have a common-good purpose and no profit motive, so a family foundation is not available.",
+  "open_questions": [
+    "How Argentine courts and the tax authority treat foreign common-law trusts (recognition and tax) was not sourced.",
+    "Whether a fideicomiso funded in life is protected from reduction for legítima beyond art. 1700 was not sourced; confirm with a local lawyer.",
+    "Whether Argentina reforms the Civil and Commercial Code succession rules (executive reform proposals) was not checked."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table: Convention on the Law Applicable to Trusts and on their Recognition (1985)",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Código Civil y Comercial de la Nación (Ley 26.994), Book 5 Succession and Book 6 Title IV trust",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/norma.htm",
+      "publisher": "InfoLEG, Ministerio de Justicia",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "MCO",
+  "name": "Monaco",
+  "summary": "Monaco is not in the EU and everyone, EU citizens included, needs a residence card (carte de séjour) to live there more than three months. EU/EEA/Swiss citizens apply directly; US and other citizens first need a French long-stay visa. There is no fixed legal investment: the practical requirement is housing in Monaco and a bank reference, in practice a deposit of around EUR 500,000 at a Monaco bank, set by each bank.",
+  "naturalisation": "Discretionary grant by the Prince; reported minimum of 10 years of residence, generally counted from age 18. Not an entitlement.",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "Monaco generally does not recognise dual nationality; applicants usually must renounce their previous citizenship (consultancy source, not an official text).",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "Deposit at a Monaco bank; the amount is bank practice, not law. Private banks may ask for much more.",
+      "fees_note": "Official fees not sourced from a government page.",
+      "processing_time": "2 to 5 months (consultancy estimate)",
+      "family": "",
+      "tax_note": "Monaco levies no personal income tax on residents, except French nationals (1963 convention). A Monaco card does not by itself end tax residence elsewhere.",
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "EUR"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 10,
+      "path_to_citizenship_years": null,
+      "id": "residence_card_means",
+      "name": "Residence card on proof of means (carte de séjour)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A person who does not work in Monaco can get a residence card by proving housing in Monaco and sufficient resources, shown in practice by a reference from a Monaco bank. The temporary card lasts one year and is renewable.",
+      "requirements": "Sovereign Ordinance 3.153 of 19 March 1964, art. 7: sufficient resources if no professional activity; valid identity document; no conduct justifying refusal. Reported practice: accommodation in Monaco (title deed, a lease of 12 months or more registered with the tax department, or a sworn hosting attestation), a reference letter from a Monaco-licensed bank (market practice around EUR 500,000 on deposit, set by each bank, not by law), clean criminal record, health insurance, interview with the Sûreté Publique. EU/EEA/Swiss citizens apply directly in Monaco; US and other citizens first need a French long-stay (type D) visa. Card types reported: temporary (1 year), ordinary (3 years, after 3 years of residence), privileged (10 years, after 10 years of continuous residence).",
+      "physical_presence": "Genuine main residence; reported 'several months a year', no published day count",
+      "sources": [
+        {
+          "title": "Decision TS 2021-08 M. F. J. c. Etat de Monaco (Sovereign Ordinance 3.153, art. 7)",
+          "url": "https://www.tribunal-supreme.mc/wp-content/uploads/2022/03/Decision-TS-2021-08-M.-F.-J.-c.-Etat-de-Monaco.pdf",
+          "publisher": "Tribunal Suprême de Monaco",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Monaco Carte de Séjour: Complete Guide (2026)",
+          "url": "https://www.globalcitizensolutions.com/monaco-residency/",
+          "publisher": "Global Citizen Solutions",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "First residence application in Monaco, step by step",
+          "url": "https://mondaq.co.uk/work-visas/1260114/first-residence-application-in-monaco---step-by-step",
+          "publisher": "Mondaq",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "work_authorisation",
+      "name": "Employment in Monaco (work authorisation and residence)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Working in Monaco needs a Monaco employer and a work authorisation; residence is then requested separately. Monaco has no digital nomad visa.",
+      "requirements": "Sovereign Ordinance 3.153, art. 7: a foreigner who wants to work must show authorisation from the competent authorities. Details of the employer procedure not researched.",
+      "physical_presence": "Place of work and housing in Monaco or neighbouring France",
+      "sources": [
+        {
+          "title": "Decision TS 2021-08 M. F. J. c. Etat de Monaco (Sovereign Ordinance 3.153, art. 7)",
+          "url": "https://www.tribunal-supreme.mc/wp-content/uploads/2022/03/Decision-TS-2021-08-M.-F.-J.-c.-Etat-de-Monaco.pdf",
+          "publisher": "Tribunal Suprême de Monaco",
+          "kind": "legislation",
+          "accessed": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Official Monaco government page on residence requirements could not be opened; the bank-deposit figure and card durations come from consultancy sources.",
+    "Official fees for the temporary, ordinary and privileged cards not sourced (consultancy reports EUR 80 / 100 / 160).",
+    "Whether EU citizens face a lower financial threshold in practice not documented by an official source.",
+    "Minimum days of presence not published.",
+    "Monaco naturalisation period (10 years) and renunciation requirement come from a consultancy; statute not checked."
+  ],
+  "sources": [
+    {
+      "title": "Tax in Monaco",
+      "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+      "publisher": "Government of Monaco (MonServicePublic)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Decision TS 2021-08 M. F. J. c. Etat de Monaco (Sovereign Ordinance 3.153, art. 7)",
+      "url": "https://www.tribunal-supreme.mc/wp-content/uploads/2022/03/Decision-TS-2021-08-M.-F.-J.-c.-Etat-de-Monaco.pdf",
+      "publisher": "Tribunal Suprême de Monaco",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Monaco Carte de Séjour: Complete Guide (2026)",
+      "url": "https://www.globalcitizensolutions.com/monaco-residency/",
+      "publisher": "Global Citizen Solutions",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "researched_on": "2026-10-16"
+}

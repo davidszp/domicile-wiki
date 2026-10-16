@@ -1,0 +1,45 @@
+{
+  "id": "SMR",
+  "name": "San Marino",
+  "researched_on": "2026-10-16",
+  "summary": "Succession law is not codified, and children and the spouse are protected by a reserved share whose size was not confirmed. The Hague Trusts Convention is in force and San Marino has its own trust law. Foundations were not confirmed.",
+  "forced_heirship": "yes",
+  "reserved_share": "A reserved part (portio debita) exists for legitimate heirs under San Marino's common-law rules, with spouse rights in intestacy under Law 49/1986 (usufruct of the whole estate plus a child-sized share when there are children). Sizes of the reserve were not confirmed.",
+  "family_claims": "",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "San Marino private international law on succession was not found. Not under the EU Regulation.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": true,
+  "domestic_trusts": "yes",
+  "private_foundations": "unclear",
+  "trust_note": "The Hague Trusts Convention is in force since 1 August 2006 (HCCH table: accession 28 April 2005). San Marino has its own trust statute (a secondary source says domestic trusts are governed by San Marino law with a specialised court). Fiduciary contracts also exist. The existence and scope of a foundation law were not confirmed; the entry 'limited' is a placeholder.",
+  "open_questions": [
+    "Size of the reserve and the conflict rule for succession were not found.",
+    "Trust statute citation (law number and date) was not read.",
+    "Foundations: no source found; 'limited' is not backed by a source.",
+    "Trust/foundation availability marked unclear: no statute was found, which does not show that none exists."
+  ],
+  "sources": [
+    {
+      "title": "Successione ereditaria nel diritto sammarinese",
+      "url": "https://dantealighierirsm.org/wp-content/uploads/2017/05/2015-6.pdf",
+      "publisher": "Dante Alighieri Society of San Marino",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Legge 26 aprile 1986 n. 49",
+      "url": "https://www.consigliograndeegenerale.sm/contents/instance18/files/document/20415leggi_3948.pdf",
+      "publisher": "Consiglio Grande e Generale",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: 1985 Trusts Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

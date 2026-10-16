@@ -1,0 +1,157 @@
+{
+  "id": "JPN",
+  "name": "Japan",
+  "researched_on": "2026-10-16",
+  "summary": "No free movement. Japan has no passive investor, golden or retirement visa. EU, US and other passports can run a business under the Business Manager visa (capital of at least JPY 30 million since 16 October 2025), apply for a six-month digital nomad stay (JPY 10 million income, visa-exempt treaty countries only), or qualify under the points-based Highly Skilled Professional status or a normal work visa. Permanent residence takes 1 to 10 years depending on the route.",
+  "naturalisation": "Naturalisation generally requires 5 consecutive years of residence in Japan, adult age, good conduct, financial stability, and giving up other nationalities; the Ministry of Justice has discretion. Not verified on an official page in this run.",
+  "dual_citizenship": "not_allowed",
+  "dual_citizenship_note": "Japan expects naturalised citizens to renounce other nationalities; dual nationality is tolerated for those holding it from birth until age 22. Not verified in this run.",
+  "routes": [
+    {
+      "id": "business_manager",
+      "name": "Business Manager visa (Investor/Business Manager)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Residence status for running or managing a business in Japan; capital requirement rose to JPY 30 million on 16 October 2025.",
+      "requirements": "From 16 October 2025 (ordinance promulgated 10 October 2025): capital or investment of at least JPY 30 million (previously JPY 5 million); a physical office; at least one full-time employee who is a Japanese national, permanent resident or equivalent; that employee must show Japanese ability; applicant needs 3+ years' management or CxO experience or a relevant master's/doctorate; business plan confirmed by a management specialist. Existing holders have 3 years of transition for renewals. Details from Baker McKenzie and advisers; the ISA notice itself was not opened.",
+      "investment_options": "",
+      "fees_note": "Fees not researched.",
+      "processing_time": "",
+      "family": "Dependent status for spouse and children (not detailed).",
+      "tax_note": "Japan taxes residents on worldwide income; non-permanent residents (under 5 of the last 10 years) are taxed on foreign income only if remitted.",
+      "physical_presence": "Run the business in Japan; permanent residence normally needs 10 years (general ISA guideline, not verified here)",
+      "sources": [
+        {
+          "title": "Japan revises Business Manager visa requirements (Feb 2026)",
+          "url": "https://www.bakermckenzie.com/en/insight/publications/2026/02/japan-revises-business-manager-visa-requirements",
+          "publisher": "Baker McKenzie",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 30000000,
+        "currency": "JPY"
+      },
+      "path_to_permanent_years": 10,
+      "path_to_citizenship_years": 5
+    },
+    {
+      "id": "digital_nomad",
+      "name": "Designated Activities - Digital Nomad (six-month visa)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Six-month non-renewable stay for remote workers earning JPY 10 million a year, from visa-exempt countries with a tax treaty with Japan.",
+      "requirements": "Remote work for a foreign employer or clients; annual income at least JPY 10 million at application, shown by tax or income certificate; private medical travel insurance with at least JPY 10 million medical cover; nationality of a visa-exempt country that also has a tax treaty with Japan (EU member states, the UK and the US appear to qualify per secondary reports; the official chart was not read). Stay up to 6 months, no extension, no residence card, 6-month wait before re-applying. No employment with Japanese organisations. Spouse and children can accompany.",
+      "investment_options": "",
+      "fees_note": "Fee not stated on ISA page.",
+      "processing_time": "",
+      "family": "Spouse and children of eligible nationality may accompany under Designated Activities, same 6-month limit.",
+      "tax_note": "Six months stays under 183 days usually do not create tax residence, but the one-year residence (kyosho) test applies if you keep a home.",
+      "physical_presence": "Maximum 6 months, then 6-month wait",
+      "sources": [
+        {
+          "title": "Designated Activities (digital nomad)",
+          "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001",
+          "publisher": "Immigration Services Agency of Japan (Ministry of Justice)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 10000000,
+        "currency": "JPY"
+      },
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": true
+    },
+    {
+      "id": "highly_skilled_professional",
+      "name": "Highly Skilled Professional (HSP) visa, points-based",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Points-based status (70 or 80 points) that grants longer stay, family benefits and permanent residence after 3 or 1 years.",
+      "requirements": "Points for academic background, career, income, age and bonuses; 70 points for HSP(i), 80 for faster permanent residence. Annual income below JPY 3 million is not accepted even with enough points. Permanent residence after 3 years at 70 points or 1 year at 80 points, per secondary guides; ISA table not opened. From 1 April 2027 guidelines add changes (details unverified). Also J-Skip (very high earners/academics, 1 year to PR) and J-Find (graduates of top universities seeking work).",
+      "investment_options": "",
+      "fees_note": "Not researched.",
+      "processing_time": "",
+      "family": "Spouse may work full-time; domestic helpers and parents allowed under conditions (not verified).",
+      "tax_note": "",
+      "physical_presence": "Live in Japan; PR application needs continuous residence",
+      "sources": [
+        {
+          "title": "How to Get a Permanent Resident Visa in Japan: 2026 Guide",
+          "url": "https://cotoacademy.com/permanent-resident-visa-japan-apply-guide-explanation-highly-skilled-foreign-professional-point-system/",
+          "publisher": "Coto Academy",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 5
+    },
+    {
+      "id": "work_engineer_specialist",
+      "name": "Engineer / Specialist in Humanities / International Services (employment visas)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "status_note": "",
+      "grants": "temporary_residence",
+      "summary": "Standard employer-sponsored work statuses for degree-holders or experienced professionals.",
+      "requirements": "Job offer from a Japanese employer in a field matching a degree or 10 years' experience (3 years for international services), pay equal to Japanese workers. Not researched in detail; PR normally after 10 years' residence.",
+      "investment_options": "",
+      "fees_note": "Not researched.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "physical_presence": "Live and work in Japan",
+      "sources": [
+        {
+          "title": "Immigration Services Agency of Japan: Status of residence",
+          "url": "https://www.moj.go.jp/isa/applications/status/index.html",
+          "publisher": "Immigration Services Agency of Japan (Ministry of Justice)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 10,
+      "path_to_citizenship_years": 5
+    }
+  ],
+  "open_questions": [
+    "ISA's own notice on the Business Manager changes was not opened; figures from Baker McKenzie and advisers. Staffing and Japanese-language detail differ among sources.",
+    "Digital nomad eligible-country list not read (US eligibility conflicts between secondary reports).",
+    "HSP points tables and PR timelines from secondary guides; ISA tables not opened.",
+    "Visa fees not researched.",
+    "Naturalisation and dual-nationality rules not verified from an official page.",
+    "Startup visa (Startup Visa / J-Startup) not recorded."
+  ],
+  "sources": []
+}

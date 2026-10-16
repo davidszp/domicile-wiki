@@ -1,0 +1,207 @@
+{
+  "id": "USA",
+  "name": "United States",
+  "researched_on": "2026-10-16",
+  "summary": "US citizens need no permit. EU and other nationals can get a green card through EB-5 (USD 1,050,000, or USD 800,000 in a targeted employment area, 10 jobs) or live on a renewable E-2 treaty-investor visa if their country is on the treaty list. The Trump Gold Card (USD 1 million gift) is created by executive order and the USCIS form is posted, but filing is not open, so it is recorded as announced.",
+  "naturalisation": "Five years as a lawful permanent resident (three if married to a US citizen), continuous residence and physical presence, English and civics tests (2025 test of 128 questions for N-400 filed from 20 October 2025).",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "The US does not require renunciation on naturalisation, but the applicant's own country may.",
+  "routes": [
+    {
+      "id": "us_citizen",
+      "name": "US citizenship (no permit needed)",
+      "kind": "other",
+      "citizenships": [
+        "US"
+      ],
+      "status": "open",
+      "grants": "citizenship",
+      "summary": "US citizens simply live in the United States; no visa, permit or investment is needed.",
+      "requirements": "Citizenship by birth in the US or to a US citizen parent, or by naturalisation. A US citizen has the right to enter, live and work in the US without any immigration status.",
+      "physical_presence": "none required",
+      "sources": [
+        {
+          "title": "The Naturalization Interview and Test",
+          "url": "https://www.uscis.gov/citizenship/learn-about-citizenship/the-naturalization-interview-and-test",
+          "publisher": "USCIS",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "tax_note": "US citizens are taxed on worldwide income wherever they live."
+    },
+    {
+      "id": "eb5_standard",
+      "name": "EB-5 immigrant investor (outside a targeted employment area)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "A green card for investing USD 1,050,000 in a new commercial enterprise that creates at least 10 full-time US jobs. Residence is conditional for two years first.",
+      "requirements": "Investment of USD 1,050,000 (petitions filed on or after 15 March 2022) in a new commercial enterprise, directly or through a USCIS-designated regional center; at least 10 full-time qualifying jobs (35 hours a week). Amounts adjust for inflation (CPI-U) every 5 years from petitions filed on or after 1 January 2027. Regional Center Program visas are authorised through 30 September 2027. Conditional green card, then Form I-829 to remove conditions. Not available to US citizens.",
+      "physical_presence": "No minimum days; a conditional resident must keep the green card status (not abandon US residence)",
+      "sources": [
+        {
+          "title": "About the EB-5 Visa Classification",
+          "url": "https://uscis.gov/working-united-states/permanent-workers/employment-based-immigration-fifth-preference-eb-5/about-eb-5-visa",
+          "publisher": "USCIS",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 1050000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 5,
+      "fees_note": "USCIS returned several EB-5 filing fees to the pre-1 April 2024 amounts on 14 November 2025 (Form G-1055); the amounts were not read from the fee schedule. Visa-quota backlogs apply for some nationalities (Chinese, Indian).",
+      "family": "Spouse and unmarried children under 21 get green cards with the investor.",
+      "tax_note": "A green card makes the holder a US tax resident on worldwide income, and starts the clock for the exit tax after 8 of 15 years."
+    },
+    {
+      "id": "eb5_tea",
+      "name": "EB-5 immigrant investor (targeted employment area or infrastructure)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "The same EB-5 green card at a reduced investment of USD 800,000 when the project is in a rural area or an area of high unemployment, or is an infrastructure project.",
+      "requirements": "Investment of USD 800,000 (petitions filed on or after 15 March 2022) in a targeted employment area (a rural area, or an area with unemployment at least 150% of the national average) or an infrastructure project; 10 full-time jobs; same conditional-residence process as standard EB-5. Regional Center Program visas are authorised through 30 September 2027. Not available to US citizens.",
+      "physical_presence": "No minimum days; a conditional resident must keep the green card status (not abandon US residence)",
+      "sources": [
+        {
+          "title": "About the EB-5 Visa Classification",
+          "url": "https://uscis.gov/working-united-states/permanent-workers/employment-based-immigration-fifth-preference-eb-5/about-eb-5-visa",
+          "publisher": "USCIS",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 800000,
+        "currency": "USD"
+      },
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 5,
+      "family": "Spouse and unmarried children under 21 get green cards with the investor.",
+      "tax_note": "A green card makes the holder a US tax resident on worldwide income."
+    },
+    {
+      "id": "e2_treaty_investor",
+      "name": "E-2 treaty investor visa",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "A renewable non-immigrant visa for nationals of a treaty country who invest a substantial amount in a real US business that they direct. It does not lead to a green card.",
+      "requirements": "Must be a national of a treaty country; capital invested must be substantial, at risk and lawfully sourced; at least 50% ownership or operational control; the business must not be marginal. No fixed statutory minimum. Initial stay up to 2 years, renewable without limit while the business continues. EU states: the lists reviewed show Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia and Lithuania as treaty countries and, by country notes, also the Netherlands, Spain, Slovakia and Slovenia; Cyprus, Hungary, Malta and Portugal were not listed; the sources disagree on Luxembourg, Poland, Romania and Sweden, so check the State Department list. Other nationals (UK, Canada, Japan and others) depend on the same list. US citizens do not need it.",
+      "physical_presence": "Live in the US to run the business; no day count",
+      "sources": [
+        {
+          "title": "E-2 Treaty Investors",
+          "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+          "publisher": "USCIS",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "E-2 Treaty Countries List 2026",
+          "url": "https://www.nnuimmigration.com/e-visa-treaty-countries/",
+          "publisher": "NNU Immigration",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": null,
+      "family": "Spouse and unmarried children under 21 can accompany; spouses may apply for work authorisation.",
+      "tax_note": "Substantial presence in the US makes the holder US tax resident.",
+      "only_some_nationalities": true
+    },
+    {
+      "id": "gold_card",
+      "name": "Trump Gold Card (USD 1 million gift)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "status": "announced",
+      "grants": "permanent_residence",
+      "summary": "A proposed fast route to a green card (EB-1 or EB-2) in return for a USD 1 million gift to the US government. Created by executive order, not by law; USCIS has posted the form but filing is not open to the public.",
+      "requirements": "Executive Order 14351 (19 September 2025), not an Act of Congress. Per trumpcard.gov: gift of USD 1,000,000 per person including each family member, USD 15,000 non-refundable DHS fee per person, applicant must be admissible and have an available EB-1/EB-2 visa number (waits of a year or more for some countries). Registration is on trumpcard.gov; Form I-140G (edition 09/11/26) may be filed only through a USCIS online account after registration is confirmed, and USCIS 'will notify you' when filing opens. The USCIS page last updated 9 October 2026 says filing is not yet open. Corporate Gold Card (USD 2 million per employee) and Platinum Card (USD 5 million, not launched) are also announced. A legal challenge was reported in February 2026.",
+      "physical_presence": "No minimum days stated; holders become US tax residents",
+      "sources": [
+        {
+          "title": "Form I-140G, Immigrant Petition for the Gold Card Program",
+          "url": "https://www.uscis.gov/i-140g",
+          "publisher": "USCIS",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Trump Gold Card",
+          "url": "https://trumpcard.gov",
+          "publisher": "trumpcard.gov (US Government)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 1000000,
+        "currency": "USD"
+      },
+      "government_fees": {
+        "amount": 15000,
+        "currency": "USD"
+      },
+      "status_note": "Created by Executive Order 14351 of 19 September 2025; USCIS posted Form I-140G but, as of the 9 October 2026 USCIS page, public filing is not open. Not enacted by Congress. Re-check before relying on it.",
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": 5,
+      "family": "Spouse and unmarried children under 21 can be included, each with a USD 1 million gift and USD 15,000 fee.",
+      "tax_note": "Holders are taxed on worldwide income (trumpcard.gov). The announced Platinum Card would allow up to 270 days a year in the US without US tax on non-US income; not launched."
+    },
+    {
+      "id": "us_work_visas",
+      "name": "Employer-sponsored work visas and green cards (H-1B, L-1, O-1, EB-2/EB-3)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Ordinary employment route: an employer sponsors a temporary work visa or a green card. Quotas and backlogs apply; there is no points-based or self-sponsored route for most people.",
+      "requirements": "Summary only; not researched in detail. See the EB-5 and E-2 routes for investor options.",
+      "physical_presence": "Live in the US; no day count",
+      "sources": [
+        {
+          "title": "About the EB-5 Visa Classification",
+          "url": "https://uscis.gov/working-united-states/permanent-workers/employment-based-immigration-fifth-preference-eb-5/about-eb-5-visa",
+          "publisher": "USCIS",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "tax_note": "US tax residents are taxed on worldwide income."
+    }
+  ],
+  "open_questions": [
+    "E-2 treaty list for the EU: sources disagree on Luxembourg, Poland, Romania, Sweden and Portugal; the State Department page (travel.state.gov) returned HTTP 403, so the official list was not read.",
+    "Gold Card: check uscis.gov/i-140g and trumpcard.gov for the date filing opens, the final legal basis and the court challenge before changing status to open.",
+    "EB-5 current USCIS filing fees (I-526/I-526E/I-829) were not read; government_fees left null.",
+    "Digital nomad visa: the US has none; remote work is not authorised on visitor status.",
+    "Work visas entry is a summary without a dedicated USCIS source for H-1B/L-1/O-1 quotas and fees.",
+    "Naturalisation: five-year (three-year for spouses of citizens) permanent-residence rule is from the statute (INA 316/319) and was not read on a USCIS page; the USCIS page fetched covered the tests only."
+  ],
+  "sources": []
+}

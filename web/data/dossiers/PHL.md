@@ -59,6 +59,8 @@ Estate tax is a flat 6% of the net estate (TRAIN Law, NIRC Sec. 84). For citizen
 - **Residence/domicile rules:** Residence of the decedent decides: resident aliens worldwide, non-resident aliens Philippine assets only.
 - **Business relief covers listed shares:** False
 
+**Surviving spouse:** No marital deduction: what the spouse inherits is taxed at the flat 6% of the net estate; only the spouse's own net share of the conjugal or community property is deducted, and that is not an inheritance (NIRC Sec. 86(C), as amended by RA 10963).
+
 ## Wealth tax
 
 ### Resident alien (`standard`)
@@ -102,3 +104,4 @@ Not researched in this pass (no quickly verifiable sources).
 ## Change log
 
 - 2026-10-15: initial research.
+- 2026-10-16: added surviving-spouse treatment.

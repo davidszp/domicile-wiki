@@ -1,0 +1,73 @@
+{
+  "id": "MUS",
+  "name": "Mauritius",
+  "researched_on": "2026-10-16",
+  "summary": "Children have a reserved share under the Code civil (art. 913): one half with one child, two thirds with two, three quarters with three or more. Trusts and foundations exist (Trusts Act 2001, Foundations Act 2012) and the Trusts Act shields trusts of non-resident settlors from foreign forced-heirship rules, but local forced heirship still applies to a Mauritian domiciliary and Mauritian assets.",
+  "forced_heirship": "yes",
+  "reserved_share": "Children: one half of the estate with one child, two thirds with two, three quarters with three or more (Code civil mauricien art. 913: disposable share one half, one third, one quarter). Applied by the Supreme Court in 2002.",
+  "family_claims": "",
+  "foreign_law_choice": "limited",
+  "foreign_law_note": "Mauritian law governs immovable property in Mauritius; movables follow the last domicile (archived Global Property Guide). Forced heirship applies where the deceased was domiciled in Mauritius or for Mauritian assets (Chambers). A foreign national's choice of national law was not sourced.",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "yes",
+  "private_foundations": "yes",
+  "trust_note": "Trusts Act 2001: s. 8(4) protects non-resident settlor transfers against foreign inheritance rules; s. 11(5) bars recognition of foreign judgments on succession against trust property (Acclime). Foundations Act 2012 provides foundations. Chambers: forced heirship is public policy and domestic trusts can still be challenged for the reserved portion, mitigated by drafting. Foreign forced-heirship judgments are not enforceable (Mondaq).",
+  "open_questions": [
+    "Spouse's reserved share and article numbers beyond art. 913 not sourced.",
+    "Conflict rule for foreigners' succession (Civil Code art. 3) not retrieved.",
+    "Section numbers of the Trusts Act come from a commercial guide.",
+    "Hague Trusts Convention: The HCCH status table (checked 2026-10-16) lists 14 Contracting Parties; this country is not one of them and no UK, Dutch or Chinese extension covers it, so the 1985 Convention is not in force here."
+  ],
+  "sources": [
+    {
+      "title": "Private Wealth 2026: Mauritius",
+      "url": "https://gpg-pdf.chambers.com/Private-Wealth-2026/417/",
+      "publisher": "Chambers and Partners",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Private Wealth 2025: Mauritius",
+      "url": "https://gpg-pdf.chambers.com/Private-Wealth-2025/378/",
+      "publisher": "Chambers and Partners",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Protecting non-resident wealth from forced heirship",
+      "url": "https://global.acclime.com/guides/protecting-non-resident-wealth-forced-heirship/",
+      "publisher": "Acclime",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Mauritius and the Mauritian trust",
+      "url": "https://www.mondaq.com/trusts/173418/mauritius-and-the-mauritian-trust",
+      "publisher": "Mondaq",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Calixte v Nibourette [2002] SCSC 15 (reprints art. 913)",
+      "url": "https://seylii.org/sc/judgment/supreme-court/2002/15",
+      "publisher": "SeyLII",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Inheritance tax and inheritance law in Mauritius",
+      "url": "https://www.globalpropertyguide.com/africa/mauritius/inheritance",
+      "publisher": "Global Property Guide",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "HCCH status table: Convention of 1 July 1985 on the Law Applicable to Trusts and on their Recognition",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "Hague Conference on Private International Law",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

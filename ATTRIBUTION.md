@@ -23,6 +23,7 @@ checked before relying on them for anything beyond this project.
 | [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors | Coworking-space counts (`data/indicators/nomad_scene/coworking.csv`, reference only) and city geocoding | © OpenStreetMap contributors, [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/). The coworking counts are a derived database and stay under ODbL. |
 | [ohsome API](https://api.ohsome.org/) by HeiGIT, Heidelberg | Counting OpenStreetMap coworking spaces | Service over OpenStreetMap data (ODbL) |
 | [Nominatim](https://nominatim.org/) | Geocoding city centres | Service over OpenStreetMap data (ODbL); used within its usage policy |
+| [European Union: EU countries](https://european-union.europa.eu/principles-countries-history/eu-countries_en); [European Commission: outermost regions](https://ec.europa.eu/regional_policy/policy/themes/outermost-regions_en) | EU membership marks (`data/scoring_config.json` → `eu`) | EU website content: reuse allowed with acknowledgement ([Commission Decision 2011/833/EU](https://eur-lex.europa.eu/eli/dec/2011/833/oj)) |
 
 ## Indicators
 
@@ -95,7 +96,8 @@ Published rankings, used only for which cities they name and in what order:
 |---|---|
 | [EU Sanctions Map](https://www.sanctionsmap.eu/), [OFAC sanctions programs](https://ofac.treasury.gov/sanctions-programs-and-country-information) | Sanctions knock-out |
 | IMF Article IV staff reports for [China (CR 26/44)](https://www.imf.org/-/media/files/publications/cr/2026/english/1chnea2026001-source-pdf.pdf), [Sri Lanka](https://www.imf.org/-/media/files/publications/cr/2025/english/1lkaea2025002-print-pdf.pdf), [Fiji](https://www.imf.org/-/media/files/publications/cr/2025/english/1fjiea2025001-print-pdf.pdf), [Samoa](https://www.imf.org/-/media/files/publications/cr/2025/english/1wsmea2025001-print-pdf.pdf); central-bank rules of [Sri Lanka](https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/laws/cdg/Foreign_Exchange_Act_Direction_No_16_of_2021_e.pdf), [Fiji](https://www.rbf.gov.fj/wp-content/uploads/2025/12/Exchange-Control-Guidelines-effective-1-January-2026.pdf) and [Samoa](https://cbs.gov.ws/media/Exchange-Control-Information-Booklet-2026-final.pdf) | Capital-controls knock-out |
-| [World Justice Project Rule of Law Index 2025](https://worldjusticeproject.org/rule-of-law-index/downloads/WJPIndex2025.pdf), [Freedom House 2026](https://freedomhouse.org/), [US Hong Kong Business Advisory](https://ofac.treasury.gov/media/933161/download?inline=), [UK FCDO travel advice](https://www.gov.uk/foreign-travel-advice/china/safety-and-security), Radio Free Asia, Hughes Hubbard & Reed, Safeguard Defenders | Rule-of-law knock-out (China, Hong Kong) |
+| [World Justice Project Rule of Law Index 2025](https://worldjusticeproject.org/rule-of-law-index/downloads/WJPIndex2025.pdf), [Freedom House 2026](https://freedomhouse.org/), [US Hong Kong Business Advisory](https://ofac.treasury.gov/media/933161/download?inline=), [UK FCDO travel advice](https://www.gov.uk/foreign-travel-advice/china/safety-and-security), Radio Free Asia, Hughes Hubbard & Reed, Safeguard Defenders | Rule-of-law knock-out (China); red flags (Hong Kong, Macau) |
+| AP (via WTOP), Macau Business, Human Rights Watch, [UK FCDO travel advice: Macao](https://www.gov.uk/foreign-travel-advice/macao/safety-and-security); Deloitte study for [InvestHK](https://www.investhk.gov.hk/) (family-office count) | Red flags for Macau and Hong Kong; see `docs/research/macau_foreign_wealth.md` |
 
 The full evidence, with every URL, is in [`docs/research/china_hong_kong_foreign_wealth.md`](docs/research/china_hong_kong_foreign_wealth.md)
 and [`docs/research/capital_controls_screen.md`](docs/research/capital_controls_screen.md).
@@ -107,6 +109,8 @@ and [`docs/research/capital_controls_screen.md`](docs/research/capital_controls_
 | [D3](https://d3js.org/) 7.9.0 (`web/vendor/d3-7.9.0.min.js`) | ISC, see `web/vendor/d3.LICENSE` |
 | [topojson-client](https://github.com/topojson/topojson-client) 3.1.0 (`web/vendor/topojson-client-3.1.0.min.js`) | ISC, see `web/vendor/topojson-client.LICENSE` |
 | [mapshaper](https://github.com/mbloch/mapshaper) 0.6.121 (build-time only, not shipped) | MPL 2.0 |
+| [Newsreader](https://github.com/productiontype/Newsreader) (headings, wordmark; `web/vendor/fonts/newsreader-*.woff2`) | SIL Open Font License 1.1, see `web/vendor/fonts/Newsreader-OFL.txt` |
+| [Manrope](https://github.com/sharanda/manrope) (text; `web/vendor/fonts/manrope-*.woff2`) | SIL Open Font License 1.1, see `web/vendor/fonts/Manrope-OFL.txt` |
 
 ## Corrections
 

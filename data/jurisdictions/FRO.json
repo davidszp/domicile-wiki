@@ -190,7 +190,9 @@
         "open_questions": [
           "Later amendments to Anordning 468/1921 not checked; the TAKS summary (1%-12%) matches the original table.",
           "Scope for foreign assets of a Faroese-domiciled deceased and whether a spouse in undivided estate (óskift búgv) defers the duty for children not analysed."
-        ]
+        ],
+        "spouse_treatment": "taxed_low",
+        "spouse_note": "The spouse pays the same inheritance duty as children, 1% rising to 3% on shares over DKK 100,000 (1908 Danish act, § 2 A, in force by Anordning 468/1921); only shares up to DKK 500 are exempt (§ 3). An estate kept undivided by the surviving spouse (uskiftet bo, § 14) owes nothing until it is divided."
       }
     }
   ],

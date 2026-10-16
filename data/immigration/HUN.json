@@ -1,0 +1,160 @@
+{
+  "name": "Hungary",
+  "summary": "EU citizens register after 90 days. For non-EU nationals the Guest Investor Programme (EUR 250,000 in a real estate fund, or a EUR 1 million donation to a university foundation; the property option was dropped) still exists in law as of the latest sources, but the Tisza government elected in April 2026 pledged to abolish it and no repeal or transition rules were found. The White Card gives remote workers earning about EUR 3,000 net a month up to two years. The EU Blue Card needs about HUF 1 million gross a month.",
+  "naturalisation": "Reported as 8 years of residence (some guides count 3 years on a permit plus 8 on permanent residence), Hungarian language (A2) and a constitutional knowledge test; simplified routes exist for descendants and spouses. From secondary guides, not checked against the Citizenship Act of 1993.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "Hungary does not require renunciation under the 1993 Citizenship Act (secondary sources).",
+  "routes": [
+    {
+      "id": "eu_free_movement",
+      "name": "EU/EEA free movement (registration certificate)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "EU citizens register their residence after 90 days; no permit.",
+      "requirements": "Register with the immigration authority for stays over 90 days (registration certificate); permanent residence after 5 years.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Hungary - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/hungary/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 5
+    },
+    {
+      "id": "guest_investor",
+      "name": "Guest Investor residence permit (Act XC of 2023)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Ten-year renewable residence for EUR 250,000 in a real estate fund or a EUR 1 million donation to a public-trust university; scheduled for abolition by the new government but no repeal found.",
+      "requirements": "Two options reported: at least EUR 250,000 in a real estate fund registered with the Hungarian National Bank, or a EUR 1,000,000 donation to a public-trust higher-education foundation. The direct property option (EUR 500,000, applying to property acquired from 1 January 2025) was removed before taking effect per Wikipedia and IMI Daily, but Andersen's pages still listed it; unresolved. Valid travel document, accommodation and means of support. 10-year permit, extendable once for 10 years. Russian/Belarusian exclusions not checked.",
+      "physical_presence": "Not sourced (one guide: full-time residence needed for permanent residence)",
+      "sources": [
+        {
+          "title": "Hungary eliminates real estate investment option from Guest Investor Program",
+          "url": "https://www.imidaily.com/europe/hungary-eliminates-real-estate-investment-option-from-guest-investor-program",
+          "publisher": "Investment Migration Insider",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Hungary Guest Investor Program",
+          "url": "https://en.wikipedia.org/wiki/Hungary_Guest_Investor_Program",
+          "publisher": "Wikipedia",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Hungary: election results, potential impact on immigration policy (20 April 2026)",
+          "url": "https://vialtopartners.com/regional-alerts/hungary-immigration-election-results-potential-impact-on-immigration-policy",
+          "publisher": "Vialto Partners",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "status_note": "The TISZA party, which won the April 2026 election, announced it intends to abolish the scheme; no transitional arrangements were announced and no repeal bill was found as of 16 October 2026. A 23 August 2026 aggregator page still lists the scheme as operating (EUR 250,000).",
+      "minimum_investment": {
+        "amount": 250000,
+        "currency": "EUR"
+      },
+      "investment_options": "EUR 250,000 real estate fund; or EUR 1,000,000 donation to a public-trust university foundation.",
+      "path_to_permanent_years": null,
+      "family": "Spouse and children included; not sourced in detail.",
+      "tax_note": "A residence permit does not by itself make you tax resident."
+    },
+    {
+      "id": "white_card",
+      "name": "White Card (digital nomad residence)",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "One-year permit for remote workers employed by or owning a business abroad; renewable once.",
+      "requirements": "Foreign employer or foreign-registered business and clients; no stake in a profitable Hungarian company; reported income of about EUR 3,000 net a month (EUR 36,000 a year, conflicting older figures of EUR 2,000). Valid one year, renewable once for one year; does not lead to permanent residence; family cannot join under the same application (secondary sources).",
+      "physical_presence": "Live in Hungary while holding the permit",
+      "sources": [
+        {
+          "title": "Hungary digital nomad visa - the White Card",
+          "url": "https://remoteworkeurope.eu/insights/hungary-digital-nomad-visa-2026",
+          "publisher": "Remote Work Europe",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 36000,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": null,
+      "tax_note": "Staying over 183 days can make you tax resident."
+    },
+    {
+      "id": "blue_card",
+      "name": "EU Blue Card (work)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored permit for degree-level jobs.",
+      "requirements": "From 1 January 2026 minimum gross monthly pay HUF 1,001,047 (HUF 800,838 for shortage occupations), i.e. HUF 12,012,564 a year; degree and a job offer.",
+      "physical_presence": "Work for the sponsoring employer",
+      "sources": [
+        {
+          "title": "Hungary announces increased salary thresholds for EU Blue Card applicants",
+          "url": "https://www.ey.com/en_gl/technical/tax-alerts/hungary-announces-increased-salary-thresholds-for-eu-blue-card-applicants-postpones-planned-salary-updates-based-on-occupation-codes",
+          "publisher": "EY",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": {
+        "amount": 12012564,
+        "currency": "HUF"
+      },
+      "tax_note": "Taxed as Hungarian resident if the tests are met."
+    }
+  ],
+  "open_questions": [
+    "Guest Investor: official status after the Tisza government took office; any repeal bill or transition rules; whether the EUR 500,000 property option exists.",
+    "Guest Investor: years to permanent residence and citizenship, government fees and processing time not sourced from official pages.",
+    "White Card: official income threshold and fees (only secondary sources); Enter Hungary portal not retrieved.",
+    "Naturalisation timeline (8 years versus 3 + 8) not verified against the law.",
+    "No self-sufficiency or entrepreneur route recorded; not researched in this pass."
+  ],
+  "sources": [
+    {
+      "title": "Hungary: election results, potential impact on immigration policy (20 April 2026)",
+      "url": "https://vialtopartners.com/regional-alerts/hungary-immigration-election-results-potential-impact-on-immigration-policy",
+      "publisher": "Vialto Partners",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Hungary eliminates real estate investment option from Guest Investor Program",
+      "url": "https://www.imidaily.com/europe/hungary-eliminates-real-estate-investment-option-from-guest-investor-program",
+      "publisher": "Investment Migration Insider",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "HUN",
+  "researched_on": "2026-10-16"
+}

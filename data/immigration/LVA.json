@@ -1,0 +1,259 @@
+{
+  "name": "Latvia",
+  "summary": "EU citizens register their residence. Non-EU nationals lost the property and bank-deposit residence routes when the new Immigration Law took effect on 15 September 2026; the remaining investor route is EUR 50,000 (EUR 100,000 for larger firms) in a Latvian company's share capital plus a EUR 10,000 state payment, and a EUR 150,000 fund route that is not operational yet. Russian and Belarusian citizens are barred from investor permits. A remote-work visa exists but its income threshold is unverified.",
+  "naturalisation": "Reported as 10 years of legal residence, the last 5 on a permanent residence permit, with Latvian language (A2) and history/constitution tests and legal income. The 10-year figure comes from secondary guides; an official PMLP brochure speaks only of 5 years of permanent residence. Not verified against the Citizenship Law.",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Dual citizenship is allowed on naturalisation for citizens of EU, EFTA and NATO states and some others; other nationalities may be asked to renounce (secondary sources, not verified against the law).",
+  "routes": [
+    {
+      "id": "eu_free_movement",
+      "name": "EU/EEA free movement",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "status": "open",
+      "grants": "permanent_residence",
+      "summary": "EU citizens register their residence after three months; no investment or permit needed.",
+      "requirements": "Directive 2004/38/EC: register with PMLP for stays over 3 months; permanent residence after 5 years of continuous residence.",
+      "physical_presence": "None required",
+      "sources": [
+        {
+          "title": "Latvia - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/latvia/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "path_to_permanent_years": 5
+    },
+    {
+      "id": "investor_company_capital",
+      "name": "Temporary residence permit: investment in company share capital",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Residence for investing in the share capital of a Latvian company, with a required state payment and tax contributions.",
+      "requirements": "Small firm (up to 50 employees, turnover or balance sheet up to EUR 10 million): EUR 50,000 investment, a EUR 10,000 payment to the state at the first permit and at least EUR 40,000 yearly tax payments by the company. Larger firm: EUR 100,000 investment and EUR 100,000 yearly taxes. Permit now up to 2 years (previously 5). Russian and Belarusian citizens excluded. Figures from secondary sources on the new law effective 15 September 2026; not checked against the official text.",
+      "physical_presence": "Not sourced; investor must maintain the company and permit conditions",
+      "sources": [
+        {
+          "title": "Latvia reshapes its golden visa: property route ends under new Immigration Law",
+          "url": "https://getgoldenvisa.com/latvia-reshapes-its-golden-visa-property-route-ends-under-new-immigration-law",
+          "publisher": "GetGoldenVisa",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Latvia promulgates new Immigration Law; property and deposit routes end September 14",
+          "url": "https://imidaily.com/program-updates/latvia-promulgates-new-immigration-law-golden-visa-property-and-deposit-routes-end-september-14",
+          "publisher": "Investment Migration Insider",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_investment": {
+        "amount": 50000,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 10000,
+        "currency": "EUR"
+      },
+      "fees_note": "EUR 10,000 state payment at first permit (secondary sources); ordinary state fees extra, not sourced.",
+      "status_note": "",
+      "path_to_permanent_years": null,
+      "family": "Not sourced.",
+      "tax_note": "A residence permit does not make you tax resident (183 days in 12 months or declared residence does)."
+    },
+    {
+      "id": "investor_fund",
+      "name": "Temporary residence permit: state-established alternative investment fund",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "announced",
+      "grants": "temporary_residence",
+      "summary": "New EUR 150,000 route via a state-established fund, with a 5-year hold. The fund did not exist yet.",
+      "requirements": "EUR 150,000 held for at least 5 years plus a EUR 10,000 state payment; permit up to 5 years. OCMA reportedly confirmed that the state fund has not been created, so no application can be made. Russian and Belarusian citizens excluded.",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Latvia reshapes its golden visa: property route ends under new Immigration Law",
+          "url": "https://getgoldenvisa.com/latvia-reshapes-its-golden-visa-property-route-ends-under-new-immigration-law",
+          "publisher": "GetGoldenVisa",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Latvia promulgates new Immigration Law; property and deposit routes end September 14",
+          "url": "https://imidaily.com/program-updates/latvia-promulgates-new-immigration-law-golden-visa-property-and-deposit-routes-end-september-14",
+          "publisher": "Investment Migration Insider",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "status_note": "Introduced by the new Immigration Law effective 15 September 2026; not operational as of the sources found (state fund not yet created).",
+      "minimum_investment": {
+        "amount": 150000,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 10000,
+        "currency": "EUR"
+      },
+      "fees_note": "EUR 10,000 state payment (secondary sources)."
+    },
+    {
+      "id": "real_estate_permit",
+      "name": "Temporary residence permit via real estate (old route)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "temporary_residence",
+      "summary": "Residence for buying property worth EUR 250,000 or more; closed to new applications on 15 September 2026.",
+      "requirements": "Old rule: property of at least EUR 250,000 (Riga, Jurmala and listed areas: one property; elsewhere up to two), cadastral value at least EUR 80,000, paid non-cash, plus 5% of the price to the state budget (EUR 12,500 at the minimum). Subsistence proof EUR 1,500 a month. Applications lodged by 14 September 2026 are decided under the old law (5-year permit).",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Real estate owner (temporary residence permit), page last updated 22.04.2022",
+          "url": "https://www.pmlp.gov.lv/en/real-estate-owner",
+          "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
+          "kind": "government",
+          "accessed": "2026-10-16"
+        },
+        {
+          "title": "Latvia promulgates new Immigration Law; property and deposit routes end September 14",
+          "url": "https://imidaily.com/program-updates/latvia-promulgates-new-immigration-law-golden-visa-property-and-deposit-routes-end-september-14",
+          "publisher": "Investment Migration Insider",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "status_note": "Not available to applications from 15 September 2026 under the new Immigration Law; applications filed up to 14 September 2026 are still assessed under the old rules.",
+      "minimum_investment": {
+        "amount": 250000,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 12500,
+        "currency": "EUR"
+      },
+      "fees_note": "5% of the purchase value paid to the state budget at the first application (EUR 12,500 on EUR 250,000); other state fees not sourced.",
+      "tax_note": "Does not by itself make you tax resident."
+    },
+    {
+      "id": "bank_deposit_permit",
+      "name": "Temporary residence permit via bank deposit (old route)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "closed_to_new",
+      "grants": "temporary_residence",
+      "summary": "Residence for a EUR 280,000 subordinated deposit with a Latvian bank; closed on 15 September 2026.",
+      "requirements": "Secondary sources say the EUR 280,000 deposit route is not retained in the new Immigration Law. Original conditions not re-verified.",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Latvia promulgates new Immigration Law; property and deposit routes end September 14",
+          "url": "https://imidaily.com/program-updates/latvia-promulgates-new-immigration-law-golden-visa-property-and-deposit-routes-end-september-14",
+          "publisher": "Investment Migration Insider",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "status_note": "Dropped from new applications from 15 September 2026; applications filed by 14 September 2026 follow the old rules.",
+      "minimum_investment": {
+        "amount": 280000,
+        "currency": "EUR"
+      }
+    },
+    {
+      "id": "remote_work_visa",
+      "name": "Remote worker (digital nomad) visa",
+      "kind": "digital_nomad",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Long-stay visa for non-EU remote workers employed by or registered in a foreign (reported OECD) company; the income threshold is unconfirmed.",
+      "requirements": "Reported minimum monthly income varies between EUR 3,192.50 and about EUR 4,213 across sources; no PMLP page was retrieved. Up to one year; no local employment.",
+      "physical_presence": "Not sourced",
+      "sources": [
+        {
+          "title": "Latvia digital nomad visa 2026",
+          "url": "https://getwherenext.com/digital-nomad-visas/lv",
+          "publisher": "GetWhereNext",
+          "kind": "other",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null,
+      "tax_note": "No special tax regime; tax residence applies after 183 days."
+    },
+    {
+      "id": "eu_blue_card",
+      "name": "EU Blue Card and employment permits (work)",
+      "kind": "work",
+      "citizenships": [
+        "US",
+        "OTHER"
+      ],
+      "status": "open",
+      "grants": "temporary_residence",
+      "summary": "Employer-sponsored permits for skilled workers.",
+      "requirements": "Threshold for the Blue Card not confirmed for 2026 (one table reports about EUR 32,676 a year, undated). Job offer of at least 6 months and a degree needed.",
+      "physical_presence": "Work for the sponsoring employer",
+      "sources": [
+        {
+          "title": "Latvia - Individual - Residence",
+          "url": "https://taxsummaries.pwc.com/latvia/individual/residence",
+          "publisher": "PwC Worldwide Tax Summaries",
+          "kind": "professional",
+          "accessed": "2026-10-16"
+        }
+      ],
+      "minimum_income": null
+    }
+  ],
+  "open_questions": [
+    "New Immigration Law: official text and effective date (Latvijas Vestnesis / OCMA) not retrieved; all details are from law-firm and news sites. One consultancy gave 1 January 2027 for some provisions.",
+    "Whether the investor company route permit is two years and whether it leads to permanent residence; years to permanent residence for investors.",
+    "Remote-worker visa: official PMLP income threshold, fee and renewability.",
+    "EU Blue Card salary threshold for 2026 and fees.",
+    "Naturalisation: 10 years (last 5 permanent) versus PMLP brochure's 5 years; dual citizenship rules by nationality.",
+    "Latvia has no passive-income permit found; confirm none exists under the new law."
+  ],
+  "sources": [
+    {
+      "title": "Real estate owner (temporary residence permit), page last updated 22.04.2022",
+      "url": "https://www.pmlp.gov.lv/en/real-estate-owner",
+      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
+      "kind": "government",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Latvia promulgates new Immigration Law; property and deposit routes end September 14",
+      "url": "https://imidaily.com/program-updates/latvia-promulgates-new-immigration-law-golden-visa-property-and-deposit-routes-end-september-14",
+      "publisher": "Investment Migration Insider",
+      "kind": "professional",
+      "accessed": "2026-10-16"
+    }
+  ],
+  "id": "LVA",
+  "researched_on": "2026-10-16"
+}

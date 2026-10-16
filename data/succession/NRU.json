@@ -1,0 +1,46 @@
+{
+  "id": "NRU",
+  "name": "Nauru",
+  "researched_on": "2026-10-16",
+  "summary": "Nauru's Succession, Probate and Administration Act 1976 covers estates, but Nauruan custom matters and there is no statutory family provision. Trust and foundation law and Hague status are not confirmed.",
+  "forced_heirship": "no",
+  "reserved_share": "",
+  "family_claims": "No statutory family provision (2003 Supreme Court noted Nauru had not adopted such statutes; courts have used equitable and customary principles). Not re-verified for later years.",
+  "foreign_law_choice": "unclear",
+  "foreign_law_note": "No conflict-of-law rule sourced. The 1976 Act applies to a Nauruan only if the person left a will in English-Wills-Act form that so directs (s 3(2), per a case summary).",
+  "eu_succession_regulation": false,
+  "hague_trusts_convention": false,
+  "domestic_trusts": "unclear",
+  "private_foundations": "unclear",
+  "trust_note": "Nauru is understood to follow received English trust law; no Nauruan trust statute was found, so 'limited' is recorded. No foundation law found.",
+  "open_questions": [
+    "Whether Nauru has any trust or foundation statute.",
+    "Any family-provision change since 2003.",
+    "Direct reading of the 1976 Act s 3.",
+    "The HCCH table as retrieved shows no entry for this jurisdiction (the retrieved copy was marked last updated 2017 and its territorial-extension notes could not be read); re-check the live table.",
+    "Trust/foundation availability marked unclear: no statute was found, which does not show that none exists."
+  ],
+  "sources": [
+    {
+      "title": "HCCH status table, Convention of 1 July 1985 on the Law Applicable to Trusts",
+      "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=59",
+      "publisher": "HCCH",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Succession, Probate and Administration Act 1976 (FAOLEX)",
+      "url": "https://faolex.fao.org/docs/pdf/nau35504.pdf",
+      "publisher": "FAO",
+      "kind": "legislation",
+      "accessed": "2026-10-16"
+    },
+    {
+      "title": "Nauru Supreme Court decision, 2003",
+      "url": "https://pacliirms.austlii.edu.au/nr/cases/NRSC/2003/5.pdf",
+      "publisher": "PacLII",
+      "kind": "other",
+      "accessed": "2026-10-16"
+    }
+  ]
+}

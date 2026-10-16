@@ -168,6 +168,8 @@
         ],
         "basis": "beneficiary",
         "children_treatment": "taxed_low",
+        "spouse_treatment": "taxed_low",
+        "spouse_note": "Registration duty is 2.5% between spouses, the same as between ascendants and descendants, with no allowance (EY 2026); donations of goods between spouses are registered at a fixed TND 30.",
         "exemption": 0,
         "brackets": [
           {
