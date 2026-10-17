@@ -2,7 +2,6 @@ import json
 from functools import cache
 from pathlib import Path
 
-import pytest
 from shapely.geometry import shape
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -68,8 +67,3 @@ def decode_topojson(path: Path, obj: str) -> list[dict]:
             geometry = None
         feats.append({"properties": g.get("properties", {}), "geometry": geometry})
     return feats
-
-
-@pytest.fixture(scope="session")
-def scores_data():
-    return scores()

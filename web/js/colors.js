@@ -1,5 +1,5 @@
 // One continuous colour scale for scores, like the visible spectrum: violet (best) through blue,
-// green, yellow and orange to red (weakest). Used by the globe, the big map, the chart and the
+// green, yellow and orange to red (weakest). Used by the globe, the Explorer chart and the
 // score chips. The stops are CSS tokens (--spec-*), so each theme has its own; they sit at the
 // middle of the score bands in data/scoring_config.json, so a score keeps the colour its band had.
 

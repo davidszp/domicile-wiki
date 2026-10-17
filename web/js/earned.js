@@ -19,7 +19,7 @@ function standardTax(rules, income, kind, deduction = 0) {
   return applyBrackets(Math.max(0, income - rules.allowance - deduction), brackets);
 }
 
-export function employmentDeduction(rules, income, kind) {
+function employmentDeduction(rules, income, kind) {
   const e = rules.employment_deduction;
   if (kind !== "employment" || !e) return 0;
   let d = Math.max(e.min, e.base + applyBrackets(income, e.schedule));
@@ -34,13 +34,13 @@ function ssc(rules, income, kind) {
 
 /** Income tax and own social security on `income` (EUR) for `kind` (employment / self_employment). */
 /** State and city income tax on top of national tax; national regimes do not change it. */
-export function regionalTax(rules, income) {
+function regionalTax(rules, income) {
   const r = rules.regional;
   if (!r) return 0;
   return applyBrackets(Math.max(0, income - r.allowance), r.brackets) + applyBrackets(Math.max(0, income - r.local_allowance), r.local_brackets);
 }
 
-export function earnedTax(rules, income, kind, regime = null) {
+function earnedTax(rules, income, kind, regime = null) {
   let s = ssc(rules, income, kind);
   if (regime && !regime.ssc) s = 0;
   // Own contributions (where the law allows) and an employee's standard work-expense deduction come off taxable income.
@@ -61,7 +61,7 @@ export function earnedTax(rules, income, kind, regime = null) {
   return { tax: round2(tax), ssc: round2(s), total: round2(total), rate: income ? total / income : 0 };
 }
 
-export function eligible(regime, kind, citizenship, income) {
+function eligible(regime, kind, citizenship, income) {
   if (!regime.applies_to.includes(kind) || !regime.eligible.includes(citizenship)) return false;
   if (kind === "self_employment" && regime.requires_local_employment) return false;
   if (kind === "employment" && regime.requires_foreign_income) return false;
@@ -70,7 +70,7 @@ export function eligible(regime, kind, citizenship, income) {
   return true;
 }
 
-export function rateScore(rate, cfg) {
+function rateScore(rate, cfg) {
   return round2(Math.max(0, Math.min(100, 100 * (1 - rate / cfg.income_tax_transform.zero_score_rate))));
 }
 

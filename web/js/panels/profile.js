@@ -1,10 +1,10 @@
 import { h, append, clear, extLink, displayCurrency, moneyText, fmtPct, fmtScore, fmtEur, fmtMoney } from "../dom.js";
-import { state, entries, jur, toggleIn, MAX_COMPARE, metricsFor, isIncomePersona, personaCfg, personaNoun, isSimple } from "../state.js";
+import { state, entries, jur, toggleIn, MAX_COMPARE, metricsFor, isIncomePersona, personaCfg, isSimple } from "../state.js";
 import { loadProfile, loadDossier } from "../data.js";
 import { bandFor, TAX_METRICS } from "../scoring.js";
 import { renderMarkdown } from "../markdown.js";
 import { scoreRgb, textOn } from "../colors.js";
-import { INHERITANCE, GROUP_SHORT, field, sourceList } from "../labels.js";
+import { INHERITANCE, WEALTH_TAX, GROUP_SHORT, field, sourceList } from "../labels.js";
 import { renderPersonaBody, personaCard, fact } from "./persona.js";
 import { immigrationSection, residenceCaveat, residenceFact } from "./immigration.js";
 import { successionSection, successionFact, successionWarning } from "./succession.js";
@@ -292,7 +292,7 @@ export function renderProfile(panel, ctx) {
     append(body, [h("dl", { class: "facts" },
       bestRow && bestRow.cost !== null ? fact("Tax on the investments", `${fmtEur(bestRow.cost)} a year`,
         h("span", { class: "muted", title: "Capital gains, dividends and wealth tax, plus inheritance tax spread over the horizon" }, bestRow.type !== "standard" ? ` · ${bestRow.name}` : "")) : null,
-      fact("Wealth tax", { none: "none", limited: "limited", broad: "yes" }[d.regimes[0].wealth_tax.type] || "–"),
+      fact("Wealth tax", WEALTH_TAX[d.regimes[0].wealth_tax.type] || "–"),
       fact("Spouse inherits", e.flags?.inheritance_spouse ? INHERITANCE[e.flags.inheritance_spouse] : "not researched yet"),
       fact("Children inherit", INHERITANCE[d.regimes[0].inheritance.children_treatment] || "–"),
       fact("Living costs", hc ? `${fmtEur(hc.total_eur)} a year` : "not sourced"),

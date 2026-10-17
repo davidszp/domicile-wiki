@@ -25,7 +25,7 @@ const TREATMENT = {
 
 const openQuestions = (qs) => (qs && qs.length ? h("div", { class: "open-q" }, h("strong", null, "Open questions: "), h("ul", null, qs.map((q) => h("li", null, q)))) : null);
 
-export function usCitizenNote() {
+function usCitizenNote() {
   return state.citizenship === "US"
     ? h("p", { class: "notice small" }, h("strong", null, "US citizens: "),
       "the United States taxes its citizens wherever they live. The foreign earned income exclusion, foreign tax credits and US self-employment tax are not modelled here, so for a US citizen the figures show local tax only.")
@@ -318,7 +318,7 @@ export function renderIncomeCalculator(panel) {
 }
 
 /** The earned-income calculator's assumptions, shown on the Method page. */
-export function incomeCalculatorAssumptions() {
+function incomeCalculatorAssumptions() {
   return h("ul", { class: "small" },
     h("li", null, "Resident rates, the basic allowance, the person's own social security and standard deductions, applied to gross income."),
     h("li", null, "Not included: deductible expenses, family allowances, other tax credits, double-tax relief, and the tax position in the country being left."),

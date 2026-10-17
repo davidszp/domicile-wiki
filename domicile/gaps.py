@@ -61,8 +61,8 @@ def main() -> None:
         "",
         f"- Map units: {len(data)} ({len(countries)} countries/territories, {len(data) - len(countries)} subnational units).",
         f"- Countries/territories with researched tax rules: {len(researched)}. The other {len(countries) - len(researched)} are grey "
-        "(unscored) on the overall and tax layers; their non-tax indicators are available on the non-tax layer.",
-        f"- Status of researched countries: " + ", ".join(f"{s} {len(v)}" for s, v in sorted(by_status.items())) + ".",
+        "(unscored) on the globe; their non-tax indicators are shown on their country pages.",
+        "- Status of researched countries: " + ", ".join(f"{s} {len(v)}" for s, v in sorted(by_status.items())) + ".",
         "",
         "## Systematic gaps",
         "",

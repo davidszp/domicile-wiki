@@ -13,7 +13,7 @@ import pytest
 from conftest import ROOT, scores
 
 playwright = pytest.importorskip("playwright.sync_api")
-CHROMIUM = os.environ.get("WEALTHMAP_CHROMIUM") or shutil.which("chromium") or shutil.which("google-chrome-stable")
+CHROMIUM = os.environ.get("DOMICILE_CHROMIUM") or shutil.which("chromium") or shutil.which("google-chrome-stable")
 
 
 @pytest.fixture(scope="module")

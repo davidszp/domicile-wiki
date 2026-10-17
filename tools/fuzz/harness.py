@@ -111,11 +111,12 @@ class Journey:
                                                            "findings": [f.__dict__ for f in self.findings]}, indent=2))
 
 
-def ready(page, base: str, route: str = "#/guided", clear: bool = True):
+def ready(page, base: str, route: str = "#/guided", clear: bool = True, view: str = "advanced"):
+    """``clear``: start as a first-time visitor, except in ``view`` (the journeys use Advanced's controls)."""
     page.goto(base + route)
     page.wait_for_function("() => window.domicileReady", timeout=20000)
-    if clear:  # every journey starts as a first-time visitor
-        page.evaluate("() => { localStorage.clear(); }")
+    if clear:
+        page.evaluate("(view) => { localStorage.clear(); localStorage.setItem('domicile:v1', JSON.stringify({ view })); }", view)
         page.reload()
         page.wait_for_function("() => window.domicileReady", timeout=20000)
 

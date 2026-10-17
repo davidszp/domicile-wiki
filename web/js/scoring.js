@@ -108,7 +108,7 @@ export function evaluate(entry, weights, citizenship, cfg, opts = {}) {
   };
 }
 
-export function taxOnly(metrics, weights, TAX_METRICS = DEFAULT_TAX) {
+function taxOnly(metrics, weights, TAX_METRICS = DEFAULT_TAX) {
   if (TAX_METRICS.some((m) => metrics[m] === null || metrics[m] === undefined)) return null;
   const tw = Object.fromEntries(TAX_METRICS.map((m) => [m, weights[m]]));
   const total = Object.values(tw).reduce((a, b) => a + b, 0);

@@ -77,7 +77,7 @@ function renderMethodologyContent(panel) {
     h("h3", null, "5. Missing data"),
     h("p", null, cfg.status_rules.description),
     h("p", null, cfg.missing_data_policy),
-    h("p", null, "Jurisdictions whose tax rules have not been researched are grey on the overall and tax layers. Their non-tax indicators are still available under the “Non-tax score only” layer."),
+    h("p", null, "Jurisdictions whose tax rules have not been researched are unscored and grey on the globe. Their non-tax indicators are still shown on their country pages."),
 
     h("h3", null, "6. Colour bands"),
     h("ul", null, cfg.bands.map((b, i) => h("li", null, h("i", { class: `swatch band-${b.color}` }), ` ${b.label}: ${bandRange(cfg, i)}`))),

@@ -26,7 +26,7 @@ const SCORING_KEYS = ["persona", "weights", "citizenship", "includeActivity", "i
 const MODE_INFO = {
   guided: { letter: "A", label: "Guided", hint: "Four questions, a shortlist", render: renderGuided },
   factbook: { letter: "B", label: "Factbook", hint: "Read about one country", render: renderFactbook },
-  explorer: { letter: "C", label: "Explorer", hint: "Table, chart and map", render: renderExplorer },
+  explorer: { letter: "C", label: "Explorer", hint: "Every place, ranked", render: renderExplorer },
   compare: { letter: "D", label: "Compare", hint: "What changes if you move", render: renderCompare },
 };
 // Pages outside the four modes (reached from the guide, not listed with A-D).

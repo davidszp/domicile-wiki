@@ -198,10 +198,6 @@ def english_epi(iso2_to_iso3: dict[str, str]) -> dict[str, tuple[float, int]]:
     return out
 
 
-def _norm(s: str) -> str:
-    return re.sub(r"[^a-z]", "", s.lower().replace("&", "and"))
-
-
 def country_features() -> list[dict]:
     path = ROOT / "data" / "build" / "countries.geojson"
     if not path.exists():

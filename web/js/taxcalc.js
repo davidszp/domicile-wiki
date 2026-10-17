@@ -21,7 +21,7 @@ function covers(rules, what) {
   return Boolean(ls) && (ls.covers.includes(what) || ls.covers.includes("foreign_income_all"));
 }
 
-export function wealthBase(base, p) {
+function wealthBase(base, p) {
   const finForeign = p.portfolio * p.foreign_share;
   const map = {
     net_wealth_worldwide: p.net_wealth,
@@ -171,7 +171,7 @@ function addStructureCosts(rules, p, out) {
 }
 
 // Share of net wealth situated in the country of residence (local home + domestic securities).
-export function localShare(p) {
+function localShare(p) {
   if (p.net_wealth <= 0) return 1;
   const local = p.real_estate_local + p.portfolio * (1 - p.foreign_share);
   return Math.max(0, Math.min(1, local / p.net_wealth));

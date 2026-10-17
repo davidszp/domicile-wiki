@@ -101,7 +101,7 @@ def asian_student(j: Journey, page, base: str):
 
 def lebanese_expat(j: Journey, page, base: str):
     ready(page, base)
-    page.click("#persona [data-persona=expat]")
+    page.select_option("#persona", "expat")
     page.select_option("#citizenship", "OTHER")
     j.step("Expat, Lebanese passport (other), first visit")
     page.click("[data-mode=compare]")
@@ -134,7 +134,7 @@ def lebanese_expat(j: Journey, page, base: str):
 
 def us_nomad(j: Journey, page, base: str):
     ready(page, base)
-    page.click("#persona [data-persona=nomad]")
+    page.select_option("#persona", "nomad")
     page.select_option("#citizenship", "US")
     j.step("Digital nomad with a US passport")
     j.expect("$" in page.inner_text("#stage"), "US citizen does not see dollars in Guided")

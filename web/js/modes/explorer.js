@@ -11,7 +11,7 @@ import { taxPerYear } from "../results.js";
 const d3 = window.d3;
 const compactMoney = (eur) => new Intl.NumberFormat("en-GB", { style: "currency", currency: displayCurrency(), notation: "compact", maximumFractionDigits: 1 }).format(toDisplay(eur));
 
-export const VIEWS = [["table", "Table"], ["chart", "Chart"]]; // weights live in Settings, the calculator in Compare
+const VIEWS = [["table", "Table"], ["chart", "Chart"]]; // weights live in Settings, the calculator in Compare
 
 function renderChart(body, ctx) {
   const rows = rankedRows().map((x) => ({ ...x, tax: taxPerYear(x.id), nontax: nontaxOnly(x.e, state.weights, state.cfg) }))

@@ -12,6 +12,7 @@ export const INHERITANCE = { fully_exempt: "tax-free", exempt_with_conditions: "
 /** Higher is better; used to colour Compare. */
 export const INHERITANCE_RANK = { fully_exempt: 3, exempt_with_conditions: 2, taxed_low: 1, taxed: 0 };
 
+/** Annual wealth tax type (wealth_tax.type). */
 export const WEALTH_TAX = { none: "none", limited: "limited", broad: "yes" };
 
 export const capitalise = (s) => (s ? s[0].toUpperCase() + s.slice(1) : s);

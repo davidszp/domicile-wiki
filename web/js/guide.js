@@ -169,7 +169,7 @@ export function createGuide({ world, modes, go, select }) {
     clear(cap);
     const e = focused.id && jur(focused.id);
     if (!e) {
-      cap.append(focused.why === "You are here" ? "You are here." : "Click a country to open it, drag to turn, scroll or pinch to zoom.");
+      cap.append(focused.why === "You are here" ? "You are here." : "Click a country to open it.");
       return;
     }
     const r = evalOf(focused.id);
@@ -234,7 +234,7 @@ export function createGuide({ world, modes, go, select }) {
   caption();
 
   return {
-    /** Keep the guide in step after a state change; `recolor` when scores or the layer changed. */
+    /** Keep the guide in step after a state change; `recolor` when scores changed. */
     onPatch(patch, { recolor }) {
       if ("citizenship" in patch) $("#citizenship").value = state.citizenship;
       if ("includeStructures" in patch) $("#structures").checked = state.includeStructures;

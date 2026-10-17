@@ -4,7 +4,7 @@ Binding for anyone writing `data/income/<ISO3>.json` and `docs/income/<ISO3>.md`
 `IncomeFile` model at the end of `domicile/schema.py`; read it first. Validate every file with:
 
 ```
-cd ~/Projects/domicile && uv run python -m domicile.validate data/income/XXX.json
+uv run python -m domicile.validate data/income/XXX.json   # from the repository root
 ```
 
 ## Who reads this

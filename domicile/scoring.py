@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import json
 import math
-from dataclasses import asdict
 from pathlib import Path
 
 from domicile.taxcalc import METRICS as TAX_METRICS
@@ -352,15 +351,3 @@ def knockouts(indicators: dict[str, dict], country_id: str, cfg: dict) -> list[d
                         "explanation": lst["countries"][country_id]})
     return out
 
-
-def band(score: float | None, cfg: dict) -> dict | None:
-    if score is None:
-        return None
-    for b in cfg["bands"]:
-        if score >= b["min"]:
-            return b
-    return cfg["bands"][-1]
-
-
-def profile_dict(p: Profile) -> dict:
-    return asdict(p)

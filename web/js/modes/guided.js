@@ -19,7 +19,7 @@ const INHERIT = { fully_exempt: "children inherit tax-free", exempt_with_conditi
 const WEALTH = { none: "no wealth tax", limited: "a limited wealth levy", broad: "an annual wealth tax" };
 
 /** Weights for the chosen priorities: the persona's defaults, with each chosen group's metrics doubled. */
-export function weightsForPriorities(persona, chosen) {
+function weightsForPriorities(persona, chosen) {
   const w = defaultWeightsFor(persona);
   const groups = state.cfg.personas[persona].profile.priorities;
   for (const i of chosen) for (const m of groups[i].metrics) if (m in w) w[m] *= BOOST;

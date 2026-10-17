@@ -4,7 +4,7 @@
 const BLOCKED_ATTRS = new Set(["style", "srcdoc"]);
 const URL_ATTRS = new Set(["href", "src", "action", "formaction", "xlink:href"]);
 
-export function safeUrl(url) {
+function safeUrl(url) {
   try {
     const u = new URL(String(url), window.location.href);
     return u.protocol === "https:" || u.protocol === "http:" ? u.href : null;

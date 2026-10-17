@@ -25,7 +25,8 @@ It is a static site (no server code) and can be deployed as is to Cloudflare Pag
 | Area | Where |
 |---|---|
 | Four ways through the same data: Guided (questions, then a shortlist), Factbook (one page per country), Explorer (filterable table and chart), Compare (changes from where you live, and a tax calculator) | `web/js/main.js`, `web/js/modes/` |
-| Guide on the left: your situation (persona, passport, weights), search, and a globe that turns to the place you last opened | `web/js/guide.js`, `web/js/globe.js` |
+| Guide on the left: Settings (Simple or Advanced, persona, passport, where you live; structures and weights in Advanced), search, and a globe that turns to the place you last opened |
+| Simple view: each mode's main answers only (top 5, five facts and one 60-year line per country, a short ranked table, the main Compare rows); Advanced is everything | `web/js/state.js` (`view`), the `isSimple()` branches in `web/js/modes/` and `web/js/panels/` | `web/js/guide.js`, `web/js/globe.js` |
 | Swiss cantons, Spanish autonomous communities, Italian regions, UAE emirates, US states | `data/subnational/*.json` |
 | Country pages: taxes, immigration paths per passport, spouse and children inheritance, red flags, sources | `web/js/panels/` |
 | Settings kept in the browser (no login): weights and saved weight sets, knock-out rules and exceptions, export and import | `web/js/modes/settings.js`, `web/js/state.js` |

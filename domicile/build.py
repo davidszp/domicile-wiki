@@ -9,7 +9,6 @@ Reads researched jurisdiction files, indicators, FX and the scoring config; writ
 
 from __future__ import annotations
 
-import copy
 import dataclasses
 import csv
 import datetime as dt

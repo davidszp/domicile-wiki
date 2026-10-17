@@ -1,7 +1,7 @@
 import { personaEntry, TAX_METRICS } from "./scoring.js";
 
-// Small observable store. The reader's settings (persona, passport, weights, saved weight sets,
-// knock-out rules, shortlist, home) are kept in this browser's localStorage, so there is no login;
+// Small observable store. The reader's settings (Simple or Advanced, persona, passport, weights, saved
+// weight sets, knock-out rules, shortlist, home) are kept in this browser's localStorage, so there is no login;
 // every access is guarded because storage can be absent or throw. Settings can be exported to a file
 // and imported on another device (Settings page).
 
@@ -239,11 +239,6 @@ function applyKoSettings(e, id) {
 export function regimeOpts() {
   if (isIncomePersona()) return { taxMetrics: taxMetrics() };
   return { includeActivity: state.includeActivity, includeStructures: state.includeStructures };
-}
-
-/** The raw entry from scores.json, whatever the persona. */
-export function rawJur(id) {
-  return state.data.jurisdictions[id];
 }
 
 export function jur(id) {

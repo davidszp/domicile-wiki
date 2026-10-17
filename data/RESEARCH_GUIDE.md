@@ -5,7 +5,7 @@ This guide is binding for anyone (human or agent) writing `data/jurisdictions/<I
 file you write with:
 
 ```
-cd ~/Projects/domicile && uv run python -m domicile.validate data/jurisdictions/XXX.json
+uv run python -m domicile.validate data/jurisdictions/XXX.json   # from the repository root
 ```
 
 A file is not finished until it validates with 0 errors.

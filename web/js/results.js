@@ -1,4 +1,4 @@
-// Evaluations for the current settings, shared by every mode, the globe and the map: one cache,
+// Evaluations for the current settings, shared by every mode and the globe: one cache,
 // cleared whenever anything that changes a score changes (see main.js).
 import { state, jur, regimeOpts } from "./state.js";
 import { evaluate } from "./scoring.js";

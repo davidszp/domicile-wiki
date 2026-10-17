@@ -11,7 +11,7 @@ const ROUTE_KEYS = ["mode", "selected", "explorerView", "factbookPage", "compare
 let applying = false; // true while the state follows the address (Back/Forward), so it is not written back
 let lastMode = null;
 
-export function hashFor() {
+function hashFor() {
   if (state.mode === "factbook") return `#/factbook/${state.factbookPage === "article" && state.selected ? state.selected : state.factbookPage}`;
   if (state.mode === "explorer") return `#/explorer/${state.explorerView}`;
   if (state.mode === "compare" && state.compareView === "calculator") return "#/compare/calculator";

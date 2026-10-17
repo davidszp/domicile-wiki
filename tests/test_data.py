@@ -163,7 +163,6 @@ def test_every_map_unit_has_both_income_personas():
 def test_expat_salary_multipliers_are_sourced_and_anchored():
     """Posting-allowance tables: every row cites a URL, the euro-area reference averages 1.0, and
     every researched country gets a multiplier (estimated only where no table lists it)."""
-    import csv
     import statistics
 
     from domicile import cola
