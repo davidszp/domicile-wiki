@@ -170,8 +170,8 @@ export function renderRankings(panel, ctx) {
 
 // ------------------------------------------------------------------ Simple
 
-const SIMPLE_FIRST = 10, SIMPLE_MORE = 25;
-let simpleShown = SIMPLE_FIRST;
+const SIMPLE_FIRST = 10;
+let simpleAll = false; // "Show all" pressed
 
 /** Simple's filters as toggle chips: "All" clears them. The same switches as Guided's deal-breakers. */
 function chips() {
@@ -184,10 +184,10 @@ function chips() {
     keys.map(([k, label]) => h("button", { type: "button", class: "chip-btn", id: `sf-${k}`, "aria-pressed": String(Boolean(F()[k])), onclick: () => setFilter(k, !F()[k]) }, label)));
 }
 
-/** Simple Explorer: the ranked list with five columns, a few filters and paging. */
+/** Simple Explorer: the ranked list with five columns and a few filters; the first 10, then all. */
 export function renderSimpleRankings(panel, ctx) {
   const rows = rankedRows();
-  const shown = rows.slice(0, simpleShown);
+  const shown = simpleAll ? rows : rows.slice(0, SIMPLE_FIRST);
   panel.append(h("h2", null, "Every place, ranked for you"), chips());
   if (!rows.length) {
     panel.append(h("p", { class: "muted" }, "No place passes these filters."));
@@ -212,6 +212,6 @@ export function renderSimpleRankings(panel, ctx) {
           onclick: () => toggleIn("compare", id, { max: MAX_COMPARE }) }, state.compare.includes(id) ? "⊖" : "⊕"))))));
   panel.append(h("div", { class: "table-wrap" }, table),
     h("div", { class: "row-actions" }, h("span", { class: "small" }, `${shown.length} of ${rows.length} places.`),
-      rows.length > shown.length ? h("button", { id: "simple-more", onclick: () => { simpleShown += SIMPLE_MORE; ctx.refresh(); } }, `Show ${Math.min(SIMPLE_MORE, rows.length - shown.length)} more`) : null),
+      rows.length > shown.length ? h("button", { id: "simple-more", onclick: () => { simpleAll = true; ctx.refresh(); } }, `Show all ${rows.length}`) : null),
     advancedLink(ctx, "Regions, every filter, other rankings, the chart and CSV"));
 }

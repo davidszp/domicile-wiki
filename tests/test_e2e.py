@@ -555,8 +555,10 @@ def test_simple_explorer_filters_and_pages(browser, server):
     page.wait_for_selector(".simple-rank")
     assert page.locator(".simple-rank tbody tr").count() == 10
     assert page.locator("#f-sort").count() == 0 and page.locator("#tab-chart").count() == 0
+    total = int(page.inner_text("#simple-more").split()[-1])
     page.click("#simple-more")
-    assert page.locator(".simple-rank tbody tr").count() == 35
+    assert page.locator(".simple-rank tbody tr").count() == total
+    assert page.locator("#simple-more").count() == 0
     page.click("#sf-euOnly")
     eu = page.eval_on_selector_all(".simple-rank tbody tr", "rs => rs.map(r => !!r.querySelector('.eu-badge'))")
     assert eu and all(eu)
