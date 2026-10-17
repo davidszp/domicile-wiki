@@ -1,5 +1,5 @@
-// The guide on the left: the four modes, "Your situation" (persona, passport, structures, weights),
-// search, the theme switch, and the globe with its caption and "My location".
+// The guide on the left: the four modes, Settings (Simple or Advanced, persona, passport, home, and in
+// Advanced structures and weights), search, the theme switch, and the globe with its caption and "My location".
 
 import { h, append, clear, fmtScore } from "./dom.js";
 import { state, update, entries, jur, taxMetrics, isIncomePersona, personaCfg } from "./state.js";
@@ -17,7 +17,7 @@ const $ = (sel) => document.querySelector(sel);
  * Returns { onPatch } for main.js to call after every state change.
  */
 export function createGuide({ world, modes, go, select }) {
-  // ------------------------------------------------------------------ modes and "Your situation"
+  // ------------------------------------------------------------------ modes and Settings
 
   function renderModes() {
     const navEl = $("#modes");
@@ -43,17 +43,26 @@ export function createGuide({ world, modes, go, select }) {
   }
 
   function markPersona() {
-    for (const b of document.querySelectorAll("#persona [data-persona]")) b.setAttribute("aria-pressed", String(b.dataset.persona === state.persona));
+    $("#persona").value = state.persona;
     $("#structures-wrap").hidden = isIncomePersona(); // only the HNWI persona's investment regimes use structures
     $("#persona-summary").textContent = personaCfg().summary;
   }
 
+  function markView() {
+    document.body.dataset.view = state.view;
+    for (const b of document.querySelectorAll("#view-switch [data-view]")) b.setAttribute("aria-pressed", String(b.dataset.view === state.view));
+  }
+
   function buildSituation() {
-    const ps = $("#persona");
-    for (const [pid, p] of Object.entries(state.cfg.personas)) {
-      ps.append(h("button", { type: "button", "data-persona": pid, title: p.summary,
-        onclick: () => pid !== state.persona && update({ persona: pid }, { persist: true }) }, p.label));
+    for (const b of document.querySelectorAll("#view-switch [data-view]")) {
+      b.addEventListener("click", () => b.dataset.view !== state.view && update({ view: b.dataset.view }, { persist: true }));
     }
+    const home = $("#sit-home");
+    for (const [id, e] of entries().filter(([, e]) => e.level === "country").sort((a, b) => a[1].name.localeCompare(b[1].name))) home.append(h("option", { value: id }, e.name));
+    home.addEventListener("change", () => update({ home: home.value || null }, { persist: true }));
+    const ps = $("#persona");
+    for (const [pid, p] of Object.entries(state.cfg.personas)) ps.append(h("option", { value: pid, title: p.summary }, p.label));
+    ps.addEventListener("change", () => ps.value !== state.persona && update({ persona: ps.value }, { persist: true }));
     $("#open-settings").addEventListener("click", () => go({ mode: "settings" }));
     const cz = $("#citizenship");
     cz.value = state.citizenship;
@@ -215,6 +224,8 @@ export function createGuide({ world, modes, go, select }) {
 
   renderModes();
   buildSituation();
+  markView();
+  $("#sit-home").value = state.home || "";
   markPersona();
   renderWeightsLine();
   buildTheme();
@@ -230,6 +241,8 @@ export function createGuide({ world, modes, go, select }) {
       if ("persona" in patch) markPersona();
       if ("weights" in patch || "persona" in patch) renderWeightsLine();
       if ("mode" in patch) renderModes();
+      if ("view" in patch) markView();
+      if ("home" in patch) $("#sit-home").value = state.home || "";
       if (recolor) globe.recolor();
       const next = focusFrom(patch);
       if (next) {

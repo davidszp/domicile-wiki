@@ -37,8 +37,17 @@ def browser():
         b.close()
 
 
-def open_page(browser, server, width=1400, height=900, route="#/guided"):
+# New readers start in Simple; most tests check Advanced, the site as it was before the switch.
+# The script runs before the page's own on every load, and only fills in a view nothing has chosen.
+VIEW_SCRIPT = """try { const s = JSON.parse(localStorage.getItem('domicile:v1') || '{}');
+  if (!s.view) localStorage.setItem('domicile:v1', JSON.stringify({ ...s, view: '%s' })); } catch {}"""
+
+
+def open_page(browser, server, width=1400, height=900, route="#/guided", view="advanced"):
+    """``view=None`` opens the page as a first-time reader sees it."""
     page = browser.new_page(viewport={"width": width, "height": height})
+    if view:
+        page.add_init_script(VIEW_SCRIPT % view)
     problems = []
     page.on("console", lambda m: problems.append(m.text) if m.type == "error" else None)
     page.on("pageerror", lambda e: problems.append(str(e)))
@@ -186,19 +195,19 @@ def test_markdown_renderer_never_emits_script_or_javascript_links(browser, serve
 
 def test_persona_switch_rescores_and_renders_every_panel(browser, server):
     page, problems = open_page(browser, server)
-    page.click("[data-persona='nomad']")
-    assert page.get_attribute("[data-persona='nomad']", "aria-pressed") == "true"
+    page.select_option("#persona", "nomad")
+    assert page.input_value("#persona") == "nomad"
     assert page.is_hidden("#structures-wrap")
     page.fill("#search", "Thailand")
     page.keyboard.press("Enter")
     page.wait_for_selector("#panel .facts", timeout=10000)
     # A null child handed to the native append() prints "null"; profiles must never show it.
     assert " null" not in " " + page.inner_text("#panel").replace("\n", " ") + " ", "stray null in nomad profile"
-    page.click("[data-persona='expat']")
+    page.select_option("#persona", "expat")
     page.wait_for_timeout(1200)
     page.wait_for_selector("#panel .facts", timeout=10000)
     assert " null" not in " " + page.inner_text("#panel").replace("\n", " ") + " ", "stray null in expat profile"
-    page.click("[data-persona='nomad']")
+    page.select_option("#persona", "nomad")
     page.click("[data-mode=explorer]")
     for tab in ("rankings", "chart"):
         page.click(f"#tab-{tab}")
@@ -214,16 +223,16 @@ def test_persona_switch_rescores_and_renders_every_panel(browser, server):
     page.click("#open-settings")
     assert "Digital nomad" in page.inner_text("#panel h2")
     # Back to the HNWI persona: its own weights and options return.
-    page.click("[data-persona='family_office']")
+    page.select_option("#persona", "family_office")
     assert page.is_visible("#structures-wrap")
     page.reload()
-    page.wait_for_selector("[data-persona='family_office'][aria-pressed='true']", timeout=20000)
+    page.wait_for_function("() => window.domicileReady && document.querySelector('#persona').value === 'family_office'", timeout=20000)
     assert not problems, problems
 
 
 def test_us_citizens_see_dollars_everyone_else_euros(browser, server):
     page, problems = open_page(browser, server)
-    page.click("[data-persona='family_office']")
+    page.select_option("#persona", "family_office")
     page.select_option("#citizenship", "US")
     for mode, tab in (("explorer", "#tab-rankings"), ("compare", "#cmp-tab-calculator")):
         page.click(f"[data-mode={mode}]")
@@ -423,7 +432,7 @@ def test_old_map_links_open_the_table(browser, server):
 def test_calculator_starts_from_the_market_assumptions(browser, server):
     """The calculator's yield, price return and realised share come from scoring_config.market."""
     page, problems = open_page(browser, server, route="#/compare/calculator")
-    page.click("[data-persona='family_office']")
+    page.select_option("#persona", "family_office")
     page.click("#cmp-tab-calculator")
     page.wait_for_selector("#c-dividend_yield")
     m = json.loads((ROOT / "data" / "scoring_config.json").read_text())["market"]
@@ -436,7 +445,7 @@ def test_calculator_starts_from_the_market_assumptions(browser, server):
 def test_hnwi_page_shows_the_60_year_projection(browser, server):
     """Countries with a recipe show one line per way of holding the portfolio; others show no section."""
     page, problems = open_page(browser, server, route="#/factbook/DEU")
-    page.click("[data-persona='family_office']")
+    page.select_option("#persona", "family_office")
     page.wait_for_selector(".proj-chart")
     paths = scores()["jurisdictions"]["DEU"]["projection"]
     assert page.locator(".proj-chart .proj-line").count() == len([k for k in paths if k != "no_tax"])
@@ -444,6 +453,32 @@ def test_hnwi_page_shows_the_60_year_projection(browser, server):
     page.goto(server + "#/factbook/BRA")
     page.wait_for_selector(".facts")
     assert page.locator(".proj-chart").count() == 0
+    assert not problems, problems
+
+
+def test_projection_warns_where_residence_is_hard_to_get(browser, server):
+    """Japan has only work and business permits; Liechtenstein's permit for EEA citizens living on their means is a
+    16-a-year quota; Germany is free movement for an EU citizen, so no warning there."""
+    page, problems = open_page(browser, server, route="#/factbook/JPN")
+    page.select_option("#persona", "family_office")
+    page.wait_for_selector(".proj-chart")
+    assert "Residence is the hurdle" in page.inner_text("details:has(.proj-chart)")
+    page.goto(server + "#/factbook/LIE")
+    page.wait_for_selector(".proj-chart")
+    assert "16 permits a year" in page.inner_text("details:has(.proj-chart)")
+    page.goto(server + "#/factbook/DEU")
+    page.wait_for_selector(".proj-chart")
+    assert "Residence is" not in page.inner_text("details:has(.proj-chart)")
+    assert not problems, problems
+
+
+def test_projection_names_the_remittance_regime_it_does_not_draw(browser, server):
+    """Ireland's non-dom regime taxes foreign income only when brought in; the page says it is not drawn and why."""
+    page, problems = open_page(browser, server, route="#/factbook/IRL")
+    page.select_option("#persona", "family_office")
+    page.wait_for_selector(".proj-chart")
+    text = page.inner_text("details:has(.proj-chart)")
+    assert "Not drawn" in text and "Remittance basis" in text
     assert not problems, problems
 
 
@@ -459,3 +494,101 @@ def test_compare_shows_projection_lines_for_places_with_a_recipe(browser, server
     assert "No projection yet for Brazil" in page.inner_text(".proj-compare")
     assert "Wealth after 60 years" in page.inner_text("table.compare-home")
     assert not problems, problems
+
+
+# ------------------------------------------------------------------ Simple
+
+
+def test_a_new_reader_starts_in_simple_and_can_switch(browser, server):
+    page, problems = open_page(browser, server, view=None)
+    assert page.get_attribute("body", "data-view") == "simple"
+    for sel in ["#structures-wrap", "#weights-line", ".guide .theme-switch", "#g-verified", ".leftout"]:
+        assert not page.locator(sel).is_visible(), sel
+    for sel in ["#open-settings", "#persona", "#citizenship", "#sit-home"]:
+        assert page.locator(sel).is_visible(), sel
+    assert page.locator(".result-list .result").count() == 5
+    page.select_option("#sit-home", "DEU")
+    page.click("[data-mode=compare]")
+    assert page.input_value("#cmp-home") == "DEU"
+    page.click("[data-mode=guided]")
+    page.click("#view-switch [data-view=advanced]")
+    assert page.get_attribute("body", "data-view") == "advanced"
+    assert page.locator(".result-list .result").count() == 10
+    assert page.locator("#weights-line").is_visible()
+    assert page.evaluate("() => JSON.parse(localStorage.getItem('domicile:v1')).view") == "advanced"
+    page.evaluate("localStorage.removeItem('domicile:v1')")
+    assert not problems, problems
+    page.close()
+
+
+def test_simple_country_page_gives_the_answers_and_one_line(browser, server):
+    page, problems = open_page(browser, server, route="#/factbook/PRT", view="simple")
+    page.wait_for_selector(".simple-proj .proj-chart")
+    facts = page.inner_text("#panel .facts")
+    for label in ["Can you live here?", "Tax on the investments", "Children inherit", "After 60 years", "Living costs"]:
+        assert label in facts, label
+    assert page.locator(".simple-proj .proj-line").count() == 2  # the best way of holding it and the no-tax ceiling
+    assert page.locator(".tax-card").count() == 0 and page.locator("details.fold").count() == 0
+    assert page.locator(".subtabs button").count() == 2
+    assert "Forced heirship" in page.inner_text(".worth-knowing")
+    page.click(".advanced-link button")
+    page.wait_for_selector(".tax-card", state="attached")
+    assert page.get_attribute("body", "data-view") == "advanced"
+    assert not problems, problems
+    page.close()
+
+
+def test_simple_keeps_the_red_flag(browser, server):
+    page, problems = open_page(browser, server, route="#/factbook/HKG", view="simple")
+    page.wait_for_selector(".profile-head h2")
+    assert page.locator(".red-flag").count() == 1
+    page.click("[data-mode=explorer]")
+    page.wait_for_selector(".simple-rank")
+    row = page.locator(".simple-rank tbody tr", has_text="Hong Kong")
+    assert row.count() == 0 or row.locator(".flag-badge").count() == 1
+    assert not problems, problems
+    page.close()
+
+
+def test_simple_explorer_filters_and_pages(browser, server):
+    page, problems = open_page(browser, server, route="#/explorer/table", view="simple")
+    page.wait_for_selector(".simple-rank")
+    assert page.locator(".simple-rank tbody tr").count() == 10
+    assert page.locator("#f-sort").count() == 0 and page.locator("#tab-chart").count() == 0
+    page.click("#simple-more")
+    assert page.locator(".simple-rank tbody tr").count() == 35
+    page.click("#sf-euOnly")
+    eu = page.eval_on_selector_all(".simple-rank tbody tr", "rs => rs.map(r => !!r.querySelector('.eu-badge'))")
+    assert eu and all(eu)
+    page.click(".chips button:has-text('All')")
+    assert page.get_attribute("#sf-euOnly", "aria-pressed") == "false"
+    assert not problems, problems
+    page.close()
+
+
+def test_filters_simple_does_not_show_do_not_apply_there(browser, server):
+    page, problems = open_page(browser, server, route="#/explorer/table")
+    page.wait_for_selector(".rank-table")
+    everything = page.locator(".rank-table tbody tr").count()
+    page.check("#f-mediterranean")
+    assert page.locator(".rank-table tbody tr").count() < everything
+    page.click("#view-switch [data-view=simple]")
+    page.wait_for_selector(".simple-rank")
+    assert f"of {everything} places" in page.inner_text("#panel")
+    page.evaluate("localStorage.removeItem('domicile:v1')")
+    assert not problems, problems
+    page.close()
+
+
+def test_simple_compare_has_the_main_rows_and_the_chart(browser, server):
+    page, problems = open_page(browser, server, route="#/compare", view="simple")
+    page.select_option("#cmp-home", "DEU")
+    page.select_option("#cmp-add", "CZE")
+    page.wait_for_selector(".compare-home tbody tr")
+    rows = page.eval_on_selector_all(".compare-home tbody th", "ts => ts.map(t => t.firstChild.textContent)")
+    assert rows[:3] == ["Overall score", "Tax a year", "Wealth after 60 years"]
+    assert "Safety and personal security" in rows and "Tax regime used" not in rows and "Data status" not in rows
+    assert page.locator(".net-row").count() == 0 and page.locator("#cmp-tab-calculator").count() == 0
+    page.wait_for_selector(".proj-compare .proj-chart")
+    assert not problems, problems
+    page.close()

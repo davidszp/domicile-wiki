@@ -1,11 +1,13 @@
 import { h, fmtScore, fmtEur, moneyText, displayCurrency } from "../dom.js";
-import { state, update, entries, jur, regimeOpts, toggleIn, MAX_COMPARE, metricsFor, taxMetrics, isIncomePersona, personaCfg, personaNoun } from "../state.js";
+import { state, update, entries, jur, regimeOpts, toggleIn, MAX_COMPARE, metricsFor, taxMetrics, isIncomePersona, personaCfg, personaNoun, isSimple, FILTER_DEFAULTS, SIMPLE_FILTERS } from "../state.js";
 import { rank, reweightTaxShare } from "../scoring.js";
-import { scoreChip, statusBadge, euBadge, redFlagBadge } from "./profile.js";
+import { scoreChip, statusBadge, euBadge, redFlagBadge, advancedLink } from "./profile.js";
+import { residenceShort } from "./immigration.js";
 import { evalOf, taxPerYear } from "../results.js";
 
-// Filters live in the shared state: Guided's deal-breakers are the same switches.
-const F = () => state.filters;
+// Filters live in the shared state: Guided's deal-breakers are the same switches. In Simple, the
+// filters it does not show count at their defaults.
+const F = () => (isSimple() ? { ...FILTER_DEFAULTS, ...Object.fromEntries(SIMPLE_FILTERS.map((k) => [k, state.filters[k]])) } : state.filters);
 const setFilter = (key, value) => update({ filters: { ...state.filters, [key]: value } });
 
 // "Tax-free" includes exemptions with conditions; the profile says which conditions.
@@ -164,4 +166,52 @@ export function renderRankings(panel, ctx) {
           state.compare.includes(id) ? "⊖" : "⊕"))))));
   panel.append(h("div", { class: "table-wrap" }, table));
   panel.append(sensitivity());
+}
+
+// ------------------------------------------------------------------ Simple
+
+const SIMPLE_FIRST = 10, SIMPLE_MORE = 25;
+let simpleShown = SIMPLE_FIRST;
+
+/** Simple's filters as toggle chips: "All" clears them. The same switches as Guided's deal-breakers. */
+function chips() {
+  const keys = isIncomePersona()
+    ? [["euOnly", "EU only"], ["lowIncomeTax", "Low income tax"], ["shortlistOnly", "My shortlist"]]
+    : [["euOnly", "EU only"], ["noWealthTax", "No wealth tax"], ["familyInheritsFree", "Family inherits tax-free"], ["shortlistOnly", "My shortlist"]];
+  const none = keys.every(([k]) => !F()[k]);
+  return h("div", { class: "chips", role: "group", "aria-label": "Filters" },
+    h("button", { type: "button", class: "chip-btn", "aria-pressed": String(none), onclick: () => update({ filters: { ...state.filters, ...Object.fromEntries(keys.map(([k]) => [k, false])) } }) }, "All"),
+    keys.map(([k, label]) => h("button", { type: "button", class: "chip-btn", id: `sf-${k}`, "aria-pressed": String(Boolean(F()[k])), onclick: () => setFilter(k, !F()[k]) }, label)));
+}
+
+/** Simple Explorer: the ranked list with five columns, a few filters and paging. */
+export function renderSimpleRankings(panel, ctx) {
+  const rows = rankedRows();
+  const shown = rows.slice(0, simpleShown);
+  panel.append(h("h2", null, "Every place, ranked for you"), chips());
+  if (!rows.length) {
+    panel.append(h("p", { class: "muted" }, "No place passes these filters."));
+    return;
+  }
+  const table = h("table", { class: "grid rank-table simple-rank" },
+    h("thead", null, h("tr", null, h("th", null, "#"), h("th", null, "Place"), h("th", null, "Score"),
+      h("th", { class: "num" }, isIncomePersona() ? "Income tax and social security a year" : "Tax a year"), h("th", { class: "num" }, "Living costs a year"),
+      h("th", null, "To live there"), h("th", null, h("span", { class: "sr-only" }, "Actions")))),
+    h("tbody", null, shown.map(({ id, e, r }, i) => h("tr", null,
+      h("td", null, String(i + 1)),
+      h("td", null, h("button", { class: "linklike", onclick: () => ctx.select(id) }, e.name), " ", euBadge(e), redFlagBadge(e)),
+      h("td", null, scoreChip(r.score, state.cfg)),
+      h("td", { class: "num" }, taxPerYear(id) === null ? "–" : fmtEur(taxPerYear(id))),
+      h("td", { class: "num" }, e.household_cost ? fmtEur(e.household_cost) : "–"),
+      h("td", null, residenceShort(e)),
+      h("td", null,
+        h("button", { class: "icon", title: "Shortlist", "aria-label": `Shortlist ${e.name}`, "aria-pressed": String(state.shortlist.includes(id)),
+          onclick: () => toggleIn("shortlist", id, { persist: true }) }, state.shortlist.includes(id) ? "★" : "☆"),
+        h("button", { class: "icon", title: "Compare", "aria-label": `Compare ${e.name}`, "aria-pressed": String(state.compare.includes(id)),
+          disabled: !state.compare.includes(id) && state.compare.length >= MAX_COMPARE,
+          onclick: () => toggleIn("compare", id, { max: MAX_COMPARE }) }, state.compare.includes(id) ? "⊖" : "⊕"))))));
+  panel.append(h("div", { class: "table-wrap" }, table),
+    h("div", { class: "row-actions" }, h("span", { class: "small" }, `${shown.length} of ${rows.length} places.`),
+      rows.length > shown.length ? h("button", { id: "simple-more", onclick: () => { simpleShown += SIMPLE_MORE; ctx.refresh(); } }, `Show ${Math.min(SIMPLE_MORE, rows.length - shown.length)} more`) : null),
+    advancedLink(ctx, "Regions, every filter, other rankings, the chart and CSV"));
 }

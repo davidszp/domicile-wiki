@@ -1,15 +1,17 @@
-// A · Guided: four plain questions, then a short ranked list with the reasons in words.
+// A · Guided: four plain questions, then a short ranked list with the reasons in words. Simple shows
+// the top 5 and leaves out the verified-data filter, the hand-set weights and the knock-out list.
 // Every answer writes to the shared state (persona, passport, weights, filters), so the
 // Factbook, Explorer and Compare show the same results.
 
 import { h, fmtEur, displayCurrency } from "../dom.js";
-import { state, update, entries, toggleIn, MAX_COMPARE, personaCfg, isIncomePersona, defaultWeightsFor } from "../state.js";
+import { state, update, entries, toggleIn, MAX_COMPARE, personaCfg, isIncomePersona, defaultWeightsFor, isSimple } from "../state.js";
 import { rankedRows, TAX_FREE } from "../panels/rankings.js";
-import { scoreChip, euBadge, redFlagBadge } from "../panels/profile.js";
+import { scoreChip, euBadge, redFlagBadge, advancedLink } from "../panels/profile.js";
 import { taxPerYear } from "../results.js";
 import { residenceShort } from "../panels/immigration.js";
 
 const SHOW = 10;
+const SHOW_SIMPLE = 5;
 const BOOST = 2; // a chosen priority's metrics count double
 
 const CZ = [["EU", "EU citizen", "A passport of an EU member state"], ["US", "US citizen", "Taxed by the US wherever you live; amounts shown in dollars"], ["OTHER", "Another passport", "Neither EU nor US"]];
@@ -93,6 +95,8 @@ function leftOut(ctx) {
 }
 
 export function renderGuided(stage, ctx) {
+  const simple = isSimple();
+  const show = simple ? SHOW_SIMPLE : SHOW;
   const p = personaCfg();
   const chosen = state.prioritiesByPersona[state.persona] || [];
   const custom = JSON.stringify(state.weights) !== JSON.stringify(weightsForPriorities(state.persona, chosen));
@@ -112,20 +116,21 @@ export function renderGuided(stage, ctx) {
         const next = chosen.includes(i) ? chosen.filter((x) => x !== i) : [...chosen, i].slice(-3);
         setPriorities(next);
       }))),
-      h("p", { class: "small" }, h("button", { class: "linklike", onclick: () => ctx.go({ mode: "settings" }) }, "Or set every weight yourself"))),
+      simple ? null : h("p", { class: "small" }, h("button", { class: "linklike", onclick: () => ctx.go({ mode: "settings" }) }, "Or set every weight yourself"))),
     step(4, "Any deal-breakers?", "Places that fail one are hidden from the list, not scored down.", h("div", { class: "dealbreakers" },
       dealBreaker("Must be in the EU", "euOnly"),
       ...(isIncomePersona()
         ? [dealBreaker("Low income tax and social security", "lowIncomeTax")]
         : [dealBreaker("No wealth tax", "noWealthTax"), dealBreaker("Spouse and children inherit tax-free", "familyInheritsFree")]),
-      verifiedOnly())));
+      simple ? null : verifiedOnly())));
 
   const rows = rankedRows();
   const results = h("section", { class: "results" },
-    h("h3", null, rows.length ? `Your top ${Math.min(SHOW, rows.length)}` : "Nothing passes these deal-breakers"),
+    h("h3", null, rows.length ? `Your top ${Math.min(show, rows.length)}` : "Nothing passes these deal-breakers"),
     h("p", { class: "small muted" }, `${rows.length} places pass. Scores run from 0 to 100; amounts in ${displayCurrency()}. Click a name to read about it.`),
-    h("ol", { class: "result-list" }, rows.slice(0, SHOW).map((row, i) => resultCard(i, row, ctx))),
-    rows.length > SHOW ? h("button", { onclick: () => ctx.go({ mode: "explorer", explorerView: "table" }) }, `See all ${rows.length} in Explorer`) : null,
+    h("ol", { class: "result-list" }, rows.slice(0, show).map((row, i) => resultCard(i, row, ctx))),
+    rows.length > show ? h("button", { onclick: () => ctx.go({ mode: "explorer", explorerView: "table" }) }, `See all ${rows.length} in Explorer`) : null,
     state.compare.length ? h("button", { onclick: () => ctx.go({ mode: "compare" }) }, `Compare ${state.compare.length} side by side`) : null);
-  stage.append(results, leftOut(ctx));
+  if (simple) stage.append(results, advancedLink(ctx, "Every weight, the verified-data filter and the places left out, and why"));
+  else stage.append(results, leftOut(ctx));
 }

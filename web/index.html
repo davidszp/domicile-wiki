@@ -78,12 +78,13 @@
         </div>
       </section>
 
-      <section class="situation" aria-labelledby="situation-h">
-        <div class="situation-head">
-          <h2 id="situation-h" class="guide-h">Your situation</h2>
-          <button type="button" id="open-settings" class="settings-link" title="Weights, knock-out rules, saved settings">⚙ Settings</button>
+      <section class="situation" aria-labelledby="open-settings">
+        <h2 class="guide-h situation-h"><button type="button" id="open-settings" class="settings-link" title="All settings: weights, knock-out rules, saved settings"><svg class="cog" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></g></svg> Settings</button></h2>
+        <div class="view-switch" id="view-switch" role="group" aria-label="How much to show">
+          <button type="button" data-view="simple" title="The main answers in each view">Simple</button>
+          <button type="button" data-view="advanced" title="Everything: every rule, figure, filter and source">Advanced</button>
         </div>
-        <div class="persona-switch" id="persona" role="group" aria-label="Who is moving"></div>
+        <label class="ctl"><span>I am</span><select id="persona"></select></label>
         <span id="persona-summary" class="sr-only"></span>
         <label class="ctl"><span>Passport</span>
           <select id="citizenship">
@@ -92,12 +93,13 @@
             <option value="OTHER">Other nationality</option>
           </select>
         </label>
-        <label class="chk" id="structures-wrap" title="Holding structures such as a German asset-management GmbH or an Austrian private foundation can cut tax on gains while money stays invested. Payouts to the family are taxed.">
+        <label class="ctl"><span>I live in</span><select id="sit-home"><option value="">Not set</option></select></label>
+        <label class="chk adv-only" id="structures-wrap" title="Holding structures such as a German asset-management GmbH or an Austrian private foundation can cut tax on gains while money stays invested. Payouts to the family are taxed.">
           <input type="checkbox" id="structures" checked> <span>Consider holding structures</span>
         </label>
-        <p class="weights-line small" id="weights-line"></p>
+        <p class="weights-line small adv-only" id="weights-line"></p>
       </section>
-      <div class="theme-switch" role="group" aria-label="Colour theme">
+      <div class="theme-switch adv-only" role="group" aria-label="Colour theme">
         <button type="button" data-theme-choice="system" title="Follow the system setting" aria-label="Follow system theme">Auto</button>
         <button type="button" data-theme-choice="light" title="Light theme" aria-label="Light theme">Light</button>
         <button type="button" data-theme-choice="dark" title="Dark theme" aria-label="Dark theme">Dark</button>

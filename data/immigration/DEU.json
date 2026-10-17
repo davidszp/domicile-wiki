@@ -33,6 +33,7 @@
       "id": "independent_means_s7",
       "name": "Residence permit for other purposes (independent means, Section 7(1) sentence 3 AufenthG)",
       "kind": "passive_income",
+      "limited_places": "discretionary: no right to the permit",
       "citizenships": [
         "US",
         "OTHER"

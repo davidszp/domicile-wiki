@@ -125,7 +125,7 @@ function storageSection(ctx) {
   };
   const reset = () => {
     if (!window.confirm("Reset all settings in this browser: weights, saved weights, knock-out rules, shortlist, home, persona, passport and theme?")) return;
-    applySettings({ persona: "family_office", citizenship: "EU", shortlist: [], mode: state.mode });
+    applySettings({ persona: "family_office", citizenship: "EU", shortlist: [], mode: state.mode, view: state.view });
     window.domicileTheme?.set("system");
     state.home = null;
     saveSettings();

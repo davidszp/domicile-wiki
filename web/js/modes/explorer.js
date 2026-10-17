@@ -1,9 +1,9 @@
 // C · Explorer: every researched place in a filterable table and a chart. Filters are
-// the same ones Guided sets; weights are set in Settings.
+// the same ones Guided sets; weights are set in Settings. Simple shows a short table only.
 
 import { h, fmtEur, displayCurrency, toDisplay, fromDisplay } from "../dom.js";
-import { state, update, isIncomePersona } from "../state.js";
-import { renderRankings, rankedRows } from "../panels/rankings.js";
+import { state, update, isIncomePersona, isSimple } from "../state.js";
+import { renderRankings, renderSimpleRankings, rankedRows } from "../panels/rankings.js";
 import { nontaxOnly } from "../scoring.js";
 import { scoreColor } from "../colors.js";
 import { taxPerYear } from "../results.js";
@@ -56,6 +56,12 @@ function renderChart(body, ctx) {
 }
 
 export function renderExplorer(stage, ctx) {
+  if (isSimple()) {
+    const body = h("div", { class: "explorer-body", id: "panel" });
+    stage.append(body);
+    renderSimpleRankings(body, ctx);
+    return;
+  }
   stage.append(h("nav", { class: "subtabs", "aria-label": "Explorer views" }, VIEWS.map(([id, label]) =>
     h("button", { id: `tab-${id === "table" ? "rankings" : id}`, "aria-pressed": String(state.explorerView === id),
       onclick: () => update({ explorerView: id }) }, label))));

@@ -100,6 +100,9 @@ def test_recipe_validates_and_points_at_real_regimes(path):
         assert not regimes[p["regime"]].requires_qualifying_activity, f"{path.stem}/{p['id']}: the family has no job or business, as in the scores"
         if p.get("estate") == "outside_estate":
             assert regimes[p["regime"]].type == "structure", f"{path.stem}/{p['id']}: only a structure can hold assets outside the estate"
+    for x in f.get("left_out", []):
+        assert x["regime"] in regimes, f"{path.stem}: left_out names no regime {x['regime']}"
+        assert x["regime"] not in {p["regime"] for p in f["paths"]}, f"{path.stem}: {x['regime']} is both drawn and left out"
 
 
 def _check_cases():

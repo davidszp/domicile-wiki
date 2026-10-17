@@ -86,9 +86,12 @@ def residence_summary(f: ImmigrationFile, fx: dict, kinds: set[str] = MEANS_KIND
                 continue
             inv, inc = eur(r.minimum_investment), eur(r.minimum_income)
             # A work permit's income is its salary threshold: prefer one whose threshold is known.
-            key = (0 if r.kind == "free_movement" else 1, inv or 0, inc if inc is not None else (float("inf") if r.kind == "work" else 0))
+            # A route with capped or discretionary places comes after any that is open to all who qualify.
+            key = (0 if r.kind == "free_movement" else 1, bool(r.limited_places), inv or 0,
+                   inc if inc is not None else (float("inf") if r.kind == "work" else 0))
             if best is None or key < best[0]:
-                best = (key, {"id": r.id, "name": r.name, "kind": r.kind, "grants": r.grants, "investment_eur": inv, "income_eur": inc})
+                best = (key, {"id": r.id, "name": r.name, "kind": r.kind, "grants": r.grants, "investment_eur": inv, "income_eur": inc,
+                              **({"limited": r.limited_places} if r.limited_places else {})})
         out[cz] = best[1] if best else {"kind": "none"}
     return out
 
@@ -477,10 +480,12 @@ def main() -> None:
     for iso3, (recipe, res, _) in projected.items():
         out_j[iso3]["projection"] = {r.id: (round(r.end_wealth) if r.end_wealth is not None else None) for r in res}
         notes = {p.id: p.note for p in recipe.paths}
+        regime_names = {r.id: r.name for r in projection.unit_rules(iso3, jur).regimes}
         profiles[iso3]["projection"] = {
             "assumptions": {k: v for k, v in dataclasses.asdict(assumptions).items() if k != "citizenship"},
             "recipe": {"researched_on": recipe.researched_on.isoformat(), "assumptions": recipe.assumptions,
-                       "open_questions": recipe.open_questions},
+                       "open_questions": recipe.open_questions,
+                       "left_out": [{"name": regime_names[x.regime], "reason": x.reason, "note": x.note} for x in recipe.left_out]},
             "paths": [{"id": r.id, "name": r.name, "regime": r.regime, "note": notes.get(r.id, ""), "missing": r.missing,
                        # [wealth, taxes, inheritance] per year, EUR thousands in today's money
                        "years": [[round(y.wealth / 1e3), round(y.taxes / 1e3), round(y.inheritance / 1e3)] for y in r.years]}

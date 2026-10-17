@@ -21,6 +21,7 @@ test("garbage of every type falls back to the defaults", () => {
     assert.deepEqual(state.koExempt, []);
     assert.equal(state.home, null);
     assert.deepEqual(state.prioritiesByPersona.family_office ?? [], []);
+    assert.equal(state.view, "simple");
   }
 });
 
@@ -34,7 +35,7 @@ test("weights are clamped, and all-zero weights restore the defaults", () => {
 });
 
 test("a valid file round-trips through export and import", () => {
-  applySettings({ persona: "nomad", citizenship: "US", shortlist: ["PRT", "NOPE"], home: "DEU", koExempt: ["CHN"],
+  applySettings({ persona: "nomad", citizenship: "US", shortlist: ["PRT", "NOPE"], home: "DEU", koExempt: ["CHN"], view: "advanced",
     weightSets: [{ name: " Safety first ", persona: "family_office", weights: { safety: 30 } }] });
   const snap = JSON.parse(JSON.stringify(settingsSnapshot()));
   applySettings({});
@@ -43,6 +44,7 @@ test("a valid file round-trips through export and import", () => {
   assert.equal(state.citizenship, "US");
   assert.deepEqual(state.shortlist, ["PRT"]);
   assert.equal(state.home, "DEU");
+  assert.equal(state.view, "advanced");
   assert.equal(state.weightSets[0].name, "Safety first");
   assert.equal(state.weightSets[0].weights.safety, 30);
   applySettings({ persona: "family_office", citizenship: "EU" });

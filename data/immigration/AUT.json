@@ -32,6 +32,7 @@
       "id": "privatier_permit",
       "name": "Settlement permit except gainful employment (Privatier)",
       "kind": "passive_income",
+      "limited_places": "a yearly quota (385 places in the draft 2025 regulation)",
       "citizenships": [
         "US",
         "OTHER"
@@ -99,6 +100,7 @@
         }
       ],
       "status_note": "",
+      "limited_places": "discretionary: granted rarely, for exceptional merit to Austria",
       "minimum_investment": null,
       "investment_options": "No fixed amount; case-by-case.",
       "path_to_citizenship_years": null,

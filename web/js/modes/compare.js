@@ -1,12 +1,13 @@
 // D · Compare: where you live now against up to four places, every figure shown as the change
 // from home (better is blue, worse is orange), and the tax calculator for your own figures.
+// Simple shows the main rows and the 60-year chart, without the calculator.
 
 import { h, fmtEur, fmtScore, displayCurrency } from "../dom.js";
-import { state, update, entries, jur, toggleIn, MAX_COMPARE, metricsFor, isIncomePersona } from "../state.js";
+import { state, update, entries, jur, toggleIn, MAX_COMPARE, metricsFor, isIncomePersona, isSimple } from "../state.js";
 import { rankedRows, downloadCsv } from "../panels/rankings.js";
-import { statusBadge, euBadge, redFlagBadge } from "../panels/profile.js";
+import { statusBadge, euBadge, redFlagBadge, advancedLink } from "../panels/profile.js";
 import { evalOf, taxPerYear } from "../results.js";
-import { residenceShort } from "../panels/immigration.js";
+import { residenceCaveat, residenceShort } from "../panels/immigration.js";
 import { renderCalculator } from "../panels/calculator.js";
 import { successionShort } from "../panels/succession.js";
 import { INHERITANCE, INHERITANCE_RANK, capitalise } from "../labels.js";
@@ -16,6 +17,8 @@ import { chart as projectionChart } from "../panels/projection.js";
 const MAX_PLACES = MAX_COMPARE - 1; // home takes one of the five columns
 const NEUTRAL_POINTS = 2; // score differences smaller than this are shown without colour
 const WEALTH = { none: "None", limited: "Limited", broad: "Yes" };
+const SIMPLE_ROWS = ["Overall score", "Tax a year", "Income tax and social security a year", "Wealth after 60 years", "Annual Household Cost", "Residence route for you"];
+const SIMPLE_METRICS = ["safety", "healthcare", "education"]; // daily life
 
 /** Wealth after the projection's horizon under the place's best way of holding the portfolio (data/recipes). */
 const bestProjection = (id) => {
@@ -44,9 +47,9 @@ function rowDefs() {
   }
   for (const [k, m] of Object.entries(metricsFor())) {
     if (["capital_gains", "dividends", "wealth_tax", "inheritance", "income_tax"].includes(k)) continue; // already in money above
-    rows.push({ label: m.label, num: (id) => evalOf(id).metrics[k] ?? null, show: fmtScore, better: "higher", points: true, group: "score" });
+    rows.push({ label: m.label, key: k, num: (id) => evalOf(id).metrics[k] ?? null, show: fmtScore, better: "higher", points: true, group: "score" });
   }
-  return rows;
+  return isSimple() ? rows.filter((r) => SIMPLE_ROWS.includes(r.label) || SIMPLE_METRICS.includes(r.key)) : rows;
 }
 
 function deltaClass(row, d) {
@@ -87,6 +90,7 @@ function placeSelect(label, id, value, options, onchange) {
 }
 
 export function renderCompare(stage, ctx) {
+  if (isSimple()) return renderSideBySide(stage, ctx);
   stage.append(h("nav", { class: "subtabs", "aria-label": "Compare views" },
     h("button", { id: "cmp-tab-side", "aria-pressed": String(state.compareView !== "calculator"), onclick: () => update({ compareView: "side" }) }, "Side by side"),
     h("button", { id: "cmp-tab-calculator", "aria-pressed": String(state.compareView === "calculator"), onclick: () => update({ compareView: "calculator" }) }, "Tax calculator")));
@@ -135,15 +139,20 @@ function renderSideBySide(stage, ctx) {
     h("div", { class: "small muted" }, id === home ? "Now" : "If you move"),
     h("button", { class: "linklike", onclick: () => ctx.select(id) }, jur(id).name), " ", euBadge(jur(id)), redFlagBadge(jur(id)),
     id !== home ? h("button", { class: "icon col-remove", "aria-label": `Remove ${jur(id).name}`, onclick: () => update({ compare: state.compare.filter((x) => x !== id) }) }, "×") : null)));
-  const netRow = home ? h("tr", { class: "net-row" }, h("th", { scope: "row" }, "You would keep each year", h("div", { class: "small muted" }, "Less tax and living costs than now; negative means it costs more")),
+  const netRow = home && !isSimple() ? h("tr", { class: "net-row" }, h("th", { scope: "row" }, "You would keep each year", h("div", { class: "small muted" }, "Less tax and living costs than now; negative means it costs more")),
     cols.map((id, i) => (id === home ? h("td", { class: "muted" }, "–") : (() => {
       const n = nets[i - 1];
       return n === null ? h("td", { class: "muted" }, "missing data") : h("td", { class: `num big ${n > 0 ? "better" : n < 0 ? "worse" : ""}` }, signed(n, fmtEur));
     })()))) : null;
   const body = h("tbody", null, netRow, rows.map((row) => h("tr", { class: row.group === "score" ? "score-row-c" : "" }, h("th", { scope: "row" }, row.label), cols.map((id) => cell(row, id, home)))),
-    h("tr", null, h("th", { scope: "row" }, "Data status"), cols.map((id) => h("td", null, statusBadge(evalOf(id).status)))));
-  if (!isIncomePersona()) stage.append(projectionCompare(cols, home) || "");
-  stage.append(h("div", { class: "table-wrap compare-wrap" }, h("table", { class: "grid compare-home" }, h("thead", null, head), body)));
+    isSimple() ? null : h("tr", null, h("th", { scope: "row" }, "Data status"), cols.map((id) => h("td", null, statusBadge(evalOf(id).status)))));
+  const table = h("div", { class: "table-wrap compare-wrap" }, h("table", { class: "grid compare-home" }, h("thead", null, head), body));
+  const proj = isIncomePersona() ? null : projectionCompare(cols, home);
+  if (isSimple()) {
+    stage.append(table, proj || "", advancedLink(ctx, "Every row, tax regimes, inheritance rules, CSV and the tax calculator"));
+    return;
+  }
+  stage.append(proj || "", table);
 
   stage.append(h("div", { class: "row-actions" },
     h("button", { onclick: () => downloadCsv("domicile-comparison.csv", ["metric", ...cols.map((id) => jur(id).name)],
@@ -173,6 +182,7 @@ function projectionCompare(cols, home) {
       h("p", null, `What the family's ${fmtEur(a.portfolio)} portfolio becomes over ${a.years} years, spending ${fmtEur(a.spending)} a year, in each place under its best way of holding it.`
         + ` Inheritance tax is paid when the parents die (year ${a.deaths[0]}) and again a generation later.`),
       ...projectionChart(lines, a, `Portfolio over ${a.years} years in each place compared; the row "Wealth after 60 years" in the table gives the figures`),
+      ...have.filter((id) => residenceCaveat(jur(id))).map((id) => h("p", { class: "open-q small" }, `${jur(id).name}: ${residenceCaveat(jur(id))}`)),
       without.length ? h("p", { class: "small muted proj-missing" }, `No projection yet for ${without.map((id) => jur(id).name).join(", ")}: it is being added country by country.`) : "",
       h("p", { class: "small muted" }, "Every way of holding the portfolio, with the assumptions, is on each country's page. An illustration under steady assumptions, not a forecast or tax advice."));
   }).catch(() => slot.replaceWith(h("p", { class: "small muted" }, "The projection could not be loaded.")));

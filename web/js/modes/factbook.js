@@ -1,7 +1,8 @@
 // B · Factbook: one page per place, an A–Z index by continent, and the method and sources pages.
+// Simple shows the index and the country page only (method and sources are a link away in Advanced).
 
 import { h } from "../dom.js";
-import { state, update, entries, jur } from "../state.js";
+import { state, update, entries, jur, isSimple } from "../state.js";
 import { renderProfile, scoreChip, euBadge } from "../panels/profile.js";
 import { renderMethodology } from "../panels/methodology.js";
 import { renderSources } from "../panels/sources.js";
@@ -43,7 +44,8 @@ function renderIndex(stage, ctx) {
 
 export function renderFactbook(stage, ctx) {
   const page = state.factbookPage === "article" && !state.selected ? "index" : state.factbookPage;
-  stage.append(h("nav", { class: "subtabs", "aria-label": "Factbook pages" }, PAGES.map(([id, label]) =>
+  const tabs = isSimple() ? PAGES.filter(([id]) => id === "index" || id === "article" || id === page) : PAGES;
+  stage.append(h("nav", { class: "subtabs", "aria-label": "Factbook pages" }, tabs.map(([id, label]) =>
     h("button", { id: `fb-${id}`, "aria-pressed": String(page === id), disabled: id === "article" && !state.selected,
       onclick: () => update({ factbookPage: id }) }, id === "article" && state.selected ? jur(state.selected)?.name ?? label : label))));
   const body = h("div", { class: "article", id: "panel" });

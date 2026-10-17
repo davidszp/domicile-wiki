@@ -62,6 +62,13 @@
     "Lifetime gifts (the 7-year add-back, the optional settlement-at-inheritance gift regime) are not modelled.",
     "Non-permanent resident (years 1-5 of 10) is left out: foreign income is taxed when remitted, and money brought into Japan is deemed to come from foreign income first (Income Tax Act Order art. 17(4)); the family spends EUR 400,000 a year in Japan, so most foreign income would be taxed. It also needs a residence status, in practice the Business Manager visa, which a family living on its portfolio does not have. Same treatment as Ireland's remittance basis."
   ],
+  "left_out": [
+    {
+      "regime": "non_permanent_resident",
+      "reason": "remittance_basis",
+      "note": "A foreign national in the first 5 of 10 years in Japan pays tax on foreign income only when it is paid in or brought into Japan, but money brought in is treated as coming from that year's foreign income first (Income Tax Act Order art. 17(4)). With EUR 400,000 a year spent in Japan, most of the foreign income would be taxed anyway, and the regime ends after 5 years. It also needs a work-type residence status such as the Business Manager visa."
+    }
+  ],
   "open_questions": [
     "Needs an engine change: valuation of the asset-management company's shares for inheritance tax. They are valued at net asset value with 37% of the unrealised gain deducted (Basic Valuation Circular), so growth inside the company reduces the taxable value by 37% of the gain; the engine taxes the shares at the portfolio value (company_shares_at_book_value would exempt the whole gain, which is wrong the other way).",
     "Needs an engine change: the spouse's tax credit at the first death and the two-estate sequence (first death: tax-free to the spouse up to the larger of the statutory share and JPY 160 million; second death: three statutory heirs) are not separated by the engine; the tax file codes one exemption (JPY 16 million per child) for the second death.",

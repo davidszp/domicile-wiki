@@ -16,6 +16,13 @@ export function successionFact(e) {
   return `forced heirship · ${CHOICE[s.foreign_law_choice]}`;
 }
 
+/** One-sentence warning for Simple's "Worth knowing"; null without forced heirship. */
+export function successionWarning(e) {
+  const s = e?.succession;
+  if (!s || s.forced_heirship === "no") return null;
+  return `Forced heirship: by law part of the estate goes to the family; ${CHOICE[s.foreign_law_choice]}.`;
+}
+
 /** Compare cell text, and a rank (higher is freer) for colouring. */
 export function successionShort(e) {
   const s = e?.succession;

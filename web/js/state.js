@@ -23,7 +23,7 @@ function readStored() {
 export function settingsSnapshot(s = state) {
   return { weights: s.weightsByPersona.family_office, personaWeights: s.weightsByPersona, persona: s.persona,
     shortlist: s.shortlist, citizenship: s.citizenship, includeStructures: s.includeStructures,
-    mode: s.mode, home: s.home, priorities: s.prioritiesByPersona,
+    mode: s.mode, view: s.view, home: s.home, priorities: s.prioritiesByPersona,
     weightSets: s.weightSets, koOff: s.koOff, koExempt: s.koExempt,
     theme: globalThis.window?.domicileTheme ? window.domicileTheme.get() : "system" }; // the theme itself is stored by theme.js
 }
@@ -47,6 +47,14 @@ export function storageAvailable() {
   }
 }
 
+// Explorer filters (Guided's deal-breakers are the same switches). Simple shows only SIMPLE_FILTERS;
+// the others then count at these defaults, so nothing filters the list without being on screen.
+export const FILTER_DEFAULTS = {
+  sort: "score", continent: "", level: "countries", minStatus: "provisional", euOnly: false, mediterranean: false, noWealthTax: false,
+  familyInheritsFree: false, lowCgt: false, goodDividends: false, shortlistOnly: false, lowIncomeTax: false,
+};
+export const SIMPLE_FILTERS = ["euOnly", "noWealthTax", "familyInheritsFree", "lowIncomeTax", "shortlistOnly"];
+
 export const state = {
   data: null, // scores.json
   cfg: null,
@@ -63,6 +71,8 @@ export const state = {
   // The four ways through the site. All of them read this one store, so a change made in one
   // (persona, passport, weights, filters, selection) shows up in every other.
   mode: "guided", // guided | factbook | explorer | compare | settings
+  // Simple shows each mode's main answers only; Advanced is everything. Same data and scores either way.
+  view: "simple", // simple | advanced
   explorerView: "table", // table | chart
   compareView: "side", // side | calculator
   factbookPage: "article", // article | index | method | sources
@@ -71,13 +81,11 @@ export const state = {
   weightSets: [], // saved weight sets: { name, persona, weights }
   koOff: {}, // knock-out rules switched off, per persona: { family_office: ["rule_of_law", ...] }
   koExempt: [], // countries never ruled out, whatever the rules
-  filters: {
-    sort: "score", continent: "", level: "countries", minStatus: "provisional", euOnly: false, mediterranean: false, noWealthTax: false,
-    familyInheritsFree: false, lowCgt: false, goodDividends: false, shortlistOnly: false, lowIncomeTax: false,
-  },
+  filters: { ...FILTER_DEFAULTS },
 };
 
 export const MODES = ["guided", "factbook", "explorer", "compare", "settings"];
+export const isSimple = () => state.view === "simple";
 
 export function defaultWeightsFor(persona) {
   return Object.fromEntries(Object.entries(metricsFor(persona)).map(([k, m]) => [k, m.weight]));
@@ -121,6 +129,7 @@ export function applySettings(stored) {
   if (["EU", "US", "OTHER"].includes(stored.citizenship)) state.citizenship = stored.citizenship;
   state.includeStructures = stored.includeStructures !== false;
   if (MODES.includes(stored.mode)) state.mode = stored.mode;
+  state.view = stored.view === "advanced" ? "advanced" : "simple";
   if (typeof stored.home === "string" && stored.home in data.jurisdictions) state.home = stored.home;
   if (stored.priorities && typeof stored.priorities === "object") {
     for (const [p, list] of Object.entries(stored.priorities)) {

@@ -67,3 +67,12 @@ def test_a_summary_route_in_an_unknown_currency_fails_the_build():
     bad["minimum_investment"] = {"amount": 1, "currency": "UYI"}
     with pytest.raises(SystemExit):
         residence_summary(file("URY", bad), FX)
+
+
+def test_a_route_with_capped_places_comes_after_one_open_to_all_and_says_so():
+    """Liechtenstein's 16 permits a year: a quota route is shown only when nothing open to all who qualify exists."""
+    quota = {**route("quota", "passive_income"), "limited_places": "16 permits a year"}
+    s = residence_summary(file("LIE", quota, route("gv", "investor_residence", inv=1_000_000)), FX)
+    assert s["EU"]["id"] == "gv" and "limited" not in s["EU"]
+    s = residence_summary(file("LIE", quota), FX)
+    assert s["EU"]["limited"] == "16 permits a year"

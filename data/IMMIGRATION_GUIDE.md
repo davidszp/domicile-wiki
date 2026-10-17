@@ -25,6 +25,12 @@ digital nomad visa limited to listed countries), set `only_some_nationalities: t
 is never shown as "the route" for the whole group. Free movement under the Common Travel Area is
 kind `other`, not `free_movement` (that kind is for EU/EEA/Swiss free movement only).
 
+When the number of permits is capped (a yearly quota, a lottery) or the permit is granted at the
+authorities' discretion rather than to anyone who meets the requirements, say how in `limited_places`
+in a few words (e.g. "16 permits a year for all EEA applicants"; "discretionary: no right to the
+permit"). The site then warns that residence is hard to get, and the route ranks after any route open
+to all who qualify. Leave it empty when the permit is a right once the conditions are met.
+
 ## Which routes to include
 
 All routes a wealthy family, a retiree, or a remote worker would realistically use:

@@ -57,8 +57,24 @@ function table(paths, ref, a) {
     h("tbody", null, paths.map((p) => row(p)), ref ? row(ref, "muted") : null)));
 }
 
-/** Section for the HNWI country page; null when the country has no recipe yet. */
-export function projectionSection(p) {
+const REASON = {
+  remittance_basis: "Remittance basis: foreign income (and in some countries foreign gains) is taxed only when it is brought into the country."
+    + " The family's spending here has to be brought in, so the tax depends on whether that money counts as income or as capital,"
+    + " which the projection cannot follow year by year. The regime is therefore not drawn.",
+};
+
+/** Regimes the family could use that the chart does not draw, with why. */
+function leftOut(list) {
+  if (!list.length) return null;
+  const reasons = [...new Set(list.map((x) => x.reason))].filter((r) => REASON[r]);
+  return h("div", { class: "open-q small" }, h("strong", null, "Not drawn: "),
+    h("ul", null, list.map((x) => h("li", null, h("strong", null, `${x.name}. `), x.note))),
+    reasons.map((r) => h("p", { class: "muted" }, REASON[r])));
+}
+
+/** Section for the HNWI country page; null when the country has no recipe yet. ``caveat``: a warning shown above
+ * the chart, e.g. that residence is hard to get. */
+export function projectionSection(p, caveat = null) {
   const pr = p?.projection;
   if (!pr) return null;
   const a = pr.assumptions;
@@ -70,9 +86,11 @@ export function projectionSection(p) {
   append(sec, [
     h("p", null, `What the family's ${fmtEur(a.portfolio)} portfolio becomes if it lives here for ${a.years} years, spending ${fmtEur(a.spending)} a year,`
       + ` for each way of holding it. Inheritance tax is paid when the parents die (year ${a.deaths[0]}) and again a generation later.`),
+    caveat ? h("p", { class: "open-q small" }, caveat) : null,
     ok.length ? chart(ok, a) : null,
     ok.length ? table(ok, ref, a) : null,
     missing.map((x) => h("p", { class: "small muted" }, `${x.name}: not computable (${x.missing}).`)),
+    leftOut(pr.recipe.left_out || []),
     ok.filter(runsOut).map((x) => h("p", { class: "small muted" }, `${x.name}: the money runs out in year ${x.years.length}: taxes and spending outgrow the portfolio.`)),
     h("ul", { class: "small" }, ok.filter((x) => x.note).map((x) => h("li", null, h("strong", null, `${x.name}. `), x.note))),
     h("details", { class: "small" }, h("summary", null, "Assumptions"),

@@ -2,7 +2,7 @@
 // wiring between them. Every view reads the one store in state.js; this file decides what to redraw
 // after each change.
 //
-//   guide.js   the left column: modes, "Your situation", search, theme, globe
+//   guide.js   the left column: modes, Settings, search, theme, globe
 //   router.js  the address bar and Back/Forward
 //   layers.js  colours for the globe
 //   modes/*    the content of each mode
@@ -54,11 +54,11 @@ function select(id) {
 
 // ------------------------------------------------------------------ the stage (the mode's content)
 
-const ctx = { select, evalOf, go, refresh: () => renderStage() };
+const ctx = { select, evalOf, go, refresh: () => renderStage(), advanced: () => update({ view: "advanced" }, { persist: true }) };
 
 /** State keys each mode (and view) reads; the stage re-renders only when one of them changes. */
 function depsOf() {
-  const base = ["mode", "explorerView", "factbookPage", "compareView"];
+  const base = ["mode", "view", "explorerView", "factbookPage", "compareView"];
   const scoring = [...SCORING_KEYS, "filters"];
   switch (state.mode) {
     case "guided": return [...base, ...scoring, "compare", "prioritiesByPersona"];

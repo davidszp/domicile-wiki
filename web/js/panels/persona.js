@@ -104,8 +104,8 @@ export function fact(label, ...value) {
   return h("div", { class: "fact" }, h("dt", null, label), h("dd", null, ...value));
 }
 
-/** Profile body for an income persona, once the profile JSON `p` has loaded. */
-export function renderPersonaBody(body, p, id, r) {
+/** Profile body for an income persona, once the profile JSON `p` has loaded. ``simple``: key facts only. */
+export function renderPersonaBody(body, p, id, r, { simple = false } = {}) {
   const block = p.persona_detail && p.persona_detail[state.persona];
   const inc = p.income;
   const e = jur(id);
@@ -138,6 +138,7 @@ export function renderPersonaBody(body, p, id, r) {
     ns ? fact("Nomad scene", ns.lists_named ? `named in ${ns.lists_named} of ${ns.lists_total} published nomad rankings` : `not named in any of ${ns.lists_total} published nomad rankings`,
       ns.lists_named ? nomadPlacings(ns) : null) : null,
     residenceFact(e) ? fact("Residence for you", residenceFact(e)) : null)]);
+  if (simple) return;
   body.append(immigrationSection(p.immigration));
 
   body.append(taxResidenceSection(p));

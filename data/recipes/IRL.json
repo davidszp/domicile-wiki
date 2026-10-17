@@ -72,6 +72,13 @@
     "Foreign dividends are assumed to come from companies resident in EU member states or treaty countries whose principal share class is regularly traded, and the company holds no more than 5% of each, so the 12.5% rate applies.",
     "The CAT Group A threshold is a lifetime amount per child across both parents; the engine applies it once per death event to three children who have taken nothing before."
   ],
+  "left_out": [
+    {
+      "regime": "remittance_basis",
+      "reason": "remittance_basis",
+      "note": "A resident who is not Irish-domiciled pays Irish tax on foreign dividends and gains only to the extent they are brought into Ireland (TCA 1997 s.71; Revenue manual Part 05-01-21). Spending paid from capital the family held before arriving is not taxed when brought in; spending paid from foreign dividends or gains is taxed at 55.35% or 31%. With careful separate accounts this could leave Ireland well above the line drawn here, at least while the family's capital lasts; the regime ends if the family takes an Irish domicile."
+    }
+  ],
   "open_questions": [
     "Needs an engine change: the remittance basis (TCA 1997 s.71(2)-(3) for foreign income and the corresponding rule for foreign chargeable gains, Revenue manual Part 05-01-21) taxes a non-domiciled resident on foreign income and gains only when they are brought into Ireland. The family spends EUR 400,000 a year in Ireland, so the tax depends on what funds that spending: capital the family held before arriving (not taxed on remittance) or remitted dividends and gains (taxed at 55.35% and 31%). The engine has one pot and no tracking of remitted income against clean capital, so the tax file's remittance_basis regime (foreign dividends and gains at 0, which assumes nothing is remitted) would understate the tax; no path is added. The regime also ends if the family acquires an Irish domicile of choice.",
     "Needs an engine change: putting an existing personal portfolio into the investment company is a disposal at market value to a connected company (market-value rule for connected persons, TCA 1997 s.547, not opened), taxed at 31% on the latent gain. The engine has no asset-transfer event, so the path assumes a portfolio with no latent gain.",

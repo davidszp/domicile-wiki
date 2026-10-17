@@ -314,20 +314,32 @@ details.fold[open] { padding-bottom: 8px; }
 .globe-legend { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2px 8px; }
 .globe-legend .spectrum { flex-basis: 100%; justify-content: center; }
 
-/* Your situation: pinned to the bottom of the column (spare height goes above it), with a rule above. */
+/* Settings: pinned to the bottom of the column (spare height goes above it), with a rule above. */
 .situation { display: flex; flex-direction: column; gap: 6px; padding: 10px 12px; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--r-l); }
 .guide > .situation { margin-top: auto; position: relative; }
 .guide > .situation::before { content: ""; position: absolute; left: 0; right: 0; top: -15px; border-top: 1px solid var(--border-strong); }
-.situation-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
-.situation-head .guide-h { margin: 0; }
+.situation-h { margin: 0; }
+.situation-h .cog { width: 13px; height: 13px; vertical-align: -2px; margin-right: 3px; }
+.situation-h .settings-link { font: inherit; letter-spacing: inherit; text-transform: inherit; color: var(--muted); padding: 0; }
+.situation-h .settings-link:hover, .situation-h .settings-link[aria-pressed="true"] { color: var(--accent); }
 .situation select { width: 100%; }
 .situation .ctl { flex-direction: row; align-items: center; gap: 8px; }
-.situation .ctl span { flex: none; }
-.persona-switch { display: flex; gap: 2px; padding: 3px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-l); }
-.persona-switch button { flex: 1; border: none; background: transparent; border-radius: var(--r-s); padding: 5px 6px; color: var(--muted); font-weight: 500; font-size: 13px; }
-.persona-switch button:hover { background: var(--surface-3); color: var(--text); }
-.persona-switch button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); box-shadow: var(--elev-1); font-weight: 600; }
+.situation .ctl span { flex: none; width: 58px; }
 .weights-line { margin: 2px 0 0; }
+
+/* Simple and Advanced (js/state.js view): Simple hides the .adv-only parts of the guide. */
+body[data-view="simple"] .adv-only, body[data-view="advanced"] .simple-only { display: none !important; }
+.view-switch { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 3px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-l); }
+.view-switch button { border: none; background: transparent; border-radius: var(--r-s); padding: 6px; color: var(--muted); font-weight: 500; font-size: 13px; }
+.view-switch button:hover { background: var(--surface-3); color: var(--text); }
+.view-switch button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); box-shadow: var(--elev-1); font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 12px; }
+.chip-btn { border-radius: 999px; padding: 5px 14px; }
+.advanced-link { margin: 18px 0 4px; }
+.worth-knowing { background: var(--surface-2); border-left: 3px solid var(--worse); border-radius: 0 var(--r-l) var(--r-l) 0; padding: 10px 14px; margin: 16px 0; }
+.worth-knowing p { margin: 6px 0 0; }
+.simple-proj { margin-top: 18px; }
+.proj-ceiling { stroke: var(--muted); background: var(--muted); }
 .settings-link { border: none; background: transparent; padding: 0 2px; font-size: 12px; color: var(--accent); }
 .settings-link:hover:not(:disabled) { background: transparent; text-decoration: underline; }
 .settings-link[aria-pressed="true"] { background: transparent; color: var(--accent); font-weight: 700; }

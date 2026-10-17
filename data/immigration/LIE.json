@@ -9,6 +9,7 @@
     {
       "status": "open",
       "status_note": "",
+      "limited_places": "a yearly quota of at least 56 permits, half by lottery",
       "investment_options": "",
       "fees_note": "",
       "processing_time": "",
@@ -21,7 +22,7 @@
       "path_to_citizenship_years": null,
       "id": "eea_quota_gainful",
       "name": "EEA nationals: residence permit within the annual quota (employed)",
-      "kind": "free_movement",
+      "kind": "work",
       "citizenships": [
         "EU"
       ],
@@ -49,6 +50,7 @@
     {
       "status": "open",
       "status_note": "",
+      "limited_places": "16 permits a year for all EEA applicants (some sources say about 20)",
       "investment_options": "",
       "fees_note": "",
       "processing_time": "",
@@ -89,6 +91,7 @@
     {
       "status": "open",
       "status_note": "",
+      "limited_places": "limited annual permits, at discretion",
       "investment_options": "",
       "fees_note": "",
       "processing_time": "",

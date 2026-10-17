@@ -23,6 +23,12 @@ function routeFor(e) {
 
 /** Short text for the key-facts line: the cheapest open route for the reader's passport. */
 export function residenceFact(e) {
+  const text = residenceText(e);
+  const r = text && routeFor(e);
+  return r?.limited ? `${text} · limited places: ${r.limited}` : text;
+}
+
+function residenceText(e) {
   if (!e) return null;
   const r = routeFor(e);
   if (r === undefined) return null;
@@ -35,8 +41,23 @@ export function residenceFact(e) {
   return r.name;
 }
 
+/** A warning for the 60-year projection, which assumes the family lives in the country: null when residence
+ * is a right (or not researched), otherwise why it may not be available to the reader's passport. */
+export function residenceCaveat(e) {
+  const r = e && routeFor(e);
+  if (!r || r.kind === "free_movement" || r.kind === "citizen") return null;
+  if (r.kind === "none") return `Residence is the hurdle: ${GROUP[state.citizenship]} have no permit here for living on their own money; the routes need a job, a business or a family tie (see Immigration paths). The projection assumes the family can live here anyway.`;
+  if (r.limited) return `Residence is not assured: the route for ${GROUP[state.citizenship]} (${r.name}) has ${r.limited}. The projection assumes the family gets a permit.`;
+  return null;
+}
+
 /** Same, as a short value for tables (Compare). */
 export function residenceShort(e) {
+  const text = residenceShortText(e);
+  return routeFor(e || {})?.limited ? `${text} (limited places)` : text;
+}
+
+function residenceShortText(e) {
   if (!e) return "not researched";
   const r = routeFor(e);
   if (r === undefined) return "not researched";

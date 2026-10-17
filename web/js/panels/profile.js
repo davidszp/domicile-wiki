@@ -1,14 +1,14 @@
 import { h, append, clear, extLink, displayCurrency, moneyText, fmtPct, fmtScore, fmtEur, fmtMoney } from "../dom.js";
-import { state, entries, jur, toggleIn, MAX_COMPARE, metricsFor, isIncomePersona, personaCfg, personaNoun } from "../state.js";
+import { state, entries, jur, toggleIn, MAX_COMPARE, metricsFor, isIncomePersona, personaCfg, personaNoun, isSimple } from "../state.js";
 import { loadProfile, loadDossier } from "../data.js";
 import { bandFor, TAX_METRICS } from "../scoring.js";
 import { renderMarkdown } from "../markdown.js";
 import { scoreRgb, textOn } from "../colors.js";
-import { INHERITANCE, field, sourceList } from "../labels.js";
+import { INHERITANCE, GROUP_SHORT, field, sourceList } from "../labels.js";
 import { renderPersonaBody, personaCard, fact } from "./persona.js";
-import { immigrationSection, residenceFact } from "./immigration.js";
-import { successionSection, successionFact } from "./succession.js";
-import { projectionSection } from "./projection.js";
+import { immigrationSection, residenceCaveat, residenceFact } from "./immigration.js";
+import { successionSection, successionFact, successionWarning } from "./succession.js";
+import { projectionSection, chart as projectionChart } from "./projection.js";
 
 const STATUS = {
   verified: ["Verified", "All four tax metrics verified against sources; at least 90% of weighted data present."],
@@ -51,6 +51,11 @@ export function euBadge(e) {
 export function redFlagBadge(e) {
   if (!e || !e.red_flag) return null;
   return h("span", { class: "flag-badge", title: `${e.red_flag.label}. ${e.red_flag.explanation}` }, "Red flag");
+}
+
+/** Simple's pointer to what it leaves out: "<what>: in Advanced →", which switches the view. */
+export function advancedLink(ctx, what) {
+  return h("p", { class: "small advanced-link" }, h("button", { class: "linklike", onclick: () => ctx.advanced() }, `${what}: switch to Advanced →`));
 }
 
 export function statusBadge(st) {
@@ -217,6 +222,9 @@ export function renderProfile(panel, ctx) {
     h("h2", null, e.name, e.parent ? h("span", { class: "muted" }, `, ${jur(e.parent)?.name ?? e.parent}`) : null),
     h("div", { class: "muted small" }, [e.continent, e.region, e.level === "region" ? "region" : null].filter(Boolean).join(" · "), " ",
       e.eu ? euBadge(e) : e.level === "country" && e.continent === "Europe" ? h("span", { class: "not-eu", title: "In Europe, but not a member of the European Union" }, "Not in the EU") : null),
+    isSimple() ? h("div", { class: "score-row" }, scoreChip(r.score, state.cfg, "big"),
+      h("div", null, h("strong", null, bandFor(r.score, state.cfg)?.label ?? (r.status === "knocked_out" ? "Ruled out" : "Not scored")),
+        h("div", { class: "small muted" }, `for ${personaCfg().label}, ${GROUP_SHORT[state.citizenship]} passport`))) :
     h("div", { class: "score-row" },
       h("div", { class: "big-score" }, scoreChip(r.score, state.cfg, "big"), h("span", null, "overall")),
       h("div", { class: "big-score" }, scoreChip(r.taxScore, state.cfg, "big"), h("span", null, "tax only")),
@@ -230,7 +238,7 @@ export function renderProfile(panel, ctx) {
         onclick: (e) => { toggleIn("compare", id, { max: MAX_COMPARE }); e.currentTarget.textContent = compareLabel(id); } }, compareLabel(id)),
     ));
   panel.append(head);
-  panel.append(h("details", { class: "persona-fold" }, h("summary", null, `Who is this scored for? (${personaCfg().label})`), personaCard()));
+  if (!isSimple()) panel.append(h("details", { class: "persona-fold" }, h("summary", null, `Who is this scored for? (${personaCfg().label})`), personaCard()));
   if (e.ko && e.ko.length) {
     panel.append(h("div", { class: "ko-box", role: "note" },
       h("strong", null, "Ruled out: "), [...new Set(e.ko.map((k) => k.label))].map((label, i) => [i ? ", " : "",
@@ -243,7 +251,7 @@ export function renderProfile(panel, ctx) {
       `By default it is ruled out for: ${[...new Set(e.koWaived.map((k) => k.label))].join("; ").toLowerCase()}. `,
       h("button", { class: "linklike", onclick: () => ctx.go?.({ mode: "settings" }) }, "Change in Settings")));
   }
-  if (e.non_member) {
+  if (e.non_member && !isSimple()) {
     panel.append(h("details", { class: "persona-fold" }, h("summary", null, e.non_member.label),
       h("p", { class: "small" }, e.non_member.explanation),
       h("ul", { class: "sources" }, e.non_member.sources.map((s) => h("li", null, extLink(s.url, s.title), ` — ${s.publisher}`)))));
@@ -261,6 +269,10 @@ export function renderProfile(panel, ctx) {
   loadProfile(id).then((p) => {
     if (state.selected !== id) return;
     clear(body);
+    if (isSimple()) {
+      simpleBody(body, p, id, r, ctx);
+      return;
+    }
     if (isIncomePersona()) {
       renderPersonaBody(body, p, id, r);
       return;
@@ -287,7 +299,7 @@ export function renderProfile(panel, ctx) {
       residenceFact(e) ? fact("Residence for you", residenceFact(e)) : null,
       successionFact(e) ? fact("Leaving your estate", successionFact(e)) : null)]);
     body.append(h("p", null, d.summary));
-    append(body, [projectionSection(p)]);
+    append(body, [projectionSection(p, residenceCaveat(e))]);
     body.append(immigrationSection(p.immigration));
     body.append(successionSection(p.succession));
     if (state.citizenship === "US" && d.us_citizen_notes) fold(body, "US citizens", h("p", null, d.us_citizen_notes));
@@ -355,6 +367,50 @@ export function renderProfile(panel, ctx) {
     if (state.selected !== id) return;
     clear(body).append(h("p", { class: "error" }, `Details could not be loaded: ${err.message}`));
   });
+}
+
+/** Simple's country page: five answers, the summary, one 60-year line and at most three warnings. */
+function simpleBody(body, p, id, r, ctx) {
+  const e = jur(id);
+  const more = advancedLink(ctx, "Immigration paths, every tax rule, daily life, household cost and sources");
+  if (isIncomePersona()) {
+    renderPersonaBody(body, p, id, r, { simple: true });
+    body.append(more);
+    return;
+  }
+  if (!e.researched) {
+    body.append(h("p", { class: "notice" }, "Tax rules not researched yet, so it is unscored (grey)."),
+      residenceFact(e) ? h("dl", { class: "facts" }, fact("Can you live here?", residenceFact(e))) : "", more);
+    return;
+  }
+  const d = p.data;
+  const row = (p.tax_detail[state.citizenship] || []).find((x) => r.regime && x.id === r.regime.id);
+  const hc = p.household_cost_detail;
+  const pr = p.projection;
+  const end = (x) => Math.max(0, x.years.at(-1)[0]) * 1e3;
+  const best = pr ? pr.paths.filter((x) => x.id !== "no_tax" && !x.missing).reduce((b, x) => (!b || end(x) > end(b) ? x : b), null) : null;
+  const noTax = pr?.paths.find((x) => x.id === "no_tax");
+  append(body, [h("dl", { class: "facts" },
+    fact("Can you live here?", residenceFact(e) ?? "not researched yet"),
+    row && row.cost !== null ? fact("Tax on the investments", `${fmtEur(row.cost)} a year`, row.type !== "standard" ? h("span", { class: "muted" }, ` · ${row.name}`) : "") : null,
+    fact("Children inherit", INHERITANCE[d.regimes[0].inheritance.children_treatment] || "–"),
+    best ? fact(`After ${pr.assumptions.years} years`, `${fmtEur(end(best))} of your ${fmtEur(pr.assumptions.portfolio)}`,
+      noTax ? h("span", { class: "muted" }, ` · with no tax at all: ${fmtEur(end(noTax))}`) : "") : null,
+    fact("Living costs", hc ? `${fmtEur(hc.total_eur)} a year` : "not sourced")),
+  h("p", null, d.summary)]);
+  if (best) {
+    const a = pr.assumptions;
+    const lines = [{ ...best, cls: "proj-s0" }, ...(noTax ? [{ ...noTax, name: "With no tax at all", cls: "proj-ceiling", dashed: true }] : [])];
+    body.append(h("section", { class: "simple-proj" }, h("h3", null, `Wealth over ${a.years} years`),
+      h("p", { class: "small muted" }, `Your ${fmtEur(a.portfolio)}, spending ${fmtEur(a.spending)} a year, held the best way here: ${best.name.charAt(0).toLowerCase()}${best.name.slice(1)}. The drops are inheritance tax. In today's money; an illustration, not a forecast.`),
+      ...projectionChart(lines, a, `Portfolio over ${a.years} years: ${fmtEur(end(best))} at the end`)));
+  }
+  const warnings = [residenceCaveat(e),
+    state.citizenship === "US" ? "The United States taxes its citizens wherever they live; the figures here are local tax only." : null,
+    successionWarning(e),
+    ...(pr?.recipe.left_out || []).map((x) => `${x.name} is left out of the ${pr.assumptions.years}-year figures; Advanced says why.`)].filter(Boolean).slice(0, 3);
+  if (warnings.length) body.append(h("div", { class: "worth-knowing", role: "note" }, h("strong", null, "Worth knowing"), warnings.map((w) => h("p", null, w))));
+  body.append(more);
 }
 
 /** An occupied area or buffer zone: not a state, so no score, only what it is and whose it is. */

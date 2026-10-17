@@ -33,6 +33,12 @@ never put the rate in the recipe.
 - `checks[]`: cases worked **by hand from the statute**, which the engine must reproduce (see below). At
   least one `annual` case per path and one `inheritance` case.
 - `assumptions`: simplifications particular to this country.
+- `left_out[]`: regimes the family could use that are **not** drawn, shown on the page under "Not drawn".
+  `regime` (the tax file id), `reason` and a plain-words `note` for this country. Use
+  `reason: "remittance_basis"` when foreign income (and maybe gains) is taxed only when brought into
+  the country: the family spends EUR 400,000 a year there, so the tax depends on whether that money
+  counts as income or capital, which the engine does not track (Ireland's non-dom, Japan's
+  non-permanent resident, Korea's 5-year rule). A regime is either a path or left out, never both.
 - `open_questions`, `sources`: as in the other guides.
 
 ## What the engine already understands

@@ -56,6 +56,13 @@
     "The 10-year aggregation of lifetime gifts and the gift-tax deductions are not modelled.",
     "The 5-of-10-year foreign resident rule is left out: foreign-source income is taxed when paid in or remitted to Korea (Income Tax Act art. 3(1) proviso), and the family spends EUR 400,000 a year there, so most of it would be taxed; the engine cannot separate remitted capital from income. Same treatment as Ireland's remittance basis."
   ],
+  "left_out": [
+    {
+      "regime": "foreign_resident_5y",
+      "reason": "remittance_basis",
+      "note": "A foreign national who has lived in Korea 5 years or less in the last 10 pays tax on foreign income only when it is paid in Korea or sent there (Income Tax Act art. 3(1)). With EUR 400,000 a year spent in Korea, much of the foreign income would be sent there, and the projection cannot tell capital sent in from income; the rule ends after 5 years."
+    }
+  ],
   "open_questions": [
     "Needs an engine change: valuation of the family company's unlisted shares for inheritance tax: net asset value, plus a 20% premium for a controlling shareholder's shares unless the company is an SME or mid-sized company (Inheritance Tax and Gift Tax Act art. 63(3)). Whether a family investment company qualifies as an SME was not established; if not, the taxable value is 1.2 times the portfolio, which the engine cannot express. No inheritance check is given for the company path for this reason.",
     "Needs an engine change: the 3% credit for filing on time (art. 69) and the financial-asset deduction (art. 22, up to KRW 200 million, if a foreign-custody portfolio counts) are not in the tax file; the 3% credit is in the check's model_difference.",

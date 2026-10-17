@@ -622,6 +622,9 @@ class ImmigrationRoute(Strict):
                                           "are never shown as the route for a whole group")
     status: Literal["open", "closed_to_new", "suspended", "announced"]
     status_note: str = Field("", description="Required unless open: when it closed or changed and what replaced it")
+    limited_places: str = Field("", description="When places are capped (a yearly quota, a lottery) or the permit is granted at "
+                                "the authorities' discretion, say how in a few words, e.g. '16 permits a year for all EEA "
+                                "applicants'; empty when anyone who meets the requirements gets it")
     grants: Literal["temporary_residence", "permanent_residence", "citizenship"]
     summary: str = Field(min_length=20, description="One or two plain sentences for a reader who is not a lawyer")
     requirements: str = Field(min_length=20)
@@ -735,6 +738,16 @@ class RecipeCheck(Strict):
         return self
 
 
+class LeftOutRegime(Strict):
+    """A regime the family could use that the projection does not draw, so the page can say so."""
+
+    regime: str = Field(pattern=r"^[a-z0-9_]+$", description="Regime id in the country's tax file")
+    reason: Literal["remittance_basis", "other"] = Field(
+        description="'remittance_basis': foreign income (and maybe gains) is taxed only when brought into the country, so the "
+                    "tax depends on how the family's spending there is funded, which the projection cannot track")
+    note: str = Field(min_length=40, description="In plain words for this country: what the regime does and why it is not drawn")
+
+
 class RecipeFile(Strict):
     """How a family's portfolio is projected over 60 years in one country: the paths to compare."""
 
@@ -744,6 +757,7 @@ class RecipeFile(Strict):
     paths: list[RecipePath] = Field(min_length=1)
     checks: list[RecipeCheck] = Field(min_length=2, description="At least one annual case per path and one inheritance case")
     assumptions: list[str] = Field([], description="Simplifications specific to this country, in plain words")
+    left_out: list[LeftOutRegime] = Field([], description="Regimes not drawn, shown on the page with the reason")
     open_questions: list[str] = []
     sources: list[Source] = []
 
