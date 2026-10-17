@@ -2,14 +2,21 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "domicile-preview",
   "compatibility_date": "2026-10-12",
+  // worker/index.js only redirects www to the apex; it runs first so the redirect covers every path.
+  "main": "worker/index.js",
   // The site's own domain (registered on Cloudflare); the workers.dev preview address keeps working.
-  "routes": [{ "pattern": "domicile.wiki", "custom_domain": true }],
+  "routes": [
+    { "pattern": "domicile.wiki", "custom_domain": true },
+    { "pattern": "www.domicile.wiki", "custom_domain": true }
+  ],
   "workers_dev": true,
   "observability": {
     "enabled": true
   },
   "assets": {
     "directory": "web",
+    "binding": "ASSETS",
+    "run_worker_first": true,
     "not_found_handling": "404-page"
   }
 }

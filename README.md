@@ -119,7 +119,9 @@ To update the live site: rebuild locally (`make build test`), commit `web/data/`
 
 Or deploy straight from this machine with Wrangler (`wrangler.jsonc` serves `web/` as static assets and
 applies `web/_headers`): `npx wrangler@4.151.0 login` once, then `npx wrangler@4.151.0 deploy`. The
-preview runs at <https://domicile-preview.domicile-web.workers.dev>.
+preview runs at <https://domicile-preview.domicile-web.workers.dev>; the site is at <https://domicile.wiki>.
+A small Worker (`worker/index.js`) runs in front of the assets only to redirect `www.domicile.wiki` to
+`domicile.wiki`.
 
 ### Security
 
