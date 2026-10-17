@@ -1,0 +1,388 @@
+{
+  "id": "SMR",
+  "name": "San Marino",
+  "researched_on": "2026-10-17",
+  "summary": "San Marino is not in the EU and has no free movement for EU citizens: everyone, EU citizens included, needs a permit or residence from the San Marino authorities, and entry is through Italy (Schengen). All residence is discretionary and capped. EU citizens: the cheapest open route is the pensioner residence (income of EUR 50,000 a year or EUR 300,000 in assets, 6% tax on pension) if retired, otherwise the reduced-tax regime for foreign income (EUR 1,000 fee, 7% tax). US and other citizens: the reduced-tax regime for foreign income or elective residence (property of EUR 500,000 or deposit of EUR 600,000); pensioner residence is open only to Swiss and listed countries. An EU association agreement is due to be signed on 19 October 2026 and is not in force.",
+  "naturalisation": "Since Law 27 of 25 February 2026 (amending Law 114/2000): 20 continuous years of registered and effective residence (10 for a spouse or civil partner of a citizen), Italian at B1 level and a test on San Marino history and institutions; renouncing the old nationality is no longer required. Not an entitlement.",
+  "dual_citizenship": "allowed",
+  "dual_citizenship_note": "The 2026 reform removed the obligation to renounce the previous citizenship (committee report of 10 December 2025 and Regolamento 4/2026 implementing the law). The law text itself was not read.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Discretionary: the Congresso di Stato decides, no right to it; at most 50 a year (secondary applicants excluded)",
+      "investment_options": "Property of EUR 500,000 or more (EUR 350,000 building plus up to EUR 150,000 works counts), or a EUR 600,000 10-year deposit in San Marino state securities, or both.",
+      "fees_note": "EUR 1,000 application fee; EUR 10,000 non-refundable one-off fee if the deposit option is used; EUR 20,000 one-off per secondary applicant (spouse, children up to 25 dependent, disabled child). Property option also pays 8% registration tax.",
+      "processing_time": "Congresso di Stato decides within 60 days of a complete application (art. 16-bis c.4)",
+      "family": "Spouse and children up to 25 who are dependent (or disabled children) can be added for EUR 20,000 each; children born later are included free.",
+      "tax_note": "Residence does not by itself set the tax position; San Marino levies ordinary personal income tax on residents. The reduced-tax regimes below are separate residence types.",
+      "minimum_investment": {
+        "amount": 500000,
+        "currency": "EUR"
+      },
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 1000,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": 10,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "elective_residence",
+      "name": "Elective residence (residenza elettiva)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Residence for a foreigner who buys a home in San Marino for at least EUR 500,000 or locks up EUR 600,000 in San Marino state securities for 10 years. The Congresso di Stato may refuse without giving a reason that can be appealed.",
+      "requirements": "Law 118/2010, art. 16-bis (introduced by Law 94/2017): (a) buy a building (finished before 31 May 2017, or to be renovated or unfinished) for at least EUR 500,000 for own use, where up to EUR 150,000 of completion, renovation or rebuilding costs may count towards the sum; or (b) a non-interest-bearing deposit of at least EUR 600,000 in San Marino state securities or a State-set-up fund, tied up 10 years. Proof of sufficient means for the family, clean criminal record, full private health insurance at own cost (no state health cover), no employment in the wider public sector, no public benefits until residence consolidates after 10 years. Not available with a conviction or pending case over 1 year, or with a Schengen entry ban (arts. 17). Purchase deed or deposit must be completed within 3 months of the grant or the residence is revoked. Property purchase pays 8% registration tax (art. 16-bis c.5). Entry to San Marino is through Italy; a Schengen visa may be needed.",
+      "physical_presence": "Genuine habitual residence; art. 17 revokes residence if habitual residence in San Marino lapses for over 6 months",
+      "sources": [
+        {
+          "title": "Legge 28 giugno 2010 n.118, testo coordinato residenze (updated 9 April 2024)",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/dam/jcr:38eabe03-3e2f-44f3-a498-a5421388ddcf/2024_04_09%20Testo%20coordinato%20residenze%20(SENZA%20NOTE).pdf",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Decreto Delegato 8 maggio 2020 n.75 (elective residence cap)",
+          "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17116762.html",
+          "publisher": "Consiglio Grande e Generale, San Marino",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Permessi di Soggiorno, Residenze e Cittadinanza",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/Servizi-per-utenza/Permessi-di-Soggiorno-e-Residenze.html",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Discretionary: decided by the parliamentary Foreign Affairs Committee; at most 249 a year under art. 16-quater c.12 (some cases excluded from the count)",
+      "investment_options": "Alternative to the income test: movable assets of at least EUR 300,000.",
+      "fees_note": "EUR 1,000 application fee (diritto erariale). No other government fee found.",
+      "processing_time": "Committee decides within 120 days of a complete application (art. 16-quater c.4)",
+      "family": "Spouse and dependent children up to 25 can be added as secondary applicants.",
+      "tax_note": "6% flat substitute tax on pension income for 10 consecutive years, renewable (art. 16-quater c.2 and c.8); 3% for retired officials of international organisations with income of at least EUR 100,000.",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 50000,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 1000,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": 10,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "pensioner_residence_eu",
+      "name": "Atypical residence for pensioners (EU citizens)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Residence for retired people from EU countries who have never lived in San Marino, with a flat 6% substitute tax on pension income for 10 consecutive years, renewable.",
+      "requirements": "Law 118/2010, art. 16-quater: pensioner from an EU country; demonstrable gross income of at least EUR 50,000 a year or movable assets of at least EUR 300,000 (text in the April 2024 consolidated version; see open questions on the proposed rise to EUR 120,000 / 500,000); never previously resident in San Marino; preliminary purchase or rental contract for a home conditional on the grant (renting a room shared with unrelated people is not accepted); proof of means for the family; a current account at a San Marino bank; health costs at own charge; no wider-public-sector job and no public benefits until residence consolidates after 10 years. 6% applies whether or not a double-tax treaty exists; 3% for retired officials of international organisations with income of at least EUR 100,000.",
+      "physical_presence": "Genuine habitual residence in San Marino; no day count published",
+      "sources": [
+        {
+          "title": "Legge 28 giugno 2010 n.118, testo coordinato residenze (updated 9 April 2024)",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/dam/jcr:38eabe03-3e2f-44f3-a498-a5421388ddcf/2024_04_09%20Testo%20coordinato%20residenze%20(SENZA%20NOTE).pdf",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Decreto Delegato 22 maggio 2025 n.77 (ratifying DD 26/2025)",
+          "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17152352.html",
+          "publisher": "Consiglio Grande e Generale, San Marino",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Permessi di Soggiorno, Residenze e Cittadinanza",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/Servizi-per-utenza/Permessi-di-Soggiorno-e-Residenze.html",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "San Marino: residenza e vantaggi fiscali (1 July 2022)",
+          "url": "https://www.filodiritto.com/san-marino-residenza-e-vantaggi-fiscali",
+          "publisher": "Filodiritto",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Discretionary: decided by the parliamentary Foreign Affairs Committee; at most 249 a year under art. 16-quater c.12",
+      "investment_options": "Alternative to the income test: movable assets of at least EUR 300,000.",
+      "fees_note": "EUR 1,000 application fee.",
+      "processing_time": "Committee decides within 120 days of a complete application",
+      "family": "",
+      "tax_note": "6% flat substitute tax on pension income for 10 consecutive years, renewable.",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 50000,
+        "currency": "EUR"
+      },
+      "government_fees": {
+        "amount": 1000,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": 10,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": true,
+      "id": "pensioner_residence_other",
+      "name": "Atypical residence for pensioners (Swiss and listed countries)",
+      "kind": "passive_income",
+      "citizenships": [
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "The same pensioner residence and 6% tax regime, open to Swiss citizens and to citizens of countries named in a Congresso di Stato regulation. The list of those countries could not be found, so most non-EU passports may not qualify.",
+      "requirements": "Law 118/2010, art. 16-quater c.1: pensioners from the EU, Switzerland and countries identified by a Congresso di Stato regulation. Same conditions as the EU route: income of at least EUR 50,000 gross a year or movable assets of at least EUR 300,000, never previously resident, home contract, San Marino bank account, health costs at own charge. Whether US citizens are on the list was not found.",
+      "physical_presence": "Genuine habitual residence in San Marino; no day count published",
+      "sources": [
+        {
+          "title": "Legge 28 giugno 2010 n.118, testo coordinato residenze (updated 9 April 2024)",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/dam/jcr:38eabe03-3e2f-44f3-a498-a5421388ddcf/2024_04_09%20Testo%20coordinato%20residenze%20(SENZA%20NOTE).pdf",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Permessi di Soggiorno, Residenze e Cittadinanza",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/Servizi-per-utenza/Permessi-di-Soggiorno-e-Residenze.html",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Discretionary: the Congresso di Stato decides; at most 100 a year per the April 2024 consolidated text (changeable yearly by decree)",
+      "investment_options": "",
+      "fees_note": "EUR 1,000 application fee. The substitute tax is not a fee.",
+      "processing_time": "Congresso di Stato decides within 60 days of a complete application",
+      "family": "Spouse and dependent children can be added as secondary applicants.",
+      "tax_note": "7% substitute tax on 'netto frontiera' foreign income, minimum EUR 10,000 and maximum EUR 100,000 a year, payable in one sum; regime lasts at most 15 years.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 1000,
+        "currency": "EUR"
+      },
+      "path_to_permanent_years": 10,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "atypical_tax_residence",
+      "name": "Atypical residence with reduced tax regime (income earned abroad)",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Residence for people who earn their income abroad and were never tax resident in San Marino. A 7% substitute tax applies to foreign income, with a minimum of EUR 10,000 and a maximum of EUR 100,000 a year.",
+      "requirements": "Law 118/2010, art. 16-ter (Law 223/2020, arts. 69-70): never fiscally resident in San Marino (or residence not yet consolidated when the article entered into force); income produced abroad; preliminary home purchase or rental contract conditional on the grant; proof of sufficient means for the family; certificates of residence, criminal record and pending cases; health costs at own charge; no wider-public-sector job and no public benefits. The tax regime ends after 15 years at most and is lost for non-payment. No minimum income or investment is set by law.",
+      "physical_presence": "Genuine habitual residence in San Marino; no day count published",
+      "sources": [
+        {
+          "title": "Legge 28 giugno 2010 n.118, testo coordinato residenze (updated 9 April 2024)",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/dam/jcr:38eabe03-3e2f-44f3-a498-a5421388ddcf/2024_04_09%20Testo%20coordinato%20residenze%20(SENZA%20NOTE).pdf",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Permessi di Soggiorno, Residenze e Cittadinanza",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/Servizi-per-utenza/Permessi-di-Soggiorno-e-Residenze.html",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "San Marino: residenza e vantaggi fiscali (1 July 2022)",
+          "url": "https://www.filodiritto.com/san-marino-residenza-e-vantaggi-fiscali",
+          "publisher": "Filodiritto",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Discretionary: granted by the Foreign Affairs Committee on the Congresso di Stato's proposal after a mandatory Gendarmerie opinion",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "Spouse, children up to 25 who are dependent, and disabled dependent children can be added (art. 16 c.3-bis).",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 10,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "entrepreneur_residence",
+      "name": "Residence for entrepreneurs, executives and investors in a San Marino business",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Residence or an ordinary permit for people who invest capital in a San Marino business with job and property commitments, hold a senior role in a San Marino company, bank or hospital, or run a project of strategic interest. No fixed investment sum is set in the law.",
+      "requirements": "Law 118/2010, art. 16 c.3: senior role in health, bank, insurance or financial institutions or in a company with many employees; investment of capital in a business (existing or being set up) with employment guarantees (hires from the job-placement lists, partners and their relatives not counted) and linked property investment; strategic projects; donations of cultural or social assets; internationally recognised merit in science, art, culture or sport. The residence lasts for the duration of the activity and consolidates after 10 years (c.3-ter). Unless working, applicants need own means and health insurance with at least EUR 30,000 cover for the first 24 months (c.3-quater). Amounts for the capital and number of hires are set in the Congresso di Stato's decisions and were not found in an official source.",
+      "physical_presence": "Genuine habitual residence; residence is revoked if habitual residence lapses for over 6 months",
+      "sources": [
+        {
+          "title": "Legge 28 giugno 2010 n.118, testo coordinato residenze (updated 9 April 2024)",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/dam/jcr:38eabe03-3e2f-44f3-a498-a5421388ddcf/2024_04_09%20Testo%20coordinato%20residenze%20(SENZA%20NOTE).pdf",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Permessi di Soggiorno, Residenze e Cittadinanza",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/Servizi-per-utenza/Permessi-di-Soggiorno-e-Residenze.html",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "San Marino: residenza e vantaggi fiscali (1 July 2022)",
+          "url": "https://www.filodiritto.com/san-marino-residenza-e-vantaggi-fiscali",
+          "publisher": "Filodiritto",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Permits are issued within yearly entry quotas set by delegated decree",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "work_permit",
+      "name": "Employment in San Marino (work permit and residence permit)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "An employer must obtain a work clearance from the Ufficio del Lavoro; the Gendarmeria then issues a residence permit for work valid up to 12 months. Permits are seasonal or temporary and renewable, not a path to residence.",
+      "requirements": "Law 118/2010, arts. 10 and 12: work permit from the Ufficio del Lavoro within the quotas, employer declaration of housing and return travel cost, seasonal or temporary permit up to 12 months continuous, renewable, interrupted after three consecutive renewals. Cross-border workers cannot get this permit. Non-Schengen nationals need a non-tourist Schengen entry visa where required. Highly skilled and managerial staff may instead be given ordinary residence under art. 16 c.3 (see the entrepreneur route). No digital nomad visa found.",
+      "physical_presence": "Place of work and housing in San Marino",
+      "sources": [
+        {
+          "title": "Legge 28 giugno 2010 n.118, testo coordinato residenze (updated 9 April 2024)",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/dam/jcr:38eabe03-3e2f-44f3-a498-a5421388ddcf/2024_04_09%20Testo%20coordinato%20residenze%20(SENZA%20NOTE).pdf",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Permessi di Soggiorno, Residenze e Cittadinanza",
+          "url": "https://www.esteri.sm/pub2/EsteriSM/Servizi-per-utenza/Permessi-di-Soggiorno-e-Residenze.html",
+          "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "EU association agreement: signing planned 19 October 2026 (EEAS), Council approved signing and provisional application on 16 July 2026; no source confirms it is in force on 2026-10-17. Its effect on residence or free movement of persons was not found and is not assumed.",
+    "Pensioner thresholds: Decree 26/2025 (in force 20 February 2025) raised them to EUR 120,000 income or EUR 500,000 movable assets, but the ratifying Decree 77/2025 (22 May 2025) marks that article 'abrogato'. Figures here follow the April 2024 consolidated text (EUR 50,000 / EUR 300,000); secondary sources report EUR 120,000 income and EUR 300,000 assets in San Marino banks from 28 April 2025. Needs a current consolidated text.",
+    "List of non-EU countries eligible for pensioner residence (Congresso di Stato regulation) not found; whether the US is on it is unknown, so the US is left off pensioner residence.",
+    "Annual caps (50 elective, 100 atypical tax regime) come from the April 2024 consolidated text; the 249 cap for pensioners is from Decree 77/2025. Later yearly decrees were not checked.",
+    "Capital and hiring figures for entrepreneur residence (art. 16 c.3 c) not found in an official source; Filodiritto (2022) mentions property of EUR 200,000 to 300,000 and 2 to 4 employees.",
+    "Simplified residence (Law 71/2013, 5 permanent hires plus EUR 300,000 property) and economic residence (Law 115/2017, EUR 75,000 deposit, 51% of a company) are reported only by a 2022 secondary source and were not verified or included.",
+    "Processing time for residence permits and renewal period of the first permit not sourced; physical-presence day counts are not published.",
+    "Law 27/2026 text not read; 20-year residence and B1 Italian come from the implementing regulation and the committee report."
+  ],
+  "sources": [
+    {
+      "title": "Legge 28 giugno 2010 n.118, testo coordinato residenze (updated 9 April 2024)",
+      "url": "https://www.esteri.sm/pub2/EsteriSM/dam/jcr:38eabe03-3e2f-44f3-a498-a5421388ddcf/2024_04_09%20Testo%20coordinato%20residenze%20(SENZA%20NOTE).pdf",
+      "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+      "kind": "legislation",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Permessi di Soggiorno, Residenze e Cittadinanza",
+      "url": "https://www.esteri.sm/pub2/EsteriSM/Servizi-per-utenza/Permessi-di-Soggiorno-e-Residenze.html",
+      "publisher": "Segreteria di Stato per gli Affari Esteri, San Marino",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Association Agreement with San Marino and Andorra (signing planned 19 October 2026)",
+      "url": "https://www.eeas.europa.eu/delegations/un-rome/eu-heads-missions-meeting-san-marino_en",
+      "publisher": "European External Action Service",
+      "kind": "intergovernmental",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Council signs the association agreement with Andorra and San Marino (16 July 2026)",
+      "url": "https://www.eunews.it/en/2026/07/16/andorra-and-san-marino-move-closer-the-eu-council-signs-the-association-agreement/",
+      "publisher": "Eunews",
+      "kind": "other",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Regolamento 19 marzo 2026 n.4 (citizenship, implementing Law 114/2000)",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17157566.html",
+      "publisher": "Consiglio Grande e Generale, San Marino",
+      "kind": "legislation",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Commissione Permanente I, 10 December 2025: bill on naturalisation",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/documento17155793.html",
+      "publisher": "Consiglio Grande e Generale, San Marino",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Decreto Delegato 20 febbraio 2025 n.26 (as first issued)",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17150605.html",
+      "publisher": "Consiglio Grande e Generale, San Marino",
+      "kind": "legislation",
+      "accessed": "2026-10-17"
+    }
+  ]
+}

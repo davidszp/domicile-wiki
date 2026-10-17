@@ -1,0 +1,363 @@
+{
+  "id": "GGY",
+  "name": "Guernsey",
+  "researched_on": "2026-10-17",
+  "summary": "Guernsey (Bailiwick) is outside the EU and EEA with its own Immigration Rules, so EU citizens have no free movement and must use the same routes as everyone else; the EU Settlement Scheme closed in 2021. British and Irish citizens can live there under the Common Travel Area, but everyone, British included, also needs a Population Management certificate: in practice a home on the Open Market register or a Local Market right. US and other citizens, and EU citizens, have two private-wealth routes: the entrepreneur visa (GBP 200,000 invested in a Guernsey business) and the investor visa (GBP 1 million of funds, GBP 750,000 invested), or an employment permit for an approved job.",
+  "naturalisation": "Indefinite leave to remain after 5 continuous years on the investor or business routes (English and life-in-the-Bailiwick test); British (Guernsey) citizenship is then applied for through the Royal Court or Lieutenant Governor. The residence period and the interval after ILR for Guernsey citizenship were not confirmed from an official source; an adviser page says 12 months after ILR.",
+  "dual_citizenship": null,
+  "dual_citizenship_note": "Not verified from a source; no Guernsey or Home Office page on this was found.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 50,
+        "currency": "GBP"
+      },
+      "fees_note": "Open Market Resident Certificate (Part A, private home) administration fee, GBP 50 (fee table from 3 April 2017; not checked for later changes). Cost of buying the Open Market property is extra and not sourced.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Open Market Part A certificate holders may house immediate and extended family, who need a Family Member Resident Permit (GBP 50).",
+      "tax_note": "A residence certificate does not by itself decide tax residence; Guernsey tax rules not researched in this file.",
+      "only_some_nationalities": true,
+      "id": "cta_british_irish",
+      "name": "Common Travel Area (British and Irish citizens)",
+      "kind": "other",
+      "citizenships": [
+        "OTHER"
+      ],
+      "grants": "permanent_residence",
+      "summary": "British and Irish citizens need no immigration permission to live in Guernsey, which is part of the Common Travel Area. They still need housing and a certificate or permit under the Population Management Law.",
+      "requirements": "Guernsey is in the Common Travel Area with the UK, Isle of Man, Jersey and Ireland; no routine border controls, photo ID needed. Immigration permission is not needed, but everyone (British citizens included) must hold a Certificate or Permit under the Population Management (Guernsey) Law, 2016: in practice an Open Market Resident Certificate as owner or lessee of an Open Market dwelling, or a Local Market right (born and raised in Guernsey, strong family connection, or a shortage-occupation job). Open Market Resident Certificates last up to 99 years, renewable.",
+      "physical_presence": "No immigration requirement; must live at the named Open Market address",
+      "sources": [
+        {
+          "title": "Immigration (visas, Common Travel Area, EU Settlement Scheme, long-term permissions)",
+          "url": "https://gov.gg/immigration",
+          "publisher": "States of Guernsey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Quick Guide to Permits and Certificates (version 12 August 2025)",
+          "url": "https://gov.gg/CHttpHandler.ashx?id=102679&p=0",
+          "publisher": "States of Guernsey Population Management Office",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Administration Fees for Permits and Certificates from 3 April 2017",
+          "url": "https://gov.gg/CHttpHandler.ashx?id=106416&p=0",
+          "publisher": "States of Guernsey Population Management Office",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Buying an Open Market house and living in Guernsey (6 May 2024)",
+          "url": "https://www.ogier.com/news-and-insights/insights/buying-an-open-market-house-and-living-in-guernsey/",
+          "publisher": "Ogier",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "At least GBP 750,000 invested in Guernsey or the UK in a way that benefits the Bailiwick: per advisers, a deposit with a Guernsey-regulated bank, an additional Open Market property (not the main home), or another investment approved by the States. The Rules text only says 'in a manner that is of benefit to the Bailiwick'.",
+      "minimum_investment": {
+        "amount": 750000,
+        "currency": "GBP"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "Entry clearance fee not sourced for 2026 (an adviser page from 2021 gave GBP 516 plus GBP 55). ILR fee: a 2022 law-firm guide gives GBP 2,389; a news report says the UK-set ILR fee rises from GBP 3,029 to GBP 3,226 in 2026. Neither is confirmed on gov.gg.",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "processing_time": "Not sourced",
+      "family": "Dependants allowed under the family provisions of the Rules; details not researched.",
+      "tax_note": "Immigration status does not set tax residence. Guernsey high-net-worth tax regimes not researched here.",
+      "only_some_nationalities": false,
+      "id": "investor_visa",
+      "name": "Investor visa (GBP 1 million funds, GBP 750,000 invested)",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "An investor with GBP 1 million of their own funds who invests at least GBP 750,000 for the benefit of the Bailiwick and makes Guernsey or Alderney their main home gets 2 years' leave, extendable by 3-year periods, with indefinite leave after 5 years.",
+      "requirements": "Immigration (Bailiwick of Guernsey) Rules 2008, paras 224-231: money of own under control and disposable in the Bailiwick of at least GBP 1 million; intends to invest at least GBP 750,000 in Guernsey or the UK for the Bailiwick's benefit; main home Guernsey or Alderney; able to maintain and accommodate self and dependants without employment (other than managing investments) or public funds; entry clearance before arrival. Initial leave up to 2 years with no right to take employment; extensions up to 3 years at a time; indefinite leave after 5 continuous years with the investment maintained, plus English and Life in the UK/Bailiwick test (exempt under 18 or 65 and over). Population Management certificate for housing also needed. The rule text read is an in-house 2017 consolidation, not authoritative; no 2026 official page confirming the route was found.",
+      "physical_presence": "Guernsey or Alderney must be the main home; ILR needs 5 continuous years (absences up to 180 days in any 12 months per a 2022 law-firm guide)",
+      "sources": [
+        {
+          "title": "The Immigration (Bailiwick of Guernsey) Rules, 2008 (in-house consolidated text, paras 200-210 and 224-231; not authoritative, amendments only to 2017)",
+          "url": "https://www.gov.gg/chttphandler.ashx?id=96926&p=0",
+          "publisher": "States of Guernsey (Guernsey Border Agency)",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Immigration Comparative Guide - Guernsey (20 April 2022)",
+          "url": "https://www.mondaq.com/guernsey/immigration/1180526/immigration-comparative-guide",
+          "publisher": "Mondaq (Guernsey law firm guide)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "The 1m Guernsey investor visa (published 26 May 2021)",
+          "url": "https://tom-bradford.com/the-1m-guernsey-investor-visa/",
+          "publisher": "Tom Bradford (adviser)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Immigration (visas, Common Travel Area, EU Settlement Scheme, long-term permissions)",
+          "url": "https://gov.gg/immigration",
+          "publisher": "States of Guernsey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "minimum_investment": {
+        "amount": 200000,
+        "currency": "GBP"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "Entry clearance and ILR fees not confirmed from gov.gg.",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Dependants allowed under the family provisions of the Rules; details not researched.",
+      "tax_note": "",
+      "only_some_nationalities": false,
+      "id": "entrepreneur_visa",
+      "name": "Business / entrepreneur visa (GBP 200,000 invested)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A person who invests at least GBP 200,000 of their own money in a Guernsey business and runs it full time can get 2 years' leave, extendable, and indefinite leave after 5 years.",
+      "requirements": "Immigration (Bailiwick of Guernsey) Rules 2008, paras 200-210: sufficient own funds to establish a business, which must create significant new full-time paid employment for settled persons or otherwise be in the Bailiwick's general interests; entry clearance; extension requires audited accounts showing at least GBP 200,000 invested, full-time active involvement, a controlling or equal interest, a genuine need for the investment and services, and profits enough to support the family without other employment or public funds. Leave up to 2 years first, then up to 3 years at a time; indefinite leave after 5 continuous years with audited accounts and the English/life-in-the-Bailiwick test. 2017 in-house consolidation read; no 2026 official page confirming the route was found.",
+      "physical_presence": "Actively involved full time in the Guernsey business; ILR needs 5 continuous years in the Bailiwick",
+      "sources": [
+        {
+          "title": "The Immigration (Bailiwick of Guernsey) Rules, 2008 (in-house consolidated text, paras 200-210 and 224-231; not authoritative, amendments only to 2017)",
+          "url": "https://www.gov.gg/chttphandler.ashx?id=96926&p=0",
+          "publisher": "States of Guernsey (Guernsey Border Agency)",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Immigration Comparative Guide - Guernsey (20 April 2022)",
+          "url": "https://www.mondaq.com/guernsey/immigration/1180526/immigration-comparative-guide",
+          "publisher": "Mondaq (Guernsey law firm guide)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Immigration (visas, Common Travel Area, EU Settlement Scheme, long-term permissions)",
+          "url": "https://gov.gg/immigration",
+          "publisher": "States of Guernsey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Only for posts on the Employment Permit Policy approved list, after an employer assessment; employer must be approved",
+      "investment_options": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 700,
+        "currency": "GBP"
+      },
+      "fees_note": "Population Management fee for an in-policy Long Term Employment Permit, GBP 700 (out of policy GBP 900), plus GBP 300 employer assessment; fee table from 3 April 2017, not checked for later changes. Usually paid through the employer. Entry clearance fee separate and not sourced.",
+      "path_to_permanent_years": 8,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "Long Term permit holders may accommodate immediate family, who need Family Member Resident Permits (GBP 50).",
+      "tax_note": "",
+      "only_some_nationalities": false,
+      "id": "employment_permit",
+      "name": "Employment permits (Long Term Employment Permit and others)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Working in Guernsey needs an employment permit tied to a named job and employer, plus immigration permission for those who need it. A Long Term Employment Permit lasts up to 8 years and can lead to Established Resident status after 8 years.",
+      "requirements": "Population Management (Guernsey) Law, 2016 and the Employment Permit Policy: named full-time job and employer, job on the approved posts list, employer assessment (every 3 years). Types: Short Term (up to 1 year, 3 years aggregate), Seasonal (up to 9 months), Long Term (up to 8 years, housing in Open or Local Market, may house immediate family), Long Term Pathway (up to 5 years, renewable towards Established Residency), Long Term Limited (no route to Established Residency). Medium Term permits can no longer be issued. Established Resident Certificate after 8 consecutive years of Local Market residence. Non-CTA workers also need entry clearance under the Immigration Rules.",
+      "physical_presence": "Must live in Guernsey and work for the named employer",
+      "sources": [
+        {
+          "title": "Quick Guide to Permits and Certificates (version 12 August 2025)",
+          "url": "https://gov.gg/CHttpHandler.ashx?id=102679&p=0",
+          "publisher": "States of Guernsey Population Management Office",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Administration Fees for Permits and Certificates from 3 April 2017",
+          "url": "https://gov.gg/CHttpHandler.ashx?id=106416&p=0",
+          "publisher": "States of Guernsey Population Management Office",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Population Management and Immigration downloads (policies, legislation links)",
+          "url": "https://gov.gg/pmdownloads",
+          "publisher": "States of Guernsey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Immigration (visas, Common Travel Area, EU Settlement Scheme, long-term permissions)",
+          "url": "https://gov.gg/immigration",
+          "publisher": "States of Guernsey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "closed_to_new",
+      "status_note": "Application deadline was 30 June 2021; late applications only considered case by case in compelling or compassionate circumstances (gov.gg, accessed 2026-10-17).",
+      "limited_places": "",
+      "investment_options": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "only_some_nationalities": false,
+      "id": "eu_settlement_scheme",
+      "name": "EU/EEA/Swiss Settlement Scheme (already resident before 31 December 2020)",
+      "kind": "other",
+      "citizenships": [
+        "EU"
+      ],
+      "grants": "permanent_residence",
+      "summary": "Only for EU, EEA and Swiss citizens already living in the Bailiwick before Brexit; settled status after 5 years' residence, pre-settled status before that. New arrivals have no free movement and use the ordinary routes.",
+      "requirements": "Residence in the Bailiwick before 31 December 2020 and an application by 30 June 2021 (late only for compelling or compassionate reasons). Settled status has no time limit but lapses after more than 5 consecutive years' absence; pre-settled status gives 5 years' limited leave. Continuous residence: generally no more than 6 months outside the Bailiwick, UK, Jersey or Isle of Man in any 12 months.",
+      "physical_presence": "No more than 6 months absent in any 12 months for continuous residence; settled status lost after 5 years' absence",
+      "sources": [
+        {
+          "title": "Immigration (visas, Common Travel Area, EU Settlement Scheme, long-term permissions)",
+          "url": "https://gov.gg/immigration",
+          "publisher": "States of Guernsey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Immigration Comparative Guide - Guernsey (20 April 2022)",
+          "url": "https://www.mondaq.com/guernsey/immigration/1180526/immigration-comparative-guide",
+          "publisher": "Mondaq (Guernsey law firm guide)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "No 2026 official page confirming the investor and entrepreneur visa routes was found; the Rules text read is an in-house 2017 consolidation marked not authoritative, and the amounts (GBP 1 million / 750,000 / 200,000) are corroborated only by a 2021 adviser page and a 2022 law-firm guide. Check the current Rules on guernseylegalresources.gg.",
+    "Current entry clearance and ILR fees (gov.gg 'Immigration and Passport Fees 1st September 2026' download) not read. ILR figures above come from a 2022 guide and a news report.",
+    "Population Management fees are from a table dated 3 April 2017; later changes not checked.",
+    "Open Market property prices and the minimum price of an Open Market home not sourced; no legal minimum found. Whether a non-CTA national can buy an Open Market home before holding immigration permission was not established.",
+    "Whether the 'ancestry' ILR route for Commonwealth citizens and any retiree or self-sufficient route exist for non-British nationals: none found in the Rules read.",
+    "Residence years for British (Guernsey) citizenship and dual-citizenship position not sourced from an official page.",
+    "Whether the 2017 Rules text has been replaced by newer appendices (the 2026 ETA from 23 April 2026 and the removal of visa vignettes from 1 July 2026 suggest later amendments) was not checked.",
+    "Guernsey tax treatment of residents (including high-net-worth regimes) not researched in this file."
+  ],
+  "sources": [
+    {
+      "title": "Immigration (visas, Common Travel Area, EU Settlement Scheme, long-term permissions)",
+      "url": "https://gov.gg/immigration",
+      "publisher": "States of Guernsey",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Population Management and Immigration downloads (policies, legislation links)",
+      "url": "https://gov.gg/pmdownloads",
+      "publisher": "States of Guernsey",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Quick Guide to Permits and Certificates (version 12 August 2025)",
+      "url": "https://gov.gg/CHttpHandler.ashx?id=102679&p=0",
+      "publisher": "States of Guernsey Population Management Office",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Administration Fees for Permits and Certificates from 3 April 2017",
+      "url": "https://gov.gg/CHttpHandler.ashx?id=106416&p=0",
+      "publisher": "States of Guernsey Population Management Office",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "The Immigration (Bailiwick of Guernsey) Rules, 2008 (in-house consolidated text, paras 200-210 and 224-231; not authoritative, amendments only to 2017)",
+      "url": "https://www.gov.gg/chttphandler.ashx?id=96926&p=0",
+      "publisher": "States of Guernsey (Guernsey Border Agency)",
+      "kind": "legislation",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Discretionary Resident Permit Policies - Open Market Residents",
+      "url": "https://gov.gg/CHttpHandler.ashx?id=105195&p=0",
+      "publisher": "States of Guernsey Population Management Office",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Immigration Comparative Guide - Guernsey (20 April 2022)",
+      "url": "https://www.mondaq.com/guernsey/immigration/1180526/immigration-comparative-guide",
+      "publisher": "Mondaq (Guernsey law firm guide)",
+      "kind": "professional",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "The 1m Guernsey investor visa (published 26 May 2021)",
+      "url": "https://tom-bradford.com/the-1m-guernsey-investor-visa/",
+      "publisher": "Tom Bradford (adviser)",
+      "kind": "professional",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Buying an Open Market house and living in Guernsey (6 May 2024)",
+      "url": "https://www.ogier.com/news-and-insights/insights/buying-an-open-market-house-and-living-in-guernsey/",
+      "publisher": "Ogier",
+      "kind": "professional",
+      "accessed": "2026-10-17"
+    }
+  ]
+}

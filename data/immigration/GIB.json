@@ -1,0 +1,274 @@
+{
+  "id": "GIB",
+  "name": "Gibraltar",
+  "researched_on": "2026-10-17",
+  "summary": "Gibraltar is a British Overseas Territory outside the EU and EEA and controls its own immigration. EU and British citizens have no free movement there, and since 6 October 2025 new residence applications from EEA and British citizens are suspended unless an exception applies. For everyone the practical routes are a job-based residence permit (average-salary contract of about GBP 37,500, a Gibraltar employer and housing), HEPSS for executives paid over GBP 160,000, or Category 2 for people with net wealth of GBP 5 million and approved housing. The EU-UK Gibraltar Agreement applies provisionally from 15 July 2026 but creates no residence right.",
+  "naturalisation": "Permanent residency after 10 years (raised from 5 by the Gibraltarian Status and Immigration (Amendment) Bill 2025) and Gibraltarian status by long residence after 20 years (was 10), at ministerial discretion. Whether the Bill is enacted was not confirmed from legislation.",
+  "dual_citizenship": null,
+  "dual_citizenship_note": "Not verified from a source.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "discretionary: status is awarded on the decision of the Finance Centre Director",
+      "investment_options": "",
+      "fees_note": "Application fee GBP 5,000 (was GBP 1,233) per the government; plus a refundable tax deposit of GBP 42,380 (adviser guide, 2026-27).",
+      "processing_time": "",
+      "family": "Spouse and family income may be included in the assessment; adviser guide.",
+      "tax_note": "Income tax only on the first GBP 118,000 of assessable income: maximum GBP 42,380, minimum GBP 37,000 a year (2026-27, adviser guide). No capital gains, wealth, gift or inheritance tax. The tax year runs 1 July to 30 June. A residence permit does not stop you being tax resident elsewhere.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 5000,
+        "currency": "GBP"
+      },
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "category_2",
+      "name": "Category 2 individual (high net worth)",
+      "kind": "passive_income",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Wealthy individuals with exclusive use of approved Gibraltar housing can be certified as Category 2, which caps their Gibraltar income tax and gives the right to live in Gibraltar. No right to the status: it is awarded at the Director's discretion.",
+      "requirements": "Qualifying (Category 2) Individuals Rules 2004. For new applicants after the June 2026 change: minimum net wealth GBP 5 million (was GBP 2 million); exclusive use of approved Category 2 property (bought or rented; guideline from GBP 550,000 to buy or GBP 2,500 a month to rent); no competing local business activity unless approved; restrictions if the applicant lived or worked in Gibraltar in the previous five years. Existing holders keep the old thresholds. A tax deposit equal to the maximum annual Category 2 tax (GBP 42,380) is paid on application. Category 2 gives no entitlement to publicly funded schooling or healthcare, and losing the status ends the right to remain. Effective date of the GBP 5 million threshold is not stated in the press release.",
+      "physical_presence": "None required for Category 2 status (adviser guide); being a Category 2 does not prevent tax residence elsewhere",
+      "sources": [
+        {
+          "title": "Government announces changes to Category 2 regime (press release 469/2026, 18 June 2026)",
+          "url": "https://www.gibraltar.gov.gi/press-releases/government-announces-changes-to-category-2-regime-4692026-12107",
+          "publisher": "HM Government of Gibraltar",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Category 2 Status in Gibraltar: a guide for high net worth individuals 2026-2027",
+          "url": "https://www.sovereigngroup.com/wp-content/uploads/2026/07/Sovereign-Tax-Services-2026-2027-Category-2-Gibraltar-Residency-Guide.pdf",
+          "publisher": "Sovereign Tax Services",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Gibraltar's new residency criteria: key requirements explained",
+          "url": "https://www.mondaq.com/gibraltar/employee-benefits-compensation/1807128/gibraltars-new-residency-criteria-key-requirements-explained",
+          "publisher": "Mondaq (Gibraltar law firm article)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "discretionary: the Finance Centre certifies only skills Gibraltar does not have",
+      "investment_options": "",
+      "fees_note": "Application fee GBP 1,264, non-refundable, per the 2026 form.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Tax is capped on the first GBP 160,000 of income; the exact capped amount was not sourced from an official page (advisers conflict).",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 160000,
+        "currency": "GBP"
+      },
+      "government_fees": {
+        "amount": 1264,
+        "currency": "GBP"
+      },
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "hepss",
+      "name": "High Executive Possessing Specialist Skills (HEPSS)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A Gibraltar employer applies for a certificate for a senior executive with scarce skills paid over GBP 160,000 a year. The holder gets a capped tax rate.",
+      "requirements": "High Executive Possessing Specialist Skills Rules 2008, application form effective August 2026: skills necessary for economic activity of particular value to Gibraltar and not available there; a high executive or senior management post earning more than GBP 160,000 a year in Gibraltar; exclusive use of approved residential accommodation; not gainfully occupied or resident in Gibraltar in the 36 months before the application year (the Minister for Finance may waive this). Two references (one from a bank), proof of earnings, passport copy and CV. Employer applies for the certificate. Advisers report the 2026 residence criteria do not apply to HEPSS holders; not confirmed in an official text.",
+      "physical_presence": "Not published on the form; accommodation in Gibraltar must be available for the certificate period",
+      "sources": [
+        {
+          "title": "HEPSS application form (High Executive Possessing Specialist Skills Rules 2008), effective August 2026",
+          "url": "https://www.gibraltarfinance.gi/uploads/forms/HEPSS application Form - wef August 2026.pdf",
+          "publisher": "Gibraltar Finance Centre",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Gibraltar's new residency criteria: key requirements explained",
+          "url": "https://www.mondaq.com/gibraltar/employee-benefits-compensation/1807128/gibraltars-new-residency-criteria-key-requirements-explained",
+          "publisher": "Mondaq (Gibraltar law firm article)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "Application GBP 250, renewal GBP 100 (adviser summary of the policy, not an official text); fine up to GBP 2,500 for residing without a permit.",
+      "processing_time": "",
+      "family": "Spouse (needs a payment equal to the maximum employee social insurance contribution) and children; covered by the Group Practice Medical Scheme; children can attend Gibraltar schools.",
+      "tax_note": "Taxed in Gibraltar on employment income under normal rules; a permit does not decide tax residence elsewhere.",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 37500,
+        "currency": "GBP"
+      },
+      "government_fees": {
+        "amount": 250,
+        "currency": "GBP"
+      },
+      "path_to_permanent_years": 10,
+      "path_to_citizenship_years": 20,
+      "id": "employee_residence_permit",
+      "name": "Residence permit for employees (new criteria, June 2026)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Anyone who has a job with an established Gibraltar employer and housing in Gibraltar can apply for an annual residence permit. The Treaty gives no automatic right to live or work in Gibraltar.",
+      "requirements": "Government residence criteria framework announced 17 June 2026; regulations were still being drafted then. As summarised by advisers: contract at or above average gross annual earnings (about GBP 37,500, updated yearly; waivable under 30 if the employer pays equivalent tax and social insurance); employer trading in or from Gibraltar for at least a year and fully compliant; purchased home for exclusive use or a rental of at least 12 months as primary residence; applicant generally 55 or under; home-country vetting certificate; only spouse and children may accompany. New businesses and first-time self-employed pay a refundable deposit. Permits renew annually and lapse 8 weeks after notice of termination or if tax or social insurance stops. Rules apply to people seeking residence after 6 October 2025. For EEA and British citizens see the suspension route.",
+      "physical_presence": "Genuine residence tied to the job and Gibraltar accommodation; no day count found",
+      "sources": [
+        {
+          "title": "Government announces new residence criteria framework (press release 466/2026, 17 June 2026)",
+          "url": "https://www.gibraltar.gov.gi/press-releases/government-announces-new-residence-criteria-framework-4662026-12103",
+          "publisher": "HM Government of Gibraltar",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Gibraltar announces new Residence criteria prior to imminent provisional application of UK-EU Treaty",
+          "url": "https://www.sovereigngroup.com/news/gibraltar-announces-new-residence-criteria-prior-to-imminent-provisional-application-of-uk-eu-treaty/",
+          "publisher": "Sovereign Group",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Gibraltar's new residency criteria: key requirements explained",
+          "url": "https://www.mondaq.com/gibraltar/employee-benefits-compensation/1807128/gibraltars-new-residency-criteria-key-requirements-explained",
+          "publisher": "Mondaq (Gibraltar law firm article)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Gibraltar EU Treaty (provisionally applied from 15 July 2026)",
+          "url": "https://gibraltar.com/en/gibraltar-eu-treaty/",
+          "publisher": "Government of Gibraltar tourism and information site",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "suspended",
+      "status_note": "Immigration (EU Exit) Regulations 2025 of 6 October 2025 suspended new residence rights for EEA nationals, including British citizens, until lifted by Order of the Chief Minister; no lifting found by 17 October 2026.",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "id": "eea_british_registration",
+      "name": "EEA and British citizens' residence rights (registration certificate, suspended for new applicants)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "only_some_nationalities": true,
+      "grants": "temporary_residence",
+      "summary": "Gibraltar is outside the EU, and since 6 October 2025 it grants no new residence documents to EEA or British citizens except in listed cases. People who held a registration certificate or residence card before that date keep their rights.",
+      "requirements": "Section 55NA of the Immigration, Asylum and Refugee Act (added October 2025): the right to reside for more than three months is suspended unless the person held a registration certificate, residence card or permanent residence document by 6 October 2025; applications filed before that date are still processed; the Chief Minister can approve exceptions (international obligations, hardship, economic reasons). The EU-UK Gibraltar Agreement, provisionally applied from 15 July 2026, gives no automatic right to reside or work in Gibraltar. EU citizens elsewhere in the EU have no free movement into Gibraltar. British citizens: no Common Travel Area style right to settle was found; they appear within the suspension.",
+      "physical_presence": "Not applicable to new applicants (suspended)",
+      "sources": [
+        {
+          "title": "Gibraltar's Immigration (EU Exit) Regulations 2025: temporary residency changes",
+          "url": "https://www.gibraltarlaw.com/insights/post/102lor0/the-immigration-eu-exit-regulations-2025-temporary-residency-changes/",
+          "publisher": "Hassans (law firm)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Gibraltar EU Treaty (provisionally applied from 15 July 2026)",
+          "url": "https://gibraltar.com/en/gibraltar-eu-treaty/",
+          "publisher": "Government of Gibraltar tourism and information site",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Gibraltar announces new Residence criteria prior to imminent provisional application of UK-EU Treaty",
+          "url": "https://www.sovereigngroup.com/news/gibraltar-announces-new-residence-criteria-prior-to-imminent-provisional-application-of-uk-eu-treaty/",
+          "publisher": "Sovereign Group",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Residency regulations of 2026 were not read in full: the June 2026 policy paper and the regulations text were not retrieved; employee permit conditions and fees (GBP 250 / 100) come from adviser summaries.",
+    "Whether the October 2025 suspension for EEA and British citizens is still in force or has been lifted by Order; no lifting found, but the Gazette was not checked.",
+    "Whether EEA and British citizens can obtain an employee residence permit or HEPSS/Category 2 during the suspension is not confirmed.",
+    "Effective date of the Category 2 GBP 5 million threshold and GBP 5,000 fee, and whether the Category 2 rules 2004 text was amended.",
+    "Exact HEPSS tax cap: advisers give GBP 39,940 or GBP 29,940; not used. HEPSS fee GBP 1,264 is from the 2026 form.",
+    "Entry into force of the EU-UK Gibraltar Agreement: only provisional application from 15 July 2026 found; definitive entry into force after ratification not confirmed.",
+    "Gibraltarian Status and Immigration (Amendment) Bill 2025 enactment status; dual citizenship rules not sourced.",
+    "Physical presence for the employee permit and HEPSS not published in sources found; no Gibraltar digital nomad or retirement visa was found.",
+    "Whether British citizens have any special position in Gibraltar immigration law was not found beyond inclusion in the suspension."
+  ],
+  "sources": [
+    {
+      "title": "Government announces new residence criteria framework (press release 466/2026, 17 June 2026)",
+      "url": "https://www.gibraltar.gov.gi/press-releases/government-announces-new-residence-criteria-framework-4662026-12103",
+      "publisher": "HM Government of Gibraltar",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Government announces changes to Category 2 regime (press release 469/2026, 18 June 2026)",
+      "url": "https://www.gibraltar.gov.gi/press-releases/government-announces-changes-to-category-2-regime-4692026-12107",
+      "publisher": "HM Government of Gibraltar",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "HEPSS application form (High Executive Possessing Specialist Skills Rules 2008), effective August 2026",
+      "url": "https://www.gibraltarfinance.gi/uploads/forms/HEPSS application Form - wef August 2026.pdf",
+      "publisher": "Gibraltar Finance Centre",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Gibraltar EU Treaty (provisionally applied from 15 July 2026)",
+      "url": "https://gibraltar.com/en/gibraltar-eu-treaty/",
+      "publisher": "Government of Gibraltar tourism and information site",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Gibraltar's Immigration (EU Exit) Regulations 2025: temporary residency changes",
+      "url": "https://www.gibraltarlaw.com/insights/post/102lor0/the-immigration-eu-exit-regulations-2025-temporary-residency-changes/",
+      "publisher": "Hassans (law firm)",
+      "kind": "professional",
+      "accessed": "2026-10-17"
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "id": "IMN",
+  "name": "Isle of Man",
+  "summary": "The Isle of Man is not in the EU and has had no EU free movement since 31 December 2020. British and Irish citizens may live here freely under the Common Travel Area (they still need a work permit to work unless exempt or an 'Isle of Man worker'). Everyone else, EU and US citizens included, needs a visa. There is no investor, retirement or digital nomad visa (Tier 1 Investor is closed). The open routes are the Start-up visa (no investment threshold, 2 years 4 months, no settlement), the Innovator visa (at least GBP 50,000 of investment funds, endorsed by the Department for Enterprise, settlement after 3 years) and the Worker Migrant visa (an Island employer, salary at least GBP 25,447.50).",
+  "naturalisation": "British citizenship under the British Nationality Act 1981, applied for through the Isle of Man Nationality Service, normally after settlement (indefinite leave to remain); naturalisation fee GBP 1,858.20 (gov.im, accessed 17 October 2026). The usual UK residence period (5 years, with ILR held 12 months) was not stated on the gov.im page read. Irish citizens have a simplified route since 24 September 2025.",
+  "dual_citizenship": null,
+  "dual_citizenship_note": "Not verified from a fetched source.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "No immigration fee. Work permit application: GBP 60 paid by the employer (gov.im page last updated 31 October 2017; the June 2024 guide repeats GBP 60).",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "A visa does not by itself decide Isle of Man tax residence.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": true,
+      "id": "common_travel_area",
+      "name": "Common Travel Area (British and Irish citizens)",
+      "kind": "other",
+      "citizenships": [
+        "EU",
+        "OTHER"
+      ],
+      "grants": "permanent_residence",
+      "summary": "British and Irish citizens can move to the Isle of Man and live here without immigration permission. Only these two nationalities benefit; other EU and other-passport holders do not.",
+      "requirements": "Per the Department for Enterprise guide, 'only British and Irish passport holders are normally free to move to the Isle of Man and take up residence without the need for Immigration permission'. Irish citizens (EU group) and British citizens (OTHER group) only. Employment still needs an Isle of Man work permit under the Control of Employment Act 2014 unless the person is an 'Isle of Man worker' or the job is exempt (per the March 2026 immigration notice, Irish citizens need a work permit unless exempt).",
+      "physical_presence": "No minimum stated",
+      "sources": [
+        {
+          "title": "Work Permits: A Guide (June 2024)",
+          "url": "https://gov.im/media/1384372/2024-06-19-work-permits-guide-june-2024.pdf",
+          "publisher": "Isle of Man Government (Department for Enterprise)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Latest immigration notices",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/latest-immigration-notices/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Work Permit fees",
+          "url": "https://www.gov.im/categories/working-in-the-isle-of-man/work-permits/work-permit-fees",
+          "publisher": "Isle of Man Government (Department for Enterprise)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Discretionary: the Department for Enterprise must endorse the business; no right to the visa",
+      "investment_options": "",
+      "fees_note": "Endorsement fee GBP 1,000 (Department for Enterprise). In-country extension or switch form FLR Start Up: GBP 666. The entry clearance fee is paid on the UK Visas and Immigration site and is not listed on gov.im.",
+      "processing_time": "About 6 weeks from outside the UK and Isle of Man (gov.im)",
+      "family": "Partner and children can apply as dependants.",
+      "tax_note": "A visa does not by itself decide Isle of Man tax residence.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "start_up",
+      "name": "Business Migrant: Start-up visa",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "For first-time founders with an innovative, viable and scalable business idea endorsed by the Department for Enterprise. No investment threshold; leave is 2 years 4 months and cannot lead to settlement, but holders may switch to Innovator.",
+      "requirements": "Appendix X Part 6: letter of endorsement from the Department for Enterprise (innovation, viability, scalability; applicant has not previously established a trading business in the UK or Isle of Man; majority of working time spent managing the business on the Island); aged 18 or over; English B2; maintenance of GBP 945 in a personal account for 90 consecutive days, separate from any business funds. Endorsement application fee GBP 1,000. Leave 2 years 4 months, no extension, no ILR. Holder may also take other work. No public funds. No healthcare surcharge. Decision about 6 weeks from outside the UK and Isle of Man.",
+      "physical_presence": "Live in the Isle of Man and manage the business day to day (majority of working time)",
+      "sources": [
+        {
+          "title": "Business Migrant - Start Up Visa",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/business/business-migrant-start-up-visa/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Business Migrant Endorsement",
+          "url": "https://www.iomdfenterprise.im/business-migrant-endorsement/",
+          "publisher": "Isle of Man Department for Enterprise",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Isle of Man Immigration Rules (in effect from 24 July 2026), Appendix X and Appendix W",
+          "url": "https://www.gov.im/media/1394393/immigration-rules-from-24-july-2026-uploaded-140926.pdf",
+          "publisher": "Isle of Man Government (Cabinet Office, Immigration Service)",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Visa application forms and fees",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/visa-application-forms-and-fees/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Discretionary: the Department for Enterprise must endorse the business; no right to the visa",
+      "investment_options": "",
+      "fees_note": "Endorsement fee GBP 1,000 (Department for Enterprise). In-country forms: FLR Innovator GBP 1,693; SET Innovator (ILR) GBP 3,226. The entry clearance fee is paid on the UK Visas and Immigration site and is not listed on gov.im.",
+      "processing_time": "About 6 weeks from outside the UK and Isle of Man (gov.im)",
+      "family": "Partner and children can apply as dependants.",
+      "tax_note": "A visa does not by itself decide Isle of Man tax residence.",
+      "minimum_investment": {
+        "amount": 50000,
+        "currency": "GBP"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "innovator",
+      "name": "Business Migrant: Innovator visa",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "For experienced business people who set up, join or take over a business on the Island with at least GBP 50,000 of investment funds, endorsed by the Department for Enterprise. Leave is 3 years at a time, with settlement possible after 3 years.",
+      "requirements": "Appendix X Part 7: letter of endorsement; GBP 50,000 investment funds for each Innovator applicant (funds cannot be shared; not needed when progressing from Start-up or for an already established business endorsed earlier); business plan with at least 1 full-time permanent employee within 12 months and 3 within 36 months; majority of working time spent managing the business on the Island; English B2; maintenance GBP 945 for 90 consecutive days; aged 18 or over. Settlement (ILR) needs 3 years' continuous residence with at least GBP 50,000 invested, the business trading and tax-compliant, and 3 full-time permanent jobs held 12 months; absences up to 180 days in any 12 months. Endorsement fee GBP 1,000 at each stage. No other employment allowed.",
+      "physical_presence": "Live in the Isle of Man; no more than 180 days absent in any 12 months for settlement",
+      "sources": [
+        {
+          "title": "Business Migrant - Innovator Visa",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/business/business-migrant-innovator-visa/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Business Migrant Endorsement",
+          "url": "https://www.iomdfenterprise.im/business-migrant-endorsement/",
+          "publisher": "Isle of Man Department for Enterprise",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Isle of Man Immigration Rules (in effect from 24 July 2026), Appendix X and Appendix W",
+          "url": "https://www.gov.im/media/1394393/immigration-rules-from-24-july-2026-uploaded-140926.pdf",
+          "publisher": "Isle of Man Government (Cabinet Office, Immigration Service)",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Visa application forms and fees",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/visa-application-forms-and-fees/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Needs an employer who passes the labour market test; the Department decides each case (no right to a permit)",
+      "investment_options": "",
+      "fees_note": "Entry clearance fee not listed on gov.im ('see form for fees'); CoE for entry clearance: no charge; SET W (ILR): GBP 3,226; work permit GBP 60 (employer).",
+      "processing_time": "",
+      "family": "Partner and children can apply as dependants (Part 8 / Appendix FM). Partners of permit holders get an automatic 1-year work permit.",
+      "tax_note": "A visa does not by itself decide Isle of Man tax residence.",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 25447.5,
+        "currency": "GBP"
+      },
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "worker_migrant",
+      "name": "Worker Migrant visa (Appendix W) and work permit",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A job offer from an Isle of Man employer in an eligible occupation, with a Confirmation of Employment from the Immigration Service. Salary must be at least GBP 25,447.50 a year or the occupation rate, and the employer must first test the local market.",
+      "requirements": "Appendix W: valid Confirmation of Employment (CoE) in an eligible occupation (Appendix Skilled Occupations or Shortage Occupation List); salary at least the higher of GBP 25,447.50 a year or the occupation rate (for new applicants from 31 October 2025; new Worker Migrant rules from 1 June 2026); English language; maintenance funds under Appendix C (employer may instead undertake to maintain, GBP 1,270 a month for 3 months); the vacancy must not be fillable by a settled worker (Sequential Labour Market Test, unless exempt). No self-employment. Under the Control of Employment Act 2014 a work permit is also needed unless the holder has an 'immigration employment document' (a visa of this kind) or the job is exempt. ILR after 5 years' continuous residence (absences up to 180 days in a year) with employer confirmation of salary and English plus Life in the UK knowledge.",
+      "physical_presence": "Live and work on the Island; no more than 180 days absent in a year for settlement",
+      "sources": [
+        {
+          "title": "Isle of Man Immigration Rules (in effect from 24 July 2026), Appendix X and Appendix W",
+          "url": "https://www.gov.im/media/1394393/immigration-rules-from-24-july-2026-uploaded-140926.pdf",
+          "publisher": "Isle of Man Government (Cabinet Office, Immigration Service)",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Work Permits: A Guide (June 2024)",
+          "url": "https://gov.im/media/1384372/2024-06-19-work-permits-guide-june-2024.pdf",
+          "publisher": "Isle of Man Government (Department for Enterprise)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Visa application forms and fees",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/visa-application-forms-and-fees/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Latest immigration notices",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/latest-immigration-notices/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "Entry clearance fee not sourced from gov.im.",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "A visa does not by itself decide Isle of Man tax residence.",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": true,
+      "id": "ancestry",
+      "name": "Isle of Man, UK or Channel Islands ancestry",
+      "kind": "other",
+      "citizenships": [
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "Commonwealth citizens aged 17 or over with a grandparent born in the Isle of Man, UK or Channel Islands can get up to 5 years' leave to work here, then settle.",
+      "requirements": "Immigration Rules paras 186-193: Commonwealth citizen; aged 17 or over; one grandparent born in the Isle of Man, UK or Channel Islands; able to work and intending to seek employment; able to support self and dependants without public funds; entry clearance in this capacity. Leave up to 5 years at a time; ILR after 5 continuous years plus English and Life in the UK knowledge. Only some OTHER passports (Commonwealth countries).",
+      "physical_presence": "Live in the Isle of Man; no more than 180 days absent in a year for settlement (not checked for this route)",
+      "sources": [
+        {
+          "title": "Isle of Man Immigration Rules (in effect from 24 July 2026), Appendix X and Appendix W",
+          "url": "https://www.gov.im/media/1394393/immigration-rules-from-24-july-2026-uploaded-140926.pdf",
+          "publisher": "Isle of Man Government (Cabinet Office, Immigration Service)",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Settle in the Isle of Man",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/settle/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "closed_to_new",
+      "status_note": "Closed. gov.im lists the Tier 1 (Investor) route as 'now closed' (accessed 17 October 2026); no investor route replaced it.",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "tier1_investor",
+      "name": "Tier 1 (Investor) visa",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "The Tier 1 Investor visa is closed and nothing replaced it. A wealthy person with no business plan has no passive investor route today.",
+      "requirements": "Closed to new applicants. Thresholds before closure were not found on the pages read. Existing holders only.",
+      "physical_presence": "Not applicable (closed)",
+      "sources": [
+        {
+          "title": "Invest (Tier 1 routes)",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/business/invest/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Isle of Man Immigration Rules (in effect from 24 July 2026), Appendix X and Appendix W",
+          "url": "https://www.gov.im/media/1394393/immigration-rules-from-24-july-2026-uploaded-140926.pdf",
+          "publisher": "Isle of Man Government (Cabinet Office, Immigration Service)",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "closed_to_new",
+      "status_note": "Closed to new entry clearance applications on 6 April 2020, when Appendix X introduced the Start-up and Innovator sub-categories (Immigration Rules, Appendix X Part 1).",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "Existing holders: FLR Tier 1 Entrepreneur GBP 1,590 (gov.im fee table).",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "tier1_entrepreneur",
+      "name": "Tier 1 (Entrepreneur) and Graduate Entrepreneur visas",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "The old Tier 1 entrepreneur routes were replaced on 6 April 2020 by the Start-up and Innovator visas.",
+      "requirements": "Closed. Only existing holders can still renew or apply for settlement (gov.im: renewal-only page for Tier 1 Entrepreneur).",
+      "physical_presence": "Not applicable (closed)",
+      "sources": [
+        {
+          "title": "Isle of Man Immigration Rules (in effect from 24 July 2026), Appendix X and Appendix W",
+          "url": "https://www.gov.im/media/1394393/immigration-rules-from-24-july-2026-uploaded-140926.pdf",
+          "publisher": "Isle of Man Government (Cabinet Office, Immigration Service)",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Invest (Tier 1 routes)",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/business/invest/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Visa application forms and fees",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/visa-application-forms-and-fees/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "closed_to_new",
+      "status_note": "Free movement ended on 31 December 2020. The scheme was for people resident before 1 January 2021; its application deadline (30 June 2021 per gov.im) has passed. Not a route for someone arriving today.",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "euss",
+      "name": "EU Settlement Scheme (Appendix EU)",
+      "kind": "free_movement",
+      "citizenships": [
+        "EU"
+      ],
+      "grants": "permanent_residence",
+      "summary": "EU, EEA and Swiss citizens who lived on the Island before 2021 could apply for status. New arrivals from the EU need a visa like anyone else.",
+      "requirements": "Residence in the Isle of Man before 1 January 2021. Closed to new arrivals; the Island's scheme is aligned with the UK EUSS under Appendix EU. No charge.",
+      "physical_presence": "Continuous residence rules apply; not checked in detail",
+      "sources": [
+        {
+          "title": "EU, EEA and Swiss Citizens",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/eu-eea-and-swiss-citizens/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Visa application forms and fees",
+          "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/visa-application-forms-and-fees/",
+          "publisher": "Isle of Man Government (Immigration Service)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Isle of Man Immigration Rules (in effect from 24 July 2026), Appendix X and Appendix W",
+          "url": "https://www.gov.im/media/1394393/immigration-rules-from-24-july-2026-uploaded-140926.pdf",
+          "publisher": "Isle of Man Government (Cabinet Office, Immigration Service)",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Entry clearance fees for Start-up, Innovator, Worker Migrant and Ancestry are paid to UK Visas and Immigration and were not found on gov.im; government_fees is null for those routes. Known in-country fees: FLR Start Up GBP 666, FLR Innovator GBP 1,693, SET GBP 3,226; endorsement GBP 1,000.",
+    "A law firm reports some Isle of Man immigration fees rise from 1 August 2026 to match the UK; the gov.im fee table read on 17 October 2026 shows the figures quoted here, but the effective date was not confirmed.",
+    "Years to British citizenship per route (ordinary 5 years of residence with ILR held 12 months) not confirmed on a gov.im page; path_to_citizenship_years left null.",
+    "Dual citizenship not verified from an official source.",
+    "No retiree, financially independent person or digital nomad route found in the Immigration Rules (confirmed only by absence from the Appendices and gov.im pages read).",
+    "A 2023 Department for Enterprise news item proposed temporarily suspending work permits (replacing them with employer registration); the June 2024 guide and a March 2026 notice show the work permit system still operating. Current status of any suspension not confirmed.",
+    "Worker Migrant: the current Appendix Skilled Occupations / Shortage Occupation List salary rates and the Sequential Labour Market Test details were not read in full; GBP 25,447.50 is the general floor.",
+    "Ancestry route: absence limits, fees and processing times not checked.",
+    "Maintenance funds for Worker Migrant under Appendix C (beyond the GBP 1,270 a month employer undertaking) not read.",
+    "Whether the Common Travel Area route should list Irish citizens under the EU group (used here with British citizens under OTHER, only_some_nationalities true)."
+  ],
+  "sources": [
+    {
+      "title": "Isle of Man Immigration Rules (in effect from 24 July 2026), Appendix X and Appendix W",
+      "url": "https://www.gov.im/media/1394393/immigration-rules-from-24-july-2026-uploaded-140926.pdf",
+      "publisher": "Isle of Man Government (Cabinet Office, Immigration Service)",
+      "kind": "legislation",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Visa application forms and fees",
+      "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/visa-application-forms-and-fees/",
+      "publisher": "Isle of Man Government (Immigration Service)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Business Migrant - Innovator Visa",
+      "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/business/business-migrant-innovator-visa/",
+      "publisher": "Isle of Man Government (Immigration Service)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Business Migrant - Start Up Visa",
+      "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/business/business-migrant-start-up-visa/",
+      "publisher": "Isle of Man Government (Immigration Service)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Business Migrant Endorsement",
+      "url": "https://www.iomdfenterprise.im/business-migrant-endorsement/",
+      "publisher": "Isle of Man Department for Enterprise",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Invest (Tier 1 routes)",
+      "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/business/invest/",
+      "publisher": "Isle of Man Government (Immigration Service)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Work Permits: A Guide (June 2024)",
+      "url": "https://gov.im/media/1384372/2024-06-19-work-permits-guide-june-2024.pdf",
+      "publisher": "Isle of Man Government (Department for Enterprise)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Latest immigration notices",
+      "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/latest-immigration-notices/",
+      "publisher": "Isle of Man Government (Immigration Service)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Naturalisation and registration as a British citizen",
+      "url": "https://www.gov.im/categories/travel-traffic-and-motoring/naturalisation-and-registration-as-a-british-citizen/",
+      "publisher": "Isle of Man Government (Nationality Service)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "EU, EEA and Swiss Citizens",
+      "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/eu-eea-and-swiss-citizens/",
+      "publisher": "Isle of Man Government (Immigration Service)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Settle in the Isle of Man",
+      "url": "https://www.gov.im/categories/travel-traffic-and-motoring/immigration/settle/",
+      "publisher": "Isle of Man Government (Immigration Service)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Work Permit fees",
+      "url": "https://www.gov.im/categories/working-in-the-isle-of-man/work-permits/work-permit-fees",
+      "publisher": "Isle of Man Government (Department for Enterprise)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    }
+  ],
+  "researched_on": "2026-10-17"
+}

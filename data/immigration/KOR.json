@@ -1,0 +1,324 @@
+{
+  "id": "KOR",
+  "name": "South Korea",
+  "researched_on": "2026-10-17",
+  "summary": "South Korea is not in the EU or EEA, so nobody has free movement: EU, US and other citizens all need a visa or status. There is no retiree or passive-income visa. For investors the main routes are the public-interest investment scheme (KRW 1.5 billion for F-2, KRW 3 billion for direct F-5), a regional tourism and leisure real estate scheme (KRW 1 billion, mainly Jeju), and the D-8 corporate visa (from KRW 100 million, for people who run the company). Remote workers can use the F-1-D workation visa (income about 1x to 2x Korean per-capita GNI, stay up to 3 years). Same rules for all three groups.",
+  "naturalisation": "General naturalisation (Nationality Act art. 5) needs 5 consecutive years of domicile, qualification for permanent residence (F-5), adult status, good conduct, self-support and basic knowledge of Korean language and customs. Shorter periods apply to spouses of Korean nationals and some other groups (art. 6, 7).",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Art. 10(1) of the Nationality Act: a naturalised person with a foreign nationality must renounce it within one year. Art. 10(2) lets certain groups (e.g. some marriage migrants and special-naturalisation cases) instead vow not to exercise the foreign nationality in Korea; failure to comply causes loss of Korean nationality. Exact eligible groups not fully checked.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "A residence permit does not by itself make you tax resident; Korean tax residence turns on domicile or 183 days of residence (not researched here, see the Korea tax file).",
+      "minimum_investment": {
+        "amount": 1500000000,
+        "currency": "KRW"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "only_some_nationalities": false,
+      "id": "public_interest_investment_f2",
+      "name": "Public-interest investment immigration, general (F-2, then F-5)",
+      "kind": "investor_residence",
+      "grants": "temporary_residence",
+      "summary": "Invest at least KRW 1.5 billion in a public-interest fund designated by the Minister of Justice and receive an F-2 residence status with free economic activity. Keeping the investment for five years allows an F-5 permanent residence application.",
+      "requirements": "Invest at least KRW 1.5 billion in a public-interest fund designated and announced by the Minister of Justice (threshold raised from KRW 500 million on 29 June 2023). The F-2 status carries free economic activity. After five years of keeping the investment the holder can be granted F-5. Funds, minimum holding terms and the list of designated funds are set by Ministry of Justice notices that were not read in full. The retirement variant (KRW 300 million, age 55+) was abolished on the same date.",
+      "physical_presence": "Not stated in the sources found; open question",
+      "sources": [
+        {
+          "title": "Press release: improving the public-interest investment immigration system (29 June 2023)",
+          "url": "https://www.immigration.go.kr/bbs/moj/182/455576/download.do",
+          "publisher": "Ministry of Justice, Korea Immigration Service",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "MOJ notice: public-interest investment immigration improved (29 June 2023)",
+          "url": "https://www.immigration.go.kr/bbs/moj/182/572502/artclView.do",
+          "publisher": "Ministry of Justice, Korea Immigration Service",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "A residence permit does not by itself make you tax resident; Korean tax residence turns on domicile or 183 days of residence (not researched here, see the Korea tax file).",
+      "minimum_investment": {
+        "amount": 3000000000,
+        "currency": "KRW"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": null,
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "only_some_nationalities": false,
+      "id": "public_interest_high_value_f5",
+      "name": "Public-interest investment immigration, high-value (direct F-5)",
+      "kind": "investor_residence",
+      "grants": "permanent_residence",
+      "summary": "Invest at least KRW 3 billion in a designated public-interest fund and pledge to keep it for five years, and you are granted F-5 permanent residence at once.",
+      "requirements": "Invest at least KRW 3 billion (raised from KRW 1.5 billion on 29 June 2023) in a public-interest fund designated by the Minister of Justice, and keep the investment for at least five years. The Ministry's press release states that this gives permanent residence (F-5) immediately on a pledge to keep the investment.",
+      "physical_presence": "Not stated in the sources found; open question",
+      "sources": [
+        {
+          "title": "Press release: improving the public-interest investment immigration system (29 June 2023)",
+          "url": "https://www.immigration.go.kr/bbs/moj/182/455576/download.do",
+          "publisher": "Ministry of Justice, Korea Immigration Service",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "MOJ notice: public-interest investment immigration improved (29 June 2023)",
+          "url": "https://www.immigration.go.kr/bbs/moj/182/572502/artclView.do",
+          "publisher": "Ministry of Justice, Korea Immigration Service",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "Regional scheme (Jeju, Incheon Songdo/Yeongjong/Cheongna, Pyeongchang Alpensia, Yeosu Gyeongdo, Busan Haeundae and others). Minimum raised from KRW 500 million to KRW 1 billion in May 2023 and the scheme renamed. The Korea Times (Dec 2023) gave 30 April 2026 as the end date for four regions; Jeju announced in February 2026 that its operating period runs to 31 December 2027. No Ministry of Justice notice confirming the extension was found.",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "A residence permit does not by itself make you tax resident; Korean tax residence turns on domicile or 183 days of residence (not researched here, see the Korea tax file). Property tax and acquisition tax apply to the purchase (not researched).",
+      "minimum_investment": {
+        "amount": 1000000000,
+        "currency": "KRW"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "only_some_nationalities": false,
+      "id": "tourism_leisure_real_estate_f2",
+      "name": "Tourism and leisure facility investment immigration (F-2, then F-5)",
+      "kind": "investor_residence",
+      "grants": "temporary_residence",
+      "summary": "Buy a designated tourist resort condominium or accommodation facility for at least KRW 1 billion in a designated area (mainly Jeju) and receive F-2 residence. After five years of keeping the investment you can apply for F-5 permanent residence.",
+      "requirements": "Investment of at least KRW 1 billion in tourism or resort facilities designated by the Minister of Justice (resort condominiums in tourist zones, general and living accommodation facilities); real estate outside the designation does not qualify. Investment must be maintained for five years for F-5. Whether the scheme is still open in each region on 17 October 2026 is not confirmed by an official notice.",
+      "physical_presence": "Not stated in the sources found; open question",
+      "sources": [
+        {
+          "title": "Jeju extends tourism and leisure facility investment immigration to end of 2027 (Feb 2026)",
+          "url": "https://www.twig24.com/news/2026/02/16/20260216500024",
+          "publisher": "Twig24 (Korean press)",
+          "kind": "other",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Korea extends real estate investment immigration, minimum doubled to KRW 1 billion",
+          "url": "https://www.koreatimes.co.kr/www/nation/2023/12/113_350150.html",
+          "publisher": "The Korea Times",
+          "kind": "other",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Press release: improving the public-interest investment immigration system (29 June 2023)",
+          "url": "https://www.immigration.go.kr/bbs/moj/182/455576/download.do",
+          "publisher": "Ministry of Justice, Korea Immigration Service",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "A residence permit does not by itself make you tax resident; Korean tax residence turns on domicile or 183 days of residence (not researched here, see the Korea tax file).",
+      "minimum_investment": {
+        "amount": 100000000,
+        "currency": "KRW"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "only_some_nationalities": false,
+      "id": "corporate_investment_d8",
+      "name": "Corporate investment visa (D-8)",
+      "kind": "entrepreneur",
+      "grants": "temporary_residence",
+      "summary": "Invest at least KRW 100 million in a Korean company (registered as foreign-invested) and hold a stake of at least 10 percent to get a D-8 corporate investment visa. It is a working-and-business status, not a route to residence by passive investment.",
+      "requirements": "Per a consultancy summary: investment of at least KRW 100 million in a Korean corporation remitted from abroad, voting shares of at least 10 percent (or shares together with an executive appointment contract), investment reported at a foreign exchange bank and the company registered as foreign-invested. Initial stay up to 5 years for D-8-1 and D-8-3, up to 2 years for D-8-2 and D-8-4 as decided by the immigration office. Sub-type labels differ between sources. Not checked against the Immigration Act enforcement decree.",
+      "physical_presence": "Not stated in the sources found; open question",
+      "sources": [
+        {
+          "title": "D-8 Corporate Investor Visa Korea: Full 2026 Guide",
+          "url": "https://www.visaskorea.com/d-8-corporate-investor-visa-en/",
+          "publisher": "Visas Korea (immigration consultancy)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "About 7 working days at consulates (pilot-era embassy figure)",
+      "family": "Spouse and minor children may accompany (law-firm summary).",
+      "tax_note": "A residence permit does not by itself make you tax resident; Korean tax residence turns on domicile or 183 days of residence (not researched here, see the Korea tax file). Remote work for a foreign employer may still create Korean tax residence after 183 days.",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 104830000,
+        "currency": "KRW"
+      },
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "only_some_nationalities": false,
+      "id": "digital_nomad_f1d",
+      "name": "Workation / digital nomad visa (F-1-D)",
+      "kind": "digital_nomad",
+      "grants": "temporary_residence",
+      "summary": "Remote workers employed by a foreign company can stay in Korea on an F-1-D visa, now permanent since 30 June 2026, for up to 3 years. Income must reach a multiple of Korean per-capita GNI, lower for young applicants outside the Seoul region.",
+      "requirements": "Ministry of Justice (press page): programme made permanent from 30 June 2026 after a pilot from 2024, stay up to 3 years, income bar eased for young applicants and those living outside the Seoul metropolitan area. Details per a law-firm summary (not the press release text): age 18+, at least one year working for a foreign employer or owning a foreign company in the same industry, remote work only (no work or profit-making in Korea), health insurance of at least KRW 100 million, income after tax of 1x to 2x previous-year per-capita GNI depending on age and region (about KRW 104.83 million a year, i.e. 2x, for age 35+ in the Seoul region; about KRW 52.41 million for 1x). Initial stay 1 year, renewed annually. Spouse and minor children may accompany. Income figure converted from a GNI multiple; GNI base year sources differ.",
+      "physical_presence": "Live in Korea; B-1, B-2 or C-3 visitors may change status in-country",
+      "sources": [
+        {
+          "title": "MOJ press page: digital nomad (workation) visa made permanent from 30 June 2026, stay up to 3 years",
+          "url": "https://www.immigration.go.kr/bbs/moj/182/608278/artclView.do",
+          "publisher": "Ministry of Justice, Korea Immigration Service",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Update: South Korea's digital nomad (workation) visa, F-1-D",
+          "url": "https://klawguru.com/2026/07/18/update-south-koreas-digital-nomad-workation-visa-the-f-1-d/",
+          "publisher": "KLawGuru (law firm blog)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "Consular fee varies by embassy and nationality (EUR 54 at the Finnish embassy, 2023 figure); not a uniform figure.",
+      "processing_time": "3 to 4 weeks at an embassy (Finland embassy page)",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "only_some_nationalities": false,
+      "id": "work_e7",
+      "name": "Employment visa (E-7 and related)",
+      "kind": "work",
+      "grants": "temporary_residence",
+      "summary": "Employment in a Korean organisation needs a sponsored work visa, mainly E-7 for occupations designated by the Minister of Justice. The employer drives the application.",
+      "requirements": "E-7: activities designated by the Minister of Justice for a person invited by a public or private organisation in Korea (Enforcement Decree of the Immigration Act, art. 12). Qualification criteria differ between sources (degree and experience); the list of eligible occupations is maintained by the Ministry. Embassy page states a visa stay of up to 1 year at first.",
+      "physical_presence": "Work for the sponsoring employer in Korea",
+      "sources": [
+        {
+          "title": "E-7 (Foreign National of Special Ability) Visa",
+          "url": "https://overseas.mofa.go.kr/fi-en/brd/m_20979/view.do?seq=5",
+          "publisher": "Embassy of the Republic of Korea in Finland (MOFA)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "The Korean E-7 (Special Designated Activities) Visa",
+          "url": "https://klawguru.com/2026/06/11/the-korean-e-7-special-designated-activities-visa/",
+          "publisher": "KLawGuru (law firm blog)",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Public-interest investment: designated funds, minimum holding terms, the physical presence requirement and fees were not found in sources read; the MOJ press release (29 June 2023) gives thresholds only.",
+    "Tourism and leisure real estate scheme: no Ministry of Justice notice found confirming the extension to 31 December 2027 (Jeju announcement only) or its status in each region on 17 October 2026.",
+    "F-1-D: the MOJ press release text with the exact income multiples by age and region was not readable; the tiers (1x, 1.5x, 2x GNI) and the GNI base (KRW 52.41 million for 2025 in one source, KRW 52.57 million for 2026 on a MOFA page) come from secondary sources and conflict. Whether all nationalities qualify (the pilot had regional embassy lists) was not verified.",
+    "D-8: threshold, 10 percent share rule and sub-types come from a consultancy page; the Immigration Act enforcement decree was not read. Government fees not sourced.",
+    "F-5 by corporate investment (F-5-5) and general F-5 (2x GNI plus KIIP level 5 per a law-firm summary) were not verified from an official text and are not included as routes.",
+    "F-1 visiting family: no official source on eligibility was found, so it is not included as a route.",
+    "E-7 occupation list, qualification criteria and fees not sourced from an official page.",
+    "Government fees for every route are not sourced (null).",
+    "Whether any route gives credit toward the 5-year naturalisation residence period was not researched."
+  ],
+  "sources": [
+    {
+      "title": "Nationality Act (English translation)",
+      "url": "https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=61297",
+      "publisher": "Korea Legislation Research Institute",
+      "kind": "legislation",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Press release: improving the public-interest investment immigration system (29 June 2023)",
+      "url": "https://www.immigration.go.kr/bbs/moj/182/455576/download.do",
+      "publisher": "Ministry of Justice, Korea Immigration Service",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "MOJ press page: digital nomad (workation) visa made permanent from 30 June 2026, stay up to 3 years",
+      "url": "https://www.immigration.go.kr/bbs/moj/182/608278/artclView.do",
+      "publisher": "Ministry of Justice, Korea Immigration Service",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    }
+  ]
+}

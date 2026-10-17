@@ -1,0 +1,363 @@
+{
+  "id": "JEY",
+  "name": "Jersey",
+  "researched_on": "2026-10-17",
+  "summary": "Jersey is not in the EU or EEA and, since Brexit, EU citizens have no free movement there: they are treated like other foreign nationals. British and Irish citizens can live in Jersey under the Common Travel Area, but still need a housing and work status. For everyone else the main routes are an employer-sponsored work permit (with a visa where required) and, for the wealthy, discretionary Entitled status as a High Net Worth Individual, indicated by taxable income above GBP 1.25 million a year. The old GBP 2 million investor route is closed.",
+  "naturalisation": "British citizenship through the Jersey Customs and Immigration Service: generally 5 years' residence in the UK or the Islands with indefinite leave or settled status, with at least 12 months after indefinite leave; English language and Life in the UK test (including a Jersey supplement). Fee GBP 1,709 for naturalisation.",
+  "dual_citizenship": null,
+  "dual_citizenship_note": "Not verified from a source in this research.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Discretionary: the Housing and Work Control Panel recommends status on economic or social grounds; meeting the indicators does not guarantee approval. Locate Jersey says there is no cap on grants.",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "Locate Jersey reportedly quotes 15 working days from a complete application (law-firm report, not confirmed on an official page)",
+      "family": "Locate Jersey asks for passport copies for each person relocating; terms for family members not researched.",
+      "tax_note": "Under the old HVR regime holders pay 20% on the first GBP 1,250,000 of worldwide income and 1% above it (Jersey property income at 20%). Whether this tax regime continues unchanged after the 2026 reform was not confirmed.",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 1250000,
+        "currency": "GBP"
+      },
+      "government_fees": null,
+      "path_to_permanent_years": 0,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "hnwi_entitled_status",
+      "name": "High Value Residency: Entitled status for High Net Worth Individuals (formerly 2(1)(e))",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "permanent_residence",
+      "summary": "Wealthy, economically active people can be granted Entitled status, which gives full access to Jersey's housing and job markets. It is a discretionary grant for people who bring economic or social benefit, not a purchase of residence, and UK-style immigration clearance is also needed.",
+      "requirements": "Control of Housing and Work (Residential and Employment Status) Regulations, Regulation 5 (in force from mid-September 2026, replacing Article 2(1)(e) and the Housing and Work Advisory Group): the Housing and Work Control Panel must recommend Entitled status as justified on economic or social grounds and in the community's best interests; due diligence and KYC. Law-firm commentary says the policy indicators are taxable income above GBP 1.25 million a year for at least 10 years and/or philanthropic or community contributions of at least GBP 100,000 a year, and that these are not in the legislation. Locate Jersey's criteria page (not clearly updated for the 2026 change) still lists: ability to generate a minimum tax contribution of GBP 250,000 a year, worldwide income above GBP 1,250,000, and personal wealth above GBP 10 million excluding the main residence. Expected to buy or rent a home of typically GBP 3.5 million or more (house) or GBP 1.75 million or more (apartment); buy after 12 months of renting. Approved applicants also need UK immigration clearance. Status can be withdrawn if conditions stop being met.",
+      "physical_presence": "Must make Jersey the main home; no published day count found",
+      "sources": [
+        {
+          "title": "High Net Worth Individuals: criteria and applications",
+          "url": "https://www.locatejersey.com/moving-to-jersey-as-a-hnwi/criteria-and-applications/",
+          "publisher": "Locate Jersey (Government of Jersey)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "High value residency",
+          "url": "https://www.gov.je/Home/RentingBuying/HousingLaws/pages/highvalueresidency.aspx",
+          "publisher": "Government of Jersey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Jersey's High Value Residency Regime Enters a New Era",
+          "url": "https://www.applebyglobal.com/publications/jerseys-high-value-residency-regime-enters-a-new-era/",
+          "publisher": "Appleby",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Streamlined process for Jersey's High Value Residency Regime introduced",
+          "url": "https://www.collascrill.com/articles/streamlined-process-for-jersey-s-high-value-residency-regime-introduced/",
+          "publisher": "Collas Crill",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "closed_to_new",
+      "status_note": "Closed to new applicants; paragraph 224A of the Jersey Immigration Rules refers to leave that pre-dates 12 April 2022. Only existing holders can extend or settle.",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": {
+        "amount": 2000000,
+        "currency": "GBP"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "investor_closed",
+      "name": "Investor route (GBP 2 million) under the Jersey Immigration Rules",
+      "kind": "investor_residence",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "A route for people investing GBP 2 million in Jersey on terms set by the Minister. It no longer accepts new applicants.",
+      "requirements": "Jersey Immigration Rules paras 224-231: age 18 or over; GBP 2 million of own money disposable in Jersey, invested on terms the Minister judges beneficial to Jersey; Jersey as main home; no recourse to public funds; entry clearance. Indefinite leave after 5 continuous years plus English and life-in-Jersey knowledge.",
+      "physical_presence": "Main home in Jersey; absences of 180 days or less in each 12 months for indefinite leave",
+      "sources": [
+        {
+          "title": "The Jersey Immigration Rules (last updated 1 April 2026)",
+          "url": "https://gov.je/SiteCollectionDocuments/Travel%20and%20transport/ID%20Jersey%20immigration%20rules.pdf",
+          "publisher": "Government of Jersey",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Immigration and nationality fees",
+          "url": "https://www.gov.je/Government/Departments/JusticeHomeAffairs/Departments/CustomsImmigration/Pages/ImmigrationNationalityFees.aspx",
+          "publisher": "Government of Jersey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Needs Ministerial approval and any licence required under the Control of Housing and Work Law; discretionary",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "business_person",
+      "name": "Person establishing himself in business (entry clearance route)",
+      "kind": "entrepreneur",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "The Jersey Immigration Rules still contain a route for someone to take over, join or set up a business in Jersey, with 2 years' initial leave and settlement after 5 years. Ministerial approval is needed and no capital figure is published in the rules.",
+      "requirements": "Jersey Immigration Rules paras 200-210: Ministerial approval; any licence needed under the Control of Housing and Work (Jersey) Law 2012; entry clearance. Initial leave up to 2 years without freedom to take other employment, extensions up to 3 years at a time, indefinite leave after 5 continuous years if still in the business, with audited accounts and English and life-in-Jersey knowledge. Whether it is open in practice was not confirmed on a government page.",
+      "physical_presence": "Continuous residence; absences of 180 days or less in each 12 months for indefinite leave",
+      "sources": [
+        {
+          "title": "The Jersey Immigration Rules (last updated 1 April 2026)",
+          "url": "https://gov.je/SiteCollectionDocuments/Travel%20and%20transport/ID%20Jersey%20immigration%20rules.pdf",
+          "publisher": "Government of Jersey",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Residential status",
+          "url": "https://www.gov.je/working/Contributions/RegistrationCards/Pages/ResidentialStatus.aspx",
+          "publisher": "Government of Jersey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "Employer must hold the right Housing and Work permission and the job must be on the eligible list; permit tied to named employer and role",
+      "investment_options": "",
+      "fees_note": "Employer fee for a permit of more than 2 and up to 3 years (GBP 290 for 1 to 2 years). Further leave fee GBP 943. Visa fees not sourced.",
+      "processing_time": "About 3 weeks for a complete application (government page)",
+      "family": "Dependants allowed if the permit is for more than 12 months.",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": {
+        "amount": 350,
+        "currency": "GBP"
+      },
+      "path_to_permanent_years": 5,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": false,
+      "id": "long_term_work_permit",
+      "name": "Long-term work permit (employer-sponsored)",
+      "kind": "work",
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "An employer applies for a work permit for a named person in an eligible job. Up to 3 years at a time; time counts toward settlement and dependants are allowed.",
+      "requirements": "Immigration (Work Permits) (Jersey) Rules 1995 and the Work Permit Policy: job at RQF level 3 or above (unless an exception applies), salary at or above the occupation threshold or the going rate (examples: chief executive GBP 84,100, construction manager GBP 50,100), English B1 or higher, contract, adequate accommodation, age 18 or over. Many employees also need a UK-administered visa. The employer must hold a Control of Housing and Work permission before applying. Short and annual temporary permits (agriculture, hospitality, construction, fishing) do not count toward settlement.",
+      "physical_presence": "Live and work in Jersey for the named employer; absences of 180 days or less in each 12 months for settlement",
+      "sources": [
+        {
+          "title": "Work permit policy",
+          "url": "https://www.gov.je/Working/WorkPermits/pages/workpermitpolicy.aspx",
+          "publisher": "Government of Jersey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Immigration and nationality fees",
+          "url": "https://www.gov.je/Government/Departments/JusticeHomeAffairs/Departments/CustomsImmigration/Pages/ImmigrationNationalityFees.aspx",
+          "publisher": "Government of Jersey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "The Jersey Immigration Rules (last updated 1 April 2026)",
+          "url": "https://gov.je/SiteCollectionDocuments/Travel%20and%20transport/ID%20Jersey%20immigration%20rules.pdf",
+          "publisher": "Government of Jersey",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Residential status",
+          "url": "https://www.gov.je/working/Contributions/RegistrationCards/Pages/ResidentialStatus.aspx",
+          "publisher": "Government of Jersey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "",
+      "investment_options": "",
+      "fees_note": "",
+      "processing_time": "",
+      "family": "Not researched.",
+      "tax_note": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "path_to_permanent_years": 10,
+      "path_to_citizenship_years": null,
+      "only_some_nationalities": true,
+      "id": "cta_british_irish",
+      "name": "Common Travel Area: British and Irish citizens",
+      "kind": "other",
+      "citizenships": [
+        "OTHER"
+      ],
+      "grants": "temporary_residence",
+      "summary": "British and Irish citizens need no visa or work permit to enter and work in Jersey. They still need a Control of Housing and Work status, which starts as Standard and gives full rights after 10 years (Entitled) or 5 years (Entitled for Work Only).",
+      "requirements": "Jersey is part of the Common Travel Area with the UK, Ireland, Guernsey and the Isle of Man (Jersey Immigration Rules para 15; Irish citizens, paras 5-5B). Under the Control of Housing and Work Law a person who expects to be ordinarily resident must apply for a registration card within 3 months and cannot work without one. Entitled status after 10 years' ordinary residence without break; Entitled for Work Only after 5.",
+      "physical_presence": "Ordinary residence; breaks reset the Entitled qualifying periods",
+      "sources": [
+        {
+          "title": "The Jersey Immigration Rules (last updated 1 April 2026)",
+          "url": "https://gov.je/SiteCollectionDocuments/Travel%20and%20transport/ID%20Jersey%20immigration%20rules.pdf",
+          "publisher": "Government of Jersey",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Visa and passport requirements",
+          "url": "https://www.gov.je/Travel/InformationAdvice/Visitors/pages/visapassportrequirements.aspx",
+          "publisher": "Government of Jersey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Residential status",
+          "url": "https://www.gov.je/working/Contributions/RegistrationCards/Pages/ResidentialStatus.aspx",
+          "publisher": "Government of Jersey",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "The Housing and Work Control Panel regime (Regulation 5) took effect in mid-September 2026; the exact commencement date and the text of the Regulations were not read. The GBP 1.25 million / GBP 100,000 indicators come from law-firm commentary, and Locate Jersey's older page still shows GBP 250,000 minimum tax, GBP 10 million wealth and the property minimums.",
+    "Whether the 20%/1% HVR tax regime and the property purchase minimums still apply after the 2026 reform is not confirmed.",
+    "Fees for HVR applications and for the UK-administered visa were not found; government fees left null for HVR.",
+    "Exact immigration permission HVR holders receive (visa type, route to indefinite leave) not found; path_to_permanent_years of 0 reflects that Entitled status is itself the housing/work right, not immigration settlement.",
+    "Whether the business-person route (paras 200-210) is open to new applicants in practice and what capital is expected was not confirmed.",
+    "Dual citizenship under British naturalisation was not verified from an official source.",
+    "Whether EU citizens face any special visa treatment in Jersey after the end of the EU Settlement Scheme not confirmed beyond the gov.je visa page.",
+    "Salary thresholds and the eligible occupation list for long-term work permits only partly read (page truncated).",
+    "Fee page and Jersey Rules were read from gov.je without an effective date for the fees."
+  ],
+  "sources": [
+    {
+      "title": "The Jersey Immigration Rules (last updated 1 April 2026)",
+      "url": "https://gov.je/SiteCollectionDocuments/Travel%20and%20transport/ID%20Jersey%20immigration%20rules.pdf",
+      "publisher": "Government of Jersey",
+      "kind": "legislation",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "High Net Worth Individuals: criteria and applications",
+      "url": "https://www.locatejersey.com/moving-to-jersey-as-a-hnwi/criteria-and-applications/",
+      "publisher": "Locate Jersey (Government of Jersey)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "High value residency",
+      "url": "https://www.gov.je/Home/RentingBuying/HousingLaws/pages/highvalueresidency.aspx",
+      "publisher": "Government of Jersey",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Jersey's High Value Residency Regime Enters a New Era",
+      "url": "https://www.applebyglobal.com/publications/jerseys-high-value-residency-regime-enters-a-new-era/",
+      "publisher": "Appleby",
+      "kind": "professional",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Streamlined process for Jersey's High Value Residency Regime introduced",
+      "url": "https://www.collascrill.com/articles/streamlined-process-for-jersey-s-high-value-residency-regime-introduced/",
+      "publisher": "Collas Crill",
+      "kind": "professional",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Jersey's Control of Housing and Work law: what employers need to know",
+      "url": "https://www.walkersglobal.com/en/Insights/2026/09/Jerseys-Control-of-Housing-and-Work-law-what-employers-need-to-know",
+      "publisher": "Walkers",
+      "kind": "professional",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Residential status",
+      "url": "https://www.gov.je/working/Contributions/RegistrationCards/Pages/ResidentialStatus.aspx",
+      "publisher": "Government of Jersey",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Work permit policy",
+      "url": "https://www.gov.je/Working/WorkPermits/pages/workpermitpolicy.aspx",
+      "publisher": "Government of Jersey",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Immigration and nationality fees",
+      "url": "https://www.gov.je/Government/Departments/JusticeHomeAffairs/Departments/CustomsImmigration/Pages/ImmigrationNationalityFees.aspx",
+      "publisher": "Government of Jersey",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Visa and passport requirements",
+      "url": "https://www.gov.je/Travel/InformationAdvice/Visitors/pages/visapassportrequirements.aspx",
+      "publisher": "Government of Jersey",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "British citizenship",
+      "url": "https://www.gov.je/Travel/Passports/CitizenshipAndSettlement/Pages/BritishCitizenship.aspx",
+      "publisher": "Government of Jersey",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    }
+  ]
+}

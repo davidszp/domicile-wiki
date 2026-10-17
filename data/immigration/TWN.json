@@ -1,0 +1,237 @@
+{
+  "id": "TWN",
+  "name": "Taiwan",
+  "researched_on": "2026-10-17",
+  "summary": "Taiwan is not in the EU, so EU, US and other citizens are treated alike. There is no investor residence visa; most routes are discretionary. The cheapest route in practice for a professional is the Employment Gold Card (qualification-based, a salary of NT$160,000 a month is one path), for founders the Entrepreneur Visa, and for remote workers from visa-exempt countries the Digital Nomad Visitor Visa (US$40,000 a year). Permanent residence by investment (reportedly NT$15 million) is approved by the National Immigration Agency.",
+  "naturalisation": "Ordinary naturalisation (Nationality Act art. 3) needs more than 183 days of legal residence a year for at least 5 consecutive years, a domicile in Taiwan and enough property or skills to live on; 3 years for some (art. 4, e.g. spouses of citizens). High-level professionals recommended by the competent ministry need 2 consecutive years (art. 5).",
+  "dual_citizenship": "restricted",
+  "dual_citizenship_note": "Applicants must prove they lost their original nationality within one year of approval (art. 9). High-level professionals recommended by the competent authority are exempt (art. 9 para. 4) and keep their original nationality.",
+  "routes": [
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "discretionary: each applicant is reviewed by the competent ministry for their field; no right to the card",
+      "investment_options": "",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 1920000,
+        "currency": "TWD"
+      },
+      "government_fees": null,
+      "fees_note": "Fees not sourced from an official page.",
+      "path_to_permanent_years": 3,
+      "path_to_citizenship_years": 5,
+      "processing_time": "Typically about 1 to 3 months in total (information check 1-2 weeks, qualification check 1-2 months, card printing 1-2 weeks)",
+      "family": "Holders can bring family; details not sourced",
+      "tax_note": "A resident of more than 183 days a year is taxed in Taiwan; the card offers tax benefits for high salaries (conditions apply). A permit does not by itself make you tax resident.",
+      "only_some_nationalities": false,
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "id": "employment_gold_card",
+      "name": "Employment Gold Card",
+      "kind": "work",
+      "grants": "temporary_residence",
+      "summary": "A combined residence permit, work permit and re-entry permit for foreign professionals in listed fields (finance, economy, technology, digital, law, education, culture and arts, sport). It lets you work for any employer. Mainland Chinese, Hong Kong/Macau and Taiwanese dual citizens are excluded.",
+      "requirements": "Act for the Recruitment and Employment of Foreign Professionals. Apply online and qualify in one field and sub-category. A monthly salary of at least NT$160,000 (average over a year, before tax, shown on a tax statement or an employment contract for future work in Taiwan) is one qualifying path in some fields (NT$160,000 x 12 = NT$1,920,000 a year); other paths need no salary: a PhD from a top-500 university, a licence as a Taiwan or foreign-law attorney, associate-professor or higher rank, proof of unique talent in technology or the digital field, sport or culture achievements. Sole-proprietor and dividend income does not count. Not open to Mainland Chinese citizens, Hong Kong/Macau and Taiwan dual citizens, stateless persons, or Taiwan household-registered nationals living in Taiwan. The Act was amended (passed 29 August 2025; most provisions in force 1 January 2026, others 30 June 2026); some details here may predate those changes.",
+      "physical_presence": "Not required to keep the card itself; permanent residence needs an average of more than 183 days a year in Taiwan",
+      "sources": [
+        {
+          "title": "Employment Gold Card: application qualification",
+          "url": "https://goldcard.nat.gov.tw/en/subtags/application-qualification/",
+          "publisher": "Taiwan Employment Gold Card Office (National Development Council)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Taiwan Employment Gold Card",
+          "url": "https://goldcard.nat.gov.tw/en/",
+          "publisher": "Taiwan Employment Gold Card Office (National Development Council)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Amendments to the Act for the Recruitment and Employment of Foreign Professionals approved by the Legislative Yuan",
+          "url": "https://goldcard.nat.gov.tw/en/news/amendments-to-the-act-for-the-recruitment-and-employment-of-foreign-professionals-approved-by-the-legislative-yuan/",
+          "publisher": "Taiwan Employment Gold Card Office (National Development Council)",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "discretionary: investment and permanent residence must be approved by the National Immigration Agency",
+      "investment_options": "NT$15 million in a for-profit enterprise with 5 jobs for Taiwanese nationals, or NT$30 million in government bonds/approved fund (secondary sources, unverified)",
+      "minimum_investment": {
+        "amount": 15000000,
+        "currency": "TWD"
+      },
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "One secondary source reports an NT$10,000 application fee; not confirmed.",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "only_some_nationalities": false,
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "id": "investor_aprc",
+      "name": "Permanent residence by investment (Plum Blossom Card, APRC)",
+      "kind": "investor_residence",
+      "grants": "permanent_residence",
+      "summary": "The Immigration Act lets the National Immigration Agency approve permanent residence for an investor who invests first and is then granted the right to stay. Secondary sources give NT$15 million in a for-profit company with at least five jobs, or NT$30 million in government bonds; the official amounts were not found.",
+      "requirements": "Immigration Act art. 25 (investment immigration): application, review and approval by the National Immigration Agency, then the investment is made; the Agency then consents to permanent residence. Spouse and minor children can apply with the investor. The statute text read does not state the amount. Secondary sources (not official): NT$15 million in a for-profit Taiwan enterprise creating at least 5 jobs for Taiwanese nationals, or NT$30 million in government bonds or an approved fund, held for 3 years (one 2012 source says 5 years and a prior ARC of 3 or 5 years). Applicants must be adults of good conduct. Taiwan has no standalone investor visa.",
+      "physical_presence": "Unclear; secondary sources say no or minimal presence is required",
+      "sources": [
+        {
+          "title": "Immigration Act (Article 25, permanent residence)",
+          "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=D0080132",
+          "publisher": "Ministry of Justice, Laws and Regulations Database",
+          "kind": "legislation",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Taiwan Golden Visa (Plum Blossom Card)",
+          "url": "https://www.imidaily.com/taiwan-golden-visa-aprc-plum-blossom-card/",
+          "publisher": "Investment Migration Insider",
+          "kind": "professional",
+          "accessed": "2026-10-17"
+        },
+        {
+          "title": "Is there an investment visa? (2012)",
+          "url": "https://startabusinessintaiwan.tw/book/faqs/visa-arc-and-work-permits/is-there-an-investment-visa-if-so-how-much-do-i-have-to-invest/",
+          "publisher": "Start a Business in Taiwan",
+          "kind": "other",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "discretionary: qualification is examined by the MOEA Investment Commission",
+      "investment_options": "",
+      "minimum_investment": null,
+      "minimum_income": null,
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "",
+      "only_some_nationalities": false,
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "id": "entrepreneur_visa",
+      "name": "Entrepreneur Visa",
+      "kind": "entrepreneur",
+      "grants": "temporary_residence",
+      "summary": "A residence visa for founders of an innovative start-up, examined by the Ministry of Economic Affairs Investment Commission. You qualify through outside funding, an approved incubator, patents or an award, or by having already invested at least NT$1 million in a qualifying Taiwan company.",
+      "requirements": "Examination Directions of Entrepreneur Visa Qualification for Foreign Nationals: education to at least senior high school level, plus at least one of: venture capital investment or at least NT$2 million from an approved fund-raising platform; admission to an approved innovation park or incubator; a patent; a start-up or design award or approved government project; or an existing innovative company (registered under 5 years) with at least NT$1 million invested, where you are the legal representative. Teams may apply together. The company must then reach a performance test (reported: NT$3 million sales, or three full-time Taiwanese employees) for extension; the validity and extension period was not read from the official text.",
+      "physical_presence": "No published day count found",
+      "sources": [
+        {
+          "title": "Examination Directions of Entrepreneur Visa Qualification for Foreign Nationals",
+          "url": "https://www.roc-taiwan.org/public/INmaa_en_visa/61201510471.pdf",
+          "publisher": "Ministry of Foreign Affairs / MOEA Investment Commission",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "status": "open",
+      "status_note": "",
+      "limited_places": "discretionary: applications are reviewed by the National Development Council",
+      "investment_options": "",
+      "minimum_investment": null,
+      "minimum_income": {
+        "amount": 40000,
+        "currency": "USD"
+      },
+      "government_fees": null,
+      "fees_note": "",
+      "path_to_permanent_years": null,
+      "path_to_citizenship_years": null,
+      "processing_time": "",
+      "family": "",
+      "tax_note": "Staying more than 183 days in a calendar year makes you tax resident in Taiwan.",
+      "only_some_nationalities": true,
+      "citizenships": [
+        "EU",
+        "US",
+        "OTHER"
+      ],
+      "id": "digital_nomad_visitor_visa",
+      "name": "Digital Nomad Visitor Visa",
+      "kind": "digital_nomad",
+      "grants": "temporary_residence",
+      "summary": "A visitor visa for remote workers from visa-exempt countries, in effect since 1 January 2025. It is a visitor visa, not a residence permit.",
+      "requirements": "Only nationals of visa-exempt countries. Proof of remote work (CV or portfolio, a work contract) and a description of intended activities. Either a digital nomad visa from another country, or an annual salary of at least US$40,000 (age 30 and over) or US$20,000 (ages 20 to 29) in one of the last two years. Average monthly bank balance of at least US$10,000 over the last six months. International health insurance covering the whole stay. Apply at a Taiwan overseas mission. Official page shows no maximum stay; secondary sources say up to 6 months.",
+      "physical_presence": "Visitor stay only; no days required",
+      "sources": [
+        {
+          "title": "Digital nomad visitor visa",
+          "url": "https://www.boca.gov.tw/cp-158-7718-c0382-2.html",
+          "publisher": "Bureau of Consular Affairs, Ministry of Foreign Affairs",
+          "kind": "government",
+          "accessed": "2026-10-17"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Employment Gold Card fees, permit validity options (official page says up to 3 years; amended Act may allow up to 5), and family rules were not found on an official page.",
+    "Gold Card path to permanent residence: official page says 3 years for specialist professionals with an average of over 183 days a year; whether the 2025 Act amendment (in force 1 January and 30 June 2026) shortened this, and any 183-day change, was not confirmed.",
+    "Investor APRC: the NT$15 million (5 jobs) and NT$30 million (bonds) amounts and holding period come from secondary sources and disagree on 3 vs 5 years and on any prior ARC; the Immigration Act text read does not state the amount. Fees unsourced.",
+    "A reported NT$6 million investor ARC could not be confirmed and is not included.",
+    "Entrepreneur Visa: validity, extension tests, fees and family rules not verified from the current official text.",
+    "Digital nomad visitor visa: maximum stay, fee and the visa-exempt country list not stated on the official page; a proposed extension to 2 years was not confirmed.",
+    "General employer-sponsored work permits (Employment Service Act, Ministry of Labor) were not researched and no route is included for them.",
+    "Taiwan's permanent-residence rule for ordinary residents (Immigration Act art. 25: 5 years, 183 days a year) was read, but whether it was changed in 2026 was not checked.",
+    "Whether the government processing time for naturalisation and the high-level professional recognition standards changed after the 2024 amendment was not checked."
+  ],
+  "sources": [
+    {
+      "title": "Immigration Act (Article 25, permanent residence)",
+      "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=D0080132",
+      "publisher": "Ministry of Justice, Laws and Regulations Database",
+      "kind": "legislation",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Nationality Act (Articles 3, 4, 5, 9)",
+      "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=D0030001",
+      "publisher": "Ministry of Justice, Laws and Regulations Database",
+      "kind": "legislation",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Naturalization of high-level professionals, spouses and minor children",
+      "url": "https://news.immigration.gov.tw/NewsSection/Detail/e7ef316e-ffb0-4bc3-bf42-180c0ecd0a4c?lang=EN",
+      "publisher": "National Immigration Agency",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    },
+    {
+      "title": "Gold Card: permanent residency (APRC)",
+      "url": "https://goldcard.nat.gov.tw/en/tags/aprc",
+      "publisher": "Taiwan Employment Gold Card Office (National Development Council)",
+      "kind": "government",
+      "accessed": "2026-10-17"
+    }
+  ]
+}
