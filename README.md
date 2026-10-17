@@ -77,6 +77,13 @@ boundaries used by the geographic tests) is not committed.
 6. **Build** (`domicile/build.py`) writes compact JSON for the map plus one lazily loaded profile per
    jurisdiction. The browser repeats only the final weighting step, so users can change weights. The
    JS and Python engines are tested for exact parity.
+7. **Text pages** (`domicile/pages.py`, run by the build): the app draws everything with JavaScript under
+   `#/` addresses, which search engines index as one page and AI crawlers (which do not run JavaScript)
+   see as empty. So every researched place also gets a static page, `web/places/<country>/[<region>/]`,
+   with the key facts, residence routes, succession, daily-life scores, the dossier and sources, plus a
+   Markdown twin (`index.md`), JSON-LD, `sitemap.xml`, `robots.txt`, `llms.txt` and a 404 page. The
+   canonical origin is `SITE` in `domicile/pages.py` (https://domicile.wiki), kept in step with
+   `web/index.html` by the tests.
 
 ## Updating a jurisdiction (the dossier workflow)
 
@@ -108,7 +115,7 @@ Cloudflare Pages, connected to the GitHub repository (redeploys on every push):
 2. Framework preset: None. Build command: *(empty)*. Build output directory: `web`.
 3. Add the custom domain under the project's Custom domains tab.
 
-To update the live site: rebuild locally (`make build test`), commit `web/data/`, push.
+To update the live site: rebuild locally (`make build test`), commit `web/data/` and `web/places/`, push.
 
 Or deploy straight from this machine with Wrangler (`wrangler.jsonc` serves `web/` as static assets and
 applies `web/_headers`): `npx wrangler@4.151.0 login` once, then `npx wrangler@4.151.0 deploy`. The
@@ -165,6 +172,8 @@ tests/test_scoring.py    weights sum to 100%, transforms, brackets, blending, US
                          missing data never scored favourably, status rules
 tests/test_data.py       schema validation, dated dossiers, sources and tax years on every claim,
                          source register coverage
+tests/test_pages.py      every researched place has a text page; sitemap, canonical URLs, JSON-LD, CSP-safe
+                         markup, internal links and llms.txt resolve
 tests/test_parity.py     browser (JS) and Python engines agree on every score and calculator result
 tests/test_e2e.py        real browser under the production CSP: labels match features, small states
                          clickable, Bermuda inset, weights persist, mobile layout, CSV safety

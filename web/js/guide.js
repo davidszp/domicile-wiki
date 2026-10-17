@@ -221,6 +221,12 @@ export function createGuide({ world, modes, go, select }) {
     pointOf: (id) => jur(id)?.label || null, onSelect: (id) => select(id), onLocate: locate,
   });
   onThemeChange(() => globe.recolor()); // the spectrum has different stops per theme
+  // The wordmark's globe spins (SMIL in index.html); hold it still for readers who ask for less motion.
+  const spin = document.querySelector(".globe-o");
+  const still = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const holdSpin = () => (still.matches ? spin?.pauseAnimations() : spin?.unpauseAnimations());
+  still.addEventListener("change", holdSpin);
+  holdSpin();
 
   renderModes();
   buildSituation();

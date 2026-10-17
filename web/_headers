@@ -26,3 +26,7 @@
 
 /
   Cache-Control: public, max-age=0, must-revalidate
+
+# The static text pages (domicile/pages.py) are rebuilt with the data.
+/places/*
+  Cache-Control: public, max-age=0, must-revalidate

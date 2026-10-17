@@ -1,0 +1,27 @@
+/* The static text pages (web/places/, written by domicile/pages.py): one readable column on the app's
+   tokens and fonts from app.css. */
+body.page { height: auto; font-size: 16px; line-height: 1.6; }
+.page-top, .page-main, .page-foot { max-width: 820px; margin: 0 auto; padding: 0 16px; }
+.page-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; padding-top: 18px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.page-top nav { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }
+.page-brand { font-family: var(--font-head); font-size: 22px; font-weight: 600; color: var(--text); text-decoration: none; }
+.page-main { padding-top: 16px; padding-bottom: 32px; }
+.page-main h1 { font-family: var(--font-head); font-size: clamp(32px, 6vw, 44px); line-height: 1.1; font-weight: 600; margin: 8px 0 10px; }
+.page-main h2 { font-family: var(--font-head); font-size: 24px; font-weight: 600; margin: 32px 0 8px; }
+.page-main h3 { font-size: 17px; margin: 20px 0 6px; }
+.page-main h4, .page-main h5, .page-main h6 { font-size: 15px; margin: 16px 0 4px; }
+.lede { font-size: 18px; color: var(--text); }
+.crumbs { color: var(--muted); }
+.page-cta { display: inline-block; background: var(--accent); color: var(--accent-text); border-radius: var(--r-m); padding: 9px 16px; font-weight: 600; text-decoration: none; }
+.page-cta:hover { filter: brightness(1.08); }
+.page .facts { grid-template-columns: minmax(0, max-content) minmax(0, 1fr); font-size: 15px; }
+.page .md-table { font-size: 14px; }
+.page .md-table th, .page .md-table td { padding: 6px 10px; vertical-align: top; text-align: left; border-bottom: 1px solid var(--border); }
+.page .table-wrap { overflow-x: auto; }
+.page .dossier { border-top: 1px solid var(--border); margin-top: 32px; }
+.page .sources { padding-left: 20px; font-size: 14px; }
+.page a { overflow-wrap: anywhere; }
+.cols { columns: 3 200px; padding-left: 20px; }
+.place-list { list-style: none; padding: 0; display: grid; gap: 10px; }
+.page-foot { padding-top: 12px; padding-bottom: 28px; border-top: 1px solid var(--border); }
+@media (max-width: 560px) { .page .facts { grid-template-columns: 1fr; } .page .facts dd { margin-bottom: 6px; } }

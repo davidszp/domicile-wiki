@@ -5,6 +5,7 @@ Reads researched jurisdiction files, indicators, FX and the scoring config; writ
 - ``web/data/profiles/<ID>.json``  full detail for one jurisdiction (lazy-loaded on click)
 - ``web/data/sources.json``  the source register
 - ``web/data/dossiers/<file>.md``  the dated legal dossiers
+- ``web/places/``, ``web/sitemap.xml``, ``web/llms.txt``  static text pages for search engines and agents (domicile/pages.py)
 """
 
 from __future__ import annotations
@@ -16,7 +17,7 @@ import json
 import shutil
 from pathlib import Path
 
-from domicile import cola, earned, projection, scene, scoring
+from domicile import cola, earned, pages, projection, scene, scoring
 from domicile.fx import load as load_fx, to_eur
 from domicile.schema import CostOfLiving, ImmigrationFile, IncomeFile, Jurisdiction, RegionalIncomeFile, Regime, Subnational, SuccessionFile
 from domicile.taxcalc import compile_regime
@@ -601,6 +602,8 @@ def write(cfg: dict, fx: dict, out_j: dict, profiles: dict, sources: list[dict])
     manifest = json.loads((DATA / "indicators" / "manifest.json").read_text())
     meta = {"built": dt.date.today().isoformat(), "fx_date": fx["date"], "fx_usd_per_eur": fx["rates"]["USD"]["per_eur"], "config": cfg, "indicators": manifest,
             "citizenships": list(CITIZENSHIPS)}
+    for jid, path in pages.paths(out_j).items():
+        out_j[jid]["page"] = path
     dump(WEB / "scores.json", {"meta": meta, "jurisdictions": out_j})
     pdir = WEB / "profiles"
     if pdir.exists():
@@ -618,6 +621,7 @@ def write(cfg: dict, fx: dict, out_j: dict, profiles: dict, sources: list[dict])
     (ddir / "income").mkdir()
     for md in sorted((ROOT / "docs" / "income").glob("*.md")):
         shutil.copy(md, ddir / "income" / md.name)
+    pages.main()
     researched = sum(1 for e in out_j.values() if e["researched"] and not e["inherited"])
     scored = sum(1 for e in out_j.values() if e["default"]["score"] is not None)
     ko = sum(1 for e in out_j.values() if e.get("ko"))

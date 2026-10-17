@@ -3,8 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>domicile.wiki</title>
-  <meta name="description" content="Interactive, source-linked guide ranking countries and regions for relocation: a high-net-worth individual (HNWI) and family (capital gains, dividend, inheritance and wealth taxes), an expat employee or a digital nomad (income tax, social security, rent and visas), plus safety, stability, rule of law and quality of life.">
+  <title>domicile.wiki: the open guide to moving abroad (taxes, residence, daily life)</title>
+  <meta name="description" content="Compare countries for moving abroad: tax on investments and income, residence and golden visa routes per passport, inheritance law, living costs and safety. Free, with sources.">
+  <link rel="canonical" href="https://domicile.wiki/">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="domicile.wiki">
+  <meta property="og:title" content="domicile.wiki: the open guide to moving abroad">
+  <meta property="og:description" content="Taxes, residence routes, inheritance law, living costs and daily life by country and region, with sources.">
+  <meta property="og:url" content="https://domicile.wiki/">
+  <meta name="twitter:card" content="summary">
+  <!-- For search engines and agents; keep the origin in step with SITE in domicile/pages.py (tests/test_pages.py). -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://domicile.wiki/#website","url":"https://domicile.wiki/","name":"domicile.wiki","description":"The open guide to moving abroad: taxes, residence, daily life, with sources.","inLanguage":"en","license":"https://creativecommons.org/licenses/by-sa/4.0/"},{"@type":"Dataset","@id":"https://domicile.wiki/#dataset","url":"https://domicile.wiki/","name":"domicile.wiki relocation data: taxes, residence routes and daily life by country","description":"Researched, source-linked data by country and region: tax on capital gains, dividends, wealth, inheritance and income; residence and citizenship routes per passport; succession law; household living costs; and daily-life indicators (safety, stability, rule of law, healthcare, education). Every figure is dated and cites its source.","license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"creator":{"@type":"Organization","name":"domicile.wiki","url":"https://github.com/davidszp/domicile-wiki"},"keywords":["tax residence","relocation","golden visa","digital nomad visa","inheritance tax","wealth tax","capital gains tax","cost of living"],"distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://domicile.wiki/data/scores.json"}],"isPartOf":{"@id":"https://domicile.wiki/#website"}}]}</script>
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="color-scheme" content="light dark">
@@ -54,7 +64,7 @@
   <div class="app">
     <aside class="guide" aria-label="Guide">
       <div class="brand">
-        <h1 class="wordmark" aria-label="domicile.wiki">d<svg class="globe-o" viewBox="0 0 44 44" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="22" cy="22" r="18" stroke-width="3.6"/><ellipse cx="22" cy="22" rx="7.5" ry="18" stroke-width="3.6"/><line x1="4" y1="22" x2="40" y2="22" stroke-width="3.6"/><path d="M8 11.5Q22 8 36 11.5M8 32.5Q22 36 36 32.5" stroke-width="2.4"/></g></svg>micile<span class="tld">.wiki</span></h1>
+        <h1 class="wordmark" aria-label="domicile.wiki">d<svg class="globe-o" viewBox="0 0 44 44" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="22" cy="22" r="18" stroke-width="3.6"/><ellipse class="meridian" cx="22" cy="22" rx="7.5" ry="18" stroke-width="2.6"><animate attributeName="rx" values="0.4;4.66;9;12.73;15.59;17.39;18;17.39;15.59;12.73;9;4.66;0.4" dur="6s" begin="-1.4s" repeatCount="indefinite"/></ellipse><ellipse class="meridian" cx="22" cy="22" rx="17.9" ry="18" stroke-width="2.6"><animate attributeName="rx" values="0.4;4.66;9;12.73;15.59;17.39;18;17.39;15.59;12.73;9;4.66;0.4" dur="6s" begin="-3.4s" repeatCount="indefinite"/></ellipse><ellipse class="meridian" cx="22" cy="22" rx="10.4" ry="18" stroke-width="2.6"><animate attributeName="rx" values="0.4;4.66;9;12.73;15.59;17.39;18;17.39;15.59;12.73;9;4.66;0.4" dur="6s" begin="-5.4s" repeatCount="indefinite"/></ellipse><line x1="4" y1="22" x2="40" y2="22" stroke-width="3.6"/><path d="M8 11.5Q22 8 36 11.5M8 32.5Q22 36 36 32.5" stroke-width="2.4"/></g></svg>micile<span class="tld">.wiki</span></h1>
         <p class="tagline small muted">The open guide to moving abroad: taxes, residence, daily life, with sources.</p>
       </div>
 
@@ -109,15 +119,21 @@
         <a class="repo-link" href="https://github.com/davidszp/domicile-wiki" rel="noopener" aria-label="Source code on GitHub" title="Source code on GitHub">
           <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         </a>
-        <p>All four views use the same data and your settings. <span id="built"></span></p>
+        <p>All four views use the same data and your settings. <span id="built"></span> <a href="places/">All places as text pages</a>.</p>
         <p>Research, not tax or legal advice. Code AGPL-3.0, data CC BY-SA 4.0.</p>
       </footer>
     </aside>
 
     <main id="stage" class="stage" tabindex="-1">
-      <div id="loading" class="loading">Loading data…</div>
+      <div id="loading" class="loading">
+        <p>Loading the interactive guide…</p>
+        <!-- Read by search engines and agents, which do not wait for the app; removed once it loads. -->
+        <p class="small">domicile.wiki ranks and compares countries and regions for a wealthy family, an expat employee or a remote worker:
+          tax on investments and income, residence routes per passport, inheritance law, living costs and daily life, each figure with its source.
+          <a href="places/">Browse every place as a text page</a>.</p>
+      </div>
       <div id="fatal" class="fatal" role="alert" hidden></div>
-      <noscript><p class="fatal">This site needs JavaScript.</p></noscript>
+      <noscript><p class="fatal">The interactive guide needs JavaScript. Every place is also on a <a href="places/">text page</a>.</p></noscript>
     </main>
   </div>
 

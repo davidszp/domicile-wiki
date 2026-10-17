@@ -236,6 +236,8 @@ export function renderProfile(panel, ctx) {
       h("button", { onclick: (e) => { toggleIn("shortlist", id, { persist: true }); e.currentTarget.textContent = shortlistLabel(id); } }, shortlistLabel(id)),
       h("button", { disabled: !inCompare && state.compare.length >= MAX_COMPARE,
         onclick: (e) => { toggleIn("compare", id, { max: MAX_COMPARE }); e.currentTarget.textContent = compareLabel(id); } }, compareLabel(id)),
+      // The static text page (domicile/pages.py): an address to share or cite.
+      e.page ? h("a", { class: "page-link small", href: e.page, title: "A plain page with the key facts and sources, to share or cite" }, "Page to share") : null,
     ));
   panel.append(head);
   if (!isSimple()) panel.append(h("details", { class: "persona-fold" }, h("summary", null, `Who is this scored for? (${personaCfg().label})`), personaCard()));

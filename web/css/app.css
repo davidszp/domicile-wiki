@@ -125,6 +125,8 @@ input[type="range"], input[type="checkbox"] { accent-color: var(--accent); }
 .chk.big { font-size: 14px; }
 .actions, .row-actions { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; align-items: center; }
 .loading, .fatal { position: absolute; inset: auto 0 50% 0; text-align: center; color: var(--muted); margin-top: 30vh; }
+.loading p { max-width: 560px; margin: 6px auto; padding: 0 16px; }
+.page-link { margin-left: 4px; }
 .fatal { background: var(--surface); color: var(--error); padding: 12px; margin: 30vh 16px 0; border-radius: var(--r-l); box-shadow: var(--elev-2); }
 
 /* ===================================================================== 3 Legends (globe) */

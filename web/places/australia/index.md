@@ -1,0 +1,246 @@
+# Australia: taxes, residence and cost of living
+
+Source: https://domicile.wiki/places/australia/ (domicile.wiki, researched 2026-10-16). Data licence CC BY-SA 4.0. Research, not tax or legal advice.
+
+## At a glance
+
+For an EU-citizen family of five living off a EUR 30M portfolio (the guide's default reader).
+
+- Score for a wealthy family: 76 / 100
+- Can EU citizens live here?: only work or business permits
+- Can US citizens live here?: only work or business permits
+- Other passports: only work or business permits
+- Tax on a €30M portfolio: €196,095 a year · Discretionary family trust with a corporate beneficiary ('bucket company')
+- Wealth tax: none
+- Children inherit: tax-free
+- After 60 years: €160,583,000 of €30,000,000 (with no tax at all: €286,928,000)
+- Living costs, family of five: €310,330 a year
+- EU member: no
+- Currency: AUD
+- Capital: Canberra
+
+## Tax on investments, inheritance and wealth
+
+Australian residents are taxed on worldwide income at up to 45% plus the 2% Medicare levy (47%) above AUD 190,000. Capital gains on assets held 12 months get a 50% discount, so the top effective rate is 23.5%; the Treasury Laws Amendment (Tax Reform No. 1) Act 2026 (Royal Assent 26 June 2026) replaces the discount from 1 July 2027 with cost-base indexation and a 30% minimum tax on gains accruing after that date. Franked Australian dividends carry a 30% imputation credit (net top rate about 24.3% of the cash dividend); foreign dividends are taxed at up to 47% with a foreign tax offset. There is no inheritance, gift or wealth tax; assets inherited by residents keep the deceased's cost base, but CGT can be triggered when assets pass to non-resident beneficiaries. Holders of temporary visas are exempt on most foreign income and gains.
+
+- **Australian tax resident**: Worldwide taxation at resident rates (2026/27: 45% above AUD 190,000) plus 2% Medicare levy.
+- **Temporary resident (temporary visa holder)**: Holders of temporary visas who are not Social Security Act residents and have no Australian-resident spouse are exempt from Australian tax on foreign-source income and on capital gains on assets that are not taxable Australian property. No current visa lets a non-working wealthy family live in Australia on a temporary basis, so this regime is effectively unavailable; it is kept only as a low-confidence placeholder.
+- **Discretionary family trust with a corporate beneficiary ('bucket company')**: The portfolio is held by a discretionary (family) trust with a company as trustee. Each year the trustee streams capital gains to individual family members, who keep the 50% CGT discount (23.5% at the top rate, less for adult children on lower incomes), and streams dividends and other income to a family-owned 'bucket' company taxed at a flat 30%. Foreign dividends therefore bear 30% instead of up to 47%, and franked Australian dividends bear no extra tax in the company. Tax on the bucket company's profits is deferred until it pays franked dividends to the family. Law in force for 2026; the CGT discount is replaced by indexation and a 30% minimum tax for gains accruing after 1 July 2027 (enacted 26 June 2026), and Treasury's exposure draft of 3 September 2026 would impose a 30% minimum tax on discretionary trusts from income years starting on or after 1 July 2028, with no offset for corporate beneficiaries (not yet law); together these would largely remove the advantage.
+
+## Income tax
+
+Residents pay 0% to AUD 18,200, then 15% (from 1 July 2026, down from 16%), 30% above AUD 45,000, 37% above AUD 135,000 and 45% above AUD 190,000, plus a 2% Medicare levy. There is no social security tax; employers pay 12% superannuation on top. Temporary visa holders are exempt on foreign-source income.
+
+## How to get residence
+
+No free movement. EU, US and other passports face the same rules (some countries get visa-free or e-visa travel). Australia no longer sells residence: the Significant Investor Visa (AUD 5 million) closed to new applicants on 31 July 2024 and the retirement visa is repealed. The only elite route is the invitation-only National Innovation visa (subclass 858) for exceptional achievers. Everyone else needs an employer-sponsored visa such as the Skills in Demand 482. Australia has no digital nomad visa.
+
+- **Significant Investor Visa (subclass 188C, Business Innovation and Investment programme)** (Investor residence; EU citizens, US citizens, other passports; closed to new applicants): Provisional visa for investing AUD 5 million in Australian assets, leading to permanent residence; closed to new applicants on 31 July 2024.
+- **Investor Retirement visa (subclass 405) and Retirement visa (410)** (Passive income / retirement; EU citizens, US citizens, other passports; closed to new applicants): Temporary retirement visa for self-funded retirees with an Australian investment; now listed by Home Affairs as repealed.
+- **National Innovation visa (subclass 858)** (Work; EU citizens, US citizens, other passports; open): Invitation-only permanent visa for people with an internationally recognised record of exceptional achievement; it replaced Global Talent in December 2024.
+- **Skills in Demand visa (subclass 482)** (Work; EU citizens, US citizens, other passports; open): Employer-sponsored temporary skilled work visa, with a Specialist Skills salary floor of AUD 146,717 and a Core Skills floor of AUD 79,499 from 1 July 2026.
+
+Citizenship: Citizenship by conferral needs 4 years of lawful residence in the 4 years before applying, the last 12 months as a permanent resident, good character, an English-language citizenship test; applicants aged 18 to 59 sit a citizenship test (pass mark 15 out of 20) (Home Affairs guidance).
+
+## Inheritance law and trusts
+
+A will can generally leave the estate to anyone, but each state and territory lets a court award provision to family and dependants who were left too little. Australia has trust law and the Hague Trusts Convention is in force. There is no private family foundation; only charitable structures exist.
+
+## Daily life (0-100, higher is better)
+
+- Safety and personal security: 77
+- Political and institutional stability: 77
+- Corruption and government integrity: 80
+- Legal system and property rights: 79
+- Healthcare quality and access: 90
+- Education quality: 66
+- Human development and quality of life: 92
+- Infrastructure and connectivity: 87
+- Cost of living and housing: 55
+- Business opportunities and economy: 85
+- Cultural fit and lifestyle: 90
+
+## Research notes
+
+### Australia — family-office tax dossier
+
+Last reviewed: 2026-10-16
+Tax year: 2026/27
+Reviewer: research agent (Claude), unreviewed by a tax adviser
+
+#### Summary
+
+Australian residents are taxed on worldwide income at up to 45% plus the 2% Medicare levy (47%) above AUD 190,000. Capital gains on assets held 12 months get a 50% discount, so the top effective rate is 23.5%; the Treasury Laws Amendment (Tax Reform No. 1) Act 2026 (Royal Assent 26 June 2026) replaces the discount from 1 July 2027 with cost-base indexation and a 30% minimum tax on gains accruing after that date. Franked Australian dividends carry a 30% imputation credit (net top rate about 24.3% of the cash dividend); foreign dividends are taxed at up to 47% with a foreign tax offset. There is no inheritance, gift or wealth tax; assets inherited by residents keep the deceased's cost base, but CGT can be triggered when assets pass to non-resident beneficiaries. Holders of temporary visas are exempt on most foreign income and gains.
+
+US citizens: US citizens remain US-taxed; Australian superannuation, franking credits and Australian managed funds (PFICs) are poorly coordinated with US rules. The US-Australia treaty limits Australian dividend WHT to 15% for portfolio holdings.
+
+#### Residence and eligibility
+
+Resident if domiciled in Australia (unless a permanent place of abode is abroad), present more than half the income year (183-day test) unless the usual abode is overseas, or resident under ordinary concepts. Treaty tie-breakers apply.
+
+- **Permanent or temporary skilled/business visas (e.g. National Innovation visa)** (EU, US, OTHER): Home Affairs states that the Business Innovation and Investment Program (subclass 188/888, including the AUD 5 million Significant Investor stream) is closed as of 31 July 2024; applications lodged before then are still processed. Remaining routes require skills, sponsorship or exceptional-talent criteria (the National Innovation visa, subclass 858, is permanent). There is no investor or self-funded residence visa for a non-working family.
+
+#### Capital gains
+
+##### Standard regime
+
+Net capital gains are added to taxable income. Individuals who hold an asset at least 12 months get a 50% discount (for disposals up to 30 June 2027), so the top effective rate is 47% x 50% = 23.5%. Gains on assets held under 12 months are taxed at up to 47%.
+
+- **Exemptions and thresholds:** Main residence exemption; pre-CGT assets (acquired before 20 September 1985) exempt until 30 June 2027. Small business CGT concessions for active business assets (not modelled).
+- **Important exceptions, statute references and announced changes:** CGT reform enacted: the Treasury Laws Amendment (Tax Reform No. 1) Act 2026 (No. 49 of 2026, Royal Assent 26 June 2026) and the Income Tax Rates Amendment (Tax Reform No. 1) Act 2026 (No. 50) replace the 50% discount, for individuals, trusts and partnerships, with cost-base indexation and a 30% minimum tax on capital gains accruing on or after 1 July 2027. Gains accrued to 30 June 2027 keep the 50% discount (assets are treated as sold and reacquired at market value on 30 June 2027, with the gain deferred); pre-CGT assets become taxable for later accrual; investors in new residential dwellings may choose the old discount. Companies, foreign residents and temporary residents are generally outside the new indexation regime. The rates below are the law for disposals up to 30 June 2027 (the 2026/27 year); the engine cannot yet express indexation. Ceasing residence is a CGT event (I1) on non-Australian assets (general rule, not verified from an opened source).
+- **Tax year / confidence / verification:** 2026/27 / medium / partially_verified (checked 2026-10-15)
+- **JSON numbers:** headline 47% (0.47); listed domestic 23.5% (0.235); listed foreign 23.5% (0.235); private business sale 23.5% (0.235); local real estate 23.5% (0.235); foreign real estate 23.5% (0.235).
+- **How derived:** Top marginal rate 45% + 2% Medicare levy = 47%; 50% CGT discount for assets held at least 12 months gives 23.5%. Law in force for disposals to 30 June 2027; gains accruing from 1 July 2027 bear indexation (real gain at marginal rates, so up to 47% of the real gain) with a 30% minimum tax, under the Act of 26 June 2026. Private business before small business concessions.
+- **Holding period:** At least 12 months for the 50% discount.
+- **Trader recharacterisation:** Share traders are taxed on revenue account (gains fully assessable at up to 47%, no discount); classification follows the facts (frequency, organisation, profit intention).
+- **Foreign assets:** Worldwide gains taxable; foreign income tax offset available. Temporary residents are exempt on assets that are not taxable Australian property.
+
+##### Temporary resident (temporary visa holder) (special regime)
+
+Capital gains on foreign assets (anything that is not taxable Australian property, e.g. foreign listed shares and portfolio holdings of Australian shares under 10%) are disregarded. Gains on Australian real estate and other taxable Australian property are taxed as for residents (23.5% with the discount; temporary residents may lose the discount for periods of non-residence).
+
+- **Conditions:** Temporary visa; not a Social Security Act resident; no Australian-resident spouse. No visa route exists for a non-working wealthy family (BIIP closed 31 July 2024; National Innovation visa is permanent), so this regime is a placeholder restricted to OTHER (New Zealand citizens on a subclass 444 visa) with a 1-year visitor-visa duration.
+- **Tax year / confidence / verification:** 2026/27 / low / partially_verified (checked 2026-10-15)
+- **JSON numbers:** headline 47% (0.47); listed domestic 23.5% (0.235); listed foreign 0% (0.0); private business sale 23.5% (0.235); local real estate 23.5% (0.235); foreign real estate 0% (0.0).
+- **How derived:** Foreign-asset gains exempt (ITAA 1997 Subdivision 768-R, per PwC's description). Australian listed shares: portfolio holdings under 10% are not taxable Australian property, so may also be exempt; coded 23.5% conservatively. Private business assumed Australian.
+
+Open points for this tax: ATO and legislation pages were not reachable (HTTP 403); the exact scope of the temporary-resident exemption (ITAA 1997 Subdivision 768-R) is from PwC. | Visa position verified from Home Affairs (BIIP closed 31 July 2024; National Innovation visa permanent; Visitor visa 3, 6 or 12 months). Whether a New Zealand citizen on a subclass 444 visa is a temporary resident depends on Social Security Act residence (protected SCV holders are not temporary residents); not verified on the ATO site.
+
+#### Dividends
+
+##### Standard regime
+
+Franked dividends from Australian companies are grossed up for the company tax paid (up to 30%) and the franking credit is offset against personal tax, with excess refundable. A top-rate individual pays 47% on the grossed-up amount less the 30% credit, i.e. about 24.3% of the cash dividend. Foreign dividends are taxed at up to 47% with a foreign income tax offset for source withholding.
+
+- **Exemptions and thresholds:** None for high incomes.
+- **Important exceptions, statute references and announced changes:** Controlled foreign company rules can attribute passive income of foreign companies controlled by Australians.
+- **Tax year / confidence / verification:** 2026/27 / high / partially_verified (checked 2026-10-15)
+- **JSON numbers:** headline 47% (0.47); domestic 24.3% (0.243); foreign gross 47% (0.47); foreign tax relief: credit.
+- **How derived:** Fully franked dividend D: taxable D/0.7, tax 47% x D/0.7 = 0.671D less franking credit 0.429D = 0.243D (24.3% of cash). Foreign dividends: 47% before foreign income tax offset.
+- **Outbound withholding:** No WHT on franked dividends; unfranked dividends 30% (15% for most treaty residents), exempt to the extent declared conduit foreign income.
+- **Treaty network:** About 50 treaties listed by PwC, including the United States (15% portfolio dividends).
+- **Holding companies:** Companies pay 30% (25% for base rate entities with turnover under AUD 50 million and passive income no more than 80%). The usual family vehicle, a discretionary trust streaming dividends to a 30% 'bucket company' and capital gains to individuals, is modelled as the 'family_trust_bucket_company' structure regime.
+
+##### Temporary resident (temporary visa holder) (special regime)
+
+Foreign dividends are exempt for temporary residents. Australian franked dividends are taxed as for residents.
+
+- **Conditions:** Temporary visa; not a Social Security Act resident; no Australian-resident spouse. No visa route exists for a non-working wealthy family (BIIP closed 31 July 2024; National Innovation visa is permanent), so this regime is a placeholder restricted to OTHER (New Zealand citizens on a subclass 444 visa) with a 1-year visitor-visa duration.
+- **Tax year / confidence / verification:** 2026/27 / low / partially_verified (checked 2026-10-15)
+- **JSON numbers:** headline 47% (0.47); domestic 24.3% (0.243); foreign gross 0% (0.0); foreign tax relief: exemption.
+- **How derived:** Foreign-source income of temporary residents is exempt; domestic franked dividend calculation as for residents.
+
+Open points for this tax: ATO pages were not reachable (HTTP 403); exemption scope from PwC. | Visa position verified from Home Affairs (BIIP closed 31 July 2024; National Innovation visa permanent; Visitor visa 3, 6 or 12 months). Whether a New Zealand citizen on a subclass 444 visa is a temporary resident depends on Social Security Act residence (protected SCV holders are not temporary residents); not verified on the ATO site.
+
+#### Inheritance and gifts to children
+
+##### Standard regime
+
+No inheritance, estate or gift tax. When a resident beneficiary inherits, any CGT is generally deferred: the beneficiary takes over the deceased's cost base (or market value for pre-CGT assets and certain main residences) and pays CGT only on a later sale. CGT is triggered at death when an asset passes to a non-resident beneficiary or a tax-advantaged entity (CGT event K3), apart from taxable Australian property. Gifts are a disposal by the donor at market value, so a gift of appreciated shares to a child triggers CGT (23.5% at the top rate).
+
+- **Exemptions and thresholds:** No tax of any amount on inheritances to children.
+- **Important exceptions, statute references and announced changes:** Superannuation death benefits paid to adult (non-dependant) children are taxed (rates not verified here). The K3 rule makes leaving shares to a child who lives abroad a taxable event.
+- **Regional differences:** Probate fees are set by each state's Supreme Court and are modest in absolute terms (not verified).
+- **Tax year / confidence / verification:** 2026/27 / medium / partially_verified (checked 2026-10-15)
+- **JSON numbers:** basis `none`, children `fully_exempt`, exemption 0 AUD, brackets (marginal): none; other transfer costs 0% (0.0).
+- **Gifts:** No gift tax; a gift is a CGT disposal at market value by the donor. (same as inheritance: False; tax-free after years: None)
+- **Foreign assets:** No inheritance tax on any assets.
+- **Residence/domicile rules:** Not applicable.
+- **Business relief covers listed shares:** False
+
+#### Wealth tax
+
+##### Standard regime
+
+No net wealth tax.
+
+- **Important exceptions, statute references and announced changes:** Division 296: per PwC, from 1 July 2026 individuals with total superannuation balances above AUD 3 million pay an extra 15% on earnings attributable to the balance between AUD 3 million and 10 million and 25% above AUD 10 million. This is an earnings tax on superannuation, not a wealth tax; it matters only to families with large super balances.
+- **Tax year / confidence / verification:** 2026/27 / high / verified (checked 2026-10-15)
+- **JSON type:** `none`
+- **Property tax (not a wealth tax):** State land tax on the unimproved value of land (principal residence exempt; thresholds vary), council rates, stamp duty on purchases, and foreign purchaser surcharges on duty and land tax in several states. A federal annual vacancy fee applies to foreign-owned vacant dwellings. Foreign persons, including temporary residents, are banned from buying established dwellings until 30 June 2029 (limited exceptions).
+
+#### Special regimes
+
+- **Temporary resident (temporary visa holder)** (`temporary_resident`; OTHER; duration 1 years): Holders of temporary visas who are not Social Security Act residents and have no Australian-resident spouse are exempt from Australian tax on foreign-source income and on capital gains on assets that are not taxable Australian property. No current visa lets a non-working wealthy family live in Australia on a temporary basis, so this regime is effectively unavailable; it is kept only as a low-confidence placeholder. Eligibility: Hold a temporary visa under the Migration Act 1958; not an Australian resident for Social Security Act purposes; spouse not an Australian resident under that Act. No realistic visa exists today for a non-working wealthy family. Home Affairs states that the Business Innovation and Investment Program (subclass 188, including the Significant Investor stream) is closed as of 31 July 2024. The National Innovation visa (subclass 858) is a permanent visa ('Permanently' per Home Affairs), so holders are ordinary residents and the exemption does not apply. Every other temporary visa requires work, study or sponsorship (e.g. the Skills in Demand visa needs genuine employment by an approved sponsor). The only temporary visa open without those conditions is the Visitor visa (subclass 600), granted for stays of 3, 6 or 12 months and not meant for living in Australia; duration is therefore set to 1 year as a placeholder. Eligible citizenships are restricted to OTHER as an empty-safe choice: in practice only New Zealand citizens (Special Category visa, subclass 444, no fixed term) can live in Australia indefinitely on a temporary visa without working, and they fall in OTHER. EU and US families cannot use this regime.
+  - Metrics that differ from standard: capital_gains, dividends (details in the tax sections above).
+
+#### Holding structures
+
+##### Discretionary family trust with a 'bucket company' (structure regime `family_trust_bucket_company`)
+
+**What it is.** The portfolio is owned by a discretionary trust with a corporate trustee. Each year, by trustee resolution before 30 June, capital gains are streamed to individual family members (Subdivision 115-C) and dividends and other income to a family-owned 'bucket' company (Subdivision 207-B for franked dividends). Eligible: EU and OTHER; not US persons (foreign non-grantor trust and PFIC/CFC treatment in the US).
+
+**Rates.** Capital gains keep the 50% discount in individuals' hands: 47% x 50% = 23.5% (JSON 0.235 for all asset classes, same as direct holding; lower for adult children on lower incomes, not modelled). A company would pay 30% on the whole gain, so gains are not streamed to it. Dividends in the bucket company: 30% company tax (a passive investment company is not a base rate entity; PwC); a franked dividend D bears 30% x D/0.7 less a 0.429D franking credit = 0 (JSON domestic 0); foreign portfolio dividends are assessable to the company at 30% with a foreign income tax offset (JSON foreign_gross 0.3, credit), compared with 47% for a top-rate individual. The foreign-dividend exemption for companies needs a 10% stake (PwC).
+
+**Payout.** `payout_tax_rate` 0, because the family's spending (EUR 400k assumed) is covered by the capital gains already taxed in their hands (about EUR 1.2 million a year). Profits taken out of the bucket company are franked dividends: 24.3% of the cash at the top rate. The company's tax is therefore a deferral, not a saving, on money the family eventually spends. Running cost AUD 15,000 a year is a reasoned estimate (two returns, accounts, resolutions, ASIC fees), not sourced.
+
+**Anti-avoidance.** Division 7A (payments, loans or debt forgiveness by the company to the family are unfranked deemed dividends unless under a complying loan). *Commissioner of Taxation v Bendel* [2026] HCA 18 (10 June 2026): an unpaid present entitlement of the bucket company is not by itself a Division 7A loan, contrary to TR 2010/3 and TD 2022/11 (RSM); Subdivision EA, section 100A reimbursement agreements (trustee taxed at 47% where adult children's distributions benefit the parents) and Part IVA still apply. Minors' distributions are taxed at penalty rates (Division 6AA, not verified). Family trust election and the 45-day rule are needed for franking credits.
+
+**Inheritance and exit.** No inheritance tax (standard regime applies); the trust does not die, control passes through the appointor, and the trust ends on its vesting date (up to 80 years in most states). Leaving Australia: CGT event I1 for individuals, I2 if the trust ceases to be resident; winding up the company pays out franked dividends (exit rules not verified from an opened source).
+
+**Changes (not modelled).** Enacted 26 June 2026 (Act No. 49 of 2026): from 1 July 2027 the 50% discount is replaced by indexation and a 30% minimum tax on gains accruing after that date (the discount keeps applying to gains accrued to 30 June 2027). Proposed, not law: a 30% minimum tax on discretionary trusts for income years starting on or after 1 July 2028 (Treasury exposure draft, 3 September 2026; consultation closed 18 September 2026), with a transitional roll-over for restructures between 1 July 2027 and 30 June 2030 and an election to nominate fixed beneficiaries. Non-corporate beneficiaries would get a non-refundable 30% offset; corporate beneficiaries none, so income streamed to a bucket company would be taxed at 30% in the trust and again at 30% in the company (BDO, Pitcher Partners). If enacted as drafted the advantage modelled here would largely disappear from 2028.
+
+#### Company taxation (kept separate from personal tax)
+
+Headline CIT rate: 30% (0.3). 30% CIT; 25% for base rate entities (aggregated turnover under AUD 50 million and passive income no more than 80% of assessable income, so a pure investment company pays 30%). Full imputation: franking credits pass to resident shareholders. Pillar Two: IIR and 15% domestic minimum tax from 1 January 2024, UTPR from 1 January 2025. Budget 2026-27 announced a 30% minimum tax on discretionary trusts from 1 July 2028.
+
+#### Cost of living notes
+
+City: Sydney.
+- Prime rent, monthly: 7,572 AUD (2026). Upper-middle North Shore and Lower North Shore houses with 4 or more bedrooms, new bonds April-June 2026, weekly median rent by postcode: 2065 (St Leonards, Wollstonecraft, Greenwich) AUD 1,725; 2066 (Lane Cove, Riverview) 1,880; 2067 (Chatswood) 1,710; 2069 (Roseville, Castle Cove) 2,000; 2070 (Lindfield) 1,620; 2071 (Killara) 1,770 (all flagged 's', 30 or fewer new bonds each; 140-290 bonds lodged for every size of dwelling). Value is the median of these six postcode medians, AUD 1,747.50 a week, x52/12 per month. Official bond-lodgement data, not asking rents. Mosman (2088, median 3,875 a week) and Vaucluse/Dover Heights (2030, 3,625) were dropped as ultra-prime harbourside areas.
+- International school, annual per child: 52,410 AUD (2026). Sydney Grammar School (boys, College Street), annual tuition fee 2026 for Forms I-VI (Years 7-12), schedule issued 25 November 2025. Australian school fees follow the calendar year. Source: Schedule of Fees 2026.
+Foreign persons cannot buy established homes until 30 June 2029, so a newly arrived family rents. Purchase prices, health insurance and housekeeper costs not sourced.
+
+#### Open questions
+
+- The CGT reform is law (Act No. 49 of 2026, Royal Assent 26 June 2026): indexation plus a 30% minimum tax on gains accruing from 1 July 2027. The JSON scores disposals up to 30 June 2027 (50% discount); the Act's detailed text was not read, only the Federal Register listing, the Parliamentary Library digest of the Bill as introduced and a KPMG summary. Late amendments may differ. The projection engine cannot yet express indexation and the minimum tax, so 60-year results use the 23.5% rate.
+- The 30% minimum tax on discretionary trusts is only an exposure draft (3 September 2026, proposed from 1 July 2028). If enacted as drafted, the family_trust_bucket_company structure would be double-taxed on income streamed to the bucket company.
+- Division 296 is described by PwC as applying from 1 July 2026; enactment details not checked against legislation.
+- ATO and AustLII pages returned HTTP 403, so CGT event K3 and the temporary-resident CGT scope rest on PwC and general knowledge. The visa position is now verified from Home Affairs (BIIP closed 31 July 2024).
+- The temporary-resident regime is effectively unavailable to a non-working wealthy family: it is kept as a low-confidence placeholder restricted to OTHER (New Zealand citizens on subclass 444) with a 1-year duration matching the longest visitor-visa stay. A family member employed in Australia on a sponsored work visa would make it available for that visa's term (not modelled).
+
+#### Sources
+
+- Australia - Individual - Income determination (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/australia/individual/income-determination
+- Australia - Individual - Taxes on personal income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/australia/individual/taxes-on-personal-income
+- Budget 2026-27: Tax reform (Australian Government (Treasury), government): https://budget.gov.au/content/04-tax-reform.htm
+- Australia - Individual - Significant developments (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/australia/individual/significant-developments
+- Australia - Corporate - Withholding taxes (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/australia/corporate/withholding-taxes
+- Australia - Individual - Other taxes (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/australia/individual/other-taxes
+- Australia - Individual - Residence (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/australia/individual/residence
+- Business Innovation and Investment (Provisional) visa (subclass 188) - site notice 'BIIP refunds and closure' (Department of Home Affairs (Australia), government): https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188
+- Visitor visa (subclass 600) (Department of Home Affairs (Australia), government): https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600
+- National Innovation visa (subclass 858) (Department of Home Affairs (Australia), government): https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/national-innovation-visa-858
+- Australia - Corporate - Taxes on corporate income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/australia/corporate/taxes-on-corporate-income
+- Rent and Sales Report: rent tables, June 2026 quarter (Table 2, weekly rents by postcode) (NSW Department of Communities and Justice, government): https://dcj.nsw.gov.au/content/dam/dcj/dcj-website/documents/about-us/families-and-communities-statistics/housing-and-rent-sales/rent-tables-june-2026-quarter.xlsx
+- Schedule of Fees 2026 (Sydney Grammar School, other): https://www.sydgram.nsw.edu.au/admissions/fees/
+- Australia - Corporate - Income determination (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/australia/corporate/income-determination
+- High Court: UPEs are not Division 7A loans (Commissioner of Taxation v Bendel [2026] HCA 18) (RSM Australia, professional): https://www.rsm.global/australia/insights/high-court-upes-not-division-7a-loans-bendel
+- Treasury Laws Amendment (Tax Reform No. 1) Act 2026, No. 49 of 2026 (Federal Register of Legislation, legislation): https://www.legislation.gov.au/C2026A00049
+- Australia: Legislation amending capital gains tax receives Royal Assent (KPMG, professional): https://kpmg.com/us/en/taxnewsflash/news/2026/07/australia-cgt-amendments-fuel-excise-reduction.html
+- Treasury Laws Amendment (Tax Reform No.1) Bill 2026 - Bills Digest No. 67, 2025-26 (Parliament of Australia, government): https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd2526/26bd067
+- Minimum tax on discretionary trusts: what the exposure draft means for taxpayers (BDO Australia, professional): https://www.bdo.com.au/en-au/insights/tax/articles/minimum-tax-on-discretionary-trusts-what-the-exposure-draft-means-for-taxpayers
+- Minimum trust tax a step closer: Treasury releases draft legislation (Pitcher Partners, professional): https://www.pitcher.com.au/insights/minimum-trust-tax-a-step-closer-treasury-releases-draft-legislation/
+
+#### Change log
+
+- 2026-10-15: initial research.
+- 2026-10-15: temporary_resident regime changed from indefinite (duration null) to 4 years, eligibility rewritten to say that no temporary visa fits a non-working family since the 2024 closure of the investor visa streams, confidence lowered to low (review of special-regime durations).
+- 2026-10-15 (data-quality pass): temporary_resident regime re-verified against Home Affairs: BIIP (subclass 188, incl. Significant Investor) closed as of 31 July 2024, National Innovation visa is permanent, Visitor visa 3/6/12 months. No visa fits a non-working wealthy family, so the regime is restricted to OTHER (NZ citizens on subclass 444) with a 1-year placeholder duration, confidence low. Added cost of living: Mosman 4+ bedroom house rent AUD 16,792 a month (NSW Rent and Sales Report, June quarter 2026) and Sydney Grammar School fee AUD 52,410 (2026).
+- 2026-10-15: added the `family_trust_bucket_company` structure regime and a Holding structures section (Bendel [2026] HCA 18, Budget 2026-27 trust and CGT announcements).
+- 2026-10-15: family rent re-checked against the upper-middle-class standard: changed from 16,792 to 7,572 AUD (North Shore: Lane Cove, Chatswood, Roseville, Lindfield, Killara, St Leonards; was Mosman).
+- 2026-10-16: CGT reform status corrected from announced to enacted (Act No. 49 of 2026, Royal Assent 26 June 2026; indexation and 30% minimum tax for gains accruing from 1 July 2027), discretionary-trust minimum tax updated to Treasury's exposure draft of 3 September 2026 (not law). Rates unchanged (they score disposals to 30 June 2027). Added sources. Recipe AUS.json drafted.
+
+
+## Residence and succession sources
+
+- [Business Innovation and Investment (Provisional) visa (subclass 188) - closure notice](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/business-innovation-and-investment-188) — Department of Home Affairs (Australia)
+- [Significant Investor Visa - Subclass 188C](https://visaplan.au/significant-investor-visa/) — Visaplan
+- [Investor Retirement visa (subclass 405), listed under repealed visas](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/repealed-visas/investor-retirement-visa-subclass-405) — Department of Home Affairs (Australia)
+- [National Innovation visa (subclass 858)](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/national-innovation-visa-858) — Department of Home Affairs (Australia)
+- [The National Innovation Visa (Subclass 858) in 2026](https://oneplanetmigrationlaw.com.au/immigration-blog/national-innovation-visa-858-2026/) — One Planet Migration Law
+- [Annual Indexation of the CSIT and SSIT - Effective 1 July 2026](https://www.ahclawyers.com/news-articles/26/02/27/annual-indexation-of-the-csit-and-ssit-effective-1-july-2026) — AHC Lawyers
+- [Australia Announces Indexed Increases to Salary Thresholds for Subclass 482 and 186 Visas Effective July 2026](https://eiglaw.com/australia-announces-indexed-increases-to-salary-thresholds-for-subclass-482-and-186-visas-effective-july-2026/) — EIG Law
+- [HCCH status table, Convention of 1 July 1985 on the Law Applicable to Trusts](https://www.hcch.net/en/instruments/conventions/status-table/?cid=59) — HCCH
+- [Succession Act 2006 (NSW)](https://legislation.nsw.gov.au/view/html/inforce/current/act-2006-080) — NSW Government
+- [Succession Act 2023 (SA)](https://www.legislation.sa.gov.au/_legislation-documents/lz/c/a/succession-act-2023/current/2023.30.un.rtf) — SA Government

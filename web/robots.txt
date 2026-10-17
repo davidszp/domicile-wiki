@@ -1,0 +1,5 @@
+# Search engines and AI agents are welcome; please cite the place pages.
+User-agent: *
+Allow: /
+
+Sitemap: https://domicile.wiki/sitemap.xml

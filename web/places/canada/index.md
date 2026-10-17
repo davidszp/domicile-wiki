@@ -1,0 +1,204 @@
+# Canada: taxes, residence and cost of living
+
+Source: https://domicile.wiki/places/canada/ (domicile.wiki, researched 2026-10-16). Data licence CC BY-SA 4.0. Research, not tax or legal advice.
+
+## At a glance
+
+For an EU-citizen family of five living off a EUR 30M portfolio (the guide's default reader).
+
+- Score for a wealthy family: 67 / 100
+- Can EU citizens live here?: from €753,864 · Quebec Immigrant Investor Program (QIIP)
+- Can US citizens live here?: from €753,864 · Quebec Immigrant Investor Program (QIIP)
+- Other passports: from €753,864 · Quebec Immigrant Investor Program (QIIP)
+- Tax on a €30M portfolio: €494,413 a year
+- Wealth tax: none
+- Children inherit: taxed
+- After 60 years: €75,617,000 of €30,000,000 (with no tax at all: €286,928,000)
+- EU member: no
+- Currency: CAD
+- Capital: Ottawa
+
+## Tax on investments, inheritance and wealth
+
+Canada taxes residents on worldwide income at combined federal and provincial rates; figures here use Ontario (Toronto) as the representative province. Half of a capital gain is taxable, giving a top rate of about 26.8% in Ontario (24.0% Alberta, 26.7% Quebec); the 2024 proposal to raise the inclusion rate to two-thirds is not in force (PwC's 2026 summary still states the 50% inclusion). Eligible Canadian dividends are taxed at up to 39.3% and foreign dividends as ordinary income at up to 53.5%. There is no inheritance, gift or wealth tax, but death (and gifts to children) trigger a deemed disposition at market value, so accrued gains are taxed at about 26.8% at each generation, plus provincial probate fees (Ontario 1.5% of the estate above CAD 50,000). Leaving Canada triggers a departure tax on accrued gains.
+
+- **Canadian tax resident (Ontario)**: Worldwide income taxed at federal + provincial rates; Ontario used as representative province.
+
+## Income tax
+
+Canadian residents pay federal tax (14% to 33% in 2026) plus Ontario tax (5.05% to 13.16%) and Ontario surtaxes of 20% and 36% on provincial tax; the combined top marginal rate in Ontario is 53.53% above CAD 258,482. Employees pay CPP (5.95% to CAD 74,600 plus CPP2 above it) and EI; the self-employed pay both CPP shares and may opt out of EI.
+
+## How to get residence
+
+No one can buy Canadian residence at federal level in 2026: the federal investor programme ended in 2014 and the Start-up Visa has taken no new applications since 31 December 2025. Quebec's investor programme (CAD 1.2 million, mostly refundable) is the only passive route. Everyone else uses points-based Express Entry or a provincial nomination. EU, US and other passports are treated alike.
+
+- **Start-up Visa (permanent residence)** (Entrepreneur; EU citizens, US citizens, other passports; suspended): Permanent residence for founders backed by a designated Canadian investor group, incubator or accelerator. Paused: new applications stopped on 31 December 2025.
+- **Federal Immigrant Investor Program and IIVC pilot** (Investor residence; EU citizens, US citizens, other passports; closed to new applicants): Canada's passive-investor immigration programmes are closed: the federal Immigrant Investor Program ended in 2014 and its venture-capital replacement is no longer open.
+- **Quebec Immigrant Investor Program (QIIP)** (Investor residence; EU citizens, US citizens, other passports; open): Quebec selects investors who place CAD 1,000,000 with a government-listed intermediary for 5 years (returned without interest) and donate CAD 200,000. Federal permanent residence follows. Relaunched 1 January 2024 with intake caps.
+- **Express Entry skilled worker programmes** (Work; EU citizens, US citizens, other passports; open): Points-based permanent residence for skilled workers (Canadian Experience Class, Federal Skilled Worker, Federal Skilled Trades), with a provincial nominee option. No investment is needed.
+
+Citizenship: Permanent residents need 1,095 days (3 years) in Canada in the 5 years before applying (730 days as a PR), tax filing for 3 of 5 years, language CLB 4 and a knowledge test for ages 18 to 54.
+
+## Inheritance law and trusts
+
+Succession law is provincial. In the common-law provinces and in Quebec a person may leave an estate freely, but courts can order support for a spouse and dependants (e.g. Ontario Succession Law Reform Act Part V) and a surviving spouse has family-property claims. Trusts are widely used and the Hague Trusts Convention is in force for most provinces, not Quebec. Private foundations exist only as charities.
+
+## Daily life (0-100, higher is better)
+
+- Safety and personal security: 68
+- Political and institutional stability: 76
+- Corruption and government integrity: 78
+- Legal system and property rights: 80
+- Healthcare quality and access: 89
+- Education quality: 69
+- Human development and quality of life: 88
+- Infrastructure and connectivity: 92
+- Business opportunities and economy: 82
+- Cultural fit and lifestyle: 82
+
+## Research notes
+
+### Canada — family-office tax dossier
+
+Last reviewed: 2026-10-16
+Tax year: 2026
+Reviewer: research agent (Claude), unreviewed by a tax adviser
+
+#### Summary
+
+Canada taxes residents on worldwide income at combined federal and provincial rates; figures here use Ontario (Toronto) as the representative province. Half of a capital gain is taxable, giving a top rate of about 26.8% in Ontario (24.0% Alberta, 26.7% Quebec); the 2024 proposal to raise the inclusion rate to two-thirds is not in force (PwC's 2026 summary still states the 50% inclusion). Eligible Canadian dividends are taxed at up to 39.3% and foreign dividends as ordinary income at up to 53.5%. There is no inheritance, gift or wealth tax, but death (and gifts to children) trigger a deemed disposition at market value, so accrued gains are taxed at about 26.8% at each generation, plus provincial probate fees (Ontario 1.5% of the estate above CAD 50,000). Leaving Canada triggers a departure tax on accrued gains.
+
+US citizens: US citizens in Canada file in both countries; Canada credits US tax only on US-source income, and the US credits Canadian tax. Mismatches: Canadian TFSAs/RESPs are not tax-favoured for the US, Canadian mutual funds are PFICs, and Canada's deemed disposition at death can coincide with the US estate tax (treaty Article XXIX-B on taxes at death; not verified here). Treaty relief for this overlap exists but was not verified in this session.
+
+#### Residence and eligibility
+
+Factual residence based on residential ties (home, spouse/partner and dependants in Canada are significant ties; secondary ties include property, bank accounts, health coverage); deemed resident if present 183 days or more in a year. Newcomers usually become resident on the day they arrive with significant ties.
+
+- **Permanent residence (economic classes, start-up visa, provincial nominee entrepreneur streams)** (EU, US, OTHER): Canada has no current passive-investor immigration programme for wealthy families at federal level (general knowledge, not verified in this session); routes run through business/entrepreneur or skilled-worker streams. US citizens have no special access beyond temporary work categories.
+
+#### Capital gains
+
+##### Standard regime
+
+50% of a capital gain is included in income and taxed at ordinary rates. 2026 combined top rates on capital gains: Ontario 26.8%, British Columbia 26.8%, Quebec 26.7%, Alberta 24.0% (top federal bracket from CAD 258,482 at 33%). The proposed increase of the inclusion rate to two-thirds for gains above CAD 250,000 (Budget 2024) is not law: PwC's 2026 summary states half of a capital gain is taxable and its rate table is based on 50%.
+
+- **Exemptions and thresholds:** Principal residence exemption (one per family unit per year). Lifetime capital gains exemption for qualified small business corporation shares (amount not verified in this session).
+- **Important exceptions, statute references and announced changes:** Deemed disposition at fair market value on death (ITA s. 70(5)), on gifts to anyone other than a spouse (s. 69), and on emigration (s. 128.1; departure tax, deferrable with security above CAD 16,500 of federal tax). Assets owned when the person last became resident are excluded from departure tax if resident 60 months or less in the prior 10 years. On becoming resident an individual is deemed to dispose of and reacquire most property at fair market value (ITA s. 128.1(1)(b) and (c)), so the portfolio the family brings has a stepped-up cost; taxable Canadian property (e.g. Canadian real estate) and a few other items are excluded. Alternative minimum tax was reformed from 2024 (details not verified here).
+- **Regional differences:** Top combined capital gains rates 2026: Ontario 26.8%, BC 26.8%, Quebec 26.7%, Alberta 24.0% (other provinces not checked).
+- **Tax year / confidence / verification:** 2026 / high / partially_verified (checked 2026-10-16)
+- **JSON numbers:** headline 26.76% (0.2676); listed domestic 26.76% (0.2676); listed foreign 26.76% (0.2676); private business sale 26.76% (0.2676); local real estate 26.76% (0.2676); foreign real estate 26.76% (0.2676).
+- **How derived:** Ontario 2026 top combined marginal rate 53.53% (federal 33% above CAD 258,482; Ontario 20.53% including surtaxes) x 50% inclusion (ITA s. 38(a)) = 26.76% (Richter 2026 Ontario table; PwC rounds to 26.8%). Private business sale before any lifetime capital gains exemption; real estate other than the principal residence. Foreign tax on gains is creditable.
+- **Holding period:** No holding period; all capital gains are 50% included.
+- **Trader recharacterisation:** Frequent trading can make gains business income, 100% taxable at up to 53.5% in Ontario. Taxpayers can elect (s. 39(4)) to treat Canadian securities as capital property.
+- **Foreign assets:** Worldwide gains taxed; foreign property costing over CAD 100,000 must be reported (T1135; threshold not verified in this session).
+
+#### Dividends
+
+##### Standard regime
+
+Eligible dividends from Canadian public companies are grossed up 38% with a federal dividend tax credit of 15.02% (plus provincial credit): top combined rate Ontario 39.3% (Alberta 34.3%, BC 36.5%, Quebec 40.1%). Non-eligible dividends: Ontario 47.7%. Foreign dividends get no gross-up or credit and are taxed as ordinary income (Ontario top 53.5%), with a foreign tax credit capped at 15% of the dividend; excess foreign tax is deductible only.
+
+- **Exemptions and thresholds:** None for high incomes.
+- **Important exceptions, statute references and announced changes:** Foreign non-business tax credit limited to 15% of property income; any withholding above 15% is only deductible. Offshore investment fund property and FAPI rules can attribute passive income of controlled foreign companies.
+- **Regional differences:** Top eligible dividend rates 2026: Ontario 39.3%, BC 36.5%, Alberta 34.3%, Quebec 40.1%; ordinary income (foreign dividends) Ontario/BC 53.5%, Quebec 53.3%, Alberta 48.0%.
+- **Tax year / confidence / verification:** 2026 / high / partially_verified (checked 2026-10-15)
+- **JSON numbers:** headline 53.53% (0.5353); domestic 39.34% (0.3934); foreign gross 53.53% (0.5353); foreign tax relief: credit.
+- **How derived:** Ontario 2026 top combined rates on taxable income above CAD 258,482 (Richter 2026 Ontario table; PwC rounds): eligible dividends 39.34%; foreign dividends are ordinary income at 53.53%, with credit for source WHT up to 15% of the income (ITA s. 126(1)).
+- **Outbound withholding:** 25% WHT on dividends paid to non-residents, reduced to 5-20% by treaty.
+- **Treaty network:** 94 tax treaties (Russia suspended from 18 November 2024), including the US (15% on portfolio dividends).
+- **Holding companies:** Passive investment income of a Canadian-controlled private corporation is taxed at about 50% (federal 38 2/3% including 10 2/3% refundable tax, plus provincial), refundable on payment of dividends; integration largely removes any deferral advantage. No holding structure is modelled (the recipe records why, including an engine gap for the refundable tax and for the trust 21-year rule) because none gives this family a material advantage: interest and foreign dividends bear about 50% in the corporation and gains about 25% (half taxable), with the refundable part returned only when taxable dividends are paid, so after payout the total is close to personal holding; an estate freeze can shift future growth to the children but the deemed disposal at death still applies to the frozen shares (and later to the children's), a family trust holding growth shares has its own 21-year deemed disposal (ITA s. 104(4)(b)), and the corporate attribution rule (ITA s. 74.4) and TOSI limit income splitting with a spouse or minor children for a pure investment company.
+
+#### Inheritance and gifts to children
+
+##### Standard regime
+
+No inheritance, estate or gift tax federally or in any province. However, a deceased person is deemed to have sold all capital property at market value immediately before death, so accrued gains are taxed in the final return at the capital gains rate (Ontario top 26.8%), except where property passes to a spouse or spousal trust (rollover). Gifts to children likewise trigger a deemed sale at market value. Ontario charges estate administration tax of 1.5% on the value of a probated estate above CAD 50,000.
+
+- **Exemptions and thresholds:** No inheritance tax of any amount. Ontario EAT (certificates applied for from 1 January 2020): the first CAD 50,000 is exempt, then CAD 15 for every CAD 1,000 or part thereof above it (1.5%); the estate value is rounded up to the next thousand. The scored 1.5% (other_transfer_cost_rate) is applied to the whole estate, which overstates the law by 1.5% of CAD 50,000 = CAD 750. Spousal rollover defers the deemed disposition to the second death.
+- **Important exceptions, statute references and announced changes:** The deemed disposition at death is in substance a tax on the transfer to children (about 26.8% of the unrealised gain, not of the whole value). It is not captured in the inheritance brackets here; see open questions. Assets held outside the probated will (joint ownership, secondary wills for private shares in Ontario) can reduce EAT.
+- **Regional differences:** Probate fees vary: Ontario 1.5% above CAD 50,000; other provinces have lower or capped fees (Alberta, Quebec low; not verified in this session).
+- **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
+- **JSON numbers:** basis `none`, children `taxed`, exemption 0 CAD, brackets (marginal): none; other transfer costs 1.5% (0.015); deemed disposal at death/gift 26.76% (0.2676) of the unrealised gain.
+- **Gifts:** No gift tax, but a gift of appreciated property is a deemed disposition at fair market value, taxing the donor's accrued gain (Ontario top 26.8%). Attribution rules can attribute income on gifts to minor children back to the parent. (same as inheritance: True; tax-free after years: None)
+- **Business relief:** Lifetime capital gains exemption on qualified small business corporation shares reduces the deemed-disposition gain; estate freezes are common.
+- **Foreign assets:** Deemed disposition at death covers worldwide capital property of a Canadian resident. Ontario estate administration tax counts investments and bank accounts wherever located (only real estate outside Ontario is excluded), unless a resealing or ancillary certificate limits it to Ontario assets (Government of Ontario).
+- **Residence/domicile rules:** Residence-based; no domicile concept. Departure tax on emigration (s. 128.1) means no tail of deemed-disposition exposure after leaving, but the gain is taxed on exit.
+- **Business relief covers listed shares:** False
+
+Open points for this tax: Deemed-disposal rate set to the Ontario top capital gains rate (26.76% = 53.53% x 50% inclusion); the effective charge depends on the unrealised gain in the estate (the scoring model assumes 40% of the estate).
+
+**Surviving spouse:** No inheritance tax, but death triggers a deemed disposition of capital property (Income Tax Act s. 70(5)). The spousal rollover in s. 70(6) defers it (property passes at cost) only if the deceased and the spouse or common-law partner were resident in Canada and the property vests indefeasibly in the spouse, or a qualifying spousal trust, within 36 months; it is a deferral, taxed when the spouse sells or dies, and the executor may elect out (s. 70(6.2)).
+
+#### Wealth tax
+
+##### Standard regime
+
+No net wealth tax at federal or provincial level.
+
+- **Tax year / confidence / verification:** 2026 / high / verified (checked 2026-10-15)
+- **JSON type:** `none`
+- **Property tax (not a wealth tax):** Municipal property tax on market value. Provincial land transfer taxes on purchases (generally up to 5%), plus surcharges on foreign buyers: Ontario 25% non-resident speculation tax, Toronto a further 10% municipal tax, BC 20% for foreign entities in specified areas; BC speculation and vacancy tax 3% for foreign owners in 2026. The federal underused housing tax was eliminated from the 2025 calendar year.
+
+#### Special regimes
+
+None modelled; see Residence and eligibility.
+
+#### Holding structures
+
+No holding structure is modelled, because none gives this family a material advantage under 2026 law. A Canadian-controlled private corporation pays federal tax of 38 2/3% on investment income other than most dividends, of which 10 2/3% is refundable (PwC), plus provincial tax, about 50% in total; half of a capital gain is taxable, so gains bear about 25%, with the untaxed half paid out tax-free through the capital dividend account. The refundable part comes back only when taxable dividends are paid, so after payout the combined tax is close to personal holding (integration), with no deferral. An estate freeze (shares exchanged for fixed-value preferred shares, growth shares to the children or a family trust) moves future growth out of the parents' deemed disposal at death, but the frozen value is still deemed disposed of, the children face the same rule later, a family trust has a 21-year deemed disposal (ITA s. 104(4)(b)), and the corporate attribution rule (ITA s. 74.4) and TOSI restrict benefits for a spouse or minor children when the company is a pure investment company. See `holding_company_notes`.
+
+#### Company taxation (kept separate from personal tax)
+
+Headline CIT rate: 26.5% (0.265). Federal general rate 15% plus Ontario 11.5% = 26.5% (2026). Passive investment income of private corporations is taxed at a high refundable rate (federal 38 2/3%). Pillar Two: Global Minimum Tax Act with IIR and QDMTT for fiscal years beginning after 30 December 2023; UTPR proposed from fiscal years beginning after 30 December 2025.
+
+#### Cost of living notes
+
+City: Toronto.
+- International school, annual per child: 48,720 CAD (2026). Upper Canada College (boys), day student tuition and fees 2026-27 for Years 11-12 (Years 6-10: CAD 46,730). One-time registration fee CAD 10,000 for day students. Source: Tuition.
+Prime rent not sourced: realtor.ca, Zillow, Zumper, Rentals.ca and Zoocasa refused automated access, TRREB's Q2 2026 rental report covers only apartments and townhouses, and a Kijiji sample found only 11 four- or five-bedroom listings in central and north-central Toronto (median CAD 5,600, mixing condos with detached houses), too thin to use. Foreign buyers face 25% Ontario NRST plus 10% Toronto tax on residential purchases.
+
+#### Open questions
+
+- The official Department of Finance / Prime Minister notice of the March 2025 cancellation of the inclusion-rate increase could still not be opened: canada.ca returned 404 for the release URLs tried (department-finance/news/2025/03/... and pm.gc.ca/en/news/news-releases/2025/03/21/...) and the news search page needs JavaScript; the CRA 'What's new - capital gains' page opened but does not mention the cancellation. The 50% rate rests on PwC's 2026 summary.
+- The deemed disposition at death (ITA s. 70(5)) is carried by inheritance.deemed_disposal_rate (26.76%, applied to the unrealised gain); basis stays 'none' because Canada has no inheritance tax.
+- AMT changes from 2024, lifetime capital gains exemption amount and T1135 threshold not verified in this session.
+- Probate fees outside Ontario not sourced. Prime rent for a 4-5 bedroom house in Toronto (Rosedale, Forest Hill, Lawrence Park) not sourced; listing portals refused automated access.
+
+#### Sources
+
+- Canada - Individual - Taxes on personal income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/canada/individual/taxes-on-personal-income
+- Canada - Individual - Income determination (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/canada/individual/income-determination
+- Dispositions of property (emigrants) (Canada Revenue Agency, tax_authority): https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html
+- What's new for capital gains (Canada Revenue Agency, tax_authority): https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12700-capital-gains/whats-new-capital-gains.html
+- Canada - Individual - Foreign tax relief and tax treaties (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/canada/individual/foreign-tax-relief-and-tax-treaties
+- Canada - Individual - Other taxes (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/canada/individual/other-taxes
+- Estate Administration Tax (Government of Ontario, government): https://www.ontario.ca/page/estate-administration-tax
+- Newcomers to Canada (immigrants) (Canada Revenue Agency, tax_authority): https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/newcomers-canada-immigrants.html
+- Canada - Corporate - Taxes on corporate income (PwC Worldwide Tax Summaries, professional): https://taxsummaries.pwc.com/canada/corporate/taxes-on-corporate-income
+- Tuition (Upper Canada College, other): https://www.ucc.on.ca/tuition
+- 2026 Ontario Income Tax Tables (Richter, professional): https://www.richter.ca/2026-ontario-income-tax-tables/
+- Income Tax Act, section 128.1 (Department of Justice Canada, legislation): https://laws-lois.justice.gc.ca/eng/acts/i-3.3/section-128.1.html
+- Income Tax Act (Canada), section 70: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-70.html
+
+#### Change log
+
+- 2026-10-15: initial research.
+- 2026-10-15: reviewed special-regime durations: no special regime.
+- 2026-10-15: modelled the deemed disposal at death in the structured data (`deemed_disposal_rate` 26.76%, Ontario top rate on the 50% inclusion) so that the tax on accrued gains at death counts in the inheritance score; children treatment changed from fully exempt to taxed.
+- 2026-10-15 (data-quality pass): added Upper Canada College day fee CAD 48,720 (Years 11-12, 2026-27). Prime Toronto rent still unsourced (portals blocked; Kijiji sample too thin). Retried the Department of Finance/PMO notice of the March 2025 cancellation of the capital-gains inclusion-rate increase: still not reachable, open question sharpened. Dossier regenerated from the JSON, which also brings in the deemed-disposition inheritance coding (children 'taxed', deemed disposal rate 26.76%) already in the JSON.
+- 2026-10-15: reviewed holding structures; none modelled (integration, deemed disposal still applies after an estate freeze); added a Holding structures section.
+- 2026-10-16: added surviving-spouse treatment.
+- 2026-10-16: recipe drafted. Rates made precise (capital gains 26.76%, foreign dividends 53.53%, eligible dividends 39.34%, Richter 2026 Ontario table; were rounded to 26.8%/53.5%/39.3%); immigration step-up now cited to ITA s. 128.1(1)(b); Ontario EAT exemption and scope detail added; stale open question about the deemed-disposal field replaced.
+
+
+## Residence and succession sources
+
+- [Citizenship eligibility](https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/eligibility.html) — IRCC
+- [Start-up Visa program](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/start-visa.html) — IRCC
+- [Canada Suspends Start-Up Visa, Hints at New Replacement in 2026](https://www.imidaily.com/north-america/canada-suspends-start-up-visa-hints-at-new-replacement-in-2026/) — IMI Daily
+- [Investor Immigration Canada 2026: What Still Works](https://bridgepointlaw.ca/investor-immigration-canada-2026-guide/) — Bridgepoint Law
+- [New investor visa program to offer permanent residency to 60 millionaires](https://immigration.ca/new-investor-visa-program-to-offer-permanent-residency-to-60-millionaires/) — immigration.ca
+- [Quebec investor and start-up immigration 2026](https://silaws.com/quebec-investor-startup-immigration-2026-en/) — SiLaw
+- [How Express Entry works](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/works.html) — IRCC
+- [HCCH status table: Convention on the Law Applicable to Trusts and on their Recognition (1985)](https://www.hcch.net/en/instruments/conventions/status-table/?cid=59) — HCCH
+- [Nova Scotia International Trusts Act (S.N.S. 2005, c. 41)](https://nslegislature.ca/sites/default/files/legc/PDFs/annual%20statutes/2005%20Fall/c041.pdf) — Nova Scotia Legislature
