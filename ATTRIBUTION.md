@@ -108,7 +108,7 @@ and [`docs/research/capital_controls_screen.md`](docs/research/capital_controls_
 |---|---|
 | [D3](https://d3js.org/) 7.9.0 (`web/vendor/d3-7.9.0.min.js`) | ISC, see `web/vendor/d3.LICENSE` |
 | [topojson-client](https://github.com/topojson/topojson-client) 3.1.0 (`web/vendor/topojson-client-3.1.0.min.js`) | ISC, see `web/vendor/topojson-client.LICENSE` |
-| [mapshaper](https://github.com/mbloch/mapshaper) 0.6.121 (build-time only, not shipped) | MPL 2.0 |
+| [mapshaper](https://github.com/mbloch/mapshaper) 0.7.88 (build-time only, not shipped) | MPL 2.0 |
 | [Newsreader](https://github.com/productiontype/Newsreader) (headings, wordmark; `web/vendor/fonts/newsreader-*.woff2`) | SIL Open Font License 1.1, see `web/vendor/fonts/Newsreader-OFL.txt` |
 | [Manrope](https://github.com/sharanda/manrope) (text; `web/vendor/fonts/manrope-*.woff2`) | SIL Open Font License 1.1, see `web/vendor/fonts/Manrope-OFL.txt` |
 

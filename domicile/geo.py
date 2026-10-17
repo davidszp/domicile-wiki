@@ -132,7 +132,7 @@ def apply_un_borders(path: Path, fields: str) -> None:
     mapshaper(path.as_posix(), "-erase", pieces.as_posix(), "-o", erased.as_posix(), "precision=0.000001", "force")
     # Countries come first in the merged layer, so the dissolve keeps their attributes.
     mapshaper("-i", erased.as_posix(), pieces.as_posix(), "combine-files", "-merge-layers", "force",
-              "-dissolve2", "id", f"copy-fields={fields.replace('id,', '')}",
+              "-dissolve", "id", f"copy-fields={fields.replace('id,', '')}",
               "-o", path.as_posix(), "precision=0.000001", "force")
     print(f"UN borders applied: {', '.join(f'{k} -> {v}' for k, v in UN_BORDERS.items())}")
 
@@ -175,7 +175,7 @@ def build_regions() -> None:
     )
     BUILD.mkdir(parents=True, exist_ok=True)
     mapshaper(src.as_posix(), "-filter", f"{countries}.includes(adm0_a3)", "-each", each,
-              "-dissolve2", "rid", "copy-fields=parent,rname",
+              "-dissolve", "rid", "copy-fields=parent,rname",
               "-each", "id = rid; name = rname; delete rid; delete rname",
               "-o", (BUILD / "regions.geojson").as_posix(), "precision=0.000001", "force")
 
