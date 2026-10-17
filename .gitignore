@@ -9,6 +9,7 @@ data/build/
 # Claude Code project instructions and local settings (kept out of the public repo)
 CLAUDE.md
 CLAUDE.local.md
+PLAN.md
 .claude/
 
 # wrangler files
