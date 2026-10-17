@@ -2,6 +2,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "domicile-preview",
   "compatibility_date": "2026-10-12",
+  // The site's own domain (registered on Cloudflare); the workers.dev preview address keeps working.
+  "routes": [{ "pattern": "domicile.wiki", "custom_domain": true }],
+  "workers_dev": true,
   "observability": {
     "enabled": true
   },
