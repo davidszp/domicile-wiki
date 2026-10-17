@@ -349,7 +349,10 @@ body[data-view="simple"] .adv-only { display: none !important; }
 .theme-switch button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: var(--elev-1); }
 .guide-foot { display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--border); padding-top: 10px; }
 .guide-foot p { margin: 0; }
-.repo-link { display: inline-flex; align-self: flex-start; padding: 2px; color: var(--muted); }
+.foot-row { display: flex; align-items: center; gap: 8px; }
+.version { padding: 1px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); text-decoration: none; white-space: nowrap; }
+.version:hover { color: var(--accent); border-color: var(--accent); }
+.repo-link { display: inline-flex; padding: 2px; color: var(--muted); }
 .repo-link:hover { color: var(--accent); }
 
 /* ===================================================================== 7 Stage and modes */

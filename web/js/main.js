@@ -20,6 +20,12 @@ import { renderCompare } from "./modes/compare.js";
 import { renderSettings } from "./modes/settings.js";
 
 const $ = (sel) => document.querySelector(sel);
+const VERSION = "0.01"; // shown next to the GitHub icon; raise it with each release
+/** "2026-10-17" → "Oct 17 2026" (the build date in scores.json). */
+const builtOn = (iso) => {
+  const d = new Date(`${iso}T00:00:00Z`);
+  return `${d.toLocaleString("en-US", { month: "short", timeZone: "UTC" })} ${d.getUTCDate()} ${d.getUTCFullYear()}`;
+};
 const SCORING_KEYS = ["persona", "weights", "citizenship", "includeActivity", "includeStructures", "koOff", "koExempt"];
 
 // The four ways through the site, in the order of the guide on the left.
@@ -123,7 +129,7 @@ async function boot() {
     Object.assign(state, readHash() || {});
     if (!MODES.includes(state.mode)) state.mode = "guided";
     applyCurrency();
-    $("#built").textContent = `Data built ${scores.meta.built}.`;
+    $("#version").textContent = `v${VERSION} · Built ${builtOn(scores.meta.built)}`;
     guide = createGuide({ world, modes: MODE_INFO, go, select });
     $("#loading").remove();
     renderStage();
