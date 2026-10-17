@@ -123,6 +123,9 @@ preview runs at <https://domicile-preview.domicile-web.workers.dev>; the site is
 A small Worker (`worker/index.js`) runs in front of the assets only to redirect `www.domicile.wiki` to
 `domicile.wiki`.
 
+After a deploy, `make indexnow` tells Bing (and Yandex, Seznam, Naver) which pages exist, using the key
+file `web/<key>.txt`. Google reads the sitemap through Search Console instead.
+
 ### Security
 
 - **No server code and no runtime third-party requests.** D3 7.9.0 and topojson-client 3.1.0 are

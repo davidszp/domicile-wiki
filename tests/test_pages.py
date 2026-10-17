@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pytest
 
-from domicile import pages
+from domicile import indexnow, pages
 
 WEB = Path(__file__).resolve().parent.parent / "web"
 SCORES = json.loads((WEB / "data" / "scores.json").read_text())["jurisdictions"]
@@ -99,3 +99,8 @@ def test_markdown_escapes_html_and_joins_wrapped_list_items():
     assert "<li>one &lt;b&gt; continued</li>" in out
     assert '<a href="https://a.example/" rel="noopener">x</a>' in out
     assert 'href="javascript' not in out
+
+
+def test_indexnow_key_is_served_and_covers_the_sitemap():
+    assert (WEB / f"{indexnow.KEY}.txt").read_text() == indexnow.KEY
+    assert len(indexnow.urls()) == len(PAGES) + 2

@@ -1,7 +1,7 @@
 # Reproducible build. `make all` runs everything from raw downloads to a tested site in web/.
 PY := uv run python
 
-.PHONY: all setup data geo indicators fx build gaps test test-fast serve validate clean fuzz fuzz-monkey monthly-prepare monthly-finish projection
+.PHONY: all setup data geo indicators fx build gaps test test-fast serve validate clean fuzz fuzz-monkey monthly-prepare monthly-finish projection indexnow
 
 all: setup data build test
 
@@ -48,6 +48,9 @@ fuzz:             ## simulated visitors click through the site; screenshots and 
 
 fuzz-monkey:      ## seeded random clicking on desktop, tablet and phone; findings in .fuzz-out/monkey/
 	uv run python tools/fuzz/monkey.py
+
+indexnow:         ## after a deploy: submit the sitemap's URLs to Bing and other IndexNow engines
+	$(PY) -m domicile.indexnow
 
 serve:            ## local server with the production security headers
 	$(PY) -m domicile.serve 8765
