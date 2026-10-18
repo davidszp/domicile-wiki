@@ -1,6 +1,6 @@
 # Data gaps
 
-Generated from the build of 2026-10-17 (EU citizen, default weights). Regenerate with `python -m domicile.gaps` after `python -m domicile.build`.
+Generated from the build of 2026-10-18 (EU citizen, default weights). Regenerate with `python -m domicile.gaps` after `python -m domicile.build`.
 
 ## Coverage
 
