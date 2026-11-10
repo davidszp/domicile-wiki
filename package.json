@@ -12,7 +12,7 @@
     "d3": "7.9.0",
     "mapshaper": "0.7.88",
     "topojson-client": "3.1.0",
-    "wrangler": "4.151.0"
+    "wrangler": "4.156.0"
   },
   "license": "AGPL-3.0-or-later"
 }
